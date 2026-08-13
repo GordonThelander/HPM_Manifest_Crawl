@@ -38,7 +38,7 @@ jobs:
         run: |
           set -euo pipefail
           test -f crawl_hpm.py
-          test -f hubitat_automation_map_app_integration_registry_v0.3.json
+          test -f hubitat_automation_map_app_integration_registry_v0.4.json
           python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py
 
       - name: Classify source visibility
@@ -65,7 +65,7 @@ jobs:
             hpm_package_index.json
             hubitat_official_docs_index.json
             registry_validation_report.md
-            hubitat_automation_map_app_integration_registry_v0.3.json
+            hubitat_automation_map_app_integration_registry_v0.4.json
           retention-days: 7
 
       - name: Commit successful outputs and registry evidence
@@ -78,7 +78,7 @@ jobs:
           # rebase the generated working-tree changes onto the latest main
           # before creating the output commit.
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.3.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.4.json
           if git diff --cached --quiet; then
             echo "Generated outputs and registry evidence are unchanged; nothing to commit."
           else

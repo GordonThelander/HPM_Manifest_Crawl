@@ -3,8 +3,8 @@ import concurrent.futures, datetime as dt, hashlib, json, os, pathlib, time, url
 from collections import Counter, defaultdict
 
 MASTER_URL = 'https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json'
-REGISTRY_GZ = 'hubitat_automation_map_app_integration_registry_v0.3.json.gz'
-REGISTRY = 'hubitat_automation_map_app_integration_registry_v0.3.json'
+REGISTRY_GZ = 'hubitat_automation_map_app_integration_registry_v0.4.json.gz'
+REGISTRY = 'hubitat_automation_map_app_integration_registry_v0.4.json'
 INDEX_OUT = 'hpm_package_index.json'
 REPORT_OUT = 'registry_validation_report.md'
 CACHE = pathlib.Path('.hpm_cache')

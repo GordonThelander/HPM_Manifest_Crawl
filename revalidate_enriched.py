@@ -5,7 +5,7 @@ import pathlib
 import crawl_hpm
 
 INDEX = pathlib.Path('hpm_package_index.json')
-REGISTRY = pathlib.Path('hubitat_automation_map_app_integration_registry_v0.3.json')
+REGISTRY = pathlib.Path('hubitat_automation_map_app_integration_registry_v0.4.json')
 DOC_INDEX = pathlib.Path('hubitat_official_docs_index.json')
 REPORT = pathlib.Path('registry_validation_report.md')
 

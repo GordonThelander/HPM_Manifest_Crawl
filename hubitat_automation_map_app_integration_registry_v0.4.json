@@ -1,0 +1,4674 @@
+{
+  "schemaVersion": "0.4",
+  "registryName": "Hubitat Automation Map App and Integration Registry",
+  "generatedDate": "2026-08-13",
+  "editable": true,
+  "designNotes": [
+    "v0.3 separates application/integration definitions from physical device/driver definitions.",
+    "Use the companion Device/Driver Registry for manufacturer/model/protocol/driver enrichment.",
+    "v0.2 expands the registry from external dependency enrichment into a catalogue of Hubitat-native automations, apps, integrations and legacy platform apps.",
+    "Native Hubitat apps are first-class graph nodes even when they have no external dependency.",
+    "hubitatCategory distinguishes APP, AUTOMATION and INTEGRATION as presented by current Hubitat UI.",
+    "Built-in app identity and parent/child ownership take precedence over HPM/community heuristics.",
+    "Entries marked BUILTIN_SEED_VERIFY_RUNTIME should be verified against the target hub/platform version before being treated as canonical.",
+    "Match native Hubitat metadata first, then HPM package metadata, registry rules, heuristics, and finally user overrides.",
+    "HPM identification does not by itself establish architecture; dependencies describe the architectural path.",
+    "A single integration may have multiple dependencies with different runtime criticality.",
+    "Transport values marked LAN_OR_CLOUD or similar require runtime/user refinement.",
+    "Do not classify Zigbee/Z-Wave device drivers as external integrations unless they introduce a separate bridge, service, or gateway.",
+    "Matching MUST be case-insensitive. Real package naming is inconsistent (BOND vs Bond, Ecowitt vs EcoWitt, kasaDoorbell vs Kasa) and case-sensitive matching produced 17 false negatives against live HPM data."
+  ],
+  "nodeClasses": [
+    "INTEGRATION",
+    "INTEGRATION_VARIANT",
+    "INTEGRATION_MAPPING",
+    "GATEWAY",
+    "EXTERNAL_SERVICE_CONSUMER",
+    "EXTERNAL_PLATFORM_MAPPING",
+    "AUTOMATION_ENGINE",
+    "DISCOVERY",
+    "LOCAL_BRIDGE",
+    "LOCAL_DEVICE",
+    "LOCAL_SERVICE",
+    "EXTERNAL_SERVICE",
+    "EXTERNAL_PLATFORM",
+    "INFRASTRUCTURE",
+    "UNKNOWN_EXTERNAL",
+    "DASHBOARD",
+    "PLATFORM_UTILITY",
+    "SECURITY_ORCHESTRATOR",
+    "VIRTUALISATION_ORCHESTRATOR"
+  ],
+  "edgeTypes": [
+    "OWNS",
+    "CREATES",
+    "CONTROLS",
+    "BRIDGES_TO",
+    "DEPENDS_ON",
+    "READS_FROM",
+    "SENDS_TO",
+    "EXPOSES_TO",
+    "AUTHENTICATES_WITH",
+    "OBSERVES",
+    "CONSUMES",
+    "MONITORS"
+  ],
+  "runtimeCriticality": [
+    "RUNTIME",
+    "MANAGEMENT",
+    "SETUP_ONLY",
+    "DISCOVERY_ONLY"
+  ],
+  "entries": [
+    {
+      "id": "hubitat-hue-native",
+      "name": "Hue Bridge Integration",
+      "vendor": "Philips Hue",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Hue Bridge Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "equals",
+          "value": "Hue Bridge Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Philips Hue Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Device discovery, events and control"
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/hue-bridge-integration",
+          "title": "Hue Bridge Integration",
+          "matchedBy": "Hue Bridge Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "(No devices you add to your Hue Bridge are automatically added to Hubitat, nor are devices you remove from the Hue Bridge automatically removed from Hubitat."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Devices can be removed from their device detail page if desired, whether or not they exist on your Hue network.) Some features above require use of the V2 API, which is available on the Hue Bridge V2 and newer (inclding Bridge Pro; see below for more details on this setting)."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Hue Bridge Integration | Hubitat Documentation ¶ Hue Bridge Integration It is recommended to use a Hue Bridge when connecting Hue bulbs to Hubitat Elevation for optimal results."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "It is recommended for existing users to enable this option if supported on their Hue Bridge, which includes all current models (but notably excludes the discontinued, round V1 bridge)."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "NOTE: If you want to integrate multiple Hue Bridges, you can do so by adding an additional instance of the Hue Bridge Integration app for each Bridge."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Once connected through the Hue Bridge Integration app, your bulbs can be used just as if they were directly paired with your hub."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Once enabled and your Bridge devices gets added to your hub, this option cannot be disabled."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Poll bridge every...: Sets the polling interval, the frequency at which the app polls the Hue Bridge to retrieve new device states."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Press the button on top of your Hue Bridge shortly before or after doing this to authorize the connection."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "Select your Hue Bridge from the \"Discovered bridges\" list, then select Next to continue."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "The V1 (circular) Hue Bridge does not support the V2 API (and is no longer supported by Philips but should continue to work with this integration, which supports both API versions)."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "The V2 API is recommended for Bridges that support it because it allows for instant status updates from Hue lights and groups (V1 API requires polling to see changes made from outside Hubitat) and also enables support for motion sensors and button devices."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "This option is required for the Hue Bridge Pro and is likely to become required with future Hue Bridge V2 firmware."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "When this confirmation appears, select Next to begin adding lights and other devices from the Hue Bridge to your Hubitat Elevation hub."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Adding Hue devices to Hubitat The Hue Bridge integration supports adding the following Hue features or devices to your Hubitat Elevation hub: Lights (bulbs, lightstrips, outlets, etc.) Groups (Hue Rooms and Hue Zones) Using Hue Rooms or Zones (groups) is recommended over creating a Hubitat group (e.g., via Groups and Scenes or a Room Lighting activator device) whenever possible, as it will reduce the \"popcorn effect\" of lights changing at slightly different times and create less traffic and mo"
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Additional Notes The Hue Bridge integration (as of Hubitat platform 2.4.0) supports use of the Hue V2 API, which supports receiving instant status updates for devices on the Hue Bridge, even for changes made outside Hubitat."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Advanced Options Edit Bridge IP, re-authorize, or re-discover: You may need this option if you previously configured your Bridge with a static IP and changed the IP address, configured the integration with automatic discovery and wish to change to a manually specified IP or vice versa, removed the Hubitat authenticiation from your Bridge settings, or migrated your Hue Bridge configuration to newer hardware (e.g., Bridge V2 to Bridge Pro)."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ App Options The Hue app presents various options to configure how the integration app and drivers work, including: Prefer V2 Hue API (EventStream/Server-Sent Events) if available: Uses the Hue V2 API, supported on Hue V2 bridges with firmware 1948086000 or newer and Hue Bridge Pro."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Installing the Hub Bridge Integration app From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Choose the Hue Bridge Integration from the list of built-in apps Discovery of your Hue Bridge(s) will begin."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Scene Devices As mentioned above, the Hue Bridge Integration allows creating a device on Hubitat to activate a scene on the Hue Bridge."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the Hub Bridge Integration app From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Choose the Hue Bridge Integration from the list of built-in apps Discovery of your Hue Bridge(s) will begin."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Exceptions include certain color data (some of which is retrieved only via the V1 API) and uncommon instances where V2 API data appears to be truncated before reaching the integration app, rare but seemingly more common when large numbers of devices report changes at the same time."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "It is still suggested that users with the V2 API enabled (see above) keep polling enabled, although reducing the polling interval (to several minutes or more) may still provide acceptable behavior, as the V2 API should report most changes instantly."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Some Hue features report color data using a color model that is not easily compatible with Hubitat's color model (the CIE xy colorspace as opposed to HSB color used by the hub)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The \"Push\" command with button number 1 is the recommended method for doing this, although the \"On\" command will perform the same action and can be used with apps that do not support push commands (e.g., most voice assistant integrations)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The V1 (circular) Hue Bridge does not support the V2 API (and is no longer supported by Philips but should continue to work with this integration, which supports both API versions)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The V2 API is recommended for Bridges that support it because it allows for instant status updates from Hue lights and groups (V1 API requires polling to see changes made from outside Hubitat) and also enables support for motion sensors and button devices."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "This option is enabled by default, but the app will still try the V1 API if your Bridge hardware or firmware is too old to support V1."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Advanced Options Edit Bridge IP, re-authorize, or re-discover: You may need this option if you previously configured your Bridge with a static IP and changed the IP address, configured the integration with automatic discovery and wish to change to a manually specified IP or vice versa, removed the Hubitat authenticiation from your Bridge settings, or migrated your Hue Bridge configuration to newer hardware (e.g., Bridge V2 to Bridge Pro)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Device Notes Most Hue devices support standard commands and attributes, for example, \"On\" and \"Off\" to turn on and off lights, groups, etc."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Upgrading from platform 2.3.9 or earlier The Hue integration received significant updates in Hubitat platform version 2.4.0, adding support for scenes and more Hue device types than before."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cocohue",
+      "name": "CoCoHue",
+      "vendor": "Philips Hue",
+      "class": "INTEGRATION",
+      "origin": "HPM_COMMUNITY",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "CoCoHue",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "CoCoHue",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "CoCoHue",
+          "confidence": 95
+        },
+        {
+          "field": "namespace",
+          "operator": "contains",
+          "value": "cocohue",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Philips Hue Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Hue device, group and scene integration"
+        }
+      ],
+      "sourceVisibility": "MANIFEST_ONLY"
+    },
+    {
+      "id": "advanced-hue-bridge",
+      "name": "Advanced Hue Bridge Integration",
+      "vendor": "Philips Hue",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Advanced Hue Bridge",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Advanced Hue",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Philips Hue Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "lifx-native",
+      "name": "LIFX Integration",
+      "vendor": "LIFX",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "LIFX Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "equals",
+          "value": "LIFX Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "LIFX LAN Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_UDP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/lifx-integration",
+          "title": "LIFX Integration",
+          "matchedBy": "LIFX Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Select LIFX Integration from the list of built-in integration apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Navigate to Integrations, then select Add Built-In Integration."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "LIFX Integration | Hubitat Documentation ¶ LIFX Integration The LIFX Integration allows you to import LIFX devices, including light bulbs and lightstrips, into Hubitat Elevation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lifx-light-manager",
+      "name": "LIFX Light Manager",
+      "vendor": "LIFX",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_OWNER_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "LIFX Light Manager",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "equals",
+          "value": "LIFX Light Manager",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "LIFX Local",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "LIFX Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS",
+          "runtimeCriticality": "MANAGEMENT",
+          "requiredForControl": false,
+          "purpose": "Metadata and capability discovery"
+        },
+        {
+          "name": "LIFX LAN Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_UDP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Discovery, state and control"
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE"
+    },
+    {
+      "id": "kasa-native",
+      "name": "Kasa Integration",
+      "vendor": "TP-Link",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Kasa Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Kasa Integration",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Kasa",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "TP-Link Kasa Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/kasa-integration",
+          "title": "Kasa Integration",
+          "matchedBy": "Kasa Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Select Kasa Integration from the list of built-in apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Users of the previous community integration may continue using it as-is, or they may migrate to the built-in offering manually."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Navigate to Integrations, then select Add Integration or Add Built-In Integration."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Migrating from Community App As of platform 2.3.3, the Kasa integration is a built-in Hubitat app."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "NOTE: Some users have reported that updating firmware on their Kasa devices has prevented local control (i.e., over the LAN rather than cloud) from working."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "The Kasa integration offers local control only as of current hub platform versions (cloud control is no longer available due to Kasa server changes)."
+            },
+            {
+              "type": "LOCAL_NETWORK_BEHAVIOUR",
+              "evidence": "NOTE: Some users have reported that updating firmware on their Kasa devices has prevented local control (i.e., over the LAN rather than cloud) from working."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Kasa Integration | Hubitat Documentation ¶ Kasa Integration The Kasa Integration allows you to import TP-Link Kasa devices, such as bulbs, plugs, and switches, into Hubitat."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "While not required, it is strongly recommended to create DHCP reservations (or another effectively “static” IP address) for your Kasa devices when using this integration, particularly if you have more than one Kasa device on your network."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tapo-community",
+      "name": "Tapo Integration",
+      "vendor": "TP-Link",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Tapo",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Tapo",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "TP-Link Tapo Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_OR_CLOUD",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "shelly-native",
+      "name": "Shelly Integration",
+      "vendor": "Shelly",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Shelly",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Shelly",
+          "confidence": 85
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Shelly Device",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "shelly-device-manager",
+      "name": "Shelly Device Manager",
+      "vendor": "Shelly",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Shelly Device Manager",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Shelly Device Manager",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Shelly Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NEEDS_REVIEW: no app of that name; HPM has \"Shelly Webhook/Websocket Drivers\"."
+    },
+    {
+      "id": "shelly-mqtt",
+      "name": "Shelly MQTT Variant",
+      "vendor": "Shelly",
+      "class": "INTEGRATION_VARIANT",
+      "origin": "COMMUNITY",
+      "status": "NEEDS_RUNTIME_VALIDATION",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Shelly",
+          "confidence": 80
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Shelly MQTT",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        },
+        {
+          "name": "Shelly Device",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "tuya-cloud",
+      "name": "Tuya Cloud Integration",
+      "vendor": "Tuya",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY_OR_NATIVE",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Tuya Cloud",
+          "confidence": 95
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Tuya Integration",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Tuya Cloud",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Tuya IoT Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NEEDS_REVIEW: HPM package is \"Tuya IoT Platform (Cloud)\". Registry values may be stale."
+    },
+    {
+      "id": "tuya-local",
+      "name": "Tuya Local Integration",
+      "vendor": "Tuya",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Tuya Local",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Tuya Local",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Tuya LAN Device",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "meross-msg100",
+      "name": "Meross MSG100 Garage Door",
+      "vendor": "Meross",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_OWNER_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Meross",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Meross",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "MSG100",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Meross Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "AUTHENTICATES_WITH",
+          "transport": "HTTPS",
+          "runtimeCriticality": "SETUP_ONLY",
+          "requiredForControl": false,
+          "purpose": "Initial authentication and device/key discovery"
+        },
+        {
+          "name": "Meross MSG100",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE"
+    },
+    {
+      "id": "govee-v2",
+      "name": "Govee Integration V2",
+      "vendor": "Govee",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Govee Integration",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Govee",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Govee Platform",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "LAN_OR_HTTPS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "switchbot",
+      "name": "SwitchBot Integration",
+      "vendor": "SwitchBot",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "SwitchBot",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "SwitchBot",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SwitchBot Cloud or Hub",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "yolink",
+      "name": "YoLink Device Service",
+      "vendor": "YoSmart",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "YoLink",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "YoLink",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "YoLink",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "YoLink Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "ecobee-suite",
+      "name": "Ecobee Suite Manager",
+      "vendor": "ecobee",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Ecobee Suite",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Ecobee Suite",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "ecobee Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "ecobee-local-hap",
+      "name": "Ecobee No Cloud HAP Thermostat",
+      "vendor": "ecobee",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Ecobee No Cloud",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Ecobee No Cloud",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "HAP Thermostat",
+          "confidence": 85
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "ecobee Thermostat",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "HOMEKIT_HAP_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "ecowitt",
+      "name": "EcoWitt / Wittboy Integration",
+      "vendor": "Fine Offset / Ecowitt",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "EcoWitt",
+          "confidence": 95
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Ecowitt",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "EcoWitt",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Wittboy",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Ecowitt Gateway",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "READS_FROM",
+          "transport": "LAN_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "sensorpush",
+      "name": "SensorPush Gateway",
+      "vendor": "SensorPush",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "SensorPush",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "SensorPush",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SensorPush Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "sure-petcare",
+      "name": "Sure PetCare Integration",
+      "vendor": "Sure Petcare",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Sure PetCare",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Sure PetCare",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "SurePet",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Sure PetCare Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "lutron-native",
+      "name": "Lutron Integrator",
+      "vendor": "Lutron",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Lutron Integrator",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Lutron",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Lutron Bridge / Repeater",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "TELNET_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/lutron-integrator",
+          "title": "Lutron Integrator",
+          "matchedBy": "Lutron Integrator",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "When you add new Lutron devices, you will need to first add them to the Lutron Smart Bridge Pro via the Lutron app, then return to the Lutron Integrator app to add the devices to your Hubitat Elevation hub using one of the methods above."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Follow Lutron’s instructions to connect your devices to the Smart Bridge Pro, RA2 Select or RA2 Main Repeater, then follow these steps to connect your Smart Bridge Pro, RA2 Select or RA2 Main Repeater to your Hubitat Elevation Hub: ¶ Installing the Lutron Integrator From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Choose Lutron Integrator from the list of Hubitat Elevation Built-In Apps ¶ Gathering required information You will be req"
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "The standard Lutron Caséta Smart Bridge (non-Pro) is not supported since integrations with that bridge are cloud-only."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "All the necessary information can be found in an integration report generated by Lutron software."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Ensure that Telnet Support is enabled."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Select Create New Caseta/RA2 Integration Name your Lutron integration and enter the IP address of your Lutron Smart Bridge Pro."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Tap Network Settings and write down the IP address of your Lutron Smart Bridge Pro, then tap < Integration at the top left to navigate back."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The Telnet Support option must be enabled to use Lutron devices with your Hubitat Elevation hub."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bond",
+      "name": "Bond Integration",
+      "vendor": "Bond",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Bond",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Bond",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Bond Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "broadlink",
+      "name": "Broadlink IR/RF Integration",
+      "vendor": "Broadlink",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Broadlink",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Broadlink",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Broadlink RM Device",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "sonos-native",
+      "name": "Sonos Integration",
+      "vendor": "Sonos",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Sonos Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Sonos",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Sonos System",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/sonos-integration",
+          "title": "Sonos Integration",
+          "matchedBy": "Sonos Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "If you have not already done so, install Rule Machine with the same method used to install the Sonos Integration at the beginning of this document: from the Apps page of the Hubitat Web Interface, select Add Built-In App > Rule Machine Give your rule a name."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Using the Hubitat Sonos Integration, you can control the volume and playback functions of your Sonos speakers, plus send voice notifications using the built-in Text to Speech (TTS) capabilities of your Hubitat Elevation hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the Hubitat Sonos Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Choose Sonos Integration from the list of Built-In Apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chromecast-native",
+      "name": "Chromecast Integration",
+      "vendor": "Google",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Chromecast",
+          "confidence": 95
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Chromecast",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Google Cast Device",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_CAST",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "chromecast-plus",
+      "name": "Google Chromecast+",
+      "vendor": "Google",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Chromecast+",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Chromecast+",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Google Cast Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_CAST",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "home-assistant-hadb",
+      "name": "Home Assistant Device Bridge",
+      "vendor": "Home Assistant",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Home Assistant Device Bridge",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HADB",
+          "confidence": 95
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Home Assistant Device Bridge",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Home Assistant",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "home-assistant-makerapi",
+      "name": "Home Assistant via Maker API",
+      "vendor": "Home Assistant",
+      "class": "INTEGRATION_MAPPING",
+      "origin": "USER_OR_HEURISTIC",
+      "status": "MANUAL_CONFIRMATION_RECOMMENDED",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Maker API",
+          "confidence": 100
+        },
+        {
+          "field": "userMapping",
+          "operator": "equals",
+          "value": "Home Assistant",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Home Assistant",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "LAN_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "homebridge-makerapi",
+      "name": "Homebridge via Maker API",
+      "vendor": "Homebridge",
+      "class": "INTEGRATION_MAPPING",
+      "origin": "USER_OR_HEURISTIC",
+      "status": "MANUAL_CONFIRMATION_RECOMMENDED",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Maker API",
+          "confidence": 100
+        },
+        {
+          "field": "userMapping",
+          "operator": "equals",
+          "value": "Homebridge",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Homebridge",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "LAN_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "hubithings-replica",
+      "name": "HubiThings Replica",
+      "vendor": "SmartThings",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HubiThings Replica",
+          "confidence": 100
+        },
+        {
+          "field": "namespace",
+          "operator": "equals",
+          "value": "replica",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Replica",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SmartThings Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "OAUTH_HTTPS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "hubconnect",
+      "name": "HubConnect",
+      "vendor": "Hubitat Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HubConnect",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "HubConnect",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Remote Hubitat / SmartThings Hub",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_OR_CLOUD",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NOT_IN_INDEX_CRAWLER_LIMITATION: its repository is published over http, which the crawler rejects. Absence here is not evidence the entry is wrong."
+    },
+    {
+      "id": "hub-mesh",
+      "name": "Hub Mesh",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "deviceMetadata",
+          "operator": "contains",
+          "value": "Hub Mesh",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Hub Mesh",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Remote Hubitat Hub",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "maker-api",
+      "name": "Maker API",
+      "vendor": "Hubitat",
+      "class": "GATEWAY",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Maker API",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "External API Consumer",
+          "class": "UNKNOWN_EXTERNAL",
+          "edgeType": "EXPOSES_TO",
+          "transport": "HTTP_LAN_OR_CLOUD",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Requires user mapping or endpoint inference for consumer identity"
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/maker-api",
+          "title": "Maker API",
+          "matchedBy": "Maker API",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "(A Maker API instance can be configured to allow LAN-only access, cloud-only access, or both.) NOTE: Your access token is an authorization token, similar to a username and password."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Doing so will require reconfiguration (by replacing the old access token with the new one) on the external system/application/etc."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "To reset your access token, use the Create New Access Token option the app (or create a new Maker API instance and then remove this one)."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Choose Maker API from the list of Hubitat Elevation built-in apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Most built-in drivers have a namespace of \"hubitat\", and the name is as found in the \"Type\" dropdown on the device detail page."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Maker API From the sidebar of your hub, select Apps and then select Add App (or Add Built-In App)."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "(A Maker API instance can be configured to allow LAN-only access, cloud-only access, or both.) NOTE: Your access token is an authorization token, similar to a username and password."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Each endpoint URL is made up of the following segments: http://[hub_ip_address]/apps/api/[app_id]/[endpoint_path]?access_token=[access_token] for local endpoints, or similar Internet-accessible URLs for cloud endpoints."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mqtt-native",
+      "name": "Hubitat MQTT Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "MQTT",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Broker may be hub-local or external; registry instance setting should override"
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "mqtt-link",
+      "name": "MQTT Link",
+      "vendor": "Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "MQTT Link",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "MQTT Link",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "simple-mqtt-client",
+      "name": "Simple MQTT Client",
+      "vendor": "Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Simple MQTT",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Simple MQTT",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "node-red",
+      "name": "Node-RED",
+      "vendor": "OpenJS / Community",
+      "class": "EXTERNAL_PLATFORM_MAPPING",
+      "origin": "USER_OR_HEURISTIC",
+      "status": "MANUAL_CONFIRMATION_RECOMMENDED",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "field": "userMapping",
+          "operator": "equals",
+          "value": "Node-RED",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Node-RED",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API_OR_MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "tasmota",
+      "name": "Tasmota Integration",
+      "vendor": "Tasmota",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Tasmota",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Tasmota",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Tasmota Device",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_HTTP_OR_MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "esphome",
+      "name": "ESPHome Integration",
+      "vendor": "ESPHome",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "ESPHome",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "ESPHome",
+          "confidence": 95
+        },
+        {
+          "field": "namespace",
+          "operator": "contains",
+          "value": "esphome",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "ESPHome Node",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_NATIVE_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "homekit-controller",
+      "name": "HomeKit Controller",
+      "vendor": "Apple ecosystem",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HomeKit Controller",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "HomeKit Controller",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "HomeKit Accessory",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "HOMEKIT_HAP_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "homekit-import",
+      "name": "HomeKit Import",
+      "vendor": "Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HomeKit Import",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "HomeKit Accessory",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "LAN HomeKit Accessory",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "HOMEKIT_HAP_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NEEDS_REVIEW: HPM package is \"HomeKit Import (Local)\" with drivers prefixed \"HomeKit HAP\". Registry values may be stale."
+    },
+    {
+      "id": "homekit-bridge",
+      "name": "HomeKit Bridge",
+      "vendor": "Hubitat / Apple",
+      "class": "GATEWAY",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "HomeKit Bridge",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Apple Home",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "HOMEKIT_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/homekit-integration",
+          "title": "HomeKit Bridge",
+          "matchedBy": "HomeKit Bridge",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "HomeKit Bridge | Hubitat Documentation The built-in HomeKit Bridge integration app (formerly called \"HomeKit Integration\") allows you to share devices from your Hubitat Elevation hub to Apple HomeKit®."
+            },
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "¶ Disabling HomeKit Bridge To disable the HomeKit Bridge integration app, return to the HomeKit Bridge app by navigating to Apps > HomeKit Integration."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "HomeKit Bridge | Hubitat Documentation The built-in HomeKit Bridge integration app (formerly called \"HomeKit Integration\") allows you to share devices from your Hubitat Elevation hub to Apple HomeKit®."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing HomeKit Bridge From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select HomeKit Bridge from the list of built-in apps."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Restart hourly: Restarts the HomeKit integration on the hub once per hour (can be used to workaround recurring \"not responding\" problems in Home app if a Restart integration above fixes the problem) Export mode switch: Adds a switch with the ability to change hub modes to HomeKit."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "This allows use of the Apple Home app or Siri® with devices from your Hubitat hub that do not natively support HomeKit."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "This allows you to: export it as a different type of device (e.g., a switch instead of a dimmer if you need only on/off and not level control); and/or remove certain capabilities (e.g., temperature from a motion sensor if you only care about motion)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-home",
+      "name": "Google Home",
+      "vendor": "Google",
+      "class": "GATEWAY",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Google Home",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Google Home / Assistant Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/google-home",
+          "title": "Google Home",
+          "matchedBy": "Google Home",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": []
+        }
+      ]
+    },
+    {
+      "id": "amazon-echo-skill",
+      "name": "Amazon Echo Skill",
+      "vendor": "Amazon",
+      "class": "GATEWAY",
+      "origin": "HUBITAT_NATIVE",
+      "status": "VERIFIED_CORE",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Amazon Echo Skill",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Amazon Alexa Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/amazon-echo-skill",
+          "title": "Amazon Echo Skill",
+          "matchedBy": "Amazon Echo Skill",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BRIDGE_BEHAVIOUR",
+              "evidence": "These devices are excluded by default because a Hue Bridge also offers direct Alexa integration, and we suggest using that if possible in your environment."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Consult this Amazon support document for how: https://www.amazon.com/gp/help/customer/display.html?nodeId=G63YSH7WU32D9GW9."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echo-speaks",
+      "name": "Echo Speaks",
+      "vendor": "Amazon / Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Echo Speaks",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Echo Speaks",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Echo Speaks",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Amazon Alexa Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "unifi-network",
+      "name": "UniFi Network Integration",
+      "vendor": "Ubiquiti",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "UniFi Network",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "UniFi Network",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "UniFi Network Controller",
+          "class": "LOCAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NEEDS_REVIEW: HPM spells it \"Unifi\", lower-case f, in package \"UniFi-Driver\"."
+    },
+    {
+      "id": "unifi-protect",
+      "name": "UniFi Protect Integration",
+      "vendor": "Ubiquiti",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "UniFi Protect",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "UniFi Protect",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "UniFi Protect Controller",
+          "class": "LOCAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "reolink",
+      "name": "Reolink Integration",
+      "vendor": "Reolink",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Reolink Integration",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Reolink",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Reolink Camera / NVR / Home Hub",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "dahua-amcrest",
+      "name": "Dahua / Amcrest Integration",
+      "vendor": "Dahua / Amcrest",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Dahua",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Dahua",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Amcrest",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Dahua / Amcrest Camera",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "ring",
+      "name": "Ring Integration",
+      "vendor": "Amazon Ring",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Ring",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Ring",
+          "confidence": 85
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Ring Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "rachio",
+      "name": "Rachio Integration",
+      "vendor": "Rachio",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Rachio",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Rachio",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Rachio Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "sensibo",
+      "name": "Sensibo Integration",
+      "vendor": "Sensibo",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Sensibo",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Sensibo",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Sensibo Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "konnected",
+      "name": "Konnected Integration",
+      "vendor": "Konnected",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Konnected",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Konnected",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Konnected Panel",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "insteon",
+      "name": "Insteon Integration",
+      "vendor": "Insteon",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Insteon",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Insteon",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Insteon Hub / PLM Gateway",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NOT_IN_INDEX: nothing matching found in 900 HPM packages."
+    },
+    {
+      "id": "honeywell-tcc",
+      "name": "Honeywell Total Connect Comfort",
+      "vendor": "Resideo / Honeywell",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Total Connect Comfort",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Honeywell TCC",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Total Connect Comfort",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Honeywell / Resideo Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN",
+      "verification": "NEEDS_REVIEW: no package matched. HPM has Honeywell T6 Pro and Envisalink packages, which are different things."
+    },
+    {
+      "id": "smarthq",
+      "name": "GE Appliances SmartHQ",
+      "vendor": "GE Appliances",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "SmartHQ",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "SmartHQ",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SmartHQ Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "home-connect",
+      "name": "Home Connect Integration",
+      "vendor": "BSH Home Appliances",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Home Connect",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Home Connect",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Home Connect Cloud",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "OAUTH_HTTPS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE"
+    },
+    {
+      "id": "ambient-weather",
+      "name": "Ambient Weather Integration",
+      "vendor": "Ambient Weather",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Ambient Weather",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Ambient Weather",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Ambient Weather Platform",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE"
+    },
+    {
+      "id": "weatherflow",
+      "name": "WeatherFlow Integration",
+      "vendor": "WeatherFlow",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "WeatherFlow",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "WeatherFlow",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "WeatherFlow Station / Service",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "LAN_OR_HTTPS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "volvo-cars",
+      "name": "Volvo Cars Integration",
+      "vendor": "Volvo",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Volvo",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Volvo",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Volvo Cars API",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "HTTPS_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE",
+      "verification": "NOT_IN_INDEX: nothing matching found in 900 HPM packages."
+    },
+    {
+      "id": "owntracks",
+      "name": "OwnTracks Integration",
+      "vendor": "OwnTracks",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "OwnTracks",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "OwnTracks",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "OwnTracks Endpoint / MQTT Broker",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTP_OR_MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "webcore",
+      "name": "webCoRE",
+      "vendor": "Community",
+      "class": "AUTOMATION_ENGINE",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "webCoRE",
+          "confidence": 100
+        },
+        {
+          "field": "namespace",
+          "operator": "contains",
+          "value": "webcore",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "sharp-tools",
+      "name": "SharpTools",
+      "vendor": "SharpTools",
+      "class": "GATEWAY",
+      "origin": "COMMUNITY_OR_CLOUD",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "value": "SharpTools",
+          "confidence": 100,
+          "operator": "equals",
+          "field": "userMapping"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SharpTools Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT Integration",
+      "vendor": "IFTTT",
+      "class": "GATEWAY",
+      "origin": "HUBITAT_OR_COMMUNITY",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ALL",
+      "matchRules": [
+        {
+          "value": "IFTTT Integration",
+          "confidence": 100,
+          "operator": "equals",
+          "field": "userMapping"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "IFTTT Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "gmail-notification-gateway",
+      "name": "Gmail Notification Gateway",
+      "vendor": "Google",
+      "class": "GATEWAY",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_OWNER_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Gmail Notification Gateway",
+          "confidence": 100
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Gmail",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Google Apps Script",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "SENDS_TO",
+          "transport": "HTTPS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        },
+        {
+          "name": "Gmail",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "DEPENDS_ON",
+          "transport": "GOOGLE_SERVICE",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE"
+    },
+    {
+      "id": "bom-weather-alerts",
+      "name": "AU BOM Weather Alerts",
+      "vendor": "Bureau of Meteorology",
+      "class": "EXTERNAL_SERVICE_CONSUMER",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_OWNER_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "BOM Weather",
+          "confidence": 95
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Bureau of Meteorology",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Bureau of Meteorology",
+          "class": "EXTERNAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS_RSS",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE",
+      "verification": "NOT_IN_INDEX_BY_DESIGN: published on the author repo, not registered with HPM."
+    },
+    {
+      "id": "reolink-camera",
+      "name": "Reolink Camera/NVR Integration",
+      "vendor": "Reolink",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Reolink",
+          "confidence": 95
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Reolink",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Reolink LAN Endpoint",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "READS_FROM",
+          "transport": "LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "alarm-bridge",
+      "name": "Alarm Bridge",
+      "vendor": "Community",
+      "class": "INTEGRATION",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_COMMUNITY",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Alarm Bridge",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Alarm Bridge",
+          "confidence": 95
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Visonic",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Networx",
+          "confidence": 90
+        },
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Elk",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Alarm Panel / Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN_OR_SERIAL_GATEWAY",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "UNKNOWN"
+    },
+    {
+      "id": "matter-bridge",
+      "name": "Matter Bridge / Controller",
+      "vendor": "Matter ecosystem",
+      "class": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "COMMUNITY_SEED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "driverName",
+          "operator": "contains",
+          "value": "Matter",
+          "confidence": 85
+        },
+        {
+          "field": "deviceMetadata",
+          "operator": "contains",
+          "value": "Matter",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Matter Fabric / Bridge",
+          "class": "LOCAL_BRIDGE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "MATTER_IP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "mdns-discovery",
+      "name": "mDNS Discovery",
+      "vendor": "Generic",
+      "class": "DISCOVERY",
+      "origin": "COMMUNITY",
+      "status": "VERIFIED_OWNER_REPO",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "mDNS",
+          "confidence": 95
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Chromecast Discovery",
+          "confidence": 90
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "LAN mDNS / Hubitat mDNS Cache",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "OBSERVES",
+          "transport": "MDNS",
+          "runtimeCriticality": "DISCOVERY_ONLY",
+          "requiredForControl": false
+        }
+      ],
+      "sourceVisibility": "PUBLIC_SOURCE",
+      "verification": "NOT_IN_INDEX_BY_DESIGN: published on the author repo, not registered with HPM."
+    },
+    {
+      "id": "basic-rules",
+      "name": "Basic Rules",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Basic Rules",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "equals",
+          "value": "Basic Rules",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/basic-rules",
+          "title": "Basic Rules",
+          "matchedBy": "Basic Rules",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": []
+        }
+      ]
+    },
+    {
+      "id": "simple-automation-rules",
+      "name": "Simple Automation Rules",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Simple Automation Rules",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Simple Automation Rules",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/simple-automation-rules",
+          "title": "Simple Automation Rules",
+          "matchedBy": "Simple Automation Rules",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Simple Automation Rules From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Choose Simple Automation Rules from the list of built-in automation apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule-machine",
+      "name": "Rule Machine",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "value": "Rule-5.1",
+          "confidence": 100,
+          "operator": "equals",
+          "field": "appName"
+        },
+        {
+          "value": "Button Rule-5.1",
+          "confidence": 100,
+          "operator": "equals",
+          "field": "appName"
+        },
+        {
+          "value": "Rule-4.1",
+          "confidence": 90,
+          "operator": "equals",
+          "field": "appName"
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/rule-machine",
+          "title": "Rule Machine",
+          "matchedBy": "Rule Machine",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Before using Rule Machine, you may wish to consider if a built-in app (Motion Lighting, Notifier, etc., or Basic Rule for simpler custom automations) meets your needs."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Optionally, the value of the rule's built in %value% variable (normally set to the value of a trigger eevent) can be specified by providing a string instead of an action name, as with myValue in this example (note that this value must be URL-encoded and not conflict with the name of an action): http://192.168.0.36/apps/api/10249/trigger/myValue?access_token=ecd95469-bbcd-4889-a694-9b05ef80f4db Both HTTP GET and HTTP POST to the above endpoints are supported, with the same outcome for either."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Rule Machine | Hubitat Documentation ¶ Rule Machine Rule Machine is the most powerful built-in tool for creating custom automations in Hubitat Elevation."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "To accomplish this, you would create a trigger event with either \"Local End Point\" or \"Cloud End Point.\" The endpoint URL given by Rule Machine has a form similar to the following: http://192.168.0.36/apps/api/10249/trigger?access_token=ecd95469-bbcd-4889-a694-9b05ef80f4db To run rule actions the above URL must be modified to include the list of rules and the action."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Using Rule Machine from within other apps First, import the RM helper class into your app: import hubitat.helper.RMUtils ¶ The List of Rules Rule Machine maintains a list of available Rules, Triggers, Triggered Rules, and Actions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-rules-builder",
+      "name": "Visual Rules Builder",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Visual Rules Builder",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/visual-rule-builder",
+          "title": "Visual Rules Builder",
+          "matchedBy": "Visual Rules Builder",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Visual Rules Builder From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Choose Visual Rules Builder from the list of built-in automation apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-lighting",
+      "name": "Room Lighting",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Room Lighting",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Room Lighting",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/room-lighting",
+          "title": "Room Lighting",
+          "matchedBy": "Room Lighting",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "CHILD_DEVICE_BEHAVIOUR",
+              "evidence": "(This child device is also created when a Scene-1.2, Group-2.1 or Scene Transition app is imported into Room Lighting, and is used to activate the imported Scene, Group or Scene Transition — and is part of how Room Lighting can be used to replicate the behavior of these older apps.) When the activator device device is commanded, the Devices to Automate are given the same commands."
+            },
+            {
+              "type": "CHILD_DEVICE_BEHAVIOUR",
+              "evidence": "¶ Command with Activator Device When a name is entered in the Command with Activator Device field, Room Lights creates a special child device called a Room Lights Activator."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "However, when a device doesn't report reliably, this may cause problems."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "If the icon changes to X, the device did not report the expected change and may require special care when creating automations that depend on its state."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Not all devices support device-level fade time, but those that do will use this value."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "While ultimately dependent on device and driver behavior, this generally results in a smooth transition, though different devices and drivers may have different maximum times, and rare devices may not support this at all."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Allow devices on/off irrespective of reported state This option is used when there are devices that do not reliably report their on or off state."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion-lighting",
+      "name": "Motion Lighting",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_LEGACY_BUILTIN",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Motion Lighting",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Motion Lighting",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "notes": "Legacy/simple lighting automation retained for compatibility on some systems.",
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "button-controller",
+      "name": "Button Controller",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Button Controller",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Button Controller",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "notifications",
+      "name": "Notifications",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Notifications",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "equals",
+          "value": "Notifications",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/notifications",
+          "title": "Notifications",
+          "matchedBy": "Notifications",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "You may also add %device%, %value%, %text%, %time%, and %date% to include these built-in Notifier variables in the message."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the Notifications parent app From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Choose the Notifications app from the list of Elevation Built-In Apps ¶ Creating and configuring Notifier child apps Select Create New Notifier to start configuration of a Notifier \"child app.\" Name your Notifier child app."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thermostat-scheduler",
+      "name": "Thermostat Scheduler",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Thermostat Scheduler",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Thermostat Scheduler",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/thermostat-scheduler",
+          "title": "Thermostat Scheduler",
+          "matchedBy": "Thermostat Scheduler",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Thermostat Scheduler From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Choose Thermostat Schedulers from the list of Hubitat Elevation built-in automation apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power-energy-manager",
+      "name": "Power and Energy Manager",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Power and Energy Manager",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/power-energy-manager",
+          "title": "Power and Energy Manager",
+          "matchedBy": "Power and Energy Manager",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Power and Energy Manager | Hubitat Documentation ¶ Power and Energy Manager Power and Energy Manager is an app offering the creation of several different kinds of tools or automations related to power and energy, including: Load Shedding: Turn devices off when power exceeds threshold and optionally turn back on after time below Maximum Usage: Turn devices off when power consumption, energy usage, or time on exceeds threshold Power Aggregator: Combine power readings from multiple devices into one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zone-motion-controller",
+      "name": "Zone Motion Controllers",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "AUTOMATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "BUILTIN_SEED_VERIFY_RUNTIME",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Zone Motion",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Zone Motion",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "mode-manager",
+      "name": "Mode Manager",
+      "vendor": "Hubitat",
+      "class": "PLATFORM_UTILITY",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Mode Manager",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/mode-manager",
+          "title": "Mode Manager",
+          "matchedBy": "Mode Manager",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "The Hubitat mobile app has a built-in presence sensor, though there are a variety of other options."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "This document describes the built-in Mode Manager app on the Apps page."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "This document refers to the current version of the built-in Mode Manager app, not any of these other options."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the Mode Manager app From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Choose Mode Manager from the list of Hubitat Elevation built-in automation apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hubitat-safety-monitor",
+      "name": "Hubitat Safety Monitor",
+      "vendor": "Hubitat",
+      "class": "SECURITY_ORCHESTRATOR",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Hubitat Safety Monitor",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "HSM",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/hubitat-safety-monitor",
+          "title": "Hubitat® Safety Monitor",
+          "matchedBy": "Hubitat Safety Monitor",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "From the sidebar of your hub, select Apps and then Add Built-In App."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Selecting a device that does not support this capability may prevent other parts of your alerts from working as configured."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "You can select which lights you want to turn on (and if they are dimmable, you can choose the level), which lights you want to flash (if supported by the light), and which lights you want to turn on to a set color (for lights that support color changing)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "groups-scenes",
+      "name": "Groups and Scenes",
+      "vendor": "Hubitat",
+      "class": "VIRTUALISATION_ORCHESTRATOR",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Groups and Scenes",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Groups and Scenes",
+          "confidence": 80
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Scene",
+          "confidence": 80
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/groups-and-scenes",
+          "title": "Groups and Scenes",
+          "matchedBy": "Groups and Scenes",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Hubitat Groups and Scenes From the sidebar of your hub, select Apps and press the Add Built-In App button."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "(This option can still be enabled even if the group contains non-Zigbee devices; Hubitat will still use Zigbee group messaging on the devices that support it.) Select group device type: determines the capabilities exposed by the group device the app creates."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Enable on/off optimization: if enabled, will not send \"on\" commands to member devices that already report as on and will not send \"off\" commands to member devices that already report as \"off.\" (May reduce network traffic, but may cause unexpected results if devices do not accurately report state to hub.) Enable metering: allows you to specify a delay, in milliseconds, between commands (may help avoid problems if devices respond poorly due to too many successive commands on network, but may incre"
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "For lights that support the feature, you may enter a transition time to allow gradual dimming Enabling the Ignore activate switch off feature will prevent scenes from being turned off."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hubitat-dashboard",
+      "name": "Hubitat Dashboard",
+      "vendor": "Hubitat",
+      "class": "DASHBOARD",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Hubitat Dashboard",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/hubitat-dashboard",
+          "title": "Hubitat® Dashboard",
+          "matchedBy": "Hubitat Dashboard",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "NOTE: Each User and Dashboard combination assigned will have a unique access token in the URL."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "NOTE: If you press Reset Access Token in a Dashboard child app settings page, the Local and Cloud Dashboard Direct Links for that particular Dashboard will be invalid and you will need to repair your bookmarks with new Dashboard Direct Links."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Reset Access Token in the Dashboard parent app settings will generate new a new token for the Local and Cloud Dashboard Menu links."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Choose the Hubitat Dashboard from the list of Hubitat Elevation Built-In Apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing Hubitat Dashboard From the sidebar of your hub, select Apps and press the Add Built-In App button."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "A convenient QR code may be captured by mobile devices to grant access for the assigned Local and Cloud Dashboards on a per-user basis."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Access for a specific Dashboard via Cloud Links and Local Links can be disabled."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Access to Dashboard Direct Local and Cloud links of a specific Dashboard can be revoked, requiring that a new link be copied."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Cloud Links are remotely accessible URLs that allow secure access to your Dashboard from anywhere."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Cloud and LAN Refresh Intervals - Set these to determine how fast the Dashboard will poll to show updates on screen."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Dashboard Direct Local and Cloud URL links may be copied and opened from the Dashboard Child app settings."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "NOTE: If you press Reset Access Token in a Dashboard child app settings page, the Local and Cloud Dashboard Direct Links for that particular Dashboard will be invalid and you will need to repair your bookmarks with new Dashboard Direct Links."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Reset Access Token in the Dashboard parent app settings will generate new a new token for the Local and Cloud Dashboard Menu links."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "The Cloud Dashboards Menu is indicated by a cloud icon and does not include the capability to add new dashboards."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Using a mobile device, you can capture the QR code for Dashboard Local and Cloud links, or you can copy the URL from the link above each QR code."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "¶ Advanced Options Change how fast the Dashboard should refresh via Cloud and Local links."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "¶ Dashboard Menu and Links If you need to copy links to the Local and Cloud Dashboard Menus, or links to individual Dashboards, you will find them conveniently located under Dashboard Menu and Links."
+            },
+            {
+              "type": "WEBSOCKET_BEHAVIOUR",
+              "evidence": "NOTE: LAN Refresh interval adjustment is only needed when a Dashboard can’t connect via websocket."
+            },
+            {
+              "type": "WEBSOCKET_BEHAVIOUR",
+              "evidence": "Under normal circumstances, connections over websocket should update instantly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-dashboard",
+      "name": "Easy Dashboard",
+      "vendor": "Hubitat",
+      "class": "DASHBOARD",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Easy Dashboard",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/easy-dashboard",
+          "title": "Easy Dashboard",
+          "matchedBy": "Easy Dashboard",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Access to any Easy Dashboard available locally or remotely via either local or remote/cloud URLs you can open in your favorite browser or the Hubitat Elevation mobile app."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "webcore-native",
+      "name": "webCoRE",
+      "vendor": "Hubitat",
+      "class": "AUTOMATION_ENGINE",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_BUILTIN",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "webCoRE",
+          "confidence": 100
+        },
+        {
+          "field": "namespace",
+          "operator": "contains",
+          "value": "webcore",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/webcore",
+          "title": "webCoRE",
+          "matchedBy": "webCoRE",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Built-In App Previously, webCoRE was available only by manually installing it as a user (custom) app."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "For more information on migration, see: https://community.hubitat.com/t/webcore-built-in-on-hubitat-do-i-need-to-transition-and-how/108929 ¶ webCoRE vs."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "However, using the built-in app means you no longer need to install or update the app on your own, so some users may choose to migrate."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Hubitat offers a lot of other built-in apps that can be used to create automations, many of which are simpler to configure — and you may wish to consider some of these before moving to a complex tool like either of these."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "webCoRE, while now built in, was developed and is maintained by volunteer community developers."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing webCoRE From the sidebar of your hub, navigate to Automations and select Add Automation or Add Built-In Automation: Select webCoRE from the list of Hubitat Elevation built-in automation apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lock-code-manager",
+      "name": "Lock Code Manager",
+      "vendor": "Hubitat",
+      "class": "PLATFORM_UTILITY",
+      "hubitatCategory": "APP",
+      "origin": "HUBITAT_NATIVE",
+      "status": "BUILTIN_SEED_VERIFY_RUNTIME",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Lock Code Manager",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/lock-code-manager",
+          "title": "Lock Code Manager",
+          "matchedBy": "Lock Code Manager",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Lock Code Manager | Hubitat Documentation ¶ Lock Code Manager ¶ Installing Lock Code Manager From the sidebar of your hub, select Apps and then Add App or Add Built-In App: Choose Lock Code Manager from the list of Hubitat Elevation built-In apps."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "NOTE: Please remember that while locks may support up to 8 digits, most standalone keypads only support 4 digit codes."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "NOTE: Some locks, including Schlage locks we have tested, do not allow the export of any existing codes."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Renaming users On first run, Lock Code Manager attempts to automatically import existing codes from your locks and keypads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-mcp-connector",
+      "name": "AI (MCP) Connector Integration",
+      "vendor": "Hubitat",
+      "class": "GATEWAY",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "AI (MCP) Connector",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "MCP Connector",
+          "confidence": 95
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MCP Client / AI Platform",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "MCP_HTTP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/ai-mcp-connector-integration",
+          "title": "AI (MCP) Connector Integration",
+          "matchedBy": "AI (MCP) Connector Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "AI (MCP) Connector Integration | Hubitat Documentation The built-in AI (MCP) Connector Integration app allows compatible local AI assistants to access your Hubitat hub, ¶ Installing AI (MCP) Connector Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select AI (MCP) Connector Integration from the list of built-in integration apps."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "¶ Configuring AI (MCP) Connector Integration The app UI will provide the information you need to connect to local AI agents (cloud agents are not supported at this time, but note that only the agent needs to be be accessible locally), including the local MCP server URL and configuration examples for common AI agents."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bluetooth-integration",
+      "name": "Bluetooth Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Bluetooth Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Bluetooth LE Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "BRIDGES_TO",
+          "transport": "BLE",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/bluetooth-integration",
+          "title": "Bluetooth Integration",
+          "matchedBy": "Bluetooth Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "At the moment, the integration supports BTHome V2 format devices, with popular off-the-shelf products including most Shelly Bluetooth devices but also many DIY devices (although as with any device, a compatible driver is required; see the List of Compatible Devices for built-in options)."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Bluetooth Integration | Hubitat Documentation ¶ Bluetooth Integration The built-in Bluetooth Integration app allows you to add compatible BLE (Bluetooth Low Energy) devices to your hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the Bluetooth Integration app From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select Bluetooth Integration from the list of built-in apps."
+            },
+            {
+              "type": "PLATFORM_REQUIREMENT",
+              "evidence": "This integration requires hub model C-8 Pro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rtsp-camera-integration",
+      "name": "RTSP Camera Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "RTSP Camera Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "RTSP Camera / NVR",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "READS_FROM",
+          "transport": "RTSP_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/rtsp-camera-integration",
+          "title": "RTSP Camera Integration",
+          "matchedBy": "RTSP Camera Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "RTSP Camera Integration | Hubitat Documentation The built-in RTSP Camera Integration app allows integrating compatible RTSP or ONVIF cameras to your hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing RTSP Camera Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select RTSP Camera Integration from the list of built-in integration apps."
+            },
+            {
+              "type": "CLOUD_BEHAVIOUR",
+              "evidence": "Note that: These streams will only show when viewing the local dashboard (there is no cloud relay functionality at the moment) Video streaming to dashboards is a somewhat intensive process for the hub, and we suggest limiting the number of cameras streaming at one time for this reason."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Configuring RTSP Camera Integration To add a camera, select Rerun discovery (to discover compatible devices on your network) or Add device manually (to add by IP address with other device-specific configuration)."
+            },
+            {
+              "type": "PLATFORM_REQUIREMENT",
+              "evidence": "This integration requires hub model C-8 Pro or newer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "govee-lan-native",
+      "name": "Govee LAN Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Govee LAN Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "Govee LAN Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Govee LAN Devices",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "LAN_UDP",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE"
+    },
+    {
+      "id": "unifi-network-native",
+      "name": "UniFi Network Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "UniFi Network Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "UniFi Network Controller",
+          "class": "LOCAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS_LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/unifi-network-integration",
+          "title": "UniFi Network Integration",
+          "matchedBy": "UniFi Network Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Provide a name for your new API key, such as \"Hubitat UniFi Network Integration\" in the API Key Name field, select an expiration time period if desired (if not \"Never Expires,\" you will need to remember to renew and reconfigure the integration before this time), and then select Create API key."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Under API key, Enter your UniFi Network API key."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "(We welcome feedback on beta or Early Access versions of UniFi Network but do not recommend them for production use with this integration.) ¶ Installing the UniFi Network Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select UniFi Network Integration from the list of built-in apps."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Commands include: restart(): restarts the device powerCyclePort(number): power cycles PoE on the specified port number (this, of course, will only work on devices that have PoE and have it on the specified port) ¶ Polling The UniFi Network application/console does not report data to Hubitat in real time, i.e., with every change."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Enter only the IP address (e.g., 192.168.100.1)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Events (and current states) available on client devices include: clientName: Name as reported by UniFi Network connectedAt: Timestamp of this value as reported by UniFi Network (or most recent value if not currently connected) ipAddress: IP address of this client (or last known if not currently connected) macAddress: MAC address of this client presence: set to present if device is in list of currently connected UniFi Network clients, otherwise not present."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "On UniFi Network devices: Events (and current states) include: ipAddress: IP address of this device (or last known if not currently connected); UniFi has not documented the specific expectation as far as we can tell, but our testing shows that this is the internal IP address for most devices but the public IP address for gateway-type devices macAddress: MAC address of this device networkStatus: set to the state of the device as reported by UniFi Network, one of online, offline, pendingAdoption, "
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Under UniFi Network application IP address, enter the IP address of your UniFi Network application, typically a UniFi console hosting this application on your LAN."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unifi-protect-native",
+      "name": "UniFi Protect Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "UniFi Protect Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "UniFi Protect Controller",
+          "class": "LOCAL_SERVICE",
+          "edgeType": "READS_FROM",
+          "transport": "HTTPS_LAN_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/unifi-protect-integration",
+          "title": "UniFi Protect Integration",
+          "matchedBy": "UniFi Protect Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "If you lose the key, you will need to generate a new key by repeating the steps above.) Select Update (button under the API Key text field) in the UniFi Protect Integration app to save your changes and attempt connecting to your UniFi Protect system."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Select Create API key."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Select Done to save the API key on your UniFi Protect application."
+            },
+            {
+              "type": "AUTHENTICATION_BEHAVIOUR",
+              "evidence": "Under API key, Enter your UniFi Protect API key, generated according to the instructions under Settings (gear icon) > Control Plane > Integrations > Getting Started in your UniFi Protect application's web interface."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing the UniFi Protect Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select UniFi Protect Integration from the list of built-in apps."
+            },
+            {
+              "type": "CHILD_DEVICE_BEHAVIOUR",
+              "evidence": "A \"Refresh\" command on the UniFi NVR child device may also be used on demand instead of a scheduled poll."
+            },
+            {
+              "type": "CHILD_DEVICE_BEHAVIOUR",
+              "evidence": "After the first ring of the doorbell, a button device will be created as a child device of the camera device."
+            },
+            {
+              "type": "CHILD_DEVICE_BEHAVIOUR",
+              "evidence": "If you do not wish for this child device to be created, enable the If doorbell, do not automatically create child device for doorbell button preference on the camera device."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "A hostname may work but has not been tested."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Enter only the IP address (e.g., 192.168.100.2)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Under UniFi Protect Console IP address, Enter the IP address of your UniFi Protect console, typically your UniFi NVR or similar console hosting your UniFi Protect instance."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "We suggest reserving an IP address for your UniFi NVR (or other Protect installation)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "preference on the camera device on your hub to report motion active any time the camera detects motion (the default setting), any time it detects a Smart Detection, or restrict motion active reporting to only specific Smart Detection events, such as detecting a person."
+            },
+            {
+              "type": "PLATFORM_REQUIREMENT",
+              "evidence": "¶ Requirements This integration requires version 5.3.38 or greater of the Protect application."
+            },
+            {
+              "type": "WEBSOCKET_BEHAVIOUR",
+              "evidence": "HTTPS or secure websockets are used internally by the integration."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homekit-controller-native",
+      "name": "HomeKit Controller Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "HomeKit Controller Integration",
+          "confidence": 100
+        },
+        {
+          "field": "parentAppName",
+          "operator": "contains",
+          "value": "HomeKit Controller",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "HomeKit Accessory",
+          "class": "LOCAL_DEVICE",
+          "edgeType": "CONTROLS",
+          "transport": "HOMEKIT_HAP_LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/homekit-controller-integration",
+          "title": "HomeKit Controller",
+          "matchedBy": "HomeKit Controller",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installing HomeKit Controller Integration From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select HomeKit Controller Integration from the list of built-in apps."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "TIP: Combining the two facts above means that, while you cannot share a HomeKit device to Hubitat (or pair it with both systems simultaneously), you can pair the HomeKit device to Hubitat with HomeKit Controller and then export it to Apple Home with HomeKit Bridge, ultimately allowing use of the device in both systems if that is your goal."
+            },
+            {
+              "type": "PLATFORM_REQUIREMENT",
+              "evidence": "This feature is available only on hub model C-8 Pro only and requires platform version 2.4.2 or later."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mqtt-export-native",
+      "name": "MQTT Export Integration",
+      "vendor": "Hubitat",
+      "class": "GATEWAY",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "MQTT Export Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "EXPOSES_TO",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Broker can be hub-local or external depending configuration."
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/mqtt-export-integration",
+          "title": "MQTT Export Integration",
+          "matchedBy": "MQTT Export Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "(Keep in mind that the built-in broker will also be restarted when your hub reboots.) If you wish to publish device states over MQTT or control devices over MQTT, select devices from either the Select read only devices or Select CONTROLLABLE devices list."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "If you prefer to use the internal MQTT broker, enable the Use built-in MQTT service option."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "The integration will be automatically configured to use the built-in broker if enabled."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Additional Options Publish Home Assistant MQTT device discovery info: will additionally publish device events in Home Assistant MQTT discovery format, allowing exporting Hubitat devices into Home Assistant using the built-in Home Assistant MQTT integration."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker (this may make sense if Hubitat is your only use for the MQTT broker)."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installation To install: From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select MQTT Export Integration from the list."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "If using an external MQTT broker, provide the host (e.g., 192.168.1.5), port (often 1883 for plain or 8883 for SSL/TLS), and — if necessary for your MQTT broker — the username and password."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "If you prefer to use the internal MQTT broker, enable the Use built-in MQTT service option."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker (this may make sense if Hubitat is your only use for the MQTT broker)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "If using an external MQTT broker, provide the host (e.g., 192.168.1.5), port (often 1883 for plain or 8883 for SSL/TLS), and — if necessary for your MQTT broker — the username and password."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "MQTT Export Integration | Hubitat Documentation The MQTT Export Integration allows publishing device events and receiving device commands over MQTT, a lightweight IoT messaging protocol."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "NOTE: The MQTT Export Integration app is currently in beta."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The broker will also be accessible on your network for other uses at the provided IP address and credentials."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "To enable, select the Enable link at the top of the MQTT Export Integration app."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker (this may make sense if Hubitat is your only use for the MQTT broker)."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Installation To install: From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select MQTT Export Integration from the list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mqtt-import-native",
+      "name": "MQTT Import Integration",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "MQTT Import Integration",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MQTT Broker",
+          "class": "INFRASTRUCTURE",
+          "edgeType": "READS_FROM",
+          "transport": "MQTT",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true,
+          "purpose": "Broker can be hub-local or external depending configuration."
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/mqtt-import-integration",
+          "title": "MQTT Import Integration",
+          "matchedBy": "MQTT Import Integration",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "(Keep in mind that the built-in broker will also be restarted when your hub reboots.) To map MQTT data to a device on Hubitat, select the Map a device link under the broker from which the device data comes."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "If you prefer to use the internal MQTT broker, enable the Use built-in MQTT service option."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "The built-in broker will also be accessible on your network for other uses at the provided IP address and credentials."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "The integration will be automatically configured to use the built-in broker if it is enabled, although you can also use Add connection to add additional brokers, as described above, if needed."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker that will run on your hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Installation To install: From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select MQTT Import Integration from the list."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "If you prefer to use the internal MQTT broker, enable the Use built-in MQTT service option."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "MQTT Import Integration | Hubitat Documentation The MQTT Import Integration allows connecting to an MQTT broker (MQTT is a lightweight IoT messaging protocol) to receive device status updates or control devices exposed over this interface."
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "Select Add connection to add your first (or only) connection to an external MQTT broker, then provide the requested information: Connection name: name of your choice (the integration supports multiple connections; this name is for your reference) Broker host: the host (e.g., 192.168.1.5) Broker port: the port (often 1883 for plain or 8883 for SSL/TLS) MQTT username and MQTT password: Provide if necessary for your MQTT broker Select Add connection when all fields are filled out correctly, then se"
+            },
+            {
+              "type": "MQTT_BROKER",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker that will run on your hub."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "In some sense, this integration is similar to MQTT Export integration but in the other direction, i.e., when the \"real\" device (where state is coming from or commands going to) exists outside your Hubitat hub."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "MQTT Import Integration | Hubitat Documentation The MQTT Import Integration allows connecting to an MQTT broker (MQTT is a lightweight IoT messaging protocol) to receive device status updates or control devices exposed over this interface."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "NOTE: The MQTT Import Integration app is currently in beta."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Select Add connection to add your first (or only) connection to an external MQTT broker, then provide the requested information: Connection name: name of your choice (the integration supports multiple connections; this name is for your reference) Broker host: the host (e.g., 192.168.1.5) Broker port: the port (often 1883 for plain or 8883 for SSL/TLS) MQTT username and MQTT password: Provide if necessary for your MQTT broker Select Add connection when all fields are filled out correctly, then se"
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The built-in broker will also be accessible on your network for other uses at the provided IP address and credentials."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "To enable, select the Enable link at the top of the MQTT Import Integration app."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Configuration To use the MQTT Export integration: Decide whether you want to use an external MQTT broker (recommended) or enable the built-in MQTT broker that will run on your hub."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Installation To install: From the sidebar of your hub, navigate to Integrations and select Add Integration or Add Built-In Integration: Select MQTT Import Integration from the list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharptools-native",
+      "name": "SharpTools",
+      "vendor": "Hubitat",
+      "class": "GATEWAY",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_DOC_VERIFIED",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "SharpTools",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "SharpTools Cloud",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "EXPOSES_TO",
+          "transport": "CLOUD_API",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/sharptools",
+          "title": "SharpTools",
+          "matchedBy": "SharpTools",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": []
+        }
+      ]
+    },
+    {
+      "id": "hub-link-native",
+      "name": "Hub Link",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_LEGACY_BUILTIN",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Hub Link",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Hub Link",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Remote Hubitat Hub",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/hub-link",
+          "title": "Hub Link",
+          "matchedBy": "Hub Link",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Choose the Hub Link from the list of Hubitat Elevation Built-In Apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Devices on the Remote hub are shared with Hub Link on the Master hub by using a second built-in app named Link to Hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Here's how to get started with Hub Link: ¶ Installing Hub Link From the sidebar of your hub, select Apps and then select Add Built-In App."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "This is accomplished with the built-in app called Hub Link which is installed on the Master hub."
+            },
+            {
+              "type": "LOCAL_NETWORK_BEHAVIOUR",
+              "evidence": "When two Hubitat Elevation hubs run on the same local network, it is possible to view and control devices from one hub, on the other."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "The IP address for each Hubitat Elevation or SmartThings remote hub will be shown in Hub Link as Current linked hub IPs."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "¶ Configuring Hub Link Enter the IP address of the remote hub in the Hub Link settings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "link-to-hub-native",
+      "name": "Link to Hub",
+      "vendor": "Hubitat",
+      "class": "INTEGRATION",
+      "hubitatCategory": "INTEGRATION",
+      "origin": "HUBITAT_NATIVE",
+      "status": "OFFICIAL_LEGACY_BUILTIN",
+      "matchMode": "ANY",
+      "matchRules": [
+        {
+          "field": "appName",
+          "operator": "equals",
+          "value": "Link to Hub",
+          "confidence": 100
+        },
+        {
+          "field": "appName",
+          "operator": "contains",
+          "value": "Link to Hub",
+          "confidence": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Remote Hubitat Hub",
+          "class": "EXTERNAL_PLATFORM",
+          "edgeType": "BRIDGES_TO",
+          "transport": "LAN",
+          "runtimeCriticality": "RUNTIME",
+          "requiredForControl": true
+        }
+      ],
+      "sourceVisibility": "CLOSED_NATIVE",
+      "documentationEvidence": [
+        {
+          "sourceType": "HUBITAT_OFFICIAL_DOC",
+          "url": "https://docs2.hubitat.com/en/apps/link-to-hub",
+          "title": "Link to Hub",
+          "matchedBy": "Link to Hub",
+          "matchMode": "EXACT_NORMALISED",
+          "observations": [
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "Choose Link to Hub from the list of built-in apps."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "From the sidebar of your hub, select Apps and then select Add Built-In App."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "On the Master hub, this is accomplished with the built-in app called Hub Link, which can be used to link devices on a SmartThings hub, to a Hubitat Elevation hub, and can also share devices from between two or more Hubitat Elevation hubs, with the help of an app named Link to Hub."
+            },
+            {
+              "type": "BUILT_IN_STATUS",
+              "evidence": "¶ Configuring Link to Hub On the Hubitat Elevation Remote hub, install and setup the built-in app, Link to Hub."
+            },
+            {
+              "type": "LOCAL_NETWORK_BEHAVIOUR",
+              "evidence": "NOTE: Hubs must be on the same Local Area Network and must share the same subnet."
+            },
+            {
+              "type": "LOCAL_NETWORK_BEHAVIOUR",
+              "evidence": "When two Hubitat Elevation hubs run on the same local network, it is possible to view and control devices from one hub, on the other."
+            },
+            {
+              "type": "NETWORK_ENDPOINT_BEHAVIOUR",
+              "evidence": "Enter the IP address of the Master Hub, which is the hub you will be sharing devices with."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceVisibilityValues": {
+    "PUBLIC_SOURCE": "Public implementation source is explicitly evidenced by a verified repository/source record.",
+    "MANIFEST_ONLY": "Public package or manifest metadata is evidenced, but implementation source has not been verified as available/inspected.",
+    "CLOSED_NATIVE": "Hubitat-native implementation whose internal Groovy source is not publicly exposed through HPM.",
+    "UNKNOWN": "Source visibility cannot be established from the available evidence without inference."
+  },
+  "documentationEvidencePolicy": {
+    "HUBITAT_OFFICIAL_DOC": "Statements harvested from docs2.hubitat.com. They are evidence observations only and are not automatically converted into dependencies.",
+    "matching": "Exact normalised identity is preferred. The only fallback removes a trailing Integration/App suffix and must resolve to exactly one page."
+  },
+  "validatedAgainst": {
+    "source": "https://github.com/GordonThelander/HPM_Manifest_Crawl",
+    "repositories": 216,
+    "packages": 900,
+    "note": "HPM identity index only. Hubitat built-in apps are not published to HPM, so absence from the index is not evidence an entry is wrong.",
+    "snapshot": "2026-08-13T02:00:24Z"
+  }
+}

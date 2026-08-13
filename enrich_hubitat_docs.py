@@ -17,7 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-REGISTRY = pathlib.Path('hubitat_automation_map_app_integration_registry_v0.3.json')
+REGISTRY = pathlib.Path('hubitat_automation_map_app_integration_registry_v0.4.json')
 HPM_INDEX = pathlib.Path('hpm_package_index.json')
 DOC_INDEX = pathlib.Path('hubitat_official_docs_index.json')
 APPS_URL = 'https://docs2.hubitat.com/apps'
