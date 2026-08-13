@@ -7,8 +7,6 @@ on:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
-      - 'DATA_ACQUISITION.md'
-      - 'ENRICHMENT_METHOD.md'
   workflow_dispatch:
 
 permissions:
@@ -22,14 +20,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Migrate validator and canonical registry
+        run: python migrate_pipeline_v04.py
+
       - name: Restore acquisition caches
         uses: actions/cache@v4
         with:
           path: |
             .hpm_cache
             .hubitat_docs_cache
-          key: enrichment-cache-v2-${{ hashFiles('crawl_hpm.py', 'enrich_hpm_sources.py', 'enrich_hubitat_docs.py') }}
+          key: enrichment-cache-v3-${{ hashFiles('crawl_hpm.py', 'enrich_hpm_sources.py', 'enrich_hubitat_docs.py') }}
           restore-keys: |
+            enrichment-cache-v3-
             enrichment-cache-v2-
             hpm-cache-v1-
 
@@ -38,8 +40,18 @@ jobs:
         run: |
           set -euo pipefail
           test -f crawl_hpm.py
-          test -f hubitat_automation_map_app_integration_registry_v0.4.json
+          test -f hubitat_automation_map_app_integration_registry.json
           python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('hubitat_automation_map_app_integration_registry.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          version = str(d.get('schemaVersion') or '').strip()
+          if not version:
+              raise SystemExit('canonical registry is missing schemaVersion')
+          print(f'Canonical registry schemaVersion={version}')
+          PY
 
       - name: Classify source visibility
         run: python apply_source_visibility.py
@@ -65,23 +77,20 @@ jobs:
             hpm_package_index.json
             hubitat_official_docs_index.json
             registry_validation_report.md
-            hubitat_automation_map_app_integration_registry_v0.4.json
+            hubitat_automation_map_app_integration_registry.json
           retention-days: 7
 
-      - name: Commit successful outputs and registry evidence
+      - name: Commit migration and successful outputs
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # The crawl can take several minutes. If main advanced meanwhile,
-          # rebase the generated working-tree changes onto the latest main
-          # before creating the output commit.
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.4.json
+          git add -A
           if git diff --cached --quiet; then
-            echo "Generated outputs and registry evidence are unchanged; nothing to commit."
+            echo "No migration/output changes to commit."
           else
-            git commit -m "Update enriched HPM and Hubitat documentation evidence [skip ci]"
+            git commit -m "Adopt v0.4 validation semantics and stable registry input [skip ci]"
             git push origin main
           fi
