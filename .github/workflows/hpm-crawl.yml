@@ -5,8 +5,10 @@ on:
     branches: [main]
     paths-ignore:
       - 'hpm_package_index.json'
+      - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
       - 'DATA_ACQUISITION.md'
+      - 'ENRICHMENT_METHOD.md'
   workflow_dispatch:
 
 permissions:
@@ -20,11 +22,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Restore HPM fetch cache
+      - name: Restore acquisition caches
         uses: actions/cache@v4
         with:
-          path: .hpm_cache
-          key: hpm-cache-v1-${{ hashFiles('crawl_hpm.py') }}
+          path: |
+            .hpm_cache
+            .hubitat_docs_cache
+          key: enrichment-cache-v2-${{ hashFiles('crawl_hpm.py', 'enrich_hpm_sources.py', 'enrich_hubitat_docs.py') }}
+          restore-keys: |
+            enrichment-cache-v2-
+            hpm-cache-v1-
 
       - name: Validate inputs
         shell: bash
@@ -32,13 +39,22 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry_v0.3.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py
 
       - name: Classify source visibility
         run: python apply_source_visibility.py
 
-      - name: Crawl HPM and validate registry
+      - name: Crawl HPM manifests and validate registry
         run: python crawl_hpm.py
+
+      - name: Enrich from public Groovy source
+        run: python enrich_hpm_sources.py
+
+      - name: Enrich native entries from official Hubitat documentation
+        run: python enrich_hubitat_docs.py
+
+      - name: Revalidate enriched evidence
+        run: python revalidate_enriched.py
 
       - name: Upload outputs
         uses: actions/upload-artifact@v4
@@ -47,19 +63,21 @@ jobs:
           if-no-files-found: error
           path: |
             hpm_package_index.json
+            hubitat_official_docs_index.json
             registry_validation_report.md
+            hubitat_automation_map_app_integration_registry_v0.3.json
           retention-days: 7
 
-      - name: Commit successful outputs and registry annotations
+      - name: Commit successful outputs and registry evidence
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hpm_package_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.3.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.3.json
           if git diff --cached --quiet; then
-            echo "Generated outputs and source visibility annotations are unchanged; nothing to commit."
+            echo "Generated outputs and registry evidence are unchanged; nothing to commit."
           else
-            git commit -m "Update HPM outputs and source visibility [skip ci]"
+            git commit -m "Update enriched HPM and Hubitat documentation evidence [skip ci]"
             git push
           fi
