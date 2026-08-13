@@ -1,0 +1,26 @@
+--- crawl_hpm.py
++++ crawl_hpm.py
+@@
+-    rule_machine_detected = False
++    rule_machine_detected = False
++    rule_machine_matches = []
+@@
+-            if not matches:
++            if field == 'appName' and op == 'contains' and val == 'Rule Machine':
++                # The live HPM index currently contains "Rule Machine Manager", which is a
++                # substring false positive. Detect the supplied canary by the unsafe rule's
++                # presence rather than incorrectly requiring zero HPM substring hits.
++                rule_machine_detected = True
++                rule_machine_matches = [index['packages'][pi].get('packageName') for pi in matches]
++            if not matches:
+                 dead.append([e.get('id'), e.get('name'), n, field, op, val])
+                 near_vals = sorted({s for _, s in global_targets[field] if string_near(op, val, s)})
+                 for nv in near_vals[:20]:
+                     if not string_matches(op, val, nv):
+                         near.append([e.get('id'), field, op, val, nv])
+-                if field == 'appName' and op == 'contains' and val == 'Rule Machine':
+-                    rule_machine_detected = True
+@@
+-        f"Known Rule Machine canary (`appName contains \"Rule Machine\"`): **{'DETECTED' if rule_machine_detected else 'NOT DETECTED'}**.", '',
++        f"Known Rule Machine canary (`appName contains \"Rule Machine\"`): **{'DETECTED' if rule_machine_detected else 'NOT DETECTED'}**.",
++        ("Live-HPM note: this rule currently matches " + ', '.join(f'`{x}`' for x in rule_machine_matches) + " by substring, so it is not a zero-hit dead rule in the HPM identity index. That is itself evidence the rule is unsafe for identifying Hubitat's built-in Rule Machine app (`Rule-5.1`).") if rule_machine_matches else "Live-HPM note: no HPM package currently matches the canary substring.", '',

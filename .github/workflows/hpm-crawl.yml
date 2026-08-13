@@ -27,6 +27,7 @@ jobs:
         run: |
           set -euo pipefail
           gzip -dc crawl_hpm.py.gz > crawl_hpm.py
+          patch -p0 < rule_machine_canary.patch
           gzip -dc hubitat_automation_map_app_integration_registry_v0.3.json.gz > hubitat_automation_map_app_integration_registry_v0.3.json
           python -m py_compile crawl_hpm.py
 
