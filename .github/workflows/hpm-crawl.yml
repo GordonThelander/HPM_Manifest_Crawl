@@ -74,10 +74,14 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # The crawl can take several minutes. If main advanced meanwhile,
+          # rebase the generated working-tree changes onto the latest main
+          # before creating the output commit.
+          git pull --rebase --autostash origin main
           git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.3.json
           if git diff --cached --quiet; then
             echo "Generated outputs and registry evidence are unchanged; nothing to commit."
           else
             git commit -m "Update enriched HPM and Hubitat documentation evidence [skip ci]"
-            git push
+            git push origin main
           fi
