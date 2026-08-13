@@ -55,7 +55,7 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -87,6 +87,13 @@ jobs:
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python revalidate_enriched.py
 
+      # The Hubitat app downloads and parses the registry inside a single
+      # execution. The canonical file reached 165KB and killed that execution
+      # silently, so the app gets a stripped copy and CI fails if it regrows.
+      - name: Build slim registry for the Hubitat app
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_slim_registry.py
+
       - name: Upload outputs
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         uses: actions/upload-artifact@v4
@@ -98,6 +105,7 @@ jobs:
             hubitat_official_docs_index.json
             registry_validation_report.md
             hubitat_automation_map_app_integration_registry.json
+            hubitat_automation_map_app_integration_registry_slim.json
           retention-days: 7
 
       - name: Commit generated outputs
@@ -108,7 +116,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json upstream_state.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else
