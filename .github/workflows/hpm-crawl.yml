@@ -3,10 +3,14 @@ name: HPM Manifest Crawl
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'hpm_package_index.json'
+      - 'registry_validation_report.md'
+      - 'DATA_ACQUISITION.md'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   crawl:
@@ -35,7 +39,6 @@ jobs:
         run: python crawl_hpm.py
 
       - name: Upload outputs
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: hpm-crawl-output
@@ -44,3 +47,17 @@ jobs:
             hpm_package_index.json
             registry_validation_report.md
           retention-days: 7
+
+      - name: Commit successful outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hpm_package_index.json registry_validation_report.md
+          if git diff --cached --quiet; then
+            echo "Generated outputs are unchanged; nothing to commit."
+          else
+            git commit -m "Update HPM crawl outputs [skip ci]"
+            git push
+          fi
