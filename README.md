@@ -42,8 +42,10 @@ the source pass records five literal URLs, of which only `api.lifx.com` is a rea
 The others are two `iconUrl` declarations and a help-text link. An automated rule that
 promoted URLs to dependencies would be wrong four times out of five, and confidently so.
 
-## Note on the filename
+## Registry versioning
 
-The registry version is in the filename, so bumping it means editing four Python scripts and
-three lines of the workflow. Worth moving into the file's own `schemaVersion` field, which
-already exists, if this repository outlives its "temporary" description.
+The pipeline reads the stable filename `hubitat_automation_map_app_integration_registry.json`
+and takes the version from that file's own `schemaVersion` field. Versioned copies such as
+`..._v0.3.json` are kept as historical snapshots and are not referenced by any code, so a
+version bump no longer requires touching scripts or the workflow.
+

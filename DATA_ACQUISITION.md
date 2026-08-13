@@ -135,7 +135,7 @@ Only HPM-observable identity fields are evaluated:
 | `userMapping` | not evaluable from HPM |
 | `deviceMetadata` | not evaluable from HPM |
 
-Matching is case-sensitive. `equals` requires exact equality and `contains` performs a case-sensitive substring comparison. Case-insensitive or whitespace-normalised matches are reported separately as near misses rather than silently accepted.
+Matching is case-insensitive and whitespace-trimming. `equals` requires exact equality and `contains` performs a case-insensitive and whitespace-trimming substring comparison. Case-insensitive or whitespace-normalised matches are reported separately as near misses rather than silently accepted.
 
 ## Three-state match semantics
 
@@ -179,15 +179,15 @@ The validation run found:
 
 | Section | Count |
 | --- | ---: |
-| Dead rules | 115 |
-| Near misses | 17 |
-| Over-broad rules | 5 |
+| Dead rules | 112 |
+| Near misses | 0 |
+| Over-broad rules | 3 |
 | Entries with no dependencies | 19 |
-| Schema defect occurrences | 12 |
+| Schema defect occurrences | 0 |
 | Duplicate registry IDs | 0 |
 | Genuine overlap pairs | 4 |
-| Unrepresented HPM packages | 809 |
-| High-interest unrepresented candidates | 356 |
+| Unrepresented HPM packages | 805 |
+| High-interest unrepresented candidates | 349 |
 
 Seven distinct undeclared class values are present in the registry, with repeated occurrences bringing the total defect occurrences to 12.
 

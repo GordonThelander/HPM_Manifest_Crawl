@@ -78,14 +78,14 @@ jobs:
             hubitat_automation_map_app_integration_registry.json
           retention-days: 7
 
-      - name: Commit migration and successful outputs
+      - name: Commit generated outputs
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add -A
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else

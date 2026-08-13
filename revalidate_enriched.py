@@ -18,7 +18,12 @@ def main():
     # Re-run the non-network acceptance canaries after source identities have
     # been added, because source verification can legitimately change match
     # counts and overlaps.
-    expected = {
+    # Inverted for v0.4, matching crawl_hpm.py. These previously required the
+    # seven undeclared classes to be PRESENT, which was correct while they were
+    # known defects and became a guaranteed failure the moment they were fixed.
+    # This copy was missed when crawl_hpm.py was updated, and is what failed
+    # run #22 at this step.
+    forbidden = {
         'DASHBOARD','PLATFORM_UTILITY','SECURITY_ORCHESTRATOR','VIRTUALISATION_ORCHESTRATOR',
         'EXTERNAL_OR_LOCAL_SERVICE','LOCAL_DEVICE_OR_BRIDGE','LOCAL_OR_EXTERNAL_SERVICE'
     }
@@ -28,8 +33,10 @@ def main():
         failures.append(f"expected 19 empty dependencies, got {checks['empty']}")
     if checks['dup'] != 0:
         failures.append(f"expected 0 duplicate ids, got {checks['dup']}")
-    if not expected.issubset(actual):
-        failures.append(f"missing schema canaries: {sorted(expected-actual)}")
+    if actual:
+        failures.append(f"registry has undeclared classes, expected none: {sorted(actual)}")
+    if forbidden & actual:
+        failures.append(f"hedge classes reintroduced: {sorted(forbidden & actual)}")
     false_maker = [x for x in checks['overlaps'] if 'home-assistant-makerapi' in x[:2] or 'homebridge-makerapi' in x[:2]]
     if false_maker:
         failures.append(f'Maker API false overlap detected: {false_maker}')

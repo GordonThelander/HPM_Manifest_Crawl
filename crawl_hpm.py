@@ -3,7 +3,6 @@ import concurrent.futures, datetime as dt, hashlib, json, os, pathlib, time, url
 from collections import Counter, defaultdict
 
 MASTER_URL = 'https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json'
-REGISTRY_GZ = 'hubitat_automation_map_app_integration_registry.json.gz'
 REGISTRY = 'hubitat_automation_map_app_integration_registry.json'
 INDEX_OUT = 'hpm_package_index.json'
 REPORT_OUT = 'registry_validation_report.md'
@@ -280,13 +279,18 @@ def rule_targets(index):
 
 
 def string_matches(op, needle, hay):
-    # Case-INSENSITIVE, deliberately.
+    # Case-insensitive AND whitespace-trimming, both deliberately.
     #
     # Real package naming is inconsistent and case-sensitive matching produced
     # 17 false negatives against live HPM data: BOND against Bond, Ecowitt
     # against EcoWitt, kasaDoorbell against Kasa. Those are the same product,
     # and a registry that misses them is wrong in a way nobody would notice,
     # because a near-miss list looks like a curiosity rather than a bug.
+    #
+    # The .strip() is a second normalisation, called out here because it is
+    # easy to miss: published data really does carry stray whitespace, such as
+    # the package "Honeywell Vista Envisalink TPI Alarm Integration " with a
+    # trailing space. Matching that literally helps nobody.
     if not isinstance(needle, str) or not isinstance(hay, str): return False
     n, h = needle.strip().lower(), hay.strip().lower()
     if op == 'equals': return h == n
@@ -459,9 +463,10 @@ def validate(index, registry):
 
 
 def main():
-    import gzip
-    if not pathlib.Path(REGISTRY).exists():
-        pathlib.Path(REGISTRY).write_bytes(gzip.decompress(pathlib.Path(REGISTRY_GZ).read_bytes()))
+    # The gzip bootstrap that used to sit here is gone. It existed to
+    # materialise the registry from a compressed copy, but the workflow now
+    # requires the plain JSON to exist before this runs, so it was migration
+    # debris that could never execute.
     index = crawl()
     dump_json(INDEX_OUT, index)
     registry = json.loads(pathlib.Path(REGISTRY).read_text('utf-8'))
