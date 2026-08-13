@@ -5,7 +5,7 @@
 - Repositories fetched successfully: **214**
 - Packages indexed: **899**
 - Source-definition pass completed: **false**
-- Cache used: Yes - 1 cache hits, 1115 network fetches; cached objects used were between 0.01 and 0.01 hours old.
+- Cache used: Yes - 1114 cache hits, 2 network fetches; cached objects used were between 0.13 and 0.14 hours old.
 - Recorded fetch/parse errors: **4**
 
 ## A. Dead rules
