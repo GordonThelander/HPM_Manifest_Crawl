@@ -21,7 +21,8 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 opener = urllib.request.build_opener(NoRedirect)
-cache_stats = {'hits': 0, 'misses': 0, 'ages': []}
+CACHE_TTL_SECONDS = float(os.environ.get('HPM_CACHE_TTL_HOURS', '6')) * 3600
+cache_stats = {'hits': 0, 'misses': 0, 'expired': 0, 'ages': []}
 errors = []
 
 
@@ -50,12 +51,25 @@ def cache_paths(url):
 
 
 def cache_get(url):
+    # Entries EXPIRE. Without this the cache returned any stored body no matter
+    # how old, and since CI restores the cache on every run, a scheduled crawl
+    # would have served the whole ecosystem from disk and discovered nothing
+    # new - not even a brand-new developer repository, because the master list
+    # URL is itself cached.
+    #
+    # The TTL is short because change detection now gates whether a full crawl
+    # runs at all: when one does run, upstream has actually moved and stale
+    # copies are the last thing wanted. It stays non-zero so that retrying a
+    # failed run soon afterwards is cheap.
     bp, mp = cache_paths(url)
     if bp.exists() and mp.exists():
         try:
             meta = json.loads(mp.read_text('utf-8'))
             fetched = dt.datetime.fromisoformat(meta['fetchedAt'].replace('Z','+00:00'))
             age = (dt.datetime.now(dt.timezone.utc) - fetched).total_seconds()
+            if age > CACHE_TTL_SECONDS:
+                cache_stats['expired'] += 1
+                return None
             cache_stats['hits'] += 1
             cache_stats['ages'].append(max(0, age))
             return bp.read_bytes()

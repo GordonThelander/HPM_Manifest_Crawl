@@ -32,7 +32,8 @@ here.** The two are deliberately separate.
 | Registry validation | working, canaries inverted for v0.4 |
 | Canonical registry | `hubitat_automation_map_app_integration_registry.json`, `schemaVersion` 0.4 |
 | Self-migrating workflow | **removed** |
-| Last CI result | run #22 failed at step 9; cause fixed in `b94c942`, not yet confirmed by a green run |
+| Last CI result | run #23 green: full crawl, enrich, validate, publish |
+| Schedule | daily 04:17 UTC, gated on a cheap upstream change check |
 
 ### The registry filename is stable
 
@@ -121,6 +122,35 @@ Ten entries carry a `verification` field recording which of these applies. Nothi
 deleted on the strength of a non-match.
 
 ---
+
+## 4a. Scheduling and change detection
+
+The workflow runs daily, but a full crawl is ~3,000 requests against a CDN run
+by volunteers, and the ecosystem changes slowly. So `check_upstream.py` runs
+first and fetches **217** files: the master repository list plus each
+developer's `repository.json`. Those are where every observable change surfaces,
+because package versions live in them. A combined hash answers "has anything
+moved" in about 25 seconds, and every expensive step is gated on the answer.
+
+A push, or a manual dispatch with `force`, always runs the full crawl.
+
+**Two details that are load-bearing:**
+
+`upstream_state.json` is **committed, not cached**, and only by the step that
+runs after a successful crawl. So a run that detects a change and then fails
+does not record that change as seen, and the next run tries again rather than
+skipping work it never did.
+
+**The cache now expires**, default 6 hours, override with `HPM_CACHE_TTL_HOURS`.
+Before this it never did: `cache_get` returned any stored body regardless of
+age, and since CI restores the cache on every run, a scheduled crawl would have
+served the entire ecosystem from disk and discovered nothing new. Not even a new
+developer repository, because the master list URL is itself cached. A schedule
+without a TTL is worse than no schedule, because it looks like it is working.
+
+**GitHub disables scheduled workflows after 60 days without repository
+activity.** On a quiet repo the schedule stops silently, so if the registry ever
+looks frozen, check that first.
 
 ## 5. Verifying without waiting for CI
 

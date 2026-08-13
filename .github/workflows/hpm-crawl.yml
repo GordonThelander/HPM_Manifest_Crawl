@@ -7,7 +7,17 @@ on:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
+  schedule:
+    # Daily, deliberately off the hour: scheduled jobs cluster on :00 and the
+    # runner queue is kinder a little after. The full crawl only follows if the
+    # cheap upstream check says something actually moved.
+    - cron: '17 4 * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Run the full crawl even if upstream is unchanged'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -20,6 +30,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # A full crawl is ~3,000 requests against a volunteer-run CDN. This is
+      # 217, and answers whether any of them would find anything new.
+      - name: Check whether upstream changed
+        id: upstream
+        run: python check_upstream.py
 
       - name: Restore acquisition caches
         uses: actions/cache@v4
@@ -34,6 +49,7 @@ jobs:
             hpm-cache-v1-
 
       - name: Validate inputs
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         shell: bash
         run: |
           set -euo pipefail
@@ -52,21 +68,27 @@ jobs:
           PY
 
       - name: Classify source visibility
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python apply_source_visibility.py
 
       - name: Crawl HPM manifests and validate registry
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python crawl_hpm.py
 
       - name: Enrich from public Groovy source
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python enrich_hpm_sources.py
 
       - name: Enrich native entries from official Hubitat documentation
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python enrich_hubitat_docs.py
 
       - name: Revalidate enriched evidence
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python revalidate_enriched.py
 
       - name: Upload outputs
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         uses: actions/upload-artifact@v4
         with:
           name: hpm-crawl-output
@@ -79,13 +101,14 @@ jobs:
           retention-days: 7
 
       - name: Commit generated outputs
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else
