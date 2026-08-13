@@ -152,6 +152,45 @@ without a TTL is worse than no schedule, because it looks like it is working.
 activity.** On a quiet repo the schedule stops silently, so if the registry ever
 looks frozen, check that first.
 
+## 4b. Changing the registry
+
+Two different things live here and they update in opposite ways.
+
+**The index regenerates itself.** `hpm_package_index.json`, the docs index and the validation
+report are outputs. Never hand-edit them; the next run overwrites them.
+
+**The registry is hand-maintained.** `hubitat_automation_map_app_integration_registry.json`
+only changes when a person changes it. A daily crawl will happily report the same 805
+unrepresented packages forever, because deciding what an integration depends on is a
+judgement no crawl can make (see section 4, "Evidence is not conclusion").
+
+### To correct or add an entry
+
+1. Edit the registry JSON. An entry needs `id`, `name`, `matchMode`, `matchRules` and
+   `dependencies`. Look at `cocohue` for the simple shape and `lifx-light-manager` for one
+   with two dependencies at different criticality.
+2. Check the identity against the index rather than against a hub UI. `grep` the package
+   name in `hpm_package_index.json` and use `definitionName` where it is present, because
+   that is what a hub reports. This is where the `Rule Machine` / `Rule-5.1` bug came from.
+3. Push to `main`. A push always runs the full workflow; the upstream change check only
+   gates *scheduled* runs.
+4. The run revalidates and regenerates the report. If the acceptance canaries fail, the run
+   fails and nothing is published, which is the point.
+
+**No release is involved.** Consumers fetch the registry file directly at scan time, so a
+corrected entry reaches every installation on its next scan. That is the entire reason the
+registry is fetched rather than embedded.
+
+### `runtimeCriticality` is the field to get right
+
+`RUNTIME` means the automation stops without it. `SETUP_ONLY` means it was needed to pair or
+authenticate and is not needed to run. Meross is the worked example: cloud for setup, LAN for
+control, so losing the internet means you cannot re-pair the garage door but it still opens.
+
+Getting this wrong is invisible until someone's internet drops. If you cannot establish it,
+leave the entry out rather than guess: an absent entry shows as unclassified, which is honest,
+while a wrong one is confidently misleading.
+
 ## 5. Verifying without waiting for CI
 
 CI feedback is slow and the connector only surfaces `exit code 1`. Both recent failures were
