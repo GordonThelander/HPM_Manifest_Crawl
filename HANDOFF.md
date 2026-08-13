@@ -183,10 +183,26 @@ So a daily crawl will keep reporting the same 805 unrepresented packages. It is 
 them correctly; they sit in section G as candidates with their evidence attached, waiting on
 a judgement no static analysis reaches (see section 4, "Evidence is not conclusion").
 
-**The obvious improvement, not built:** auto-draft one entry per candidate with match rules
-filled in, hosts listed, class guessed from its tags, and `runtimeCriticality` left
-deliberately blank with a `NEEDS_CLASSIFICATION` status. That turns 349 blank pages into 349
-forms with one question each. It must not fill that field in.
+### Drafting candidates
+
+`draft_candidates.py` turns the blank pages into forms. It finds every package no entry
+matches, keeps the ones that look like integrations by category or tags, and writes
+`registry_candidates_draft.json` with `id`, `name`, `vendor`, `matchMode` and `matchRules`
+filled in, plus the evidence a reviewer needs: external hosts with the usual noise removed,
+LAN primitives, HTTP call sites, and links to the manifest, docs and community thread.
+
+    python draft_candidates.py [--limit N]
+
+Currently 343 candidates: 238 with external hosts in source, 54 that look LAN-only, 51 with
+no network evidence at all.
+
+**`dependencies` is empty in every draft and `runtimeCriticality` appears nowhere.** That is
+enforced, not incidental, and it is the point of the script. Match rules are mechanical;
+criticality is not derivable from any of this. A draft is unusable until a person adds the
+dependency, which is the intended amount of friction.
+
+Output is gitignored. It is a working artefact regenerated on demand, not something the
+pipeline publishes, and it must never be merged into the registry automatically.
 
 ### To correct or add an entry
 
