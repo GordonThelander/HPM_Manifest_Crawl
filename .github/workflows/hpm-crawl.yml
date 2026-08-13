@@ -1,0 +1,45 @@
+name: HPM Manifest Crawl
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore HPM fetch cache
+        uses: actions/cache@v4
+        with:
+          path: .hpm_cache
+          key: hpm-cache-v1-${{ hashFiles('crawl_hpm.py.gz') }}
+
+      - name: Prepare inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          gzip -dc crawl_hpm.py.gz > crawl_hpm.py
+          gzip -dc hubitat_automation_map_app_integration_registry_v0.3.json.gz > hubitat_automation_map_app_integration_registry_v0.3.json
+          python -m py_compile crawl_hpm.py
+
+      - name: Crawl HPM and validate registry
+        run: python crawl_hpm.py
+
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hpm-crawl-output
+          if-no-files-found: error
+          path: |
+            hpm_package_index.json
+            registry_validation_report.md
+          retention-days: 7
