@@ -4,6 +4,10 @@ Execution repository for the Hubitat Package Manager ecosystem crawl. It builds 
 index of every package published through HPM, then validates the Automation Map integration
 registry against it.
 
+> **Picking this up cold? Read [HANDOFF.md](HANDOFF.md) first.** It covers the current
+> state, two recent CI failures worth not repeating, the conventions that must hold, and how
+> to verify changes locally instead of waiting on CI.
+
 ## Current registry
 
 **`hubitat_automation_map_app_integration_registry.json`** is the live input. The
