@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-PATH = Path('hubitat_automation_map_app_integration_registry_v0.4.json')
+PATH = Path('hubitat_automation_map_app_integration_registry.json')
 VALID = ['PUBLIC_SOURCE', 'MANIFEST_ONLY', 'CLOSED_NATIVE', 'UNKNOWN']
 
 

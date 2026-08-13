@@ -20,8 +20,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Migrate validator and canonical registry
-        run: python migrate_pipeline_v04.py
 
       - name: Restore acquisition caches
         uses: actions/cache@v4

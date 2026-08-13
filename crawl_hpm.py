@@ -3,8 +3,8 @@ import concurrent.futures, datetime as dt, hashlib, json, os, pathlib, time, url
 from collections import Counter, defaultdict
 
 MASTER_URL = 'https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json'
-REGISTRY_GZ = 'hubitat_automation_map_app_integration_registry_v0.4.json.gz'
-REGISTRY = 'hubitat_automation_map_app_integration_registry_v0.4.json'
+REGISTRY_GZ = 'hubitat_automation_map_app_integration_registry.json.gz'
+REGISTRY = 'hubitat_automation_map_app_integration_registry.json'
 INDEX_OUT = 'hpm_package_index.json'
 REPORT_OUT = 'registry_validation_report.md'
 CACHE = pathlib.Path('.hpm_cache')
@@ -280,9 +280,17 @@ def rule_targets(index):
 
 
 def string_matches(op, needle, hay):
+    # Case-INSENSITIVE, deliberately.
+    #
+    # Real package naming is inconsistent and case-sensitive matching produced
+    # 17 false negatives against live HPM data: BOND against Bond, Ecowitt
+    # against EcoWitt, kasaDoorbell against Kasa. Those are the same product,
+    # and a registry that misses them is wrong in a way nobody would notice,
+    # because a near-miss list looks like a curiosity rather than a bug.
     if not isinstance(needle, str) or not isinstance(hay, str): return False
-    if op == 'equals': return hay == needle
-    if op == 'contains': return needle in hay
+    n, h = needle.strip().lower(), hay.strip().lower()
+    if op == 'equals': return h == n
+    if op == 'contains': return n in h
     return False
 
 
@@ -413,7 +421,7 @@ def validate(index, registry):
         f"- Cache used: {cache_line}",
         f"- Recorded fetch/parse errors: **{len(index['errors'])}**", '',
         '## A. Dead rules', '',
-        f"Known Rule Machine canary (`appName contains \"Rule Machine\"`): **{'DETECTED' if rule_machine_detected else 'NOT DETECTED'}**.",
+        f"Rule Machine substring canary (`appName contains \"Rule Machine\"`): **{'PRESENT - REGRESSION' if rule_machine_detected else 'absent, as expected since v0.4'}**.",
         ("Live-HPM note: this rule currently matches " + ', '.join(f'`{x}`' for x in rule_machine_matches) + " by substring, so it is not a zero-hit dead rule in the HPM identity index. That is itself evidence the rule is unsafe for identifying Hubitat's built-in Rule Machine app (`Rule-5.1`).") if rule_machine_matches else "Live-HPM note: no HPM package currently matches the canary substring.", '',
         table(['Entry ID','Entry','Rule','Field','Operator','Registry value'], dead), '',
         '## B. Near misses', '',
@@ -459,13 +467,25 @@ def main():
     registry = json.loads(pathlib.Path(REGISTRY).read_text('utf-8'))
     checks = validate(index, registry)
     # Acceptance canaries that do not depend on external HPM content.
-    expected = {'DASHBOARD','PLATFORM_UTILITY','SECURITY_ORCHESTRATOR','VIRTUALISATION_ORCHESTRATOR','EXTERNAL_OR_LOCAL_SERVICE','LOCAL_DEVICE_OR_BRIDGE','LOCAL_OR_EXTERNAL_SERVICE'}
+    #
+    # These were INVERTED for v0.4. Under v0.3 they asserted that seven
+    # undeclared classes and the `contains "Rule Machine"` rule were present,
+    # because a run that failed to spot known defects had broken comparison
+    # logic. v0.4 fixed those defects, so the same assertions would now fail
+    # against a correct registry, which is the canary outliving its purpose.
+    #
+    # They now assert the opposite: the defects must be GONE, and must not
+    # come back. A canary is only useful while it can still fail for the right
+    # reason.
+    forbidden_classes = {'EXTERNAL_OR_LOCAL_SERVICE','LOCAL_DEVICE_OR_BRIDGE','LOCAL_OR_EXTERNAL_SERVICE'}
     actual = {x[2] for x in checks['defects']}
     failures = []
     if checks['empty'] != 19: failures.append(f"expected 19 empty dependencies, got {checks['empty']}")
     if checks['dup'] != 0: failures.append(f"expected 0 duplicate ids, got {checks['dup']}")
-    if not expected.issubset(actual): failures.append(f"missing schema canaries: {sorted(expected-actual)}")
-    if not checks['ruleCanary']: failures.append('Rule Machine canary not detected')
+    if actual: failures.append(f"registry has undeclared classes, expected none: {sorted(actual)}")
+    if forbidden_classes & actual: failures.append(f"hedge classes reintroduced: {sorted(forbidden_classes & actual)}")
+    if checks['ruleCanary']:
+        failures.append('rule using appName contains "Rule Machine" is back; it matches the unrelated package "Rule Machine Manager"')
     false_maker = [x for x in checks['overlaps'] if 'home-assistant-makerapi' in x[:2] or 'homebridge-makerapi' in x[:2]]
     if false_maker: failures.append(f'Maker API false overlap detected: {false_maker}')
     if index['repositoriesFetched'] + sum(1 for e in index['errors'] if e['level']=='repository') != index['repositoryCount']:

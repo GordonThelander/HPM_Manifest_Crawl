@@ -6,7 +6,7 @@ registry against it.
 
 ## Current registry
 
-**`hubitat_automation_map_app_integration_registry_v0.4.json`** is the live input. The
+**`hubitat_automation_map_app_integration_registry.json`** is the live input. The
 pipeline reads and enriches this file.
 
 `...v0.3.json` is kept as the historical input that produced the current

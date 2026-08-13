@@ -10,8 +10,8 @@
 
 ## A. Dead rules
 
-Known Rule Machine canary (`appName contains "Rule Machine"`): **DETECTED**.
-Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, so it is not a zero-hit dead rule in the HPM identity index. That is itself evidence the rule is unsafe for identifying Hubitat's built-in Rule Machine app (`Rule-5.1`).
+Rule Machine substring canary (`appName contains "Rule Machine"`): **absent, as expected since v0.4**.
+Live-HPM note: no HPM package currently matches the canary substring.
 
 | Entry ID | Entry | Rule | Field | Operator | Registry value |
 | --- | --- | --- | --- | --- | --- |
@@ -22,10 +22,10 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | lifx-native | LIFX Integration | 2 | parentAppName | equals | LIFX Integration |
 | kasa-native | Kasa Integration | 1 | appName | contains | Kasa Integration |
 | kasa-native | Kasa Integration | 2 | parentAppName | contains | Kasa Integration |
-| kasa-native | Kasa Integration | 3 | driverName | contains | Kasa |
 | tapo-community | Tapo Integration | 2 | driverName | contains | Tapo |
 | shelly-device-manager | Shelly Device Manager | 1 | appName | contains | Shelly Device Manager |
 | shelly-device-manager | Shelly Device Manager | 2 | parentAppName | contains | Shelly Device Manager |
+| shelly-mqtt | Shelly MQTT Variant | 2 | driverName | contains | Shelly MQTT |
 | tuya-cloud | Tuya Cloud Integration | 1 | appName | contains | Tuya Cloud |
 | tuya-cloud | Tuya Cloud Integration | 2 | appName | contains | Tuya Integration |
 | tuya-cloud | Tuya Cloud Integration | 3 | driverName | contains | Tuya Cloud |
@@ -37,14 +37,11 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | ecobee-local-hap | Ecobee No Cloud HAP Thermostat | 2 | driverName | contains | Ecobee No Cloud |
 | ecowitt | EcoWitt / Wittboy Integration | 1 | appName | contains | EcoWitt |
 | ecowitt | EcoWitt / Wittboy Integration | 2 | appName | contains | Ecowitt |
-| ecowitt | EcoWitt / Wittboy Integration | 3 | driverName | contains | EcoWitt |
 | ecowitt | EcoWitt / Wittboy Integration | 4 | driverName | contains | Wittboy |
 | sensorpush | SensorPush Gateway | 2 | appName | contains | SensorPush |
 | sure-petcare | Sure PetCare Integration | 3 | driverName | contains | SurePet |
 | lutron-native | Lutron Integrator | 1 | appName | contains | Lutron Integrator |
 | lutron-native | Lutron Integrator | 2 | parentAppName | contains | Lutron |
-| bond | Bond Integration | 1 | appName | contains | Bond |
-| bond | Bond Integration | 2 | driverName | contains | Bond |
 | sonos-native | Sonos Integration | 1 | appName | contains | Sonos Integration |
 | home-assistant-hadb | Home Assistant Device Bridge | 2 | appName | contains | HADB |
 | home-assistant-makerapi | Home Assistant via Maker API | 1 | appName | equals | Maker API |
@@ -57,7 +54,6 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | mqtt-link | MQTT Link | 2 | driverName | contains | MQTT Link |
 | simple-mqtt-client | Simple MQTT Client | 1 | appName | contains | Simple MQTT |
 | simple-mqtt-client | Simple MQTT Client | 2 | driverName | contains | Simple MQTT |
-| node-red | Node-RED | 1 | appName | contains | Node-RED |
 | esphome | ESPHome Integration | 1 | appName | contains | ESPHome |
 | homekit-controller | HomeKit Controller | 1 | appName | contains | HomeKit Controller |
 | homekit-controller | HomeKit Controller | 2 | parentAppName | contains | HomeKit Controller |
@@ -78,9 +74,6 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | volvo-cars | Volvo Cars Integration | 1 | appName | contains | Volvo |
 | volvo-cars | Volvo Cars Integration | 2 | driverName | contains | Volvo |
 | webcore | webCoRE | 2 | namespace | contains | webcore |
-| sharp-tools | SharpTools | 1 | appName | contains | SharpTools |
-| sharp-tools | SharpTools | 2 | driverName | contains | SharpTools |
-| ifttt | IFTTT Integration | 1 | appName | contains | IFTTT |
 | gmail-notification-gateway | Gmail Notification Gateway | 1 | appName | contains | Gmail Notification Gateway |
 | bom-weather-alerts | AU BOM Weather Alerts | 1 | appName | contains | BOM Weather |
 | bom-weather-alerts | AU BOM Weather Alerts | 2 | appName | contains | Bureau of Meteorology |
@@ -92,6 +85,9 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | basic-rules | Basic Rules | 2 | parentAppName | equals | Basic Rules |
 | simple-automation-rules | Simple Automation Rules | 1 | appName | contains | Simple Automation Rules |
 | simple-automation-rules | Simple Automation Rules | 2 | parentAppName | contains | Simple Automation Rules |
+| rule-machine | Rule Machine | 1 | appName | equals | Rule-5.1 |
+| rule-machine | Rule Machine | 2 | appName | equals | Button Rule-5.1 |
+| rule-machine | Rule Machine | 3 | appName | equals | Rule-4.1 |
 | visual-rules-builder | Visual Rules Builder | 1 | appName | contains | Visual Rules Builder |
 | room-lighting | Room Lighting | 1 | appName | contains | Room Lighting |
 | room-lighting | Room Lighting | 2 | parentAppName | contains | Room Lighting |
@@ -108,6 +104,7 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | hubitat-safety-monitor | Hubitat Safety Monitor | 1 | appName | contains | Hubitat Safety Monitor |
 | hubitat-safety-monitor | Hubitat Safety Monitor | 2 | appName | equals | HSM |
 | groups-scenes | Groups and Scenes | 1 | appName | contains | Groups and Scenes |
+| groups-scenes | Groups and Scenes | 2 | appName | contains | Groups and Scenes |
 | groups-scenes | Groups and Scenes | 3 | appName | contains | Scene |
 | hubitat-dashboard | Hubitat Dashboard | 1 | appName | contains | Hubitat Dashboard |
 | easy-dashboard | Easy Dashboard | 1 | appName | contains | Easy Dashboard |
@@ -135,23 +132,7 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 
 | Entry ID | Field | Operator | Registry value | Index value |
 | --- | --- | --- | --- | --- |
-| kasa-native | driverName | contains | Kasa | kasaCameraFixed |
-| kasa-native | driverName | contains | Kasa | kasaCameraPtz |
-| kasa-native | driverName | contains | Kasa | kasaDoorbell |
-| ecowitt | driverName | contains | EcoWitt | AmbientEcowittWeather |
-| ecowitt | driverName | contains | EcoWitt | Ecowitt RF Sensor |
-| ecowitt | driverName | contains | EcoWitt | Ecowitt WiFi Gateway |
-| bond | appName | contains | Bond | BOND Home Integration |
-| bond | driverName | contains | Bond | BOND Fan |
-| bond | driverName | contains | Bond | BOND Fan Dimmable Light |
-| bond | driverName | contains | Bond | BOND Fan Light |
-| bond | driverName | contains | Bond | BOND Fan Timer Light |
-| bond | driverName | contains | Bond | BOND Fan With Direction |
-| bond | driverName | contains | Bond | BOND Fireplace |
-| bond | driverName | contains | Bond | BOND Fireplace Fan |
-| bond | driverName | contains | Bond | BOND Fireplace Light |
-| bond | driverName | contains | Bond | BOND Generic Device |
-| bond | driverName | contains | Bond | BOND Motorized Shade |
+| None |  |  |  |  |
 
 ## C. Over-broad rules
 
@@ -159,9 +140,7 @@ Live-HPM note: this rule currently matches `Rule Machine Manager` by substring, 
 | --- | --- | --- | --- | --- |
 | shelly-native | Shelly Integration | driverName | Shelly | 7 |
 | shelly-mqtt | Shelly MQTT Variant | driverName | Shelly | 7 |
-| shelly-mqtt | Shelly MQTT Variant | driverName | MQTT | 11 |
-| ring | Ring Integration | driverName | Ring | 8 |
-| groups-scenes | Groups and Scenes | appName | Group | 7 |
+| ring | Ring Integration | driverName | Ring | 19 |
 
 ## D. Entries with no dependencies
 
@@ -193,18 +172,7 @@ Count: **19**
 
 | Defect | Location | Value |
 | --- | --- | --- |
-| dependency.class | govee-v2[1] | EXTERNAL_OR_LOCAL_SERVICE |
-| dependency.class | reolink[1] | LOCAL_DEVICE_OR_BRIDGE |
-| dependency.class | weatherflow[1] | LOCAL_OR_EXTERNAL_SERVICE |
-| dependency.class | owntracks[1] | EXTERNAL_OR_LOCAL_SERVICE |
-| dependency.class | reolink-camera[1] | LOCAL_DEVICE_OR_BRIDGE |
-| entry.class | mode-manager | PLATFORM_UTILITY |
-| entry.class | hubitat-safety-monitor | SECURITY_ORCHESTRATOR |
-| entry.class | groups-scenes | VIRTUALISATION_ORCHESTRATOR |
-| entry.class | hubitat-dashboard | DASHBOARD |
-| entry.class | easy-dashboard | DASHBOARD |
-| entry.class | lock-code-manager | PLATFORM_UTILITY |
-| dependency.class | rtsp-camera-integration[1] | LOCAL_DEVICE_OR_BRIDGE |
+| None |  |  |
 
 ## F. Duplicate identifiers and genuine overlaps
 
@@ -221,15 +189,17 @@ Only pairs where both complete entries evaluate to MATCH under their own `matchM
 | Entry A | Entry B | Package count | Example packages |
 | --- | --- | --- | --- |
 | chromecast-native | chromecast-plus | 1 | Google Chromecast+ |
+| esphome | ring | 1 | ESPHome Integration Library and Example Drivers |
 | govee-v2 | matter-bridge | 1 | Govee Matter Drivers |
 | reolink | reolink-camera | 3 | Reolink Floodlight Camera, Reolink Integration, Reolink IP Camera |
+| ring | tasmota | 1 | Tasmota for Hubitat Elevation |
 | webcore | webcore-native | 1 | webCoRE |
 
 Maker API three-entry false-collision canary: **PASS** if neither `home-assistant-makerapi` nor `homebridge-makerapi` appears above solely from the unevaluable `userMapping` rule.
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **810**
+Total packages not matched by any registry entry: **805**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -278,7 +248,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Dan Healy (TheDanHealy) | Rental Automator | Integrations | Alarm Systems, Automations & Groups, Locks, Tools & Utilities | https://raw.githubusercontent.com/TheDanHealy/hubitat-rental-automator/main/packageManifest.json |
 | Daniel Winks | Gemini Text Rewriter | Utilities | Tools & Utilities, Cloud | https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/GeminiTextRewriter/packageManifest.json |
 | DarwinsDen | Tesla Powerwall Manager | Integrations | Energy Monitoring | https://raw.githubusercontent.com/DarwinsDen/Tesla-Powerwall-Manager/main/packageManifest.json |
-| Dave Gutheinz(DavGut) | Kasa Camera | Utility | LAN, Security, Monitoring | https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/refs/heads/main/packageManifest.json |
 | Dave Gutheinz(DavGut) | Samsung TV Remote | Utility | LAN, Multimedia | https://raw.githubusercontent.com/DaveGut/HubitatActive/master/SamsungTvRemote/packageManifest.json |
 | David LaPorte | AcuRite Weather Station | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json |
 | David LaPorte | Radon Fan Sensor | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/packageManifest.json |
@@ -310,7 +279,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Joe Page | go2rtc | Integrations | Security & Safety, Multimedia, Dashboards | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/packageManifest.json |
 | Jonathan Bradshaw | Tuya IoT Platform (Cloud) | Integrations | Cloud | https://raw.githubusercontent.com/bradsjm/hubitat-public/main/Tuya/packageManifest.json |
 | Jonathan Fields | WyzeHub (Updated to Use API Key) | Integrations | Cloud, Lights & Switches, Multimedia | https://raw.githubusercontent.com/fieldsjm/Hubitat-2/master/WyzeHub/packageManifest.json |
-| Joseph Kregloh | Solaredge Monitor | Integrations |  | https://raw.githubusercontent.com/funzie19/hubitat-solaredge/master/packageManifest.json |
 | Justin Walker (augoisms) | Rainforest Eagle |  | LAN, Energy Monitoring | https://raw.githubusercontent.com/augoisms/hubitat/master/rainforest-eagle/packageManifest.json |
 | KTriponis | Elgato Integrations | Integrations | Lights & Switches | https://raw.githubusercontent.com/ktriponis/hubitat-elgato/main/packageManifest.json |
 | Kevin Kahl (@kahlkevin) | Inovelli Dimmer White Series VTM31-SN | Integrations | Energy Monitoring, Lights & Switches, Matter | https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json |
@@ -326,8 +294,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | LGKApps kahn@lgk.com lgkahn-hubitat | Ct100 Thermastat Device Handler | Integrations | Climate Control | https://raw.githubusercontent.com/lgkahn/hubitat/master/MyCT100.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | Dim with Me | Integrations | Lights & Switches | https://raw.githubusercontent.com/lgkahn/hubitat/master/DimWithMe.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | EZMulti aka hsm200 device handler | Integrations | Lights & Switches | https://raw.githubusercontent.com/lgkahn/hubitat/master/EzMultiNew.json |
-| LGKApps kahn@lgk.com lgkahn-hubitat | Enerwave ZW15SM high amperage switch device handler | Integrations | Lights & Switches, Energy Monitoring | https://raw.githubusercontent.com/lgkahn/hubitat/master/ZW15SM.json |
-| LGKApps kahn@lgk.com lgkahn-hubitat | Eversource ST814 Temp and humidity device handler | Integrations | Monitoring, Multi Sensors, Temperature & Humidity | https://raw.githubusercontent.com/lgkahn/hubitat/master/ST814.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | Homi Heiman Natural Gas Sensor Device Handler | Integrations | Monitoring, Safety & Security | https://raw.githubusercontent.com/lgkahn/hubitat/master/HomiHeimanGas.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | Honeywell Total Comfort API | Integrations | Climate Control | https://raw.githubusercontent.com/lgkahn/hubitat/master/TotalComfort.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | Keen Vent LGK | Integrations | Climate Control | https://raw.githubusercontent.com/lgkahn/hubitat/master/KeenVentLGK.json |
@@ -430,9 +396,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Simon Burke (Scruffy-Sjb) | Heiman Zigbee Smoke Detector Driver | Integrations | Zigbee, Alarm Systems, Monitoring, Safety & Security | https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/Heiman/Zigbee_Smoke/packageManifest.json |
 | Simon Burke (Scruffy-Sjb) | Secure SRT321 Thermostat | Integrations | ZWave, Climate Control, Temperature & Humidity | https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/repository.json |
 | Simon Burke (sburke781) | BoM Radar Images Data File | Integrations | Weather | https://raw.githubusercontent.com/sburke781/hubitat/master/BoMWeather/RadarImages/packageManifest.json |
-| Simon Burke (sburke781) | Ecowitt WiFi Gateway | Integrations | Monitoring, Irrigation, LAN, Temperature & Humidity, Water, Weather | https://raw.githubusercontent.com/sburke781/ecowitt/main/packageManifest.json |
 | Simon Burke (sburke781) | Unified Thermostat | Integrations | Climate Control, Temperature & Humidity, Cloud, LAN | https://raw.githubusercontent.com/sburke781/hubitat/master/UnifiedThermostat/packageManifest.json |
-| Snell | Ambient Ecowitt Weather | Integrations | Cloud, LAN, Monitoring, Temperature & Humidity, Weather | https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json |
 | Snell | Blink Drivers | Integrations | Cameras, Cloud, Misc. Devices, Monitoring, Safety & Security | https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json |
 | Snell | FireBoard | Integrations | Cloud, Monitoring, Temperature & Humidity | https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json |
 | Snell | Grizzl-ECharger | Integrations | Energy Monitoring, LAN, Misc. Devices, Monitoring, Vehicles & Transportation | https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json |
@@ -522,7 +486,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | dkilgore90 | LIFX Enhanced Drivers | Control | LAN, Lights & Switches | https://raw.githubusercontent.com/dkilgore90/lifx-hubitat/main/packageManifest.json |
 | dkilgore90 | iRobot Scheduler | Integrations | Cleaning Devices | https://raw.githubusercontent.com/dkilgore90/iRobot/master/Roomba/packageManifest.json |
 | dman2306 | AlarmDecoder Integration | Integrations | LAN, Safety & Security, Alarm Systems | https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json |
-| dman2306 | BOND Home Integration | Integrations | LAN, IR & RF | https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/packageManifest.json |
 | dman2306 | Denon HEOS Integration | Integrations | LAN, Speakers, Multimedia | https://raw.githubusercontent.com/dcmeglio/hubitat-heos/master/packageManifest.json |
 | dman2306 | Holiday Switcher | Utility | Cloud, Automations & Groups | https://raw.githubusercontent.com/dcmeglio/hubitat-holidayswitcher/master/packageManifest.json |
 | dman2306 | Kevo Plus Integration | Integrations | Cloud, Locks | https://raw.githubusercontent.com/dcmeglio/hubitat-kevo/master/packageManifest.json |
@@ -692,41 +655,12 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Section | Count |
 | --- | --- |
-| A. Dead rules | 115 |
-| B. Near misses | 17 |
-| C. Over-broad rules | 5 |
+| A. Dead rules | 112 |
+| B. Near misses | 0 |
+| C. Over-broad rules | 3 |
 | D. Entries with no dependencies | 19 |
-| E. Schema defects | 12 |
+| E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
-| F2. Genuine overlap pairs | 4 |
-| G. Unrepresented packages | 810 |
-| G candidate subset | 356 |
-
-## H. Enrichment summary
-
-### HPM/Groovy static source pass
-
-The source pass is static and non-executing. Observations are implementation facts only; they are not automatically converted into architectural dependencies.
-
-| Measure | Count |
-| --- | --- |
-| Distinct source URLs | 2220 |
-| Source URLs fetched | 2133 |
-| Source URLs failed | 87 |
-| Components attempted | 2234 |
-| Components fetched | 2147 |
-| Literal definitions verified | 2134 |
-| Components with observations | 2091 |
-
-### Official Hubitat documentation pass
-
-Only `docs2.hubitat.com` is accepted. Matching is identity-based and deliberately avoids fuzzy matching. Documentation statements are preserved as evidence observations, not dependency assertions.
-
-| Measure | Count |
-| --- | --- |
-| Documentation pages discovered | 55 |
-| Native registry entries | 44 |
-| Native entries matched to official docs | 35 |
-| Native entries unmatched | 9 |
-| Documentation fetch/parse errors | 0 |
-
+| F2. Genuine overlap pairs | 6 |
+| G. Unrepresented packages | 805 |
+| G candidate subset | 349 |
