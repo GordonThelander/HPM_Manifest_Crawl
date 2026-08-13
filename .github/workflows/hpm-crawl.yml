@@ -31,9 +31,23 @@ jobs:
         run: |
           set -euo pipefail
           gzip -dc crawl_hpm.py.gz > crawl_hpm.py
-          python apply_canary_patch.py
           gzip -dc hubitat_automation_map_app_integration_registry_v0.3.json.gz > hubitat_automation_map_app_integration_registry_v0.3.json
+          python apply_canary_patch.py
           python -m py_compile crawl_hpm.py
+
+      - name: Commit uncompressed inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add crawl_hpm.py hubitat_automation_map_app_integration_registry_v0.3.json
+          if git diff --cached --quiet; then
+            echo "Uncompressed inputs already present."
+          else
+            git commit -m "Add uncompressed crawl inputs [skip ci]"
+            git push
+          fi
 
       - name: Crawl HPM and validate registry
         run: python crawl_hpm.py
