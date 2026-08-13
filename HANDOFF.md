@@ -154,15 +154,39 @@ looks frozen, check that first.
 
 ## 4b. Changing the registry
 
-Two different things live here and they update in opposite ways.
+Three files are easily confused. What updates automatically, and what does not, differs for
+each.
 
-**The index regenerates itself.** `hpm_package_index.json`, the docs index and the validation
-report are outputs. Never hand-edit them; the next run overwrites them.
+| File | Who writes it |
+| --- | --- |
+| `hpm_package_index.json` | the crawl, every run. Never hand-edit; it is overwritten. |
+| `registry_validation_report.md` | the crawl, every run. Same. |
+| `..._integration_registry.json` | **both.** See below. |
 
-**The registry is hand-maintained.** `hubitat_automation_map_app_integration_registry.json`
-only changes when a person changes it. A daily crawl will happily report the same 805
-unrepresented packages forever, because deciding what an integration depends on is a
-judgement no crawl can make (see section 4, "Evidence is not conclusion").
+**The registry is written by both the crawl and by people, in different parts of it.**
+
+The crawl **enriches existing entries**: `apply_source_visibility.py` sets `sourceVisibility`
+and `enrich_hubitat_docs.py` attaches `documentationEvidence`. Those fields are regenerated
+and hand-edits to them will be overwritten.
+
+The crawl **never creates an entry**. No code path appends to `entries[]`, deliberately. The
+count stays at 101 until a person adds the 102nd.
+
+That is not an oversight, and it is worth understanding before trying to automate it. A
+discovered package gives you a name, hosts and tags, which is enough to write match rules
+mechanically. It is not enough to write the field that gives an entry its value:
+`runtimeCriticality`. An entry with match rules and no classified dependency only asserts
+that an app exists, which the hub already knows. Nineteen such entries exist and are
+recommended for deletion for exactly that reason.
+
+So a daily crawl will keep reporting the same 805 unrepresented packages. It is discovering
+them correctly; they sit in section G as candidates with their evidence attached, waiting on
+a judgement no static analysis reaches (see section 4, "Evidence is not conclusion").
+
+**The obvious improvement, not built:** auto-draft one entry per candidate with match rules
+filled in, hosts listed, class guessed from its tags, and `runtimeCriticality` left
+deliberately blank with a `NEEDS_CLASSIFICATION` status. That turns 349 blank pages into 349
+forms with one question each. It must not fill that field in.
 
 ### To correct or add an entry
 
