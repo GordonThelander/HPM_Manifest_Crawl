@@ -32,7 +32,10 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry_v0.3.json
-          python -m py_compile crawl_hpm.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py
+
+      - name: Classify source visibility
+        run: python apply_source_visibility.py
 
       - name: Crawl HPM and validate registry
         run: python crawl_hpm.py
@@ -47,16 +50,16 @@ jobs:
             registry_validation_report.md
           retention-days: 7
 
-      - name: Commit successful outputs
+      - name: Commit successful outputs and registry annotations
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hpm_package_index.json registry_validation_report.md
+          git add hpm_package_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry_v0.3.json
           if git diff --cached --quiet; then
-            echo "Generated outputs are unchanged; nothing to commit."
+            echo "Generated outputs and source visibility annotations are unchanged; nothing to commit."
           else
-            git commit -m "Update HPM crawl outputs [skip ci]"
+            git commit -m "Update HPM outputs and source visibility [skip ci]"
             git push
           fi
