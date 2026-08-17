@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/official-devices.schema.json",
+  "title": "Hubitat Official Compatible Devices",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotId", "source", "recordCount", "records"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "official-devices"},
+    "snapshotId": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source": {"type": "object", "required": ["url", "updatedAt"]},
+    "recordCount": {"type": "integer", "minimum": 0},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "classification", "manufacturer", "device", "productNumber", "deviceType", "protocol", "recommendedDriverOrApp", "source", "raw"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^official-device:"},
+          "classification": {"const": "OFFICIAL_LISTED"},
+          "manufacturer": {"type": ["string", "null"]},
+          "device": {"type": ["string", "null"]},
+          "productNumber": {"type": ["string", "null"]},
+          "deviceType": {"type": ["string", "null"]},
+          "protocol": {"type": ["string", "null"]},
+          "recommendedDriverOrApp": {"type": ["string", "null"]},
+          "instructionReference": {"type": ["string", "null"]},
+          "buyLinks": {"type": "array", "items": {"type": "string"}},
+          "source": {"type": "object"},
+          "raw": {"type": "object"}
+        }
+      }
+    }
+  }
+}

@@ -87,7 +87,7 @@ class CommunityDatasetTests(unittest.TestCase):
             'definitions.schema.json',
             'package-health.schema.json',
         }
-        self.assertEqual({path.name for path in schema_dir.glob('*.json')}, expected)
+        self.assertTrue(expected <= {path.name for path in schema_dir.glob('*.json')})
         for name in expected:
             schema = json.loads((schema_dir / name).read_text('utf-8'))
             self.assertEqual(schema['$schema'], 'https://json-schema.org/draft/2020-12/schema')

@@ -12,6 +12,9 @@ on:
       - 'community_packages.json'
       - 'definitions.json'
       - 'package_health.json'
+      - 'official_devices.json'
+      - 'community_drivers.json'
+      - 'community_apps.json'
   pull_request:
     branches: [main]
   schedule:
@@ -42,6 +45,7 @@ jobs:
           python build_slim_registry.py --check
           python automation_map_contract.py
           python build_community_datasets.py --check
+          python harvest_catalogues.py --check
 
   crawl:
     # Branch and pull-request builds exercise the contract job without running
@@ -81,7 +85,7 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py automation_map_contract.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py harvest_catalogues.py automation_map_contract.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -128,6 +132,22 @@ jobs:
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python build_community_datasets.py
 
+      # These sources change independently of HPM repository metadata, so this
+      # refresh runs on every scheduled main-branch workflow.
+      - name: Harvest official and community catalogues
+        run: python harvest_catalogues.py
+
+      - name: Upload catalogue outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: hubitat-catalogue-output
+          if-no-files-found: error
+          path: |
+            official_devices.json
+            community_drivers.json
+            community_apps.json
+          retention-days: 7
+
       - name: Upload outputs
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         uses: actions/upload-artifact@v4
@@ -146,17 +166,16 @@ jobs:
           retention-days: 7
 
       - name: Commit generated outputs
-        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json upstream_state.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json official_devices.json community_drivers.json community_apps.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else
-            git commit -m "Adopt v0.4 validation semantics and stable registry input [skip ci]"
+            git commit -m "Refresh HPM crawl and community datasets [skip ci]"
             git push origin main
           fi

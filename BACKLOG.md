@@ -126,23 +126,23 @@ cannot be discovered reliably from HPM alone.
 
 ### Work
 
-- [ ] Add snapshot harvesters for all three sources and retain the raw source row or list
+- [x] Add snapshot harvesters for all three sources and retain the raw source row or list
       item, source URL, section and snapshot date.
-- [ ] Treat rendered page layout as untrusted and fail visibly when expected structure
+- [x] Treat rendered page layout as untrusted and fail visibly when expected structure
       changes rather than silently producing an empty catalogue.
-- [ ] Generate separate `official_devices.json`, `community_drivers.json` and
+- [x] Generate separate `official_devices.json`, `community_drivers.json` and
       `community_apps.json` projections with versioned schemas.
-- [ ] Normalize manufacturer, model/product number, app name, driver name and category
+- [x] Normalize manufacturer, model/product number, app name, driver name and category
       while preserving the original text.
-- [ ] Resolve exact links from wiki entries to community topics, repositories and HPM
+- [x] Resolve exact links from wiki entries to community topics, repositories and HPM
       packages where available.
-- [ ] Compare wiki apps and drivers with HPM definitions to identify exact matches,
+- [x] Compare wiki apps and drivers with HPM definitions to identify exact matches,
       manual-install-only projects, ambiguous matches and apparently missing projects.
-- [ ] Preserve lifecycle words such as `obsolete`, `withdrawn`, `deprecated` and
+- [x] Preserve lifecycle words such as `obsolete`, `withdrawn`, `deprecated` and
       `superseded` as source observations and review flags.
-- [ ] Track additions, removals and changed links between successful snapshots.
+- [x] Track additions, removals and changed links between successful snapshots.
 - [ ] Add device/app/driver lookup across all sources to the public explorer.
-- [ ] Display source authority and evidence type beside every result.
+- [x] Display source authority and evidence type in every generated result.
 
 ### Evidence classifications
 
