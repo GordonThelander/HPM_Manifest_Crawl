@@ -71,16 +71,6 @@ function heading(container,title,badge,className) {
   const b=document.createElement('span'); b.className='badge'; b.textContent=badge; h.append(b); container.append(h);
   const cards=document.createElement('div'); cards.className='cards'; container.append(cards); return cards;
 }
-function packageCard(result) {
-  const d=result.definition,p=d.package,card=document.createElement('article'),h=document.createElement('h4');
-  card.classList.add(d.kind==='APP'?'app-card':'driver-card');
-  const primary=d.identities[0]||{};h.textContent=primary.name||p.name||d.id;const badge=document.createElement('span');badge.className=`type-badge ${d.kind.toLowerCase()}`;badge.textContent=d.kind;h.append(badge);card.append(h);
-  const identity=document.createElement('p'); identity.textContent=`Namespace: ${primary.namespace||'(none)'}`; card.append(identity);
-  const packageName=document.createElement('p');packageName.textContent=`Package: ${p.name||'Not declared'}`;card.append(packageName);
-  const author=document.createElement('p'); author.textContent=`Author: ${p.author||'Not declared'}`; card.append(author);
-  const links=document.createElement('div'); links.className='links';
-  [[p.manifestUrl,'Manifest'],[p.documentationUrl,'Documentation'],[p.communityUrl,'Community'],[d.sourceUrl,'Source']].forEach(([u,l])=>{const a=safeLink(u,l);if(a)links.append(a);}); card.append(links); return card;
-}
 function groupedPackageCards(results) {
   const groups=new Map();
   for(const result of results){const d=result.definition,p=d.package,id=p.id||d.id;if(!groups.has(id))groups.set(id,{package:p,definitions:[]});groups.get(id).definitions.push(d);}
@@ -108,20 +98,20 @@ function communityCard(app,matchLabel) {
 }
 function render(result) {
   $('results').hidden=false; ['exact','namespace-results','author-results','name-matches','manual','community-apps','builtins','builtin-related','related','suggestions'].forEach(id=>$(id).replaceChildren());
-  if(result.exact.length){const cards=heading($('exact'),'Exact HPM identity matches','Exact','exact');result.exact.forEach(x=>cards.append(packageCard(x)));}
+  if(result.exact.length){const cards=heading($('exact'),'Exact HPM identity matches','Exact · grouped by package','exact');cards.append(groupedPackageCards(result.exact));}
   const namespaceCount=result.namespaceExact.length+result.namespaceRelated.length+result.manualNamespaceExact.length+result.manualNamespaceRelated.length;
   if(namespaceCount){const cards=heading($('namespace-results'),'Namespace results','Grouped by package','name-match');cards.append(groupedPackageCards([...result.namespaceExact,...result.namespaceRelated]));result.manualNamespaceExact.forEach(x=>cards.append(manualCard(x,'Exact namespace')));result.manualNamespaceRelated.forEach(x=>cards.append(manualCard(x,'Related namespace')));}
   const authorCount=result.authorExact.length+result.authorRelated.length+result.manualAuthorExact.length+result.manualAuthorRelated.length;
   if(authorCount){const cards=heading($('author-results'),'Author results','Grouped by package','name-match');cards.append(groupedPackageCards([...result.authorExact,...result.authorRelated]));result.manualAuthorExact.forEach(x=>cards.append(manualCard(x,'Exact author')));result.manualAuthorRelated.forEach(x=>cards.append(manualCard(x,'Related author')));}
-  if(result.nameMatches.length){const cards=heading($('name-matches'),'Exact-name HPM candidates','Namespace unconfirmed','name-match');result.nameMatches.forEach(x=>cards.append(packageCard(x)));}
+  if(result.nameMatches.length){const cards=heading($('name-matches'),'Exact-name HPM candidates','Namespace unconfirmed · grouped by package','name-match');cards.append(groupedPackageCards(result.nameMatches));}
   const manualCount=result.manualExact.length+result.manualNameMatches.length+result.manualRelated.length;
   if(manualCount){const cards=heading($('manual'),'Reviewed manual-install community projects','Not in HPM','manual');result.manualExact.forEach(x=>cards.append(manualCard(x,'Exact source identity')));result.manualNameMatches.forEach(x=>cards.append(manualCard(x,'Exact name; confirm namespace')));result.manualRelated.forEach(x=>cards.append(manualCard(x,'Related name')));}
   const communityCount=result.communityExact.length+result.communityRelated.length;
   if(communityCount){const cards=heading($('community-apps'),'Community Apps Wiki listings','Discovery evidence','community-app');result.communityExact.forEach(x=>cards.append(communityCard(x,'Exact listing name')));result.communityRelated.forEach(x=>cards.append(communityCard(x,'Related listing name')));}
   if(result.builtIns.length){const cards=heading($('builtins'),'Documented Hubitat built-in candidates','Separate evidence','builtin');result.builtIns.forEach(x=>{const card=document.createElement('article'),h=document.createElement('h4');h.textContent=x.names[0];card.append(h);const p=document.createElement('p');p.textContent='Official Hubitat application documentation; this is not an HPM package.';card.append(p);const a=safeLink(x.documentationUrl,'Official documentation');if(a)card.append(a);cards.append(card);});}
   if(result.builtInSuggestions.length){const cards=heading($('builtin-related'),'Related documented Hubitat built-ins','Possible built-in','builtin');result.builtInSuggestions.forEach(x=>{const card=document.createElement('article'),h=document.createElement('h4');h.textContent=x.names[0];card.append(h);const p=document.createElement('p');p.textContent='Related official Hubitat application documentation; not an exact identity and not an HPM package.';card.append(p);const a=safeLink(x.documentationUrl,'Official documentation');if(a)card.append(a);cards.append(card);});}
-  if(result.related.length){const cards=heading($('related'),'Related HPM definition names','Discovery match','related');result.related.forEach(x=>cards.append(packageCard(x)));}
-  if(result.suggestions.length){const cards=heading($('suggestions'),'Conservative suggestions','Not exact','suggested');result.suggestions.forEach(x=>cards.append(packageCard(x)));}
+  if(result.related.length){const cards=heading($('related'),'Related HPM definition names','Discovery match · grouped by package','related');cards.append(groupedPackageCards(result.related));}
+  if(result.suggestions.length){const cards=heading($('suggestions'),'Conservative suggestions','Not exact · grouped by package','suggested');cards.append(groupedPackageCards(result.suggestions));}
   const total=result.exact.length+namespaceCount+authorCount+result.nameMatches.length+manualCount+communityCount+result.builtIns.length+result.builtInSuggestions.length+result.related.length+result.suggestions.length;
   $('status').textContent=total ? `${authorCount} author, ${namespaceCount} namespace, ${result.exact.length} exact HPM identity, ${result.nameMatches.length} HPM name, ${manualCount} reviewed manual, ${communityCount} wiki listing, ${result.builtIns.length} built-in, ${result.related.length+result.builtInSuggestions.length+result.suggestions.length} other possible result(s).${result.needsNamespace?' Add the namespace to confirm an exact identity.':''}` : 'No credible match found. Absence is not proof that the code is invalid.';
 }
@@ -130,6 +120,6 @@ if(index) ready(index);
 else fetch('data/identity_index.json').then(r=>{if(!r.ok)throw new Error();return r.json();}).then(ready).catch(()=>{$('status').textContent='The identity index could not be loaded. Rebuild the resolver data and reopen this page.';});
 $('lookup-form').addEventListener('submit',event=>{event.preventDefault();if(!index)return;if(!$('name').value.trim()&&!$('namespace').value.trim()&&!$('author').value.trim()){$('status').textContent='Enter a definition name, namespace, author, or a combination.';$('name').focus();return;}$('status').textContent='Matching locally…';render(resolve($('name').value,$('namespace').value,$('kind').value,$('author').value));});
 document.querySelectorAll('.examples button').forEach(button=>button.addEventListener('click',()=>{
-  $('name').value=button.dataset.name;$('namespace').value=button.dataset.namespace;$('kind').value=button.dataset.kind;
+  $('name').value=button.dataset.name||'';$('namespace').value=button.dataset.namespace||'';$('author').value=button.dataset.author||'';$('kind').value=button.dataset.kind||'';
   if(index) render(resolve($('name').value,$('namespace').value,$('kind').value,$('author').value));
 }));

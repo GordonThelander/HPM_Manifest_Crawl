@@ -141,11 +141,15 @@ class IdentityResolverTests(unittest.TestCase):
         self.assertNotIn('innerHTML', source)
         self.assertIn('textContent', source)
 
-    def test_author_and_namespace_results_group_by_package(self):
+    def test_every_hpm_result_path_groups_by_package(self):
         source = (ROOT / 'site/identity-resolver/app.js').read_text('utf-8')
         self.assertIn('function groupedPackageCards', source)
         self.assertIn("groupedPackageCards([...result.authorExact", source)
         self.assertIn("groupedPackageCards([...result.namespaceExact", source)
+        self.assertIn('groupedPackageCards(result.exact)', source)
+        self.assertIn('groupedPackageCards(result.nameMatches)', source)
+        self.assertIn('groupedPackageCards(result.related)', source)
+        self.assertIn('groupedPackageCards(result.suggestions)', source)
 
     def test_app_and_driver_styles_have_text_badges_and_distinct_colours(self):
         script = (ROOT / 'site/identity-resolver/app.js').read_text('utf-8')
@@ -159,7 +163,9 @@ class IdentityResolverTests(unittest.TestCase):
     def test_direct_file_page_loads_embedded_index_and_examples(self):
         page = (ROOT / 'site/identity-resolver/index.html').read_text('utf-8')
         self.assertIn('data/identity_index.js', page)
-        self.assertIn('data-name="OwnTracks"', page)
+        self.assertIn('data-author="Heyes"', page)
+        self.assertIn('data-name="Kasa"', page)
+        self.assertIn('data-namespace="Bear"', page)
         self.assertNotIn('id="name" required', page)
         self.assertIn('id="author"', page)
 

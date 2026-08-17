@@ -209,7 +209,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Search exact application and driver definition name plus namespace.
 - [x] Search by namespace alone with exact and separately labelled partial results.
 - [x] Search by author alone or combine author with name, namespace, and type filters.
-- [x] Group author/namespace results by package and distinguish apps from drivers with
+- [x] Group every HPM result path by package—including combined filters—and distinguish apps from drivers with
       accessible text badges plus green/blue visual treatment.
 - [x] Fall back to separately labelled, conservative fuzzy suggestions.
 - [x] Return the canonical package, manifest, author, documentation and confidence basis.

@@ -14,7 +14,8 @@ Author matching is case-insensitive; exact values are separated from partial aut
 results. Wiki and built-in sources are excluded because they do not carry reliable author
 identity in this projection.
 
-Author and namespace result sets group definitions by their containing package. App rows use
+All HPM result sets group definitions by their containing package, including exact,
+exact-name, related, suggested, author, namespace, and combined searches. App rows use
 a green border and `APP` badge; driver rows use blue and a `DRIVER` badge. Colour is never
 the sole distinction. Single-definition identity results lead with the definition name and
 show the package as secondary context.
