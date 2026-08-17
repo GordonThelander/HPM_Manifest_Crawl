@@ -45,18 +45,18 @@ contract checks, even when it appears unrelated to Automation Map.
 
 ### Work
 
-- [ ] Add fixtures covering known matches, non-matches, `ANY`, `ALL`, unknown fields,
+- [x] Add fixtures covering known matches, non-matches, `ANY`, `ALL`, unknown fields,
       case differences, whitespace and the Maker API false-positive canary.
-- [ ] Add a reference matcher test equivalent to Automation Map's current Groovy matcher.
-- [ ] Assert the slim registry has the required root, entry, rule and dependency fields.
-- [ ] Assert all enum values are understood by Automation Map.
-- [ ] Assert generated slim entries equal the relevant projection of canonical entries.
-- [ ] Assert the output filename and documented raw URL have not changed.
-- [ ] Retain the hard 64 KiB limit.
-- [ ] Generate to a temporary file, validate it, then replace the published artifact only
+- [x] Add a reference matcher test equivalent to Automation Map's current Groovy matcher.
+- [x] Assert the slim registry has the required root, entry, rule and dependency fields.
+- [x] Assert all enum values are understood by Automation Map.
+- [x] Assert generated slim entries equal the relevant projection of canonical entries.
+- [x] Assert the output filename and documented raw URL have not changed.
+- [x] Retain the hard 64 KiB limit.
+- [x] Generate to a temporary file, validate it, then replace the published artifact only
       after all checks pass.
-- [ ] Add a CI job named `automation-map-contract` and make publication depend on it.
-- [ ] Document an emergency rollback procedure to the previous known-good slim registry.
+- [x] Add a CI job named `automation-map-contract` and make publication depend on it.
+- [x] Document an emergency rollback procedure to the previous known-good slim registry.
 
 ### Acceptance criteria
 

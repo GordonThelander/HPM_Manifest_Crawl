@@ -1,0 +1,62 @@
+[
+  {
+    "name": "equals exact",
+    "appType": "Rule-5.1",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "equals", "value": "Rule-5.1"}]},
+    "expected": "MATCH"
+  },
+  {
+    "name": "equals trims and ignores case",
+    "appType": "  BOND  ",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "equals", "value": "bond"}]},
+    "expected": "MATCH"
+  },
+  {
+    "name": "contains ignores case",
+    "appType": "Advanced Ecowitt Integration",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "contains", "value": "ECOWITT"}]},
+    "expected": "MATCH"
+  },
+  {
+    "name": "all matching app rules",
+    "appType": "Home Assistant Bridge",
+    "entry": {"matchMode": "ALL", "matchRules": [{"field": "appName", "operator": "contains", "value": "Home Assistant"}, {"field": "appName", "operator": "contains", "value": "Bridge"}]},
+    "expected": "MATCH"
+  },
+  {
+    "name": "all fails on one evaluable rule",
+    "appType": "Home Assistant Bridge",
+    "entry": {"matchMode": "ALL", "matchRules": [{"field": "appName", "operator": "contains", "value": "Home Assistant"}, {"field": "appName", "operator": "equals", "value": "Maker API"}]},
+    "expected": "NO_MATCH"
+  },
+  {
+    "name": "all preserves unknown gate",
+    "appType": "Maker API",
+    "entry": {"matchMode": "ALL", "matchRules": [{"field": "appName", "operator": "equals", "value": "Maker API"}, {"field": "userMapping", "operator": "equals", "value": "Home Assistant"}]},
+    "expected": "NOT_EVALUABLE"
+  },
+  {
+    "name": "any unknown after failure is not evaluable",
+    "appType": "Unrelated App",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "equals", "value": "Maker API"}, {"field": "driverName", "operator": "contains", "value": "Bridge"}]},
+    "expected": "NOT_EVALUABLE"
+  },
+  {
+    "name": "any match wins over unknown",
+    "appType": "Maker API",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "equals", "value": "Maker API"}, {"field": "userMapping", "operator": "equals", "value": "Other"}]},
+    "expected": "MATCH"
+  },
+  {
+    "name": "rule machine manager canary",
+    "appType": "Rule Machine Manager",
+    "entry": {"matchMode": "ANY", "matchRules": [{"field": "appName", "operator": "equals", "value": "Rule-5.1"}]},
+    "expected": "NO_MATCH"
+  },
+  {
+    "name": "maker api false-positive canary",
+    "appType": "Maker API",
+    "entry": {"matchMode": "ALL", "matchRules": [{"field": "appName", "operator": "equals", "value": "Maker API"}, {"field": "userMapping", "operator": "equals", "value": "Homebridge"}]},
+    "expected": "NOT_EVALUABLE"
+  }
+]

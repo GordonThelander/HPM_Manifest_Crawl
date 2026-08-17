@@ -38,8 +38,10 @@ regenerated.
 
 import argparse
 import json
+import os
 import pathlib
 import sys
+import tempfile
 
 CANONICAL = pathlib.Path('hubitat_automation_map_app_integration_registry.json')
 SLIM = pathlib.Path('hubitat_automation_map_app_integration_registry_slim.json')
@@ -106,6 +108,24 @@ def build():
     return json.dumps(doc, indent=1, ensure_ascii=False, separators=(',', ':')) + '\n'
 
 
+def atomic_write(path, text):
+    """Replace path only after a complete same-directory write reaches disk."""
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(
+                mode='w', encoding='utf-8', newline='\n',
+                dir=path.parent, prefix=f'.{path.name}.', suffix='.tmp',
+                delete=False) as handle:
+            temporary = pathlib.Path(handle.name)
+            handle.write(text)
+            handle.flush()
+            os.fsync(handle.fileno())
+        temporary.replace(path)
+    finally:
+        if temporary is not None and temporary.exists():
+            temporary.unlink()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--check', action='store_true',
@@ -123,6 +143,18 @@ def main():
               'rather than raising the limit.', file=sys.stderr)
         return 1
 
+    # Validate the complete candidate before either checking or replacing the
+    # published file. Import here to keep the projection builder reusable and
+    # avoid a module cycle at import time.
+    from automation_map_contract import validate_document
+    contract_errors = validate_document(json.loads(text))
+    if contract_errors:
+        print('FAIL: generated slim registry violates the Automation Map contract:',
+              file=sys.stderr)
+        for error in contract_errors:
+            print(f'- {error}', file=sys.stderr)
+        return 1
+
     if args.check:
         if not SLIM.exists():
             print(f'FAIL: {SLIM} is missing. Run build_slim_registry.py.', file=sys.stderr)
@@ -133,7 +165,7 @@ def main():
         print(f'{SLIM} is current: {count} entries, {size} bytes.')
         return 0
 
-    SLIM.write_text(text, encoding='utf-8', newline='\n')
+    atomic_write(SLIM, text)
     canonical_size = CANONICAL.stat().st_size
     print(f'{SLIM} written: {count} entries, {size} bytes '
           f'({100 - round(size / canonical_size * 100)}% smaller than canonical).')

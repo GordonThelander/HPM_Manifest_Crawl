@@ -2,11 +2,15 @@ name: HPM Manifest Crawl
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - community-utility-exploration
     paths-ignore:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
+  pull_request:
+    branches: [main]
   schedule:
     # Daily, deliberately off the hour: scheduled jobs cluster on :00 and the
     # runner queue is kinder a little after. The full crawl only follows if the
@@ -19,11 +23,29 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: write
-
 jobs:
+  automation-map-contract:
+    name: Automation Map contract
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify frozen consumer contract
+        run: |
+          python -m unittest discover -s tests -v
+          python build_slim_registry.py --check
+          python automation_map_contract.py
+
   crawl:
+    # Branch and pull-request builds exercise the contract job without running
+    # the expensive network crawl or the main-only publication path.
+    if: github.ref == 'refs/heads/main'
+    needs: automation-map-contract
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -93,6 +115,10 @@ jobs:
       - name: Build slim registry for the Hubitat app
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python build_slim_registry.py
+
+      - name: Recheck Automation Map contract after generation
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python automation_map_contract.py
 
       - name: Upload outputs
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
