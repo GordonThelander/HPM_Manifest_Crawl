@@ -276,8 +276,9 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [x] Align the browser validator with Hubitat's public-site visual language:
-      Mulish/Roboto typography, lime action colours, neutral surfaces and rounded controls.
+- [x] Align every community site view with Hubitat's public-site visual language through
+      a shared theme: Mulish/Roboto typography, lime action colours, neutral surfaces and
+      rounded controls.
 
 - [x] Package validation as a documented command-line entry point.
 - [x] Add a reusable GitHub Action for package repositories.
@@ -309,11 +310,11 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [ ] Define a minimal input containing only app/driver definition names and namespaces.
-- [ ] Perform matching in the browser against the definitions dataset.
-- [ ] Return likely HPM packages, built-ins, ambiguous matches and unidentified code.
-- [ ] Provide manifest and documentation links for rebuilding an installation.
-- [ ] Explain that this is identity recovery, not configuration backup.
+- [x] Define a minimal input containing only app/driver definition names and namespaces.
+- [x] Perform matching in the browser against the definitions dataset.
+- [x] Return likely HPM packages, built-ins, ambiguous matches and unidentified code.
+- [x] Provide manifest and documentation links for rebuilding an installation.
+- [x] Explain that this is identity recovery, not configuration backup.
 
 ### Acceptance criteria
 

@@ -506,8 +506,9 @@ def render_site(history):
     @media(max-width:780px){{main{{padding-top:24px}}.hero,.lower{{grid-template-columns:1fr}}.hero-stats{{grid-template-columns:repeat(4,1fr)}}.grid{{grid-template-columns:1fr}}.section-head{{display:block}}}}
     @media(max-width:520px){{.hero-stats{{grid-template-columns:repeat(2,1fr)}}.event-top{{display:block}}.badges{{justify-content:flex-start;margin-top:8px}}}}
   </style>
+  <link rel="stylesheet" href="../shared/hubitat.css">
 </head>
-<body><main>
+<body class="package-feed"><main>
   <header class="hero"><div><p class="eyebrow">HPM Manifest Crawl</p><h1>Package changes worth knowing about.</h1><p class="lede">New releases, catalogue additions, removals and availability changes - each tied back to the snapshot and upstream evidence that supports it.</p></div>
   <div><p class="updated">Latest observation<br><strong>{human_time(history['updatedAt'])}</strong></p><div class="hero-stats"><div class="stat"><strong>{len(events)}</strong><span>package changes</span></div><div class="stat"><strong>{counts['ADDED']}</strong><span>added</span></div><div class="stat"><strong>{counts['UPDATED']}</strong><span>updated</span></div><div class="stat"><strong>{counts['BROKEN'] + counts['RESTORED']}</strong><span>availability</span></div></div></div></header>
   <section aria-labelledby="changes-title"><div class="section-head"><div><h2 id="changes-title">Observed changes</h2><p id="result-count">Showing {len(events)} evidence-backed change(s).</p></div><p>Oldest retained baseline: {human_time(history['snapshotGenerated'])}</p></div>

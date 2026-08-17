@@ -130,6 +130,7 @@ refused by the crawler.
 | `health_summary.md` | newly introduced and resolved failure summary for maintainers |
 | `link_reachability.json` | bounded documentation/community URL observations |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
+| `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `package_changes.json` | retained added, removed, updated, broken and restored package events |
 | `package_changes.atom` | subscribable package-change feed |
 | `package_changes_weekly.md` | seven-day community-post digest |

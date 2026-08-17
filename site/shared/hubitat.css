@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --hubitat-ink: #121214;
+  --hubitat-soft: #2b2b2f;
+  --hubitat-muted: #6b6b73;
+  --hubitat-surface: #f8f7fc;
+  --hubitat-line: #e5e7eb;
+  --hubitat-lime: #81bc00;
+  --hubitat-green: #169c00;
+  --hubitat-pale: #defabc;
+  --hubitat-blue: #17699a;
+  --hubitat-blue-pale: #eef7fc;
+  --hubitat-amber: #9a5b00;
+  --hubitat-amber-pale: #fff7e5;
+  --hubitat-red: #b42318;
+  --hubitat-red-pale: #fff1ef;
+  --hubitat-shadow: 0 14px 38px rgb(18 18 20 / 8%);
+}
+
+html { overflow-x: hidden; }
+body { color: var(--hubitat-ink); background: #fff; font-family: "Mulish", ui-sans-serif, system-ui, sans-serif; }
+body > main { width: min(1180px, calc(100% - 32px)); padding-top: 24px; }
+h1, h2, h3, h4 { color: var(--hubitat-soft); font-family: "Mulish", ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--hubitat-green); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid rgb(129 188 0 / 30%); outline-offset: 2px; }
+
+.identity-resolver header,
+.package-feed .hero {
+  position: relative;
+  max-width: none;
+  padding: 54px 40px 44px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  background: var(--hubitat-surface);
+}
+
+.identity-resolver header::before,
+.package-feed .hero::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: var(--hubitat-lime);
+  content: "";
+}
+
+.identity-resolver .eyebrow,
+.package-feed .eyebrow { margin: 0; color: var(--hubitat-green); font-size: .75rem; font-weight: 800; letter-spacing: .1em; }
+.identity-resolver h1,
+.package-feed h1 { margin: .24em 0 .18em; font: 500 clamp(2.7rem, 6vw, 4.5rem)/1.04 "Mulish", ui-sans-serif, system-ui, sans-serif; letter-spacing: -.04em; }
+.identity-resolver .lede,
+.package-feed .lede { color: #444449; }
+
+/* Identity resolver: preserve its evidence hierarchy while replacing the legacy theme. */
+.identity-resolver form { margin-top: 28px; border-color: var(--hubitat-line); border-radius: 16px; background: #fff; box-shadow: var(--hubitat-shadow); }
+.identity-resolver input,
+.identity-resolver select { border-color: #cacad1; border-radius: 8px; background: var(--hubitat-surface); color: var(--hubitat-ink); }
+.identity-resolver form > button { border-color: var(--hubitat-lime); border-radius: 8px; background: var(--hubitat-lime); color: var(--hubitat-ink); }
+.identity-resolver form > button:hover { background: #93cf13; }
+.identity-resolver .examples button { border-color: var(--hubitat-pale); border-radius: 8px; background: var(--hubitat-pale); color: var(--hubitat-green); }
+.identity-resolver .examples button:hover { background: #cfee9e; color: var(--hubitat-green); }
+.identity-resolver #status,
+.identity-resolver article p { color: var(--hubitat-muted); }
+.identity-resolver article { border-color: var(--hubitat-line); border-radius: 16px; background: #fff; box-shadow: var(--hubitat-shadow); }
+.identity-resolver .badge { background: var(--hubitat-pale); color: var(--hubitat-green); }
+.identity-resolver .suggested .badge,
+.identity-resolver .name-match .badge,
+.identity-resolver .related .badge { background: var(--hubitat-amber-pale); color: var(--hubitat-amber); }
+.identity-resolver .builtin .badge { background: var(--hubitat-blue-pale); color: var(--hubitat-blue); }
+.identity-resolver > main > aside { border-left-color: var(--hubitat-lime); border-radius: 0 12px 12px 0; background: var(--hubitat-pale); }
+
+/* Generated package feed. */
+.package-feed .hero { border-bottom: 0; }
+.package-feed .stat { border: 0; border-radius: 12px; background: var(--hubitat-pale); }
+.package-feed .stat strong { color: var(--hubitat-ink); font-family: "Mulish", ui-sans-serif, system-ui, sans-serif; font-weight: 600; }
+.package-feed .stat span { color: var(--hubitat-green); }
+.package-feed h2 { font: 600 2rem/1.1 "Mulish", ui-sans-serif, system-ui, sans-serif; letter-spacing: -.022em; }
+.package-feed .event h3,
+.package-feed .empty h3 { font: 600 1.45rem/1.2 "Mulish", ui-sans-serif, system-ui, sans-serif; letter-spacing: -.018em; }
+.package-feed .search { border-color: #cacad1; border-radius: 8px; background: var(--hubitat-surface); }
+.package-feed button { border-color: var(--hubitat-line); border-radius: 8px; background: var(--hubitat-surface); font-family: "Mulish", ui-sans-serif, system-ui, sans-serif; }
+.package-feed button.active { border-color: var(--hubitat-lime); background: var(--hubitat-lime); color: var(--hubitat-ink); }
+.package-feed button.active span { color: var(--hubitat-soft); }
+.package-feed .event,
+.package-feed .empty,
+.package-feed .panel { border-color: var(--hubitat-line); border-radius: 16px; background: #fff; box-shadow: var(--hubitat-shadow); }
+.package-feed .badge { background: var(--hubitat-pale); color: var(--hubitat-green); }
+.package-feed .badge-broken,
+.package-feed .badge-removed { background: var(--hubitat-red-pale); color: var(--hubitat-red); }
+.package-feed .badge-updated,
+.package-feed .badge-manifest_changed,
+.package-feed .badge-source_location_changed,
+.package-feed .badge-declared_definitions_changed { background: var(--hubitat-amber-pale); color: var(--hubitat-amber); }
+.package-feed .badge-restored { background: var(--hubitat-pale); color: var(--hubitat-green); }
+
+@media (max-width: 800px) {
+  body > main { width: min(100% - 20px, 1180px); padding-top: 10px; }
+  .identity-resolver header,
+  .package-feed .hero { padding: 38px 24px 32px; }
+}
+
+@media (max-width: 620px) {
+  .identity-resolver form { grid-template-columns: 1fr; }
+}
