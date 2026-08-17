@@ -38,6 +38,40 @@
       <article class="package-card" id="preview"><p class="muted">The package preview will appear after validation.</p></article>
     </section>
 
+    <section class="submission-section" aria-labelledby="submission-title">
+      <div class="section-head"><div><p class="step">4 · Publish</p><h2 id="submission-title">Public HPM submission</h2></div><p>Prepare the two catalogue entries; you remain in control of the pull request.</p></div>
+      <div class="submission-grid">
+        <div class="submission-form">
+          <label>Public package-manifest URL<input id="manifest-url" type="url" placeholder="https://raw.githubusercontent.com/…/packageManifest.json"></label>
+          <label>Public repository JSON URL<input id="repository-url" type="url" placeholder="https://raw.githubusercontent.com/…/repository.json"></label>
+          <label>Stable package ID<input id="package-id" autocomplete="off" placeholder="example-presence"></label>
+          <label>Category<select id="category"><option value="">Choose a category</option><option>Control</option><option>Convenience</option><option>Integrations</option><option>Notifications</option><option>Security</option><option>Utility</option></select></label>
+          <label class="wide">Tags, separated by commas<input id="tags" autocomplete="off" placeholder="Presence & Location, Automations & Groups"></label>
+          <label class="wide">Short package description<input id="description" autocomplete="off" placeholder="What this package helps a Hubitat user do"></label>
+          <label class="tested wide"><input id="tested" type="checkbox"> I tested installation through HPM using the manifest or custom repository URL.</label>
+        </div>
+        <aside class="readiness" aria-live="polite">
+          <div class="readiness-head"><div><p class="step">Submission readiness</p><h3 id="readiness-title">Action required</h3></div><span id="readiness-score">0/8</span></div>
+          <ul id="readiness-list"></ul>
+          <p>No data is uploaded and no pull request is opened from this page.</p>
+        </aside>
+      </div>
+      <div class="generated-entries">
+        <article><div class="code-head"><h3>Your repository package entry</h3><button type="button" data-copy="repository-entry">Copy</button></div><pre id="repository-entry"></pre></article>
+        <article><div class="code-head"><h3>Public catalogue entry</h3><button type="button" data-copy="public-entry">Copy</button></div><pre id="public-entry"></pre></article>
+      </div>
+      <div class="publish-steps">
+        <h3>When all checks pass</h3>
+        <ol>
+          <li>Add the generated package entry to your own repository JSON.</li>
+          <li>Add that repository to HPM as a custom repository and test install, update and repair.</li>
+          <li>Confirm your tags against the <a href="https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/settings.json" target="_blank" rel="noopener noreferrer">current official settings</a>.</li>
+          <li>Add the public catalogue entry to <code>repositories.json</code> and open a pull request against the <a href="https://github.com/HubitatCommunity/hubitat-packagerepositories" target="_blank" rel="noopener noreferrer">HubitatCommunity package-repositories project</a>.</li>
+          <li>After merge, verify that HPM search finds the package and detects its next update.</li>
+        </ol>
+      </div>
+    </section>
+
     <section class="next-step">
       <div><p class="step">Deeper checks</p><h2>Confirm source availability and identity</h2><p>The command-line validator can fetch declared Groovy files, compare literal definition names and namespaces, validate repository entries, and emit GitHub annotations.</p></div>
       <code>python validate_hpm_package.py packageManifest.json --check-sources</code>

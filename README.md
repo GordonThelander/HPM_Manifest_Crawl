@@ -135,7 +135,7 @@ refused by the crawler.
 | `package_changes.atom` | subscribable package-change feed |
 | `package_changes_weekly.md` | seven-day community-post digest |
 | `site/package-feed/` | human-readable static package changelog |
-| `site/manifest-validator/` | browser-local HPM package manifest checks and catalogue preview |
+| `site/manifest-validator/` | browser-local HPM checks, submission readiness and catalogue-entry generation |
 | `reviewed_community_projects.json` | source-confirmed manual-install projects absent from HPM/wiki snapshots |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |

@@ -89,7 +89,7 @@ button:focus-visible, .file-button:focus-within { outline: 3px solid rgb(129 188
 .issue .suggestion { color: var(--muted); font-size: .9rem; }
 .issue code { max-width: none; padding: 0; background: transparent; color: inherit; }
 
-.preview-section { margin-top: 42px; }
+.preview-section, .submission-section { margin-top: 42px; }
 .package-card { margin-top: 16px; padding: 26px; }
 .package-card h3 { margin: 0; color: var(--ink-soft); font-size: 1.7rem; font-weight: 600; letter-spacing: -.022em; }
 .package-meta { color: var(--muted); }
@@ -105,10 +105,44 @@ button:focus-visible, .file-button:focus-within { outline: 3px solid rgb(129 188
 .next-step p { margin: .4em 0 0; color: var(--muted); }
 code { max-width: 440px; padding: 13px; border-radius: 8px; background: var(--ink); color: white; overflow-wrap: anywhere; }
 
+.submission-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 18px; margin-top: 16px; }
+.submission-form, .readiness, .generated-entries article, .publish-steps { border: 1px solid var(--line); border-radius: 16px; background: var(--card); box-shadow: var(--shadow); }
+.submission-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 24px; }
+.submission-form label { display: grid; align-content: start; gap: 6px; color: var(--ink-soft); font-weight: 700; }
+.submission-form label.wide { grid-column: 1 / -1; }
+.submission-form input, .submission-form select { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid #cacad1; border-radius: 8px; background: var(--surface); color: var(--ink); }
+.submission-form input:focus, .submission-form select:focus { outline: 3px solid rgb(129 188 0 / 24%); border-color: var(--lime); }
+.submission-form .tested { display: flex; align-items: flex-start; font-weight: 500; }
+.submission-form .tested input { width: 20px; min-height: 20px; margin: 2px 4px 0 0; accent-color: var(--lime); }
+.readiness { padding: 24px; background: var(--surface); }
+.readiness-head { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
+.readiness h3 { margin: .2em 0 0; font-size: 1.45rem; }
+#readiness-score { display: grid; place-items: center; min-width: 62px; min-height: 62px; border-radius: 999px; background: var(--amber-light); color: var(--amber); font-weight: 800; }
+.readiness.ready #readiness-score { background: var(--lime-light); color: var(--lime-dark); }
+.readiness ul { display: grid; gap: 8px; padding: 0; list-style: none; }
+.readiness li { position: relative; padding-left: 25px; color: var(--muted); }
+.readiness li::before { position: absolute; left: 0; content: "○"; color: var(--amber); font-weight: 800; }
+.readiness li.pass { color: var(--ink-soft); }
+.readiness li.pass::before { content: "✓"; color: var(--lime-dark); }
+.readiness > p { margin-bottom: 0; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+.generated-entries { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.generated-entries article { min-width: 0; padding: 22px; }
+.code-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.code-head h3 { margin: 0; font-size: 1.1rem; }
+.code-head button { padding: 7px 11px; background: var(--lime-light); color: var(--lime-dark); }
+pre { min-height: 170px; margin: 16px 0 0; padding: 16px; overflow: auto; border-radius: 8px; background: var(--ink); color: white; font: 12px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.publish-steps { margin-top: 18px; padding: 24px; background: var(--surface); }
+.publish-steps h3 { margin-top: 0; }
+.publish-steps li { margin: .5em 0; }
+.publish-steps code { padding: 2px 5px; }
+.publish-steps a { color: var(--lime-dark); font-weight: 700; }
+
 @media (max-width: 800px) {
   main { width: min(100% - 20px, 1180px); padding-top: 10px; }
   .hero { padding: 38px 24px 32px; }
-  .hero, .workspace, .next-step { grid-template-columns: 1fr; }
+  .hero, .workspace, .next-step, .submission-grid, .generated-entries { grid-template-columns: 1fr; }
+  .submission-form { grid-template-columns: 1fr; }
+  .submission-form label.wide { grid-column: auto; }
   .components { grid-template-columns: 1fr; }
   textarea { min-height: 340px; }
   .section-head { align-items: flex-start; flex-direction: column; }

@@ -20,6 +20,24 @@ class ManifestValidatorTests(unittest.TestCase):
         issues = validator.validate_manifest(fixture('valid_manifest.json'))
         self.assertEqual([row for row in issues if row['severity'] != 'INFO'], [])
 
+    def test_package_and_component_version_strategies_are_exclusive(self):
+        package_versioned = fixture('valid_manifest.json')
+        self.assertNotIn('MIXED_VERSION_STRATEGY', {
+            row['code'] for row in validator.validate_manifest(package_versioned)
+        })
+        component_versioned = fixture('valid_manifest.json')
+        component_versioned.pop('version')
+        component_versioned['apps'][0]['version'] = '1.2.0'
+        self.assertFalse([
+            row for row in validator.validate_manifest(component_versioned)
+            if row['severity'] == 'ERROR'
+        ])
+        mixed = fixture('valid_manifest.json')
+        mixed['apps'][0]['version'] = '1.2.0'
+        self.assertIn('MIXED_VERSION_STRATEGY', {
+            row['code'] for row in validator.validate_manifest(mixed)
+        })
+
     def test_broken_manifest_reports_exact_fields_and_suggestions(self):
         issues = validator.validate_manifest(fixture('broken_manifest.json'), 'broken.json')
         paths = {row['path'] for row in issues if row['severity'] == 'ERROR'}
@@ -115,8 +133,17 @@ class ManifestValidatorTests(unittest.TestCase):
         ).read_text('utf-8'))
         self.assertEqual(schema['$schema'],
                          'https://json-schema.org/draft/2020-12/schema')
-        self.assertEqual(schema['properties']['schemaVersion']['const'], '1.0')
+        self.assertEqual(schema['properties']['schemaVersion']['const'], '1.1')
         self.assertFalse(schema['properties']['executesDownloadedCode']['const'])
+
+    def test_browser_includes_public_submission_readiness_without_submitting(self):
+        page = (ROOT / 'site' / 'manifest-validator' / 'index.html').read_text('utf-8')
+        script = (ROOT / 'site' / 'manifest-validator' / 'app.js').read_text('utf-8')
+        self.assertIn('Public HPM submission', page)
+        self.assertIn('hubitat-packagerepositories', page)
+        self.assertIn('renderSubmission', script)
+        self.assertIn('repositoryEntry', script)
+        self.assertNotIn('api.github.com', script)
 
 
 if __name__ == '__main__':

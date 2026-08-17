@@ -14,8 +14,11 @@ open a local JSON file. Processing stays in the browser and provides:
 - JSON, package identity and per-component version checks;
 - app and driver declaration checks;
 - duplicate component ID detection;
+- package-level versus per-component version-strategy enforcement;
 - URL-shape and clear-text HTTP warnings; and
-- a preview of the package's community catalogue record.
+- a preview of the package's community catalogue record;
+- public-submission readiness checks; and
+- generated entries for the author's repository JSON and the public HPM catalogue.
 
 The browser does not fetch remote URLs. Use the command-line validator for
 repository and source evidence.
@@ -38,7 +41,27 @@ is never run.
 
 Exit code `0` means no errors. Exit code `1` means validation errors were found.
 Exit code `2` means the selected input could not be read or parsed.
-JSON output follows `docs/schemas/manifest-validation.schema.json` version 1.0.
+JSON output follows `docs/schemas/manifest-validation.schema.json` version 1.1.
+
+## Public HPM submission guidance
+
+The browser view prepares, but never submits, the final publication material. It
+requires public HTTPS URLs for the package manifest, repository JSON and every
+declared source. It also records the package ID, category, tags and description,
+and requires the author to confirm a real HPM installation test.
+
+HPM supports either one package-level version or versions on every app and
+driver. Mixing those strategies is an error because HPM's developer guidance
+explicitly advises authors not to mix them within one package.
+
+When the readiness checklist passes, the page generates:
+
+- the package entry to add to the author's own repository JSON; and
+- the `{name, location}` entry to add to the public HPM `repositories.json`.
+
+The author must still test the custom repository and deliberately open the pull
+request against `HubitatCommunity/hubitat-packagerepositories`. The page neither
+authenticates to GitHub nor creates a pull request.
 
 ## Reusable GitHub Action
 

@@ -287,6 +287,9 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Emit GitHub annotations with exact files, fields and suggested corrections.
 - [x] Provide a preview of the package's community explorer record.
 - [x] Document which checks are errors, warnings and informational observations.
+- [x] Enforce HPM's mutually exclusive package-level or per-component versioning.
+- [x] Add public-submission readiness, repository-entry generation, official tag
+      guidance and a deliberate pull-request checklist.
 
 ### Acceptance criteria
 

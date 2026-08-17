@@ -11,7 +11,6 @@ const example = {
     id: "example-presence-app",
     name: "Example Presence",
     namespace: "example",
-    version: "1.2.0",
     location: "https://raw.githubusercontent.com/example/hubitat/main/ExamplePresence.groovy"
   }],
   drivers: []
@@ -23,6 +22,14 @@ const titleElement = document.querySelector("#result-title");
 const summaryElement = document.querySelector("#result-summary");
 const scoreElement = document.querySelector("#score");
 const previewElement = document.querySelector("#preview");
+const readinessElement = document.querySelector(".readiness");
+const readinessTitle = document.querySelector("#readiness-title");
+const readinessScore = document.querySelector("#readiness-score");
+const readinessList = document.querySelector("#readiness-list");
+const repositoryEntry = document.querySelector("#repository-entry");
+const publicEntry = document.querySelector("#public-entry");
+let lastManifest = null;
+let lastIssues = [];
 
 function text(tag, value, className) {
   const element = document.createElement(tag);
@@ -45,7 +52,7 @@ function validUrl(value) {
   }
 }
 
-function validateComponent(component, kind, index, issues) {
+function validateComponent(component, kind, index, issues, requireVersion) {
   const path = `${kind}[${index}]`;
   if (!component || typeof component !== "object" || Array.isArray(component)) {
     addIssue(issues, "ERROR", "INVALID_COMPONENT", path, "Component must be a JSON object.", "Use an object containing id, name, namespace and location.");
@@ -56,7 +63,7 @@ function validateComponent(component, kind, index, issues) {
       addIssue(issues, "WARNING", `MISSING_${field.toUpperCase()}`, `${path}.${field}`, `Component does not declare ${field}.`, `Add a stable ${field} so community tools can identify this code.`);
     }
   });
-  if (!String(component.version ?? "").trim()) {
+  if (requireVersion && !String(component.version ?? "").trim()) {
     addIssue(issues, "ERROR", "MISSING_COMPONENT_VERSION", `${path}.version`, "Component does not declare a version.", "Add the version HPM should compare for updates.");
   }
   if (!String(component.location ?? "").trim()) {
@@ -83,6 +90,11 @@ function validateManifest(manifest) {
     else if (!validUrl(manifest[field])) addIssue(issues, "ERROR", "INVALID_URL", field, "Link is not an absolute HTTP(S) URL.", "Use the complete public URL.");
   });
   let components = 0;
+  const packageVersion = String(manifest.version ?? "").trim();
+  const componentVersions = ["apps", "drivers"].flatMap(kind => Array.isArray(manifest[kind]) ? manifest[kind].map((component, index) => ({ component, path: `${kind}[${index}].version` })).filter(row => String(row.component?.version ?? "").trim()) : []);
+  if (packageVersion && componentVersions.length) {
+    addIssue(issues, "ERROR", "MIXED_VERSION_STRATEGY", "version", "Manifest mixes package-level and component-level versions.", "Use either one package version or a version on every app and driver, not both.");
+  }
   const ids = new Map();
   ["apps", "drivers"].forEach(kind => {
     const values = manifest[kind] ?? [];
@@ -92,13 +104,14 @@ function validateManifest(manifest) {
     }
     components += values.length;
     values.forEach((component, index) => {
-      validateComponent(component, kind, index, issues);
+      validateComponent(component, kind, index, issues, !packageVersion);
       const id = String(component?.id ?? "").trim();
       if (id && ids.has(id)) addIssue(issues, "ERROR", "DUPLICATE_COMPONENT_ID", `${kind}[${index}].id`, `Component ID duplicates ${ids.get(id)}.`, "Give every app and driver a unique stable ID.");
       else if (id) ids.set(id, `${kind}[${index}].id`);
     });
   });
   if (!components) addIssue(issues, "ERROR", "NO_COMPONENTS", "apps/drivers", "Package declares no apps or drivers.", "Declare at least one installable component.");
+  else if (!packageVersion && !componentVersions.length) addIssue(issues, "ERROR", "MISSING_VERSION_STRATEGY", "version", "Manifest declares neither a package version nor component versions.", "Add one package-level version or add a version to every app and driver.");
   const order = { ERROR: 0, WARNING: 1, INFO: 2 };
   return issues.sort((a, b) => order[a.severity] - order[b.severity] || a.path.localeCompare(b.path));
 }
@@ -148,6 +161,68 @@ function renderPreview(manifest) {
   previewElement.append(components);
 }
 
+function httpsUrl(value) {
+  if (!validUrl(value)) return false;
+  return new URL(value).protocol === "https:";
+}
+
+function slug(value) {
+  return String(value || "").toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function submissionValues(manifest) {
+  const tags = document.querySelector("#tags").value.split(",").map(value => value.trim()).filter(Boolean);
+  return {
+    manifestUrl: document.querySelector("#manifest-url").value.trim(),
+    repositoryUrl: document.querySelector("#repository-url").value.trim(),
+    packageId: document.querySelector("#package-id").value.trim(),
+    category: document.querySelector("#category").value,
+    tags,
+    description: document.querySelector("#description").value.trim(),
+    tested: document.querySelector("#tested").checked,
+    packageName: String(manifest?.packageName || "").trim(),
+    author: String(manifest?.author || "").trim()
+  };
+}
+
+function renderSubmission(manifest, issues) {
+  const values = submissionValues(manifest);
+  const allComponents = ["apps", "drivers"].flatMap(kind => Array.isArray(manifest?.[kind]) ? manifest[kind] : []);
+  const packageVersion = String(manifest?.version ?? "").trim();
+  const versionedComponents = allComponents.filter(component => String(component?.version ?? "").trim()).length;
+  const versionStrategy = Boolean(packageVersion) !== Boolean(versionedComponents) && (packageVersion || versionedComponents === allComponents.length);
+  const checks = [
+    [!issues.some(item => item.severity === "ERROR"), "Manifest has no structural errors"],
+    [Boolean(versionStrategy), "One version strategy: package or every component"],
+    [allComponents.length > 0 && allComponents.every(component => httpsUrl(component?.location)), "Every app and driver uses a public HTTPS source URL"],
+    [httpsUrl(values.manifestUrl), "Package manifest has a public HTTPS URL"],
+    [httpsUrl(values.repositoryUrl), "Repository JSON has a public HTTPS URL"],
+    [Boolean(values.packageId), "Repository package entry has a stable ID"],
+    [Boolean(values.category && values.description && values.tags.length), "Category, description and at least one current tag are supplied"],
+    [values.tested, "Installation was tested through HPM"]
+  ];
+  const passed = checks.filter(([pass]) => pass).length;
+  readinessElement.classList.toggle("ready", passed === checks.length);
+  readinessTitle.textContent = passed === checks.length ? "Ready to submit" : "Action required";
+  readinessScore.textContent = `${passed}/${checks.length}`;
+  readinessList.replaceChildren(...checks.map(([pass, label]) => text("li", label, pass ? "pass" : "")));
+
+  const ownEntry = {
+    id: values.packageId || slug(values.packageName) || "your-package-id",
+    name: values.packageName || "Your package name",
+    category: values.category || "Choose a category",
+    location: values.manifestUrl || "https://raw.githubusercontent.com/…/packageManifest.json",
+    description: values.description || "Describe what the package does",
+    tags: values.tags.length ? values.tags : ["Choose current tags"]
+  };
+  const catalogueEntry = {
+    name: values.author || "Your repository name",
+    location: values.repositoryUrl || "https://raw.githubusercontent.com/…/repository.json"
+  };
+  repositoryEntry.textContent = JSON.stringify(ownEntry, null, 2);
+  publicEntry.textContent = JSON.stringify(catalogueEntry, null, 2);
+}
+
 function runValidation() {
   let manifest;
   try {
@@ -155,10 +230,18 @@ function runValidation() {
   } catch (error) {
     renderIssues([{ severity: "ERROR", code: "INVALID_JSON", path: "$", message: error.message, suggestion: "Correct the JSON syntax and try again." }]);
     previewElement.replaceChildren(text("p", "A preview cannot be built until the JSON parses.", "muted"));
+    lastManifest = null;
+    lastIssues = [{ severity: "ERROR", code: "INVALID_JSON", path: "$", message: error.message }];
+    renderSubmission(null, lastIssues);
     return;
   }
-  renderIssues(validateManifest(manifest));
+  lastManifest = manifest;
+  lastIssues = validateManifest(manifest);
+  renderIssues(lastIssues);
   renderPreview(manifest);
+  const packageId = document.querySelector("#package-id");
+  if (!packageId.value) packageId.value = slug(manifest.packageName);
+  renderSubmission(manifest, lastIssues);
 }
 
 function restoreExample() {
@@ -175,5 +258,16 @@ document.querySelector("#file").addEventListener("change", event => {
   reader.addEventListener("load", () => { editor.value = String(reader.result); runValidation(); });
   reader.readAsText(file, "utf-8");
 });
+document.querySelectorAll(".submission-form input, .submission-form select").forEach(control => control.addEventListener("input", () => renderSubmission(lastManifest, lastIssues)));
+document.querySelectorAll("[data-copy]").forEach(button => button.addEventListener("click", async () => {
+  const target = document.querySelector(`#${button.dataset.copy}`);
+  try {
+    await navigator.clipboard.writeText(target.textContent);
+    button.textContent = "Copied";
+    window.setTimeout(() => { button.textContent = "Copy"; }, 1200);
+  } catch (_) {
+    button.textContent = "Select text to copy";
+  }
+}));
 
 restoreExample();

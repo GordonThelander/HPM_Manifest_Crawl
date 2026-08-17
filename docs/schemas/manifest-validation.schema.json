@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["schemaVersion", "valid", "executesDownloadedCode", "networkSourceChecks", "counts", "issues", "preview"],
   "properties": {
-    "schemaVersion": {"const": "1.0"},
+    "schemaVersion": {"const": "1.1"},
     "valid": {"type": "boolean"},
     "executesDownloadedCode": {"const": false},
     "networkSourceChecks": {"type": "boolean"},
@@ -35,11 +35,12 @@
     },
     "preview": {
       "type": "object",
-      "required": ["name", "author", "version", "dateReleased", "manifest", "links", "components"],
+      "required": ["name", "author", "version", "versionStrategy", "dateReleased", "manifest", "links", "components"],
       "properties": {
         "name": {"type": ["string", "null"]},
         "author": {"type": ["string", "null"]},
         "version": {"type": ["string", "null"]},
+        "versionStrategy": {"enum": ["package", "component", null]},
         "dateReleased": {"type": ["string", "null"]},
         "manifest": {"type": "string"},
         "links": {"type": "object"},

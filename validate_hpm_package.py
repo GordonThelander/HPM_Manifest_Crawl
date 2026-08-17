@@ -61,7 +61,7 @@ def check_url_field(value, path, source):
     return []
 
 
-def validate_component(component, kind, index, source_name):
+def validate_component(component, kind, index, source_name, require_version):
     path = f'{kind}[{index}]'
     issues = []
     if not isinstance(component, dict):
@@ -77,7 +77,7 @@ def validate_component(component, kind, index, source_name):
                 f'Add a stable {field} value so HPM and recovery tools can identify this code.',
                 source_name,
             ))
-    if not clean(component.get('version')):
+    if require_version and not clean(component.get('version')):
         issues.append(issue('ERROR', 'MISSING_COMPONENT_VERSION', f'{path}.version',
                             'Component does not declare a version.',
                             'Add the component version HPM should compare for updates.',
@@ -124,6 +124,23 @@ def validate_manifest(manifest, source_name='packageManifest.json'):
             issues.extend(check_url_field(value, field, source_name))
 
     component_count = 0
+    package_version = clean(manifest.get('version'))
+    component_version_paths = []
+    for kind in ('apps', 'drivers'):
+        values = manifest.get(kind, [])
+        if isinstance(values, list):
+            component_version_paths.extend(
+                f'{kind}[{index}].version'
+                for index, component in enumerate(values)
+                if isinstance(component, dict) and clean(component.get('version'))
+            )
+    if package_version and component_version_paths:
+        issues.append(issue(
+            'ERROR', 'MIXED_VERSION_STRATEGY', 'version',
+            'Manifest mixes a package-level version with component-level versions.',
+            'Use either one package version or a version on every app and driver, not both.',
+            source_name,
+        ))
     component_ids = {}
     for kind in ('apps', 'drivers'):
         components = manifest.get(kind, [])
@@ -136,7 +153,9 @@ def validate_manifest(manifest, source_name='packageManifest.json'):
             continue
         component_count += len(components)
         for index, component in enumerate(components):
-            issues.extend(validate_component(component, kind, index, source_name))
+            issues.extend(validate_component(
+                component, kind, index, source_name, require_version=not package_version
+            ))
             if isinstance(component, dict) and clean(component.get('id')):
                 component_id = clean(component['id'])
                 current_path = f'{kind}[{index}].id'
@@ -150,6 +169,13 @@ def validate_manifest(manifest, source_name='packageManifest.json'):
         issues.append(issue('ERROR', 'NO_COMPONENTS', 'apps/drivers',
                             'Package declares no apps or drivers.',
                             'Declare at least one installable app or driver.', source_name))
+    elif not package_version and not component_version_paths:
+        issues.append(issue(
+            'ERROR', 'MISSING_VERSION_STRATEGY', 'version',
+            'Manifest declares neither a package version nor component versions.',
+            'Add one package-level version or add a version to every app and driver.',
+            source_name,
+        ))
     return sorted(issues, key=lambda row: (
         SEVERITY_ORDER[row['severity']], row['path'], row['code']
     ))
@@ -297,6 +323,8 @@ def preview_record(manifest, manifest_reference):
         'name': clean(manifest.get('packageName')),
         'author': clean(manifest.get('author')),
         'version': preview_version,
+        'versionStrategy': ('package' if clean(manifest.get('version')) else
+                            'component' if component_versions else None),
         'dateReleased': clean(manifest.get('dateReleased')),
         'manifest': manifest_reference,
         'links': {
@@ -332,7 +360,7 @@ def build_result(manifest, manifest_reference, manifest_source,
     ))
     counts = collections_counter(row['severity'] for row in issues)
     return {
-        'schemaVersion': '1.0',
+        'schemaVersion': '1.1',
         'valid': counts.get('ERROR', 0) == 0,
         'executesDownloadedCode': False,
         'networkSourceChecks': bool(check_sources),
