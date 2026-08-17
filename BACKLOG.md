@@ -206,18 +206,26 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [ ] Search exact application and driver definition name plus namespace.
-- [ ] Fall back to separately labelled, conservative fuzzy suggestions.
-- [ ] Return the canonical package, manifest, author, documentation and confidence basis.
-- [ ] Identify likely Hubitat built-ins separately from HPM packages.
-- [ ] Explain ambiguous matches rather than selecting one silently.
-- [ ] Provide a browser-only lookup that does not upload hub inventory.
+- [x] Search exact application and driver definition name plus namespace.
+- [x] Fall back to separately labelled, conservative fuzzy suggestions.
+- [x] Return the canonical package, manifest, author, documentation and confidence basis.
+- [x] Identify likely Hubitat built-ins separately from HPM packages.
+- [x] Explain ambiguous matches rather than selecting one silently.
+- [x] Provide a browser-only lookup that does not upload hub inventory.
 
 ### Acceptance criteria
 
 - Exact and suggested results are visually and structurally distinct.
 - Ambiguous identities include every credible match and supporting evidence.
 - No device names, app instance names, settings or other household data are required.
+
+### Implementation status
+
+- [x] Exact, built-in and suggested results are structurally and visually distinct.
+- [x] Ambiguous identities retain every exact HPM and documented built-in candidate.
+- [x] Lookup requires only definition identity and executes entirely in the browser.
+- [x] Source-reviewed manual-install projects remain distinct from HPM packages and can
+      supplement incomplete community wiki snapshots.
 
 ## Increment 5 — New and updated package feed
 

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Find the HPM package for a Hubitat app or driver identity.">
+  <title>Hubitat identity resolver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">HPM Manifest Crawl</p>
+      <h1>Which package contains this code?</h1>
+      <p class="lede">Enter the definition name and namespace shown by Hubitat. Matching happens in this browser; the identity is not uploaded.</p>
+    </header>
+    <form id="lookup-form">
+      <label>Definition name <input id="name" required autocomplete="off" placeholder="e.g. OwnTracks"></label>
+      <label>Namespace <input id="namespace" autocomplete="off" placeholder="e.g. lpakula"></label>
+      <label>Type <select id="kind"><option value="">App or driver</option><option>APP</option><option>DRIVER</option></select></label>
+      <button type="submit">Find package</button>
+    </form>
+    <div class="examples" aria-label="Example searches">
+      <span>Try an example:</span>
+      <button type="button" data-name="OwnTracks" data-namespace="lpakula" data-kind="APP">OwnTracks app</button>
+      <button type="button" data-name="NSChild-Vortech" data-namespace="Snell" data-kind="DRIVER">Neptune driver</button>
+      <button type="button" data-name="Rule Machine" data-namespace="" data-kind="APP">Rule Machine built-in</button>
+    </div>
+    <p id="status" role="status" aria-live="polite">Loading the community identity index…</p>
+    <section id="results" aria-labelledby="results-title" hidden>
+      <h2 id="results-title">Results</h2>
+      <div id="exact"></div>
+      <div id="name-matches"></div>
+      <div id="manual"></div>
+      <div id="builtins"></div>
+      <div id="builtin-related"></div>
+      <div id="related"></div>
+      <div id="suggestions"></div>
+    </section>
+    <aside><strong>Evidence labels matter.</strong> Exact identity means both name and namespace match. Exact-name candidates still need namespace confirmation. Related and suggested results are discovery leads. Manual community projects and documented built-ins are not HPM packages.</aside>
+  </main>
+  <script src="data/identity_index.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

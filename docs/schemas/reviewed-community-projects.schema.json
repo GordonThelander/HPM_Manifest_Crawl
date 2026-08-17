@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/reviewed-community-projects.schema.json",
+  "title": "Reviewed Community Projects Outside HPM",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "projects"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "reviewed-community-projects"},
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "name", "namespace", "author", "installMethod", "sourceIdentityReviewed", "sourceUrl", "documentationUrl", "communityUrl", "evidence"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["APP", "DRIVER"]},
+          "name": {"type": "string", "minLength": 1},
+          "namespace": {"type": "string", "minLength": 1},
+          "installMethod": {"const": "MANUAL"},
+          "sourceIdentityReviewed": {"const": true},
+          "evidence": {"type": "array", "contains": {"const": "SOURCE_IDENTITY_MATCH"}}
+        }
+      }
+    }
+  }
+}

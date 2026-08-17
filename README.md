@@ -129,6 +129,8 @@ refused by the crawler.
 | `health_monitor.json` | historical package states, transitions and remediation evidence |
 | `health_summary.md` | newly introduced and resolved failure summary for maintainers |
 | `link_reachability.json` | bounded documentation/community URL observations |
+| `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
+| `reviewed_community_projects.json` | source-confirmed manual-install projects absent from HPM/wiki snapshots |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
 | `community_apps.json` | Custom Apps Wiki entries, lifecycle wording and exact HPM evidence matches |
@@ -142,6 +144,9 @@ provenance and matching rules applied to official and community catalogue source
 
 See [`docs/HEALTH_MONITOR.md`](docs/HEALTH_MONITOR.md) for the evidence-first health
 history, transition meanings, and author remediation guidance.
+
+See [`docs/IDENTITY_RESOLVER.md`](docs/IDENTITY_RESOLVER.md) for exact, ambiguous,
+built-in, and conservative suggested identity matching.
 
 ## Evidence discipline
 
