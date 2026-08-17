@@ -176,12 +176,17 @@ cannot be discovered reliably from HPM alone.
 ### Work
 
 - [ ] Report repository, manifest, source, documentation and community-link reachability.
-- [ ] Validate JSON structure and compare manifest identities with literal Groovy
+- [x] Validate JSON structure and compare manifest identities with literal Groovy
       definitions where available.
-- [ ] Distinguish newly broken, persistent, restored, HTTP-only and transient failures.
-- [ ] Publish checks individually instead of producing an opaque quality score.
-- [ ] Add a summary of newly introduced and resolved failures.
-- [ ] Provide direct remediation evidence for package authors.
+- [x] Distinguish newly broken, persistent, restored, HTTP-only and transient failures.
+- [x] Publish checks individually instead of producing an opaque quality score.
+- [x] Add a summary of newly introduced and resolved failures.
+- [x] Provide direct remediation evidence for package authors.
+
+The reachability and identity-validation items remain open: the current crawler directly
+checks repository manifests, package manifests, and component source, while documentation
+and community URLs are declaration observations only. They must not be labelled reachable
+until a bounded probe records that evidence.
 
 ### Acceptance criteria
 

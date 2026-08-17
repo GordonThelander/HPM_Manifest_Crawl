@@ -130,6 +130,8 @@ refused by the crawler.
 | `community_packages.json` | stable public package identity, metadata, links and component references |
 | `definitions.json` | app and driver manifest/source identities linked to packages |
 | `package_health.json` | factual manifest, source, identity, link and transport checks |
+| `health_monitor.json` | historical package states, transitions and remediation evidence |
+| `health_summary.md` | newly introduced and resolved failure summary for maintainers |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
 | `community_apps.json` | Custom Apps Wiki entries, lifecycle wording and exact HPM evidence matches |
@@ -140,6 +142,9 @@ examples and compatibility policy.
 
 See [`docs/CATALOGUE_DATASETS.md`](docs/CATALOGUE_DATASETS.md) for the distinct authority,
 provenance and matching rules applied to official and community catalogue sources.
+
+See [`docs/HEALTH_MONITOR.md`](docs/HEALTH_MONITOR.md) for the evidence-first health
+history, transition meanings, and author remediation guidance.
 
 ## Evidence discipline
 
