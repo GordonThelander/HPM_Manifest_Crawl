@@ -81,6 +81,8 @@ class SiteStatusTests(unittest.TestCase):
         self.assertIn('role="img"', page)
         self.assertIn('id="flow-description"', page)
         self.assertIn('Open the project repository', page)
+        self.assertIn('target="_blank"', page)
+        self.assertIn('rel="noopener noreferrer"', page)
         self.assertIn('textContent', script)
         self.assertNotIn('innerHTML', script)
 
