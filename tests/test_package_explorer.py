@@ -50,6 +50,13 @@ class PackageExplorerTests(unittest.TestCase):
         for control in ('query', 'catalogue', 'kind', 'health', 'network', 'released', 'documentation'):
             self.assertIn(f'id="{control}"', page)
 
+    def test_catalogue_counts_link_to_filtered_results(self):
+        page = (ROOT / 'site/package-explorer/index.html').read_text('utf-8')
+        script = (ROOT / 'site/package-explorer/app.js').read_text('utf-8')
+        for record_type in ('HPM_PACKAGE', 'OFFICIAL_DEVICE', 'COMMUNITY_DRIVER', 'COMMUNITY_APP'):
+            self.assertIn(f'?catalogue={record_type}#results-title', page)
+        self.assertIn("new URLSearchParams(location.search).get('catalogue')", script)
+
     def test_builder_cannot_write_automation_map_registry(self):
         source = (ROOT / 'build_package_explorer.py').read_text('utf-8')
         self.assertNotIn('hubitat_automation_map_app_integration_registry', source)
