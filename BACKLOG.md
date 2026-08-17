@@ -545,38 +545,49 @@ and how raw public evidence becomes the static Community Utilities site.
 
 ### Work
 
-- [ ] Add a portable `site/about/` page explaining the project's community-developed,
+- [x] Add a portable `site/about/` page explaining the project's community-developed,
       experimental status and linking prominently to the
       `community-utility-exploration` repository branch.
-- [ ] Generate a versioned site-status dataset rather than hard-coding volatile crawl
+- [x] Generate a versioned site-status dataset rather than hard-coding volatile crawl
       facts into HTML.
-- [ ] Inventory every current upstream and reviewed input, including the HPM master
+- [x] Inventory every current upstream and reviewed input, including the HPM master
       repository list, developer repository files, package manifests, public Groovy
       sources, authoritative HPM settings, official compatible-device catalogue,
       Hubitat documentation, community app and driver wikis, reviewed manual projects
       and the release-notes source when Increment 11 is available.
-- [ ] For each source, show its authority label, role, canonical URL, acquisition method,
+- [x] For each source, show its authority label, role, canonical URL, acquisition method,
       last attempt, last success, most recent retained snapshot, records produced and
       current health evidence.
-- [ ] Define source states as factual operational observations such as `HEALTHY`,
+- [x] Define source states as factual operational observations such as `HEALTHY`,
       `DEGRADED`, `STALE`, `UNAVAILABLE` and `MANUALLY_REVIEWED`; do not turn them into a
       trust, quality, maintenance or security score.
-- [ ] Display the last successful HPM crawl time from the promoted successful crawl
+- [x] Display the last successful HPM crawl time from the promoted successful crawl
       snapshot, explicitly distinguishing it from the page build and Pages deployment
       times.
-- [ ] Explain fallback use, partial optional-source failures and retained last-good data
+- [x] Explain fallback use, partial optional-source failures and retained last-good data
       without presenting an unavailable optional source as a failed production crawl.
-- [ ] Add an accessible schematic showing the flow from bounded public-source
+- [x] Add an accessible schematic showing the flow from bounded public-source
       acquisition, through validation and independent projections, to the static site.
-- [ ] Give the schematic a complete text alternative and show the frozen Automation Map
+- [x] Give the schematic a complete text alternative and show the frozen Automation Map
       registry path as a separate protected contract, not as an output of general
       community evidence aggregation.
-- [ ] Add source-status fixtures, deterministic generation tests, stale/fallback cases,
+- [x] Add source-status fixtures, deterministic generation tests, stale/fallback cases,
       internal-link checks and responsive visual coverage.
-- [ ] Add `About` to shared navigation on every page only after the page and status data
+- [x] Add `About` to shared navigation on every page only after the page and status data
       pass readiness checks.
-- [ ] Once `About` is live in shared navigation, remove the top-level `GitHub` navigation
+- [x] Once `About` is live in shared navigation, remove the top-level `GitHub` navigation
       item from every page; retain the repository link prominently on the About page.
+
+### Implementation status
+
+- [x] Ten current public or reviewed source groups expose authority, role, acquisition,
+      retained-snapshot facts, record counts, outputs and direct provenance links.
+- [x] The promoted successful HPM crawl remains `2026-08-13T02:00:24Z`; About generation
+      and Pages deployment times are explicitly separate.
+- [x] Current status reports six healthy retained snapshots, three degraded sources and
+      one manually reviewed source without converting those facts into trust scores.
+- [x] Unknown catalogue acquisition times remain visibly unrecorded rather than being
+      inferred from filesystem timestamps.
 
 ### Acceptance criteria
 

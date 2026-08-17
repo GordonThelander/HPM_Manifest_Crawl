@@ -135,6 +135,8 @@ refused by the crawler.
 | `hpm_taxonomy.json` | versioned category/tag vocabulary, provenance and package-level usage metrics |
 | `site/feature-tracker/` | searchable staff-authored release evidence and accessible release timeline |
 | `hubitat_release_features.json` | versioned release builds, classified changes, linked details and retained history |
+| `site/about/` | project context, source provenance, operational health and system schematic |
+| `site_status.json` | versioned source inventory, retained crawl status and protected-contract disclosure |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
@@ -155,7 +157,7 @@ refused by the crawler.
 
 The `site/` directory is a static, experimental website containing the Unified Package
 Explorer, HPM Taxonomy, Feature Tracker, Identity Resolver, Manifest Validator, Network
-Guide, Package Feed, Recovery Inventory and Contributor Activity views. It is community-developed and
+Guide, Package Feed, Recovery Inventory, Contributor Activity and About views. It is community-developed and
 is not official or endorsed Hubitat software.
 
 The independent `.github/workflows/pages.yml` workflow validates and uploads only `site/`
@@ -198,6 +200,9 @@ fallback behaviour, counting rules and the taxonomy-cloud accessibility model.
 
 See [`docs/RELEASE_FEATURE_TRACKER.md`](docs/RELEASE_FEATURE_TRACKER.md) for release-note
 harvesting, evidence classifications, linked-detail boundaries, history and timeline data.
+
+See [`docs/ABOUT_AND_PROVENANCE.md`](docs/ABOUT_AND_PROVENANCE.md) for source-status
+semantics, last-successful-crawl provenance, failure behaviour and Automation Map isolation.
 
 See [`docs/HEALTH_MONITOR.md`](docs/HEALTH_MONITOR.md) for the evidence-first health
 history, transition meanings, and author remediation guidance.

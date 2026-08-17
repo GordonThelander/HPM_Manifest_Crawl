@@ -21,7 +21,7 @@ class PagesSiteTests(unittest.TestCase):
         page = (ROOT / 'site/index.html').read_text('utf-8')
         for directory in (
                 'package-explorer', 'taxonomy', 'feature-tracker', 'identity-resolver', 'manifest-validator', 'network-guide',
-                'package-feed', 'recovery-inventory', 'contributors'):
+                'package-feed', 'recovery-inventory', 'contributors', 'about'):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)
         self.assertIn('not official Hubitat software', page)
@@ -33,11 +33,18 @@ class PagesSiteTests(unittest.TestCase):
                 self.assertIn('class="utility-nav"', source)
                 self.assertIn('Package Explorer', source)
                 self.assertIn('Taxonomy', source)
-                self.assertIn(
-                    'https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration',
-                    source,
-                )
+                self.assertIn('About', source)
                 self.assertNotRegex(source, r'''(?:href|src)=["']/HPM_Manifest_Crawl/''')
+
+    def test_repository_link_moves_from_top_navigation_to_about(self):
+        repository = 'https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration'
+        about = (ROOT / 'site/about/index.html').read_text('utf-8')
+        self.assertIn(repository, about)
+        for relative in pages.UTILITY_PAGES:
+            source = (ROOT / 'site' / relative).read_text('utf-8')
+            navigation = source.split('</nav>', 1)[0]
+            with self.subTest(relative=relative):
+                self.assertNotIn('>GitHub</a>', navigation)
 
     def test_package_feed_copies_downloads_inside_pages_artifact(self):
         source = (ROOT / 'build_package_feed.py').read_text('utf-8')

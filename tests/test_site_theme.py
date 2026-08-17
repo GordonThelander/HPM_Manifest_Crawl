@@ -10,6 +10,7 @@ class SiteThemeTests(unittest.TestCase):
         pages = {
             'package-explorer': ROOT / 'site/package-explorer/index.html',
             'feature-tracker': ROOT / 'site/feature-tracker/index.html',
+            'about': ROOT / 'site/about/index.html',
             'identity-resolver': ROOT / 'site/identity-resolver/index.html',
             'manifest-validator': ROOT / 'site/manifest-validator/index.html',
             'network-guide': ROOT / 'site/network-guide/index.html',

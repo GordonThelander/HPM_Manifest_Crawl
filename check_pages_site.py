@@ -20,6 +20,7 @@ UTILITY_PAGES = (
     pathlib.Path('package-feed/index.html'),
     pathlib.Path('recovery-inventory/index.html'),
     pathlib.Path('contributors/index.html'),
+    pathlib.Path('about/index.html'),
 )
 REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('shared/hubitat.css'),
@@ -35,6 +36,8 @@ REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('package-feed/data/package_changes.json'),
     pathlib.Path('package-feed/data/package_changes.atom'),
     pathlib.Path('package-feed/data/package_changes_weekly.md'),
+    pathlib.Path('about/data/site_status.json'),
+    pathlib.Path('about/data/site_status.js'),
 )
 
 
