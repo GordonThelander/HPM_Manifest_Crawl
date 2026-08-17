@@ -1,9 +1,22 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-16T04:54:57Z`.
+Latest observation: `2026-08-17T22:40:04Z`.
 
-**15 package change(s):** added 5, declared definitions changed 1, source location changed 1, updated 10
+**28 package change(s):** added 6, declared definitions changed 1, source location changed 1, updated 22
 
+- [Zooz Sprinkler Scheduler: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Reolink Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Remote Builder for Hubitat: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Mila Air Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Matter Advanced Bridge: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [MCP Rule Server: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [HomeKit Import (Local): updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Genmon Generator Monitor: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Flair Vents: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Ecobee HAP Thermostat (Local): updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Aqara P100 Multi-State Sensor: added.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Air Quality Window Alerts: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Advanced Hue Hub Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Geofency Presence: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Genmon Generator Monitor: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)

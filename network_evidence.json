@@ -3,7 +3,7 @@
     "BOTH": 182,
     "CLOUD": 259,
     "INSUFFICIENT": 299,
-    "LAN": 165
+    "LAN": 166
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 905,
+  "packageCount": 906,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1657,6 +1657,33 @@
         ],
         "sourceFilesAnalysed": 1,
         "urlLiteralCount": 16
+      },
+      "reviewed": [],
+      "tags": [
+        "Zigbee"
+      ]
+    },
+    {
+      "author": "Krassimir Kossev",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-aqara-multi-state-sensor-p100-zigbee-driver-c8-only/163540",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Aqara P100 Multi-State Sensor (DWZTCGQ11LM) driver for Hubitat Elevation hub - vibration, movement, orientation, triple-tap and fall detection in object mode, or contact open/closed in door/window mode",
+      "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/README.md",
+      "id": "hpm:7e8d3951-8550-470b-84a8-21e9d07acdec",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/packageManifest.json",
+      "name": "Aqara P100 Multi-State Sensor",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": [
@@ -13415,7 +13442,7 @@
       "author": "Krassimir Kossev",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/project-zemismart-m1-matter-bridge-for-tuya-zigbee-devices-matter/127009",
+      "communityUrl": "https://community.hubitat.com/t/release-matter-advanced-bridge-limited-device-support/135252",
       "declared": {
         "cloudTag": false,
         "lanTag": false
@@ -27291,5 +27318,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-13T02:00:24Z"
+  "snapshotGenerated": "2026-08-17T22:40:04Z"
 }

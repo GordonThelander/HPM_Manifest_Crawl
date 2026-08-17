@@ -650,6 +650,474 @@ window.CONTRIBUTOR_ACTIVITY = {
     },
     {
       "activity": [],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Control",
+          "packageCount": 31
+        },
+        {
+          "name": "Convenience",
+          "packageCount": 1
+        },
+        {
+          "name": "Integrations",
+          "packageCount": 2
+        }
+      ],
+      "currentPackageCount": 34,
+      "currentRank": 2,
+      "driverCount": 35,
+      "id": "contributor:2caa5ff89bed93a4a93e",
+      "name": "Krassimir Kossev",
+      "observedActivityCount": 0,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
+          "documentationUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
+          "driverCount": 1,
+          "id": "hpm:fc13f97d-e5a8-4d5e-bf84-1c9b712f9568",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
+          "name": "Aqara Cube T1 Pro",
+          "publisherDate": "2024-04-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.0.6"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/aqara-p1-motion-sensor/92987/63?u=kkossev",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Aqara%20P1%20Motion%20Sensor/README.MD",
+          "driverCount": 1,
+          "id": "hpm:7f55f65d-dc8e-4742-a2e2-bc74582613b3",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P1%20Motion%20Sensor/packageManifest.json",
+          "name": "Aqara P1 Motion Sensor",
+          "publisherDate": "2026-03-30",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.1.2"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-aqara-multi-state-sensor-p100-zigbee-driver-c8-only/163540",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/README.md",
+          "driverCount": 1,
+          "id": "hpm:7e8d3951-8550-470b-84a8-21e9d07acdec",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/packageManifest.json",
+          "name": "Aqara P100 Multi-State Sensor",
+          "publisherDate": "2026-08-17",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "0.1.6"
+        },
+        {
+          "appCount": 1,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817",
+          "documentationUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817/3?u=kkossev",
+          "driverCount": 0,
+          "id": "hpm:8c11f83d-3fa8-4843-bf02-d7652089c952",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/packageManifest_DeviceHealthStatus.json",
+          "name": "Device Health Status",
+          "publisherDate": "2025-02-02",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.1.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/esphome-hubitat/68341",
+          "documentationUrl": "https://github.com/kkossev/Hubitat-ESPHome-Apollo/blob/main/README.md",
+          "driverCount": 0,
+          "id": "hpm:9df87cc8-f25f-4437-969c-e225c338dd30",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-ESPHome-Apollo/main/apolloManifest.json",
+          "name": "ESPHome Apollo Automation Drivers",
+          "publisherDate": "2026-03-26",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.0.5"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:82ffb549-c33e-4d1a-927b-a4921692718f",
+          "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/dev/Linptech-ES1.json",
+          "name": "Linptech 24Ghz Presence Sensor ES1",
+          "publisherDate": "2024-02-25",
+          "repositoryUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/linptechRepo.json",
+          "version": "2.0.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-matter-advanced-bridge-limited-device-support/135252",
+          "documentationUrl": null,
+          "driverCount": 0,
+          "id": "hpm:7f4e2c19-5159-44bd-a2bf-afb8432c3de4",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json",
+          "name": "Matter Advanced Bridge",
+          "publisherDate": "2026-08-17",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.9.2"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:e6eedb98-4f18-404a-9f46-42ce5e9612db",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
+          "name": "Moes ZSS-ZK-THL_TS0222",
+          "publisherDate": "2022-01-24",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.3.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:30925b17-5276-403f-993d-2b35298756bb",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_DMS-300z.json",
+          "name": "SiHAS Dual Motion Sensor DMS-300Z",
+          "publisherDate": "2022-10-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:0e9a6b4f-744d-4fa2-b31d-4ec95e58e472",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_usm300zb.json",
+          "name": "SiHAS Multipurpose Sensor USM-300-ZB",
+          "publisherDate": "2022-10-15",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://github.com/kkossev/Hubitat-SiHAS/blob/main/README.md",
+          "documentationUrl": "https://github.com/kkossev/Hubitat-SiHAS/blob/main/README.md",
+          "driverCount": 1,
+          "id": "hpm:adff4e60-c83b-43b2-873c-8052eef10e90",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_CSM-300z.json",
+          "name": "SiHAS People Counter CSM-300-ZB (V2)",
+          "publisherDate": "2022-11-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.2"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:deb4b85c-54b8-4cba-8518-76a26886f158",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_DLM-300z.json",
+          "name": "SiHAS ZigBee Lock Without Codes DLM-300-Z",
+          "publisherDate": "2022-11-05",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:9e3aacd4-7f2a-4e11-a918-16cc4a73a66d",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_PMM-300z.json",
+          "name": "SiHAS Zigbee Power Meter PMM-300-Z",
+          "publisherDate": "2022-11-01",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.1"
+        },
+        {
+          "appCount": 1,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225",
+          "documentationUrl": null,
+          "driverCount": 0,
+          "id": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/Thermostats%20Sync/packageManifest.json",
+          "name": "Thermostats Sync",
+          "publisherDate": "2025-12-07",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.0.4"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441",
+          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
+          "driverCount": 1,
+          "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
+          "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)",
+          "publisherDate": "2025-07-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.5.2"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-tuya-neo-coolcam-zigbee-water-leak-sensor/91370",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/README.md",
+          "driverCount": 1,
+          "id": "hpm:39a56b8d-62a7-4b48-9915-fe26fb11d5e7",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
+          "name": "Tuya NEO Coolcam Zigbee Water Leak Sensor",
+          "publisherDate": "2025-03-01",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.1.4"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver/92823",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20TS004F/README.md",
+          "driverCount": 1,
+          "id": "hpm:06120bb0-fd54-4d82-8fc2-8adef6ca604a",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20TS004F/packageManifest.json",
+          "name": "Tuya Scene Switch TS004F",
+          "publisherDate": "2026-02-04",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.9.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-smart-siren-zigbee-driver/91772",
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:d8aed522-094b-403f-b1b7-90900ada633c",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
+          "name": "Tuya Smart Siren Zigbee",
+          "publisherDate": "2025-02-22",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.3.4"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock/88093",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/readme.md",
+          "driverCount": 1,
+          "id": "hpm:bcacde4f-c695-4a63-9a48-f4e49edb9dd2",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/packageManifest.json",
+          "name": "Tuya Temperature Humidity Illuminance LCD Display with a Clock",
+          "publisherDate": "2025-12-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-wall-mount-thermostat-water-electric-floor-heating-zigbee-driver/87050",
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:2d09ce90-729a-444c-8159-7c90ca1857f6",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-Tuya-Wall-Thermostat/main/packageManifest.json",
+          "name": "Tuya Wall Thermostat",
+          "publisherDate": "2025-12-30",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.4.3"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:b6e99a33-7aa3-4b25-ac03-9e44b0be5816",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
+          "name": "Tuya Zigbee Contact Sensor++ w/ healthStatus",
+          "publisherDate": "2025-02-03",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.2.7"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
+          "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
+          "driverCount": 1,
+          "id": "hpm:fbae2080-22f0-48e0-8788-f57dd5e571da",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
+          "name": "Tuya Zigbee Fingerbot",
+          "publisherDate": "2024-06-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.2.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/30",
+          "documentationUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/26?u=kkossev",
+          "driverCount": 1,
+          "id": "hpm:5057db0d-4572-4cf0-a7c3-22c2bffb711e",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
+          "name": "Tuya Zigbee Garage Door Opener",
+          "publisherDate": "2024-12-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.2.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:9a6bfb6e-f5a7-4901-a031-3d354387f5b5",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/packageManifest.json",
+          "name": "Tuya Zigbee Light Sensor",
+          "publisherDate": "2025-12-20",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.2.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-metering-plug/86465",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/README.MD",
+          "driverCount": 1,
+          "id": "hpm:db071ec7-157f-4397-a63c-18f2a3b16bec",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
+          "name": "Tuya Zigbee Metering Plug",
+          "publisherDate": "2024-12-23",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "2.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/alpha-tuya-zigbee-mmwave-sensors-moving-the-code-from-the-tuya-4-in-1-driver/137410/1",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-mmWave-Sensor",
+          "driverCount": 1,
+          "id": "hpm:e4f2a589-2ac0-4923-b6c7-bfc08b9db948",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
+          "name": "Tuya Zigbee mmWave Sensor",
+          "publisherDate": "2025-04-25",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.5.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
+          "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
+          "driverCount": 1,
+          "id": "hpm:b2212052-92d1-450f-9dca-08c0789c9c0c",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
+          "name": "Tuya Zigbee Rain Sensor",
+          "publisherDate": "2024-09-15",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.0.2"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159",
+          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159/2?u=kkossev",
+          "driverCount": 1,
+          "id": "hpm:c25fb12f-a13d-4d84-8bc5-40a2bba258d3",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
+          "name": "Tuya Zigbee Smoke Detector",
+          "publisherDate": "2024-03-27",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.2.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:6a58241e-1634-455d-94ca-10f6393a75db",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Switch/packageManifest.json",
+          "name": "Tuya Zigbee Switch",
+          "publisherDate": "2026-08-07",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.5.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-valve-driver/92788",
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:953f1da4-5f70-4845-a157-ca9d36e80c2c",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Valve/packageManifest.json",
+          "name": "Tuya Zigbee Valve",
+          "publisherDate": "2026-07-10",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.6.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:7aa89d9c-bafd-487e-9eed-ade6c948e320",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
+          "name": "Tuya ZigBee Vibration Sensor",
+          "publisherDate": "2026-03-22",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "1.4.3"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/ikea-trip-what-to-buy/112770/38?u=kkossev",
+          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy",
+          "driverCount": 1,
+          "id": "hpm:922c95be-07e9-4376-a94d-fc702bea7ec9",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
+          "name": "VINDSTYRKA Air Quality Monitor",
+          "publisherDate": "2025-09-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.2.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
+          "documentationUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
+          "driverCount": 1,
+          "id": "hpm:7d3627fd-27c6-4784-a76a-4f2eded51168",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
+          "name": "Zigbee Button Dimmer",
+          "publisherDate": "2024-04-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.0.6"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-thermostats-and-trvs-driver/128916",
+          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-thermostats-and-trvs-driver/128916",
+          "driverCount": 5,
+          "id": "hpm:99d87625-9f1d-4b0d-9c41-a0da7f450947",
+          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20TRV/thermostatsManifest.json",
+          "name": "Zigbee TRVs and Thermostats",
+          "publisherDate": "2025-05-25",
+          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
+          "version": "3.5.2"
+        }
+      ]
+    },
+    {
+      "activity": [],
       "appCount": 3,
       "categories": [
         {
@@ -666,7 +1134,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 34,
-      "currentRank": 2,
+      "currentRank": 3,
       "driverCount": 31,
       "id": "contributor:3d07aab59cd6c5d37cb7",
       "name": "TheMaster",
@@ -1113,461 +1581,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2022-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
           "version": "1.7.7"
-        }
-      ]
-    },
-    {
-      "activity": [],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 30
-        },
-        {
-          "name": "Convenience",
-          "packageCount": 1
-        },
-        {
-          "name": "Integrations",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 33,
-      "currentRank": 3,
-      "driverCount": 34,
-      "id": "contributor:2caa5ff89bed93a4a93e",
-      "name": "Krassimir Kossev",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
-          "documentationUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
-          "driverCount": 1,
-          "id": "hpm:fc13f97d-e5a8-4d5e-bf84-1c9b712f9568",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
-          "name": "Aqara Cube T1 Pro",
-          "publisherDate": "2024-04-13",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.0.6"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/aqara-p1-motion-sensor/92987/63?u=kkossev",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Aqara%20P1%20Motion%20Sensor/README.MD",
-          "driverCount": 1,
-          "id": "hpm:7f55f65d-dc8e-4742-a2e2-bc74582613b3",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P1%20Motion%20Sensor/packageManifest.json",
-          "name": "Aqara P1 Motion Sensor",
-          "publisherDate": "2026-03-30",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.1.2"
-        },
-        {
-          "appCount": 1,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817",
-          "documentationUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817/3?u=kkossev",
-          "driverCount": 0,
-          "id": "hpm:8c11f83d-3fa8-4843-bf02-d7652089c952",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/packageManifest_DeviceHealthStatus.json",
-          "name": "Device Health Status",
-          "publisherDate": "2025-02-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.1.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/esphome-hubitat/68341",
-          "documentationUrl": "https://github.com/kkossev/Hubitat-ESPHome-Apollo/blob/main/README.md",
-          "driverCount": 0,
-          "id": "hpm:9df87cc8-f25f-4437-969c-e225c338dd30",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-ESPHome-Apollo/main/apolloManifest.json",
-          "name": "ESPHome Apollo Automation Drivers",
-          "publisherDate": "2026-03-26",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.0.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:82ffb549-c33e-4d1a-927b-a4921692718f",
-          "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/dev/Linptech-ES1.json",
-          "name": "Linptech 24Ghz Presence Sensor ES1",
-          "publisherDate": "2024-02-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/linptechRepo.json",
-          "version": "2.0.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/project-zemismart-m1-matter-bridge-for-tuya-zigbee-devices-matter/127009",
-          "documentationUrl": null,
-          "driverCount": 0,
-          "id": "hpm:7f4e2c19-5159-44bd-a2bf-afb8432c3de4",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json",
-          "name": "Matter Advanced Bridge",
-          "publisherDate": "2026-05-30",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.8.8"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:e6eedb98-4f18-404a-9f46-42ce5e9612db",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
-          "name": "Moes ZSS-ZK-THL_TS0222",
-          "publisherDate": "2022-01-24",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.3.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:30925b17-5276-403f-993d-2b35298756bb",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_DMS-300z.json",
-          "name": "SiHAS Dual Motion Sensor DMS-300Z",
-          "publisherDate": "2022-10-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:0e9a6b4f-744d-4fa2-b31d-4ec95e58e472",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_usm300zb.json",
-          "name": "SiHAS Multipurpose Sensor USM-300-ZB",
-          "publisherDate": "2022-10-15",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://github.com/kkossev/Hubitat-SiHAS/blob/main/README.md",
-          "documentationUrl": "https://github.com/kkossev/Hubitat-SiHAS/blob/main/README.md",
-          "driverCount": 1,
-          "id": "hpm:adff4e60-c83b-43b2-873c-8052eef10e90",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_CSM-300z.json",
-          "name": "SiHAS People Counter CSM-300-ZB (V2)",
-          "publisherDate": "2022-11-13",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:deb4b85c-54b8-4cba-8518-76a26886f158",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_DLM-300z.json",
-          "name": "SiHAS ZigBee Lock Without Codes DLM-300-Z",
-          "publisherDate": "2022-11-05",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:9e3aacd4-7f2a-4e11-a918-16cc4a73a66d",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/packageManifest_PMM-300z.json",
-          "name": "SiHAS Zigbee Power Meter PMM-300-Z",
-          "publisherDate": "2022-11-01",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.1"
-        },
-        {
-          "appCount": 1,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225",
-          "documentationUrl": null,
-          "driverCount": 0,
-          "id": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/Thermostats%20Sync/packageManifest.json",
-          "name": "Thermostats Sync",
-          "publisherDate": "2025-12-07",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.0.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441",
-          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
-          "driverCount": 1,
-          "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
-          "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)",
-          "publisherDate": "2025-07-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.5.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-tuya-neo-coolcam-zigbee-water-leak-sensor/91370",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/README.md",
-          "driverCount": 1,
-          "id": "hpm:39a56b8d-62a7-4b48-9915-fe26fb11d5e7",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
-          "name": "Tuya NEO Coolcam Zigbee Water Leak Sensor",
-          "publisherDate": "2025-03-01",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.1.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver/92823",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20TS004F/README.md",
-          "driverCount": 1,
-          "id": "hpm:06120bb0-fd54-4d82-8fc2-8adef6ca604a",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20TS004F/packageManifest.json",
-          "name": "Tuya Scene Switch TS004F",
-          "publisherDate": "2026-02-04",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.9.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-smart-siren-zigbee-driver/91772",
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:d8aed522-094b-403f-b1b7-90900ada633c",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
-          "name": "Tuya Smart Siren Zigbee",
-          "publisherDate": "2025-02-22",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.3.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock/88093",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/readme.md",
-          "driverCount": 1,
-          "id": "hpm:bcacde4f-c695-4a63-9a48-f4e49edb9dd2",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/packageManifest.json",
-          "name": "Tuya Temperature Humidity Illuminance LCD Display with a Clock",
-          "publisherDate": "2025-12-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-wall-mount-thermostat-water-electric-floor-heating-zigbee-driver/87050",
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:2d09ce90-729a-444c-8159-7c90ca1857f6",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-Tuya-Wall-Thermostat/main/packageManifest.json",
-          "name": "Tuya Wall Thermostat",
-          "publisherDate": "2025-12-30",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.4.3"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:b6e99a33-7aa3-4b25-ac03-9e44b0be5816",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
-          "name": "Tuya Zigbee Contact Sensor++ w/ healthStatus",
-          "publisherDate": "2025-02-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.2.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
-          "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
-          "driverCount": 1,
-          "id": "hpm:fbae2080-22f0-48e0-8788-f57dd5e571da",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
-          "name": "Tuya Zigbee Fingerbot",
-          "publisherDate": "2024-06-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/30",
-          "documentationUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/26?u=kkossev",
-          "driverCount": 1,
-          "id": "hpm:5057db0d-4572-4cf0-a7c3-22c2bffb711e",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
-          "name": "Tuya Zigbee Garage Door Opener",
-          "publisherDate": "2024-12-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:9a6bfb6e-f5a7-4901-a031-3d354387f5b5",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/packageManifest.json",
-          "name": "Tuya Zigbee Light Sensor",
-          "publisherDate": "2025-12-20",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.2.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-metering-plug/86465",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/README.MD",
-          "driverCount": 1,
-          "id": "hpm:db071ec7-157f-4397-a63c-18f2a3b16bec",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
-          "name": "Tuya Zigbee Metering Plug",
-          "publisherDate": "2024-12-23",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/alpha-tuya-zigbee-mmwave-sensors-moving-the-code-from-the-tuya-4-in-1-driver/137410/1",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-mmWave-Sensor",
-          "driverCount": 1,
-          "id": "hpm:e4f2a589-2ac0-4923-b6c7-bfc08b9db948",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
-          "name": "Tuya Zigbee mmWave Sensor",
-          "publisherDate": "2025-04-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.5.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Convenience",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
-          "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
-          "driverCount": 1,
-          "id": "hpm:b2212052-92d1-450f-9dca-08c0789c9c0c",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
-          "name": "Tuya Zigbee Rain Sensor",
-          "publisherDate": "2024-09-15",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.0.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159",
-          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159/2?u=kkossev",
-          "driverCount": 1,
-          "id": "hpm:c25fb12f-a13d-4d84-8bc5-40a2bba258d3",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
-          "name": "Tuya Zigbee Smoke Detector",
-          "publisherDate": "2024-03-27",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.2.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:6a58241e-1634-455d-94ca-10f6393a75db",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Switch/packageManifest.json",
-          "name": "Tuya Zigbee Switch",
-          "publisherDate": "2026-08-07",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.5.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-valve-driver/92788",
-          "documentationUrl": null,
-          "driverCount": 2,
-          "id": "hpm:953f1da4-5f70-4845-a157-ca9d36e80c2c",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Valve/packageManifest.json",
-          "name": "Tuya Zigbee Valve",
-          "publisherDate": "2026-07-10",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.6.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:7aa89d9c-bafd-487e-9eed-ade6c948e320",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
-          "name": "Tuya ZigBee Vibration Sensor",
-          "publisherDate": "2026-03-22",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.4.3"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/ikea-trip-what-to-buy/112770/38?u=kkossev",
-          "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy",
-          "driverCount": 1,
-          "id": "hpm:922c95be-07e9-4376-a94d-fc702bea7ec9",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
-          "name": "VINDSTYRKA Air Quality Monitor",
-          "publisherDate": "2025-09-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
-          "documentationUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
-          "driverCount": 1,
-          "id": "hpm:7d3627fd-27c6-4784-a76a-4f2eded51168",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
-          "name": "Zigbee Button Dimmer",
-          "publisherDate": "2024-04-13",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.0.6"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-thermostats-and-trvs-driver/128916",
-          "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-thermostats-and-trvs-driver/128916",
-          "driverCount": 5,
-          "id": "hpm:99d87625-9f1d-4b0d-9c41-a0da7f450947",
-          "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20TRV/thermostatsManifest.json",
-          "name": "Zigbee TRVs and Thermostats",
-          "publisherDate": "2025-05-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "3.5.2"
         }
       ]
     },
@@ -3642,9 +3655,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:924cfa250ee409a87aae",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json",
           "name": "Genmon Generator Monitor",
-          "publisherDate": "2026-08-15",
+          "publisherDate": "2026-08-16",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.2.1"
+          "version": "2.3.0"
         },
         {
           "appCount": 1,
@@ -4082,9 +4095,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:a5ba9b852d2823b7d55e",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-aq-window-alerts.json",
           "name": "Air Quality Window Alerts",
-          "publisherDate": "2026-07-14",
+          "publisherDate": "2026-08-13",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "1.10.0"
+          "version": "1.11.0"
         },
         {
           "appCount": 1,
@@ -4108,9 +4121,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:fb397ab77d315ceda3b2",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json",
           "name": "Ecobee HAP Thermostat (Local)",
-          "publisherDate": "2026-07-29",
+          "publisherDate": "2026-08-16",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.19.13"
+          "version": "0.19.14"
         },
         {
           "appCount": 1,
@@ -4147,9 +4160,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:a4b3d4dcbc077e6e0fa0",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json",
           "name": "HomeKit Import (Local)",
-          "publisherDate": "2026-07-29",
+          "publisherDate": "2026-08-17",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.9.17"
+          "version": "0.9.19"
         },
         {
           "appCount": 1,
@@ -4238,9 +4251,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:398726763b5d3bce0985",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json",
           "name": "Zooz Sprinkler Scheduler",
-          "publisherDate": "2026-08-11",
+          "publisherDate": "2026-08-17",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.15.0"
+          "version": "0.16.0"
         }
       ]
     },
@@ -7758,7 +7771,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Advanced Hue Hub Integration",
           "publisherDate": "2020-01-20",
           "repositoryUrl": "https://raw.githubusercontent.com/apwelsh/hubitat/master/repository.json",
-          "version": "1.10.26"
+          "version": "1.10.27"
         },
         {
           "appCount": 0,
@@ -9225,9 +9238,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f25d40b4051e268f4f6d",
           "manifestUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/packageManifestRemoteBuilder.json",
           "name": "Remote Builder for Hubitat",
-          "publisherDate": "2026-8-2",
+          "publisherDate": "2026-8-16",
           "repositoryUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/repository.json",
-          "version": "132"
+          "version": "133"
         },
         {
           "appCount": 1,
@@ -10441,7 +10454,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.3.8"
+          "version": "1.3.9"
         },
         {
           "appCount": 0,
@@ -14556,7 +14569,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
           "manifestUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json",
           "name": "Flair Vents",
-          "publisherDate": "2026-06-13",
+          "publisherDate": "2026-08-16",
           "repositoryUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/repository.json",
           "version": "0.235"
         }
@@ -15067,9 +15080,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-08-15",
+          "publisherDate": "2026-08-17",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.0.0"
+          "version": "4.0.1"
         }
       ]
     },
@@ -16803,9 +16816,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:bec9fd1e-8388-456c-bbf5-addcd5fca776",
           "manifestUrl": "https://raw.githubusercontent.com/vision9074/hubitat-mila-air/main/packageManifest.json",
           "name": "Mila Air Integration",
-          "publisherDate": "2026-08-12",
+          "publisherDate": "2026-08-16",
           "repositoryUrl": "https://raw.githubusercontent.com/vision9074/hubitat-mila-air/main/repository.json",
-          "version": "1.1.0"
+          "version": "1.2.1"
         }
       ]
     },
@@ -16997,7 +17010,7 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 253,
-  "currentPackageCount": 905,
+  "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
     "attributedEventCount": 15,
@@ -17015,9 +17028,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 253,
-  "rankedPackageCount": 903,
+  "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-13T02:00:24Z",
+  "snapshotGenerated": "2026-08-17T22:40:04Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
