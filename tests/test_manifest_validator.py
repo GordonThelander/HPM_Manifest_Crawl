@@ -68,6 +68,16 @@ class ManifestValidatorTests(unittest.TestCase):
         )
         self.assertIn('PACKAGE_NAME_MISMATCH', {row['code'] for row in issues})
 
+    def test_repository_category_and_tags_use_current_hpm_taxonomy(self):
+        manifest = fixture('valid_manifest.json')
+        repository = fixture('valid_repository.json')
+        repository['packages'][0]['category'] = 'Weather'
+        repository['packages'][0]['tags'] = ['Matter', 'Not Valid']
+        issues = validator.validate_repository(repository, manifest)
+        codes = {row['code'] for row in issues}
+        self.assertIn('INVALID_HPM_CATEGORY', codes)
+        self.assertIn('INVALID_HPM_TAG', codes)
+
     def test_source_is_read_as_text_and_identity_mismatch_is_reported(self):
         manifest = fixture('valid_manifest.json')
         source = '''definition(name: "Actual Name", namespace: "actual", author: "A")'''
@@ -144,6 +154,15 @@ class ManifestValidatorTests(unittest.TestCase):
         self.assertIn('renderSubmission', script)
         self.assertIn('repositoryEntry', script)
         self.assertNotIn('api.github.com', script)
+
+    def test_browser_uses_built_taxonomy_for_category_and_tag_readiness(self):
+        page = (ROOT / 'site' / 'manifest-validator' / 'index.html').read_text('utf-8')
+        script = (ROOT / 'site' / 'manifest-validator' / 'app.js').read_text('utf-8')
+        self.assertIn('../taxonomy/data/hpm_taxonomy.js', page)
+        self.assertIn('validCategories', script)
+        self.assertIn('validTags', script)
+        self.assertIn('invalidTags', script)
+        self.assertNotIn('fetch(', script)
 
 
 if __name__ == '__main__':

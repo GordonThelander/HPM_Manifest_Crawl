@@ -28,6 +28,9 @@ const readinessScore = document.querySelector("#readiness-score");
 const readinessList = document.querySelector("#readiness-list");
 const repositoryEntry = document.querySelector("#repository-entry");
 const publicEntry = document.querySelector("#public-entry");
+const taxonomy = window.HPM_TAXONOMY;
+const validCategories = new Set(taxonomy?.taxonomy?.categories || []);
+const validTags = new Set(taxonomy?.taxonomy?.tags || []);
 let lastManifest = null;
 let lastIssues = [];
 
@@ -187,6 +190,9 @@ function submissionValues(manifest) {
 
 function renderSubmission(manifest, issues) {
   const values = submissionValues(manifest);
+  const invalidTags = values.tags.filter(value => validTags.size && !validTags.has(value));
+  const duplicateTags = values.tags.filter((value, index) => values.tags.indexOf(value) !== index);
+  const validCategory = validCategories.size ? validCategories.has(values.category) : Boolean(values.category);
   const allComponents = ["apps", "drivers"].flatMap(kind => Array.isArray(manifest?.[kind]) ? manifest[kind] : []);
   const packageVersion = String(manifest?.version ?? "").trim();
   const versionedComponents = allComponents.filter(component => String(component?.version ?? "").trim()).length;
@@ -198,7 +204,9 @@ function renderSubmission(manifest, issues) {
     [httpsUrl(values.manifestUrl), "Package manifest has a public HTTPS URL"],
     [httpsUrl(values.repositoryUrl), "Repository JSON has a public HTTPS URL"],
     [Boolean(values.packageId), "Repository package entry has a stable ID"],
-    [Boolean(values.category && values.description && values.tags.length), "Category, description and at least one current tag are supplied"],
+    [validCategory, !values.category ? "Choose a current HPM category" : !validCategory ? `Category is not in the current HPM taxonomy: ${values.category}` : "Category is in the current HPM taxonomy"],
+    [Boolean(values.description), "A short package description is supplied"],
+    [Boolean(values.tags.length) && !invalidTags.length && !duplicateTags.length, invalidTags.length ? `Unknown HPM tag(s): ${invalidTags.join(", ")}` : duplicateTags.length ? `Duplicate tag(s): ${[...new Set(duplicateTags)].join(", ")}` : "At least one current HPM tag is supplied"],
     [values.tested, "Installation was tested through HPM"]
   ];
   const passed = checks.filter(([pass]) => pass).length;
@@ -249,6 +257,35 @@ function restoreExample() {
   runValidation();
 }
 
+function populateTaxonomy() {
+  const category = document.querySelector("#category");
+  const selected = category.value;
+  category.replaceChildren(text("option", "Choose a category"));
+  category.firstElementChild.value = "";
+  for (const value of validCategories) {
+    const option = text("option", value);
+    option.value = value;
+    category.append(option);
+  }
+  if ([...validCategories].includes(selected)) category.value = selected;
+  const tagOptions = [...validTags].map(value => {
+    const option = document.createElement("option");
+    option.value = value;
+    return option;
+  });
+  document.querySelector("#valid-tags").replaceChildren(...tagOptions);
+  const status = document.querySelector("#taxonomy-status");
+  if (!taxonomy) {
+    status.textContent = "Taxonomy data is unavailable. Rebuild the site before relying on category or tag readiness.";
+    return;
+  }
+  const mode = taxonomy.source?.mode === "live" ? "authoritative settings" : taxonomy.source?.mode === "fallback" ? "last-known-good fallback" : "supplied settings";
+  status.textContent = `${validCategories.size} categories and ${validTags.size} valid tags from ${mode}. Open the Taxonomy view to see usage metrics.`;
+  const metricsLink = text("a", " View taxonomy metrics");
+  metricsLink.href = "../taxonomy/";
+  status.append(metricsLink);
+}
+
 document.querySelector("#validate").addEventListener("click", runValidation);
 document.querySelector("#sample").addEventListener("click", restoreExample);
 document.querySelector("#file").addEventListener("change", event => {
@@ -270,4 +307,5 @@ document.querySelectorAll("[data-copy]").forEach(button => button.addEventListen
   }
 }));
 
+populateTaxonomy();
 restoreExample();

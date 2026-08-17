@@ -290,12 +290,32 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Enforce HPM's mutually exclusive package-level or per-component versioning.
 - [x] Add public-submission readiness, repository-entry generation, official tag
       guidance and a deliberate pull-request checklist.
+- [x] Synchronise valid repository categories and tags from HPM's authoritative
+      `HubitatCommunity/hubitat-packagerepositories` `settings.json` during the build.
+- [x] Validate against the current 50-tag set, including `Cameras`, `Matter`, `MQTT`,
+      `Relays` and `Tasmota`, while retaining a tested last-known-good fallback for
+      offline or failed upstream fetches.
+- [x] Show the taxonomy source, retrieval time and whether live or fallback settings
+      were used, and report upstream additions or removals as a reviewable dataset
+      change.
+- [x] Publish taxonomy metrics for every valid category and tag: unique package count,
+      percentage of current HPM packages, rank and unused status.
+- [x] Add an accessible taxonomy cloud that sizes tags by unique package usage, displays
+      exact counts and percentages, and links each term to the corresponding filtered
+      Package Explorer results.
+- [x] Provide current category/tag and app/driver package-composition views.
+- [ ] Add current-versus-retained-history taxonomy views when sufficient successful
+      snapshots exist.
 
 ### Acceptance criteria
 
 - Validation never executes downloaded code.
 - A standalone package validation does not write canonical crawl or registry files.
 - Existing HPM quirks are represented by fixtures to avoid unusably noisy reports.
+- Taxonomy usage counts each current HPM package at most once per declared tag; multiple
+  definitions within a package cannot inflate the metric.
+- The cloud is supplementary to a sortable table and never relies on font size or colour
+  alone to communicate rank or usage.
 
 ### Implementation status
 
@@ -306,6 +326,12 @@ probe; declaration presence and measured reachability remain separate evidence.
       while missing source locations and literal identity mismatches are errors.
 - [x] Tests prove the validator contains no canonical crawl or Automation Map output
       path.
+- [x] The CLI and browser validator reject unknown repository categories and tags using
+      the same checked last-known-good taxonomy; the browser performs no live request.
+- [x] `hpm_taxonomy.json` records source mode, retrieval time, source fingerprint and
+      reviewable additions or removals from the previous successful settings snapshot.
+- [x] The Taxonomy view provides a usage cloud, exact sortable table, composition switch
+      and exact-tag links into Package Explorer.
 
 ## Increment 7 - Privacy-preserving recovery inventory
 
@@ -445,6 +471,60 @@ experimental community resource rather than official or endorsed Hubitat softwar
       pattern and requests deployment permissions only in the deploy job.
 - [x] Repository administrators still need to select GitHub Actions as the Pages source;
       the expected URL is not described as active before a successful deployment.
+
+## Increment 11 - Hubitat platform feature tracker
+
+**Outcome:** the community can discover valuable Hubitat platform, app, driver and
+device features without having to read every release-note topic and linked detail post.
+
+### Work
+
+- [ ] Harvest release topics from Hubitat's public Release Notes category, retaining the
+      topic URL, first-post URL, platform version, build number, previous-version range,
+      publication time and last-observed edit time.
+- [ ] Parse release-note sections into explicit evidence types such as platform change,
+      new app, app change, new driver, driver feature, compatible device, bug fix and
+      known issue without treating every bullet as a new feature.
+- [ ] Follow first-party `community.hubitat.com` detail links embedded in the release
+      post body, including generic `More` and `see more` links, and attach their expanded
+      guidance to the originating release item.
+- [ ] Exclude related-topic widgets, replies and arbitrary external links from automatic
+      feature evidence unless they are separately reviewed.
+- [ ] Publish a versioned `hubitat_release_features.json` dataset with stable item IDs,
+      source excerpts or faithful summaries, evidence URLs, classification, affected
+      subsystem, availability state and confidence.
+- [ ] Add a searchable Feature Tracker page with filters for release, date, subsystem,
+      evidence type, device/protocol and beta or experimental status.
+- [ ] Provide a concise "what is newly possible?" view separately from fixes and
+      maintenance, while preserving links to the complete official text.
+- [ ] Detect additions, edits, reclassifications and removals within retained successful
+      snapshots so corrections to an existing release topic remain visible.
+- [ ] Cross-link named official apps, drivers and compatible devices to Package Explorer
+      records only when the identity evidence is unambiguous.
+- [ ] Add the tracker to shared navigation, Pages readiness checks, site documentation
+      and non-blocking publication tests.
+
+### Acceptance criteria
+
+- Every published feature or change links to the exact Hubitat Community source post.
+- Staff authorship, topic category and link provenance are recorded as evidence, not as
+  a claim that this community site is official or endorsed by Hubitat.
+- Linked detail pages remain subordinate to their release item and cannot silently
+  replace or contradict the release post.
+- A failed or incomplete forum harvest never replaces the last successful dataset.
+- Parsing remains deterministic for unchanged source snapshots and flags uncertain
+  headings or classifications for review.
+- Beta, experimental, model-specific and safety-sensitive qualifications remain visible.
+- The feature dataset and page cannot write either Automation Map registry and are never
+  required for Automation Map matching, rendering, export or normal operation.
+
+### Initial evidence examples
+
+- Release 2.5.1 links short Z-Wave entries to detailed pages for the Z-Wave JS update,
+  automatic device firmware discovery and the active Link Reliability Test, including
+  its safety warning.
+- Release 2.5.0 links to expanded guidance for the Z-Wave JS Node State UI, SVG chart
+  endpoints, Ring Integration beta and Comfort Engine beta.
 
 ## Later opportunities
 

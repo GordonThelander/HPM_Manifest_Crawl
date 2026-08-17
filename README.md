@@ -131,6 +131,8 @@ refused by the crawler.
 | `link_reachability.json` | bounded documentation/community URL observations |
 | `site/index.html` | portable landing page for the complete community utility suite |
 | `site/package-explorer/` | unified search across HPM, official devices and community app/driver catalogues |
+| `site/taxonomy/` | authoritative HPM categories, tags, package usage metrics and taxonomy cloud |
+| `hpm_taxonomy.json` | versioned category/tag vocabulary, provenance and package-level usage metrics |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
@@ -150,9 +152,9 @@ refused by the crawler.
 ## Community Utilities Website
 
 The `site/` directory is a static, experimental website containing the Unified Package
-Explorer, Identity Resolver, Manifest Validator, Network Guide, Package Feed, Recovery
-Inventory and Contributor Activity views. It is community-developed and is not official
-or endorsed Hubitat software.
+Explorer, HPM Taxonomy, Identity Resolver, Manifest Validator, Network Guide, Package
+Feed, Recovery Inventory and Contributor Activity views. It is community-developed and
+is not official or endorsed Hubitat software.
 
 The independent `.github/workflows/pages.yml` workflow validates and uploads only `site/`
 when `community-utility-exploration` is pushed or the workflow is dispatched manually. It
@@ -188,6 +190,9 @@ provenance and matching rules applied to official and community catalogue source
 
 See [`docs/PACKAGE_EXPLORER.md`](docs/PACKAGE_EXPLORER.md) for the unified explorer schema,
 search scope, evidence boundaries and browser safety model.
+
+See [`docs/HPM_TAXONOMY.md`](docs/HPM_TAXONOMY.md) for authoritative settings ingestion,
+fallback behaviour, counting rules and the taxonomy-cloud accessibility model.
 
 See [`docs/HEALTH_MONITOR.md`](docs/HEALTH_MONITOR.md) for the evidence-first health
 history, transition meanings, and author remediation guidance.

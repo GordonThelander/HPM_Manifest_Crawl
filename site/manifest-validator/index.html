@@ -11,7 +11,7 @@
 <body class="manifest-validator">
   <nav class="utility-nav" aria-label="Community utilities">
     <a class="utility-brand" href="../">Community Utilities</a>
-    <div class="utility-links"><a href="../">Home</a><a href="../package-explorer/">Package Explorer</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/" aria-current="page">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration">GitHub</a></div>
+    <div class="utility-links"><a href="../">Home</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/" aria-current="page">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration">GitHub</a></div>
   </nav>
   <main>
     <header class="hero">
@@ -49,8 +49,9 @@
           <label>Public package-manifest URL<input id="manifest-url" type="url" placeholder="https://raw.githubusercontent.com/…/packageManifest.json"></label>
           <label>Public repository JSON URL<input id="repository-url" type="url" placeholder="https://raw.githubusercontent.com/…/repository.json"></label>
           <label>Stable package ID<input id="package-id" autocomplete="off" placeholder="example-presence"></label>
-          <label>Category<select id="category"><option value="">Choose a category</option><option>Control</option><option>Convenience</option><option>Integrations</option><option>Notifications</option><option>Security</option><option>Utility</option></select></label>
-          <label class="wide">Tags, separated by commas<input id="tags" autocomplete="off" placeholder="Presence & Location, Automations & Groups"></label>
+          <label>Category<select id="category"><option value="">Choose a category</option></select></label>
+          <label class="wide">Tags, separated by commas<input id="tags" list="valid-tags" autocomplete="off" aria-describedby="taxonomy-status" placeholder="Presence & Location, Automations & Groups"><datalist id="valid-tags"></datalist></label>
+          <p id="taxonomy-status" class="taxonomy-status wide">Loading current HPM categories and tags...</p>
           <label class="wide">Short package description<input id="description" autocomplete="off" placeholder="What this package helps a Hubitat user do"></label>
           <label class="tested wide"><input id="tested" type="checkbox"> I tested installation through HPM using the manifest or custom repository URL.</label>
         </div>
@@ -81,6 +82,7 @@
       <code>python validate_hpm_package.py packageManifest.json --check-sources</code>
     </section>
   </main>
+  <script src="../taxonomy/data/hpm_taxonomy.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

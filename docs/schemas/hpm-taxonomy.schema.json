@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/community-utility-exploration/docs/schemas/hpm-taxonomy.schema.json",
+  "title": "HPM taxonomy and package usage metrics",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "packageCount", "source", "taxonomy", "metrics", "history", "method"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "hpm-taxonomy"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "packageCount": {"type": "integer", "minimum": 0},
+    "source": {
+      "type": "object",
+      "required": ["url", "mode", "retrievedAt", "sha256", "fallbackAvailable", "changes"],
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "mode": {"enum": ["live", "fallback", "file"]},
+        "retrievedAt": {"type": ["string", "null"]},
+        "lastModified": {"type": ["string", "null"]},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "fallbackAvailable": {"const": true},
+        "changes": {
+          "type": "object",
+          "required": ["changed", "categoriesAdded", "categoriesRemoved", "tagsAdded", "tagsRemoved"],
+          "properties": {
+            "changed": {"type": "boolean"},
+            "categoriesAdded": {"type": "array", "items": {"type": "string"}},
+            "categoriesRemoved": {"type": "array", "items": {"type": "string"}},
+            "tagsAdded": {"type": "array", "items": {"type": "string"}},
+            "tagsRemoved": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "required": ["categories", "tags"],
+      "properties": {
+        "categories": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["categories", "tags", "unknownCategories", "unknownTags"]
+    },
+    "history": {"type": "array"},
+    "method": {
+      "type": "object",
+      "required": ["packageUnit", "percentageDenominator", "definitionsDoNotInflateCounts", "remoteContentExecuted", "automationMapIndependent"],
+      "properties": {
+        "definitionsDoNotInflateCounts": {"const": true},
+        "remoteContentExecuted": {"const": false},
+        "automationMapIndependent": {"const": true}
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ SITE = pathlib.Path('site')
 UTILITY_PAGES = (
     pathlib.Path('index.html'),
     pathlib.Path('package-explorer/index.html'),
+    pathlib.Path('taxonomy/index.html'),
     pathlib.Path('identity-resolver/index.html'),
     pathlib.Path('manifest-validator/index.html'),
     pathlib.Path('network-guide/index.html'),
@@ -23,6 +24,8 @@ REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('shared/hubitat.css'),
     pathlib.Path('package-explorer/data/explorer_index.json'),
     pathlib.Path('package-explorer/data/explorer_index.js'),
+    pathlib.Path('taxonomy/data/hpm_taxonomy.json'),
+    pathlib.Path('taxonomy/data/hpm_taxonomy.js'),
     pathlib.Path('identity-resolver/data/identity_index.js'),
     pathlib.Path('network-guide/data/network_evidence.js'),
     pathlib.Path('contributors/data/contributor_activity.js'),

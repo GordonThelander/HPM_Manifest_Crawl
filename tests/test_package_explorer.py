@@ -57,6 +57,11 @@ class PackageExplorerTests(unittest.TestCase):
             self.assertIn(f'?catalogue={record_type}#results-title', page)
         self.assertIn("new URLSearchParams(location.search).get('catalogue')", script)
 
+    def test_taxonomy_links_can_apply_exact_tag_filters(self):
+        script = (ROOT / 'site/package-explorer/app.js').read_text('utf-8')
+        self.assertIn("get('tag')", script)
+        self.assertIn("(record.tags||[]).includes(exactTag)", script)
+
     def test_builder_cannot_write_automation_map_registry(self):
         source = (ROOT / 'build_package_explorer.py').read_text('utf-8')
         self.assertNotIn('hubitat_automation_map_app_integration_registry', source)

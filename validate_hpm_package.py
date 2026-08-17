@@ -17,6 +17,7 @@ MAX_BYTES = 2 * 1024 * 1024
 TIMEOUT = 15
 SEVERITY_ORDER = {'ERROR': 0, 'WARNING': 1, 'INFO': 2}
 URL_FIELDS = ('documentationLink', 'communityLink')
+TAXONOMY_FALLBACK = pathlib.Path(__file__).with_name('hpm_taxonomy_fallback.json')
 
 
 def clean(value):
@@ -59,6 +60,15 @@ def check_url_field(value, path, source):
                       'URL uses clear-text HTTP.',
                       'Publish the resource over HTTPS when possible.', source)]
     return []
+
+
+def load_taxonomy_settings():
+    document = json.loads(TAXONOMY_FALLBACK.read_text('utf-8'))
+    categories = document.get('categories')
+    tags = document.get('tags')
+    if not isinstance(categories, list) or not isinstance(tags, list):
+        raise ValueError('HPM taxonomy fallback is invalid')
+    return {'categories': set(categories), 'tags': set(tags)}
 
 
 def validate_component(component, kind, index, source_name, require_version):
@@ -182,8 +192,10 @@ def validate_manifest(manifest, source_name='packageManifest.json'):
 
 
 def validate_repository(repository, manifest, manifest_reference=None,
-                        source_name='repository.json', package_id=None):
+                        source_name='repository.json', package_id=None,
+                        taxonomy_settings=None):
     issues = []
+    taxonomy_settings = taxonomy_settings or load_taxonomy_settings()
     if not isinstance(repository, dict):
         return [issue('ERROR', 'INVALID_REPOSITORY_ROOT', '$',
                       'Repository manifest root must be a JSON object.',
@@ -215,6 +227,46 @@ def validate_repository(repository, manifest, manifest_reference=None,
             ids[entry_id] = f'{path}.id'
         if clean(entry.get('location')):
             issues.extend(check_url_field(entry['location'], f'{path}.location', source_name))
+        category = clean(entry.get('category'))
+        if category and category not in taxonomy_settings['categories']:
+            issues.append(issue(
+                'ERROR', 'INVALID_HPM_CATEGORY', f'{path}.category',
+                f'Category "{category}" is not in the current HPM taxonomy.',
+                'Choose an exact category from the authoritative HPM settings.', source_name,
+            ))
+        tags = entry.get('tags')
+        if tags is not None and not isinstance(tags, list):
+            issues.append(issue(
+                'ERROR', 'INVALID_HPM_TAGS', f'{path}.tags',
+                'Repository tags must be a JSON array.',
+                'Use an array containing exact tags from the authoritative HPM settings.',
+                source_name,
+            ))
+        elif isinstance(tags, list):
+            seen_tags = set()
+            for tag_index, tag in enumerate(tags):
+                tag_path = f'{path}.tags[{tag_index}]'
+                if not isinstance(tag, str) or not tag.strip():
+                    issues.append(issue(
+                        'ERROR', 'INVALID_HPM_TAG', tag_path,
+                        'Tag must be a non-empty string.',
+                        'Choose an exact tag from the authoritative HPM settings.', source_name,
+                    ))
+                    continue
+                tag = tag.strip()
+                if tag not in taxonomy_settings['tags']:
+                    issues.append(issue(
+                        'ERROR', 'INVALID_HPM_TAG', tag_path,
+                        f'Tag "{tag}" is not in the current HPM taxonomy.',
+                        'Choose an exact tag from the authoritative HPM settings.', source_name,
+                    ))
+                if tag in seen_tags:
+                    issues.append(issue(
+                        'WARNING', 'DUPLICATE_HPM_TAG', tag_path,
+                        f'Tag "{tag}" is declared more than once.',
+                        'Keep each repository tag once.', source_name,
+                    ))
+                seen_tags.add(tag)
         if package_id and entry_id == package_id:
             candidates.append((index, entry))
         elif manifest_reference and clean(entry.get('location')) == manifest_reference:
