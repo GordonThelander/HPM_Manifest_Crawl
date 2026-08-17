@@ -131,6 +131,8 @@ refused by the crawler.
 | `link_reachability.json` | bounded documentation/community URL observations |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
+| `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
+| `network_evidence.json` | standalone package network-evidence projection |
 | `package_changes.json` | retained added, removed, updated, broken and restored package events |
 | `package_changes.atom` | subscribable package-change feed |
 | `package_changes_weekly.md` | seven-day community-post digest |

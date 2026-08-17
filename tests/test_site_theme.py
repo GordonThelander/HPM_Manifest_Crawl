@@ -10,6 +10,7 @@ class SiteThemeTests(unittest.TestCase):
         pages = {
             'identity-resolver': ROOT / 'site/identity-resolver/index.html',
             'manifest-validator': ROOT / 'site/manifest-validator/index.html',
+            'network-guide': ROOT / 'site/network-guide/index.html',
             'package-feed': ROOT / 'site/package-feed/index.html',
             'recovery-inventory': ROOT / 'site/recovery-inventory/index.html',
         }

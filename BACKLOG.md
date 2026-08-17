@@ -331,13 +331,13 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [ ] Present HPM LAN/Cloud tags, observed external hosts, LAN primitives and official
+- [x] Present HPM LAN/Cloud tags, observed external hosts, LAN primitives and official
       documentation as separate evidence types.
-- [ ] Show reviewed Automation Map dependencies only as reviewed conclusions.
-- [ ] Use language such as `observed`, `declared`, `documented` and `reviewed` consistently.
-- [ ] Add filters for packages with LAN evidence, cloud evidence, both or insufficient
+- [x] Show reviewed Automation Map dependencies only as reviewed conclusions.
+- [x] Use language such as `observed`, `declared`, `documented` and `reviewed` consistently.
+- [x] Add filters for packages with LAN evidence, cloud evidence, both or insufficient
       evidence.
-- [ ] Publish the method and known false-positive cases.
+- [x] Publish the method and known false-positive cases.
 
 ### Acceptance criteria
 
