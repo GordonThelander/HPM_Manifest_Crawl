@@ -32,6 +32,10 @@ class PagesSiteTests(unittest.TestCase):
             with self.subTest(relative=relative):
                 self.assertIn('class="utility-nav"', source)
                 self.assertIn('Package Explorer', source)
+                self.assertIn(
+                    'https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration',
+                    source,
+                )
                 self.assertNotRegex(source, r'''(?:href|src)=["']/HPM_Manifest_Crawl/''')
 
     def test_package_feed_copies_downloads_inside_pages_artifact(self):
