@@ -207,6 +207,10 @@ probe; declaration presence and measured reachability remain separate evidence.
 ### Work
 
 - [x] Search exact application and driver definition name plus namespace.
+- [x] Search by namespace alone with exact and separately labelled partial results.
+- [x] Search by author alone or combine author with name, namespace, and type filters.
+- [x] Group author/namespace results by package and distinguish apps from drivers with
+      accessible text badges plus green/blue visual treatment.
 - [x] Fall back to separately labelled, conservative fuzzy suggestions.
 - [x] Return the canonical package, manifest, author, documentation and confidence basis.
 - [x] Identify likely Hubitat built-ins separately from HPM packages.
@@ -226,6 +230,8 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Lookup requires only definition identity and executes entirely in the browser.
 - [x] Source-reviewed manual-install projects remain distinct from HPM packages and can
       supplement incomplete community wiki snapshots.
+- [x] Custom Apps Wiki records are searchable as lower-confidence discovery evidence and
+      never promoted to source-confirmed identities automatically.
 
 ## Increment 5 — New and updated package feed
 

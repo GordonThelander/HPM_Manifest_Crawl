@@ -3,7 +3,7 @@
   "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/identity-resolver.schema.json",
   "title": "Hubitat App and Driver Identity Resolver",
   "type": "object",
-  "required": ["schemaVersion", "dataset", "snapshotGenerated", "privacy", "matching", "definitionCount", "definitions", "builtInCount", "builtIns", "manualProjectCount", "manualProjects"],
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "privacy", "matching", "definitionCount", "definitions", "builtInCount", "builtIns", "manualProjectCount", "manualProjects", "communityAppCount", "communityApps"],
   "properties": {
     "schemaVersion": {"const": "1.0"},
     "dataset": {"const": "identity-resolver"},
@@ -15,6 +15,8 @@
     "builtInCount": {"type": "integer", "minimum": 0},
     "builtIns": {"type": "array"},
     "manualProjectCount": {"type": "integer", "minimum": 0},
-    "manualProjects": {"type": "array"}
+    "manualProjects": {"type": "array"},
+    "communityAppCount": {"type": "integer", "minimum": 0},
+    "communityApps": {"type": "array"}
   }
 }

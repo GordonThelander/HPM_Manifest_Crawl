@@ -12,6 +12,7 @@ DEFINITIONS = pathlib.Path('definitions.json')
 PACKAGES = pathlib.Path('community_packages.json')
 OFFICIAL_DOCS = pathlib.Path('hubitat_official_docs_index.json')
 REVIEWED_PROJECTS = pathlib.Path('reviewed_community_projects.json')
+COMMUNITY_APPS = pathlib.Path('community_apps.json')
 OUTPUT = pathlib.Path('site/identity-resolver/data/identity_index.json')
 SCRIPT_OUTPUT = pathlib.Path('site/identity-resolver/data/identity_index.js')
 SCHEMA_VERSION = '1.0'
@@ -60,7 +61,8 @@ def identity_variants(definition):
     return values
 
 
-def build_index(definitions_doc, packages_doc, official_doc, reviewed_doc=None):
+def build_index(definitions_doc, packages_doc, official_doc, reviewed_doc=None,
+                community_apps_doc=None):
     packages = {row['id']: row for row in packages_doc.get('packages') or []}
     records = []
     for definition in definitions_doc.get('definitions') or []:
@@ -101,6 +103,16 @@ def build_index(definitions_doc, packages_doc, official_doc, reviewed_doc=None):
             'evidence': sorted(project.get('evidence') or []),
         })
     manual.sort(key=lambda row: row['id'])
+    community_apps = []
+    for app in (community_apps_doc or {}).get('records') or []:
+        community_apps.append({
+            'id': app['id'], 'name': app.get('name'), 'kind': 'APP',
+            'section': app.get('section'), 'links': sorted(app.get('links') or []),
+            'lifecycleFlags': sorted(app.get('lifecycleFlags') or []),
+            'hpmMatches': app.get('hpmMatches') or [],
+            'evidence': 'COMMUNITY_APP_LISTED',
+        })
+    community_apps.sort(key=lambda row: row['id'])
     return {
         'schemaVersion': SCHEMA_VERSION, 'dataset': 'identity-resolver',
         'snapshotGenerated': definitions_doc.get('snapshotGenerated'),
@@ -113,15 +125,91 @@ def build_index(definitions_doc, packages_doc, official_doc, reviewed_doc=None):
         'definitionCount': len(records), 'definitions': records,
         'builtInCount': len(builtins), 'builtIns': builtins,
         'manualProjectCount': len(manual), 'manualProjects': manual,
+        'communityAppCount': len(community_apps), 'communityApps': community_apps,
     }
 
 
-def resolve(index, name, namespace=None, kind=None, threshold=0.82):
+def resolve(index, name, namespace=None, kind=None, author=None, threshold=0.82):
     query_name, query_namespace = key(name), key(namespace)
+    query_author = key(author)
     kind = key(kind).upper() or None
+    if not query_name and not query_namespace and query_author:
+        author_exact, author_related = [], []
+        for definition in index.get('definitions') or []:
+            if kind and definition['kind'] != kind:
+                continue
+            value = key(definition.get('package', {}).get('author'))
+            target = author_exact if value == query_author else author_related
+            if value == query_author or (len(query_author) >= 2 and query_author in value):
+                target.append({'matchType': ('AUTHOR_EXACT' if value == query_author
+                                             else 'AUTHOR_RELATED'),
+                               'definition': definition})
+        manual_author_exact, manual_author_related = [], []
+        for project in index.get('manualProjects') or []:
+            if kind and project['kind'] != kind:
+                continue
+            value = key(project.get('author'))
+            if value == query_author:
+                manual_author_exact.append(project)
+            elif len(query_author) >= 2 and query_author in value:
+                manual_author_related.append(project)
+        return {
+            'exact': [], 'nameMatches': [], 'builtIns': [], 'related': [],
+            'builtInSuggestions': [], 'suggestions': [], 'manualExact': [],
+            'manualNameMatches': [], 'manualRelated': [], 'communityExact': [],
+            'communityRelated': [], 'namespaceExact': [], 'namespaceRelated': [],
+            'manualNamespaceExact': [], 'manualNamespaceRelated': [],
+            'authorExact': author_exact, 'authorRelated': author_related,
+            'manualAuthorExact': manual_author_exact,
+            'manualAuthorRelated': manual_author_related,
+            'ambiguous': len(author_exact) + len(manual_author_exact) > 1,
+            'needsNamespace': False,
+        }
+    if not query_name and query_namespace:
+        namespace_exact, namespace_related = [], []
+        for definition in index.get('definitions') or []:
+            if kind and definition['kind'] != kind:
+                continue
+            if query_author and query_author not in key(definition.get('package', {}).get('author')):
+                continue
+            namespaces = {key(identity['namespace']) for identity in definition['identities']
+                          if key(identity['namespace'])}
+            if query_namespace in namespaces:
+                namespace_exact.append({'matchType': 'NAMESPACE_EXACT',
+                                        'definition': definition})
+            elif len(query_namespace) >= 2 and any(
+                    query_namespace in value for value in namespaces):
+                namespace_related.append({'matchType': 'NAMESPACE_RELATED',
+                                          'definition': definition})
+        manual_namespace_exact, manual_namespace_related = [], []
+        for project in index.get('manualProjects') or []:
+            if kind and project['kind'] != kind:
+                continue
+            if query_author and query_author not in key(project.get('author')):
+                continue
+            project_namespace = key(project['namespace'])
+            if project_namespace == query_namespace:
+                manual_namespace_exact.append(project)
+            elif len(query_namespace) >= 2 and query_namespace in project_namespace:
+                manual_namespace_related.append(project)
+        return {
+            'exact': [], 'nameMatches': [], 'builtIns': [], 'related': [],
+            'builtInSuggestions': [], 'suggestions': [], 'manualExact': [],
+            'manualNameMatches': [], 'manualRelated': [], 'communityExact': [],
+            'communityRelated': [], 'namespaceExact': namespace_exact,
+            'namespaceRelated': namespace_related,
+            'manualNamespaceExact': manual_namespace_exact,
+            'manualNamespaceRelated': manual_namespace_related,
+            'authorExact': [], 'authorRelated': [],
+            'manualAuthorExact': [], 'manualAuthorRelated': [],
+            'ambiguous': len(namespace_exact) + len(manual_namespace_exact) > 1,
+            'needsNamespace': False,
+        }
     exact, name_matches, related, suggestions = [], [], [], []
     for definition in index.get('definitions') or []:
         if kind and definition['kind'] != kind:
+            continue
+        if query_author and query_author not in key(definition.get('package', {}).get('author')):
             continue
         exact_bases, name_bases = [], []
         best = 0.0
@@ -154,7 +242,7 @@ def resolve(index, name, namespace=None, kind=None, threshold=0.82):
                                 'basis': best_identity['basis'],
                                 'definition': definition})
     builtins, builtin_suggestions = [], []
-    if not kind or kind == 'APP':
+    if (not kind or kind == 'APP') and not query_author:
         for builtin in index.get('builtIns') or []:
             if any(key(alias) == query_name for alias in builtin['names']):
                 builtins.append({'matchType': 'BUILT_IN_CANDIDATE', 'definition': builtin})
@@ -166,6 +254,8 @@ def resolve(index, name, namespace=None, kind=None, threshold=0.82):
     for project in index.get('manualProjects') or []:
         if kind and project['kind'] != kind:
             continue
+        if query_author and query_author not in key(project.get('author')):
+            continue
         same_name = key(project['name']) == query_name
         same_namespace = key(project['namespace']) == query_namespace
         if same_name and same_namespace and query_namespace:
@@ -175,6 +265,15 @@ def resolve(index, name, namespace=None, kind=None, threshold=0.82):
                                         'definition': project})
         elif len(fuzzy_key(name)) >= 3 and fuzzy_key(name) in fuzzy_key(project['name']):
             manual_related.append({'matchType': 'MANUAL_RELATED', 'definition': project})
+    community_exact, community_related = [], []
+    if (not kind or kind == 'APP') and not query_author:
+        for app in index.get('communityApps') or []:
+            if key(app['name']) == query_name:
+                community_exact.append({'matchType': 'COMMUNITY_LISTING_EXACT_NAME',
+                                        'definition': app})
+            elif len(fuzzy_key(name)) >= 3 and fuzzy_key(name) in fuzzy_key(app['name']):
+                community_related.append({'matchType': 'COMMUNITY_LISTING_RELATED',
+                                          'definition': app})
     exact.sort(key=lambda row: (row['definition']['package']['name'] or '',
                                 row['definition']['id']))
     suggestions.sort(key=lambda row: (-row['score'], row['definition']['id']))
@@ -185,6 +284,12 @@ def resolve(index, name, namespace=None, kind=None, threshold=0.82):
             'suggestions': suggestions[:10],
             'manualExact': manual_exact, 'manualNameMatches': manual_name_matches,
             'manualRelated': manual_related,
+            'communityExact': community_exact,
+            'communityRelated': community_related[:20],
+            'namespaceExact': [], 'namespaceRelated': [],
+            'manualNamespaceExact': [], 'manualNamespaceRelated': [],
+            'authorExact': [], 'authorRelated': [],
+            'manualAuthorExact': [], 'manualAuthorRelated': [],
             'ambiguous': (len(exact) + len(name_matches) + len(builtins) +
                           len(manual_exact) + len(manual_name_matches)) > 1,
             'needsNamespace': not query_namespace and bool(name_matches or manual_name_matches)}
@@ -200,6 +305,8 @@ def validate(document):
         raise ValueError('builtInCount does not match builtIns')
     if document.get('manualProjectCount') != len(document.get('manualProjects') or []):
         raise ValueError('manualProjectCount does not match manualProjects')
+    if document.get('communityAppCount') != len(document.get('communityApps') or []):
+        raise ValueError('communityAppCount does not match communityApps')
 
 
 def main():
@@ -209,6 +316,7 @@ def main():
     parser.add_argument('--script-out', type=pathlib.Path, default=SCRIPT_OUTPUT)
     parser.add_argument('--name')
     parser.add_argument('--namespace')
+    parser.add_argument('--author')
     parser.add_argument('--kind', choices=['APP', 'DRIVER'])
     args = parser.parse_args()
     if args.check:
@@ -225,9 +333,10 @@ def main():
     index = build_index(json.loads(DEFINITIONS.read_text('utf-8')),
                         json.loads(PACKAGES.read_text('utf-8')),
                         json.loads(OFFICIAL_DOCS.read_text('utf-8')),
-                        json.loads(REVIEWED_PROJECTS.read_text('utf-8')))
+                        json.loads(REVIEWED_PROJECTS.read_text('utf-8')),
+                        json.loads(COMMUNITY_APPS.read_text('utf-8')))
     if args.name:
-        print(json.dumps(resolve(index, args.name, args.namespace, args.kind),
+        print(json.dumps(resolve(index, args.name, args.namespace, args.kind, args.author),
                          indent=2, ensure_ascii=False))
         return 0
     validate(index)
@@ -238,7 +347,8 @@ def main():
                                encoding='utf-8', newline='\n')
     print(f'Wrote {args.out} and {args.script_out}: {index["definitionCount"]} definitions and '
           f'{index["builtInCount"]} documented built-ins and '
-          f'{index["manualProjectCount"]} reviewed manual projects.')
+          f'{index["manualProjectCount"]} reviewed manual projects and '
+          f'{index["communityAppCount"]} community-wiki apps.')
     return 0
 
 

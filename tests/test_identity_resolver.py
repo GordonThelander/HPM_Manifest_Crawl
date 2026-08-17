@@ -34,7 +34,12 @@ def fixture_index():
         'communityUrl': 'https://example.test/topic',
         'evidence': ['COMMUNITY_TOPIC', 'SOURCE_IDENTITY_MATCH'],
     }]}
-    return resolver.build_index(definitions, packages, official, reviewed)
+    community = {'records': [{
+        'id': 'community-app:sample', 'name': 'Wiki Sample App',
+        'section': 'Utility', 'links': ['https://example.test/wiki-topic'],
+        'lifecycleFlags': [], 'hpmMatches': [],
+    }]}
+    return resolver.build_index(definitions, packages, official, reviewed, community)
 
 
 class IdentityResolverTests(unittest.TestCase):
@@ -47,6 +52,27 @@ class IdentityResolverTests(unittest.TestCase):
         result = resolver.resolve(fixture_index(), 'Sample App', 'someone-else', 'APP')
         self.assertFalse(result['exact'])
         self.assertFalse(result['suggestions'])
+
+    def test_namespace_can_be_searched_without_a_name(self):
+        exact = resolver.resolve(fixture_index(), None, 'author', 'APP')
+        self.assertEqual(len(exact['namespaceExact']), 2)
+        partial = resolver.resolve(fixture_index(), '', 'auth', 'APP')
+        self.assertEqual(len(partial['namespaceRelated']), 2)
+
+    def test_manual_project_participates_in_namespace_search(self):
+        result = resolver.resolve(fixture_index(), '', 'manual', 'APP')
+        self.assertEqual(len(result['manualNamespaceRelated']), 1)
+
+    def test_author_can_be_searched_without_name_or_namespace(self):
+        exact = resolver.resolve(fixture_index(), '', '', 'APP', 'A')
+        self.assertEqual(len(exact['authorExact']), 1)
+        related = resolver.resolve(fixture_index(), '', '', 'APP', 'Manual')
+        self.assertEqual(len(related['manualAuthorRelated']), 1)
+
+    def test_author_combines_with_identity_filters(self):
+        result = resolver.resolve(fixture_index(), 'Sample App', 'author', 'APP', 'B')
+        self.assertEqual(len(result['exact']), 1)
+        self.assertEqual(result['exact'][0]['definition']['package']['name'], 'Two')
 
     def test_suggestions_are_separate_and_labelled(self):
         result = resolver.resolve(fixture_index(), 'Sampel Application', 'author', 'APP')
@@ -90,6 +116,18 @@ class IdentityResolverTests(unittest.TestCase):
         self.assertIn('SOURCE_IDENTITY_MATCH',
                       result['manualExact'][0]['definition']['evidence'])
 
+    def test_wiki_app_is_discovery_evidence_not_identity(self):
+        result = resolver.resolve(fixture_index(), 'Wiki Sample App', None, 'APP')
+        self.assertEqual(len(result['communityExact']), 1)
+        app = result['communityExact'][0]['definition']
+        self.assertEqual(app['evidence'], 'COMMUNITY_APP_LISTED')
+        self.assertNotIn('namespace', app)
+
+    def test_all_committed_community_apps_are_indexed(self):
+        source = json.loads((ROOT / resolver.COMMUNITY_APPS).read_text('utf-8'))
+        document = json.loads((ROOT / resolver.OUTPUT).read_text('utf-8'))
+        self.assertEqual(document['communityAppCount'], source['recordCount'])
+
     def test_committed_index_is_valid_and_private_by_default(self):
         document = json.loads((ROOT / resolver.OUTPUT).read_text('utf-8'))
         resolver.validate(document)
@@ -103,10 +141,27 @@ class IdentityResolverTests(unittest.TestCase):
         self.assertNotIn('innerHTML', source)
         self.assertIn('textContent', source)
 
+    def test_author_and_namespace_results_group_by_package(self):
+        source = (ROOT / 'site/identity-resolver/app.js').read_text('utf-8')
+        self.assertIn('function groupedPackageCards', source)
+        self.assertIn("groupedPackageCards([...result.authorExact", source)
+        self.assertIn("groupedPackageCards([...result.namespaceExact", source)
+
+    def test_app_and_driver_styles_have_text_badges_and_distinct_colours(self):
+        script = (ROOT / 'site/identity-resolver/app.js').read_text('utf-8')
+        styles = (ROOT / 'site/identity-resolver/styles.css').read_text('utf-8')
+        self.assertIn("badge.textContent=d.kind", script)
+        self.assertIn('.type-badge.app', styles)
+        self.assertIn('.type-badge.driver', styles)
+        self.assertIn('#0b5d45', styles)
+        self.assertIn('#174f7a', styles)
+
     def test_direct_file_page_loads_embedded_index_and_examples(self):
         page = (ROOT / 'site/identity-resolver/index.html').read_text('utf-8')
         self.assertIn('data/identity_index.js', page)
         self.assertIn('data-name="OwnTracks"', page)
+        self.assertNotIn('id="name" required', page)
+        self.assertIn('id="author"', page)
 
     def test_generator_has_no_automation_map_registry_path(self):
         source = (ROOT / 'build_identity_resolver.py').read_text('utf-8')

@@ -15,8 +15,9 @@
       <p class="lede">Enter the definition name and namespace shown by Hubitat. Matching happens in this browser; the identity is not uploaded.</p>
     </header>
     <form id="lookup-form">
-      <label>Definition name <input id="name" required autocomplete="off" placeholder="e.g. OwnTracks"></label>
+      <label>Definition name <input id="name" autocomplete="off" placeholder="e.g. OwnTracks"></label>
       <label>Namespace <input id="namespace" autocomplete="off" placeholder="e.g. lpakula"></label>
+      <label>Author <input id="author" autocomplete="off" placeholder="e.g. Gordon"></label>
       <label>Type <select id="kind"><option value="">App or driver</option><option>APP</option><option>DRIVER</option></select></label>
       <button type="submit">Find package</button>
     </form>
@@ -30,14 +31,17 @@
     <section id="results" aria-labelledby="results-title" hidden>
       <h2 id="results-title">Results</h2>
       <div id="exact"></div>
+      <div id="namespace-results"></div>
+      <div id="author-results"></div>
       <div id="name-matches"></div>
       <div id="manual"></div>
+      <div id="community-apps"></div>
       <div id="builtins"></div>
       <div id="builtin-related"></div>
       <div id="related"></div>
       <div id="suggestions"></div>
     </section>
-    <aside><strong>Evidence labels matter.</strong> Exact identity means both name and namespace match. Exact-name candidates still need namespace confirmation. Related and suggested results are discovery leads. Manual community projects and documented built-ins are not HPM packages.</aside>
+    <aside><strong>Evidence labels matter.</strong> Exact identity means both name and namespace match. You may also search by namespace alone; partial namespace results remain discovery leads. Wiki listings do not carry namespace evidence. Manual community projects and documented built-ins are not HPM packages.</aside>
   </main>
   <script src="data/identity_index.js" defer></script>
   <script src="app.js" defer></script>
