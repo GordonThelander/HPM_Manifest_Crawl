@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="../shared/hubitat.css">
 </head>
 <body class="recovery-inventory">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../">Home</a><a href="../package-explorer/">Package Explorer</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/" aria-current="page">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="https://github.com/GordonThelander/HPM_Manifest_Crawl">GitHub</a></div>
+  </nav>
   <main>
     <header class="hero">
       <div>
@@ -25,7 +29,7 @@
           <div><p class="step">1 · Identities</p><h2>One definition per line</h2></div>
           <button id="sample" type="button" class="secondary">Use example</button>
         </div>
-        <p class="format"><code>TYPE | DEFINITION NAME | NAMESPACE</code> — type may be APP or DRIVER.</p>
+        <p class="format"><code>TYPE | DEFINITION NAME | NAMESPACE</code> - type may be APP or DRIVER.</p>
         <textarea id="inventory" spellcheck="false" aria-label="Code identity inventory" placeholder="APP | OwnTracks | lpakula&#10;DRIVER | Neptune Apex | community.namespace"></textarea>
         <div class="actions"><button id="clear" type="button" class="secondary">Clear</button><button id="recover" type="button" class="primary">Find installation sources</button></div>
       </div>

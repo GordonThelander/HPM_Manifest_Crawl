@@ -1475,7 +1475,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Hubitat driver for monitoring and managing APC Smart-UPS systems — providing reliable runtime statistics, event emission, and control for APC devices.",
+      "description": "Hubitat driver for monitoring and managing APC Smart-UPS systems - providing reliable runtime statistics, event emission, and control for APC devices.",
       "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/APC-SmartUPS/README.md",
       "id": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
       "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json",
@@ -3858,7 +3858,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": true
       },
-      "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable — learns each device's normal pattern and alerts you when something goes quiet.",
+      "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable - learns each device's normal pattern and alerts you when something goes quiet.",
       "documentationUrl": null,
       "id": "manifest:b02e9c2e9e6f56c819a0",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
@@ -4494,7 +4494,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Control an ecobee thermostat 100% locally over the HomeKit Accessory Protocol (HAP) — no cloud, no Apple hardware, no bridge. In-driver pairing, mode/setpoints/humidity/operating state, remote room sensors as child devices, and real-time HomeKit event push.",
+      "description": "Control an ecobee thermostat 100% locally over the HomeKit Accessory Protocol (HAP) - no cloud, no Apple hardware, no bridge. In-driver pairing, mode/setpoints/humidity/operating state, remote room sensors as child devices, and real-time HomeKit event push.",
       "documentationUrl": null,
       "id": "manifest:fb397ab77d315ceda3b2",
       "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json",
@@ -8221,7 +8221,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Import any LAN/Wi-Fi HomeKit (HAP) accessory into Hubitat — pair with a setup code and the driver auto-maps the accessory to a Hubitat device. No cloud, no Apple hardware, no Homebridge. Runs on any hub (C5/C7/C8).",
+      "description": "Import any LAN/Wi-Fi HomeKit (HAP) accessory into Hubitat - pair with a setup code and the driver auto-maps the accessory to a Hubitat device. No cloud, no Apple hardware, no Homebridge. Runs on any hub (C5/C7/C8).",
       "documentationUrl": null,
       "id": "manifest:a4b3d4dcbc077e6e0fa0",
       "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json",
@@ -13389,7 +13389,7 @@ window.NETWORK_EVIDENCE = {
       "documentationUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/README.md",
       "id": "manifest:33696c6eab931553929b",
       "manifestUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/packageManifest.json",
-      "name": "Mads Kristensen — Hubitat Drivers",
+      "name": "Mads Kristensen - Hubitat Drivers",
       "observed": {
         "externalHosts": [
           "api.purpleair.com",
@@ -13959,7 +13959,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": true,
         "lanTag": false
       },
-      "description": "Control-first Hubitat dashboard: select your devices and you're done. Optimized for acting on devices — bulk room/house lights, multi-thermostat control. Installable PWA, built-in remote scheduler (no Hubitat login), runs entirely on your hub.",
+      "description": "Control-first Hubitat dashboard: select your devices and you're done. Optimized for acting on devices - bulk room/house lights, multi-thermostat control. Installable PWA, built-in remote scheduler (no Hubitat login), runs entirely on your hub.",
       "documentationUrl": "https://github.com/evdev/hubitat-modern-dashboard#readme",
       "id": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
       "manifestUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json",
@@ -16644,7 +16644,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Privacy-first family presence — one presence device per member, area-level only, no coordinates on your hub.",
+      "description": "Privacy-first family presence - one presence device per member, area-level only, no coordinates on your hub.",
       "documentationUrl": "https://github.com/positionguard/positionguard-hubitat/blob/main/README.md",
       "id": "manifest:8674a05a8e58c3a46de1",
       "manifestUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json",
@@ -17262,7 +17262,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Advanced Hubitat driver providing full local LAN control of Rain Bird LNK/LNK2 WiFi irrigation controllers — including zone, program, and rain delay management. Features automatic time sync, telemetry, adaptive refresh, and support for ESP-TM2 and ESP-Me controllers.",
+      "description": "Advanced Hubitat driver providing full local LAN control of Rain Bird LNK/LNK2 WiFi irrigation controllers - including zone, program, and rain delay management. Features automatic time sync, telemetry, adaptive refresh, and support for ESP-TM2 and ESP-Me controllers.",
       "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
       "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
       "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
@@ -18123,7 +18123,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Bridges Ring cameras, sensors, alarm system, door locks, and smart lights to Hubitat Elevation via a local Node.js bridge server. Real-time events via WebSocket push — no polling required for alarm hub devices.",
+      "description": "Bridges Ring cameras, sensors, alarm system, door locks, and smart lights to Hubitat Elevation via a local Node.js bridge server. Real-time events via WebSocket push - no polling required for alarm hub devices.",
       "documentationUrl": "https://github.com/thaeropath/Hubitat_Ring_Integration",
       "id": "manifest:f07844d62242cc17d94e",
       "manifestUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/packageManifest.json",
@@ -22333,7 +22333,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Community Hubitat drivers for ThirdReality Zigbee devices — plugs, sensors, and lighting, with full power/energy metering where applicable.",
+      "description": "Community Hubitat drivers for ThirdReality Zigbee devices - plugs, sensors, and lighting, with full power/energy metering where applicable.",
       "documentationUrl": null,
       "id": "hpm:8a4ad471-ce79-46aa-8d66-6ca1602c8b62",
       "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json",
@@ -25583,7 +25583,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Driver for Universal Electronics / Visonic / Xfinity Zigbee contact sensors — contact, temperature, tamper, and battery with configurable reporting intervals.",
+      "description": "Driver for Universal Electronics / Visonic / Xfinity Zigbee contact sensors - contact, temperature, tamper, and battery with configurable reporting intervals.",
       "documentationUrl": null,
       "id": "hpm:11f6b093-755a-4dc0-92aa-557b2a5df37f",
       "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json",
@@ -26845,7 +26845,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Fully-local irrigation controller for Zooz ZEN16/ZEN17 relays — weather-aware scheduling, cycle & soak, moisture, pause-and-resume, and a verified hardware auto-off failsafe.",
+      "description": "Fully-local irrigation controller for Zooz ZEN16/ZEN17 relays - weather-aware scheduling, cycle & soak, moisture, pause-and-resume, and a verified hardware auto-off failsafe.",
       "documentationUrl": null,
       "id": "manifest:398726763b5d3bce0985",
       "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json",

@@ -15283,7 +15283,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "driverCount": 13,
           "id": "manifest:33696c6eab931553929b",
           "manifestUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/packageManifest.json",
-          "name": "Mads Kristensen — Hubitat Drivers",
+          "name": "Mads Kristensen - Hubitat Drivers",
           "publisherDate": "2026-08-06",
           "repositoryUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/repository.json",
           "version": "1.8.6"

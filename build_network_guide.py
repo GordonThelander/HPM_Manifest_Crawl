@@ -225,6 +225,16 @@ def validate(document):
         raise ValueError('invalid evidence classification')
 
 
+def site_safe(value):
+    if isinstance(value, str):
+        return value.replace('\u2014', '-')
+    if isinstance(value, list):
+        return [site_safe(item) for item in value]
+    if isinstance(value, dict):
+        return {key: site_safe(item) for key, item in value.items()}
+    return value
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
@@ -233,7 +243,7 @@ def main():
         document = json.loads(OUTPUT.read_text('utf-8'))
         validate(document)
         expected = 'window.NETWORK_EVIDENCE = ' + json.dumps(
-            document, indent=2, ensure_ascii=False, sort_keys=True) + ';\n'
+            site_safe(document), indent=2, ensure_ascii=False, sort_keys=True) + ';\n'
         if SCRIPT_OUTPUT.read_text('utf-8') != expected:
             raise ValueError('browser network evidence script is stale')
         print('Network evidence guide outputs pass offline checks.')
@@ -247,7 +257,8 @@ def main():
     serialised = json.dumps(document, indent=2, ensure_ascii=False, sort_keys=True)
     OUTPUT.write_text(serialised + '\n', encoding='utf-8', newline='\n')
     SCRIPT_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    SCRIPT_OUTPUT.write_text('window.NETWORK_EVIDENCE = ' + serialised + ';\n', encoding='utf-8', newline='\n')
+    site_serialised = json.dumps(site_safe(document), indent=2, ensure_ascii=False, sort_keys=True)
+    SCRIPT_OUTPUT.write_text('window.NETWORK_EVIDENCE = ' + site_serialised + ';\n', encoding='utf-8', newline='\n')
     print(f'Wrote {OUTPUT} and {SCRIPT_OUTPUT}: {document["packageCount"]} packages')
     return 0
 

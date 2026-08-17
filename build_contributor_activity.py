@@ -219,6 +219,16 @@ def serialise(document):
     return json.dumps(document, indent=2, ensure_ascii=False, sort_keys=True) + '\n'
 
 
+def site_safe(value):
+    if isinstance(value, str):
+        return value.replace('\u2014', '-')
+    if isinstance(value, list):
+        return [site_safe(item) for item in value]
+    if isinstance(value, dict):
+        return {key: site_safe(item) for key, item in value.items()}
+    return value
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
@@ -226,7 +236,7 @@ def main():
     if args.check:
         document = json.loads(OUTPUT.read_text('utf-8'))
         validate(document)
-        expected = 'window.CONTRIBUTOR_ACTIVITY = ' + serialise(document) + ';\n'
+        expected = 'window.CONTRIBUTOR_ACTIVITY = ' + serialise(site_safe(document)) + ';\n'
         if SCRIPT_OUTPUT.read_text('utf-8') != expected:
             raise ValueError('browser contributor activity script is stale')
         print('Contributor activity outputs pass offline checks.')
@@ -242,7 +252,7 @@ def main():
     OUTPUT.write_text(rendered, encoding='utf-8', newline='\n')
     SCRIPT_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     SCRIPT_OUTPUT.write_text(
-        'window.CONTRIBUTOR_ACTIVITY = ' + rendered + ';\n',
+        'window.CONTRIBUTOR_ACTIVITY = ' + serialise(site_safe(document)) + ';\n',
         encoding='utf-8', newline='\n',
     )
     print(

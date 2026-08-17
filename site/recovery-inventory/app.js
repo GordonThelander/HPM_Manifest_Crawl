@@ -84,7 +84,7 @@ function matchCard(match, className) {
   item.className = `match ${className || ""}`.trim();
   const definition = match.definition;
   if (match.type === "manual") {
-    item.append(text("strong", definition.name), text("span", "Manual installation — not HPM"), text("span", `Author: ${definition.author || "Not declared"}`));
+    item.append(text("strong", definition.name), text("span", "Manual installation - not HPM"), text("span", `Author: ${definition.author || "Not declared"}`));
     const links = document.createElement("div"); links.className = "links";
     [[definition.documentationUrl, "Repository"], [definition.communityUrl, "Community"], [definition.sourceUrl, "Source"]].forEach(([url, label]) => { const link = safeLink(url, label); if (link) links.append(link); });
     item.append(links); return item;

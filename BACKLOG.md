@@ -39,7 +39,7 @@ contract checks, even when it appears unrelated to Automation Map.
 - Preserve historical snapshots needed to calculate changes over time.
 - Do not assign opaque package quality or safety scores; show the underlying checks.
 
-## Increment 0 — Freeze and test the Automation Map contract
+## Increment 0 - Freeze and test the Automation Map contract
 
 **Outcome:** community development cannot silently break the existing consumer.
 
@@ -65,7 +65,7 @@ contract checks, even when it appears unrelated to Automation Map.
 - The current canonical and slim registries pass byte-independent semantic comparison.
 - No community artifact is required for the contract test to succeed.
 
-## Increment 1 — Stable community data projections
+## Increment 1 - Stable community data projections
 
 **Outcome:** other projects can use crawl data without parsing the large internal index.
 
@@ -87,22 +87,22 @@ contract checks, even when it appears unrelated to Automation Map.
 - Schema-breaking changes require a new community schema version or filename.
 - No private hub data is collected or published.
 
-## Increment 2 — Public package explorer
+## Increment 2 - Public package explorer
 
 **Outcome:** users can research HPM packages before installing them.
 
 ### Work
 
-- [ ] Build a static site from the community projections.
-- [ ] Search package, app, driver, author, namespace, category and tags.
-- [ ] Filter by manifest health, documentation availability, release recency and observed
+- [x] Build a static site from the community projections.
+- [x] Search package, app, driver, author, namespace, category and tags.
+- [x] Filter by manifest health, documentation availability, release recency and observed
       LAN/cloud indicators.
-- [ ] Add package detail pages with manifest, source, documentation and community links.
-- [ ] Show application and driver definitions and their source URLs.
-- [ ] Clearly label `HPM metadata`, `source observation`, `official documentation` and
+- [x] Add expandable package detail views with manifest, source, documentation and community links.
+- [x] Show application and driver definitions and their source URLs.
+- [x] Clearly label `HPM metadata`, `source observation`, `official documentation` and
       `reviewed conclusion`.
-- [ ] Escape all remote content and prohibit remote HTML/script injection.
-- [ ] Add accessible layouts for desktop and mobile.
+- [x] Escape all remote content and prohibit remote HTML/script injection.
+- [x] Add accessible layouts for desktop and mobile.
 
 ### Acceptance criteria
 
@@ -110,7 +110,7 @@ contract checks, even when it appears unrelated to Automation Map.
 - A site build failure cannot block or modify the Automation Map artifact.
 - Search results link back to their evidence.
 
-## Increment 2A — Official and community catalogue ingestion
+## Increment 2A - Official and community catalogue ingestion
 
 **Outcome:** the explorer covers known devices, community drivers and community apps that
 cannot be discovered reliably from HPM alone.
@@ -141,7 +141,7 @@ cannot be discovered reliably from HPM alone.
 - [x] Preserve lifecycle words such as `obsolete`, `withdrawn`, `deprecated` and
       `superseded` as source observations and review flags.
 - [x] Track additions, removals and changed links between successful snapshots.
-- [ ] Add device/app/driver lookup across all sources to the public explorer.
+- [x] Add device/app/driver lookup across all sources to the public explorer.
 - [x] Display source authority and evidence type in every generated result.
 
 ### Evidence classifications
@@ -169,7 +169,7 @@ cannot be discovered reliably from HPM alone.
 - Failure of any catalogue harvester cannot block, replace or alter the Automation Map
   artifact.
 
-## Increment 3 — Package health and breakage monitor
+## Increment 3 - Package health and breakage monitor
 
 **Outcome:** users and maintainers can see factual installation and maintenance problems.
 
@@ -200,7 +200,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Consecutive successful snapshots distinguish new, persistent, and restored states.
 - [x] Health generators have no Automation Map registry output path.
 
-## Increment 4 — App/driver identity resolver
+## Increment 4 - App/driver identity resolver
 
 **Outcome:** users can identify which HPM package contains code found on a hub.
 
@@ -209,7 +209,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Search exact application and driver definition name plus namespace.
 - [x] Search by namespace alone with exact and separately labelled partial results.
 - [x] Search by author alone or combine author with name, namespace, and type filters.
-- [x] Group every HPM result path by package—including combined filters—and distinguish apps from drivers with
+- [x] Group every HPM result path by package - including combined filters - and distinguish apps from drivers with
       accessible text badges plus green/blue visual treatment.
 - [x] Fall back to separately labelled, conservative fuzzy suggestions.
 - [x] Return the canonical package, manifest, author, documentation and confidence basis.
@@ -233,7 +233,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Custom Apps Wiki records are searchable as lower-confidence discovery evidence and
       never promoted to source-confirmed identities automatically.
 
-## Increment 5 — New and updated package feed
+## Increment 5 - New and updated package feed
 
 **Outcome:** the community can discover ecosystem changes without monitoring repositories.
 
@@ -270,7 +270,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Keep JSON, Atom and Markdown as secondary data/subscription options rather
       than the primary user experience.
 
-## Increment 6 — Developer manifest validator
+## Increment 6 - Developer manifest validator
 
 **Outcome:** authors can catch HPM packaging problems before submitting or releasing.
 
@@ -307,7 +307,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - [x] Tests prove the validator contains no canonical crawl or Automation Map output
       path.
 
-## Increment 7 — Privacy-preserving recovery inventory
+## Increment 7 - Privacy-preserving recovery inventory
 
 **Outcome:** users can map an old hub's code identities back to installation packages.
 
@@ -325,7 +325,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - The input excludes devices, rooms, rules, app instances, tokens and settings.
 - Results distinguish exact evidence from suggestions.
 
-## Increment 8 — Evidence-based local/cloud guide
+## Increment 8 - Evidence-based local/cloud guide
 
 **Outcome:** users can research network characteristics without overstating static analysis.
 
@@ -345,7 +345,7 @@ probe; declaration presence and measured reachability remain separate evidence.
 - Observed URLs are not automatically described as runtime dependencies.
 - Community views remain read-only consumers of the reviewed registry.
 
-## Increment 9 — Contributor activity view
+## Increment 9 - Contributor activity view
 
 **Outcome:** the community can see who is maintaining the broadest HPM package
 portfolios and how those catalogued contributions change over time.
@@ -375,7 +375,7 @@ portfolios and how those catalogued contributions change over time.
 - [x] Timeline events link to retained successful-crawl evidence when available.
 - [x] The non-blocking workflow step cannot write either Automation Map registry.
 
-## Increment 10 — GitHub Pages community utilities site
+## Increment 10 - GitHub Pages community utilities site
 
 **Outcome:** Hubitat staff and community members can use and share the static utility
 suite through a polished, portable GitHub Pages project site, while the site remains an
@@ -383,33 +383,33 @@ experimental community resource rather than official or endorsed Hubitat softwar
 
 ### Work
 
-- [ ] Create `site/index.html` as the **Hubitat Community Utilities** landing page with
+- [x] Create `site/index.html` as the **Hubitat Community Utilities** landing page with
       restrained, accessible desktop/mobile design and relative links to every current
       utility: Identity Resolver, Manifest Validator, Network Guide, Package Feed,
       Recovery Inventory and Contributor Activity.
-- [ ] Add lightweight shared navigation across the landing page and existing utilities
+- [x] Add lightweight shared navigation across the landing page and existing utilities
       for Home, each utility and the GitHub repository; reuse `site/shared/` assets where
       practical and introduce no web framework.
-- [ ] Audit internal links, scripts, styles, generated data and any `fetch()` calls so
+- [x] Audit internal links, scripts, styles, generated data and any `fetch()` calls so
       every utility works locally, below the `/HPM_Manifest_Crawl/` GitHub Pages project
       path and if moved to another hostname.
-- [ ] Ensure individual pages remain usable enough to explain failure when an optional
+- [x] Ensure individual pages remain usable enough to explain failure when an optional
       generated dataset is absent or cannot load.
-- [ ] Add an independent `.github/workflows/pages.yml` triggered by pushes to
+- [x] Add an independent `.github/workflows/pages.yml` triggered by pushes to
       `community-utility-exploration` and `workflow_dispatch`, using the supported GitHub
       Pages artifact/deployment actions and minimum required permissions.
-- [ ] Keep Pages deployment independent of the HPM crawl workflow so deployment alone
+- [x] Keep Pages deployment independent of the HPM crawl workflow so deployment alone
       never starts the expensive crawl or changes its schedule and generation behaviour.
-- [ ] Add a lightweight Pages readiness check for `site/index.html`, required utility
+- [x] Add a lightweight Pages readiness check for `site/index.html`, required utility
       directories/static files and resolvable local navigation targets.
-- [ ] Document the Community Utilities Website, local preview, deployment mechanism,
+- [x] Document the Community Utilities Website, local preview, deployment mechanism,
       experimental status, evidence limitations and expected URL pattern
       `https://gordonthelander.github.io/HPM_Manifest_Crawl/` without claiming the site
       is active before repository Pages configuration and deployment succeed.
-- [ ] Add `docs/AUTOMATION_MAP_SITE_INTEGRATION.md` describing an optional external link
+- [x] Add `docs/AUTOMATION_MAP_SITE_INTEGRATION.md` describing an optional external link
       from Automation Map and possible future contextual links to Identity Resolver,
       Network Guide and Package Feed.
-- [ ] Recommend opening the website externally rather than embedding it in Hubitat, and
+- [x] Recommend opening the website externally rather than embedding it in Hubitat, and
       do not modify the Automation Map repository or make normal map operation depend on
       the website.
 
@@ -433,6 +433,18 @@ experimental community resource rather than official or endorsed Hubitat softwar
   independence remain unchanged.
 - Work remains on `community-utility-exploration`; this increment does not merge or
   modify `main`.
+
+### Implementation status
+
+- [x] Package Feed copies its JSON, Atom and Markdown downloads inside `site/` so the
+      Pages artifact has no links back outside its published root.
+- [x] Every utility uses shared responsive navigation and relative project-path-safe URLs.
+- [x] Dataset-backed views retain explanatory content and show a visible unavailable-data
+      state rather than failing silently.
+- [x] The Pages workflow follows GitHub's supported checkout/configure/upload/deploy action
+      pattern and requests deployment permissions only in the deploy job.
+- [x] Repository administrators still need to select GitHub Actions as the Pages source;
+      the expected URL is not described as active before a successful deployment.
 
 ## Later opportunities
 

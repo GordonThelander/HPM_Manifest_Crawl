@@ -129,6 +129,8 @@ refused by the crawler.
 | `health_monitor.json` | historical package states, transitions and remediation evidence |
 | `health_summary.md` | newly introduced and resolved failure summary for maintainers |
 | `link_reachability.json` | bounded documentation/community URL observations |
+| `site/index.html` | portable landing page for the complete community utility suite |
+| `site/package-explorer/` | unified search across HPM, official devices and community app/driver catalogues |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
@@ -145,12 +147,47 @@ refused by the crawler.
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
 | `community_apps.json` | Custom Apps Wiki entries, lifecycle wording and exact HPM evidence matches |
 
+## Community Utilities Website
+
+The `site/` directory is a static, experimental website containing the Unified Package
+Explorer, Identity Resolver, Manifest Validator, Network Guide, Package Feed, Recovery
+Inventory and Contributor Activity views. It is community-developed and is not official
+or endorsed Hubitat software.
+
+The independent `.github/workflows/pages.yml` workflow validates and uploads only `site/`
+when `community-utility-exploration` is pushed or the workflow is dispatched manually. It
+does not invoke the HPM crawl. Once GitHub Pages is configured to use **GitHub Actions** as
+its source and a deployment succeeds, the expected project URL is:
+
+`https://gordonthelander.github.io/HPM_Manifest_Crawl/`
+
+That address is an expected URL pattern, not a claim that Pages is currently enabled.
+Repository administrators must select **Settings → Pages → Build and deployment → Source:
+GitHub Actions** before the first deployment can publish.
+
+Preview the same project-path-safe site locally from the repository root:
+
+```powershell
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/site/`. Run `python check_pages_site.py` to verify required
+files and internal relative links before deployment.
+
+The generated datasets remain evidence-oriented. The website does not certify packages,
+score security, imply trust or endorse third-party code. URLs are observations rather than
+automatic dependencies; failed links do not prove abandonment; missing metadata does not
+automatically constitute a defect.
+
 The three community datasets use their own versioned schemas and do not feed Automation
 Map. See [`docs/COMMUNITY_DATASETS.md`](docs/COMMUNITY_DATASETS.md) for the data dictionary,
 examples and compatibility policy.
 
 See [`docs/CATALOGUE_DATASETS.md`](docs/CATALOGUE_DATASETS.md) for the distinct authority,
 provenance and matching rules applied to official and community catalogue sources.
+
+See [`docs/PACKAGE_EXPLORER.md`](docs/PACKAGE_EXPLORER.md) for the unified explorer schema,
+search scope, evidence boundaries and browser safety model.
 
 See [`docs/HEALTH_MONITOR.md`](docs/HEALTH_MONITOR.md) for the evidence-first health
 history, transition meanings, and author remediation guidance.
@@ -163,6 +200,9 @@ safety, change labels, feed formats, and local preview instructions.
 
 See [`docs/CONTRIBUTOR_ACTIVITY.md`](docs/CONTRIBUTOR_ACTIVITY.md) for contributor identity,
 ranking, alias handling, observed activity and publisher-date semantics.
+
+See [`docs/AUTOMATION_MAP_SITE_INTEGRATION.md`](docs/AUTOMATION_MAP_SITE_INTEGRATION.md) for
+optional external linking from Automation Map without introducing a runtime dependency.
 
 See [`docs/MANIFEST_VALIDATOR.md`](docs/MANIFEST_VALIDATOR.md) for browser, command-line
 and reusable GitHub Action validation with documented severity meanings.

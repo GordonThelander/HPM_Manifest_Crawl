@@ -29,6 +29,9 @@ CHANGES = pathlib.Path('package_changes.json')
 ATOM = pathlib.Path('package_changes.atom')
 DIGEST = pathlib.Path('package_changes_weekly.md')
 SITE = pathlib.Path('site/package-feed/index.html')
+SITE_CHANGES = pathlib.Path('site/package-feed/data/package_changes.json')
+SITE_ATOM = pathlib.Path('site/package-feed/data/package_changes.atom')
+SITE_DIGEST = pathlib.Path('site/package-feed/data/package_changes_weekly.md')
 SCHEMA_VERSION = '1.0'
 MAX_EVENTS = 2000
 REPOSITORY_URL = 'https://github.com/GordonThelander/HPM_Manifest_Crawl'
@@ -50,6 +53,16 @@ def compact_serialise(value):
     return json.dumps(
         value, ensure_ascii=False, sort_keys=True, separators=(',', ':')
     ) + '\n'
+
+
+def site_safe(value):
+    if isinstance(value, str):
+        return value.replace('\u2014', '-')
+    if isinstance(value, list):
+        return [site_safe(item) for item in value]
+    if isinstance(value, dict):
+        return {key: site_safe(item) for key, item in value.items()}
+    return value
 
 
 def stable_hash(value):
@@ -485,7 +498,7 @@ def render_site(history):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Evidence-backed changes observed across the Hubitat Package Manager catalogue.">
   <title>HPM package changes</title>
-  <link rel="alternate" type="application/atom+xml" title="HPM package changes" href="../../package_changes.atom">
+  <link rel="alternate" type="application/atom+xml" title="HPM package changes" href="data/package_changes.atom">
   <style>
     :root{{--ink:#142019;--muted:#59685f;--paper:#f4f3eb;--card:#fffdf8;--line:#cbd4cc;--green:#09644a;--deep:#073d30;--amber:#a65d00;--red:#a22d2d;--blue:#1f628f}}
     *{{box-sizing:border-box}} html{{scroll-behavior:smooth}} body{{margin:0;color:var(--ink);background:linear-gradient(140deg,#e9f2ec 0,#f4f3eb 35%,#f8f5ed 100%);font:16px/1.55 system-ui,sans-serif}}
@@ -508,14 +521,19 @@ def render_site(history):
   </style>
   <link rel="stylesheet" href="../shared/hubitat.css">
 </head>
-<body class="package-feed"><main>
+<body class="package-feed">
+<nav class="utility-nav" aria-label="Community utilities">
+  <a class="utility-brand" href="../">Community Utilities</a>
+  <div class="utility-links"><a href="../">Home</a><a href="../package-explorer/">Package Explorer</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/" aria-current="page">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="https://github.com/GordonThelander/HPM_Manifest_Crawl">GitHub</a></div>
+</nav>
+<main>
   <header class="hero"><div><p class="eyebrow">HPM Manifest Crawl</p><h1>Package changes worth knowing about.</h1><p class="lede">New releases, catalogue additions, removals and availability changes - each tied back to the snapshot and upstream evidence that supports it.</p></div>
   <div><p class="updated">Latest observation<br><strong>{human_time(history['updatedAt'])}</strong></p><div class="hero-stats"><div class="stat"><strong>{len(events)}</strong><span>package changes</span></div><div class="stat"><strong>{counts['ADDED']}</strong><span>added</span></div><div class="stat"><strong>{counts['UPDATED']}</strong><span>updated</span></div><div class="stat"><strong>{counts['BROKEN'] + counts['RESTORED']}</strong><span>availability</span></div></div></div></header>
   <section aria-labelledby="changes-title"><div class="section-head"><div><h2 id="changes-title">Observed changes</h2><p id="result-count">Showing {len(events)} evidence-backed change(s).</p></div><p>Oldest retained baseline: {human_time(history['snapshotGenerated'])}</p></div>
   <div class="tools"><label class="search"><span hidden>Search packages or authors</span><input id="search" aria-label="Search packages or authors" placeholder="Search package, author or category" style="all:unset;width:100%"></label><div class="filters" aria-label="Filter changes">{filters}</div></div>
   <div class="grid" id="events">{content}</div></section>
   <section class="lower"><div class="panel"><h2>This week's digest</h2><p>A readable summary of the latest seven-day window.</p><ul>{digest_items}</ul></div>
-  <div class="panel"><h2>Follow the data</h2><p>The changelog is built only from successful snapshots. Failed crawls cannot replace the baseline.</p><details><summary>Downloads and subscriptions</summary><div class="data-links"><a href="../../package_changes.atom">Atom feed</a><a href="../../package_changes_weekly.md" download>Markdown digest</a><a href="../../package_changes.json">JSON data</a></div></details></div></section>
+  <div class="panel"><h2>Follow the data</h2><p>The changelog is built only from successful snapshots. Failed crawls cannot replace the baseline.</p><details><summary>Downloads and subscriptions</summary><div class="data-links"><a href="data/package_changes.atom">Atom feed</a><a href="data/package_changes_weekly.md" download>Markdown digest</a><a href="data/package_changes.json">JSON data</a></div></details></div></section>
   <footer>Change labels describe observed catalogue evidence, not code quality, popularity or endorsement.</footer>
 </main>
 <script>
@@ -576,11 +594,18 @@ def git_snapshots():
 
 
 def render_documents(history, state):
+    changes = serialise(history)
+    atom = render_atom(history)
+    digest = render_digest(history)
+    site_history = site_safe(history)
     return {
-        CHANGES: serialise(history),
-        ATOM: render_atom(history),
-        DIGEST: render_digest(history),
-        SITE: render_site(history),
+        CHANGES: changes,
+        ATOM: atom,
+        DIGEST: digest,
+        SITE: render_site(site_history),
+        SITE_CHANGES: serialise(site_history),
+        SITE_ATOM: render_atom(site_history),
+        SITE_DIGEST: render_digest(site_history),
         STATE: compact_serialise(state),
     }
 
@@ -672,7 +697,7 @@ def main():
         return 0
 
     # Public outputs are replaced first. The successful baseline is last.
-    for path in (CHANGES, ATOM, DIGEST, SITE):
+    for path in (CHANGES, ATOM, DIGEST, SITE, SITE_CHANGES, SITE_ATOM, SITE_DIGEST):
         atomic_write(path, documents[path])
         print(f'Wrote {path}')
     atomic_write(STATE, documents[STATE])

@@ -309,6 +309,16 @@ def validate(document):
         raise ValueError('communityAppCount does not match communityApps')
 
 
+def site_safe(value):
+    if isinstance(value, str):
+        return value.replace('\u2014', '-')
+    if isinstance(value, list):
+        return [site_safe(item) for item in value]
+    if isinstance(value, dict):
+        return {key: site_safe(item) for key, item in value.items()}
+    return value
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
@@ -321,10 +331,13 @@ def main():
     args = parser.parse_args()
     if args.check:
         try:
-            validate(json.loads(args.out.read_text('utf-8')))
+            document = json.loads(args.out.read_text('utf-8'))
+            validate(document)
             script = args.script_out.read_text('utf-8')
-            if not script.startswith('window.IDENTITY_INDEX = ') or not script.endswith(';\n'):
-                raise ValueError('browser identity script is missing or malformed')
+            expected = 'window.IDENTITY_INDEX = ' + json.dumps(
+                site_safe(document), indent=2, ensure_ascii=False, sort_keys=True) + ';\n'
+            if script != expected:
+                raise ValueError('browser identity script is stale')
         except (OSError, ValueError, json.JSONDecodeError) as exc:
             print(f'FAIL: {exc}', file=sys.stderr)
             return 1
@@ -341,9 +354,9 @@ def main():
         return 0
     validate(index)
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    serialised = json.dumps(index, indent=2, ensure_ascii=False, sort_keys=True)
-    args.out.write_text(serialised + '\n', encoding='utf-8', newline='\n')
-    args.script_out.write_text('window.IDENTITY_INDEX = ' + serialised + ';\n',
+    site_serialised = json.dumps(site_safe(index), indent=2, ensure_ascii=False, sort_keys=True)
+    args.out.write_text(site_serialised + '\n', encoding='utf-8', newline='\n')
+    args.script_out.write_text('window.IDENTITY_INDEX = ' + site_serialised + ';\n',
                                encoding='utf-8', newline='\n')
     print(f'Wrote {args.out} and {args.script_out}: {index["definitionCount"]} definitions and '
           f'{index["builtInCount"]} documented built-ins and '
