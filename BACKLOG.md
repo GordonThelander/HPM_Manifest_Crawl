@@ -350,15 +350,15 @@ probe; declaration presence and measured reachability remain separate evidence.
 **Outcome:** the community can see who is maintaining the broadest HPM package
 portfolios and how those catalogued contributions change over time.
 
-### Proposed work
+### Work
 
-- [ ] Define contributor as the declared HPM package author, distinct from a Git
+- [x] Define contributor as the declared HPM package author, distinct from a Git
       committer, repository owner or Hubitat Community account.
-- [ ] Rank the top 20 contributors by unique current HPM packages.
-- [ ] Show package, app and driver totals with a drill-down to each contribution.
-- [ ] Plot evidence-backed additions and updates over retained crawl history.
-- [ ] Distinguish observed catalogue history from publisher-declared release dates.
-- [ ] Provide app/driver, category and time-period filters.
+- [x] Rank the top 20 contributors by unique current HPM packages.
+- [x] Show package, app and driver totals with a drill-down to each contribution.
+- [x] Plot evidence-backed additions and updates over retained crawl history.
+- [x] Distinguish observed catalogue history from publisher-declared release dates.
+- [x] Provide app/driver, category and time-period filters.
 
 ### Acceptance criteria
 
@@ -367,6 +367,72 @@ portfolios and how those catalogued contributions change over time.
 - Contributor aliases are not merged without explicit evidence.
 - The contributor dataset and site remain independent of Automation Map registry
   generation and publication.
+
+### Implementation status
+
+- [x] Author strings are trimmed but otherwise kept exact; aliases are not merged.
+- [x] Current rankings consume community packages and definitions only.
+- [x] Timeline events link to retained successful-crawl evidence when available.
+- [x] The non-blocking workflow step cannot write either Automation Map registry.
+
+## Increment 10 — GitHub Pages community utilities site
+
+**Outcome:** Hubitat staff and community members can use and share the static utility
+suite through a polished, portable GitHub Pages project site, while the site remains an
+experimental community resource rather than official or endorsed Hubitat software.
+
+### Work
+
+- [ ] Create `site/index.html` as the **Hubitat Community Utilities** landing page with
+      restrained, accessible desktop/mobile design and relative links to every current
+      utility: Identity Resolver, Manifest Validator, Network Guide, Package Feed,
+      Recovery Inventory and Contributor Activity.
+- [ ] Add lightweight shared navigation across the landing page and existing utilities
+      for Home, each utility and the GitHub repository; reuse `site/shared/` assets where
+      practical and introduce no web framework.
+- [ ] Audit internal links, scripts, styles, generated data and any `fetch()` calls so
+      every utility works locally, below the `/HPM_Manifest_Crawl/` GitHub Pages project
+      path and if moved to another hostname.
+- [ ] Ensure individual pages remain usable enough to explain failure when an optional
+      generated dataset is absent or cannot load.
+- [ ] Add an independent `.github/workflows/pages.yml` triggered by pushes to
+      `community-utility-exploration` and `workflow_dispatch`, using the supported GitHub
+      Pages artifact/deployment actions and minimum required permissions.
+- [ ] Keep Pages deployment independent of the HPM crawl workflow so deployment alone
+      never starts the expensive crawl or changes its schedule and generation behaviour.
+- [ ] Add a lightweight Pages readiness check for `site/index.html`, required utility
+      directories/static files and resolvable local navigation targets.
+- [ ] Document the Community Utilities Website, local preview, deployment mechanism,
+      experimental status, evidence limitations and expected URL pattern
+      `https://gordonthelander.github.io/HPM_Manifest_Crawl/` without claiming the site
+      is active before repository Pages configuration and deployment succeed.
+- [ ] Add `docs/AUTOMATION_MAP_SITE_INTEGRATION.md` describing an optional external link
+      from Automation Map and possible future contextual links to Identity Resolver,
+      Network Guide and Package Feed.
+- [ ] Recommend opening the website externally rather than embedding it in Hubitat, and
+      do not modify the Automation Map repository or make normal map operation depend on
+      the website.
+
+### Acceptance criteria
+
+- Every utility loads through relative paths both locally and from a GitHub Pages project
+  subpath; internal-link validation fails deployment when a required target is missing.
+- The landing page and common navigation use semantic HTML, reasonable contrast, mobile
+  layouts, restrained motion and no new external JavaScript framework.
+- The site states that it is experimental and community-developed and does not imply
+  Hubitat endorsement, package certification, security scoring or trust ranking.
+- Evidence wording remains disciplined: URLs are observations rather than automatic
+  dependencies, failed links do not prove abandonment and missing metadata does not
+  automatically constitute a defect.
+- Pages deployment publishes only `site/`, requests minimum permissions and can run
+  without invoking or changing the crawl workflow.
+- All existing dataset/build checks, internal-link checks and `automation-map-contract`
+  pass before deployment; generated crawler outputs are unchanged unless a Pages path
+  correction genuinely requires regeneration.
+- Automation Map's slim registry path, schema, matcher semantics, size limit and runtime
+  independence remain unchanged.
+- Work remains on `community-utility-exploration`; this increment does not merge or
+  modify `main`.
 
 ## Later opportunities
 

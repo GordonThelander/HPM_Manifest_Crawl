@@ -133,6 +133,8 @@ refused by the crawler.
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
 | `network_evidence.json` | standalone package network-evidence projection |
+| `site/contributors/` | top HPM author portfolios and evidence-backed activity timelines |
+| `contributor_activity.json` | versioned contributor rankings, submissions and retained crawl events |
 | `package_changes.json` | retained added, removed, updated, broken and restored package events |
 | `package_changes.atom` | subscribable package-change feed |
 | `package_changes_weekly.md` | seven-day community-post digest |
@@ -158,6 +160,9 @@ built-in, and conservative suggested identity matching.
 
 See [`docs/PACKAGE_CHANGE_FEED.md`](docs/PACKAGE_CHANGE_FEED.md) for comparison-baseline
 safety, change labels, feed formats, and local preview instructions.
+
+See [`docs/CONTRIBUTOR_ACTIVITY.md`](docs/CONTRIBUTOR_ACTIVITY.md) for contributor identity,
+ranking, alias handling, observed activity and publisher-date semantics.
 
 See [`docs/MANIFEST_VALIDATOR.md`](docs/MANIFEST_VALIDATOR.md) for browser, command-line
 and reusable GitHub Action validation with documented severity meanings.
