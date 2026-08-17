@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/docs/schemas/package-changes.schema.json",
+  "title": "HPM package changes",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "updatedAt", "baselineEstablished", "eventCount", "events"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "package-changes"},
+    "snapshotGenerated": {"type": "string", "format": "date-time"},
+    "updatedAt": {"type": "string", "format": "date-time"},
+    "baselineEstablished": {"type": "boolean"},
+    "eventCount": {"type": "integer", "minimum": 0},
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "observedAt", "packageId", "packageName", "changeTypes", "summary", "evidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "observedAt": {"type": "string", "format": "date-time"},
+          "packageId": {"type": "string"},
+          "packageName": {"type": "string"},
+          "changeTypes": {
+            "type": "array",
+            "items": {"enum": ["ADDED", "REMOVED", "UPDATED", "BROKEN", "RESTORED", "MANIFEST_CHANGED", "SOURCE_LOCATION_CHANGED", "DECLARED_DEFINITIONS_CHANGED"]}
+          },
+          "summary": {"type": "string"},
+          "detail": {"type": "string"},
+          "currentPackage": {"type": ["object", "null"]},
+          "previousPackage": {"type": ["object", "null"]},
+          "health": {"type": "object"},
+          "observedCommit": {"type": "string"},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "url"],
+              "properties": {
+                "label": {"type": "string"},
+                "url": {"type": "string", "format": "uri"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,11 @@ on:
       - 'community_packages.json'
       - 'definitions.json'
       - 'package_health.json'
+      - 'package_feed_state.json'
+      - 'package_changes.json'
+      - 'package_changes.atom'
+      - 'package_changes_weekly.md'
+      - 'site/package-feed/index.html'
       - 'health_monitor.json'
       - 'health_summary.md'
       - 'link_reachability.json'
@@ -53,6 +58,7 @@ jobs:
           python build_health_monitor.py --check
           python probe_package_links.py --check
           python build_identity_resolver.py --check
+          python build_package_feed.py --check
           python harvest_catalogues.py --check
 
   crawl:
@@ -93,7 +99,7 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py build_health_monitor.py probe_package_links.py build_identity_resolver.py harvest_catalogues.py automation_map_contract.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py build_health_monitor.py probe_package_links.py build_identity_resolver.py build_package_feed.py harvest_catalogues.py automation_map_contract.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -152,6 +158,14 @@ jobs:
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python build_health_monitor.py
 
+      # This downstream product is deliberately non-blocking: a feed rendering
+      # fault must not prevent registry publication. Its builder validates all
+      # inputs and promotes the comparison baseline only after outputs succeed.
+      - name: Build package change feed
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        continue-on-error: true
+        run: python build_package_feed.py
+
       # These sources change independently of HPM repository metadata, so this
       # refresh runs on every scheduled main-branch workflow.
       - name: Harvest official and community catalogues
@@ -188,6 +202,11 @@ jobs:
             link_reachability.json
             site/identity-resolver/data/identity_index.json
             site/identity-resolver/data/identity_index.js
+            package_feed_state.json
+            package_changes.json
+            package_changes.atom
+            package_changes_weekly.md
+            site/package-feed/index.html
           retention-days: 7
 
       - name: Commit generated outputs
@@ -197,7 +216,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json health_monitor.json health_summary.md link_reachability.json site/identity-resolver/data/identity_index.json site/identity-resolver/data/identity_index.js official_devices.json community_drivers.json community_apps.json upstream_state.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json health_monitor.json health_summary.md link_reachability.json site/identity-resolver/data/identity_index.json site/identity-resolver/data/identity_index.js package_feed_state.json package_changes.json package_changes.atom package_changes_weekly.md site/package-feed/index.html official_devices.json community_drivers.json community_apps.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else

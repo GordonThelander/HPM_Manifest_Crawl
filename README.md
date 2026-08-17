@@ -130,6 +130,10 @@ refused by the crawler.
 | `health_summary.md` | newly introduced and resolved failure summary for maintainers |
 | `link_reachability.json` | bounded documentation/community URL observations |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
+| `package_changes.json` | retained added, removed, updated, broken and restored package events |
+| `package_changes.atom` | subscribable package-change feed |
+| `package_changes_weekly.md` | seven-day community-post digest |
+| `site/package-feed/` | human-readable static package changelog |
 | `reviewed_community_projects.json` | source-confirmed manual-install projects absent from HPM/wiki snapshots |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
@@ -147,6 +151,9 @@ history, transition meanings, and author remediation guidance.
 
 See [`docs/IDENTITY_RESOLVER.md`](docs/IDENTITY_RESOLVER.md) for exact, ambiguous,
 built-in, and conservative suggested identity matching.
+
+See [`docs/PACKAGE_CHANGE_FEED.md`](docs/PACKAGE_CHANGE_FEED.md) for comparison-baseline
+safety, change labels, feed formats, and local preview instructions.
 
 ## Evidence discipline
 

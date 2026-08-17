@@ -239,18 +239,36 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [ ] Retain the prior successful snapshot for comparison.
-- [ ] Detect added, removed, updated, broken and restored packages.
-- [ ] Detect changed manifests, source locations and declared definitions.
-- [ ] Publish a web changelog and Atom or RSS feed.
-- [ ] Generate a weekly Markdown digest suitable for community posting.
-- [ ] Link every change to the current package record and source evidence.
+- [x] Retain the prior successful snapshot for comparison.
+- [x] Detect added, removed, updated, broken and restored packages.
+- [x] Detect changed manifests, source locations and declared definitions.
+- [x] Publish a web changelog and Atom feed.
+- [x] Generate a weekly Markdown digest suitable for community posting.
+- [x] Link every change to the current package record and source evidence.
 
 ### Acceptance criteria
 
 - A failed crawl never becomes the new comparison baseline.
 - Cache age cannot suppress genuine upstream changes.
 - Feed generation is independent of registry generation and publication.
+
+### Implementation status
+
+- [x] The initial run establishes a quiet baseline rather than reporting the
+      existing catalogue as newly added.
+- [x] Input agreement, successful source completion, non-empty package data and
+      referential integrity are required before baseline promotion.
+- [x] Feed outputs are written atomically and the successful comparison state is
+      promoted last.
+- [x] Cache timestamps are excluded from package fingerprints.
+- [x] Feed generation is a non-blocking publication step and never targets an
+      Automation Map registry.
+- [x] Seed the public view from completed historical Git crawl snapshots so the
+      first release contains real evidence-backed changes.
+- [x] Render human dates, summary counts, search, change filters, labelled
+      evidence and the weekly digest directly in the changelog.
+- [x] Keep JSON, Atom and Markdown as secondary data/subscription options rather
+      than the primary user experience.
 
 ## Increment 6 — Developer manifest validator
 
@@ -309,6 +327,29 @@ probe; declaration presence and measured reachability remain separate evidence.
 - `No evidence found` is never presented as `does not use the internet`.
 - Observed URLs are not automatically described as runtime dependencies.
 - Community views remain read-only consumers of the reviewed registry.
+
+## Increment 9 — Contributor activity view
+
+**Outcome:** the community can see who is maintaining the broadest HPM package
+portfolios and how those catalogued contributions change over time.
+
+### Proposed work
+
+- [ ] Define contributor as the declared HPM package author, distinct from a Git
+      committer, repository owner or Hubitat Community account.
+- [ ] Rank the top 20 contributors by unique current HPM packages.
+- [ ] Show package, app and driver totals with a drill-down to each contribution.
+- [ ] Plot evidence-backed additions and updates over retained crawl history.
+- [ ] Distinguish observed catalogue history from publisher-declared release dates.
+- [ ] Provide app/driver, category and time-period filters.
+
+### Acceptance criteria
+
+- The view never presents package counts as code-commit or community-activity
+  rankings.
+- Contributor aliases are not merged without explicit evidence.
+- The contributor dataset and site remain independent of Automation Map registry
+  generation and publication.
 
 ## Later opportunities
 
