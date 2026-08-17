@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gordonthelander.github.io/HPM_Manifest_Crawl/schemas/hubitat-release-features.schema.json",
+  "title": "Hubitat release feature evidence",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "lastSuccessfulHarvest", "counts", "source", "releases", "features", "details", "timeline", "history", "method"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "hubitat-release-features"},
+    "lastSuccessfulHarvest": {"type": "string", "format": "date-time"},
+    "baselineEstablished": {"type": "boolean"},
+    "counts": {"type": "object", "required": ["releaseTopics", "releaseBuilds", "features", "newlyPossible", "linkedDetails"]},
+    "source": {"type": "object", "required": ["categoryUrl", "categoryJsonUrl", "authority", "staffAuthorshipRecorded", "bodyLinksOnly"]},
+    "releases": {"type": "array", "items": {"$ref": "#/$defs/release"}},
+    "features": {"type": "array", "items": {"$ref": "#/$defs/feature"}},
+    "details": {"type": "array", "items": {"$ref": "#/$defs/detail"}},
+    "unavailableDetails": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "timeline": {"type": "array"},
+    "history": {"type": "array"},
+    "method": {"type": "object", "required": ["remoteHtmlRendered", "remoteContentExecuted", "relatedTopicWidgetsExcluded", "nonStaffReleasePostsExcluded", "failedHarvestReplacesOutput", "automationMapIndependent"]}
+  },
+  "$defs": {
+    "release": {"type": "object", "required": ["id", "topicId", "postNumber", "version", "releasedAt", "sourceUrl", "staffAuthored", "featureCount", "newlyPossibleCount", "bugFixCount", "detailIds"]},
+    "feature": {"type": "object", "required": ["id", "releaseId", "releaseVersion", "releasedAt", "section", "evidenceType", "summary", "subsystem", "newlyPossible", "availability", "classificationConfidence", "qualifications", "sourceUrl", "staffAuthored", "detailIds", "explorerLinks", "fingerprint"]},
+    "detail": {"type": "object", "required": ["id", "topicId", "title", "sourceUrl", "staffAuthored", "qualifications"]}
+  }
+}

@@ -20,7 +20,7 @@ class PagesSiteTests(unittest.TestCase):
     def test_landing_page_links_every_utility_relatively(self):
         page = (ROOT / 'site/index.html').read_text('utf-8')
         for directory in (
-                'package-explorer', 'taxonomy', 'identity-resolver', 'manifest-validator', 'network-guide',
+                'package-explorer', 'taxonomy', 'feature-tracker', 'identity-resolver', 'manifest-validator', 'network-guide',
                 'package-feed', 'recovery-inventory', 'contributors'):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)

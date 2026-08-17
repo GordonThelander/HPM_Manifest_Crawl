@@ -479,30 +479,41 @@ device features without having to read every release-note topic and linked detai
 
 ### Work
 
-- [ ] Harvest release topics from Hubitat's public Release Notes category, retaining the
+- [x] Harvest release topics from Hubitat's public Release Notes category, retaining the
       topic URL, first-post URL, platform version, build number, previous-version range,
       publication time and last-observed edit time.
-- [ ] Parse release-note sections into explicit evidence types such as platform change,
+- [x] Parse release-note sections into explicit evidence types such as platform change,
       new app, app change, new driver, driver feature, compatible device, bug fix and
       known issue without treating every bullet as a new feature.
-- [ ] Follow first-party `community.hubitat.com` detail links embedded in the release
+- [x] Follow first-party `community.hubitat.com` detail links embedded in the release
       post body, including generic `More` and `see more` links, and attach their expanded
       guidance to the originating release item.
-- [ ] Exclude related-topic widgets, replies and arbitrary external links from automatic
+- [x] Exclude related-topic widgets, replies and arbitrary external links from automatic
       feature evidence unless they are separately reviewed.
-- [ ] Publish a versioned `hubitat_release_features.json` dataset with stable item IDs,
+- [x] Publish a versioned `hubitat_release_features.json` dataset with stable item IDs,
       source excerpts or faithful summaries, evidence URLs, classification, affected
       subsystem, availability state and confidence.
-- [ ] Add a searchable Feature Tracker page with filters for release, date, subsystem,
+- [x] Add a searchable Feature Tracker page with filters for release, date, subsystem,
       evidence type, device/protocol and beta or experimental status.
-- [ ] Provide a concise "what is newly possible?" view separately from fixes and
+- [x] Provide a concise "what is newly possible?" view separately from fixes and
       maintenance, while preserving links to the complete official text.
-- [ ] Detect additions, edits, reclassifications and removals within retained successful
+- [x] Detect additions, edits, reclassifications and removals within retained successful
       snapshots so corrections to an existing release topic remain visible.
-- [ ] Cross-link named official apps, drivers and compatible devices to Package Explorer
+- [x] Cross-link named official apps, drivers and compatible devices to Package Explorer
       records only when the identity evidence is unambiguous.
-- [ ] Add the tracker to shared navigation, Pages readiness checks, site documentation
+- [x] Add the tracker to shared navigation, Pages readiness checks, site documentation
       and non-blocking publication tests.
+- [x] Add an accessible SVG timeline of individual release builds over time, with change
+      volume, new-capability and bug-fix counts available in a complete data table.
+
+### Implementation status
+
+- [x] The first retained snapshot covers 32 release topics, 341 individual builds and
+      3,923 source-linked changes from 2019 through 2026.
+- [x] 61 embedded first-party detail topics were expanded; two unavailable historical
+      detail URL is disclosed without invalidating its originating release evidence.
+- [x] The initial history is a quiet baseline so pre-publication parser corrections do
+      not appear as ecosystem changes.
 
 ### Acceptance criteria
 
@@ -525,6 +536,66 @@ device features without having to read every release-note topic and linked detai
   its safety warning.
 - Release 2.5.0 links to expanded guidance for the Z-Wave JS Node State UI, SVG chart
   endpoints, Ring Integration beta and Comfort Engine beta.
+
+## Increment 12 - About, provenance and site-status page
+
+**Outcome:** visitors can understand who maintains the project, where every published
+dataset comes from, how recently the evidence was collected, whether a source is healthy
+and how raw public evidence becomes the static Community Utilities site.
+
+### Work
+
+- [ ] Add a portable `site/about/` page explaining the project's community-developed,
+      experimental status and linking prominently to the
+      `community-utility-exploration` repository branch.
+- [ ] Generate a versioned site-status dataset rather than hard-coding volatile crawl
+      facts into HTML.
+- [ ] Inventory every current upstream and reviewed input, including the HPM master
+      repository list, developer repository files, package manifests, public Groovy
+      sources, authoritative HPM settings, official compatible-device catalogue,
+      Hubitat documentation, community app and driver wikis, reviewed manual projects
+      and the release-notes source when Increment 11 is available.
+- [ ] For each source, show its authority label, role, canonical URL, acquisition method,
+      last attempt, last success, most recent retained snapshot, records produced and
+      current health evidence.
+- [ ] Define source states as factual operational observations such as `HEALTHY`,
+      `DEGRADED`, `STALE`, `UNAVAILABLE` and `MANUALLY_REVIEWED`; do not turn them into a
+      trust, quality, maintenance or security score.
+- [ ] Display the last successful HPM crawl time from the promoted successful crawl
+      snapshot, explicitly distinguishing it from the page build and Pages deployment
+      times.
+- [ ] Explain fallback use, partial optional-source failures and retained last-good data
+      without presenting an unavailable optional source as a failed production crawl.
+- [ ] Add an accessible schematic showing the flow from bounded public-source
+      acquisition, through validation and independent projections, to the static site.
+- [ ] Give the schematic a complete text alternative and show the frozen Automation Map
+      registry path as a separate protected contract, not as an output of general
+      community evidence aggregation.
+- [ ] Add source-status fixtures, deterministic generation tests, stale/fallback cases,
+      internal-link checks and responsive visual coverage.
+- [ ] Add `About` to shared navigation on every page only after the page and status data
+      pass readiness checks.
+- [ ] Once `About` is live in shared navigation, remove the top-level `GitHub` navigation
+      item from every page; retain the repository link prominently on the About page.
+
+### Acceptance criteria
+
+- Every listed data source has a direct provenance link and a plain-language explanation
+  of what the project reads from it.
+- The last successful crawl time comes from a validated promoted snapshot and is never
+  substituted with the current browser time, file modification time or deployment time.
+- Source status includes the observation time and supporting fact; green or red colour is
+  never the only status signal.
+- A failed source refresh cannot erase the last successful provenance or crawl record.
+- The schematic works without an external diagramming library and remains understandable
+  in text-only and narrow-screen presentations.
+- Removing the top-level repository link is atomic with adding the verified About link,
+  so the repository is never undiscoverable from the site.
+- Remote source labels and status messages are rendered as text and cannot inject HTML.
+- The About builder and dataset cannot write either Automation Map registry and About is
+  never required for Automation Map operation.
+- Pages readiness, all dataset checks and `automation-map-contract` pass before the
+  navigation change is published.
 
 ## Later opportunities
 
