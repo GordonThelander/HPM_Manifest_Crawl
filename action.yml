@@ -1,0 +1,41 @@
+name: HPM Package Validator
+description: Validate a Hubitat Package Manager manifest without executing downloaded code.
+inputs:
+  manifest:
+    description: Local package manifest path or public HTTPS URL.
+    required: true
+  repository:
+    description: Optional local HPM repository manifest path or public HTTPS URL.
+    required: false
+    default: ''
+  package-id:
+    description: Optional package ID used to select the repository entry.
+    required: false
+    default: ''
+  check-sources:
+    description: Fetch source text and compare literal definition identities.
+    required: false
+    default: 'true'
+runs:
+  using: composite
+  steps:
+    - name: Validate HPM package
+      shell: bash
+      env:
+        INPUT_MANIFEST: ${{ inputs.manifest }}
+        INPUT_REPOSITORY: ${{ inputs.repository }}
+        INPUT_PACKAGE_ID: ${{ inputs.package-id }}
+        INPUT_CHECK_SOURCES: ${{ inputs.check-sources }}
+      run: |
+        set -euo pipefail
+        args=("$INPUT_MANIFEST" --github-annotations)
+        if [[ -n "$INPUT_REPOSITORY" ]]; then
+          args+=(--repository "$INPUT_REPOSITORY")
+        fi
+        if [[ -n "$INPUT_PACKAGE_ID" ]]; then
+          args+=(--package-id "$INPUT_PACKAGE_ID")
+        fi
+        if [[ "$INPUT_CHECK_SOURCES" == "true" ]]; then
+          args+=(--check-sources)
+        fi
+        python "$GITHUB_ACTION_PATH/validate_hpm_package.py" "${args[@]}"

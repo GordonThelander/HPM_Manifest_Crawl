@@ -134,6 +134,7 @@ refused by the crawler.
 | `package_changes.atom` | subscribable package-change feed |
 | `package_changes_weekly.md` | seven-day community-post digest |
 | `site/package-feed/` | human-readable static package changelog |
+| `site/manifest-validator/` | browser-local HPM package manifest checks and catalogue preview |
 | `reviewed_community_projects.json` | source-confirmed manual-install projects absent from HPM/wiki snapshots |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
@@ -154,6 +155,9 @@ built-in, and conservative suggested identity matching.
 
 See [`docs/PACKAGE_CHANGE_FEED.md`](docs/PACKAGE_CHANGE_FEED.md) for comparison-baseline
 safety, change labels, feed formats, and local preview instructions.
+
+See [`docs/MANIFEST_VALIDATOR.md`](docs/MANIFEST_VALIDATOR.md) for browser, command-line
+and reusable GitHub Action validation with documented severity meanings.
 
 ## Evidence discipline
 

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Check an HPM package manifest before publishing it.">
+  <title>HPM Manifest Validator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">HPM Manifest Crawl</p>
+        <h1>Catch package problems before release.</h1>
+        <p class="lede">Paste or open a package manifest for immediate structural checks and a preview of its community catalogue record. Your manifest stays in this browser.</p>
+      </div>
+      <aside><strong>Safe by design</strong><span>No code execution</span><span>No upload</span><span>No registry writes</span></aside>
+    </header>
+
+    <section class="workspace" aria-label="Manifest validator">
+      <div class="editor-panel">
+        <div class="panel-head"><div><p class="step">1 · Manifest</p><h2>Package JSON</h2></div><label class="file-button">Open file<input id="file" type="file" accept="application/json,.json"></label></div>
+        <textarea id="manifest" spellcheck="false" aria-label="Package manifest JSON"></textarea>
+        <div class="editor-actions"><button id="sample" type="button" class="secondary">Restore example</button><button id="validate" type="button" class="primary">Validate manifest</button></div>
+      </div>
+
+      <div class="report-panel" aria-live="polite">
+        <div class="panel-head"><div><p class="step">2 · Findings</p><h2 id="result-title">Ready to check</h2></div><div class="score" id="score">—</div></div>
+        <p id="result-summary" class="muted">Run the validator to see errors, warnings and practical suggestions.</p>
+        <div id="issues" class="issues"></div>
+      </div>
+    </section>
+
+    <section class="preview-section" aria-labelledby="preview-title">
+      <div class="section-head"><div><p class="step">3 · Preview</p><h2 id="preview-title">Community catalogue record</h2></div><p>What community tools can understand from this manifest.</p></div>
+      <article class="package-card" id="preview"><p class="muted">The package preview will appear after validation.</p></article>
+    </section>
+
+    <section class="next-step">
+      <div><p class="step">Deeper checks</p><h2>Confirm source availability and identity</h2><p>The command-line validator can fetch declared Groovy files, compare literal definition names and namespaces, validate repository entries, and emit GitHub annotations.</p></div>
+      <code>python validate_hpm_package.py packageManifest.json --check-sources</code>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

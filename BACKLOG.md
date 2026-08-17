@@ -276,19 +276,32 @@ probe; declaration presence and measured reachability remain separate evidence.
 
 ### Work
 
-- [ ] Package validation as a documented command-line entry point.
-- [ ] Add a reusable GitHub Action for package repositories.
-- [ ] Validate repository entries, manifests, URLs, source availability and identity
+- [x] Align the browser validator with Hubitat's public-site visual language:
+      Mulish/Roboto typography, lime action colours, neutral surfaces and rounded controls.
+
+- [x] Package validation as a documented command-line entry point.
+- [x] Add a reusable GitHub Action for package repositories.
+- [x] Validate repository entries, manifests, URLs, source availability and identity
       consistency.
-- [ ] Emit GitHub annotations with exact files, fields and suggested corrections.
-- [ ] Provide a preview of the package's community explorer record.
-- [ ] Document which checks are errors, warnings and informational observations.
+- [x] Emit GitHub annotations with exact files, fields and suggested corrections.
+- [x] Provide a preview of the package's community explorer record.
+- [x] Document which checks are errors, warnings and informational observations.
 
 ### Acceptance criteria
 
 - Validation never executes downloaded code.
 - A standalone package validation does not write canonical crawl or registry files.
 - Existing HPM quirks are represented by fixtures to avoid unusably noisy reports.
+
+### Implementation status
+
+- [x] Browser validation remains local and renders all manifest values as text.
+- [x] Network checks reject non-public targets, bound response size and never execute
+      fetched source.
+- [x] Legacy missing identity fields and HTTP-only declarations are visible warnings,
+      while missing source locations and literal identity mismatches are errors.
+- [x] Tests prove the validator contains no canonical crawl or Automation Map output
+      path.
 
 ## Increment 7 — Privacy-preserving recovery inventory
 
