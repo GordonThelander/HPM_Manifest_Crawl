@@ -85,6 +85,13 @@ class HealthMonitorTests(unittest.TestCase):
         # main() preserves this document rather than treating it as another crawl.
         self.assertEqual(prior['packages'][0]['transition'], 'BASELINE')
 
+    def test_new_evidence_on_same_snapshot_is_not_a_time_transition(self):
+        packages, health = fixtures('FAIL')
+        prior = monitor.build(packages, health)
+        rebuilt = monitor.build(packages, health, None, {'links': []})
+        self.assertEqual(prior['snapshotGenerated'], rebuilt['snapshotGenerated'])
+        self.assertEqual(rebuilt['packages'][0]['transition'], 'BASELINE')
+
 
 if __name__ == '__main__':
     unittest.main()

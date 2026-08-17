@@ -23,7 +23,8 @@ they are not falsely described as failed reachability checks.
 ## Snapshot safety
 
 The generator reads only `community_packages.json`, `package_health.json`, and optionally
-the previous `health_monitor.json`. It writes only `health_monitor.json` and
+the previous `health_monitor.json`, plus bounded observations from
+`link_reachability.json`. It writes only `health_monitor.json` and
 `health_summary.md`. The workflow runs it after a successful crawl and stores those outputs
 alongside the other community projections. It contains no Automation Map registry path.
 
@@ -32,4 +33,6 @@ Run:
 ```text
 python build_health_monitor.py
 python build_health_monitor.py --check
+python probe_package_links.py
+python probe_package_links.py --check
 ```

@@ -15,6 +15,7 @@ import sys
 
 HEALTH = pathlib.Path('package_health.json')
 PACKAGES = pathlib.Path('community_packages.json')
+LINKS = pathlib.Path('link_reachability.json')
 OUTPUT = pathlib.Path('health_monitor.json')
 SUMMARY = pathlib.Path('health_summary.md')
 SCHEMA_VERSION = '1.0'
@@ -95,16 +96,31 @@ def remediation(name, state, check):
     return 'Review the linked evidence and the individual check status.'
 
 
-def build(packages_doc, health_doc, previous=None):
+def build(packages_doc, health_doc, previous=None, links_doc=None):
     identities = {row['id']: row for row in packages_doc.get('packages') or []}
     previous_rows = {row['packageId']: row for row in (previous or {}).get('packages') or []}
     rows = []
     transitions = collections.Counter()
     states = collections.Counter()
+    link_evidence = collections.defaultdict(list)
+    for link in (links_doc or {}).get('links') or []:
+        for reference in link.get('references') or []:
+            link_evidence[reference.get('packageId')].append({
+                'check': reference.get('kind') + 'Reachability',
+                'state': ('PASSING' if link.get('status') == 'REACHABLE' else
+                          'WARNING' if link.get('status') in {'HTTP_ONLY', 'TRANSIENT_FAILURE'}
+                          else 'FAILING'),
+                'status': link.get('status'), 'url': link.get('url'),
+                'details': {'httpStatus': link.get('httpStatus'),
+                            'finalUrl': link.get('finalUrl'), 'reason': link.get('reason')},
+                'remediation': ('Open the declared link and update or replace it.'
+                                if link.get('status') in {'BROKEN', 'HTTP_FAILURE'} else None),
+            })
     for health in health_doc.get('packages') or []:
         package_id = health['packageId']
         package = identities.get(package_id, {})
-        evidence = evidence_for(package, health)
+        evidence = evidence_for(package, health) + sorted(
+            link_evidence.get(package_id, []), key=lambda item: (item['check'], item['url']))
         current = 'FAILING' if any(item['state'] == 'FAILING' for item in evidence) else (
             'WARNING' if any(item['state'] == 'WARNING' for item in evidence) else 'PASSING'
         )
@@ -132,7 +148,7 @@ def build(packages_doc, health_doc, previous=None):
         'method': {
             'networkFailuresAreObservations': True,
             'opaqueScore': False,
-            'sourceFiles': [PACKAGES.name, HEALTH.name],
+            'sourceFiles': [PACKAGES.name, HEALTH.name, LINKS.name],
         },
         'summary': {
             'packageCount': len(rows),
@@ -206,13 +222,20 @@ def main():
     previous_path = args.previous or (args.out if args.out.exists() else None)
     previous = load(previous_path) if previous_path and previous_path.exists() else None
     health = load(HEALTH)
+    links = load(LINKS) if LINKS.exists() else None
     # A local retry or repeated CI run for the same successful crawl must be a
     # byte-stable no-op, not reinterpret the output as a second observation.
-    if (previous and previous.get('snapshotGenerated') == health.get('snapshotGenerated')
+    expected_sources = [PACKAGES.name, HEALTH.name, LINKS.name]
+    same_snapshot = (previous and
+                     previous.get('snapshotGenerated') == health.get('snapshotGenerated'))
+    if (same_snapshot and previous.get('method', {}).get('sourceFiles') == expected_sources
             and args.previous is None):
         document = previous
     else:
-        document = build(load(PACKAGES), health, previous)
+        # Adding a new evidence source to an already-recorded crawl is a new
+        # baseline, not a second temporal observation of the same snapshot.
+        comparison = None if same_snapshot else previous
+        document = build(load(PACKAGES), health, comparison, links)
     validate(document)
     args.out.write_text(json.dumps(document, indent=2, ensure_ascii=False,
                                    sort_keys=True) + '\n', encoding='utf-8', newline='\n')

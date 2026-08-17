@@ -4,10 +4,6 @@ Execution repository for the Hubitat Package Manager ecosystem crawl. It builds 
 index of every package published through HPM, then validates the Automation Map integration
 registry against it.
 
-> **Picking this up cold? Read [HANDOFF.md](HANDOFF.md) first.** It covers the current
-> state, two recent CI failures worth not repeating, the conventions that must hold, and how
-> to verify changes locally instead of waiting on CI.
-
 ## Why Automation Map needs this
 
 [Automation Map](https://github.com/GordonThelander/hubitat-automation-map) can discover
@@ -132,6 +128,7 @@ refused by the crawler.
 | `package_health.json` | factual manifest, source, identity, link and transport checks |
 | `health_monitor.json` | historical package states, transitions and remediation evidence |
 | `health_summary.md` | newly introduced and resolved failure summary for maintainers |
+| `link_reachability.json` | bounded documentation/community URL observations |
 | `official_devices.json` | Hubitat's official compatible-device catalogue with raw source fields |
 | `community_drivers.json` | Custom Device Drivers Wiki entries and exact HPM evidence matches |
 | `community_apps.json` | Custom Apps Wiki entries, lifecycle wording and exact HPM evidence matches |

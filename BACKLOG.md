@@ -175,7 +175,7 @@ cannot be discovered reliably from HPM alone.
 
 ### Work
 
-- [ ] Report repository, manifest, source, documentation and community-link reachability.
+- [x] Report repository, manifest, source, documentation and community-link reachability.
 - [x] Validate JSON structure and compare manifest identities with literal Groovy
       definitions where available.
 - [x] Distinguish newly broken, persistent, restored, HTTP-only and transient failures.
@@ -183,10 +183,9 @@ cannot be discovered reliably from HPM alone.
 - [x] Add a summary of newly introduced and resolved failures.
 - [x] Provide direct remediation evidence for package authors.
 
-The reachability and identity-validation items remain open: the current crawler directly
-checks repository manifests, package manifests, and component source, while documentation
-and community URLs are declaration observations only. They must not be labelled reachable
-until a bounded probe records that evidence.
+Repository manifests, package manifests, and component source use the existing crawl
+observations. Declared documentation and community URLs use a separate bounded public-link
+probe; declaration presence and measured reachability remain separate evidence.
 
 ### Acceptance criteria
 
@@ -194,6 +193,12 @@ until a bounded probe records that evidence.
 - Historical state is preserved sufficiently to distinguish transient from persistent
   failure.
 - Health calculations consume crawl results but do not edit either registry.
+
+### Implementation status
+
+- [x] A failed request remains an observation and transient failures are labelled.
+- [x] Consecutive successful snapshots distinguish new, persistent, and restored states.
+- [x] Health generators have no Automation Map registry output path.
 
 ## Increment 4 — App/driver identity resolver
 

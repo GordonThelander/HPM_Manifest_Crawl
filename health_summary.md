@@ -6,9 +6,9 @@ These are factual crawl observations, not package quality, safety, or abandonmen
 
 ## Current observations
 
-- Failing: **193**
-- Passing: **695**
-- Warning: **17**
+- Failing: **233**
+- Passing: **476**
+- Warning: **196**
 
 ## Changes since the previous successful snapshot
 
