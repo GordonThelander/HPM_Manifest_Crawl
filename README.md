@@ -127,6 +127,13 @@ refused by the crawler.
 | `hpm_package_index.json` | identity index, ~900 packages across ~216 repositories |
 | `hubitat_official_docs_index.json` | docs2.hubitat.com pages matched to native entries |
 | `registry_validation_report.md` | dead rules, near misses, over-broad rules, schema defects, overlaps, unrepresented packages |
+| `community_packages.json` | stable public package identity, metadata, links and component references |
+| `definitions.json` | app and driver manifest/source identities linked to packages |
+| `package_health.json` | factual manifest, source, identity, link and transport checks |
+
+The three community datasets use their own versioned schemas and do not feed Automation
+Map. See [`docs/COMMUNITY_DATASETS.md`](docs/COMMUNITY_DATASETS.md) for the data dictionary,
+examples and compatibility policy.
 
 ## Evidence discipline
 

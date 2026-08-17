@@ -9,6 +9,9 @@ on:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
+      - 'community_packages.json'
+      - 'definitions.json'
+      - 'package_health.json'
   pull_request:
     branches: [main]
   schedule:
@@ -38,6 +41,7 @@ jobs:
           python -m unittest discover -s tests -v
           python build_slim_registry.py --check
           python automation_map_contract.py
+          python build_community_datasets.py --check
 
   crawl:
     # Branch and pull-request builds exercise the contract job without running
@@ -77,7 +81,7 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py automation_map_contract.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -120,6 +124,10 @@ jobs:
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python automation_map_contract.py
 
+      - name: Build community datasets
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_community_datasets.py
+
       - name: Upload outputs
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         uses: actions/upload-artifact@v4
@@ -132,6 +140,9 @@ jobs:
             registry_validation_report.md
             hubitat_automation_map_app_integration_registry.json
             hubitat_automation_map_app_integration_registry_slim.json
+            community_packages.json
+            definitions.json
+            package_health.json
           retention-days: 7
 
       - name: Commit generated outputs
@@ -142,7 +153,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json upstream_state.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
           else

@@ -71,14 +71,14 @@ contract checks, even when it appears unrelated to Automation Map.
 
 ### Work
 
-- [ ] Define versioned schemas for `community_packages.json`, `definitions.json` and
+- [x] Define versioned schemas for `community_packages.json`, `definitions.json` and
       `package_health.json`.
-- [ ] Generate compact records for package identity, authorship, version, dates, apps,
+- [x] Generate compact records for package identity, authorship, version, dates, apps,
       drivers, namespaces, links and crawl status.
-- [ ] Include provenance and snapshot timestamps on every dataset.
-- [ ] Mark observations such as HPM `LAN`/`Cloud` tags separately from reviewed facts.
-- [ ] Validate deterministic ordering and reproducible output.
-- [ ] Publish data dictionaries and small example records.
+- [x] Include provenance and snapshot timestamps on every dataset.
+- [x] Mark observations such as HPM `LAN`/`Cloud` tags separately from reviewed facts.
+- [x] Validate deterministic ordering and reproducible output.
+- [x] Publish data dictionaries and small example records.
 
 ### Acceptance criteria
 

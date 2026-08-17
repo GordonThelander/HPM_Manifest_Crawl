@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/package-health.schema.json",
+  "title": "HPM Package Health Observations",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "source", "packageCount", "packages", "unattributedCrawlErrors"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "package-health"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "source": {"type": "object"},
+    "packageCount": {"type": "integer", "minimum": 0},
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["packageId", "checks", "crawlErrors"],
+        "properties": {
+          "packageId": {"type": "string", "minLength": 1},
+          "checks": {
+            "type": "object",
+            "required": ["manifestFetch", "sourceFetch", "definitionIdentity", "documentationLink", "communityLink", "httpsTransport"]
+          },
+          "crawlErrors": {"type": "array", "items": {"$ref": "#/$defs/error"}}
+        }
+      }
+    },
+    "unattributedCrawlErrors": {"type": "array", "items": {"$ref": "#/$defs/error"}}
+  },
+  "$defs": {
+    "error": {
+      "type": "object",
+      "required": ["level", "url", "reason"],
+      "properties": {
+        "level": {"type": ["string", "null"]},
+        "url": {"type": ["string", "null"]},
+        "reason": {"type": ["string", "null"], "maxLength": 500}
+      }
+    }
+  }
+}
