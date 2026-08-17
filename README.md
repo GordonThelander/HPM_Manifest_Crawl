@@ -138,6 +138,7 @@ refused by the crawler.
 | `site/about/` | project context, source provenance, operational health and system schematic |
 | `site_status.json` | versioned source inventory, retained crawl status and protected-contract disclosure |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
+| `site/start-here/` | beginner orientation, question-based tool routing and evidence glossary |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
 | `network_evidence.json` | standalone package network-evidence projection |
@@ -155,8 +156,8 @@ refused by the crawler.
 
 ## Community Utilities Website
 
-The `site/` directory is a static, experimental website containing the Unified Package
-Explorer, HPM Taxonomy, Feature Tracker, Identity Resolver, Manifest Validator, Network
+The `site/` directory is a static, experimental website containing a beginner Start Here
+guide, the Unified Package Explorer, HPM Taxonomy, Feature Tracker, Identity Resolver, Manifest Validator, Network
 Guide, Package Feed, Recovery Inventory, Contributor Activity and About views. It is community-developed and
 is not official or endorsed Hubitat software.
 

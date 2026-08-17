@@ -20,7 +20,7 @@ class PagesSiteTests(unittest.TestCase):
     def test_landing_page_links_every_utility_relatively(self):
         page = (ROOT / 'site/index.html').read_text('utf-8')
         for directory in (
-                'package-explorer', 'taxonomy', 'feature-tracker', 'identity-resolver', 'manifest-validator', 'network-guide',
+                'start-here', 'package-explorer', 'taxonomy', 'feature-tracker', 'identity-resolver', 'manifest-validator', 'network-guide',
                 'package-feed', 'recovery-inventory', 'contributors', 'about'):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)
@@ -32,6 +32,7 @@ class PagesSiteTests(unittest.TestCase):
             with self.subTest(relative=relative):
                 self.assertIn('class="utility-nav"', source)
                 self.assertIn('Package Explorer', source)
+                self.assertIn('Start Here', source)
                 self.assertIn('Taxonomy', source)
                 self.assertIn('About', source)
                 self.assertNotRegex(source, r'''(?:href|src)=["']/HPM_Manifest_Crawl/''')

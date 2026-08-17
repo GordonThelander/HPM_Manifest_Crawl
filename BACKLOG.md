@@ -582,7 +582,7 @@ and how raw public evidence becomes the static Community Utilities site.
 
 - [x] Ten current public or reviewed source groups expose authority, role, acquisition,
       retained-snapshot facts, record counts, outputs and direct provenance links.
-- [x] The promoted successful HPM crawl remains `2026-08-13T02:00:24Z`; About generation
+- [x] The promoted successful HPM crawl is `2026-08-17T22:40:04Z`; About generation
       and Pages deployment times are explicitly separate.
 - [x] Current status reports six healthy retained snapshots, three degraded sources and
       one manually reviewed source without converting those facts into trust scores.
@@ -607,6 +607,51 @@ and how raw public evidence becomes the static Community Utilities site.
   never required for Automation Map operation.
 - Pages readiness, all dataset checks and `automation-map-contract` pass before the
   navigation change is published.
+
+## Increment 13 - New-user onboarding and results guidance
+
+**Outcome:** casual Hubitat users can understand what the Community Utilities site does,
+start with the right tool and interpret evidence without needing to understand crawl or
+data-pipeline terminology.
+
+### Work
+
+- [x] Add a concise Quick Start entry point to the landing page and shared navigation.
+- [x] Guide visitors from common questions, such as finding a package, checking a
+      manifest, researching device support or reviewing recent Hubitat features, to the
+      appropriate utility.
+- [x] Add a plain-language "How to read these results" guide covering snapshots,
+      evidence labels, source health, exact matches, suggestions and unavailable data.
+- [x] Provide contextual help beside unfamiliar terms without hiding qualifications or
+      replacing the detailed methodology.
+- [x] Use progressive disclosure so experienced users can continue directly to each
+      utility without an additional required step.
+- [x] Test the guide on narrow screens, with keyboard navigation and with assistive
+      technology labels.
+
+### Implementation status
+
+- [x] `site/start-here/` introduces the platform, built-ins, community software and HPM
+      before presenting six question-based routes into the utility suite.
+- [x] Evidence guidance explains exact matches, source authority, snapshots, operational
+      health, missing results and browser-local privacy in plain language.
+- [x] A compact glossary defines app, driver, package, manifest, namespace and snapshot.
+- [x] The landing page and every shared navigation bar expose Start Here without making
+      it a required step for experienced visitors.
+- [x] Pages readiness and focused tests cover portable links, evidence limitations,
+      responsive layout and reduced-motion behaviour.
+
+### Acceptance criteria
+
+- A first-time visitor can identify the correct utility and understand the result labels
+  without reading project documentation or knowing what a crawl snapshot is.
+- Guidance uses concrete Hubitat examples and defines technical terms when first used.
+- Tooltips are never the only place essential meaning is provided and remain accessible
+  by keyboard, touch and screen reader.
+- Onboarding does not weaken evidence wording, imply package certification or conceal
+  degraded and unavailable source states.
+- The guide is static, introduces no household-data collection and does not modify or
+  depend on either Automation Map registry.
 
 ## Later opportunities
 

@@ -11,6 +11,7 @@ import urllib.parse
 SITE = pathlib.Path('site')
 UTILITY_PAGES = (
     pathlib.Path('index.html'),
+    pathlib.Path('start-here/index.html'),
     pathlib.Path('package-explorer/index.html'),
     pathlib.Path('taxonomy/index.html'),
     pathlib.Path('feature-tracker/index.html'),
@@ -24,6 +25,7 @@ UTILITY_PAGES = (
 )
 REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('shared/hubitat.css'),
+    pathlib.Path('start-here/styles.css'),
     pathlib.Path('package-explorer/data/explorer_index.json'),
     pathlib.Path('package-explorer/data/explorer_index.js'),
     pathlib.Path('taxonomy/data/hpm_taxonomy.json'),

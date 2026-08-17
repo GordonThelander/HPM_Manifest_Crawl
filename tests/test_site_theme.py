@@ -8,6 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 class SiteThemeTests(unittest.TestCase):
     def test_every_site_view_loads_the_shared_hubitat_theme(self):
         pages = {
+            'start-here': ROOT / 'site/start-here/index.html',
             'package-explorer': ROOT / 'site/package-explorer/index.html',
             'feature-tracker': ROOT / 'site/feature-tracker/index.html',
             'about': ROOT / 'site/about/index.html',
