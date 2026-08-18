@@ -44,6 +44,7 @@
 
     <section class="submission-section" aria-labelledby="submission-title">
       <div class="section-head"><div><p class="step">4 · Publish</p><h2 id="submission-title">Public HPM submission</h2></div><p>Prepare the two catalogue entries; you remain in control of the pull request.</p></div>
+      <p class="muted">Two different files do two different jobs. The manifest above describes one package: its apps, drivers and versions. A separate <code>repository.json</code> that you host yourself lists every package you publish, each entry pointing at its own manifest. Enter that file's public URL below; this tool then generates the entry to add inside your own <code>repository.json</code> and the separate <code>{name, location}</code> entry that gets added to the community's public <code>repositories.json</code>.</p>
       <div class="submission-grid">
         <div class="submission-form">
           <label>Public package-manifest URL<input id="manifest-url" type="url" placeholder="https://raw.githubusercontent.com/…/packageManifest.json"></label>
