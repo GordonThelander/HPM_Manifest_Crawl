@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 906,
+    "HPM_PACKAGE": 907,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2611,
+  "recordCount": 2612,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -71819,6 +71819,103 @@
       "version": "6.0.2"
     },
     {
+      "author": "vision9074",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-10",
+      "definitions": [
+        {
+          "id": "definition:e0e7a629034d53565e22",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Pihole Integration",
+          "namespace": "vision9074",
+          "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeIntegration.groovy"
+        },
+        {
+          "id": "definition:a2851cb32574d6e04be9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Pihole Group",
+          "namespace": "vision9074",
+          "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeGroup.groovy"
+        },
+        {
+          "id": "definition:004c820637ed93f33154",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Pihole Server",
+          "namespace": "vision9074",
+          "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeServer.groovy"
+        }
+      ],
+      "description": "Monitor and control one or more Pihole (Pi-hole) v6 DNS ad blockers from Hubitat. Exposes query, client, blocklist and host-health statistics, turns ad blocking on and off with an optional auto-expiring timer, and can drive every Pihole at once from a single group device.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:200683c6-4df8-4f80-9b4c-74542f560930",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/vision9074/hubitat-pihole-integration",
+        "manifest": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json",
+        "repository": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/repository.json"
+      },
+      "name": "Pihole Integration",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {},
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Monitoring"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "signal15",
       "category": "Climate Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -78839,7 +78936,7 @@
       "tags": [
         "LAN"
       ],
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "author": "David Gutheinz",

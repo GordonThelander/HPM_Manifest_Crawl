@@ -2,11 +2,13 @@
 
 Latest observation: `2026-08-17T22:40:04Z`.
 
-**28 package change(s):** added 6, declared definitions changed 1, source location changed 1, updated 22
+**30 package change(s):** added 7, declared definitions changed 1, source location changed 1, updated 23
 
 - [Zooz Sprinkler Scheduler: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Samsung Tizen TV Control: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Reolink Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Remote Builder for Hubitat: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Pihole Integration: added.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Mila Air Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Matter Advanced Bridge: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [MCP Rule Server: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
