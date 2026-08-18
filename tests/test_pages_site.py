@@ -35,6 +35,9 @@ class PagesSiteTests(unittest.TestCase):
                 self.assertIn('Start Here', source)
                 self.assertIn('Taxonomy', source)
                 self.assertIn('About', source)
+                navigation = source.split('</nav>', 1)[0]
+                self.assertIn('class="utility-brand"', navigation)
+                self.assertNotIn('>Home</a>', navigation)
                 self.assertNotRegex(source, r'''(?:href|src)=["']/HPM_Manifest_Crawl/''')
 
     def test_every_page_has_one_cloudflare_analytics_beacon(self):

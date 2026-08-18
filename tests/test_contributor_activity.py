@@ -75,6 +75,9 @@ class ContributorActivityTests(unittest.TestCase):
         for field in ('search', 'definition-type', 'category', 'period'):
             self.assertIn(f'id="{field}"', page)
         self.assertIn('Publisher-declared release date', script)
+        self.assertIn('INITIAL_SUBMISSION_LIMIT=5', script)
+        self.assertIn('submission-overflow', script)
+        self.assertIn('more submission', script)
         self.assertIn('textContent', script)
         self.assertNotIn('innerHTML', script)
         self.assertNotIn('fetch(', script)
