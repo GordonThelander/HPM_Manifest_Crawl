@@ -172,14 +172,20 @@ That address is an expected URL pattern, not a claim that Pages is currently ena
 Repository administrators must select **Settings → Pages → Build and deployment → Source:
 GitHub Actions** before the first deployment can publish.
 
-Preview the same project-path-safe site locally from the repository root:
+The `pages.yml` workflow uploads only the contents of `site/`, so `site/` becomes the
+deployment root: individual views deploy one path segment shorter than their local path,
+e.g. `site/package-explorer/` locally becomes
+`https://gordonthelander.github.io/HPM_Manifest_Crawl/package-explorer/` once deployed.
+
+Preview the deployed path structure locally from the repository root:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/site/`. Run `python check_pages_site.py` to verify required
-files and internal relative links before deployment.
+Then open `http://localhost:8000/site/` and drop the `/site` segment to read each link as
+it will resolve once deployed. Run `python check_pages_site.py` to verify required files
+and internal relative links before deployment.
 
 Every published page includes the same Cloudflare Web Analytics beacon for aggregate
 visit and performance reporting. The token is a public site identifier embedded in the
