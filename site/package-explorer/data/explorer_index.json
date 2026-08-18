@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 907,
+    "HPM_PACKAGE": 908,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2612,
+  "recordCount": 2613,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -33834,6 +33834,95 @@
       "version": "1.0.0"
     },
     {
+      "author": "John C. Steele",
+      "category": "Convenience",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-18",
+      "definitions": [
+        {
+          "id": "definition:39c59103e4a980ab1b61",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": null,
+          "namespace": null,
+          "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadDashboardApp.groovy"
+        },
+        {
+          "id": "definition:f1a06aada4b93c956536",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": null,
+          "namespace": null,
+          "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadMQTTDriver.groovy"
+        }
+      ],
+      "description": "MQTT driver and optional dashboard publisher for the ESP32 Wall Keypad.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "NOT_AVAILABLE"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "FAIL"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:0aab44543b1218f89d7f",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "manifest": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "repository": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/repo.json"
+      },
+      "name": "ESP32 Wall Keypad",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.1.0"
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -36930,7 +37019,7 @@
       "author": "J.R. Farrar",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-11-12",
+      "dateReleased": "2026-02-04",
       "definitions": [
         {
           "id": "definition:eac525d9ceebe1c34b48",
@@ -37004,7 +37093,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.4.3"
+      "version": "1.4.4"
     },
     {
       "author": "Matthew Petro (@matthewpetro)",
@@ -40604,6 +40693,14 @@
           "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.GoveeIntegrationv2.groovy"
         },
         {
+          "id": "definition:4c8499d86fcd2d6529c1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": null,
+          "namespace": null,
+          "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
+        },
+        {
           "id": "definition:81c8cf9451644623ccea",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
@@ -40796,14 +40893,6 @@
           "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
         },
         {
-          "id": "definition:5ce67a1b2a3de54354ff",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Govee v2 H7126 Air Purifier",
-          "namespace": "Mavrrick",
-          "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
-        },
-        {
           "id": "definition:e757f611d16586437041",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
@@ -40944,7 +41033,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "PARTIAL"
           },
           {
             "name": "documentationLink",
@@ -40960,7 +41049,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "PARTIAL"
           }
         ],
         "classification": "PASS"
@@ -43533,6 +43622,14 @@
           "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentHumidifier.groovy"
         },
         {
+          "id": "definition:90dfcd282d2851f9f778",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "HADB Generic Component Lawn Mower",
+          "namespace": "community",
+          "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentLawnMower.groovy"
+        },
+        {
           "id": "definition:46e6427e0e3dbf14020b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
@@ -43732,7 +43829,7 @@
         "Tools & Utilities",
         "Water"
       ],
-      "version": "2.28"
+      "version": "2.29"
     },
     {
       "author": "Craig Dewar",
@@ -71903,8 +72000,11 @@
       },
       "name": "Pihole Integration",
       "network": {
-        "classification": "INSUFFICIENT",
-        "declared": {},
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
         "externalHosts": [],
         "reviewed": []
       },
@@ -131876,5 +131976,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-17T22:40:04Z"
+  "snapshotGenerated": "2026-08-18T22:56:28Z"
 }

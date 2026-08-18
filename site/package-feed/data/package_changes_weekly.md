@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-17T22:40:04Z`.
+Latest observation: `2026-08-18T22:56:28Z`.
 
-**30 package change(s):** added 7, declared definitions changed 1, source location changed 1, updated 23
+**34 package change(s):** added 8, broken 1, declared definitions changed 3, source location changed 2, updated 25
 
+- [Home Assistant Device Bridge: updated, changed source location, changed declared definitions.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Govee Integration v2: changed declared definitions.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [Garadget MQTT Driver: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
+- [ESP32 Wall Keypad: added, became unavailable.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Zooz Sprinkler Scheduler: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Samsung Tizen TV Control: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)
 - [Reolink Integration: updated.](https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/community_packages.json)

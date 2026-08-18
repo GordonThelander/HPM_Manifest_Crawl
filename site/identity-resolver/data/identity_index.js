@@ -1601,7 +1601,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2252,
+  "definitionCount": 2258,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -4267,6 +4267,26 @@ window.IDENTITY_INDEX = {
         "name": "Thermostats Sync"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/Thermostats_Sync.groovy"
+    },
+    {
+      "id": "definition:39c59103e4a980ab1b61",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "ESP32 Wall Keypad Dashboard",
+          "namespace": "keypad"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "John C. Steele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadDashboardApp.groovy"
     },
     {
       "id": "definition:3a1cd606ec8b71cfe215",
@@ -11224,6 +11244,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_boseSoundTouch/master/boseSoundTouchDiscovery"
     },
     {
+      "id": "definition:e0e7a629034d53565e22",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Pihole Integration",
+          "namespace": "vision9074"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "vision9074",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/vision9074/hubitat-pihole-integration",
+        "id": "hpm:200683c6-4df8-4f80-9b4c-74542f560930",
+        "manifestUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json",
+        "name": "Pihole Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeIntegration.groovy"
+    },
+    {
       "id": "definition:e323a3eaacdab0afa39e",
       "identities": [
         {
@@ -12477,6 +12517,26 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Systems Apex"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vortech.groovy"
+    },
+    {
+      "id": "definition:004c820637ed93f33154",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Pihole Server",
+          "namespace": "vision9074"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "vision9074",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/vision9074/hubitat-pihole-integration",
+        "id": "hpm:200683c6-4df8-4f80-9b4c-74542f560930",
+        "manifestUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json",
+        "name": "Pihole Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeServer.groovy"
     },
     {
       "id": "definition:011d961f1f3367457070",
@@ -22614,6 +22674,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
     },
     {
+      "id": "definition:4c8499d86fcd2d6529c1",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H7126 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
+    },
+    {
       "id": "definition:4cb0ea3fe945cfd94e72",
       "identities": [
         {
@@ -25017,26 +25097,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec MultiSensor 6"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Aeotec/Aeotec%20MultiSensor%206.groovy"
-    },
-    {
-      "id": "definition:5ce67a1b2a3de54354ff",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H7126 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
     },
     {
       "id": "definition:5d15978511592d736be4",
@@ -32084,6 +32144,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
     },
     {
+      "id": "definition:90dfcd282d2851f9f778",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HADB Generic Component Lawn Mower",
+          "namespace": "community"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ymerj",
+        "communityUrl": "https://community.hubitat.com/t/beta-home-assistant-device-bridge/67109",
+        "documentationUrl": "https://community.hubitat.com/t/beta-home-assistant-device-bridge/67109",
+        "id": "manifest:65dc5b60d9fd11e8b97b",
+        "manifestUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json",
+        "name": "Home Assistant Device Bridge"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentLawnMower.groovy"
+    },
+    {
       "id": "definition:910b3018f266f770c819",
       "identities": [
         {
@@ -34492,6 +34572,26 @@ window.IDENTITY_INDEX = {
         "name": "YoLink Devices"
       },
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Temperature_Sensor_Device.groovy"
+    },
+    {
+      "id": "definition:a2851cb32574d6e04be9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Pihole Group",
+          "namespace": "vision9074"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "vision9074",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/vision9074/hubitat-pihole-integration",
+        "id": "hpm:200683c6-4df8-4f80-9b4c-74542f560930",
+        "manifestUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json",
+        "name": "Pihole Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeGroup.groovy"
     },
     {
       "id": "definition:a289d5bccb2fcedc1425",
@@ -46344,6 +46444,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitSproutHumidifier.groovy"
     },
     {
+      "id": "definition:f1a06aada4b93c956536",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "ESP32 Wall Keypad MQTT",
+          "namespace": "keypad"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "John C. Steele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadMQTTDriver.groovy"
+    },
+    {
       "id": "definition:f1a4aff64888fa7999fc",
       "identities": [
         {
@@ -48247,5 +48367,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-17T22:40:04Z"
+  "snapshotGenerated": "2026-08-18T22:56:28Z"
 };

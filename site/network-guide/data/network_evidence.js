@@ -2,8 +2,8 @@ window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 182,
     "CLOUD": 259,
-    "INSUFFICIENT": 299,
-    "LAN": 166
+    "INSUFFICIENT": 300,
+    "LAN": 167
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 906,
+  "packageCount": 908,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -5014,6 +5014,29 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "John C. Steele",
+      "category": "Convenience",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "MQTT driver and optional dashboard publisher for the ESP32 Wall Keypad.",
+      "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+      "id": "manifest:0aab44543b1218f89d7f",
+      "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+      "name": "ESP32 Wall Keypad",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Integrations",
       "classification": "LAN",
@@ -8103,8 +8126,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 35,
-        "urlLiteralCount": 72
+        "sourceFilesAnalysed": 36,
+        "urlLiteralCount": 74
       },
       "reviewed": [
         {
@@ -16443,6 +16466,32 @@ window.NETWORK_EVIDENCE = {
         "LAN",
         "Monitoring",
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "vision9074",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Monitor and control one or more Pihole (Pi-hole) v6 DNS ad blockers from Hubitat. Exposes query, client, blocklist and host-health statistics, turns ad blocking on and off with an optional auto-expiring timer, and can drive every Pihole at once from a single group device.",
+      "documentationUrl": "https://github.com/vision9074/hubitat-pihole-integration",
+      "id": "hpm:200683c6-4df8-4f80-9b4c-74542f560930",
+      "manifestUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json",
+      "name": "Pihole Integration",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Monitoring"
       ]
     },
     {
@@ -27318,5 +27367,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-17T22:40:04Z"
+  "snapshotGenerated": "2026-08-18T22:56:28Z"
 };
