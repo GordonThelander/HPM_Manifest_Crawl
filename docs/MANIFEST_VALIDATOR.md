@@ -68,7 +68,7 @@ authenticates to GitHub nor creates a pull request.
 ```yaml
 steps:
   - uses: actions/checkout@v4
-  - uses: GordonThelander/HPM_Manifest_Crawl@community-utility-exploration
+  - uses: GordonThelander/HPM_Manifest_Crawl@main
     with:
       manifest: packageManifest.json
       repository: repository.json

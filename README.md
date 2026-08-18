@@ -162,8 +162,9 @@ Guide, Package Feed, Recovery Inventory, Contributor Activity and About views. I
 is not official or endorsed Hubitat software.
 
 The independent `.github/workflows/pages.yml` workflow validates and uploads only `site/`
-when `community-utility-exploration` is pushed or the workflow is dispatched manually. It
-does not invoke the HPM crawl. Once GitHub Pages is configured to use **GitHub Actions** as
+when `main` is pushed, when `.github/workflows/hpm-crawl.yml` explicitly triggers it after
+a crawl run commits new output, or when the workflow is dispatched manually. It does not
+invoke the HPM crawl itself. Once GitHub Pages is configured to use **GitHub Actions** as
 its source and a deployment succeeds, the expected project URL is:
 
 `https://gordonthelander.github.io/HPM_Manifest_Crawl/`

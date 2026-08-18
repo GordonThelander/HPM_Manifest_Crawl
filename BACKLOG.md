@@ -653,6 +653,48 @@ data-pipeline terminology.
 - The guide is static, introduces no household-data collection and does not modify or
   depend on either Automation Map registry.
 
+## Increment 14 - Merge into main and unify the daily schedule
+
+**Outcome:** the crawl, every community-dataset builder and the Pages deployment run from
+one branch on one daily schedule, instead of two branches that only shared data when
+someone merged them by hand.
+
+### Why this was needed
+
+GitHub Actions only reads a workflow's `schedule:` trigger from the repository's default
+branch. `main` stayed the default branch throughout Increments 0-13, so the schedule that
+appeared to govern the community pipeline was never actually reachable: `main` carried its
+own older, narrower `hpm-crawl.yml` with no site builders and no `automation-map-contract`
+job, and `community-utility-exploration`'s `crawl` job carried `if: github.ref ==
+'refs/heads/main'`, so it skipped on every push to that branch. In practice, none of the
+site's ten datasets had ever refreshed on a schedule; each reflected whatever was last
+generated and committed locally.
+
+### Work
+
+- [x] Merge `community-utility-exploration` into `main` through a reviewed pull request,
+      gated on the existing `automation-map-contract` job passing against the merged
+      state.
+- [x] Move `pages.yml`'s deploy trigger from `community-utility-exploration` to `main`.
+- [x] Move `hpm-crawl.yml`'s schedule to `0 0 * * *` (00:00 GMT), which only takes effect
+      once `main` carries this workflow file.
+- [x] Add an explicit `deploy-pages` job that fires `pages.yml` via `workflow_dispatch`
+      once a crawl run actually commits new output, since a push made with the default
+      `GITHUB_TOKEN` does not trigger other workflows on its own.
+- [x] Update every hardcoded `community-utility-exploration` reference (README, the
+      manifest-validator GitHub Action example, the About page's repository link,
+      `build_site_status.py`, `docs/schemas/hpm-taxonomy.schema.json`) to point at `main`.
+
+### Acceptance criteria
+
+- `automation-map-contract` passes against the merged state before the pull request
+  merges.
+- Automation Map's published URL, schema, matcher semantics and size limit are unchanged.
+- The `crawl` job's `if: github.ref == 'refs/heads/main'` gate is untouched, so a branch
+  or pull-request build still cannot write registry or dataset output.
+- The site deploys automatically after a crawl run that changes anything, without a human
+  merging branches by hand.
+
 ## Later opportunities
 
 - [ ] Build a versioned `official_apps.json` catalogue of Hubitat built-in Apps,

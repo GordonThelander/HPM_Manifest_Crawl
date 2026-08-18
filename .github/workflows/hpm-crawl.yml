@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - community-utility-exploration
     paths-ignore:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
@@ -94,6 +93,8 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    outputs:
+      pushed: ${{ steps.commit.outputs.pushed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -293,6 +294,7 @@ jobs:
           retention-days: 7
 
       - name: Commit generated outputs
+        id: commit
         shell: bash
         run: |
           set -euo pipefail
@@ -302,55 +304,25 @@ jobs:
           git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json health_monitor.json health_summary.md link_reachability.json site/identity-resolver/data/identity_index.json site/identity-resolver/data/identity_index.js network_evidence.json site/network-guide/data/network_evidence.js contributor_activity.json site/contributors/data/contributor_activity.js package_feed_state.json package_changes.json package_changes.atom package_changes_weekly.md site/package-feed/index.html site/package-feed/data/package_changes.json site/package-feed/data/package_changes.atom site/package-feed/data/package_changes_weekly.md site/package-explorer/data/explorer_index.json site/package-explorer/data/explorer_index.js hpm_taxonomy.json hpm_taxonomy_fallback.json site/taxonomy/data/hpm_taxonomy.json site/taxonomy/data/hpm_taxonomy.js hubitat_release_features.json site/feature-tracker/data/hubitat_release_features.json site/feature-tracker/data/hubitat_release_features.js site_status.json site/about/data/site_status.json site/about/data/site_status.js official_devices.json community_drivers.json community_apps.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Refresh HPM crawl and community datasets [skip ci]"
             git push origin main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
-  sync-site-branch:
-    # main is the only branch the crawl writes to. Without this job, the
-    # deployed site on community-utility-exploration only sees fresh data
-    # whenever someone happens to merge main into it by hand.
-    name: Sync community-utility-exploration from main
-    if: github.ref == 'refs/heads/main'
+  deploy-pages:
+    # A push made with the default GITHUB_TOKEN does not trigger other
+    # workflows, so pages.yml would never see a crawl-generated update on its
+    # own. This only fires when the crawl actually changed something.
+    name: Trigger Pages deployment
+    if: github.ref == 'refs/heads/main' && needs.crawl.outputs.pushed == 'true'
     needs: crawl
     permissions:
-      contents: write
       actions: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout community-utility-exploration
-        uses: actions/checkout@v4
-        with:
-          ref: community-utility-exploration
-          fetch-depth: 0
-
-      - name: Merge latest main
-        id: sync
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          before=$(git rev-parse HEAD)
-          git fetch origin main
-          if ! git merge --no-edit origin/main; then
-            echo "::error::Merging main into community-utility-exploration produced conflicts. Resolve manually."
-            git merge --abort
-            exit 1
-          fi
-          after=$(git rev-parse HEAD)
-          if [ "$before" = "$after" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git push origin community-utility-exploration
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      # A push made with the default GITHUB_TOKEN does not trigger other
-      # workflows, so pages.yml would never see this update on its own.
       - name: Trigger Pages deployment
-        if: steps.sync.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref community-utility-exploration
+        run: gh workflow run pages.yml --ref main

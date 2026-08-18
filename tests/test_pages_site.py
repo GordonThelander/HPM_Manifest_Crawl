@@ -50,7 +50,7 @@ class PagesSiteTests(unittest.TestCase):
                 self.assertEqual(source.count(token), 1)
 
     def test_repository_link_moves_from_top_navigation_to_about(self):
-        repository = 'https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration'
+        repository = 'https://github.com/GordonThelander/HPM_Manifest_Crawl'
         about = (ROOT / 'site/about/index.html').read_text('utf-8')
         self.assertIn(repository, about)
         for relative in pages.UTILITY_PAGES:
@@ -68,7 +68,7 @@ class PagesSiteTests(unittest.TestCase):
 
     def test_pages_workflow_is_independent_and_least_privilege(self):
         workflow = (ROOT / '.github/workflows/pages.yml').read_text('utf-8')
-        self.assertIn('community-utility-exploration', workflow)
+        self.assertIn('branches:\n      - main', workflow)
         self.assertIn('actions/configure-pages@v5', workflow)
         self.assertIn('actions/upload-pages-artifact@v4', workflow)
         self.assertIn('actions/deploy-pages@v5', workflow)

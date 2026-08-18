@@ -11,10 +11,7 @@ SCHEMA_VERSION = '1.0'
 OUTPUT = pathlib.Path('site_status.json')
 SITE_OUTPUT = pathlib.Path('site/about/data/site_status.json')
 SCRIPT_OUTPUT = pathlib.Path('site/about/data/site_status.js')
-REPOSITORY_URL = (
-    'https://github.com/GordonThelander/HPM_Manifest_Crawl/'
-    'tree/community-utility-exploration'
-)
+REPOSITORY_URL = 'https://github.com/GordonThelander/HPM_Manifest_Crawl'
 INPUTS = {
     'hpm': pathlib.Path('hpm_package_index.json'),
     'definitions': pathlib.Path('definitions.json'),
