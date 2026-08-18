@@ -181,6 +181,11 @@ python -m http.server 8000
 Then open `http://localhost:8000/site/`. Run `python check_pages_site.py` to verify required
 files and internal relative links before deployment.
 
+Every published page includes the same Cloudflare Web Analytics beacon for aggregate
+visit and performance reporting. The token is a public site identifier embedded in the
+HTML, not an API credential. Analytics are independent of the crawl, generated datasets
+and Automation Map registries.
+
 The generated datasets remain evidence-oriented. The website does not certify packages,
 score security, imply trust or endorse third-party code. URLs are observations rather than
 automatic dependencies; failed links do not prove abandonment; missing metadata does not

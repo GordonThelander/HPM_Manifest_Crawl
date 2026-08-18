@@ -37,6 +37,15 @@ class PagesSiteTests(unittest.TestCase):
                 self.assertIn('About', source)
                 self.assertNotRegex(source, r'''(?:href|src)=["']/HPM_Manifest_Crawl/''')
 
+    def test_every_page_has_one_cloudflare_analytics_beacon(self):
+        token = '4f12063038634bc29a4820bbe7523693'
+        beacon = 'https://static.cloudflareinsights.com/beacon.min.js'
+        for relative in pages.UTILITY_PAGES:
+            source = (ROOT / 'site' / relative).read_text('utf-8')
+            with self.subTest(relative=relative):
+                self.assertEqual(source.count(beacon), 1)
+                self.assertEqual(source.count(token), 1)
+
     def test_repository_link_moves_from_top_navigation_to_about(self):
         repository = 'https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/community-utility-exploration'
         about = (ROOT / 'site/about/index.html').read_text('utf-8')
@@ -52,6 +61,7 @@ class PagesSiteTests(unittest.TestCase):
         self.assertIn('SITE_CHANGES', source)
         self.assertIn('data/package_changes.json', source)
         self.assertNotIn('href="../../package_changes', source)
+        self.assertIn('static.cloudflareinsights.com/beacon.min.js', source)
 
     def test_pages_workflow_is_independent_and_least_privilege(self):
         workflow = (ROOT / '.github/workflows/pages.yml').read_text('utf-8')

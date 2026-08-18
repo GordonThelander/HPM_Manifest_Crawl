@@ -655,6 +655,13 @@ data-pipeline terminology.
 
 ## Later opportunities
 
+- [ ] Build a versioned `official_apps.json` catalogue of Hubitat built-in Apps,
+      Integrations and Automations from the official Apps Documentation index. Preserve
+      current and retired status, documentation URLs, category and documented aliases;
+      compare these records with separately labelled, firmware/model-specific hub UI
+      observations to expose coverage and naming gaps. Feed Package Explorer and Identity
+      Resolver without automatically adding, changing or broadening any reviewed
+      Automation Map registry entry.
 - [ ] Factual comparison pages for packages in the same product or protocol family.
 - [ ] Opt-in notifications for selected authors, packages, categories or health changes.
 - [ ] A documented read-only API if static datasets prove insufficient.

@@ -540,7 +540,9 @@ def render_site(history):
   const cards=[...document.querySelectorAll('.event')], buttons=[...document.querySelectorAll('[data-filter]')], search=document.querySelector('#search'), count=document.querySelector('#result-count'); let active='ALL';
   function apply(){{const query=search.value.trim().toLowerCase();let shown=0;cards.forEach(card=>{{const type=active==='ALL'||card.dataset.types.split(' ').includes(active);const text=!query||card.dataset.search.includes(query);card.hidden=!(type&&text);if(!card.hidden)shown++;}});count.textContent=`Showing ${{shown}} evidence-backed change(s).`;}}
   buttons.forEach(button=>button.addEventListener('click',()=>{{active=button.dataset.filter;buttons.forEach(item=>item.classList.toggle('active',item===button));apply();}})); search.addEventListener('input',apply);
-</script></body></html>
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "4f12063038634bc29a4820bbe7523693"}}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
 '''
 
 
