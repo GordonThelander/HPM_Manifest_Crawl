@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/docs/schemas/contributor-activity.schema.json",
+  "title": "HPM contributor activity",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "method", "sources", "currentPackageCount", "rankedPackageCount", "currentContributorCount", "observedContributorCount", "undeclaredAuthorPackageCount", "categories", "history", "contributors"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "contributor-activity"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "method": {"type": "object"},
+    "sources": {"type": "object"},
+    "currentPackageCount": {"type": "integer", "minimum": 0},
+    "rankedPackageCount": {"type": "integer", "minimum": 0},
+    "currentContributorCount": {"type": "integer", "minimum": 0},
+    "observedContributorCount": {"type": "integer", "minimum": 0},
+    "undeclaredAuthorPackageCount": {"type": "integer", "minimum": 0},
+    "categories": {"type": "array", "items": {"type": "string"}},
+    "history": {
+      "type": "object",
+      "required": ["firstObservedAt", "lastObservedAt", "eventCount", "attributedEventCount"]
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "currentRank", "currentPackageCount", "appCount", "driverCount", "categories", "packages", "observedActivityCount", "activity"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^contributor:[0-9a-f]{20}$"},
+          "name": {"type": "string", "minLength": 1},
+          "currentRank": {"type": ["integer", "null"], "minimum": 1},
+          "currentPackageCount": {"type": "integer", "minimum": 0},
+          "appCount": {"type": "integer", "minimum": 0},
+          "driverCount": {"type": "integer", "minimum": 0},
+          "categories": {"type": "array"},
+          "packages": {"type": "array"},
+          "observedActivityCount": {"type": "integer", "minimum": 0},
+          "activity": {"type": "array"}
+        }
+      }
+    }
+  }
+}

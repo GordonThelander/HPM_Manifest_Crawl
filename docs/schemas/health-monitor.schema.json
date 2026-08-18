@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/health-monitor.schema.json",
+  "title": "HPM Historical Health Monitor",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "previousSnapshot", "method", "summary", "packages"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "health-monitor"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "previousSnapshot": {"type": ["string", "null"]},
+    "method": {
+      "type": "object",
+      "required": ["networkFailuresAreObservations", "opaqueScore", "sourceFiles"],
+      "properties": {
+        "networkFailuresAreObservations": {"const": true},
+        "opaqueScore": {"const": false},
+        "sourceFiles": {"const": ["community_packages.json", "package_health.json", "link_reachability.json"]}
+      }
+    },
+    "summary": {"type": "object", "required": ["packageCount", "states", "transitions"]},
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["packageId", "name", "author", "state", "transition", "evidence", "links", "manifestUrl", "repositoryUrl"],
+        "properties": {
+          "packageId": {"type": "string", "minLength": 1},
+          "state": {"enum": ["PASSING", "WARNING", "FAILING"]},
+          "transition": {"enum": ["BASELINE", "NEW_FAILURE", "PERSISTENT_FAILURE", "RESTORED", "UNCHANGED"]},
+          "evidence": {"type": "array", "items": {"type": "object", "required": ["check", "state", "status", "url", "details", "remediation"]}}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/community-drivers.schema.json",
+  "title": "Hubitat Community Driver Wiki Entries",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotId", "source", "recordCount", "records"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "community-drivers"},
+    "snapshotId": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source": {"type": "object", "required": ["url", "updatedAt"]},
+    "recordCount": {"type": "integer", "minimum": 0},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "classification", "section", "links", "lifecycleFlags", "hpmMatches", "source", "raw"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^community-driver:"},
+          "classification": {"const": "COMMUNITY_DRIVER_LISTED"},
+          "section": {"type": "string"},
+          "links": {"type": "array", "items": {"type": "string"}},
+          "lifecycleFlags": {"type": "array", "items": {"enum": ["OBSOLETE", "WITHDRAWN", "DEPRECATED", "SUPERSEDED"]}},
+          "hpmMatches": {"type": "array", "items": {"$ref": "#/$defs/match"}},
+          "source": {"type": "object"},
+          "raw": {"type": "object"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "match": {
+      "type": "object",
+      "required": ["packageId", "packageName", "basis"],
+      "properties": {
+        "packageId": {"type": "string"},
+        "packageName": {"type": ["string", "null"]},
+        "basis": {"type": "array", "items": {"enum": ["EXACT_LINK", "EXACT_NAME"]}}
+      }
+    }
+  }
+}

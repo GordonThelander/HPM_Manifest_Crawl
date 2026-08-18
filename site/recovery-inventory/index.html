@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Recover likely Hubitat installation packages from a minimal list of app and driver identities.">
+  <title>Hubitat code recovery inventory</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/hubitat.css">
+</head>
+<body class="recovery-inventory">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/" aria-current="page">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">HPM Manifest Crawl</p>
+        <h1>Rebuild your code inventory.</h1>
+        <p class="lede">Paste only the type, definition name and namespace shown on Hubitat's Apps Code and Drivers Code pages. Matching happens in this browser.</p>
+      </div>
+      <aside><strong>Deliberately minimal</strong><span>No devices or rooms</span><span>No rules or settings</span><span>No tokens or uploads</span></aside>
+    </header>
+
+    <section class="workspace" aria-label="Recovery inventory">
+      <div class="input-panel">
+        <div class="panel-head">
+          <div><p class="step">1 · Identities</p><h2>One definition per line</h2></div>
+          <button id="sample" type="button" class="secondary">Use example</button>
+        </div>
+        <p class="format"><code>TYPE | DEFINITION NAME | NAMESPACE</code> - type may be APP or DRIVER.</p>
+        <textarea id="inventory" spellcheck="false" aria-label="Code identity inventory" placeholder="APP | OwnTracks | lpakula&#10;DRIVER | Neptune Apex | community.namespace"></textarea>
+        <div class="actions"><button id="clear" type="button" class="secondary">Clear</button><button id="recover" type="button" class="primary">Find installation sources</button></div>
+      </div>
+
+      <aside class="boundary">
+        <p class="step">What this is</p>
+        <h2>Identity recovery, not a backup</h2>
+        <p>This can locate likely packages, source files and documentation. It cannot restore configured devices, app instances, rules, dashboards, tokens or settings.</p>
+        <p id="dataset-status" role="status" aria-live="polite">Loading the community identity index…</p>
+      </aside>
+    </section>
+
+    <section class="results" id="results" aria-labelledby="results-title" hidden>
+      <div class="section-head">
+        <div><p class="step">2 · Recovery report</p><h2 id="results-title">Installation candidates</h2></div>
+        <p id="summary"></p>
+      </div>
+      <div class="legend" aria-label="Evidence legend"><span class="exact">Exact identity</span><span class="builtin">Documented built-in</span><span class="ambiguous">Needs review</span><span class="unknown">Unidentified</span></div>
+      <div id="report" class="report"></div>
+    </section>
+  </main>
+  <script src="../identity-resolver/data/identity_index.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

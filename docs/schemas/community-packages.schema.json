@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/community-packages.schema.json",
+  "title": "HPM Community Packages",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "source", "packageCount", "packages"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "community-packages"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "source": {"type": "object"},
+    "packageCount": {"type": "integer", "minimum": 0},
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "hpmPackageId", "name", "repository", "manifest", "links", "components"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "hpmPackageId": {"type": ["string", "null"]},
+          "name": {"type": ["string", "null"]},
+          "author": {"type": ["string", "null"]},
+          "category": {"type": ["string", "null"]},
+          "description": {"type": ["string", "null"]},
+          "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+          "version": {"type": ["string", "null"]},
+          "dateReleased": {"type": ["string", "null"]},
+          "repository": {"type": "object", "required": ["name", "author", "url"]},
+          "manifest": {"type": "object", "required": ["url", "fetched"]},
+          "links": {"type": "object", "required": ["documentation", "community"]},
+          "components": {"type": "object", "required": ["apps", "drivers"]}
+        }
+      }
+    }
+  }
+}

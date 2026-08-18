@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Search HPM packages, Hubitat compatible devices, community drivers and community apps in one evidence-labelled explorer.">
+  <title>Hubitat Package Explorer</title>
+  <link rel="stylesheet" href="../shared/hubitat.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="package-explorer">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/" aria-current="page">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Unified public catalogue</p>
+        <h1>Find packages, apps, drivers and devices</h1>
+        <p class="lede">Search HPM metadata, source identities, Hubitat's compatible-device catalogue and community-maintained wiki listings without blurring their different authority.</p>
+      </div>
+      <div class="hero-stats" aria-label="Catalogue counts">
+        <a href="?catalogue=HPM_PACKAGE#results-title"><strong id="hpm-count">-</strong><span>HPM packages</span></a>
+        <a href="?catalogue=OFFICIAL_DEVICE#results-title"><strong id="device-count">-</strong><span>official devices</span></a>
+        <a href="?catalogue=COMMUNITY_DRIVER#results-title"><strong id="driver-count">-</strong><span>community drivers</span></a>
+        <a href="?catalogue=COMMUNITY_APP#results-title"><strong id="app-count">-</strong><span>community apps</span></a>
+      </div>
+    </header>
+    <section class="search-panel" aria-labelledby="search-title">
+      <div class="search-intro"><div><p class="step">Search the evidence</p><h2 id="search-title">One query across four catalogues</h2></div><button id="clear" type="button">Clear filters</button></div>
+      <label class="query-label" for="query">Search package, app, driver, device, author, namespace, category or tag</label>
+      <div class="query-row"><input id="query" type="search" autocomplete="off" placeholder="Try Kasa, Bear, Zigbee, thermostat or Gordon"><button id="search-button" type="button">Search</button></div>
+      <div class="filters">
+        <label>Catalogue<select id="catalogue"><option value="">All catalogues</option><option value="HPM_PACKAGE">HPM packages</option><option value="OFFICIAL_DEVICE">Official devices</option><option value="COMMUNITY_DRIVER">Community drivers</option><option value="COMMUNITY_APP">Community apps</option></select></label>
+        <label>Kind<select id="kind"><option value="">Apps, drivers and devices</option><option value="APP">Apps</option><option value="DRIVER">Drivers</option><option value="DEVICE">Devices</option></select></label>
+        <label>Package health<select id="health"><option value="">Any health evidence</option><option value="PASS">Checks pass</option><option value="ATTENTION">Needs attention</option><option value="UNKNOWN">Not assessed</option></select></label>
+        <label>Network evidence<select id="network"><option value="">Any network evidence</option><option value="LAN">LAN</option><option value="CLOUD">Cloud</option><option value="BOTH">LAN and cloud</option><option value="INSUFFICIENT">Insufficient evidence</option></select></label>
+        <label>Released<select id="released"><option value="">Any release date</option><option value="recent">Last 12 months</option><option value="older">Older</option><option value="undated">No declared date</option></select></label>
+        <label>Documentation<select id="documentation"><option value="">Any documentation status</option><option value="yes">Documentation declared</option><option value="no">No documentation declared</option></select></label>
+        <label>Sort<select id="sort"><option value="relevance">Relevance</option><option value="name">Name</option><option value="recent">Newest release</option></select></label>
+      </div>
+      <div class="examples" aria-label="Example searches"><span>Examples:</span><button type="button" data-query="Kasa">Kasa</button><button type="button" data-query="Zigbee" data-kind="DEVICE">Zigbee devices</button><button type="button" data-query="thermostat">Thermostat</button><button type="button" data-query="" data-catalogue="COMMUNITY_APP">Community apps</button></div>
+    </section>
+    <section class="results-section" aria-labelledby="results-title">
+      <div class="results-head"><div><p class="step">Results</p><h2 id="results-title">Catalogue records</h2></div><p id="status" role="status" aria-live="polite">Loading the package explorer data...</p></div>
+      <div id="results" class="results"></div>
+      <button id="more" class="more" type="button" hidden>Show more results</button>
+    </section>
+    <aside class="evidence-note"><strong>Evidence labels matter.</strong> Official listing means Hubitat includes a device in its catalogue. Community listing means a project appears in a community-maintained wiki. HPM availability means the crawler found a package manifest. None of these labels certifies security, maintenance or suitability for your installation.</aside>
+    <footer>Community-developed and experimental. Remote catalogue text is displayed as text and is never executed.</footer>
+  </main>
+  <script src="data/explorer_index.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

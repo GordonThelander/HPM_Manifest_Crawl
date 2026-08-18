@@ -2,16 +2,54 @@ name: HPM Manifest Crawl
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths-ignore:
       - 'hpm_package_index.json'
       - 'hubitat_official_docs_index.json'
       - 'registry_validation_report.md'
+      - 'community_packages.json'
+      - 'definitions.json'
+      - 'package_health.json'
+      - 'package_feed_state.json'
+      - 'package_changes.json'
+      - 'package_changes.atom'
+      - 'package_changes_weekly.md'
+      - 'site/package-feed/index.html'
+      - 'site/package-feed/data/package_changes.json'
+      - 'site/package-feed/data/package_changes.atom'
+      - 'site/package-feed/data/package_changes_weekly.md'
+      - 'health_monitor.json'
+      - 'health_summary.md'
+      - 'link_reachability.json'
+      - 'site/identity-resolver/data/identity_index.json'
+      - 'site/identity-resolver/data/identity_index.js'
+      - 'network_evidence.json'
+      - 'site/network-guide/data/network_evidence.js'
+      - 'contributor_activity.json'
+      - 'site/contributors/data/contributor_activity.js'
+      - 'site/package-explorer/data/explorer_index.json'
+      - 'site/package-explorer/data/explorer_index.js'
+      - 'hpm_taxonomy.json'
+      - 'hpm_taxonomy_fallback.json'
+      - 'site/taxonomy/data/hpm_taxonomy.json'
+      - 'site/taxonomy/data/hpm_taxonomy.js'
+      - 'hubitat_release_features.json'
+      - 'site/feature-tracker/data/hubitat_release_features.json'
+      - 'site/feature-tracker/data/hubitat_release_features.js'
+      - 'site_status.json'
+      - 'site/about/data/site_status.json'
+      - 'site/about/data/site_status.js'
+      - 'official_devices.json'
+      - 'community_drivers.json'
+      - 'community_apps.json'
+  pull_request:
+    branches: [main]
   schedule:
-    # Daily, deliberately off the hour: scheduled jobs cluster on :00 and the
-    # runner queue is kinder a little after. The full crawl only follows if the
-    # cheap upstream check says something actually moved.
-    - cron: '17 4 * * *'
+    # Runs daily at 00:00 GMT/UTC. The full crawl only follows if the cheap
+    # upstream check says something actually moved; a few independent
+    # catalogue, taxonomy and release-note builders still refresh every run.
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -19,13 +57,44 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: write
-
 jobs:
+  automation-map-contract:
+    name: Automation Map contract
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify frozen consumer contract
+        run: |
+          python -m unittest discover -s tests -v
+          python build_slim_registry.py --check
+          python automation_map_contract.py
+          python build_community_datasets.py --check
+          python build_health_monitor.py --check
+          python probe_package_links.py --check
+          python build_identity_resolver.py --check
+          python build_package_feed.py --check
+          python build_network_guide.py --check
+          python build_package_explorer.py --check
+          python build_hpm_taxonomy.py --check
+          python build_release_features.py --check
+          python build_site_status.py --check
+          python harvest_catalogues.py --check
+
   crawl:
+    # Branch and pull-request builds exercise the contract job without running
+    # the expensive network crawl or the main-only publication path.
+    if: github.ref == 'refs/heads/main'
+    needs: automation-map-contract
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    outputs:
+      pushed: ${{ steps.commit.outputs.pushed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -55,7 +124,7 @@ jobs:
           set -euo pipefail
           test -f crawl_hpm.py
           test -f hubitat_automation_map_app_integration_registry.json
-          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py
+          python -m py_compile crawl_hpm.py apply_source_visibility.py enrich_hpm_sources.py enrich_hubitat_docs.py revalidate_enriched.py build_slim_registry.py build_community_datasets.py build_health_monitor.py probe_package_links.py build_identity_resolver.py build_package_feed.py build_network_guide.py build_package_explorer.py build_hpm_taxonomy.py build_release_features.py build_site_status.py validate_hpm_package.py harvest_catalogues.py automation_map_contract.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -94,6 +163,92 @@ jobs:
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python build_slim_registry.py
 
+      - name: Recheck Automation Map contract after generation
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python automation_map_contract.py
+
+      - name: Build community datasets
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_community_datasets.py
+
+      - name: Build authoritative HPM taxonomy and usage metrics
+        run: python build_hpm_taxonomy.py
+
+      # Release notes change independently of package metadata. Failure remains
+      # non-blocking and atomic promotion preserves the last successful snapshot.
+      - name: Build Hubitat platform feature tracker
+        continue-on-error: true
+        run: python build_release_features.py
+
+      - name: Build browser identity resolver index
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_identity_resolver.py
+
+      - name: Build local and cloud evidence guide
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_network_guide.py
+
+      - name: Probe declared documentation and community links
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python probe_package_links.py
+
+      - name: Build historical package health monitor
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        run: python build_health_monitor.py
+
+      # This downstream product is deliberately non-blocking: a feed rendering
+      # fault must not prevent registry publication. Its builder validates all
+      # inputs and promotes the comparison baseline only after outputs succeed.
+      - name: Build package change feed
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        continue-on-error: true
+        run: python build_package_feed.py
+
+      # Contributor rankings and timelines consume only community projections.
+      # A rendering failure cannot block or change Automation Map publication.
+      - name: Build contributor activity view
+        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        continue-on-error: true
+        run: python build_contributor_activity.py
+
+      # These sources change independently of HPM repository metadata, so this
+      # refresh runs on every scheduled main-branch workflow.
+      - name: Harvest official and community catalogues
+        run: python harvest_catalogues.py
+
+      - name: Build unified package explorer
+        continue-on-error: true
+        run: python build_package_explorer.py
+
+      # Provenance is built last so it describes the retained outputs promoted
+      # by this run. Validation failure preserves the previous status dataset.
+      - name: Build About and source-status data
+        continue-on-error: true
+        run: python build_site_status.py
+
+      - name: Upload catalogue outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: hubitat-catalogue-output
+          if-no-files-found: error
+          path: |
+            official_devices.json
+            community_drivers.json
+            community_apps.json
+            site/package-explorer/data/explorer_index.json
+            site/package-explorer/data/explorer_index.js
+            hpm_taxonomy.json
+            hpm_taxonomy_fallback.json
+            site/taxonomy/data/hpm_taxonomy.json
+            site/taxonomy/data/hpm_taxonomy.js
+            hubitat_release_features.json
+            site/feature-tracker/data/hubitat_release_features.json
+            site/feature-tracker/data/hubitat_release_features.js
+            site_status.json
+            site/about/data/site_status.json
+            site/about/data/site_status.js
+          retention-days: 7
+
       - name: Upload outputs
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         uses: actions/upload-artifact@v4
@@ -106,20 +261,68 @@ jobs:
             registry_validation_report.md
             hubitat_automation_map_app_integration_registry.json
             hubitat_automation_map_app_integration_registry_slim.json
+            community_packages.json
+            definitions.json
+            package_health.json
+            health_monitor.json
+            health_summary.md
+            link_reachability.json
+            site/identity-resolver/data/identity_index.json
+            site/identity-resolver/data/identity_index.js
+            network_evidence.json
+            site/network-guide/data/network_evidence.js
+            contributor_activity.json
+            site/contributors/data/contributor_activity.js
+            package_feed_state.json
+            package_changes.json
+            package_changes.atom
+            package_changes_weekly.md
+            site/package-feed/index.html
+            site/package-feed/data/package_changes.json
+            site/package-feed/data/package_changes.atom
+            site/package-feed/data/package_changes_weekly.md
+            hpm_taxonomy.json
+            hpm_taxonomy_fallback.json
+            site/taxonomy/data/hpm_taxonomy.json
+            site/taxonomy/data/hpm_taxonomy.js
+            hubitat_release_features.json
+            site/feature-tracker/data/hubitat_release_features.json
+            site/feature-tracker/data/hubitat_release_features.js
+            site_status.json
+            site/about/data/site_status.json
+            site/about/data/site_status.js
           retention-days: 7
 
       - name: Commit generated outputs
-        if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
+        id: commit
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json upstream_state.json
+          git add hpm_package_index.json hubitat_official_docs_index.json registry_validation_report.md hubitat_automation_map_app_integration_registry.json hubitat_automation_map_app_integration_registry_slim.json community_packages.json definitions.json package_health.json health_monitor.json health_summary.md link_reachability.json site/identity-resolver/data/identity_index.json site/identity-resolver/data/identity_index.js network_evidence.json site/network-guide/data/network_evidence.js contributor_activity.json site/contributors/data/contributor_activity.js package_feed_state.json package_changes.json package_changes.atom package_changes_weekly.md site/package-feed/index.html site/package-feed/data/package_changes.json site/package-feed/data/package_changes.atom site/package-feed/data/package_changes_weekly.md site/package-explorer/data/explorer_index.json site/package-explorer/data/explorer_index.js hpm_taxonomy.json hpm_taxonomy_fallback.json site/taxonomy/data/hpm_taxonomy.json site/taxonomy/data/hpm_taxonomy.js hubitat_release_features.json site/feature-tracker/data/hubitat_release_features.json site/feature-tracker/data/hubitat_release_features.js site_status.json site/about/data/site_status.json site/about/data/site_status.js official_devices.json community_drivers.json community_apps.json upstream_state.json
           if git diff --cached --quiet; then
             echo "No migration/output changes to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "Adopt v0.4 validation semantics and stable registry input [skip ci]"
+            git commit -m "Refresh HPM crawl and community datasets [skip ci]"
             git push origin main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+  deploy-pages:
+    # A push made with the default GITHUB_TOKEN does not trigger other
+    # workflows, so pages.yml would never see a crawl-generated update on its
+    # own. This only fires when the crawl actually changed something.
+    name: Trigger Pages deployment
+    if: github.ref == 'refs/heads/main' && needs.crawl.outputs.pushed == 'true'
+    needs: crawl
+    permissions:
+      actions: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

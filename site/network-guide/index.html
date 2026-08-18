@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Research declared, observed, documented and reviewed network evidence for HPM packages.">
+  <title>HPM local and cloud evidence guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/hubitat.css">
+</head>
+<body class="network-guide">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/" aria-current="page">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div><p class="eyebrow">HPM Manifest Crawl</p><h1>Local or cloud? Follow the evidence.</h1><p class="lede">Research package network characteristics without turning tags, code fragments or URLs into claims they cannot support.</p></div>
+      <div class="hero-stats"><div><strong id="package-count">-</strong><span>packages</span></div><div><strong id="lan-count">-</strong><span>LAN evidence</span></div><div><strong id="cloud-count">-</strong><span>cloud evidence</span></div><div><strong id="both-count">-</strong><span>both</span></div></div>
+    </header>
+
+    <section class="method" aria-labelledby="method-title">
+      <div class="section-head"><div><p class="step">Evidence model</p><h2 id="method-title">Four labels, four different meanings</h2></div><p>Stronger wording requires stronger evidence.</p></div>
+      <div class="method-grid">
+        <article><span>Declared</span><h3>Publisher tags</h3><p>LAN or Cloud tags supplied in the HPM repository. Useful classification, not independently verified architecture.</p></article>
+        <article><span>Observed</span><h3>Static source signals</h3><p>Literal external hosts and Hubitat LAN primitives found in fetched source. A code path may be optional, inactive or only an example.</p></article>
+        <article><span>Documented</span><h3>Official documentation</h3><p>Links attached to reviewed Automation Map records. Documentation describes behaviour but may change over time.</p></article>
+        <article><span>Reviewed</span><h3>Dependency conclusions</h3><p>Human-reviewed Automation Map dependencies, consumed read-only and never inferred from HPM tags alone.</p></article>
+      </div>
+    </section>
+
+    <section class="catalogue" aria-labelledby="catalogue-title">
+      <div class="section-head"><div><p class="step">Package research</p><h2 id="catalogue-title">Network evidence catalogue</h2></div><p id="result-count" role="status" aria-live="polite">Loading evidence…</p></div>
+      <div class="tools"><input id="search" type="search" aria-label="Search packages" placeholder="Search package, author, host or dependency"><div class="filters" aria-label="Filter evidence"><button class="active" type="button" data-filter="ALL">All</button><button type="button" data-filter="LAN">LAN</button><button type="button" data-filter="CLOUD">Cloud</button><button type="button" data-filter="BOTH">Both</button><button type="button" data-filter="INSUFFICIENT">Insufficient evidence</button></div></div>
+      <div id="packages" class="packages"></div>
+    </section>
+
+    <aside class="caution"><strong>Absence is not architecture.</strong> “Insufficient evidence” never means “does not use the internet.” Literal hosts are observations, not automatically runtime dependencies, and reviewed conclusions remain distinct from static analysis.</aside>
+  </main>
+  <script src="data/network_evidence.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

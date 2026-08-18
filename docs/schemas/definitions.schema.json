@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/definitions.schema.json",
+  "title": "HPM Application and Driver Definitions",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "source", "definitionCount", "definitions"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "definitions"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "source": {"type": "object"},
+    "definitionCount": {"type": "integer", "minimum": 0},
+    "definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "packageId", "kind", "manifestIdentity", "sourceIdentity", "source", "observationCounts"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "packageId": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["APP", "DRIVER"]},
+          "manifestIdentity": {"$ref": "#/$defs/identity"},
+          "sourceIdentity": {"$ref": "#/$defs/identity"},
+          "source": {"type": "object", "required": ["url", "fetched", "sha256", "bytes", "definitionLine"]},
+          "observationCounts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "required": ["name", "namespace"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "namespace": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

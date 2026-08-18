@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/community-apps.schema.json",
+  "title": "Hubitat Community App Wiki Entries",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotId", "source", "recordCount", "records"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "community-apps"},
+    "snapshotId": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source": {"type": "object", "required": ["url", "updatedAt"]},
+    "recordCount": {"type": "integer", "minimum": 0},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "classification", "section", "name", "links", "lifecycleFlags", "hpmMatches", "source", "raw"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^community-app:"},
+          "classification": {"const": "COMMUNITY_APP_LISTED"},
+          "section": {"type": "string"},
+          "name": {"type": ["string", "null"]},
+          "links": {"type": "array", "items": {"type": "string"}},
+          "lifecycleFlags": {"type": "array", "items": {"enum": ["OBSOLETE", "WITHDRAWN", "DEPRECATED", "SUPERSEDED"]}},
+          "hpmMatches": {"type": "array", "items": {"type": "object", "required": ["packageId", "packageName", "basis"]}},
+          "source": {"type": "object"},
+          "raw": {"type": "object"}
+        }
+      }
+    }
+  }
+}

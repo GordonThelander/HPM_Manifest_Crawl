@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Find the HPM package for a Hubitat app or driver identity.">
+  <title>Hubitat identity resolver</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/hubitat.css">
+</head>
+<body class="identity-resolver">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/" aria-current="page">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header>
+      <p class="eyebrow">HPM Manifest Crawl</p>
+      <h1>Which package contains this code?</h1>
+      <p class="lede">Enter the definition name and namespace shown by Hubitat. Matching happens in this browser; the identity is not uploaded.</p>
+    </header>
+    <form id="lookup-form">
+      <label>Definition name <input id="name" autocomplete="off" placeholder="e.g. OwnTracks"></label>
+      <label>Namespace <input id="namespace" autocomplete="off" placeholder="e.g. lpakula"></label>
+      <label>Author <input id="author" autocomplete="off" placeholder="e.g. Gordon"></label>
+      <label>Type <select id="kind"><option value="">App or driver</option><option>APP</option><option>DRIVER</option></select></label>
+      <button type="submit">Find package</button>
+    </form>
+    <div class="examples" aria-label="Example searches">
+      <span>Try an example:</span>
+      <button type="button" data-name="" data-namespace="" data-author="Heyes" data-kind="">Heyes author</button>
+      <button type="button" data-name="Kasa" data-namespace="" data-author="" data-kind="">Kasa app or driver</button>
+      <button type="button" data-name="" data-namespace="Bear" data-author="" data-kind="">Bear namespace</button>
+    </div>
+    <p id="status" role="status" aria-live="polite">Loading the community identity index…</p>
+    <section id="results" aria-labelledby="results-title" hidden>
+      <h2 id="results-title">Results</h2>
+      <div id="exact"></div>
+      <div id="namespace-results"></div>
+      <div id="author-results"></div>
+      <div id="name-matches"></div>
+      <div id="manual"></div>
+      <div id="community-apps"></div>
+      <div id="builtins"></div>
+      <div id="builtin-related"></div>
+      <div id="related"></div>
+      <div id="suggestions"></div>
+    </section>
+    <aside><strong>Evidence labels matter.</strong> Exact identity means both name and namespace match. You may also search by namespace alone; partial namespace results remain discovery leads. Wiki listings do not carry namespace evidence. Manual community projects and documented built-ins are not HPM packages.</aside>
+  </main>
+  <script src="data/identity_index.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GordonThelander/HPM_Manifest_Crawl/blob/main/docs/schemas/manifest-validation.schema.json",
+  "title": "HPM manifest validation result",
+  "type": "object",
+  "required": ["schemaVersion", "valid", "executesDownloadedCode", "networkSourceChecks", "counts", "issues", "preview"],
+  "properties": {
+    "schemaVersion": {"const": "1.1"},
+    "valid": {"type": "boolean"},
+    "executesDownloadedCode": {"const": false},
+    "networkSourceChecks": {"type": "boolean"},
+    "counts": {
+      "type": "object",
+      "required": ["ERROR", "WARNING", "INFO"],
+      "properties": {
+        "ERROR": {"type": "integer", "minimum": 0},
+        "WARNING": {"type": "integer", "minimum": 0},
+        "INFO": {"type": "integer", "minimum": 0}
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "code", "path", "message"],
+        "properties": {
+          "severity": {"enum": ["ERROR", "WARNING", "INFO"]},
+          "code": {"type": "string"},
+          "path": {"type": "string"},
+          "message": {"type": "string"},
+          "suggestion": {"type": "string"},
+          "source": {"type": "string"}
+        }
+      }
+    },
+    "preview": {
+      "type": "object",
+      "required": ["name", "author", "version", "versionStrategy", "dateReleased", "manifest", "links", "components"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "author": {"type": ["string", "null"]},
+        "version": {"type": ["string", "null"]},
+        "versionStrategy": {"enum": ["package", "component", null]},
+        "dateReleased": {"type": ["string", "null"]},
+        "manifest": {"type": "string"},
+        "links": {"type": "object"},
+        "components": {"type": "object"}
+      }
+    }
+  }
+}

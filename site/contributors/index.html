@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore the top HPM package authors and evidence-backed catalogue activity over time.">
+  <title>HPM contributor activity</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/hubitat.css">
+</head>
+<body class="contributors">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/" aria-current="page">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">HPM Manifest Crawl</p>
+        <h1>Who is building the HPM catalogue?</h1>
+        <p class="lede">Explore current package portfolios and retained crawl activity without confusing declared authorship with Git commits or forum participation.</p>
+      </div>
+      <div class="hero-stats" aria-label="Catalogue summary">
+        <div><strong id="package-count">-</strong><span>current packages</span></div>
+        <div><strong id="contributor-count">-</strong><span>declared authors</span></div>
+        <div><strong>20</strong><span>portfolio leaders</span></div>
+        <div><strong id="event-count">-</strong><span>retained events</span></div>
+      </div>
+    </header>
+
+    <section class="method" aria-labelledby="method-title">
+      <div class="section-head">
+        <div><p class="step">Evidence model</p><h2 id="method-title">Portfolio now. Observations over time.</h2></div>
+        <p>These are catalogue measures, not popularity scores.</p>
+      </div>
+      <div class="method-grid">
+        <article><span>Declared</span><h3>Author identity</h3><p>The exact trimmed author string in HPM metadata. Similar spellings remain separate unless reviewed evidence supports a merge.</p></article>
+        <article><span>Current</span><h3>Portfolio ranking</h3><p>Unique packages in the latest successful crawl, with app and driver definitions shown separately.</p></article>
+        <article><span>Observed</span><h3>Catalogue activity</h3><p>Additions and updates retained from successful crawl comparisons and linked back to their observed snapshot.</p></article>
+        <article><span>Publisher date</span><h3>Release declaration</h3><p>A package date supplied by its publisher. It is not substituted for when the crawler observed a change.</p></article>
+      </div>
+    </section>
+
+    <section class="catalogue" aria-labelledby="catalogue-title">
+      <div class="section-head">
+        <div><p class="step">Top contributors</p><h2 id="catalogue-title">Current HPM portfolios</h2></div>
+        <p id="result-count" role="status" aria-live="polite">Loading contributors…</p>
+      </div>
+      <div class="tools">
+        <label>Search <input id="search" type="search" placeholder="Author or package"></label>
+        <label>Definition type <select id="definition-type"><option value="ALL">Apps and drivers</option><option value="APP">Apps</option><option value="DRIVER">Drivers</option></select></label>
+        <label>Category <select id="category"><option value="ALL">All categories</option></select></label>
+        <label>Observed activity <select id="period"><option value="ALL">All retained history</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last 12 months</option></select></label>
+      </div>
+      <p class="filter-note">Definition and category filters recalculate the visible portfolio totals. The activity period changes only the evidence timeline.</p>
+      <div id="contributor-list" class="contributor-list"></div>
+    </section>
+
+    <aside class="caution"><strong>What this does not measure:</strong> Git commits, repository ownership, code quality, downloads, installations, or Hubitat Community activity. Counts describe HPM catalogue metadata and retained crawl evidence only.</aside>
+  </main>
+  <script src="data/contributor_activity.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

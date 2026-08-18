@@ -33,12 +33,18 @@ def utc_now():
 def load_cache_meta():
     CACHE.mkdir(exist_ok=True)
     CACHE_DATA.mkdir(exist_ok=True)
+    previous = {}
     if CACHE_META.exists():
         try:
-            return json.loads(CACHE_META.read_text('utf-8'))
+            previous = json.loads(CACHE_META.read_text('utf-8'))
         except Exception:
             pass
-    m = {'snapshotGenerated': utc_now()}
+    # The acquisition cache may survive many workflow runs, but a promoted
+    # snapshot time describes this crawl run, not the age of the cache. Keeping
+    # the restored value made every later successful crawl look like the first
+    # run that created the cache metadata.
+    m = dict(previous)
+    m['snapshotGenerated'] = utc_now()
     CACHE_META.write_text(json.dumps(m, sort_keys=True, indent=2) + '\n', encoding='utf-8', newline='\n')
     return m
 

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GordonThelander/HPM_Manifest_Crawl/main/docs/schemas/link-reachability.schema.json",
+  "title": "HPM Declared Link Reachability",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "method", "linkCount", "links"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "link-reachability"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "method": {"type": "object"},
+    "linkCount": {"type": "integer", "minimum": 0},
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "status", "httpStatus", "finalUrl", "reason", "references"],
+        "properties": {
+          "url": {"type": "string", "minLength": 1},
+          "status": {"enum": ["REACHABLE", "BROKEN", "HTTP_ONLY", "HTTP_FAILURE", "TRANSIENT_FAILURE"]},
+          "httpStatus": {"type": ["integer", "null"]},
+          "finalUrl": {"type": "string"},
+          "reason": {"type": ["string", "null"], "maxLength": 500},
+          "references": {"type": "array"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="About Hubitat Community Utilities, its public data sources, current status and protected Automation Map contract.">
+  <title>About Community Utilities</title>
+  <link rel="stylesheet" href="../shared/hubitat.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/" aria-current="page">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">About this project</p>
+        <h1>Public evidence, made useful.</h1>
+        <p class="lede">Hubitat Community Utilities is an experimental, community-developed project that turns public HPM, Hubitat documentation and community evidence into static research and recovery tools.</p>
+        <a id="repository-link" class="primary-link" href="https://github.com/GordonThelander/HPM_Manifest_Crawl" target="_blank" rel="noopener noreferrer">Open the project repository</a>
+      </div>
+      <div class="hero-stats" aria-label="Current source status">
+        <div><strong id="source-count">-</strong><span>data sources</span></div>
+        <div><strong id="healthy-count">-</strong><span>healthy snapshots</span></div>
+        <div><strong id="degraded-count">-</strong><span>degraded sources</span></div>
+        <div><strong id="manual-count">-</strong><span>manually reviewed</span></div>
+      </div>
+    </header>
+
+    <section class="crawl-card" aria-labelledby="crawl-title">
+      <div><p class="step">Promoted crawl</p><h2 id="crawl-title">Last successful HPM crawl</h2><p id="crawl-time">Loading retained crawl evidence...</p><p>Optional source gaps remain visible without erasing the last-good crawl. A fallback snapshot is labelled degraded rather than presented as a fresh live acquisition.</p></div>
+      <p id="build-time"></p>
+    </section>
+
+    <section class="flow-section" aria-labelledby="flow-title">
+      <div class="section-head"><div><p class="step">How the site works</p><h2 id="flow-title">From public sources to static utilities</h2></div><p>Collection, validation and publication remain separate from Automation Map.</p></div>
+      <div id="flow-diagram" class="flow-diagram" role="img" aria-describedby="flow-description"></div>
+      <p id="flow-description" class="flow-description">The project acquires bounded public evidence, validates its shape and provenance, builds independent projections, then publishes static browser-only utilities. Automation Map uses a separate protected registry that the general projections cannot broaden or rewrite.</p>
+      <aside class="contract-card" aria-labelledby="contract-title">
+        <div><p class="step">Protected branch</p><h3 id="contract-title">Automation Map contract</h3><p id="contract-summary"></p></div>
+        <dl><div><dt>Schema</dt><dd id="contract-schema">-</dd></div><div><dt>Canonical entries</dt><dd id="canonical-count">-</dd></div><div><dt>Runtime entries</dt><dd id="slim-count">-</dd></div></dl>
+      </aside>
+    </section>
+
+    <section class="sources-section" aria-labelledby="sources-title">
+      <div class="section-head"><div><p class="step">Provenance and health</p><h2 id="sources-title">Current data sources</h2></div><label>Show source state<select id="state-filter"><option value="">All states</option><option value="HEALTHY">Healthy</option><option value="DEGRADED">Degraded</option><option value="STALE">Stale</option><option value="UNAVAILABLE">Unavailable</option><option value="MANUALLY_REVIEWED">Manually reviewed</option></select></label></div>
+      <p id="status" role="status" aria-live="polite">Loading source inventory...</p>
+      <div id="sources" class="source-grid"></div>
+    </section>
+
+    <aside class="evidence-note"><strong>Status is operational evidence, not a score.</strong> Healthy means a retained snapshot validates. Degraded means usable evidence includes explicit gaps. Stale means the latest retained success is old. Unavailable means no valid retained snapshot is present. Manually reviewed means a maintainer confirmed the public evidence. None of these labels certifies software quality, maintenance, safety or trust.</aside>
+    <aside class="evidence-note"><strong>Aggregate site analytics.</strong> The published site uses Cloudflare Web Analytics to count visits and understand page performance. It does not receive hub configuration, device names, app settings or search terms entered into these browser-local tools.</aside>
+    <footer>Community-developed and experimental. Hubitat is a trademark of its respective owner; this project is not endorsed by Hubitat.</footer>
+  </main>
+  <script src="data/site_status.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

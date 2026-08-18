@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore current HPM categories and tags by package usage.">
+  <title>HPM Taxonomy</title>
+  <link rel="stylesheet" href="../shared/hubitat.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="taxonomy-page">
+  <nav class="utility-nav" aria-label="Community utilities">
+    <a class="utility-brand" href="../">Community Utilities</a>
+    <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/" aria-current="page">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Authoritative HPM vocabulary</p>
+        <h1>What is the community building?</h1>
+        <p class="lede">See which valid HPM categories and tags are used most often. Each package counts once per term, regardless of how many apps or drivers it contains.</p>
+      </div>
+      <div class="hero-stats" aria-label="Taxonomy counts">
+        <div><strong id="package-count">-</strong><span>HPM packages</span></div>
+        <div><strong id="tag-count">-</strong><span>valid tags</span></div>
+        <div><strong id="category-count">-</strong><span>valid categories</span></div>
+        <div><strong id="unused-count">-</strong><span>unused tags</span></div>
+      </div>
+    </header>
+
+    <section class="controls" aria-labelledby="cloud-title">
+      <div>
+        <p class="step">Taxonomy cloud</p>
+        <h2 id="cloud-title">Most-used package tags</h2>
+        <p id="status" role="status" aria-live="polite">Loading taxonomy metrics...</p>
+      </div>
+      <label>Usage measure
+        <select id="measure">
+          <option value="packageCount">All HPM packages</option>
+          <option value="appPackageCount">Packages containing apps</option>
+          <option value="driverPackageCount">Packages containing drivers</option>
+        </select>
+      </label>
+    </section>
+    <div id="tag-cloud" class="tag-cloud" aria-label="HPM tags sized by package usage"></div>
+    <p class="cloud-help">Select a tag to open matching HPM packages. Font size supports scanning only; every term includes its exact package count.</p>
+
+    <section class="category-section" aria-labelledby="category-title">
+      <div class="section-head"><div><p class="step">Categories</p><h2 id="category-title">Package categories</h2></div><p>Categories and tags are separate HPM fields.</p></div>
+      <div id="categories" class="category-grid"></div>
+    </section>
+
+    <section class="table-section" aria-labelledby="table-title">
+      <div class="section-head">
+        <div><p class="step">Exact metrics</p><h2 id="table-title">Tag usage table</h2></div>
+        <div class="table-controls">
+          <label class="search-label">Filter tags<input id="tag-search" type="search" autocomplete="off" placeholder="Try Matter, LAN or Weather"></label>
+          <label class="search-label">Sort table<select id="table-sort"><option value="usage">Most used</option><option value="name">Tag name</option><option value="apps">Packages with apps</option><option value="drivers">Packages with drivers</option></select></label>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Rank</th><th scope="col">Tag</th><th scope="col">Packages</th><th scope="col">Catalogue</th><th scope="col">With apps</th><th scope="col">With drivers</th></tr></thead>
+          <tbody id="tag-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="source-card" aria-labelledby="source-title">
+      <div><p class="step">Provenance</p><h2 id="source-title">Current HPM settings</h2><p id="source-summary"></p></div>
+      <a id="source-link" href="https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/settings.json" target="_blank" rel="noopener noreferrer">Open authoritative settings</a>
+    </section>
+    <aside class="evidence-note"><strong>Counting method.</strong> Usage means a current HPM package declares the exact category or tag. It does not measure installs, popularity, quality, maintenance or endorsement.</aside>
+    <footer>Community-developed and experimental. Taxonomy data is read as bounded JSON and never executed.</footer>
+  </main>
+  <script src="data/hpm_taxonomy.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
