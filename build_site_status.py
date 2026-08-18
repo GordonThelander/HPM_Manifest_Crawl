@@ -197,7 +197,7 @@ def build_document(documents, observed_at=None):
             'reviewed-manual-projects', 'Reviewed manual community projects',
             'Maintainer-reviewed public evidence',
             'Adds source-confirmed manual-install projects absent from HPM and wiki snapshots.',
-            REPOSITORY_URL + '/reviewed_community_projects.json', 'Explicit maintainer review',
+            REPOSITORY_URL + '/blob/main/reviewed_community_projects.json', 'Explicit maintainer review',
             'MANUALLY_REVIEWED', observed_at, None, None, None,
             len(manual.get('projects') or []),
             'Each retained project requires reviewed source identity and public evidence links.',
