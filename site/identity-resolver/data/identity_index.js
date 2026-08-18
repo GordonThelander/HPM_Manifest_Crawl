@@ -22674,26 +22674,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
     },
     {
-      "id": "definition:4c8499d86fcd2d6529c1",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Govee v2 H7126 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
-    },
-    {
       "id": "definition:4cb0ea3fe945cfd94e72",
       "identities": [
         {
@@ -25097,6 +25077,26 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec MultiSensor 6"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Aeotec/Aeotec%20MultiSensor%206.groovy"
+    },
+    {
+      "id": "definition:5ce67a1b2a3de54354ff",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Govee v2 H7126 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
     },
     {
       "id": "definition:5d15978511592d736be4",
@@ -48367,5 +48367,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-18T22:56:28Z"
+  "snapshotGenerated": "2026-08-18T23:08:06Z"
 };
