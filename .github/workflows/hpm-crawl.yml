@@ -47,10 +47,10 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    # Daily, deliberately off the hour: scheduled jobs cluster on :00 and the
-    # runner queue is kinder a little after. The full crawl only follows if the
-    # cheap upstream check says something actually moved.
-    - cron: '17 4 * * *'
+    # Runs daily at 00:00 GMT/UTC. The full crawl only follows if the cheap
+    # upstream check says something actually moved; a few independent
+    # catalogue, taxonomy and release-note builders still refresh every run.
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -306,3 +306,51 @@ jobs:
             git commit -m "Refresh HPM crawl and community datasets [skip ci]"
             git push origin main
           fi
+
+  sync-site-branch:
+    # main is the only branch the crawl writes to. Without this job, the
+    # deployed site on community-utility-exploration only sees fresh data
+    # whenever someone happens to merge main into it by hand.
+    name: Sync community-utility-exploration from main
+    if: github.ref == 'refs/heads/main'
+    needs: crawl
+    permissions:
+      contents: write
+      actions: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout community-utility-exploration
+        uses: actions/checkout@v4
+        with:
+          ref: community-utility-exploration
+          fetch-depth: 0
+
+      - name: Merge latest main
+        id: sync
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          before=$(git rev-parse HEAD)
+          git fetch origin main
+          if ! git merge --no-edit origin/main; then
+            echo "::error::Merging main into community-utility-exploration produced conflicts. Resolve manually."
+            git merge --abort
+            exit 1
+          fi
+          after=$(git rev-parse HEAD)
+          if [ "$before" = "$after" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git push origin community-utility-exploration
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A push made with the default GITHUB_TOKEN does not trigger other
+      # workflows, so pages.yml would never see this update on its own.
+      - name: Trigger Pages deployment
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref community-utility-exploration
