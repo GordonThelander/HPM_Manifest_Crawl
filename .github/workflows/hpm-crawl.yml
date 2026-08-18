@@ -57,6 +57,14 @@ on:
         type: boolean
         default: false
 
+# A push to main and a manual/scheduled dispatch can otherwise overlap: both
+# would crawl independently and race to push "Commit generated outputs",
+# and the loser's push is rejected as a non-fast-forward. Queueing instead of
+# cancelling means neither run's work is thrown away.
+concurrency:
+  group: hpm-crawl-main
+  cancel-in-progress: false
+
 jobs:
   automation-map-contract:
     name: Automation Map contract
@@ -325,4 +333,6 @@ jobs:
       - name: Trigger Pages deployment
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref main
+        # No checkout in this job, so gh has no local git context to infer
+        # the repository from. --repo makes that explicit.
+        run: gh workflow run pages.yml --ref main --repo ${{ github.repository }}
