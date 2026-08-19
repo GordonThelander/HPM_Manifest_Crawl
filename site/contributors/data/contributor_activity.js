@@ -8879,7 +8879,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:91015c19fd268974ed61480f",
+          "observedAt": "2026-08-19T08:23:24Z",
+          "observedCommit": null,
+          "packageId": "hpm:d43f59e9-a596-9453-a729-c2cd286c0879",
+          "packageName": "MolSmart DIMMER-010",
+          "summary": "MolSmart DIMMER-010: updated."
+        }
+      ],
       "appCount": 0,
       "categories": [
         {
@@ -8892,7 +8907,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 6,
       "id": "contributor:25f18c19b276b4da951e",
       "name": "Vartan Horigian",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -8929,9 +8944,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:d43f59e9-a596-9453-a729-c2cd286c0879",
           "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer_0-10/refs/heads/main/packageManifest.json",
           "name": "MolSmart DIMMER-010",
-          "publisherDate": "2026-03-16",
+          "publisherDate": "2026-08-19",
           "repositoryUrl": "https://raw.githubusercontent.com/hhorigian/mainfiles/main/repository.json",
-          "version": "1.0"
+          "version": "1.2"
         },
         {
           "appCount": 0,
@@ -17427,10 +17442,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 908,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 40,
-    "eventCount": 39,
+    "attributedEventCount": 41,
+    "eventCount": 40,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-19T05:01:36Z"
+    "lastObservedAt": "2026-08-19T08:23:24Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17444,7 +17459,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 906,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T07:52:04Z",
+  "snapshotGenerated": "2026-08-19T08:23:24Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

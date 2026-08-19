@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-19T07:52:04Z`.
+Latest observation: `2026-08-19T08:23:24Z`.
 
-**39 package change(s):** added 8, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 29
+**40 package change(s):** added 8, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 30
 
+- [MolSmart DIMMER-010: updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer_0-10/refs/heads/main/packageManifest.json)
 - [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
