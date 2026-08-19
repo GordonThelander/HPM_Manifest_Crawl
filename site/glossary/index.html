@@ -26,7 +26,14 @@
     <section class="graph-section" aria-labelledby="graph-title">
       <div class="section-head"><div><p class="step">The big picture</p><h2 id="graph-title">How the concepts depend on each other</h2></div><p>Solid arrows are primary runtime dependencies. Dashed arrows are return paths, structural relationships or observability.</p></div>
       <div class="mermaid-wrap">
-        <pre class="mermaid">flowchart LR
+        <div class="mermaid-toolbar">
+          <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+          <button type="button" id="zoom-reset">Fit</button>
+          <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+          <span class="mermaid-hint">Drag to pan. Scroll or pinch to zoom.</span>
+        </div>
+        <div class="mermaid-viewport" id="mermaid-viewport">
+          <pre class="mermaid">flowchart LR
     subgraph EW["Physical / External World"]
         PD["Physical Devices<br/>Sensors - Actuators - Bridges"]
         ES["External Services / Systems<br/>Cloud APIs - HA - Node-RED - Custom services"]
@@ -111,6 +118,7 @@
     APP -.->|logs / subscriptions / jobs| DIAG
     SCH -.->|scheduled jobs| DIAG
 </pre>
+        </div>
         <noscript>Enable JavaScript to render this diagram, or read it directly as a Mermaid flowchart.</noscript>
       </div>
       <p class="graph-summary">The core execution flow: physical or external source &#8594; protocol &#8594; driver &#8594; device, capability and state &#8594; event subscription &#8594; application logic &#8594; action &#8594; device or driver &#8594; protocol &#8594; physical action.</p>
