@@ -17444,11 +17444,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 906,
   "schemaVersion": "1.0",
-<<<<<<< Updated upstream
-  "snapshotGenerated": "2026-08-19T05:38:28Z",
-=======
-  "snapshotGenerated": "2026-08-19T05:45:51Z",
->>>>>>> Stashed changes
+  "snapshotGenerated": "2026-08-19T05:01:36Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

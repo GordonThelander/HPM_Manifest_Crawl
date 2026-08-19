@@ -1,10 +1,6 @@
 # HPM package changes - weekly digest
 
-<<<<<<< Updated upstream
-Latest observation: `2026-08-19T05:38:28Z`.
-=======
-Latest observation: `2026-08-19T05:45:51Z`.
->>>>>>> Stashed changes
+Latest observation: `2026-08-19T05:01:36Z`.
 
 **39 package change(s):** added 8, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 29
 
