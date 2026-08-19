@@ -79,7 +79,13 @@ def check_site(site=SITE):
             errors.append(f'missing required file: {relative.as_posix()}')
 
     for path in site.rglob('*'):
-        if path.is_file() and '\u2014' in path.read_text('utf-8'):
+        if not path.is_file():
+            continue
+        try:
+            text = path.read_text('utf-8')
+        except UnicodeDecodeError:
+            continue
+        if '\u2014' in text:
             errors.append(f'{path.relative_to(site).as_posix()}: use a simple hyphen instead of an em dash')
 
     for relative in UTILITY_PAGES:

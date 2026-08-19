@@ -15,7 +15,11 @@ class PagesSiteTests(unittest.TestCase):
         for path in (ROOT / 'site').rglob('*'):
             if path.is_file():
                 with self.subTest(path=path.relative_to(ROOT)):
-                    self.assertNotIn('\u2014', path.read_text('utf-8'))
+                    try:
+                        text = path.read_text('utf-8')
+                    except UnicodeDecodeError:
+                        continue
+                    self.assertNotIn('\u2014', text)
 
     def test_landing_page_links_every_utility_relatively(self):
         page = (ROOT / 'site/index.html').read_text('utf-8')
