@@ -38,7 +38,6 @@ REPOSITORY_URL = 'https://github.com/GordonThelander/HPM_Manifest_Crawl'
 SITE_URL = REPOSITORY_URL + '/tree/main/site/package-feed'
 CHANGES_URL = REPOSITORY_URL + '/blob/main/package_changes.json'
 ATOM_URL = REPOSITORY_URL + '/raw/main/package_changes.atom'
-PACKAGE_DATA_URL = REPOSITORY_URL + '/blob/main/community_packages.json'
 
 
 class UnsafeSnapshot(ValueError):
@@ -188,28 +187,15 @@ def evidence_links(record):
         return []
     package = record.get('package') or {}
     candidates = [
-        ('Package data', PACKAGE_DATA_URL),
         ('Manifest', (package.get('manifest') or {}).get('url')),
         ('Repository', (package.get('repository') or {}).get('url')),
-        ('Documentation', (package.get('links') or {}).get('documentation')),
-        ('Community', (package.get('links') or {}).get('community')),
     ]
-    candidates.extend(
-        ('Source', (definition.get('source') or {}).get('url'))
-        for definition in record.get('definitions') or []
-    )
     seen = set()
     links = []
-    label_counts = collections.Counter(label for label, url in candidates if url)
-    label_seen = collections.Counter()
     for label, url in candidates:
         if url and url not in seen:
             seen.add(url)
-            label_seen[label] += 1
-            display_label = label
-            if label_counts[label] > 1:
-                display_label = f'{label} {label_seen[label]}'
-            links.append({'label': display_label, 'url': url})
+            links.append({'label': label, 'url': url})
     return links
 
 
@@ -353,11 +339,25 @@ def compare(snapshot_generated, previous_packages, current_packages, commit=None
     return events
 
 
+def refresh_evidence(event):
+    record = {'package': event.get('currentPackage') or event.get('previousPackage')}
+    evidence = evidence_links(record)
+    if event.get('observedCommit'):
+        evidence.append({
+            'label': 'Observed snapshot',
+            'url': f'{REPOSITORY_URL}/commit/{event["observedCommit"]}',
+        })
+    event['evidence'] = evidence
+    return event
+
+
 def history_document(snapshot_generated, prior_history, new_events, baseline):
     existing = list((prior_history or {}).get('events') or [])
     by_id = {event['id']: event for event in existing if event.get('id')}
     for event in new_events:
         by_id[event['id']] = event
+    for event in by_id.values():
+        refresh_evidence(event)
     events = sorted(by_id.values(), key=lambda event: (
         event.get('observedAt') or '', event.get('packageName') or '', event.get('id') or ''
     ), reverse=True)[:MAX_EVENTS]
@@ -448,7 +448,7 @@ def render_site(history):
             for value in event['changeTypes']
         )
         links = ''.join(
-            f'<a href="{html.escape(link["url"], quote=True)}">{html.escape(link["label"])}</a>'
+            f'<a href="{html.escape(link["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(link["label"])}</a>'
             for link in event['evidence']
         )
         package = event.get('currentPackage') or event.get('previousPackage') or {}
@@ -524,7 +524,7 @@ def render_site(history):
 <body class="package-feed">
 <nav class="utility-nav" aria-label="Community utilities">
   <a class="utility-brand" href="../">Community Utilities</a>
-  <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Feature Tracker</a><a href="../identity-resolver/">Identity Resolver</a><a href="../manifest-validator/">Manifest Validator</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/" aria-current="page">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
+  <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../identity-resolver/">General Search</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Update Tracker</a><a href="../manifest-validator/">Manifest Builder</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/" aria-current="page">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../about/">About</a></div>
 </nav>
 <main>
   <header class="hero"><div><p class="eyebrow">HPM Manifest Crawl</p><h1>Package changes worth knowing about.</h1><p class="lede">New releases, catalogue additions, removals and availability changes - each tied back to the snapshot and upstream evidence that supports it.</p></div>
