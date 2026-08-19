@@ -1,0 +1,31 @@
+flowchart LR
+    STATE["Device State / Events"]
+    DEV["Hubitat Device Object"]
+    DR["Driver Layer"]
+    APP["Application Layer"]
+    SCH["Hub Scheduler"]
+
+    subgraph EW["Physical / External World"]
+        ES["External Services / Systems<br/>Cloud APIs - HA - Node-RED - Custom services"]
+        OH["Other Hubitat Hub"]
+    end
+
+    subgraph HE["Hubitat Elevation Platform"]
+        API["Maker API / HTTP Endpoints<br/>External integration boundary"]
+        HM["Hub Mesh<br/>Shared devices + Hub Variables"]
+        HV["Hub Variables<br/>Shared typed state"]
+        DIAG["Operations / Diagnostics<br/>Logs - Event history - App status - Device status"]
+    end
+
+    ES -->|REST / endpoint call| API
+    API -->|read / command selected devices| DEV
+    STATE -.->|callback / event exposure| API
+
+    OH -->|LAN| HM
+    HM -->|shared device representation| DEV
+    HM -->|variable sharing| HV
+
+    DR -.->|logs / state| DIAG
+    DEV -.->|events / status| DIAG
+    APP -.->|logs / subscriptions / jobs| DIAG
+    SCH -.->|scheduled jobs| DIAG

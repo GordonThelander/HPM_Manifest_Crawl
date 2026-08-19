@@ -1,0 +1,32 @@
+flowchart LR
+    STATE["Device State / Events"]
+    DEV["Hubitat Device Object"]
+    DR["Driver Layer"]
+
+    subgraph HE["Hubitat Elevation Platform"]
+        SUB["Event Runtime<br/>Subscriptions - Event handlers"]
+        SCH["Hub Scheduler<br/>Scheduled jobs - Delays - Repeats"]
+        APP["Application Layer<br/>Rule Machine - Room Lighting - HSM - Other apps"]
+        AUT["Automation State / Context<br/>Conditions - Required Expression - Mode - Variables"]
+        HV["Hub Variables<br/>Shared typed state"]
+        RF["Rule Function / Rule-to-Rule<br/>Reusable / delegated automation logic"]
+        ACT["Actions / Commands<br/>Device commands - App actions - HTTP actions"]
+    end
+
+    STATE -->|event| SUB
+    SUB -->|activates| APP
+    SCH -->|invokes| APP
+    APP -->|evaluates / reads| AUT
+    AUT -->|controls flow| ACT
+    APP -->|executes| ACT
+
+    APP -->|read / write| HV
+    HV -->|shared context| AUT
+    APP -->|Run Rule Actions / call function| RF
+    RF -->|executes / returns value| ACT
+
+    ACT -->|issues command| DEV
+    DEV -->|driver command| DR
+
+    DEV -.->|parent to child| DEV
+    APP -.->|parent to child / rule to rule| APP

@@ -1,0 +1,40 @@
+flowchart LR
+    subgraph EW["Physical / External World"]
+        PD["Physical Devices<br/>Sensors - Actuators - Bridges"]
+        ES["External Services / Systems<br/>Cloud APIs - HA - Node-RED - Custom services"]
+    end
+
+    subgraph TP["Transport / Protocol"]
+        ZB["Zigbee<br/>Clusters - Attributes - Commands"]
+        ZW["Z-Wave<br/>Command Classes - Parameters"]
+        MT["Matter / Thread<br/>Clusters - Endpoints - IPv6"]
+        LAN["LAN / IP / Cloud<br/>HTTP - REST - WebSocket - SSE - TCP/UDP"]
+    end
+
+    subgraph HE["Hubitat Elevation Platform"]
+        DR["Driver Layer<br/>Protocol abstraction + device representation"]
+        DEV["Hubitat Device Object<br/>Physical - Virtual - Parent/Child - Component"]
+        CAP["Capability Interface<br/>Standard commands + attributes"]
+        STATE["Device State / Events<br/>Attributes - Current state - Device events"]
+    end
+
+    PD -->|RF| ZB
+    PD -->|RF| ZW
+    PD -->|IP / Thread| MT
+    PD -->|IP| LAN
+    ES -->|API / network| LAN
+
+    ZB -->|protocol message| DR
+    ZW -->|protocol message| DR
+    MT -->|protocol message| DR
+    LAN -->|network message| DR
+
+    DR -->|implements / represents| DEV
+    DEV -->|exposes| CAP
+    CAP -->|defines attributes| STATE
+    DR -->|parse / sendEvent| STATE
+
+    DR -.->|cluster command| ZB
+    DR -.->|command class| ZW
+    DR -.->|Matter command| MT
+    DR -.->|HTTP / socket| LAN

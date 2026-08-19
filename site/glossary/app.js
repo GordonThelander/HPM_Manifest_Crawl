@@ -1,5 +1,5 @@
-function setupDiagramPanZoom() {
-  const viewport = document.querySelector('#mermaid-viewport');
+function setupDiagramPanZoom(block) {
+  const viewport = block.querySelector('.mermaid-viewport');
   const svg = viewport ? viewport.querySelector('svg') : null;
   if (!viewport || !svg) return;
 
@@ -120,18 +120,18 @@ function setupDiagramPanZoom() {
   viewport.addEventListener('pointercancel', releasePointer);
   viewport.addEventListener('pointerleave', releasePointer);
 
-  document.querySelector('#zoom-in').addEventListener('click', () => {
+  block.querySelector('.zoom-in').addEventListener('click', () => {
     zoomAt(viewport.clientWidth / 2, viewport.clientHeight / 2, 1.3);
   });
-  document.querySelector('#zoom-out').addEventListener('click', () => {
+  block.querySelector('.zoom-out').addEventListener('click', () => {
     zoomAt(viewport.clientWidth / 2, viewport.clientHeight / 2, 1 / 1.3);
   });
-  document.querySelector('#zoom-reset').addEventListener('click', reset);
+  block.querySelector('.zoom-reset').addEventListener('click', reset);
 
   window.addEventListener('resize', reset);
 }
 
-setupDiagramPanZoom();
+document.querySelectorAll('.mermaid-block').forEach(setupDiagramPanZoom);
 
 const searchInput = document.querySelector('#search');
 const clearButton = document.querySelector('#clear-search');
