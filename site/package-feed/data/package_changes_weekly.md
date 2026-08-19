@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-19T02:58:12Z`.
+Latest observation: `2026-08-19T05:01:36Z`.
 
-**35 package change(s):** added 8, broken 1, declared definitions changed 4, source location changed 2, updated 25
+**39 package change(s):** added 8, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 29
 
+- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [ESP32 Wall Keypad: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
 - [Home Assistant Device Bridge: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
 - [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)

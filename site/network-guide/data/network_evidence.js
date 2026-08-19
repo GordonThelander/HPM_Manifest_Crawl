@@ -5014,7 +5014,7 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "John C. Steele",
+      "author": "CSteele",
       "category": "Convenience",
       "classification": "INSUFFICIENT",
       "communityUrl": null,
@@ -5030,11 +5030,14 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
-      "tags": []
+      "tags": [
+        "MQTT",
+        "Safety & Security"
+      ]
     },
     {
       "author": "Krassimir Kossev",
@@ -27367,5 +27370,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T02:58:12Z"
+  "snapshotGenerated": "2026-08-19T05:01:36Z"
 };

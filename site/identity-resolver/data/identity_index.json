@@ -4269,26 +4269,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/Thermostats_Sync.groovy"
     },
     {
-      "id": "definition:39c59103e4a980ab1b61",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "ESP32 Wall Keypad Dashboard",
-          "namespace": "keypad"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "John C. Steele",
-        "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
-        "id": "manifest:0aab44543b1218f89d7f",
-        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
-        "name": "ESP32 Wall Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadDashboardApp.groovy"
-    },
-    {
       "id": "definition:3a1cd606ec8b71cfe215",
       "identities": [
         {
@@ -10184,6 +10164,31 @@
       "sourceUrl": "https://raw.githubusercontent.com/schwark/hubitat-schlage/main/schlage.groovy"
     },
     {
+      "id": "definition:c824a21a3193ffdb77b1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "ESP32 Wall Keypad Dashboard",
+          "namespace": "csteele"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "ESP32 Wall Keypad Dashboard",
+          "namespace": "keypad"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "CSteele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadDashboardApp.groovy"
+    },
+    {
       "id": "definition:c82a76cca5988f9a8650",
       "identities": [
         {
@@ -14722,6 +14727,26 @@
         "name": "Universal Virtual Device Switch uDTH - For Alexa, IFTTT, WebHooks, HSM, and other integrations"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH.groovy"
+    },
+    {
+      "id": "definition:11673d0d4f7378e727fa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "ESP32 Wall Keypad MQTT",
+          "namespace": "keypad"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "CSteele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadMQTTDriver.groovy"
     },
     {
       "id": "definition:1169a9f6115ca8696cdf",
@@ -46444,26 +46469,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitSproutHumidifier.groovy"
     },
     {
-      "id": "definition:f1a06aada4b93c956536",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "ESP32 Wall Keypad MQTT",
-          "namespace": "keypad"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "John C. Steele",
-        "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
-        "id": "manifest:0aab44543b1218f89d7f",
-        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
-        "name": "ESP32 Wall Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/csteele-pd/Hubitat-public/main/ESP32-Wall-Keypad/hubitat/ESP32WallKeypadMQTTDriver.groovy"
-    },
-    {
       "id": "definition:f1a4aff64888fa7999fc",
       "identities": [
         {
@@ -48367,5 +48372,5 @@
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T02:58:12Z"
+  "snapshotGenerated": "2026-08-19T05:01:36Z"
 }
