@@ -1,14 +1,14 @@
 # HPM package health summary
 
-Snapshot: `2026-08-19T09:20:57Z`
+Snapshot: `2026-08-19T09:27:40Z`
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
 ## Current observations
 
 - Failing: **232**
-- Passing: **405**
-- Warning: **272**
+- Passing: **408**
+- Warning: **269**
 
 ## Changes since the previous successful snapshot
 
