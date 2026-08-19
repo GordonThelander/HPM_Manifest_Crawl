@@ -1,7 +1,7 @@
 'use strict';
 const data=window.COMMUNITY_UTILITIES_STATUS,byId=id=>document.getElementById(id);
 const makeText=(tag,value,className)=>{const node=document.createElement(tag);node.textContent=value;if(className)node.className=className;return node;};
-const formatDate=value=>value?new Date(value).toLocaleString():'Not recorded in this snapshot';
+const formatDate=value=>value?new Date(value).toLocaleString():'Not tracked by this dataset';
 const stateLabel=value=>String(value||'').toLowerCase().replaceAll('_',' ').replace(/\b\w/g,letter=>letter.toUpperCase());
 function flowNode(row,index){const node=document.createElement('div');node.className='flow-node';node.append(makeText('strong',`${index+1}. ${row.label}`),makeText('span',row.description));return node;}
 function pair(term,value){const box=document.createElement('div');box.append(makeText('dt',term),makeText('dd',value));return box;}

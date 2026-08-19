@@ -3,6 +3,7 @@
 
 import argparse
 import datetime
+import hashlib
 import json
 import pathlib
 
@@ -82,6 +83,7 @@ def build_document(documents, observed_at=None):
     community_drivers = documents['communityDrivers']
     community_apps = documents['communityApps']
     manual = documents['manual']
+    manual_hash = hashlib.sha256(INPUTS['manual'].read_bytes()).hexdigest()
     releases = documents['releases']
     canonical = documents['canonicalRegistry']
     slim = documents['slimRegistry']
@@ -154,7 +156,9 @@ def build_document(documents, observed_at=None):
             (official_devices.get('source') or {}).get('url'),
             'Bounded documentation-table harvest', 'HEALTHY', observed_at, None, None,
             official_devices.get('snapshotId'), int(official_devices.get('recordCount') or 0),
-            'Retained snapshot validates; acquisition time is not recorded by catalogue schema 1.0.',
+            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
+            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
+            'per-run timestamp.',
             ['official_devices.json'],
             (official_devices.get('source') or {}).get('updatedAt'),
         ),
@@ -179,7 +183,9 @@ def build_document(documents, observed_at=None):
             (community_drivers.get('source') or {}).get('url'), 'Discourse JSON first-post harvest',
             'HEALTHY', observed_at, None, None, community_drivers.get('snapshotId'),
             int(community_drivers.get('recordCount') or 0),
-            'Retained snapshot validates; acquisition time is not recorded by catalogue schema 1.0.',
+            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
+            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
+            'per-run timestamp.',
             ['community_drivers.json'],
             (community_drivers.get('source') or {}).get('updatedAt'),
         ),
@@ -189,7 +195,9 @@ def build_document(documents, observed_at=None):
             (community_apps.get('source') or {}).get('url'), 'Discourse JSON first-post harvest',
             'HEALTHY', observed_at, None, None, community_apps.get('snapshotId'),
             int(community_apps.get('recordCount') or 0),
-            'Retained snapshot validates; acquisition time is not recorded by catalogue schema 1.0.',
+            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
+            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
+            'per-run timestamp.',
             ['community_apps.json'],
             (community_apps.get('source') or {}).get('updatedAt'),
         ),
@@ -198,9 +206,11 @@ def build_document(documents, observed_at=None):
             'Maintainer-reviewed public evidence',
             'Adds source-confirmed manual-install projects absent from HPM and wiki snapshots.',
             REPOSITORY_URL + '/blob/main/reviewed_community_projects.json', 'Explicit maintainer review',
-            'MANUALLY_REVIEWED', observed_at, None, None, None,
+            'MANUALLY_REVIEWED', observed_at, None, None, manual_hash,
             len(manual.get('projects') or []),
-            'Each retained project requires reviewed source identity and public evidence links.',
+            'Each retained project requires reviewed source identity and public evidence links; '
+            'the hash above identifies exactly which reviewed file this snapshot validated. There '
+            'is no fetch step to time, since a maintainer edits this file directly.',
             ['reviewed_community_projects.json'],
         ),
         source_record(

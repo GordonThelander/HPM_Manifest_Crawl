@@ -35,7 +35,8 @@ class SiteStatusTests(unittest.TestCase):
         official = next(row for row in self.document['sources'] if row['id'] == 'official-devices')
         self.assertIsNone(official['lastAttempt'])
         self.assertIsNone(official['lastSuccess'])
-        self.assertIn('not recorded', official['evidence'])
+        self.assertIn('does not record a per-run timestamp', official['evidence'])
+        self.assertIn('Healthy state', official['evidence'])
 
     def test_partial_crawl_is_degraded_not_erased(self):
         row = next(item for item in self.document['sources'] if item['id'] == 'developer-repositories')
