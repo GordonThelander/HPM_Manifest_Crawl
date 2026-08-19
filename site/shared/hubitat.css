@@ -32,7 +32,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   display: flex;
   width: 100%;
   min-height: 58px;
-  padding: 9px max(16px, calc((100% - 1180px) / 2));
+  padding: 9px max(16px, calc((100% - 1350px) / 2));
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -40,11 +40,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   background: rgb(255 255 255 / 96%);
   backdrop-filter: blur(12px);
 }
-.utility-nav a { color: var(--hubitat-soft); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.utility-nav a { color: var(--hubitat-soft); font-size: .82rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
 .utility-nav a:hover, .utility-nav a[aria-current="page"] { color: var(--hubitat-green); }
 .utility-brand { flex: 0 0 auto; font-size: .93rem !important; font-weight: 800 !important; letter-spacing: .02em; }
 .utility-brand::before { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 50%; background: var(--hubitat-lime); content: ""; }
-.utility-links { display: flex; min-width: 0; align-items: center; justify-content: flex-end; gap: 16px; }
+.utility-links { display: flex; min-width: 0; align-items: center; justify-content: flex-start; gap: 16px; overflow-x: auto; scrollbar-width: thin; }
+.utility-links a { flex: 0 0 auto; }
 
 .identity-resolver header,
 .package-feed .hero {
