@@ -27,9 +27,10 @@
       <p class="step">Before you start</p>
       <h2>A manifest and a repository are two different files</h2>
       <dl>
-        <div><dt>Manifest</dt><dd>A JSON file telling HPM what one package contains and where its files are located. This is what you check below.</dd></div>
-        <div><dt>Repository</dt><dd>A separate JSON file you host listing every package you publish. HPM reads your repository, not a manifest directly, when someone adds it as a custom repository or when it's listed in HPM's public catalogue.</dd></div>
+        <div><dt>Manifest (packageManifest.json)</dt><dd>Describes one package: its name, author, version, and every app or driver it installs. Each app or driver lists the exact raw GitHub URL where HPM downloads that file's source code. If your package has an app and two drivers, your manifest lists all three, each with its own <code>id</code>, <code>name</code> and <code>location</code>. You write one manifest per package. This is the file you paste or open below.</dd></div>
+        <div><dt>Repository (repository.json)</dt><dd>A file you host yourself, separate from any manifest, listing every package you publish - even if that's only one. Each entry names a package and points to the URL of its manifest. HPM never fetches a manifest on its own initiative: it reads your repository first, either because a user added it as a custom repository or because it's listed in HPM's public catalogue, and only then follows each entry to find the matching manifest.</dd></div>
       </dl>
+      <p class="concepts-note">In short: this page checks your manifest first. Once it passes, section 4 below walks you through creating or updating your repository entry and preparing the public submission - that's a second, separate step using a different file.</p>
     </section>
 
     <section class="workspace" aria-label="Manifest validator">
