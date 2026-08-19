@@ -340,6 +340,50 @@ jobs:
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Reads the counts straight out of the page this same run just wrote,
+      # rather than recomputing them, so the email can never disagree with
+      # what Package Feed itself shows.
+      - name: Summarise this crawl's changes
+        if: steps.commit.outputs.pushed == 'true'
+        id: summary
+        continue-on-error: true
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import re
+          html = open('site/package-feed/index.html', encoding='utf-8').read()
+          match = re.search(
+              r'<strong>(\d+)</strong><span>package changes</span></div>'
+              r'<div class="stat"><strong>(\d+)</strong><span>added</span></div>'
+              r'<div class="stat"><strong>(\d+)</strong><span>updated</span></div>'
+              r'<div class="stat"><strong>(\d+)</strong><span>availability</span></div>',
+              html,
+          )
+          total, added, updated, availability = match.groups()
+          print(f"text={total} package change(s): {added} added, {updated} updated, {availability} availability")
+          PY
+
+      # Only the "did anything happen" ping needs to be reliable; a flaky
+      # SMTP send should not turn an otherwise-successful crawl run red.
+      - name: Email update notification
+        if: steps.commit.outputs.pushed == 'true'
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
+          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
+          from: HPM Manifest Crawl <${{ secrets.NOTIFY_SMTP_USERNAME }}>
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          subject: Hubitat Community Utilities updated
+          body: |
+            The scheduled crawl found real upstream changes and refreshed the site.
+
+            ${{ steps.summary.outputs.text }}
+
+            Package Feed: https://gordonthelander.github.io/HPM_Manifest_Crawl/package-feed/
+            This run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
   deploy-pages:
     # A push made with the default GITHUB_TOKEN does not trigger other
     # workflows, so pages.yml would never see a crawl-generated update on its
