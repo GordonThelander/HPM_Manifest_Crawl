@@ -56,6 +56,13 @@ h2 { margin: .18em 0; color: var(--ink-soft); font-size: 1.6rem; font-weight: 60
 .hero aside strong { color: var(--ink); font-size: 1.18rem; font-weight: 700; }
 .hero aside span::before { content: "✓"; margin-right: 8px; font-weight: 800; }
 
+.concepts-intro { margin-top: 24px; padding: 22px 26px; border-radius: 16px; background: var(--surface); }
+.concepts-intro h2 { margin: .2em 0 14px; color: var(--ink-soft); font-size: 1.1rem; font-weight: 700; }
+.concepts-intro dl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+.concepts-intro dl div { padding: 16px 18px; border-radius: 10px; background: var(--card); }
+.concepts-intro dt { color: var(--lime-dark); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.concepts-intro dd { margin: .35em 0 0; color: var(--ink-soft); }
+
 .workspace { display: grid; grid-template-columns: 1.08fr .92fr; gap: 18px; margin-top: 28px; }
 .editor-panel, .report-panel, .package-card, .next-step { border: 1px solid var(--line); border-radius: 16px; background: var(--card); box-shadow: var(--shadow); }
 .editor-panel, .report-panel { min-width: 0; padding: 24px; }
@@ -142,7 +149,7 @@ pre { min-height: 170px; margin: 16px 0 0; padding: 16px; overflow: auto; border
 @media (max-width: 800px) {
   main { width: min(100% - 20px, 1180px); padding-top: 10px; }
   .hero { padding: 38px 24px 32px; }
-  .hero, .workspace, .next-step, .submission-grid, .generated-entries { grid-template-columns: 1fr; }
+  .hero, .workspace, .next-step, .submission-grid, .generated-entries, .concepts-intro dl { grid-template-columns: 1fr; }
   .submission-form { grid-template-columns: 1fr; }
   .submission-form label.wide { grid-column: auto; }
   .components { grid-template-columns: 1fr; }

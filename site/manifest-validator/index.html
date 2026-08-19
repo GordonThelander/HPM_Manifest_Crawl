@@ -23,6 +23,15 @@
       <aside><strong>Safe by design</strong><span>No code execution</span><span>No upload</span><span>No registry writes</span></aside>
     </header>
 
+    <section class="concepts-intro" aria-label="Manifest and repository basics">
+      <p class="step">Before you start</p>
+      <h2>A manifest and a repository are two different files</h2>
+      <dl>
+        <div><dt>Manifest</dt><dd>A JSON file telling HPM what one package contains and where its files are located. This is what you check below.</dd></div>
+        <div><dt>Repository</dt><dd>A separate JSON file you host listing every package you publish. HPM reads your repository, not a manifest directly, when someone adds it as a custom repository or when it's listed in HPM's public catalogue.</dd></div>
+      </dl>
+    </section>
+
     <section class="workspace" aria-label="Manifest validator">
       <div class="editor-panel">
         <div class="panel-head"><div><p class="step">1 · Manifest</p><h2>Package JSON</h2></div><label class="file-button">Open file<input id="file" type="file" accept="application/json,.json"></label></div>
