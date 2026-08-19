@@ -15,8 +15,9 @@ removed, updated, broken or restored without watching every package repository.
 | `package_feed_state.json` | Last validated comparison baseline. |
 
 Each change includes its current package record when one exists, its previous
-record when relevant, and evidence links to the public package dataset and
-upstream manifest, repository, documentation, community topic and source files.
+record when relevant, and evidence links to the upstream manifest and
+repository. Historical events refresh through the same filter on every render,
+so retained evidence never drifts from what the current build would produce.
 
 ## Safety and semantics
 
