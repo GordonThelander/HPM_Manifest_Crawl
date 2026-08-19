@@ -48,6 +48,15 @@ def clean(value):
     return text or None
 
 
+def clean_placeholder(value):
+    """Like clean(), but a lone dash - the wiki's "not applicable" convention -
+    is treated the same as an empty cell instead of a literal display value."""
+    text = clean(value)
+    if text and re.fullmatch(r'[-‐-―]+', text):
+        return None
+    return text
+
+
 def stable_hash(*parts):
     material = '\x1f'.join(clean(part) or '' for part in parts)
     return hashlib.sha256(material.encode('utf-8')).hexdigest()[:20]
@@ -286,14 +295,18 @@ def parse_driver_wiki(document):
         ]
         text = ' | '.join(cell['text'] or '' for cell in row['cells'])
         identity = stable_hash(row['section'], *[fields.get(header) for header in headers])
+        # Most tables use Brand/Device/Product Number/Driver or App, but a few
+        # sections (Integration Drivers, Apps and Driver Collections) list one
+        # named thing per row under a differently-titled column instead.
+        driver_or_app = fields.get('Driver or App') or fields.get('Driver') or fields.get('Collection')
         records.append({
             'id': f'community-driver:{identity}',
             'classification': 'COMMUNITY_DRIVER_LISTED',
             'section': row['section'],
-            'manufacturer': fields.get('Brand'),
-            'device': fields.get('Device'),
-            'productNumber': fields.get('Product Number'),
-            'driverOrApp': fields.get('Driver or App'),
+            'manufacturer': clean_placeholder(fields.get('Brand')),
+            'device': clean_placeholder(fields.get('Device')),
+            'productNumber': clean_placeholder(fields.get('Product Number')),
+            'driverOrApp': clean_placeholder(driver_or_app),
             'links': sorted(set(links)),
             'lifecycleFlags': lifecycle_flags(text),
             'source': {'url': DRIVER_WIKI_PAGE, 'postNumber': 1, 'row': row_index,

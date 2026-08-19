@@ -46,6 +46,36 @@ def driver_fixture():
     )
 
 
+def driver_alternate_header_fixture():
+    """Some sections (Integration Drivers, Apps and Driver Collections) list one
+    named thing per row under 'Driver' or 'Collection' instead of the usual
+    Brand/Device/Product Number/Driver or App columns."""
+    rows = ''.join(
+        f'<tr><td>Example Driver {index}</td>'
+        f'<td><a href="https://community.hubitat.com/t/example/{3000 + index}">link</a></td></tr>'
+        for index in range(10)
+    )
+    return discourse_document(
+        'Custom Device Drivers [Wiki]',
+        '<h2>Integration Drivers</h2><table><thead><tr><th>Driver</th><th>Link</th></tr></thead>'
+        f'<tbody>{rows}</tbody></table>',
+    )
+
+
+def driver_dash_placeholder_fixture():
+    """The wiki uses a lone '-' to mean "not tied to one specific product"."""
+    rows = ''.join(
+        '<tr><td>LIFX</td><td>-</td><td>-</td>'
+        f'<td><a href="https://community.hubitat.com/t/example/{4000 + index}">custom driver {index}</a></td></tr>'
+        for index in range(10)
+    )
+    return discourse_document(
+        'Custom Device Drivers [Wiki]',
+        '<h2>Cloud Devices</h2><table><thead><tr><th>Brand</th><th>Device</th>'
+        f'<th>Product Number</th><th>Driver or App</th></tr></thead><tbody>{rows}</tbody></table>',
+    )
+
+
 def app_fixture():
     items = ''.join(
         f'<li>Example App {index} - <a href="https://community.hubitat.com/t/example/{2000 + index}">link</a></li>'
@@ -83,6 +113,20 @@ class CommunityWikiTests(unittest.TestCase):
                             for row in records))
         self.assertTrue(all(row['section'] == 'Zigbee Devices' for row in records))
         self.assertTrue(all(row['links'] for row in records))
+
+    def test_driver_wiki_reads_name_from_alternate_column(self):
+        records, _ = harvest.parse_driver_wiki(driver_alternate_header_fixture())
+        self.assertEqual({row['driverOrApp'] for row in records},
+                         {f'Example Driver {index}' for index in range(10)})
+        self.assertTrue(all(row['device'] is None for row in records))
+
+    def test_driver_wiki_treats_dash_placeholder_as_empty(self):
+        records, _ = harvest.parse_driver_wiki(driver_dash_placeholder_fixture())
+        self.assertTrue(all(row['device'] is None for row in records))
+        self.assertTrue(all(row['productNumber'] is None for row in records))
+        self.assertTrue(all(row['manufacturer'] == 'LIFX' for row in records))
+        self.assertEqual({row['driverOrApp'] for row in records},
+                         {f'custom driver {index}' for index in range(10)})
 
     def test_app_wiki_retains_lifecycle_observation(self):
         document = app_fixture()
