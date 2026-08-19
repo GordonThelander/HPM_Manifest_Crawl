@@ -1601,7 +1601,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2258,
+  "definitionCount": 2261,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3947,6 +3947,26 @@ window.IDENTITY_INDEX = {
         "name": "The Flasher"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/theflasher-child.groovy"
+    },
+    {
+      "id": "definition:3438ed9356007c7198b3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Navien NaviLink (Cloud)",
+          "namespace": "jlslate"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "jlslate",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlslate/hubitat-navien/blob/main/README.md",
+        "id": "hpm:fbbff389-cb61-4720-9fca-8c0796752482",
+        "manifestUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json",
+        "name": "Navien NaviLink (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/apps/navien-navilink-cloud.groovy"
     },
     {
       "id": "definition:34c06890f7299cab9bd3",
@@ -34874,6 +34894,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/astroMeteorSeasons.groovy"
     },
     {
+      "id": "definition:a3bee2892e33aba49d43",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Navien NaviLink Water Heater",
+          "namespace": "jlslate"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "jlslate",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlslate/hubitat-navien/blob/main/README.md",
+        "id": "hpm:fbbff389-cb61-4720-9fca-8c0796752482",
+        "manifestUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json",
+        "name": "Navien NaviLink (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-water-heater.groovy"
+    },
+    {
       "id": "definition:a3c97f8f42eaac6ffaa9",
       "identities": [
         {
@@ -42049,6 +42089,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ady624/hubitat-aroma-link/master/aroma-link-diffuser-driver.groovy"
     },
     {
+      "id": "definition:d124af827d5c3d3fbb45",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Navien NaviLink Gateway",
+          "namespace": "jlslate"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "jlslate",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlslate/hubitat-navien/blob/main/README.md",
+        "id": "hpm:fbbff389-cb61-4720-9fca-8c0796752482",
+        "manifestUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json",
+        "name": "Navien NaviLink (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-gateway.groovy"
+    },
+    {
       "id": "definition:d19fd7299d3c81d280d9",
       "identities": [
         {
@@ -48372,5 +48432,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T08:37:35Z"
+  "snapshotGenerated": "2026-08-19T08:58:51Z"
 };

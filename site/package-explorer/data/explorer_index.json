@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 908,
+    "HPM_PACKAGE": 909,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2613,
+  "recordCount": 2614,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -66682,6 +66682,111 @@
       "version": "1.3.0"
     },
     {
+      "author": "jlslate",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-19",
+      "definitions": [
+        {
+          "id": "definition:3438ed9356007c7198b3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Navien NaviLink (Cloud)",
+          "namespace": "jlslate",
+          "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/apps/navien-navilink-cloud.groovy"
+        },
+        {
+          "id": "definition:d124af827d5c3d3fbb45",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Navien NaviLink Gateway",
+          "namespace": "jlslate",
+          "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-gateway.groovy"
+        },
+        {
+          "id": "definition:a3bee2892e33aba49d43",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Navien NaviLink Water Heater",
+          "namespace": "jlslate",
+          "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-water-heater.groovy"
+        }
+      ],
+      "description": "Links a Navien tankless water heater or combi boiler to Hubitat through the NaviLink cloud service: power, hot water setpoint, on-demand recirculation, inlet and outlet temperature, flow rate and gas usage. No local wiring or bridge required. By jlslate.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:fbbff389-cb61-4720-9fca-8c0796752482",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/jlslate/hubitat-navien/blob/main/README.md",
+        "manifest": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json",
+        "repository": "https://raw.githubusercontent.com/jlslate/SenseCAP-Indicator/main/repository.json"
+      },
+      "name": "Navien NaviLink (Cloud)",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "nlus.naviensmartcontrol.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Energy Monitoring",
+        "jlslate",
+        "MQTT",
+        "Water Heater"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -131979,5 +132084,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T08:37:35Z"
+  "snapshotGenerated": "2026-08-19T08:58:51Z"
 }
