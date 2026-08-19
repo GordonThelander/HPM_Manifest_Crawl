@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-19T22:49:46Z`.
+Latest observation: `2026-08-19T23:36:41Z`.
 
-**43 package change(s):** added 9, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 32
+**44 package change(s):** added 9, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 33
 
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Navien NaviLink (Cloud): added.](https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json)

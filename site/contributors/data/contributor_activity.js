@@ -10761,6 +10761,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2639538775f46183f141a9c2",
+          "observedAt": "2026-08-19T23:36:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 2,
@@ -10783,7 +10797,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 1,
@@ -10809,7 +10823,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.4.0"
+          "version": "1.4.1"
         },
         {
           "appCount": 0,
@@ -17502,10 +17516,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 44,
-    "eventCount": 43,
+    "attributedEventCount": 45,
+    "eventCount": 44,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-19T21:00:12Z"
+    "lastObservedAt": "2026-08-19T23:36:41Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17519,7 +17533,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T22:49:46Z",
+  "snapshotGenerated": "2026-08-19T23:36:41Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
