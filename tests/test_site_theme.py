@@ -18,6 +18,7 @@ class SiteThemeTests(unittest.TestCase):
             'contributors': ROOT / 'site/contributors/index.html',
             'package-feed': ROOT / 'site/package-feed/index.html',
             'recovery-inventory': ROOT / 'site/recovery-inventory/index.html',
+            'glossary': ROOT / 'site/glossary/index.html',
         }
         for body_class, path in pages.items():
             with self.subTest(path=path):

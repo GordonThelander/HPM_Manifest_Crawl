@@ -21,6 +21,7 @@ UTILITY_PAGES = (
     pathlib.Path('package-feed/index.html'),
     pathlib.Path('recovery-inventory/index.html'),
     pathlib.Path('contributors/index.html'),
+    pathlib.Path('glossary/index.html'),
     pathlib.Path('about/index.html'),
 )
 REQUIRED_FILES = UTILITY_PAGES + (
