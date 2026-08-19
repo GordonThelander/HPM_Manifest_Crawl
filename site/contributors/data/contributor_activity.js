@@ -9504,6 +9504,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:4c666d00-1c4c-44ec-bd30-f3b6a9645374",
           "packageName": "Presence Manager",
           "summary": "Presence Manager: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5a816d45bdb8ae37f394d0d9",
+          "observedAt": "2026-08-19T11:29:52Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -9530,7 +9544,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -9541,9 +9555,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
           "name": "Automation Map",
-          "publisherDate": "2026-08-06",
+          "publisherDate": "2026-08-19",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "1.2.1"
+          "version": "2.0.0"
         },
         {
           "appCount": 0,
@@ -17473,10 +17487,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 42,
-    "eventCount": 41,
+    "attributedEventCount": 43,
+    "eventCount": 42,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-19T08:58:51Z"
+    "lastObservedAt": "2026-08-19T11:29:52Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17490,7 +17504,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-19T09:53:18Z",
+  "snapshotGenerated": "2026-08-19T11:29:52Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-19T09:53:18Z`.
+Latest observation: `2026-08-19T11:29:52Z`.
 
-**41 package change(s):** added 9, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 30
+**42 package change(s):** added 9, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 31
 
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Navien NaviLink (Cloud): added.](https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json)
 - [MolSmart DIMMER-010: updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer_0-10/refs/heads/main/packageManifest.json)
 - [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
