@@ -1,14 +1,24 @@
 # HPM package health summary
 
+<<<<<<< Updated upstream
 Snapshot: `2026-08-19T05:38:28Z`
+=======
+Snapshot: `2026-08-19T05:45:51Z`
+>>>>>>> Stashed changes
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
 ## Current observations
 
+<<<<<<< Updated upstream
 - Failing: **232**
 - Passing: **402**
 - Warning: **274**
+=======
+- Failing: **231**
+- Passing: **393**
+- Warning: **284**
+>>>>>>> Stashed changes
 
 ## Changes since the previous successful snapshot
 
