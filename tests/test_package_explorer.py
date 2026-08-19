@@ -68,5 +68,24 @@ class PackageExplorerTests(unittest.TestCase):
         self.assertIn("automationMapIndependent': True", source)
 
 
+class DriverRecordNameTests(unittest.TestCase):
+    def test_prefers_a_real_device_or_driver_name(self):
+        self.assertEqual(explorer.driver_record_name({'device': 'Bridge', 'manufacturer': 'Acme'}), 'Bridge')
+        self.assertEqual(explorer.driver_record_name({'driverOrApp': 'custom driver'}), 'custom driver')
+
+    def test_falls_back_to_manufacturer_when_no_name_survived_parsing(self):
+        row = {'device': None, 'driverOrApp': None, 'manufacturer': 'Rachio', 'section': 'Cloud Devices'}
+        self.assertEqual(explorer.driver_record_name(row), 'Inferred: Rachio')
+
+    def test_falls_back_to_section_when_manufacturer_is_also_missing(self):
+        row = {'device': None, 'driverOrApp': None, 'manufacturer': None, 'section': 'Cloud Devices'}
+        self.assertEqual(explorer.driver_record_name(row), 'Inferred: Cloud Devices listing')
+
+    def test_no_unnamed_records_remain_in_the_built_document(self):
+        document = json.loads((ROOT / explorer.OUTPUT).read_text('utf-8'))
+        unnamed = [row for row in document['records'] if not row.get('name')]
+        self.assertEqual(unnamed, [])
+
+
 if __name__ == '__main__':
     unittest.main()

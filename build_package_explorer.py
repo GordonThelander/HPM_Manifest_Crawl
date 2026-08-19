@@ -124,12 +124,26 @@ def official_record(row):
     }
 
 
+def driver_record_name(row):
+    name = row.get('device') or row.get('driverOrApp')
+    if name:
+        return name
+    # The wiki row carried no device or driver/app name at all (both were the
+    # "-" placeholder). Rather than an empty title, say plainly that the name
+    # is a stand-in built from whatever context the row did have.
+    if row.get('manufacturer'):
+        return f"Inferred: {row['manufacturer']}"
+    if row.get('section'):
+        return f"Inferred: {row['section']} listing"
+    return None
+
+
 def driver_record(row):
     return {
         'id': row.get('id'),
         'recordType': 'COMMUNITY_DRIVER',
         'classification': 'COMMUNITY_DRIVER_LISTED',
-        'name': row.get('device') or row.get('driverOrApp'),
+        'name': driver_record_name(row),
         'manufacturer': row.get('manufacturer'),
         'productNumber': row.get('productNumber'),
         'category': row.get('section'),
