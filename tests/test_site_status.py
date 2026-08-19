@@ -31,12 +31,13 @@ class SiteStatusTests(unittest.TestCase):
         self.assertNotEqual(document['lastSuccessfulHpmCrawl'], document['generatedAt'])
         self.assertFalse(document['method']['fileModificationTimesUsedAsCrawlTime'])
 
-    def test_unknown_catalogue_acquisition_times_remain_null(self):
+    def test_catalogue_success_time_reflects_this_build_run(self):
         official = next(row for row in self.document['sources'] if row['id'] == 'official-devices')
-        self.assertIsNone(official['lastAttempt'])
-        self.assertIsNone(official['lastSuccess'])
-        self.assertIn('does not record a per-run timestamp', official['evidence'])
-        self.assertIn('Healthy state', official['evidence'])
+        self.assertIsNotNone(official['lastAttempt'])
+        self.assertEqual(official['lastAttempt'], self.document['generatedAt'])
+        self.assertEqual(official['lastSuccess'], self.document['generatedAt'])
+        self.assertIn('does not embed a per-run', official['evidence'])
+        self.assertIn('reaching this status page is itself proof', official['evidence'])
 
     def test_partial_crawl_is_degraded_not_erased(self):
         row = next(item for item in self.document['sources'] if item['id'] == 'developer-repositories')

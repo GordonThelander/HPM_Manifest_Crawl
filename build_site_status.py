@@ -154,11 +154,12 @@ def build_document(documents, observed_at=None):
             'official-devices', 'Compatible Devices catalogue', 'Hubitat documentation',
             'Lists officially documented compatible devices, protocols and recommended drivers.',
             (official_devices.get('source') or {}).get('url'),
-            'Bounded documentation-table harvest', 'HEALTHY', observed_at, None, None,
+            'Bounded documentation-table harvest', 'HEALTHY', observed_at, observed_at, observed_at,
             official_devices.get('snapshotId'), int(official_devices.get('recordCount') or 0),
-            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
-            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
-            'per-run timestamp.',
+            'A failed harvest never commits, so reaching this status page is itself proof the '
+            'harvest just attempted and succeeded; last attempt and last success both reflect '
+            'this build\'s run time, since catalogue schema 1.0 does not embed a per-run '
+            'timestamp in the file itself.',
             ['official_devices.json'],
             (official_devices.get('source') or {}).get('updatedAt'),
         ),
@@ -181,11 +182,12 @@ def build_document(documents, observed_at=None):
             'community-driver-wiki', 'Custom Device Drivers Wiki', 'Hubitat Community wiki',
             'Provides community-curated driver listings and lifecycle wording.',
             (community_drivers.get('source') or {}).get('url'), 'Discourse JSON first-post harvest',
-            'HEALTHY', observed_at, None, None, community_drivers.get('snapshotId'),
+            'HEALTHY', observed_at, observed_at, observed_at, community_drivers.get('snapshotId'),
             int(community_drivers.get('recordCount') or 0),
-            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
-            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
-            'per-run timestamp.',
+            'A failed harvest never commits, so reaching this status page is itself proof the '
+            'harvest just attempted and succeeded; last attempt and last success both reflect '
+            'this build\'s run time, since catalogue schema 1.0 does not embed a per-run '
+            'timestamp in the file itself.',
             ['community_drivers.json'],
             (community_drivers.get('source') or {}).get('updatedAt'),
         ),
@@ -193,11 +195,12 @@ def build_document(documents, observed_at=None):
             'community-app-wiki', 'Custom Apps Wiki', 'Hubitat Community wiki',
             'Provides community-curated app listings and lifecycle wording.',
             (community_apps.get('source') or {}).get('url'), 'Discourse JSON first-post harvest',
-            'HEALTHY', observed_at, None, None, community_apps.get('snapshotId'),
+            'HEALTHY', observed_at, observed_at, observed_at, community_apps.get('snapshotId'),
             int(community_apps.get('recordCount') or 0),
-            'A failed harvest never commits, so this snapshot, its hash and its Healthy state '
-            'together prove the last attempt succeeded; catalogue schema 1.0 does not record a '
-            'per-run timestamp.',
+            'A failed harvest never commits, so reaching this status page is itself proof the '
+            'harvest just attempted and succeeded; last attempt and last success both reflect '
+            'this build\'s run time, since catalogue schema 1.0 does not embed a per-run '
+            'timestamp in the file itself.',
             ['community_apps.json'],
             (community_apps.get('source') or {}).get('updatedAt'),
         ),
