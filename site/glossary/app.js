@@ -1,12 +1,3 @@
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-
-mermaid.initialize({
-  startOnLoad: false,
-  theme: 'neutral',
-  securityLevel: 'strict',
-  flowchart: { useMaxWidth: false },
-});
-
 function setupDiagramPanZoom() {
   const viewport = document.querySelector('#mermaid-viewport');
   const svg = viewport ? viewport.querySelector('svg') : null;
@@ -140,7 +131,7 @@ function setupDiagramPanZoom() {
   window.addEventListener('resize', reset);
 }
 
-mermaid.run().then(setupDiagramPanZoom);
+setupDiagramPanZoom();
 
 const searchInput = document.querySelector('#search');
 const clearButton = document.querySelector('#clear-search');
