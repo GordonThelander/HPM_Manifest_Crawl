@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-20T01:53:33Z`.
+Latest observation: `2026-08-20T13:03:48Z`.
 
-**44 package change(s):** added 9, broken 1, declared definitions changed 5, restored 1, source location changed 3, updated 33
+**46 package change(s):** added 9, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 34
 
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [ESP32 Wall Keypad: changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
@@ -47,6 +50,5 @@ Latest observation: `2026-08-20T01:53:33Z`.
 - [Mitsubishi Comfort Cloud: added.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
 - [Commercial Lock: added.](https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/packageManifest.json)
 - [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
-- [BirdWeather PUC: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

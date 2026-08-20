@@ -9518,6 +9518,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:08dbea7772bab859f74ca96e",
+          "observedAt": "2026-08-20T13:03:48Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -9544,7 +9558,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -9555,9 +9569,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
           "name": "Automation Map",
-          "publisherDate": "2026-08-19",
+          "publisherDate": "2026-08-20",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.0.0"
+          "version": "2.0.1"
         },
         {
           "appCount": 0,
@@ -10225,6 +10239,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:0aab44543b1218f89d7f",
           "packageName": "ESP32 Wall Keypad",
           "summary": "ESP32 Wall Keypad: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f9ffd9018f6529c4ceee31a0",
+          "observedAt": "2026-08-20T13:03:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:0aab44543b1218f89d7f",
+          "packageName": "ESP32 Wall Keypad",
+          "summary": "ESP32 Wall Keypad: changed declared definitions."
         }
       ],
       "appCount": 1,
@@ -10243,7 +10271,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:3172af7815418f7a47a9",
       "name": "CSteele",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -10775,6 +10803,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0142701300de71e193c9232a",
+          "observedAt": "2026-08-20T13:03:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 2,
@@ -10797,7 +10839,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -10823,7 +10865,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.4.1"
+          "version": "1.4.2"
         },
         {
           "appCount": 0,
@@ -17516,10 +17558,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 45,
-    "eventCount": 44,
+    "attributedEventCount": 48,
+    "eventCount": 47,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-19T23:36:41Z"
+    "lastObservedAt": "2026-08-20T13:03:48Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17533,7 +17575,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-20T01:53:33Z",
+  "snapshotGenerated": "2026-08-20T13:03:48Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -10184,31 +10184,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/schwark/hubitat-schlage/main/schlage.groovy"
     },
     {
-      "id": "definition:c824a21a3193ffdb77b1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "ESP32 Wall Keypad Dashboard",
-          "namespace": "csteele"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "ESP32 Wall Keypad Dashboard",
-          "namespace": "keypad"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "CSteele",
-        "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
-        "id": "manifest:0aab44543b1218f89d7f",
-        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
-        "name": "ESP32 Wall Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadDashboardApp.groovy"
-    },
-    {
       "id": "definition:c82a76cca5988f9a8650",
       "identities": [
         {
@@ -10577,6 +10552,26 @@ window.IDENTITY_INDEX = {
         "name": "Dywarmic Towel Warmer Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Apps/Dywarmic%20Towel%20Warmer%20Integration.groovy"
+    },
+    {
+      "id": "definition:d1a9a40b6511968c17b1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "ESP32 Wall Keypad Dashboard",
+          "namespace": "csteele"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "CSteele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadDashboardApp.groovy"
     },
     {
       "id": "definition:d1cb722203db94ed586c",
@@ -48432,5 +48427,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-20T01:53:33Z"
+  "snapshotGenerated": "2026-08-20T13:03:48Z"
 };
