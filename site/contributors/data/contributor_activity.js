@@ -17415,6 +17415,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:65dc5b60d9fd11e8b97b",
           "packageName": "Home Assistant Device Bridge",
           "summary": "Home Assistant Device Bridge: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:30b533b92c420e30318a0889",
+          "observedAt": "2026-08-20T22:46:19Z",
+          "observedCommit": null,
+          "packageId": "manifest:65dc5b60d9fd11e8b97b",
+          "packageName": "Home Assistant Device Bridge",
+          "summary": "Home Assistant Device Bridge: updated."
         }
       ],
       "appCount": 1,
@@ -17429,7 +17443,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -17442,7 +17456,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Home Assistant Device Bridge",
           "publisherDate": "2021-03-19",
           "repositoryUrl": "https://raw.githubusercontent.com/ymerj/hpm/main/repository.json",
-          "version": "2.29"
+          "version": "2.30"
         }
       ]
     },
@@ -17558,10 +17572,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 48,
-    "eventCount": 47,
+    "attributedEventCount": 49,
+    "eventCount": 48,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-20T13:03:48Z"
+    "lastObservedAt": "2026-08-20T22:46:19Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17575,7 +17589,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-20T13:24:49Z",
+  "snapshotGenerated": "2026-08-20T22:46:19Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

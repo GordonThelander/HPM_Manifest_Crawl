@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-20T13:24:49Z`.
+Latest observation: `2026-08-20T22:46:19Z`.
 
-**46 package change(s):** added 9, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 34
+**47 package change(s):** added 9, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 35
 
+- [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [ESP32 Wall Keypad: changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
