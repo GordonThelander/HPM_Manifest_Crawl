@@ -188,6 +188,68 @@ jobs:
         continue-on-error: true
         run: python build_release_features.py
 
+      # For Gordon to check on request, not for the site: prints the site's
+      # own Cloudflare Web Analytics page-view count to this job's log.
+      # Nothing is written to disk or committed, so it can never affect what
+      # gets published or trigger an unrelated redeploy.
+      - name: Report Cloudflare Web Analytics traffic
+        continue-on-error: true
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+        run: |
+          python - <<'PY'
+          import datetime
+          import json
+          import os
+          import urllib.request
+
+          ACCOUNT_TAG = 'b35cacb1572babb9b03dcf6240d409fc'
+          SITE_TAG = '119138f9a53e402fa5529b9d40799da4'  # gordonthelander.github.io
+          WINDOW_DAYS = 30
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          start = (now - datetime.timedelta(days=WINDOW_DAYS)).strftime('%Y-%m-%dT%H:%M:%SZ')
+          end = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+          query = '''
+          query($accountTag: string, $siteTag: string, $start: Time, $end: Time) {
+            viewer {
+              accounts(filter: { accountTag: $accountTag }) {
+                rumPageloadEventsAdaptiveGroups(
+                  filter: { siteTag: $siteTag, datetime_geq: $start, datetime_leq: $end }
+                  limit: 1
+                ) {
+                  count
+                }
+              }
+            }
+          }
+          '''
+          request = urllib.request.Request(
+              'https://api.cloudflare.com/client/v4/graphql',
+              data=json.dumps({
+                  'query': query,
+                  'variables': {
+                      'accountTag': ACCOUNT_TAG,
+                      'siteTag': SITE_TAG,
+                      'start': start,
+                      'end': end,
+                  },
+              }).encode('utf-8'),
+              headers={
+                  'Authorization': f"Bearer {os.environ['TOKEN']}",
+                  'Content-Type': 'application/json',
+              },
+              method='POST',
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              result = json.loads(response.read().decode('utf-8'))
+
+          groups = result['data']['viewer']['accounts'][0]['rumPageloadEventsAdaptiveGroups']
+          count = groups[0]['count'] if groups else 0
+          print(f"Page views, last {WINDOW_DAYS} days (Cloudflare Web Analytics): {count}")
+          PY
+
       - name: Build browser identity resolver index
         if: steps.upstream.outputs.changed == 'true' || github.event_name == 'push' || inputs.force
         run: python build_identity_resolver.py
