@@ -24,6 +24,7 @@ jobs:
           import urllib.request
 
           TOKEN = os.environ['TOKEN']
+          ACCOUNT_ID = 'b35cacb1572babb9b03dcf6240d409fc'
           KNOWN_BEACON_TOKEN = '4f12063038634bc29a4820bbe7523693'
 
           def call(method, url, body=None):
@@ -43,46 +44,47 @@ jobs:
               except urllib.error.HTTPError as error:
                   return error.code, json.loads(error.read().decode('utf-8'))
 
-          print('=== 1. List accounts this token can see ===')
-          status, accounts_result = call('GET', 'https://api.cloudflare.com/client/v4/accounts')
+          print('=== 1. List RUM (Web Analytics) sites on this account ===')
+          status, sites_result = call(
+              'GET',
+              f'https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/rum/site_info/list',
+          )
           print(f'HTTP {status}')
-          print(json.dumps(accounts_result, indent=2))
-
-          account_ids = []
-          if accounts_result.get('success'):
-              account_ids = [a['id'] for a in accounts_result.get('result') or []]
+          print(json.dumps(sites_result, indent=2))
 
           print()
-          print('=== 2. List RUM (Web Analytics) sites per account, looking for beacon token', KNOWN_BEACON_TOKEN, '===')
-          matched_site_tag = None
-          for account_id in account_ids:
-              status, sites_result = call(
-                  'GET',
-                  f'https://api.cloudflare.com/client/v4/accounts/{account_id}/rum/site_info/list',
-              )
-              print(f'account {account_id}: HTTP {status}')
-              print(json.dumps(sites_result, indent=2))
-              if sites_result.get('success'):
-                  for site in sites_result.get('result') or []:
-                      if str(site.get('site_token')) == KNOWN_BEACON_TOKEN or str(site.get('ruleset', {}).get('id')) == KNOWN_BEACON_TOKEN:
-                          matched_site_tag = site
-                          print('*** MATCH on this account:', json.dumps(site, indent=2))
-
-          print()
-          print('=== 3. Introspect the RUM analytics GraphQL type ===')
-          introspection_query = '''
-          {
-            __type(name: "AccountRumPageloadEventsAdaptiveGroups") {
-              name
-              fields { name description type { name kind ofType { name kind } } }
+          print('=== 2. Try the beacon token directly as siteTag, last 30 days ===')
+          import datetime
+          now = datetime.datetime.now(datetime.timezone.utc)
+          start = (now - datetime.timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ')
+          end = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+          rum_query = '''
+          query($accountTag: string, $siteTag: string, $start: Time, $end: Time) {
+            viewer {
+              accounts(filter: { accountTag: $accountTag }) {
+                rumPageloadEventsAdaptiveGroups(
+                  filter: { siteTag: $siteTag, datetime_geq: $start, datetime_leq: $end }
+                  limit: 1
+                ) {
+                  count
+                }
+              }
             }
           }
           '''
-          status, schema_result = call(
+          status, rum_result = call(
               'POST',
               'https://api.cloudflare.com/client/v4/graphql',
-              {'query': introspection_query},
+              {
+                  'query': rum_query,
+                  'variables': {
+                      'accountTag': ACCOUNT_ID,
+                      'siteTag': KNOWN_BEACON_TOKEN,
+                      'start': start,
+                      'end': end,
+                  },
+              },
           )
           print(f'HTTP {status}')
-          print(json.dumps(schema_result, indent=2))
+          print(json.dumps(rum_result, indent=2))
           PY
