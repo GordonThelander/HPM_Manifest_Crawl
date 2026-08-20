@@ -1,0 +1,88 @@
+name: Cloudflare Analytics Discovery
+
+# One-off, manually-triggered reconnaissance for wiring up Web Analytics
+# stats fetching. Prints results to the job log only - never commits or
+# publishes anything. Delete this workflow once the real fetch step in
+# hpm-crawl.yml is working.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  discover:
+    name: Discover account, site and schema
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query Cloudflare
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          TOKEN = os.environ['TOKEN']
+          KNOWN_BEACON_TOKEN = '4f12063038634bc29a4820bbe7523693'
+
+          def call(method, url, body=None):
+              data = json.dumps(body).encode('utf-8') if body is not None else None
+              request = urllib.request.Request(
+                  url,
+                  data=data,
+                  headers={
+                      'Authorization': f'Bearer {TOKEN}',
+                      'Content-Type': 'application/json',
+                  },
+                  method=method,
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      return response.status, json.loads(response.read().decode('utf-8'))
+              except urllib.error.HTTPError as error:
+                  return error.code, json.loads(error.read().decode('utf-8'))
+
+          print('=== 1. List accounts this token can see ===')
+          status, accounts_result = call('GET', 'https://api.cloudflare.com/client/v4/accounts')
+          print(f'HTTP {status}')
+          print(json.dumps(accounts_result, indent=2))
+
+          account_ids = []
+          if accounts_result.get('success'):
+              account_ids = [a['id'] for a in accounts_result.get('result') or []]
+
+          print()
+          print('=== 2. List RUM (Web Analytics) sites per account, looking for beacon token', KNOWN_BEACON_TOKEN, '===')
+          matched_site_tag = None
+          for account_id in account_ids:
+              status, sites_result = call(
+                  'GET',
+                  f'https://api.cloudflare.com/client/v4/accounts/{account_id}/rum/site_info/list',
+              )
+              print(f'account {account_id}: HTTP {status}')
+              print(json.dumps(sites_result, indent=2))
+              if sites_result.get('success'):
+                  for site in sites_result.get('result') or []:
+                      if str(site.get('site_token')) == KNOWN_BEACON_TOKEN or str(site.get('ruleset', {}).get('id')) == KNOWN_BEACON_TOKEN:
+                          matched_site_tag = site
+                          print('*** MATCH on this account:', json.dumps(site, indent=2))
+
+          print()
+          print('=== 3. Introspect the RUM analytics GraphQL type ===')
+          introspection_query = '''
+          {
+            __type(name: "AccountRumPageloadEventsAdaptiveGroups") {
+              name
+              fields { name description type { name kind ofType { name kind } } }
+            }
+          }
+          '''
+          status, schema_result = call(
+              'POST',
+              'https://api.cloudflare.com/client/v4/graphql',
+              {'query': introspection_query},
+          )
+          print(f'HTTP {status}')
+          print(json.dumps(schema_result, indent=2))
+          PY
