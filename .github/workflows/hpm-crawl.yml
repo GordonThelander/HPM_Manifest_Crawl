@@ -193,6 +193,7 @@ jobs:
       # Nothing is written to disk or committed, so it can never affect what
       # gets published or trigger an unrelated redeploy.
       - name: Report Cloudflare Web Analytics traffic
+        id: traffic
         continue-on-error: true
         env:
           TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
@@ -248,6 +249,10 @@ jobs:
           groups = result['data']['viewer']['accounts'][0]['rumPageloadEventsAdaptiveGroups']
           count = groups[0]['count'] if groups else 0
           print(f"Page views, last {WINDOW_DAYS} days (Cloudflare Web Analytics): {count}")
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as handle:
+              handle.write(f"count={count}\n")
+              handle.write(f"window_days={WINDOW_DAYS}\n")
           PY
 
       - name: Build browser identity resolver index
@@ -440,6 +445,8 @@ jobs:
           GATEWAY_URL: ${{ secrets.NOTIFY_GATEWAY_URL }}
           GATEWAY_TOKEN: ${{ secrets.NOTIFY_GATEWAY_TOKEN }}
           SUMMARY: ${{ steps.summary.outputs.text }}
+          TRAFFIC_COUNT: ${{ steps.traffic.outputs.count }}
+          TRAFFIC_WINDOW_DAYS: ${{ steps.traffic.outputs.window_days }}
         run: |
           python - <<'PY'
           import json
@@ -485,8 +492,14 @@ jobs:
 
 
           summary = os.environ.get('SUMMARY') or 'The scheduled crawl found real upstream changes.'
+          traffic_count = os.environ.get('TRAFFIC_COUNT')
+          traffic_line = (
+              f"Page views, last {os.environ.get('TRAFFIC_WINDOW_DAYS')} days: {traffic_count}\n\n"
+              if traffic_count else ''
+          )
           body = (
               f"{summary}\n\n"
+              f"{traffic_line}"
               "Package Feed: https://gordonthelander.github.io/HPM_Manifest_Crawl/package-feed/\n"
               f"This run: {os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"
               f"/actions/runs/{os.environ['GITHUB_RUN_ID']}"
