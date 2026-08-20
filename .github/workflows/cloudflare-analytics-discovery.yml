@@ -44,29 +44,38 @@ jobs:
               except urllib.error.HTTPError as error:
                   return error.code, json.loads(error.read().decode('utf-8'))
 
-          print('=== 1. List RUM (Web Analytics) sites on this account ===')
-          status, sites_result = call(
-              'GET',
-              f'https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/rum/site_info/list',
-          )
-          print(f'HTTP {status}')
-          print(json.dumps(sites_result, indent=2))
-
-          print()
-          print('=== 2. Try the beacon token directly as siteTag, last 30 days ===')
           import datetime
           now = datetime.datetime.now(datetime.timezone.utc)
           start = (now - datetime.timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ')
           end = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+          print('=== 1. Introspect the Dimensions type for a siteTag-like field ===')
+          dims_query = '''
+          {
+            __type(name: "AccountRumPageloadEventsAdaptiveGroupsDimensions") {
+              fields { name description type { name kind } }
+            }
+          }
+          '''
+          status, dims_result = call(
+              'POST', 'https://api.cloudflare.com/client/v4/graphql', {'query': dims_query},
+          )
+          print(f'HTTP {status}')
+          print(json.dumps(dims_result, indent=2))
+
+          print()
+          print('=== 2. No siteTag filter - group by whatever site dimension exists, last 30 days ===')
           rum_query = '''
-          query($accountTag: string, $siteTag: string, $start: Time, $end: Time) {
+          query($accountTag: string, $start: Time, $end: Time) {
             viewer {
               accounts(filter: { accountTag: $accountTag }) {
                 rumPageloadEventsAdaptiveGroups(
-                  filter: { siteTag: $siteTag, datetime_geq: $start, datetime_leq: $end }
-                  limit: 1
+                  filter: { datetime_geq: $start, datetime_leq: $end }
+                  limit: 10
+                  orderBy: [count_DESC]
                 ) {
                   count
+                  dimensions { siteTag requestHost }
                 }
               }
             }
@@ -77,12 +86,7 @@ jobs:
               'https://api.cloudflare.com/client/v4/graphql',
               {
                   'query': rum_query,
-                  'variables': {
-                      'accountTag': ACCOUNT_ID,
-                      'siteTag': KNOWN_BEACON_TOKEN,
-                      'start': start,
-                      'end': end,
-                  },
+                  'variables': {'accountTag': ACCOUNT_ID, 'start': start, 'end': end},
               },
           )
           print(f'HTTP {status}')
