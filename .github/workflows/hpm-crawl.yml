@@ -362,27 +362,86 @@ jobs:
           print(f"text={total} package change(s): {added} added, {updated} updated, {availability} availability")
           PY
 
+      # Routed through the same Gmail Notification Gateway Apps Script the
+      # Hubitat driver posts to (github.com/GordonThelander/hubitat-gmail-
+      # notification-gateway), rather than SMTP directly. The script sends
+      # under Gordon's own Google account authorization, so it isn't subject
+      # to Gmail's anti-abuse blocking of SMTP sign-ins from shared runner
+      # IPs the way a raw SMTP AUTH from this job would be.
+      #
       # Only the "did anything happen" ping needs to be reliable; a flaky
-      # SMTP send should not turn an otherwise-successful crawl run red.
+      # gateway call should not turn an otherwise-successful crawl run red.
       - name: Email update notification
         if: steps.commit.outputs.pushed == 'true'
         continue-on-error: true
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
-          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
-          from: HPM Manifest Crawl <${{ secrets.NOTIFY_SMTP_USERNAME }}>
-          to: ${{ secrets.NOTIFY_EMAIL }}
-          subject: Hubitat Community Utilities updated
-          body: |
-            The scheduled crawl found real upstream changes and refreshed the site.
+        env:
+          GATEWAY_URL: ${{ secrets.NOTIFY_GATEWAY_URL }}
+          GATEWAY_TOKEN: ${{ secrets.NOTIFY_GATEWAY_TOKEN }}
+          SUMMARY: ${{ steps.summary.outputs.text }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
 
-            ${{ steps.summary.outputs.text }}
 
-            Package Feed: https://gordonthelander.github.io/HPM_Manifest_Crawl/package-feed/
-            This run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          # Apps Script Web Apps run doPost() against the original request
+          # immediately, then 302-redirect to a one-time
+          # script.googleusercontent.com URL that just echoes back the
+          # already-computed result. Default redirect handling (curl,
+          # browsers and Python's urllib alike) re-sends the request body to
+          # that URL, which doesn't accept POST at all (405) - so naive
+          # "follow redirects" either loses the response or fails outright.
+          # The real result only needs a plain GET of the Location header.
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+
+
+          opener = urllib.request.build_opener(NoRedirect)
+
+
+          def post_json(url, payload):
+              request = urllib.request.Request(
+                  url,
+                  data=json.dumps(payload).encode('utf-8'),
+                  headers={'Content-Type': 'application/json', 'Accept': 'application/json'},
+                  method='POST',
+              )
+              try:
+                  with opener.open(request, timeout=30) as response:
+                      return json.loads(response.read().decode('utf-8'))
+              except urllib.error.HTTPError as error:
+                  if error.code in (301, 302, 303, 307, 308):
+                      location = error.headers.get('Location')
+                      if not location:
+                          raise
+                      with urllib.request.urlopen(location, timeout=30) as response:
+                          return json.loads(response.read().decode('utf-8'))
+                  raise
+
+
+          summary = os.environ.get('SUMMARY') or 'The scheduled crawl found real upstream changes.'
+          body = (
+              f"{summary}\n\n"
+              "Package Feed: https://gordonthelander.github.io/HPM_Manifest_Crawl/package-feed/\n"
+              f"This run: {os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"
+              f"/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+          )
+          payload = {
+              'token': os.environ['GATEWAY_TOKEN'],
+              'group': 'user',
+              'subject': 'Hubitat Community Utilities updated',
+              'text': body,
+              'source': 'HPM Manifest Crawl',
+              'fromName': 'HPM Manifest Crawl',
+          }
+          result = post_json(os.environ['GATEWAY_URL'], payload)
+          if not result.get('ok'):
+              raise RuntimeError(f"Gateway reported failure: {result.get('error')}")
+          print(f"Gateway accepted: group={result.get('group')}, recipients={result.get('recipientCount')}")
+          PY
 
   deploy-pages:
     # A push made with the default GITHUB_TOKEN does not trigger other
