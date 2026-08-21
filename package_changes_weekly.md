@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-21T00:41:25Z`.
+Latest observation: `2026-08-21T10:47:17Z`.
 
-**48 package change(s):** added 9, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 36
+**44 package change(s):** added 6, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 35
 
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
@@ -46,11 +47,6 @@ Latest observation: `2026-08-21T00:41:25Z`.
 - [Reolink Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Mitsubishi Comfort Cloud: updated.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
-- [Presence Manager: added.](https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json)
-- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
-- [Mitsubishi Comfort Cloud: added.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
-- [Commercial Lock: added.](https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/packageManifest.json)
 - [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

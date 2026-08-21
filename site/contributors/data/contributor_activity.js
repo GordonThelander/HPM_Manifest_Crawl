@@ -9546,6 +9546,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67fadbffdb38fc18ac8b498f",
+          "observedAt": "2026-08-21T10:47:17Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -9572,7 +9586,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -9585,7 +9599,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Automation Map",
           "publisherDate": "2026-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.0.2"
+          "version": "2.0.4"
         },
         {
           "appCount": 0,
@@ -17586,10 +17600,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 50,
-    "eventCount": 49,
+    "attributedEventCount": 51,
+    "eventCount": 50,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-21T00:41:25Z"
+    "lastObservedAt": "2026-08-21T10:47:17Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17603,7 +17617,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-21T00:41:25Z",
+  "snapshotGenerated": "2026-08-21T10:47:17Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
