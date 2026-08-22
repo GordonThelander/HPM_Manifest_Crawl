@@ -1601,7 +1601,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2261,
+  "definitionCount": 2260,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -42604,26 +42604,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/PrayerfulDrop/Hubitat/master/drivers/Salt%20Tank.groovy"
     },
     {
-      "id": "definition:d4c9b29897b9ef37b528",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Hubitat Ping",
-          "namespace": "thebearmay"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jean P. May, Jr.",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
-        "manifestUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json",
-        "name": "Hubitat Ping Device"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubPing.groovy"
-    },
-    {
       "id": "definition:d53b20a80f788b1437c5",
       "identities": [
         {
@@ -48427,5 +48407,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-21T10:47:17Z"
+  "snapshotGenerated": "2026-08-22T00:38:57Z"
 };

@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-21T10:47:17Z`.
+Latest observation: `2026-08-22T00:38:57Z`.
 
-**44 package change(s):** added 6, broken 1, declared definitions changed 6, restored 1, source location changed 3, updated 35
+**52 package change(s):** added 6, broken 2, declared definitions changed 7, restored 1, source location changed 4, updated 43
 
+- [go2rtc: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/packageManifest.json)
+- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hubitat Ping Device: updated, changed source location, changed declared definitions, became unavailable.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
+- [Govee Pool Thermostat: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
+- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
+- [ESP32 Wall Keypad: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
+- [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)

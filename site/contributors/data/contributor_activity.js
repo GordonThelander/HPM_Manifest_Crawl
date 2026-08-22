@@ -30,7 +30,25 @@ window.CONTRIBUTOR_ACTIVITY = {
   ],
   "contributors": [
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7b934278d36a1e948e8f08af",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+          "packageName": "Hubitat Ping Device",
+          "summary": "Hubitat Ping Device: updated, changed source location, changed declared definitions, became unavailable."
+        }
+      ],
       "appCount": 28,
       "categories": [
         {
@@ -43,7 +61,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         },
         {
           "name": "Integrations",
-          "packageCount": 3
+          "packageCount": 2
         },
         {
           "name": "Notifications",
@@ -54,12 +72,12 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageCount": 30
         }
       ],
-      "currentPackageCount": 45,
+      "currentPackageCount": 44,
       "currentRank": 1,
-      "driverCount": 24,
+      "driverCount": 23,
       "id": "contributor:2cd278c7b7a0a21a741c",
       "name": "Jean P. May, Jr.",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -437,19 +455,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2024-06-11",
           "repositoryUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json",
           "version": "1.0.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
-          "manifestUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json",
-          "name": "Hubitat Ping Device",
-          "publisherDate": "2022-06-07",
-          "repositoryUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json",
-          "version": "2.1.11"
         },
         {
           "appCount": 1,
@@ -4139,6 +4144,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:a5ba9b852d2823b7d55e",
           "packageName": "Air Quality Window Alerts",
           "summary": "Air Quality Window Alerts: updated."
+        },
+        {
+          "category": "Irrigation",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:eae564946264e50872b076ea",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:398726763b5d3bce0985",
+          "packageName": "Zooz Sprinkler Scheduler",
+          "summary": "Zooz Sprinkler Scheduler: updated."
         }
       ],
       "appCount": 13,
@@ -4185,7 +4204,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -4365,9 +4384,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:398726763b5d3bce0985",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json",
           "name": "Zooz Sprinkler Scheduler",
-          "publisherDate": "2026-08-17",
+          "publisherDate": "2026-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.16.0"
+          "version": "0.16.1"
         }
       ]
     },
@@ -5697,7 +5716,50 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0e701e77b4d5f580b7fa664f",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:b1d8f3a2-7c4e-4a9b-8e21-3f6c5d0a9e47",
+          "packageName": "go2rtc",
+          "summary": "go2rtc: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2138dc38063308abaefe3d11",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e",
+          "packageName": "Govee Pool Thermostat",
+          "summary": "Govee Pool Thermostat: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4eeceff83889f9f3ad732a0a",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:4a095de5-dab8-4462-9c15-0910b0a2dd3c",
+          "packageName": "Google Chromecast+",
+          "summary": "Google Chromecast+: updated."
+        }
+      ],
       "appCount": 7,
       "categories": [
         {
@@ -5714,7 +5776,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 12,
       "id": "contributor:c440e7a82b5d4f2be238",
       "name": "Joe Page",
-      "observedActivityCount": 0,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -5740,7 +5802,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "go2rtc",
           "publisherDate": "2026-07-15",
           "repositoryUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/repository.json",
-          "version": "1.1.3"
+          "version": "1.1.4"
         },
         {
           "appCount": 1,
@@ -5753,7 +5815,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Google Chromecast+",
           "publisherDate": "2026-07-05",
           "repositoryUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/repository.json",
-          "version": "1.0.9"
+          "version": "1.0.12"
         },
         {
           "appCount": 1,
@@ -5779,7 +5841,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Govee Pool Thermostat",
           "publisherDate": "2026-08-03",
           "repositoryUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/repository.json",
-          "version": "1.0.0"
+          "version": "1.0.1"
         },
         {
           "appCount": 1,
@@ -10281,6 +10343,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:0aab44543b1218f89d7f",
           "packageName": "ESP32 Wall Keypad",
           "summary": "ESP32 Wall Keypad: changed declared definitions."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2e27ff330aaac8b5a01f754d",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:0aab44543b1218f89d7f",
+          "packageName": "ESP32 Wall Keypad",
+          "summary": "ESP32 Wall Keypad: updated."
         }
       ],
       "appCount": 1,
@@ -10299,7 +10375,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:3172af7815418f7a47a9",
       "name": "CSteele",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 0,
@@ -10323,9 +10399,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:0aab44543b1218f89d7f",
           "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
           "name": "ESP32 Wall Keypad",
-          "publisherDate": "2026-08-18",
+          "publisherDate": "2026-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/repo.json",
-          "version": "0.1.0"
+          "version": "0.2.5"
         },
         {
           "appCount": 0,
@@ -12131,7 +12207,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4f0680dd4399372275faf5cd",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:667d0b76-5e14-4d0b-903c-0c34f2c9389c",
+          "packageName": "Abode Alarm 2024",
+          "summary": "Abode Alarm 2024: updated."
+        }
+      ],
       "appCount": 1,
       "categories": [
         {
@@ -12144,7 +12235,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -12157,7 +12248,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Abode Alarm 2024",
           "publisherDate": "2024-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/x86cpu/hubitat/main/repository.json",
-          "version": "2.0.11"
+          "version": "2.0.12"
         },
         {
           "appCount": 1,
@@ -15582,6 +15673,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7ad0889139d94d7d041b0a8c",
+          "observedAt": "2026-08-22T00:38:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -15596,7 +15701,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 2,
@@ -15607,9 +15712,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-08-17",
+          "publisherDate": "2026-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.0.1"
+          "version": "4.0.2"
         }
       ]
     },
@@ -17600,10 +17705,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 51,
-    "eventCount": 50,
+    "attributedEventCount": 59,
+    "eventCount": 58,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-21T10:47:17Z"
+    "lastObservedAt": "2026-08-22T00:38:57Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17615,14 +17720,14 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 254,
-  "rankedPackageCount": 907,
+  "rankedPackageCount": 906,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-21T10:47:17Z",
+  "snapshotGenerated": "2026-08-22T00:38:57Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
     "packages": "community_packages.json"
   },
-  "undeclaredAuthorPackageCount": 2
+  "undeclaredAuthorPackageCount": 3
 }
 ;
