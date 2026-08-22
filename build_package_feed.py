@@ -475,14 +475,14 @@ def render_site(history):
     if cards:
         content = '\n'.join(cards)
     else:
-        content = '''<section class="empty"><h3>No evidenced changes yet</h3><p>The next successful crawl will be compared with the retained baseline.</p></section>'''
+        content = '''<section class="empty"><h3>No package changes yet</h3><p>The next successful crawl will be compared with the current catalogue.</p></section>'''
 
     recent = recent_events(history)
     digest_items = ''.join(
         f'<li><strong>{html.escape(event["packageName"])}</strong> - '
         f'{html.escape(event.get("detail") or ", ".join(value.replace("_", " ").lower() for value in event["changeTypes"]))}</li>'
         for event in recent[:20]
-    ) or '<li>No evidenced changes in this seven-day window.</li>'
+    ) or '<li>No package changes in this seven-day window.</li>'
     type_options = [
         ('ALL', 'All changes'), ('ADDED', 'Added'), ('UPDATED', 'Updated'),
         ('BROKEN', 'Broken'), ('RESTORED', 'Restored'), ('REMOVED', 'Removed'),
@@ -496,7 +496,7 @@ def render_site(history):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Evidence-backed changes observed across the Hubitat Package Manager catalogue.">
+  <meta name="description" content="Package additions, updates and availability changes across the Hubitat Package Manager catalogue.">
   <title>HPM package changes</title>
   <link rel="alternate" type="application/atom+xml" title="HPM package changes" href="data/package_changes.atom">
   <style>
@@ -527,18 +527,17 @@ def render_site(history):
   <div class="utility-links"><a href="../start-here/">Start Here</a><a href="../package-explorer/">Package Explorer</a><a href="../identity-resolver/">General Search</a><a href="../taxonomy/">Taxonomy</a><a href="../feature-tracker/">Update Tracker</a><a href="../manifest-validator/">Manifest Builder</a><a href="../network-guide/">Network Guide</a><a href="../package-feed/" aria-current="page">Package Feed</a><a href="../recovery-inventory/">Recovery Inventory</a><a href="../contributors/">Contributors</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></div>
 </nav>
 <main>
-  <header class="hero"><div><p class="eyebrow">HPM Manifest Crawl</p><h1>Package changes worth knowing about.</h1><p class="lede">New releases, catalogue additions, removals and availability changes - each tied back to the snapshot and upstream evidence that supports it.</p></div>
+  <header class="hero"><div><p class="eyebrow">HPM Manifest Crawl</p><h1>Package changes worth knowing about.</h1><p class="lede">Follow new releases, catalogue additions, removals and availability changes across HPM.</p></div>
   <div><p class="updated">Latest observation<br><strong>{human_time(history['updatedAt'])}</strong></p><div class="hero-stats"><div class="stat"><strong>{len(events)}</strong><span>package changes</span></div><div class="stat"><strong>{counts['ADDED']}</strong><span>added</span></div><div class="stat"><strong>{counts['UPDATED']}</strong><span>updated</span></div><div class="stat"><strong>{counts['BROKEN'] + counts['RESTORED']}</strong><span>availability</span></div></div></div></header>
-  <section aria-labelledby="changes-title"><div class="section-head"><div><h2 id="changes-title">Observed changes</h2><p id="result-count">Showing {len(events)} evidence-backed change(s).</p></div><p>Oldest retained baseline: {human_time(history['snapshotGenerated'])}</p></div>
+  <section aria-labelledby="changes-title"><div class="section-head"><div><h2 id="changes-title">Package changes</h2><p id="result-count">Showing {len(events)} change(s).</p></div><p>History starts: {human_time(history['snapshotGenerated'])}</p></div>
   <div class="tools"><label class="search"><span hidden>Search packages or authors</span><input id="search" aria-label="Search packages or authors" placeholder="Search package, author or category" style="all:unset;width:100%"></label><div class="filters" aria-label="Filter changes">{filters}</div></div>
   <div class="grid" id="events">{content}</div></section>
   <section class="lower"><div class="panel"><h2>This week's digest</h2><p>A readable summary of the latest seven-day window.</p><ul>{digest_items}</ul></div>
-  <div class="panel"><h2>Follow the data</h2><p>The changelog is built only from successful snapshots. Failed crawls cannot replace the baseline.</p><details><summary>Downloads and subscriptions</summary><div class="data-links"><a href="data/package_changes.atom">Atom feed</a><a href="data/package_changes_weekly.md" download>Markdown digest</a><a href="data/package_changes.json">JSON data</a></div></details></div></section>
-  <footer>Change labels describe observed catalogue evidence, not code quality, popularity or endorsement.</footer>
+  <div class="panel"><h2>Follow the updates</h2><p>The changelog updates after each successful crawl and is also available as Atom, Markdown and JSON.</p><details><summary>Downloads and subscriptions</summary><div class="data-links"><a href="data/package_changes.atom">Atom feed</a><a href="data/package_changes_weekly.md" download>Markdown digest</a><a href="data/package_changes.json">JSON data</a></div></details></div></section>
 </main>
 <script>
   const cards=[...document.querySelectorAll('.event')], buttons=[...document.querySelectorAll('[data-filter]')], search=document.querySelector('#search'), count=document.querySelector('#result-count'); let active='ALL';
-  function apply(){{const query=search.value.trim().toLowerCase();let shown=0;cards.forEach(card=>{{const type=active==='ALL'||card.dataset.types.split(' ').includes(active);const text=!query||card.dataset.search.includes(query);card.hidden=!(type&&text);if(!card.hidden)shown++;}});count.textContent=`Showing ${{shown}} evidence-backed change(s).`;}}
+  function apply(){{const query=search.value.trim().toLowerCase();let shown=0;cards.forEach(card=>{{const type=active==='ALL'||card.dataset.types.split(' ').includes(active);const text=!query||card.dataset.search.includes(query);card.hidden=!(type&&text);if(!card.hidden)shown++;}});count.textContent=`Showing ${{shown}} change(s).`;}}
   buttons.forEach(button=>button.addEventListener('click',()=>{{active=button.dataset.filter;buttons.forEach(item=>item.classList.toggle('active',item===button));apply();}})); search.addEventListener('input',apply);
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "4f12063038634bc29a4820bbe7523693"}}'></script><!-- End Cloudflare Web Analytics -->

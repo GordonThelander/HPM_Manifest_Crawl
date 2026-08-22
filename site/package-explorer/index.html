@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Search HPM packages, Hubitat compatible devices, community drivers and community apps in one evidence-labelled explorer.">
+  <meta name="description" content="Search HPM packages, Hubitat compatible devices, community drivers and community apps in one place.">
   <title>Hubitat Package Explorer</title>
   <link rel="stylesheet" href="../shared/hubitat.css">
   <link rel="stylesheet" href="styles.css">
@@ -28,14 +28,14 @@
       </div>
     </header>
     <section class="search-panel" aria-labelledby="search-title">
-      <div class="search-intro"><div><p class="step">Search the evidence</p><h2 id="search-title">One query across four catalogues</h2></div><button id="clear" type="button">Clear filters</button></div>
+      <div class="search-intro"><div><p class="step">Search the catalogues</p><h2 id="search-title">One query across four catalogues</h2></div><button id="clear" type="button">Clear filters</button></div>
       <label class="query-label" for="query">Search package, app, driver, device, author, namespace, category or tag</label>
       <div class="query-row"><input id="query" type="search" autocomplete="off" placeholder="Try Kasa, Bear, Zigbee, thermostat or Gordon"><button id="search-button" type="button">Search</button></div>
       <div class="filters">
         <label>Catalogue<select id="catalogue"><option value="">All catalogues</option><option value="HPM_PACKAGE">HPM packages</option><option value="OFFICIAL_DEVICE">Official devices</option><option value="COMMUNITY_DRIVER">Community drivers</option><option value="COMMUNITY_APP">Community apps</option></select></label>
         <label>Kind<select id="kind"><option value="">Apps, drivers and devices</option><option value="APP">Apps</option><option value="DRIVER">Drivers</option><option value="DEVICE">Devices</option></select></label>
-        <label>Package health<select id="health"><option value="">Any health evidence</option><option value="PASS">Checks pass</option><option value="ATTENTION">Needs attention</option><option value="UNKNOWN">Not assessed</option></select></label>
-        <label>Network evidence<select id="network"><option value="">Any network evidence</option><option value="LAN">LAN</option><option value="CLOUD">Cloud</option><option value="BOTH">LAN and cloud</option><option value="INSUFFICIENT">Insufficient evidence</option></select></label>
+        <label>Package health<select id="health"><option value="">Any health status</option><option value="PASS">Checks pass</option><option value="ATTENTION">Needs attention</option><option value="UNKNOWN">Not assessed</option></select></label>
+        <label>Network type<select id="network"><option value="">Any network type</option><option value="LAN">LAN</option><option value="CLOUD">Cloud</option><option value="BOTH">LAN and cloud</option><option value="INSUFFICIENT">No clear signal</option></select></label>
         <label>Released<select id="released"><option value="">Any release date</option><option value="recent">Last 12 months</option><option value="older">Older</option><option value="undated">No declared date</option></select></label>
         <label>Documentation<select id="documentation"><option value="">Any documentation status</option><option value="yes">Documentation declared</option><option value="no">No documentation declared</option></select></label>
         <label>Sort<select id="sort"><option value="relevance">Relevance</option><option value="name">Name</option><option value="recent">Newest release</option></select></label>
@@ -47,8 +47,7 @@
       <div id="results" class="results"></div>
       <button id="more" class="more" type="button" hidden>Show more results</button>
     </section>
-    <aside class="evidence-note"><strong>Evidence labels matter.</strong> Official listing means Hubitat includes a device in its catalogue. Community listing means a project appears in a community-maintained wiki. HPM availability means the crawler found a package manifest. None of these labels certifies security, maintenance or suitability for your installation.</aside>
-    <footer>Community-developed and experimental. Remote catalogue text is displayed as text and is never executed.</footer>
+    <aside class="evidence-note"><strong>Where results come from.</strong> Official devices come from Hubitat, community listings come from the community wikis, and HPM packages come from published package manifests.</aside>
   </main>
   <script src="data/explorer_index.js" defer></script>
   <script src="app.js" defer></script>

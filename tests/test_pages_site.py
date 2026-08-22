@@ -28,7 +28,7 @@ class PagesSiteTests(unittest.TestCase):
                 'package-feed', 'recovery-inventory', 'contributors', 'about'):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)
-        self.assertIn('not official Hubitat software', page)
+        self.assertIn('Built for the Hubitat community', page)
 
     def test_every_page_has_portable_shared_navigation(self):
         for relative in pages.UTILITY_PAGES:

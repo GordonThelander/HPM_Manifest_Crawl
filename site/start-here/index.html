@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A beginner-friendly introduction to Hubitat community apps, drivers, HPM packages and the Community Utilities evidence.">
+  <meta name="description" content="A beginner-friendly introduction to Hubitat apps, drivers, packages and Community Utilities.">
   <title>Start Here - Hubitat Community Utilities</title>
   <link rel="stylesheet" href="../shared/hubitat.css">
   <link rel="stylesheet" href="styles.css">
@@ -25,20 +25,20 @@
         </div>
       </div>
       <aside aria-label="Important beginner guidance">
-        <strong>You do not need to understand the crawler.</strong>
-        <p>Think of this site as a searchable library catalogue. It records public evidence and tells you where each fact came from.</p>
+        <strong>Use this site like a searchable library.</strong>
+        <p>Search by package, device, author or code name, then open the original links when you want more detail.</p>
       </aside>
     </header>
 
     <section class="orientation" aria-labelledby="ecosystem-title">
       <div class="section-head">
         <div><p class="step">The basic picture</p><h2 id="ecosystem-title">Three parts of the ecosystem</h2></div>
-        <p>Knowing who provides the software helps you interpret what the site can confirm.</p>
+        <p>Knowing who provides the software helps you choose the right tool and source.</p>
       </div>
       <ol class="ecosystem-grid">
-        <li><span class="number">1</span><div><h3>Hubitat platform and built-ins</h3><p>Hubitat supplies the hub platform plus built-in apps and drivers. Official device listings and release notes are evidence published by Hubitat.</p></div></li>
+        <li><span class="number">1</span><div><h3>Hubitat platform and built-ins</h3><p>Hubitat supplies the hub platform plus built-in apps and drivers. Official device listings and release notes come from Hubitat.</p></div></li>
         <li><span class="number">2</span><div><h3>Community apps and drivers</h3><p>Community developers publish optional code. An app adds automation behaviour. A driver lets the hub communicate with a device or service.</p></div></li>
-        <li><span class="number">3</span><div><h3>Hubitat Package Manager</h3><p>HPM helps install and update participating community projects. Being listed in HPM describes distribution, not Hubitat approval or a safety guarantee.</p></div></li>
+        <li><span class="number">3</span><div><h3>Hubitat Package Manager</h3><p>HPM installs and updates participating community projects.</p></div></li>
       </ol>
     </section>
 
@@ -49,10 +49,10 @@
       </div>
       <div class="path-grid">
         <a href="../package-explorer/"><span>Find</span><h3>I want an app, driver or package</h3><p>Search names, authors, namespaces, categories and tags across HPM and community catalogues.</p><strong>Open Package Explorer</strong></a>
-        <a href="../package-explorer/?catalogue=OFFICIAL_DEVICE#results-title"><span>Check</span><h3>I want to research device support</h3><p>Start with Hubitat's official device catalogue, then compare separately labelled community-driver evidence.</p><strong>Browse official devices</strong></a>
+        <a href="../package-explorer/?catalogue=OFFICIAL_DEVICE#results-title"><span>Check</span><h3>I want to research device support</h3><p>Start with Hubitat's official device catalogue, then browse community driver listings.</p><strong>Browse official devices</strong></a>
         <a href="../identity-resolver/"><span>Identify</span><h3>I found code on my hub</h3><p>Use its definition name, namespace or author to find the package that contains it.</p><strong>Open General Search</strong></a>
-        <a href="../feature-tracker/"><span>Discover</span><h3>I want to know what Hubitat added</h3><p>Search release-note evidence for new platform, app, driver, protocol and device features.</p><strong>Open Update Tracker</strong></a>
-        <a href="../recovery-inventory/"><span>Recover</span><h3>I am rebuilding a hub</h3><p>Match a minimal list of app and driver identities to installation evidence without uploading hub data.</p><strong>Open Recovery Inventory</strong></a>
+        <a href="../feature-tracker/"><span>Discover</span><h3>I want to know what Hubitat added</h3><p>Search Hubitat release notes for new platform, app, driver, protocol and device features.</p><strong>Open Update Tracker</strong></a>
+        <a href="../recovery-inventory/"><span>Recover</span><h3>I am rebuilding a hub</h3><p>Match app and driver identities to likely installation sources. Searches stay in your browser.</p><strong>Open Recovery Inventory</strong></a>
         <a href="../manifest-validator/"><span>Publish</span><h3>I develop community software</h3><p>Check an HPM manifest, preview its catalogue record and prepare a public HPM submission.</p><strong>Open Manifest Builder</strong></a>
       </div>
     </section>
@@ -60,15 +60,15 @@
     <section id="read-results" class="results-guide" aria-labelledby="results-guide-title">
       <div class="section-head">
         <div><p class="step">Read with confidence</p><h2 id="results-guide-title">How to read the results</h2></div>
-        <p>The labels describe the strength and source of the evidence. They are more important than colour.</p>
+        <p>Labels show where each result came from and how closely it matches.</p>
       </div>
       <div class="evidence-grid">
         <article><span class="label exact">Exact</span><h3>Identity confirmed</h3><p>The identifying fields agree. When a result is only similar, it is labelled as a suggestion instead.</p></article>
-        <article><span class="label source">Source</span><h3>Origin stays visible</h3><p>Official, HPM, community wiki, source-code and reviewed evidence are kept separate because they answer different questions.</p></article>
-        <article><span class="label snapshot">Snapshot</span><h3>Observed at a point in time</h3><p>A crawl snapshot is a dated library inventory. New successful snapshots let the site show changes without losing the previous good record.</p></article>
-        <article><span class="label health">Health</span><h3>Operational evidence only</h3><p>A failed link or degraded source records what a check observed. It does not prove code is unsafe, abandoned or unsuitable.</p></article>
-        <article><span class="label missing">No match</span><h3>Absence is not proof</h3><p>Not finding a package can mean it is manual-install only, renamed, missing from a catalogue or identified differently.</p></article>
-        <article><span class="label safe">Privacy</span><h3>Public data, local searches</h3><p>The browser tools do not need device names, rooms, rules, tokens, app settings or other household configuration.</p></article>
+        <article><span class="label source">Source</span><h3>Origin stays visible</h3><p>Each result identifies whether it came from Hubitat, HPM, a community wiki or source code.</p></article>
+        <article><span class="label snapshot">Snapshot</span><h3>Dated catalogue update</h3><p>Successful daily updates let the site show what changed over time.</p></article>
+        <article><span class="label health">Health</span><h3>Latest source check</h3><p>The date and result of the most recent source check.</p></article>
+        <article><span class="label missing">No match</span><h3>Try another identifier</h3><p>Check the spelling or search by package, author, namespace or code name.</p></article>
+        <article><span class="label safe">Privacy</span><h3>Public data, local searches</h3><p>Searches run in your browser and require no hub configuration.</p></article>
       </div>
     </section>
 
@@ -76,7 +76,7 @@
       <div><p class="step">A useful first visit</p><h2 id="first-visit-title">Try the ecosystem in five minutes</h2></div>
       <ol>
         <li><span>1</span><p>Search for a product, protocol or author in <a href="../package-explorer/">Package Explorer</a>.</p></li>
-        <li><span>2</span><p>Open one result and compare the package, <a href="../identity-resolver/">definition</a> and evidence links.</p></li>
+        <li><span>2</span><p>Open one result and compare the package, <a href="../identity-resolver/">definition</a> and source links.</p></li>
         <li><span>3</span><p>Check <a href="../package-feed/">Package Feed</a> or <a href="../feature-tracker/">Update Tracker</a> to see what has changed.</p></li>
       </ol>
     </section>
@@ -90,15 +90,15 @@
         <div><dt>Manifest</dt><dd>A JSON file telling HPM what one package contains and where its files are located.</dd></div>
         <div><dt>Repository</dt><dd>A separate JSON file an author hosts listing every package they publish. HPM reads it when you add a custom repository, and its public location is what gets listed in HPM's own catalogue.</dd></div>
         <div><dt>Namespace</dt><dd>A developer-chosen identity used with a definition name to distinguish Hubitat code.</dd></div>
-        <div><dt>Snapshot</dt><dd>A validated record of public catalogue evidence observed at a specific time.</dd></div>
+        <div><dt>Snapshot</dt><dd>A dated copy of the public catalogue used to show changes over time.</dd></div>
       </dl>
     </section>
 
     <aside class="next-step">
-      <div><p class="step">Ready?</p><h2>Explore without losing the context.</h2><p>Every utility keeps its source and evidence labels visible. Return here whenever a term or result is unclear.</p></div>
+      <div><p class="step">Ready?</p><h2>Choose a question and start exploring.</h2><p>Every result keeps its original source links nearby. Return here whenever a term or result is unclear.</p></div>
       <a class="primary-link" href="../package-explorer/">Start with Package Explorer</a>
     </aside>
-    <footer>Community-developed and experimental. Hubitat is a trademark of its respective owner; this project is not endorsed by Hubitat.</footer>
+    <footer>Independent community project. Hubitat is a trademark of its respective owner.</footer>
   </main>
   <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

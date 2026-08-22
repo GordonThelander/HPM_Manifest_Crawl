@@ -12,7 +12,7 @@ class StartHereTests(unittest.TestCase):
         cls.styles = (ROOT / 'site/start-here/styles.css').read_text('utf-8')
 
     def test_beginner_guide_orients_without_requiring_crawl_knowledge(self):
-        self.assertIn('You do not need to understand the crawler', self.page)
+        self.assertIn('Use this site like a searchable library', self.page)
         self.assertIn('Three parts of the ecosystem', self.page)
         self.assertIn('Hubitat Package Manager', self.page)
         self.assertIn('How to read the results', self.page)
@@ -29,11 +29,10 @@ class StartHereTests(unittest.TestCase):
             with self.subTest(target=target):
                 self.assertIn(f'href="{target}"', self.page)
 
-    def test_evidence_limits_and_privacy_remain_explicit(self):
-        self.assertIn('not Hubitat approval or a safety guarantee', self.page)
-        self.assertIn('Absence is not proof', self.page)
-        self.assertIn('does not prove code is unsafe', self.page)
-        self.assertIn('do not need device names, rooms, rules, tokens', self.page)
+    def test_sources_and_privacy_remain_clear(self):
+        self.assertIn('Official device listings and release notes come from Hubitat', self.page)
+        self.assertIn('Each result identifies whether it came from Hubitat, HPM, a community wiki or source code', self.page)
+        self.assertIn('Searches run in your browser and require no hub configuration', self.page)
 
     def test_page_is_responsive_and_respects_reduced_motion(self):
         self.assertIn('@media (max-width: 700px)', self.styles)

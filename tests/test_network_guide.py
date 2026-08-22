@@ -56,7 +56,7 @@ class NetworkGuideTests(unittest.TestCase):
         script = (ROOT / 'site/network-guide/app.js').read_text('utf-8')
         for label in ('Declared', 'Observed', 'Documented', 'Reviewed'):
             self.assertIn(label, page)
-        self.assertIn('Insufficient evidence', page)
+        self.assertIn('No clear signal', page)
         self.assertNotIn('innerHTML', script)
         self.assertIn('textContent', script)
         self.assertNotIn('fetch(', script)

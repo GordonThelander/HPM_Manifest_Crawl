@@ -36,8 +36,8 @@ class RecoveryInventoryTests(unittest.TestCase):
 
     def test_page_explains_identity_recovery_is_not_backup(self):
         page = PAGE.read_text('utf-8')
-        self.assertIn('Identity recovery, not a backup', page)
-        self.assertIn('cannot restore configured devices', page)
+        self.assertIn('Find installation sources', page)
+        self.assertIn('Keep a separate hub backup', page)
 
     def test_recovery_view_has_no_automation_map_output_path(self):
         combined = PAGE.read_text('utf-8') + SCRIPT.read_text('utf-8')

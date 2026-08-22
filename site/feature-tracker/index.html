@@ -15,7 +15,7 @@
   </nav>
   <main>
     <header class="hero">
-      <div><p class="eyebrow">Staff-authored release evidence</p><h1>What became possible in Hubitat?</h1><p class="lede">Search platform, app, driver and device changes across retained release notes. Fixes and known issues stay available without obscuring new capabilities.</p></div>
+      <div><p class="eyebrow">Hubitat release notes</p><h1>What became possible in Hubitat?</h1><p class="lede">Search platform, app, driver and device changes across Hubitat release notes.</p></div>
       <div class="hero-stats" aria-label="Release tracker counts"><div><strong id="build-count">-</strong><span>release builds</span></div><div><strong id="feature-count">-</strong><span>documented changes</span></div><div><strong id="possible-count">-</strong><span>new possibilities</span></div><div><strong id="detail-count">-</strong><span>linked details</span></div></div>
     </header>
 
@@ -27,23 +27,22 @@
     </section>
 
     <section class="search-section" aria-labelledby="search-title">
-      <div class="section-head"><div><p class="step">Find a capability</p><h2 id="search-title">Search release evidence</h2></div><button id="clear" type="button">Clear filters</button></div>
+      <div class="section-head"><div><p class="step">Find a capability</p><h2 id="search-title">Search release notes</h2></div><button id="clear" type="button">Clear filters</button></div>
       <div class="controls">
         <label class="wide">Search<input id="query" type="search" autocomplete="off" placeholder="Try Z-Wave, Matter, dashboards or firmware"></label>
         <label>View<select id="view"><option value="new">What is newly possible?</option><option value="all">All documented changes</option><option value="fixes">Bug fixes</option><option value="issues">Known issues</option></select></label>
         <label>Release<select id="release"><option value="">All releases</option></select></label>
         <label>Subsystem or protocol<select id="subsystem"><option value="">All subsystems</option></select></label>
-        <label>Evidence type<select id="evidence"><option value="">All evidence types</option></select></label>
+        <label>Change type<select id="evidence"><option value="">All change types</option></select></label>
         <label>Qualification<select id="qualification"><option value="">Any status</option><option value="BETA">Beta</option><option value="EXPERIMENTAL">Experimental</option><option value="MODEL_SPECIFIC">Model-specific</option><option value="SAFETY_WARNING">Safety warning</option></select></label>
         <label>Released after<input id="date-from" type="date"></label>
         <label>Released before<input id="date-to" type="date"></label>
       </div>
-      <p id="status" role="status" aria-live="polite">Loading release evidence...</p>
+      <p id="status" role="status" aria-live="polite">Loading release notes...</p>
       <div id="results" class="results"></div>
     </section>
 
-    <aside class="evidence-note"><strong>Evidence boundaries.</strong> This is a community-built index of staff-authored release posts and first-party detail links embedded in those posts. Classification is deterministic but can be imperfect. Always follow the source before acting, especially for beta, model-specific or safety-sensitive features.</aside>
-    <footer>Community-developed and experimental. Remote forum content is converted to bounded text and is never rendered or executed.</footer>
+    <aside class="evidence-note"><strong>About the entries.</strong> Entries come from Hubitat release posts. Open a result to read the full announcement, especially for beta, model-specific or safety-sensitive features.</aside>
   </main>
   <script src="data/hubitat_release_features.js" defer></script>
   <script src="app.js" defer></script>
