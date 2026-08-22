@@ -1,6 +1,6 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-22T11:58:05Z`.
+Latest observation: `2026-08-22T12:17:28Z`.
 
 **48 package change(s):** added 5, broken 2, declared definitions changed 7, restored 2, source location changed 4, updated 40
 
