@@ -29,6 +29,7 @@ class PagesSiteTests(unittest.TestCase):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)
         self.assertIn('Built for the Hubitat community', page)
+        self.assertIn('Independent community project. This site is not endorsed by Hubitat.', page)
 
     def test_every_page_has_portable_shared_navigation(self):
         for relative in pages.UTILITY_PAGES:
