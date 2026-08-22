@@ -9513,7 +9513,7 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": null,
+      "author": "Jean P. May, Jr.",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
       "communityUrl": null,
@@ -9529,8 +9529,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
       },
       "reviewed": [],
       "tags": [
@@ -27403,5 +27403,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-22T00:38:57Z"
+  "snapshotGenerated": "2026-08-22T11:58:05Z"
 };

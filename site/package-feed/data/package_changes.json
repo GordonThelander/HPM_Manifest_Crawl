@@ -1,8 +1,98 @@
 {
   "baselineEstablished": true,
   "dataset": "package-changes",
-  "eventCount": 58,
+  "eventCount": 59,
   "events": [
+    {
+      "changeTypes": [
+        "UPDATED",
+        "SOURCE_LOCATION_CHANGED",
+        "DECLARED_DEFINITIONS_CHANGED",
+        "RESTORED"
+      ],
+      "currentPackage": {
+        "author": "Jean P. May, Jr.",
+        "category": "Integrations",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:d4c9b29897b9ef37b528"
+          ]
+        },
+        "dateReleased": "2022-06-07",
+        "description": "Device driver that provides a wrapper for the Hubitat Ping endpoint.  sendPing command accepts an IPv4 sring and will send it to the hub, which will do 5 ICMP requests.  Optionally, can be set through the preferences to repeat the ping command on a specified interval.  Returns: percentLoss, avg, min, max, mdev, pingReturn, and presence.  Implements capabilities Acutator, Configuration, and Presence.",
+        "hpmPackageId": "dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+        "id": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+        "links": {
+          "community": null,
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json"
+        },
+        "name": "Hubitat Ping Device",
+        "repository": {
+          "author": "Jean P. May, Jr.",
+          "name": "Jean P. May, Jr.",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json"
+        },
+        "tags": [
+          "Misc. Devices"
+        ],
+        "version": "2.1.13"
+      },
+      "detail": "Version not declared to 2.1.13. One or more source locations changed. The declared app or driver set changed. Previously unavailable package evidence is reachable again.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:fdc5feb35ba6a0e4a29a20ba",
+      "observedAt": "2026-08-22T11:58:05Z",
+      "packageId": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+      "packageName": "Hubitat Ping Device",
+      "previousPackage": {
+        "author": null,
+        "category": "Integrations",
+        "components": {
+          "apps": [],
+          "drivers": []
+        },
+        "dateReleased": null,
+        "description": "Device driver that provides a wrapper for the Hubitat Ping endpoint.  sendPing command accepts an IPv4 sring and will send it to the hub, which will do 5 ICMP requests.  Optionally, can be set through the preferences to repeat the ping command on a specified interval.  Returns: percentLoss, avg, min, max, mdev, pingReturn, and presence.  Implements capabilities Acutator, Configuration, and Presence.",
+        "hpmPackageId": "dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+        "id": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
+        "links": {
+          "community": null,
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": false,
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json"
+        },
+        "name": "Hubitat Ping Device",
+        "repository": {
+          "author": "Jean P. May, Jr.",
+          "name": "Jean P. May, Jr.",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json"
+        },
+        "tags": [
+          "Misc. Devices"
+        ],
+        "version": null
+      },
+      "summary": "Hubitat Ping Device: updated, changed source location, changed declared definitions, was restored."
+    },
     {
       "changeTypes": [
         "UPDATED"
@@ -5634,6 +5724,6 @@
   "historicalSnapshotsCompared": 10,
   "historySource": "completed Git crawl snapshots",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-22T00:38:57Z",
-  "updatedAt": "2026-08-22T00:38:57Z"
+  "snapshotGenerated": "2026-08-22T11:58:05Z",
+  "updatedAt": "2026-08-22T11:58:05Z"
 }

@@ -48562,11 +48562,20 @@
       "version": "1.0.4"
     },
     {
-      "author": null,
+      "author": "Jean P. May, Jr.",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
-      "definitions": [],
+      "dateReleased": "2022-06-07",
+      "definitions": [
+        {
+          "id": "definition:d4c9b29897b9ef37b528",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Hubitat Ping",
+          "namespace": "thebearmay",
+          "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubPing.groovy"
+        }
+      ],
       "description": "Device driver that provides a wrapper for the Hubitat Ping endpoint.  sendPing command accepts an IPv4 sring and will send it to the hub, which will do 5 ICMP requests.  Optionally, can be set through the preferences to repeat the ping command on a specified interval.  Returns: percentLoss, avg, min, max, mdev, pingReturn, and presence.  Implements capabilities Acutator, Configuration, and Presence.",
       "evidence": [
         {
@@ -48574,8 +48583,8 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "MANIFEST_IDENTITY",
-          "label": "Manifest identity"
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
         }
       ],
       "hasDocumentation": false,
@@ -48587,7 +48596,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -48599,17 +48608,19 @@
           },
           {
             "name": "manifestFetch",
-            "status": "FAIL"
+            "status": "PASS"
           },
           {
             "name": "sourceFetch",
-            "status": "NOT_APPLICABLE"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:dc44dda5-e732-4c3d-9eea-f4efec8f7d3f",
-      "kinds": [],
+      "kinds": [
+        "DRIVER"
+      ],
       "links": {
         "community": null,
         "documentation": null,
@@ -48630,7 +48641,7 @@
       "tags": [
         "Misc. Devices"
       ],
-      "version": null
+      "version": "2.1.13"
     },
     {
       "author": "Ben Castellucci",
@@ -132075,5 +132086,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-22T00:38:57Z"
+  "snapshotGenerated": "2026-08-22T11:58:05Z"
 }

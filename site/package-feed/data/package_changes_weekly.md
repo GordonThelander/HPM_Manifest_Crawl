@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-22T00:38:57Z`.
+Latest observation: `2026-08-22T11:58:05Z`.
 
-**52 package change(s):** added 6, broken 2, declared definitions changed 7, restored 1, source location changed 4, updated 43
+**48 package change(s):** added 5, broken 2, declared definitions changed 7, restored 2, source location changed 4, updated 40
 
+- [Hubitat Ping Device: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
 - [go2rtc: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/packageManifest.json)
 - [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
@@ -51,10 +52,5 @@ Latest observation: `2026-08-22T00:38:57Z`.
 - [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
 - [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
 - [Danalock V3-BTZB Zigbee Lock: added.](https://raw.githubusercontent.com/jlslate/Hubitat-Danalock-Zigbee/main/packageManifest.json)
-- [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
-- [Reolink Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Mitsubishi Comfort Cloud: updated.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
