@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-22T12:17:28Z`.
+Latest observation: `2026-08-23T00:40:56Z`.
 
-**48 package change(s):** added 5, broken 2, declared definitions changed 7, restored 2, source location changed 4, updated 40
+**52 package change(s):** added 5, broken 2, declared definitions changed 9, restored 2, source location changed 6, updated 43
 
+- [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
+- [Kasa Camera: updated.](https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/refs/heads/main/packageManifest.json)
+- [Govee Integration v2: changed source location, changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
+- [ESP32 Wall Keypad: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Hubitat Ping Device: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
 - [go2rtc: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/packageManifest.json)
 - [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)

@@ -1601,7 +1601,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2261,
+  "definitionCount": 2262,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -14744,26 +14744,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH.groovy"
     },
     {
-      "id": "definition:11673d0d4f7378e727fa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "ESP32 Wall Keypad MQTT",
-          "namespace": "keypad"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "CSteele",
-        "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
-        "id": "manifest:0aab44543b1218f89d7f",
-        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
-        "name": "ESP32 Wall Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadMQTTDriver.groovy"
-    },
-    {
       "id": "definition:1169a9f6115ca8696cdf",
       "identities": [
         {
@@ -16257,6 +16237,26 @@ window.IDENTITY_INDEX = {
         "name": "Single Active Switch"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-singleactive/main/mutex-switch-device.groovy"
+    },
+    {
+      "id": "definition:1b0cdb71e1904e56127f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "ESP32 Wall Keypad",
+          "namespace": "keypad"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "CSteele",
+        "communityUrl": null,
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "id": "manifest:0aab44543b1218f89d7f",
+        "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
+        "name": "ESP32 Wall Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadDriver.groovy"
     },
     {
       "id": "definition:1b2e7d13b920397dedf4",
@@ -33479,6 +33479,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/devicetypes/bsileo/pool-controller-heater.src/pool-controller-heater.groovy"
     },
     {
+      "id": "definition:9970a0b711ad85568f7b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Govee v2 Color Lights 5 Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
+    },
+    {
       "id": "definition:99c5493bf871288ad211",
       "identities": [
         {
@@ -48427,5 +48447,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-22T12:17:28Z"
+  "snapshotGenerated": "2026-08-23T00:40:56Z"
 };
