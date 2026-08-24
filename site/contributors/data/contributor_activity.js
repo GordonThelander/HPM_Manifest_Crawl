@@ -712,6 +712,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:7e8d3951-8550-470b-84a8-21e9d07acdec",
           "packageName": "Aqara P100 Multi-State Sensor",
           "summary": "Aqara P100 Multi-State Sensor: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2a98e5661340f2c6f49897d0",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "hpm:7f4e2c19-5159-44bd-a2bf-afb8432c3de4",
+          "packageName": "Matter Advanced Bridge",
+          "summary": "Matter Advanced Bridge: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d78c8a17d02baa21264bb9e2",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "hpm:db071ec7-157f-4397-a63c-18f2a3b16bec",
+          "packageName": "Tuya Zigbee Metering Plug",
+          "summary": "Tuya Zigbee Metering Plug: changed source location."
         }
       ],
       "appCount": 2,
@@ -734,7 +762,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 35,
       "id": "contributor:2caa5ff89bed93a4a93e",
       "name": "Krassimir Kossev",
-      "observedActivityCount": 2,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 0,
@@ -823,9 +851,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:7f4e2c19-5159-44bd-a2bf-afb8432c3de4",
           "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json",
           "name": "Matter Advanced Bridge",
-          "publisherDate": "2026-08-17",
+          "publisherDate": "2026-08-23",
           "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.9.2"
+          "version": "1.9.4"
         },
         {
           "appCount": 0,
@@ -9434,7 +9462,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8acaec9bbabb773d572b52a4",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "manifest:e81b1393b05b5472c2ba",
+          "packageName": "Reolink Floodlight Camera",
+          "summary": "Reolink Floodlight Camera: updated."
+        }
+      ],
       "appCount": 0,
       "categories": [
         {
@@ -9447,7 +9490,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:9421d6940089773abfd2",
       "name": "David LaPorte",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -9497,9 +9540,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:e81b1393b05b5472c2ba",
           "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json",
           "name": "Reolink Floodlight Camera",
-          "publisherDate": "2026-06-12",
+          "publisherDate": "2026-08-23",
           "repositoryUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
-          "version": "0.7"
+          "version": "0.8"
         }
       ]
     },
@@ -9667,6 +9710,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3a0a258f6246bd0b2e4a3746",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "manifest:39dad940d5c0acdc5e19",
+          "packageName": "LIFX Light Manager",
+          "summary": "LIFX Light Manager: updated."
         }
       ],
       "appCount": 3,
@@ -9693,7 +9750,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 5,
+      "observedActivityCount": 6,
       "packages": [
         {
           "appCount": 1,
@@ -9730,9 +9787,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:39dad940d5c0acdc5e19",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/packageManifest.json",
           "name": "LIFX Light Manager",
-          "publisherDate": "2026-07-22",
+          "publisherDate": "2026-08-23",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "1.6.9"
+          "version": "1.6.10"
         },
         {
           "appCount": 1,
@@ -10631,6 +10688,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:5c9ae717-9ef9-4ced-af94-380cf98aefa8",
           "packageName": "Moen FLO Device Manager",
           "summary": "Moen FLO Device Manager: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:dfd6d5bbdcedafbbdba6b8cf",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "hpm:5c9ae717-9ef9-4ced-af94-380cf98aefa8",
+          "packageName": "Moen FLO Device Manager",
+          "summary": "Moen FLO Device Manager: updated."
         }
       ],
       "appCount": 5,
@@ -10645,7 +10716,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:5915c6fdaa7f64cc648f",
       "name": "David Manuel",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -10669,9 +10740,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:5c9ae717-9ef9-4ced-af94-380cf98aefa8",
           "manifestUrl": "https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json",
           "name": "Moen FLO Device Manager",
-          "publisherDate": "2026-08-22",
+          "publisherDate": "2026-08-23",
           "repositoryUrl": "https://raw.githubusercontent.com/dacmanj/hubitat/main/repository.json",
-          "version": "1.0.19"
+          "version": "1.0.20"
         },
         {
           "appCount": 0,
@@ -15239,6 +15310,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
           "packageName": "Flair Vents",
           "summary": "Flair Vents: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a6fa5c53288c41e0e2aa56ee",
+          "observedAt": "2026-08-24T00:40:06Z",
+          "observedCommit": null,
+          "packageId": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
+          "packageName": "Flair Vents",
+          "summary": "Flair Vents: updated."
         }
       ],
       "appCount": 0,
@@ -15253,7 +15338,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -15264,7 +15349,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
           "manifestUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json",
           "name": "Flair Vents",
-          "publisherDate": "2026-08-16",
+          "publisherDate": "2026-08-21",
           "repositoryUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/repository.json",
           "version": "0.235"
         }
@@ -17796,10 +17881,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 64,
-    "eventCount": 63,
+    "attributedEventCount": 70,
+    "eventCount": 69,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-23T00:40:56Z"
+    "lastObservedAt": "2026-08-24T00:40:06Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17813,7 +17898,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 254,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-23T00:40:56Z",
+  "snapshotGenerated": "2026-08-24T00:40:06Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

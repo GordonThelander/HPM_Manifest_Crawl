@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-23T00:40:56Z`.
+Latest observation: `2026-08-24T00:40:06Z`.
 
-**52 package change(s):** added 5, broken 2, declared definitions changed 9, restored 2, source location changed 6, updated 43
+**54 package change(s):** added 4, broken 2, declared definitions changed 9, restored 2, source location changed 7, updated 45
 
+- [Tuya Zigbee Metering Plug: changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
+- [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
+- [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
+- [Matter Advanced Bridge: updated.](https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json)
+- [LIFX Light Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/packageManifest.json)
+- [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
 - [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
 - [Kasa Camera: updated.](https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/refs/heads/main/packageManifest.json)
 - [Govee Integration v2: changed source location, changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
@@ -52,9 +58,5 @@ Latest observation: `2026-08-23T00:40:56Z`.
 - [Aqara P100 Multi-State Sensor: added.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/packageManifest.json)
 - [Air Quality Window Alerts: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-aq-window-alerts.json)
 - [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
-- [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
-- [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
-- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
-- [Danalock V3-BTZB Zigbee Lock: added.](https://raw.githubusercontent.com/jlslate/Hubitat-Danalock-Zigbee/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
