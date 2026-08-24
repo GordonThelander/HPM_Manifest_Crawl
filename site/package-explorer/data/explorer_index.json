@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 909,
+    "HPM_PACKAGE": 910,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2614,
+  "recordCount": 2615,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -76243,7 +76243,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.4.2"
+      "version": "1.4.4"
     },
     {
       "author": "Andrew Nunes",
@@ -94040,108 +94040,6 @@
       "version": "1.6.1"
     },
     {
-      "author": "Brian Wilson",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-08-15",
-      "definitions": [
-        {
-          "id": "definition:35e3ff751249aef7592e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Tuya Zigbee Valve",
-          "namespace": "kkossev",
-          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/Tuya%20Zigbee%20Valve.groovy"
-        },
-        {
-          "id": "definition:c6837d71ea4c722b17d9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Tuya Zigbee Valve Port",
-          "namespace": "bdwilson",
-          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/Tuya%20Zigbee%20Valve%20Port.groovy"
-        }
-      ],
-      "description": "Fork of kkossev's Tuya Zigbee Valve driver adding SONOFF SWV-ZF2 dual-port support: independent per-port child devices, per-port irrigation history and auto-off timers, and a per-run open(duration) command.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:b47bbf6c913b5a264293",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/sonoff-zigbee-sprinklers-on-pre-order-sale/162398",
-        "documentation": "https://github.com/bdwilson/hubitat/tree/master/Tuya-Zigbee-Valve",
-        "manifest": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json",
-        "repository": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json"
-      },
-      "name": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "de.aliexpress.com",
-          "fccid.io",
-          "gist.github.com",
-          "www.aliexpress.com",
-          "www.aliexpress.us",
-          "www.amazon.com",
-          "www.amazon.com.au",
-          "www.lidl.de",
-          "www.youtube.com",
-          "www.zigbee2mqtt.io"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Irrigation",
-        "Water"
-      ],
-      "version": "2.0.0"
-    },
-    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -101233,6 +101131,99 @@
       "version": null
     },
     {
+      "author": "Brian Wilson",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-24",
+      "definitions": [
+        {
+          "id": "definition:2a431cffb2406a42bf11",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Wyze Vacuum Connect",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy"
+        },
+        {
+          "id": "definition:92c11547da17509bcf23",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Wyze Robot Vacuum Driver",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-Driver.groovy"
+        }
+      ],
+      "description": "Native integration for Wyze Robot Vacuums (200S/JA_RO2) -- room-based rotation cleaning, room timing learning mode, and status monitoring, no external server required",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:f16abae3d651b4d91303",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
+        "documentation": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
+        "manifest": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
+        "repository": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json"
+      },
+      "name": "Wyze Vacuum Connect",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "developer-api-console.wyze.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances"
+      ],
+      "version": "1.22.0"
+    },
+    {
       "author": "Jake Lehner",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -102433,6 +102424,86 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": null
+    },
+    {
+      "author": "Trunzoc/Sleuth",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-13",
+      "definitions": [
+        {
+          "id": "definition:bd19f85c76426a187d76",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Yale Assure Lock 2",
+          "namespace": "Sleuth255",
+          "sourceUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/YaleAssure2.groovy"
+        }
+      ],
+      "description": "Custom Hubitat driver for Yale assure lock 2 series locks including DoorSense and ZW3 module support",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:5cf87f7cd4c159334c4c",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+        "documentation": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+        "manifest": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
+        "repository": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/repository.json"
+      },
+      "name": "Yale Assure Lock 2 Driver",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "1.04"
     },
     {
       "author": "Steven Dale",
@@ -132094,5 +132165,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-24T00:40:06Z"
+  "snapshotGenerated": "2026-08-24T23:45:28Z"
 }

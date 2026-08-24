@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-24T00:40:06Z`.
+Latest observation: `2026-08-24T23:45:28Z`.
 
-**54 package change(s):** added 4, broken 2, declared definitions changed 9, restored 2, source location changed 7, updated 45
+**43 package change(s):** added 4, broken 2, declared definitions changed 9, removed 1, restored 2, source location changed 7, updated 33
 
+- [Yale Assure Lock 2 Driver: added.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
+- [Wyze Vacuum Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Tuya Zigbee Metering Plug: changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
 - [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
 - [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
@@ -43,20 +47,5 @@ Latest observation: `2026-08-24T00:40:06Z`.
 - [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
 - [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
 - [ESP32 Wall Keypad: added, became unavailable.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
-- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
-- [Samsung Tizen TV Control: updated.](https://raw.githubusercontent.com/hugoh/samsung-tizen-tv-control/main/hubitat/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Remote Builder for Hubitat: updated.](https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/packageManifestRemoteBuilder.json)
-- [Pihole Integration: added.](https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/packageManifest.json)
-- [Mila Air Integration: updated.](https://raw.githubusercontent.com/vision9074/hubitat-mila-air/main/packageManifest.json)
-- [Matter Advanced Bridge: updated.](https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
-- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
-- [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
-- [Ecobee HAP Thermostat (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json)
-- [Aqara P100 Multi-State Sensor: added.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/packageManifest.json)
-- [Air Quality Window Alerts: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-aq-window-alerts.json)
-- [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

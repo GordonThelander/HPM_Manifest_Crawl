@@ -1,9 +1,9 @@
 {
   "counts": {
-    "BOTH": 182,
-    "CLOUD": 260,
+    "BOTH": 181,
+    "CLOUD": 261,
     "INSUFFICIENT": 300,
-    "LAN": 167
+    "LAN": 168
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 909,
+  "packageCount": 910,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -22830,7 +22830,7 @@
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 60
+        "urlLiteralCount": 61
       },
       "reviewed": [],
       "tags": []
@@ -23470,46 +23470,6 @@
       "reviewed": [],
       "tags": [
         "Zigbee"
-      ]
-    },
-    {
-      "author": "Brian Wilson",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/sonoff-zigbee-sprinklers-on-pre-order-sale/162398",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Fork of kkossev's Tuya Zigbee Valve driver adding SONOFF SWV-ZF2 dual-port support: independent per-port child devices, per-port irrigation history and auto-off timers, and a per-run open(duration) command.",
-      "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Tuya-Zigbee-Valve",
-      "id": "manifest:b47bbf6c913b5a264293",
-      "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json",
-      "name": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port",
-      "observed": {
-        "externalHosts": [
-          "de.aliexpress.com",
-          "fccid.io",
-          "gist.github.com",
-          "www.aliexpress.com",
-          "www.aliexpress.us",
-          "www.amazon.com",
-          "www.amazon.com.au",
-          "www.lidl.de",
-          "www.youtube.com",
-          "www.zigbee2mqtt.io"
-        ],
-        "lanPrimitives": [
-          "HUB_ACTION",
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 48
-      },
-      "reviewed": [],
-      "tags": [
-        "Irrigation",
-        "Water"
       ]
     },
     {
@@ -25601,6 +25561,33 @@
       ]
     },
     {
+      "author": "Brian Wilson",
+      "category": "Control",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Native integration for Wyze Robot Vacuums (200S/JA_RO2) -- room-based rotation cleaning, room timing learning mode, and status monitoring, no external server required",
+      "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
+      "id": "manifest:f16abae3d651b4d91303",
+      "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
+      "name": "Wyze Vacuum Connect",
+      "observed": {
+        "externalHosts": [
+          "developer-api-console.wyze.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 9
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances"
+      ]
+    },
+    {
       "author": "Jake Lehner",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -25983,6 +25970,32 @@
         ],
         "sourceFilesAnalysed": 1,
         "urlLiteralCount": 7
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
+      "author": "Trunzoc/Sleuth",
+      "category": "Security",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Custom Hubitat driver for Yale assure lock 2 series locks including DoorSense and ZW3 module support",
+      "documentationUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+      "id": "manifest:5cf87f7cd4c159334c4c",
+      "manifestUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
+      "name": "Yale Assure Lock 2 Driver",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
       },
       "reviewed": [],
       "tags": []
@@ -27403,5 +27416,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-24T00:40:06Z"
+  "snapshotGenerated": "2026-08-24T23:45:28Z"
 }

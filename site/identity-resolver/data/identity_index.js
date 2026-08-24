@@ -1601,7 +1601,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2262,
+  "definitionCount": 2263,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3467,6 +3467,26 @@ window.IDENTITY_INDEX = {
         "name": "Running Average"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DoktorJ/jess-hubitat-apps/refs/heads/main/RunningAverage/runningAverage.groovy"
+    },
+    {
+      "id": "definition:2a431cffb2406a42bf11",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Wyze Vacuum Connect",
+          "namespace": "brianwilson-hubitat"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Brian Wilson",
+        "communityUrl": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
+        "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
+        "id": "manifest:f16abae3d651b4d91303",
+        "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
+        "name": "Wyze Vacuum Connect"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy"
     },
     {
       "id": "definition:2a69ed19fd87cf67b482",
@@ -19704,26 +19724,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.4/Shelly2.5-v2.17.4.groovy"
     },
     {
-      "id": "definition:35e3ff751249aef7592e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Tuya Zigbee Valve",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/sonoff-zigbee-sprinklers-on-pre-order-sale/162398",
-        "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Tuya-Zigbee-Valve",
-        "id": "manifest:b47bbf6c913b5a264293",
-        "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json",
-        "name": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/Tuya%20Zigbee%20Valve.groovy"
-    },
-    {
       "id": "definition:3639515624a15f488a99",
       "identities": [
         {
@@ -32639,6 +32639,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-gdov1-s.groovy"
     },
     {
+      "id": "definition:92c11547da17509bcf23",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Wyze Robot Vacuum Driver",
+          "namespace": "brianwilson-hubitat"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Brian Wilson",
+        "communityUrl": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
+        "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
+        "id": "manifest:f16abae3d651b4d91303",
+        "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
+        "name": "Wyze Vacuum Connect"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-Driver.groovy"
+    },
+    {
       "id": "definition:92d15c8eb1e40f7b2c2e",
       "identities": [
         {
@@ -38834,6 +38854,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-teslamate/main/hubitat-teslamate-vehicle.groovy"
     },
     {
+      "id": "definition:bd19f85c76426a187d76",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Yale Assure Lock 2",
+          "namespace": "Sleuth255"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "YaleAssure2",
+          "namespace": "HubitatCommunity"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Trunzoc/Sleuth",
+        "communityUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+        "documentationUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+        "id": "manifest:5cf87f7cd4c159334c4c",
+        "manifestUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
+        "name": "Yale Assure Lock 2 Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/YaleAssure2.groovy"
+    },
+    {
       "id": "definition:bd5f8d4b24da575c6dac",
       "identities": [
         {
@@ -40207,26 +40252,6 @@ window.IDENTITY_INDEX = {
         "name": "SiHAS Multipurpose Sensor USM-300-ZB"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/sihas_multipurpose_usm300zb.groovy"
-    },
-    {
-      "id": "definition:c6837d71ea4c722b17d9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Tuya Zigbee Valve Port",
-          "namespace": "bdwilson"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/sonoff-zigbee-sprinklers-on-pre-order-sale/162398",
-        "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Tuya-Zigbee-Valve",
-        "id": "manifest:b47bbf6c913b5a264293",
-        "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json",
-        "name": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/Tuya%20Zigbee%20Valve%20Port.groovy"
     },
     {
       "id": "definition:c6b99ddb79d750125d5a",
@@ -48447,5 +48472,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-24T00:40:06Z"
+  "snapshotGenerated": "2026-08-24T23:45:28Z"
 };

@@ -3725,9 +3725,37 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:cda95eedc5f5df012d02",
           "packageName": "WaterGuru Integration",
           "summary": "WaterGuru Integration: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:14814438209e13bb092d01f8",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7894e0884b2f087e345cce4b",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:b47bbf6c913b5a264293",
+          "packageName": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port",
+          "summary": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed."
         }
       ],
-      "appCount": 10,
+      "appCount": 11,
       "categories": [
         {
           "name": "Control",
@@ -3748,10 +3776,10 @@ window.CONTRIBUTOR_ACTIVITY = {
       ],
       "currentPackageCount": 14,
       "currentRank": 10,
-      "driverCount": 24,
+      "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 6,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 2,
@@ -3897,19 +3925,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "version": "1.0.0"
         },
         {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/sonoff-zigbee-sprinklers-on-pre-order-sale/162398",
-          "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Tuya-Zigbee-Valve",
-          "driverCount": 2,
-          "id": "manifest:b47bbf6c913b5a264293",
-          "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json",
-          "name": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port",
-          "publisherDate": "2026-08-15",
-          "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.0.0"
-        },
-        {
           "appCount": 1,
           "category": "Integrations",
           "communityUrl": "https://community.hubitat.com/t/release-waterguru-pool-integration/77922",
@@ -3934,6 +3949,19 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-07-27",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
           "version": "1.2.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
+          "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
+          "driverCount": 1,
+          "id": "manifest:f16abae3d651b4d91303",
+          "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
+          "name": "Wyze Vacuum Connect",
+          "publisherDate": "2026-08-24",
+          "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
+          "version": "1.22.0"
         }
       ]
     },
@@ -11083,6 +11111,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d482dcadf478b626f0c8896d",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 2,
@@ -11105,7 +11147,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 5,
+      "observedActivityCount": 6,
       "packages": [
         {
           "appCount": 1,
@@ -11131,7 +11173,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.4.2"
+          "version": "1.4.4"
         },
         {
           "appCount": 0,
@@ -17460,6 +17502,52 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
+      "activity": [
+        {
+          "category": "Security",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:03d1cd94415d31e0d3ff865f",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:5cf87f7cd4c159334c4c",
+          "packageName": "Yale Assure Lock 2 Driver",
+          "summary": "Yale Assure Lock 2 Driver: added."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Security",
+          "packageCount": 1
+        }
+      ],
+      "currentPackageCount": 1,
+      "currentRank": 243,
+      "driverCount": 1,
+      "id": "contributor:2e46c4122819bb72fd5c",
+      "name": "Trunzoc/Sleuth",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Security",
+          "communityUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+          "documentationUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+          "driverCount": 1,
+          "id": "manifest:5cf87f7cd4c159334c4c",
+          "manifestUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
+          "name": "Yale Assure Lock 2 Driver",
+          "publisherDate": "2026-08-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/repository.json",
+          "version": "1.04"
+        }
+      ]
+    },
+    {
       "activity": [],
       "appCount": 0,
       "categories": [
@@ -17469,7 +17557,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 243,
+      "currentRank": 244,
       "driverCount": 1,
       "id": "contributor:c0169b8774e9ef9eb1c9",
       "name": "uDevel",
@@ -17500,7 +17588,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 244,
+      "currentRank": 245,
       "driverCount": 0,
       "id": "contributor:0d7795bd85122e9c9ea5",
       "name": "UltronOfSpace",
@@ -17531,7 +17619,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 245,
+      "currentRank": 246,
       "driverCount": 1,
       "id": "contributor:3cfe986a247c5ae9cd27",
       "name": "Victor Santana",
@@ -17562,7 +17650,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 246,
+      "currentRank": 247,
       "driverCount": 1,
       "id": "contributor:43e3c3b9a75a2dd734a3",
       "name": "viertaxa",
@@ -17593,7 +17681,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 247,
+      "currentRank": 248,
       "driverCount": 1,
       "id": "contributor:0fc0469097552eede65b",
       "name": "Vincent van Didden",
@@ -17624,7 +17712,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 248,
+      "currentRank": 249,
       "driverCount": 5,
       "id": "contributor:ca4823a0a208aa6ab9ea",
       "name": "Vyrolan",
@@ -17655,7 +17743,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 249,
+      "currentRank": 250,
       "driverCount": 1,
       "id": "contributor:10b1e9e1c48029622d09",
       "name": "WalksOnAir",
@@ -17686,7 +17774,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 251,
       "driverCount": 3,
       "id": "contributor:7d9c33a19dcfd53b7eac",
       "name": "WarlockWeary + Claude AI + ChatGPT + Grok",
@@ -17748,7 +17836,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 252,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -17779,7 +17867,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 253,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -17810,7 +17898,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 253,
+      "currentRank": 254,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -17877,14 +17965,14 @@ window.CONTRIBUTOR_ACTIVITY = {
       "packages": []
     }
   ],
-  "currentContributorCount": 253,
-  "currentPackageCount": 909,
+  "currentContributorCount": 254,
+  "currentPackageCount": 910,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 70,
-    "eventCount": 69,
+    "attributedEventCount": 74,
+    "eventCount": 73,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-24T00:40:06Z"
+    "lastObservedAt": "2026-08-24T23:45:28Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17895,10 +17983,10 @@ window.CONTRIBUTOR_ACTIVITY = {
     "publisherDates": "publisher-declared package release dates, shown separately from observed activity",
     "ranking": "unique packages in the current successful community package snapshot"
   },
-  "observedContributorCount": 254,
-  "rankedPackageCount": 907,
+  "observedContributorCount": 255,
+  "rankedPackageCount": 908,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-24T00:40:06Z",
+  "snapshotGenerated": "2026-08-24T23:45:28Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
