@@ -55,6 +55,13 @@ function validUrl(value) {
   }
 }
 
+function validIsoDate(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split("-").map(Number);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
+}
+
 function validateComponent(component, kind, index, issues, requireVersion) {
   const path = `${kind}[${index}]`;
   if (!component || typeof component !== "object" || Array.isArray(component)) {
@@ -64,6 +71,11 @@ function validateComponent(component, kind, index, issues, requireVersion) {
   ["id", "name", "namespace"].forEach(field => {
     if (!String(component[field] ?? "").trim()) {
       addIssue(issues, "WARNING", `MISSING_${field.toUpperCase()}`, `${path}.${field}`, `Component does not declare ${field}.`, `Add a stable ${field} so community tools can identify this code.`);
+    }
+  });
+  ["required", "oauth", "primary"].forEach(field => {
+    if (Object.prototype.hasOwnProperty.call(component, field) && typeof component[field] !== "boolean") {
+      addIssue(issues, "ERROR", "INVALID_BOOLEAN", `${path}.${field}`, `${field} must be a JSON Boolean.`, `Use true or false without quotation marks.`);
     }
   });
   if (requireVersion && !String(component.version ?? "").trim()) {
@@ -87,7 +99,9 @@ function validateManifest(manifest) {
   ["packageName", "author"].forEach(field => {
     if (!String(manifest[field] ?? "").trim()) addIssue(issues, "ERROR", `MISSING_${field.toUpperCase()}`, field, `Manifest does not declare ${field}.`, `Add a non-empty ${field} field.`);
   });
-  if (!String(manifest.dateReleased ?? "").trim()) addIssue(issues, "WARNING", "MISSING_RELEASE_DATE", "dateReleased", "Manifest does not declare a release date.", "Use YYYY-MM-DD form.");
+  const dateReleased = String(manifest.dateReleased ?? "").trim();
+  if (!dateReleased) addIssue(issues, "WARNING", "MISSING_RELEASE_DATE", "dateReleased", "Manifest does not declare a release date.", "Use YYYY-MM-DD form.");
+  else if (!validIsoDate(dateReleased)) addIssue(issues, "WARNING", "RELEASE_DATE_FORMAT", "dateReleased", "Release date is not a real date in YYYY-MM-DD form.", "Use a valid ISO date such as 2026-08-17.");
   ["documentationLink", "communityLink"].forEach(field => {
     if (!String(manifest[field] ?? "").trim()) addIssue(issues, "INFO", `MISSING_${field.toUpperCase()}`, field, `Manifest does not declare ${field}.`, "Add this link when a stable public page exists.");
     else if (!validUrl(manifest[field])) addIssue(issues, "ERROR", "INVALID_URL", field, "Link is not an absolute HTTP(S) URL.", "Use the complete public URL.");
@@ -200,10 +214,9 @@ function renderSubmission(manifest, issues) {
   const checks = [
     [!issues.some(item => item.severity === "ERROR"), "Manifest has no structural errors"],
     [Boolean(versionStrategy), "One version strategy: package or every component"],
-    [allComponents.length > 0 && allComponents.every(component => httpsUrl(component?.location)), "Every app and driver uses a public HTTPS source URL"],
-    [httpsUrl(values.manifestUrl), "Package manifest has a public HTTPS URL"],
-    [httpsUrl(values.repositoryUrl), "Repository JSON has a public HTTPS URL"],
-    [Boolean(values.packageId), "Repository package entry has a stable ID"],
+    [allComponents.length > 0 && allComponents.every(component => httpsUrl(component?.location)), "Every app and driver declares an HTTPS source URL"],
+    [httpsUrl(values.manifestUrl), "Package manifest declares an HTTPS URL"],
+    [httpsUrl(values.repositoryUrl), "Repository JSON declares an HTTPS URL"],
     [validCategory, !values.category ? "Choose a current HPM category" : !validCategory ? `Category is not in the current HPM taxonomy: ${values.category}` : "Category is in the current HPM taxonomy"],
     [Boolean(values.description), "A short package description is supplied"],
     [Boolean(values.tags.length) && !invalidTags.length && !duplicateTags.length, invalidTags.length ? `Unknown HPM tag(s): ${invalidTags.join(", ")}` : duplicateTags.length ? `Duplicate tag(s): ${[...new Set(duplicateTags)].join(", ")}` : "At least one current HPM tag is supplied"],
@@ -216,13 +229,13 @@ function renderSubmission(manifest, issues) {
   readinessList.replaceChildren(...checks.map(([pass, label]) => text("li", label, pass ? "pass" : "")));
 
   const ownEntry = {
-    id: values.packageId || slug(values.packageName) || "your-package-id",
     name: values.packageName || "Your package name",
     category: values.category || "Choose a category",
     location: values.manifestUrl || "https://raw.githubusercontent.com/…/packageManifest.json",
     description: values.description || "Describe what the package does",
     tags: values.tags.length ? values.tags : ["Choose current tags"]
   };
+  if (values.packageId) ownEntry.id = values.packageId;
   const catalogueEntry = {
     name: values.author || "Your repository name",
     location: values.repositoryUrl || "https://raw.githubusercontent.com/…/repository.json"

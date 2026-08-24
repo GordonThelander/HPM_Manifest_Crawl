@@ -38,6 +38,15 @@ class ManifestValidatorTests(unittest.TestCase):
             row['code'] for row in validator.validate_manifest(mixed)
         })
 
+    def test_invalid_dates_and_boolean_strings_are_reported(self):
+        manifest = fixture('valid_manifest.json')
+        manifest['dateReleased'] = '2026-02-30'
+        manifest['apps'][0]['required'] = 'true'
+        issues = validator.validate_manifest(manifest)
+        codes = {row['code'] for row in issues}
+        self.assertIn('RELEASE_DATE_FORMAT', codes)
+        self.assertIn('INVALID_BOOLEAN', codes)
+
     def test_broken_manifest_reports_exact_fields_and_suggestions(self):
         issues = validator.validate_manifest(fixture('broken_manifest.json'), 'broken.json')
         paths = {row['path'] for row in issues if row['severity'] == 'ERROR'}
@@ -154,6 +163,11 @@ class ManifestValidatorTests(unittest.TestCase):
         self.assertIn('renderSubmission', script)
         self.assertIn('repositoryEntry', script)
         self.assertNotIn('api.github.com', script)
+        self.assertIn('Install from URL', page)
+        self.assertIn('optional; ignored by HPM', page)
+        self.assertNotIn('HPM does not install a package directly', page)
+        self.assertNotIn('Repository package entry has a stable ID', script)
+        self.assertIn('declares an HTTPS source URL', script)
 
     def test_browser_uses_built_taxonomy_for_category_and_tag_readiness(self):
         page = (ROOT / 'site' / 'manifest-validator' / 'index.html').read_text('utf-8')

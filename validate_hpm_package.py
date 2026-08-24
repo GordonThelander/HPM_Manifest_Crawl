@@ -2,6 +2,7 @@
 """Validate an HPM package manifest without executing downloaded code."""
 
 import argparse
+import datetime
 import json
 import pathlib
 import sys
@@ -87,6 +88,13 @@ def validate_component(component, kind, index, source_name, require_version):
                 f'Add a stable {field} value so HPM and recovery tools can identify this code.',
                 source_name,
             ))
+    for field in ('required', 'oauth', 'primary'):
+        if field in component and not isinstance(component[field], bool):
+            issues.append(issue(
+                'ERROR', 'INVALID_BOOLEAN', f'{path}.{field}',
+                f'{field} must be a JSON Boolean.',
+                'Use true or false without quotation marks.', source_name,
+            ))
     if require_version and not clean(component.get('version')):
         issues.append(issue('ERROR', 'MISSING_COMPONENT_VERSION', f'{path}.version',
                             'Component does not declare a version.',
@@ -119,10 +127,13 @@ def validate_manifest(manifest, source_name='packageManifest.json'):
         issues.append(issue('WARNING', 'MISSING_RELEASE_DATE', 'dateReleased',
                             'Manifest does not declare a release date.',
                             'Add dateReleased in YYYY-MM-DD form.', source_name))
-    elif len(date_released) != 10 or date_released[4:5] != '-' or date_released[7:8] != '-':
-        issues.append(issue('WARNING', 'RELEASE_DATE_FORMAT', 'dateReleased',
-                            'Release date is not in YYYY-MM-DD form.',
-                            'Use an ISO date such as 2026-08-17.', source_name))
+    else:
+        try:
+            datetime.date.fromisoformat(date_released)
+        except ValueError:
+            issues.append(issue('WARNING', 'RELEASE_DATE_FORMAT', 'dateReleased',
+                                'Release date is not a real date in YYYY-MM-DD form.',
+                                'Use a valid ISO date such as 2026-08-17.', source_name))
 
     for field in URL_FIELDS:
         value = manifest.get(field)

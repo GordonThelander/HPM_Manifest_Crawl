@@ -28,7 +28,7 @@
       <h2>A manifest and a repository are two different files</h2>
       <dl>
         <div><dt>Manifest (packageManifest.json)</dt><dd>Describes one package: its name, author, version, and every app or driver it installs. Each app or driver lists the exact raw GitHub URL where HPM downloads that file's source code. If your package has an app and two drivers, your manifest lists all three, each with its own <code>id</code>, <code>name</code> and <code>location</code>. You write one manifest per package. This is the file you paste or open below.</dd></div>
-        <div><dt>Repository (repository.json)</dt><dd>A file you host yourself, separate from any manifest, listing every package you publish - even if that's only one. Each entry names a package and points to the URL of its manifest. HPM never fetches a manifest on its own initiative: it reads your repository first, either because a user added it as a custom repository or because it's listed in HPM's public catalogue, and only then follows each entry to find the matching manifest.</dd></div>
+        <div><dt>Repository (repository.json)</dt><dd>A file you host yourself, separate from any manifest, listing every package you publish - even if that's only one. Each entry names a package and points to the URL of its manifest. HPM normally discovers manifests through repositories, but its advanced <strong>Install from URL</strong> workflow can also install directly from a public package-manifest URL.</dd></div>
       </dl>
       <p class="concepts-note">In short: this page checks your manifest first. Once it passes, section 4 below walks you through creating or updating your repository entry and preparing the public submission - that's a second, separate step using a different file.</p>
     </section>
@@ -55,12 +55,12 @@
 
     <section class="submission-section" aria-labelledby="submission-title">
       <div class="section-head"><div><p class="step">4 · Publish</p><h2 id="submission-title">Public HPM submission</h2></div><p>Prepare the two catalogue entries; you remain in control of the pull request.</p></div>
-      <p class="muted">HPM does not install a package directly from its manifest URL. It reads a repository.json that lists every package you publish and points to each one's manifest, either from your own custom repository or, once merged, from the community's public repositories.json. Enter your repository.json's public URL below; this tool then generates the entry to add inside it, plus the separate name-and-location entry needed for the public repositories.json.</p>
+      <p class="muted">HPM can install directly from a public package-manifest URL. A repository.json is still needed for repository browsing, catalogue discovery and public distribution because it lists every package you publish and points to each manifest. Enter your repository.json's public URL below; this tool then generates the entry to add inside it, plus the separate name-and-location entry needed for the public repositories.json.</p>
       <div class="submission-grid">
         <div class="submission-form">
           <label>Public package-manifest URL<input id="manifest-url" type="url" placeholder="https://raw.githubusercontent.com/…/packageManifest.json"></label>
           <label>Public repository JSON URL<input id="repository-url" type="url" placeholder="https://raw.githubusercontent.com/…/repository.json"></label>
-          <label>Stable package ID<input id="package-id" autocomplete="off" placeholder="example-presence"></label>
+          <label>Package ID (optional; ignored by HPM)<input id="package-id" autocomplete="off" placeholder="example-presence"></label>
           <label>Category<select id="category"><option value="">Choose a category</option></select></label>
           <label class="wide">Tags, separated by commas<input id="tags" list="valid-tags" autocomplete="off" aria-describedby="taxonomy-status" placeholder="Presence & Location, Automations & Groups"><datalist id="valid-tags"></datalist></label>
           <p id="taxonomy-status" class="taxonomy-status wide">Loading current HPM categories and tags...</p>
@@ -68,7 +68,7 @@
           <label class="tested wide"><input id="tested" type="checkbox"> I tested installation through HPM using the manifest or custom repository URL.</label>
         </div>
         <aside class="readiness" aria-live="polite">
-          <div class="readiness-head"><div><p class="step">Submission readiness</p><h3 id="readiness-title">Action required</h3></div><span id="readiness-score">0/8</span></div>
+          <div class="readiness-head"><div><p class="step">Submission readiness</p><h3 id="readiness-title">Action required</h3></div><span id="readiness-score">0/9</span></div>
           <ul id="readiness-list"></ul>
           <p>No data is uploaded and no pull request is opened from this page.</p>
         </aside>
