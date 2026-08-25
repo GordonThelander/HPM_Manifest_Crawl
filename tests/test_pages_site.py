@@ -60,10 +60,11 @@ class PagesSiteTests(unittest.TestCase):
             with self.subTest(relative=relative):
                 self.assertNotIn('<base target="_blank">', source)
 
-    def test_weekly_archive_is_first_featured_tile(self):
+    def test_weekly_archive_is_first_toolkit_tile(self):
         source = (ROOT / 'site/index.html').read_text('utf-8')
-        featured = source.split('<div class="discovery-links">', 1)[1].split('</div>', 1)[0]
-        self.assertLess(featured.index('./updates/'), featured.index('./packages/'))
+        toolkit = source.split('<div class="utility-grid">', 1)[1].split('</div>', 1)[0]
+        self.assertEqual(toolkit.count('./updates/'), 1)
+        self.assertLess(toolkit.index('./updates/'), toolkit.index('./package-explorer/'))
 
     def test_repository_link_moves_from_top_navigation_to_about(self):
         repository = 'https://github.com/GordonThelander/HPM_Manifest_Crawl'
