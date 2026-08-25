@@ -23,9 +23,14 @@ UTILITY_PAGES = (
     pathlib.Path('contributors/index.html'),
     pathlib.Path('glossary/index.html'),
     pathlib.Path('about/index.html'),
+    pathlib.Path('packages/index.html'),
+    pathlib.Path('authors/index.html'),
+    pathlib.Path('updates/index.html'),
 )
 REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('shared/hubitat.css'),
+    pathlib.Path('shared/discovery.css'),
+    pathlib.Path('sitemap.xml'),
     pathlib.Path('start-here/styles.css'),
     pathlib.Path('package-explorer/data/explorer_index.json'),
     pathlib.Path('package-explorer/data/explorer_index.js'),
@@ -88,7 +93,8 @@ def check_site(site=SITE):
         if '\u2014' in text:
             errors.append(f'{path.relative_to(site).as_posix()}: use a simple hyphen instead of an em dash')
 
-    for relative in UTILITY_PAGES:
+    generated_pages = tuple(path.relative_to(site) for folder in ('packages', 'authors', 'updates') for path in (site / folder).rglob('index.html'))
+    for relative in UTILITY_PAGES + generated_pages:
         page = site / relative
         if not page.is_file():
             continue

@@ -25,7 +25,7 @@ class PagesSiteTests(unittest.TestCase):
         page = (ROOT / 'site/index.html').read_text('utf-8')
         for directory in (
                 'start-here', 'package-explorer', 'taxonomy', 'feature-tracker', 'identity-resolver', 'manifest-validator', 'network-guide',
-                'package-feed', 'recovery-inventory', 'contributors', 'about'):
+                'package-feed', 'recovery-inventory', 'contributors', 'packages', 'authors', 'updates', 'about'):
             self.assertIn(f'href="./{directory}/"', page)
         self.assertNotIn('gordonthelander.github.io', page)
         self.assertIn('Built for the Hubitat community', page)
