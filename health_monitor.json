@@ -7698,12 +7698,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225"
         }
       ],
@@ -7715,7 +7715,7 @@
       "name": "Thermostats Sync",
       "packageId": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
       "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -7855,12 +7855,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/no-longer-maintained-lg-thinq-integration-attempt/51925",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/my-god-anyone-attempted-an-lg-thinq-integration/51925"
         }
       ],
@@ -8120,12 +8120,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505"
         },
         {
@@ -16628,7 +16628,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/56d207b0-71a0-4962-990b-1a068389222a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A17Z&rscd=attachment%3B+filename%3DSonosAdvBatteryStats.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A02Z&ske=2026-08-25T03%3A27%3A17Z&sks=b&skv=2018-11-09&sig=ouEwu6eFDPAYf5j…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/56d207b0-71a0-4962-990b-1a068389222a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A28Z&rscd=attachment%3B+filename%3DSonosAdvBatteryStats.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A39Z&ske=2026-08-25T03%3A31%3A28Z&sks=b&skv=2018-11-09&sig=8PqI5CnqSNzKE2w…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16638,7 +16638,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/3f979fb6-5a2f-403b-9ccc-33464d57eb13?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A39%3A38Z&rscd=attachment%3B+filename%3DSonosAdvFavorites.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A39%3A05Z&ske=2026-08-25T03%3A39%3A38Z&sks=b&skv=2018-11-09&sig=N2bcsbdXsfh4r2FQYa…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/3f979fb6-5a2f-403b-9ccc-33464d57eb13?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A36%3A38Z&rscd=attachment%3B+filename%3DSonosAdvFavorites.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A35%3A43Z&ske=2026-08-25T03%3A36%3A38Z&sks=b&skv=2018-11-09&sig=WswLgXQfgA5MA5vo5n…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16648,7 +16648,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/50590e2d-a2e9-4712-8386-ec4e8e485e6e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A39Z&rscd=attachment%3B+filename%3DSonosAdvGroup.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A55Z&ske=2026-08-25T03%3A25%3A39Z&sks=b&skv=2018-11-09&sig=y0Fo7e81q9q%2FAjQ00u3Q…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/50590e2d-a2e9-4712-8386-ec4e8e485e6e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A42%3A35Z&rscd=attachment%3B+filename%3DSonosAdvGroup.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A42%3A24Z&ske=2026-08-25T03%3A42%3A35Z&sks=b&skv=2018-11-09&sig=t4%2FzEVn8TPbTv2aOxPOm…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16658,7 +16658,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/ae482c5e-8e7c-4579-a4c6-699335538cec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A00Z&rscd=attachment%3B+filename%3DSonosAdvPlayer.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A31Z&ske=2026-08-25T03%3A26%3A00Z&sks=b&skv=2018-11-09&sig=tNEpE7t7tBAhQa4vBQmIr…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/ae482c5e-8e7c-4579-a4c6-699335538cec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A10Z&rscd=attachment%3B+filename%3DSonosAdvPlayer.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A24Z&ske=2026-08-25T03%3A54%3A10Z&sks=b&skv=2018-11-09&sig=EqjxX053bylPaVuEcmGd2…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16668,7 +16668,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/5cb7b961-0320-4717-b5d2-11f64c9707d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A30Z&rscd=attachment%3B+filename%3DSonosAdvPlaylist.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A27Z&ske=2026-08-25T03%3A27%3A30Z&sks=b&skv=2018-11-09&sig=DXOHzuaumwKAumz7alj…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/5cb7b961-0320-4717-b5d2-11f64c9707d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A33%3A48Z&rscd=attachment%3B+filename%3DSonosAdvPlaylist.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A33%3A17Z&ske=2026-08-25T03%3A33%3A48Z&sks=b&skv=2018-11-09&sig=THZwf0qs8demKv%2Fkv…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16678,7 +16678,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/cf13ad66-d343-4246-b316-edf02c69eebd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A41Z&rscd=attachment%3B+filename%3DSonosAdvSecondaries.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A50Z&ske=2026-08-25T03%3A25%3A41Z&sks=b&skv=2018-11-09&sig=MsI8c7sorMFRImw0…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/cf13ad66-d343-4246-b316-edf02c69eebd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A44Z&rscd=attachment%3B+filename%3DSonosAdvSecondaries.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A22Z&ske=2026-08-25T03%3A29%3A44Z&sks=b&skv=2018-11-09&sig=EH74%2BHOv8lrUq%…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16688,7 +16688,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/1fdf1fb7-558c-4531-8e2f-d1aff3421fd6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A24Z&rscd=attachment%3B+filename%3DSonosAdvSnapshot.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A05Z&ske=2026-08-25T03%3A27%3A24Z&sks=b&skv=2018-11-09&sig=mrgjaUa%2BinEkFKm1S…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/1fdf1fb7-558c-4531-8e2f-d1aff3421fd6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A27Z&rscd=attachment%3B+filename%3DSonosAdvSnapshot.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A27Z&ske=2026-08-25T03%3A28%3A27Z&sks=b&skv=2018-11-09&sig=iZe0KwmNZQ3MZEJEzJ3…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -16698,7 +16698,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/bce11c41-cfff-4ddd-8ffe-7f8af81e6593?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A37Z&rscd=attachment%3B+filename%3DSonosAdvancedApp.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A57Z&ske=2026-08-25T03%3A25%3A37Z&sks=b&skv=2018-11-09&sig=0PinudfkRqSs0mmq3dH…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/729570315/bce11c41-cfff-4ddd-8ffe-7f8af81e6593?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A39Z&rscd=attachment%3B+filename%3DSonosAdvancedApp.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A59Z&ske=2026-08-25T03%3A54%3A39Z&sks=b&skv=2018-11-09&sig=gG7vxn7mPMCwUYhr6rG…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -20544,7 +20544,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/1297387775/fcb0c1b6-db17-44c1-adf0-2ce956d3604e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A38Z&rscd=attachment%3B+filename%3Dfinal-driver-DimmerVTM31-SN.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A57Z&ske=2026-08-25T03%3A25%3A38Z&sks=b&skv=2018-11-09&sig=IA3VHGy…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/1297387775/fcb0c1b6-db17-44c1-adf0-2ce956d3604e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A51Z&rscd=attachment%3B+filename%3Dfinal-driver-DimmerVTM31-SN.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A24Z&ske=2026-08-25T03%3A53%3A51Z&sks=b&skv=2018-11-09&sig=c9zEELr…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -20554,7 +20554,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/1297387775/6e082dcc-b1cb-43ba-89c9-2175ba0e9e52?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A13Z&rscd=attachment%3B+filename%3Dfinal-driver-NotificationBarRGBW.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A35Z&ske=2026-08-25T03%3A28%3A13Z&sks=b&skv=2018-11-09&sig=63…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/1297387775/6e082dcc-b1cb-43ba-89c9-2175ba0e9e52?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A11Z&rscd=attachment%3B+filename%3Dfinal-driver-NotificationBarRGBW.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A20Z&ske=2026-08-25T03%3A29%3A11Z&sks=b&skv=2018-11-09&sig=bY…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26552,7 +26552,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/5a255819-7261-4cee-9cdc-074330f963f7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A11Z&rscd=attachment%3B+filename%3DShelly1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A16Z&ske=2026-08-25T03%3A28%3A11Z&sks=b&skv=2018-11-09&sig=nnwbvL7SmnnHYF%2BbhT…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/5a255819-7261-4cee-9cdc-074330f963f7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A06Z&rscd=attachment%3B+filename%3DShelly1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A30Z&ske=2026-08-25T03%3A54%3A06Z&sks=b&skv=2018-11-09&sig=6plgYuizBpSFC7YwiS%2…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26562,7 +26562,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a034bf52-3610-4440-bfff-c0c5dec66b5e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A57Z&rscd=attachment%3B+filename%3DShelly2.5-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A05Z&ske=2026-08-25T03%3A25%3A57Z&sks=b&skv=2018-11-09&sig=%2BX7a0dmrPcUVOc1m…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a034bf52-3610-4440-bfff-c0c5dec66b5e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A32%3A26Z&rscd=attachment%3B+filename%3DShelly2.5-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A32%3A05Z&ske=2026-08-25T03%3A32%3A26Z&sks=b&skv=2018-11-09&sig=Mp2xt4CmVI1rJmSqrm…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26572,7 +26572,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/2d539e5f-ca00-4972-b3dc-698421ba9a19?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A48Z&rscd=attachment%3B+filename%3DShelly3EM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A03Z&ske=2026-08-25T03%3A25%3A48Z&sks=b&skv=2018-11-09&sig=rEsdl4BgzoNpK3KaUA…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/2d539e5f-ca00-4972-b3dc-698421ba9a19?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A51Z&rscd=attachment%3B+filename%3DShelly3EM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A24Z&ske=2026-08-25T03%3A53%3A51Z&sks=b&skv=2018-11-09&sig=RQvoSwR1RUutOK5%2F…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26582,7 +26582,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/c18f0029-fee0-47f2-8cc4-d4dbccc931fe?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A17Z&rscd=attachment%3B+filename%3DShellyBluGateway-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A07Z&ske=2026-08-25T03%3A25%3A17Z&sks=b&skv=2018-11-09&sig=7EhYMFdYPrf…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/c18f0029-fee0-47f2-8cc4-d4dbccc931fe?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A14Z&rscd=attachment%3B+filename%3DShellyBluGateway-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A31Z&ske=2026-08-25T03%3A54%3A14Z&sks=b&skv=2018-11-09&sig=W%2FESFoA0k…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26592,7 +26592,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/9802745c-ec61-4f64-80c0-b7a14e1436e9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A33%3A46Z&rscd=attachment%3B+filename%3DShellyBluWallSwitch-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A33%3A23Z&ske=2026-08-25T03%3A33%3A46Z&sks=b&skv=2018-11-09&sig=rEoBQK43…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/9802745c-ec61-4f64-80c0-b7a14e1436e9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A45Z&rscd=attachment%3B+filename%3DShellyBluWallSwitch-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A01Z&ske=2026-08-25T03%3A29%3A45Z&sks=b&skv=2018-11-09&sig=DbCcoooZ…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26602,7 +26602,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4740967a-4fb6-4916-b2b3-12e6c8544a70?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A14Z&rscd=attachment%3B+filename%3DShellyBluetoothHelper-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A29Z&ske=2026-08-25T03%3A26%3A14Z&sks=b&skv=2018-11-09&sig=n3JPlm…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4740967a-4fb6-4916-b2b3-12e6c8544a70?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A36%3A24Z&rscd=attachment%3B+filename%3DShellyBluetoothHelper-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A35%3A39Z&ske=2026-08-25T03%3A36%3A24Z&sks=b&skv=2018-11-09&sig=AZIYhh…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26612,7 +26612,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/860a209d-3299-448d-b170-e8a801e67508?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A32Z&rscd=attachment%3B+filename%3DShellyBulbRGBW-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A23Z&ske=2026-08-25T03%3A25%3A32Z&sks=b&skv=2018-11-09&sig=dQ91Qa2x0TglR…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/860a209d-3299-448d-b170-e8a801e67508?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A11Z&rscd=attachment%3B+filename%3DShellyBulbRGBW-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A52%3A48Z&ske=2026-08-25T03%3A53%3A11Z&sks=b&skv=2018-11-09&sig=T0ua6kcoB1rt%…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26622,7 +26622,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/1e79f069-5e48-41fa-9a23-632cb3d90cdc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A52Z&rscd=attachment%3B+filename%3DShellyButton1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A00Z&ske=2026-08-25T03%3A29%3A52Z&sks=b&skv=2018-11-09&sig=%2B%2BSOSjTcqI…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/1e79f069-5e48-41fa-9a23-632cb3d90cdc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A28Z&rscd=attachment%3B+filename%3DShellyButton1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A20Z&ske=2026-08-25T03%3A31%3A28Z&sks=b&skv=2018-11-09&sig=Fc4t7Led7QzYOI…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26632,7 +26632,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/10072773-1fac-4753-b6fb-59d6eb086c4c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A52Z&rscd=attachment%3B+filename%3DShellyButton1Blu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A23Z&ske=2026-08-25T03%3A25%3A52Z&sks=b&skv=2018-11-09&sig=KYwvaqgFsoP…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/10072773-1fac-4753-b6fb-59d6eb086c4c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A02Z&rscd=attachment%3B+filename%3DShellyButton1Blu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A06Z&ske=2026-08-25T03%3A29%3A02Z&sks=b&skv=2018-11-09&sig=wbu4vL32%2B…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26642,7 +26642,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4eb5b1a4-d7b1-4178-88da-c7a30abb9170?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A06Z&rscd=attachment%3B+filename%3DShellyButton4Blu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A03Z&ske=2026-08-25T03%3A29%3A06Z&sks=b&skv=2018-11-09&sig=%2BnARp3q8m…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4eb5b1a4-d7b1-4178-88da-c7a30abb9170?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A57Z&rscd=attachment%3B+filename%3DShellyButton4Blu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A45Z&ske=2026-08-25T03%3A29%3A57Z&sks=b&skv=2018-11-09&sig=W7pZU3zUPow…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26652,7 +26652,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/371310aa-9710-478c-8afa-66cb1d29e5a2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A00Z&rscd=attachment%3B+filename%3DShellyCoverComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A17Z&ske=2026-08-25T03%3A26%3A00Z&sks=b&skv=2018-11-09&sig=Gl6SYBB…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/371310aa-9710-478c-8afa-66cb1d29e5a2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A37%3A56Z&rscd=attachment%3B+filename%3DShellyCoverComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A37%3A34Z&ske=2026-08-25T03%3A37%3A56Z&sks=b&skv=2018-11-09&sig=z8rM%2B…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26662,7 +26662,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/f024cace-e8ea-4115-9a6a-1f8cf97ba3fb?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A32Z&rscd=attachment%3B+filename%3DShellyCoverComponentPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A05Z&ske=2026-08-25T03%3A30%3A32Z&sks=b&skv=2018-11-09&sig=gvcAF…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/f024cace-e8ea-4115-9a6a-1f8cf97ba3fb?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A15Z&rscd=attachment%3B+filename%3DShellyCoverComponentPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A38Z&ske=2026-08-25T03%3A29%3A15Z&sks=b&skv=2018-11-09&sig=yp4xe…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26672,7 +26672,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/f9e3cee4-313a-4eae-ac95-764bd15b3de6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A37%3A08Z&rscd=attachment%3B+filename%3DShellyDimmer2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A36%3A53Z&ske=2026-08-25T03%3A37%3A08Z&sks=b&skv=2018-11-09&sig=uvK6Gg49Zoq17m…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/f9e3cee4-313a-4eae-ac95-764bd15b3de6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A52%3A24Z&rscd=attachment%3B+filename%3DShellyDimmer2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A52%3A12Z&ske=2026-08-25T03%3A52%3A24Z&sks=b&skv=2018-11-09&sig=5Igy9pZg7DwkGB…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26682,7 +26682,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6e619e69-e0da-443a-b3d9-e07ceff7fec4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A37Z&rscd=attachment%3B+filename%3DShellyDimmerComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A52Z&ske=2026-08-25T03%3A29%3A37Z&sks=b&skv=2018-11-09&sig=qPzrp9…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6e619e69-e0da-443a-b3d9-e07ceff7fec4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A05Z&rscd=attachment%3B+filename%3DShellyDimmerComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A48Z&ske=2026-08-25T03%3A54%3A05Z&sks=b&skv=2018-11-09&sig=npCVn8…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26692,7 +26692,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4a9a74c2-1af8-4f21-bf1b-7f9592533e20?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A34Z&rscd=attachment%3B+filename%3DShellyDoorWindowBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A34Z&ske=2026-08-25T03%3A27%3A34Z&sks=b&skv=2018-11-09&sig=yXYhhmeg…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4a9a74c2-1af8-4f21-bf1b-7f9592533e20?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A52%3A44Z&rscd=attachment%3B+filename%3DShellyDoorWindowBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A52%3A30Z&ske=2026-08-25T03%3A52%3A44Z&sks=b&skv=2018-11-09&sig=Yog6QJEY…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26702,7 +26702,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8a03e250-b5ee-4420-8abe-dceb8d8b33af?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A23Z&rscd=attachment%3B+filename%3DShellyDuoWWCW-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A30Z&ske=2026-08-25T03%3A29%3A23Z&sks=b&skv=2018-11-09&sig=FrYEXyHpxVt7hT…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8a03e250-b5ee-4420-8abe-dceb8d8b33af?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A45Z&rscd=attachment%3B+filename%3DShellyDuoWWCW-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A04Z&ske=2026-08-25T03%3A30%3A45Z&sks=b&skv=2018-11-09&sig=2dnboWqWhBSbND…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26712,7 +26712,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/34a52fef-beaf-496b-b104-fa013176c9ea?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A10Z&rscd=attachment%3B+filename%3DShellyEM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A08Z&ske=2026-08-25T03%3A28%3A10Z&sks=b&skv=2018-11-09&sig=IUQc3B6%2FiPYU0Lunj…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/34a52fef-beaf-496b-b104-fa013176c9ea?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A26Z&rscd=attachment%3B+filename%3DShellyEM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A20Z&ske=2026-08-25T03%3A53%3A26Z&sks=b&skv=2018-11-09&sig=aZ8cnJQpSj5ARCZAfZf…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26722,7 +26722,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/1591d2ed-be96-48b5-981a-0c1a39a8bd75?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A49Z&rscd=attachment%3B+filename%3DShellyEMComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A26Z&ske=2026-08-25T03%3A25%3A49Z&sks=b&skv=2018-11-09&sig=IIkaZEYb9k…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/1591d2ed-be96-48b5-981a-0c1a39a8bd75?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A57Z&rscd=attachment%3B+filename%3DShellyEMComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A58Z&ske=2026-08-25T03%3A54%3A57Z&sks=b&skv=2018-11-09&sig=wBwdDSsFcE…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26732,7 +26732,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/366d9843-b3d6-43af-826f-7f40494564ad?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A47Z&rscd=attachment%3B+filename%3DShellyFlood-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A30Z&ske=2026-08-25T03%3A25%3A47Z&sks=b&skv=2018-11-09&sig=o%2FC6HAbxp5NslV…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/366d9843-b3d6-43af-826f-7f40494564ad?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A55Z&rscd=attachment%3B+filename%3DShellyFlood-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A22Z&ske=2026-08-25T03%3A31%3A55Z&sks=b&skv=2018-11-09&sig=NxFbqSuWpwL6iv7S…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26742,7 +26742,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/87059c08-a179-45a0-9466-8db172d3dd7f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A44Z&rscd=attachment%3B+filename%3DShellyFloodGen4-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A35Z&ske=2026-08-25T03%3A30%3A44Z&sks=b&skv=2018-11-09&sig=huo8lVCR2qOy…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/87059c08-a179-45a0-9466-8db172d3dd7f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A34%3A52Z&rscd=attachment%3B+filename%3DShellyFloodGen4-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A34%3A17Z&ske=2026-08-25T03%3A34%3A52Z&sks=b&skv=2018-11-09&sig=R%2BPns2S4DJ…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26752,7 +26752,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6a2e95dd-14b7-4208-b477-77e074293de8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A33%3A31Z&rscd=attachment%3B+filename%3DShellyGas-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A33%3A22Z&ske=2026-08-25T03%3A33%3A31Z&sks=b&skv=2018-11-09&sig=Us3OMWT9jALvvNGwlD…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6a2e95dd-14b7-4208-b477-77e074293de8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A40Z&rscd=attachment%3B+filename%3DShellyGas-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A41Z&ske=2026-08-25T03%3A54%3A40Z&sks=b&skv=2018-11-09&sig=q%2Fv54d8l9KzuUTGi…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26762,7 +26762,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/81f98a34-7dc7-48fa-8c5b-fe1c5f755163?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A41%3A11Z&rscd=attachment%3B+filename%3DShellyH.T-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A40%3A34Z&ske=2026-08-25T03%3A41%3A11Z&sks=b&skv=2018-11-09&sig=7czT8AFzEP1gt5m95l…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/81f98a34-7dc7-48fa-8c5b-fe1c5f755163?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A52%3A48Z&rscd=attachment%3B+filename%3DShellyH.T-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A52%3A31Z&ske=2026-08-25T03%3A52%3A48Z&sks=b&skv=2018-11-09&sig=6EwwiUVq609X6NHmkK…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26772,7 +26772,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/fc56feeb-e34b-432e-ac04-0e83f02724de?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A33Z&rscd=attachment%3B+filename%3DShellyH.TBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A44Z&ske=2026-08-25T03%3A27%3A33Z&sks=b&skv=2018-11-09&sig=yK7Qxq5gwHM6EXY…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/fc56feeb-e34b-432e-ac04-0e83f02724de?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A35%3A00Z&rscd=attachment%3B+filename%3DShellyH.TBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A34%3A35Z&ske=2026-08-25T03%3A35%3A00Z&sks=b&skv=2018-11-09&sig=Vp0W2xVgOzwuGpz…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26782,7 +26782,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d4660d69-2d80-4789-b647-ddc93a9d33fc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A41Z&rscd=attachment%3B+filename%3DShellyHumidityPeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A12Z&ske=2026-08-25T03%3A27%3A41Z&sks=b&skv=2018-11-0…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d4660d69-2d80-4789-b647-ddc93a9d33fc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A05Z&rscd=attachment%3B+filename%3DShellyHumidityPeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A29Z&ske=2026-08-25T03%3A54%3A05Z&sks=b&skv=2018-11-0…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26792,7 +26792,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/102fadaa-f498-4e53-8c36-59ddbed158bc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A40Z&rscd=attachment%3B+filename%3DShellyInputAnalogComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A58Z&ske=2026-08-25T03%3A26%3A40Z&sks=b&skv=2018-11-09&sig=L…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/102fadaa-f498-4e53-8c36-59ddbed158bc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A28Z&rscd=attachment%3B+filename%3DShellyInputAnalogComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A39Z&ske=2026-08-25T03%3A31%3A28Z&sks=b&skv=2018-11-09&sig=z…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26802,7 +26802,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/23f97d1c-4852-44ce-bd79-3872fe903d4a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A02Z&rscd=attachment%3B+filename%3DShellyInputButtonComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A19Z&ske=2026-08-25T03%3A28%3A02Z&sks=b&skv=2018-11-09&sig=x…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/23f97d1c-4852-44ce-bd79-3872fe903d4a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A40Z&rscd=attachment%3B+filename%3DShellyInputButtonComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A49Z&ske=2026-08-25T03%3A30%3A40Z&sks=b&skv=2018-11-09&sig=r…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26812,7 +26812,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/af4b7216-87b1-4202-b95d-4437371851f4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A25Z&rscd=attachment%3B+filename%3DShellyInputCountComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A54Z&ske=2026-08-25T03%3A29%3A25Z&sks=b&skv=2018-11-09&sig=qH…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/af4b7216-87b1-4202-b95d-4437371851f4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A40Z&rscd=attachment%3B+filename%3DShellyInputCountComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A36Z&ske=2026-08-25T03%3A53%3A40Z&sks=b&skv=2018-11-09&sig=6d…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26822,7 +26822,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/e3dd2566-23b5-4581-a772-2f6a61a0365c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A32Z&rscd=attachment%3B+filename%3DShellyInputSwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A17Z&ske=2026-08-25T03%3A28%3A32Z&sks=b&skv=2018-11-09&sig=%…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/e3dd2566-23b5-4581-a772-2f6a61a0365c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A04Z&rscd=attachment%3B+filename%3DShellyInputSwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A54%3A09Z&ske=2026-08-25T03%3A55%3A04Z&sks=b&skv=2018-11-09&sig=k…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26832,7 +26832,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6274db0d-35d6-4735-8fae-f5fd44d9223b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A30Z&rscd=attachment%3B+filename%3DShellyMotion-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A07Z&ske=2026-08-25T03%3A27%3A30Z&sks=b&skv=2018-11-09&sig=NdGcEGNH8OxIjJo…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6274db0d-35d6-4735-8fae-f5fd44d9223b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A35%3A10Z&rscd=attachment%3B+filename%3DShellyMotion-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A34%3A20Z&ske=2026-08-25T03%3A35%3A10Z&sks=b&skv=2018-11-09&sig=w0aKXGB%2Bm53SI…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26842,7 +26842,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6991e645-588e-4276-b60a-b4d10c8bf90a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A37Z&rscd=attachment%3B+filename%3DShellyMotion2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A37Z&ske=2026-08-25T03%3A26%3A37Z&sks=b&skv=2018-11-09&sig=ZWZA%2BtVZQheR…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6991e645-588e-4276-b60a-b4d10c8bf90a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A05Z&rscd=attachment%3B+filename%3DShellyMotion2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A29Z&ske=2026-08-25T03%3A54%3A05Z&sks=b&skv=2018-11-09&sig=j6Q7vOHHpbPjc%…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26852,7 +26852,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/68388f63-f78d-4527-a252-f0d6daeb4b69?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A31Z&rscd=attachment%3B+filename%3DShellyMotionBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A01Z&ske=2026-08-25T03%3A29%3A31Z&sks=b&skv=2018-11-09&sig=CrGBuFj6qNn1…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/68388f63-f78d-4527-a252-f0d6daeb4b69?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A26Z&rscd=attachment%3B+filename%3DShellyMotionBlu-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A34Z&ske=2026-08-25T03%3A54%3A26Z&sks=b&skv=2018-11-09&sig=%2FSx7JwGeM1…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26862,7 +26862,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/670abf6f-94d0-45fa-8934-5abfba4ad3ca?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A49Z&rscd=attachment%3B+filename%3DShellyOverUnderSwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A42Z&ske=2026-08-25T03%3A28%3A49Z&sks=b&skv=2018-11-09&s…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/670abf6f-94d0-45fa-8934-5abfba4ad3ca?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A12Z&rscd=attachment%3B+filename%3DShellyOverUnderSwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A42Z&ske=2026-08-25T03%3A31%3A12Z&sks=b&skv=2018-11-09&s…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26872,7 +26872,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/675e5a66-4cdc-40ac-8148-e4d2e031c104?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A21Z&rscd=attachment%3B+filename%3DShellyPMMiniGen3-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A46Z&ske=2026-08-25T03%3A27%3A21Z&sks=b&skv=2018-11-09&sig=phgt6%2BMas…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/675e5a66-4cdc-40ac-8148-e4d2e031c104?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A32%3A15Z&rscd=attachment%3B+filename%3DShellyPMMiniGen3-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A17Z&ske=2026-08-25T03%3A32%3A15Z&sks=b&skv=2018-11-09&sig=QRXc0jHAHWv…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26882,7 +26882,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/e55d12c4-d2e2-4dec-9fbd-6018702ae970?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A23Z&rscd=attachment%3B+filename%3DShellyPlugUS-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A23Z&ske=2026-08-25T03%3A28%3A23Z&sks=b&skv=2018-11-09&sig=xg6FlYpvbKVhSeG…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/e55d12c4-d2e2-4dec-9fbd-6018702ae970?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A47Z&rscd=attachment%3B+filename%3DShellyPlugUS-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A18Z&ske=2026-08-25T03%3A31%3A47Z&sks=b&skv=2018-11-09&sig=otAmtqgWhfpKSlF…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26892,7 +26892,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/86c94b5a-78b7-403d-bf2c-b133e71d23ce?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A38Z&rscd=attachment%3B+filename%3DShellyPlus0-10vDimmer-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A57Z&ske=2026-08-25T03%3A26%3A38Z&sks=b&skv=2018-11-09&sig=FdIoPW…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/86c94b5a-78b7-403d-bf2c-b133e71d23ce?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A52%3A44Z&rscd=attachment%3B+filename%3DShellyPlus0-10vDimmer-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A51%3A45Z&ske=2026-08-25T03%3A52%3A44Z&sks=b&skv=2018-11-09&sig=BWNPaF…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26902,7 +26902,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/688fd667-c504-42a5-b720-b892d329ed44?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A21Z&rscd=attachment%3B+filename%3DShellyPlus1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A27Z&ske=2026-08-25T03%3A29%3A21Z&sks=b&skv=2018-11-09&sig=XmnuWJKS8j7Ep2VT…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/688fd667-c504-42a5-b720-b892d329ed44?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A15Z&rscd=attachment%3B+filename%3DShellyPlus1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A39Z&ske=2026-08-25T03%3A54%3A15Z&sks=b&skv=2018-11-09&sig=5QDSF%2BdC8yuEwh…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26912,7 +26912,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4ee5973f-7f56-4cef-b183-0b54ac2d7a7f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A30Z&rscd=attachment%3B+filename%3DShellyPlus1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A36Z&ske=2026-08-25T03%3A28%3A30Z&sks=b&skv=2018-11-09&sig=xy9HXBiMaKRRqm…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4ee5973f-7f56-4cef-b183-0b54ac2d7a7f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A34%3A23Z&rscd=attachment%3B+filename%3DShellyPlus1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A33%3A43Z&ske=2026-08-25T03%3A34%3A23Z&sks=b&skv=2018-11-09&sig=ovkzdNGcOBR0hZ…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26922,7 +26922,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/11733478-0616-4140-9e17-f69993647098?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A31Z&rscd=attachment%3B+filename%3DShellyPlus1PMMini-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A42Z&ske=2026-08-25T03%3A27%3A31Z&sks=b&skv=2018-11-09&sig=Yxh3WcpSmK…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/11733478-0616-4140-9e17-f69993647098?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A01Z&rscd=attachment%3B+filename%3DShellyPlus1PMMini-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A54Z&ske=2026-08-25T03%3A54%3A01Z&sks=b&skv=2018-11-09&sig=ptLrumq57I…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26932,7 +26932,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6c4eaa3d-65c2-496d-9797-7bea2e8bcaf4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A22%3A44Z&rscd=attachment%3B+filename%3DShellyPlus2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A22%3A20Z&ske=2026-08-25T03%3A22%3A44Z&sks=b&skv=2018-11-09&sig=J9dcrZRkLjPhqw…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6c4eaa3d-65c2-496d-9797-7bea2e8bcaf4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A05Z&rscd=attachment%3B+filename%3DShellyPlus2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A54%3A11Z&ske=2026-08-25T03%3A55%3A05Z&sks=b&skv=2018-11-09&sig=MMFhD3F37rCpCX…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26942,7 +26942,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/3a670ae8-8cad-4fde-a2ac-87b7a452a9e9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A22Z&rscd=attachment%3B+filename%3DShellyPlusH.T-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A45Z&ske=2026-08-25T03%3A25%3A22Z&sks=b&skv=2018-11-09&sig=tGV4EXBFNEvlH%…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/3a670ae8-8cad-4fde-a2ac-87b7a452a9e9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A15Z&rscd=attachment%3B+filename%3DShellyPlusH.T-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A05Z&ske=2026-08-25T03%3A53%3A15Z&sks=b&skv=2018-11-09&sig=SXrQjrDQkslrKU…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26952,7 +26952,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/b88176e8-bf11-4eaf-9d8c-09d80deb02d0?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A16Z&rscd=attachment%3B+filename%3DShellyPlusI4-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A45Z&ske=2026-08-25T03%3A26%3A16Z&sks=b&skv=2018-11-09&sig=Dkyp4PVjIX1GGMQ…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/b88176e8-bf11-4eaf-9d8c-09d80deb02d0?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A56%3A23Z&rscd=attachment%3B+filename%3DShellyPlusI4-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A40Z&ske=2026-08-25T03%3A56%3A23Z&sks=b&skv=2018-11-09&sig=NuO8qc92uvPEwGT…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26962,7 +26962,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4c6870d4-dd9e-4c91-b0dd-b851f8b6000c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A21Z&rscd=attachment%3B+filename%3DShellyPlusRGBWPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A23Z&ske=2026-08-25T03%3A29%3A21Z&sks=b&skv=2018-11-09&sig=Wsl3qh43XVA…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/4c6870d4-dd9e-4c91-b0dd-b851f8b6000c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A11Z&rscd=attachment%3B+filename%3DShellyPlusRGBWPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A24Z&ske=2026-08-25T03%3A30%3A11Z&sks=b&skv=2018-11-09&sig=pJLDXN%2BYW…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26972,7 +26972,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a401b7ce-f0cd-4f6f-838c-375693af2304?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A34Z&rscd=attachment%3B+filename%3DShellyPlusSmoke-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A36Z&ske=2026-08-25T03%3A28%3A34Z&sks=b&skv=2018-11-09&sig=ugYv%2BZLEo3…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a401b7ce-f0cd-4f6f-838c-375693af2304?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A56%3A25Z&rscd=attachment%3B+filename%3DShellyPlusSmoke-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A33Z&ske=2026-08-25T03%3A56%3A25Z&sks=b&skv=2018-11-09&sig=RGXUqqPQys9J…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26982,7 +26982,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/45ad617b-09b1-4dab-bb82-f190cccd05a5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A02Z&rscd=attachment%3B+filename%3DShellyPlusWallDimmer-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A24%3A45Z&ske=2026-08-25T03%3A25%3A02Z&sks=b&skv=2018-11-09&sig=RhRhWKb…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/45ad617b-09b1-4dab-bb82-f190cccd05a5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A41%3A05Z&rscd=attachment%3B+filename%3DShellyPlusWallDimmer-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A40%3A15Z&ske=2026-08-25T03%3A41%3A05Z&sks=b&skv=2018-11-09&sig=WFw75YT…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -26992,7 +26992,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6e49bf8c-4bb5-4630-9bad-2e45b13b841f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A48Z&rscd=attachment%3B+filename%3DShellyPollingVoltageSensorComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A32Z&ske=2026-08-25T03%3A25%3A48Z&sks=b&skv=2018-11…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6e49bf8c-4bb5-4630-9bad-2e45b13b841f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A34%3A55Z&rscd=attachment%3B+filename%3DShellyPollingVoltageSensorComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A34%3A03Z&ske=2026-08-25T03%3A34%3A55Z&sks=b&skv=2018-11…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27002,7 +27002,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/5bdd5c8d-24fe-460f-be87-02c4347faa89?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A24Z&rscd=attachment%3B+filename%3DShellyPro1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A49Z&ske=2026-08-25T03%3A27%3A24Z&sks=b&skv=2018-11-09&sig=Np%2BCkr2uqZhqaJY…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/5bdd5c8d-24fe-460f-be87-02c4347faa89?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A21Z&rscd=attachment%3B+filename%3DShellyPro1-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A54%3A39Z&ske=2026-08-25T03%3A55%3A21Z&sks=b&skv=2018-11-09&sig=WZkKKPBhsGSLBGtAx…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27012,7 +27012,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/333130da-fe12-46aa-9480-8abb120f4f29?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A30Z&rscd=attachment%3B+filename%3DShellyPro1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A36Z&ske=2026-08-25T03%3A28%3A30Z&sks=b&skv=2018-11-09&sig=wsnCGU%2F3PPzrP…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/333130da-fe12-46aa-9480-8abb120f4f29?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A40Z&rscd=attachment%3B+filename%3DShellyPro1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A35Z&ske=2026-08-25T03%3A55%3A40Z&sks=b&skv=2018-11-09&sig=n3E1LlWO9qXWN2R…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27022,7 +27022,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/0816f7a9-c29d-4b40-b8fe-0355d7774308?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A26Z&rscd=attachment%3B+filename%3DShellyPro2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A13Z&ske=2026-08-25T03%3A25%3A26Z&sks=b&skv=2018-11-09&sig=bnfOXXcIFvUnF7Nja…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/0816f7a9-c29d-4b40-b8fe-0355d7774308?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A22Z&rscd=attachment%3B+filename%3DShellyPro2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A30Z&ske=2026-08-25T03%3A54%3A22Z&sks=b&skv=2018-11-09&sig=SFA%2BWeu5npFC6mu…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27032,7 +27032,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/50538696-c98c-4525-b0e5-d897d9f00dae?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A30%3A35Z&rscd=attachment%3B+filename%3DShellyPro2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A39Z&ske=2026-08-25T03%3A30%3A35Z&sks=b&skv=2018-11-09&sig=wTK8GjDYfcSjVkK…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/50538696-c98c-4525-b0e5-d897d9f00dae?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A34%3A22Z&rscd=attachment%3B+filename%3DShellyPro2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A33%3A58Z&ske=2026-08-25T03%3A34%3A22Z&sks=b&skv=2018-11-09&sig=Vu7pLwJV4EuRJ4q…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27042,7 +27042,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6aa274d4-a7bf-41a1-9e1c-f73fbdec8784?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A44Z&rscd=attachment%3B+filename%3DShellyPro3-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A49Z&ske=2026-08-25T03%3A29%3A44Z&sks=b&skv=2018-11-09&sig=GHuXTutnWO3D0unRA…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/6aa274d4-a7bf-41a1-9e1c-f73fbdec8784?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A43Z&rscd=attachment%3B+filename%3DShellyPro3-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A54%3A46Z&ske=2026-08-25T03%3A55%3A43Z&sks=b&skv=2018-11-09&sig=6qu1o501NWAmFbpwi…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27052,7 +27052,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/aa6a2d97-c068-41e3-9e81-6938cbbab6a8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A58Z&rscd=attachment%3B+filename%3DShellyPro3EM400-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A33Z&ske=2026-08-25T03%3A26%3A58Z&sks=b&skv=2018-11-09&sig=nWn1cG09deT%…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/aa6a2d97-c068-41e3-9e81-6938cbbab6a8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A54Z&rscd=attachment%3B+filename%3DShellyPro3EM400-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A52Z&ske=2026-08-25T03%3A53%3A54Z&sks=b&skv=2018-11-09&sig=gcjRibi9VWQ4…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27062,7 +27062,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d28f2f22-7e1d-4d90-91e4-218f2b06a007?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A26Z&rscd=attachment%3B+filename%3DShellyPro4PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A50Z&ske=2026-08-25T03%3A27%3A26Z&sks=b&skv=2018-11-09&sig=UL2vMqhnsdKA1vM…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d28f2f22-7e1d-4d90-91e4-218f2b06a007?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A32%3A22Z&rscd=attachment%3B+filename%3DShellyPro4PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A32Z&ske=2026-08-25T03%3A32%3A22Z&sks=b&skv=2018-11-09&sig=d0dun404IYOh7eB…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27072,7 +27072,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a318c988-e0ca-476f-b66c-d5f5f087ef6a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A20Z&rscd=attachment%3B+filename%3DShellyProDimmer1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A10Z&ske=2026-08-25T03%3A27%3A20Z&sks=b&skv=2018-11-09&sig=YX4d4jLSP…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/a318c988-e0ca-476f-b66c-d5f5f087ef6a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A40Z&rscd=attachment%3B+filename%3DShellyProDimmer1PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A36Z&ske=2026-08-25T03%3A53%3A40Z&sks=b&skv=2018-11-09&sig=NqUcy%2Fk…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27082,7 +27082,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/c32b5e3b-63bc-4a9d-b2c3-ae208c6b7c74?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A19Z&rscd=attachment%3B+filename%3DShellyProDimmer2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A09Z&ske=2026-08-25T03%3A27%3A19Z&sks=b&skv=2018-11-09&sig=xr6iWhhI4…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/c32b5e3b-63bc-4a9d-b2c3-ae208c6b7c74?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A56%3A12Z&rscd=attachment%3B+filename%3DShellyProDimmer2PM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A51Z&ske=2026-08-25T03%3A56%3A12Z&sks=b&skv=2018-11-09&sig=fv%2F2Tng…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27092,7 +27092,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/038880c8-52b1-42ae-9984-a1b4ddbb1764?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A16Z&rscd=attachment%3B+filename%3DShellyProDualCoverPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A14Z&ske=2026-08-25T03%3A28%3A16Z&sks=b&skv=2018-11-09&sig=oUXK%2B…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/038880c8-52b1-42ae-9984-a1b4ddbb1764?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A40Z&rscd=attachment%3B+filename%3DShellyProDualCoverPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A35Z&ske=2026-08-25T03%3A55%3A40Z&sks=b&skv=2018-11-09&sig=L9Rbwqr…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27102,7 +27102,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/b79b6856-99f1-410d-8b71-bf583afcba5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A39Z&rscd=attachment%3B+filename%3DShellyProEM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A00Z&ske=2026-08-25T03%3A28%3A39Z&sks=b&skv=2018-11-09&sig=%2BZQNjheIsqGSmQ…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/b79b6856-99f1-410d-8b71-bf583afcba5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A14Z&rscd=attachment%3B+filename%3DShellyProEM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A23Z&ske=2026-08-25T03%3A54%3A14Z&sks=b&skv=2018-11-09&sig=oiN9T3apJsvtcgvt…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27112,7 +27112,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/ee39ec2e-ee65-4c05-81ac-f2f477d4b209?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A25%3A21Z&rscd=attachment%3B+filename%3DShellyRGBComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A09Z&ske=2026-08-25T03%3A25%3A21Z&sks=b&skv=2018-11-09&sig=navk%2FP4…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/ee39ec2e-ee65-4c05-81ac-f2f477d4b209?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A45Z&rscd=attachment%3B+filename%3DShellyRGBComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A01Z&ske=2026-08-25T03%3A29%3A45Z&sks=b&skv=2018-11-09&sig=X%2F8Adp4…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27122,7 +27122,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/fb6ab609-e523-4d97-939d-dc9937dbfd3f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A32Z&rscd=attachment%3B+filename%3DShellyRGBW2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A48Z&ske=2026-08-25T03%3A27%3A32Z&sks=b&skv=2018-11-09&sig=Ou%2B0gBfCZ0A3zz…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/fb6ab609-e523-4d97-939d-dc9937dbfd3f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A27Z&rscd=attachment%3B+filename%3DShellyRGBW2-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A30%3A58Z&ske=2026-08-25T03%3A31%3A27Z&sks=b&skv=2018-11-09&sig=rhlOxW4E5ZU3LNGk…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27132,7 +27132,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/dc5ce87d-c74d-4bc8-b019-0a7d1f7454d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A07Z&rscd=attachment%3B+filename%3DShellyRGBW2White-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A32Z&ske=2026-08-25T03%3A26%3A07Z&sks=b&skv=2018-11-09&sig=dMJuwumD34F…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/dc5ce87d-c74d-4bc8-b019-0a7d1f7454d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A23Z&rscd=attachment%3B+filename%3DShellyRGBW2White-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A11Z&ske=2026-08-25T03%3A31%3A23Z&sks=b&skv=2018-11-09&sig=2QZtvji03p9…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27142,7 +27142,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8210eac0-25bc-451f-99d9-ca27430720f3?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A28Z&rscd=attachment%3B+filename%3DShellyRGBWComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A47Z&ske=2026-08-25T03%3A28%3A28Z&sks=b&skv=2018-11-09&sig=Y%2BS%2F…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8210eac0-25bc-451f-99d9-ca27430720f3?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A56%3A25Z&rscd=attachment%3B+filename%3DShellyRGBWComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A55%3A33Z&ske=2026-08-25T03%3A56%3A25Z&sks=b&skv=2018-11-09&sig=0OOjRzi6…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27152,7 +27152,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8934cf3d-71e8-4067-a234-503b57f5a881?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A46Z&rscd=attachment%3B+filename%3DShellySwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A08Z&ske=2026-08-25T03%3A27%3A46Z&sks=b&skv=2018-11-09&sig=E62PIS…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/8934cf3d-71e8-4067-a234-503b57f5a881?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A40Z&rscd=attachment%3B+filename%3DShellySwitchComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A46Z&ske=2026-08-25T03%3A29%3A40Z&sks=b&skv=2018-11-09&sig=sAZdYF…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27162,7 +27162,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d6474783-58ad-4fd6-b426-c668fd9fb901?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A57Z&rscd=attachment%3B+filename%3DShellySwitchComponentPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A34Z&ske=2026-08-25T03%3A28%3A57Z&sks=b&skv=2018-11-09&sig=54O7…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d6474783-58ad-4fd6-b426-c668fd9fb901?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A42Z&rscd=attachment%3B+filename%3DShellySwitchComponentPM-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A05Z&ske=2026-08-25T03%3A29%3A42Z&sks=b&skv=2018-11-09&sig=S3Jy…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27172,7 +27172,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/0a609d40-4df5-475d-86ba-4573714610a8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A00Z&rscd=attachment%3B+filename%3DShellyTRV-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A25%3A55Z&ske=2026-08-25T03%3A26%3A00Z&sks=b&skv=2018-11-09&sig=bXVwVyRkYd3kQbtXqf…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/0a609d40-4df5-475d-86ba-4573714610a8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A28Z&rscd=attachment%3B+filename%3DShellyTRV-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A54Z&ske=2026-08-25T03%3A29%3A28Z&sks=b&skv=2018-11-09&sig=bZhUHCISSj7RF1h7eX…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27182,7 +27182,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/eaff3c79-71ec-4c12-b9d2-d7dd7bbae797?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A21Z&rscd=attachment%3B+filename%3DShellyTemperatureHumidityPeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A07Z&ske=2026-08-25T03%3A29%3A21Z&sks=b&sk…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/eaff3c79-71ec-4c12-b9d2-d7dd7bbae797?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A54%3A33Z&rscd=attachment%3B+filename%3DShellyTemperatureHumidityPeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A58Z&ske=2026-08-25T03%3A54%3A33Z&sks=b&sk…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27192,7 +27192,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d2b50463-1c9f-4fb6-8d0d-dc4b2e91caa6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A26%3A50Z&rscd=attachment%3B+filename%3DShellyTemperaturePeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A19Z&ske=2026-08-25T03%3A26%3A50Z&sks=b&skv=2018-1…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/d2b50463-1c9f-4fb6-8d0d-dc4b2e91caa6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A31%3A59Z&rscd=attachment%3B+filename%3DShellyTemperaturePeripheralComponent-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A31%3A20Z&ske=2026-08-25T03%3A31%3A59Z&sks=b&skv=2018-1…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27202,7 +27202,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/aabf466c-3264-45d4-b00b-104f08e6bd3b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A44Z&rscd=attachment%3B+filename%3DShellyUni-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A28%3A09Z&ske=2026-08-25T03%3A28%3A44Z&sks=b&skv=2018-11-09&sig=sxTmTChVgM3ppCtHBq…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/aabf466c-3264-45d4-b00b-104f08e6bd3b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A29%3A29Z&rscd=attachment%3B+filename%3DShellyUni-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A29%3A14Z&ske=2026-08-25T03%3A29%3A29Z&sks=b&skv=2018-11-09&sig=Fl8MUOHUzrOTa%2Fn7…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27212,7 +27212,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/54af5da5-008a-4840-baac-60b9e65d6d6a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A27%3A24Z&rscd=attachment%3B+filename%3DShellyUniPlus-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A26%3A49Z&ske=2026-08-25T03%3A27%3A24Z&sks=b&skv=2018-11-09&sig=5crz5StudgNIEs…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/54af5da5-008a-4840-baac-60b9e65d6d6a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A55%3A00Z&rscd=attachment%3B+filename%3DShellyUniPlus-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A54%3A36Z&ske=2026-08-25T03%3A55%3A00Z&sks=b&skv=2018-11-09&sig=O0pLZsGztiD3e6…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -27222,7 +27222,7 @@
         {
           "check": "crawl:source",
           "details": {
-            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/2001039f-0497-45f8-b371-722247306712?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A28%3A00Z&rscd=attachment%3B+filename%3DShellyVintage-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A27%3A39Z&ske=2026-08-25T03%3A28%3A00Z&sks=b&skv=2018-11-09&sig=11kFeRucipiggF…"
+            "reason": "redirect outside allowed GitHub hosts: https://release-assets.githubusercontent.com/github-production-release-asset/273346815/2001039f-0497-45f8-b371-722247306712?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-25T03%3A53%3A57Z&rscd=attachment%3B+filename%3DShellyVintage-v2.17.4.groovy&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-25T02%3A53%3A21Z&ske=2026-08-25T03%3A53%3A57Z&sks=b&skv=2018-11-09&sig=QkA154gaJCrQAE…"
           },
           "remediation": "Open the evidence URL and correct the fetch, redirect, or parse failure.",
           "state": "FAILING",
@@ -38484,8 +38484,8 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-modern-dashboard-mdash-minimal-setup-pwa-with-built-in-scheduler-runs-entirely-on-your-hub/165028",
-            "httpStatus": 503,
-            "reason": "Service Unavailable"
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
           "state": "WARNING",
@@ -45885,7 +45885,7 @@
           "details": {
             "finalUrl": "https://oh-lalabs.com/docs/zigbee-xiaomi-aqara-plug-outlet",
             "httpStatus": null,
-            "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+            "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
           },
           "remediation": null,
           "state": "WARNING",
@@ -53339,12 +53339,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-homebridge-hubitat-v2-0/54056",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-homebridge-hubitat-v2-0/54056"
         },
         {
@@ -53368,7 +53368,7 @@
       "name": "Homebridge v2.0",
       "packageId": "manifest:62c32310a9fedf4bc6e0",
       "repositoryUrl": "https://raw.githubusercontent.com/tonesto7/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -54430,7 +54430,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/intecular-invisoutlet-hubitat-mqtt-app-drivers/165173",
+            "finalUrl": "https://community.hubitat.com/t/intecular-invisoutlet-hubitat-mqtt-app-drivers-beta/165173",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -55751,12 +55751,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/made-a-set-of-xbee3-repeaters-in-cases/44049?u=rsjaffe",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/made-a-set-of-xbee3-repeaters-in-cases/44049?u=rsjaffe"
         }
       ],
@@ -55768,7 +55768,7 @@
       "name": "XBee3",
       "packageId": "manifest:737bdecac8830906d58f",
       "repositoryUrl": "https://raw.githubusercontent.com/rsjaffe/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -56003,12 +56003,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-rainforest-eagle/38883",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-rainforest-eagle/38883"
         }
       ],
@@ -56020,7 +56020,7 @@
       "name": "Rainforest Eagle",
       "packageId": "manifest:74c27179c2fb214e14c0",
       "repositoryUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -56770,7 +56770,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/influxdb-logger/110548",
+            "finalUrl": "https://community.hubitat.com/t/influxdb-logger-support/110548",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -56939,12 +56939,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-water-sensor-6-w-dock/39292?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-aeotec-water-sensor-6-w-dock/39292?u=bcopeland"
         }
       ],
@@ -57359,12 +57359,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-network-ups-tools-nut-monitor-and-shutdown-controller-upsmon/115483",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-network-ups-tools-nut-monitor-and-shutdown-controller-upsmon/115483"
         },
         {
@@ -57468,7 +57468,7 @@
           "details": {
             "finalUrl": "https://oh-lalabs.com/docs/zigbee-sonoff-motion-sensor",
             "httpStatus": null,
-            "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+            "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
           },
           "remediation": null,
           "state": "WARNING",
@@ -57550,7 +57550,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/alpha-album-art-tile-tasker-musicbrainz-and-cover-art-archive/80416",
+            "finalUrl": "https://community.hubitat.com/t/project-album-art-tasker-and-musicbrainz-and-cover-art-archive/80416",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -58043,12 +58043,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-logitech-harmony-hub-driver/7618?u=ogiewon",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-logitech-harmony-hub-driver/7618?u=ogiewon"
         },
         {
@@ -58072,7 +58072,7 @@
       "name": "Logitech Harmony Hub Parent",
       "packageId": "manifest:847455ab9d1bda9db3c8",
       "repositoryUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -58475,12 +58475,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-positionguard-family-presence-one-presence-device-per-family-member-area-level-no-coordinates-on-your-hub/165032",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-positionguard-family-presence-one-presence-device-per-family-member-area-level-no-coordinates-on-your-hub/165032"
         },
         {
@@ -58504,7 +58504,7 @@
       "name": "PositionGuard",
       "packageId": "manifest:8674a05a8e58c3a46de1",
       "repositoryUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -58727,12 +58727,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-zooz-zse44-temperature-humidity-xs-sensor-driver/141548",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-zooz-zse44-temperature-humidity-xs-sensor-driver/141548"
         },
         {
@@ -58756,7 +58756,7 @@
       "name": "Zooz Temperature / Humidity XS Sensor ZSE44",
       "packageId": "manifest:87ec6cb8d252200f8f0e",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -59402,12 +59402,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-australian-bureau-of-meteorology-data-radar-images-data-file/82637",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-australian-bureau-of-meteorology-data-radar-images-data-file/82637"
         }
       ],
@@ -59641,13 +59641,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/project-image-cycle-tile-e-g-weather-radar/79742",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "finalUrl": "https://community.hubitat.com/t/release-image-cycle-tile-e-g-weather-radar/79742",
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/project-image-cycle-tile-e-g-weather-radar/79742"
         }
       ],
@@ -60291,12 +60291,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/beta-nuki-smart-lock-2-0-3-0-4-0/40654",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/beta-nuki-smart-lock-2-0-3-0-4-0/40654"
         },
         {
@@ -60891,12 +60891,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-smart-switch-driver-7-eu-version/130862",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-aeotec-smart-switch-driver-7-eu-version/130862"
         },
         {
@@ -60987,12 +60987,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/genmon-generator-monitor/164362",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/genmon-generator-monitor/164362"
         },
         {
@@ -61016,7 +61016,7 @@
       "name": "Genmon Generator Monitor",
       "packageId": "manifest:924cfa250ee409a87aae",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -64666,7 +64666,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/fibaro-fgs-224/59108",
+            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgd-212-fgs-224-fgs-223-and-fgs-222/59108",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -65233,12 +65233,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-multi-relay-door-shade-controller/52793",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-multi-relay-door-shade-controller/52793"
         },
         {
@@ -65262,7 +65262,7 @@
       "name": "Multi-Relay Door/Shade Controller",
       "packageId": "manifest:ad00dd90f632211f57bd",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -65329,12 +65329,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-idle-node-refresher/56613",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-idle-node-refresher/56613"
         },
         {
@@ -65358,7 +65358,7 @@
       "name": "Idle Node Refresher",
       "packageId": "manifest:ad9cf8e1a9507e118036",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -66061,12 +66061,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-gocontrol-gc-tbz48-thermostat-driver/37868?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-advanced-gocontrol-gc-tbz48-thermostat-driver/37868?u=bcopeland"
         }
       ],
@@ -66673,12 +66673,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12"
         },
         {
@@ -66702,7 +66702,7 @@
       "name": "Smarter Bulbs",
       "packageId": "manifest:b95d7d0c0431b49eb33a",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -66769,12 +66769,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11"
         },
         {
@@ -66798,7 +66798,7 @@
       "name": "hubitat_midea",
       "packageId": "manifest:b99a1cd64e4011535f58",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -67057,7 +67057,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/beta-hubvoice-a-local-voice-control-assistant/162246",
+            "finalUrl": "https://community.hubitat.com/t/beta-hubvoice-a-local-voice-assistant-with-optional-ai-and-music-player/162246",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -67441,7 +67441,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-lockdown",
+            "finalUrl": "https://community.hubitat.com/t/release-lockdown/8866",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -67538,12 +67538,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-simple-css-editor/89853",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-simple-css-editor/89853"
         }
       ],
@@ -67888,12 +67888,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-free-meteobridge-weatherbridge-weather-station-v-1-1/12635",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-free-meteobridge-weatherbridge-weather-station-v-1-1/12635"
         },
         {
@@ -67917,7 +67917,7 @@
       "name": "MeteoBridge Weather Station",
       "packageId": "manifest:c309a440118e9ddbabbf",
       "repositoryUrl": "https://raw.githubusercontent.com/SANdood/Hubitat-Stuff/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -67983,7 +67983,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-smartups-vbs-version/51487",
+            "finalUrl": "https://community.hubitat.com/t/beta-release-smartups-vbs-version/51487",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -68560,12 +68560,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/alpha-community-maintained-google-home-integration/34957",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/alpha-community-maintained-google-home-integration/34957"
         },
         {
@@ -68589,7 +68589,7 @@
       "name": "Google Home Community",
       "packageId": "manifest:c77dab80dc2f9819b61b",
       "repositoryUrl": "https://raw.githubusercontent.com/mbudnek/hubitat-package-manager-repo/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -68655,25 +68655,25 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-driver-release-v2-8-4/101697",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697"
         },
         {
           "check": "documentationReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-driver-release-v2-8-4/101697",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697"
         }
       ],
@@ -68950,7 +68950,7 @@
       "packageId": "manifest:c903a182ed6214859619",
       "repositoryUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/repository.json",
       "state": "WARNING",
-      "transition": "RESTORED"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Joel Wetzel",
@@ -69015,7 +69015,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-cooper-eaton-aspire-rfwc5-keypad-driver-for-hubitat",
+            "finalUrl": "https://community.hubitat.com/t/release-cooper-eaton-aspire-rfwc5-keypad-driver-for-hubitat/9844",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -69447,12 +69447,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-fan-thermostat-with-manual-override/34554",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-fan-thermostat-with-manual-override/34554"
         },
         {
@@ -69476,7 +69476,7 @@
       "name": "Fan Thermostat",
       "packageId": "manifest:cc5434403bcadc4ad757",
       "repositoryUrl": "https://raw.githubusercontent.com/mbudnek/hubitat-package-manager-repo/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -70204,7 +70204,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/advanced-button-controller-abc/448",
+            "finalUrl": "https://community.hubitat.com/t/advanced-button-controller-abc/",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -70302,12 +70302,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305"
         },
         {
@@ -70566,13 +70566,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/samsung-hubitat-tv-integration-2016-and-later/55120",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/samsung-hubitat-tv-integration/55120",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/samsung-hubitat-tv-integration/55120"
         },
         {
@@ -70596,7 +70596,7 @@
       "name": "Samsung TV Remote",
       "packageId": "manifest:d5fd69d97d88d58dcc45",
       "repositoryUrl": "https://raw.githubusercontent.com/DaveGut/HubitatActive/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -70662,13 +70662,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/somfy-z-wave-to-rts-interface-ii-driver/43745",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "finalUrl": "https://community.hubitat.com/t/release-somfy-z-wave-to-rts-interface-ii-driver/43745",
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/somfy-z-wave-to-rts-interface-ii-driver/43745"
         },
         {
@@ -70692,7 +70692,7 @@
       "name": "Somfy Z-Wave to RTS Interface II (ZRTSII)",
       "packageId": "manifest:d621bce854f31f49aa68",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -71901,12 +71901,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/re-release-netatmo-connect-weather-station/97788",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/re-release-netatmo-connect-weather-station/97788"
         }
       ],
@@ -71918,7 +71918,7 @@
       "name": "Netatmo (Connect) - Weather Station",
       "packageId": "manifest:e15a1fbd81c133c591bd",
       "repositoryUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -71985,12 +71985,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-visonic-interlogix-networx-elk-alarm-bridge/55040",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-visonic-interlogix-networx-elk-alarm-bridge/55040"
         },
         {
@@ -72320,7 +72320,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/broadlink-ir-rf-remotes-integration-rm3-mini-rm-pro-rm4-mini-rm4-pro-etc/98827",
+            "finalUrl": "https://community.hubitat.com/t/broadlink-ir-rf-remotes-integration-rm3-mini-rm-pro-rm4-mini-pro/98827",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -72932,7 +72932,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller/162876/31",
+            "finalUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -73185,12 +73185,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-water-sensor-6/34269/1",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-aeotec-water-sensor-6/34269/1"
         }
       ],
@@ -73202,7 +73202,7 @@
       "name": "Aeotec Water Sensor 6",
       "packageId": "manifest:e82a6e8e704507f07e1f",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -73604,7 +73604,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver-switch/81319",
+            "finalUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver/81319",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -73869,12 +73869,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-ring-integration-with-real-time-motion-alerts-ring-bridge-ring-alarm/164340?u=todd8",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-ring-integration-with-real-time-motion-alerts-ring-bridge-ring-alarm/164340?u=todd8"
         },
         {
@@ -73898,7 +73898,7 @@
       "name": "Ring Integration",
       "packageId": "manifest:f07844d62242cc17d94e",
       "repositoryUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -75082,12 +75082,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-smart-mailbox/11402",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-smart-mailbox/11402"
         },
         {
@@ -75180,12 +75180,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967"
         },
         {
@@ -75877,12 +75877,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-synology-srm-router-integration/164624",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-synology-srm-router-integration/164624"
         }
       ],
@@ -75894,7 +75894,7 @@
       "name": "Synology SRM Router Integration",
       "packageId": "manifest:f92a356f20dd42bf3244",
       "repositoryUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -75961,12 +75961,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-eight-sleep-community/60913/18",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-eight-sleep-community/60913/18"
         },
         {
@@ -75990,7 +75990,7 @@
       "name": "Eight Sleep (Connect)",
       "packageId": "manifest:f9809086fb716e794c70",
       "repositoryUrl": "https://raw.githubusercontent.com/amosyuen/hubitat/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -76908,7 +76908,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/fibaro-fgs-224/59108",
+            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgd-212-fgs-224-fgs-223-and-fgs-222/59108",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -76942,20 +76942,19 @@
       "transition": "PERSISTENT_FAILURE"
     }
   ],
-  "previousSnapshot": "2026-08-25T02:19:57Z",
+  "previousSnapshot": "2026-08-25T02:42:51Z",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-25T02:42:51Z",
+  "snapshotGenerated": "2026-08-25T02:52:07Z",
   "summary": {
     "packageCount": 910,
     "states": {
       "FAILING": 209,
-      "PASSING": 403,
-      "WARNING": 298
+      "PASSING": 407,
+      "WARNING": 294
     },
     "transitions": {
       "PERSISTENT_FAILURE": 209,
-      "RESTORED": 1,
-      "UNCHANGED": 700
+      "UNCHANGED": 701
     }
   }
 }
