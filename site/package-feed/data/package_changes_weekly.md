@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-24T23:45:28Z`.
+Latest observation: `2026-08-25T00:39:18Z`.
 
-**43 package change(s):** added 4, broken 2, declared definitions changed 9, removed 1, restored 2, source location changed 7, updated 33
+**44 package change(s):** added 4, broken 2, declared definitions changed 9, removed 1, restored 2, source location changed 7, updated 34
 
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Yale Assure Lock 2 Driver: added.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
 - [Wyze Vacuum Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
