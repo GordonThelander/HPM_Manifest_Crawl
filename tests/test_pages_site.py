@@ -54,11 +54,11 @@ class PagesSiteTests(unittest.TestCase):
                 self.assertEqual(source.count(beacon), 1)
                 self.assertEqual(source.count(token), 1)
 
-    def test_every_page_opens_links_in_a_new_tab(self):
+    def test_internal_links_stay_in_tab_and_external_links_open_new_tabs(self):
         for relative in pages.UTILITY_PAGES:
             source = (ROOT / 'site' / relative).read_text('utf-8')
             with self.subTest(relative=relative):
-                self.assertIn('<base target="_blank">', source)
+                self.assertNotIn('<base target="_blank">', source)
 
     def test_weekly_archive_is_first_featured_tile(self):
         source = (ROOT / 'site/index.html').read_text('utf-8')

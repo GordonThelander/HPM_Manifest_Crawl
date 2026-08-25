@@ -101,8 +101,12 @@ def check_site(site=SITE):
         source = page.read_text('utf-8')
         if 'class="utility-nav"' not in source:
             errors.append(f'{relative.as_posix()}: shared utility navigation is missing')
-        if '<base target="_blank">' not in source:
-            errors.append(f'{relative.as_posix()}: links do not default to a new tab')
+        if '<base target="_blank">' in source:
+            errors.append(f'{relative.as_posix()}: internal links must remain in the current tab')
+        for anchor in re.findall(r'<a\b[^>]*>', source, flags=re.IGNORECASE):
+            href = re.search(r'href=["\'](https?://[^"\']+)', anchor, flags=re.IGNORECASE)
+            if href and not re.search(r'target=["\']_blank["\']', anchor, flags=re.IGNORECASE):
+                errors.append(f'{relative.as_posix()}: external link must open a new tab: {href.group(1)}')
         parser = References()
         parser.feed(source)
         for tag, attribute, value in parser.references:

@@ -60,7 +60,7 @@ def github_readme(package: dict) -> str | None:
 def page(title: str, description: str, canonical: str, body: str, depth: int) -> str:
     root = "../" * depth
     return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><base target="_blank"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{esc(description)}"><link rel="canonical" href="{esc(canonical)}">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:type" content="website">
 <title>{esc(title)}</title><link rel="stylesheet" href="{root}shared/hubitat.css"><link rel="stylesheet" href="{root}shared/discovery.css"></head>
@@ -75,7 +75,7 @@ def write(path: Path, content: str) -> None:
 
 def link(url: str | None, label: str) -> str:
     valid = url and urlparse(url).scheme in {"http", "https"}
-    return f'<a href="{esc(url)}" rel="noopener noreferrer">{esc(label)}</a>' if valid else ""
+    return f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{esc(label)}</a>' if valid else ""
 
 
 def build(output: Path) -> None:
