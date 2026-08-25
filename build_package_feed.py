@@ -495,6 +495,7 @@ def render_site(history):
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <base target="_blank">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Package additions, updates and availability changes across the Hubitat Package Manager catalogue.">
   <title>HPM package changes</title>

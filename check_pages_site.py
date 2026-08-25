@@ -101,6 +101,8 @@ def check_site(site=SITE):
         source = page.read_text('utf-8')
         if 'class="utility-nav"' not in source:
             errors.append(f'{relative.as_posix()}: shared utility navigation is missing')
+        if '<base target="_blank">' not in source:
+            errors.append(f'{relative.as_posix()}: links do not default to a new tab')
         parser = References()
         parser.feed(source)
         for tag, attribute, value in parser.references:
