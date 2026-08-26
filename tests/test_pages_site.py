@@ -76,6 +76,21 @@ class PagesSiteTests(unittest.TestCase):
             with self.subTest(relative=relative):
                 self.assertNotIn('>GitHub</a>', navigation)
 
+    def test_about_has_rate_limited_authenticated_crawl_control(self):
+        about = (ROOT / 'site/about/index.html').read_text('utf-8')
+        script = (ROOT / 'site/about/app.js').read_text('utf-8')
+        styles = (ROOT / 'site/about/styles.css').read_text('utf-8')
+        workflow = (ROOT / '.github/workflows/hpm-crawl.yml').read_text('utf-8')
+        self.assertIn('id="manual-crawl-trigger"', about)
+        self.assertIn('/actions/workflows/hpm-crawl.yml', about)
+        self.assertIn('community-utilities-manual-crawl-triggered-at', script)
+        self.assertIn('24*60*60*1000', script)
+        self.assertIn('.manual-crawl-trigger', styles)
+        self.assertIn('opacity:0', styles)
+        self.assertIn('manual-crawl-daily-guard:', workflow)
+        self.assertIn("github.event_name == 'workflow_dispatch'", workflow)
+        self.assertIn('datetime.timedelta(hours=24)', workflow)
+
     def test_package_feed_copies_downloads_inside_pages_artifact(self):
         source = (ROOT / 'build_package_feed.py').read_text('utf-8')
         self.assertIn('SITE_CHANGES', source)
