@@ -56,7 +56,7 @@ class ReleaseFeatureTests(unittest.TestCase):
         script = (ROOT / 'site/feature-tracker/app.js').read_text('utf-8')
         self.assertIn('id="release-timeline"', page)
         self.assertIn('View timeline as a table', page)
-        self.assertIn('Green labels identify the release families.', page)
+        self.assertIn('Green labels above the major release points identify the release families.', page)
         self.assertIn("class:'family-label'", script)
         self.assertIn('textContent', script)
         self.assertNotIn('innerHTML', script)

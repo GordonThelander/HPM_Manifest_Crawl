@@ -9,7 +9,7 @@ function svgNode(tag,attrs={}){const n=document.createElementNS(ns,tag);Object.e
 function renderTimeline(){
   const rows=data.timeline.filter(r=>r.releasedAt).slice().sort((a,b)=>new Date(a.releasedAt)-new Date(b.releasedAt)),svg=byId('release-timeline');
   [...svg.children].filter(n=>!['title','desc'].includes(n.tagName)).forEach(n=>n.remove());if(!rows.length)return;
-  const width=1100,height=405,left=65,right=30,top=30,bottom=100,plotW=width-left-right,plotH=height-top-bottom;
+  const width=1100,height=360,left=65,right=30,top=30,bottom=55,plotW=width-left-right,plotH=height-top-bottom;
   const times=rows.map(r=>new Date(r.releasedAt).getTime()),min=Math.min(...times),max=Math.max(...times),peak=Math.max(...rows.map(r=>r.featureCount),1);
   const x=t=>left+(max===min?plotW/2:(t-min)/(max-min)*plotW),y=c=>top+plotH-(c/peak)*plotH;
   for(let i=0;i<=4;i++){const yy=top+plotH*i/4;svg.append(svgNode('line',{x1:left,y1:yy,x2:width-right,y2:yy,class:'grid'}));const t=svgNode('text',{x:left-10,y:yy+4,'text-anchor':'end',class:'axis-label'});t.textContent=Math.round(peak*(4-i)/4);svg.append(t);}
@@ -17,7 +17,7 @@ function renderTimeline(){
   svg.append(svgNode('line',{x1:left,y1:top+plotH,x2:width-right,y2:top+plotH,class:'axis'}));svg.append(svgNode('polyline',{points:rows.map(r=>`${x(new Date(r.releasedAt).getTime())},${y(r.featureCount)}`).join(' '),class:'release-line'}));
   rows.forEach(r=>{const c=svgNode('circle',{cx:x(new Date(r.releasedAt).getTime()),cy:y(r.featureCount),r:Math.max(4,Math.min(10,4+r.featureCount/8)),class:`release-dot ${r.newlyPossibleCount?'new':'fix'}`,tabindex:'0',role:'link'}),title=svgNode('title');title.textContent=`${r.version}, ${formatDate(r.releasedAt)}: ${r.featureCount} changes, ${r.newlyPossibleCount} new possibilities`;c.append(title);c.addEventListener('click',()=>window.open(r.sourceUrl,'_blank','noopener'));c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();c.dispatchEvent(new MouseEvent('click'));}});svg.append(c);});
   const firstByFamily=new Map;rows.forEach(r=>{if(r.releaseFamily&&!firstByFamily.has(r.releaseFamily))firstByFamily.set(r.releaseFamily,r);});
-  firstByFamily.forEach((r,family)=>{const xx=x(new Date(r.releasedAt).getTime()),yy=height-50,t=svgNode('text',{x:xx,y:yy,class:'family-label','text-anchor':'end',transform:`rotate(-55 ${xx} ${yy})`});t.textContent=family;svg.append(t);});
+  const placedLabels=[];firstByFamily.forEach((r,family)=>{const xx=x(new Date(r.releasedAt).getTime()),radius=Math.max(4,Math.min(10,4+r.featureCount/8));let yy=Math.max(16,y(r.featureCount)-radius-7);while(yy>16&&placedLabels.some(p=>Math.abs(xx-p.x)<42&&Math.abs(yy-p.y)<19))yy=Math.max(16,yy-19);placedLabels.push({x:xx,y:yy});const t=svgNode('text',{x:xx,y:yy,class:'family-label','text-anchor':'middle'});t.textContent=family;svg.append(t);});
   byId('timeline-rows').replaceChildren(...rows.slice().reverse().map(r=>{const tr=document.createElement('tr'),cell=document.createElement('td'),a=makeText('a','Source');a.href=r.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';cell.append(a);tr.append(makeText('td',r.version),makeText('td',formatDate(r.releasedAt)),makeText('td',r.featureCount.toLocaleString()),makeText('td',r.newlyPossibleCount.toLocaleString()),makeText('td',r.bugFixCount.toLocaleString()),cell);return tr;}));
   byId('range-summary').textContent=`${formatDate(rows[0].releasedAt)} to ${formatDate(rows.at(-1).releasedAt)}`;
 }
