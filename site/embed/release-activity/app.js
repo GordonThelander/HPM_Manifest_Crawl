@@ -16,5 +16,9 @@ function render(){
   rows.forEach(row=>{const circle=node('circle',{cx:x(new Date(row.releasedAt).getTime()),cy:y(row.featureCount),r:Math.max(4,Math.min(10,4+row.featureCount/8)),class:`release-dot ${row.newlyPossibleCount?'new':'fix'}`}),title=node('title');title.textContent=`${row.version}, ${formatDate(row.releasedAt)}: ${row.featureCount} documented changes`;circle.append(title);svg.append(circle);});
   document.getElementById('range-summary').textContent=`${formatDate(rows[0].releasedAt)} to ${formatDate(rows.at(-1).releasedAt)}`;
   document.getElementById('freshness').textContent=`Evidence refreshed ${formatDate(data.lastSuccessfulHarvest)}. Independent community project.`;
+  // The parent validates this page's origin, the sending window and this exact
+  // message shape. A wildcard target is required because the Hubitat parent
+  // origin is a private LAN address unknown to this public, reusable embed.
+  window.parent.postMessage({type:'automation-map-release-activity-ready',version:1},'*');
 }
 render();

@@ -74,6 +74,7 @@ class ReleaseFeatureTests(unittest.TestCase):
         self.assertIn('../../feature-tracker/data/hubitat_release_features.js', page)
         self.assertIn("window.HUBITAT_RELEASE_FEATURES", script)
         self.assertIn('lastSuccessfulHarvest', script)
+        self.assertIn("window.parent.postMessage({type:'automation-map-release-activity-ready',version:1},'*')", script)
         self.assertIn('@media(max-width:520px)', styles)
         self.assertNotIn('innerHTML', script)
 
