@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gordonthelander.github.io/HPM_Manifest_Crawl/schemas/automation-map-community-context.schema.json",
+  "title": "Automation Map Community Context Index",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "snapshotGenerated", "recordCount", "privacy", "records"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "dataset": {"const": "automation-map-community-context"},
+    "snapshotGenerated": {"type": ["string", "null"]},
+    "recordCount": {"type": "integer", "minimum": 0},
+    "privacy": {
+      "type": "object",
+      "required": ["browserOnly", "uploadsHubInventory"],
+      "properties": {
+        "browserOnly": {"const": true},
+        "uploadsHubInventory": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "required": ["name", "namespace", "basis"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "namespace": {"type": ["string", "null"]},
+        "basis": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "record": {
+      "type": "object",
+      "required": ["id", "authority", "kind", "definitionIdentities", "displayName", "packageName", "author", "summary", "evidenceChecks", "qualityFlags", "lifecycleFlags", "networkEvidence", "links"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "authority": {"enum": ["HUBITAT_BUILT_IN", "HPM_PACKAGE", "REVIEWED_MANUAL_PROJECT", "COMMUNITY_CATALOGUE_LISTING"]},
+        "kind": {"const": "APP"},
+        "definitionIdentities": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/identity"}},
+        "displayName": {"type": ["string", "null"]},
+        "packageName": {"type": ["string", "null"]},
+        "author": {"type": ["string", "null"]},
+        "summary": {"type": ["string", "null"], "maxLength": 300},
+        "evidenceChecks": {"type": ["object", "null"]},
+        "qualityFlags": {"type": "array", "items": {"enum": ["IDENTITY_MISMATCH"]}},
+        "lifecycleFlags": {"type": "array", "items": {"type": "string"}},
+        "networkEvidence": {
+          "anyOf": [
+            {"type": "null"},
+            {"type": "object", "required": ["classification", "reviewed"], "properties": {
+              "classification": {"enum": ["LAN", "CLOUD", "BOTH", "INSUFFICIENT"]},
+              "reviewed": {"type": "boolean"}
+            }, "additionalProperties": false}
+          ]
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "pattern": "^https://"}
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

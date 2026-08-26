@@ -39,6 +39,8 @@ REQUIRED_FILES = UTILITY_PAGES + (
     pathlib.Path('feature-tracker/data/hubitat_release_features.json'),
     pathlib.Path('feature-tracker/data/hubitat_release_features.js'),
     pathlib.Path('identity-resolver/data/identity_index.js'),
+    pathlib.Path('integrations/automation-map/community_context_index.json'),
+    pathlib.Path('integrations/automation-map/community_context_schema.json'),
     pathlib.Path('network-guide/data/network_evidence.js'),
     pathlib.Path('contributors/data/contributor_activity.js'),
     pathlib.Path('package-feed/data/package_changes.json'),

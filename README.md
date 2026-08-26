@@ -138,6 +138,7 @@ refused by the crawler.
 | `site/about/` | project context, source provenance, operational health and system schematic |
 | `site_status.json` | versioned source inventory, retained crawl status and protected-contract disclosure |
 | `site/identity-resolver/` | browser-only app/driver-to-package identity lookup |
+| `site/integrations/automation-map/community_context_index.json` | bounded app-only evidence projection for Automation Map's Community information card |
 | `site/start-here/` | beginner orientation, question-based tool routing and evidence glossary |
 | `site/recovery-inventory/` | browser-only bulk recovery from minimal app/driver identities |
 | `site/network-guide/` | declared, observed, documented and reviewed LAN/cloud evidence |
