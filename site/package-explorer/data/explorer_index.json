@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 910,
+    "HPM_PACKAGE": 906,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2615,
+  "recordCount": 2611,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -174,36 +174,7 @@
           "label": "Community Apps Wiki"
         }
       ],
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:5d4828b24c2c2f3969d4",
-          "packageName": "Flow Engine One"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:9d5c5fbfd62502e2b278",
-          "packageName": "The Flasher"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:a8fbcef6a4832b9d72fb",
-          "packageName": "Device Watchdog"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:bcacd870b13e0625ad36",
-          "packageName": "HubVoice"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:b2c44d36b0083a96ca35",
       "kinds": [
         "APP"
@@ -339,15 +310,7 @@
           "label": "Community Apps Wiki"
         }
       ],
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_NAME"
-          ],
-          "packageId": "manifest:a8fbcef6a4832b9d72fb",
-          "packageName": "Device Watchdog"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:4bdad601085b99ddcbdb",
       "kinds": [
         "APP"
@@ -4052,36 +4015,7 @@
           "label": "Community Drivers Wiki"
         }
       ],
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:5d4828b24c2c2f3969d4",
-          "packageName": "Flow Engine One"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:9d5c5fbfd62502e2b278",
-          "packageName": "The Flasher"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:a8fbcef6a4832b9d72fb",
-          "packageName": "Device Watchdog"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:bcacd870b13e0625ad36",
-          "packageName": "HubVoice"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-driver:9b5e9de000d16bf7a556",
       "kinds": [
         "DRIVER",
@@ -30783,107 +30717,6 @@
       "version": "1.0.5"
     },
     {
-      "author": "BPTWorld",
-      "category": "Utilities",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-04-13",
-      "definitions": [
-        {
-          "id": "definition:11586cbb60dc3f33a6b4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Device Watchdog",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/dw-parent.groovy"
-        },
-        {
-          "id": "definition:1e7f6e203810949dcbb3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Device Watchdog Child",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/dw-child.groovy"
-        },
-        {
-          "id": "definition:0af07c7ce3f35870603d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Device Watchdog Tile",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/dw-tiledriver.groovy"
-        }
-      ],
-      "description": "Keep an eye on your devices and see how long it's been since they checked in.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:a8fbcef6a4832b9d72fb",
-      "kinds": [
-        "APP",
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "https://github.com/bptworld/Hubitat",
-        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/packageManifest.json",
-        "repository": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json"
-      },
-      "name": "Device Watchdog",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "paypal.me"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Tools & Utilities"
-      ],
-      "version": null
-    },
-    {
       "author": "Larry Kahn",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -36355,90 +36188,6 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "0.235"
-    },
-    {
-      "author": "Bryan Turcotte (@bptworld)",
-      "category": "Utilities",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-05-28",
-      "definitions": [
-        {
-          "id": "definition:d891d2aad8c01dee08ed",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Flow Engine One",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/flowengine_one.groovy"
-        }
-      ],
-      "description": "Visual drag and drop rules engine.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:5d4828b24c2c2f3969d4",
-      "kinds": [
-        "APP"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "https://github.com/bptworld/Hubitat",
-        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/packageManifest.json",
-        "repository": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json"
-      },
-      "name": "Flow Engine One",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "paypal.me"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Tools & Utilities"
-      ],
-      "version": "1.0.0"
     },
     {
       "author": "David Manuel",
@@ -51534,133 +51283,6 @@
         "Tools & Utilities"
       ],
       "version": null
-    },
-    {
-      "author": "Bryan Turcotte (@bptworld)",
-      "category": "Utilities",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-03-21",
-      "definitions": [
-        {
-          "id": "definition:b3f5647f53fb11899b13",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "HubVoice",
-          "namespace": "bptworld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/hubvoice.groovy"
-        },
-        {
-          "id": "definition:71e8ead0b585b41f137a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "HubVoice Controller",
-          "namespace": "bptworld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/hubvoicecontroller-driver.groovy"
-        },
-        {
-          "id": "definition:efd44f495cf9f9f7b5d3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "HubVoice Routine Device",
-          "namespace": "bptworld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/hubvoice-routine-device.groovy"
-        },
-        {
-          "id": "definition:9f9e7ad7f0aac15e7b54",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "HubVoice Satellite LD2410",
-          "namespace": "bptworld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/hubvoicesatellite-ld2410-driver.groovy"
-        },
-        {
-          "id": "definition:6d6b84e5153ab4c9165a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "HubVoice Satellite TTS",
-          "namespace": "bptworld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/hubvoicesatellite-driver.groovy"
-        }
-      ],
-      "description": "Local Voice Control for Hubitat!  Requires an always on win PC.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:bcacd870b13e0625ad36",
-      "kinds": [
-        "APP",
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/beta-hubvoice-a-local-voice-control-assistant/162246",
-        "documentation": "https://github.com/bptworld/Hubitat",
-        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json",
-        "repository": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json"
-      },
-      "name": "HubVoice",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "aistudio.google.com",
-          "api.openai.com",
-          "cloud.hubitat.com",
-          "generativelanguage.googleapis.com",
-          "paypal.me",
-          "platform.openai.com",
-          "site.api.espn.com",
-          "web.esphome.io",
-          "wttr.in",
-          "www.dropbox.com",
-          "www.improv-wifi.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Tools & Utilities"
-      ],
-      "version": "beta-027"
     },
     {
       "author": "Schwark Satyavolu",
@@ -90366,98 +89988,6 @@
       "version": "1.0"
     },
     {
-      "author": "BPTWorld",
-      "category": "Utilities",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-03-16",
-      "definitions": [
-        {
-          "id": "definition:b5d99fd3603007172f42",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "The Flasher",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/theflasher-parent.groovy"
-        },
-        {
-          "id": "definition:32fdc65e85530f6d701f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "The Flasher Child",
-          "namespace": "BPTWorld",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/theflasher-child.groovy"
-        }
-      ],
-      "description": "Flash your lights based on several triggers!",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:9d5c5fbfd62502e2b278",
-      "kinds": [
-        "APP"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/placeholder-bundle-manager-find-install-and-update-bundles-quickly-and-easily/94567",
-        "documentation": "https://github.com/bptworld/Hubitat",
-        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/packageManifest.json",
-        "repository": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json"
-      },
-      "name": "The Flasher",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "paypal.me"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Tools & Utilities"
-      ],
-      "version": null
-    },
-    {
       "author": "napalmcsr",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -102440,7 +101970,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/YaleAssure2.groovy"
         }
       ],
-      "description": "Custom Hubitat driver for Yale assure lock 2 series locks including DoorSense and ZW3 module support",
+      "description": "Yale assure lock 2 series lock driver includes DoorSense, lockcode manager, biometric unlock and ZW3 module support",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -102502,8 +102032,11 @@
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
-      "tags": [],
-      "version": "1.04"
+      "tags": [
+        "Locks",
+        "ZWave"
+      ],
+      "version": "1.05"
     },
     {
       "author": "Steven Dale",
@@ -132165,5 +131698,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-25T03:11:34Z"
+  "snapshotGenerated": "2026-08-26T00:40:01Z"
 }

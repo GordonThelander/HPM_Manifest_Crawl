@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-25T03:11:34Z`.
+Latest observation: `2026-08-26T00:40:01Z`.
 
-**44 package change(s):** added 4, broken 2, declared definitions changed 9, removed 1, restored 2, source location changed 7, updated 34
+**44 package change(s):** added 3, broken 1, declared definitions changed 6, removed 5, restored 2, source location changed 6, updated 33
 
+- [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
+- [The Flasher: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/packageManifest.json)
+- [HubVoice: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json)
+- [Flow Engine One: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/packageManifest.json)
+- [Device Watchdog: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Yale Assure Lock 2 Driver: added.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
 - [Wyze Vacuum Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
@@ -43,10 +48,5 @@ Latest observation: `2026-08-25T03:11:34Z`.
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [ESP32 Wall Keypad: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [Home Assistant Device Bridge: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
-- [ESP32 Wall Keypad: added, became unavailable.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

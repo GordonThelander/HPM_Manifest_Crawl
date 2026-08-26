@@ -12081,50 +12081,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     },
     {
       "activity": [],
-      "appCount": 4,
-      "categories": [
-        {
-          "name": "Utilities",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 93,
-      "driverCount": 1,
-      "id": "contributor:593f46d943aec70bf3c1",
-      "name": "BPTWorld",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 2,
-          "category": "Utilities",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/bptworld/Hubitat",
-          "driverCount": 1,
-          "id": "manifest:a8fbcef6a4832b9d72fb",
-          "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/packageManifest.json",
-          "name": "Device Watchdog",
-          "publisherDate": "2024-04-13",
-          "repositoryUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json",
-          "version": null
-        },
-        {
-          "appCount": 2,
-          "category": "Utilities",
-          "communityUrl": "https://community.hubitat.com/t/placeholder-bundle-manager-find-install-and-update-bundles-quickly-and-easily/94567",
-          "documentationUrl": "https://github.com/bptworld/Hubitat",
-          "driverCount": 0,
-          "id": "manifest:9d5c5fbfd62502e2b278",
-          "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/packageManifest.json",
-          "name": "The Flasher",
-          "publisherDate": "2024-03-16",
-          "repositoryUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json",
-          "version": null
-        }
-      ]
-    },
-    {
-      "activity": [],
       "appCount": 2,
       "categories": [
         {
@@ -12133,7 +12089,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 93,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -12169,50 +12125,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     },
     {
       "activity": [],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Utilities",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 95,
-      "driverCount": 4,
-      "id": "contributor:eeb1e037295a90970703",
-      "name": "Bryan Turcotte (@bptworld)",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Utilities",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/bptworld/Hubitat",
-          "driverCount": 0,
-          "id": "manifest:5d4828b24c2c2f3969d4",
-          "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/packageManifest.json",
-          "name": "Flow Engine One",
-          "publisherDate": "2025-05-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utilities",
-          "communityUrl": "https://community.hubitat.com/t/beta-hubvoice-a-local-voice-control-assistant/162246",
-          "documentationUrl": "https://github.com/bptworld/Hubitat",
-          "driverCount": 4,
-          "id": "manifest:bcacd870b13e0625ad36",
-          "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json",
-          "name": "HubVoice",
-          "publisherDate": "2026-03-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json",
-          "version": "beta-027"
-        }
-      ]
-    },
-    {
-      "activity": [],
       "appCount": 0,
       "categories": [
         {
@@ -12221,7 +12133,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 94,
       "driverCount": 2,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
@@ -12269,7 +12181,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:eeb747b7ce6ce8418f96",
       "name": "DarwinsDen",
@@ -12317,7 +12229,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 96,
       "driverCount": 12,
       "id": "contributor:efdfd6ed92c6c1fdcd2d",
       "name": "Don Caton",
@@ -12390,7 +12302,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 99,
+      "currentRank": 97,
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
@@ -12449,7 +12361,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 100,
+      "currentRank": 98,
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
@@ -12497,7 +12409,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 101,
+      "currentRank": 99,
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
@@ -12541,7 +12453,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 102,
+      "currentRank": 100,
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
@@ -12585,7 +12497,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 103,
+      "currentRank": 101,
       "driverCount": 4,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
@@ -12633,7 +12545,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 104,
+      "currentRank": 102,
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
@@ -12677,7 +12589,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 105,
+      "currentRank": 103,
       "driverCount": 3,
       "id": "contributor:cfc84bc507432c7b472f",
       "name": "Jamie Curnow",
@@ -12721,7 +12633,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 106,
+      "currentRank": 104,
       "driverCount": 4,
       "id": "contributor:966d9f08e15e82945d11",
       "name": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -12769,7 +12681,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 107,
+      "currentRank": 105,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -12813,7 +12725,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 108,
+      "currentRank": 106,
       "driverCount": 2,
       "id": "contributor:cab465e8481008331040",
       "name": "Jeff Lupien",
@@ -12861,7 +12773,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 109,
+      "currentRank": 107,
       "driverCount": 1,
       "id": "contributor:277a73f66831fc1424af",
       "name": "Jeffrey D. Chapman",
@@ -12905,7 +12817,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 110,
+      "currentRank": 108,
       "driverCount": 6,
       "id": "contributor:fedf3ceedc1273b3d69d",
       "name": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -12949,7 +12861,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 111,
+      "currentRank": 109,
       "driverCount": 1,
       "id": "contributor:8877f3f9cde1f2b8e13b",
       "name": "Kevin LaFramboise (@krlaframboise)",
@@ -12993,7 +12905,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 112,
+      "currentRank": 110,
       "driverCount": 2,
       "id": "contributor:9b3159c24cdaba381613",
       "name": "kkossev",
@@ -13037,7 +12949,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 113,
+      "currentRank": 111,
       "driverCount": 4,
       "id": "contributor:cfe7eb8fa1d840424f18",
       "name": "Mathew Beall",
@@ -13081,7 +12993,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 114,
+      "currentRank": 112,
       "driverCount": 1,
       "id": "contributor:648248be560395b56188",
       "name": "Matt Hammond",
@@ -13129,7 +13041,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 115,
+      "currentRank": 113,
       "driverCount": 0,
       "id": "contributor:15ac50b026e59a5f76a0",
       "name": "Mattias Fornander (@mfornander)",
@@ -13177,7 +13089,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 116,
+      "currentRank": 114,
       "driverCount": 1,
       "id": "contributor:cfdd150d04c77fcf99ed",
       "name": "Miles Budnek",
@@ -13221,7 +13133,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 117,
+      "currentRank": 115,
       "driverCount": 2,
       "id": "contributor:a8001880109c362a9fdb",
       "name": "n3!",
@@ -13265,7 +13177,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 118,
+      "currentRank": 116,
       "driverCount": 1,
       "id": "contributor:9563f49fca68d622c285",
       "name": "Nelson Clark",
@@ -13309,7 +13221,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 119,
+      "currentRank": 117,
       "driverCount": 3,
       "id": "contributor:5264454bcf8a55a617b7",
       "name": "Paul Hutton",
@@ -13353,7 +13265,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 120,
+      "currentRank": 118,
       "driverCount": 2,
       "id": "contributor:e5e37caad93a2e4bba53",
       "name": "Ramdev Shallem",
@@ -13397,7 +13309,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 121,
+      "currentRank": 119,
       "driverCount": 1,
       "id": "contributor:08e115ea52313bdb2dd1",
       "name": "Randall Norviel",
@@ -13441,7 +13353,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 122,
+      "currentRank": 120,
       "driverCount": 2,
       "id": "contributor:d38d404a45ce4a1ae211",
       "name": "Raul Martin Rodriguez",
@@ -13489,7 +13401,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 123,
+      "currentRank": 121,
       "driverCount": 3,
       "id": "contributor:27b96c198c53592f4b6d",
       "name": "Simon Burke",
@@ -13533,7 +13445,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 124,
+      "currentRank": 122,
       "driverCount": 2,
       "id": "contributor:f7092c2563f96d8ebd93",
       "name": "StarkTemplar",
@@ -13581,7 +13493,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 125,
+      "currentRank": 123,
       "driverCount": 5,
       "id": "contributor:ddb8a7b385656aadd452",
       "name": "Taylor Brown(@thecloudtaylor)",
@@ -13625,7 +13537,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 126,
+      "currentRank": 124,
       "driverCount": 2,
       "id": "contributor:272f8a5abd3191f1acd8",
       "name": "Tim Dodd",
@@ -13669,7 +13581,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 127,
+      "currentRank": 125,
       "driverCount": 0,
       "id": "contributor:bc915e335e56e9ef122e",
       "name": "Tony Fleisher",
@@ -13742,7 +13654,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 128,
+      "currentRank": 126,
       "driverCount": 3,
       "id": "contributor:052eda442afd1ae5d69d",
       "name": "vision9074",
@@ -13790,7 +13702,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 129,
+      "currentRank": 127,
       "driverCount": 0,
       "id": "contributor:3ee480dcc6d55fba0b2b",
       "name": "Wesley M. Conner",
@@ -13834,7 +13746,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 130,
+      "currentRank": 128,
       "driverCount": 3,
       "id": "contributor:3353abab317cbb5e1bb8",
       "name": "ZRanger1(JEM)",
@@ -13878,7 +13790,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 131,
+      "currentRank": 129,
       "driverCount": 3,
       "id": "contributor:9ebc2f114646e8498d7b",
       "name": "Alex Lee Yuk Cheung & Dominick Meglio",
@@ -13909,7 +13821,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 132,
+      "currentRank": 130,
       "driverCount": 1,
       "id": "contributor:4766d18cb719a716cbf8",
       "name": "Andrew Webster",
@@ -13940,7 +13852,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 133,
+      "currentRank": 131,
       "driverCount": 3,
       "id": "contributor:4d3ada00f82d743d4d94",
       "name": "Art Ardolino",
@@ -13971,7 +13883,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 134,
+      "currentRank": 132,
       "driverCount": 1,
       "id": "contributor:0ea2ec854ddf7b93c7b0",
       "name": "Awth Wathje",
@@ -14002,7 +13914,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 135,
+      "currentRank": 133,
       "driverCount": 0,
       "id": "contributor:01a00cf264f0269f2f9d",
       "name": "Azfar Khandoker",
@@ -14033,7 +13945,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 136,
+      "currentRank": 134,
       "driverCount": 2,
       "id": "contributor:abfea55b690ec9fc7954",
       "name": "Ben Castellucci",
@@ -14064,7 +13976,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 137,
+      "currentRank": 135,
       "driverCount": 1,
       "id": "contributor:d2fa5476d388fae1a59e",
       "name": "Ben Jansen",
@@ -14095,7 +14007,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 138,
+      "currentRank": 136,
       "driverCount": 0,
       "id": "contributor:ab2cfb4edbe468b4048b",
       "name": "Bill Fleming",
@@ -14126,7 +14038,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 139,
+      "currentRank": 137,
       "driverCount": 2,
       "id": "contributor:12297751d692f8e9771a",
       "name": "Brad sileo",
@@ -14157,7 +14069,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 140,
+      "currentRank": 138,
       "driverCount": 4,
       "id": "contributor:0a685eaad17dc8ff51ea",
       "name": "Brian Blank",
@@ -14188,7 +14100,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 141,
+      "currentRank": 139,
       "driverCount": 2,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
@@ -14219,7 +14131,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 142,
+      "currentRank": 140,
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
@@ -14250,7 +14162,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 143,
+      "currentRank": 141,
       "driverCount": 2,
       "id": "contributor:be521bd53f9af1d49653",
       "name": "Chaue Shen",
@@ -14281,7 +14193,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 144,
+      "currentRank": 142,
       "driverCount": 0,
       "id": "contributor:4646e34aa7acceb37645",
       "name": "Chris Sader",
@@ -14312,7 +14224,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 145,
+      "currentRank": 143,
       "driverCount": 1,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
@@ -14343,7 +14255,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 146,
+      "currentRank": 144,
       "driverCount": 6,
       "id": "contributor:97379ae0ebbba3b46803",
       "name": "christi999",
@@ -14374,7 +14286,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 147,
+      "currentRank": 145,
       "driverCount": 4,
       "id": "contributor:950fb77d3da2b8017206",
       "name": "classic-dave",
@@ -14405,7 +14317,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 148,
+      "currentRank": 146,
       "driverCount": 25,
       "id": "contributor:21e5b5d816783343eed8",
       "name": "codahq",
@@ -14436,7 +14348,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 149,
+      "currentRank": 147,
       "driverCount": 3,
       "id": "contributor:0287c8a40062f2e26bf1",
       "name": "corinuss",
@@ -14467,7 +14379,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 150,
+      "currentRank": 148,
       "driverCount": 0,
       "id": "contributor:f86b4b4a5d12cdaf148c",
       "name": "Craig Romei",
@@ -14498,7 +14410,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 151,
+      "currentRank": 149,
       "driverCount": 11,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
@@ -14529,7 +14441,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 152,
+      "currentRank": 150,
       "driverCount": 1,
       "id": "contributor:963ced0da3610aa44c93",
       "name": "cSteele",
@@ -14560,7 +14472,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 153,
+      "currentRank": 151,
       "driverCount": 1,
       "id": "contributor:65bee55a0af809e76900",
       "name": "Curtis Ide",
@@ -14591,7 +14503,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 154,
+      "currentRank": 152,
       "driverCount": 23,
       "id": "contributor:cf8d966c34c95a70525e",
       "name": "Dan Cox (level99 fork); Niklas Gustafsson (original upstream)",
@@ -14622,7 +14534,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 155,
+      "currentRank": 153,
       "driverCount": 0,
       "id": "contributor:09c2c1f1bae09e1e8a55",
       "name": "Dan Danache",
@@ -14653,7 +14565,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 156,
+      "currentRank": 154,
       "driverCount": 1,
       "id": "contributor:e2a1a9d6497ce82b1a2a",
       "name": "Dan Danache (@agamemnon.dandanache)",
@@ -14684,7 +14596,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 157,
+      "currentRank": 155,
       "driverCount": 1,
       "id": "contributor:5504c4083f20d7fff23c",
       "name": "dan.t",
@@ -14715,7 +14627,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 158,
+      "currentRank": 156,
       "driverCount": 1,
       "id": "contributor:69c45f22c0dcdce7b384",
       "name": "Daniel Segall",
@@ -14746,7 +14658,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 159,
+      "currentRank": 157,
       "driverCount": 1,
       "id": "contributor:7c75a97dcda364d1907d",
       "name": "Daniel Segall (dds82)",
@@ -14777,7 +14689,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 160,
+      "currentRank": 158,
       "driverCount": 2,
       "id": "contributor:9613ac904c1d28e3c88b",
       "name": "dbadge",
@@ -14808,7 +14720,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 161,
+      "currentRank": 159,
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
@@ -14839,7 +14751,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 162,
+      "currentRank": 160,
       "driverCount": 2,
       "id": "contributor:a73ba7cf0dd8592adedb",
       "name": "Dominick Meglio & Eric Maycock",
@@ -14870,7 +14782,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 163,
+      "currentRank": 161,
       "driverCount": 3,
       "id": "contributor:6dde8f2290059440a172",
       "name": "Doug Beard/Brian Wilson",
@@ -14901,7 +14813,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 164,
+      "currentRank": 162,
       "driverCount": 0,
       "id": "contributor:8b932b1c49d1bf9d8d84",
       "name": "Doug Renze",
@@ -14932,7 +14844,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 165,
+      "currentRank": 163,
       "driverCount": 3,
       "id": "contributor:debcb46e339968cfedb3",
       "name": "Electrified-Home",
@@ -14992,7 +14904,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 166,
+      "currentRank": 164,
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
@@ -15023,7 +14935,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 167,
+      "currentRank": 165,
       "driverCount": 1,
       "id": "contributor:0024ce686cf2b9971ab0",
       "name": "Erik Dasque",
@@ -15083,7 +14995,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 168,
+      "currentRank": 166,
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
@@ -15114,7 +15026,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 169,
+      "currentRank": 167,
       "driverCount": 1,
       "id": "contributor:02e680d2174ca39bf1b2",
       "name": "Garth Braithwaite",
@@ -15145,7 +15057,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 170,
+      "currentRank": 168,
       "driverCount": 1,
       "id": "contributor:6fe9cca284a6cd968a93",
       "name": "Greg Billings",
@@ -15191,7 +15103,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 171,
+      "currentRank": 169,
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
@@ -15222,7 +15134,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 172,
+      "currentRank": 170,
       "driverCount": 0,
       "id": "contributor:7740a32ebcc0ba4a339f",
       "name": "HERMES Automation",
@@ -15253,7 +15165,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 173,
+      "currentRank": 171,
       "driverCount": 9,
       "id": "contributor:5caa224e199583883eb3",
       "name": "Ionut Turturica",
@@ -15284,7 +15196,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 174,
+      "currentRank": 172,
       "driverCount": 0,
       "id": "contributor:cf5e8049fefaa570c4d9",
       "name": "J M Pierce / Schwark Satyavolu",
@@ -15330,7 +15242,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 175,
+      "currentRank": 173,
       "driverCount": 1,
       "id": "contributor:d8c3769404dea0e2a6e7",
       "name": "J.R. Farrar",
@@ -15390,7 +15302,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 176,
+      "currentRank": 174,
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
@@ -15421,7 +15333,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 177,
+      "currentRank": 175,
       "driverCount": 8,
       "id": "contributor:c3f9a7ee66c12128ad5b",
       "name": "Jake Lehner",
@@ -15452,7 +15364,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 178,
+      "currentRank": 176,
       "driverCount": 1,
       "id": "contributor:375253e4778f3449fa8e",
       "name": "James Schlackman",
@@ -15483,7 +15395,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 179,
+      "currentRank": 177,
       "driverCount": 1,
       "id": "contributor:eea2f53f4e1237c2af11",
       "name": "Jean Bilodeau",
@@ -15514,7 +15426,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 180,
+      "currentRank": 178,
       "driverCount": 0,
       "id": "contributor:69e9feb5f1aecf17f309",
       "name": "Jeffrey Zimmerman",
@@ -15545,7 +15457,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 181,
+      "currentRank": 179,
       "driverCount": 1,
       "id": "contributor:2852527b01a3fbe70078",
       "name": "Jeremy Kister (@jkister)",
@@ -15576,7 +15488,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 182,
+      "currentRank": 180,
       "driverCount": 0,
       "id": "contributor:38c5b7de7aac86d2aafa",
       "name": "Jessica Jones",
@@ -15607,7 +15519,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 183,
+      "currentRank": 181,
       "driverCount": 1,
       "id": "contributor:a6e77f2d2954c6204042",
       "name": "Jo Rhett",
@@ -15638,7 +15550,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 184,
+      "currentRank": 182,
       "driverCount": 1,
       "id": "contributor:9f6d718a9b1d17aafa2f",
       "name": "johndc7",
@@ -15669,7 +15581,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 185,
+      "currentRank": 183,
       "driverCount": 1,
       "id": "contributor:3eb770d22e7227d73006",
       "name": "Joseph Kregloh",
@@ -15700,7 +15612,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 186,
+      "currentRank": 184,
       "driverCount": 0,
       "id": "contributor:0587eeef5b080fa89a15",
       "name": "Josh Lobe",
@@ -15731,7 +15643,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 187,
+      "currentRank": 185,
       "driverCount": 1,
       "id": "contributor:26e490d18a65f88f4250",
       "name": "Josh Rosenberg",
@@ -15762,7 +15674,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 188,
+      "currentRank": 186,
       "driverCount": 0,
       "id": "contributor:441cf02dbecb34d45a37",
       "name": "joyfulhouse",
@@ -15793,7 +15705,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 189,
+      "currentRank": 187,
       "driverCount": 0,
       "id": "contributor:f912b2e7a868e750e809",
       "name": "Ken Washington",
@@ -15824,7 +15736,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 190,
+      "currentRank": 188,
       "driverCount": 1,
       "id": "contributor:00ab3c63e8e20d3e210e",
       "name": "Kestutis Triponis",
@@ -15855,7 +15767,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 191,
+      "currentRank": 189,
       "driverCount": 2,
       "id": "contributor:3ebf80c7fec559a9ad8c",
       "name": "Kevin Kahl",
@@ -15929,7 +15841,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 192,
+      "currentRank": 190,
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
@@ -15960,7 +15872,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 193,
+      "currentRank": 191,
       "driverCount": 1,
       "id": "contributor:049ac82534a5d71e7d35",
       "name": "Krassimir kkossev",
@@ -15991,7 +15903,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 194,
+      "currentRank": 192,
       "driverCount": 1,
       "id": "contributor:17107ae9c8fb20832ab8",
       "name": "Kris Linquist",
@@ -16022,7 +15934,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 195,
+      "currentRank": 193,
       "driverCount": 2,
       "id": "contributor:6c9e08e5ef89cdd60a12",
       "name": "Kurt Sanders & Dominick Meglio",
@@ -16053,7 +15965,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 196,
+      "currentRank": 194,
       "driverCount": 1,
       "id": "contributor:fd56c2959df2a69c544f",
       "name": "lgkahn",
@@ -16084,7 +15996,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 197,
+      "currentRank": 195,
       "driverCount": 0,
       "id": "contributor:dce2816d52d102318698",
       "name": "lnustin",
@@ -16130,7 +16042,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 198,
+      "currentRank": 196,
       "driverCount": 2,
       "id": "contributor:87306824ba4899e14679",
       "name": "Lyle Pakula",
@@ -16161,7 +16073,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 199,
+      "currentRank": 197,
       "driverCount": 13,
       "id": "contributor:cd320960655cae36770e",
       "name": "Mads Kristensen",
@@ -16192,7 +16104,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 200,
+      "currentRank": 198,
       "driverCount": 3,
       "id": "contributor:7b3e3701ffc874471808",
       "name": "Marco Felicio (maffpt@gmail.com)",
@@ -16223,7 +16135,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 201,
+      "currentRank": 199,
       "driverCount": 1,
       "id": "contributor:12248add050220fe79f8",
       "name": "Mark Weninger/Joe Page",
@@ -16254,7 +16166,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 202,
+      "currentRank": 200,
       "driverCount": 1,
       "id": "contributor:28ed5c51a64fe36062e5",
       "name": "Martin Kura, kkossev",
@@ -16285,7 +16197,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 203,
+      "currentRank": 201,
       "driverCount": 1,
       "id": "contributor:fa92690f22b34aad9937",
       "name": "Matthew Petro (@matthewpetro)",
@@ -16316,7 +16228,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 204,
+      "currentRank": 202,
       "driverCount": 5,
       "id": "contributor:95ea6b3a390693791087",
       "name": "mclass",
@@ -16347,7 +16259,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 205,
+      "currentRank": 203,
       "driverCount": 4,
       "id": "contributor:77c71ee34b7bc0399d08",
       "name": "Michael van Dam",
@@ -16378,7 +16290,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 206,
+      "currentRank": 204,
       "driverCount": 1,
       "id": "contributor:28cacb11e32812b5fe4f",
       "name": "Mike Maxwell",
@@ -16409,7 +16321,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 207,
+      "currentRank": 205,
       "driverCount": 0,
       "id": "contributor:20e25452fadd27337ba0",
       "name": "mrmikeface",
@@ -16440,7 +16352,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 208,
+      "currentRank": 206,
       "driverCount": 1,
       "id": "contributor:5bb854beb33ab506edff",
       "name": "Muxa, kkossev",
@@ -16471,7 +16383,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 209,
+      "currentRank": 207,
       "driverCount": 1,
       "id": "contributor:377c43626ed83efa4068",
       "name": "Nathan Spencer & Dominick Meglio",
@@ -16502,7 +16414,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 210,
+      "currentRank": 208,
       "driverCount": 8,
       "id": "contributor:4df8ce971e4d183757d7",
       "name": "Nu Tech Software Solutions, Inc. & Dominick Meglio",
@@ -16533,7 +16445,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 211,
+      "currentRank": 209,
       "driverCount": 1,
       "id": "contributor:74234e98afe7498fb5da",
       "name": "null",
@@ -16564,7 +16476,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 212,
+      "currentRank": 210,
       "driverCount": 1,
       "id": "contributor:e76933a157abbe15e5be",
       "name": "obeisser",
@@ -16595,7 +16507,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 213,
+      "currentRank": 211,
       "driverCount": 4,
       "id": "contributor:2f17695622d65646cef1",
       "name": "Patrick Wogan",
@@ -16626,7 +16538,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 214,
+      "currentRank": 212,
       "driverCount": 3,
       "id": "contributor:4bf2a2d9be0309577ffd",
       "name": "Paul Harrison",
@@ -16657,7 +16569,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 215,
+      "currentRank": 213,
       "driverCount": 2,
       "id": "contributor:e63f3bf26ba8da9464b8",
       "name": "Pedro Andrade",
@@ -16688,7 +16600,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 216,
+      "currentRank": 214,
       "driverCount": 0,
       "id": "contributor:807b36e9795cc15d6844",
       "name": "pentalingual",
@@ -16719,7 +16631,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 217,
+      "currentRank": 215,
       "driverCount": 2,
       "id": "contributor:d2494d7c187d7a41092f",
       "name": "Rangner FG",
@@ -16750,7 +16662,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 218,
+      "currentRank": 216,
       "driverCount": 1,
       "id": "contributor:5b89a0e4515b72e61e65",
       "name": "Reid Baldwin",
@@ -16781,7 +16693,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 219,
+      "currentRank": 217,
       "driverCount": 1,
       "id": "contributor:9e17b87b33cf8da4a30b",
       "name": "rnoia",
@@ -16812,7 +16724,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 220,
+      "currentRank": 218,
       "driverCount": 9,
       "id": "contributor:207f87a235ac732860cd",
       "name": "Robert Alan Heyes",
@@ -16843,7 +16755,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 221,
+      "currentRank": 219,
       "driverCount": 1,
       "id": "contributor:2713e60259607ad1d8d5",
       "name": "Rory Jaffe",
@@ -16874,7 +16786,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 222,
+      "currentRank": 220,
       "driverCount": 1,
       "id": "contributor:d63affda83dc7c1a55d8",
       "name": "Russ Vrolyk",
@@ -16905,7 +16817,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 223,
+      "currentRank": 221,
       "driverCount": 4,
       "id": "contributor:076da9d03b43ba975391",
       "name": "Russell Goldin",
@@ -16936,7 +16848,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 224,
+      "currentRank": 222,
       "driverCount": 1,
       "id": "contributor:4a7d6073f179ab7191e1",
       "name": "Ryan DeShone",
@@ -16967,7 +16879,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 225,
+      "currentRank": 223,
       "driverCount": 2,
       "id": "contributor:65e9a0efe7c0653af109",
       "name": "sab0276",
@@ -16998,7 +16910,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 226,
+      "currentRank": 224,
       "driverCount": 6,
       "id": "contributor:43c34218d903c1a35bab",
       "name": "Samuel C. Auclair",
@@ -17029,7 +16941,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 227,
+      "currentRank": 225,
       "driverCount": 0,
       "id": "contributor:ab6643ba51d3bf8019f0",
       "name": "Scott Wade",
@@ -17060,7 +16972,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 228,
+      "currentRank": 226,
       "driverCount": 1,
       "id": "contributor:57401b590fa288e5a075",
       "name": "Scottma61 (Original) / Aniva (Patch)",
@@ -17091,7 +17003,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 229,
+      "currentRank": 227,
       "driverCount": 67,
       "id": "contributor:45735072cb5a4e1fb32b",
       "name": "ShellyUSA, Daniel Winks",
@@ -17122,7 +17034,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 230,
+      "currentRank": 228,
       "driverCount": 1,
       "id": "contributor:84a41b081d41fa54529d",
       "name": "signal15",
@@ -17153,7 +17065,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 231,
+      "currentRank": 229,
       "driverCount": 1,
       "id": "contributor:9a379d8493ec287521d5",
       "name": "SORS",
@@ -17184,7 +17096,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 232,
+      "currentRank": 230,
       "driverCount": 29,
       "id": "contributor:1737c8cdf203372ca660",
       "name": "Steven Barcus",
@@ -17215,7 +17127,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 233,
+      "currentRank": 231,
       "driverCount": 3,
       "id": "contributor:680be587ba5a94d69204",
       "name": "Steven Dale",
@@ -17246,7 +17158,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 234,
+      "currentRank": 232,
       "driverCount": 0,
       "id": "contributor:f0065c1f45bf6b1d5d58",
       "name": "Taylor Vierrether",
@@ -17277,7 +17189,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 235,
+      "currentRank": 233,
       "driverCount": 1,
       "id": "contributor:4b3cb752336fd2bd01a2",
       "name": "Terrel Allen",
@@ -17308,7 +17220,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 236,
+      "currentRank": 234,
       "driverCount": 0,
       "id": "contributor:8ee4ab3e718eeb57eeae",
       "name": "TheBearMay",
@@ -17339,7 +17251,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 237,
+      "currentRank": 235,
       "driverCount": 0,
       "id": "contributor:7d5afc77b7d9fd6886a3",
       "name": "TheDanHealy",
@@ -17370,7 +17282,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 238,
+      "currentRank": 236,
       "driverCount": 2,
       "id": "contributor:aded9e2c5c57232eae75",
       "name": "Thomas Howard",
@@ -17401,7 +17313,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 239,
+      "currentRank": 237,
       "driverCount": 3,
       "id": "contributor:11674668553ffcc8770c",
       "name": "tinkorswim",
@@ -17432,7 +17344,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 240,
+      "currentRank": 238,
       "driverCount": 6,
       "id": "contributor:f79b56140024d7668fa8",
       "name": "Todd",
@@ -17463,7 +17375,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 241,
+      "currentRank": 239,
       "driverCount": 1,
       "id": "contributor:bd2f6cbc2a8bc5dfec77",
       "name": "TR-Systems",
@@ -17494,7 +17406,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 242,
+      "currentRank": 240,
       "driverCount": 1,
       "id": "contributor:fe417dbbfca8a5140013",
       "name": "Travis Tomka",
@@ -17530,6 +17442,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:5cf87f7cd4c159334c4c",
           "packageName": "Yale Assure Lock 2 Driver",
           "summary": "Yale Assure Lock 2 Driver: added."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:567e8282a85c7b5e30204bbe",
+          "observedAt": "2026-08-26T00:40:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:5cf87f7cd4c159334c4c",
+          "packageName": "Yale Assure Lock 2 Driver",
+          "summary": "Yale Assure Lock 2 Driver: updated."
         }
       ],
       "appCount": 0,
@@ -17540,11 +17466,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 243,
+      "currentRank": 241,
       "driverCount": 1,
       "id": "contributor:2e46c4122819bb72fd5c",
       "name": "Trunzoc/Sleuth",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -17557,7 +17483,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Yale Assure Lock 2 Driver",
           "publisherDate": "2026-08-13",
           "repositoryUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/repository.json",
-          "version": "1.04"
+          "version": "1.05"
         }
       ]
     },
@@ -17571,7 +17497,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 244,
+      "currentRank": 242,
       "driverCount": 1,
       "id": "contributor:c0169b8774e9ef9eb1c9",
       "name": "uDevel",
@@ -17602,7 +17528,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 245,
+      "currentRank": 243,
       "driverCount": 0,
       "id": "contributor:0d7795bd85122e9c9ea5",
       "name": "UltronOfSpace",
@@ -17633,7 +17559,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 246,
+      "currentRank": 244,
       "driverCount": 1,
       "id": "contributor:3cfe986a247c5ae9cd27",
       "name": "Victor Santana",
@@ -17664,7 +17590,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 247,
+      "currentRank": 245,
       "driverCount": 1,
       "id": "contributor:43e3c3b9a75a2dd734a3",
       "name": "viertaxa",
@@ -17695,7 +17621,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 248,
+      "currentRank": 246,
       "driverCount": 1,
       "id": "contributor:0fc0469097552eede65b",
       "name": "Vincent van Didden",
@@ -17726,7 +17652,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 249,
+      "currentRank": 247,
       "driverCount": 5,
       "id": "contributor:ca4823a0a208aa6ab9ea",
       "name": "Vyrolan",
@@ -17757,7 +17683,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 248,
       "driverCount": 1,
       "id": "contributor:10b1e9e1c48029622d09",
       "name": "WalksOnAir",
@@ -17788,7 +17714,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 249,
       "driverCount": 3,
       "id": "contributor:7d9c33a19dcfd53b7eac",
       "name": "WarlockWeary + Claude AI + ChatGPT + Grok",
@@ -17850,7 +17776,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 250,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -17881,7 +17807,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 253,
+      "currentRank": 251,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -17912,7 +17838,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 254,
+      "currentRank": 252,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -17932,6 +17858,88 @@ window.CONTRIBUTOR_ACTIVITY = {
           "version": "1.1.5"
         }
       ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Utilities",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2f3a0b1bc60ffd4d13e80dd3",
+          "observedAt": "2026-08-26T00:40:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:9d5c5fbfd62502e2b278",
+          "packageName": "The Flasher",
+          "summary": "The Flasher: removed."
+        },
+        {
+          "category": "Utilities",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ce60d5dd3ee4411dcb483efa",
+          "observedAt": "2026-08-26T00:40:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:a8fbcef6a4832b9d72fb",
+          "packageName": "Device Watchdog",
+          "summary": "Device Watchdog: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [],
+      "currentPackageCount": 0,
+      "currentRank": null,
+      "driverCount": 0,
+      "id": "contributor:593f46d943aec70bf3c1",
+      "name": "BPTWorld",
+      "observedActivityCount": 2,
+      "packages": []
+    },
+    {
+      "activity": [
+        {
+          "category": "Utilities",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8c8e8cd1b0a4c23ee5d17179",
+          "observedAt": "2026-08-26T00:40:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:bcacd870b13e0625ad36",
+          "packageName": "HubVoice",
+          "summary": "HubVoice: removed."
+        },
+        {
+          "category": "Utilities",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ed50136b5fd9db63c33e2994",
+          "observedAt": "2026-08-26T00:40:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:5d4828b24c2c2f3969d4",
+          "packageName": "Flow Engine One",
+          "summary": "Flow Engine One: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [],
+      "currentPackageCount": 0,
+      "currentRank": null,
+      "driverCount": 0,
+      "id": "contributor:eeb1e037295a90970703",
+      "name": "Bryan Turcotte (@bptworld)",
+      "observedActivityCount": 2,
+      "packages": []
     },
     {
       "activity": [
@@ -17979,14 +17987,14 @@ window.CONTRIBUTOR_ACTIVITY = {
       "packages": []
     }
   ],
-  "currentContributorCount": 254,
-  "currentPackageCount": 910,
+  "currentContributorCount": 252,
+  "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 75,
-    "eventCount": 74,
+    "attributedEventCount": 80,
+    "eventCount": 79,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-25T00:39:18Z"
+    "lastObservedAt": "2026-08-26T00:40:01Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -17998,9 +18006,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 255,
-  "rankedPackageCount": 908,
+  "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-25T03:11:34Z",
+  "snapshotGenerated": "2026-08-26T00:40:01Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
