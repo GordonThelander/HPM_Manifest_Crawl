@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A compact preview of documented Hubitat releases over time.">
+  <title>Hubitat releases over time</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Community Utilities</p>
+        <h1>Hubitat releases over time</h1>
+      </div>
+      <p id="range-summary" class="range">Loading release history...</p>
+    </header>
+
+    <a class="chart-link" href="../../feature-tracker/?ref=automation-map-release-preview"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Explore the full Community Utilities Update Tracker">
+      <svg id="release-timeline" role="img" aria-labelledby="timeline-title timeline-description"
+           viewBox="0 0 1100 310" preserveAspectRatio="xMidYMid meet">
+        <title id="timeline-title">Hubitat release builds over time</title>
+        <desc id="timeline-description">Each point is a documented Hubitat release build. Its height shows the number of documented changes.</desc>
+      </svg>
+    </a>
+
+    <div class="legend" aria-label="Timeline legend">
+      <span><i class="new"></i>New possibilities</span>
+      <span><i class="fix"></i>Fixes and maintenance</span>
+      <span>Point height = documented changes</span>
+    </div>
+
+    <footer>
+      <p id="freshness">Loading source freshness...</p>
+      <a class="cta" href="../../feature-tracker/?ref=automation-map-release-preview"
+         target="_blank" rel="noopener noreferrer">Explore the full Update Tracker</a>
+    </footer>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="../../feature-tracker/data/hubitat_release_features.js" defer></script>
+  <script src="app.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"4f12063038634bc29a4820bbe7523693"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -64,6 +64,19 @@ class ReleaseFeatureTests(unittest.TestCase):
         self.assertNotIn('hubitat_automation_map_app_integration_registry', source)
         self.assertIn("'automationMapIndependent': True", source)
 
+    def test_release_activity_embed_is_bounded_and_clicks_through(self):
+        page = (ROOT / 'site/embed/release-activity/index.html').read_text('utf-8')
+        script = (ROOT / 'site/embed/release-activity/app.js').read_text('utf-8')
+        styles = (ROOT / 'site/embed/release-activity/styles.css').read_text('utf-8')
+        self.assertNotIn('utility-nav', page)
+        self.assertIn('../../feature-tracker/?ref=automation-map-release-preview', page)
+        self.assertIn('target="_blank" rel="noopener noreferrer"', page)
+        self.assertIn('../../feature-tracker/data/hubitat_release_features.js', page)
+        self.assertIn("window.HUBITAT_RELEASE_FEATURES", script)
+        self.assertIn('lastSuccessfulHarvest', script)
+        self.assertIn('@media(max-width:520px)', styles)
+        self.assertNotIn('innerHTML', script)
+
 
 if __name__ == '__main__':
     unittest.main()
