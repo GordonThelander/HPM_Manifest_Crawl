@@ -1,8 +1,8 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-26T08:13:41Z`.
+Latest observation: `2026-08-26T08:27:32Z`.
 
-**41 package change(s):** added 3, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 30
+**40 package change(s):** added 3, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 29
 
 - [Third Reality Water Sensor: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json)
 - [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
@@ -44,6 +44,5 @@ Latest observation: `2026-08-26T08:13:41Z`.
 - [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Navien NaviLink (Cloud): added.](https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json)
-- [MolSmart DIMMER-010: updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer_0-10/refs/heads/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
