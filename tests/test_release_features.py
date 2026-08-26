@@ -56,6 +56,8 @@ class ReleaseFeatureTests(unittest.TestCase):
         script = (ROOT / 'site/feature-tracker/app.js').read_text('utf-8')
         self.assertIn('id="release-timeline"', page)
         self.assertIn('View timeline as a table', page)
+        self.assertIn('Green labels identify the release families.', page)
+        self.assertIn("class:'family-label'", script)
         self.assertIn('textContent', script)
         self.assertNotIn('innerHTML', script)
 
@@ -74,6 +76,7 @@ class ReleaseFeatureTests(unittest.TestCase):
         self.assertIn('../../feature-tracker/data/hubitat_release_features.js', page)
         self.assertIn("window.HUBITAT_RELEASE_FEATURES", script)
         self.assertIn('lastSuccessfulHarvest', script)
+        self.assertIn("class:'family-label'", script)
         self.assertIn("window.parent.postMessage({type:'automation-map-release-activity-ready',version:1},'*')", script)
         self.assertIn('@media(max-width:520px)', styles)
         self.assertNotIn('innerHTML', script)
