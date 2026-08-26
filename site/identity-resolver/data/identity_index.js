@@ -698,15 +698,7 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_NAME"
-          ],
-          "packageId": "manifest:a8fbcef6a4832b9d72fb",
-          "packageName": "Device Watchdog"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:4bdad601085b99ddcbdb",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1078,36 +1070,7 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:5d4828b24c2c2f3969d4",
-          "packageName": "Flow Engine One"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:9d5c5fbfd62502e2b278",
-          "packageName": "The Flasher"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:a8fbcef6a4832b9d72fb",
-          "packageName": "Device Watchdog"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:bcacd870b13e0625ad36",
-          "packageName": "HubVoice"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:b2c44d36b0083a96ca35",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -48217,5 +48180,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-26T00:40:01Z"
+  "snapshotGenerated": "2026-08-26T00:55:37Z"
 };
