@@ -1,6 +1,6 @@
 # HPM package health summary
 
-Snapshot: `2026-08-26T08:27:32Z`
+Snapshot: `2026-08-26T08:38:03Z`
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
