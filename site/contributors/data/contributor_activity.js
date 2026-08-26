@@ -1209,7 +1209,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:43ee58d0ce3ad0ea67fc4d46",
+          "observedAt": "2026-08-26T06:39:55Z",
+          "observedCommit": null,
+          "packageId": "manifest:9f0e530e1ee5b8ff9336",
+          "packageName": "Third Reality Water Sensor",
+          "summary": "Third Reality Water Sensor: updated."
+        }
+      ],
       "appCount": 3,
       "categories": [
         {
@@ -1230,7 +1245,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 31,
       "id": "contributor:3d07aab59cd6c5d37cb7",
       "name": "TheMaster",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -1646,7 +1661,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Third Reality Water Sensor",
           "publisherDate": "2022-12-07",
           "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.3"
+          "version": "1.2.4"
         },
         {
           "appCount": 0,
@@ -17991,10 +18006,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 80,
-    "eventCount": 79,
+    "attributedEventCount": 81,
+    "eventCount": 80,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-26T00:40:01Z"
+    "lastObservedAt": "2026-08-26T06:39:55Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18008,7 +18023,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 255,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-26T00:55:37Z",
+  "snapshotGenerated": "2026-08-26T06:39:55Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

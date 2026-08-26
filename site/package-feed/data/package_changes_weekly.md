@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-26T00:55:37Z`.
+Latest observation: `2026-08-26T06:39:55Z`.
 
-**44 package change(s):** added 3, broken 1, declared definitions changed 6, removed 5, restored 2, source location changed 6, updated 33
+**41 package change(s):** added 3, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 30
 
+- [Third Reality Water Sensor: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json)
 - [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
 - [The Flasher: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/packageManifest.json)
 - [HubVoice: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json)
@@ -44,9 +45,5 @@ Latest observation: `2026-08-26T00:55:37Z`.
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Navien NaviLink (Cloud): added.](https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json)
 - [MolSmart DIMMER-010: updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer_0-10/refs/heads/main/packageManifest.json)
-- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [ESP32 Wall Keypad: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
