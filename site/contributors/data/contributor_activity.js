@@ -3768,6 +3768,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:b47bbf6c913b5a264293",
           "packageName": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port",
           "summary": "Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67b434309572f74341aebb0f",
+          "observedAt": "2026-08-27T05:40:12Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
         }
       ],
       "appCount": 11,
@@ -3794,7 +3808,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 8,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 2,
@@ -3974,9 +3988,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-08-24",
+          "publisherDate": "2026-08-27",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.22.0"
+          "version": "1.23.0"
         }
       ]
     },
@@ -9795,6 +9809,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3ac87c4e92c71e92a9e3b4dc",
+          "observedAt": "2026-08-27T05:40:12Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -9821,7 +9849,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 7,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 1,
@@ -9834,7 +9862,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Automation Map",
           "publisherDate": "2026-08-27",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.1.0"
+          "version": "2.1.1"
         },
         {
           "appCount": 0,
@@ -18034,10 +18062,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 83,
-    "eventCount": 82,
+    "attributedEventCount": 85,
+    "eventCount": 84,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-27T00:41:16Z"
+    "lastObservedAt": "2026-08-27T05:40:12Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18051,7 +18079,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 255,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-27T00:41:16Z",
+  "snapshotGenerated": "2026-08-27T05:40:12Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-27T00:41:16Z`.
+Latest observation: `2026-08-27T05:40:12Z`.
 
-**38 package change(s):** added 2, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 28
+**40 package change(s):** added 2, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 30
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Third Reality Water Sensor: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json)
