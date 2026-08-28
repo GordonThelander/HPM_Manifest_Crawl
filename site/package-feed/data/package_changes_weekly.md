@@ -1,9 +1,36 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-27T05:40:12Z`.
+Latest observation: `2026-08-28T07:48:34Z`.
 
-**40 package change(s):** added 2, broken 1, declared definitions changed 5, removed 5, restored 1, source location changed 5, updated 30
+**62 package change(s):** added 2, broken 1, declared definitions changed 5, manifest changed 20, removed 5, restored 1, source location changed 12, updated 35
 
+- [Zigbee Button Dimmer: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json)
+- [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
+- [Weather Canada (OWM3.0-EC): updated, changed declared definitions.](https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/weather%20canada%20(owm-ec)/packageManifest.json)
+- [VINDSTYRKA Air Quality Monitor: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json)
+- [Tuya Zigbee mmWave Sensor: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json)
+- [Tuya Zigbee Tank Level Monitor: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/packageManifest.json)
+- [Tuya Zigbee Smoke Detector: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json)
+- [Tuya Zigbee Rain Sensor: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json)
+- [Tuya Zigbee Metering Plug: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
+- [Tuya Zigbee Garage Door Opener: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json)
+- [Tuya Zigbee Fingerbot: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json)
+- [Tuya Zigbee Control Screen Panel: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/packageManifest.json)
+- [Tuya Zigbee Contact Sensor++ w/ healthStatus: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Contact%20Sensor/packageManifest.json)
+- [Tuya Zigbee Chlorine Meter: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/packageManifest.json)
+- [Tuya ZigBee Vibration Sensor: updated, changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json)
+- [Tuya Smart Siren Zigbee: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json)
+- [Tuya NEO Coolcam Zigbee Water Leak Sensor: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json)
+- [Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars): changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json)
+- [Thermostats Sync: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json)
+- [Shelly Wave Plug S EU QNPL-0A112EU: updated.](https://raw.githubusercontent.com/reneboer/Hubitat/main/Shelly/packageManifestPS.json)
+- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
+- [Moes ZSS-ZK-THL_TS0222: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json)
+- [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [ESP32 Wall Keypad: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
+- [Device Health Status: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/packageManifest_DeviceHealthStatus.json)
+- [Aqara Cube T1 Pro: updated, changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
@@ -38,11 +65,6 @@ Latest observation: `2026-08-27T05:40:12Z`.
 - [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
 - [ESP32 Wall Keypad: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [ESP32 Wall Keypad: changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

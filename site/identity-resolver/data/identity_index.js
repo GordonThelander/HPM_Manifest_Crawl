@@ -4201,7 +4201,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225",
         "documentationUrl": null,
         "id": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/Thermostats%20Sync/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json",
         "name": "Thermostats Sync"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/Thermostats_Sync.groovy"
@@ -10439,7 +10439,7 @@ window.IDENTITY_INDEX = {
       "package": {
         "author": "CSteele",
         "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/docs/",
         "id": "manifest:0aab44543b1218f89d7f",
         "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
         "name": "ESP32 Wall Keypad"
@@ -12196,7 +12196,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817",
         "documentationUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817/3?u=kkossev",
         "id": "hpm:8c11f83d-3fa8-4843-bf02-d7652089c952",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/packageManifest_DeviceHealthStatus.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/packageManifest_DeviceHealthStatus.json",
         "name": "Device Health Status"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Device%20Health%20Status.groovy"
@@ -13196,7 +13196,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/30",
         "documentationUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/26?u=kkossev",
         "id": "hpm:5057db0d-4572-4cf0-a7c3-22c2bffb711e",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
         "name": "Tuya Zigbee Garage Door Opener"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/Tuya%20Zigbee%20Garage%20Door%20Opener.groovy"
@@ -14266,7 +14266,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-chlorin-meter-7-in-1/141907",
         "documentationUrl": null,
         "id": "hpm:71fc3487-1559-47a3-a25b-838c18ad260d",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/packageManifest.json",
         "name": "Tuya Zigbee Chlorine Meter"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/Tuya_Zigbee_Chlorine_Meter_lib_included.groovy"
@@ -15737,6 +15737,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/yonatan-mitmit/HubitatAnthem/main/AnthemMain.groovy"
     },
     {
+      "id": "definition:18f6ab9eac4a3623e27b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Moes ZSS-ZK-THL sensor (TS0222)",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:e6eedb98-4f18-404a-9f46-42ce5e9612db",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
+        "name": "Moes ZSS-ZK-THL_TS0222"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Moes_ZSS-ZK-THL_TS0222/Moes_ZSS-ZK-THL_TS0222.groovy"
+    },
+    {
       "id": "definition:1928a650bfb830755ecf",
       "identities": [
         {
@@ -16079,7 +16099,7 @@ window.IDENTITY_INDEX = {
       "package": {
         "author": "CSteele",
         "communityUrl": null,
-        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+        "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/docs/",
         "id": "manifest:0aab44543b1218f89d7f",
         "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
         "name": "ESP32 Wall Keypad"
@@ -16510,26 +16530,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Sensors Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse11-v1.2.2.groovy"
-    },
-    {
-      "id": "definition:1f60a497a7835cd8bb6a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Tuya Zigbee Smoke Detector",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159",
-        "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159/2?u=kkossev",
-        "id": "hpm:c25fb12f-a13d-4d84-8bc5-40a2bba258d3",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
-        "name": "Tuya Zigbee Smoke Detector"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya_Zigbee_Smoke_Detector/Tuya_Zigbee_Smoke_Detector.groovy"
     },
     {
       "id": "definition:1f752c38c4f49f33d349",
@@ -18617,6 +18617,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kaimyn/Hubitat/main/Tailwind/drivers/tailwindGaragedoorController.groovy"
     },
     {
+      "id": "definition:3030980bccc9346d5630",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Zigbee Control Screen Panel",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir kkossev",
+        "communityUrl": "https://community.hubitat.com/t/a-new-interesting-tuya-zigbee-control-screen-panel-w-relays-and-scenes-t3e-2023-new-model/136208",
+        "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-Control-Screen-Panel",
+        "id": "hpm:3d3e4d40-3184-4604-b26c-0165f04f8b4a",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/packageManifest.json",
+        "name": "Tuya Zigbee Control Screen Panel"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/Tuya_Zigbee_Control_Screen_Panel_lib_included.groovy"
+    },
+    {
       "id": "definition:3032c908d632780d1224",
       "identities": [
         {
@@ -18695,26 +18715,6 @@ window.IDENTITY_INDEX = {
         "name": "Ring Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/hubitat/drivers/RingLock.groovy"
-    },
-    {
-      "id": "definition:3103c5c7eefe1a46ff99",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Tuya Zigbee Control Screen Panel",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir kkossev",
-        "communityUrl": "https://community.hubitat.com/t/a-new-interesting-tuya-zigbee-control-screen-panel-w-relays-and-scenes-t3e-2023-new-model/136208",
-        "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-Control-Screen-Panel",
-        "id": "hpm:3d3e4d40-3184-4604-b26c-0165f04f8b4a",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/packageManifest.json",
-        "name": "Tuya Zigbee Control Screen Panel"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/Tuya_Zigbee_Control_Screen_Panel_lib_included.groovy"
     },
     {
       "id": "definition:311b750574ff2d5a1065",
@@ -20882,6 +20882,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Apex2016.groovy"
     },
     {
+      "id": "definition:4193594113518dcb333b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Zigbee Smoke Detector",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159",
+        "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159/2?u=kkossev",
+        "id": "hpm:c25fb12f-a13d-4d84-8bc5-40a2bba258d3",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
+        "name": "Tuya Zigbee Smoke Detector"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya_Zigbee_Smoke_Detector/Tuya_Zigbee_Smoke_Detector.groovy"
+    },
+    {
       "id": "definition:41bb6a4954c7f858a463",
       "identities": [
         {
@@ -22127,26 +22147,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-button-trigger.groovy"
     },
     {
-      "id": "definition:4acf5bad8dd1c26ad13c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Tuya Zigbee Fingerbot",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
-        "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
-        "id": "hpm:fbae2080-22f0-48e0-8788-f57dd5e571da",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
-        "name": "Tuya Zigbee Fingerbot"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Fingerbot/Tuya_Zigbee_Fingerbot_lib_included.groovy"
-    },
-    {
       "id": "definition:4ae211a84c5038af81a9",
       "identities": [
         {
@@ -23046,7 +23046,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/alpha-tuya-zigbee-mmwave-sensors-moving-the-code-from-the-tuya-4-in-1-driver/137410/1",
         "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-mmWave-Sensor",
         "id": "hpm:e4f2a589-2ac0-4923-b6c7-bfc08b9db948",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
         "name": "Tuya Zigbee mmWave Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/Tuya_Zigbee_mmWave_Sensor_lib_included.groovy"
@@ -23675,6 +23675,26 @@ window.IDENTITY_INDEX = {
         "name": "MolSmart - GW8 - AC(irweb)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(irweb)/Hubitat_TRATO_MolSmart_GW8_IR_AC(irweb).groovy"
+    },
+    {
+      "id": "definition:543a65f803697dc361a6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Weather Canada (OWM-EC)",
+          "namespace": "n3!"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "n3!",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "manifest:161490844283368cda70",
+        "manifestUrl": "https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/weather%20canada%20(owm-ec)/packageManifest.json",
+        "name": "Weather Canada (OWM3.0-EC)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/dmike3/Hubitat/master/Drivers/Weather%20Canada%20(OWM-EC)/Weather%20Canada%20(OWM-EC).groovy"
     },
     {
       "id": "definition:547086328e7ba85af09a",
@@ -24736,7 +24756,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-metering-plug/86465",
         "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/README.MD",
         "id": "hpm:db071ec7-157f-4397-a63c-18f2a3b16bec",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
         "name": "Tuya Zigbee Metering Plug"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/Tuya%20Zigbee%20Metering%20Plug"
@@ -27163,10 +27183,10 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Krassimir Kossev",
-        "communityUrl": null,
-        "documentationUrl": null,
+        "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-vibration-sensor/138208",
+        "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/README.md",
         "id": "hpm:7aa89d9c-bafd-487e-9eed-ade6c948e320",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
         "name": "Tuya ZigBee Vibration Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/Tuya%20ZigBee%20Vibration%20Sensor.groovy"
@@ -28091,7 +28111,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/release-tuya-smart-siren-zigbee-driver/91772",
         "documentationUrl": null,
         "id": "hpm:d8aed522-094b-403f-b1b7-90900ada633c",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
         "name": "Tuya Smart Siren Zigbee"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Smart%20Siren%20Zigbee/Tuya%20Smart%20Siren%20Zigbee.groovy"
@@ -29035,26 +29055,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Zen24 Dimmer"
       },
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/zooz/zen24-dimmer.groovy"
-    },
-    {
-      "id": "definition:7a4d0e877760a2fd7595",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Zigbee Button Dimmer",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
-        "documentationUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
-        "id": "hpm:7d3627fd-27c6-4784-a76a-4f2eded51168",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
-        "name": "Zigbee Button Dimmer"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Zigbee%20Button%20Dimmer/Zigbee_Button_Dimmer_lib_included.groovy"
     },
     {
       "id": "definition:7a80ae6738e5012002cf",
@@ -31592,6 +31592,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM1.groovy"
     },
     {
+      "id": "definition:8e6596b0773bdcfaf4e7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Aqara Cube T1 Pro",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
+        "documentationUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
+        "id": "hpm:fc13f97d-e5a8-4d5e-bf84-1c9b712f9568",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
+        "name": "Aqara Cube T1 Pro"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20Cube%20T1%20Pro/Aqara_Cube_T1_Pro_lib_included.groovy"
+    },
+    {
       "id": "definition:8e667d6116d52745f80d",
       "identities": [
         {
@@ -33177,6 +33197,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/drivers/hive_receiver.groovy"
     },
     {
+      "id": "definition:9911966cd6e4121a7f24",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee Button Dimmer",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
+        "documentationUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
+        "id": "hpm:7d3627fd-27c6-4784-a76a-4f2eded51168",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
+        "name": "Zigbee Button Dimmer"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20Button%20Dimmer/Zigbee_Button_Dimmer_lib_included.groovy"
+    },
+    {
       "id": "definition:991927ada33e0c3d92fa",
       "identities": [
         {
@@ -34512,6 +34552,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
     },
     {
+      "id": "definition:a2fe95961898fc41a634",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "VINDSTYRKA Air Quality Monitor",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/ikea-trip-what-to-buy/112770/38?u=kkossev",
+        "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy",
+        "id": "hpm:922c95be-07e9-4376-a94d-fc702bea7ec9",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
+        "name": "VINDSTYRKA Air Quality Monitor"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy"
+    },
+    {
       "id": "definition:a30b2f6d4304eedb0587",
       "identities": [
         {
@@ -34631,7 +34691,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
         "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
         "id": "hpm:b2212052-92d1-450f-9dca-08c0789c9c0c",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
         "name": "Tuya Zigbee Rain Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/Tuya_Zigbee_Rain_Sensor_lib_included.groovy"
@@ -36416,7 +36476,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441",
         "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
         "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
         "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/Tuya%20Multi%20Sensor%204%20In%201.groovy"
@@ -36820,31 +36880,6 @@ window.IDENTITY_INDEX = {
         "name": "Unifi Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16PoE.groovy"
-    },
-    {
-      "id": "definition:b178f9e23e0bc62763ce",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Weather Canada (OWM-EC)",
-          "namespace": "n3!"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Weather Canada (OWM3.0-EC)",
-          "namespace": "n3!"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "n3!",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:161490844283368cda70",
-        "manifestUrl": "https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/weather%20canada%20(owm-ec)/packageManifest.json",
-        "name": "Weather Canada (OWM3.0-EC)"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/dmike3/Hubitat/master/Drivers/Weather%20Canada%20(OWM-EC)/Weather%20Canada%20(OWM-EC).groovy"
     },
     {
       "id": "definition:b18bda798013eabb5b6b",
@@ -37640,6 +37675,26 @@ window.IDENTITY_INDEX = {
         "name": "Album Art Tile"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/AlbumArtTile/AlbumArtTile_Driver.groovy"
+    },
+    {
+      "id": "definition:b709512d13df83ece1a1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Zigbee Fingerbot",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
+        "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
+        "id": "hpm:fbae2080-22f0-48e0-8788-f57dd5e571da",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
+        "name": "Tuya Zigbee Fingerbot"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Fingerbot/Tuya_Zigbee_Fingerbot_lib_included.groovy"
     },
     {
       "id": "definition:b711054b4dd5de2c24fa",
@@ -38603,8 +38658,8 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Trunzoc/Sleuth",
-        "communityUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
-        "documentationUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+        "communityUrl": "https://community.hubitat.com/t/release-yale-assure-lock-2-zwave-driver/165918",
+        "documentationUrl": "https://community.hubitat.com/t/release-yale-assure-lock-2-zwave-driver/165918",
         "id": "manifest:5cf87f7cd4c159334c4c",
         "manifestUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
         "name": "Yale Assure Lock 2 Driver"
@@ -39941,7 +39996,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-tank-level-monitor/141666",
         "documentationUrl": null,
         "id": "hpm:74b72270-8de7-4064-964f-a27e4887adeb",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/packageManifest.json",
         "name": "Tuya Zigbee Tank Level Monitor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/Tuya_Zigbee_Tank_Level_Monitor_lib_included.groovy"
@@ -42442,26 +42497,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/iAqualink-TempSensor.groovy"
     },
     {
-      "id": "definition:d5c0f6d881253cdf00e3",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "VINDSTYRKA Air Quality Monitor",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/ikea-trip-what-to-buy/112770/38?u=kkossev",
-        "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy",
-        "id": "hpm:922c95be-07e9-4376-a94d-fc702bea7ec9",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
-        "name": "VINDSTYRKA Air Quality Monitor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy"
-    },
-    {
       "id": "definition:d5d0682b6bb493500578",
       "identities": [
         {
@@ -43452,26 +43487,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/EnvoyHE/master/device/enlighten-envoy-local.groovy"
     },
     {
-      "id": "definition:db3fc59213bf6f36ff10",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Aqara Cube T1 Pro",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
-        "documentationUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
-        "id": "hpm:fc13f97d-e5a8-4d5e-bf84-1c9b712f9568",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
-        "name": "Aqara Cube T1 Pro"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Aqara%20Cube%20T1%20Pro/Aqara_Cube_T1_Pro_lib_included.groovy"
-    },
-    {
       "id": "definition:db6f6d5efb95bfc15273",
       "identities": [
         {
@@ -44056,7 +44071,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": "https://community.hubitat.com/t/beta-tuya-neo-coolcam-zigbee-water-leak-sensor/91370",
         "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/README.md",
         "id": "hpm:39a56b8d-62a7-4b48-9915-fe26fb11d5e7",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
         "name": "Tuya NEO Coolcam Zigbee Water Leak Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor.groovy"
@@ -45881,7 +45896,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": null,
         "documentationUrl": null,
         "id": "hpm:b6e99a33-7aa3-4b25-ac03-9e44b0be5816",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
         "name": "Tuya Zigbee Contact Sensor++ w/ healthStatus"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Contact%20Sensor/Tuya%20Contact%20Sensor.groovy"
@@ -46640,26 +46655,6 @@ window.IDENTITY_INDEX = {
         "name": "DirecTV IP-based control"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rnoia/DirecTV-IP-Control-for-Hubitat/main/DirecTV%20Hubitat.groovy"
-    },
-    {
-      "id": "definition:f3b605140c95e8925135",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Moes ZSS-ZK-THL sensor (TS0222)",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:e6eedb98-4f18-404a-9f46-42ce5e9612db",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
-        "name": "Moes ZSS-ZK-THL_TS0222"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Moes_ZSS-ZK-THL_TS0222/Moes_ZSS-ZK-THL_TS0222.groovy"
     },
     {
       "id": "definition:f3d04d3bc2743704f490",
@@ -48180,5 +48175,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-27T05:40:12Z"
+  "snapshotGenerated": "2026-08-28T07:48:34Z"
 };

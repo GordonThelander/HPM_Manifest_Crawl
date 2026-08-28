@@ -1557,19 +1557,18 @@ window.NETWORK_EVIDENCE = {
       "description": "Aqara Cube T1 Pro (MFCZQ12LM) is fun!",
       "documentationUrl": "https://community.hubitat.com/t/release-aqara-cube-t1-pro-mfczq12lm-is-fun/121604",
       "id": "hpm:fc13f97d-e5a8-4d5e-bf84-1c9b712f9568",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json",
       "name": "Aqara Cube T1 Pro",
       "observed": {
         "externalHosts": [
-          "homekitnews.com",
-          "sensirion.com"
+          "homekitnews.com"
         ],
         "lanPrimitives": [
           "HUB_ACTION",
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 16
+        "urlLiteralCount": 20
       },
       "reviewed": [],
       "tags": [
@@ -3921,7 +3920,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Device Health Status - app for Hubitat Elevation hub",
       "documentationUrl": "https://community.hubitat.com/t/project-alpha-device-health-status/111817/3?u=kkossev",
       "id": "hpm:8c11f83d-3fa8-4843-bf02-d7652089c952",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/packageManifest_DeviceHealthStatus.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/packageManifest_DeviceHealthStatus.json",
       "name": "Device Health Status",
       "observed": {
         "externalHosts": [
@@ -4998,7 +4997,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "MQTT driver and optional dashboard publisher for the ESP32 Wall Keypad.",
-      "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/install/",
+      "documentationUrl": "https://csteele-pd.github.io/Hubitat-public/ESP32-Wall-Keypad/docs/",
       "id": "manifest:0aab44543b1218f89d7f",
       "manifestUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json",
       "name": "ESP32 Wall Keypad",
@@ -14048,7 +14047,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Moes ZSS-ZK-THL illuminance, temperature, humidity sensor model TS0222 (_TYZB01_kvwjujy9) driver for Hubitat",
       "documentationUrl": null,
       "id": "hpm:e6eedb98-4f18-404a-9f46-42ce5e9612db",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Moes_ZSS-ZK-THL_TS0222/packageManifest.json",
       "name": "Moes ZSS-ZK-THL_TS0222",
       "observed": {
         "externalHosts": [],
@@ -19292,7 +19291,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
+        "urlLiteralCount": 2
       },
       "reviewed": [
         {
@@ -22145,7 +22144,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Bidirectional synchronization of thermostat attributes between two devices. Supports 8 sync options including battery and healthStatus with advanced loop prevention.",
       "documentationUrl": null,
       "id": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Apps/Thermostats%20Sync/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json",
       "name": "Thermostats Sync",
       "observed": {
         "externalHosts": [],
@@ -22695,7 +22694,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya PIR Motion Sensors and mmWave Radars - driver for Hubitat Elevation hub",
       "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
       "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
       "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)",
       "observed": {
         "externalHosts": [
@@ -22729,7 +22728,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya NEO Coolcam Zigbee Water Leak Sensor driver for Hubitat Elevation hub",
       "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/README.md",
       "id": "hpm:39a56b8d-62a7-4b48-9915-fe26fb11d5e7",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/packageManifest.json",
       "name": "Tuya NEO Coolcam Zigbee Water Leak Sensor",
       "observed": {
         "externalHosts": [
@@ -22791,7 +22790,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Smart Siren Zigbee driver for Hubitat Elevation hub",
       "documentationUrl": null,
       "id": "hpm:d8aed522-094b-403f-b1b7-90900ada633c",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Smart%20Siren%20Zigbee/packageManifest.json",
       "name": "Tuya Smart Siren Zigbee",
       "observed": {
         "externalHosts": [],
@@ -22911,7 +22910,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Chlorine Meter",
       "documentationUrl": null,
       "id": "hpm:71fc3487-1559-47a3-a25b-838c18ad260d",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Chlorine%20Meter/packageManifest.json",
       "name": "Tuya Zigbee Chlorine Meter",
       "observed": {
         "externalHosts": [
@@ -22946,7 +22945,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Contact Sensor++ w/ healthStatus - driver for Hubitat Elevation hub",
       "documentationUrl": null,
       "id": "hpm:b6e99a33-7aa3-4b25-ac03-9e44b0be5816",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Contact%20Sensor/packageManifest.json",
       "name": "Tuya Zigbee Contact Sensor++ w/ healthStatus",
       "observed": {
         "externalHosts": [
@@ -22977,7 +22976,7 @@ window.NETWORK_EVIDENCE = {
       "description": "T3E - Tuya Zigbee Control Screen Panel",
       "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-Control-Screen-Panel",
       "id": "hpm:3d3e4d40-3184-4604-b26c-0165f04f8b4a",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Control%20Screen%20Panel/packageManifest.json",
       "name": "Tuya Zigbee Control Screen Panel",
       "observed": {
         "externalHosts": [
@@ -23038,7 +23037,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Fingerbot - driver for Hubitat Elevation hub",
       "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-fingerbot/118719",
       "id": "hpm:fbae2080-22f0-48e0-8788-f57dd5e571da",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Fingerbot/packageManifest.json",
       "name": "Tuya Zigbee Fingerbot",
       "observed": {
         "externalHosts": [],
@@ -23066,7 +23065,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Garage Door Opener driver for Hubitat Elevation hub",
       "documentationUrl": "https://community.hubitat.com/t/tuya-zigbee-garage-door-opener/95579/26?u=kkossev",
       "id": "hpm:5057db0d-4572-4cf0-a7c3-22c2bffb711e",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Garage%20Door%20Opener/packageManifest.json",
       "name": "Tuya Zigbee Garage Door Opener",
       "observed": {
         "externalHosts": [
@@ -23120,7 +23119,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Metering Plug driver for Hubitat Elevation hub",
       "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/README.MD",
       "id": "hpm:db071ec7-157f-4397-a63c-18f2a3b16bec",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json",
       "name": "Tuya Zigbee Metering Plug",
       "observed": {
         "externalHosts": [
@@ -23173,7 +23172,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya mmWave sensors - new driver to replace the Tuya 4 In 1 driver. W.I.P.",
       "documentationUrl": "https://github.com/kkossev/Hubitat/wiki/Tuya-Zigbee-mmWave-Sensor",
       "id": "hpm:e4f2a589-2ac0-4923-b6c7-bfc08b9db948",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20mmWave%20Sensor/manifest.json",
       "name": "Tuya Zigbee mmWave Sensor",
       "observed": {
         "externalHosts": [
@@ -23204,7 +23203,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Rain Sensor",
       "documentationUrl": "https://community.hubitat.com/t/release-tuya-zigbee-light-and-rain-sensor/141057",
       "id": "hpm:b2212052-92d1-450f-9dca-08c0789c9c0c",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/manifest.json",
       "name": "Tuya Zigbee Rain Sensor",
       "observed": {
         "externalHosts": [],
@@ -23234,7 +23233,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Smoke Detector - driver for Hubitat Elevation hub",
       "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-smoke-detector/104159/2?u=kkossev",
       "id": "hpm:c25fb12f-a13d-4d84-8bc5-40a2bba258d3",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya_Zigbee_Smoke_Detector/packageManifest.json",
       "name": "Tuya Zigbee Smoke Detector",
       "observed": {
         "externalHosts": [],
@@ -23291,7 +23290,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Tuya Zigbee Tank Level Monitor",
       "documentationUrl": null,
       "id": "hpm:74b72270-8de7-4064-964f-a27e4887adeb",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Tank%20Level%20Monitor/packageManifest.json",
       "name": "Tuya Zigbee Tank Level Monitor",
       "observed": {
         "externalHosts": [
@@ -23358,15 +23357,15 @@ window.NETWORK_EVIDENCE = {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "BOTH",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-tuya-zigbee-vibration-sensor/138208",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Tuya ZigBee Vibration Sensor TS0210 driver for Hubitat Elevation hub",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/README.md",
       "id": "hpm:7aa89d9c-bafd-487e-9eed-ade6c948e320",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/packageManifest.json",
       "name": "Tuya ZigBee Vibration Sensor",
       "observed": {
         "externalHosts": [
@@ -24024,7 +24023,7 @@ window.NETWORK_EVIDENCE = {
       "description": "VINDSTYRKA Air Quality Monitor - driver for Hubitat Elevation hub",
       "documentationUrl": "https://github.com/kkossev/Hubitat/blob/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/VINDSTYRKA_Air_Quality_Monitor_lib_included.groovy",
       "id": "hpm:922c95be-07e9-4376-a94d-fc702bea7ec9",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/VINDSTYRKA%20Air%20Quality%20Monitor/packageManifest.json",
       "name": "VINDSTYRKA Air Quality Monitor",
       "observed": {
         "externalHosts": [
@@ -24614,7 +24613,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -25860,13 +25859,13 @@ window.NETWORK_EVIDENCE = {
       "author": "Trunzoc/Sleuth",
       "category": "Security",
       "classification": "LAN",
-      "communityUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+      "communityUrl": "https://community.hubitat.com/t/release-yale-assure-lock-2-zwave-driver/165918",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Yale assure lock 2 series lock driver includes DoorSense, lockcode manager, biometric unlock and ZW3 module support",
-      "documentationUrl": "https://community.hubitat.com/t/adding-doorsense-to-z-wave-yale-driver/145394",
+      "documentationUrl": "https://community.hubitat.com/t/release-yale-assure-lock-2-zwave-driver/165918",
       "id": "manifest:5cf87f7cd4c159334c4c",
       "manifestUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json",
       "name": "Yale Assure Lock 2 Driver",
@@ -26216,7 +26215,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Zigbee Buttons Dimmers",
       "documentationUrl": "https://community.hubitat.com/t/release-tuya-scene-switch-ts004f-driver-w-healthstatus/92823/3",
       "id": "hpm:7d3627fd-27c6-4784-a76a-4f2eded51168",
-      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json",
       "name": "Zigbee Button Dimmer",
       "observed": {
         "externalHosts": [
@@ -27301,5 +27300,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-27T05:40:12Z"
+  "snapshotGenerated": "2026-08-28T07:48:34Z"
 };
