@@ -10265,7 +10265,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7167415926af6a8d69467827",
+          "observedAt": "2026-08-29T04:44:17Z",
+          "observedCommit": null,
+          "packageId": "manifest:3ea10b3d80aa03496d06",
+          "packageName": "Weather-Display With OWM-Alerts Forecast Driver",
+          "summary": "Weather-Display With OWM-Alerts Forecast Driver: updated."
+        }
+      ],
       "appCount": 0,
       "categories": [
         {
@@ -10278,7 +10293,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:e41b0335a4f175b441dc",
       "name": "Matthew Scott",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -10328,9 +10343,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:3ea10b3d80aa03496d06",
           "manifestUrl": "https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json",
           "name": "Weather-Display With OWM-Alerts Forecast Driver",
-          "publisherDate": "2026-03-19",
+          "publisherDate": "2026-08-28",
           "repositoryUrl": "https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/Matthew_repository.json",
-          "version": "0.6.6"
+          "version": "0.7.0"
         }
       ]
     },
@@ -14648,6 +14663,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8674a05a8e58c3a46de1",
           "packageName": "PositionGuard",
           "summary": "PositionGuard: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ce1d86173fb171ea2dd2af9c",
+          "observedAt": "2026-08-29T04:44:17Z",
+          "observedCommit": null,
+          "packageId": "manifest:8674a05a8e58c3a46de1",
+          "packageName": "PositionGuard",
+          "summary": "PositionGuard: updated."
         }
       ],
       "appCount": 1,
@@ -14662,7 +14691,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -14673,9 +14702,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8674a05a8e58c3a46de1",
           "manifestUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json",
           "name": "PositionGuard",
-          "publisherDate": "2026-08-26",
+          "publisherDate": "2026-08-28",
           "repositoryUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
-          "version": "1.3.0"
+          "version": "1.3.1"
         }
       ]
     },
@@ -15726,6 +15755,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
           "packageName": "Flair Vents",
           "summary": "Flair Vents: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:83655570df68485551d19c2b",
+          "observedAt": "2026-08-29T04:44:17Z",
+          "observedCommit": null,
+          "packageId": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
+          "packageName": "Flair Vents",
+          "summary": "Flair Vents: updated."
         }
       ],
       "appCount": 0,
@@ -15740,7 +15783,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 0,
@@ -15751,7 +15794,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:f2f5af6b-3729-41a2-8292-48d36b485b52",
           "manifestUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json",
           "name": "Flair Vents",
-          "publisherDate": "2026-08-21",
+          "publisherDate": "2026-08-27",
           "repositoryUrl": "https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/repository.json",
           "version": "0.235"
         }
@@ -18455,10 +18498,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 112,
-    "eventCount": 111,
+    "attributedEventCount": 115,
+    "eventCount": 114,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-28T07:48:34Z"
+    "lastObservedAt": "2026-08-29T04:44:17Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18472,7 +18515,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 255,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-28T07:48:34Z",
+  "snapshotGenerated": "2026-08-29T04:44:17Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

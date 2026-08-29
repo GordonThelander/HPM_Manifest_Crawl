@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-28T07:48:34Z`.
+Latest observation: `2026-08-29T04:44:17Z`.
 
-**62 package change(s):** added 2, broken 1, declared definitions changed 5, manifest changed 20, removed 5, restored 1, source location changed 12, updated 35
+**56 package change(s):** added 2, declared definitions changed 4, manifest changed 20, removed 5, restored 1, source location changed 11, updated 29
 
+- [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
+- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
+- [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
 - [Zigbee Button Dimmer: changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20Button%20Dimmer/packageManifest.json)
 - [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
 - [Weather Canada (OWM3.0-EC): updated, changed declared definitions.](https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/weather%20canada%20(owm-ec)/packageManifest.json)
@@ -57,14 +60,5 @@ Latest observation: `2026-08-28T07:48:34Z`.
 - [Govee Integration v2: changed source location, changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
 - [ESP32 Wall Keypad: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Hubitat Ping Device: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
-- [go2rtc: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/packageManifest.json)
-- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hubitat Ping Device: updated, changed source location, changed declared definitions, became unavailable.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
-- [Govee Pool Thermostat: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
-- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
-- [ESP32 Wall Keypad: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
-- [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
