@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-29T04:44:17Z`.
+Latest observation: `2026-08-30T02:19:07Z`.
 
-**56 package change(s):** added 2, declared definitions changed 4, manifest changed 20, removed 5, restored 1, source location changed 11, updated 29
+**53 package change(s):** added 2, declared definitions changed 1, manifest changed 20, removed 5, source location changed 8, updated 27
 
+- [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
+- [Tuya Zigbee Metering Plug: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
 - [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
 - [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
 - [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
@@ -55,10 +57,5 @@ Latest observation: `2026-08-29T04:44:17Z`.
 - [Matter Advanced Bridge: updated.](https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json)
 - [LIFX Light Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/packageManifest.json)
 - [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
-- [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
-- [Kasa Camera: updated.](https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/refs/heads/main/packageManifest.json)
-- [Govee Integration v2: changed source location, changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [ESP32 Wall Keypad: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
-- [Hubitat Ping Device: updated, changed source location, changed declared definitions, was restored.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
