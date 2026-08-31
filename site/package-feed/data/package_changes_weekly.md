@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-30T02:19:07Z`.
+Latest observation: `2026-08-31T02:13:50Z`.
 
-**53 package change(s):** added 2, declared definitions changed 1, manifest changed 20, removed 5, source location changed 8, updated 27
+**52 package change(s):** added 2, declared definitions changed 1, manifest changed 20, removed 5, source location changed 7, updated 27
 
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Garge Door Opener blaQ (GDOv2-Q): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov2q.json)
+- [Garage Door Opener v1 (GDOv1-S): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov1s.json)
+- [Garage Door Opener White (GDOv2-S): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov2s.json)
+- [Alarm Panel (universal): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/refs/heads/master/package-alarm-panel.json)
 - [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
 - [Tuya Zigbee Metering Plug: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
 - [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
@@ -51,11 +56,5 @@ Latest observation: `2026-08-30T02:19:07Z`.
 - [Wyze Vacuum Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Tuya Zigbee Metering Plug: changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/main/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
-- [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
-- [Moen FLO Device Manager: updated.](https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/packageManifest.json)
-- [Matter Advanced Bridge: updated.](https://raw.githubusercontent.com/kkossev/Hubitat---Matter-Advanced-Bridge/main/packageManifest.json)
-- [LIFX Light Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/packageManifest.json)
-- [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

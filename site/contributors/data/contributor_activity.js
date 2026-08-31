@@ -10209,7 +10209,64 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:135324981ec6f7ee1508ce20",
+          "observedAt": "2026-08-31T02:13:50Z",
+          "observedCommit": null,
+          "packageId": "hpm:01ab08a8-1ad3-44ea-ae68-47482773940e",
+          "packageName": "Garage Door Opener White (GDOv2-S)",
+          "summary": "Garage Door Opener White (GDOv2-S): updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5da8e9a7dba5791350670e69",
+          "observedAt": "2026-08-31T02:13:50Z",
+          "observedCommit": null,
+          "packageId": "hpm:cbeff4ef-d214-4389-8944-0dc2ba3a1ec4",
+          "packageName": "Alarm Panel (universal)",
+          "summary": "Alarm Panel (universal): updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6cd26828bad8a9848b2fd2ac",
+          "observedAt": "2026-08-31T02:13:50Z",
+          "observedCommit": null,
+          "packageId": "hpm:9f9d9a0c-ee29-4e5d-8c52-48d5b3fc8e0f",
+          "packageName": "Garge Door Opener blaQ (GDOv2-Q)",
+          "summary": "Garge Door Opener blaQ (GDOv2-Q): updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b0a911c0b0c74a794b04c1d8",
+          "observedAt": "2026-08-31T02:13:50Z",
+          "observedCommit": null,
+          "packageId": "hpm:e10c4a5b-23c2-4941-9770-0dff27d73a50",
+          "packageName": "Garage Door Opener v1 (GDOv1-S)",
+          "summary": "Garage Door Opener v1 (GDOv1-S): updated."
+        }
+      ],
       "appCount": 0,
       "categories": [
         {
@@ -10222,7 +10279,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:2d75732690e3beab6f20",
       "name": "Konnected Inc.",
-      "observedActivityCount": 0,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 0,
@@ -10235,7 +10292,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Alarm Panel (universal)",
           "publisherDate": "2024-09-27",
           "repositoryUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/hpm-repository.json",
-          "version": "1.0.6"
+          "version": "1.0.7"
         },
         {
           "appCount": 0,
@@ -10248,7 +10305,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Garage Door Opener v1 (GDOv1-S)",
           "publisherDate": "2023-11-21",
           "repositoryUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/hpm-repository.json",
-          "version": "1.0.6"
+          "version": "1.0.7"
         },
         {
           "appCount": 0,
@@ -10261,7 +10318,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Garage Door Opener White (GDOv2-S)",
           "publisherDate": "2024-03-03",
           "repositoryUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/hpm-repository.json",
-          "version": "1.1.6"
+          "version": "1.1.7"
         },
         {
           "appCount": 0,
@@ -10274,7 +10331,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Garge Door Opener blaQ (GDOv2-Q)",
           "publisherDate": "2024-05-06",
           "repositoryUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/hpm-repository.json",
-          "version": "1.2.6"
+          "version": "1.2.7"
         }
       ]
     },
@@ -15584,6 +15641,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cd376bbd0560724ea734a944",
+          "observedAt": "2026-08-31T02:13:50Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -15598,7 +15669,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -15609,9 +15680,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-08-19",
+          "publisherDate": "2026-08-30",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "1.6.1"
+          "version": "1.6.2"
         }
       ]
     },
@@ -18526,10 +18597,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 117,
-    "eventCount": 116,
+    "attributedEventCount": 122,
+    "eventCount": 121,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-08-30T02:19:07Z"
+    "lastObservedAt": "2026-08-31T02:13:50Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18543,7 +18614,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 255,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-08-30T02:19:07Z",
+  "snapshotGenerated": "2026-08-31T02:13:50Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
