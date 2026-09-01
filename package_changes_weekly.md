@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-08-31T02:13:50Z`.
+Latest observation: `2026-09-01T02:33:19Z`.
 
-**52 package change(s):** added 2, declared definitions changed 1, manifest changed 20, removed 5, source location changed 7, updated 27
+**51 package change(s):** declared definitions changed 2, manifest changed 20, removed 4, source location changed 8, updated 29
 
+- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
+- [Shelly Webhook/Websocket Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
+- [Shabbat and Holiday Scheduler: updated.](https://raw.githubusercontent.com/dds82/shabbat/main/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Garge Door Opener blaQ (GDOv2-Q): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov2q.json)
 - [Garage Door Opener v1 (GDOv1-S): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov1s.json)
@@ -51,10 +55,5 @@ Latest observation: `2026-08-31T02:13:50Z`.
 - [HubVoice: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json)
 - [Flow Engine One: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/packageManifest.json)
 - [Device Watchdog: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Yale Assure Lock 2 Driver: added.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
-- [Wyze Vacuum Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Tuya Zigbee Valve - SONOFF SWV-ZF2 dual-port: removed.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Tuya-Zigbee-Valve/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
