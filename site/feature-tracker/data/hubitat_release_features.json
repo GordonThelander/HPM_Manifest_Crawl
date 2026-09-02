@@ -7,11 +7,11 @@
   },
   "counts": {
     "features": 3934,
-    "linkedDetails": 35,
+    "linkedDetails": 61,
     "newlyPossible": 1060,
     "releaseBuilds": 343,
     "releaseTopics": 32,
-    "unavailableDetails": 28
+    "unavailableDetails": 2
   },
   "dataset": "hubitat-release-features",
   "details": [
@@ -67,6 +67,20 @@
     },
     {
       "author": "Hubitat Support",
+      "createdAt": "2024-02-29T17:07:36.361Z",
+      "id": "detail:134511",
+      "qualifications": [
+        "MODEL_SPECIFIC"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/updating-z-wave-radio-on-c-7-hubs-after-version-2-3-8-122/134511/1",
+      "staffAuthored": true,
+      "summary": "We have identified a limitation affecting only the C-7 models that have been automatically upgraded to the Z/IP Gateway SDK 7.18.03, which was released with platform version 2.3.8.117. If you have a C-7 hub and already updated to 2.3.8, prior to version 2.3.8.122, and you have a button on the Z-Wave Details page to \"Update firmware,\" you will not be able to update the radio firmware to version 7.18.1.0. A work around for this limitation is to downgrade the Z/IP Gateway, then update the radio firmware, and then upgrade the Z/IP Gateway again. For C-7 models that have already been updated to 2.3.8 , please follow these steps in order to complete the radio update: Update hub to version 2.3.8...",
+      "title": "Updating Z-Wave radio on C-7 hubs after version 2.3.8.122",
+      "topicId": 134511,
+      "updatedAt": "2024-03-02T18:18:24.676Z"
+    },
+    {
+      "author": "Hubitat Support",
       "createdAt": "2024-05-24T15:45:45.548Z",
       "id": "detail:138380",
       "qualifications": [],
@@ -76,6 +90,54 @@
       "title": "Introducing the weather and clock tiles for the Easy Dashboard",
       "topicId": 138380,
       "updatedAt": "2024-05-24T20:16:54.842Z"
+    },
+    {
+      "author": "Hubitat Support",
+      "createdAt": "2024-06-12T18:28:00.321Z",
+      "id": "detail:139194",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/new-media-player-and-helper-tiles/139194/1",
+      "staffAuthored": true,
+      "summary": "We are happy to introduce two new tiles to the Easy Dashboard's growing portfolio, based on popular demand. The latest update adds a new section to the Easy Dashboards for \"Helper Tiles\": First helper tile that we released is the \"Separator\". Press the plus sign then select \"Separator\" from the menu to add a transparent tile with a custom text: The second tile is the simple **media player ** tile for any devices that use the \"MusicPlayer\" device type. To add a music player tile look for new Music Players category under All devices in the Dashboard settings 1000009251 1080×1553 98.8 KB Also new feature in this release: dashboard starters. If you have devices assigned to rooms, you now have...",
+      "title": "New Media Player and Helper Tiles",
+      "topicId": 139194,
+      "updatedAt": "2024-06-12T18:29:02.643Z"
+    },
+    {
+      "author": "Hubitat Support",
+      "createdAt": "2024-06-19T17:03:52.890Z",
+      "id": "detail:139516",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/protect-your-dashboards-and-hubitat-safety-monitor-with-pin-codes/139516/1",
+      "staffAuthored": true,
+      "summary": "Continuing the rollout of most popular features requested by users since the introduction of the Easy Dashboards , the latest update adds PIN protection to every Easy Dashboard as well as for changing HSM modes. To enable a PIN for a dashboard, go to Dashboards page on the left menu, and open the Settings for the dashboard you'd like to protect, then add a 4-digts code next to the name and select Update Dashboard. image 1227×109 3.19 KB To enable a PIN code for HSM, add a 4-digts code next to the HSM toggle: image 819×164 15 KB The latest update also introduces a new calendar tile available in the dashboard's Settings next to the Clock toggle, as well as custom background colors and icons...",
+      "title": "Protect your dashboards and Hubitat® Safety Monitor with pin codes",
+      "topicId": 139516,
+      "updatedAt": "2024-06-19T17:05:42.016Z"
+    },
+    {
+      "author": "Bruce",
+      "createdAt": "2024-12-10T01:00:24.665Z",
+      "id": "detail:146774",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/rule-machine-rule-functions/146774/1",
+      "staffAuthored": true,
+      "summary": "This release brings a new feature to Rule Machine: Rule Functions. A Rule Function is a special type of rule, one that can be called by another Rule or Button Rule, with an optional parameter, and returns a value to the calling rule. Rule Functions don't have Triggers or Required Expressions, only Actions. A new Action, Return Value is available, and the value returned can be String, Integer, Decimal or Boolean. Initial Rule Function setup To create a Rule Function, simply flip the selector input at the top of the rule: Screenshot: \"Rule Function to Return a Value\" selector at top of rule 1454×878 37.9 KB Once selected, the layout of the rule is updated to omit Triggers and Required Expre...",
+      "title": "Rule Machine: Rule Functions",
+      "topicId": 146774,
+      "updatedAt": "2025-01-28T16:03:24.605Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2025-01-29T17:26:17.087Z",
+      "id": "detail:149368",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/new-z-wave/149368/1",
+      "staffAuthored": true,
+      "summary": "The new Z-Wave JS code is currently not enabled by default. To enable follow these steps: Back-up your hub and the Z-Wave network via cloud backup. If you are not a Hub Protect subscriber, now is the perfect time to try our new Cloud Backup service-free for 30 days! Use the following to enable the new Z-Wave library: reboot when requested. To disable the new Z-Wave library and go back to the old code use the following: All nodes will be re-interviewed on first boot, after enabling, and may not function until this is complete. Listening devices will be quick and most should work when the UI is loaded. Sleepy S2 devices may require a wakeup (which can usually be done by single pressing the...",
+      "title": "Migrate to Z-Wave JS",
+      "topicId": 149368,
+      "updatedAt": "2025-04-08T17:57:37.156Z"
     },
     {
       "author": "Mike Maxwell",
@@ -115,6 +177,18 @@
     },
     {
       "author": "Hubitat Support",
+      "createdAt": "2025-08-28T14:58:10.668Z",
+      "id": "detail:156287",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/security-issue-in-hubitat-dashboards/156287/1",
+      "staffAuthored": true,
+      "summary": "We wanted to share a serious security concern that has been recently identified by one of our community users with the current design of the Hubitat Dashboard app . Aaron 'theHastyOne' Hasty of Ostrich Lab first reported the issue on Aug 15 at 6:38 PM. Here is a summary of the issue discovered: The current design of the Hubitat Dashboard app allows for broad privilege escalation and disclosure of devices connected to this smarthome hub. With a link to a single dashboard (even one with no devices associated with it) a user can control any and all devices associtated with the hub, retieve base64 encoded PIN numbers that are associated with the hubs Hubitat Safety Monitor app (alarm system),...",
+      "title": "⚠️ Security Issue in Hubitat Dashboards",
+      "topicId": 156287,
+      "updatedAt": "2025-08-28T15:00:52.675Z"
+    },
+    {
+      "author": "Hubitat Support",
       "createdAt": "2025-09-26T21:05:12.909Z",
       "id": "detail:157321",
       "qualifications": [],
@@ -124,6 +198,56 @@
       "title": "📊 Introducing Our New Dashboard Feature!",
       "topicId": 157321,
       "updatedAt": "2025-09-30T13:37:25.812Z"
+    },
+    {
+      "author": "Hubitat Staff",
+      "createdAt": "2025-10-31T21:08:45.552Z",
+      "id": "detail:158316",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/smarter-automations-ahead-ai-rule-building-meets-local-control/158316/1",
+      "staffAuthored": true,
+      "summary": "The generative AI for smart homes is no longer just a buzzword and cannot be ignored. The AI now has the potential to make smart homes truly smart - not just reactive, but predictive and adaptive. The AI brings powerful capabilities that go far beyond what any individual hub or local processor can handle alone. It can analyze patterns, learn behaviors, understand natural language, and even predict user preferences using vast computational resources. Imagine this: you've connected a few devices to your new Hubitat Elevation hub, and now it's time to create your first rule. You summon your favorite AI companion and ask: image 955×401 20.4 KB A few minutes later, the companion proudly delive...",
+      "title": "🤖 Smarter Automations Ahead - AI Rule Building Meets Local Control",
+      "topicId": 158316,
+      "updatedAt": "2025-11-04T15:40:09.810Z"
+    },
+    {
+      "author": "Hubitat Support",
+      "createdAt": "2025-11-04T14:40:47.223Z",
+      "id": "detail:158425",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/new-weather-quick-view-tile/158425/1",
+      "staffAuthored": true,
+      "summary": "We're excited to introduce a new Weather Quick View Tile with release 2.4.3.149 - available now to install. The tile appears directly in the Quick View section at the top of your hub's web interface, giving you an at-a-glance look at the current conditions. image 1295×182 17 KB The new feature is powered by the built-in OpenWeatherMap driver. To get it set up, you'll need to create a virtual device and configure it with your location and a free API key. How to Set It Up 1. Get Your OpenWeather API Key This driver requires a free API key from OpenWeather. You can sign in or create a new account to get your key here: Members 2. Add the Virtual Device Navigate to the Devices page on your hub...",
+      "title": ":cloud: New Weather Quick View Tile!",
+      "topicId": 158425,
+      "updatedAt": "2025-11-04T22:14:02.333Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-04-02T14:13:14.184Z",
+      "id": "detail:162924",
+      "qualifications": [
+        "BETA"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/ring-integration-beta/162924/1",
+      "staffAuthored": true,
+      "summary": "First step install the new Ring Integration App: Next Login: Login 1232×882 52.7 KB 2FA Prompt: 2FA 1178×221 18.1 KB Install Device: Screenshot 2026-04-02 at 8.59.30 AM 1347×384 21.4 KB Device Installed 1347×983 75 KB Doorbell Driver with motion and button events:",
+      "title": "Ring Integration Beta",
+      "topicId": 162924,
+      "updatedAt": "2026-04-23T17:36:22.699Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-04-06T12:21:34.346Z",
+      "id": "detail:163034",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-node-state-ui/163034/1",
+      "staffAuthored": true,
+      "summary": "Full ZWave-JS Node State browser. Useful for troubleshooting and driver development. Everything known about a device is here.. Including all current command class values and fingerprint generation. Screenshot 2026-04-06 at 6.45.50 AM 949×86 15.1 KB Screenshot 2026-04-06 at 6.47.02 AM 1000×1237 69.5 KB Screenshot 2026-04-06 at 6.47.14 AM 1000×1237 110 KB Screenshot 2026-04-06 at 6.47.33 AM 1000×915 25.6 KB Screenshot 2026-04-06 at 6.47.48 AM 1000×535 14.2 KB Screenshot 2026-04-06 at 6.48.04 AM 1000×1132 80.8 KB",
+      "title": "ZWave-JS Node State UI",
+      "topicId": 163034,
+      "updatedAt": "2026-04-23T17:36:43.618Z"
     },
     {
       "author": "Bryan Copeland",
@@ -140,6 +264,18 @@
       "updatedAt": "2026-04-23T17:37:02.262Z"
     },
     {
+      "author": "Victor Urvantsev",
+      "createdAt": "2026-04-20T21:59:04.458Z",
+      "id": "detail:163360",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/new-svg-chart-endpoint-for-apps/163360/1",
+      "staffAuthored": true,
+      "summary": "Starting with 2.5.0.119, Hubitat platform has two simple endpoint to generate embedded charts for your apps. There are two endpoints that produce simple line and bar charts as SVG images. Path Description /hub2/chart/line Renders an SVG line chart from query parameters. /hub2/chart/bar Renders an SVG bar chart from query parameters. Successful responses use: Content-Type: image/svg+xml Validation failures return HTTP 400 with a JSON body: { \"success\": false, \"message\": \"Validation error message\" } Query Parameters These endpoints accept browser-friendly query parameters. List values are comma-separated: xValues=Mon,Tue,Wed seriesTitles=Main%20Panel,EV%20Charger seriesColors=2E86AB,F18F01...",
+      "title": "New! SVG chart endpoint for apps",
+      "topicId": 163360,
+      "updatedAt": "2026-04-23T16:34:30.247Z"
+    },
+    {
       "author": "Hubitat Staff",
       "createdAt": "2026-06-04T11:05:15.827Z",
       "id": "detail:164415",
@@ -150,6 +286,56 @@
       "title": "New Email Notification driver for sending email alerts!",
       "topicId": 164415,
       "updatedAt": "2026-06-04T15:01:04.028Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-07-15T17:51:48.577Z",
+      "id": "detail:165135",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-update-15-25-3/165135/1",
+      "staffAuthored": true,
+      "summary": "Z-Wave JS / Z-Wave JS Server Update This release updates the embedded Z-Wave stack from: Z-Wave JS: 15.15.3 → 15.25.3 Z-Wave JS Server: 3.4.0 → 3.10.0 While this isn't a feature-heavy update, it includes a significant number of stability improvements, bug fixes, performance enhancements, and device compatibility updates. Highlights Improved Controller Stability Several releases focused on improving controller resiliency, including: Better serial port recovery Improved controller restart handling Better recovery after NVM operations Improved handling of unexpected controller state changes Reduced situations requiring a complete driver restart These improvements help make controller operati...",
+      "title": "ZWave-JS Update 15.25.3",
+      "topicId": 165135,
+      "updatedAt": "2026-07-29T14:45:37.830Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-07-16T23:22:53.958Z",
+      "id": "detail:165148",
+      "qualifications": [
+        "SAFETY_WARNING"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-link-reliability-test/165148/1",
+      "staffAuthored": true,
+      "summary": "New: Z-Wave Link Reliability Test We’ve added a new Link Reliability Test to the Z-Wave Details page for hubs using the latest Z-Wave JS integration. This tool actively tests communication between the hub and an individual Z-Wave device by repeatedly sending commands and measuring the results. What it measures The test reports: Successful command delivery Command errors Missing responses Round-trip time (RTT) Radio latency ACK signal strength (RSSI) Live progress while the test is running You can select the number of test rounds and the interval between commands. Tests can also be stopped while in progress. Important safety warning This is an active test . It repeatedly sends alternating...",
+      "title": "ZWave-JS Link Reliability Test",
+      "topicId": 165148,
+      "updatedAt": "2026-07-29T14:46:01.807Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-07-16T23:22:32.270Z",
+      "id": "detail:165150",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-device-firmware-database/165150/1",
+      "staffAuthored": true,
+      "summary": "New: Z-Wave Firmware Database Integration We’ve added automatic firmware discovery to the Device Firmware Updater for hubs running Z-Wave JS . Instead of manually locating and uploading firmware files, you can now select a Z-Wave device and choose Check for updates . Hubitat will query the Z-Wave JS firmware database for compatible manufacturer-provided firmware. When an update is available, the updater displays: Available firmware version Stable release channel Release notes Firmware target information Region information, when applicable A warning if the selected firmware is a downgrade The firmware is downloaded from the manufacturer-provided source, verified for integrity, and installe...",
+      "title": "ZWave-JS Device Firmware Database",
+      "topicId": 165150,
+      "updatedAt": "2026-07-29T14:45:49.758Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-08-03T22:09:32.556Z",
+      "id": "detail:165480",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-15-26-0/165480/1",
+      "staffAuthored": true,
+      "summary": "ZWave-JS is updated to 15.26.0 Changes from 15.25.3: Features Ongoing interviews are now paused during inclusion, security bootstrapping and exclusion. This should greatly improve the reliability when adding multiple devices at once. ( #8951 ) Bugfixes Added a work around for some locks incorrectly reporting 0 steps remaining immediately after starting credential learning ( #8976 ) Increased timeouts for bulk-deleting users/credentials, which can take significantly longer than 1 second on some locks ( #8978 ) Fixed several issues that could lead to stale credentials being cached ( #8977 , #8966 ) Config file changes Add UltraPro 800 Series On/Off Switch ( #8973 ) Add UltraPro 800 Series d...",
+      "title": "ZWave-JS 15.26.0",
+      "topicId": 165480,
+      "updatedAt": "2026-08-04T14:25:17.212Z"
     },
     {
       "author": "Bruce",
@@ -177,6 +363,18 @@
     },
     {
       "author": "Bruce",
+      "createdAt": "2019-10-29T20:35:03.904Z",
+      "id": "detail:25635",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/rule-4-0-edit-expressions/25635/1",
+      "staffAuthored": true,
+      "summary": "There is a new feature in release 2.1.6 for Rule-4.0. It is now possible to edit expressions in Conditional Actions. Previously, it was only possible to 'Erase expression'. To edit an expression, one first edits the Conditional Action that contains the expression. Screen Shot 2019-10-28 at 1.53.09 PM.png 1794×236 6.47 KB When Edit expression is selected, there are two options presented: Screen Shot 2019-10-28 at 1.55.01 PM.png 1670×218 11.5 KB Each expression is made up of elements. Each element is one of the following: ( ) NOT AND OR XOR or a condition In each of the pull down menus, for 'Insert before expression element' and 'Delete expression element(s)', there is a list showing each e...",
+      "title": "Rule 4.0: Edit Expressions",
+      "topicId": 25635,
+      "updatedAt": "2019-10-31T19:48:51.114Z"
+    },
+    {
+      "author": "Bruce",
       "createdAt": "2019-12-03T00:30:17.427Z",
       "id": "detail:28413",
       "qualifications": [
@@ -191,6 +389,18 @@
     },
     {
       "author": "Bruce",
+      "createdAt": "2020-01-10T19:57:26.856Z",
+      "id": "detail:31612",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/rule-machine-time-variables/31612/1",
+      "staffAuthored": true,
+      "summary": "Time Variables Available in 2.1.8 Rule Machine has been enhanced to support variables representing time. Like other Global or Local Variables, Time Variables can be created and deleted, their values set, and Connectors created for use in Dashboards. Hubitat Dashboard now has a Variable Time template to display and change Time Variable Connectors. Time Variables show time of day in either 12 hour or 24 hour display depending on the hub's setting for time displays, and show hours and minutes. If Action logging is enabled, changes to Time Variable Connectors are logged. Note that Time Variables are for time of day use, not time duration. In many contexts of Rule Machine duration can be speci...",
+      "title": "Rule Machine Time Variables",
+      "topicId": 31612,
+      "updatedAt": "2022-09-19T19:09:50.044Z"
+    },
+    {
+      "author": "Bruce",
       "createdAt": "2020-06-05T22:10:08.945Z",
       "id": "detail:42885",
       "qualifications": [],
@@ -200,6 +410,20 @@
       "title": "Local Files in Rule 4.0",
       "topicId": 42885,
       "updatedAt": "2020-06-05T22:10:08.945Z"
+    },
+    {
+      "author": "Hubitat Support",
+      "createdAt": "2020-08-15T19:22:23.068Z",
+      "id": "detail:47652",
+      "qualifications": [
+        "MODEL_SPECIFIC"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/warning-do-not-reset-c-7-hub-until-after-updating-to-version-2-2-3-119/47652/1",
+      "staffAuthored": true,
+      "summary": "UPDATE : the reset issue has been resolved, but requires update to version 2.2.3.119. Please do not perform a reset until after you’ve updated to the latest version. If your hub has been affected by this issue and your hub currently is displaying a blue-light, please contact suppor@hubitat.com if you didn't do so already. We have identified an issue in Release 2.2.3.118 with the reset process that affects Hubitat Elevation C-7 hubs. Our engineers are currently working to resolve this issue and a fix will be released as soon as possible. If you experience problems with your C-7 hub after performing a Full/Soft Reset and your hub's LED is displaying a blue light, please contact us at suppor...",
+      "title": "WARNING: Do not reset C-7 Hub until updated to version 2.2.3.119",
+      "topicId": 47652,
+      "updatedAt": "2020-08-16T02:26:12.666Z"
     },
     {
       "author": "Bruce",
@@ -214,6 +438,18 @@
       "updatedAt": "2020-11-16T20:35:23.099Z"
     },
     {
+      "author": "Bruce",
+      "createdAt": "2020-09-13T18:13:20.707Z",
+      "id": "detail:50498",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/simple-automation-rule-v1-1/50498/1",
+      "staffAuthored": true,
+      "summary": "Simple Automation Rule Refreshed There is a new version of Simple Automation Rule, Version 1.1, released in platform version 2.2.4. The UI has been refreshed, a new action supported, new triggers added, improved time triggers and options, and other enhancements made. Please note : Your existing Simple Automation Rules will still work and can still be edited as needed. New rules will be Simple Automation Rule 1.1. We've moved to a new version due to some subtle changes that could affect some existing Simple Automation Rules. New Action Can now turn on and set color temperature, as well as level for color temperature bulbs. New Triggers Temperature Humidity Sound Mode transition Improved Ti...",
+      "title": "2.2.4 - Simple Automation Rule V1.1",
+      "topicId": 50498,
+      "updatedAt": "2020-11-16T20:35:42.483Z"
+    },
+    {
       "author": "Bryan Copeland",
       "createdAt": "2020-10-19T13:42:06.742Z",
       "id": "detail:53450",
@@ -224,6 +460,18 @@
       "title": "2.2.4 - C7 Z-Wave Node Health, Topology, and Routes",
       "topicId": 53450,
       "updatedAt": "2020-11-16T20:33:12.414Z"
+    },
+    {
+      "author": "Mike Maxwell",
+      "createdAt": "2020-10-29T14:36:45.827Z",
+      "id": "detail:54201",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/philips-hue-motion-sensor-lux-reporting-updates/54201/1",
+      "staffAuthored": true,
+      "summary": "Previous versions of this driver included simple value based options for Lux level change reporting. While simple to implement, in practice it generates too few or too many events, and the distribution of them across the values doesn't follow perceived level changes. In other words, a 10 Lux change from 5 to 15 has a much higher perceived value change (very noticeable) than that same change at 3000 Lux, which isn't noticeable at all, and using simple value based changes doesn't account for this. If we evaluate the new value against the previous value using a Log10 function the changes follow human perception much better. The new options are pictured below. image 2409×1350 275 KB On xx Lux...",
+      "title": "2.2.4 - Philips Hue Motion sensor Lux reporting updates",
+      "topicId": 54201,
+      "updatedAt": "2020-11-16T20:34:58.976Z"
     },
     {
       "author": "Bryan Copeland",
@@ -274,6 +522,18 @@
       "updatedAt": "2020-11-16T20:33:41.831Z"
     },
     {
+      "author": "Bruce",
+      "createdAt": "2020-11-09T05:10:23.999Z",
+      "id": "detail:55166",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/rule-4-0-wait-for-elapsed-time/55166/1",
+      "staffAuthored": true,
+      "summary": "With release 2.2.4 Rule 4.0 gets a new feature for Wait for Events: Elapsed Time. While the ability to do what this feature does has been inherent in Wait for Events previously, it was not very obvious how to do it. This addition to Rule 4.0 is basically some UI improvements to bring the feature into plain view. What it does is simply wait for a certain amount of time to pass. Like all Waits, it is cancelled if the rule is triggered again. Consequently, this auto-cancel feature becomes very useful to simplify many rules that might otherwise use a Cancellable Delay and Conditional actions. Here is an example of the use of Wait for Elapsed Time in a basic motion lighting rule: Screen Shot 2...",
+      "title": "Rule 4.0: Wait for Elapsed Time",
+      "topicId": 55166,
+      "updatedAt": "2020-11-16T20:35:56.805Z"
+    },
+    {
       "author": "Victor Urvantsev",
       "createdAt": "2021-01-06T19:56:40.700Z",
       "id": "detail:61057",
@@ -284,6 +544,18 @@
       "title": "[2.2.5] - Assign static IP to your C5/C7 hub",
       "topicId": 61057,
       "updatedAt": "2021-05-11T20:40:43.798Z"
+    },
+    {
+      "author": "Victor Urvantsev",
+      "createdAt": "2021-01-06T20:34:29.728Z",
+      "id": "detail:61062",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/use-usb-wifi-or-cellular-dongle-with-your-c5-c7-hub/61062/1",
+      "staffAuthored": true,
+      "summary": "There is now a way to use some WiFi dongles with your C5/C7 hub. As of now, earlier models are not supported - they run a very different version of the operating system. Since there is no separate USB port, connecting an external USB device requires an OTG + power cable . The link points to the particular cable I've used, but there probably are others out there. For the sake of full disclosure, we do not earn commissions from any of the devices mentioned in the links. Connect USB power cable to the female micro-USB connector of the OTG + power cable, plug the male micro-USB connector to the hub, and plug USB adapter to the large square USB connection. WiFi dongles require drivers, and set...",
+      "title": "[2.2.5] - Use USB WiFi dongle with your C5/C7 hub",
+      "topicId": 61062,
+      "updatedAt": "2021-05-11T20:40:20.554Z"
     },
     {
       "author": "Mike Maxwell",
@@ -320,6 +592,18 @@
       "title": "Introducing Remote Admin",
       "topicId": 68211,
       "updatedAt": "2023-06-30T16:22:27.847Z"
+    },
+    {
+      "author": "Bruce",
+      "createdAt": "2021-03-23T19:02:30.386Z",
+      "id": "detail:68942",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/released-basic-rules/68942/1",
+      "staffAuthored": true,
+      "summary": "Basic Rules We are pleased to introduce a new automation app: Basic Rules. Basic Rule offers an easy to understand app for those just getting started with home automation. At the same time it offers features that experienced users will find handy. Each Basic Rule you create takes this form: When X Do Y. When some specific event happens in your system perform an action. The types of events that can trigger a Basic Rule include these: Time of day, with Sunrise and Sunset options Motion, Contact, Presence, Acceleration or Vibration sensors Water - Leak, Smoke or Carbon Monoxide detectors Temperature, Humidity or Illuminance sensors Switch on/off, Button pressed, or Mode changes The types of...",
+      "title": "[Released] Basic Rules",
+      "topicId": 68942,
+      "updatedAt": "2021-05-05T23:43:47.516Z"
     },
     {
       "author": "Mike Allenovitch",
@@ -419,6 +703,18 @@
     },
     {
       "author": "Bruce",
+      "createdAt": "2021-12-09T23:15:05.358Z",
+      "id": "detail:85002",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/sticky-triggers-and-other-rule-5-1-features/85002/1",
+      "staffAuthored": true,
+      "summary": "The 2.3.1 release includes some notable new features for Rule 5.1: Sticky Triggers For most triggers, specifically those that actually result in some state change, it is now possible to add a length of time the triggering device must remain in the trigger state before the trigger actually fires. Consider this example: Screen Shot 2021-12-09 at 3.14.20 PM 2168×686 54.4 KB This example will trigger upon the passing of 2 minutes after the Front Door opens and stays open. If the door closes before 2 minutes, it won't trigger. There are always users looking to figure out how to do something like this in the community. It turns out that Basic Rule can do this sort of thing, but that Rule Machin...",
+      "title": "Sticky Triggers and Other New Rule 5.1 Features",
+      "topicId": 85002,
+      "updatedAt": "2022-03-22T15:41:20.594Z"
+    },
+    {
+      "author": "Bruce",
       "createdAt": "2021-12-10T16:47:21.990Z",
       "id": "detail:85040",
       "qualifications": [],
@@ -431,6 +727,18 @@
     },
     {
       "author": "Bruce",
+      "createdAt": "2022-02-21T23:23:49.153Z",
+      "id": "detail:89608",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/restriction-options-for-basic-rule-simple-automation-rule-and-rule-5-1/89608/1",
+      "staffAuthored": true,
+      "summary": "Basic Rule and Simple Automation Rule In the 2.3.1 release there is a new option in each of the two automation apps having to do with Restrictions. As they have worked prior, if a Restriction is in effect, the app would not do any actions. This causes a problem for automations that start prior to a restriction going into effect, but not finishing until after. For example, if an app is restricted to only turn on lights from motion in Day mode, and they are turned on just before leaving, and it then becomes Away mode, the lights would not turn off once it was no longer Day mode. To address this situation, there is now an option in the Restrictions setup for each app, like this: Screen Shot...",
+      "title": "Restriction Options for Basic Rule, Simple Automation Rule and Rule 5.1",
+      "topicId": 89608,
+      "updatedAt": "2022-03-22T15:41:55.044Z"
+    },
+    {
+      "author": "Bruce",
       "createdAt": "2022-04-29T18:07:03.325Z",
       "id": "detail:93098",
       "qualifications": [],
@@ -440,6 +748,18 @@
       "title": "[NEW APP] Room Lighting",
       "topicId": 93098,
       "updatedAt": "2022-06-09T03:55:59.949Z"
+    },
+    {
+      "author": "Bruce",
+      "createdAt": "2022-08-28T20:44:02.595Z",
+      "id": "detail:99766",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zigbee-group-messaging-in-room-lights/99766/1",
+      "staffAuthored": true,
+      "summary": "Room Lights supports Zigbee Group Messaging (ZGM). This allows multiple Zigbee lights to activated by a single command on the Zigbee network. Doing so both cuts down on network traffic, but also causes the lights to respond all at the same instant. However, there are limitations to this feature, and understanding exactly how it works sheds light on these. ZGM is tied to an Activator Device. When the Activator device is commanded, all of the lights in the ZGM group are commanded in exactly the same manner. For instance, if the Activator Device is turned on, the ZGM lights are also turned on. If the Activator Device has its color temperature set, then the ZGM lights have their color tempera...",
+      "title": "Zigbee Group Messaging in Room Lights",
+      "topicId": 99766,
+      "updatedAt": "2022-09-22T18:53:17.563Z"
     }
   ],
   "features": [
@@ -1517,7 +1837,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165480"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "fbb5325429938fe055271bff5ee788482c02b5b41f100041aa58da758f1874f3",
@@ -2524,7 +2846,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165135"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "c7f62bcc2573bee0f3329fcc670336c4fc5a1371c5e733754e69d7861fcfda79",
@@ -2568,7 +2892,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165148"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "62f97187b5d3e0227fcf86127548b63970e353fc759a9f425babb68d0acf0eb0",
@@ -2590,7 +2916,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165150"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "2b5aae9dc2e7057b6518e7643dd2298bf2fd27bb70664e1c8d6921d6d35e751b",
@@ -6005,7 +6333,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:162924"
+      ],
       "evidenceType": "NEW_APP",
       "explorerLinks": [
         {
@@ -6063,7 +6393,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:163360"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "aca951a0d7499fa32f9a5982c3aa0a3aeab005cb171bb0eab6e7e5a640a730e4",
@@ -6202,7 +6534,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:163034"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "e48236a67f0c3625d923ac173bb0d89d624b73e4330eebc9334c847e3914b6a0",
@@ -10426,7 +10760,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:158316"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "cb49494f70f077d902bee092ab797802632d06dafbd453a57d9faf31044b9307",
@@ -10843,7 +11179,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:158425"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "29cbb9e7add19ad7530297f8a8f112fed19f03b11d94e3701030528cac43d07d",
@@ -13160,7 +13498,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:156287"
+      ],
       "evidenceType": "BUG_FIX",
       "explorerLinks": [],
       "fingerprint": "b6e3a8cafaded4498cb5cc7101e147519b4836c388d6b9775a87e5db56385947",
@@ -17430,7 +17770,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:149368"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "a94114a5fe8fb82cf304c3fa5a6acb94bdecbe7ea1e3446886bfbda32a07c308",
@@ -19708,7 +20050,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:146774"
+      ],
       "evidenceType": "COMPATIBLE_DEVICE",
       "explorerLinks": [],
       "fingerprint": "b958f15025b285810bdebc11aab6ca0f3e4d3e06efc28e45e8f9ed169f536308",
@@ -42325,7 +42669,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:99766"
+      ],
       "evidenceType": "BUG_FIX",
       "explorerLinks": [],
       "fingerprint": "857946be6e47bebcd9313efae15af9f12947608203d101eff6c987cb18820946",
@@ -51039,7 +51385,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:89608"
+      ],
       "evidenceType": "DRIVER_FEATURE",
       "explorerLinks": [],
       "fingerprint": "70f885f4691b1ab9aca974c19c1506889c4d7f072a6b0cdd891f6e414e1a513f",
@@ -51083,7 +51431,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:89608"
+      ],
       "evidenceType": "DRIVER_FEATURE",
       "explorerLinks": [],
       "fingerprint": "295d40b35474bde53772d5de65a4ee7e0e45b2efce14386477433d4c304792a2",
@@ -51340,7 +51690,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:85002"
+      ],
       "evidenceType": "DRIVER_FEATURE",
       "explorerLinks": [],
       "fingerprint": "264f634610a964f9eda18ff60bdade5ac9dcb43b553844226ce34f8585217140",
@@ -70132,7 +70484,9 @@
       "author": "Bryan Copeland",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:68942"
+      ],
       "evidenceType": "NEW_APP",
       "explorerLinks": [],
       "fingerprint": "23c8e524b3f8ff238b61e542f3090c7cbf4aec5408d0e6e0e79308cae2336b7f",
@@ -74452,7 +74806,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:61062"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "2360b82e6b59141c7087b4a9aac83f14c36bc82f442bf0e576821076e1502e5c",
@@ -76781,7 +77137,9 @@
       "author": "Bryan Copeland",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:50498"
+      ],
       "evidenceType": "NEW_APP",
       "explorerLinks": [],
       "fingerprint": "de55c41ae83ecc6aa2fb829111727d21372b6a821ea8b17fb219444c2edc1a62",
@@ -76964,7 +77322,9 @@
       "author": "Bryan Copeland",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:55166"
+      ],
       "evidenceType": "NEW_APP",
       "explorerLinks": [],
       "fingerprint": "17cb347ebef47535bee2786fc01a903bdc5e3a16b47489d039e5eae11aec4669",
@@ -77796,7 +78156,9 @@
       "author": "Bryan Copeland",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:54201"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "1684bccbdfaa47a60e5f1af6dbfc9b44a89c35d2e89f40dbddb99d78be6d665b",
@@ -88153,7 +88515,9 @@
       "author": "Bruce",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:31612"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "31e2d3695fe18ad66ab611612e40a608a508e00e5b852673ac34f86c99c11369",
@@ -91303,7 +91667,9 @@
       "author": "Bruce",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:25635"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "7e56d9388182c78c4fbe62da725086042f241a180ca8d81ccb7da46ed48e1d0e",
@@ -93225,7 +93591,7 @@
       "sourceUrl": "https://community.hubitat.com/t/release-2-5-1-available/165384/9"
     }
   ],
-  "lastSuccessfulHarvest": "2026-09-01T02:37:20Z",
+  "lastSuccessfulHarvest": "2026-09-02T01:58:22Z",
   "method": {
     "automationMapIndependent": true,
     "failedHarvestReplacesOutput": false,
@@ -93318,7 +93684,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 4,
-      "detailIds": [],
+      "detailIds": [
+        "detail:165480"
+      ],
       "featureCount": 7,
       "id": "release:165384:5",
       "newlyPossibleCount": 1,
@@ -93398,7 +93766,11 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 9,
-      "detailIds": [],
+      "detailIds": [
+        "detail:165150",
+        "detail:165148",
+        "detail:165135"
+      ],
       "featureCount": 44,
       "id": "release:165384:1",
       "newlyPossibleCount": 25,
@@ -93561,7 +93933,10 @@
       "author": "Victor Urvantsev",
       "bugFixCount": 15,
       "detailIds": [
-        "detail:163072"
+        "detail:163072",
+        "detail:163360",
+        "detail:162924",
+        "detail:163034"
       ],
       "featureCount": 69,
       "id": "release:163415:1",
@@ -93982,7 +94357,10 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 12,
-      "detailIds": [],
+      "detailIds": [
+        "detail:158425",
+        "detail:158316"
+      ],
       "featureCount": 24,
       "id": "release:157204:8",
       "newlyPossibleCount": 10,
@@ -94184,7 +94562,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 12,
-      "detailIds": [],
+      "detailIds": [
+        "detail:156287"
+      ],
       "featureCount": 12,
       "id": "release:154531:10",
       "newlyPossibleCount": 0,
@@ -94687,7 +95067,8 @@
       "detailIds": [
         "detail:152153",
         "detail:152152",
-        "detail:152147"
+        "detail:152147",
+        "detail:149368"
       ],
       "featureCount": 80,
       "id": "release:152087:1",
@@ -94888,7 +95269,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 13,
-      "detailIds": [],
+      "detailIds": [
+        "detail:146774"
+      ],
       "featureCount": 66,
       "id": "release:147468:1",
       "newlyPossibleCount": 52,
@@ -95128,7 +95511,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 2,
-      "detailIds": [],
+      "detailIds": [
+        "detail:139516"
+      ],
       "featureCount": 5,
       "id": "release:138312:9",
       "newlyPossibleCount": 3,
@@ -95148,7 +95533,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 2,
-      "detailIds": [],
+      "detailIds": [
+        "detail:139194"
+      ],
       "featureCount": 8,
       "id": "release:138312:8",
       "newlyPossibleCount": 5,
@@ -95511,7 +95898,8 @@
       "author": "Victor Urvantsev",
       "bugFixCount": 2,
       "detailIds": [
-        "detail:105667"
+        "detail:105667",
+        "detail:134511"
       ],
       "featureCount": 2,
       "id": "release:133338:6",
@@ -97077,7 +97465,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 53,
-      "detailIds": [],
+      "detailIds": [
+        "detail:99766"
+      ],
       "featureCount": 98,
       "id": "release:101457:1",
       "newlyPossibleCount": 40,
@@ -97680,7 +98070,9 @@
       "author": "Victor Urvantsev",
       "bugFixCount": 35,
       "detailIds": [
-        "detail:85040"
+        "detail:85040",
+        "detail:89608",
+        "detail:85002"
       ],
       "featureCount": 105,
       "id": "release:91069:1",
@@ -98879,7 +99271,8 @@
       "detailIds": [
         "detail:67564",
         "detail:68210",
-        "detail:68211"
+        "detail:68211",
+        "detail:68942"
       ],
       "featureCount": 113,
       "id": "release:68941:1",
@@ -99121,7 +99514,8 @@
       "author": "Victor Urvantsev",
       "bugFixCount": 51,
       "detailIds": [
-        "detail:61057"
+        "detail:61057",
+        "detail:61062"
       ],
       "featureCount": 109,
       "id": "release:62884:1",
@@ -99308,7 +99702,10 @@
         "detail:54223",
         "detail:54207",
         "detail:54203",
-        "detail:49150"
+        "detail:49150",
+        "detail:54201",
+        "detail:55166",
+        "detail:50498"
       ],
       "featureCount": 175,
       "id": "release:55786:1",
@@ -99449,7 +99846,9 @@
     {
       "author": "Bruce",
       "bugFixCount": 0,
-      "detailIds": [],
+      "detailIds": [
+        "detail:47652"
+      ],
       "featureCount": 0,
       "id": "release:47378:3",
       "newlyPossibleCount": 0,
@@ -99831,7 +100230,9 @@
     {
       "author": "Bruce",
       "bugFixCount": 29,
-      "detailIds": [],
+      "detailIds": [
+        "detail:31612"
+      ],
       "featureCount": 65,
       "id": "release:31611:1",
       "newlyPossibleCount": 5,
@@ -100034,7 +100435,8 @@
       "author": "Bruce",
       "bugFixCount": 18,
       "detailIds": [
-        "detail:25634"
+        "detail:25634",
+        "detail:25635"
       ],
       "featureCount": 40,
       "id": "release:25633:1",
@@ -103597,32 +103999,6 @@
   ],
   "unavailableDetails": [
     "https://community.hubitat.com/t/2-5-0-145-c8pro-js-runtime-exceptions-on-145/164136",
-    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886",
-    "https://community.hubitat.com/t/new-media-player-and-helper-tiles/139194",
-    "https://community.hubitat.com/t/new-svg-chart-endpoint-for-apps/163360",
-    "https://community.hubitat.com/t/new-weather-quick-view-tile/158425",
-    "https://community.hubitat.com/t/new-z-wave/149368",
-    "https://community.hubitat.com/t/philips-hue-motion-sensor-lux-reporting-updates/54201",
-    "https://community.hubitat.com/t/protect-your-dashboards-and-hubitat-safety-monitor-with-pin-codes/139516",
-    "https://community.hubitat.com/t/released-basic-rules/68942",
-    "https://community.hubitat.com/t/restriction-options-for-basic-rule-simple-automation-rule-and-rule-5-1/89608",
-    "https://community.hubitat.com/t/ring-integration-beta/162924",
-    "https://community.hubitat.com/t/rule-4-0-edit-expressions/25635",
-    "https://community.hubitat.com/t/rule-4-0-wait-for-elapsed-time/55166",
-    "https://community.hubitat.com/t/rule-machine-rule-functions/146774",
-    "https://community.hubitat.com/t/rule-machine-time-variables/31612",
-    "https://community.hubitat.com/t/security-issue-in-hubitat-dashboards/156287",
-    "https://community.hubitat.com/t/simple-automation-rule-v1-1/50498",
-    "https://community.hubitat.com/t/smarter-automations-ahead-ai-rule-building-meets-local-control/158316",
-    "https://community.hubitat.com/t/sticky-triggers-and-other-rule-5-1-features/85002",
-    "https://community.hubitat.com/t/updating-z-wave-radio-on-c-7-hubs-after-version-2-3-8-122/134511",
-    "https://community.hubitat.com/t/use-usb-wifi-or-cellular-dongle-with-your-c5-c7-hub/61062",
-    "https://community.hubitat.com/t/warning-do-not-reset-c-7-hub-until-after-updating-to-version-2-2-3-119/47652",
-    "https://community.hubitat.com/t/zigbee-group-messaging-in-room-lights/99766",
-    "https://community.hubitat.com/t/zwave-js-15-26-0/165480",
-    "https://community.hubitat.com/t/zwave-js-device-firmware-database/165150",
-    "https://community.hubitat.com/t/zwave-js-link-reliability-test/165148",
-    "https://community.hubitat.com/t/zwave-js-node-state-ui/163034",
-    "https://community.hubitat.com/t/zwave-js-update-15-25-3/165135"
+    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886"
   ]
 }

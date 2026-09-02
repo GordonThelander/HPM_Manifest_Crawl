@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-01T02:33:19Z`.
+Latest observation: `2026-09-02T01:54:11Z`.
 
-**51 package change(s):** declared definitions changed 2, manifest changed 20, removed 4, source location changed 8, updated 29
+**50 package change(s):** declared definitions changed 3, manifest changed 20, source location changed 9, updated 31
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Shelly Webhook/Websocket Drivers: changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
 - [Shelly Webhook/Websocket Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
 - [Shabbat and Holiday Scheduler: updated.](https://raw.githubusercontent.com/dds82/shabbat/main/packageManifest.json)
@@ -50,10 +54,5 @@ Latest observation: `2026-09-01T02:33:19Z`.
 - [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Third Reality Water Sensor: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json)
-- [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
-- [The Flasher: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/TheFlasher/packageManifest.json)
-- [HubVoice: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/hubvoice/packageManifest.json)
-- [Flow Engine One: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/FlowEngine/packageManifest.json)
-- [Device Watchdog: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/apps/devicewatchdog/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -4056,6 +4056,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bf1af009831b451b7e92be85",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
         }
       ],
       "appCount": 11,
@@ -4082,7 +4096,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 9,
+      "observedActivityCount": 10,
       "packages": [
         {
           "appCount": 2,
@@ -4262,9 +4276,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-08-27",
+          "publisherDate": "2026-09-02",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.23.0"
+          "version": "1.25.1"
         }
       ]
     },
@@ -11613,6 +11627,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a08d64b9e36b6cf5c5eba1ff",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 2,
@@ -11635,7 +11663,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 7,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 1,
@@ -11661,7 +11689,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.4.5"
+          "version": "1.4.6"
         },
         {
           "appCount": 0,
@@ -15699,6 +15727,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2b25f25c8907dbcb5833d478",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -15713,7 +15755,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 1,
@@ -15724,9 +15766,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-09-01",
+          "publisherDate": "2026-09-02",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "1.6.3"
+          "version": "1.6.4"
         }
       ]
     },
@@ -17646,6 +17688,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
           "packageName": "Shelly Webhook/Websocket Drivers",
           "summary": "Shelly Webhook/Websocket Drivers: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:289bec87e039a9ab74a72516",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+          "packageName": "Shelly Webhook/Websocket Drivers",
+          "summary": "Shelly Webhook/Websocket Drivers: changed source location, changed declared definitions."
         }
       ],
       "appCount": 1,
@@ -17657,17 +17714,17 @@ window.CONTRIBUTOR_ACTIVITY = {
       ],
       "currentPackageCount": 1,
       "currentRank": 227,
-      "driverCount": 67,
+      "driverCount": 68,
       "id": "contributor:45735072cb5a4e1fb32b",
       "name": "ShellyUSA, Daniel Winks",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
           "category": "Integrations",
           "communityUrl": null,
           "documentationUrl": null,
-          "driverCount": 67,
+          "driverCount": 68,
           "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
           "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
           "name": "Shelly Webhook/Websocket Drivers",
@@ -18658,10 +18715,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 906,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 126,
-    "eventCount": 125,
+    "attributedEventCount": 130,
+    "eventCount": 129,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-01T02:33:19Z"
+    "lastObservedAt": "2026-09-02T01:54:11Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18675,7 +18732,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 255,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-01T02:33:19Z",
+  "snapshotGenerated": "2026-09-02T01:54:11Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
