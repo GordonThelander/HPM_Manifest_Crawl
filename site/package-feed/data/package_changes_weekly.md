@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-03T02:00:22Z`.
+Latest observation: `2026-09-03T08:18:18Z`.
 
-**51 package change(s):** added 1, broken 1, declared definitions changed 5, manifest changed 20, source location changed 11, updated 31
+**50 package change(s):** added 1, broken 1, declared definitions changed 5, manifest changed 20, source location changed 11, updated 30
 
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [PositionGuard: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
 - [Nexia Thermostat Manager / Trane Home: added.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
 - [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
@@ -53,7 +54,5 @@ Latest observation: `2026-09-03T02:00:22Z`.
 - [ESP32 Wall Keypad: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/packageManifest.json)
 - [Device Health Status: changed manifest location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/packageManifest_DeviceHealthStatus.json)
 - [Aqara Cube T1 Pro: updated, changed manifest location, changed source location.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20Cube%20T1%20Pro/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
