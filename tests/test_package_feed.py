@@ -91,6 +91,26 @@ class PackageFeedTests(unittest.TestCase):
         self.assertEqual(parsed.tag, '{http://www.w3.org/2005/Atom}feed')
         self.assertTrue(all({'label', 'url'} <= set(link) for link in events[0]['evidence']))
 
+    def test_repository_evidence_links_to_code_repository_not_hpm_catalogue(self):
+        values = list(documents())
+        package = values[0]['packages'][0]
+        package['repository']['url'] = (
+            'https://raw.githubusercontent.com/example/legacy-catalogue/main/repository.json'
+        )
+        package['manifest']['url'] = (
+            'https://raw.githubusercontent.com/example/example-app/main/packageManifest.json'
+        )
+        values[1]['definitions'][0]['source']['url'] = (
+            'https://raw.githubusercontent.com/example/example-app/main/app.groovy'
+        )
+        snapshot = feed.build_snapshot(*values)
+        links = feed.evidence_links(snapshot['hpm:one'])
+        self.assertEqual(links, [
+            {'label': 'Manifest', 'url': package['manifest']['url']},
+            {'label': 'Repository',
+             'url': 'https://github.com/example/example-app'},
+        ])
+
     def test_detects_added_removed_and_restored_packages(self):
         broken_docs = documents(broken=True)
         first_outputs, _ = feed.build_documents(*broken_docs)

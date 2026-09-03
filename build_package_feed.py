@@ -16,6 +16,7 @@ import json
 import pathlib
 import subprocess
 import tempfile
+import urllib.parse
 import xml.etree.ElementTree as ET
 
 import build_community_datasets as community_builder
@@ -186,9 +187,18 @@ def evidence_links(record):
     if not record:
         return []
     package = record.get('package') or {}
+    definition_urls = [
+        (definition.get('source') or {}).get('url')
+        for definition in record.get('definitions') or []
+    ]
+    code_repository = None
+    for url in definition_urls + [(package.get('manifest') or {}).get('url')]:
+        code_repository = repository_home(url)
+        if code_repository:
+            break
     candidates = [
         ('Manifest', (package.get('manifest') or {}).get('url')),
-        ('Repository', (package.get('repository') or {}).get('url')),
+        ('Repository', code_repository),
     ]
     seen = set()
     links = []
@@ -197,6 +207,19 @@ def evidence_links(record):
             seen.add(url)
             links.append({'label': label, 'url': url})
     return links
+
+
+def repository_home(url):
+    if not url:
+        return None
+    parsed = urllib.parse.urlparse(url)
+    host = parsed.netloc.lower()
+    parts = [urllib.parse.unquote(part) for part in parsed.path.split('/') if part]
+    if host == 'raw.githubusercontent.com' and len(parts) >= 2:
+        return f'https://github.com/{parts[0]}/{parts[1]}'
+    if host in {'github.com', 'www.github.com'} and len(parts) >= 2:
+        return f'https://github.com/{parts[0]}/{parts[1].removesuffix(".git")}'
+    return None
 
 
 def comparable_package(package):
