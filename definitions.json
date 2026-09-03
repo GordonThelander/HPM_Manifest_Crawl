@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2253,
+  "definitionCount": 2255,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -38583,33 +38583,6 @@
       }
     },
     {
-      "id": "definition:88c89c8e00f66892c8ac",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Centralite Pearl Zigbee Thermostat",
-        "namespace": "jshimota"
-      },
-      "observationCounts": {
-        "HUB_ACTION": 2,
-        "NETWORK_URL_LITERAL": 1,
-        "SCHEDULING": 7,
-        "SEND_HUB_COMMAND": 2,
-        "ZIGBEE_API_REFERENCE": 31
-      },
-      "packageId": "manifest:3e874b873da2ba4628cc",
-      "source": {
-        "bytes": 19459,
-        "definitionLine": 31,
-        "fetched": true,
-        "sha256": "bee1b24c007bd02986e14d958c35f2855ad0b09ba5db96e5f8f377ef4a594040",
-        "url": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/centralitePearlThermostat.groovy"
-      },
-      "sourceIdentity": {
-        "name": "CentraLite Pearl Thermostat Custom",
-        "namespace": "jshimota"
-      }
-    },
-    {
       "id": "definition:ead001dd85de6b4a40c9",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -44112,22 +44085,45 @@
         "namespace": "positionguard"
       },
       "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 3,
-        "CHILD_DEVICE_CREATE": 1,
+        "CHILD_DEVICE_ACCESS": 5,
+        "CHILD_DEVICE_CREATE": 2,
         "HTTP_CALL": 2,
         "NETWORK_URL_LITERAL": 6,
         "SCHEDULING": 5
       },
       "packageId": "manifest:8674a05a8e58c3a46de1",
       "source": {
-        "bytes": 25737,
-        "definitionLine": 45,
+        "bytes": 32403,
+        "definitionLine": 58,
         "fetched": true,
-        "sha256": "6ea132b61ad43905f02eb7a277974aaf84974d434d008c0e94f21d372ed728c3",
+        "sha256": "04b306bc18502292246a8f84e27d8347e6611d839734e9b3e47dc10fdfad37f3",
         "url": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/apps/positionguard-app.groovy"
       },
       "sourceIdentity": {
         "name": "PositionGuard",
+        "namespace": "positionguard"
+      }
+    },
+    {
+      "id": "definition:10c8e42a25f0157bddf9",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "PositionGuard Area",
+        "namespace": "positionguard"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "manifest:8674a05a8e58c3a46de1",
+      "source": {
+        "bytes": 4660,
+        "definitionLine": 33,
+        "fetched": true,
+        "sha256": "ae90fa7955fcff909b0e56e9673bd75266914ecaf79c681e209b83e42ba59db8",
+        "url": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-area.groovy"
+      },
+      "sourceIdentity": {
+        "name": "PositionGuard Area",
         "namespace": "positionguard"
       }
     },
@@ -44143,10 +44139,10 @@
       },
       "packageId": "manifest:8674a05a8e58c3a46de1",
       "source": {
-        "bytes": 11790,
+        "bytes": 13957,
         "definitionLine": 41,
         "fetched": true,
-        "sha256": "f8034e04a6b09b2e6155079ffb187ab1dcd65d8a60cb25d472e9097d6d9a64e4",
+        "sha256": "ca632b71eb002bfbe93b9b80a8fe0c6f66617ca04bec41ab72bb4f4568f70046",
         "url": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-member.groovy"
       },
       "sourceIdentity": {
@@ -47608,10 +47604,10 @@
       },
       "packageId": "manifest:a4b3d4dcbc077e6e0fa0",
       "source": {
-        "bytes": 38279,
-        "definitionLine": 128,
+        "bytes": 40577,
+        "definitionLine": 143,
         "fetched": true,
-        "sha256": "453b1483c07df95c7059eaf01d315ec44bbb561edf5648b39c61be017489fcb7",
+        "sha256": "44fbb301dc686ce60c47be471efe27e5863db4e6a80c2ee98a080ac13d24b844",
         "url": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-accessory/homekit-accessory.groovy"
       },
       "sourceIdentity": {
@@ -56368,6 +56364,57 @@
       }
     },
     {
+      "id": "definition:b4162ae0ab4e6fee2c6a",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Nexia Thermostat Manager",
+        "namespace": "trentfoley"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_CREATE": 1,
+        "HTTP_CALL": 7,
+        "NETWORK_URL_LITERAL": 7,
+        "SCHEDULING": 1
+      },
+      "packageId": "manifest:fcc2d0233249bc797684",
+      "source": {
+        "bytes": 31290,
+        "definitionLine": 30,
+        "fetched": true,
+        "sha256": "aa8d84400e7cb3aff25880bd12b94a734d73eeb85d790f4abed4d7a4bfefae21",
+        "url": "https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/nexiaThermostatManager.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Nexia Thermostat Manager",
+        "namespace": "trentfoley"
+      }
+    },
+    {
+      "id": "definition:b1e072459d5894ea0f19",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Nexia Thermostat",
+        "namespace": "trentfoley"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 2,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 9
+      },
+      "packageId": "manifest:fcc2d0233249bc797684",
+      "source": {
+        "bytes": 15853,
+        "definitionLine": 23,
+        "fetched": true,
+        "sha256": "a9c4311245e3cdec0bafe30c0abbec96c58e00f292f750d5be0827881a8868b8",
+        "url": "https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/nexiaThermostat.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Nexia Thermostat",
+        "namespace": "trentfoley"
+      }
+    },
+    {
       "id": "definition:7d5e535b983a8c314b45",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -56577,7 +56624,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-02T01:54:11Z",
+  "snapshotGenerated": "2026-09-03T02:00:22Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

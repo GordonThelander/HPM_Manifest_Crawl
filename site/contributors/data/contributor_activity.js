@@ -4561,6 +4561,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:398726763b5d3bce0985",
           "packageName": "Zooz Sprinkler Scheduler",
           "summary": "Zooz Sprinkler Scheduler: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f52fcedcd6a947272e15ff44",
+          "observedAt": "2026-09-03T02:00:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:a4b3d4dcbc077e6e0fa0",
+          "packageName": "HomeKit Import (Local)",
+          "summary": "HomeKit Import (Local): updated."
         }
       ],
       "appCount": 13,
@@ -4607,7 +4621,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 5,
+      "observedActivityCount": 6,
       "packages": [
         {
           "appCount": 0,
@@ -4698,7 +4712,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "HomeKit Import (Local)",
           "publisherDate": "2026-08-17",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.9.19"
+          "version": "0.10.0"
         },
         {
           "appCount": 1,
@@ -5677,158 +5691,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     },
     {
       "activity": [],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 5
-        },
-        {
-          "name": "Convenience",
-          "packageCount": 5
-        }
-      ],
-      "currentPackageCount": 10,
-      "currentRank": 18,
-      "driverCount": 9,
-      "id": "contributor:580a29544b06f5abedef",
-      "name": "James Shimota",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Convenience",
-          "communityUrl": null,
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/README.md",
-          "driverCount": 1,
-          "id": "manifest:e10d3c6a081517fa751e",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/packageManifest.json",
-          "name": "Astro-Meteor Seasons",
-          "publisherDate": "2026-05-12",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.3.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-centralite-pearl-aka-model-3157100-zigbee-thermostat/164420",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/README.md",
-          "driverCount": 1,
-          "id": "manifest:3e874b873da2ba4628cc",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
-          "name": "Centralite Pearl Zigbee Thermostat",
-          "publisherDate": "2026-06-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.4.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/alpha-release-date-time-parser-driver/87756/9",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/README.md",
-          "driverCount": 1,
-          "id": "manifest:9c0af0518852b6565165",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json",
-          "name": "Date & Time Parser",
-          "publisherDate": "2026-05-01",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.3.9"
-        },
-        {
-          "appCount": 2,
-          "category": "Convenience",
-          "communityUrl": "https://community.hubitat.com/t/release-inverse-link-two-switches/125687",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Apps/inverse_link/README.md",
-          "driverCount": 0,
-          "id": "manifest:2d0ae38b16be57dc0674",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Apps/inverse_link/packageManifest.json",
-          "name": "Inverse Link Two Switches",
-          "publisherDate": "2023-10-08",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.1.0.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Convenience",
-          "communityUrl": "https://community.hubitat.com/t/meteorological-seasons-driver/80450",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/meteorological_seasons/README.md",
-          "driverCount": 1,
-          "id": "manifest:f1dbd298ab3204c18ca8",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/meteorological_seasons/packageManifest.json",
-          "name": "Meteorological Seasons",
-          "publisherDate": "2021-10-04",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.2.17"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-openweathermap-multi-api-weather-driver/165312",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/README.md",
-          "driverCount": 1,
-          "id": "manifest:369cb29ec5aec5f3001d",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json",
-          "name": "OpenWeatherMap Multi-API Weather Driver",
-          "publisherDate": "2026-07-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "2.5.10"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/README.md",
-          "driverCount": 1,
-          "id": "manifest:d722aef5ebc7cb3c559a",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/packageManifest.json",
-          "name": "Twilight Parser",
-          "publisherDate": "2024-11-10",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.3.9"
-        },
-        {
-          "appCount": 0,
-          "category": "Convenience",
-          "communityUrl": "https://community.hubitat.com/t/release-virtual-inverse-able-switch/81028",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_inverse-able_switch/README.md",
-          "driverCount": 1,
-          "id": "manifest:46ea46475747881a58e5",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_inverse-able_switch/packageManifest.json",
-          "name": "Virtual Inverse-able Switch w-autoOff and Toggle",
-          "publisherDate": "2021-12-24",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.2.6"
-        },
-        {
-          "appCount": 0,
-          "category": "Convenience",
-          "communityUrl": null,
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_presence_openclose_switch/README.md",
-          "driverCount": 1,
-          "id": "manifest:c3801958aecfce51a594",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_presence_openclose_switch/packageManifest.json",
-          "name": "Virtual Presence Contact and Switch",
-          "publisherDate": "2023-08-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.1.1.8"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver/81319",
-          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/README.md",
-          "driverCount": 1,
-          "id": "manifest:ed35889c3dcd8b8813d9",
-          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/packageManifest.json",
-          "name": "Zigbee eWeLink-CMARS-Seedan Outlet",
-          "publisherDate": "2021-10-15",
-          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.1.2.4"
-        }
-      ]
-    },
-    {
-      "activity": [],
       "appCount": 0,
       "categories": [
         {
@@ -5845,7 +5707,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 10,
-      "currentRank": 19,
+      "currentRank": 18,
       "driverCount": 11,
       "id": "contributor:3883b72247a46d758d2f",
       "name": "Simon Burke (sburke781)",
@@ -5993,7 +5855,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 9,
-      "currentRank": 20,
+      "currentRank": 19,
       "driverCount": 43,
       "id": "contributor:caa9e002421ea86f5be1",
       "name": "David Snell",
@@ -6115,6 +5977,163 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2023-01-01",
           "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
           "version": null
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:64a3f57d8100731d0ab1826a",
+          "observedAt": "2026-09-03T02:00:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:3e874b873da2ba4628cc",
+          "packageName": "Centralite Pearl Zigbee Thermostat",
+          "summary": "Centralite Pearl Zigbee Thermostat: updated, changed source location, changed declared definitions, became unavailable."
+        }
+      ],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Control",
+          "packageCount": 4
+        },
+        {
+          "name": "Convenience",
+          "packageCount": 5
+        }
+      ],
+      "currentPackageCount": 9,
+      "currentRank": 20,
+      "driverCount": 8,
+      "id": "contributor:580a29544b06f5abedef",
+      "name": "James Shimota",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": null,
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/README.md",
+          "driverCount": 1,
+          "id": "manifest:e10d3c6a081517fa751e",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/packageManifest.json",
+          "name": "Astro-Meteor Seasons",
+          "publisherDate": "2026-05-12",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.3.7"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/alpha-release-date-time-parser-driver/87756/9",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/README.md",
+          "driverCount": 1,
+          "id": "manifest:9c0af0518852b6565165",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json",
+          "name": "Date & Time Parser",
+          "publisherDate": "2026-05-01",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.3.9"
+        },
+        {
+          "appCount": 2,
+          "category": "Convenience",
+          "communityUrl": "https://community.hubitat.com/t/release-inverse-link-two-switches/125687",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Apps/inverse_link/README.md",
+          "driverCount": 0,
+          "id": "manifest:2d0ae38b16be57dc0674",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Apps/inverse_link/packageManifest.json",
+          "name": "Inverse Link Two Switches",
+          "publisherDate": "2023-10-08",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.1.0.5"
+        },
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": "https://community.hubitat.com/t/meteorological-seasons-driver/80450",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/meteorological_seasons/README.md",
+          "driverCount": 1,
+          "id": "manifest:f1dbd298ab3204c18ca8",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/meteorological_seasons/packageManifest.json",
+          "name": "Meteorological Seasons",
+          "publisherDate": "2021-10-04",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.2.17"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-openweathermap-multi-api-weather-driver/165312",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/README.md",
+          "driverCount": 1,
+          "id": "manifest:369cb29ec5aec5f3001d",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json",
+          "name": "OpenWeatherMap Multi-API Weather Driver",
+          "publisherDate": "2026-07-25",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "2.5.10"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/README.md",
+          "driverCount": 1,
+          "id": "manifest:d722aef5ebc7cb3c559a",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/packageManifest.json",
+          "name": "Twilight Parser",
+          "publisherDate": "2024-11-10",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.3.9"
+        },
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": "https://community.hubitat.com/t/release-virtual-inverse-able-switch/81028",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_inverse-able_switch/README.md",
+          "driverCount": 1,
+          "id": "manifest:46ea46475747881a58e5",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_inverse-able_switch/packageManifest.json",
+          "name": "Virtual Inverse-able Switch w-autoOff and Toggle",
+          "publisherDate": "2021-12-24",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.2.6"
+        },
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": null,
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_presence_openclose_switch/README.md",
+          "driverCount": 1,
+          "id": "manifest:c3801958aecfce51a594",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/virtual_presence_openclose_switch/packageManifest.json",
+          "name": "Virtual Presence Contact and Switch",
+          "publisherDate": "2023-08-02",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.1.1.8"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver/81319",
+          "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/README.md",
+          "driverCount": 1,
+          "id": "manifest:ed35889c3dcd8b8813d9",
+          "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/packageManifest.json",
+          "name": "Zigbee eWeLink-CMARS-Seedan Outlet",
+          "publisherDate": "2021-10-15",
+          "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
+          "version": "0.1.2.4"
         }
       ]
     },
@@ -14790,6 +14809,22 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8674a05a8e58c3a46de1",
           "packageName": "PositionGuard",
           "summary": "PositionGuard: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:794859fc1bd2bd6bd80dfe50",
+          "observedAt": "2026-09-03T02:00:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:8674a05a8e58c3a46de1",
+          "packageName": "PositionGuard",
+          "summary": "PositionGuard: updated, changed source location, changed declared definitions."
         }
       ],
       "appCount": 1,
@@ -14801,23 +14836,23 @@ window.CONTRIBUTOR_ACTIVITY = {
       ],
       "currentPackageCount": 1,
       "currentRank": 143,
-      "driverCount": 1,
+      "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
           "category": "Integrations",
           "communityUrl": "https://community.hubitat.com/t/release-positionguard-family-presence-one-presence-device-per-family-member-area-level-no-coordinates-on-your-hub/165032",
           "documentationUrl": "https://github.com/positionguard/positionguard-hubitat/blob/main/README.md",
-          "driverCount": 1,
+          "driverCount": 2,
           "id": "manifest:8674a05a8e58c3a46de1",
           "manifestUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json",
           "name": "PositionGuard",
-          "publisherDate": "2026-08-28",
+          "publisherDate": "2026-09-02",
           "repositoryUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
-          "version": "1.3.1"
+          "version": "1.4.0"
         }
       ]
     },
@@ -18464,6 +18499,52 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8419ef3f66337291d6045622",
+          "observedAt": "2026-09-03T02:00:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:fcc2d0233249bc797684",
+          "packageName": "Nexia Thermostat Manager / Trane Home",
+          "summary": "Nexia Thermostat Manager / Trane Home: added."
+        }
+      ],
+      "appCount": 1,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 1
+        }
+      ],
+      "currentPackageCount": 1,
+      "currentRank": 250,
+      "driverCount": 1,
+      "id": "contributor:9fea13bdd5881e51b7bc",
+      "name": "waterboysh",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454",
+          "documentationUrl": "https://github.com/waterboysh/hubitat/tree/main/trane-home-thermostat",
+          "driverCount": 1,
+          "id": "manifest:fcc2d0233249bc797684",
+          "manifestUrl": "https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json",
+          "name": "Nexia Thermostat Manager / Trane Home",
+          "publisherDate": "2026-06-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/waterboysh/hubitat/main/repository.json",
+          "version": "1.1.1"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
             "DECLARED_DEFINITIONS_CHANGED",
             "SOURCE_LOCATION_CHANGED",
             "UPDATED"
@@ -18500,7 +18581,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 251,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -18531,7 +18612,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 252,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -18562,7 +18643,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 253,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -18711,14 +18792,14 @@ window.CONTRIBUTOR_ACTIVITY = {
       "packages": []
     }
   ],
-  "currentContributorCount": 252,
-  "currentPackageCount": 906,
+  "currentContributorCount": 253,
+  "currentPackageCount": 907,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 130,
-    "eventCount": 129,
+    "attributedEventCount": 134,
+    "eventCount": 133,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-02T01:54:11Z"
+    "lastObservedAt": "2026-09-03T02:00:22Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18729,15 +18810,15 @@ window.CONTRIBUTOR_ACTIVITY = {
     "publisherDates": "publisher-declared package release dates, shown separately from observed activity",
     "ranking": "unique packages in the current successful community package snapshot"
   },
-  "observedContributorCount": 255,
+  "observedContributorCount": 256,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-02T01:54:11Z",
+  "snapshotGenerated": "2026-09-03T02:00:22Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
     "packages": "community_packages.json"
   },
-  "undeclaredAuthorPackageCount": 2
+  "undeclaredAuthorPackageCount": 3
 }
 ;

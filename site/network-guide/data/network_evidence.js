@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 181,
-    "CLOUD": 257,
-    "INSUFFICIENT": 300,
-    "LAN": 168
+    "CLOUD": 258,
+    "INSUFFICIENT": 301,
+    "LAN": 167
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 906,
+  "packageCount": 907,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -2750,27 +2750,24 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "James Shimota",
+      "author": null,
       "category": "Control",
-      "classification": "LAN",
-      "communityUrl": "https://community.hubitat.com/t/release-centralite-pearl-aka-model-3157100-zigbee-thermostat/164420",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "A Zigbee Thermostat driver specific to the Centralite Pearl Thermostat device, (aka Centralite model 3157100). Driver includes FanCirculate feature and accounts for thermostat hardware lack of Auto mode",
-      "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/README.md",
+      "documentationUrl": null,
       "id": "manifest:3e874b873da2ba4628cc",
       "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
       "name": "Centralite Pearl Zigbee Thermostat",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [
-          "HUB_ACTION",
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -15225,6 +15222,38 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "waterboysh",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454",
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Trane Home / American Standard Home thermostat integration for Hubitat.",
+      "documentationUrl": "https://github.com/waterboysh/hubitat/tree/main/trane-home-thermostat",
+      "id": "manifest:fcc2d0233249bc797684",
+      "manifestUrl": "https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json",
+      "name": "Nexia Thermostat Manager / Trane Home",
+      "observed": {
+        "externalHosts": [
+          "asairhome.com",
+          "lh4.ggpht.com",
+          "www.trane.com",
+          "www.tranehome.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 8
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Cloud",
+        "Temperature & Humidity"
+      ]
+    },
+    {
       "author": "Boguslaw Wojcik (@bogus.wojcik)",
       "category": "Control",
       "classification": "LAN",
@@ -16674,8 +16703,8 @@ window.NETWORK_EVIDENCE = {
           "dev.positionguardai.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 8
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 10
       },
       "reviewed": [],
       "tags": []
@@ -27300,5 +27329,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-02T01:54:11Z"
+  "snapshotGenerated": "2026-09-03T02:00:22Z"
 };
