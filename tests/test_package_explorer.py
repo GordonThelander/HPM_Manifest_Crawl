@@ -28,6 +28,24 @@ class PackageExplorerTests(unittest.TestCase):
         self.assertIn(package['network']['classification'], {'LAN', 'CLOUD', 'BOTH', 'INSUFFICIENT'})
         self.assertEqual(package['classification'], 'HPM_PACKAGE_AVAILABLE')
 
+    def test_repository_link_targets_code_repository_not_hpm_catalogue(self):
+        package = {
+            'manifest': {
+                'url': 'https://raw.githubusercontent.com/example/example-app/main/packageManifest.json',
+            },
+            'repository': {
+                'url': 'https://raw.githubusercontent.com/example/legacy-catalogue/main/repository.json',
+            },
+            'links': {},
+        }
+        definitions = [{
+            'sourceUrl': 'https://raw.githubusercontent.com/example/example-app/main/app.groovy',
+        }]
+        self.assertEqual(
+            explorer.link_map(package, definitions)['repository'],
+            'https://github.com/example/example-app',
+        )
+
     def test_authority_classifications_remain_distinct(self):
         expected = {
             'OFFICIAL_DEVICE': 'OFFICIAL_LISTED',

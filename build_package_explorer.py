@@ -4,6 +4,7 @@
 import argparse
 import json
 import pathlib
+import urllib.parse
 
 
 PACKAGES = pathlib.Path('community_packages.json')
@@ -32,13 +33,30 @@ def site_safe(value):
     return value
 
 
-def link_map(package):
+def repository_home(url):
+    if not url:
+        return None
+    parsed = urllib.parse.urlparse(url)
+    host = parsed.netloc.lower()
+    parts = [urllib.parse.unquote(part) for part in parsed.path.split('/') if part]
+    if host == 'raw.githubusercontent.com' and len(parts) >= 2:
+        return f'https://github.com/{parts[0]}/{parts[1]}'
+    if host in {'github.com', 'www.github.com'} and len(parts) >= 2:
+        return f'https://github.com/{parts[0]}/{parts[1].removesuffix(".git")}'
+    return None
+
+
+def link_map(package, definitions):
     links = package.get('links') or {}
     manifest = package.get('manifest') or {}
-    repository = package.get('repository') or {}
+    repository = None
+    for url in [row.get('sourceUrl') for row in definitions] + [manifest.get('url')]:
+        repository = repository_home(url)
+        if repository:
+            break
     return {
         'manifest': manifest.get('url'),
-        'repository': repository.get('url'),
+        'repository': repository,
         'documentation': links.get('documentation'),
         'community': links.get('community'),
     }
@@ -75,7 +93,7 @@ def package_record(package, definitions, health, network):
             'identityEvidence': 'SOURCE_IDENTITY' if definition.get('sourceIdentity') else 'MANIFEST_IDENTITY',
         })
     network_row = network.get(package.get('id')) or {}
-    links = link_map(package)
+    links = link_map(package, package_definitions)
     return {
         'id': package.get('id'),
         'recordType': 'HPM_PACKAGE',
