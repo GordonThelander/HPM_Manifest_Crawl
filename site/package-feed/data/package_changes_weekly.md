@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-03T08:55:59Z`.
+Latest observation: `2026-09-04T01:55:09Z`.
 
-**50 package change(s):** added 1, broken 1, declared definitions changed 5, manifest changed 20, source location changed 11, updated 30
+**59 package change(s):** added 1, broken 3, declared definitions changed 9, manifest changed 20, source location changed 14, updated 37
 
+- [Sprinkler Schedule Manager: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/SprinklerSchedule/PackageManifest.json)
+- [Shelly Webhook/Websocket Drivers: updated, changed source location.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [LGTV with webOS: updated, changed source location, changed declared definitions, became unavailable.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
+- [IKEA Zigbee drivers: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
+- [Hubitat drivers for NodOn smart devices.: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
+- [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
+- [EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
+- [Date & Time Parser: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [PositionGuard: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
 - [Nexia Thermostat Manager / Trane Home: added.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)

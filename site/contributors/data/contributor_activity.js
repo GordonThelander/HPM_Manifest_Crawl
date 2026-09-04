@@ -5998,6 +5998,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3e874b873da2ba4628cc",
           "packageName": "Centralite Pearl Zigbee Thermostat",
           "summary": "Centralite Pearl Zigbee Thermostat: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0300cc8e5b921108842d9ac1",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:9c0af0518852b6565165",
+          "packageName": "Date & Time Parser",
+          "summary": "Date & Time Parser: updated."
         }
       ],
       "appCount": 2,
@@ -6016,7 +6030,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -6040,9 +6054,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:9c0af0518852b6565165",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json",
           "name": "Date & Time Parser",
-          "publisherDate": "2026-05-01",
+          "publisherDate": "2026-09-03",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.3.9"
+          "version": "0.4.4"
         },
         {
           "appCount": 2,
@@ -6631,132 +6645,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     },
     {
       "activity": [],
-      "appCount": 4,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 1
-        },
-        {
-          "name": "Utility",
-          "packageCount": 7
-        }
-      ],
-      "currentPackageCount": 8,
-      "currentRank": 24,
-      "driverCount": 37,
-      "id": "contributor:55e837becfd98e51d47d",
-      "name": "Dan Danache (@dandanache)",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-          "driverCount": 4,
-          "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-          "name": "EMS-ESP Gateway",
-          "publisherDate": "2025-02-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
-          "driverCount": 0,
-          "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
-          "name": "Hub-a-Dashery",
-          "publisherDate": "2024-03-04",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.3.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-          "driverCount": 6,
-          "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-          "name": "Hubitat drivers for NodOn smart devices.",
-          "publisherDate": "2025-02-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-          "driverCount": 23,
-          "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-          "name": "IKEA Zigbee drivers",
-          "publisherDate": "2026-06-10",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "5.8.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-          "driverCount": 2,
-          "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-          "name": "LGTV with webOS",
-          "publisherDate": "2025-11-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.8.3"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-          "driverCount": 1,
-          "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-          "name": "Watchtower",
-          "publisherDate": "2026-04-01",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "4.2.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-          "driverCount": 1,
-          "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-          "name": "Zigbee Map",
-          "publisherDate": "2020-01-02",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "3.0.4"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
-          "driverCount": 0,
-          "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
-          "name": "zigbee-graph",
-          "publisherDate": "2023-06-30",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "2.3.0"
-        }
-      ]
-    },
-    {
-      "activity": [],
       "appCount": 2,
       "categories": [
         {
@@ -6773,7 +6661,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 8,
-      "currentRank": 25,
+      "currentRank": 24,
       "driverCount": 7,
       "id": "contributor:e84338d48f0466eadd9a",
       "name": "Ernie Miller",
@@ -6899,7 +6787,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 8,
-      "currentRank": 26,
+      "currentRank": 25,
       "driverCount": 13,
       "id": "contributor:b2afb39a78bdad4d7d29",
       "name": "Justin Leonard",
@@ -7021,7 +6909,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 27,
+      "currentRank": 26,
       "driverCount": 4,
       "id": "contributor:0f0655b75747be44393e",
       "name": "csteele",
@@ -7134,7 +7022,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 28,
+      "currentRank": 27,
       "driverCount": 12,
       "id": "contributor:db009efbf00416082894",
       "name": "Derek Osborn",
@@ -7255,7 +7143,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 29,
+      "currentRank": 28,
       "driverCount": 11,
       "id": "contributor:d322f323ee1e799e2f34",
       "name": "Robert Morris",
@@ -7372,7 +7260,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 30,
+      "currentRank": 29,
       "driverCount": 5,
       "id": "contributor:01b31c19dd0b37a99e0a",
       "name": "Aaron Ward",
@@ -7472,7 +7360,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 31,
+      "currentRank": 30,
       "driverCount": 7,
       "id": "contributor:f1895a717b4477ee631c",
       "name": "Aniva",
@@ -7568,7 +7456,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 32,
+      "currentRank": 31,
       "driverCount": 8,
       "id": "contributor:31607033023aad2d38db",
       "name": "cjcharles0",
@@ -7676,7 +7564,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 33,
+      "currentRank": 32,
       "driverCount": 18,
       "id": "contributor:56df602a3780b5728c97",
       "name": "Craig Dewar",
@@ -7759,6 +7647,169 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2020-07-17",
           "repositoryUrl": "https://raw.githubusercontent.com/craigde/hubitat-package-manager/master/repository.json",
           "version": "1.08"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0cb600c96e82b249d6f6d700",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:275d4e8c83af3c14cbf98ca5",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e60858589aed5d11490f2687",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f7f5d1732f51a86d4f062af9",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable."
+        }
+      ],
+      "appCount": 4,
+      "categories": [
+        {
+          "name": "Control",
+          "packageCount": 1
+        },
+        {
+          "name": "Utility",
+          "packageCount": 5
+        }
+      ],
+      "currentPackageCount": 6,
+      "currentRank": 33,
+      "driverCount": 31,
+      "id": "contributor:55e837becfd98e51d47d",
+      "name": "Dan Danache (@dandanache)",
+      "observedActivityCount": 4,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
+          "driverCount": 0,
+          "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
+          "name": "Hub-a-Dashery",
+          "publisherDate": "2024-03-04",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "1.3.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+          "driverCount": 6,
+          "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+          "name": "Hubitat drivers for NodOn smart devices.",
+          "publisherDate": "2025-02-12",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "1.2.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+          "driverCount": 23,
+          "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+          "name": "IKEA Zigbee drivers",
+          "publisherDate": "2026-06-10",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "5.8.1"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+          "driverCount": 1,
+          "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+          "name": "Watchtower",
+          "publisherDate": "2026-04-01",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "4.2.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+          "driverCount": 1,
+          "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+          "name": "Zigbee Map",
+          "publisherDate": "2020-01-02",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "3.0.4"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
+          "driverCount": 0,
+          "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
+          "name": "zigbee-graph",
+          "publisherDate": "2023-06-30",
+          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
+          "version": "2.3.0"
         }
       ]
     },
@@ -14702,7 +14753,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b742eb18edc0049545d07805",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:1bd62e6f-11b6-43a3-af69-3d2b46a4e6b8",
+          "packageName": "Sprinkler Schedule Manager",
+          "summary": "Sprinkler Schedule Manager: updated."
+        }
+      ],
       "appCount": 3,
       "categories": [
         {
@@ -14715,7 +14781,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 3,
@@ -14728,7 +14794,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Sprinkler Schedule Manager",
           "publisherDate": "2025-02-22",
           "repositoryUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/repo.json",
-          "version": "1.0.12"
+          "version": null
         }
       ]
     },
@@ -15929,6 +15995,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:08a6c5602410bb5f6921",
           "packageName": "Garadget MQTT Driver",
           "summary": "Garadget MQTT Driver: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5993367222bac7fb06606648",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:08a6c5602410bb5f6921",
+          "packageName": "Garadget MQTT Driver",
+          "summary": "Garadget MQTT Driver: updated."
         }
       ],
       "appCount": 0,
@@ -15943,7 +16023,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:d8c3769404dea0e2a6e7",
       "name": "J.R. Farrar",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -15954,9 +16034,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:08a6c5602410bb5f6921",
           "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json",
           "name": "Garadget MQTT Driver",
-          "publisherDate": "2026-02-04",
+          "publisherDate": "2026-09-03",
           "repositoryUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/jrfarrar.json",
-          "version": "1.4.4"
+          "version": "1.4.5"
         }
       ]
     },
@@ -16542,6 +16622,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:950b45170499286e63049a86",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -16556,7 +16650,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 2,
@@ -16567,9 +16661,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-08-21",
+          "publisherDate": "2026-09-03",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.0.2"
+          "version": "4.1.0"
         }
       ]
     },
@@ -17752,6 +17846,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
           "packageName": "Shelly Webhook/Websocket Drivers",
           "summary": "Shelly Webhook/Websocket Drivers: changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e6c4bee550bd62880b7bed5a",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+          "packageName": "Shelly Webhook/Websocket Drivers",
+          "summary": "Shelly Webhook/Websocket Drivers: updated, changed source location."
         }
       ],
       "appCount": 1,
@@ -17766,7 +17875,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 68,
       "id": "contributor:45735072cb5a4e1fb32b",
       "name": "ShellyUSA, Daniel Winks",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -17779,7 +17888,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Shelly Webhook/Websocket Drivers",
           "publisherDate": "2024-02-10",
           "repositoryUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/repository.json",
-          "version": "2.17.6"
+          "version": "2.17.8"
         }
       ]
     },
@@ -18810,10 +18919,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 907,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 135,
-    "eventCount": 134,
+    "attributedEventCount": 144,
+    "eventCount": 143,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-03T08:18:18Z"
+    "lastObservedAt": "2026-09-04T01:55:09Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -18825,14 +18934,14 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 256,
-  "rankedPackageCount": 904,
+  "rankedPackageCount": 902,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-03T08:55:59Z",
+  "snapshotGenerated": "2026-09-04T01:55:09Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
     "packages": "community_packages.json"
   },
-  "undeclaredAuthorPackageCount": 3
+  "undeclaredAuthorPackageCount": 5
 }
 ;
