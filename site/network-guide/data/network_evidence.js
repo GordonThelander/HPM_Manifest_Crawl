@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 179,
+    "BOTH": 181,
     "CLOUD": 258,
     "INSUFFICIENT": 301,
-    "LAN": 169
+    "LAN": 167
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -4730,24 +4730,26 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": null,
+      "author": "Dan Danache (@dandanache)",
       "category": "Utility",
-      "classification": "LAN",
-      "communityUrl": null,
+      "classification": "BOTH",
+      "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
       "declared": {
         "cloudTag": false,
         "lanTag": true
       },
       "description": "Control your boiler using an EMS-ESP Gateway.",
-      "documentationUrl": null,
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
       "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
       "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
       "name": "EMS-ESP Gateway",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "codeberg.org"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 15
       },
       "reviewed": [],
       "tags": [
@@ -9203,8 +9205,8 @@ window.NETWORK_EVIDENCE = {
           "codeberg.org"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 5,
-        "urlLiteralCount": 25
+        "sourceFilesAnalysed": 6,
+        "urlLiteralCount": 27
       },
       "reviewed": [],
       "tags": [
@@ -10786,8 +10788,8 @@ window.NETWORK_EVIDENCE = {
           "www.urbandictionary.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 22,
-        "urlLiteralCount": 132
+        "sourceFilesAnalysed": 23,
+        "urlLiteralCount": 139
       },
       "reviewed": [],
       "tags": [
@@ -12490,24 +12492,31 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
-      "author": null,
+      "author": "Dan Danache (@dandanache)",
       "category": "Utility",
-      "classification": "LAN",
-      "communityUrl": null,
+      "classification": "BOTH",
+      "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
       "declared": {
         "cloudTag": false,
         "lanTag": true
       },
       "description": "Control your LG webOS TV.",
-      "documentationUrl": null,
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
       "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
       "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
       "name": "LGTV with webOS",
       "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "externalHosts": [
+          "codeberg.org",
+          "gist.github.com"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 13
       },
       "reviewed": [],
       "tags": [
@@ -27320,5 +27329,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-04T01:55:09Z"
+  "snapshotGenerated": "2026-09-05T01:56:19Z"
 };

@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2249,
+  "definitionCount": 2255,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -12977,6 +12977,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse42-v1.2.2.groovy"
     },
     {
+      "id": "definition:051f6a84d48dfda0f0b1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "status",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "LGTV Remote",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/component/lgtv-remote.groovy"
+    },
+    {
       "id": "definition:0578c4e79a20fc7b0a56",
       "identities": [
         {
@@ -17840,6 +17865,31 @@ window.IDENTITY_INDEX = {
         "name": "Aeon SmartStrip"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/aeonsmartstrip.groovey"
+    },
+    {
+      "id": "definition:2aee0c39d6372f13e382",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Text*",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "LGTV with webOS",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/lgtv-with-webos.groovy"
     },
     {
       "id": "definition:2b58ac26d224781637e4",
@@ -22742,6 +22792,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
     },
     {
+      "id": "definition:4dd1d0547cdac90d83ea",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Gas Burner Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-gasburner.groovy"
+    },
+    {
       "id": "definition:4dd79499aea011e29966",
       "identities": [
         {
@@ -25372,26 +25442,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_myLeviton/master/myLevitonSwitchDimmer"
     },
     {
-      "id": "definition:5efbd71d498520c31b71",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Component Relay Switch",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/component/NodOn_ComponentRelaySwitch.groovy"
-    },
-    {
       "id": "definition:5f9cb582dca6260444ff",
       "identities": [
         {
@@ -26950,26 +27000,6 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/calendar-todo/calendar-todo.groovy"
-    },
-    {
-      "id": "definition:6a996d28c5ba696fb3d7",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Styrbar Remote Control N2 (E2002)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
     },
     {
       "id": "definition:6acf04ff78b80c2436b7",
@@ -36012,6 +36042,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardHeaterSwitch.groovy"
     },
     {
+      "id": "definition:ab5a181ebf95d01fa580",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "helpInfo",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "IKEA Styrbar Remote Control N2 (E2002)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
+    },
+    {
       "id": "definition:ac1768908b74d96729cd",
       "identities": [
         {
@@ -41387,6 +41442,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-battery/homekit-battery.groovy"
     },
     {
+      "id": "definition:cf10a0551602092ca6f6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "helpInfo",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "EMS-ESP - Gateway",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/ems-esp-gateway.groovy"
+    },
+    {
       "id": "definition:cf3bf4a2e4ce4851fd57",
       "identities": [
         {
@@ -41770,6 +41850,46 @@ window.IDENTITY_INDEX = {
         "name": "BLE Gateway Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/ble-beacon.groovy"
+    },
+    {
+      "id": "definition:d05dadff9e995817d7f0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Component Relay Switch",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/component/NodOn_ComponentRelaySwitch.groovy"
+    },
+    {
+      "id": "definition:d0871e7103dcf00686e6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Hot Water Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-hotwater.groovy"
     },
     {
       "id": "definition:d0965970401430575a83",
@@ -42700,6 +42820,26 @@ window.IDENTITY_INDEX = {
         "name": "Ring Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/hubitat/drivers/RingSmartLight.groovy"
+    },
+    {
+      "id": "definition:d725d7c3e6eb2ba9e369",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Heating Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-heating.groovy"
     },
     {
       "id": "definition:d7407b202b6751e3242f",
@@ -48090,5 +48230,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-04T01:55:09Z"
+  "snapshotGenerated": "2026-09-05T01:56:19Z"
 };
