@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-05T01:56:19Z`.
+Latest observation: `2026-09-06T01:50:42Z`.
 
 **39 package change(s):** added 1, broken 3, declared definitions changed 12, restored 2, source location changed 9, updated 33
 
+- [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
 - [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
 - [Mads Kristensen — Hubitat Drivers: updated.](https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/packageManifest.json)
@@ -40,8 +43,5 @@ Latest observation: `2026-09-05T01:56:19Z`.
 - [Alarm Panel (universal): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/refs/heads/master/package-alarm-panel.json)
 - [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
 - [Tuya Zigbee Metering Plug: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Metering%20Plug/packageManifest.json)
-- [Weather-Display With OWM-Alerts Forecast Driver: updated.](https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WDOWMAlerts_packageManifest.json)
-- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
-- [Flair Vents: updated.](https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

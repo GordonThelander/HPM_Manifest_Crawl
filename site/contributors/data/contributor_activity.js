@@ -10326,6 +10326,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0400815532e494bfba0b94a3",
+          "observedAt": "2026-09-06T01:50:42Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -10352,7 +10366,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 9,
+      "observedActivityCount": 10,
       "packages": [
         {
           "appCount": 1,
@@ -10365,7 +10379,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Automation Map",
           "publisherDate": "2026-09-02",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.2.0"
+          "version": "2.2.3"
         },
         {
           "appCount": 0,
@@ -16738,6 +16752,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:acab9c6065304aea67f7e282",
+          "observedAt": "2026-09-06T01:50:42Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -16752,7 +16780,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 2,
@@ -16763,9 +16791,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-03",
+          "publisherDate": "2026-09-05",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.1.0"
+          "version": "4.1.1"
         }
       ]
     },
@@ -18469,6 +18497,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:5cf87f7cd4c159334c4c",
           "packageName": "Yale Assure Lock 2 Driver",
           "summary": "Yale Assure Lock 2 Driver: updated."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d4f7779fa6cbf1f9ec656704",
+          "observedAt": "2026-09-06T01:50:42Z",
+          "observedCommit": null,
+          "packageId": "manifest:5cf87f7cd4c159334c4c",
+          "packageName": "Yale Assure Lock 2 Driver",
+          "summary": "Yale Assure Lock 2 Driver: updated."
         }
       ],
       "appCount": 0,
@@ -18483,7 +18525,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:2e46c4122819bb72fd5c",
       "name": "Trunzoc/Sleuth",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -18496,7 +18538,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Yale Assure Lock 2 Driver",
           "publisherDate": "2026-08-13",
           "repositoryUrl": "https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/repository.json",
-          "version": "1.06"
+          "version": "1.07"
         }
       ]
     },
@@ -19050,10 +19092,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 907,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 151,
-    "eventCount": 150,
+    "attributedEventCount": 154,
+    "eventCount": 153,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-05T01:56:19Z"
+    "lastObservedAt": "2026-09-06T01:50:42Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -19067,7 +19109,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 904,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-05T01:56:19Z",
+  "snapshotGenerated": "2026-09-06T01:50:42Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
