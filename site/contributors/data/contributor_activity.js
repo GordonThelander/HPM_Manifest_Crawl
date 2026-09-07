@@ -3435,8 +3435,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:7ab3356e064206b19893abbd",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:675ae01b548212ee01d97f9a",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "manifest:7abc25a79ef01d4588a9",
           "packageName": "InfluxDB-Logger",
@@ -5745,8 +5745,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "CURRENT_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:58b541a7f60deb2b0cd31a4e",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:adb9362b56a7cc87dba65462",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "manifest:d6513611d38422ced953",
           "packageName": "Third Reality Custom Drivers",
@@ -5847,7 +5847,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Third Reality Custom Drivers",
           "publisherDate": "2026-09-06",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "1.0.0"
+          "version": "1.0.4"
         },
         {
           "appCount": 0,
@@ -16286,8 +16286,22 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:13fbc2edf7daf21d608453f3",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:5792bfd7a386ea3067582486",
+          "observedAt": "2026-09-07T11:28:24Z",
+          "observedCommit": null,
+          "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
+          "packageName": "MyQ Garage Door Integration",
+          "summary": "MyQ Garage Door Integration: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6666de8c07da806869491d5a",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
           "packageName": "MyQ Garage Door Integration 2023",
@@ -16300,26 +16314,12 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "CURRENT_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:3abc182310f992a2338a9b80",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:844cceb46c59c51067a2fb08",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
           "packageName": "MyQ Garage Door Integration",
           "summary": "MyQ Garage Door Integration: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:fda2f0a77e394b3801c3dc78",
-          "observedAt": "2026-09-07T01:47:34Z",
-          "observedCommit": null,
-          "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
-          "packageName": "MyQ Garage Door Integration",
-          "summary": "MyQ Garage Door Integration: removed."
         }
       ],
       "appCount": 1,
@@ -16802,8 +16802,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "CURRENT_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:8c3049f2cb9dc9b9e9cf1cd8",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:4bb7829d6a86b05a2d3435bb",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
@@ -16833,9 +16833,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-06",
+          "publisherDate": "2026-09-07",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.2.0"
+          "version": "4.2.1"
         }
       ]
     },
@@ -19076,8 +19076,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:0578c7bdb99be09e4106c46d",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:fbaa19057ef82aa43f34de46",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
           "packageName": "WLED Driver",
@@ -19103,8 +19103,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:3b1924f968ed906d140c11a8",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:258e05eb6fac31894eeacd99",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "manifest:78cfd13a636721fec87d",
           "packageName": "Basic Z-Wave tool",
@@ -19130,8 +19130,8 @@ window.CONTRIBUTOR_ACTIVITY = {
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:ba4165d58700a42cebb07f22",
-          "observedAt": "2026-09-07T01:47:34Z",
+          "id": "change:4a857522e02c767c67e350bc",
+          "observedAt": "2026-09-07T11:28:24Z",
           "observedCommit": null,
           "packageId": "manifest:fb392e51fc95c0669c3c",
           "packageName": "AeotecHEMGen5 Driver",
@@ -19156,7 +19156,7 @@ window.CONTRIBUTOR_ACTIVITY = {
     "attributedEventCount": 163,
     "eventCount": 162,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-07T01:47:34Z"
+    "lastObservedAt": "2026-09-07T11:28:24Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -19170,7 +19170,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 900,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-07T01:47:34Z",
+  "snapshotGenerated": "2026-09-07T11:28:24Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

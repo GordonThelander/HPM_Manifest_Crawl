@@ -1,14 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-07T01:47:34Z`.
+Latest observation: `2026-09-07T11:28:24Z`.
 
-**46 package change(s):** added 3, broken 3, declared definitions changed 12, removed 6, restored 2, source location changed 9, updated 32
+**41 package change(s):** added 3, broken 3, declared definitions changed 12, removed 6, restored 2, source location changed 9, updated 27
 
 - [WLED Driver: removed.](https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json)
 - [Third Reality Custom Drivers: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [MyQ Garage Door Integration 2023: removed.](https://www.hubitatcommunity.com/MyQ/packageManifest.json)
-- [MyQ Garage Door Integration: removed.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
 - [MyQ Garage Door Integration: added.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
+- [MyQ Garage Door Integration: removed.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [InfluxDB-Logger: removed.](https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json)
 - [Basic Z-Wave tool: removed.](https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json)
@@ -45,10 +45,5 @@ Latest observation: `2026-09-07T01:47:34Z`.
 - [Shelly Webhook/Websocket Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
 - [Shabbat and Holiday Scheduler: updated.](https://raw.githubusercontent.com/dds82/shabbat/main/packageManifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Garge Door Opener blaQ (GDOv2-Q): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov2q.json)
-- [Garage Door Opener v1 (GDOv1-S): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov1s.json)
-- [Garage Door Opener White (GDOv2-S): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/package-gdov2s.json)
-- [Alarm Panel (universal): updated.](https://raw.githubusercontent.com/konnected-io/konnected-hubitat/refs/heads/master/package-alarm-panel.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
