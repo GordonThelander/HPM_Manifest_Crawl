@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2255,
+  "definitionCount": 2254,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3305,26 +3305,6 @@ window.IDENTITY_INDEX = {
         "name": "Dimmer Button Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RMoRobert/Hubitat/master/apps/DimmerButtonController/DimmerButtonController3.groovy"
-    },
-    {
-      "id": "definition:28f22f143349df49cfce",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "InfluxDB Logger",
-          "namespace": "nowhereville"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Denny Page",
-        "communityUrl": "https://community.hubitat.com/t/influxdb-logger/110548",
-        "documentationUrl": null,
-        "id": "manifest:7abc25a79ef01d4588a9",
-        "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json",
-        "name": "InfluxDB-Logger"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/influxdb-logger.groovy"
     },
     {
       "id": "definition:295cb168f38311245faa",
@@ -7352,26 +7332,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DarwinsDen/Demand-Manager/master/smartapps/darwinsden/demand-manager.src/demand-manager.groovy"
     },
     {
-      "id": "definition:8a2b00cd10100464ea1d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MyQ Lite",
-          "namespace": "brbeaird"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
-        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
-        "name": "MyQ Garage Door Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/smartapps/brbeaird/myq-lite.src/myq-lite.groovy"
-    },
-    {
       "id": "definition:8a35e1fb27717cd63d06",
       "identities": [
         {
@@ -9577,26 +9537,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/SensorGroupsPlus/main/ChildApps/HumiditySensorPlus_ChildApp.groovy"
     },
     {
-      "id": "definition:bacfd9c10a309c467b78",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MyQ Lite",
-          "namespace": "brbeaird"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
-        "manifestUrl": "https://www.hubitatcommunity.com/MyQ/packageManifest.json",
-        "name": "MyQ Garage Door Integration 2023"
-      },
-      "sourceUrl": "https://www.hubitatcommunity.com/MyQ/myq-lite.groovy"
-    },
-    {
       "id": "definition:bc4c967f5ae9b7ebd272",
       "identities": [
         {
@@ -9825,6 +9765,26 @@ window.IDENTITY_INDEX = {
         "name": "Z-Wave Association Tool"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Apps/z-waveat/zwave-association.src/zwave-association.groovy"
+    },
+    {
+      "id": "definition:bedd26884c7358f6e783",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MyQ Lite",
+          "namespace": "brbeaird"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
+        "name": "MyQ Garage Door Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/smartapps/brbeaird/myq-lite.src/myq-lite.groovy"
     },
     {
       "id": "definition:bfe7ab3ef70bf4e53d88",
@@ -10950,31 +10910,6 @@ window.IDENTITY_INDEX = {
         "name": "Device Groups"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-contactgroups/master/apps/Contact_Sensor_Group_Child.groovy"
-    },
-    {
-      "id": "definition:defde74a3ef39c447689",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WLED",
-          "namespace": "joyfulhouse"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "WLED Driver",
-          "namespace": "joyfulhouse"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "joyfulhouse",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
-        "manifestUrl": "https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json",
-        "name": "WLED Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/joyfulhouse/WLED/refs/heads/master/WLED.groovy"
     },
     {
       "id": "definition:defe4bcb7936c7678f3d",
@@ -15657,6 +15592,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/WaterMeterController_Device.groovy"
     },
     {
+      "id": "definition:17c7e972298c5ffa2591",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MyQ Garage Door Opener",
+          "namespace": "brbeaird"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
+        "name": "MyQ Garage Door Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/devicetypes/brbeaird/myq-garage-door-opener.src/myq-garage-door-opener.groovy"
+    },
+    {
       "id": "definition:17e25287768088bbd2d6",
       "identities": [
         {
@@ -16185,31 +16140,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy"
-    },
-    {
-      "id": "definition:1bed4fbe24d32dec0dec",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Aeotec Home Energy Monitor (Gen 5)",
-          "namespace": "com.viertaxa.hubitat"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "AeotecHEMGen5",
-          "namespace": "HubitatCommunity"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "viertaxa",
-        "communityUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
-        "documentationUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
-        "id": "manifest:fb392e51fc95c0669c3c",
-        "manifestUrl": "https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json",
-        "name": "AeotecHEMGen5 Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/viertaxa/hubitat/main/Drivers/AeotecHEMGen5-2-Phase/aeotec-home-energy-monitor-gen-5-2-phase.groovy"
     },
     {
       "id": "definition:1beec1ec0b50e06fc11a",
@@ -19972,6 +19902,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/Z-Wave-Firmware-Updater/zwaveFirmwareUpdater.groovy"
     },
     {
+      "id": "definition:39ccd71e47ba8fb01b27",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MyQ Garage Door Opener-NoSensor",
+          "namespace": "brbeaird"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
+        "name": "MyQ Garage Door Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/devicetypes/brbeaird/myq-garage-door-opener-nosensor.src/myq-garage-door-opener-nosensor.groovy"
+    },
+    {
       "id": "definition:39d592526b9a479641c2",
       "identities": [
         {
@@ -22342,24 +22292,29 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DehumidifierDriver.groovy"
     },
     {
-      "id": "definition:4bd2bec2049f945ce981",
+      "id": "definition:4bb3fdc0eddf14cd7a69",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "MyQ Garage Door Opener",
-          "namespace": "brbeaird"
+          "name": "Third Reality Contact Sensor (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Contact Sensor Custom",
+          "namespace": "jshimota"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
-        "manifestUrl": "https://www.hubitatcommunity.com/MyQ/packageManifest.json",
-        "name": "MyQ Garage Door Integration 2023"
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
       },
-      "sourceUrl": "https://www.hubitatcommunity.com/MyQ/myq-drivers/myq-garage-door-opener.groovy"
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_contact_sensor_custom/third_reality_contact_sensor_custom.groovy"
     },
     {
       "id": "definition:4bf896a398aac4be6a35",
@@ -30397,6 +30352,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/drivers/echo-speaks-zone-device.groovy"
     },
     {
+      "id": "definition:863ffb28a85c2b8af540",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality Night Light (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Multifunction Night Light Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_multifunction_night_light_custom/third_reality_multifunction_night_light_custom.groovy"
+    },
+    {
       "id": "definition:8656f60a53dded10af57",
       "identities": [
         {
@@ -32692,6 +32672,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/devicetypes/alarmdecoder/alarmdecoder-virtual-shock-sensor.src/alarmdecoder-virtual-shock-sensor.groovy"
     },
     {
+      "id": "definition:9396141331f0e4538188",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality Plug w/Power Meter Support (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Plug w/ Power Meter Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_plug_w-power-meter_custom/third_reality_plug_w-power-meter_custom.groovy"
+    },
+    {
       "id": "definition:93d7bddcdd25d65d2ba0",
       "identities": [
         {
@@ -34582,6 +34587,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_hood"
     },
     {
+      "id": "definition:a2c16eb717b690f3dcf6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality Temperature & Humidity Sensor wo/Display (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Temp & Humidity Sensor w/o Display Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_temp-humidity_sensor_wo-display_custom/third_reality_temp-humidity_sensor_wo-display_custom.groovy"
+    },
+    {
       "id": "definition:a2cd504540377390c587",
       "identities": [
         {
@@ -34710,26 +34740,6 @@ window.IDENTITY_INDEX = {
         "name": "YoLink™ Local Hub Connector"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Yolink%20Local%20Hub/Drivers/YoLink%20THSensor%20Device%20Local.groovy"
-    },
-    {
-      "id": "definition:a315a546d56419c174b3",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MyQ Garage Door Opener-NoSensor",
-          "namespace": "brbeaird"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
-        "manifestUrl": "https://www.hubitatcommunity.com/MyQ/packageManifest.json",
-        "name": "MyQ Garage Door Integration 2023"
-      },
-      "sourceUrl": "https://www.hubitatcommunity.com/MyQ/myq-drivers/myq-garage-door-opener-nosensor.groovy"
     },
     {
       "id": "definition:a3298e19d603a0f10301",
@@ -37320,26 +37330,6 @@ window.IDENTITY_INDEX = {
         "name": "Lennox iComfort"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch.groovy"
-    },
-    {
-      "id": "definition:b3d490bf9d9dbf759ef5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Basic Z-Wave tool",
-          "namespace": "hubitat"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mike Maxwell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:78cfd13a636721fec87d",
-        "manifestUrl": "https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json",
-        "name": "Basic Z-Wave tool"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hubitat/HubitatPublic/master/examples/drivers/basicZWaveTool.groovy"
     },
     {
       "id": "definition:b3e2221c827676b7e879",
@@ -45132,6 +45122,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Zipato/Zipato%20Mini%20RFID%20Keypad.groovy"
     },
     {
+      "id": "definition:e6963a62a1d40aa31f2e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality Temperature & Humidity Sensor w/Display (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Temp & Humidity Sensor w/ Display Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_temp-humidity_sensor_w-display_custom/third_reality_temp-humidity_sensor_w-display_custom.groovy"
+    },
+    {
       "id": "definition:e6b7418fa171563a472f",
       "identities": [
         {
@@ -45415,26 +45430,6 @@ window.IDENTITY_INDEX = {
         "name": "ESPHome Integration Library and Example Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-FanControl.groovy"
-    },
-    {
-      "id": "definition:e8259b5ab906b398bd02",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MyQ Garage Door Opener-NoSensor",
-          "namespace": "brbeaird"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
-        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
-        "name": "MyQ Garage Door Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/devicetypes/brbeaird/myq-garage-door-opener-nosensor.src/myq-garage-door-opener-nosensor.groovy"
     },
     {
       "id": "definition:e8299c66bdb1dfe6b757",
@@ -46125,6 +46120,31 @@ window.IDENTITY_INDEX = {
         "name": "IKEA Zigbee drivers"
       },
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2134.groovy"
+    },
+    {
+      "id": "definition:ee3ec2cf5b13e1095ee7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality Motion Sensor (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality Motion Sensor Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_motion_sensor_custom/third_reality_motion_driver-custom.groovy"
     },
     {
       "id": "definition:ee58a7cf55cd6e0c047d",
@@ -47005,26 +47025,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Alexa Routine Trigger"
       },
       "sourceUrl": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverChildContact.groovy"
-    },
-    {
-      "id": "definition:f596f4fdf37ac9fe19ce",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MyQ Garage Door Opener",
-          "namespace": "brbeaird"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-        "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-        "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
-        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
-        "name": "MyQ Garage Door Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/devicetypes/brbeaird/myq-garage-door-opener.src/myq-garage-door-opener.groovy"
     },
     {
       "id": "definition:f60620e0552d2a98f8bc",
@@ -48230,5 +48230,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-06T01:50:42Z"
+  "snapshotGenerated": "2026-09-07T01:47:34Z"
 };

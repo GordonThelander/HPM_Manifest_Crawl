@@ -1,8 +1,573 @@
 {
   "baselineEstablished": true,
   "dataset": "package-changes",
-  "eventCount": 153,
+  "eventCount": 162,
   "events": [
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue after version 4.1.1.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:0578c7bdb99be09e4106c46d",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
+      "packageName": "WLED Driver",
+      "previousPackage": {
+        "author": "joyfulhouse",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:defde74a3ef39c447689"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2025-08-30",
+        "description": "WLED Device Type for Hubitat",
+        "hpmPackageId": "232db656-52d1-4efa-b4d7-106c83c0c9c1",
+        "id": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
+        "links": {
+          "community": null,
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json"
+        },
+        "name": "WLED Driver",
+        "repository": {
+          "author": "HubitatCommunity",
+          "name": "Community Code",
+          "url": "https://www.hubitatcommunity.com/hpm/communityrepo.json"
+        },
+        "tags": [
+          "Automations & Groups",
+          "LAN",
+          "Lights & Switches"
+        ],
+        "version": "4.1.1"
+      },
+      "summary": "WLED Driver: removed."
+    },
+    {
+      "changeTypes": [
+        "ADDED"
+      ],
+      "currentPackage": {
+        "author": "James Shimota",
+        "category": "Control",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:4bb3fdc0eddf14cd7a69",
+            "definition:863ffb28a85c2b8af540",
+            "definition:9396141331f0e4538188",
+            "definition:a2c16eb717b690f3dcf6",
+            "definition:e6963a62a1d40aa31f2e",
+            "definition:ee3ec2cf5b13e1095ee7"
+          ]
+        },
+        "dateReleased": "2026-09-06",
+        "description": "A collection of production-grade custom drivers for Third Reality Zigbee devices. Select and install only the drivers you need (Contact, Motion, Night Light, Power Plug with Metering, and Temp/Humidity Display/Non-Display sensors).",
+        "hpmPackageId": null,
+        "id": "manifest:d6513611d38422ced953",
+        "links": {
+          "community": "https://community.hubitat.com/",
+          "documentation": "https://github.com/jshimota01/hubitat"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json"
+        },
+        "name": "Third Reality Custom Drivers",
+        "repository": {
+          "author": "James Shimota (Shumo) (jshimota01)",
+          "name": "James Shimota (Shumo)",
+          "url": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Driver",
+          "Lights & Switches",
+          "Misc. Devices",
+          "Motion",
+          "Open/Closed",
+          "Presence",
+          "Sensors",
+          "Temperature & Humidity",
+          "Zigbee"
+        ],
+        "version": "1.0.0"
+      },
+      "detail": "Entered the catalogue at version 1.0.0.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/jshimota01/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:58b541a7f60deb2b0cd31a4e",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "manifest:d6513611d38422ced953",
+      "packageName": "Third Reality Custom Drivers",
+      "previousPackage": null,
+      "summary": "Third Reality Custom Drivers: added."
+    },
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://www.hubitatcommunity.com/MyQ/packageManifest.json"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:13fbc2edf7daf21d608453f3",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
+      "packageName": "MyQ Garage Door Integration 2023",
+      "previousPackage": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:bacfd9c10a309c467b78"
+          ],
+          "drivers": [
+            "definition:4bd2bec2049f945ce981",
+            "definition:a315a546d56419c174b3"
+          ]
+        },
+        "dateReleased": "2021-10-07",
+        "description": "Integrates MyQ garage doors into your Hubitat system",
+        "hpmPackageId": "6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
+        "links": {
+          "community": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+          "documentation": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://www.hubitatcommunity.com/MyQ/packageManifest.json"
+        },
+        "name": "MyQ Garage Door Integration 2023",
+        "repository": {
+          "author": "HubitatCommunity",
+          "name": "Community Code",
+          "url": "https://www.hubitatcommunity.com/hpm/communityrepo.json"
+        },
+        "tags": [
+          "Cloud",
+          "Doors & Windows",
+          "Garage Doors"
+        ],
+        "version": null
+      },
+      "summary": "MyQ Garage Door Integration 2023: removed."
+    },
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/dcmeglio/hubitat-myq"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:fda2f0a77e394b3801c3dc78",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
+      "packageName": "MyQ Garage Door Integration",
+      "previousPackage": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:8a2b00cd10100464ea1d"
+          ],
+          "drivers": [
+            "definition:e8259b5ab906b398bd02",
+            "definition:f596f4fdf37ac9fe19ce"
+          ]
+        },
+        "dateReleased": "2021-10-07",
+        "description": "Integrates MyQ garage doors into your Hubitat system",
+        "hpmPackageId": "6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
+        "links": {
+          "community": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+          "documentation": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json"
+        },
+        "name": "MyQ Garage Door Integration",
+        "repository": {
+          "author": "Dominick Meglio",
+          "name": "dman2306",
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-packages/master/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Doors & Windows",
+          "Garage Doors"
+        ],
+        "version": null
+      },
+      "summary": "MyQ Garage Door Integration: removed."
+    },
+    {
+      "changeTypes": [
+        "ADDED"
+      ],
+      "currentPackage": {
+        "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:bedd26884c7358f6e783"
+          ],
+          "drivers": [
+            "definition:17c7e972298c5ffa2591",
+            "definition:39ccd71e47ba8fb01b27"
+          ]
+        },
+        "dateReleased": "2021-10-07",
+        "description": "Integrates MyQ garage doors into your Hubitat system",
+        "hpmPackageId": "6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+        "links": {
+          "community": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+          "documentation": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json"
+        },
+        "name": "MyQ Garage Door Integration",
+        "repository": {
+          "author": "Dominick Meglio",
+          "name": "dman2306",
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-packages/master/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Doors & Windows",
+          "Garage Doors"
+        ],
+        "version": null
+      },
+      "detail": "Entered the catalogue.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/dcmeglio/hubitat-myq"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:3abc182310f992a2338a9b80",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+      "packageName": "MyQ Garage Door Integration",
+      "previousPackage": null,
+      "summary": "MyQ Garage Door Integration: added."
+    },
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "kingpanther13",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:190b8ca0472995cfc29b",
+            "definition:92a5b52002ec363bfdc7"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-09-06",
+        "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
+        "hpmPackageId": null,
+        "id": "manifest:7afca99889f23291349b",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        "name": "MCP Rule Server",
+        "repository": {
+          "author": "kingpanther13",
+          "name": "kingpanther13",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json"
+        },
+        "tags": [],
+        "version": "4.2.0"
+      },
+      "detail": "Version 4.1.1 to 4.2.0.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/kingpanther13/Hubitat-local-MCP-server"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:8c3049f2cb9dc9b9e9cf1cd8",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "manifest:7afca99889f23291349b",
+      "packageName": "MCP Rule Server",
+      "previousPackage": {
+        "author": "kingpanther13",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:190b8ca0472995cfc29b",
+            "definition:92a5b52002ec363bfdc7"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-09-05",
+        "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
+        "hpmPackageId": null,
+        "id": "manifest:7afca99889f23291349b",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        "name": "MCP Rule Server",
+        "repository": {
+          "author": "kingpanther13",
+          "name": "kingpanther13",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json"
+        },
+        "tags": [],
+        "version": "4.1.1"
+      },
+      "summary": "MCP Rule Server: updated."
+    },
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue after version 4.4.0.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/HubitatCommunity/InfluxDB-Logger"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:7ab3356e064206b19893abbd",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "manifest:7abc25a79ef01d4588a9",
+      "packageName": "InfluxDB-Logger",
+      "previousPackage": {
+        "author": "Denny Page",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:28f22f143349df49cfce"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-04-03",
+        "description": "Log Hubitat device states to an InfluxDB database",
+        "hpmPackageId": null,
+        "id": "manifest:7abc25a79ef01d4588a9",
+        "links": {
+          "community": "https://community.hubitat.com/t/influxdb-logger/110548",
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json"
+        },
+        "name": "InfluxDB-Logger",
+        "repository": {
+          "author": "HubitatCommunity",
+          "name": "Community Code",
+          "url": "https://www.hubitatcommunity.com/hpm/communityrepo.json"
+        },
+        "tags": [
+          "Tools & Utilities"
+        ],
+        "version": "4.4.0"
+      },
+      "summary": "InfluxDB-Logger: removed."
+    },
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue after version 3.0.0.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:3b1924f968ed906d140c11a8",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "manifest:78cfd13a636721fec87d",
+      "packageName": "Basic Z-Wave tool",
+      "previousPackage": {
+        "author": "Mike Maxwell",
+        "category": "Control",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:b3d490bf9d9dbf759ef5"
+          ]
+        },
+        "dateReleased": "2020-08-14",
+        "description": "Set Device Parameters, manually.",
+        "hpmPackageId": null,
+        "id": "manifest:78cfd13a636721fec87d",
+        "links": {
+          "community": null,
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json"
+        },
+        "name": "Basic Z-Wave tool",
+        "repository": {
+          "author": "HubitatCommunity",
+          "name": "Community Code",
+          "url": "https://www.hubitatcommunity.com/hpm/communityrepo.json"
+        },
+        "tags": [
+          "Tools & Utilities"
+        ],
+        "version": "3.0.0"
+      },
+      "summary": "Basic Z-Wave tool: removed."
+    },
+    {
+      "changeTypes": [
+        "REMOVED"
+      ],
+      "currentPackage": null,
+      "detail": "Left the catalogue after version 0.1.4.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:ba4165d58700a42cebb07f22",
+      "observedAt": "2026-09-07T01:47:34Z",
+      "packageId": "manifest:fb392e51fc95c0669c3c",
+      "packageName": "AeotecHEMGen5 Driver",
+      "previousPackage": {
+        "author": "viertaxa",
+        "category": "Control",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:1bed4fbe24d32dec0dec"
+          ]
+        },
+        "dateReleased": "2020-12-27",
+        "description": "A more preference filled alternative driver.",
+        "hpmPackageId": null,
+        "id": "manifest:fb392e51fc95c0669c3c",
+        "links": {
+          "community": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
+          "documentation": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json"
+        },
+        "name": "AeotecHEMGen5 Driver",
+        "repository": {
+          "author": "HubitatCommunity",
+          "name": "Community Code",
+          "url": "https://www.hubitatcommunity.com/hpm/communityrepo.json"
+        },
+        "tags": [
+          "Lights & Switches"
+        ],
+        "version": "0.1.4"
+      },
+      "summary": "AeotecHEMGen5 Driver: removed."
+    },
     {
       "changeTypes": [
         "UPDATED"
@@ -14891,6 +15456,6 @@
   "historicalSnapshotsCompared": 10,
   "historySource": "completed Git crawl snapshots",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-06T01:50:42Z",
-  "updatedAt": "2026-09-06T01:50:42Z"
+  "snapshotGenerated": "2026-09-07T01:47:34Z",
+  "updatedAt": "2026-09-07T01:47:34Z"
 }

@@ -1,9 +1,9 @@
 {
   "counts": {
     "BOTH": 181,
-    "CLOUD": 258,
-    "INSUFFICIENT": 301,
-    "LAN": 167
+    "CLOUD": 256,
+    "INSUFFICIENT": 300,
+    "LAN": 166
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 907,
+  "packageCount": 903,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -806,33 +806,6 @@
       "tags": [
         "Multi Sensors",
         "ZWave"
-      ]
-    },
-    {
-      "author": "viertaxa",
-      "category": "Control",
-      "classification": "LAN",
-      "communityUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "A more preference filled alternative driver.",
-      "documentationUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
-      "id": "manifest:fb392e51fc95c0669c3c",
-      "manifestUrl": "https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json",
-      "name": "AeotecHEMGen5 Driver",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [
-          "HUB_ACTION"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
-      },
-      "reviewed": [],
-      "tags": [
-        "Lights & Switches"
       ]
     },
     {
@@ -2180,31 +2153,6 @@
       "tags": [
         "Appliances",
         "Monitoring"
-      ]
-    },
-    {
-      "author": "Mike Maxwell",
-      "category": "Control",
-      "classification": "INSUFFICIENT",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Set Device Parameters, manually.",
-      "documentationUrl": null,
-      "id": "manifest:78cfd13a636721fec87d",
-      "manifestUrl": "https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json",
-      "name": "Basic Z-Wave tool",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 0
-      },
-      "reviewed": [],
-      "tags": [
-        "Tools & Utilities"
       ]
     },
     {
@@ -10824,33 +10772,6 @@
       "tags": []
     },
     {
-      "author": "Denny Page",
-      "category": "Integrations",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/influxdb-logger/110548",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Log Hubitat device states to an InfluxDB database",
-      "documentationUrl": null,
-      "id": "manifest:7abc25a79ef01d4588a9",
-      "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json",
-      "name": "InfluxDB-Logger",
-      "observed": {
-        "externalHosts": [
-          "docs.influxdata.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Tools & Utilities"
-      ]
-    },
-    {
       "author": "Jed Brown",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -14750,39 +14671,9 @@
       },
       "description": "Integrates MyQ garage doors into your Hubitat system",
       "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
+      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
       "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
       "name": "MyQ Garage Door Integration",
-      "observed": {
-        "externalHosts": [
-          "accounts.myq-cloud.com",
-          "devices.myq-cloud.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 13
-      },
-      "reviewed": [],
-      "tags": [
-        "Cloud",
-        "Doors & Windows",
-        "Garage Doors"
-      ]
-    },
-    {
-      "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
-      "category": "Integrations",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
-      "declared": {
-        "cloudTag": true,
-        "lanTag": false
-      },
-      "description": "Integrates MyQ garage doors into your Hubitat system",
-      "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
-      "manifestUrl": "https://www.hubitatcommunity.com/MyQ/packageManifest.json",
-      "name": "MyQ Garage Door Integration 2023",
       "observed": {
         "externalHosts": [
           "accounts.myq-cloud.com",
@@ -22224,6 +22115,41 @@
       ]
     },
     {
+      "author": "James Shimota",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "A collection of production-grade custom drivers for Third Reality Zigbee devices. Select and install only the drivers you need (Contact, Motion, Night Light, Power Plug with Metering, and Temp/Humidity Display/Non-Display sensors).",
+      "documentationUrl": "https://github.com/jshimota01/hubitat",
+      "id": "manifest:d6513611d38422ced953",
+      "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+      "name": "Third Reality Custom Drivers",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 6,
+        "urlLiteralCount": 12
+      },
+      "reviewed": [],
+      "tags": [
+        "Driver",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Motion",
+        "Open/Closed",
+        "Presence",
+        "Sensors",
+        "Temperature & Humidity",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "TheMaster",
       "category": "Control",
       "classification": "BOTH",
@@ -25271,33 +25197,6 @@
       ]
     },
     {
-      "author": "joyfulhouse",
-      "category": "Integrations",
-      "classification": "LAN",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": true
-      },
-      "description": "WLED Device Type for Hubitat",
-      "documentationUrl": null,
-      "id": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
-      "manifestUrl": "https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json",
-      "name": "WLED Driver",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
-      },
-      "reviewed": [],
-      "tags": [
-        "Automations & Groups",
-        "LAN",
-        "Lights & Switches"
-      ]
-    },
-    {
       "author": "Tim Dodd",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
@@ -27329,5 +27228,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-06T01:50:42Z"
+  "snapshotGenerated": "2026-09-07T01:47:34Z"
 }
