@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-07T11:28:24Z`.
+Latest observation: `2026-09-08T01:59:37Z`.
 
-**41 package change(s):** added 3, broken 3, declared definitions changed 12, removed 6, restored 2, source location changed 9, updated 27
+**50 package change(s):** added 3, broken 4, declared definitions changed 17, removed 6, restored 2, source location changed 9, updated 31
 
+- [Zooz Scene Controllers Advanced Drivers: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
+- [OwnTracks Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/OwnTracks-Presence/packageManifest.json)
+- [Nexia Thermostat Manager / Trane Home: updated.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hive Drivers from BirdsLikeWires: changed declared definitions.](https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json)
+- [Heatmiser Neostat: changed declared definitions.](https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json)
+- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
+- [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
+- [AverageThis: changed declared definitions.](https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json)
 - [WLED Driver: removed.](https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json)
 - [Third Reality Custom Drivers: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [MyQ Garage Door Integration 2023: removed.](https://www.hubitatcommunity.com/MyQ/packageManifest.json)

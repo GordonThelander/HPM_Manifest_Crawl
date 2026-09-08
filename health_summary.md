@@ -1,26 +1,30 @@
 # HPM package health summary
 
-Snapshot: `2026-09-07T11:28:24Z`
+Snapshot: `2026-09-08T01:59:37Z`
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
 ## Current observations
 
-- Failing: **207**
-- Passing: **428**
-- Warning: **268**
+- Failing: **208**
+- Passing: **413**
+- Warning: **282**
 
 ## Changes since the previous successful snapshot
 
-- Baseline: **2**
-- New Failure: **1**
+- New Failure: **3**
 - Persistent Failure: **205**
-- Unchanged: **695**
+- Restored: **2**
+- Unchanged: **693**
 
 ## Introduced and resolved failures
 
 | Change | Package | Author | Evidence |
 | --- | --- | --- | --- |
-| NEW_FAILURE | Switch Dashboard | Mattias Fornander (@mfornander) | communityReachability |
+| NEW_FAILURE | Govee Integration v2 | Mavrrick | crawl:source, crawl:source, crawl:source |
+| NEW_FAILURE | AverageThis | csteele | crawl:source |
+| NEW_FAILURE | Zooz Scene Controllers Advanced Drivers | Jeff Page (@jtp10181) | sourceFetch, crawl:source |
+| RESTORED | Switch Dashboard | Mattias Fornander (@mfornander) | No current failure |
+| RESTORED | Unified Thermostat | Simon Burke (sburke781) | No current failure |
 
 A request failure can be transient. Persistent status means the same package was observed failing in consecutive successful snapshots; it does not prove that the project is unmaintained.
