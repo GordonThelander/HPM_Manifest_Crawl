@@ -7697,6 +7697,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dds82/smartdevices/refs/heads/master/attributeaggregator/smart-attribute-aggregator-app.groovy"
     },
     {
+      "id": "definition:934eeaebcf0bf15504f2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "AverageThis",
+          "namespace": "csteele"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "csteele",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/HubitatCommunity/AverageThis/blob/master/README.md",
+        "id": "hpm:245d904c-d8a4-4c35-8788-6fb5f8962335",
+        "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json",
+        "name": "AverageThis"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/AverageThis.groovy"
+    },
+    {
       "id": "definition:93f076cad68dc6ec6366",
       "identities": [
         {
@@ -11070,26 +11090,6 @@ window.IDENTITY_INDEX = {
         "name": "Pihole Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeIntegration.groovy"
-    },
-    {
-      "id": "definition:e2c56b08a90a3ad2da57",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "AverageThis",
-          "namespace": "csteele"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "csteele",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/HubitatCommunity/AverageThis/blob/master/README.md",
-        "id": "hpm:245d904c-d8a4-4c35-8788-6fb5f8962335",
-        "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json",
-        "name": "AverageThis"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/AverageThis.groovy"
     },
     {
       "id": "definition:e323a3eaacdab0afa39e",
@@ -19357,26 +19357,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-GarageDoor.groovy"
     },
     {
-      "id": "definition:353891ab1636c4e05090",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Govee v2 H7123 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
-    },
-    {
       "id": "definition:354c761b2184a2cc068d",
       "identities": [
         {
@@ -22057,26 +22037,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.2/bambuddy-printers.groovy"
     },
     {
-      "id": "definition:4aa3880ae4a52ad44441",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Hive Receiver Heating",
-          "namespace": "BirdsLikeWires"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Andrew Davison",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/birdslikewires/hubitat/tree/main/hive",
-        "id": "hpm:A7ECBF4E-634F-4B5B-BF6B-1D511B830F21",
-        "manifestUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json",
-        "name": "Hive Drivers from BirdsLikeWires"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/drivers/hive_receiver_heating.groovy"
-    },
-    {
       "id": "definition:4aac5834f68e8a9de3dd",
       "identities": [
         {
@@ -23375,26 +23335,6 @@ window.IDENTITY_INDEX = {
         "name": "Blink Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Network.groovy"
-    },
-    {
-      "id": "definition:51e30d23e9c46c809eaf",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Heatmiser Neo Plug",
-          "namespace": "cjcharles0"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "cjcharles0",
-        "communityUrl": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041",
-        "documentationUrl": "https://github.com/cjcharles0/Hubitat/drivers/heatmiser-neostat",
-        "id": "manifest:4aaf27175c54eaee3b9c",
-        "manifestUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json",
-        "name": "Heatmiser Neostat"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-plug-dth.groovy"
     },
     {
       "id": "definition:51f2a84b055928ec8650",
@@ -25392,26 +25332,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy"
     },
     {
-      "id": "definition:5eaa2b4505e5383e70a8",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Zooz ZEN37 Wall Remote Advanced",
-          "namespace": "jtp10181"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jeff Page (@jtp10181)",
-        "communityUrl": "https://community.hubitat.com/t/zooz-zen37-wall-remote/129335",
-        "documentationUrl": "https://github.com/jtp10181/Hubitat/tree/main/Drivers/zooz",
-        "id": "hpm:96fdbcd8-5ebe-47a8-881a-748574f0917e",
-        "manifestUrl": "https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json",
-        "name": "Zooz Scene Controllers Advanced Drivers"
-      },
-      "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen37-v1.0.0.groovy"
-    },
-    {
       "id": "definition:5eb97cb16c286e9b970d",
       "identities": [
         {
@@ -26952,26 +26872,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/twilightParser.groovy"
     },
     {
-      "id": "definition:6a4642d1a0f031fcd712",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Govee v2 Color Lights 3 Driver",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights3Driver.groovy"
-    },
-    {
       "id": "definition:6a51c82431f70c35b9fd",
       "identities": [
         {
@@ -28085,6 +27985,26 @@ window.IDENTITY_INDEX = {
         "name": "Kohler DTV+ Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-kohlerdtv/master/drivers/Kohler_DTV%2B_Shower.groovy"
+    },
+    {
+      "id": "definition:71d64f1bfab7a958c8e6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Heatmiser Neo Plug",
+          "namespace": "cjcharles0"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "cjcharles0",
+        "communityUrl": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041",
+        "documentationUrl": "https://github.com/cjcharles0/Hubitat/drivers/heatmiser-neostat",
+        "id": "manifest:4aaf27175c54eaee3b9c",
+        "manifestUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json",
+        "name": "Heatmiser Neostat"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-plug-dth.groovy"
     },
     {
       "id": "definition:71fbd9ec685574959d05",
@@ -32502,6 +32422,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bcastellucci/hubitat/main/powerley/drivers/Powerley-Thermostat.groovy"
     },
     {
+      "id": "definition:926ef8c958696cfdc3b0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "$deviceName",
+          "namespace": "BirdsLikeWires"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Hive Receiver Heating",
+          "namespace": "BirdsLikeWires"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Andrew Davison",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/birdslikewires/hubitat/tree/main/hive",
+        "id": "hpm:A7ECBF4E-634F-4B5B-BF6B-1D511B830F21",
+        "manifestUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json",
+        "name": "Hive Drivers from BirdsLikeWires"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/drivers/hive_receiver_heating.groovy"
+    },
+    {
       "id": "definition:928c598638385a7644e6",
       "identities": [
         {
@@ -32960,6 +32905,26 @@ window.IDENTITY_INDEX = {
         "name": "Mila Air Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-mila-air/main/MilaAirPurifier.groovy"
+    },
+    {
+      "id": "definition:95926c0e7e18d06ffa1c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Govee v2 Color Lights Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLightsDriver.groovy"
     },
     {
       "id": "definition:95ab3f9120d476d13e04",
@@ -39137,6 +39102,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Generic/Z-Wave%20Repeater.groovy"
     },
     {
+      "id": "definition:c021abea6396633a9f44",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Govee v2 H7123 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
+    },
+    {
       "id": "definition:c04fe882a11d50b8d76d",
       "identities": [
         {
@@ -39445,6 +39430,26 @@ window.IDENTITY_INDEX = {
         "name": "SmartWings Zigbee Shades"
       },
       "sourceUrl": "https://raw.githubusercontent.com/diosadentro/Hubitat/main/Packages/Smartwings/SmartWings%20Zigbee%20Shades.groovy"
+    },
+    {
+      "id": "definition:c2a2faa88a42f3c67c94",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zooz ZEN37 Wall Remote Advanced",
+          "namespace": "jtp10181"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jeff Page (@jtp10181)",
+        "communityUrl": "https://community.hubitat.com/t/zooz-zen37-wall-remote/129335",
+        "documentationUrl": "https://github.com/jtp10181/Hubitat/tree/main/Drivers/zooz",
+        "id": "hpm:96fdbcd8-5ebe-47a8-881a-748574f0917e",
+        "manifestUrl": "https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json",
+        "name": "Zooz Scene Controllers Advanced Drivers"
+      },
+      "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen37-v1.0.0.groovy"
     },
     {
       "id": "definition:c2b5a2f4a341570efd56",
@@ -42702,26 +42707,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/FriedCheese2006/WindowTrackerPlus/main/WindowTracker_Device.groovy"
     },
     {
-      "id": "definition:d6536cfa473605110133",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Govee v2 Color Lights Driver",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLightsDriver.groovy"
-    },
-    {
       "id": "definition:d6576d0f8294a49df7b0",
       "identities": [
         {
@@ -44115,6 +44100,26 @@ window.IDENTITY_INDEX = {
         "name": "Tuya NEO Coolcam Zigbee Water Leak Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor/Tuya%20NEO%20Coolcam%20Zigbee%20Water%20Leak%20Sensor.groovy"
+    },
+    {
+      "id": "definition:def9c77236442e696b30",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Govee v2 Color Lights 3 Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights3Driver.groovy"
     },
     {
       "id": "definition:df0a2722ee2db97ad25a",
@@ -48225,5 +48230,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-08T01:59:37Z"
+  "snapshotGenerated": "2026-09-09T02:04:35Z"
 };

@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-08T01:59:37Z`.
+Latest observation: `2026-09-09T02:04:35Z`.
 
-**50 package change(s):** added 3, broken 4, declared definitions changed 17, removed 6, restored 2, source location changed 9, updated 31
+**50 package change(s):** added 3, broken 4, declared definitions changed 20, removed 6, restored 3, source location changed 7, updated 27
 
+- [Zooz Scene Controllers Advanced Drivers: changed declared definitions, was restored.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
+- [Presence Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json)
+- [NTFY Notifier Driver: updated.](https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hive Drivers from BirdsLikeWires: changed declared definitions.](https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json)
+- [Heatmiser Neostat: changed declared definitions.](https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json)
+- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
+- [AverageThis: changed declared definitions.](https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json)
 - [Zooz Scene Controllers Advanced Drivers: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
 - [OwnTracks Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/OwnTracks-Presence/packageManifest.json)
 - [Nexia Thermostat Manager / Trane Home: updated.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
@@ -46,13 +54,5 @@ Latest observation: `2026-09-08T01:59:37Z`.
 - [Nexia Thermostat Manager / Trane Home: added.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
 - [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
 - [Centralite Pearl Zigbee Thermostat: updated, changed source location, changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Shelly Webhook/Websocket Drivers: changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
-- [Shelly Webhook/Websocket Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
-- [Shabbat and Holiday Scheduler: updated.](https://raw.githubusercontent.com/dds82/shabbat/main/packageManifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

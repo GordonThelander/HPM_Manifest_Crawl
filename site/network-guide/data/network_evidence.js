@@ -1,8 +1,8 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 180,
-    "CLOUD": 256,
-    "INSUFFICIENT": 301,
+    "BOTH": 181,
+    "CLOUD": 257,
+    "INSUFFICIENT": 299,
     "LAN": 166
   },
   "dataset": "network-evidence-guide",
@@ -2090,8 +2090,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 4
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -7645,8 +7645,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 2
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 3
       },
       "reviewed": [],
       "tags": [
@@ -7912,8 +7912,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 3
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -15288,7 +15288,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Graf Technology, LLC",
       "category": "Notifications",
-      "classification": "INSUFFICIENT",
+      "classification": "CLOUD",
       "communityUrl": "https://community.hubitat.com/",
       "declared": {
         "cloudTag": false,
@@ -15300,10 +15300,12 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/packageManifest.json",
       "name": "NTFY Notifier Driver",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "docs.ntfy.sh"
+        ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 0
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -16665,7 +16667,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Combines Hubitat mobile geolocation presence, phone IP checks and Third Party Services switches into one reliable household occupancy status. Fast to Home, conservative to Away, with a Presence Report (90 day window, CSV export) and Guest Mode.",
+      "description": "Combines your phones' Hubitat mobile app presence, an optional network check per person, and optional Google Home or SmartThings input into one reliable Home/Away status for the household. Built so that one signal briefly dropping out does not make your automations behave as though everyone had left. Tracks up to 10 people, covers visitors with Guest Mode, and keeps 90 days of hours-at-home history per person with CSV export.",
       "documentationUrl": "https://github.com/GordonThelander/hubitat-Presence-Manager",
       "id": "hpm:4c666d00-1c4c-44ec-bd30-f3b6a9645374",
       "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json",
@@ -26711,7 +26713,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Jeff Page (@jtp10181)",
       "category": "Control",
-      "classification": "INSUFFICIENT",
+      "classification": "BOTH",
       "communityUrl": "https://community.hubitat.com/t/zooz-zen37-wall-remote/129335",
       "declared": {
         "cloudTag": false,
@@ -26723,10 +26725,15 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json",
       "name": "Zooz Scene Controllers Advanced Drivers",
       "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "externalHosts": [
+          "jtp10181.gateway.scarf.sh"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -27223,5 +27230,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-08T01:59:37Z"
+  "snapshotGenerated": "2026-09-09T02:04:35Z"
 };

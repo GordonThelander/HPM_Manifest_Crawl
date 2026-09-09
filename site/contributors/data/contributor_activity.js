@@ -4866,6 +4866,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:A7ECBF4E-634F-4B5B-BF6B-1D511B830F21",
           "packageName": "Hive Drivers from BirdsLikeWires",
           "summary": "Hive Drivers from BirdsLikeWires: changed declared definitions."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1e3d3de04e19d71757a43870",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:A7ECBF4E-634F-4B5B-BF6B-1D511B830F21",
+          "packageName": "Hive Drivers from BirdsLikeWires",
+          "summary": "Hive Drivers from BirdsLikeWires: changed declared definitions."
         }
       ],
       "appCount": 0,
@@ -4880,7 +4894,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 38,
       "id": "contributor:a1e64965b75ed45dfe29",
       "name": "Andrew Davison",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -5434,6 +5448,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:96fdbcd8-5ebe-47a8-881a-748574f0917e",
           "packageName": "Zooz Scene Controllers Advanced Drivers",
           "summary": "Zooz Scene Controllers Advanced Drivers: changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:564f0e6a233cbcae3de0cd36",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:96fdbcd8-5ebe-47a8-881a-748574f0917e",
+          "packageName": "Zooz Scene Controllers Advanced Drivers",
+          "summary": "Zooz Scene Controllers Advanced Drivers: changed declared definitions, was restored."
         }
       ],
       "appCount": 1,
@@ -5452,7 +5481,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 28,
       "id": "contributor:f660df350c7b06eed270",
       "name": "Jeff Page (@jtp10181)",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -7267,6 +7296,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:245d904c-d8a4-4c35-8788-6fb5f8962335",
           "packageName": "AverageThis",
           "summary": "AverageThis: changed declared definitions."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ef7e6c38a0d035d0a07ef59e",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:245d904c-d8a4-4c35-8788-6fb5f8962335",
+          "packageName": "AverageThis",
+          "summary": "AverageThis: changed declared definitions."
         }
       ],
       "appCount": 8,
@@ -7281,7 +7324,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:0f0655b75747be44393e",
       "name": "csteele",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 4,
@@ -7829,6 +7872,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:4aaf27175c54eaee3b9c",
           "packageName": "Heatmiser Neostat",
           "summary": "Heatmiser Neostat: changed declared definitions."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b0e98971071c194b103da4b9",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:4aaf27175c54eaee3b9c",
+          "packageName": "Heatmiser Neostat",
+          "summary": "Heatmiser Neostat: changed declared definitions."
         }
       ],
       "appCount": 0,
@@ -7843,7 +7900,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:31607033023aad2d38db",
       "name": "cjcharles0",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -8440,6 +8497,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
           "packageName": "Govee Integration v2",
           "summary": "Govee Integration v2: changed declared definitions."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:afd48fd31122c8127562d2b9",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+          "packageName": "Govee Integration v2",
+          "summary": "Govee Integration v2: changed declared definitions."
         }
       ],
       "appCount": 7,
@@ -8458,7 +8529,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 54,
       "id": "contributor:9cc5054c6895052a301d",
       "name": "Mavrrick",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -10472,6 +10543,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fbbccb511601a7dc3a376b98",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:4c666d00-1c4c-44ec-bd30-f3b6a9645374",
+          "packageName": "Presence Manager",
+          "summary": "Presence Manager: updated."
         }
       ],
       "appCount": 3,
@@ -10498,7 +10583,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 10,
+      "observedActivityCount": 11,
       "packages": [
         {
           "appCount": 1,
@@ -10548,9 +10633,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:4c666d00-1c4c-44ec-bd30-f3b6a9645374",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json",
           "name": "Presence Manager",
-          "publisherDate": "2026-08-09",
+          "publisherDate": "2026-09-08",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "5.0.0"
+          "version": "5.1.1"
         }
       ]
     },
@@ -13278,7 +13363,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Notifications",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0c618749b2bcc42870b6cc65",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "hpm:b6670762-37bb-4af0-b563-969f470d58bf",
+          "packageName": "NTFY Notifier Driver",
+          "summary": "NTFY Notifier Driver: updated."
+        }
+      ],
       "appCount": 0,
       "categories": [
         {
@@ -13291,7 +13391,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -13315,9 +13415,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:b6670762-37bb-4af0-b563-969f470d58bf",
           "manifestUrl": "https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/packageManifest.json",
           "name": "NTFY Notifier Driver",
-          "publisherDate": "2025-06-16",
+          "publisherDate": "2026-09-08",
           "repositoryUrl": "https://raw.githubusercontent.com/graftechnology/hubitat-hpm-repository/main/repository.json",
-          "version": "1.0.0"
+          "version": "1.1.1"
         }
       ]
     },
@@ -16925,6 +17025,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4efe9a7b4835114103e4e4fc",
+          "observedAt": "2026-09-09T02:04:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -16939,7 +17053,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 7,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 2,
@@ -16950,9 +17064,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-07",
+          "publisherDate": "2026-09-08",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.2.2"
+          "version": "4.2.5"
         }
       ]
     },
@@ -19284,10 +19398,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 903,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 172,
-    "eventCount": 171,
+    "attributedEventCount": 180,
+    "eventCount": 179,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-08T01:59:37Z"
+    "lastObservedAt": "2026-09-09T02:04:35Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -19301,7 +19415,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 900,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-08T01:59:37Z",
+  "snapshotGenerated": "2026-09-09T02:04:35Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
