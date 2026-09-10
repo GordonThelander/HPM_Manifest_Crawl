@@ -4100,6 +4100,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:930aa025cdd43813f295",
           "packageName": "OwnTracks Presence",
           "summary": "OwnTracks Presence: updated."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:83a82af17c18a5f2dd982ab1",
+          "observedAt": "2026-09-10T02:01:21Z",
+          "observedCommit": null,
+          "packageId": "manifest:f11fdc6c0df7bac0ad7f",
+          "packageName": "Geofency Presence",
+          "summary": "Geofency Presence: updated."
         }
       ],
       "appCount": 11,
@@ -4126,7 +4140,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 2,
@@ -4163,9 +4177,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f11fdc6c0df7bac0ad7f",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json",
           "name": "Geofency Presence",
-          "publisherDate": "2026-09-07",
+          "publisherDate": "2026-09-09",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.0.0"
+          "version": "2.0.1"
         },
         {
           "appCount": 1,
@@ -17039,6 +17053,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:62b9906648f4fd1c7cb8bcc8",
+          "observedAt": "2026-09-10T02:01:21Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -17053,7 +17081,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 8,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 2,
@@ -17064,9 +17092,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-08",
+          "publisherDate": "2026-09-09",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.2.5"
+          "version": "4.2.6"
         }
       ]
     },
@@ -19398,10 +19426,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 903,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 180,
-    "eventCount": 179,
+    "attributedEventCount": 182,
+    "eventCount": 181,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-09T02:04:35Z"
+    "lastObservedAt": "2026-09-10T02:01:21Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -19415,7 +19443,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 900,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-09T02:04:35Z",
+  "snapshotGenerated": "2026-09-10T02:01:21Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

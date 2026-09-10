@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-09T02:04:35Z`.
+Latest observation: `2026-09-10T02:01:21Z`.
 
-**50 package change(s):** added 3, broken 4, declared definitions changed 20, removed 6, restored 3, source location changed 7, updated 27
+**48 package change(s):** added 2, broken 3, declared definitions changed 18, removed 6, restored 3, source location changed 5, updated 26
 
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
 - [Zooz Scene Controllers Advanced Drivers: changed declared definitions, was restored.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
 - [Presence Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json)
 - [NTFY Notifier Driver: updated.](https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/packageManifest.json)
@@ -50,9 +52,5 @@ Latest observation: `2026-09-09T02:04:35Z`.
 - [EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
 - [Date & Time Parser: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [PositionGuard: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
-- [Nexia Thermostat Manager / Trane Home: added.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
-- [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
-- [Centralite Pearl Zigbee Thermostat: updated, changed source location, changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
