@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-10T02:01:21Z`.
+Latest observation: `2026-09-11T01:59:52Z`.
 
-**48 package change(s):** added 2, broken 3, declared definitions changed 18, removed 6, restored 3, source location changed 5, updated 26
+**40 package change(s):** added 2, broken 1, declared definitions changed 15, removed 6, restored 3, source location changed 3, updated 20
 
+- [Third Reality Custom Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
 - [Zooz Scene Controllers Advanced Drivers: changed declared definitions, was restored.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
@@ -42,15 +44,5 @@ Latest observation: `2026-09-10T02:01:21Z`.
 - [IKEA Zigbee drivers: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
 - [Hubitat drivers for NodOn smart devices.: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
 - [EMS-ESP Gateway: updated, changed source location, changed declared definitions, was restored.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
-- [Sprinkler Schedule Manager: updated.](https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/SprinklerSchedule/PackageManifest.json)
-- [Shelly Webhook/Websocket Drivers: updated, changed source location.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [LGTV with webOS: updated, changed source location, changed declared definitions, became unavailable.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
-- [IKEA Zigbee drivers: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
-- [Hubitat drivers for NodOn smart devices.: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
-- [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
-- [EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
-- [Date & Time Parser: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2254,
+  "definitionCount": 2255,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -30817,6 +30817,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-13.groovy"
     },
     {
+      "id": "definition:888e9c2bff52f36332a8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Third Reality RGBW Bulb (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Third Reality RGBW Bulb Custom",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/jshimota01/hubitat",
+        "id": "manifest:d6513611d38422ced953",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
+        "name": "Third Reality Custom Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_rgbw_bulb_custom/third_reality_rgbw_bulb_custom.groovy"
+    },
+    {
       "id": "definition:88cc7b1197b73f33c02c",
       "identities": [
         {
@@ -48230,5 +48255,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-10T02:01:21Z"
+  "snapshotGenerated": "2026-09-11T01:59:52Z"
 };
