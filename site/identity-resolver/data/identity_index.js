@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2255,
+  "definitionCount": 2212,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -1750,31 +1750,6 @@ window.IDENTITY_INDEX = {
         "name": "Thermostat Tracker"
       },
       "sourceUrl": "https://raw.githubusercontent.com/napalmcsr/Hubitat_Napalmcsr/master/Apps/ThermostatTracker/ThermostatTracker.src"
-    },
-    {
-      "id": "definition:0548e47044d66aba16d5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainpage",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Hub-a-Dashery",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
-        "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
-        "name": "Hub-a-Dashery"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/hub-a-dashery_1.3.0/hub-a-dashery-app/hub-a-dashery.groovy"
     },
     {
       "id": "definition:05b12e13c7d388ab6326",
@@ -6862,26 +6837,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/pharrison5/Hubitat/refs/heads/main/UnfoldedCircleIntegration/UnfoldedCircleRemote3App.groovy"
     },
     {
-      "id": "definition:7c7b4767d06b78031d1f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Zigbee Graph",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
-        "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
-        "name": "zigbee-graph"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-graph-app_2.3.0/zigbee-graph-app/zigbee-graph.groovy"
-    },
-    {
       "id": "definition:7c7cd8d1b294e2461754",
       "identities": [
         {
@@ -7350,31 +7305,6 @@ window.IDENTITY_INDEX = {
         "name": "SmartHQ GE Appliances Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/apps/smartHQ_app"
-    },
-    {
-      "id": "definition:8be7492e9c6826d8e773",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Lumos Automation 1.1.0",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lumos Automation",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
-        "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
-        "name": "Lumos"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lumos-app_1.1.0/lumos-app/lumos-automation.groovy"
     },
     {
       "id": "definition:8c0eade066477364f109",
@@ -7925,31 +7855,6 @@ window.IDENTITY_INDEX = {
         "name": "Hub Monitor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/hubMonitor.groovy"
-    },
-    {
-      "id": "definition:97799cdb2c23c8bf8904",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "${APP_NAME} ${APP_VERSION}",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Watchtower",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-        "name": "Watchtower"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower.groovy"
     },
     {
       "id": "definition:97e0c131129b11987176",
@@ -9700,31 +9605,6 @@ window.IDENTITY_INDEX = {
         "name": "Device Data Item Display"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/devDataDisp.groovy"
-    },
-    {
-      "id": "definition:be7c2c28287ebb4ef5db",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Lumos 1.1.0",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lumos",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
-        "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
-        "name": "Lumos"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lumos-app_1.1.0/lumos-app/lumos.groovy"
     },
     {
       "id": "definition:be9c154586f7dfeebc36",
@@ -12217,31 +12097,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/FFL/refs/heads/main/FFL%20Instance%20App.groovy"
     },
     {
-      "id": "definition:fabe76efc2261bc09097",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "${APP_NAME} ${APP_VERSION}",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Zigbee Map",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-        "name": "Zigbee Map"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map.groovy"
-    },
-    {
       "id": "definition:fac125799a5ccd613c2f",
       "identities": [
         {
@@ -12912,31 +12767,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse42-v1.2.2.groovy"
     },
     {
-      "id": "definition:051f6a84d48dfda0f0b1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "status",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "LGTV Remote",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-        "name": "LGTV with webOS"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/component/lgtv-remote.groovy"
-    },
-    {
       "id": "definition:0578c4e79a20fc7b0a56",
       "identities": [
         {
@@ -13380,26 +13210,6 @@ window.IDENTITY_INDEX = {
         "name": "Bosch Drivers via Zigbee2MQTT from BirdsLikeWires"
       },
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/bosch/drivers/bosch_twinguard.groovy"
-    },
-    {
-      "id": "definition:085907664e29b0480581",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Dimmable Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_DIM-Light.groovy"
     },
     {
       "id": "definition:090a440dd33c16f5b976",
@@ -14017,31 +13827,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/notifyTile.groovy"
     },
     {
-      "id": "definition:0d1b64a5b90e9ae01bde",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Control Outlet (E1603)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1603.groovy"
-    },
-    {
       "id": "definition:0d416132fb60ab70af73",
       "identities": [
         {
@@ -14615,31 +14400,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Log Display Tile"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/logTile.groovy"
-    },
-    {
-      "id": "definition:11a8dab6683c237033dc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Inspelning Smart Plug (E2206)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2206.groovy"
     },
     {
       "id": "definition:11dda83740b349366fae",
@@ -16482,31 +16242,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/AutoMower/master/websocket-device.groovy"
     },
     {
-      "id": "definition:1f78b4d14e51e31154b5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Open/Close Remote (E1766)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1766.groovy"
-    },
-    {
       "id": "definition:1fcd4dd77b08e0c56f40",
       "identities": [
         {
@@ -16850,31 +16585,6 @@ window.IDENTITY_INDEX = {
         "name": "AcuRite Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/device/acurite.groovy"
-    },
-    {
-      "id": "definition:237310034822021edb43",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Remote Control (E1810)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1810.groovy"
     },
     {
       "id": "definition:2378455d4565aff73dd9",
@@ -17697,6 +17407,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Pump_Device.groovy"
     },
     {
+      "id": "definition:2a863a220442bc39bbc5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "CentraLite Pearl Thermostat (Custom)",
+          "namespace": "jshimota"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Centralite Pearl Zigbee Thermostat",
+          "namespace": "jshimota"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "James Shimota",
+        "communityUrl": "https://community.hubitat.com/t/release-centralite-pearl-aka-model-3157100-zigbee-thermostat/164420",
+        "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/README.md",
+        "id": "manifest:13334e9f92b41eda17a5",
+        "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json",
+        "name": "Centralite Pearl Zigbee Thermostat"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/centralitePearlThermostat.groovy"
+    },
+    {
       "id": "definition:2a94f6760e1c2067b981",
       "identities": [
         {
@@ -17795,31 +17530,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeon SmartStrip"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/aeonsmartstrip.groovey"
-    },
-    {
-      "id": "definition:2aee0c39d6372f13e382",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Text*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "LGTV with webOS",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-        "name": "LGTV with webOS"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/lgtv-with-webos.groovy"
     },
     {
       "id": "definition:2b58ac26d224781637e4",
@@ -18065,31 +17775,6 @@ window.IDENTITY_INDEX = {
         "name": "LIFX Light Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/drivers/LIFX_Local_White_Mono_Driver.groovy"
-    },
-    {
-      "id": "definition:2d0ae2b16401722e1b59",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Somrig Shortcut Button (E2213)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2213.groovy"
     },
     {
       "id": "definition:2d0ee6b49ade013b2245",
@@ -19002,26 +18687,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentValve.groovy"
     },
     {
-      "id": "definition:33265783cf1695406a65",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Watchtower Events",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-        "name": "Watchtower"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower-events.groovy"
-    },
-    {
       "id": "definition:332dc333313eeec290e0",
       "identities": [
         {
@@ -19225,31 +18890,6 @@ window.IDENTITY_INDEX = {
         "name": "GE Z-Wave Plus Motion Switch Combo Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE%20Z-Wave%20Plus%20Motion%20Switch%20Combo%20Driver/GE%20Z-Wave%20Plus%20Motion%20Switch%20Combo%20Driver.groovy"
-    },
-    {
-      "id": "definition:341a2e8252381822ec66",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Color White Spectrum Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_CWS-Light.groovy"
     },
     {
       "id": "definition:345a1ec6ac768258e2d6",
@@ -19650,31 +19290,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_SmartHQ"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_oven"
-    },
-    {
-      "id": "definition:383f84c0cdf427727f9c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Motion Sensor (E1745)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1745.groovy"
     },
     {
       "id": "definition:3886218d91ab31e7b2e1",
@@ -20875,31 +20490,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:4213b80b167735d816a6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Askvader On/Off Switch (E1836)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1836.groovy"
     },
     {
       "id": "definition:422ca383133f2b2bfb94",
@@ -22745,26 +22335,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:4dd1d0547cdac90d83ea",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "EMS-ESP - Gas Burner Component",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-        "name": "EMS-ESP Gateway"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-gasburner.groovy"
     },
     {
       "id": "definition:4dd79499aea011e29966",
@@ -25102,31 +24672,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2MultiLightFloorLamp.groovy"
     },
     {
-      "id": "definition:5d38cf493545e4b45255",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Pilot Wire Heating Module (SIN-4-FP-21)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-FP-21.groovy"
-    },
-    {
       "id": "definition:5d9112943fabd35c9d56",
       "identities": [
         {
@@ -27162,31 +26707,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/generic-appliance/generic-appliance-device.groovy"
     },
     {
-      "id": "definition:6c5ad4a1217d73e308b0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Vindstyrka Air Quality Sensor (E2112)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2112.groovy"
-    },
-    {
       "id": "definition:6c66af2704081222a7c7",
       "identities": [
         {
@@ -28302,31 +27822,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/AirQuality-AirNow/main/AirQuality-AirNow.groovy"
     },
     {
-      "id": "definition:73844718534bf9e08159",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Fan speed*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Starkvind Air Purifier (E2006)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2006.groovy"
-    },
-    {
       "id": "definition:73d8452043c515160b6e",
       "identities": [
         {
@@ -29210,31 +28705,6 @@ window.IDENTITY_INDEX = {
         "name": "HTTP Presence Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-HTTP-Presence-Sensor/master/httpPresenceSensor.groovy"
-    },
-    {
-      "id": "definition:7ba96ab72cc4e8b5f918",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Badring Water Leakage Sensor (E2202)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2202.groovy"
     },
     {
       "id": "definition:7bbda0150abf5215b173",
@@ -31117,31 +30587,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_powerclamp.groovy"
     },
     {
-      "id": "definition:8ab7eb4478f95db0f614",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Symfonisk Sound Remote Gen2 (E2123)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2123.groovy"
-    },
-    {
       "id": "definition:8b04a2106baa4ddecfd5",
       "identities": [
         {
@@ -31467,31 +30912,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectController"
     },
     {
-      "id": "definition:8ce9346e6a6abad7cc16",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "State*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Parasoll Door/Window Sensor (E2013)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2013.groovy"
-    },
-    {
       "id": "definition:8d0019b9a20ced1ee77b",
       "identities": [
         {
@@ -31770,31 +31190,6 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Apex Bridge (A3 Series)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tinkorswim/hubitat-neptuneapex/1.0.1/drivers/NeptuneApex.groovy"
-    },
-    {
-      "id": "definition:8e8dbbb51ecf273a2870",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Multifunction Relay Switch (SIN-4-1-20)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-20.groovy"
     },
     {
       "id": "definition:8ea927265acf95f96773",
@@ -34787,26 +34182,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_hood"
     },
     {
-      "id": "definition:a340b33fa09aed142a0c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Dashboard Widgets",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@agamemnon.dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md",
-        "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json",
-        "name": "Dashboard Widgets"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/dashboard-widgets-driver_1.5.0/dashboard-widgets-driver/dashboard-widgets.groovy"
-    },
-    {
       "id": "definition:a3568cedddbed5349f29",
       "identities": [
         {
@@ -35762,31 +35137,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/drivers/BOND_Fan_Dimmable_Light.groovy"
     },
     {
-      "id": "definition:aa0420c6b7d837cb522f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Shortcut Button (E1812)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1812.groovy"
-    },
-    {
       "id": "definition:aa0ad02b132d6df84621",
       "identities": [
         {
@@ -36075,31 +35425,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Hayward AquaConnect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardHeaterSwitch.groovy"
-    },
-    {
-      "id": "definition:ab5a181ebf95d01fa580",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Styrbar Remote Control N2 (E2002)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
     },
     {
       "id": "definition:ac1768908b74d96729cd",
@@ -38365,31 +37690,6 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/sunstat-thermostat/sunstat-thermostat-child.groovy"
-    },
-    {
-      "id": "definition:ba8f8fea0c87b64b850b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Rodret Dimmer (E2201)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2201.groovy"
     },
     {
       "id": "definition:baa9465419af257cf178",
@@ -41457,31 +40757,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-battery/homekit-battery.groovy"
     },
     {
-      "id": "definition:cf10a0551602092ca6f6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "EMS-ESP - Gateway",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-        "name": "EMS-ESP Gateway"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/ems-esp-gateway.groovy"
-    },
-    {
       "id": "definition:cf3bf4a2e4ce4851fd57",
       "identities": [
         {
@@ -41865,46 +41140,6 @@ window.IDENTITY_INDEX = {
         "name": "BLE Gateway Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/ble-beacon.groovy"
-    },
-    {
-      "id": "definition:d05dadff9e995817d7f0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NodOn Component Relay Switch",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/component/NodOn_ComponentRelaySwitch.groovy"
-    },
-    {
-      "id": "definition:d0871e7103dcf00686e6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "EMS-ESP - Hot Water Component",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-        "name": "EMS-ESP Gateway"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-hotwater.groovy"
     },
     {
       "id": "definition:d0965970401430575a83",
@@ -42482,31 +41717,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse41-v1.2.2.groovy"
     },
     {
-      "id": "definition:d43c517bcc2722971ec7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Roller Shutter Relay Switch (SIN-4-RS-20)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-RS-20.groovy"
-    },
-    {
       "id": "definition:d4ab3ae565b7e40b0d3e",
       "identities": [
         {
@@ -42837,26 +42047,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/hubitat/drivers/RingSmartLight.groovy"
     },
     {
-      "id": "definition:d725d7c3e6eb2ba9e369",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "EMS-ESP - Heating Component",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-        "name": "EMS-ESP Gateway"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-heating.groovy"
-    },
-    {
       "id": "definition:d7407b202b6751e3242f",
       "identities": [
         {
@@ -43022,31 +42212,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Dimmer_Switch.groovy"
     },
     {
-      "id": "definition:d836c764505719a1c54f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Signal Repeater (E1746)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1746.groovy"
-    },
-    {
       "id": "definition:d83942db152558a9bcd0",
       "identities": [
         {
@@ -43125,31 +42290,6 @@ window.IDENTITY_INDEX = {
         "name": "Generic Dimmer (with Presence)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-generic-dimmer-expanded.groovy"
-    },
-    {
-      "id": "definition:d86757e04d7334594e8f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Relay Switch with Metering (SIN-4-1-21)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-21.groovy"
     },
     {
       "id": "definition:d8de01de97623237832a",
@@ -43917,31 +43057,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dds82/shabbat/main/shabbat-and-holiday-scheduler.groovy"
     },
     {
-      "id": "definition:dcec84fea2c7b5a53022",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA White Spectrum Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_WS-Light.groovy"
-    },
-    {
       "id": "definition:dd02dc30e62b01129277",
       "identities": [
         {
@@ -44192,31 +43307,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
     },
     {
-      "id": "definition:df48d0d5c5974c37420d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Lighting Relay Switch (SIN-4-2-20)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-2-20.groovy"
-    },
-    {
       "id": "definition:dfd9ec362cd74a7b7093",
       "identities": [
         {
@@ -44315,31 +43405,6 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Systems Apex"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexChild.groovy"
-    },
-    {
-      "id": "definition:e0bb1c0aad3bca66f261",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "logEnable",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Zigbee Map Helper",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-        "name": "Zigbee Map"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map-helper.groovy"
     },
     {
       "id": "definition:e0bc800026adb5c51ee7",
@@ -46122,31 +45187,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-gdov2-q.groovy"
     },
     {
-      "id": "definition:eddffdfb2d3969615afa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Vallhorn Motion Sensor (E2134)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2134.groovy"
-    },
-    {
       "id": "definition:ee3ec2cf5b13e1095ee7",
       "identities": [
         {
@@ -47112,31 +46152,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen-plugs-mcp-v1.2.6.groovy"
     },
     {
-      "id": "definition:f66b271b2d208c4d1b3e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri On/Off Switch (E1743)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1743.groovy"
-    },
-    {
       "id": "definition:f680811566dcaeb508f2",
       "identities": [
         {
@@ -47350,31 +46365,6 @@ window.IDENTITY_INDEX = {
         "name": "LokiLogLogger"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Loki/LokiLogLogger.groovy"
-    },
-    {
-      "id": "definition:f7fd49c7e679e32dbe1e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tretakt Smart Plug (E2204)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2204.groovy"
     },
     {
       "id": "definition:f8171f106aa719afad52",
@@ -47897,31 +46887,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/yonatan-mitmit/HubitatAnthem/main/AnthemChild.groovy"
     },
     {
-      "id": "definition:fcf658ebfc7c78edc3c9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA RGB-Only Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_RGBO-Light.groovy"
-    },
-    {
       "id": "definition:fd046594fbef975f04e0",
       "identities": [
         {
@@ -48255,5 +47220,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-11T01:59:52Z"
+  "snapshotGenerated": "2026-09-12T02:04:38Z"
 };
