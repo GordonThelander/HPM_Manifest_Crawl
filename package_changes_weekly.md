@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-13T01:59:30Z`.
+Latest observation: `2026-09-13T07:29:20Z`.
 
-**68 package change(s):** added 20, broken 1, declared definitions changed 11, removed 19, restored 1, source location changed 1, updated 19
+**70 package change(s):** added 20, broken 1, declared definitions changed 12, removed 19, restored 1, source location changed 2, updated 20
 
+- [YoLink Devices: changed source location, changed declared definitions.](https://raw.githubusercontent.com/srbarcus/YoLink/master/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [zigbee-graph: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
 - [Zigbee Map: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)

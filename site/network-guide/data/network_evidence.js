@@ -25999,8 +25999,8 @@ window.NETWORK_EVIDENCE = {
           "www.paypal.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 30,
-        "urlLiteralCount": 67
+        "sourceFilesAnalysed": 31,
+        "urlLiteralCount": 69
       },
       "reviewed": [
         {
@@ -27369,5 +27369,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-13T01:59:30Z"
+  "snapshotGenerated": "2026-09-13T07:29:20Z"
 };

@@ -433,7 +433,23 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [],
+      "hpmMatches": [
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+          "packageName": "Lumos"
+        },
+        {
+          "basis": [
+            "EXACT_LINK",
+            "EXACT_NAME"
+          ],
+          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "packageName": "Zigbee Map"
+        }
+      ],
       "id": "community-app:22d9c1d7e2597e342ec5",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1114,7 +1130,15 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [],
+      "hpmMatches": [
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "packageName": "Watchtower"
+        }
+      ],
       "id": "community-app:b7525ab8164d671dbde7",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1540,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2263,
+  "definitionCount": 2264,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -25983,6 +26007,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy"
     },
     {
+      "id": "definition:62c81e24ac1d4573a40e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "YoLink SmokeAlarm Device",
+          "namespace": "srbarcus"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Steven Barcus",
+        "communityUrl": "https://community.hubitat.com/t/released-beta-yolink-device-service-app-and-drivers-to-connect-hubitat-to-yolink-devices/96432",
+        "documentationUrl": "https://github.com/srbarcus/yolink/wiki",
+        "id": "hpm:1826c98e-3343-4287-a666-5cb0a79ecfb2",
+        "manifestUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/packageManifest.json",
+        "name": "YoLink Devices"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/SmokeAlarm_Device.groovy"
+    },
+    {
       "id": "definition:62d5c7cb6b4ae9ee6ead",
       "identities": [
         {
@@ -48406,5 +48450,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-13T01:59:30Z"
+  "snapshotGenerated": "2026-09-13T07:29:20Z"
 };
