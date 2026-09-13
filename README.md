@@ -254,3 +254,12 @@ and takes the version from that file's own `schemaVersion` field. Versioned copi
 `..._v0.3.json` are kept as historical snapshots and are not referenced by any code, so a
 version bump no longer requires touching scripts or the workflow.
 
+
+## License
+
+The code in this repository, and the registry and datasets it curates, are licensed under the
+[Apache License 2.0](LICENSE). Copyright 2026 Gordon Thelander.
+
+Content harvested from third parties, including HPM package manifests, Hubitat community forum
+posts and Hubitat documentation, remains the property of its original authors and is not relicensed
+by this repository. It is referenced and summarised here for discovery and compatibility purposes.
