@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 179,
-    "CLOUD": 252,
-    "INSUFFICIENT": 295,
-    "LAN": 167
+    "BOTH": 181,
+    "CLOUD": 259,
+    "INSUFFICIENT": 299,
+    "LAN": 169
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 893,
+  "packageCount": 908,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -806,6 +806,33 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Multi Sensors",
         "ZWave"
+      ]
+    },
+    {
+      "author": "viertaxa",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "A more preference filled alternative driver.",
+      "documentationUrl": "https://community.hubitat.com/t/beta-release-aeotec-hem-gen5-2-phase-driver/60053",
+      "id": "manifest:fb392e51fc95c0669c3c",
+      "manifestUrl": "https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json",
+      "name": "AeotecHEMGen5 Driver",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Lights & Switches"
       ]
     },
     {
@@ -2156,6 +2183,31 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Mike Maxwell",
+      "category": "Control",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Set Device Parameters, manually.",
+      "documentationUrl": null,
+      "id": "manifest:78cfd13a636721fec87d",
+      "manifestUrl": "https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json",
+      "name": "Basic Z-Wave tool",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Craig Romei",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -2708,8 +2760,8 @@ window.NETWORK_EVIDENCE = {
       },
       "description": "A Zigbee Thermostat driver specific to the Centralite Pearl Thermostat device, (aka Centralite model 3157100). Driver includes FanCirculate feature and accounts for thermostat hardware lack of Auto mode",
       "documentationUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/README.md",
-      "id": "manifest:13334e9f92b41eda17a5",
-      "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json",
+      "id": "manifest:3e874b873da2ba4628cc",
+      "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
       "name": "Centralite Pearl Zigbee Thermostat",
       "observed": {
         "externalHosts": [],
@@ -3493,6 +3545,32 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Misc. Devices"
+      ]
+    },
+    {
+      "author": "Dan Danache (@agamemnon.dandanache)",
+      "category": "Utility",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Allows you to add custom widgets to Hubitat dashboards.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md",
+      "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json",
+      "name": "Dashboard Widgets",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Dashboards",
+        "Tools & Utilities"
       ]
     },
     {
@@ -4652,6 +4730,34 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Energy Monitoring"
+      ]
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "BOTH",
+      "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Control your boiler using an EMS-ESP Gateway.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+      "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+      "name": "EMS-ESP Gateway",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 15
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "LAN"
       ]
     },
     {
@@ -8850,6 +8956,31 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "View dashboards for your Hubitat hub metrics.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
+      "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
+      "name": "Hub-a-Dashery",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Thomas Howard",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -9056,6 +9187,33 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Lights & Switches"
+      ]
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Drivers for the following NodOn devices: SIN-4-1-20, SIN-4-1-21, SIN-4-2-20, SIN-4-FP-21, SIN-4-RS-20.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+      "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+      "name": "Hubitat drivers for NodOn smart devices.",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 6,
+        "urlLiteralCount": 27
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities"
       ]
     },
     {
@@ -10613,6 +10771,37 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Control",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Drivers for most of the IKEA Zigbee smart devices including TRADFRI lights.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+      "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+      "name": "IKEA Zigbee drivers",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org",
+          "en.wikipedia.org",
+          "www.urbandictionary.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 23,
+        "urlLiteralCount": 139
+      },
+      "reviewed": [],
+      "tags": [
+        "Buttons",
+        "Lights & Switches",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "Simon Burke (sburke781)",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -10636,6 +10825,33 @@ window.NETWORK_EVIDENCE = {
       },
       "reviewed": [],
       "tags": []
+    },
+    {
+      "author": "Denny Page",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/influxdb-logger/110548",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Log Hubitat device states to an InfluxDB database",
+      "documentationUrl": null,
+      "id": "manifest:7abc25a79ef01d4588a9",
+      "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json",
+      "name": "InfluxDB-Logger",
+      "observed": {
+        "externalHosts": [
+          "docs.influxdata.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 7
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities"
+      ]
     },
     {
       "author": "Jed Brown",
@@ -12279,6 +12495,40 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "BOTH",
+      "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Control your LG webOS TV.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+      "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+      "name": "LGTV with webOS",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org",
+          "gist.github.com"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 13
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances",
+        "LAN",
+        "Multimedia"
+      ]
+    },
+    {
       "author": "Andrew Davison",
       "category": null,
       "classification": "INSUFFICIENT",
@@ -13006,6 +13256,33 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Speakers"
+      ]
+    },
+    {
+      "author": "Dan Danache",
+      "category": "Utility",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Control lights using motion and contact sensors.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
+      "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
+      "name": "Lumos",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Doors & Windows",
+        "Lights & Switches",
+        "Motion Control"
       ]
     },
     {
@@ -14476,9 +14753,39 @@ window.NETWORK_EVIDENCE = {
       },
       "description": "Integrates MyQ garage doors into your Hubitat system",
       "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
-      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea",
+      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:a1ac809b3bc1401c750b",
       "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json",
       "name": "MyQ Garage Door Integration",
+      "observed": {
+        "externalHosts": [
+          "accounts.myq-cloud.com",
+          "devices.myq-cloud.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 13
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Doors & Windows",
+        "Garage Doors"
+      ]
+    },
+    {
+      "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/updated-myq-lite-application/31318",
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Integrates MyQ garage doors into your Hubitat system",
+      "documentationUrl": "https://github.com/dcmeglio/hubitat-myq/blob/master/README.md",
+      "id": "hpm:6171d49f-2b63-4cd9-91e6-0c978e979dea:efb824fecf01cac6e3aa",
+      "manifestUrl": "https://www.hubitatcommunity.com/MyQ/packageManifest.json",
+      "name": "MyQ Garage Door Integration 2023",
       "observed": {
         "externalHosts": [
           "accounts.myq-cloud.com",
@@ -24269,6 +24576,37 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Watchtower is the all-in-one app for long-term smart home monitoring and data visualization. Staying true to Hubitat's core value, the application works 100% locally, with no reliance on the cloud. Plus, there's no need for extra hardware like Raspberry Pi or NAS.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+      "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+      "name": "Watchtower",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org",
+          "raw.codeberg.page",
+          "www.urbandictionary.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 9
+      },
+      "reviewed": [],
+      "tags": [
+        "Dashboards",
+        "Monitoring",
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Brian Wilson",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
@@ -24970,6 +25308,33 @@ window.NETWORK_EVIDENCE = {
         "Health & Fitness",
         "Scales",
         "Sleep"
+      ]
+    },
+    {
+      "author": "joyfulhouse",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "WLED Device Type for Hubitat",
+      "documentationUrl": null,
+      "id": "hpm:232db656-52d1-4efa-b4d7-106c83c0c9c1",
+      "manifestUrl": "https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json",
+      "name": "WLED Driver",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Automations & Groups",
+        "LAN",
+        "Lights & Switches"
       ]
     },
     {
@@ -26033,6 +26398,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Visualize the topology and connectivity of your Zigbee network.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+      "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+      "name": "Zigbee Map",
+      "observed": {
+        "externalHosts": [
+          "codeberg.org"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "Gary J. Milne",
       "category": "Zigbee",
       "classification": "BOTH",
@@ -26161,6 +26554,34 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Lights & Switches"
+      ]
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Allows you to visually render getChildAndRouteInfo of your Hubitat system.",
+      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
+      "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
+      "name": "zigbee-graph",
+      "observed": {
+        "externalHosts": [
+          "ethanschoonover.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Tools & Utilities",
+        "Zigbee"
       ]
     },
     {
@@ -26948,5 +27369,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-12T02:04:38Z"
+  "snapshotGenerated": "2026-09-13T01:59:30Z"
 };

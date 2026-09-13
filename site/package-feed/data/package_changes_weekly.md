@@ -1,9 +1,31 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-12T02:04:38Z`.
+Latest observation: `2026-09-13T01:59:30Z`.
 
-**49 package change(s):** added 3, broken 1, declared definitions changed 11, removed 17, restored 1, source location changed 1, updated 19
+**68 package change(s):** added 20, broken 1, declared definitions changed 11, removed 19, restored 1, source location changed 1, updated 19
 
+- [zigbee-graph: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
+- [Zigbee Map: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Watchtower: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
+- [WLED Driver: added.](https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [MyQ Garage Door Integration 2023: added.](https://www.hubitatcommunity.com/MyQ/packageManifest.json)
+- [MyQ Garage Door Integration: added.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
+- [MyQ Garage Door Integration: removed.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
+- [Lumos: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json)
+- [LGTV with webOS: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
+- [InfluxDB-Logger: added.](https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json)
+- [IKEA Zigbee drivers: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
+- [Hubitat drivers for NodOn smart devices.: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
+- [Hub-a-Dashery: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [EMS-ESP Gateway: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
+- [Dashboard Widgets: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json)
+- [Centralite Pearl Zigbee Thermostat: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
+- [Centralite Pearl Zigbee Thermostat: removed.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json)
+- [Basic Z-Wave tool: added.](https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json)
+- [AeotecHEMGen5 Driver: added.](https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json)
 - [zigbee-graph: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
 - [Zigbee Map: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
@@ -50,8 +72,5 @@ Latest observation: `2026-09-12T02:04:38Z`.
 - [InfluxDB-Logger: removed.](https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json)
 - [Basic Z-Wave tool: removed.](https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json)
 - [AeotecHEMGen5 Driver: removed.](https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json)
-- [Yale Assure Lock 2 Driver: updated.](https://raw.githubusercontent.com/sleuth255/Yale_YRD4xx_Hubitat_driver/refs/heads/master/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
