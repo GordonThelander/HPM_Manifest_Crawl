@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 908,
+    "HPM_PACKAGE": 909,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2613,
+  "recordCount": 2614,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -55984,6 +55984,95 @@
       "version": "1.1.5"
     },
     {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-13",
+      "definitions": [
+        {
+          "id": "definition:2b647bca80cca2541161",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v2 - v3 Keypad",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v2-v3_keypad.groovy"
+        }
+      ],
+      "description": "Driver supports model# 1112-S and model# 3405-L iris keypads v2 and v3",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:fdad5c3b97cf10f30b64",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v2 v3 Keypad",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Lights & Switches",
+        "Locks",
+        "Misc. Devices",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.6.0"
+    },
+    {
       "author": "David Kilgore",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -61767,7 +61856,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-11",
+      "dateReleased": "2026-09-14",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -61849,7 +61938,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.3.0"
+      "version": "4.3.2"
     },
     {
       "author": "Justin Leonard",
@@ -76500,7 +76589,7 @@
       "author": "brossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-07-26",
+      "dateReleased": "2026-09-13",
       "definitions": [
         {
           "id": "definition:8eb68d19ce3c653e3a76",
@@ -76589,7 +76678,7 @@
         "Temperature & Humidity",
         "Water Heater"
       ],
-      "version": "0.2.1"
+      "version": "0.3.0"
     },
     {
       "author": "Dominick Meglio",
@@ -131959,5 +132048,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-13T07:48:47Z"
+  "snapshotGenerated": "2026-09-14T02:16:47Z"
 }

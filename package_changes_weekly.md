@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-13T07:48:47Z`.
+Latest observation: `2026-09-14T02:16:47Z`.
 
-**70 package change(s):** added 20, broken 1, declared definitions changed 12, removed 19, restored 1, source location changed 2, updated 20
+**73 package change(s):** added 21, broken 1, declared definitions changed 12, removed 19, restored 1, source location changed 2, updated 22
 
+- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Iris v2 v3 Keypad: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
 - [YoLink Devices: changed source location, changed declared definitions.](https://raw.githubusercontent.com/srbarcus/YoLink/master/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [zigbee-graph: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)

@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2264,
+  "definitionCount": 2265,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -17930,6 +17930,31 @@ window.IDENTITY_INDEX = {
         "name": "Package NewOne"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/newone/newone-power-meter-plug.groovy"
+    },
+    {
+      "id": "definition:2b647bca80cca2541161",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Iris v2 - v3 Keypad",
+          "namespace": "tmastersmart"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Iris v2 v3 Keypad",
+          "namespace": "tmastersmart"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "TheMaster",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "manifest:fdad5c3b97cf10f30b64",
+        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
+        "name": "Iris v2 v3 Keypad"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v2-v3_keypad.groovy"
     },
     {
       "id": "definition:2b96eea1d6afbdab104a",
@@ -48450,5 +48475,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-13T07:48:47Z"
+  "snapshotGenerated": "2026-09-14T02:16:47Z"
 };
