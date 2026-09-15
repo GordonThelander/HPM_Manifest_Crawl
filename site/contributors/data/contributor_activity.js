@@ -726,6 +726,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:fdad5c3b97cf10f30b64",
           "packageName": "Iris v2 v3 Keypad",
           "summary": "Iris v2 v3 Keypad: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0667ec85ebcb1343ea3197ec",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:2f1cae8564a80b2e8c9c",
+          "packageName": "Pump Scheduler",
+          "summary": "Pump Scheduler: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:45a766aa24aa998b4c6f329e",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:c6cb3e6d30261b6c9482",
+          "packageName": "Pump Scheduler",
+          "summary": "Pump Scheduler: added."
         }
       ],
       "appCount": 3,
@@ -748,7 +776,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 32,
       "id": "contributor:3d07aab59cd6c5d37cb7",
       "name": "TheMaster",
-      "observedActivityCount": 2,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 0,
@@ -1029,12 +1057,12 @@ window.CONTRIBUTOR_ACTIVITY = {
           "communityUrl": "https://community.hubitat.com/t/pump-scheduler/165333",
           "documentationUrl": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
           "driverCount": 0,
-          "id": "manifest:2f1cae8564a80b2e8c9c",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.grovey",
+          "id": "manifest:c6cb3e6d30261b6c9482",
+          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
           "name": "Pump Scheduler",
           "publisherDate": "2026-07-23",
           "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.0.6"
+          "version": "2.0.7"
         },
         {
           "appCount": 0,
@@ -4196,6 +4224,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:efabb1abe0697f27d87b93c3",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
         }
       ],
       "appCount": 11,
@@ -4222,7 +4264,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 15,
+      "observedActivityCount": 16,
       "packages": [
         {
           "appCount": 2,
@@ -4402,9 +4444,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-09-12",
+          "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.29.0"
+          "version": "1.30.0"
         }
       ]
     },
@@ -5674,6 +5716,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3e874b873da2ba4628cc",
           "packageName": "Centralite Pearl Zigbee Thermostat",
           "summary": "Centralite Pearl Zigbee Thermostat: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:09af64922bc8d8bbba89ebcd",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:d6513611d38422ced953",
+          "packageName": "Third Reality Custom Drivers",
+          "summary": "Third Reality Custom Drivers: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:aa07e3fd79aca2888463f52c",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:3e874b873da2ba4628cc",
+          "packageName": "Centralite Pearl Zigbee Thermostat",
+          "summary": "Centralite Pearl Zigbee Thermostat: updated."
         }
       ],
       "appCount": 2,
@@ -5692,7 +5762,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 10,
+      "observedActivityCount": 12,
       "packages": [
         {
           "appCount": 0,
@@ -5716,9 +5786,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:3e874b873da2ba4628cc",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
           "name": "Centralite Pearl Zigbee Thermostat",
-          "publisherDate": "2026-09-11",
+          "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.7.7"
+          "version": "0.7.8"
         },
         {
           "appCount": 0,
@@ -5781,9 +5851,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:d6513611d38422ced953",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
           "name": "Third Reality Custom Drivers",
-          "publisherDate": "2026-09-12",
+          "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "1.0.8"
+          "version": "1.0.9"
         },
         {
           "appCount": 0,
@@ -11004,6 +11074,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:04264ef2f0876aa4090b26ba",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -11030,7 +11114,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 1,
@@ -11041,9 +11125,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
           "name": "Automation Map",
-          "publisherDate": "2026-09-13",
+          "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.3.0"
+          "version": "2.3.1"
         },
         {
           "appCount": 0,
@@ -16823,6 +16907,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2014c6a46d9fdb00d2848bc0",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -16837,7 +16935,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 5,
+      "observedActivityCount": 6,
       "packages": [
         {
           "appCount": 1,
@@ -16848,9 +16946,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-09-12",
+          "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "1.6.6"
+          "version": "1.6.7"
         }
       ]
     },
@@ -17744,6 +17842,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:640c2ec953cb2ac76c52646e",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -17758,7 +17870,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 2,
@@ -17771,7 +17883,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "MCP Rule Server",
           "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.3.2"
+          "version": "4.3.3"
         }
       ]
     },
@@ -20158,10 +20270,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 226,
-    "eventCount": 226,
+    "attributedEventCount": 234,
+    "eventCount": 234,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-14T02:16:47Z"
+    "lastObservedAt": "2026-09-15T02:22:29Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -20175,7 +20287,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-14T02:16:47Z",
+  "snapshotGenerated": "2026-09-15T02:22:29Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

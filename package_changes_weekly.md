@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-14T02:16:47Z`.
+Latest observation: `2026-09-15T02:22:29Z`.
 
-**73 package change(s):** added 21, broken 1, declared definitions changed 12, removed 19, restored 1, source location changed 2, updated 22
+**63 package change(s):** added 20, declared definitions changed 7, removed 14, restored 1, source location changed 2, updated 23
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [Pump Scheduler: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json)
+- [Pump Scheduler: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.grovey)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Iris v2 v3 Keypad: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
@@ -59,23 +67,5 @@ Latest observation: `2026-09-14T02:16:47Z`.
 - [Heatmiser Neostat: changed declared definitions.](https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json)
 - [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
 - [AverageThis: changed declared definitions.](https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json)
-- [Zooz Scene Controllers Advanced Drivers: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
-- [OwnTracks Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/OwnTracks-Presence/packageManifest.json)
-- [Nexia Thermostat Manager / Trane Home: updated.](https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hive Drivers from BirdsLikeWires: changed declared definitions.](https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json)
-- [Heatmiser Neostat: changed declared definitions.](https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
-- [AverageThis: changed declared definitions.](https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json)
-- [WLED Driver: removed.](https://www.hubitatcommunity.com/hpm/WLEDDriver/packageManifest.json)
-- [Third Reality Custom Drivers: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [MyQ Garage Door Integration 2023: removed.](https://www.hubitatcommunity.com/MyQ/packageManifest.json)
-- [MyQ Garage Door Integration: added.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
-- [MyQ Garage Door Integration: removed.](https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [InfluxDB-Logger: removed.](https://raw.githubusercontent.com/HubitatCommunity/InfluxDB-Logger/master/PackageManifest.json)
-- [Basic Z-Wave tool: removed.](https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json)
-- [AeotecHEMGen5 Driver: removed.](https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
