@@ -45,23 +45,71 @@ def add_obs(out, seen, obs):
     out.append(obs)
 
 
-def find_literal_definition(text):
-    """Return literal definition name/namespace only when unambiguous.
+def definition_arguments(text, start):
+    """Return the text inside this definition( ... ) call, paren-balanced.
 
-    This deliberately does not parse/evaluate Groovy.  It examines a bounded
-    window following definition( and accepts only quoted literal values.
+    Bounded by the call itself rather than a fixed window: a window long enough
+    to hold a real definition block also reaches the next page(name: '...') in
+    an app that declares its own name through a constant, and that literal is
+    not this app's identity.
+    """
+    open_at = text.find('(', start)
+    if open_at == -1:
+        return None
+    depth = 0
+    for i in range(open_at, min(len(text), open_at + 20000)):
+        c = text[i]
+        if c == '(':
+            depth += 1
+        elif c == ')':
+            depth -= 1
+            if depth == 0:
+                return text[open_at + 1:i]
+    return None
+
+
+def resolve_constant(text, identifier):
+    """Resolve a Groovy String constant declared in the same file.
+
+    Only a plain, single-assignment literal counts. Anything computed, or
+    declared more than once with different values, stays unresolved.
+    """
+    if not identifier:
+        return None
+    pattern = (r'\b(?:@Field\s+)?(?:static\s+)?(?:final\s+)?'
+               r'(?:String|def|var)\s+' + re.escape(identifier) +
+               r"\s*=\s*(['\"])(.*?)\1")
+    values = {m.group(2) for m in re.finditer(pattern, text, re.DOTALL)}
+    return values.pop() if len(values) == 1 else None
+
+
+def field_value(args, field, text):
+    """The value of one definition field: a literal, or a constant it names."""
+    literal = re.search(r'\b' + field + r"\s*:\s*(['\"])(.*?)\1", args, re.DOTALL)
+    if literal:
+        return literal.group(2)
+    named = re.search(r'\b' + field + r'\s*:\s*([A-Za-z_][A-Za-z0-9_]*)\s*(?:,|$)', args)
+    if named:
+        return resolve_constant(text, named.group(1))
+    return None
+
+
+def find_literal_definition(text):
+    """Return the definition name/namespace only when unambiguous.
+
+    Accepts a quoted literal, or a constant declared once in the same file.
+    This still does not parse or evaluate Groovy: anything it cannot read
+    plainly is reported as unknown rather than guessed at.
     """
     hits = []
     for m in DEFINITION_RE.finditer(text):
-        window = text[m.start():m.start() + 4000]
-        name_m = re.search(r'\bname\s*:\s*([\'\"])(.*?)\1', window, re.DOTALL)
-        ns_m = re.search(r'\bnamespace\s*:\s*([\'\"])(.*?)\1', window, re.DOTALL)
-        if name_m or ns_m:
-            hits.append((
-                name_m.group(2) if name_m else None,
-                ns_m.group(2) if ns_m else None,
-                line_number(text, m.start()),
-            ))
+        args = definition_arguments(text, m.start())
+        if args is None:
+            continue
+        name = field_value(args, 'name', text)
+        namespace = field_value(args, 'namespace', text)
+        if name or namespace:
+            hits.append((name, namespace, line_number(text, m.start())))
     unique = {(a, b) for a, b, _ in hits}
     if len(unique) == 1:
         a, b = next(iter(unique))

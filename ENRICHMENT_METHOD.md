@@ -31,12 +31,23 @@ A source failure is retained as a `source` error in the package index. Failure o
 
 ### Literal Hubitat identity verification
 
-The source pass looks for a recognisable `definition(` block and records only literal quoted values for:
+The source pass looks for a recognisable `definition(` block and records values for:
 
 - `name:`
 - `namespace:`
 
-No Groovy expression is evaluated. Interpolation, variables, concatenation, ambiguous/multiple definitions, or values that cannot be established as literal strings remain null.
+Two things are accepted: a quoted literal, and an identifier that names a String constant declared
+exactly once in the same file (for example `definition(name: APP_NAME)` with
+`@Field static final String APP_NAME = 'Automation Map'`). A constant declared more than once, with
+differing values, stays null.
+
+The fields are read from inside the `definition(` call itself, matched paren-balanced. That bound
+matters: an earlier fixed-size window ran past a definition that used a constant and matched the next
+quoted `name:` in the file, which is typically a `page(name: 'main')` or an input label. Those
+produced identity mismatches that said more about the parser than about the package.
+
+No Groovy expression is evaluated. Interpolation, concatenation, computed values, ambiguous or
+multiple differing definitions, and anything else that cannot be read plainly remain null.
 
 This allows manifest identity to be checked against the identity actually declared by the source without turning the crawler into a Groovy interpreter.
 
