@@ -9211,7 +9211,22 @@ window.NETWORK_EVIDENCE = {
         "sourceFilesAnalysed": 6,
         "urlLiteralCount": 27
       },
-      "reviewed": [],
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "Ring Cloud",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "CLOUD_API"
+            }
+          ],
+          "documentation": [],
+          "id": "ring",
+          "name": "Ring Integration",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
       "tags": [
         "Tools & Utilities"
       ]
@@ -10794,7 +10809,22 @@ window.NETWORK_EVIDENCE = {
         "sourceFilesAnalysed": 23,
         "urlLiteralCount": 139
       },
-      "reviewed": [],
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "Ring Cloud",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "CLOUD_API"
+            }
+          ],
+          "documentation": [],
+          "id": "ring",
+          "name": "Ring Integration",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
       "tags": [
         "Buttons",
         "Lights & Switches",
@@ -19406,7 +19436,22 @@ window.NETWORK_EVIDENCE = {
         "sourceFilesAnalysed": 1,
         "urlLiteralCount": 2
       },
-      "reviewed": [],
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_DEVICE",
+              "name": "Shelly Device",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN"
+            }
+          ],
+          "documentation": [],
+          "id": "shelly-native",
+          "name": "Shelly Integration",
+          "status": "VERIFIED_CORE"
+        }
+      ],
       "tags": [
         "Energy Monitoring",
         "Lights & Switches",
@@ -27403,5 +27448,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-16T02:16:49Z"
+  "snapshotGenerated": "2026-09-16T03:36:32Z"
 };

@@ -1,9 +1,38 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-16T02:16:49Z`.
+Latest observation: `2026-09-16T03:36:32Z`.
 
-**57 package change(s):** added 20, declared definitions changed 2, removed 14, source location changed 2, updated 22
+**86 package change(s):** added 20, declared definitions changed 31, removed 14, source location changed 2, updated 22
 
+- [webCoRE: changed declared definitions.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
+- [Zigbee Map: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
+- [Weight Guru Bathroom Scale Integration: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/packageManifest.json)
+- [Universal Virtual Device Switch uDTH - For Alexa, IFTTT, WebHooks, HSM, and other integrations: changed declared definitions.](https://raw.githubusercontent.com/sab0276/Hubitat/main/packageManifest.json)
+- [UniFi Presence Drivers: changed declared definitions.](https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json)
+- [Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars): changed declared definitions.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json)
+- [TAPO Device Integration: changed declared definitions.](https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json)
+- [Shelly Wave Pro Dimmer 2PM QPDM-0A2P01EU: changed declared definitions.](https://raw.githubusercontent.com/reneboer/Hubitat/main/Shelly/packageManifestD2PM.json)
+- [Rain Bird LNK/LNK2 WiFi Module Controller: changed declared definitions.](https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json)
+- [Oppo Disc Player: changed declared definitions.](https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/packageManifest.json)
+- [MolSmart - GW8 - RF: changed declared definitions.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json)
+- [Linked Device Labeler: changed declared definitions.](https://raw.githubusercontent.com/jdc72/Hubitat/main/linked_device_labeler/packageManifest.json)
+- [Lennox iComfort: changed declared definitions.](https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json)
+- [LGTV with webOS: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
+- [IKEA Zigbee drivers: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
+- [Hubitat drivers for NodOn smart devices.: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
+- [Hubitat Calendar Switch (Google and Outlook): changed declared definitions.](https://raw.githubusercontent.com/truittchris/hubitat_calendar_switch_for_google_and_outlook/main/hpm/packageManifest.json)
+- [HubiThings Replica: changed declared definitions.](https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json)
+- [Hub-a-Dashery: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json)
+- [EZsalt Tank Monitoring & Integration: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/packageManifest.json)
+- [EMS-ESP Gateway: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
+- [Dywarmic Towel Warmer Integration: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json)
+- [Battery Level Watcher: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Battery%20Level%20Watcher/packageManifest.json)
+- [BWA Spa Manager - Local TCP Direct Connection Device Driver: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json)
+- [BWA Spa Manager - Cloud Control: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json)
+- [Automation Map: changed declared definitions.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
+- [Ambient Weather Station: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json)
+- [Advanced Heliotrope: changed declared definitions.](https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json)
+- [APC SmartUPS Status: changed declared definitions.](https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Iris v2 v3 Keypad: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)

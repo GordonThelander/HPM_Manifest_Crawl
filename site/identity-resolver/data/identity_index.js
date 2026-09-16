@@ -1752,31 +1752,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/napalmcsr/Hubitat_Napalmcsr/master/Apps/ThermostatTracker/ThermostatTracker.src"
     },
     {
-      "id": "definition:0548e47044d66aba16d5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainpage",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Hub-a-Dashery",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
-        "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
-        "name": "Hub-a-Dashery"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/hub-a-dashery_1.3.0/hub-a-dashery-app/hub-a-dashery.groovy"
-    },
-    {
       "id": "definition:05b12e13c7d388ab6326",
       "identities": [
         {
@@ -1795,6 +1770,26 @@ window.IDENTITY_INDEX = {
         "name": "Hyundai Bluelink Integration for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tyuhl/Hyundai-Bluelink/refs/heads/main/BluelinkApp.groovy"
+    },
+    {
+      "id": "definition:060243e40f8358d5446b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Automation Map",
+          "namespace": "Hubitat Integrations"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Gordon Thelander",
+        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentationUrl": "https://github.com/GordonThelander/hubitat-automation-map/blob/main/README.md",
+        "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
+        "name": "Automation Map"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/apps/automation_map.groovy"
     },
     {
       "id": "definition:07550227d0ce5edd23bd",
@@ -2742,31 +2737,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-kohlerdtv/master/apps/Kohler_DTV%2B_Integration.groovy"
     },
     {
-      "id": "definition:1cc934dc12d9dcf26635",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainPage",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "BWA Spa Manager App - Local",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/BWA%20Spa%20Manager%20App%20-%20Local.groovy"
-    },
-    {
       "id": "definition:1cf557f67232c37989e3",
       "identities": [
         {
@@ -2895,31 +2865,6 @@ window.IDENTITY_INDEX = {
         "name": "Moen FLO Device Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloManager/apps/MoenDeviceManager.groovy"
-    },
-    {
-      "id": "definition:2099b030c19a6f8184f7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainPage",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "BWA Spa Manager",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Cloud Control"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_App.groovy"
     },
     {
       "id": "definition:216c34ad63a638b8367e",
@@ -3102,31 +3047,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/apps/appliance-cycle-monitor/appliance-cycle-monitor-app.groovy"
     },
     {
-      "id": "definition:23ddd8b67f188170675d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "main",
-          "namespace": "Hubitat Integrations"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Automation Map",
-          "namespace": "Hubitat Integrations"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Gordon Thelander",
-        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
-        "documentationUrl": "https://github.com/GordonThelander/hubitat-automation-map/blob/main/README.md",
-        "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
-        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
-        "name": "Automation Map"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/apps/automation_map.groovy"
-    },
-    {
       "id": "definition:2402c38d750ef4d82d7b",
       "identities": [
         {
@@ -3145,6 +3065,26 @@ window.IDENTITY_INDEX = {
         "name": "Schedule Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/schedule-manager-parent.groovy"
+    },
+    {
+      "id": "definition:24123a897d9a3acc4521",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "webCoRE Fuel Stream",
+          "namespace": "ady624"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "imnot_bob",
+        "communityUrl": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967",
+        "documentationUrl": "https://wiki.webcore.co",
+        "id": "manifest:f5e037b28e36018236ad",
+        "manifestUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json",
+        "name": "webCoRE"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/smartapps/ady624/webcore-fuel-stream.src/webcore-fuel-stream.groovy"
     },
     {
       "id": "definition:24b4e04ae21ceb3bba9d",
@@ -3637,31 +3577,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/OwnTracks-Presence/owntracks-presence-app.groovy"
     },
     {
-      "id": "definition:2e04862a802109590952",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "pageMain",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HubiThings Replica",
-          "namespace": "replica"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Bloodtick Jones",
-        "communityUrl": "https://community.hubitat.com/t/release-hubithings-replica/107976",
-        "documentationUrl": null,
-        "id": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
-        "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
-        "name": "HubiThings Replica"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/hubiThingsReplica.groovy"
-    },
-    {
       "id": "definition:2e5b37acc8688215765f",
       "identities": [
         {
@@ -3905,6 +3820,31 @@ window.IDENTITY_INDEX = {
         "name": "BLE Gateway Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/app.groovy"
+    },
+    {
+      "id": "definition:352835a284ce77b3427d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Ambient Weather Station",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Ambient Weather Station",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
+        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
+        "name": "Ambient Weather Station"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
     },
     {
       "id": "definition:356c1d0b6c6f94057068",
@@ -4325,31 +4265,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_broadlink"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_broadlink/main/broadlinkSystemManagerApp"
-    },
-    {
-      "id": "definition:3cf08789406d1f003651",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "apiPage",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Ambient Weather Station",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
-        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
-        "name": "Ambient Weather Station"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
     },
     {
       "id": "definition:3cfddbb087297df2d14f",
@@ -5362,31 +5277,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Rachio-Community/master/Rachio%20Community"
     },
     {
-      "id": "definition:57c9a4fccfbe3342e2a2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "pageMain",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HubiThings OAuth",
-          "namespace": "replica"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Bloodtick Jones",
-        "communityUrl": "https://community.hubitat.com/t/release-hubithings-replica/107976",
-        "documentationUrl": null,
-        "id": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
-        "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
-        "name": "HubiThings Replica"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/hubiThingsOauth.groovy"
-    },
-    {
       "id": "definition:57d5abc0d607e4fe79a5",
       "identities": [
         {
@@ -5535,31 +5425,6 @@ window.IDENTITY_INDEX = {
         "name": "Inverse Link Two Switches"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Apps/inverse_link/inverse_link.groovy"
-    },
-    {
-      "id": "definition:5c9136a32ca20f676af4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainPage",
-          "namespace": "ady624"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "webCoRE Fuel Stream",
-          "namespace": "ady624"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "imnot_bob",
-        "communityUrl": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967",
-        "documentationUrl": "https://wiki.webcore.co",
-        "id": "manifest:f5e037b28e36018236ad",
-        "manifestUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json",
-        "name": "webCoRE"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/smartapps/ady624/webcore-fuel-stream.src/webcore-fuel-stream.groovy"
     },
     {
       "id": "definition:5cb687525d05d3a56186",
@@ -6237,6 +6102,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tchoward/Hubitat/master/hubigraph_bar_graph.groovy"
     },
     {
+      "id": "definition:6bf4ea35914f094586e3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hub-a-Dashery",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
+        "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
+        "name": "Hub-a-Dashery"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/hub-a-dashery_1.3.0/hub-a-dashery-app/hub-a-dashery.groovy"
+    },
+    {
       "id": "definition:6c55c134d3b356c3b563",
       "identities": [
         {
@@ -6295,26 +6180,6 @@ window.IDENTITY_INDEX = {
         "name": "Rehlko Generator Connect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/Rehlko-Generator-Connect/main/RehlkoConnectApp.groovy"
-    },
-    {
-      "id": "definition:6da1f6ddc9f04de39d36",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "MolSmart GW8 Remote Importer - Cortina RF",
-          "namespace": null
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "VH",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
-        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
-        "name": "MolSmart - GW8 - RF"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
     },
     {
       "id": "definition:6dac1917da262bc4b9e7",
@@ -7272,6 +7137,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/schwark/hubitatADC/master/adc-manager-app.groovy"
     },
     {
+      "id": "definition:8629e796479ff0d0fec3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Battery Level Watcher",
+          "namespace": "kurtsanders"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Battery Level Monitor",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/Battery%20Level%20Watchert#readme",
+        "id": "hpm:49511ba9-436d-4db4-b5ef-fa70a04b7217",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Battery%20Level%20Watcher/packageManifest.json",
+        "name": "Battery Level Watcher"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Battery%20Level%20Watcher/BatteryLevelWatcher.groovy"
+    },
+    {
       "id": "definition:86ffe569e8d6f92a7cd6",
       "identities": [
         {
@@ -7477,6 +7367,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/eliotstocker/hubitat-lockshare/main/LockShare-Setup.groovy"
     },
     {
+      "id": "definition:8d44c11ca8b6fd973be4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "BWA Spa Manager",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "BWA Spa Manager",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Cloud Control"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_App.groovy"
+    },
+    {
       "id": "definition:8d72ed47c19f1126e152",
       "identities": [
         {
@@ -7495,6 +7410,26 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Hub Information Driver Aggregation"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/hubInfoAggregation.groovy"
+    },
+    {
+      "id": "definition:8dc1db4da61060372852",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HubiThings Replica",
+          "namespace": "replica"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Bloodtick Jones",
+        "communityUrl": "https://community.hubitat.com/t/release-hubithings-replica/107976",
+        "documentationUrl": null,
+        "id": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
+        "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
+        "name": "HubiThings Replica"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/hubiThingsReplica.groovy"
     },
     {
       "id": "definition:8e278856aca611a24532",
@@ -7797,31 +7732,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-Reliable-Locks/master/ReliableLocks.groovy"
     },
     {
-      "id": "definition:95183c4eb8a544138ee8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "sunDeviceLink",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Advanced Heliotrope",
-          "namespace": "electrified-home"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Electrified-Home",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/Electrified-Home/Hubitat-Advanced-Heliotrope/blob/main/docs/README.md",
-        "id": "hpm:advanced-heliotrope",
-        "manifestUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json",
-        "name": "Advanced Heliotrope"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/apps/SkyRegionsApp.groovy"
-    },
-    {
       "id": "definition:952b4499eb6ba7b4bb63",
       "identities": [
         {
@@ -8075,6 +7985,26 @@ window.IDENTITY_INDEX = {
         "name": "Virtual Prestaging"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-virtual-prestage/main/virtual-prestage.groovy"
+    },
+    {
+      "id": "definition:99d8977b11c02456b0fe",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Advanced Heliotrope",
+          "namespace": "electrified-home"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Electrified-Home",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/Electrified-Home/Hubitat-Advanced-Heliotrope/blob/main/docs/README.md",
+        "id": "hpm:advanced-heliotrope",
+        "manifestUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json",
+        "name": "Advanced Heliotrope"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/apps/SkyRegionsApp.groovy"
     },
     {
       "id": "definition:9abd70c0efb32bf58fbb",
@@ -8682,31 +8612,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Toggle-API/toggle-api-app.groovy"
     },
     {
-      "id": "definition:a540294aa3f164da709f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "pageStatus",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Battery Level Monitor",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/",
-        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/Battery%20Level%20Watchert#readme",
-        "id": "hpm:49511ba9-436d-4db4-b5ef-fa70a04b7217",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Battery%20Level%20Watcher/packageManifest.json",
-        "name": "Battery Level Watcher"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Battery%20Level%20Watcher/BatteryLevelWatcher.groovy"
-    },
-    {
       "id": "definition:a54bafab801e37e30f2d",
       "identities": [
         {
@@ -9030,6 +8935,31 @@ window.IDENTITY_INDEX = {
         "name": "PositionGuard"
       },
       "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/apps/positionguard-app.groovy"
+    },
+    {
+      "id": "definition:ae03c9b93ba5adf683ea",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "BWA Spa Manager App - Local",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "BWA Spa Manager App - Local",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/BWA%20Spa%20Manager%20App%20-%20Local.groovy"
     },
     {
       "id": "definition:ae157b8df39f9bce04ce",
@@ -9555,6 +9485,26 @@ window.IDENTITY_INDEX = {
         "name": "TAPO Device Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/App/tapo_device_install.groovy"
+    },
+    {
+      "id": "definition:b9d976f3fe1cd0b1a441",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Linked Device Labeler",
+          "namespace": "jdc72"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Jeffrey D. Chapman",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jdc72/Hubitat/blob/main/linked_device_labeler/README.md",
+        "id": "hpm:d89bb74f-a40d-4c16-9712-369d26e86f82",
+        "manifestUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/linked_device_labeler/packageManifest.json",
+        "name": "Linked Device Labeler"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/linked_device_labeler/src/LinkedDeviceLabeler.groovy"
     },
     {
       "id": "definition:ba0a438c66077465eb04",
@@ -10422,31 +10372,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcoghlan/hubitat/main/Contact2Motion/contact2motion-app-parent.groovy"
     },
     {
-      "id": "definition:d14b94d1871251f0ec3c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mainPage",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Dywarmic Towel Warmer Integration",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/Hubitat-Dywarmic-Integration/tree/main?tab=readme-ov-file#hubitat-dywarmic-integration",
-        "id": "hpm:ea1bd527-214b-4a03-ac9e-8ef3c6e6fb34",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json",
-        "name": "Dywarmic Towel Warmer Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Apps/Dywarmic%20Towel%20Warmer%20Integration.groovy"
-    },
-    {
       "id": "definition:d1a9a40b6511968c17b1",
       "identities": [
         {
@@ -10772,6 +10697,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Apps/PanasonicComfortCloud/Panasonic%20-%20Comfort%20Cloud.groovy"
     },
     {
+      "id": "definition:d7ae9705084cd953e7f4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HubiThings OAuth",
+          "namespace": "replica"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Bloodtick Jones",
+        "communityUrl": "https://community.hubitat.com/t/release-hubithings-replica/107976",
+        "documentationUrl": null,
+        "id": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
+        "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
+        "name": "HubiThings Replica"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/hubiThingsOauth.groovy"
+    },
+    {
       "id": "definition:d7ed97f88260f57ba8f6",
       "identities": [
         {
@@ -10830,6 +10775,31 @@ window.IDENTITY_INDEX = {
         "name": "Commercial Lock"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/CommercialLockInstance.groovy"
+    },
+    {
+      "id": "definition:d9dbd5c7d0e132b60532",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "GW8 Remote Importer - Cortina RF",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart GW8 Remote Importer - Cortina RF",
+          "namespace": null
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
+        "name": "MolSmart - GW8 - RF"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
     },
     {
       "id": "definition:da0c283f731f57d326fb",
@@ -11155,31 +11125,6 @@ window.IDENTITY_INDEX = {
         "name": "Pihole Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeIntegration.groovy"
-    },
-    {
-      "id": "definition:e323a3eaacdab0afa39e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "pageMain",
-          "namespace": "jdc72"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Linked Device Labeler",
-          "namespace": "jdc72"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Jeffrey D. Chapman",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/jdc72/Hubitat/blob/main/linked_device_labeler/README.md",
-        "id": "hpm:d89bb74f-a40d-4c16-9712-369d26e86f82",
-        "manifestUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/linked_device_labeler/packageManifest.json",
-        "name": "Linked Device Labeler"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/linked_device_labeler/src/LinkedDeviceLabeler.groovy"
     },
     {
       "id": "definition:e394ef4a1f1d45b0828a",
@@ -11610,6 +11555,26 @@ window.IDENTITY_INDEX = {
         "name": "Sensor Groups+"
       },
       "sourceUrl": "https://friedcheese2006.gateway.scarf.sh/ChildApps/PressureSensorPlus_ChildApp.groovy"
+    },
+    {
+      "id": "definition:ecc2e660cab04553d4f8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Dywarmic Towel Warmer Integration",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/Hubitat-Dywarmic-Integration/tree/main?tab=readme-ov-file#hubitat-dywarmic-integration",
+        "id": "hpm:ea1bd527-214b-4a03-ac9e-8ef3c6e6fb34",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json",
+        "name": "Dywarmic Towel Warmer Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Apps/Dywarmic%20Towel%20Warmer%20Integration.groovy"
     },
     {
       "id": "definition:ece5edec07580897a6be",
@@ -12977,31 +12942,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse42-v1.2.2.groovy"
     },
     {
-      "id": "definition:051f6a84d48dfda0f0b1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "status",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "LGTV Remote",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-        "name": "LGTV with webOS"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/component/lgtv-remote.groovy"
-    },
-    {
       "id": "definition:0578c4e79a20fc7b0a56",
       "identities": [
         {
@@ -13362,6 +13302,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Conditional-Image-Server/master/DynamicImageURLDevice.groovy"
     },
     {
+      "id": "definition:07888b7e263a14213196",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hubitat Calendar Switch - Control Device",
+          "namespace": "truittchris"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Chris Truitt",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/truittchris/hubitat_calendar_switch_for_google_and_outlook#readme",
+        "id": "hpm:f6195c2c-062a-4d3e-9ae4-4195847bbbf7",
+        "manifestUrl": "https://raw.githubusercontent.com/truittchris/hubitat_calendar_switch_for_google_and_outlook/main/hpm/packageManifest.json",
+        "name": "Hubitat Calendar Switch (Google and Outlook)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/truittchris/hubitat_calendar_switch_for_google_and_outlook/main/Drivers/Hubitat_Calendar_Switch_Control_Device.groovy"
+    },
+    {
       "id": "definition:07acd44ae01cfb148dd6",
       "identities": [
         {
@@ -13445,26 +13405,6 @@ window.IDENTITY_INDEX = {
         "name": "Bosch Drivers via Zigbee2MQTT from BirdsLikeWires"
       },
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/bosch/drivers/bosch_twinguard.groovy"
-    },
-    {
-      "id": "definition:085907664e29b0480581",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Dimmable Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_DIM-Light.groovy"
     },
     {
       "id": "definition:090a440dd33c16f5b976",
@@ -13897,6 +13837,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Drivers/Zigbee%20TRV/Tuya_Zigbee_Thermostat_lib_included.groovy"
     },
     {
+      "id": "definition:0ba90b5927f12e3b9b4d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lennox iComfort Child Zone Thermostat",
+          "namespace": "rbyrbt"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "rbyrbt",
+        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
+        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
+        "id": "manifest:d29e7bd8d58f0965df61",
+        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
+        "name": "Lennox iComfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-zone-thermostat.groovy"
+    },
+    {
       "id": "definition:0bd1a3d7d82604088d6a",
       "identities": [
         {
@@ -14082,31 +14042,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/notifyTile.groovy"
     },
     {
-      "id": "definition:0d1b64a5b90e9ae01bde",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Control Outlet (E1603)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1603.groovy"
-    },
-    {
       "id": "definition:0d416132fb60ab70af73",
       "identities": [
         {
@@ -14212,6 +14147,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2PM-v2.17.8.groovy"
     },
     {
+      "id": "definition:0da3f0d14a2840f8d60c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "UniFi Presence Device",
+          "namespace": "MHedish"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Marc Hedish",
+        "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
+        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
+        "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
+        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
+        "name": "UniFi Presence Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Device.groovy"
+    },
+    {
       "id": "definition:0ddec3d98c127ddb3eb8",
       "identities": [
         {
@@ -14270,6 +14225,26 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:0e4576c87849bd6c5958",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lennox iComfort Child Sensor",
+          "namespace": "rbyrbt"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "rbyrbt",
+        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
+        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
+        "id": "manifest:d29e7bd8d58f0965df61",
+        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
+        "name": "Lennox iComfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-sensor.groovy"
     },
     {
       "id": "definition:0e66d78d9c6b1d4a9321",
@@ -14357,29 +14332,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/zigbee2mqtt/drivers/zigbee2mqtt.groovy"
     },
     {
-      "id": "definition:0f2a12ed1bbbeaf83e64",
+      "id": "definition:0eefb0ee0887eed12615",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "Push Button",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HB BWA SPA Switch",
-          "namespace": "kurtsanders"
+          "name": "IKEA Symfonisk Sound Remote Gen2 (E2123)",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Cloud Control"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
       },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Switch_Device.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2123.groovy"
     },
     {
       "id": "definition:0f852756f9dd04ce531f",
@@ -14587,31 +14557,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/NelsonClark/Hubitat/main/Apps/Advanced_vThermostat/Advanced_vThermostat-Device.groovy"
     },
     {
-      "id": "definition:1157aebf8f9530ffe008",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "contact",
-          "namespace": "sab0276"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Universal Virtual Switch uDTH Super - 20 Capabilities for HSM and all other integrations",
-          "namespace": "sab0276"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "sab0276",
-        "communityUrl": "https://community.hubitat.com/t/release-virtual-switch-universal-device-type-udth-good-for-alexa-ifttt-hsm-and-other-integrations/74223",
-        "documentationUrl": "https://community.hubitat.com/t/release-virtual-switch-universal-device-type-udth-good-for-alexa-ifttt-hsm-and-other-integrations/74223",
-        "id": "hpm:55966b40-6613-406b-bf90-500be06b781f",
-        "manifestUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/packageManifest.json",
-        "name": "Universal Virtual Device Switch uDTH - For Alexa, IFTTT, WebHooks, HSM, and other integrations"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH.groovy"
-    },
-    {
       "id": "definition:1169a9f6115ca8696cdf",
       "identities": [
         {
@@ -14682,31 +14627,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/logTile.groovy"
     },
     {
-      "id": "definition:11a8dab6683c237033dc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Inspelning Smart Plug (E2206)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2206.groovy"
-    },
-    {
       "id": "definition:11dda83740b349366fae",
       "identities": [
         {
@@ -14725,26 +14645,6 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitTowerFan.groovy"
-    },
-    {
-      "id": "definition:11f4e64b23785a38047b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub Leak",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_leak.groovy"
     },
     {
       "id": "definition:11f8f2394f1c526ab0b3",
@@ -16252,6 +16152,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverMultiTriggerController.groovy"
     },
     {
+      "id": "definition:1cd4f74c09d03cd3f657",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Ambient Weather Station Remote Sensor",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Ambient Weather Station Remote Sensor",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
+        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
+        "name": "Ambient Weather Station"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station-remote-sensor.src/ambient-weather-station%20remote-sensor.groovy"
+    },
+    {
       "id": "definition:1ce12467b8f88f3dedb4",
       "identities": [
         {
@@ -16552,31 +16477,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/AutoMower/master/websocket-device.groovy"
     },
     {
-      "id": "definition:1f78b4d14e51e31154b5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Open/Close Remote (E1766)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1766.groovy"
-    },
-    {
       "id": "definition:1fcd4dd77b08e0c56f40",
       "identities": [
         {
@@ -16635,46 +16535,6 @@ window.IDENTITY_INDEX = {
         "name": "LG ThinQ Connect Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_air_conditioner.groovy"
-    },
-    {
-      "id": "definition:203bc630c53fa9fce3fa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Plug",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_plug.groovy"
-    },
-    {
-      "id": "definition:203bc630c53fa9fce3fa:2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Plug",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_plug.groovy"
     },
     {
       "id": "definition:204271873984b3605f2d",
@@ -16757,31 +16617,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Home.groovy"
     },
     {
-      "id": "definition:213ae82230d546fbbdc0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "switch",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Balboa Hot Tub Local Child Switch",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Child%20Switch.groovy"
-    },
-    {
       "id": "definition:21f3e3cd77fba1b1cdd3",
       "identities": [
         {
@@ -16800,6 +16635,56 @@ window.IDENTITY_INDEX = {
         "name": "Package Evalogik"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/evalogik/evalogik-smart-on-off-toggle-switch.groovy"
+    },
+    {
+      "id": "definition:225ef6019bc2f77a07a4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Wave Pro Dimmer 2PM",
+          "namespace": "reneboer"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Wave Pro Dimmer 2PM QPDM-0A2P01EU",
+          "namespace": null
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Rene Boer",
+        "communityUrl": "https://community.hubitat.com/t/release-shelly-wave-pro-dimmer-2pm-driver/163684",
+        "documentationUrl": "https://github.com/reneboer/Hubitat/tree/main/Shelly",
+        "id": "manifest:689988f55f64f6b231a6",
+        "manifestUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/main/Shelly/packageManifestD2PM.json",
+        "name": "Shelly Wave Pro Dimmer 2PM QPDM-0A2P01EU"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/refs/heads/main/Shelly/Shelly%20Wave%20PRO%20Dimmer%202PM%20Driver.groovy"
+    },
+    {
+      "id": "definition:2269a187bcd3aa79dbf7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Balboa Hot Tub Local Driver",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Balboa Hot Tub Local Driver",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Driver.groovy"
     },
     {
       "id": "definition:22926f1fed7e0ab1438d",
@@ -16922,31 +16807,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/device/acurite.groovy"
     },
     {
-      "id": "definition:237310034822021edb43",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Remote Control (E1810)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1810.groovy"
-    },
-    {
       "id": "definition:2378455d4565aff73dd9",
       "identities": [
         {
@@ -17035,6 +16895,26 @@ window.IDENTITY_INDEX = {
         "name": "Netatmo - Velux"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Shutter.groovy"
+    },
+    {
+      "id": "definition:24ab2e1363c2a9ac9e28",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA RGB-Only Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_RGBO-Light.groovy"
     },
     {
       "id": "definition:24bae57e9d9a430b67b0",
@@ -17177,6 +17057,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/aeonhemdryer.groovy"
     },
     {
+      "id": "definition:25c6dcdc54d52d05bfae",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lennox iComfort Child Switch",
+          "namespace": "rbyrbt"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "rbyrbt",
+        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
+        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
+        "id": "manifest:d29e7bd8d58f0965df61",
+        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
+        "name": "Lennox iComfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch.groovy"
+    },
+    {
       "id": "definition:262481dc4f91eab4bec9",
       "identities": [
         {
@@ -17297,26 +17197,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Multi-Place/master/Multi-Place-Tracker.groovy"
     },
     {
-      "id": "definition:26fa6aa6c1bba8018df2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub Contact",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_contact.groovy"
-    },
-    {
       "id": "definition:273725d74699a507795c",
       "identities": [
         {
@@ -17375,46 +17255,6 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/VeSyncIntegrationVirtual.groovy"
-    },
-    {
-      "id": "definition:27db2b584d27ab263fb2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Dimmer",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_dimmer.groovy"
-    },
-    {
-      "id": "definition:27db2b584d27ab263fb2:2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Dimmer",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_dimmer.groovy"
     },
     {
       "id": "definition:280ab53a6cf00a97c1c4",
@@ -17555,31 +17395,6 @@ window.IDENTITY_INDEX = {
         "name": "Network Monitor Health Check"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/NetworkMonitorHealthCheck/NetworkMonitorHealthCheck.groovy"
-    },
-    {
-      "id": "definition:295fa862b10f238b49c2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "mode",
-          "namespace": "rbyrbt"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lennox iComfort Child Zone Thermostat",
-          "namespace": "rbyrbt"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "rbyrbt",
-        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
-        "id": "manifest:d29e7bd8d58f0965df61",
-        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
-        "name": "Lennox iComfort"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-zone-thermostat.groovy"
     },
     {
       "id": "definition:29ba587fe07cef7de617",
@@ -17742,31 +17557,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5.groovy"
     },
     {
-      "id": "definition:2a773f415d4e58abb7e0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Pump speed*",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HB BWA SPA Pump",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Cloud Control"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Pump_Device.groovy"
-    },
-    {
       "id": "definition:2a94f6760e1c2067b981",
       "identities": [
         {
@@ -17865,31 +17655,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeon SmartStrip"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/aeonsmartstrip.groovey"
-    },
-    {
-      "id": "definition:2aee0c39d6372f13e382",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Text*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "LGTV with webOS",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-        "name": "LGTV with webOS"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/lgtv-with-webos.groovy"
     },
     {
       "id": "definition:2b58ac26d224781637e4",
@@ -18037,6 +17802,56 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Smart_Outdoor_Plug_Device.groovy"
     },
     {
+      "id": "definition:2c0b5a98a440c1821d7e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Dimmer",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Dimmer",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_dimmer.groovy"
+    },
+    {
+      "id": "definition:2c0b5a98a440c1821d7e:2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Dimmer",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Dimmer",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_dimmer.groovy"
+    },
+    {
       "id": "definition:2c4aa7ba33358de2e525",
       "identities": [
         {
@@ -18162,31 +17977,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/drivers/LIFX_Local_White_Mono_Driver.groovy"
     },
     {
-      "id": "definition:2d0ae2b16401722e1b59",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Somrig Shortcut Button (E2213)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2213.groovy"
-    },
-    {
       "id": "definition:2d0ee6b49ade013b2245",
       "identities": [
         {
@@ -18207,6 +17997,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherBaseStation.groovy"
     },
     {
+      "id": "definition:2d7db799850f293744ee",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Camera",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Camera",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_Camera.groovy"
+    },
+    {
       "id": "definition:2d9810458949844f8e48",
       "identities": [
         {
@@ -18225,31 +18040,6 @@ window.IDENTITY_INDEX = {
         "name": "Unifi Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMP.groovy"
-    },
-    {
-      "id": "definition:2db5e7181b9d9235e9e5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Send held down notifications at slow rate*",
-          "namespace": "reneboer"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Wave Pro Dimmer 2PM QPDM-0A2P01EU",
-          "namespace": null
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Rene Boer",
-        "communityUrl": "https://community.hubitat.com/t/release-shelly-wave-pro-dimmer-2pm-driver/163684",
-        "documentationUrl": "https://github.com/reneboer/Hubitat/tree/main/Shelly",
-        "id": "manifest:689988f55f64f6b231a6",
-        "manifestUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/main/Shelly/packageManifestD2PM.json",
-        "name": "Shelly Wave Pro Dimmer 2PM QPDM-0A2P01EU"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/refs/heads/main/Shelly/Shelly%20Wave%20PRO%20Dimmer%202PM%20Driver.groovy"
     },
     {
       "id": "definition:2dc1b96d3e6785b6e2c1",
@@ -18887,6 +18677,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-light/homekit-light.groovy"
     },
     {
+      "id": "definition:322c837d712112ba98de",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Gateway",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/ems-esp-gateway.groovy"
+    },
+    {
       "id": "definition:324d9b8deddba8336a58",
       "identities": [
         {
@@ -18930,26 +18740,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:326efdfc13f029566329",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "UniFi Presence Device",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
-        "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
-        "name": "UniFi Presence Drivers"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Device.groovy"
     },
     {
       "id": "definition:3277dfe05783326c4d6e",
@@ -19320,31 +19110,6 @@ window.IDENTITY_INDEX = {
         "name": "GE Z-Wave Plus Motion Switch Combo Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE%20Z-Wave%20Plus%20Motion%20Switch%20Combo%20Driver/GE%20Z-Wave%20Plus%20Motion%20Switch%20Combo%20Driver.groovy"
-    },
-    {
-      "id": "definition:341a2e8252381822ec66",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Color White Spectrum Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_CWS-Light.groovy"
     },
     {
       "id": "definition:345a1ec6ac768258e2d6",
@@ -19747,31 +19512,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_oven"
     },
     {
-      "id": "definition:383f84c0cdf427727f9c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Motion Sensor (E1745)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1745.groovy"
-    },
-    {
       "id": "definition:3886218d91ab31e7b2e1",
       "identities": [
         {
@@ -20157,6 +19897,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display.groovy"
     },
     {
+      "id": "definition:3ae1bc6dfe5c02e3e855",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "LGTV with webOS",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/lgtv-with-webos.groovy"
+    },
+    {
       "id": "definition:3b629ffb8650a531099a",
       "identities": [
         {
@@ -20527,6 +20287,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Synology-SRM-Integration/refs/heads/main/drivers/SynologySRMRouter.groovy"
     },
     {
+      "id": "definition:3e042b047a8fd2323a07",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Badring Water Leakage Sensor (E2202)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2202.groovy"
+    },
+    {
       "id": "definition:3e0801915b2bdcbba184",
       "identities": [
         {
@@ -20625,6 +20405,26 @@ window.IDENTITY_INDEX = {
         "name": "Aqualink-Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mikec85/hubitatdrivers/master/aqualink/aqualink-driver-child-temps.groovy"
+    },
+    {
+      "id": "definition:3f257dc2b1cb3697b5e9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri On/Off Switch (E1743)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1743.groovy"
     },
     {
       "id": "definition:3f4d9586588d1761454c",
@@ -20950,31 +20750,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:4213b80b167735d816a6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Askvader On/Off Switch (E1836)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1836.groovy"
     },
     {
       "id": "definition:422ca383133f2b2bfb94",
@@ -21327,31 +21102,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE-Jasco%20Z-Wave%20Plus%20Motion%20Dimmer/GE-Jasco%20Z-Wave%20Plus%20Motion%20Dimmer.groovy"
     },
     {
-      "id": "definition:44516e616d1e810a64f2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "lastSTupdate",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Ambient Particulate Monitor",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
-        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
-        "name": "Ambient Weather Station"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-particulate-monitor.src/ambient-particulate-monitor.groovy"
-    },
-    {
       "id": "definition:446c19265d824aecfe49",
       "identities": [
         {
@@ -21622,6 +21372,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-scene-driver.groovy"
     },
     {
+      "id": "definition:467fda70971b4e558ee6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Rain Bird LNK/LNK2 Zone Child",
+          "namespace": "MHedish"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Marc Hedish",
+        "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
+        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
+        "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
+        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
+        "name": "Rain Bird LNK/LNK2 WiFi Module Controller"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Zone-Child.groovy"
+    },
+    {
       "id": "definition:46a4c6f7d94654753be0",
       "identities": [
         {
@@ -21887,6 +21657,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaDimmer.groovy"
     },
     {
+      "id": "definition:4815782b47927df6c453",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Roller Shutter Relay Switch (SIN-4-RS-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-RS-20.groovy"
+    },
+    {
       "id": "definition:487296543eb1ef74ee66",
       "identities": [
         {
@@ -22150,26 +21940,6 @@ window.IDENTITY_INDEX = {
         "name": "Alarm Panel (universal)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-button-trigger.groovy"
-    },
-    {
-      "id": "definition:4ae211a84c5038af81a9",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Ambient Weather Station Remote Sensor",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
-        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
-        "name": "Ambient Weather Station"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station-remote-sensor.src/ambient-weather-station%20remote-sensor.groovy"
     },
     {
       "id": "definition:4af578ce6f41071dd6a5",
@@ -23122,6 +22892,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sacua/SinopeDriverHubitat/main/drivers/mergeDrivers/SP2600ZB_Sinope_Hubitat.groovy"
     },
     {
+      "id": "definition:4f436790bfa402b53866",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub Plug",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub Plug",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_plug.groovy"
+    },
+    {
       "id": "definition:4f43dc791444baa40138",
       "identities": [
         {
@@ -23392,6 +23187,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/drivers/LIFX_Master_Switch_Driver.groovy"
     },
     {
+      "id": "definition:513610936880bc3afd8a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Ambient Particulate Monitor",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Ambient Particulate Monitor",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
+        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
+        "name": "Ambient Weather Station"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-particulate-monitor.src/ambient-particulate-monitor.groovy"
+    },
+    {
       "id": "definition:517e4b1c60e508ddfd43",
       "identities": [
         {
@@ -23615,26 +23435,6 @@ window.IDENTITY_INDEX = {
         "name": "Solcast"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ke7lvb/Solcast/refs/heads/main/solcast.groovy"
-    },
-    {
-      "id": "definition:5355c4465df5ea7bcca5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Child Dimmer",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_dimmer.groovy"
     },
     {
       "id": "definition:53662a17c977652b3805",
@@ -24372,6 +24172,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-light-with-siren.groovy"
     },
     {
+      "id": "definition:586cf6686dbe4d74199e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HB BPA SPA Parent",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "HB BPA SPA Parent",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Cloud Control"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Parent_Device.groovy"
+    },
+    {
       "id": "definition:5871c52a058740bcc4f1",
       "identities": [
         {
@@ -24412,6 +24237,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/mboisson/Hubitat-Advanced-Broadlink-Remote/main/Advanced_Broadlink_Remote-Device.groovy"
     },
     {
+      "id": "definition:589e55d83b557554d42c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Somrig Shortcut Button (E2213)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2213.groovy"
+    },
+    {
       "id": "definition:58d3570fd8755609fb6f",
       "identities": [
         {
@@ -24430,6 +24275,26 @@ window.IDENTITY_INDEX = {
         "name": "Amber Electric Integration for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Amber-Electric---Hubitat-Driver/main/Amber_Driver.groovy"
+    },
+    {
+      "id": "definition:58efba0226f60814cd41",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tretakt Smart Plug (E2204)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2204.groovy"
     },
     {
       "id": "definition:590ecbec929ae2faa461",
@@ -24770,6 +24635,26 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyHumidityPeripheralComponent-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:5b25e08565a5a61ccfa8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Multifunction Relay Switch (SIN-4-1-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-20.groovy"
     },
     {
       "id": "definition:5b27d3c85d00769dc58a",
@@ -25197,31 +25082,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2MultiLightFloorLamp.groovy"
     },
     {
-      "id": "definition:5d38cf493545e4b45255",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Pilot Wire Heating Module (SIN-4-FP-21)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-FP-21.groovy"
-    },
-    {
       "id": "definition:5d9112943fabd35c9d56",
       "identities": [
         {
@@ -25387,26 +25247,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/eliotstocker/hubitat-ikea-rgbw/main/ikea-tradfri-rgbw-device.groovy"
     },
     {
-      "id": "definition:5e7499c82ea2a9c81a86",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Camera",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_Camera.groovy"
-    },
-    {
       "id": "definition:5e98184e4d179108aa68",
       "identities": [
         {
@@ -25490,6 +25330,26 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_myLeviton"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_myLeviton/master/myLevitonSwitchDimmer"
+    },
+    {
+      "id": "definition:5f297eab081f92ea21ec",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Rodret Dimmer (E2201)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2201.groovy"
     },
     {
       "id": "definition:5f9cb582dca6260444ff",
@@ -25675,31 +25535,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Hayward AquaConnect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardSaltSensor.groovy"
-    },
-    {
-      "id": "definition:60b657ffbb4b06f9ce51",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "includeKeywords",
-          "namespace": "truittchris"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Hubitat Calendar Switch - Control Device",
-          "namespace": "truittchris"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Chris Truitt",
-        "communityUrl": "https://community.hubitat.com/",
-        "documentationUrl": "https://github.com/truittchris/hubitat_calendar_switch_for_google_and_outlook#readme",
-        "id": "hpm:f6195c2c-062a-4d3e-9ae4-4195847bbbf7",
-        "manifestUrl": "https://raw.githubusercontent.com/truittchris/hubitat_calendar_switch_for_google_and_outlook/main/hpm/packageManifest.json",
-        "name": "Hubitat Calendar Switch (Google and Outlook)"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/truittchris/hubitat_calendar_switch_for_google_and_outlook/main/Drivers/Hubitat_Calendar_Switch_Control_Device.groovy"
     },
     {
       "id": "definition:6112cc43c1370e512231",
@@ -26280,31 +26115,6 @@ window.IDENTITY_INDEX = {
         "name": "File Manager Device"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/fileMgr.groovy"
-    },
-    {
-      "id": "definition:647ba7f6fe54cd86492d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Set Ready Mode*",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HB BPA SPA Parent",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Cloud Control"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Parent_Device.groovy"
     },
     {
       "id": "definition:64e252c0d3281f0d8c7b",
@@ -26962,6 +26772,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy"
     },
     {
+      "id": "definition:6a09d3d5a7fcfe1291a0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "LGTV Remote",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/component/lgtv-remote.groovy"
+    },
+    {
       "id": "definition:6a1ca34c940f40ece79c",
       "identities": [
         {
@@ -27177,6 +27007,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/Hubitat-MySubaru/main/Hubitat-MySubaru-Driver.groovy"
     },
     {
+      "id": "definition:6bfd93a1dbfeee15d1d1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Dywarmic Towel Warmer",
+          "namespace": "kurtsanders"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Hubitat Dywarmic Integration",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/Hubitat-Dywarmic-Integration/tree/main?tab=readme-ov-file#hubitat-dywarmic-integration",
+        "id": "hpm:ea1bd527-214b-4a03-ac9e-8ef3c6e6fb34",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json",
+        "name": "Dywarmic Towel Warmer Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Drivers/Dywarmic%20Towel%20Warmer.groovy"
+    },
+    {
       "id": "definition:6c062b72347382311cc3",
       "identities": [
         {
@@ -27275,31 +27130,6 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/generic-appliance/generic-appliance-device.groovy"
-    },
-    {
-      "id": "definition:6c5ad4a1217d73e308b0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Vindstyrka Air Quality Sensor (E2112)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2112.groovy"
     },
     {
       "id": "definition:6c66af2704081222a7c7",
@@ -27482,31 +27312,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/weatherflow/weatherflow.driver.groovy"
     },
     {
-      "id": "definition:6d94456e1577cf4e3581",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Advanced Heliotrope Driver",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Advanced Heliotrope Driver",
-          "namespace": "electrified-home"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Electrified-Home",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/Electrified-Home/Hubitat-Advanced-Heliotrope/blob/main/docs/README.md",
-        "id": "hpm:advanced-heliotrope",
-        "manifestUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json",
-        "name": "Advanced Heliotrope"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/drivers/SunPositionDriver.groovy"
-    },
-    {
       "id": "definition:6d9bd867d8b9b2e1e9d4",
       "identities": [
         {
@@ -27677,6 +27482,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE-Jasco%20Z-Wave%20Plus%20Dimmer/GE-Jasco%20Z-Wave%20Plus%20Dimmer.groovy"
     },
     {
+      "id": "definition:6e65a172c0a3bfeeda98",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Relay Switch with Metering (SIN-4-1-21)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-21.groovy"
+    },
+    {
       "id": "definition:6e740647b40da58c8d87",
       "identities": [
         {
@@ -27757,31 +27582,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/muchu999/Hubitat/master/Fibaro%20FBGS-222%20Smart%20Implant/Fibaro%20FBGS-222%20Child%20Humidity%20Sensor.groovy"
     },
     {
-      "id": "definition:6f4eaea3d3031d2e9266",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Duration (minutes)",
-          "namespace": "MHedish"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Rain Bird LNK/LNK2 Zone Child",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
-        "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
-        "name": "Rain Bird LNK/LNK2 WiFi Module Controller"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Zone-Child.groovy"
-    },
-    {
       "id": "definition:6fb261b056613c140f0d",
       "identities": [
         {
@@ -27825,31 +27625,6 @@ window.IDENTITY_INDEX = {
         "name": "Synology SRM Router Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Synology-SRM-Integration/refs/heads/main/drivers/SynologySRMDevice.groovy"
-    },
-    {
-      "id": "definition:700944e9ba9789c8be7f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "program",
-          "namespace": "MHedish"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Rain Bird LNK/LNK2 WiFi Module Controller",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
-        "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
-        "name": "Rain Bird LNK/LNK2 WiFi Module Controller"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Module.groovy"
     },
     {
       "id": "definition:7015e02b94f9f69942a7",
@@ -27915,26 +27690,6 @@ window.IDENTITY_INDEX = {
         "name": "Garage Door Opener White (GDOv2-S)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-gdov2-s.groovy"
-    },
-    {
-      "id": "definition:70813d2321c70fd71546",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Child Fan",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_fan.groovy"
     },
     {
       "id": "definition:70889e63eb95a13ec8a7",
@@ -28015,6 +27770,26 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-dimmer-red-series-vzw31-sn.src/inovelli-dimmer-red-series-vzw31-sn.groovy"
+    },
+    {
+      "id": "definition:7111893542f5be742030",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Color White Spectrum Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_CWS-Light.groovy"
     },
     {
       "id": "definition:712c781e724406d65e31",
@@ -28120,6 +27895,26 @@ window.IDENTITY_INDEX = {
         "name": "Heatmiser Neostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-plug-dth.groovy"
+    },
+    {
+      "id": "definition:71d76cabb56cb9749f77",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Signal Repeater (E1746)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1746.groovy"
     },
     {
       "id": "definition:71fbd9ec685574959d05",
@@ -28417,31 +28212,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/AirQuality-AirNow/main/AirQuality-AirNow.groovy"
     },
     {
-      "id": "definition:73844718534bf9e08159",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Fan speed*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Starkvind Air Purifier (E2006)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2006.groovy"
-    },
-    {
       "id": "definition:73d8452043c515160b6e",
       "identities": [
         {
@@ -28620,6 +28390,26 @@ window.IDENTITY_INDEX = {
         "name": "SmartHQ GE Appliances Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_laundry"
+    },
+    {
+      "id": "definition:7542e3dc4faaf1201618",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "EZsalt Driver",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/EZSalt#readme",
+        "id": "hpm:3a1f5145-0c95-476b-bf68-bfd7b26a7066",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/packageManifest.json",
+        "name": "EZsalt Tank Monitoring & Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/EZsalt%20Driver.groovy"
     },
     {
       "id": "definition:75989f41cff4c3d9d27b",
@@ -28912,6 +28702,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW3_IR/main/Universal/Hubitat_TRATO_MolSmart_GW3_IR_Universal_Learning_Driver_v2.groovy"
     },
     {
+      "id": "definition:7730d9a226335be0529e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "APC SmartUPS Status",
+          "namespace": "MHedish"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Marc Hedish",
+        "communityUrl": "https://community.hubitat.com/t/release-apc-smartups-status-driver/158899",
+        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/APC-SmartUPS/README.md",
+        "id": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
+        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json",
+        "name": "APC SmartUPS Status"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/APC-SmartUPS/APC-SmartUPS-Status.groovy"
+    },
+    {
       "id": "definition:77551070142001df765a",
       "identities": [
         {
@@ -28990,31 +28800,6 @@ window.IDENTITY_INDEX = {
         "name": "Tuya Zigbee Light Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy"
-    },
-    {
-      "id": "definition:7826f2d2bbab0b3449c7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "logEnable",
-          "namespace": "rbyrbt"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lennox iComfort Child Sensor",
-          "namespace": "rbyrbt"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "rbyrbt",
-        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
-        "id": "manifest:d29e7bd8d58f0965df61",
-        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
-        "name": "Lennox iComfort"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-sensor.groovy"
     },
     {
       "id": "definition:7841c59a70b21e1f65eb",
@@ -29327,31 +29112,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-HTTP-Presence-Sensor/master/httpPresenceSensor.groovy"
     },
     {
-      "id": "definition:7ba96ab72cc4e8b5f918",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Badring Water Leakage Sensor (E2202)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2202.groovy"
-    },
-    {
       "id": "definition:7bbda0150abf5215b173",
       "identities": [
         {
@@ -29520,26 +29280,6 @@ window.IDENTITY_INDEX = {
         "name": "Sunsa Wands"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcaton/Hubitat/main/SunsaWands/SunsaWandsAPI.groovy"
-    },
-    {
-      "id": "definition:7cd7977fafcb4167df3e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub.groovy"
     },
     {
       "id": "definition:7d5e535b983a8c314b45",
@@ -29792,6 +29532,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentNotify.groovy"
     },
     {
+      "id": "definition:802a66d6a41b7258d112",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Ambient Weather Station",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Ambient Weather Station",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
+        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
+        "name": "Ambient Weather Station"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
+    },
+    {
       "id": "definition:802b3b52130ed68b0006",
       "identities": [
         {
@@ -29850,26 +29615,6 @@ window.IDENTITY_INDEX = {
         "name": "CoCoHue (Hue Bridge Integration)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-bridge-driver.groovy"
-    },
-    {
-      "id": "definition:80889a0d99a36cb5462c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Child Plug",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_plug.groovy"
     },
     {
       "id": "definition:80f62af0f216c0eacf29",
@@ -30072,6 +29817,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/WaterGuru/WaterGuru-Driver.groovy"
     },
     {
+      "id": "definition:82a30cedfc9cf79e901a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Color Bulb",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Color Bulb",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_color_bulb.groovy"
+    },
+    {
       "id": "definition:82cf4848b01c85b4e129",
       "identities": [
         {
@@ -30135,31 +29905,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotCurtain"
-    },
-    {
-      "id": "definition:834325276e1de81417b1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "autoOffEnabled",
-          "namespace": "rbyrbt"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lennox iComfort Child Switch - Parameter Safety",
-          "namespace": "rbyrbt"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "rbyrbt",
-        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
-        "id": "manifest:d29e7bd8d58f0965df61",
-        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
-        "name": "Lennox iComfort"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch-parameter-safety.groovy"
     },
     {
       "id": "definition:83588651419d27957bac",
@@ -31162,6 +30907,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/randalln/hubitat-mitsubishi-mqtt/main/src/main/groovy/hubitat-mitsubishi-mqtt.groovy"
     },
     {
+      "id": "definition:8a36445b31508cebd1f5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Styrbar Remote Control N2 (E2002)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
+    },
+    {
       "id": "definition:8a6a195cb1e836a661f3",
       "identities": [
         {
@@ -31232,31 +30997,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_powerclamp.groovy"
     },
     {
-      "id": "definition:8ab7eb4478f95db0f614",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Symfonisk Sound Remote Gen2 (E2123)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2123.groovy"
-    },
-    {
       "id": "definition:8b04a2106baa4ddecfd5",
       "identities": [
         {
@@ -31315,6 +31055,31 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmer2-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:8b7f09714e513f1d98c0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Parent",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Parent",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_parent.groovy"
     },
     {
       "id": "definition:8b819ab1921428323bb4",
@@ -31582,31 +31347,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectController"
     },
     {
-      "id": "definition:8ce9346e6a6abad7cc16",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "State*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Parasoll Door/Window Sensor (E2013)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2013.groovy"
-    },
-    {
       "id": "definition:8d0019b9a20ced1ee77b",
       "identities": [
         {
@@ -31705,6 +31445,31 @@ window.IDENTITY_INDEX = {
         "name": "CoCoHue (Hue Bridge Integration)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-rgb-bulb-driver.groovy"
+    },
+    {
+      "id": "definition:8de4bacdff80937ec312",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HB BWA SPA Switch",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "HB BWA SPA Switch",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Cloud Control"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Switch_Device.groovy"
     },
     {
       "id": "definition:8de654e17bf47912bec7",
@@ -31885,31 +31650,6 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Apex Bridge (A3 Series)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tinkorswim/hubitat-neptuneapex/1.0.1/drivers/NeptuneApex.groovy"
-    },
-    {
-      "id": "definition:8e8dbbb51ecf273a2870",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Multifunction Relay Switch (SIN-4-1-20)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-20.groovy"
     },
     {
       "id": "definition:8ea927265acf95f96773",
@@ -32360,6 +32100,46 @@ window.IDENTITY_INDEX = {
         "name": "Virtual Smart Battery (Mutable)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/aniva/hubitat01/master/VirtualBattery/VirtualBattery.groovy"
+    },
+    {
+      "id": "definition:918854ad05c1787890b8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Multi Sensor 4 In 1",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441",
+        "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
+        "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
+        "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/Tuya%20Multi%20Sensor%204%20In%201.groovy"
+    },
+    {
+      "id": "definition:91919211c1902468ea6c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "UniFi Presence Controller",
+          "namespace": "MHedish"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Marc Hedish",
+        "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
+        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
+        "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
+        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
+        "name": "UniFi Presence Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Controller.groovy"
     },
     {
       "id": "definition:9191961f549e437b5c64",
@@ -32837,6 +32617,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_plug_w-power-meter_custom/third_reality_plug_w-power-meter_custom.groovy"
     },
     {
+      "id": "definition:93b5735a7970a044f435",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Starkvind Air Purifier (E2006)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2006.groovy"
+    },
+    {
       "id": "definition:93d7bddcdd25d65d2ba0",
       "identities": [
         {
@@ -33287,26 +33087,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectChime"
     },
     {
-      "id": "definition:97c4b95f19431db2916d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Color Bulb",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_color_bulb.groovy"
-    },
-    {
       "id": "definition:97cd96b40ddfb2b9a0dd",
       "identities": [
         {
@@ -33595,6 +33375,26 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
+    },
+    {
+      "id": "definition:999e8ebad207333a365f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Shortcut Button (E1812)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1812.groovy"
     },
     {
       "id": "definition:99c5493bf871288ad211",
@@ -33932,6 +33732,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_gateway_alamo/refs/heads/main/Driver_TRATO_Alamo_Gateway.groovy"
     },
     {
+      "id": "definition:9c9d8adcb2cd7e5aabd9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Child Dimmer",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Child Dimmer",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_dimmer.groovy"
+    },
+    {
       "id": "definition:9ca049f2001c745b3954",
       "identities": [
         {
@@ -33970,26 +33795,6 @@ window.IDENTITY_INDEX = {
         "name": "CoCoHue (Hue Bridge Integration)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-group-driver.groovy"
-    },
-    {
-      "id": "definition:9cd0f8e51a2b49eabff2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Cam Ptz",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_Cam_Ptz.groovy"
     },
     {
       "id": "definition:9d23a98ae02f888c4556",
@@ -34037,26 +33842,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3-v2.17.8.groovy"
     },
     {
-      "id": "definition:9da27042cef27f6a7197",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub Motion",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_motion.groovy"
-    },
-    {
       "id": "definition:9dd3c6d6ca528687bf07",
       "identities": [
         {
@@ -34095,6 +33880,26 @@ window.IDENTITY_INDEX = {
         "name": "Schwaiger Temperature Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Schwaiger/Schwaiger%20Temperature%20Sensor.groovy"
+    },
+    {
+      "id": "definition:9e2216ad8be0446f28e9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Askvader On/Off Switch (E1836)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1836.groovy"
     },
     {
       "id": "definition:9e27dac7b73569b91697",
@@ -34255,6 +34060,26 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Switches Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/main/zooz-zen30-double-switch.groovy"
+    },
+    {
+      "id": "definition:9f1661363947ff4b0ed3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Rain Bird LNK/LNK2 WiFi Module Controller",
+          "namespace": "MHedish"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Marc Hedish",
+        "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
+        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
+        "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
+        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
+        "name": "Rain Bird LNK/LNK2 WiFi Module Controller"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Module.groovy"
     },
     {
       "id": "definition:9f246a7ac1b1eaea8f99",
@@ -34460,6 +34285,26 @@ window.IDENTITY_INDEX = {
         "name": "Tasmota for Hubitat Elevation"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-metering-dimmer-child-expanded.groovy"
+    },
+    {
+      "id": "definition:a0877b326db9029d74ed",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Vindstyrka Air Quality Sensor (E2112)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2112.groovy"
     },
     {
       "id": "definition:a0be32e24345d93dc794",
@@ -34810,31 +34655,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2SocketsDriverComponent.groovy"
-    },
-    {
-      "id": "definition:a2f422135518eb04ed47",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Set AWS Polling Interval*",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Ambient Weather Station",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
-        "id": "hpm:e2e6903b-cfa3-463c-901f-ed9364212df2",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json",
-        "name": "Ambient Weather Station"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
     },
     {
       "id": "definition:a2fe95961898fc41a634",
@@ -35717,26 +35537,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaSwitch.groovy"
     },
     {
-      "id": "definition:a916c08eb03fff87706b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub Button",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_button.groovy"
-    },
-    {
       "id": "definition:a92d2b77d89b40a3e07e",
       "identities": [
         {
@@ -35897,31 +35697,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/drivers/BOND_Fan_Dimmable_Light.groovy"
     },
     {
-      "id": "definition:aa0420c6b7d837cb522f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Shortcut Button (E1812)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1812.groovy"
-    },
-    {
       "id": "definition:aa0ad02b132d6df84621",
       "identities": [
         {
@@ -36005,6 +35780,56 @@ window.IDENTITY_INDEX = {
         "name": "BLE Gateway Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/Blue_Charm_BCG04_BLE_Gateway_709.groovy"
+    },
+    {
+      "id": "definition:aa4aa55206b6393adcc8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub Leak",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub Leak",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_leak.groovy"
+    },
+    {
+      "id": "definition:aa52c08c89281f54c0c4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub Button",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub Button",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_button.groovy"
     },
     {
       "id": "definition:aa6c705ba98280204593",
@@ -36152,6 +35977,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/rf9500.groovey"
     },
     {
+      "id": "definition:ab2233175c22938b07e2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HB BWA SPA Pump",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "HB BWA SPA Pump",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Cloud Control"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Pump_Device.groovy"
+    },
+    {
       "id": "definition:ab248312ea6896d2bc4c",
       "identities": [
         {
@@ -36210,31 +36060,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Hayward AquaConnect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardHeaterSwitch.groovy"
-    },
-    {
-      "id": "definition:ab5a181ebf95d01fa580",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Styrbar Remote Control N2 (E2002)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
     },
     {
       "id": "definition:ac1768908b74d96729cd",
@@ -36497,31 +36322,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitLV600SHubConnect.groovy"
     },
     {
-      "id": "definition:ad6fcab2187bc62f1b17",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Pump Number*",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Balboa Hot Tub Local Driver",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Driver.groovy"
-    },
-    {
       "id": "definition:ada0694e46357a6bb958",
       "identities": [
         {
@@ -36600,31 +36400,6 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-switch-red-series-lzw30-sn.src/inovelli-switch-red-series-lzw30-sn.groovy"
-    },
-    {
-      "id": "definition:ae0de1baf3e9e7030b31",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Count Down Timer Units (mins)*",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Hubitat Dywarmic Integration",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/KurtSanders/Hubitat-Dywarmic-Integration/tree/main?tab=readme-ov-file#hubitat-dywarmic-integration",
-        "id": "hpm:ea1bd527-214b-4a03-ac9e-8ef3c6e6fb34",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json",
-        "name": "Dywarmic Towel Warmer Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Drivers/Dywarmic%20Towel%20Warmer.groovy"
     },
     {
       "id": "definition:ae132f3ec5265552d934",
@@ -36725,26 +36500,6 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 1)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-1-channel-outdoor-smart-plug-nzw96.src/inovelli-1-channel-outdoor-smart-plug-nzw96.groovy"
-    },
-    {
-      "id": "definition:aed3782fc0c56863ff88",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Tuya Multi Sensor 4 In 1",
-          "namespace": "kkossev"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Krassimir Kossev",
-        "communityUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441",
-        "documentationUrl": "https://community.hubitat.com/t/beta-tuya-zigbee-multi-sensor-4-in-1/92441/2",
-        "id": "hpm:f70af857-af94-4bca-8c13-444bf3bc8139",
-        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/packageManifest.json",
-        "name": "Tuya Multi Sensor 4 In 1 (PIR and mmWave Radars)"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Multi%20Sensor%204%20In%201/Tuya%20Multi%20Sensor%204%20In%201.groovy"
     },
     {
       "id": "definition:aed73f7d6b61756c7b6e",
@@ -37467,31 +37222,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-beams-group.groovy"
     },
     {
-      "id": "definition:b3d1c34db34adbfe5a7f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "minutes",
-          "namespace": "rbyrbt"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lennox iComfort Child Switch",
-          "namespace": "rbyrbt"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "rbyrbt",
-        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
-        "id": "manifest:d29e7bd8d58f0965df61",
-        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
-        "name": "Lennox iComfort"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch.groovy"
-    },
-    {
       "id": "definition:b3d490bf9d9dbf759ef5",
       "identities": [
         {
@@ -37550,6 +37280,46 @@ window.IDENTITY_INDEX = {
         "name": "Blink Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-WiredFloodlight.groovy"
+    },
+    {
+      "id": "definition:b416136e465ffd86aa24",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lennox iComfort Driver",
+          "namespace": "rbyrbt"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "rbyrbt",
+        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
+        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
+        "id": "manifest:d29e7bd8d58f0965df61",
+        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
+        "name": "Lennox iComfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-driver.groovy"
+    },
+    {
+      "id": "definition:b41e2f5d78b82658eeac",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Pilot Wire Heating Module (SIN-4-FP-21)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-FP-21.groovy"
     },
     {
       "id": "definition:b420237f3ee879d84a75",
@@ -37795,6 +37565,56 @@ window.IDENTITY_INDEX = {
         "name": "Heatmiser Neostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-thermostat-dth.groovy"
+    },
+    {
+      "id": "definition:b58e3feb6ba98230e781",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Plug",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Plug",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_plug.groovy"
+    },
+    {
+      "id": "definition:b58e3feb6ba98230e781:2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Plug",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Plug",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_plug.groovy"
     },
     {
       "id": "definition:b58e75dc23c4a5bb3333",
@@ -38417,6 +38237,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/michaelvandam/Hubitat/master/Networx-Alarm-System-Bridge/drivers/Alarm%20Virtual%20Smoke%20Detector.groovy"
     },
     {
+      "id": "definition:b8e470646b2c445247af",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Weight Guru Driver",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Weight Guru Driver",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/Weight-Guru",
+        "id": "hpm:36ae3325-5561-426e-a706-384c151f8a7d",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/packageManifest.json",
+        "name": "Weight Guru Bathroom Scale Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/Weight%20Guru%20Driver.groovy"
+    },
+    {
       "id": "definition:b910d86b82bf89a34435",
       "identities": [
         {
@@ -38522,31 +38367,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/sunstat-thermostat/sunstat-thermostat-child.groovy"
     },
     {
-      "id": "definition:ba8f8fea0c87b64b850b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Rodret Dimmer (E2201)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2201.groovy"
-    },
-    {
       "id": "definition:baa9465419af257cf178",
       "identities": [
         {
@@ -38585,6 +38405,46 @@ window.IDENTITY_INDEX = {
         "name": "Airfoil Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rob121/hubitat/master/drivers/airfoil/AirfoilSpeaker.groovy"
+    },
+    {
+      "id": "definition:bab6e0aee12bd37f1a05",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee Map Helper",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+        "name": "Zigbee Map"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map-helper.groovy"
+    },
+    {
+      "id": "definition:bae3ea21c1f9ceaa089c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Motion Sensor (E1745)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1745.groovy"
     },
     {
       "id": "definition:baf03d8a88707cccaed6",
@@ -39157,6 +39017,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/esimioni/lutron-aurora-hubitat/main/lutron-aurora-hubitat.groovy"
     },
     {
+      "id": "definition:bfb23863a63637caee05",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Cam Ptz",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Cam Ptz",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_Cam_Ptz.groovy"
+    },
+    {
       "id": "definition:bfd5d04b5724cd90f071",
       "identities": [
         {
@@ -39215,26 +39100,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Power Switch w/State"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ernie/hubitat/main/drivers/zooz-power-switch-with-state.groovy"
-    },
-    {
-      "id": "definition:bffd32e5740247e9e2a7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub TempHumidity",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_tempHumidity.groovy"
     },
     {
       "id": "definition:c01368b1c4889da27a43",
@@ -39462,6 +39327,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_tholz/refs/heads/main/hubitat_Tholz_SmartPool.groovy"
     },
     {
+      "id": "definition:c1adef19172aac0d54a5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Child Fan",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Child Fan",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_fan.groovy"
+    },
+    {
       "id": "definition:c1b25de7af8fbff249a6",
       "identities": [
         {
@@ -39505,31 +39395,6 @@ window.IDENTITY_INDEX = {
         "name": "AeotecMultiSensor6 Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/AeotecMultiSensor6/master/AeotecMultiSensor6.groovy"
-    },
-    {
-      "id": "definition:c1f68b54eb7c00b24026",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "logLevel",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Weight Guru Driver",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/",
-        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/Weight-Guru",
-        "id": "hpm:36ae3325-5561-426e-a706-384c151f8a7d",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/packageManifest.json",
-        "name": "Weight Guru Bathroom Scale Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/Weight%20Guru%20Driver.groovy"
     },
     {
       "id": "definition:c239934e1089391ce02f",
@@ -40185,6 +40050,26 @@ window.IDENTITY_INDEX = {
         "name": "Kasa Camera"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/main/drivers/kasaCameraFixed.groovy"
+    },
+    {
+      "id": "definition:c6052c084679ef2ecf89",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lennox iComfort Child Switch - Parameter Safety",
+          "namespace": "rbyrbt"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "rbyrbt",
+        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
+        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
+        "id": "manifest:d29e7bd8d58f0965df61",
+        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
+        "name": "Lennox iComfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch-parameter-safety.groovy"
     },
     {
       "id": "definition:c62571ff88204c8db5da",
@@ -40872,31 +40757,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/drivers/BOND_Fireplace_Light.groovy"
     },
     {
-      "id": "definition:c9c9fbee393d28cbd86c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Command",
-          "namespace": "jdc72"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Oppo Disc Player",
-          "namespace": "jdc72"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jeffrey D. Chapman",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/jdc72/Hubitat/blob/main/oppo_disc_player/README.md",
-        "id": "hpm:ae5928e5-c244-4e2e-8545-b168bb3e2340",
-        "manifestUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/packageManifest.json",
-        "name": "Oppo Disc Player"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/src/OppoDiscPlayer.groovy"
-    },
-    {
       "id": "definition:c9cc3bafa1e86abb1906",
       "identities": [
         {
@@ -41230,26 +41090,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotStripLight"
-    },
-    {
-      "id": "definition:cc7ef154901b6ebf14f5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Parent",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_parent.groovy"
     },
     {
       "id": "definition:cc806e90e3869e22015c",
@@ -41612,31 +41452,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-battery/homekit-battery.groovy"
     },
     {
-      "id": "definition:cf10a0551602092ca6f6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "EMS-ESP - Gateway",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-        "name": "EMS-ESP Gateway"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/ems-esp-gateway.groovy"
-    },
-    {
       "id": "definition:cf3bf4a2e4ce4851fd57",
       "identities": [
         {
@@ -41800,31 +41615,6 @@ window.IDENTITY_INDEX = {
         "name": "Zigbee TRVs and Thermostats"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Drivers/Zigbee%20TRV/Sonoff_Zigbee_TRV_lib_included.groovy"
-    },
-    {
-      "id": "definition:cfa6373c0126f3c280a7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "enabled",
-          "namespace": "rbyrbt"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lennox iComfort Driver",
-          "namespace": "rbyrbt"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "rbyrbt",
-        "communityUrl": "https://community.hubitat.com/t/release-lennox-icomfort-s30/162305",
-        "documentationUrl": "https://github.com/rbyrbt/Hubitat/blob/main/LennoxiComfort/README.md",
-        "id": "manifest:d29e7bd8d58f0965df61",
-        "manifestUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/packageManifest.json",
-        "name": "Lennox iComfort"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-driver.groovy"
     },
     {
       "id": "definition:cfb53f38c472d4a7301f",
@@ -42122,6 +41912,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/AirGradient/AirGradientUniversalDriver.Groovy"
     },
     {
+      "id": "definition:d0e96e1a1fc346774477",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Inspelning Smart Plug (E2206)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2206.groovy"
+    },
+    {
       "id": "definition:d107d790f8cfaf16bd6a",
       "identities": [
         {
@@ -42180,6 +41990,31 @@ window.IDENTITY_INDEX = {
         "name": "Navien NaviLink (Cloud)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-gateway.groovy"
+    },
+    {
+      "id": "definition:d1875a7001a0dff4a83f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub TempHumidity",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub TempHumidity",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_tempHumidity.groovy"
     },
     {
       "id": "definition:d19fd7299d3c81d280d9",
@@ -42635,31 +42470,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Sensors Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse41-v1.2.2.groovy"
-    },
-    {
-      "id": "definition:d43c517bcc2722971ec7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Roller Shutter Relay Switch (SIN-4-RS-20)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-RS-20.groovy"
     },
     {
       "id": "definition:d4ab3ae565b7e40b0d3e",
@@ -43177,31 +42987,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Dimmer_Switch.groovy"
     },
     {
-      "id": "definition:d836c764505719a1c54f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri Signal Repeater (E1746)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1746.groovy"
-    },
-    {
       "id": "definition:d83942db152558a9bcd0",
       "identities": [
         {
@@ -43280,31 +43065,6 @@ window.IDENTITY_INDEX = {
         "name": "Generic Dimmer (with Presence)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-generic-dimmer-expanded.groovy"
-    },
-    {
-      "id": "definition:d86757e04d7334594e8f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "NodOn Relay Switch with Metering (SIN-4-1-21)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-21.groovy"
     },
     {
       "id": "definition:d8de01de97623237832a",
@@ -43395,31 +43155,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec Eurotronic Spirit eTRV Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/Aeotec/eTRV"
-    },
-    {
-      "id": "definition:d9397bcc939d05e764b9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Heating Setpoint* 55-104°F",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "HB BWA SPA Thermostat",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
-        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
-        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
-        "name": "BWA Spa Manager - Cloud Control"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Thermostat_Device.groovy"
     },
     {
       "id": "definition:d9af5086dab6d4d7f09f",
@@ -43565,26 +43300,6 @@ window.IDENTITY_INDEX = {
         "name": "Plivo SMS and Voice Notifications"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Plivo%20SMS/Plivo-Container.groovy"
-    },
-    {
-      "id": "definition:da93d0e864dd696aa8a8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub Plug",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_plug.groovy"
     },
     {
       "id": "definition:da982a4f0e28c7884e0d",
@@ -44097,31 +43812,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dds82/shabbat/main/shabbat-and-holiday-scheduler.groovy"
     },
     {
-      "id": "definition:dcec84fea2c7b5a53022",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA White Spectrum Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_WS-Light.groovy"
-    },
-    {
       "id": "definition:dd02dc30e62b01129277",
       "identities": [
         {
@@ -44327,31 +44017,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights3Driver.groovy"
     },
     {
-      "id": "definition:df0a2722ee2db97ad25a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "name",
-          "namespace": "MHedish"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "UniFi Presence Controller",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
-        "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
-        "name": "UniFi Presence Drivers"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Controller.groovy"
-    },
-    {
       "id": "definition:df1a3d4fc245e446b891",
       "identities": [
         {
@@ -44372,29 +44037,29 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
     },
     {
-      "id": "definition:df48d0d5c5974c37420d",
+      "id": "definition:df7d26f52fe43e4b5ec6",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
+          "name": "TpLink Hub TRV",
+          "namespace": null
         },
         {
           "basis": "manifestIdentity",
-          "name": "NodOn Lighting Relay Switch (SIN-4-2-20)",
-          "namespace": "dandanache"
+          "name": "TpLink Hub TRV",
+          "namespace": "davegut"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-        "name": "Hubitat drivers for NodOn smart devices."
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
       },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-2-20.groovy"
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_trv.groovy"
     },
     {
       "id": "definition:dfd9ec362cd74a7b7093",
@@ -44497,31 +44162,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexChild.groovy"
     },
     {
-      "id": "definition:e0bb1c0aad3bca66f261",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "logEnable",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Zigbee Map Helper",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-        "name": "Zigbee Map"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map-helper.groovy"
-    },
-    {
       "id": "definition:e0bc800026adb5c51ee7",
       "identities": [
         {
@@ -44560,6 +44200,31 @@ window.IDENTITY_INDEX = {
         "name": "Honeywell Security"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Honeywell/Honeywell_Zone_Motion.groovy"
+    },
+    {
+      "id": "definition:e165e73d80bff5b31605",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HB BWA SPA Thermostat",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "HB BWA SPA Thermostat",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-hb-bwa-spamanager/128842",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:1c28d98d-56ab-4c54-8346-76cf62844b6e",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Cloud Control"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Thermostat_Device.groovy"
     },
     {
       "id": "definition:e16de505224f40ded66f",
@@ -44892,6 +44557,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-public/main/PhilipsHue/Philips-Hue-Zigbee-Bulb-White.groovy"
     },
     {
+      "id": "definition:e413bb20fdbedd85f955",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Virtual Switch uDTH Super",
+          "namespace": "sab0276"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Universal Virtual Switch uDTH Super - 20 Capabilities for HSM and all other integrations",
+          "namespace": "sab0276"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "sab0276",
+        "communityUrl": "https://community.hubitat.com/t/release-virtual-switch-universal-device-type-udth-good-for-alexa-ifttt-hsm-and-other-integrations/74223",
+        "documentationUrl": "https://community.hubitat.com/t/release-virtual-switch-universal-device-type-udth-good-for-alexa-ifttt-hsm-and-other-integrations/74223",
+        "id": "hpm:55966b40-6613-406b-bf90-500be06b781f",
+        "manifestUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/packageManifest.json",
+        "name": "Universal Virtual Device Switch uDTH - For Alexa, IFTTT, WebHooks, HSM, and other integrations"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH.groovy"
+    },
+    {
       "id": "definition:e49a2ec1da059f107fcc",
       "identities": [
         {
@@ -45217,31 +44907,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/Tuya_Temperature_Humidity_Illuminance_LCD_Display_with_a_Clock.groovy"
     },
     {
-      "id": "definition:e5f3ff4b3bab5fd95d6d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Alert Notification Test",
-          "namespace": "MHedish"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "APC SmartUPS Status",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/release-apc-smartups-status-driver/158899",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/APC-SmartUPS/README.md",
-        "id": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json",
-        "name": "APC SmartUPS Status"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/APC-SmartUPS/APC-SmartUPS-Status.groovy"
-    },
-    {
       "id": "definition:e6175f4386a2bb664c0b",
       "identities": [
         {
@@ -45280,31 +44945,6 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-fan-light-lzw36.src/inovelli-fan-light-lzw36.groovy"
-    },
-    {
-      "id": "definition:e62ca3741745527ca988",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": null
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "EZsalt Driver",
-          "namespace": "kurtsanders"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kurt Sanders",
-        "communityUrl": "https://community.hubitat.com/",
-        "documentationUrl": "https://github.com/KurtSanders/HubitatPackages/tree/master/resources/apps/EZSalt#readme",
-        "id": "hpm:3a1f5145-0c95-476b-bf68-bfd7b26a7066",
-        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/packageManifest.json",
-        "name": "EZsalt Tank Monitoring & Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/EZsalt%20Driver.groovy"
     },
     {
       "id": "definition:e65c85227da78d60af1e",
@@ -45410,6 +45050,26 @@ window.IDENTITY_INDEX = {
         "name": "Miscellaneous Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ardichoke/Hubitat/main/Drivers/Everspring-AN186.groovy"
+    },
+    {
+      "id": "definition:e6f2e540aecf6d0e745d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Open/Close Remote (E1766)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1766.groovy"
     },
     {
       "id": "definition:e70917a40abfdcd6725a",
@@ -45937,6 +45597,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-thinq/master/drivers/ThinQ_Washer.groovy"
     },
     {
+      "id": "definition:e9fe0a1b57406944e799",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Advanced Heliotrope Driver",
+          "namespace": "electrified-home"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Electrified-Home",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/Electrified-Home/Hubitat-Advanced-Heliotrope/blob/main/docs/README.md",
+        "id": "hpm:advanced-heliotrope",
+        "manifestUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json",
+        "name": "Advanced Heliotrope"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/drivers/SunPositionDriver.groovy"
+    },
+    {
       "id": "definition:ea0e580da065012b6adb",
       "identities": [
         {
@@ -46097,6 +45777,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/Weather-Display-With-OWM-Alerts-Forecast-Driver/master/Weather-Display%20With%20OWM-Alerts%20Forecast%20Driver.groovy"
     },
     {
+      "id": "definition:ead189fbf93f69ad953b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Remote Control (E1810)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1810.groovy"
+    },
+    {
       "id": "definition:eafb04539e5220065936",
       "identities": [
         {
@@ -46117,6 +45817,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_Hikvision/refs/heads/master/Hikvision_Controller_Driver.groovy?token=GHSAT0AAAAAACS3UP6TKISRGFWGEY3LPWDKZYDAQJQ"
     },
     {
+      "id": "definition:eb0849224928f1749a27",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub Motion",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub Motion",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_motion.groovy"
+    },
+    {
       "id": "definition:eb153b8ddd86c53ea9db",
       "identities": [
         {
@@ -46135,6 +45860,26 @@ window.IDENTITY_INDEX = {
         "name": "Unified Thermostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/UnifiedThermostat/UnifiedThermostatUnitChild_Driver.groovy"
+    },
+    {
+      "id": "definition:eb1a664ef0f5155e9eab",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA White Spectrum Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_WS-Light.groovy"
     },
     {
       "id": "definition:eb545b3b34c2a89b9fc0",
@@ -46277,6 +46022,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFloodGen4-v2.17.8.groovy"
     },
     {
+      "id": "definition:ed663e462097f015c1f0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Dimmable Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_DIM-Light.groovy"
+    },
+    {
       "id": "definition:ed9044b3a18227dcf5a4",
       "identities": [
         {
@@ -46320,31 +46085,6 @@ window.IDENTITY_INDEX = {
         "name": "Garge Door Opener blaQ (GDOv2-Q)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-gdov2-q.groovy"
-    },
-    {
-      "id": "definition:eddffdfb2d3969615afa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Vallhorn Motion Sensor (E2134)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2134.groovy"
     },
     {
       "id": "definition:ee3ec2cf5b13e1095ee7",
@@ -46472,6 +46212,46 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/aqara-fp300.src/aqara-fp300.groovy"
     },
     {
+      "id": "definition:ef4f46a6ae353f42c60c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Vallhorn Motion Sensor (E2134)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2134.groovy"
+    },
+    {
+      "id": "definition:ef5d15eab93c1e3ca1d8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Lighting Relay Switch (SIN-4-2-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-2-20.groovy"
+    },
+    {
       "id": "definition:ef63d0c4f68a40f8f69d",
       "identities": [
         {
@@ -46550,6 +46330,26 @@ window.IDENTITY_INDEX = {
         "name": "Xiaomi Mijia Smart Light Sensor (Zigbee 3.0)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-xiaomi-mijia-smart-light-sensor-expanded.groovy"
+    },
+    {
+      "id": "definition:f0b76ece4d9d498a86fa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Control Outlet (E1603)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1603.groovy"
     },
     {
       "id": "definition:f0d3566467d51ce62eec",
@@ -46927,6 +46727,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DarwinsDen/Demand-Manager/master/devicetypes/darwinsden/demand-manager-dashboard.src/demand-manager-dashboard.groovy"
     },
     {
+      "id": "definition:f2e271bdd3fb15568cb1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Parasoll Door/Window Sensor (E2013)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2013.groovy"
+    },
+    {
       "id": "definition:f305ace1d5495453fcb7",
       "identities": [
         {
@@ -47147,6 +46967,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-traeger/main/TraegerGrillDriver.groovy"
     },
     {
+      "id": "definition:f4e46a175fee9cbbd12d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub Contact",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub Contact",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_contact.groovy"
+    },
+    {
       "id": "definition:f4f193a08c10c96f0035",
       "identities": [
         {
@@ -47252,6 +47097,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/truittchris/hubitat_alexa_routine_trigger/main/drivers/HubitatAlexaRoutineTriggerDriverChildContact.groovy"
     },
     {
+      "id": "definition:f57566af8bc3445b95a6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Oppo Disc Player",
+          "namespace": "jdc72"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jeffrey D. Chapman",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jdc72/Hubitat/blob/main/oppo_disc_player/README.md",
+        "id": "hpm:ae5928e5-c244-4e2e-8545-b168bb3e2340",
+        "manifestUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/packageManifest.json",
+        "name": "Oppo Disc Player"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/src/OppoDiscPlayer.groovy"
+    },
+    {
       "id": "definition:f596f4fdf37ac9fe19ce",
       "identities": [
         {
@@ -47270,6 +47135,31 @@ window.IDENTITY_INDEX = {
         "name": "MyQ Garage Door Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-myq/master/devicetypes/brbeaird/myq-garage-door-opener.src/myq-garage-door-opener.groovy"
+    },
+    {
+      "id": "definition:f5cf8c7b7dc2788b037c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Hub",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Hub",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub.groovy"
     },
     {
       "id": "definition:f60620e0552d2a98f8bc",
@@ -47330,31 +47220,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Plugs Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen-plugs-mcp-v1.2.6.groovy"
-    },
-    {
-      "id": "definition:f66b271b2d208c4d1b3e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "helpInfo",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tradfri On/Off Switch (E1743)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1743.groovy"
     },
     {
       "id": "definition:f680811566dcaeb508f2",
@@ -47572,31 +47437,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Loki/LokiLogLogger.groovy"
     },
     {
-      "id": "definition:f7fd49c7e679e32dbe1e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA Tretakt Smart Plug (E2204)",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2204.groovy"
-    },
-    {
       "id": "definition:f8171f106aa719afad52",
       "identities": [
         {
@@ -47695,6 +47535,31 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2AromaDiffuserDriverwithLightsandWhitenNoise.groovy"
+    },
+    {
+      "id": "definition:f8f834253a1f0dbd93b3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Balboa Hot Tub Local Child Switch",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Balboa Hot Tub Local Child Switch",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
+        "documentationUrl": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
+        "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
+        "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
+        "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Child%20Switch.groovy"
     },
     {
       "id": "definition:f9490def956d694a0510",
@@ -48117,31 +47982,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/yonatan-mitmit/HubitatAnthem/main/AnthemChild.groovy"
     },
     {
-      "id": "definition:fcf658ebfc7c78edc3c9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "On duration*",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "IKEA RGB-Only Light",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-        "name": "IKEA Zigbee drivers"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_RGBO-Light.groovy"
-    },
-    {
       "id": "definition:fd046594fbef975f04e0",
       "identities": [
         {
@@ -48200,6 +48040,31 @@ window.IDENTITY_INDEX = {
         "name": "Unifi Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPXG8P.groovy"
+    },
+    {
+      "id": "definition:fd31a9485e1dc1045d6f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TpLink Child Plug",
+          "namespace": null
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "TpLink Child Plug",
+          "namespace": "davegut"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "David Gutheinz",
+        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
+        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
+        "id": "manifest:d2ca03eac3949a3d81ba",
+        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
+        "name": "TAPO Device Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_plug.groovy"
     },
     {
       "id": "definition:fd36e3e5e2ec652c2520",
@@ -48325,26 +48190,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_SmartHQ"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_homeWaterFilter"
-    },
-    {
-      "id": "definition:fe570cb526993bd1f8fe",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TpLink Hub TRV",
-          "namespace": "davegut"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Gutheinz",
-        "communityUrl": "https://community.hubitat.com/t/tp-link-tapo-devices/121084",
-        "documentationUrl": "https://github.com/DaveGut/tpLink_Hubitat",
-        "id": "manifest:d2ca03eac3949a3d81ba",
-        "manifestUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/main/packageManifest.json",
-        "name": "TAPO Device Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_hub_trv.groovy"
     },
     {
       "id": "definition:fe8b43bd4dbf5d61218c",
@@ -48475,5 +48320,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-16T02:16:49Z"
+  "snapshotGenerated": "2026-09-16T03:36:32Z"
 };
