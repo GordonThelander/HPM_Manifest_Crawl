@@ -754,6 +754,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:c6cb3e6d30261b6c9482",
           "packageName": "Pump Scheduler",
           "summary": "Pump Scheduler: added."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:58a5d998f26aa430d91ae46e",
+          "observedAt": "2026-09-16T02:16:49Z",
+          "observedCommit": null,
+          "packageId": "manifest:fdad5c3b97cf10f30b64",
+          "packageName": "Iris v2 v3 Keypad",
+          "summary": "Iris v2 v3 Keypad: updated."
         }
       ],
       "appCount": 3,
@@ -776,7 +790,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 32,
       "id": "contributor:3d07aab59cd6c5d37cb7",
       "name": "TheMaster",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -1010,7 +1024,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Iris v2 v3 Keypad",
           "publisherDate": "2026-09-13",
           "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.6.0"
+          "version": "1.7.0"
         },
         {
           "appCount": 0,
@@ -17856,6 +17870,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0b1fbdbdbb8923d9a26b5e1e",
+          "observedAt": "2026-09-16T02:16:49Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -17870,7 +17898,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 13,
+      "observedActivityCount": 14,
       "packages": [
         {
           "appCount": 2,
@@ -17881,9 +17909,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-14",
+          "publisherDate": "2026-09-15",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.3.3"
+          "version": "4.3.5"
         }
       ]
     },
@@ -20270,10 +20298,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 234,
-    "eventCount": 234,
+    "attributedEventCount": 236,
+    "eventCount": 236,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-15T02:22:29Z"
+    "lastObservedAt": "2026-09-16T02:16:49Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -20287,7 +20315,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-15T02:22:29Z",
+  "snapshotGenerated": "2026-09-16T02:16:49Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

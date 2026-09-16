@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-15T02:22:29Z`.
+Latest observation: `2026-09-16T02:16:49Z`.
 
-**63 package change(s):** added 20, declared definitions changed 7, removed 14, restored 1, source location changed 2, updated 23
+**57 package change(s):** added 20, declared definitions changed 2, removed 14, source location changed 2, updated 22
 
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Iris v2 v3 Keypad: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [Pump Scheduler: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json)
@@ -59,13 +61,5 @@ Latest observation: `2026-09-15T02:22:29Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
-- [Zooz Scene Controllers Advanced Drivers: changed declared definitions, was restored.](https://raw.githubusercontent.com/jtp10181/Hubitat/main/packageManifest/zooz-zen-scene.json)
-- [Presence Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/packageManifest.json)
-- [NTFY Notifier Driver: updated.](https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hive Drivers from BirdsLikeWires: changed declared definitions.](https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/packageManifest.json)
-- [Heatmiser Neostat: changed declared definitions.](https://raw.githubusercontent.com/cjcharles0/Hubitat/master/packages/heatmiser-neostat-package.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [AverageThis: changed declared definitions.](https://raw.githubusercontent.com/HubitatCommunity/AverageThis/master/docs/AverageThis.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
