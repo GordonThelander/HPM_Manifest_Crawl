@@ -4281,6 +4281,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5a8c6bef745e0a0f4fab3344",
+          "observedAt": "2026-09-17T02:20:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
         }
       ],
       "appCount": 11,
@@ -4307,7 +4321,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 16,
+      "observedActivityCount": 17,
       "packages": [
         {
           "appCount": 2,
@@ -4487,9 +4501,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-09-14",
+          "publisherDate": "2026-09-16",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.30.0"
+          "version": "1.31.0"
         }
       ]
     },
@@ -4800,6 +4814,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:398726763b5d3bce0985",
           "packageName": "Zooz Sprinkler Scheduler",
           "summary": "Zooz Sprinkler Scheduler: updated."
+        },
+        {
+          "category": "Irrigation",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:05973e9415763c6d40d638f2",
+          "observedAt": "2026-09-17T02:20:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:398726763b5d3bce0985",
+          "packageName": "Zooz Sprinkler Scheduler",
+          "summary": "Zooz Sprinkler Scheduler: updated."
         }
       ],
       "appCount": 13,
@@ -4846,7 +4874,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 7,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 0,
@@ -5026,9 +5054,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:398726763b5d3bce0985",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json",
           "name": "Zooz Sprinkler Scheduler",
-          "publisherDate": "2026-09-04",
+          "publisherDate": "2026-09-17",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "0.16.2"
+          "version": "0.16.8"
         }
       ]
     },
@@ -11415,6 +11443,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ae2188cb8819b3fdb8fbc226",
+          "observedAt": "2026-09-17T02:20:10Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -11441,7 +11483,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 14,
+      "observedActivityCount": 15,
       "packages": [
         {
           "appCount": 1,
@@ -11454,7 +11496,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Automation Map",
           "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.3.1"
+          "version": "2.3.2"
         },
         {
           "appCount": 0,
@@ -14098,6 +14140,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:4182ea59-5bb0-4145-b1b5-aa21de765a76",
           "packageName": "Commercial Lock",
           "summary": "Commercial Lock: added."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6de45e7209a588f0706f67bf",
+          "observedAt": "2026-09-17T02:20:10Z",
+          "observedCommit": null,
+          "packageId": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
+          "packageName": "Modern Dashboard",
+          "summary": "Modern Dashboard: updated."
         }
       ],
       "appCount": 3,
@@ -14112,7 +14168,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 2,
@@ -14136,9 +14192,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
           "manifestUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json",
           "name": "Modern Dashboard",
-          "publisherDate": "2026-08-13",
+          "publisherDate": "2026-09-16",
           "repositoryUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/repository.json",
-          "version": "0.4.7"
+          "version": "0.4.15"
         }
       ]
     },
@@ -18285,6 +18341,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67443eddf36ec1a1b76b2452",
+          "observedAt": "2026-09-17T02:20:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -18299,7 +18369,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 14,
+      "observedActivityCount": 15,
       "packages": [
         {
           "appCount": 2,
@@ -18310,9 +18380,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-15",
+          "publisherDate": "2026-09-16",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.3.5"
+          "version": "4.3.6"
         }
       ]
     },
@@ -20714,10 +20784,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 265,
-    "eventCount": 265,
+    "attributedEventCount": 270,
+    "eventCount": 270,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-16T03:36:32Z"
+    "lastObservedAt": "2026-09-17T02:20:10Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -20731,7 +20801,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-16T03:36:32Z",
+  "snapshotGenerated": "2026-09-17T02:20:10Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

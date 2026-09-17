@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-16T03:36:32Z`.
+Latest observation: `2026-09-17T02:20:10Z`.
 
-**86 package change(s):** added 20, declared definitions changed 31, removed 14, source location changed 2, updated 22
+**89 package change(s):** added 20, declared definitions changed 31, removed 14, source location changed 2, updated 25
 
+- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [webCoRE: changed declared definitions.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
 - [Zigbee Map: changed declared definitions.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
 - [Weight Guru Bathroom Scale Integration: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/packageManifest.json)
@@ -88,7 +93,5 @@ Latest observation: `2026-09-16T03:36:32Z`.
 - [Centralite Pearl Zigbee Thermostat: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json)
 - [Third Reality Custom Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Geofency Presence: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Geofency-Presence/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
