@@ -14154,6 +14154,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
           "packageName": "Modern Dashboard",
           "summary": "Modern Dashboard: updated."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:78b366610bd6ae2ca96c73a7",
+          "observedAt": "2026-09-18T02:05:42Z",
+          "observedCommit": null,
+          "packageId": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
+          "packageName": "Modern Dashboard",
+          "summary": "Modern Dashboard: updated."
         }
       ],
       "appCount": 3,
@@ -14168,7 +14182,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 2,
@@ -14192,9 +14206,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:e8f4a1c2-3b5d-4e9f-a7c6-1d2e3f4a5b6c",
           "manifestUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json",
           "name": "Modern Dashboard",
-          "publisherDate": "2026-09-16",
+          "publisherDate": "2026-09-17",
           "repositoryUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/repository.json",
-          "version": "0.4.15"
+          "version": "0.4.18"
         }
       ]
     },
@@ -14258,7 +14272,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:598166c488270d44f125b7ee",
+          "observedAt": "2026-09-18T02:05:42Z",
+          "observedCommit": null,
+          "packageId": "hpm:e214cac5-b7c8-4aac-b996-ef8f42d71d12",
+          "packageName": "Schedule Manager",
+          "summary": "Schedule Manager: updated."
+        }
+      ],
       "appCount": 4,
       "categories": [
         {
@@ -14275,7 +14304,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 2,
@@ -14299,9 +14328,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:e214cac5-b7c8-4aac-b996-ef8f42d71d12",
           "manifestUrl": "https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/hpm-packageManifest.json",
           "name": "Schedule Manager",
-          "publisherDate": "2024-11-18",
+          "publisherDate": "2026-09-17",
           "repositoryUrl": "https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/hpm-repository.json",
-          "version": "3.6.1"
+          "version": "3.7.0"
         }
       ]
     },
@@ -18355,6 +18384,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9e209896784048f418e75fab",
+          "observedAt": "2026-09-18T02:05:42Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -18369,7 +18412,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 15,
+      "observedActivityCount": 16,
       "packages": [
         {
           "appCount": 2,
@@ -18380,9 +18423,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-16",
+          "publisherDate": "2026-09-17",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.3.6"
+          "version": "4.3.7"
         }
       ]
     },
@@ -20784,10 +20827,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 270,
-    "eventCount": 270,
+    "attributedEventCount": 273,
+    "eventCount": 273,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-17T02:20:10Z"
+    "lastObservedAt": "2026-09-18T02:05:42Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -20801,7 +20844,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-17T02:20:10Z",
+  "snapshotGenerated": "2026-09-18T02:05:42Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

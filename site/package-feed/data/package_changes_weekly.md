@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-17T02:20:10Z`.
+Latest observation: `2026-09-18T02:05:42Z`.
 
-**89 package change(s):** added 20, declared definitions changed 31, removed 14, source location changed 2, updated 25
+**90 package change(s):** added 20, declared definitions changed 30, removed 14, source location changed 1, updated 26
 
+- [Schedule Manager: updated.](https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/hpm-packageManifest.json)
+- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
@@ -91,7 +94,5 @@ Latest observation: `2026-09-17T02:20:10Z`.
 - [Dashboard Widgets: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json)
 - [Centralite Pearl Zigbee Thermostat: removed.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 - [Centralite Pearl Zigbee Thermostat: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json)
-- [Third Reality Custom Drivers: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -18918,7 +18918,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Use this app to schedule switches, outlets and lights. Optionally configure modes and overrides.",
+      "description": "Schedule switches, dimmers, shades, buttons, locks, and doors using static, sun, or Hub Variable times. Copy schedules or keep them synchronized across compatible devices.",
       "documentationUrl": "https://github.com/evcallia/hubitat/blob/main/apps/schedule-manager/README.md",
       "id": "hpm:e214cac5-b7c8-4aac-b996-ef8f42d71d12",
       "manifestUrl": "https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/hpm-packageManifest.json",
@@ -27448,5 +27448,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-17T02:20:10Z"
+  "snapshotGenerated": "2026-09-18T02:05:42Z"
 };
