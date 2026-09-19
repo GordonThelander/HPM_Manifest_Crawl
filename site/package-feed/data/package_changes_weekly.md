@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-18T02:05:42Z`.
+Latest observation: `2026-09-19T02:09:47Z`.
 
-**90 package change(s):** added 20, declared definitions changed 30, removed 14, source location changed 1, updated 26
+**78 package change(s):** added 19, declared definitions changed 30, removed 3, source location changed 1, updated 26
 
+- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
+- [MolSmart - GW8 - AC (learning): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
 - [Schedule Manager: updated.](https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/hpm-packageManifest.json)
 - [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
@@ -78,21 +82,5 @@ Latest observation: `2026-09-18T02:05:42Z`.
 - [Centralite Pearl Zigbee Thermostat: removed.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json)
 - [Basic Z-Wave tool: added.](https://www.hubitatcommunity.com/hpm/BasicZwaveTool.json)
 - [AeotecHEMGen5 Driver: added.](https://www.hubitatcommunity.com/hpm/AeotecHEMGen5.json)
-- [zigbee-graph: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
-- [Zigbee Map: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Watchtower: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
-- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Lumos: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json)
-- [LGTV with webOS: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
-- [IKEA Zigbee drivers: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
-- [Hubitat drivers for NodOn smart devices.: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
-- [Hub-a-Dashery: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json)
-- [EMS-ESP Gateway: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
-- [Date & Time Parser: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/datetime_parser/packageManifest.json)
-- [Dashboard Widgets: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json)
-- [Centralite Pearl Zigbee Thermostat: removed.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Centralite Pearl Zigbee Thermostat: added.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat_custom/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
