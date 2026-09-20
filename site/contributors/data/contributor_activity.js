@@ -4856,6 +4856,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:398726763b5d3bce0985",
           "packageName": "Zooz Sprinkler Scheduler",
           "summary": "Zooz Sprinkler Scheduler: updated."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:84e2a480556fff6cbb888ba3",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:9ff118ecc814f5e277dd",
+          "packageName": "Blinds Dusk Automation",
+          "summary": "Blinds Dusk Automation: updated."
         }
       ],
       "appCount": 13,
@@ -4902,7 +4916,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 9,
+      "observedActivityCount": 10,
       "packages": [
         {
           "appCount": 0,
@@ -4939,9 +4953,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:9ff118ecc814f5e277dd",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json",
           "name": "Blinds Dusk Automation",
-          "publisherDate": "2026-06-23",
+          "publisherDate": "2026-09-19",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "1.0.0"
+          "version": "1.2.0"
         },
         {
           "appCount": 0,
@@ -5843,6 +5857,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3e874b873da2ba4628cc",
           "packageName": "Centralite Pearl Zigbee Thermostat",
           "summary": "Centralite Pearl Zigbee Thermostat: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:306bbed161de6f17513442f7",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:d6513611d38422ced953",
+          "packageName": "Third Reality Custom Drivers",
+          "summary": "Third Reality Custom Drivers: updated."
         }
       ],
       "appCount": 2,
@@ -5861,7 +5889,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 0,
@@ -5952,7 +5980,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Third Reality Custom Drivers",
           "publisherDate": "2026-09-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "1.0.9"
+          "version": "1.0.11"
         },
         {
           "appCount": 0,
@@ -13000,6 +13028,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fbb2e5e1576733f3cbdc5c0d",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
         }
       ],
       "appCount": 2,
@@ -13022,7 +13065,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 8,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 1,
@@ -13048,7 +13091,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.4.6"
+          "version": "1.5.0"
         },
         {
           "appCount": 0,
@@ -16411,6 +16454,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8674a05a8e58c3a46de1",
           "packageName": "PositionGuard",
           "summary": "PositionGuard: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:00f2d6a52185799da8722a9d",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:8674a05a8e58c3a46de1",
+          "packageName": "PositionGuard",
+          "summary": "PositionGuard: updated."
         }
       ],
       "appCount": 1,
@@ -16425,7 +16482,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 1,
@@ -16436,9 +16493,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8674a05a8e58c3a46de1",
           "manifestUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json",
           "name": "PositionGuard",
-          "publisherDate": "2026-09-02",
+          "publisherDate": "2026-09-19",
           "repositoryUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
-          "version": "1.4.0"
+          "version": "1.4.1"
         }
       ]
     },
@@ -18454,6 +18511,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:611dfe6e83d05ad1a72a8997",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -18468,7 +18539,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 17,
+      "observedActivityCount": 18,
       "packages": [
         {
           "appCount": 2,
@@ -18479,9 +18550,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-18",
+          "publisherDate": "2026-09-19",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.3.8"
+          "version": "4.3.10"
         }
       ]
     },
@@ -20883,10 +20954,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 909,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 277,
-    "eventCount": 277,
+    "attributedEventCount": 282,
+    "eventCount": 282,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-19T02:09:47Z"
+    "lastObservedAt": "2026-09-20T02:16:28Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -20900,7 +20971,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 907,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-19T02:09:47Z",
+  "snapshotGenerated": "2026-09-20T02:16:28Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
