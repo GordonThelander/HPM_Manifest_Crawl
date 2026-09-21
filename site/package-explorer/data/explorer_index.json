@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 909,
+    "HPM_PACKAGE": 912,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2614,
+  "recordCount": 2617,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -19952,7 +19952,7 @@
       "author": "Boguslaw Wojcik (@bogus.wojcik)",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-06-25",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:97cd96b40ddfb2b9a0dd",
@@ -20031,7 +20031,7 @@
         "Temperature & Humidity",
         "ZWave"
       ],
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "author": "Bryan Copeland",
@@ -25038,6 +25038,89 @@
         "Pets & Animals"
       ],
       "version": "1.5.0"
+    },
+    {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Utility",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-20",
+      "definitions": [
+        {
+          "id": "definition:8d0a222fc83f0ae8eacb",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "BITUO TECHNIK SPM02 3-Phase Meter",
+          "namespace": "boguslaw-wojcik",
+          "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/bituo/bituo_spm02_3phase_meter.groovy"
+        }
+      ],
+      "description": "BITUO TECHNIK SPM02X001 (Zemismart SPM02-3Z3) Zigbee 3-phase energy meter driver with total and per-phase power, voltage and current, energy, and configurable reporting.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:43718486-e31d-4e7e-b014-764352fc86cd",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-bituo-technik-spm02-3-phase-meter-community-driver/166338",
+        "documentation": "https://community.hubitat.com/t/release-bituo-technik-spm02-3-phase-meter-community-driver/166338",
+        "manifest": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/bituo_spm02_3phase_meter.json",
+        "repository": "https://github.com/boguslaw-wojcik/hubitat"
+      },
+      "name": "BITUO TECHNIK SPM02 3-Phase Meter",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Zigbee"
+      ],
+      "version": "0.1.0"
     },
     {
       "author": "Art Ardolino",
@@ -38828,7 +38911,7 @@
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-08-16",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:d83942db152558a9bcd0",
@@ -38906,7 +38989,7 @@
         "Monitoring",
         "Safety & Security"
       ],
-      "version": "2.3.0"
+      "version": "2.4.0"
     },
     {
       "author": "Brian Wilson",
@@ -41970,6 +42053,91 @@
       "version": null
     },
     {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-20",
+      "definitions": [
+        {
+          "id": "definition:e357b418a4cc19e8e188",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Heatit ZM Dimmer 250W",
+          "namespace": "boguslaw-wojcik",
+          "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/heatit/heatit_zm_dimmer.groovy"
+        }
+      ],
+      "description": "Heatit ZM Dimmer 250W in-wall dimmer driver with power metering, S1/S2 scene buttons and all parameters, for both the legacy Z-Wave stack and Z-Wave JS.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:3359eafe-0f0f-4d5e-a20f-270a74657d45",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-heatit-zm-dimmer-250w-community-driver/166341",
+        "documentation": "https://community.hubitat.com/t/release-heatit-zm-dimmer-250w-community-driver/166341",
+        "manifest": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/heatit_zm_dimmer.json",
+        "repository": "https://github.com/boguslaw-wojcik/hubitat"
+      },
+      "name": "Heatit ZM Dimmer 250W",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Energy Monitoring",
+        "Lights & Switches",
+        "ZWave"
+      ],
+      "version": "0.1.0"
+    },
+    {
       "author": "Rene Boer",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -42501,7 +42669,7 @@
       "author": "Haven",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-14",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:f21e9df84b41fbbe0af0",
@@ -42584,7 +42752,7 @@
         "Security",
         "Utility"
       ],
-      "version": "1.6.7"
+      "version": "1.6.9"
     },
     {
       "author": "null",
@@ -61886,7 +62054,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-19",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -61968,7 +62136,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.3.10"
+      "version": "4.3.11"
     },
     {
       "author": "Justin Leonard",
@@ -68068,7 +68236,7 @@
       "author": "Boguslaw Wojcik (@bogus.wojcik)",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-12-19",
+      "dateReleased": "2026-09-19",
       "definitions": [
         {
           "id": "definition:1ab0cc40fed8a5b87918",
@@ -68145,7 +68313,7 @@
         "Garage Doors",
         "ZWave"
       ],
-      "version": "0.1.2"
+      "version": "0.2.0"
     },
     {
       "author": "Aaron Ward",
@@ -69401,7 +69569,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-11",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:474e77ebb325e9e80fa7",
@@ -69483,7 +69651,7 @@
         "Virtual",
         "Weather"
       ],
-      "version": "2.5.13"
+      "version": "2.5.16"
     },
     {
       "author": "Scottma61 (Original) / Aniva (Patch)",
@@ -80626,6 +80794,105 @@
       "version": "0.0.7"
     },
     {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-20",
+      "definitions": [
+        {
+          "id": "definition:8861e2c2b283584fb116",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Wave 1PM & Mini",
+          "namespace": "boguslaw-wojcik",
+          "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/shelly/shelly_wave_1pm.groovy"
+        }
+      ],
+      "description": "Shelly Wave 1PM and Wave 1PM Mini relay driver with power metering, remote reboot and all parameters, for both the legacy Z-Wave stack and Z-Wave JS.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:51945705-cbb6-47fd-914b-99378967c913",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-shelly-wave-1pm-1pm-mini-community-driver/166339",
+        "documentation": "https://community.hubitat.com/t/release-shelly-wave-1pm-1pm-mini-community-driver/166339",
+        "manifest": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_1pm.json",
+        "repository": "https://github.com/boguslaw-wojcik/hubitat"
+      },
+      "name": "Shelly Wave 1PM & Mini",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": [
+          {
+            "dependencies": [
+              {
+                "class": "LOCAL_DEVICE",
+                "name": "Shelly Device",
+                "runtimeCriticality": "RUNTIME",
+                "transport": "LAN"
+              }
+            ],
+            "documentation": [],
+            "id": "shelly-native",
+            "name": "Shelly Integration",
+            "status": "VERIFIED_CORE"
+          }
+        ]
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Lights & Switches",
+        "ZWave"
+      ],
+      "version": "0.1.0"
+    },
+    {
       "author": "Rene Boer",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -80925,7 +81192,7 @@
       "author": "Boguslaw Wojcik (@bogus.wojcik)",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-06-25",
+      "dateReleased": "2026-09-20",
       "definitions": [
         {
           "id": "definition:93e4ecd0e71061bed888",
@@ -81017,7 +81284,7 @@
         "Doors & Windows",
         "ZWave"
       ],
-      "version": "0.1.2"
+      "version": "0.2.0"
     },
     {
       "author": "ShellyUSA, Daniel Winks",
@@ -101138,7 +101405,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.31.0"
+      "version": "1.31.1"
     },
     {
       "author": "Jake Lehner",
@@ -132093,5 +132360,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-20T02:16:28Z"
+  "snapshotGenerated": "2026-09-21T02:16:17Z"
 }

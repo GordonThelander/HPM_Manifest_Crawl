@@ -3,7 +3,7 @@
     "BOTH": 181,
     "CLOUD": 259,
     "INSUFFICIENT": 299,
-    "LAN": 170
+    "LAN": 173
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 909,
+  "packageCount": 912,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -2342,6 +2342,34 @@
         "Cloud",
         "Monitoring",
         "Pets & Animals"
+      ]
+    },
+    {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Utility",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-bituo-technik-spm02-3-phase-meter-community-driver/166338",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "BITUO TECHNIK SPM02X001 (Zemismart SPM02-3Z3) Zigbee 3-phase energy meter driver with total and per-phase power, voltage and current, energy, and configurable reporting.",
+      "documentationUrl": "https://community.hubitat.com/t/release-bituo-technik-spm02-3-phase-meter-community-driver/166338",
+      "id": "hpm:43718486-e31d-4e7e-b014-764352fc86cd",
+      "manifestUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/bituo_spm02_3phase_meter.json",
+      "name": "BITUO TECHNIK SPM02 3-Phase Meter",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Zigbee"
       ]
     },
     {
@@ -7651,6 +7679,37 @@
       "reviewed": [],
       "tags": [
         "Temperature & Humidity",
+        "ZWave"
+      ]
+    },
+    {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-heatit-zm-dimmer-250w-community-driver/166341",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Heatit ZM Dimmer 250W in-wall dimmer driver with power metering, S1/S2 scene buttons and all parameters, for both the legacy Z-Wave stack and Z-Wave JS.",
+      "documentationUrl": "https://community.hubitat.com/t/release-heatit-zm-dimmer-250w-community-driver/166341",
+      "id": "hpm:3359eafe-0f0f-4d5e-a20f-270a74657d45",
+      "manifestUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/heatit_zm_dimmer.json",
+      "name": "Heatit ZM Dimmer 250W",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Buttons",
+        "Energy Monitoring",
+        "Lights & Switches",
         "ZWave"
       ]
     },
@@ -19325,6 +19384,51 @@
       ]
     },
     {
+      "author": "Boguslaw Wojcik (@bogus.wojcik)",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-shelly-wave-1pm-1pm-mini-community-driver/166339",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Shelly Wave 1PM and Wave 1PM Mini relay driver with power metering, remote reboot and all parameters, for both the legacy Z-Wave stack and Z-Wave JS.",
+      "documentationUrl": "https://community.hubitat.com/t/release-shelly-wave-1pm-1pm-mini-community-driver/166339",
+      "id": "hpm:51945705-cbb6-47fd-914b-99378967c913",
+      "manifestUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_1pm.json",
+      "name": "Shelly Wave 1PM & Mini",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_DEVICE",
+              "name": "Shelly Device",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN"
+            }
+          ],
+          "documentation": [],
+          "id": "shelly-native",
+          "name": "Shelly Integration",
+          "status": "VERIFIED_CORE"
+        }
+      ],
+      "tags": [
+        "Energy Monitoring",
+        "Lights & Switches",
+        "ZWave"
+      ]
+    },
+    {
       "author": "Rene Boer",
       "category": "Integrations",
       "classification": "LAN",
@@ -27448,5 +27552,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-20T02:16:28Z"
+  "snapshotGenerated": "2026-09-21T02:16:17Z"
 }

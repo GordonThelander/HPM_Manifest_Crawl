@@ -1,9 +1,20 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-20T02:16:28Z`.
+Latest observation: `2026-09-21T02:16:17Z`.
 
-**61 package change(s):** added 2, declared definitions changed 31, removed 1, source location changed 1, updated 28
+**70 package change(s):** added 5, declared definitions changed 30, removed 1, updated 35
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Shelly Wave Shutter: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_shutter.json)
+- [Shelly Wave 1PM & Mini: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_1pm.json)
+- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
+- [Nice IBT4ZWAVE: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/nice_ibt4zwave.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Heatit ZM Dimmer 250W: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/heatit_zm_dimmer.json)
+- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
+- [BITUO TECHNIK SPM02 3-Phase Meter: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/bituo_spm02_3phase_meter.json)
+- [Aeotec TriSensor 8: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/aeotec_trisensor_8.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
@@ -63,7 +74,5 @@ Latest observation: `2026-09-20T02:16:28Z`.
 - [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Iris v2 v3 Keypad: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
-- [YoLink Devices: changed source location, changed declared definitions.](https://raw.githubusercontent.com/srbarcus/YoLink/master/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
