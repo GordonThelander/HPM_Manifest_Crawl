@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-21T02:16:17Z`.
+Latest observation: `2026-09-22T02:20:44Z`.
 
-**70 package change(s):** added 5, declared definitions changed 30, removed 1, updated 35
+**69 package change(s):** added 4, declared definitions changed 31, removed 1, updated 35
 
+- [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Shelly Wave Shutter: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_shutter.json)
 - [Shelly Wave 1PM & Mini: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_1pm.json)
@@ -71,8 +73,5 @@ Latest observation: `2026-09-21T02:16:17Z`.
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Iris v2 v3 Keypad: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

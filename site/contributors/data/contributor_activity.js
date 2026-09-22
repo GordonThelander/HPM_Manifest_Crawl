@@ -4337,6 +4337,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:373d8624fdefe7c816391e62",
+          "observedAt": "2026-09-22T02:20:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:924cfa250ee409a87aae",
+          "packageName": "Genmon Generator Monitor",
+          "summary": "Genmon Generator Monitor: updated."
         }
       ],
       "appCount": 11,
@@ -4363,7 +4377,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 19,
+      "observedActivityCount": 20,
       "packages": [
         {
           "appCount": 2,
@@ -4387,9 +4401,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:924cfa250ee409a87aae",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json",
           "name": "Genmon Generator Monitor",
-          "publisherDate": "2026-09-20",
+          "publisherDate": "2026-09-22",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.4.0"
+          "version": "2.5.0"
         },
         {
           "appCount": 1,
@@ -13213,6 +13227,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9a04575cc6decea56d4758f6",
+          "observedAt": "2026-09-22T02:20:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
         }
       ],
       "appCount": 2,
@@ -13235,7 +13264,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 9,
+      "observedActivityCount": 10,
       "packages": [
         {
           "appCount": 1,
@@ -13261,7 +13290,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.5.0"
+          "version": "1.5.3"
         },
         {
           "appCount": 0,
@@ -21152,10 +21181,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 912,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 293,
-    "eventCount": 293,
+    "attributedEventCount": 295,
+    "eventCount": 295,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-21T02:16:17Z"
+    "lastObservedAt": "2026-09-22T02:20:44Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -21169,7 +21198,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 910,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-21T02:16:17Z",
+  "snapshotGenerated": "2026-09-22T02:20:44Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
