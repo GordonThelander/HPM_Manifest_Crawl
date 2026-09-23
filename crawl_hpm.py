@@ -13,7 +13,7 @@ MAX_WORKERS = 5
 BATCH_DELAY = 0.15
 TIMEOUT = 20
 RETRIES = 1
-ALLOWED_REDIRECT_HOSTS = {'raw.githubusercontent.com', 'github.com'}
+ALLOWED_REDIRECT_HOSTS = {'raw.githubusercontent.com', 'github.com', 'release-assets.githubusercontent.com'}
 SUPPORTED_FIELDS = {'appName', 'parentAppName', 'driverName', 'namespace'}
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
