@@ -1070,7 +1070,15 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [],
+      "hpmMatches": [
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "manifest:8150d1b3584ff65b87ce",
+          "packageName": "Pixora Locator Driver"
+        }
+      ],
       "id": "community-app:b2c44d36b0083a96ca35",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1564,7 +1572,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2266,
+  "definitionCount": 2271,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -4907,26 +4915,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/SenseCAP-Indicator/main/SenseCAP-Indicator-App.groovy"
     },
     {
-      "id": "definition:4ea203f6344e6b94581b",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Bluetooth Helper",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluetoothHelper-v2.17.8.groovy"
-    },
-    {
       "id": "definition:4ed24881115e93113750",
       "identities": [
         {
@@ -5355,6 +5343,26 @@ window.IDENTITY_INDEX = {
         "name": "Motion2Contact"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcoghlan/hubitat/main/Motion2Contact/motion2contact-app-child.groovy"
+    },
+    {
+      "id": "definition:59a0af3e8478a5b2a3be",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Bluetooth Helper",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluetoothHelper-v2.17.8.groovy"
     },
     {
       "id": "definition:5a62e1bcf76c3a94314e",
@@ -9092,26 +9100,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-thinq/master/apps/ThinQ_Integration.groovy"
     },
     {
-      "id": "definition:b276fff71d724c6affe3",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Controller",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
-    },
-    {
       "id": "definition:b2bfa85453deb3331e7f",
       "identities": [
         {
@@ -9155,6 +9143,26 @@ window.IDENTITY_INDEX = {
         "name": "Memory Monitor & Auto Reboot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/memory-monitor-reboot.groovy"
+    },
+    {
+      "id": "definition:b377ae5ac14fe823cc27",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Controller",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
     },
     {
       "id": "definition:b405fb4a132007241716",
@@ -12417,26 +12425,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-sure-petcare-petdoor/master/drivers/Sure_PetCare_PetDoor.groovy"
     },
     {
-      "id": "definition:012256734a5eb9c79f45",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus Wall Dimmer",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusWallDimmer-v2.17.8.groovy"
-    },
-    {
       "id": "definition:012aef8f63e7f28a1f69",
       "identities": [
         {
@@ -12982,26 +12970,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tchoward/Hubitat/master/hubigraph_tile.groovy"
     },
     {
-      "id": "definition:05aec3e961bccbfc9e46",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro Dimmer 1PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer1PM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:05ce8d27a094ecb027e0",
       "identities": [
         {
@@ -13182,6 +13150,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ASM.groovy"
     },
     {
+      "id": "definition:06c8d30b26cacaf92efc",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 1",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1-v2.17.8.groovy"
+    },
+    {
       "id": "definition:06ed17125859126dcabc",
       "identities": [
         {
@@ -13240,26 +13228,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotSystem"
-    },
-    {
-      "id": "definition:073709c25390d736f559",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly RGBW Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBWComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:073d870c689af1214247",
@@ -13677,26 +13645,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2HumidifierDriver.groovy"
     },
     {
-      "id": "definition:0a2a9d622aedbbe9815e",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly 3EM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly3EM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:0a31f9827038adf3f41a",
       "identities": [
         {
@@ -13875,26 +13823,6 @@ window.IDENTITY_INDEX = {
         "name": "Vivint CT200 Thermostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/Vivint%20CT-200/vivint_ct200.groovy"
-    },
-    {
-      "id": "definition:0bda24df932dac13d660",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Motion 2",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion2-v2.17.8.groovy"
     },
     {
       "id": "definition:0be4370e64c99a7894fa",
@@ -14127,26 +14055,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/pentalingual/Hubitat/main/Windows/Laptop_Battery.groovy"
     },
     {
-      "id": "definition:0d96b8b24a24ab3474c5",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 2PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2PM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:0da3f0d14a2840f8d60c",
       "identities": [
         {
@@ -14165,6 +14073,51 @@ window.IDENTITY_INDEX = {
         "name": "UniFi Presence Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Device.groovy"
+    },
+    {
+      "id": "definition:0da918969a79a07c792b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Input Switch Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputSwitchComponent-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:0dd46b23c63af4bca4b4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus 1 PM",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Plus1PM Mini",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PMMini-v2.17.8.groovy"
     },
     {
       "id": "definition:0ddec3d98c127ddb3eb8",
@@ -14205,26 +14158,6 @@ window.IDENTITY_INDEX = {
         "name": "Package Evalogik"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/evalogik/evalogik-mini-outdoor-smart-plug.groovy"
-    },
-    {
-      "id": "definition:0e2d87162c045254aa57",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly RGBW2 (Gen1)",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2-v2.17.8.groovy"
     },
     {
       "id": "definition:0e4576c87849bd6c5958",
@@ -14392,6 +14325,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Twilio%20SMS/Twilio-Device"
     },
     {
+      "id": "definition:0fb29db3fd1cb8069b22",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly 2.5 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly 2.5",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly2.5-v2.17.8.groovy"
+    },
+    {
       "id": "definition:102ecc13e92b5651426f",
       "identities": [
         {
@@ -14515,6 +14473,26 @@ window.IDENTITY_INDEX = {
         "name": "PositionGuard"
       },
       "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-area.groovy"
+    },
+    {
+      "id": "definition:10dbabf692f212a8552b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Switch Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:10f765930ac34e8c25cf",
@@ -14732,6 +14710,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/refs/heads/main/Aeotec/Aeotec%20Smart%20Switch%207%20EU%20Driver.groovy"
     },
     {
+      "id": "definition:123fa3bc3935d3424d0a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus 1 PM",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Plus1PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:12ce991946696fc41f7f",
       "identities": [
         {
@@ -14750,6 +14753,26 @@ window.IDENTITY_INDEX = {
         "name": "Utilitech Water Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Everspring_Utilitech_Water_Sensor.groovy"
+    },
+    {
+      "id": "definition:12f24d0fbb985db134d0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Cover PM Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponentPM-v2.17.8.groovy"
     },
     {
       "id": "definition:12f46f95de7b6299eb0f",
@@ -14792,26 +14815,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-metering-bulb-light-child-expanded.groovy"
     },
     {
-      "id": "definition:13397375a829f099cacd",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly OverUnder Switch Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyOverUnderSwitchComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:133d3aec7bcab2e30637",
       "identities": [
         {
@@ -14830,26 +14833,6 @@ window.IDENTITY_INDEX = {
         "name": "Telnyx SMS"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/Telnyx/Telnyx_SMS_Container.groovy"
-    },
-    {
-      "id": "definition:134dd8caef6ace8031de",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Switch Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:137a7d48f9a2e1934f46",
@@ -15352,6 +15335,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-rheem/master/drivers/Rheem_EcoNet_Water_Heater.groovy"
     },
     {
+      "id": "definition:16279f060ac1c2c13cf4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly H&T (Blu)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly H&T Blu",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.TBlu-v2.17.8.groovy"
+    },
+    {
       "id": "definition:162cdbaff6d31489ec06",
       "identities": [
         {
@@ -15435,6 +15443,26 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Systems Apex"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-SKY.groovy"
+    },
+    {
+      "id": "definition:165a55dab2781b7537fa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Battery Status",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
     },
     {
       "id": "definition:1677df820ad7e9eb474e",
@@ -15697,26 +15725,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-glass-break-sensor.groovy"
     },
     {
-      "id": "definition:1992f627f95b9f73c886",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plug US",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlugUS-v2.17.8.groovy"
-    },
-    {
       "id": "definition:19de2a67c69d26f68067",
       "identities": [
         {
@@ -15947,26 +15955,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/obeisser/hubitat-drivers/main/WLED/WLED_Universal.groovy"
     },
     {
-      "id": "definition:1acf1e084b0c1a6d8f53",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro Dimmer 2PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer2PM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:1acfe4d1b84d5e7801ea",
       "identities": [
         {
@@ -16085,6 +16073,31 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy"
+    },
+    {
+      "id": "definition:1bc8bb0836fdb462a866",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Dimmer 2 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Dimmer 1 & 2",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmer2-v2.17.8.groovy"
     },
     {
       "id": "definition:1bed4fbe24d32dec0dec",
@@ -16997,11 +17010,36 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-smoke-alarm.groovy"
     },
     {
-      "id": "definition:2558081d66e2df9e7567",
+      "id": "definition:25539d20a713d6d6856f",
       "identities": [
         {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Playlist",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
+    },
+    {
+      "id": "definition:2556f11c2fbaf099c32f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Door/Window (Blu)",
+          "namespace": "ShellyUSA"
+        },
+        {
           "basis": "manifestIdentity",
-          "name": "Shelly Input Switch Component",
+          "name": "Shelly Door/Window Blu",
           "namespace": "ShellyUSA"
         }
       ],
@@ -17014,7 +17052,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputSwitchComponent-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDoorWindowBlu-v2.17.8.groovy"
     },
     {
       "id": "definition:255a486e8749c4e8edf8",
@@ -17397,24 +17435,29 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/NetworkMonitorHealthCheck/NetworkMonitorHealthCheck.groovy"
     },
     {
-      "id": "definition:29ba587fe07cef7de617",
+      "id": "definition:29b84ba31e58629abc3e",
       "identities": [
         {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus 1 & Plus 1 Mini",
+          "namespace": "ShellyUSA"
+        },
+        {
           "basis": "manifestIdentity",
-          "name": "Sonos Advanced Playlist",
-          "namespace": "dwinks"
+          "name": "Shelly Plus1",
+          "namespace": "ShellyUSA"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Daniel Winks",
+        "author": "ShellyUSA, Daniel Winks",
         "communityUrl": null,
         "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1-v2.17.8.groovy"
     },
     {
       "id": "definition:29ce2de6878ef500aca4",
@@ -17535,6 +17578,26 @@ window.IDENTITY_INDEX = {
         "name": "Zooz ZAC38 Range Extender"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zac38-v1.0.6.groovy"
+    },
+    {
+      "id": "definition:2a5f7ac83bce512376a9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "AirTouch 5 Controller",
+          "namespace": "airtouch5"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jamie Curnow",
+        "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
+        "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
+        "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
+        "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
+        "name": "AirTouch 5 Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5.groovy"
     },
     {
       "id": "definition:2a94f6760e1c2067b981",
@@ -17830,26 +17893,6 @@ window.IDENTITY_INDEX = {
         "name": "TAPO Device Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_dimmer.groovy"
-    },
-    {
-      "id": "definition:2c4aa7ba33358de2e525",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 4 PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro4PM-v2.17.8.groovy"
     },
     {
       "id": "definition:2c67e0fb3d115c94723b",
@@ -18412,26 +18455,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Camera.groovy"
     },
     {
-      "id": "definition:308e6938dae0b49be646",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 3EM400",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3EM400-v2.17.8.groovy"
-    },
-    {
       "id": "definition:309256cc566a3d3df882",
       "identities": [
         {
@@ -18577,6 +18600,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-saunabox/main/saunabox.groovy"
     },
     {
+      "id": "definition:3163d0be7a9cc5850622",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 1PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1PM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:3178972c338612913140",
       "identities": [
         {
@@ -18700,46 +18743,6 @@ window.IDENTITY_INDEX = {
         "name": "TV HeadEnd EPG Importer"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/TVHE_EPG_Importer/TVHE_EPG_Importer_Driver.groovy"
-    },
-    {
-      "id": "definition:32692761c5e0e45b4c9f",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly H&T Gen2 & Gen3",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:3277dfe05783326c4d6e",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus1",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1-v2.17.8.groovy"
     },
     {
       "id": "definition:3297d67c2c47255c7817",
@@ -18867,6 +18870,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentValve.groovy"
     },
     {
+      "id": "definition:3324048e895cb409fa50",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly BLU Wall Switch 4",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Wallswitch Blu",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluWallSwitch-v2.17.8.groovy"
+    },
+    {
       "id": "definition:33265783cf1695406a65",
       "identities": [
         {
@@ -18927,26 +18955,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/VeloWulf/myenergiIntegration/0.2.6/drivers/hubitat-myenergi-eddi-driver.groovy"
     },
     {
-      "id": "definition:335fbc466fb7f688fc3d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Bulb RGBW",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBulbRGBW-v2.17.8.groovy"
-    },
-    {
       "id": "definition:33605bd5d0c88923a23d",
       "identities": [
         {
@@ -18985,6 +18993,26 @@ window.IDENTITY_INDEX = {
         "name": "Ecobee Suite"
       },
       "sourceUrl": "https://raw.githubusercontent.com/SANdood/Ecobee-Suite/master/devicetypes/sandood/ecobee-suite-thermostat.src/ecobee-suite-thermostat.groovy"
+    },
+    {
+      "id": "definition:3382e119c6b3f1d4c35e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Humidity Peripheral Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyHumidityPeripheralComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:339689ff00edcf0bf8e0",
@@ -19392,6 +19420,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/inovelli/inovelli-4-in-1-sensor.groovy"
     },
     {
+      "id": "definition:36a0e14d45062683360d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly EM Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEMComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:36a5b069255e13447500",
       "identities": [
         {
@@ -19490,6 +19538,26 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_SmartHQ"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_oven"
+    },
+    {
+      "id": "definition:3851887801673a03585f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Switch PM Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponentPM-v2.17.8.groovy"
     },
     {
       "id": "definition:3886218d91ab31e7b2e1",
@@ -19655,26 +19723,6 @@ window.IDENTITY_INDEX = {
         "name": "Fronius Solar Inverter Driver for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Fronius_Inverter_Driver_Hubitat/main/Fronius_Solar_Inverter.groovy"
-    },
-    {
-      "id": "definition:399f3710636c8bf5b388",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly RGBW2 White (Gen1)",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2White-v2.17.8.groovy"
     },
     {
       "id": "definition:39b12ae05f156a16532d",
@@ -19977,6 +20025,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
     },
     {
+      "id": "definition:3ba21285a6d6db0c3218",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Group",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
+    },
+    {
       "id": "definition:3bb204f6307505d821c8",
       "identities": [
         {
@@ -20035,26 +20103,6 @@ window.IDENTITY_INDEX = {
         "name": "SmartHQ GE Appliances Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_microwave"
-    },
-    {
-      "id": "definition:3c86f2435c15b6ca95f0",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Inovelli RGBW Notification Bar White",
-          "namespace": "casarita"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kevin Kahl",
-        "communityUrl": "https://community.hubitat.com/t/release-inovelli-white-series-vtm31-sn-matter-community-driver/165102",
-        "documentationUrl": null,
-        "id": "hpm:810329c5-4b25-47e3-a067-d7496a6608a6",
-        "manifestUrl": "https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json",
-        "name": "Inovelli Dimmer White Series VTM31-SN"
-      },
-      "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-NotificationBarRGBW.groovy"
     },
     {
       "id": "definition:3c9d382d28a193850c21",
@@ -20245,6 +20293,26 @@ window.IDENTITY_INDEX = {
         "name": "Nyckelharpa HSM Extension"
       },
       "sourceUrl": "https://raw.githubusercontent.com/arnbme/nyckelharpa/master/Centralite-Keypad.groovy"
+    },
+    {
+      "id": "definition:3daed33dc3f1e06c9ea2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus I4",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusI4-v2.17.8.groovy"
     },
     {
       "id": "definition:3de00db275ca54346de2",
@@ -20527,26 +20595,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48PoE.groovy"
     },
     {
-      "id": "definition:400aeabc37d9dfde9519",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly H&T Blu",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.TBlu-v2.17.8.groovy"
-    },
-    {
       "id": "definition:4028f714dc5c14417eb7",
       "identities": [
         {
@@ -20687,6 +20735,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya_Zigbee_Smoke_Detector/Tuya_Zigbee_Smoke_Detector.groovy"
     },
     {
+      "id": "definition:41a7d2c5b49d2eae99a0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Input Button Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputButtonComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:41bb6a4954c7f858a463",
       "identities": [
         {
@@ -20710,26 +20778,6 @@ window.IDENTITY_INDEX = {
         "name": "Lidl Drivers from BirdsLikeWires"
       },
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/lidl/drivers/lidl_smart_extension.groovy"
-    },
-    {
-      "id": "definition:41db8245a037eb784449",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Voltmeter Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:422ca383133f2b2bfb94",
@@ -21022,6 +21070,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/danfoss/danfossSensor.groovy"
     },
     {
+      "id": "definition:441f0d40eed0800a50ab",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Uni (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Uni Gen 1",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUni-v2.17.8.groovy"
+    },
+    {
       "id": "definition:4420e1dec4685c5dc6c4",
       "identities": [
         {
@@ -21080,6 +21153,26 @@ window.IDENTITY_INDEX = {
         "name": "GE Z-Wave Plus Motion Dimmer"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE-Jasco%20Z-Wave%20Plus%20Motion%20Dimmer/GE-Jasco%20Z-Wave%20Plus%20Motion%20Dimmer.groovy"
+    },
+    {
+      "id": "definition:443a40f8bf9cdbf88bcf",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Input Analog Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputAnalogComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:446c19265d824aecfe49",
@@ -22222,26 +22315,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE%20Enbrighten%20Switch/GE%20Enbrighten%20Switch.groovy"
     },
     {
-      "id": "definition:4c34d6f3a4b277e2a719",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly TRV",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTRV-v2.17.8.groovy"
-    },
-    {
       "id": "definition:4c691e149fd88476940a",
       "identities": [
         {
@@ -22427,26 +22500,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Plivo%20SMS/Plivo-Device.groovy"
     },
     {
-      "id": "definition:4d815fa5936a96fa89f6",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Duo WW CW",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDuoWWCW-v2.17.8.groovy"
-    },
-    {
       "id": "definition:4d8ad49442dec5515905",
       "identities": [
         {
@@ -22485,26 +22538,6 @@ window.IDENTITY_INDEX = {
         "name": "GE Z-Wave Plus Motion Switch"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/Drivers/GE-Jasco%20Z-Wave%20Plus%20Motion%20Switch/GE-Jasco%20Z-Wave%20Plus%20Motion%20Switch.groovy"
-    },
-    {
-      "id": "definition:4d9ffb9cfc63d9ff80d3",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Motion",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion-v2.17.8.groovy"
     },
     {
       "id": "definition:4dae6ae24d2ffde29494",
@@ -22550,26 +22583,6 @@ window.IDENTITY_INDEX = {
         "name": "Somfy ZRTSI"
       },
       "sourceUrl": "https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy"
-    },
-    {
-      "id": "definition:4dcae7488dc03c945129",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Blu Gateway",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
     },
     {
       "id": "definition:4dd1d0547cdac90d83ea",
@@ -22850,6 +22863,26 @@ window.IDENTITY_INDEX = {
         "name": "Zigbee Driver for Sinope device"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sacua/SinopeDriverHubitat/main/drivers/mergeDrivers/SP2600ZB_Sinope_Hubitat.groovy"
+    },
+    {
+      "id": "definition:4f3f5a29bb0918c4713a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "BamBuddy",
+          "namespace": "jc21"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jamie Curnow",
+        "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+        "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
+        "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+        "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
+        "name": "BamBuddy/PrintBuddy Printers Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy.groovy"
     },
     {
       "id": "definition:4f436790bfa402b53866",
@@ -23272,26 +23305,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-TemperatureSensor.groovy"
     },
     {
-      "id": "definition:524e1c7a1bbeb95c5430",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus Smoke",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusSmoke-v2.17.8.groovy"
-    },
-    {
       "id": "definition:529b7525ccdc6770436c",
       "identities": [
         {
@@ -23420,6 +23433,26 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Zen23 Switch"
       },
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/zooz/zen23-switch.groovy"
+    },
+    {
+      "id": "definition:53785aae3c0390daee21",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Temperature Peripheral Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperaturePeripheralComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:5393af5879c5712a324d",
@@ -23907,11 +23940,11 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washer.groovy"
     },
     {
-      "id": "definition:5696bdc5a595def3f3ab",
+      "id": "definition:5695edcb41765598b987",
       "identities": [
         {
-          "basis": "manifestIdentity",
-          "name": "Shelly Wallswitch Blu",
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro Dimmer 2PM",
           "namespace": "ShellyUSA"
         }
       ],
@@ -23924,7 +23957,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluWallSwitch-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer2PM-v2.17.8.groovy"
     },
     {
       "id": "definition:56ce0b5d1f4bd1bff6e9",
@@ -24602,26 +24635,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaSmartThingsHub.groovy"
     },
     {
-      "id": "definition:5af6109367ed65659a73",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Humidity Peripheral Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyHumidityPeripheralComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:5b25e08565a5a61ccfa8",
       "identities": [
         {
@@ -24927,6 +24940,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-homeconnect-v3/main/drivers/HomeConnectDishwasher.groovy"
     },
     {
+      "id": "definition:5c7ebf5959b7f93c4659",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly 1",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly1-v2.17.8.groovy"
+    },
+    {
       "id": "definition:5ca79888cc663bcfbaef",
       "identities": [
         {
@@ -25005,26 +25038,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
-    },
-    {
-      "id": "definition:5d0a22d9fb5135b4c49f",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Input Count Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputCountComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:5d15978511592d736be4",
@@ -25210,6 +25223,26 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitSproutAir.groovy"
+    },
+    {
+      "id": "definition:5e6af4ee288da1401015",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Inovelli Dimmer White VTM31-SN",
+          "namespace": "casarita"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kevin Kahl",
+        "communityUrl": "https://community.hubitat.com/t/release-inovelli-white-series-vtm31-sn-matter-community-driver/165102",
+        "documentationUrl": null,
+        "id": "hpm:810329c5-4b25-47e3-a067-d7496a6608a6",
+        "manifestUrl": "https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json",
+        "name": "Inovelli Dimmer White Series VTM31-SN"
+      },
+      "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-DimmerVTM31-SN.groovy"
     },
     {
       "id": "definition:5e72d8557afb2b4a3cb4",
@@ -25647,24 +25680,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_laundry"
     },
     {
-      "id": "definition:6237a683feee887468fb",
+      "id": "definition:620e1816cb7494a145ff",
       "identities": [
         {
-          "basis": "manifestIdentity",
-          "name": "Shelly PM Mini Gen2 & Gen3",
-          "namespace": "ShellyUSA"
+          "basis": "sourceIdentity",
+          "name": "BamBuddy AMS",
+          "namespace": "jc21"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
+        "author": "Jamie Curnow",
+        "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+        "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
+        "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+        "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
+        "name": "BamBuddy/PrintBuddy Printers Driver"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPMMiniGen3-v2.17.8.groovy"
+      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-ams.groovy"
     },
     {
       "id": "definition:6238332173afe6f0bdf7",
@@ -25915,6 +25948,26 @@ window.IDENTITY_INDEX = {
         "name": "Logitech Harmony Hub Parent"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/logitech-harmony-hub-parent.src/logitech-harmony-hub-parent.groovy"
+    },
+    {
+      "id": "definition:63057b0f22ced63726cc",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Gas",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyGas-v2.17.8.groovy"
     },
     {
       "id": "definition:632271eb3dc62d2923d3",
@@ -26677,26 +26730,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Eight_Relay_Switch_Plug.groovy"
     },
     {
-      "id": "definition:69622bb4873c2ec0788c",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Door/Window Blu",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDoorWindowBlu-v2.17.8.groovy"
-    },
-    {
       "id": "definition:6998fca80fb06a0b2c21",
       "identities": [
         {
@@ -26847,6 +26880,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-ct-rgb-cw-ww-child-expanded.groovy"
     },
     {
+      "id": "definition:6a60cd9107aa0738865d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Temperature & Humidity Peripheral Component",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Temperature Humidity Peripheral Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperatureHumidityPeripheralComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:6a8acc585b71f04ae8d0",
       "identities": [
         {
@@ -26947,6 +27005,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Rachio-Community/master/Rachio%20Controller"
     },
     {
+      "id": "definition:6bc513be6cb1ba5f365b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus RGBW PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusRGBWPM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:6bdaed049749be7b5b34",
       "identities": [
         {
@@ -27017,26 +27095,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/Drivers/Dywarmic%20Towel%20Warmer.groovy"
     },
     {
-      "id": "definition:6c062b72347382311cc3",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Inovelli Dimmer White VTM31-SN",
-          "namespace": "casarita"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Kevin Kahl",
-        "communityUrl": "https://community.hubitat.com/t/release-inovelli-white-series-vtm31-sn-matter-community-driver/165102",
-        "documentationUrl": null,
-        "id": "hpm:810329c5-4b25-47e3-a067-d7496a6608a6",
-        "manifestUrl": "https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json",
-        "name": "Inovelli Dimmer White Series VTM31-SN"
-      },
-      "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-DimmerVTM31-SN.groovy"
-    },
-    {
       "id": "definition:6c08cf7ac1711b914e48",
       "identities": [
         {
@@ -27075,26 +27133,6 @@ window.IDENTITY_INDEX = {
         "name": "UniFi-Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mikec85/hubitatdrivers/master/unifi/unifi-child-presence-wired.groovy"
-    },
-    {
-      "id": "definition:6c4eee09c31596cc1b80",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Temperature Peripheral Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperaturePeripheralComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:6c5457288eb196043d8f",
@@ -27342,11 +27380,16 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/CellularHub_Device.groovy"
     },
     {
-      "id": "definition:6dc26a85347f30e71fbc",
+      "id": "definition:6dc9f2d76592faad2c6e",
       "identities": [
         {
+          "basis": "sourceIdentity",
+          "name": "Shelly Button 4 (Blu)",
+          "namespace": "ShellyUSA"
+        },
+        {
           "basis": "manifestIdentity",
-          "name": "Shelly 2.5",
+          "name": "Shelly Button 4 Blu",
           "namespace": "ShellyUSA"
         }
       ],
@@ -27359,7 +27402,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly2.5-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton4Blu-v2.17.8.groovy"
     },
     {
       "id": "definition:6dd493b45b19c6285799",
@@ -27737,6 +27780,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Finger_Device.groovy"
     },
     {
+      "id": "definition:70e32dcf04ab2393d9ee",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Polling Voltage Sensor Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPollingVoltageSensorComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:70edbb58b2beb9a743b6",
       "identities": [
         {
@@ -28007,26 +28070,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20TS004F/TS004F.groovy"
     },
     {
-      "id": "definition:72e298c008bd40daef21",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Dimmer Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmerComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:72e479a8a5b166aa3caa",
       "identities": [
         {
@@ -28217,11 +28260,16 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-camera-with-siren.groovy"
     },
     {
-      "id": "definition:741d8d07e06da36483b3",
+      "id": "definition:74449a2678ab5233315b",
       "identities": [
         {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plug",
+          "namespace": "ShellyUSA"
+        },
+        {
           "basis": "manifestIdentity",
-          "name": "Shelly Button 1 Blu",
+          "name": "Shelly Plug US",
           "namespace": "ShellyUSA"
         }
       ],
@@ -28234,7 +28282,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1Blu-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlugUS-v2.17.8.groovy"
     },
     {
       "id": "definition:74480d3e7ac8c6de18cf",
@@ -28482,6 +28530,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-accessory/homekit-accessory.groovy"
     },
     {
+      "id": "definition:76461b408328d083cff2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus H&T Gen 2&3 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly H&T Gen2 & Gen3",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
+    },
+    {
       "id": "definition:764bc60c0e7be3f9023d",
       "identities": [
         {
@@ -28705,26 +28778,6 @@ window.IDENTITY_INDEX = {
         "name": "APC SmartUPS Status"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/APC-SmartUPS/APC-SmartUPS-Status.groovy"
-    },
-    {
-      "id": "definition:77551070142001df765a",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Cover PM Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponentPM-v2.17.8.groovy"
     },
     {
       "id": "definition:77aacb91056d2d7bb3d0",
@@ -29317,6 +29370,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/ikea/drivers/ikea_symfonisk_sound_controller.groovy"
     },
     {
+      "id": "definition:7da9671c059beb1929d9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Player",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
+    },
+    {
       "id": "definition:7dbdff09b130745d6094",
       "identities": [
         {
@@ -29477,11 +29550,11 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Switch_Device.groovy"
     },
     {
-      "id": "definition:7f77cdc49d134f14fedb",
+      "id": "definition:7f4e972dcc68939991a5",
       "identities": [
         {
-          "basis": "manifestIdentity",
-          "name": "Shelly Switch PM Component",
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus 0-10v Dimmer",
           "namespace": "ShellyUSA"
         }
       ],
@@ -29494,7 +29567,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponentPM-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus0-10vDimmer-v2.17.8.groovy"
     },
     {
       "id": "definition:7fa63002bdab89a5f0f6",
@@ -29890,26 +29963,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotCurtain"
-    },
-    {
-      "id": "definition:83588651419d27957bac",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro Dual Cover PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDualCoverPM-v2.17.8.groovy"
     },
     {
       "id": "definition:83be22245182131f5ef7",
@@ -30847,26 +30900,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-temperature-sensor/homekit-temperature-sensor.groovy"
     },
     {
-      "id": "definition:897a76d7c3a1628eca58",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Group",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
-    },
-    {
       "id": "definition:89eec47c1aab0c80ba78",
       "identities": [
         {
@@ -31002,6 +31035,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_powerclamp.groovy"
     },
     {
+      "id": "definition:8acf4245eb2b10f6a5c6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly RGBW Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBWComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:8b04a2106baa4ddecfd5",
       "identities": [
         {
@@ -31020,46 +31073,6 @@ window.IDENTITY_INDEX = {
         "name": "Withings Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-withings/master/drivers/Withings_Sleep_Sensor.groovy"
-    },
-    {
-      "id": "definition:8b2a372aae8965aa5cb0",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Uni Gen 2",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUniPlus-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:8b388ef4f77bcd2576ce",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Dimmer 1 & 2",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmer2-v2.17.8.groovy"
     },
     {
       "id": "definition:8b7f09714e513f1d98c0",
@@ -31797,26 +31810,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen16-v1.3.2.groovy"
     },
     {
-      "id": "definition:8fb0f346f93112c0471b",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Gas",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyGas-v2.17.8.groovy"
-    },
-    {
       "id": "definition:8fb11b923e69b531497a",
       "identities": [
         {
@@ -31855,6 +31848,31 @@ window.IDENTITY_INDEX = {
         "name": "WyzeHub (Updated to Use API Key)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/fieldsjm/Hubitat-2/master/WyzeHub/drivers/wyzehub-camera-driver.groovy"
+    },
+    {
+      "id": "definition:8fe3d5fb21e6a214ef82",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Vintage (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Vintage",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
     },
     {
       "id": "definition:8ff1649e0da84f585812",
@@ -31940,26 +31958,6 @@ window.IDENTITY_INDEX = {
         "name": "EZMulti aka hsm200 device handler"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/ezmultinew.groovy"
-    },
-    {
-      "id": "definition:90c808b7bb4102ea5912",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Battery Status",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
     },
     {
       "id": "definition:90dfcd282d2851f9f778",
@@ -32185,26 +32183,6 @@ window.IDENTITY_INDEX = {
         "name": "Iris v1 Motion Detector Custom"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Iris_v1_Motion_Sensor.groovy"
-    },
-    {
-      "id": "definition:91cb4599856fba368e0f",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 2",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2-v2.17.8.groovy"
     },
     {
       "id": "definition:91f5eb69ed98752e7b10",
@@ -32722,6 +32700,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-contact-sensor/homekit-contact-sensor.groovy"
     },
     {
+      "id": "definition:94013fe6408357ef20a0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Bulb RGBW",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBulbRGBW-v2.17.8.groovy"
+    },
+    {
       "id": "definition:94e1d90c635a6d64b14a",
       "identities": [
         {
@@ -33132,6 +33130,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/aeotec/trisensor_8_multisensor.groovy"
     },
     {
+      "id": "definition:97e734ace0e42e409db9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly EM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:981cbe4c0e4a571b6d8d",
       "identities": [
         {
@@ -33195,26 +33213,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GalaxyProjector.groovy"
-    },
-    {
-      "id": "definition:98c1b6ec7dbcd999fa9a",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Button 1",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1-v2.17.8.groovy"
     },
     {
       "id": "definition:98ce996f4b3f2f0500b1",
@@ -33440,26 +33438,6 @@ window.IDENTITY_INDEX = {
         "name": "myenergi Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/VeloWulf/myenergiIntegration/0.2.6/drivers/hubitat-myenergi-zappi-driver.groovy"
-    },
-    {
-      "id": "definition:99f9e8a642ca3fa71211",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 1PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1PM-v2.17.8.groovy"
     },
     {
       "id": "definition:99ffd1afe7ce98a82e33",
@@ -33847,26 +33825,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/zooz/zen21-switch.groovy"
     },
     {
-      "id": "definition:9d23fb8a996d7924542c",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 3",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3-v2.17.8.groovy"
-    },
-    {
       "id": "definition:9dd3c6d6ca528687bf07",
       "identities": [
         {
@@ -34107,10 +34065,10 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Module.groovy"
     },
     {
-      "id": "definition:9f246a7ac1b1eaea8f99",
+      "id": "definition:9f49f60ee72130252b42",
       "identities": [
         {
-          "basis": "manifestIdentity",
+          "basis": "sourceIdentity",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks"
         }
@@ -34477,6 +34435,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/funzie19/hubitat-solaredge/master/solaredge-driver.groovy"
     },
     {
+      "id": "definition:a1adc916bf8a1c393689",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Blu Gateway (Websocket)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Blu Gateway",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
+    },
+    {
       "id": "definition:a221fcdee046145de707",
       "identities": [
         {
@@ -34515,26 +34498,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotPlugMini"
-    },
-    {
-      "id": "definition:a26ca3f375a27d1b5b09",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Uni Gen 1",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUni-v2.17.8.groovy"
     },
     {
       "id": "definition:a27dbe00fd22a865a7a4",
@@ -34595,6 +34558,31 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_SmartHQ"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_hood"
+    },
+    {
+      "id": "definition:a2bad229727bd4479691",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Button 1 (Blu)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Button 1 Blu",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1Blu-v2.17.8.groovy"
     },
     {
       "id": "definition:a2c16eb717b690f3dcf6",
@@ -34850,6 +34838,31 @@ window.IDENTITY_INDEX = {
         "name": "Astro-Meteor Seasons"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/astroMeteorSeasons.groovy"
+    },
+    {
+      "id": "definition:a374880c594e0eee31ae",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Button 1 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Button 1",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1-v2.17.8.groovy"
     },
     {
       "id": "definition:a3bee2892e33aba49d43",
@@ -35137,26 +35150,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-icomm/refs/heads/main/icomm-water-heater.groovy"
     },
     {
-      "id": "definition:a605e2fa39e8918a53c2",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Temperature Humidity Peripheral Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperatureHumidityPeripheralComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:a60c683f566614a6a758",
       "identities": [
         {
@@ -35357,26 +35350,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sacua/SinopeDriverHubitat/main/drivers/mergeDrivers/TH112xZB_Sinope_Hubitat.groovy"
     },
     {
-      "id": "definition:a78b2e6994dfc3dee8b8",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus2PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus2PM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:a79b5637394980300853",
       "identities": [
         {
@@ -35455,26 +35428,6 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitCore300S.groovy"
-    },
-    {
-      "id": "definition:a89ac51815172bc9fa0d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus1PM Mini",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PMMini-v2.17.8.groovy"
     },
     {
       "id": "definition:a8a1ab715ac54ff4b155",
@@ -35722,6 +35675,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/drivers/BOND_Fan_Dimmable_Light.groovy"
     },
     {
+      "id": "definition:a9d6d254b6573696c8fa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Motion 2 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Motion 2",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion2-v2.17.8.groovy"
+    },
+    {
       "id": "definition:aa0ad02b132d6df84621",
       "identities": [
         {
@@ -35920,6 +35898,26 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Wave 1PM Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/main/Shelly/Shelly%20Wave%201PM%20Driver.groovy"
+    },
+    {
+      "id": "definition:aae300449b98b1fb2a38",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus Wall Dimmer",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusWallDimmer-v2.17.8.groovy"
     },
     {
       "id": "definition:aae55e909d569364b116",
@@ -36267,6 +36265,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/LeakSensor3_Device.groovy"
     },
     {
+      "id": "definition:ad34bd5084cdf20c71aa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 3EM400",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3EM400-v2.17.8.groovy"
+    },
+    {
       "id": "definition:ad3d2b6d30c63e4363af",
       "identities": [
         {
@@ -36447,6 +36465,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/sunstat-thermostat/sunstat-thermostat-parent.groovy"
     },
     {
+      "id": "definition:ae4921cfef3516ff4f3b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Flood (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Flood",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFlood-v2.17.8.groovy"
+    },
+    {
       "id": "definition:ae4f56fbd266a48b4251",
       "identities": [
         {
@@ -36545,6 +36588,51 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-bulb-multi-white-lzw41.src/inovelli-bulb-multi-white-lzw41.groovy"
+    },
+    {
+      "id": "definition:aef4859adcd75f37ef84",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus Smoke",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusSmoke-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:af0da808a3f7837c1bdb",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Motion (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Motion",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion-v2.17.8.groovy"
     },
     {
       "id": "definition:af1d57e181c91afbc04f",
@@ -36847,6 +36935,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LifeChildLightDevice.groovy"
     },
     {
+      "id": "definition:b120726ecf4fd6c726d0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Motion (Blu)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Motion Blu",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotionBlu-v2.17.8.groovy"
+    },
+    {
       "id": "definition:b14cb797a937882d0da5",
       "identities": [
         {
@@ -37027,26 +37140,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-panic-button.groovy"
     },
     {
-      "id": "definition:b24ffed7b78b094de00d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus 0-10v Dimmer",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus0-10vDimmer-v2.17.8.groovy"
-    },
-    {
       "id": "definition:b270ca4ccece14b9bd00",
       "identities": [
         {
@@ -37165,26 +37258,6 @@ window.IDENTITY_INDEX = {
         "name": "Life360+"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy"
-    },
-    {
-      "id": "definition:b33d241700bc371ed9fb",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus RGBW PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusRGBWPM-v2.17.8.groovy"
     },
     {
       "id": "definition:b38b57c7b7ce03c9621a",
@@ -37347,26 +37420,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-FP-21.groovy"
     },
     {
-      "id": "definition:b420237f3ee879d84a75",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly H&T (Gen 1)",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.T-v2.17.8.groovy"
-    },
-    {
       "id": "definition:b431cb47ebe68fbe5212",
       "identities": [
         {
@@ -37492,6 +37545,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Hub_Device.groovy"
     },
     {
+      "id": "definition:b4eebd4149417a74872f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Dimmer Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmerComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:b4fe8c41fa0ab2e2605c",
       "identities": [
         {
@@ -37590,6 +37663,26 @@ window.IDENTITY_INDEX = {
         "name": "Heatmiser Neostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-thermostat-dth.groovy"
+    },
+    {
+      "id": "definition:b58e19ca6772cc05afb5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Voltmeter Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:b58e3feb6ba98230e781",
@@ -38372,6 +38465,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaSamsungOcfAirCon.groovy"
     },
     {
+      "id": "definition:b9e64d3041cea25c391c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 2PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2PM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:ba385ea1b9a63757d0c2",
       "identities": [
         {
@@ -38835,6 +38948,31 @@ window.IDENTITY_INDEX = {
         "name": "Xfinity / Visonic / UEI Contact Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/XfinityContactSensor.groovy"
+    },
+    {
+      "id": "definition:bd813b6f5175e137d6dd",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly TRV (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly TRV",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTRV-v2.17.8.groovy"
     },
     {
       "id": "definition:bdbca66c42ee41290298",
@@ -39462,26 +39600,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/SpeakerHub_Device.groovy"
     },
     {
-      "id": "definition:c27eda19e1ea60b5980e",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus I4",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusI4-v2.17.8.groovy"
-    },
-    {
       "id": "definition:c27f813949b3eef4f983",
       "identities": [
         {
@@ -39500,6 +39618,31 @@ window.IDENTITY_INDEX = {
         "name": "SmartWings Zigbee Shades"
       },
       "sourceUrl": "https://raw.githubusercontent.com/diosadentro/Hubitat/main/Packages/Smartwings/SmartWings%20Zigbee%20Shades.groovy"
+    },
+    {
+      "id": "definition:c29637d54127999fdb18",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus 2 PM (Websocket)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Plus2PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus2PM-v2.17.8.groovy"
     },
     {
       "id": "definition:c2a2faa88a42f3c67c94",
@@ -39625,26 +39768,6 @@ window.IDENTITY_INDEX = {
         "name": "HVAC Zoning"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rbaldwi3/HVAC/master/HVAC_Zone_Status.groovy"
-    },
-    {
-      "id": "definition:c31f9be727c18dc7758d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Motion Blu",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotionBlu-v2.17.8.groovy"
     },
     {
       "id": "definition:c323624898fccb098140",
@@ -39797,6 +39920,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/drivers/zse42/zse42.groovy"
     },
     {
+      "id": "definition:c44cefe7e5ebb9a5ff26",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 4PM",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Pro 4 PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro4PM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:c460e9b54789c5e47782",
       "identities": [
         {
@@ -39835,26 +39983,6 @@ window.IDENTITY_INDEX = {
         "name": "Blink Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Doorbell.groovy"
-    },
-    {
-      "id": "definition:c48f0930e7b00cf7a7c1",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly 1",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly1-v2.17.8.groovy"
     },
     {
       "id": "definition:c4b682a3e36d6de82532",
@@ -40157,11 +40285,11 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/sihas_multipurpose_usm300zb.groovy"
     },
     {
-      "id": "definition:c67778a74ffe2568f1d5",
+      "id": "definition:c6a0af732715ed1f53e7",
       "identities": [
         {
-          "basis": "manifestIdentity",
-          "name": "Shelly Button 4 Blu",
+          "basis": "sourceIdentity",
+          "name": "Shelly RGBW2 (Gen1)",
           "namespace": "ShellyUSA"
         }
       ],
@@ -40174,7 +40302,7 @@ window.IDENTITY_INDEX = {
         "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
         "name": "Shelly Webhook/Websocket Drivers"
       },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton4Blu-v2.17.8.groovy"
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2-v2.17.8.groovy"
     },
     {
       "id": "definition:c6b99ddb79d750125d5a",
@@ -40195,26 +40323,6 @@ window.IDENTITY_INDEX = {
         "name": "Kohler DTV+ Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-kohlerdtv/master/drivers/Kohler_DTV%2B_Dimmable_Light.groovy"
-    },
-    {
-      "id": "definition:c6c156aed71ad16a6b51",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Polling Voltage Sensor Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPollingVoltageSensorComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:c6c49f923cdc10e5e5de",
@@ -40932,26 +41040,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW3_RF/main/Hubitat_TRATO_MolSmart_GW3_RF_Driver_v2.groovy"
     },
     {
-      "id": "definition:caf5752b052ef401369d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Snapshot",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
-    },
-    {
       "id": "definition:cb0f19946f3f94f82239",
       "identities": [
         {
@@ -40990,6 +41078,26 @@ window.IDENTITY_INDEX = {
         "name": "Ubiquiti UniFi Controller Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectDoorbell"
+    },
+    {
+      "id": "definition:cb405dcfd51f683d972f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Input Count Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputCountComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:cb6aa0b844db0aef332e",
@@ -41115,26 +41223,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotStripLight"
-    },
-    {
-      "id": "definition:cc806e90e3869e22015c",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Flood",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFlood-v2.17.8.groovy"
     },
     {
       "id": "definition:ccd94c4378fc032d1e81",
@@ -41375,6 +41463,31 @@ window.IDENTITY_INDEX = {
         "name": "MolSmart - GW3 - TV e SOM (irweb)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW3_Remotes/main/TV/MolSmart_GW3_TV_(irweb).groovy"
+    },
+    {
+      "id": "definition:cddea318f90b38ad6606",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly PM Mini Gen 2&3 (Websocket)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly PM Mini Gen2 & Gen3",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPMMiniGen3-v2.17.8.groovy"
     },
     {
       "id": "definition:ce180990c695ab645b05",
@@ -41917,6 +42030,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/Fakro/Window_Driver"
     },
     {
+      "id": "definition:d0c1201896c3a9db028e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Inovelli RGBW Notification Bar White",
+          "namespace": "casarita"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kevin Kahl",
+        "communityUrl": "https://community.hubitat.com/t/release-inovelli-white-series-vtm31-sn-matter-community-driver/165102",
+        "documentationUrl": null,
+        "id": "hpm:810329c5-4b25-47e3-a067-d7496a6608a6",
+        "manifestUrl": "https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json",
+        "name": "Inovelli Dimmer White Series VTM31-SN"
+      },
+      "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-NotificationBarRGBW.groovy"
+    },
+    {
       "id": "definition:d0d9ea5bace05d8e5ce7",
       "identities": [
         {
@@ -42017,6 +42150,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/hubitat-navien/main/drivers/navien-navilink-gateway.groovy"
     },
     {
+      "id": "definition:d15adb44d1c8f54d03e3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro EM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProEM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:d1875a7001a0dff4a83f",
       "identities": [
         {
@@ -42105,26 +42258,6 @@ window.IDENTITY_INDEX = {
         "name": "Laundry Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/laundry-manager/laundry-machine.driver.groovy"
-    },
-    {
-      "id": "definition:d1d0a8f6fa05db38bee6",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Input Button Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputButtonComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:d2001710de06cce0aa69",
@@ -43072,6 +43205,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-kohlerdtv/master/drivers/Kohler_DTV%2B_Light.groovy"
     },
     {
+      "id": "definition:d84569efccc8ba5344d8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "BamBuddy Printer",
+          "namespace": "jc21"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jamie Curnow",
+        "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+        "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
+        "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+        "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
+        "name": "BamBuddy/PrintBuddy Printers Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-printer.groovy"
+    },
+    {
       "id": "definition:d863d6c32b11bbe00de3",
       "identities": [
         {
@@ -43287,26 +43440,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/zigbeewhitecolortemp.groovy"
     },
     {
-      "id": "definition:da8d9b6c3b7694a547a3",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Plus1PM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:da903f08987c755a3d09",
       "identities": [
         {
@@ -43437,26 +43570,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/drivers/zrtsii/somfy-rtsii-controller.groovy"
     },
     {
-      "id": "definition:db10680943fc046ec9ee",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly RGB Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:db35fcd05d2ddda93014",
       "identities": [
         {
@@ -43475,6 +43588,31 @@ window.IDENTITY_INDEX = {
         "name": "Enphase Solar"
       },
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/EnvoyHE/master/device/enlighten-envoy-local.groovy"
+    },
+    {
+      "id": "definition:db5c8fd58318e02ca9ed",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Flood Gen4 (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Flood Gen4",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFloodGen4-v2.17.8.groovy"
     },
     {
       "id": "definition:db6f6d5efb95bfc15273",
@@ -43715,6 +43853,26 @@ window.IDENTITY_INDEX = {
         "name": "LG ThinQ Connect Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washtower.groovy"
+    },
+    {
+      "id": "definition:dc430fa8c4f84fbc5471",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 2",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2-v2.17.8.groovy"
     },
     {
       "id": "definition:dc5c5d8653c7a698ce57",
@@ -44042,26 +44200,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights3Driver.groovy"
     },
     {
-      "id": "definition:df1a3d4fc245e446b891",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Vintage",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
-    },
-    {
       "id": "definition:df7d26f52fe43e4b5ec6",
       "identities": [
         {
@@ -44227,6 +44365,51 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Honeywell/Honeywell_Zone_Motion.groovy"
     },
     {
+      "id": "definition:e10a8fb31bdc9b1153c6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Plus Uni (Websocket)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Uni Gen 2",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUniPlus-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:e165d33c6f2f851e9c52",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Duo WW CW",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDuoWWCW-v2.17.8.groovy"
+    },
+    {
       "id": "definition:e165e73d80bff5b31605",
       "identities": [
         {
@@ -44335,6 +44518,31 @@ window.IDENTITY_INDEX = {
         "name": "WSM4Hubitat"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.groovy"
+    },
+    {
+      "id": "definition:e20556e57aeab3ca8e83",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly H&T (Webhook)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly H&T (Gen 1)",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.T-v2.17.8.groovy"
     },
     {
       "id": "definition:e20fbfd62ad2e47a4905",
@@ -44627,6 +44835,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH.groovy"
     },
     {
+      "id": "definition:e459aa126710c023c501",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly OverUnder Switch Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyOverUnderSwitchComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:e49a2ec1da059f107fcc",
       "identities": [
         {
@@ -44785,26 +45013,6 @@ window.IDENTITY_INDEX = {
         "name": "Generic Matter Outlet"
       },
       "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/GenericMatterOutlet/GenericMatterOutlet.groovy"
-    },
-    {
-      "id": "definition:e548551ca754ee589ed9",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Input Analog Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputAnalogComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:e56dfdb5a18373612986",
@@ -45302,26 +45510,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/timothydodd/hubitat-wled-mqtt/master/wled-mqtt-driver.groovy"
     },
     {
-      "id": "definition:e7ff952d31893f7e526c",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly EM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:e816c960b31fe34156ba",
       "identities": [
         {
@@ -45522,6 +45710,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexJr.groovy"
     },
     {
+      "id": "definition:e8e0c2ba8f2ee601891b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Secondaries",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
+    },
+    {
       "id": "definition:e91363639b07dc3a0321",
       "identities": [
         {
@@ -45560,26 +45768,6 @@ window.IDENTITY_INDEX = {
         "name": "Mitsubishi Comfort Cloud"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/drivers/mitsubishi-comfort-wireless-sensor.groovy"
-    },
-    {
-      "id": "definition:e9427bf1c38e75e38f27",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Cover Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:e99c5474c2228ef0ddfd",
@@ -46047,26 +46235,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_Netatmo/main/Netatmo_BaseStation_Driver.groovy"
     },
     {
-      "id": "definition:ed5f060898082ed75246",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Flood Gen4",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFloodGen4-v2.17.8.groovy"
-    },
-    {
       "id": "definition:ed663e462097f015c1f0",
       "identities": [
         {
@@ -46177,6 +46345,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentText.groovy"
     },
     {
+      "id": "definition:eea34cbecf44339a59b7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly RGBW2 White (Gen1)",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2White-v2.17.8.groovy"
+    },
+    {
       "id": "definition:eea49fe0b4c81fb0f3e4",
       "identities": [
         {
@@ -46197,26 +46385,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-tuya-alarm-expanded.groovy"
     },
     {
-      "id": "definition:ef35d4a25a68ecbbbdda",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro EM",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProEM-v2.17.8.groovy"
-    },
-    {
       "id": "definition:ef3c01b9d56a0bd3f457",
       "identities": [
         {
@@ -46235,6 +46403,26 @@ window.IDENTITY_INDEX = {
         "name": "Danfoss Ally Master"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/danfoss/danfossThermostat.groovy"
+    },
+    {
+      "id": "definition:ef3ca561ec54693d7cfd",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly RGB Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBComponent-v2.17.8.groovy"
     },
     {
       "id": "definition:ef3f8676276bca0cf62a",
@@ -46457,26 +46645,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/v1/govee_manual_lan_driver"
     },
     {
-      "id": "definition:f1251480a6c71b520c88",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly EM Component",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEMComponent-v2.17.8.groovy"
-    },
-    {
       "id": "definition:f147f2efc000e62ec8ec",
       "identities": [
         {
@@ -46537,6 +46705,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/go2rtc-parent-driver.groovy"
     },
     {
+      "id": "definition:f1e2028aedc9680725d0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Snapshot",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
+    },
+    {
       "id": "definition:f1e9669a232e576b7250",
       "identities": [
         {
@@ -46585,6 +46773,31 @@ window.IDENTITY_INDEX = {
         "name": "ClearlyIP SMS Notification Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/graftechnology/hubitat-clearlyip-sms-notification-driver/main/clearlyIpSmsNotificationDriver.groovy"
+    },
+    {
+      "id": "definition:f1f9753c62979bd4d168",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro Dual Cover PM (Websocket)",
+          "namespace": "ShellyUSA"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Shelly Pro Dual Cover PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDualCoverPM-v2.17.8.groovy"
     },
     {
       "id": "definition:f210ea6ac50fc16e4ed2",
@@ -46837,6 +47050,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-keyfob-custom.groovy"
     },
     {
+      "id": "definition:f377f63ccb0b5e523336",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly 3EM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly3EM-v2.17.8.groovy"
+    },
+    {
       "id": "definition:f39575d68ef0620b7cc0",
       "identities": [
         {
@@ -47060,26 +47293,6 @@ window.IDENTITY_INDEX = {
         "name": "Universal Virtual Device Switch uDTH - For Alexa, IFTTT, WebHooks, HSM, and other integrations"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sab0276/Hubitat/main/virtualSwitchUDTH-Lite.groovy"
-    },
-    {
-      "id": "definition:f4f3c178f86e30276434",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Shelly Pro 1",
-          "namespace": "ShellyUSA"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "ShellyUSA, Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
-        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
-        "name": "Shelly Webhook/Websocket Drivers"
-      },
-      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1-v2.17.8.groovy"
     },
     {
       "id": "definition:f4fdae99e6d854908e5b",
@@ -47542,6 +47755,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/touchstone-fireplace/touchstone-fireplace.groovy"
     },
     {
+      "id": "definition:f8c9a3878f7af0edca77",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "AirTouch 5 Zone",
+          "namespace": "airtouch5"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jamie Curnow",
+        "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
+        "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
+        "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
+        "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
+        "name": "AirTouch 5 Drivers"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5Zone.groovy"
+    },
+    {
       "id": "definition:f8f7abc8b7d7201705d3",
       "identities": [
         {
@@ -47707,6 +47940,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/OwnTracks-Presence/virtual-mobile-presence-owntracks.groovy"
     },
     {
+      "id": "definition:f9d9495efba3e84a6842",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Cover Component",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponent-v2.17.8.groovy"
+    },
+    {
       "id": "definition:f9f0385cde7a4561ca0f",
       "identities": [
         {
@@ -47745,6 +47998,26 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Ring Integration (Unofficial)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-api-virtual-device.groovy"
+    },
+    {
+      "id": "definition:fa452e6cc5e8862d04d4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro Dimmer 1PM",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer1PM-v2.17.8.groovy"
     },
     {
       "id": "definition:fa459a668eece6826f83",
@@ -47907,6 +48180,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-ikea-tradfri-on-off-switch-expanded.groovy"
     },
     {
+      "id": "definition:fc0c4bcef8ce530795bc",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Shelly Pro 3",
+          "namespace": "ShellyUSA"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "ShellyUSA, Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:a3893ae0-b99e-4508-a357-48397cc6a20f",
+        "manifestUrl": "https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json",
+        "name": "Shelly Webhook/Websocket Drivers"
+      },
+      "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3-v2.17.8.groovy"
+    },
+    {
       "id": "definition:fc0fd71f604b8caea33d",
       "identities": [
         {
@@ -47947,26 +48240,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-multiswitch-v3-samjin.groovy"
     },
     {
-      "id": "definition:fc5227eb9fe70122724d",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Player",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
-    },
-    {
       "id": "definition:fc692131a825ccde967c",
       "identities": [
         {
@@ -48005,26 +48278,6 @@ window.IDENTITY_INDEX = {
         "name": "Anthem MRX x40 Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/yonatan-mitmit/HubitatAnthem/main/AnthemChild.groovy"
-    },
-    {
-      "id": "definition:fd046594fbef975f04e0",
-      "identities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Sonos Advanced Secondaries",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
     },
     {
       "id": "definition:fd1ca18607ba809cd97c",
@@ -48345,5 +48598,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-23T02:20:36Z"
+  "snapshotGenerated": "2026-09-23T08:23:25Z"
 };

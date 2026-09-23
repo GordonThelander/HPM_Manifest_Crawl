@@ -20786,11 +20786,28 @@
       "version": "1.0"
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
-      "definitions": [],
+      "dateReleased": "2026-04-24",
+      "definitions": [
+        {
+          "id": "definition:2a5f7ac83bce512376a9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "AirTouch 5 Controller",
+          "namespace": "airtouch5",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5.groovy"
+        },
+        {
+          "id": "definition:f8c9a3878f7af0edca77",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "AirTouch 5 Zone",
+          "namespace": "airtouch5",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5Zone.groovy"
+        }
+      ],
       "description": "Monitoring and controlling your Airtouch 5 AC Controller directly from your home automation platform",
       "evidence": [
         {
@@ -20798,24 +20815,24 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "MANIFEST_IDENTITY",
-          "label": "Manifest identity"
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -20823,20 +20840,22 @@
           },
           {
             "name": "manifestFetch",
-            "status": "FAIL"
+            "status": "PASS"
           },
           {
             "name": "sourceFetch",
-            "status": "NOT_APPLICABLE"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-      "kinds": [],
+      "kinds": [
+        "DRIVER"
+      ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
+        "documentation": "https://github.com/jc21/hubitat-airtouch5",
         "manifest": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
         "repository": "https://github.com/jc21/hubitat-airtouch5"
       },
@@ -20857,7 +20876,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": null
+      "version": "1.0.0"
     },
     {
       "author": "VH",
@@ -24439,11 +24458,36 @@
       "version": "0.1.4"
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
-      "definitions": [],
+      "dateReleased": "2026-07-14",
+      "definitions": [
+        {
+          "id": "definition:4f3f5a29bb0918c4713a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "BamBuddy",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy.groovy"
+        },
+        {
+          "id": "definition:620e1816cb7494a145ff",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "BamBuddy AMS",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-ams.groovy"
+        },
+        {
+          "id": "definition:d84569efccc8ba5344d8",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "BamBuddy Printer",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-printer.groovy"
+        }
+      ],
       "description": "For monitoring and controlling your Bambu 3D printers through BamBuddy directly from your home automation platform",
       "evidence": [
         {
@@ -24451,24 +24495,24 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "MANIFEST_IDENTITY",
-          "label": "Manifest identity"
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -24476,31 +24520,36 @@
           },
           {
             "name": "manifestFetch",
-            "status": "FAIL"
+            "status": "PASS"
           },
           {
             "name": "sourceFetch",
-            "status": "NOT_APPLICABLE"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-      "kinds": [],
+      "kinds": [
+        "DRIVER"
+      ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+        "documentation": "https://github.com/jc21/hubitat-bambuddy",
         "manifest": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
         "repository": "https://github.com/jc21/hubitat-bambuddy"
       },
       "name": "BamBuddy/PrintBuddy Printers Driver",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [],
+        "externalHosts": [
+          "bambuddy.cool",
+          "bambuddy.example.com"
+        ],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -24508,7 +24557,7 @@
         "Appliances",
         "Monitoring"
       ],
-      "version": null
+      "version": "0.1.1"
     },
     {
       "author": "Mike Maxwell",
@@ -53523,20 +53572,20 @@
       "dateReleased": "2026-07-22",
       "definitions": [
         {
-          "id": "definition:3c86f2435c15b6ca95f0",
+          "id": "definition:5e6af4ee288da1401015",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-NotificationBarRGBW.groovy"
+          "name": "Inovelli Dimmer White VTM31-SN",
+          "namespace": "casarita",
+          "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-DimmerVTM31-SN.groovy"
         },
         {
-          "id": "definition:6c062b72347382311cc3",
+          "id": "definition:d0c1201896c3a9db028e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-DimmerVTM31-SN.groovy"
+          "name": "Inovelli RGBW Notification Bar White",
+          "namespace": "casarita",
+          "sourceUrl": "https://github.com/kahlkevin/hubitat-casarita-inovelli_vtm31sn/releases/download/v1.1.0/final-driver-NotificationBarRGBW.groovy"
         }
       ],
       "description": "Driver package for Inovelli Dimmer White Series VTM31-SN. Supports full parameter and LED notification bar configuration.",
@@ -53559,7 +53608,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -53575,10 +53624,10 @@
           },
           {
             "name": "sourceFetch",
-            "status": "FAIL"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:810329c5-4b25-47e3-a067-d7496a6608a6",
       "kinds": [
@@ -53592,7 +53641,7 @@
       },
       "name": "Inovelli Dimmer White Series VTM31-SN",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "LAN",
         "declared": {
           "cloudTag": false,
           "lanTag": false
@@ -67912,7 +67961,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.4.2"
+      "version": "1.5.0"
     },
     {
       "author": "Michael van Dam",
@@ -73039,7 +73088,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.4.1"
+      "version": "1.5.0"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -81360,556 +81409,556 @@
       "dateReleased": "2024-02-10",
       "definitions": [
         {
-          "id": "definition:4ea203f6344e6b94581b",
+          "id": "definition:59a0af3e8478a5b2a3be",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly Bluetooth Helper",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluetoothHelper-v2.17.8.groovy"
         },
         {
-          "id": "definition:012256734a5eb9c79f45",
+          "id": "definition:5c7ebf5959b7f93c4659",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusWallDimmer-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:05aec3e961bccbfc9e46",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer1PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:073709c25390d736f559",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBWComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:0a2a9d622aedbbe9815e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly3EM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:0bda24df932dac13d660",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion2-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:0d96b8b24a24ab3474c5",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:0e2d87162c045254aa57",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:13397375a829f099cacd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyOverUnderSwitchComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:134dd8caef6ace8031de",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:1992f627f95b9f73c886",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlugUS-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:1acf1e084b0c1a6d8f53",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer2PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:2558081d66e2df9e7567",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputSwitchComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:2c4aa7ba33358de2e525",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro4PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:308e6938dae0b49be646",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3EM400-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:32692761c5e0e45b4c9f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:3277dfe05783326c4d6e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:335fbc466fb7f688fc3d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBulbRGBW-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:399f3710636c8bf5b388",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2White-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:400aeabc37d9dfde9519",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.TBlu-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:41db8245a037eb784449",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:4c34d6f3a4b277e2a719",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTRV-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:4d815fa5936a96fa89f6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDuoWWCW-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:4d9ffb9cfc63d9ff80d3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:4dcae7488dc03c945129",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:524e1c7a1bbeb95c5430",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusSmoke-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:5696bdc5a595def3f3ab",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluWallSwitch-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:5af6109367ed65659a73",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyHumidityPeripheralComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:5d0a22d9fb5135b4c49f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputCountComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:6237a683feee887468fb",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPMMiniGen3-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:69622bb4873c2ec0788c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDoorWindowBlu-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:6c4eee09c31596cc1b80",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperaturePeripheralComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:6dc26a85347f30e71fbc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly2.5-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:72e298c008bd40daef21",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmerComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:741d8d07e06da36483b3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1Blu-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:77551070142001df765a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponentPM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:7f77cdc49d134f14fedb",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponentPM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:83588651419d27957bac",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDualCoverPM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:8b2a372aae8965aa5cb0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUniPlus-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:8b388ef4f77bcd2576ce",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmer2-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:8fb0f346f93112c0471b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyGas-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:91cb4599856fba368e0f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:98c1b6ec7dbcd999fa9a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:99f9e8a642ca3fa71211",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:9d23fb8a996d7924542c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:a26ca3f375a27d1b5b09",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUni-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:a605e2fa39e8918a53c2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperatureHumidityPeripheralComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:a78b2e6994dfc3dee8b8",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus2PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:a89ac51815172bc9fa0d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PMMini-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:b24ffed7b78b094de00d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus0-10vDimmer-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:b33d241700bc371ed9fb",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusRGBWPM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:b420237f3ee879d84a75",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.T-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:c27eda19e1ea60b5980e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusI4-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:c31f9be727c18dc7758d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotionBlu-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:c48f0930e7b00cf7a7c1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly 1",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly1-v2.17.8.groovy"
         },
         {
-          "id": "definition:c67778a74ffe2568f1d5",
+          "id": "definition:0fb29db3fd1cb8069b22",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly 2.5 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly2.5-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:f377f63ccb0b5e523336",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly 3EM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/Shelly3EM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:3324048e895cb409fa50",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly BLU Wall Switch 4",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluWallSwitch-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:a1adc916bf8a1c393689",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Blu Gateway (Websocket)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluGateway-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:94013fe6408357ef20a0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Bulb RGBW",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBulbRGBW-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:a2bad229727bd4479691",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Button 1 (Blu)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1Blu-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:a374880c594e0eee31ae",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Button 1 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton1-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:6dc9f2d76592faad2c6e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Button 4 (Blu)",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton4Blu-v2.17.8.groovy"
         },
         {
-          "id": "definition:c6c156aed71ad16a6b51",
+          "id": "definition:f9d9495efba3e84a6842",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPollingVoltageSensorComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:cc806e90e3869e22015c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFlood-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:d1d0a8f6fa05db38bee6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputButtonComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:da8d9b6c3b7694a547a3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:db10680943fc046ec9ee",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:df1a3d4fc245e446b891",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:e548551ca754ee589ed9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputAnalogComponent-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:e7ff952d31893f7e526c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEM-v2.17.8.groovy"
-        },
-        {
-          "id": "definition:e9427bf1c38e75e38f27",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly Cover Component",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponent-v2.17.8.groovy"
         },
         {
-          "id": "definition:ed5f060898082ed75246",
+          "id": "definition:12f24d0fbb985db134d0",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFloodGen4-v2.17.8.groovy"
+          "name": "Shelly Cover PM Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyCoverComponentPM-v2.17.8.groovy"
         },
         {
-          "id": "definition:ef35d4a25a68ecbbbdda",
+          "id": "definition:1bc8bb0836fdb462a866",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProEM-v2.17.8.groovy"
+          "name": "Shelly Dimmer 2 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmer2-v2.17.8.groovy"
         },
         {
-          "id": "definition:f1251480a6c71b520c88",
+          "id": "definition:b4eebd4149417a74872f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly Dimmer Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDimmerComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:2556f11c2fbaf099c32f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Door/Window (Blu)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDoorWindowBlu-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:e165d33c6f2f851e9c52",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Duo WW CW",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyDuoWWCW-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:97e734ace0e42e409db9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly EM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:36a0e14d45062683360d",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly EM Component",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyEMComponent-v2.17.8.groovy"
         },
         {
-          "id": "definition:f4f3c178f86e30276434",
+          "id": "definition:ae4921cfef3516ff4f3b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Shelly Flood (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFlood-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:db5c8fd58318e02ca9ed",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Flood Gen4 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFloodGen4-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:63057b0f22ced63726cc",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Gas",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyGas-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:16279f060ac1c2c13cf4",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly H&T (Blu)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.TBlu-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:e20556e57aeab3ca8e83",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly H&T (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyH.T-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:3382e119c6b3f1d4c35e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Humidity Peripheral Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyHumidityPeripheralComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:443a40f8bf9cdbf88bcf",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Input Analog Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputAnalogComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:41a7d2c5b49d2eae99a0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Input Button Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputButtonComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:cb405dcfd51f683d972f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Input Count Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputCountComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:0da918969a79a07c792b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Input Switch Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputSwitchComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:b120726ecf4fd6c726d0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Motion (Blu)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotionBlu-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:af0da808a3f7837c1bdb",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Motion (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:a9d6d254b6573696c8fa",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Motion 2 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyMotion2-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:e459aa126710c023c501",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly OverUnder Switch Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyOverUnderSwitchComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:cddea318f90b38ad6606",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly PM Mini Gen 2&3 (Websocket)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPMMiniGen3-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:74449a2678ab5233315b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plug",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlugUS-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:7f4e972dcc68939991a5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus 0-10v Dimmer",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus0-10vDimmer-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:29b84ba31e58629abc3e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus 1 & Plus 1 Mini",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:0dd46b23c63af4bca4b4",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus 1 PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PMMini-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:123fa3bc3935d3424d0a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus 1 PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:c29637d54127999fdb18",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus 2 PM (Websocket)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus2PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:76461b408328d083cff2",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus H&T Gen 2&3 (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:3daed33dc3f1e06c9ea2",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus I4",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusI4-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:6bc513be6cb1ba5f365b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus RGBW PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusRGBWPM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:aef4859adcd75f37ef84",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus Smoke",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusSmoke-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:e10a8fb31bdc9b1153c6",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus Uni (Websocket)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUniPlus-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:aae300449b98b1fb2a38",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plus Wall Dimmer",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusWallDimmer-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:70e32dcf04ab2393d9ee",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Polling Voltage Sensor Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPollingVoltageSensorComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:06c8d30b26cacaf92efc",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 1",
+          "namespace": "ShellyUSA",
           "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:3163d0be7a9cc5850622",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 1PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:dc430fa8c4f84fbc5471",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 2",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:b9e64d3041cea25c391c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 2PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro2PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:fc0c4bcef8ce530795bc",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 3",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:ad34bd5084cdf20c71aa",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 3EM400",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro3EM400-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:c44cefe7e5ebb9a5ff26",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro 4PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro4PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:fa452e6cc5e8862d04d4",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro Dimmer 1PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer1PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:5695edcb41765598b987",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro Dimmer 2PM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDimmer2PM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:f1f9753c62979bd4d168",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro Dual Cover PM (Websocket)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProDualCoverPM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:d15adb44d1c8f54d03e3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Pro EM",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProEM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:ef3ca561ec54693d7cfd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly RGB Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:8acf4245eb2b10f6a5c6",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly RGBW Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBWComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:c6a0af732715ed1f53e7",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly RGBW2 (Gen1)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:eea34cbecf44339a59b7",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly RGBW2 White (Gen1)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyRGBW2White-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:10dbabf692f212a8552b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Switch Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:3851887801673a03585f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Switch PM Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellySwitchComponentPM-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:bd813b6f5175e137d6dd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly TRV (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTRV-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:6a60cd9107aa0738865d",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Temperature & Humidity Peripheral Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperatureHumidityPeripheralComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:53785aae3c0390daee21",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Temperature Peripheral Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTemperaturePeripheralComponent-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:441f0d40eed0800a50ab",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Uni (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUni-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:8fe3d5fb21e6a214ef82",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Vintage (Webhook)",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVintage-v2.17.8.groovy"
+        },
+        {
+          "id": "definition:b58e19ca6772cc05afb5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Voltmeter Component",
+          "namespace": "ShellyUSA",
+          "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyVoltmeterComponent-v2.17.8.groovy"
         }
       ],
       "description": "Shelly device drivers. Using Webhook/Websocket, no MQTT necessary.",
@@ -81932,7 +81981,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MISMATCH"
           },
           {
             "name": "documentationLink",
@@ -81948,7 +81997,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "FAIL"
+            "status": "PASS"
           }
         ],
         "classification": "ATTENTION"
@@ -86525,68 +86574,68 @@
       "dateReleased": "2026-04-24",
       "definitions": [
         {
-          "id": "definition:b276fff71d724c6affe3",
+          "id": "definition:b377ae5ac14fe823cc27",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
-          "name": null,
-          "namespace": null,
+          "name": "Sonos Advanced Controller",
+          "namespace": "dwinks",
           "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:29ba587fe07cef7de617",
+          "id": "definition:165a55dab2781b7537fa",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
-        },
-        {
-          "id": "definition:897a76d7c3a1628eca58",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
-        },
-        {
-          "id": "definition:90c808b7bb4102ea5912",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Sonos Advanced Battery Status",
+          "namespace": "dwinks",
           "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:9f246a7ac1b1eaea8f99",
+          "id": "definition:9f49f60ee72130252b42",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Sonos Advanced Favorites",
+          "namespace": "dwinks",
           "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:caf5752b052ef401369d",
+          "id": "definition:3ba21285a6d6db0c3218",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
+          "name": "Sonos Advanced Group",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:fc5227eb9fe70122724d",
+          "id": "definition:7da9671c059beb1929d9",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Sonos Advanced Player",
+          "namespace": "dwinks",
           "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:fd046594fbef975f04e0",
+          "id": "definition:25539d20a713d6d6856f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Sonos Advanced Playlist",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
+        },
+        {
+          "id": "definition:e8e0c2ba8f2ee601891b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Secondaries",
+          "namespace": "dwinks",
           "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
+        },
+        {
+          "id": "definition:f1e2028aedc9680725d0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Snapshot",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -86609,7 +86658,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -86625,10 +86674,10 @@
           },
           {
             "name": "sourceFetch",
-            "status": "FAIL"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "kinds": [
@@ -132427,5 +132476,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-23T02:20:36Z"
+  "snapshotGenerated": "2026-09-23T08:23:25Z"
 }

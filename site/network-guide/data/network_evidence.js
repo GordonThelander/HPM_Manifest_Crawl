@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 181,
-    "CLOUD": 258,
-    "INSUFFICIENT": 301,
-    "LAN": 173
+    "CLOUD": 259,
+    "INSUFFICIENT": 299,
+    "LAN": 174
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -988,23 +988,23 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
       "classification": "INSUFFICIENT",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Monitoring and controlling your Airtouch 5 AC Controller directly from your home automation platform",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
       "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
       "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
       "name": "AirTouch 5 Drivers",
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
+        "sourceFilesAnalysed": 2,
         "urlLiteralCount": 0
       },
       "reviewed": [],
@@ -2154,24 +2154,27 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
-      "classification": "INSUFFICIENT",
-      "communityUrl": null,
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "For monitoring and controlling your Bambu 3D printers through BamBuddy directly from your home automation platform",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
       "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
       "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
       "name": "BamBuddy/PrintBuddy Printers Driver",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "bambuddy.cool",
+          "bambuddy.example.com"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": [
@@ -10996,7 +10999,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Kevin Kahl",
       "category": "Integrations",
-      "classification": "INSUFFICIENT",
+      "classification": "LAN",
       "communityUrl": "https://community.hubitat.com/t/release-inovelli-white-series-vtm31-sn-matter-community-driver/165102",
       "declared": {
         "cloudTag": false,
@@ -11009,9 +11012,12 @@ window.NETWORK_EVIDENCE = {
       "name": "Inovelli Dimmer White Series VTM31-SN",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 2
       },
       "reviewed": [],
       "tags": [
@@ -19647,7 +19653,7 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
+        "sourceFilesAnalysed": 69,
         "urlLiteralCount": 0
       },
       "reviewed": [
@@ -21155,9 +21161,14 @@ window.NETWORK_EVIDENCE = {
       "name": "Sonos Advanced Controller",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "PARSE_LAN_MESSAGE",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 8,
+        "urlLiteralCount": 55
       },
       "reviewed": [
         {
@@ -27576,5 +27587,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-23T02:20:36Z"
+  "snapshotGenerated": "2026-09-23T08:23:25Z"
 };
