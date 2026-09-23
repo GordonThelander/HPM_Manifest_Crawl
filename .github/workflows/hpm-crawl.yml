@@ -52,10 +52,12 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    # Runs daily at 00:00 GMT/UTC. The full crawl only follows if the cheap
+    # Runs daily at 00:23 GMT/UTC (08:23 Australia/Perth). The non-round
+    # minute avoids GitHub Actions' busiest top-of-hour scheduling window.
+    # The full crawl only follows if the cheap
     # upstream check says something actually moved; a few independent
     # catalogue, taxonomy and release-note builders still refresh every run.
-    - cron: '0 0 * * *'
+    - cron: '23 0 * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -612,3 +614,79 @@ jobs:
         # No checkout in this job, so gh has no local git context to infer
         # the repository from. --repo makes that explicit.
         run: gh workflow run pages.yml --ref main --repo ${{ github.repository }}
+
+  email-crawl-failure:
+    name: Email crawl failure notification
+    if: >-
+      ${{ always() && github.ref == 'refs/heads/main' &&
+          github.event_name != 'pull_request' &&
+          (needs.automation-map-contract.result == 'failure' || needs.crawl.result == 'failure') }}
+    needs:
+      - automation-map-contract
+      - crawl
+    runs-on: ubuntu-latest
+    steps:
+      - name: Email failure notification
+        env:
+          GATEWAY_URL: ${{ secrets.NOTIFY_GATEWAY_URL }}
+          GATEWAY_TOKEN: ${{ secrets.NOTIFY_GATEWAY_TOKEN }}
+          CONTRACT_RESULT: ${{ needs.automation-map-contract.result }}
+          CRAWL_RESULT: ${{ needs.crawl.result }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+
+
+          opener = urllib.request.build_opener(NoRedirect)
+          run_url = (
+              f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"
+              f"/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+          )
+          payload = {
+              'token': os.environ['GATEWAY_TOKEN'],
+              'group': 'user',
+              'subject': 'Hubitat Community Utilities crawl failed',
+              'text': (
+                  'The HPM Manifest Crawl workflow failed.\n\n'
+                  f"Event: {os.environ['GITHUB_EVENT_NAME']}\n"
+                  f"Automation Map contract: {os.environ['CONTRACT_RESULT']}\n"
+                  f"Crawl: {os.environ['CRAWL_RESULT']}\n\n"
+                  'No new crawl output was published by the failed job.\n'
+                  f"Run details: {run_url}"
+              ),
+              'source': 'HPM Manifest Crawl',
+              'fromName': 'HPM Manifest Crawl',
+          }
+          request = urllib.request.Request(
+              os.environ['GATEWAY_URL'],
+              data=json.dumps(payload).encode('utf-8'),
+              headers={'Content-Type': 'application/json', 'Accept': 'application/json'},
+              method='POST',
+          )
+          try:
+              with opener.open(request, timeout=30) as response:
+                  result = json.loads(response.read().decode('utf-8'))
+          except urllib.error.HTTPError as error:
+              if error.code not in (301, 302, 303, 307, 308):
+                  raise
+              location = error.headers.get('Location')
+              if not location:
+                  raise
+              with urllib.request.urlopen(location, timeout=30) as response:
+                  result = json.loads(response.read().decode('utf-8'))
+
+          if not result.get('ok'):
+              raise RuntimeError(f"Gateway reported failure: {result.get('error')}")
+          print(
+              f"Gateway accepted: group={result.get('group')}, "
+              f"recipients={result.get('recipientCount')}"
+          )
+          PY
