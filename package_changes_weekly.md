@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-22T02:20:44Z`.
+Latest observation: `2026-09-23T02:20:36Z`.
 
-**69 package change(s):** added 4, declared definitions changed 31, removed 1, updated 35
+**64 package change(s):** added 4, broken 2, declared definitions changed 33, manifest changed 2, source location changed 2, updated 31
 
+- [Remote Builder for Hubitat: updated.](https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/packageManifestRemoteBuilder.json)
+- [Pixora Locator Driver: added.](https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [BamBuddy/PrintBuddy Printers Driver: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json)
+- [AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
 - [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
@@ -63,15 +68,5 @@ Latest observation: `2026-09-22T02:20:44Z`.
 - [Ambient Weather Station: changed declared definitions.](https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json)
 - [Advanced Heliotrope: changed declared definitions.](https://raw.githubusercontent.com/Electrified-Home/Hubitat-Advanced-Heliotrope/main/packageManifest.json)
 - [APC SmartUPS Status: changed declared definitions.](https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Iris v2 v3 Keypad: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [Pump Scheduler: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json)
-- [Pump Scheduler: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.grovey)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

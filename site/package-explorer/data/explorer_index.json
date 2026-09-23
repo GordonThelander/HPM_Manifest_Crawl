@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 912,
+    "HPM_PACKAGE": 913,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2617,
+  "recordCount": 2618,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -174,7 +174,15 @@
           "label": "Community Apps Wiki"
         }
       ],
-      "hpmMatches": [],
+      "hpmMatches": [
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "manifest:8150d1b3584ff65b87ce",
+          "packageName": "Pixora Locator Driver"
+        }
+      ],
       "id": "community-app:b2c44d36b0083a96ca35",
       "kinds": [
         "APP"
@@ -4015,7 +4023,15 @@
           "label": "Community Drivers Wiki"
         }
       ],
-      "hpmMatches": [],
+      "hpmMatches": [
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "manifest:8150d1b3584ff65b87ce",
+          "packageName": "Pixora Locator Driver"
+        }
+      ],
       "id": "community-driver:9b5e9de000d16bf7a556",
       "kinds": [
         "DRIVER",
@@ -20770,28 +20786,11 @@
       "version": "1.0"
     },
     {
-      "author": "Jamie Curnow",
+      "author": null,
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-24",
-      "definitions": [
-        {
-          "id": "definition:2a5f7ac83bce512376a9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "AirTouch 5 Controller",
-          "namespace": "airtouch5",
-          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5.groovy"
-        },
-        {
-          "id": "definition:f8c9a3878f7af0edca77",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "AirTouch 5 Zone",
-          "namespace": "airtouch5",
-          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5Zone.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "Monitoring and controlling your Airtouch 5 AC Controller directly from your home automation platform",
       "evidence": [
         {
@@ -20799,24 +20798,24 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
-      "hasDocumentation": true,
+      "hasDocumentation": false,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "httpsTransport",
@@ -20824,23 +20823,21 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-      "kinds": [
-        "DRIVER"
-      ],
+      "kinds": [],
       "links": {
-        "community": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
-        "documentation": "https://github.com/jc21/hubitat-airtouch5",
-        "manifest": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/packageManifest.json",
+        "community": null,
+        "documentation": null,
+        "manifest": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
         "repository": "https://github.com/jc21/hubitat-airtouch5"
       },
       "name": "AirTouch 5 Drivers",
@@ -20860,7 +20857,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.0.0"
+      "version": null
     },
     {
       "author": "VH",
@@ -24442,20 +24439,11 @@
       "version": "0.1.4"
     },
     {
-      "author": "Jamie Curnow",
+      "author": null,
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-05-06",
-      "definitions": [
-        {
-          "id": "definition:4a995b481fb8cdbde403",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BamBuddy Printers",
-          "namespace": "jc21",
-          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.2/bambuddy-printers.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "For monitoring and controlling your Bambu 3D printers through BamBuddy directly from your home automation platform",
       "evidence": [
         {
@@ -24463,24 +24451,24 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
-      "hasDocumentation": true,
+      "hasDocumentation": false,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "httpsTransport",
@@ -24488,36 +24476,31 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-      "kinds": [
-        "DRIVER"
-      ],
+      "kinds": [],
       "links": {
-        "community": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
-        "documentation": "https://github.com/jc21/hubitat-bambuddy",
-        "manifest": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.3/packageManifest.json",
+        "community": null,
+        "documentation": null,
+        "manifest": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
         "repository": "https://github.com/jc21/hubitat-bambuddy"
       },
-      "name": "BamBuddy Printers Driver",
+      "name": "BamBuddy/PrintBuddy Printers Driver",
       "network": {
-        "classification": "CLOUD",
+        "classification": "INSUFFICIENT",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [
-          "bambuddy.cool",
-          "bambuddy.example.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -24525,7 +24508,7 @@
         "Appliances",
         "Monitoring"
       ],
-      "version": "0.0.2"
+      "version": null
     },
     {
       "author": "Mike Maxwell",
@@ -62054,7 +62037,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-20",
+      "dateReleased": "2026-09-23",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -62136,7 +62119,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.3.11"
+      "version": "4.4.0"
     },
     {
       "author": "Justin Leonard",
@@ -72308,6 +72291,90 @@
       "version": "1.1"
     },
     {
+      "author": "BPTWorld",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-22",
+      "definitions": [
+        {
+          "id": "definition:5a6093fc5f21cc099b4c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Pixora Locator",
+          "namespace": "pixorahq",
+          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/pixoralocator-driver.groovy"
+        }
+      ],
+      "description": "Hubitat driver for the Pixora Locator app",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:8150d1b3584ff65b87ce",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/bptworld/Hubitat",
+        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
+        "repository": "https://github.com/bptworld/Hubitat"
+      },
+      "name": "Pixora Locator Driver",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Safety & Security",
+        "Tools & Utilities"
+      ],
+      "version": null
+    },
+    {
       "author": "Ben Jansen",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -75598,7 +75665,7 @@
       "author": "Gary J. Milne",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-8-16",
+      "dateReleased": "2026-9-22",
       "definitions": [
         {
           "id": "definition:662cc2fa66fcbc19fd2d",
@@ -75750,7 +75817,7 @@
         "Multimedia",
         "Utilities"
       ],
-      "version": "133"
+      "version": "134"
     },
     {
       "author": "rboer",
@@ -132360,5 +132427,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-22T02:20:44Z"
+  "snapshotGenerated": "2026-09-23T02:20:36Z"
 }

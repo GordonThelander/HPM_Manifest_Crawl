@@ -1,8 +1,8 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 181,
-    "CLOUD": 259,
-    "INSUFFICIENT": 299,
+    "CLOUD": 258,
+    "INSUFFICIENT": 301,
     "LAN": 173
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 912,
+  "packageCount": 913,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -988,23 +988,23 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Jamie Curnow",
+      "author": null,
       "category": "Control",
       "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
+      "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Monitoring and controlling your Airtouch 5 AC Controller directly from your home automation platform",
-      "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
+      "documentationUrl": null,
       "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-      "manifestUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/packageManifest.json",
+      "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
       "name": "AirTouch 5 Drivers",
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
+        "sourceFilesAnalysed": 0,
         "urlLiteralCount": 0
       },
       "reviewed": [],
@@ -2154,27 +2154,24 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Jamie Curnow",
+      "author": null,
       "category": "Control",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "For monitoring and controlling your Bambu 3D printers through BamBuddy directly from your home automation platform",
-      "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
+      "documentationUrl": null,
       "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-      "manifestUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.3/packageManifest.json",
-      "name": "BamBuddy Printers Driver",
+      "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
+      "name": "BamBuddy/PrintBuddy Printers Driver",
       "observed": {
-        "externalHosts": [
-          "bambuddy.cool",
-          "bambuddy.example.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -16648,6 +16645,33 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "BPTWorld",
+      "category": "Security",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Hubitat driver for the Pixora Locator app",
+      "documentationUrl": "https://github.com/bptworld/Hubitat",
+      "id": "manifest:8150d1b3584ff65b87ce",
+      "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
+      "name": "Pixora Locator Driver",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Monitoring",
+        "Safety & Security",
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Ben Jansen",
       "category": "Control",
       "classification": "BOTH",
@@ -27552,5 +27576,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-22T02:20:44Z"
+  "snapshotGenerated": "2026-09-23T02:20:36Z"
 };

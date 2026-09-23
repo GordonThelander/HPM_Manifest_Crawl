@@ -1564,7 +1564,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2268,
+  "definitionCount": 2266,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -17537,26 +17537,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zac38-v1.0.6.groovy"
     },
     {
-      "id": "definition:2a5f7ac83bce512376a9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "AirTouch 5 Controller",
-          "namespace": "airtouch5"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jamie Curnow",
-        "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
-        "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
-        "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-        "manifestUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/packageManifest.json",
-        "name": "AirTouch 5 Drivers"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5.groovy"
-    },
-    {
       "id": "definition:2a94f6760e1c2067b981",
       "identities": [
         {
@@ -21882,26 +21862,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/Learning/Hubitat_TRATO_MolSmart_GW8_IR_Learning.groovy"
     },
     {
-      "id": "definition:4a995b481fb8cdbde403",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BamBuddy Printers",
-          "namespace": "jc21"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jamie Curnow",
-        "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
-        "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
-        "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-        "manifestUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.3/packageManifest.json",
-        "name": "BamBuddy Printers Driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.0.2/bambuddy-printers.groovy"
-    },
-    {
       "id": "definition:4aac5834f68e8a9de3dd",
       "identities": [
         {
@@ -24495,6 +24455,31 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 1)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-switch-nzw30-w-scene.src/inovelli-switch-nzw30-w-scene.groovy"
+    },
+    {
+      "id": "definition:5a6093fc5f21cc099b4c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Pixora Locator",
+          "namespace": "pixorahq"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Pixoara Locator Driver",
+          "namespace": "BPTWorld"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "BPTWorld",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/bptworld/Hubitat",
+        "id": "manifest:8150d1b3584ff65b87ce",
+        "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
+        "name": "Pixora Locator Driver"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/pixoralocator-driver.groovy"
     },
     {
       "id": "definition:5a77f429fd248929982a",
@@ -47557,26 +47542,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/touchstone-fireplace/touchstone-fireplace.groovy"
     },
     {
-      "id": "definition:f8c9a3878f7af0edca77",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "AirTouch 5 Zone",
-          "namespace": "airtouch5"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Jamie Curnow",
-        "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
-        "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
-        "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-        "manifestUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/packageManifest.json",
-        "name": "AirTouch 5 Drivers"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-airtouch5/refs/tags/v1.0.0/AirTouch5Zone.groovy"
-    },
-    {
       "id": "definition:f8f7abc8b7d7201705d3",
       "identities": [
         {
@@ -48380,5 +48345,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-22T02:20:44Z"
+  "snapshotGenerated": "2026-09-23T02:20:36Z"
 };
