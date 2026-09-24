@@ -90343,7 +90343,7 @@
     {
       "apps": [
         {
-          "definitionLine": 185,
+          "definitionLine": 193,
           "definitionName": "Reolink Integration",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Integration",
@@ -90357,31 +90357,31 @@
             },
             {
               "evidence": "* schedule (defined on the in-app Recording Presets page) to the NVR,",
-              "line": 92,
+              "line": 100,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 195,
+              "line": 203,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 195,
+              "line": 203,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 293,
+              "line": 301,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "<a href='https://community.hubitat.com/t/release-reolink-integration-cameras-doorbells-nvrs-home-hubs/165352' target='_blank'",
-              "line": 357,
+              "line": 365,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -90391,7 +90391,7 @@
             },
             {
               "evidence": "<a href='https://www.paypal.com/paypalme/jdthomas24?locale.x=en_US&country.x=US' target='_blank'",
-              "line": 362,
+              "line": 370,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.paypal.com",
@@ -90401,43 +90401,43 @@
             },
             {
               "evidence": "\"tile's own refresh setting doesn't matter. Poll interval should stay tight for responsive \" +",
-              "line": 545,
+              "line": 553,
               "type": "MATTER_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "// A DEVICE's getChildDevices() (unlike an app's) can return null instead",
-              "line": 1125,
+              "line": 1133,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return bridge ? (bridge.getChildDevices() ?: []) : []",
-              "line": 1127,
+              "line": 1135,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "group = addChildDevice(\"jdthomas24\", \"Reolink Standalone Devices\", STANDALONE_GROUP_DNI, [",
-              "line": 1153,
+              "line": 1161,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* anywhere only a dni string is available (e.g. runIn(...) callback data).",
-              "line": 1179,
+              "line": 1187,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge.getChildDevices()?.each {",
-              "line": 1224,
+              "line": 1232,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 1325,
+              "line": 1333,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90447,13 +90447,13 @@
             },
             {
               "evidence": "httpPost(params) { resp -> result = parseReolinkResponse(resp) }",
-              "line": 1330,
+              "line": 1338,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}&token=${token}\"",
-              "line": 1427,
+              "line": 1435,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90463,103 +90463,103 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\",",
-              "line": 1431,
+              "line": 1439,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 1687,
+              "line": 1695,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1956,
+              "line": 1964,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"systemStartHandler\")",
-              "line": 1958,
+              "line": 1966,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */15 * * * ?\", \"auditEventConnections\")",
-              "line": 1963,
+              "line": 1971,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 1966,
+              "line": 1974,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "runIn(3600, \"revertToNormalLogging\")",
-              "line": 1976,
+              "line": 1984,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge?.getChildDevices() ?: []).each { child ->",
-              "line": 2013,
+              "line": 2021,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "logNormal \"Reolink Integration: cleared ${clearedRec} leftover cached recording schedule(s) from the \" +",
-              "line": 2043,
+              "line": 2051,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge?.getChildDevices()?.each { child ->",
-              "line": 2089,
+              "line": 2098,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 2099,
+              "line": 2108,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* own schedule() cron mechanism (see initialize()) rather than this app's",
-              "line": 2106,
+              "line": 2115,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 2174,
+              "line": 2191,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 2246,
+              "line": 2263,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* Snapshot caching runs on its OWN schedule (nextSnapshotDue, see",
-              "line": 2305,
+              "line": 2322,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 2394,
+              "line": 2411,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=Snap&channel=${channel}&token=${token}\"",
-              "line": 2465,
+              "line": 2482,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90569,14 +90569,14 @@
             },
             {
               "evidence": "httpGet([uri: uri, ignoreSSLIssues: true, timeout: 10]) { resp ->",
-              "line": 2468,
+              "line": 2485,
               "type": "HTTP_CALL",
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 156052,
+          "sourceBytes": 157435,
           "sourceFetched": true,
-          "sourceSha256": "0af3b67b9ecc01a73a6907e7d4cd3f9df7a55ffbdff169ef218f2b569424783f",
+          "sourceSha256": "f402df032126410ddf96103c78d53e0c365788064189fe63f235f808c2a58716",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ParentApp.groovy"
         }
       ],
@@ -90596,7 +90596,7 @@
           "observations": [],
           "sourceBytes": 16696,
           "sourceFetched": true,
-          "sourceSha256": "bb5441154641d2a215f63c68c370ca408b1fee3de826efb38597c4a3e9033ff4",
+          "sourceSha256": "ad46f929332e1e3861ac92060c7b25297d36b32763c40bef422fc8acd1cc3aa1",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/CameraDriver.groovy"
         },
         {
@@ -90608,11 +90608,11 @@
           "observations": [],
           "sourceBytes": 12425,
           "sourceFetched": true,
-          "sourceSha256": "96fc867fa3b43b490a228b755843455cd77cfdb438c3940e756130c548b4ca32",
+          "sourceSha256": "015b7cca56edad29fbe5d1e518f02e4ba4e0ca36e0e0cdbdc4d63db5edf672c0",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/DoorbellDriver.groovy"
         },
         {
-          "definitionLine": 95,
+          "definitionLine": 100,
           "definitionName": "Reolink Device Bridge",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Device Bridge",
@@ -90620,122 +90620,122 @@
           "observations": [
             {
               "evidence": "child = addChildDevice(\"jdthomas24\", driverName, dni, [",
-              "line": 187,
+              "line": 192,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 385,
+              "line": 390,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.connect(state.host, state.port as int, byteInterface: true)",
-              "line": 399,
+              "line": 404,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"sendNonceRequest\")",
-              "line": 406,
+              "line": 411,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(15, \"flowTimeoutCheck\")",
-              "line": 407,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendKeepalive\")",
               "line": 412,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule(\"sendKeepalive\")",
+              "line": 417,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 413,
+              "line": 418,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 414,
+              "line": 419,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"closeSocket\")",
-              "line": 423,
+              "line": 428,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 432,
+              "line": 437,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
-              "line": 459,
+              "line": 484,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 475,
+              "line": 503,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 529,
+              "line": 562,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 530,
+              "line": 563,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 552,
+              "line": 585,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 810,
+              "line": 843,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 811,
+              "line": 844,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(bytesToHex(data))",
-              "line": 827,
+              "line": 860,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 957,
+              "line": 990,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 47269,
+          "sourceBytes": 49412,
           "sourceFetched": true,
-          "sourceSha256": "e2ba1edc195128d1ef7a21a69418fbb6d1eee71722ed5367ba6cf25e8dc20790",
+          "sourceSha256": "b48d4bc5ece2298b95f0d124d02cfc652d0823a7718ce56a3fbbd0431d99462c",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ReolinkDeviceBridge.groovy"
         },
         {
@@ -90766,7 +90766,7 @@
           ],
           "sourceBytes": 12083,
           "sourceFetched": true,
-          "sourceSha256": "641e3d885cfd1041bfe68379595cf7d1c311edafe5e126f907c6cfabce6855b5",
+          "sourceSha256": "c34f7f320ff55839bb6d33ab8acd73c6cfad9240420558fb38cb8519b2d4a210",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/StandaloneDevices.groovy"
         }
       ],
@@ -90782,7 +90782,7 @@
         "Safety & Security",
         "Doorbell"
       ],
-      "version": "1.5.3"
+      "version": "1.5.4"
     },
     {
       "apps": [],
@@ -288051,14 +288051,14 @@
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 10397,
+              "line": 10398,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 780795,
+          "sourceBytes": 781682,
           "sourceFetched": true,
-          "sourceSha256": "db5506cdce22d6a04e2371287d1f9db0bc16cd9eec35f0ae528b4ef47be57f8b",
+          "sourceSha256": "0b32e60d40426753087289754dfccb34c5c58210fb1ea75df3ecf1e289d2e6c6",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -288545,7 +288545,7 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "1e74b607fbed1c143844e8b9d791d652400da387af6d9c021a6a2c93573ed965",
+          "sourceSha256": "44c146840a4cb38cf70fa21f211fd27746b4533cc40f0ae1fc13e2111c5b475e",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
@@ -288564,7 +288564,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.4.0"
+      "version": "4.4.1"
     },
     {
       "apps": [],
@@ -347361,7 +347361,7 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-09-23T08:23:25Z",
+  "snapshotGenerated": "2026-09-24T05:06:01Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
