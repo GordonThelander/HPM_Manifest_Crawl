@@ -1572,7 +1572,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2271,
+  "definitionCount": 2274,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -7540,6 +7540,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/SensorGroupsPlus/main/ChildApps/LuxSensorPlus_ChildApp.groovy"
     },
     {
+      "id": "definition:8fe6a80117a1b7349058",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Android TV+",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentationUrl": null,
+        "id": "hpm:4d3d4e94-a409-48b9-98b9-fb18af510c44",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json",
+        "name": "Android TV+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-app.groovy"
+    },
+    {
       "id": "definition:91c9011605d8650f1776",
       "identities": [
         {
@@ -13393,6 +13413,26 @@ window.IDENTITY_INDEX = {
         "name": "Litter Robot Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-litterrobot/master/devicetypes/natekspencer/litter-robot.src/litter-robot.groovy"
+    },
+    {
+      "id": "definition:09302b73792851c22590",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Android TV+ Driver",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentationUrl": null,
+        "id": "hpm:4d3d4e94-a409-48b9-98b9-fb18af510c44",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json",
+        "name": "Android TV+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-driver.groovy"
     },
     {
       "id": "definition:0941c76907f3f1a702e2",
@@ -25758,6 +25798,26 @@ window.IDENTITY_INDEX = {
         "name": "Dreo Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/drivers/dreo_fan.groovy"
+    },
+    {
+      "id": "definition:626ca938d8cc3f7a2abd",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Android TV+ Parent",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentationUrl": null,
+        "id": "hpm:4d3d4e94-a409-48b9-98b9-fb18af510c44",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json",
+        "name": "Android TV+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-parent-driver.groovy"
     },
     {
       "id": "definition:628dcd46707dee534993",
@@ -48598,5 +48658,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-24T05:06:01Z"
+  "snapshotGenerated": "2026-09-25T05:08:44Z"
 };

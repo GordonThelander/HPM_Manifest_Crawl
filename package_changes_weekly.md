@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-24T05:06:01Z`.
+Latest observation: `2026-09-25T05:08:44Z`.
 
-**39 package change(s):** added 4, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 32
+**43 package change(s):** added 5, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 35
 
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
+- [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
+- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
+- [Ecobee HAP Thermostat (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json)
+- [Android TV+: added.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Sonos Advanced Controller: changed declared definitions, was restored.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
@@ -40,8 +47,5 @@ Latest observation: `2026-09-24T05:06:01Z`.
 - [MolSmart - GW8 - AC (learning): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
-- [Schedule Manager: updated.](https://raw.githubusercontent.com/evcallia/hubitat/refs/heads/main/apps/schedule-manager/hpm-packageManifest.json)
-- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

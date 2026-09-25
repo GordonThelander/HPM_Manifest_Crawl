@@ -3,7 +3,7 @@
     "BOTH": 181,
     "CLOUD": 259,
     "INSUFFICIENT": 299,
-    "LAN": 174
+    "LAN": 175
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 913,
+  "packageCount": 914,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1438,6 +1438,36 @@
       "tags": [
         "Doors & Windows",
         "ZWave"
+      ]
+    },
+    {
+      "author": "Joe Page",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "ADB control for Fire TV and Android TV devices",
+      "documentationUrl": null,
+      "id": "hpm:4d3d4e94-a409-48b9-98b9-fb18af510c44",
+      "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json",
+      "name": "Android TV+",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "PARSE_LAN_MESSAGE",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Multimedia"
       ]
     },
     {
@@ -17870,7 +17900,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 5,
-        "urlLiteralCount": 5
+        "urlLiteralCount": 8
       },
       "reviewed": [
         {
@@ -27587,5 +27617,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-24T05:06:01Z"
+  "snapshotGenerated": "2026-09-25T05:08:44Z"
 }

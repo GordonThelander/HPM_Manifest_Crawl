@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 913,
+    "HPM_PACKAGE": 914,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2618,
+  "recordCount": 2619,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22167,6 +22167,105 @@
       "version": null
     },
     {
+      "author": "Joe Page",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-25",
+      "definitions": [
+        {
+          "id": "definition:8fe6a80117a1b7349058",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Android TV+",
+          "namespace": "jpage4500",
+          "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-app.groovy"
+        },
+        {
+          "id": "definition:09302b73792851c22590",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Android TV+ Driver",
+          "namespace": "jpage4500",
+          "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-driver.groovy"
+        },
+        {
+          "id": "definition:626ca938d8cc3f7a2abd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Android TV+ Parent",
+          "namespace": "jpage4500",
+          "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-parent-driver.groovy"
+        }
+      ],
+      "description": "ADB control for Fire TV and Android TV devices",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:4d3d4e94-a409-48b9-98b9-fb18af510c44",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json",
+        "repository": "https://github.com/jpage4500/hubitat-drivers"
+      },
+      "name": "Android TV+",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Multimedia"
+      ],
+      "version": "2.0.0"
+    },
+    {
       "author": "Yonatan Striem Amit",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -32315,7 +32414,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.19.14"
+      "version": "0.19.15"
     },
     {
       "author": "Barry A. Burke",
@@ -39843,7 +39942,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "1.0.13"
+      "version": "1.0.14"
     },
     {
       "author": "Miles Budnek",
@@ -44396,7 +44495,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.10.0"
+      "version": "0.12.0"
     },
     {
       "author": "Bryan Copeland",
@@ -59211,7 +59310,7 @@
       "tags": [
         "Presence & Location"
       ],
-      "version": "5.2.3"
+      "version": "5.2.4"
     },
     {
       "author": "Justin Leonard",
@@ -76375,7 +76474,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.5.4"
+      "version": "1.6.1"
     },
     {
       "author": "Andrew Nunes",
@@ -90890,7 +90989,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-14",
+      "dateReleased": "2026-09-24",
       "definitions": [
         {
           "id": "definition:4bb3fdc0eddf14cd7a69",
@@ -91022,7 +91121,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.11"
+      "version": "1.0.12"
     },
     {
       "author": "TheMaster",
@@ -132476,5 +132575,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-24T05:06:01Z"
+  "snapshotGenerated": "2026-09-25T05:08:44Z"
 }

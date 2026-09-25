@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-09-24T05:06:01Z`
+- Snapshot: `2026-09-25T05:08:44Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
-- Packages indexed: **913**
+- Packages indexed: **914**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **12**
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **817**
+Total packages not matched by any registry entry: **818**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -271,6 +271,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Jean P. May, Jr. | File Manager for Extended Character Sets | Integrations |  | https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/fmExtManifest.json |
 | Jean P. May, Jr. | Hubitat Ping Device | Integrations | Misc. Devices | https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubPingManifest.json |
 | JoKneeMo | AdGuard Home DNS Manager (Unofficial) | Integrations |  | https://raw.githubusercontent.com/JoKneeMo/hubitat/main/adguardhome/packageManifest.json |
+| Joe Page | Android TV+ | Integrations | Multimedia | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json |
 | Joe Page | Google Photos Cloud | Utility | Cloud, Dashboards, Multimedia | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json |
 | Joe Page | HD+ Companion App | Integrations | Presence & Location, Notifications, Voice Assistants | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-device/packageManifest.json |
 | Joe Page | HD+ Tile | Integrations |  | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json |
@@ -587,8 +588,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 817 |
-| G candidate subset | 353 |
+| G. Unrepresented packages | 818 |
+| G candidate subset | 354 |
 
 ## H. Enrichment summary
 
@@ -598,13 +599,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2257 |
-| Source URLs fetched | 2248 |
+| Distinct source URLs | 2260 |
+| Source URLs fetched | 2251 |
 | Source URLs failed | 9 |
-| Components attempted | 2271 |
-| Components fetched | 2262 |
-| Literal definitions verified | 2251 |
-| Components with observations | 2136 |
+| Components attempted | 2274 |
+| Components fetched | 2265 |
+| Literal definitions verified | 2254 |
+| Components with observations | 2141 |
 
 ### Official Hubitat documentation pass
 
