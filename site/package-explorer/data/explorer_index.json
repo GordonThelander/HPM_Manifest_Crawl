@@ -24987,7 +24987,7 @@
           "lanTag": false
         },
         "externalHosts": [
-          "cdn.datatables.net",
+          "cdnjs.cloudflare.com",
           "paypal.me"
         ],
         "reviewed": []
@@ -24997,7 +24997,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.5.33"
+      "version": "2.6.0"
     },
     {
       "author": "Larry Kahn",
@@ -25438,7 +25438,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "David Snell",
@@ -26770,7 +26770,7 @@
         "Thermostat",
         "Zigbee"
       ],
-      "version": "0.7.8"
+      "version": "0.7.9"
     },
     {
       "author": "n3!",
@@ -30466,13 +30466,13 @@
       "version": "1.4.0"
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "4/28/26",
+      "dateReleased": "2026-09-25",
       "definitions": [
         {
-          "id": "definition:c4b6c90da3383485388a",
+          "id": "definition:8513a63c1a6a267c5029",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Device Health Monitor",
@@ -30491,20 +30491,20 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
-            "status": "MISMATCH"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -30519,15 +30519,15 @@
             "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "manifest:b02e9c2e9e6f56c819a0",
       "kinds": [
         "APP"
       ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/release-device-health-monitor/163229",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
         "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
         "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
       },
@@ -30539,7 +30539,6 @@
           "lanTag": true
         },
         "externalHosts": [
-          "cdn.datatables.net",
           "paypal.me"
         ],
         "reviewed": []
@@ -30551,7 +30550,7 @@
         "Zigbee",
         "ZWave"
       ],
-      "version": "1.5.11"
+      "version": "1.6.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -33101,22 +33100,19 @@
       },
       "name": "Emporia Vue v2 - Hubitat",
       "network": {
-        "classification": "CLOUD",
+        "classification": "INSUFFICIENT",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [
-          "api.emporiaenergy.com",
-          "cognito-idp.us-east-2.amazonaws.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
       "tags": [
         "Energy Monitoring"
       ],
-      "version": "4.2.4"
+      "version": "4.3.0"
     },
     {
       "author": "Dan Danache (@dandanache)",
@@ -62185,7 +62181,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-23",
+      "dateReleased": "2026-09-25",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -62267,7 +62263,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.4.1"
+      "version": "4.4.3"
     },
     {
       "author": "Justin Leonard",
@@ -71267,7 +71263,7 @@
       "tags": [
         "Pools & Spas"
       ],
-      "version": "1.6.3"
+      "version": "1.6.4"
     },
     {
       "author": "Neil Jackson",
@@ -85714,7 +85710,7 @@
       "author": "ke7lvb",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-11-11",
+      "dateReleased": "2026-09-25",
       "definitions": [
         {
           "id": "definition:52dd069ccf3559560d48",
@@ -85793,7 +85789,7 @@
         "Energy Monitoring",
         "Weather"
       ],
-      "version": "1.1.1"
+      "version": "1.2.0"
     },
     {
       "author": "StarkTemplar",
@@ -86141,7 +86137,7 @@
       "author": "ke7lvb",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-08-06",
+      "dateReleased": "2026-09-25",
       "definitions": [
         {
           "id": "definition:72ab41af30fa2175dd16",
@@ -86205,14 +86201,12 @@
       },
       "name": "Sonnen Battery - Hubitat",
       "network": {
-        "classification": "BOTH",
+        "classification": "LAN",
         "declared": {
           "cloudTag": false,
           "lanTag": true
         },
-        "externalHosts": [
-          "img.icons8.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -86220,7 +86214,7 @@
         "Energy Monitoring",
         "LAN"
       ],
-      "version": "1.4.1"
+      "version": "1.6.0"
     },
     {
       "author": "Markus",
@@ -132575,5 +132569,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-25T05:08:44Z"
+  "snapshotGenerated": "2026-09-26T05:11:36Z"
 }

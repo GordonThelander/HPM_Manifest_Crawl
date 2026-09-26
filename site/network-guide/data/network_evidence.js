@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 181,
-    "CLOUD": 259,
-    "INSUFFICIENT": 299,
-    "LAN": 175
+    "BOTH": 180,
+    "CLOUD": 258,
+    "INSUFFICIENT": 300,
+    "LAN": 176
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -2304,12 +2304,12 @@ window.NETWORK_EVIDENCE = {
       "name": "Battery Monitor 2.0",
       "observed": {
         "externalHosts": [
-          "cdn.datatables.net",
+          "cdnjs.cloudflare.com",
           "paypal.me"
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 12
+        "urlLiteralCount": 8
       },
       "reviewed": [],
       "tags": [
@@ -3936,27 +3936,26 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "category": "Utility",
       "classification": "BOTH",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
       "declared": {
         "cloudTag": false,
         "lanTag": true
       },
       "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable - learns each device's normal pattern and alerts you when something goes quiet.",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
       "id": "manifest:b02e9c2e9e6f56c819a0",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
       "name": "Device Health Monitor",
       "observed": {
         "externalHosts": [
-          "cdn.datatables.net",
           "paypal.me"
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 10
+        "urlLiteralCount": 3
       },
       "reviewed": [],
       "tags": [
@@ -4765,7 +4764,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "ke7lvb",
       "category": "Integrations",
-      "classification": "CLOUD",
+      "classification": "INSUFFICIENT",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -4777,13 +4776,10 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://raw.githubusercontent.com/ke7lvb/Emporia-Vue-Hubitat/refs/heads/main/packageManifest.json",
       "name": "Emporia Vue v2 - Hubitat",
       "observed": {
-        "externalHosts": [
-          "api.emporiaenergy.com",
-          "cognito-idp.us-east-2.amazonaws.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -21002,7 +20998,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "ke7lvb",
       "category": "Integrations",
-      "classification": "BOTH",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -21014,12 +21010,10 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://raw.githubusercontent.com/ke7lvb/sonnen_battery/refs/heads/main/packageManifest.json",
       "name": "Sonnen Battery - Hubitat",
       "observed": {
-        "externalHosts": [
-          "img.icons8.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 14
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -27617,5 +27611,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-25T05:08:44Z"
+  "snapshotGenerated": "2026-09-26T05:11:36Z"
 };

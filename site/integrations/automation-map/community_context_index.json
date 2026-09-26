@@ -4113,7 +4113,7 @@
         "source": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/android-tv-plus-app.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "LAN",
         "reviewed": false
       },
       "packageName": "Android TV+",
@@ -13048,25 +13048,20 @@
       "summary": "Integration from Hubitat to a Pentair *Touch Controller using the nodejs-poolController"
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
         {
           "basis": "sourceIdentity",
           "name": "Device Health Monitor",
           "namespace": "jdthomas24"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Device Health Monitor App",
-          "namespace": "Jdthomas24"
         }
       ],
       "displayName": "Device Health Monitor",
       "evidenceChecks": {
-        "communityLink": "MISSING",
-        "definitionIdentity": "MISMATCH",
-        "documentationLink": "MISSING",
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
         "sourceFetch": "PASS"
@@ -13075,6 +13070,8 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
+        "community": "https://community.hubitat.com/t/release-device-health-monitor/163229",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
         "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
       },
       "networkEvidence": {
@@ -13082,9 +13079,7 @@
         "reviewed": false
       },
       "packageName": "Device Health Monitor",
-      "qualityFlags": [
-        "IDENTITY_MISMATCH"
-      ],
+      "qualityFlags": [],
       "summary": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable - learns each device's normal pattern and alerts you when something goes quiet."
     },
     {
@@ -16113,5 +16108,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-25T05:08:44Z"
+  "snapshotGenerated": "2026-09-26T05:11:36Z"
 }

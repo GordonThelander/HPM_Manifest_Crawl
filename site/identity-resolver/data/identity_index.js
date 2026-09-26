@@ -7145,6 +7145,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/schwark/hubitatADC/master/adc-manager-app.groovy"
     },
     {
+      "id": "definition:8513a63c1a6a267c5029",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Device Health Monitor",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "jdthomas24",
+        "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
+        "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
+        "id": "manifest:b02e9c2e9e6f56c819a0",
+        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
+        "name": "Device Health Monitor"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
+    },
+    {
       "id": "definition:8629e796479ff0d0fec3",
       "identities": [
         {
@@ -9943,31 +9963,6 @@ window.IDENTITY_INDEX = {
         "name": "Simple Switch Off Timers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/applications/simple-switch-off-timers/simple-switch-off-timers.groovy"
-    },
-    {
-      "id": "definition:c4b6c90da3383485388a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Device Health Monitor",
-          "namespace": "jdthomas24"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Device Health Monitor App",
-          "namespace": "Jdthomas24"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Jdthomas24",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:b02e9c2e9e6f56c819a0",
-        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
-        "name": "Device Health Monitor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
     },
     {
       "id": "definition:c51e45e537ea86d0fc89",
@@ -48658,5 +48653,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-25T05:08:44Z"
+  "snapshotGenerated": "2026-09-26T05:11:36Z"
 };
