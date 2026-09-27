@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-26T05:11:36Z`.
+Latest observation: `2026-09-27T05:29:24Z`.
 
-**48 package change(s):** added 5, broken 2, declared definitions changed 10, manifest changed 2, restored 5, source location changed 4, updated 40
+**44 package change(s):** added 5, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 36
 
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Sonnen Battery - Hubitat: updated.](https://raw.githubusercontent.com/ke7lvb/sonnen_battery/refs/heads/main/packageManifest.json)
 - [Solcast: updated.](https://raw.githubusercontent.com/ke7lvb/Solcast/refs/heads/main/packageManifest.json)
 - [Pentair Intellicenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
@@ -47,10 +48,5 @@ Latest observation: `2026-09-26T05:11:36Z`.
 - [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
 - [BITUO TECHNIK SPM02 3-Phase Meter: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/bituo_spm02_3phase_meter.json)
 - [Aeotec TriSensor 8: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/aeotec_trisensor_8.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

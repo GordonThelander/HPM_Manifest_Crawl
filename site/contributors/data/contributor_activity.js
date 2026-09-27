@@ -19268,6 +19268,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2873b93589909844ecc02136",
+          "observedAt": "2026-09-27T05:29:24Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -19282,7 +19296,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 22,
+      "observedActivityCount": 23,
       "packages": [
         {
           "appCount": 2,
@@ -19293,9 +19307,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-09-25",
+          "publisherDate": "2026-09-26",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.4.3"
+          "version": "4.4.5"
         }
       ]
     },
@@ -21671,10 +21685,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 914,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 326,
-    "eventCount": 325,
+    "attributedEventCount": 327,
+    "eventCount": 326,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-26T05:11:36Z"
+    "lastObservedAt": "2026-09-27T05:29:24Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -21688,7 +21702,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 912,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-26T05:11:36Z",
+  "snapshotGenerated": "2026-09-27T05:29:24Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
