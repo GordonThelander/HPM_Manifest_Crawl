@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-27T05:29:24Z`.
+Latest observation: `2026-09-28T05:37:19Z`.
 
-**44 package change(s):** added 5, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 36
+**38 package change(s):** added 2, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 33
 
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Sonnen Battery - Hubitat: updated.](https://raw.githubusercontent.com/ke7lvb/sonnen_battery/refs/heads/main/packageManifest.json)
 - [Solcast: updated.](https://raw.githubusercontent.com/ke7lvb/Solcast/refs/heads/main/packageManifest.json)
@@ -37,16 +42,5 @@ Latest observation: `2026-09-27T05:29:24Z`.
 - [AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
 - [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Shelly Wave Shutter: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_shutter.json)
-- [Shelly Wave 1PM & Mini: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/shelly_wave_1pm.json)
-- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
-- [Nice IBT4ZWAVE: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/nice_ibt4zwave.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Heatit ZM Dimmer 250W: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/heatit_zm_dimmer.json)
-- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
-- [BITUO TECHNIK SPM02 3-Phase Meter: added.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/bituo_spm02_3phase_meter.json)
-- [Aeotec TriSensor 8: updated.](https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/manifests/aeotec_trisensor_8.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

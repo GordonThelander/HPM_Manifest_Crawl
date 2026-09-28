@@ -68817,16 +68817,16 @@
               "value": true
             }
           ],
-          "sourceBytes": 29285,
+          "sourceBytes": 31178,
           "sourceFetched": true,
-          "sourceSha256": "67d57a9d5fec7b912942d3f6ff9e6d8e6426b334ea1406db158382e2a12f07eb",
+          "sourceSha256": "319dcedce1ff26b49be785d748430514a08a9345d9b320c546bf2d500b39eb08",
           "sourceUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/HestiaDashboard.groovy"
         }
       ],
       "author": "Haven",
       "category": null,
       "communityLink": "https://community.hubitat.com",
-      "dateReleased": "2026-09-20",
+      "dateReleased": "2026-09-28",
       "description": "Hestia™ smart home dashboard for Hubitat Elevation with Artemis™ security module.",
       "documentationLink": "https://github.com/h4ven88/hestia-dashboard/blob/main/README.md",
       "drivers": [],
@@ -68844,7 +68844,7 @@
         "Security",
         "Alarm"
       ],
-      "version": "1.6.9"
+      "version": "2.0.1"
     },
     {
       "apps": [
@@ -90155,7 +90155,7 @@
     {
       "apps": [
         {
-          "definitionLine": 196,
+          "definitionLine": 204,
           "definitionName": "Reolink Integration",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Integration",
@@ -90163,37 +90163,37 @@
           "observations": [
             {
               "evidence": "* app-level, every 15 minutes via Hubitat's own schedule() rather than this",
-              "line": 49,
+              "line": 57,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* schedule (defined on the in-app Recording Presets page) to the NVR,",
-              "line": 103,
+              "line": 111,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 206,
+              "line": 214,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 206,
+              "line": 214,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 308,
+              "line": 319,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "\"https://community.hubitat.com/t/release-reolink-integration-cameras-doorbells-nvrs-home-hubs/165352\",",
-              "line": 386,
+              "line": 397,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -90203,7 +90203,7 @@
             },
             {
               "evidence": "\"https://www.paypal.com/paypalme/jdthomas24?locale.x=en_US&country.x=US\",",
-              "line": 389,
+              "line": 400,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.paypal.com",
@@ -90213,37 +90213,37 @@
             },
             {
               "evidence": "\"tile's own refresh setting doesn't matter. Poll interval should stay tight for responsive \" +",
-              "line": 863,
+              "line": 874,
               "type": "MATTER_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeSourceDiscovery\", [data: [nonce: scan.nonce, scanId: scan.scanId]])",
-              "line": 959,
+              "line": 970,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeSourceDiscovery\", [data: data])",
-              "line": 977,
+              "line": 988,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeIpRecovery\", [data: [nonce: recovery.nonce, scanId: recovery.scanId]])",
-              "line": 1513,
+              "line": 1524,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeIpRecovery\", [data: data])",
-              "line": 1536,
+              "line": 1547,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 1621,
+              "line": 1632,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90253,49 +90253,49 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\", timeout: 5,",
-              "line": 1625,
+              "line": 1636,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (bridge) runIn(3, \"reconnectEditedSource\", [overwrite: false,",
-              "line": 1677,
+              "line": 1688,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// A DEVICE's getChildDevices() (unlike an app's) can return null instead",
-              "line": 2264,
+              "line": 2275,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return bridge ? (bridge.getChildDevices() ?: []) : []",
-              "line": 2266,
+              "line": 2277,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "group = addChildDevice(\"jdthomas24\", \"Reolink Standalone Devices\", STANDALONE_GROUP_DNI, [",
-              "line": 2292,
+              "line": 2303,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* anywhere only a dni string is available (e.g. runIn(...) callback data).",
-              "line": 2318,
+              "line": 2329,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge.getChildDevices()?.each {",
-              "line": 2363,
+              "line": 2374,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 2482,
+              "line": 2493,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90305,13 +90305,13 @@
             },
             {
               "evidence": "httpPost(params) { resp -> result = parseReolinkResponse(resp) }",
-              "line": 2487,
+              "line": 2498,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}&token=${token}\"",
-              "line": 2584,
+              "line": 2595,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90321,84 +90321,90 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\",",
-              "line": 2588,
+              "line": 2599,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 2844,
+              "line": 2855,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
+              "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
+              "line": 2920,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule()",
-              "line": 3139,
+              "line": 3152,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"systemStartHandler\")",
-              "line": 3141,
+              "line": 3154,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */15 * * * ?\", \"auditEventConnections\")",
-              "line": 3146,
+              "line": 3159,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 3149,
+              "line": 3162,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "runIn(3600, \"revertToNormalLogging\")",
-              "line": 3166,
+              "line": 3179,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge?.getChildDevices() ?: []).each { child ->",
-              "line": 3203,
+              "line": 3216,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "logNormal \"Reolink Integration: cleared ${clearedRec} leftover cached recording schedule(s) from the \" +",
-              "line": 3233,
+              "line": 3246,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge?.getChildDevices()?.each { child ->",
-              "line": 3280,
+              "line": 3293,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 3290,
+              "line": 3303,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* own schedule() cron mechanism (see initialize()) rather than this app's",
-              "line": 3297,
+              "line": 3310,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 3373,
+              "line": 3387,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
+              "evidence": "runIn(anyPolling ? 1 : IDLE_TICK_SEC, \"schedulerTick\", [overwrite: true])",
               "line": 3445,
               "type": "SCHEDULING",
               "value": true
@@ -90432,9 +90438,9 @@
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 224769,
+          "sourceBytes": 224406,
           "sourceFetched": true,
-          "sourceSha256": "fc52d14c45206810d0245ee60d3cb15571b59326f23e638ac9109ba33a5606ee",
+          "sourceSha256": "6d66899df399773d385b0610559e9db89aff35b07cb9788c12898981f72d3298",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ParentApp.groovy"
         }
       ],
@@ -90471,7 +90477,7 @@
           ],
           "sourceBytes": 21596,
           "sourceFetched": true,
-          "sourceSha256": "3ff44a3408a8bc96a1793c97730f00a072ddedfdfa888b7e93f61604e6ca2c75",
+          "sourceSha256": "495a48b2a47192b75f94f446bc25262da356835c7e1f1dc9a5918e984c4086e1",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/CameraDriver.groovy"
         },
         {
@@ -90500,11 +90506,11 @@
           ],
           "sourceBytes": 17712,
           "sourceFetched": true,
-          "sourceSha256": "076a3ad2ea2012857924b6b6078a6ddee919ccb86ec33d32d90a6b12e8b65626",
+          "sourceSha256": "aaaf31de8335ce2394ad939aa1657af5367460ae24e7538a59960bb133468ae1",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/DoorbellDriver.groovy"
         },
         {
-          "definitionLine": 100,
+          "definitionLine": 106,
           "definitionName": "Reolink Device Bridge",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Device Bridge",
@@ -90512,134 +90518,134 @@
           "observations": [
             {
               "evidence": "child = addChildDevice(\"jdthomas24\", driverName, dni, [",
-              "line": 192,
+              "line": 198,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule(\"closeSocket\")",
-              "line": 391,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"reconnectEventSubscription\")",
               "line": 397,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "line": 403,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "interfaces.rawSocket.connect(state.host, state.port as int, byteInterface: true)",
-              "line": 411,
+              "line": 417,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"sendNonceRequest\")",
-              "line": 418,
+              "line": 424,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(15, \"flowTimeoutCheck\")",
-              "line": 419,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendNonceRequest\")",
               "line": 425,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"closeSocket\")",
-              "line": 426,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 429,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 430,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "evidence": "unschedule(\"sendNonceRequest\")",
               "line": 431,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 449,
+              "evidence": "unschedule(\"closeSocket\")",
+              "line": 432,
               "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
-              "line": 496,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 517,
-              "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 576,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 577,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 599,
+              "line": 435,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 857,
+              "line": 436,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "line": 437,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendKeepalive\")",
+              "line": 455,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
+              "line": 502,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
+              "line": 523,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendKeepalive\")",
+              "line": 582,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
+              "line": 583,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(25, \"sendKeepalive\")",
+              "line": 605,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"flowTimeoutCheck\")",
+              "line": 863,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 858,
+              "line": 864,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(bytesToHex(data))",
-              "line": 874,
+              "line": 880,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 1004,
+              "line": 1010,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 49959,
+          "sourceBytes": 50327,
           "sourceFetched": true,
-          "sourceSha256": "b9d4ca0455bb43872006958c5aa901b7be10fc5e6ffcd5033e5fa6fc8390d406",
+          "sourceSha256": "0077aa6b04f3d96cc24a2cd8222a2d2246889ab10ab8f049abae68131f3e87d9",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ReolinkDeviceBridge.groovy"
         },
         {
@@ -90670,7 +90676,7 @@
           ],
           "sourceBytes": 12083,
           "sourceFetched": true,
-          "sourceSha256": "7b30b419c70b8d40f2600e0155aa7a428f0f47a4a515378316d59221e8d48037",
+          "sourceSha256": "87e58228c71a261476023bf611ac78dae96c3446187acb2095d272df58680838",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/StandaloneDevices.groovy"
         }
       ],
@@ -90686,7 +90692,7 @@
         "Safety & Security",
         "Doorbell"
       ],
-      "version": "1.6.1"
+      "version": "1.6.2"
     },
     {
       "apps": [],
@@ -172886,92 +172892,98 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 255,
+              "line": 257,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) }",
-              "line": 262,
+              "line": 264,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
-              "line": 266,
+              "line": 268,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"5\": runEvery5Minutes(\"poll\"); break",
-              "line": 281,
+              "line": 283,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"10\": runEvery10Minutes(\"poll\"); break",
-              "line": 282,
+              "line": 284,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(CHILD_NAMESPACE, CHILD_DRIVER, dni,",
-              "line": 475,
+              "line": 484,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 537,
+              "line": 546,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(CHILD_NAMESPACE, AREA_DRIVER, dni,",
-              "line": 631,
+              "line": 640,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 650,
+              "line": 659,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 663,
+              "line": 675,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices()?.each { child ->",
+              "line": 691,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "asynchttpPost(\"onAreaMove\", [uri: BASE_URL + path, headers: authHeaders(), timeout: 15],",
-              "line": 711,
+              "line": 745,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet(handler, [uri: BASE_URL + path, headers: authHeaders(), timeout: 10],",
-              "line": 864,
+              "line": 898,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 879,
+              "line": 913,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "unschedule(\"poll\")",
-              "line": 923,
+              "line": 957,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 41105,
+          "sourceBytes": 43279,
           "sourceFetched": true,
-          "sourceSha256": "49a2427dabc7f5e52edaa63248586a4ed1aaf15333e2669e4c9183cf20f0987b",
+          "sourceSha256": "1a5c2ca322c69503d77ee31656d15a3096f4865102d351cb7ba45e0a4671e25b",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/apps/positionguard-app.groovy"
         }
       ],
@@ -173010,13 +173022,13 @@
               }
             }
           ],
-          "sourceBytes": 16291,
+          "sourceBytes": 16303,
           "sourceFetched": true,
-          "sourceSha256": "23e77624ef5b926dabeee8b5d2d067a60b7543f557ad7346134586a349a9c615",
+          "sourceSha256": "9146e64717a8d4dbf93de09eabd7179b2e4ae60d3cda0f7c4ec35a7cf3aa54b7",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-member.groovy"
         },
         {
-          "definitionLine": 44,
+          "definitionLine": 52,
           "definitionName": "PositionGuard Area",
           "definitionNamespace": "positionguard",
           "manifestName": "PositionGuard Area",
@@ -173024,7 +173036,7 @@
           "observations": [
             {
               "evidence": "* MIT License — https://github.com/positionguard/positionguard-hubitat",
-              "line": 40,
+              "line": 43,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -173034,7 +173046,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-area.groovy\"",
-              "line": 48,
+              "line": 56,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -173043,9 +173055,9 @@
               }
             }
           ],
-          "sourceBytes": 7450,
+          "sourceBytes": 8409,
           "sourceFetched": true,
-          "sourceSha256": "22d26c2e24f2fd805d8e5e0cf0e2b0cdabfa8659cacda518f34dc10f52552654",
+          "sourceSha256": "6cbe1e0bde021adf7f0b46048b46bd93768004beaf5e1e6f82988812c1c02798",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-area.groovy"
         }
       ],
@@ -173057,7 +173069,7 @@
       "repoName": "PositionGuard",
       "repoUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
       "tags": [],
-      "version": "1.5.0"
+      "version": "1.5.1"
     },
     {
       "apps": [
@@ -175753,75 +175765,75 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 118,
+              "line": 119,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(lightSensors, \"illuminance\", illuminanceHandler)",
-              "line": 125,
+              "line": 126,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${reset.format('m', location.timeZone)} ${reset.format('H', location.timeZone)} * * ?\", resetHandler)",
-              "line": 127,
+              "line": 128,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(windowSensor, \"contact.closed\", windowClosedHandler)",
-              "line": 149,
+              "line": 150,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "unschedule(\"windowWaitReminder\")",
-              "line": 163,
+              "line": 164,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"lowerBlinds\")",
-              "line": 169,
+              "line": 170,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"windowWaitReminder\")",
-              "line": 181,
+              "line": 182,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(mins * 60, \"windowWaitReminder\", [overwrite: true])",
-              "line": 192,
+              "line": 193,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(mins * 60, \"windowWaitReminder\", [overwrite: true])",
-              "line": 214,
+              "line": 215,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(blindTravelSec(), \"confirmBlindsClosed\", [data: [tries: tries, grace: grace], overwrite: true])",
-              "line": 308,
+              "line": 309,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 18179,
+          "sourceBytes": 18487,
           "sourceFetched": true,
-          "sourceSha256": "94fba7263bd675cf96565ea39bcd72356e56bcd7e1028f765df6d9aa36cf44f3",
+          "sourceSha256": "a65516121da16a1f598ffa46c0af8445a38162292b42d893f8326abf8664f211",
           "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/blinds-dusk-automation/blinds-dusk-automation.groovy"
         }
       ],
       "author": "RamSet",
       "category": "Convenience",
       "communityLink": null,
-      "dateReleased": "2026-09-19",
+      "dateReleased": "2026-09-27",
       "description": "Lowers a room's blind at dusk, waits for an open window to close first (with an optional delay), and turns on the room light when occupied. One instance per room.",
       "documentationLink": null,
       "drivers": [],
@@ -175833,7 +175845,7 @@
       "repoName": "RamSet",
       "repoUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
       "tags": [],
-      "version": "1.2.1"
+      "version": "1.2.2"
     },
     {
       "apps": [],
@@ -288343,32 +288355,32 @@
             },
             {
               "evidence": "// capability.X, name.multiple=true). Omitting `.multiple=true` silently",
-              "line": 8135,
+              "line": 8176,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "* capability.X multiple=true → CSV: \"8,9\". JSON-array shape errors HTTP 500.",
-              "line": 9444,
+              "line": 9612,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "// capability.pushableButton on button.push actions) fall into a",
-              "line": 9511,
+              "line": 9682,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 10600,
+              "line": 10771,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 803430,
+          "sourceBytes": 815089,
           "sourceFetched": true,
-          "sourceSha256": "3550f10266ee6b98d3900a2a213fe5c547db7c723a16b120743a7abaa3d550a2",
+          "sourceSha256": "0083e838b75ec03e5549a5f0e902426b6efa78083895ee83927f6322c4439813",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -288855,14 +288867,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "8231f036237c28388b83515e3c6411b12d1f206201ca3b118d705e36311ee24e",
+          "sourceSha256": "0dcbcd4134446eeda4f80fd8cf3fb09aee828bdd05ec4dd24957772bada0dd03",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-09-26",
+      "dateReleased": "2026-09-27",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -288874,7 +288886,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.4.5"
+      "version": "4.4.6"
     },
     {
       "apps": [],
@@ -347671,7 +347683,7 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-09-27T05:29:24Z",
+  "snapshotGenerated": "2026-09-28T05:37:19Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
