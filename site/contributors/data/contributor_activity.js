@@ -4351,6 +4351,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:924cfa250ee409a87aae",
           "packageName": "Genmon Generator Monitor",
           "summary": "Genmon Generator Monitor: updated."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:48a897e2d0b5ec225531d892",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:964cbb68c7d575e6b3da",
+          "packageName": "Honeywell Vista Envisalink TPI Alarm Integration",
+          "summary": "Honeywell Vista Envisalink TPI Alarm Integration: updated."
         }
       ],
       "appCount": 11,
@@ -4377,7 +4391,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 20,
+      "observedActivityCount": 21,
       "packages": [
         {
           "appCount": 2,
@@ -4434,15 +4448,15 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 1,
           "category": "Security",
-          "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+          "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
           "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
           "driverCount": 7,
           "id": "manifest:964cbb68c7d575e6b3da",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
           "name": "Honeywell Vista Envisalink TPI Alarm Integration",
-          "publisherDate": "2026-06-09",
+          "publisherDate": "2026-09-28",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.0.3"
+          "version": "2.0.4"
         },
         {
           "appCount": 0,
@@ -4982,6 +4996,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:9ff118ecc814f5e277dd",
           "packageName": "Blinds Dusk Automation",
           "summary": "Blinds Dusk Automation: updated."
+        },
+        {
+          "category": "Thermostats",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:10aa481bc18d2e4b30208512",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:e6319d46a6052ce7b5c0",
+          "packageName": "Local Ecobee Helpers",
+          "summary": "Local Ecobee Helpers: updated."
         }
       ],
       "appCount": 13,
@@ -5028,7 +5056,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 15,
+      "observedActivityCount": 16,
       "packages": [
         {
           "appCount": 0,
@@ -5143,9 +5171,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:e6319d46a6052ce7b5c0",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json",
           "name": "Local Ecobee Helpers",
-          "publisherDate": "2026-07-01",
+          "publisherDate": "2026-09-28",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "1.1.1"
+          "version": "1.2.1"
         },
         {
           "appCount": 0,
@@ -12239,6 +12267,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a1371bc52edb8b8cc321e4b1",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d7eeb65eaae759a09e9eb6e2",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
         }
       ],
       "appCount": 3,
@@ -12261,7 +12317,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 15,
+      "observedActivityCount": 17,
       "packages": [
         {
           "appCount": 1,
@@ -12274,7 +12330,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Device Health Monitor",
           "publisherDate": "2026-09-25",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.0"
+          "version": "1.7.0"
         },
         {
           "appCount": 1,
@@ -12300,7 +12356,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.2"
+          "version": "1.6.4"
         },
         {
           "appCount": 0,
@@ -13522,6 +13578,78 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bbd53476f4c08a725b1f7a60",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:72e748fdb165aace597b",
+          "packageName": "PETLIBRO Granary Feeder",
+          "summary": "PETLIBRO Granary Feeder: added."
+        }
+      ],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 3,
+      "currentRank": 76,
+      "driverCount": 3,
+      "id": "contributor:cab465e8481008331040",
+      "name": "Jeff Lupien",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/hatch#readme",
+          "driverCount": 1,
+          "id": "manifest:63ab0e07867ceca918a0",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json",
+          "name": "Hatch Connect",
+          "publisherDate": "2026-03-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.3.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
+          "driverCount": 1,
+          "id": "manifest:72e748fdb165aace597b",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
+          "name": "PETLIBRO Granary Feeder",
+          "publisherDate": "2026-09-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/rivian-connect#readme",
+          "driverCount": 1,
+          "id": "manifest:fb778c8e9ec5e6457aa8",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json",
+          "name": "Rivian Connect",
+          "publisherDate": "2025-02-11",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.1.3"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
             "UPDATED"
           ],
           "declarationRole": "CURRENT_DECLARATION",
@@ -13570,7 +13698,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 76,
+      "currentRank": 77,
       "driverCount": 4,
       "id": "contributor:9311c76fc09a45386899",
       "name": "ke7lvb",
@@ -13631,7 +13759,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 77,
+      "currentRank": 78,
       "driverCount": 9,
       "id": "contributor:bbb6c748da75b7a64027",
       "name": "lnjustin",
@@ -13696,7 +13824,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 78,
+      "currentRank": 79,
       "driverCount": 4,
       "id": "contributor:a188cfb1e97ae0f2a405",
       "name": "Maxime Boissonneault",
@@ -13757,7 +13885,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 79,
+      "currentRank": 80,
       "driverCount": 5,
       "id": "contributor:afc5281b69164b2c8703",
       "name": "mbarone",
@@ -13818,7 +13946,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 80,
+      "currentRank": 81,
       "driverCount": 2,
       "id": "contributor:604f2d17b722196e6463",
       "name": "napalmcsr",
@@ -13875,7 +14003,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 81,
+      "currentRank": 82,
       "driverCount": 3,
       "id": "contributor:9200a92024c29bccc586",
       "name": "rboer",
@@ -13947,7 +14075,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 82,
+      "currentRank": 83,
       "driverCount": 10,
       "id": "contributor:b2d6fbf7040ea5ad041c",
       "name": "rbyrbt",
@@ -14004,7 +14132,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 83,
+      "currentRank": 84,
       "driverCount": 5,
       "id": "contributor:53a53f00b449aaf2d22d",
       "name": "Rob Alfonso",
@@ -14061,7 +14189,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 84,
+      "currentRank": 85,
       "driverCount": 82,
       "id": "contributor:b1b4211137432b0ceaab",
       "name": "Snell",
@@ -14122,7 +14250,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 85,
+      "currentRank": 86,
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
@@ -14179,7 +14307,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 86,
+      "currentRank": 87,
       "driverCount": 22,
       "id": "contributor:d4595ee7d9bca0d6c072",
       "name": "winnie",
@@ -14236,7 +14364,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 87,
+      "currentRank": 88,
       "driverCount": 2,
       "id": "contributor:77a1b275b7acf1be10cc",
       "name": "Adrian Caramaliu",
@@ -14280,7 +14408,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 88,
+      "currentRank": 89,
       "driverCount": 9,
       "id": "contributor:8fa49887fd5ee7f96752",
       "name": "Albert Mulder",
@@ -14324,7 +14452,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 89,
+      "currentRank": 90,
       "driverCount": 2,
       "id": "contributor:75749fcdad8887b09066",
       "name": "Alex Jones",
@@ -14372,7 +14500,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 90,
+      "currentRank": 91,
       "driverCount": 2,
       "id": "contributor:68ce3e1b8f8813127398",
       "name": "Arn Burkhoff",
@@ -14416,7 +14544,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 91,
+      "currentRank": 92,
       "driverCount": 8,
       "id": "contributor:775bf2ab0bf177bbaffc",
       "name": "Ben Deitch",
@@ -14460,7 +14588,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 92,
+      "currentRank": 93,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -14504,7 +14632,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 93,
+      "currentRank": 94,
       "driverCount": 2,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
@@ -14552,7 +14680,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:eeb747b7ce6ce8418f96",
       "name": "DarwinsDen",
@@ -14600,7 +14728,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 95,
+      "currentRank": 96,
       "driverCount": 12,
       "id": "contributor:efdfd6ed92c6c1fdcd2d",
       "name": "Don Caton",
@@ -14701,7 +14829,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 97,
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
@@ -14774,7 +14902,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 98,
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
@@ -14837,7 +14965,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 99,
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
@@ -14896,7 +15024,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 99,
+      "currentRank": 100,
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
@@ -14940,7 +15068,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 100,
+      "currentRank": 101,
       "driverCount": 4,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
@@ -15003,7 +15131,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 101,
+      "currentRank": 102,
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
@@ -15118,7 +15246,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 102,
+      "currentRank": 103,
       "driverCount": 5,
       "id": "contributor:cfc84bc507432c7b472f",
       "name": "Jamie Curnow",
@@ -15247,7 +15375,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 103,
+      "currentRank": 104,
       "driverCount": 4,
       "id": "contributor:966d9f08e15e82945d11",
       "name": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -15321,7 +15449,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 104,
+      "currentRank": 105,
       "driverCount": 1,
       "id": "contributor:31b2ee842cfca243e764",
       "name": "Jdthomas24",
@@ -15369,7 +15497,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 105,
+      "currentRank": 106,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -15400,50 +15528,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-03-23",
           "repositoryUrl": "https://raw.githubusercontent.com/jedbro/Hubitat-Projects/main/repositories.json",
           "version": "0.4.0"
-        }
-      ]
-    },
-    {
-      "activity": [],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Integrations",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 106,
-      "driverCount": 2,
-      "id": "contributor:cab465e8481008331040",
-      "name": "Jeff Lupien",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/hatch#readme",
-          "driverCount": 1,
-          "id": "manifest:63ab0e07867ceca918a0",
-          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json",
-          "name": "Hatch Connect",
-          "publisherDate": "2026-03-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.3.1"
-        },
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/rivian-connect#readme",
-          "driverCount": 1,
-          "id": "manifest:fb778c8e9ec5e6457aa8",
-          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json",
-          "name": "Rivian Connect",
-          "publisherDate": "2025-02-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.1.3"
         }
       ]
     },
@@ -16941,6 +17025,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:978f896a-dbae-408f-858b-1bace96468a6",
           "packageName": "Rheem EcoNet",
           "summary": "Rheem EcoNet: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3758769ec7d0a3580192a441",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "hpm:978f896a-dbae-408f-858b-1bace96468a6",
+          "packageName": "Rheem EcoNet",
+          "summary": "Rheem EcoNet: updated."
         }
       ],
       "appCount": 0,
@@ -16955,7 +17053,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 0,
@@ -16966,9 +17064,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:978f896a-dbae-408f-858b-1bace96468a6",
           "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json",
           "name": "Rheem EcoNet",
-          "publisherDate": "2026-09-13",
+          "publisherDate": "2026-09-28",
           "repositoryUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/repository.json",
-          "version": "0.3.0"
+          "version": "0.3.2"
         }
       ]
     },
@@ -18247,6 +18345,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3c7437dced5f815aed2888db",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -18261,7 +18373,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 8,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 1,
@@ -18272,9 +18384,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-09-28",
+          "publisherDate": "2026-09-29",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "2.0.1"
+          "version": "2.0.2"
         }
       ]
     },
@@ -21752,13 +21864,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 254,
-  "currentPackageCount": 914,
+  "currentPackageCount": 915,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 332,
-    "eventCount": 331,
+    "attributedEventCount": 339,
+    "eventCount": 338,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-09-28T05:37:19Z"
+    "lastObservedAt": "2026-09-29T05:54:41Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -21770,9 +21882,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 256,
-  "rankedPackageCount": 912,
+  "rankedPackageCount": 913,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-28T05:37:19Z",
+  "snapshotGenerated": "2026-09-29T05:54:41Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

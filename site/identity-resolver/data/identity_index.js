@@ -1572,7 +1572,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2274,
+  "definitionCount": 2275,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -11061,7 +11061,7 @@ window.IDENTITY_INDEX = {
       "kind": "APP",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -17410,6 +17410,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sacua/SinopeDriverHubitat/main/drivers/mergeDrivers/RM3250ZB_Sinope_Hubitat.groovy"
     },
     {
+      "id": "definition:28e9ec8d7bf515bb0faa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "PETLIBRO Granary Feeder",
+          "namespace": "jlupien"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jeff Lupien",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
+        "id": "manifest:72e748fdb165aace597b",
+        "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
+        "name": "PETLIBRO Granary Feeder"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/drivers/petlibro-granary-feeder.groovy"
+    },
+    {
       "id": "definition:291839085f4656cd507e",
       "identities": [
         {
@@ -19001,7 +19021,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -26491,7 +26511,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -33281,7 +33301,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -36251,7 +36271,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -40051,7 +40071,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -44141,7 +44161,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -45856,7 +45876,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "Brian Wilson",
-        "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "id": "manifest:964cbb68c7d575e6b3da",
         "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
@@ -48653,5 +48673,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-28T05:37:19Z"
+  "snapshotGenerated": "2026-09-29T05:54:41Z"
 };

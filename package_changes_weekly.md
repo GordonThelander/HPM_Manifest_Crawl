@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-28T05:37:19Z`.
+Latest observation: `2026-09-29T05:54:41Z`.
 
-**38 package change(s):** added 2, broken 2, declared definitions changed 9, manifest changed 2, restored 5, source location changed 4, updated 33
+**43 package change(s):** added 3, broken 2, declared definitions changed 8, manifest changed 2, restored 5, source location changed 4, updated 37
 
+- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [PETLIBRO Granary Feeder: added.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json)
+- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
+- [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
@@ -40,7 +47,5 @@ Latest observation: `2026-09-28T05:37:19Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [BamBuddy/PrintBuddy Printers Driver: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json)
 - [AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
-- [Reolink Integration: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Genmon Generator Monitor: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Genmon/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

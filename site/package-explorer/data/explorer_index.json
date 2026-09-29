@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 914,
+    "HPM_PACKAGE": 915,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2619,
+  "recordCount": 2620,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -502,13 +502,6 @@
         }
       ],
       "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:964cbb68c7d575e6b3da",
-          "packageName": "Honeywell Vista Envisalink TPI Alarm Integration"
-        },
         {
           "basis": [
             "EXACT_LINK"
@@ -15762,13 +15755,6 @@
           "basis": [
             "EXACT_LINK"
           ],
-          "packageId": "manifest:964cbb68c7d575e6b3da",
-          "packageName": "Honeywell Vista Envisalink TPI Alarm Integration"
-        },
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
           "packageId": "manifest:bf9c809aeff026e9ef89",
           "packageName": "Honeywell Security"
         },
@@ -30550,7 +30536,7 @@
         "Zigbee",
         "ZWave"
       ],
-      "version": "1.6.0"
+      "version": "1.7.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -42796,7 +42782,7 @@
       "author": "Haven",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-28",
+      "dateReleased": "2026-09-29",
       "definitions": [
         {
           "id": "definition:f21e9df84b41fbbe0af0",
@@ -42879,7 +42865,7 @@
         "Security",
         "Utility"
       ],
-      "version": "2.0.1"
+      "version": "2.0.2"
     },
     {
       "author": "null",
@@ -45422,7 +45408,7 @@
       "author": "Brian Wilson",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-06-09",
+      "dateReleased": "2026-09-28",
       "definitions": [
         {
           "id": "definition:dfdb8b5c3c336808f181",
@@ -45536,7 +45522,7 @@
         "DRIVER"
       ],
       "links": {
-        "community": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+        "community": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
         "documentation": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
         "manifest": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
         "repository": "https://github.com/bdwilson/hubitat"
@@ -45555,7 +45541,7 @@
       "tags": [
         "Safety & Security"
       ],
-      "version": "2.0.3"
+      "version": "2.0.4"
     },
     {
       "author": "csteele",
@@ -60535,7 +60521,7 @@
       "author": "RamSet",
       "category": "Thermostats",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-07-01",
+      "dateReleased": "2026-09-28",
       "definitions": [
         {
           "id": "definition:206a77990819af5e56d6",
@@ -60633,7 +60619,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.1.1"
+      "version": "1.2.1"
     },
     {
       "author": "TheMaster",
@@ -71362,6 +71348,93 @@
       "version": "1.0"
     },
     {
+      "author": "Jeff Lupien",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-28",
+      "definitions": [
+        {
+          "id": "definition:28e9ec8d7bf515bb0faa",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "PETLIBRO Granary Feeder",
+          "namespace": "jlupien",
+          "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/drivers/petlibro-granary-feeder.groovy"
+        }
+      ],
+      "description": "Trigger PETLIBRO feeder manual feedings from Hubitat or Alexa",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:72e748fdb165aace597b",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
+        "manifest": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
+        "repository": "https://github.com/jlupien/hubitat-drivers"
+      },
+      "name": "PETLIBRO Granary Feeder",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cat",
+        "Dog",
+        "Feeder",
+        "Granary",
+        "Pet",
+        "PETLIBRO"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Dominick Meglio",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -76470,7 +76543,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.6.2"
+      "version": "1.6.4"
     },
     {
       "author": "Andrew Nunes",
@@ -76998,7 +77071,7 @@
       "author": "brossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-13",
+      "dateReleased": "2026-09-28",
       "definitions": [
         {
           "id": "definition:8eb68d19ce3c653e3a76",
@@ -77076,7 +77149,7 @@
           "lanTag": false
         },
         "externalHosts": [
-          "rheem.clearblade.com"
+          "rheem.rheemconnect.com"
         ],
         "reviewed": []
       },
@@ -77087,7 +77160,7 @@
         "Temperature & Humidity",
         "Water Heater"
       ],
-      "version": "0.3.0"
+      "version": "0.3.2"
     },
     {
       "author": "Dominick Meglio",
@@ -132569,5 +132642,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-28T05:37:19Z"
+  "snapshotGenerated": "2026-09-29T05:54:41Z"
 }

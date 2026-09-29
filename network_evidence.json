@@ -2,7 +2,7 @@
   "counts": {
     "BOTH": 180,
     "CLOUD": 258,
-    "INSUFFICIENT": 300,
+    "INSUFFICIENT": 301,
     "LAN": 176
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 914,
+  "packageCount": 915,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -3955,7 +3955,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -8621,7 +8621,7 @@
       "author": "Brian Wilson",
       "category": "Security",
       "classification": "LAN",
-      "communityUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
+      "communityUrl": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
       "declared": {
         "cloudTag": false,
         "lanTag": false
@@ -16347,6 +16347,36 @@
       ]
     },
     {
+      "author": "Jeff Lupien",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Trigger PETLIBRO feeder manual feedings from Hubitat or Alexa",
+      "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
+      "id": "manifest:72e748fdb165aace597b",
+      "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
+      "name": "PETLIBRO Granary Feeder",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Cat",
+        "Dog",
+        "Feeder",
+        "Granary",
+        "Pet",
+        "PETLIBRO"
+      ]
+    },
+    {
       "author": "Dominick Meglio",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -18141,7 +18171,7 @@
       "name": "Rheem EcoNet",
       "observed": {
         "externalHosts": [
-          "rheem.clearblade.com"
+          "rheem.rheemconnect.com"
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
@@ -27611,5 +27641,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-28T05:37:19Z"
+  "snapshotGenerated": "2026-09-29T05:54:41Z"
 }

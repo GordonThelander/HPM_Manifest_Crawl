@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-09-28T05:37:19Z`
+- Snapshot: `2026-09-29T05:54:41Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
-- Packages indexed: **914**
+- Packages indexed: **915**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **12**
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **818**
+Total packages not matched by any registry entry: **819**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -506,6 +506,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | jedbro | Initial State Event Streamer | Integrations | Dashboards | https://raw.githubusercontent.com/jedbro/initialstate-smartapp/master/packageManifest.json |
 | jlslate | Navien NaviLink (Cloud) | Integrations | Water Heater, Cloud, MQTT, Energy Monitoring, jlslate | https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json |
 | jlupien | Hatch Connect | Integrations | Hatch, Rest, Rest+, Baby, Nursery, Sound Machine, Night Light, Sleep | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json |
+| jlupien | PETLIBRO Granary Feeder | Integrations | PETLIBRO, Pet, Feeder, Cat, Dog, Granary | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json |
 | jlupien | Rivian Connect | Integrations | Vehicle, Car, EV, Presence, Rivian, R1S, R1T | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json |
 | jonozzz | LG ThinQ Connect Integration | Integrations | Cloud, Appliances | https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/packageManifest.json |
 | jrfarrar | Garadget MQTT Driver | Integrations |  | https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json |
@@ -588,8 +589,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 818 |
-| G candidate subset | 354 |
+| G. Unrepresented packages | 819 |
+| G candidate subset | 355 |
 
 ## H. Enrichment summary
 
@@ -599,13 +600,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2260 |
-| Source URLs fetched | 2251 |
+| Distinct source URLs | 2261 |
+| Source URLs fetched | 2252 |
 | Source URLs failed | 9 |
-| Components attempted | 2274 |
-| Components fetched | 2265 |
-| Literal definitions verified | 2254 |
-| Components with observations | 2141 |
+| Components attempted | 2275 |
+| Components fetched | 2266 |
+| Literal definitions verified | 2255 |
+| Components with observations | 2142 |
 
 ### Official Hubitat documentation pass
 
