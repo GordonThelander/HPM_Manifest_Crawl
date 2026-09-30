@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-29T05:54:41Z`.
+Latest observation: `2026-09-30T05:45:45Z`.
 
-**43 package change(s):** added 3, broken 2, declared definitions changed 8, manifest changed 2, restored 5, source location changed 4, updated 37
+**45 package change(s):** added 2, declared definitions changed 8, restored 5, source location changed 2, updated 39
 
+- [Zigbee eWeLink-CMARS-Seedan Outlet: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/packageManifest.json)
+- [Window Shade Timed: updated, changed declared definitions.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Lutron Aurora Dimmer - Custom: changed declared definitions.](https://raw.githubusercontent.com/esimioni/lutron-aurora-hubitat/main/hpm/manifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [PETLIBRO Granary Feeder: added.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json)
@@ -42,10 +49,5 @@ Latest observation: `2026-09-29T05:54:41Z`.
 - [Inovelli Dimmer White Series VTM31-SN: changed declared definitions, was restored.](https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json)
 - [BamBuddy/PrintBuddy Printers Driver: updated, changed source location, changed declared definitions, was restored.](https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json)
 - [AirTouch 5 Drivers: updated, changed source location, changed declared definitions, was restored.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
-- [Remote Builder for Hubitat: updated.](https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/packageManifestRemoteBuilder.json)
-- [Pixora Locator Driver: added.](https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [BamBuddy/PrintBuddy Printers Driver: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json)
-- [AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -58714,7 +58714,7 @@
           "definitionName": "Lutron Aurora Dimmer - Custom",
           "definitionNamespace": "edu",
           "manifestName": "Lutron Aurora Dimmer - Custom",
-          "manifestNamespace": "esimioni.lutronAurora",
+          "manifestNamespace": "edu",
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
@@ -58788,16 +58788,16 @@
       "author": "Eduardo Simioni",
       "category": "Convenience",
       "communityLink": null,
-      "dateReleased": "2026-03-10",
+      "dateReleased": "2026-08-06",
       "description": "A Zigbee window shade driver that uses open/close times to calculate position.",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 87,
+          "definitionLine": 93,
           "definitionName": "Zigbee Window Shade/Blind (Timed)",
           "definitionNamespace": "edu",
-          "manifestName": "Window Shade Timed",
-          "manifestNamespace": "esimioni",
+          "manifestName": "Zigbee Window Shade/Blind (Timed)",
+          "manifestNamespace": "edu",
           "observations": [
             {
               "evidence": "* Source: https://github.com/esimioni/hubitat-window-shade-timed",
@@ -58811,7 +58811,7 @@
             },
             {
               "evidence": "* https://community.hubitat.com/t/any-way-to-programmatically-set-position-of-motorized-blinds/43092/16",
-              "line": 75,
+              "line": 78,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -58821,7 +58821,7 @@
             },
             {
               "evidence": "* https://community.hubitat.com/t/cellular-blinds-with-zigbee-or-direct-hubitat-communication/62402/15",
-              "line": 76,
+              "line": 79,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -58831,7 +58831,7 @@
             },
             {
               "evidence": "* https://community.hubitat.com/t/zigbee-cutain-module-ts130f/107907/26",
-              "line": 77,
+              "line": 80,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -58841,7 +58841,7 @@
             },
             {
               "evidence": "* https://community.hubitat.com/t/tuya-zigbee-roller-shade-blind-motor-hubitat-issues/91223?page=7",
-              "line": 78,
+              "line": 81,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -58851,7 +58851,7 @@
             },
             {
               "evidence": "* https://community.hubitat.com/t/release-zemismart-zigbee-blind-driver/67525/1",
-              "line": 79,
+              "line": 82,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -58861,7 +58861,7 @@
             },
             {
               "evidence": "* https://raw.githubusercontent.com/amosyuen/hubitat-zemismart-zigbee/development/Zemismart%20Zigbee%20Blind.groovy",
-              "line": 80,
+              "line": 83,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -58871,74 +58871,74 @@
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 154,
+              "line": 160,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule('safetyTimeoutCheck')",
-              "line": 207,
+              "line": 209,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 278,
+              "line": 280,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.command(CLUSTER_SHADE_BLIND, getOutCommandOpen()))",
-              "line": 327,
+              "line": 331,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.command(CLUSTER_SHADE_BLIND, getOutCommandClose()))",
-              "line": 332,
+              "line": 336,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.command(CLUSTER_SHADE_BLIND, getOutCommandPause()))",
-              "line": 341,
+              "line": 345,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.writeAttribute(CLUSTER_SONOFF_CUSTOM, ATTR_TURBO_MODE, DataType.INT16, val, [destEndpoint:0x01, mfgCode:0x1286], delay = 200))",
-              "line": 353,
+              "line": 357,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule('safetyTimeoutCheck')",
-              "line": 444,
+              "line": 455,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 515,
+              "line": 544,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE))",
-              "line": 562,
+              "line": 622,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(allActions)",
-              "line": 564,
+              "line": 624,
               "type": "SEND_HUB_COMMAND",
               "value": true
             }
           ],
-          "sourceBytes": 24722,
+          "sourceBytes": 27615,
           "sourceFetched": true,
-          "sourceSha256": "3a1c994908796ce7e7a80b3881a7610986409f75dca38923a8a2fb4b759d58f9",
+          "sourceSha256": "40cb631b1b00bdb1c28852ff7bb5255470bb081d3dacde4bf81b22c04a702d1f",
           "sourceUrl": "https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/window-shade-timed.groovy"
         }
       ],
@@ -58953,7 +58953,7 @@
         "Window Coverings",
         "Zigbee"
       ],
-      "version": "1.1.1"
+      "version": "1.1.2"
     },
     {
       "apps": [
@@ -68692,13 +68692,13 @@
             },
             {
               "evidence": "try { createAccessToken() } catch(e) {",
-              "line": 110,
+              "line": 113,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "\"<strong>Cloud:</strong> <a href=\\\"https://hestari.com\\\" target=\\\"_blank\\\">https://hestari.com</a> — always the latest version, requires internet for initial page load\\n\\n\" +",
-              "line": 125,
+              "line": 128,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "hestari.com",
@@ -68708,7 +68708,7 @@
             },
             {
               "evidence": "\"<strong>Cloud:</strong> <a href=\\\"https://hestari.com\\\" target=\\\"_blank\\\">https://hestari.com</a> — always the latest version, requires internet for initial page load\\n\\n\" +",
-              "line": 125,
+              "line": 128,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "hestari.com\\",
@@ -68718,7 +68718,7 @@
             },
             {
               "evidence": "\"<strong>Local:</strong> <a href=\\\"http://${hubIp}/local/${DASHBOARD_FILENAME}\\\" target=\\\"_blank\\\">http://${hubIp}/local/${DASHBOARD_FILENAME}</a> — runs entirely on your LAN, no internet required\\n\\n\" +",
-              "line": 126,
+              "line": 129,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${hubip",
@@ -68728,7 +68728,7 @@
             },
             {
               "evidence": "\"<code>https://hestari.com, https://www.hestari.com</code>\"",
-              "line": 129,
+              "line": 132,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "hestari.com",
@@ -68738,7 +68738,7 @@
             },
             {
               "evidence": "\"<code>https://hestari.com, https://www.hestari.com</code>\"",
-              "line": 129,
+              "line": 132,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.hestari.com",
@@ -68748,7 +68748,7 @@
             },
             {
               "evidence": "\"https://github.com/h4ven88/hestia-dashboard\"",
-              "line": 151,
+              "line": 154,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -68758,75 +68758,93 @@
             },
             {
               "evidence": "try { createAccessToken() } catch(e) {",
-              "line": 173,
+              "line": 176,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 177,
+              "line": 180,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"hsmStatus\", \"pushHsmStatusHandler\")",
-              "line": 181,
+              "line": 184,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"hsmAlert\", \"pushHsmAlertHandler\")",
-              "line": 182,
+              "line": 185,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runEvery3Hours(\"dashboardUpdateCheck\")",
-              "line": 194,
+              "line": 197,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"systemStart\", \"systemStartHandler\")",
+              "line": 206,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runEvery3Hours(\"dashboardUpdateCheck\") was registered by the PREVIOUS",
+              "line": 220,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpGet([uri: BUILD_INFO_URL, contentType: \"application/json\", timeout: 15]) { resp ->",
-              "line": 242,
+              "line": 272,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet([uri: DASHBOARD_URL, textParser: true, timeout: 30]) { response ->",
-              "line": 253,
+              "line": 283,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "// What's left here is native subscribe(location, ...) for HSM, which was",
-              "line": 288,
+              "line": 318,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
+              "evidence": "// hemispheres; Hubitat's own DST behaviour in schedule() is undocumented, and",
+              "line": 486,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "asynchttpPost(\"pushPostCallback\", [",
-              "line": 465,
+              "line": 774,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "runIn(PUSH_RETRY_DELAY_SEC, \"pushRetryFire\", [data: [uri: uri, bodyMap: bodyMap, attempt: attempt + 1]])",
-              "line": 498,
+              "line": 807,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 31178,
+          "sourceBytes": 47693,
           "sourceFetched": true,
-          "sourceSha256": "44778b88354d74582a26182a1379a4b0941e63e84c9f7fa5008c153c9c6f2cb2",
+          "sourceSha256": "f6eff638cd5efe668fc276ace47293dae02df4336e562006af046f8c3027d275",
           "sourceUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/HestiaDashboard.groovy"
         }
       ],
       "author": "Haven",
       "category": null,
       "communityLink": "https://community.hubitat.com",
-      "dateReleased": "2026-09-29",
+      "dateReleased": "2026-09-30",
       "description": "Hestia™ smart home dashboard for Hubitat Elevation with Artemis™ security module.",
       "documentationLink": "https://github.com/h4ven88/hestia-dashboard/blob/main/README.md",
       "drivers": [],
@@ -68844,7 +68862,7 @@
         "Security",
         "Alarm"
       ],
-      "version": "2.0.2"
+      "version": "2.1.3"
     },
     {
       "apps": [
@@ -86333,7 +86351,7 @@
       "author": "James Shimota",
       "category": "Control",
       "communityLink": "https://community.hubitat.com/",
-      "dateReleased": "2026-09-24",
+      "dateReleased": "2026-09-27",
       "description": "A collection of production-grade custom drivers for Third Reality Zigbee devices. Select and install only the drivers you need (Contact, Motion, Night Light, Power Plug with Metering, and Temp/Humidity Display/Non-Display sensors, RGBW bulb).",
       "documentationLink": "https://github.com/jshimota01/hubitat",
       "drivers": [
@@ -86953,7 +86971,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_multifunction_night_light_custom/third_reality_multifunction_night_light_custom.groovy"
         },
         {
-          "definitionLine": 61,
+          "definitionLine": 64,
           "definitionName": "Third Reality Plug w/Power Meter Support (Custom)",
           "definitionNamespace": "jshimota",
           "manifestName": "Third Reality Plug w/ Power Meter Custom",
@@ -86971,13 +86989,13 @@
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 57,
+              "line": 60,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_plug_w-power-meter_custom/third_reality_plug_w-power-meter_custom.groovy\"",
-              "line": 65,
+              "line": 68,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -86987,296 +87005,296 @@
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(zigbee.ON_OFF_CLUSTER, POWER_RESTORE_ID, DataType.ENUM8, settings.powerRestore as Integer, [:], DELAY_MS)",
-              "line": 193,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ON_OFF_CLUSTER, POWER_ON_OFF_ID, DataType.BOOLEAN, 0, 3600, null, [:], DELAY_MS)",
               "line": 196,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ON_OFF_CLUSTER, POWER_ON_OFF_ID, DataType.BOOLEAN, 0, 3600, null, [:], DELAY_MS)",
+              "line": 199,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ACTIVE_POWER_ID, DataType.INT16, 10, 300, 10, [:], DELAY_MS)",
-              "line": 200,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_CURRENT_ID, DataType.UINT16, 10, 300, 10, [:], DELAY_MS)",
-              "line": 201,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_VOLTAGE_ID, DataType.UINT16, 10, 300, 1, [:], DELAY_MS)",
-              "line": 202,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, AC_FREQUENCY_ID, DataType.UINT16, 10, 300, 1, [:], DELAY_MS)",
               "line": 203,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTRIBUTE_READING_INFO_SET, DataType.UINT48, 10, 300, 1, [:], DELAY_MS)",
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_CURRENT_ID, DataType.UINT16, 10, 300, 10, [:], DELAY_MS)",
               "line": 204,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "runIn(5, \"refresh\")",
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_VOLTAGE_ID, DataType.UINT16, 10, 300, 1, [:], DELAY_MS)",
+              "line": 205,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, AC_FREQUENCY_ID, DataType.UINT16, 10, 300, 1, [:], DELAY_MS)",
+              "line": 206,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTRIBUTE_READING_INFO_SET, DataType.UINT48, 10, 300, 1, [:], DELAY_MS)",
               "line": 207,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"refresh\")",
+              "line": 210,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 214,
+              "line": 217,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, \"disableDebugLogging\")",
-              "line": 229,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(1800, \"disableDebugLogging\", [overwrite: false])",
               "line": 232,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(1800, \"disableDebugLogging\", [overwrite: false])",
+              "line": 235,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "return zigbee.off()",
-              "line": 243,
+              "line": 246,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.on()",
-              "line": 249,
+              "line": 252,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.command(zigbee.ON_OFF_CLUSTER, 0x02, [:], 0)",
-              "line": 255,
+              "line": 258,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (cmds) sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
-              "line": 272,
+              "line": 275,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(zigbee.BASIC_CLUSTER, HEALTH_CHECK_ATTR_ID, [:], 0)",
-              "line": 279,
+              "line": 282,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(methodToSchedule)",
-              "line": 288,
+              "line": 291,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${m} * ? * * *\", methodToSchedule)",
-              "line": 298,
+              "line": 301,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${m} ${h4} ? * * *\", methodToSchedule)",
-              "line": 302,
+              "line": 305,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${m} ${h8} ? * * *\", methodToSchedule)",
-              "line": 306,
+              "line": 309,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${m} ${h12} ? * * *\", methodToSchedule)",
-              "line": 310,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "schedule(\"0 ${m} ${h} ? * * *\", methodToSchedule)",
               "line": 313,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "schedule(\"0 ${m} ${h} ? * * *\", methodToSchedule)",
+              "line": 316,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "schedule(\"0 ${m} */${hours} ? * * *\", methodToSchedule)",
-              "line": 318,
+              "line": 321,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */${intervalMin} * ? * * *\", methodToSchedule)",
-              "line": 320,
+              "line": 323,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"deviceCommandTimeout\", [overwrite: true])",
-              "line": 327,
+              "line": 330,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, FIRMWARE_VERSION_ID, [:], DELAY_MS)",
-              "line": 344,
+              "line": 347,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, POWER_RESTORE_ID, [:], DELAY_MS)",
-              "line": 345,
+              "line": 348,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, POWER_ON_OFF_ID, [:], DELAY_MS)",
-              "line": 346,
+              "line": 349,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [",
-              "line": 350,
+              "line": 353,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, [",
-              "line": 355,
+              "line": 358,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [",
-              "line": 359,
+              "line": 362,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTRIBUTE_READING_INFO_SET, [:], DELAY_MS)",
-              "line": 363,
+              "line": 366,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ON_OFF_CLUSTER, POWER_ON_OFF_ID, [:], DELAY_MS)",
-              "line": 369,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ACTIVE_POWER_ID, [:], DELAY_MS)",
               "line": 372,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_CURRENT_ID, [:], DELAY_MS)",
-              "line": 373,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_VOLTAGE_ID, [:], DELAY_MS)",
-              "line": 374,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, AC_FREQUENCY_ID, [:], DELAY_MS)",
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ACTIVE_POWER_ID, [:], DELAY_MS)",
               "line": 375,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.METERING_CLUSTER, ATTRIBUTE_READING_INFO_SET, [:], DELAY_MS)",
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_CURRENT_ID, [:], DELAY_MS)",
               "line": 376,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, RMS_VOLTAGE_ID, [:], DELAY_MS)",
+              "line": 377,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, AC_FREQUENCY_ID, [:], DELAY_MS)",
+              "line": 378,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.METERING_CLUSTER, ATTRIBUTE_READING_INFO_SET, [:], DELAY_MS)",
+              "line": 379,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "return zigbee.updateFirmware()",
-              "line": 385,
+              "line": 388,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "final Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 390,
+              "line": 393,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "case zigbee.BASIC_CLUSTER:",
-              "line": 407,
+              "line": 410,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "case zigbee.ELECTRICAL_MEASUREMENT_CLUSTER:",
-              "line": 411,
+              "line": 414,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "case zigbee.METERING_CLUSTER:",
-              "line": 419,
+              "line": 422,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "case zigbee.ON_OFF_CLUSTER:",
-              "line": 427,
+              "line": 430,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(\"deviceCommandTimeout\")",
-              "line": 444,
+              "line": 447,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"clearDigitalFlag\", [overwrite: true])",
-              "line": 665,
+              "line": 668,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 750,
+              "line": 746,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return zigbee.clusterLookup(cluster.toInteger()) ?: \"private cluster 0x${intToHexStr(cluster.toInteger())}\"",
-              "line": 810,
+              "line": 806,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 44232,
+          "sourceBytes": 44371,
           "sourceFetched": true,
-          "sourceSha256": "f2808caa1c465a368be8227c450189591deef99a02a9b958743bd37653fd5a3a",
+          "sourceSha256": "3483f1665066dd0b25974a5d7c105e8885baa194f533b8ffbcfccf54012a5366",
           "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_plug_w-power-meter_custom/third_reality_plug_w-power-meter_custom.groovy"
         },
         {
@@ -87961,7 +87979,7 @@
         "Open/Closed",
         "Misc. Devices"
       ],
-      "version": "1.0.12"
+      "version": "1.0.13"
     },
     {
       "apps": [],
@@ -88719,6 +88737,8 @@
       "repoName": "James Shimota (Shumo)",
       "repoUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
       "tags": [
+        "Zigbee",
+        "Driver",
         "Dashboards",
         "Monitoring",
         "Lights & Switches",
@@ -172914,7 +172934,7 @@
     {
       "apps": [
         {
-          "definitionLine": 69,
+          "definitionLine": 79,
           "definitionName": "PositionGuard",
           "definitionNamespace": "positionguard",
           "manifestName": "PositionGuard",
@@ -172922,7 +172942,7 @@
           "observations": [
             {
               "evidence": "* MIT License — https://github.com/positionguard/positionguard-hubitat",
-              "line": 43,
+              "line": 45,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -172932,7 +172952,7 @@
             },
             {
               "evidence": "@Field static final String BASE_URL = \"https://api.positionguardai.com/api/v1\"",
-              "line": 48,
+              "line": 50,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.positionguardai.com",
@@ -172942,7 +172962,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/apps/positionguard-app.groovy\",",
-              "line": 78,
+              "line": 88,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -172952,7 +172972,7 @@
             },
             {
               "evidence": "documentationLink: \"https://github.com/positionguard/positionguard-hubitat/blob/main/README.md\"",
-              "line": 79,
+              "line": 89,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -172962,7 +172982,7 @@
             },
             {
               "evidence": "\"<a href='https://dev.positionguardai.com' target='_blank'>dev.positionguardai.com</a>.\"",
-              "line": 98,
+              "line": 108,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "dev.positionguardai.com",
@@ -172972,13 +172992,13 @@
             },
             {
               "evidence": "\"Member presence devices: ${getChildDevices()?.size() ?: 0}\"",
-              "line": 118,
+              "line": 128,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "\"<a href='https://dev.positionguardai.com' target='_blank'>dev.positionguardai.com</a> \" +",
-              "line": 165,
+              "line": 183,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "dev.positionguardai.com",
@@ -172988,98 +173008,98 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 257,
+              "line": 275,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) }",
-              "line": 264,
+              "line": 282,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
-              "line": 268,
+              "line": 286,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"5\": runEvery5Minutes(\"poll\"); break",
-              "line": 283,
+              "line": 301,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"10\": runEvery10Minutes(\"poll\"); break",
-              "line": 284,
+              "line": 302,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(CHILD_NAMESPACE, CHILD_DRIVER, dni,",
-              "line": 484,
+              "line": 502,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 546,
+              "line": 564,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(CHILD_NAMESPACE, AREA_DRIVER, dni,",
-              "line": 640,
+              "line": 658,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 659,
+              "line": 677,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 675,
+              "line": 693,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 691,
+              "line": 709,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "asynchttpPost(\"onAreaMove\", [uri: BASE_URL + path, headers: authHeaders(), timeout: 15],",
-              "line": 745,
+              "line": 763,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet(handler, [uri: BASE_URL + path, headers: authHeaders(), timeout: 10],",
-              "line": 898,
+              "line": 927,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 913,
+              "line": 942,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "unschedule(\"poll\")",
-              "line": 957,
+              "line": 986,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 43279,
+          "sourceBytes": 45150,
           "sourceFetched": true,
-          "sourceSha256": "1a5c2ca322c69503d77ee31656d15a3096f4865102d351cb7ba45e0a4671e25b",
+          "sourceSha256": "83199fb1c730b9cd8c3d9591a5c0aa10bef0ebe0f4b46b29399fbc805d29aa34",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/apps/positionguard-app.groovy"
         }
       ],
@@ -173120,7 +173140,7 @@
           ],
           "sourceBytes": 16303,
           "sourceFetched": true,
-          "sourceSha256": "9146e64717a8d4dbf93de09eabd7179b2e4ae60d3cda0f7c4ec35a7cf3aa54b7",
+          "sourceSha256": "cd38de0ec220e768364b09b47b03d37c678974afb7863422800f9559d71df134",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-member.groovy"
         },
         {
@@ -173153,7 +173173,7 @@
           ],
           "sourceBytes": 8409,
           "sourceFetched": true,
-          "sourceSha256": "6cbe1e0bde021adf7f0b46048b46bd93768004beaf5e1e6f82988812c1c02798",
+          "sourceSha256": "cfb67598c34770144a0fbd932fe01239632604eaa4040b7fbb18f857240ac5f2",
           "sourceUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/drivers/positionguard-area.groovy"
         }
       ],
@@ -173165,7 +173185,7 @@
       "repoName": "PositionGuard",
       "repoUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
       "tags": [],
-      "version": "1.5.1"
+      "version": "1.6.0"
     },
     {
       "apps": [
@@ -288602,9 +288622,9 @@
               "value": "X"
             }
           ],
-          "sourceBytes": 837014,
+          "sourceBytes": 836986,
           "sourceFetched": true,
-          "sourceSha256": "059499a5c79031142e34992fb3a6805c511d814fa15ece1f5322c32015a723d0",
+          "sourceSha256": "e2e8fff69d19cf192730552ed8cfe01c0e61aeb70d8744eec2e275cf7d42b852",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -289091,14 +289111,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "0dcbcd4134446eeda4f80fd8cf3fb09aee828bdd05ec4dd24957772bada0dd03",
+          "sourceSha256": "0192d0bc055060445847f0957bf24dd53cdbb8a0d472e9b5489802e0e6bb29fc",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-09-27",
+      "dateReleased": "2026-09-29",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -289110,7 +289130,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.4.6"
+      "version": "4.4.7"
     },
     {
       "apps": [],
@@ -291661,7 +291681,7 @@
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 50,
+          "definitionLine": 51,
           "definitionName": "Moes ZigBee Wall Switch 1/2/3-Gang",
           "definitionNamespace": "Moes 1.31",
           "manifestName": "Moes ZigBee Wall Switch 1/2/3-Gang",
@@ -291669,7 +291689,7 @@
           "observations": [
             {
               "evidence": "definition(name: 'Moes ZigBee Wall Switch 1/2/3-Gang', namespace: 'Moes 1.31', author: 'Martin Kura', importUrl: 'https://raw.githubusercontent.com/martinkura-svk/Hubitat/main/Moes%20ZigBee%20Wall%20Switch') {",
-              "line": 50,
+              "line": 51,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -291679,7 +291699,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_wnp4d4va', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', application:'42', deviceJoinName: 'Mercator Ikuü Six Switch' // https://community.hub",
-              "line": 67,
+              "line": 68,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291689,7 +291709,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_1n2kyphz', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'42', deviceJoinName: 'Zemismart 4-gang switch' // https://www.aliexpress",
-              "line": 75,
+              "line": 76,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -291699,7 +291719,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_dvosyycn', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'42', deviceJoinName: 'Tuya ZXYH 8IN/8OUT board' // https://community.hub",
-              "line": 84,
+              "line": 85,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291709,7 +291729,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_lmgrbuwf', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'42', deviceJoinName: 'NOVADIGITAL 1 socket 2 switches' // https://www.no",
-              "line": 85,
+              "line": 86,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.novadigitalsmart.com.br",
@@ -291719,7 +291739,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_g4au0afs', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'42', deviceJoinName: 'NOVADIGITAL 6-gang switch' // https://community.hu",
-              "line": 86,
+              "line": 87,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291729,7 +291749,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_cduqh1l0', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'42', deviceJoinName: 'Tuya 6-gang switch' // https://community.hubitat.c",
-              "line": 89,
+              "line": 90,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291739,7 +291759,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_leaqthtqq', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', application:'42', deviceJoinName: 'Mercator Ikuü 5-gang switch' // https://community",
-              "line": 95,
+              "line": 96,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291749,7 +291769,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_z3u99qxt', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'41', deviceJoinName: 'Moes Star Feather Smart Switch 1 Gang' // https://",
-              "line": 98,
+              "line": 99,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291759,7 +291779,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_nvxorhcj', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', application:'4A', deviceJoinName: 'Nova Digital Topazio Smart Switch 8 Gang' // https",
-              "line": 110,
+              "line": 111,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -291769,16 +291789,6 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE204_jgujzjwh', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', application:'4A', deviceJoinName: 'Eyzee 6-gang switch' // https://community.hubitat.",
-              "line": 112,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "community.hubitat.com",
-                "scheme": "https",
-                "url": "https://community.hubitat.com/t/re-release-moes-zigbee-wall-switch-1-2-3-gang-tuya-ts0601-switches/138120/12?u=kkossev"
-              }
-            },
-            {
-              "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_8eazvzo6', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', application:'41', deviceJoinName: 'Eyzee 6-gang switch' // https://community.hubitat.",
               "line": 113,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -291788,296 +291798,334 @@
               }
             },
             {
+              "evidence": "fingerprint profileId:'0104', model:'TS0601', manufacturer:'_TZE200_8eazvzo6', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', application:'41', deviceJoinName: 'Eyzee 6-gang switch' // https://community.hubitat.",
+              "line": 114,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "community.hubitat.com",
+                "scheme": "https",
+                "url": "https://community.hubitat.com/t/re-release-moes-zigbee-wall-switch-1-2-3-gang-tuya-ts0601-switches/138120/12?u=kkossev"
+              }
+            },
+            {
+              "evidence": "// marcusvrsilva: https://community.hubitat.com/t/138120/56; cluster list confirmed by supplied pairing screenshot.",
+              "line": 120,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "community.hubitat.com",
+                "scheme": "https",
+                "url": "https://community.hubitat.com/t/138120/56"
+              }
+            },
+            {
               "evidence": "if (debugLogging) { runIn(86400, logsOff) }",
-              "line": 283,
+              "line": 306,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (debugLogging) { runIn(86400, logsOff) }",
-              "line": 297,
+              "line": 320,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (debugLogging) { runIn(86400, logsOff) }",
-              "line": 307,
+              "line": 330,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('66', DP_TYPE_VALUE, zigbee.convertToHexString(settings?.backlightLevel as int, 8))",
-              "line": 314,
+              "line": 340,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('10', DP_TYPE_BOOL, zigbee.convertToHexString(key as int, 2))",
-              "line": 316,
+              "line": 342,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('65', DP_TYPE_BOOL, zigbee.convertToHexString(key as int, 2))",
-              "line": 318,
+              "line": 344,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('0F', DP_TYPE_ENUM, zigbee.convertToHexString(key as int, 2))",
-              "line": 320,
+              "line": 346,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('67', DP_TYPE_ENUM, zigbee.convertToHexString(key as int, 2))",
-              "line": 322,
+              "line": 348,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('68', DP_TYPE_ENUM, zigbee.convertToHexString(key as int, 2))",
-              "line": 324,
+              "line": 350,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('0E', DP_TYPE_ENUM, zigbee.convertToHexString(key as int, 2))",
-              "line": 326,
+              "line": 352,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('65', DP_TYPE_VALUE, zigbee.convertToHexString(brightness, 8))",
-              "line": 332,
+              "line": 358,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 369,
+              "line": 399,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { child ->",
-              "line": 412,
+              "line": 446,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
+              "evidence": "sendZigbeeCommands(zigbee.command(CLUSTER_TUYA, 0x25, [destEndpoint:1], 200, '010001'))",
+              "line": 485,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "//def transid = zigbee.convertHexToInt(descMap?.data[1]) // \"transid\" is just a \"counter\", a response will have the same transid as the command",
-              "line": 445,
+              "line": 588,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap?.data[2 + i]) // \"dp\" field describes the action/message of a command frame",
-              "line": 451,
+              "line": 594,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant",
-              "line": 452,
+              "line": 595,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i])",
-              "line": 453,
+              "line": 596,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap?.data[2 + i]) // \"dp\" field describes the action/message of a command frame",
-              "line": 475,
+              "line": 618,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant",
-              "line": 476,
+              "line": 619,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i])",
-              "line": 477,
+              "line": 620,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap?.data[2 + i]) // \"dp\" field describes the action/message of a command frame",
-              "line": 508,
+              "line": 651,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant",
-              "line": 509,
+              "line": 652,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i])",
-              "line": 510,
+              "line": 653,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { child ->",
-              "line": 937,
+              "line": 1080,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "int dataLength = zigbee.convertHexToInt(_data[5 + index])",
-              "line": 959,
+              "line": 1105,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "retValue = retValue + power * zigbee.convertHexToInt(_data[index + i + 5])",
-              "line": 963,
+              "line": 1109,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String getPACKET_ID() { return zigbee.convertToHexString(new Random().nextInt(65536), 4) }",
-              "line": 970,
+              "line": 1116,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(CLUSTER_TUYA, tuyaCmd, [:], delay = 201, PACKET_ID + dp + dp_type + zigbee.convertToHexString((int)(fncmd.length() / 2), 4) + fncmd )",
-              "line": 976,
+              "line": 1122,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = dpTypeString == 'DP_TYPE_VALUE' ? zigbee.convertToHexString(dpValue as int, 8) : dpValue",
-              "line": 983,
+              "line": 1129,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.command(0xEF00, 0x24, '0008' + zigbee.convertToHexString((int)(now() / 1000), 8) + zigbee.convertToHexString((int)((now() + offset) / 1000), 8))",
-              "line": 1001,
+              "line": 1147,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE))",
-              "line": 1010,
+              "line": 1156,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(allActions)",
-              "line": 1012,
+              "line": 1158,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
-              "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(0x18 + g - 1, 2), DP_TYPE_BOOL, '00')",
-              "line": 1040,
+              "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(gang, 2), DP_TYPE_BOOL, '00')",
+              "line": 1171,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(0x18 + g - 1, 2), DP_TYPE_BOOL, '00')",
-              "line": 1049,
+              "line": 1194,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(0x18 + g - 1, 2), DP_TYPE_BOOL, '00')",
+              "line": 1203,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(gang, 2), DP_TYPE_BOOL, '01')",
+              "line": 1218,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(0x18 + g - 1, 2), DP_TYPE_BOOL, '01')",
-              "line": 1079,
+              "line": 1241,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(0x18 + g - 1, 2), DP_TYPE_BOOL, '01')",
-              "line": 1088,
+              "line": 1250,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1120,
+              "line": 1286,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1145,
+              "line": 1311,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1165,
+              "line": 1331,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he cmd 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00 {${fullDataOn}}\", Protocol.ZIGBEE))",
-              "line": 1171,
+              "line": 1337,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he cmd 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00 {${fullDataOn}}\", Protocol.ZIGBEE))",
-              "line": 1171,
+              "line": 1337,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1184,
+              "line": 1354,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1209,
+              "line": 1379,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(dpValue, 2)",
-              "line": 1229,
+              "line": 1399,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he cmd 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00 {${fullDataOff}}\", Protocol.ZIGBEE))",
-              "line": 1235,
+              "line": 1405,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he cmd 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00 {${fullDataOff}}\", Protocol.ZIGBEE))",
-              "line": 1235,
+              "line": 1405,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he rattr 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00\", Protocol.ZIGBEE))",
-              "line": 1242,
+              "line": 1413,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new HubAction(\"he rattr 0x${device.deviceNetworkId} 0x${device.endpointId} 0xEF00 0x00\", Protocol.ZIGBEE))",
-              "line": 1242,
+              "line": 1413,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "case '_TZE204_dqolcpcp' : // 6 relays and 6 scene switches (virtual) https://github.com/Koenkk/zigbee-herdsman-converters/blob/e9132fc65cc0bcbef60a5793976ba192fcc845ac/src/devices/qa.ts#L239",
-              "line": 1324,
+              "line": 1496,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -292087,146 +292135,158 @@
             },
             {
               "evidence": "def existingChild = getChildDevices()?.find { it.deviceNetworkId == childId }",
-              "line": 1360,
+              "line": 1532,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "addChildDevice('hubitat', 'Generic Component Switch', childId, [isComponent: true, name: \"Switch EP${String.format('%02d', i)}\", label: \"${device.displayName} EP${String.format('%02d', i)}\"])",
-              "line": 1367,
+              "line": 1539,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { child ->",
-              "line": 1376,
+              "line": 1548,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
+              "evidence": "cmds += getTuyaCommand(zigbee.convertToHexString(104 + gang, 2), DP_TYPE_RAW, screenTextHex(text))",
+              "line": 1569,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "String dpValHex = zigbee.convertToHexString(bl as int, 2)",
-              "line": 1388,
+              "line": 1583,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('24', DP_TYPE_BOOL, zigbee.convertToHexString(backlightValue, 2))",
-              "line": 1397,
+              "line": 1592,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand('25', DP_TYPE_ENUM, zigbee.convertToHexString(indicatorValue, 2))",
-              "line": 1402,
+              "line": 1597,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010f04000100')",
-              "line": 1408,
+              "line": 1603,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010f04000101')",
-              "line": 1412,
+              "line": 1607,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010f04000102')",
-              "line": 1416,
+              "line": 1611,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = zigbee.convertToHexString(rl, 2)",
-              "line": 1428,
+              "line": 1624,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = zigbee.convertToHexString(rl, 2)",
-              "line": 1434,
+              "line": 1630,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010e04000100')",
-              "line": 1441,
+              "line": 1637,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010e04000101')",
-              "line": 1445,
+              "line": 1641,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(0xEF00, 0x0, '00010e04000102')",
-              "line": 1449,
+              "line": 1645,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = zigbee.convertToHexString(gearNumber, 2)",
-              "line": 1466,
+              "line": 1662,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = zigbee.convertToHexString(inductionValue, 2)",
-              "line": 1477,
+              "line": 1673,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(0x12 + g - 1, 2)",
-              "line": 1491,
+              "line": 1687,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(dpHex, DP_TYPE_ENUM, zigbee.convertToHexString(modeValue, 2))",
-              "line": 1493,
+              "line": 1689,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(0x1E + g - 1, 2)",
-              "line": 1507,
+              "line": 1703,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(dpHex, DP_TYPE_VALUE, zigbee.convertToHexString(seconds, 8))",
-              "line": 1509,
+              "line": 1705,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpHex = zigbee.convertToHexString(0x69 + g - 1, 2)",
-              "line": 1523,
+              "line": 1719,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += getTuyaCommand(dpHex, DP_TYPE_VALUE, zigbee.convertToHexString(seconds, 8))",
-              "line": 1525,
+              "line": 1721,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "List<String> cmds = zigbee.command(0xEF00, 0x03)",
-              "line": 1535,
+              "evidence": "cmds += zigbee.readAttribute(0x0000, [0x0004, 0x0000, 0x0001, 0x0005, 0x0007, 0xFFFE], [destEndpoint:1], 1000)",
+              "line": 1734,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(0xEF00, 0x03)",
+              "line": 1736,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 91314,
+          "sourceBytes": 100940,
           "sourceFetched": true,
-          "sourceSha256": "b3fa7543363ff3feb64e57a4415e791dd48faec953eb40c1e367058cd42b29eb",
+          "sourceSha256": "93f4da1fe545138a0715c4d0a72afd9046c56cfd1a89d62412dd8b40df466aad",
           "sourceUrl": "https://raw.githubusercontent.com/martinkura-svk/Hubitat/main/Moes%20ZigBee%20Wall%20Switch"
         }
       ],
@@ -347907,7 +347967,7 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-09-29T05:54:41Z",
+  "snapshotGenerated": "2026-09-30T05:45:45Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,

@@ -14179,7 +14179,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 13
+        "urlLiteralCount": 14
       },
       "reviewed": [],
       "tags": [
@@ -26664,9 +26664,11 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Dashboards",
+        "Driver",
         "Lights & Switches",
         "Misc. Devices",
-        "Monitoring"
+        "Monitoring",
+        "Zigbee"
       ]
     },
     {
@@ -27641,5 +27643,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-09-29T05:54:41Z"
+  "snapshotGenerated": "2026-09-30T05:45:45Z"
 };
