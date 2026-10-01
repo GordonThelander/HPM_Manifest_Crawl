@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-09-30T05:45:45Z`.
+Latest observation: `2026-10-01T06:12:16Z`.
 
-**45 package change(s):** added 2, declared definitions changed 8, restored 5, source location changed 2, updated 39
+**40 package change(s):** added 2, declared definitions changed 3, updated 37
 
+- [Window Shade Timed: updated.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
+- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Zigbee eWeLink-CMARS-Seedan Outlet: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/packageManifest.json)
 - [Window Shade Timed: updated, changed declared definitions.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
@@ -40,14 +44,5 @@ Latest observation: `2026-09-30T05:45:45Z`.
 - [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
 - [Ecobee HAP Thermostat (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json)
 - [Android TV+: added.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Sonos Advanced Controller: changed declared definitions, was restored.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Shelly Webhook/Websocket Drivers: changed declared definitions, was restored.](https://raw.githubusercontent.com/ShellyUSA/Hubitat-Drivers/master/PackageManifests/ShellyWebhookDrivers/packageManifest.json)
-- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
-- [Network Monitor Health Check: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-networkmonitor.json)
-- [Inovelli Dimmer White Series VTM31-SN: changed declared definitions, was restored.](https://raw.githubusercontent.com/kahlkevin/hpm-repo/main/inovelli_vtm31sn.json)
-- [BamBuddy/PrintBuddy Printers Driver: updated, changed source location, changed declared definitions, was restored.](https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json)
-- [AirTouch 5 Drivers: updated, changed source location, changed declared definitions, was restored.](https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
