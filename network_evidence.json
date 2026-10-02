@@ -3,7 +3,7 @@
     "BOTH": 180,
     "CLOUD": 258,
     "INSUFFICIENT": 301,
-    "LAN": 176
+    "LAN": 177
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 915,
+  "packageCount": 916,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -2122,7 +2122,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 22
+        "urlLiteralCount": 23
       },
       "reviewed": [],
       "tags": [
@@ -13547,6 +13547,50 @@
         "urlLiteralCount": 0
       },
       "reviewed": [],
+      "tags": [
+        "Matter",
+        "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "Krassimir Kossev",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/alpha-matter-advanced-device/165806",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Matter Advanced Device - general purpose utility driver for directly paired Matter devices",
+      "documentationUrl": "https://community.hubitat.com/t/alpha-matter-advanced-device/165806",
+      "id": "hpm:ef47ac84-42b9-49f9-b94b-46bfb6746545",
+      "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Matter%20Advanced%20Device/packageManifest.json",
+      "name": "Matter Advanced Device",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_BRIDGE",
+              "name": "Matter Fabric / Bridge",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "MATTER_IP"
+            }
+          ],
+          "documentation": [],
+          "id": "matter-bridge",
+          "name": "Matter Bridge / Controller",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
       "tags": [
         "Matter",
         "Tools & Utilities"
@@ -27643,5 +27687,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-01T06:12:16Z"
+  "snapshotGenerated": "2026-10-02T05:55:04Z"
 }

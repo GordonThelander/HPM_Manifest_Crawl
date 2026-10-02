@@ -1565,7 +1565,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2275,
+  "definitionCount": 2276,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -28238,6 +28238,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/neiljackson1984/SmartThingsNeil/master/packages/ddwrt-router-driver/build/ddwrt-child-virtual-button.driver.groovy"
     },
     {
+      "id": "definition:733692800c86376cb65c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Matter Advanced Device",
+          "namespace": "kkossev"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Krassimir Kossev",
+        "communityUrl": "https://community.hubitat.com/t/alpha-matter-advanced-device/165806",
+        "documentationUrl": "https://community.hubitat.com/t/alpha-matter-advanced-device/165806",
+        "id": "hpm:ef47ac84-42b9-49f9-b94b-46bfb6746545",
+        "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Matter%20Advanced%20Device/packageManifest.json",
+        "name": "Matter Advanced Device"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Matter%20Advanced%20Device/Matter_Advanced_Device.groovy"
+    },
+    {
       "id": "definition:7339b0f9a93329180d6e",
       "identities": [
         {
@@ -48656,5 +48676,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-01T06:12:16Z"
+  "snapshotGenerated": "2026-10-02T05:55:04Z"
 };

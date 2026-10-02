@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-01T06:12:16Z`
+- Snapshot: `2026-10-02T05:55:04Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
-- Packages indexed: **915**
+- Packages indexed: **916**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **12**
@@ -141,6 +141,7 @@ Live-HPM note: no HPM package currently matches the canary substring.
 | shelly-native | Shelly Integration | driverName | Shelly | 8 |
 | shelly-mqtt | Shelly MQTT Variant | driverName | Shelly | 8 |
 | ring | Ring Integration | driverName | Ring | 19 |
+| matter-bridge | Matter Bridge / Controller | driverName | Matter | 6 |
 
 ## D. Entries with no dependencies
 
@@ -584,7 +585,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | --- | --- |
 | A. Dead rules | 112 |
 | B. Near misses | 0 |
-| C. Over-broad rules | 3 |
+| C. Over-broad rules | 4 |
 | D. Entries with no dependencies | 19 |
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
@@ -600,13 +601,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2261 |
-| Source URLs fetched | 2252 |
+| Distinct source URLs | 2262 |
+| Source URLs fetched | 2253 |
 | Source URLs failed | 9 |
-| Components attempted | 2275 |
-| Components fetched | 2266 |
-| Literal definitions verified | 2255 |
-| Components with observations | 2142 |
+| Components attempted | 2276 |
+| Components fetched | 2267 |
+| Literal definitions verified | 2256 |
+| Components with observations | 2143 |
 
 ### Official Hubitat documentation pass
 

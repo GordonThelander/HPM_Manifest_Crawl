@@ -1,9 +1,19 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-01T06:12:16Z`.
+Latest observation: `2026-10-02T05:55:04Z`.
 
-**40 package change(s):** added 2, declared definitions changed 3, updated 37
+**43 package change(s):** added 2, declared definitions changed 3, updated 40
 
+- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
+- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [SoundSmart - Player (1 de 2): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_SoundSmart/main/packageManifest.json)
+- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
+- [Matter Advanced Device: added.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Matter%20Advanced%20Device/packageManifest.json)
+- [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
+- [Holiday Decorations: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-holiday-decorations.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Window Shade Timed: updated.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
 - [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
@@ -37,12 +47,5 @@ Latest observation: `2026-10-01T06:12:16Z`.
 - [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 - [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
 - [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
-- [HomeKit Import (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-homekit-import.json)
-- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
-- [Ecobee HAP Thermostat (Local): updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-hap.json)
-- [Android TV+: added.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/android-tv-plus/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
