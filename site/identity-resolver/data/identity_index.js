@@ -1565,7 +1565,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2276,
+  "definitionCount": 2277,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3106,6 +3106,26 @@ window.IDENTITY_INDEX = {
         "name": "Remote Builder for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/Remote_Builder_TV.groovy"
+    },
+    {
+      "id": "definition:251eee8664060384f401",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "X-Sense Integration",
+          "namespace": "xsense"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Mathew Beall",
+        "communityUrl": "https://github.com/mathewbeall/hubitat-xsense-integration",
+        "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
+        "id": "manifest:ae3c7a0f49581c8e1b1f",
+        "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
+        "name": "X-Sense Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-app.groovy"
     },
     {
       "id": "definition:27235ae07dc0e35ff2eb",
@@ -13178,6 +13198,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPro1-v2.17.8.groovy"
     },
     {
+      "id": "definition:06d216596c7f8667eb14",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "X-Sense Smoke/CO Detector",
+          "namespace": "xsense"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mathew Beall",
+        "communityUrl": "https://github.com/mathewbeall/hubitat-xsense-integration",
+        "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
+        "id": "manifest:ae3c7a0f49581c8e1b1f",
+        "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
+        "name": "X-Sense Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-detector-child.groovy"
+    },
+    {
       "id": "definition:06ed17125859126dcabc",
       "identities": [
         {
@@ -13316,26 +13356,6 @@ window.IDENTITY_INDEX = {
         "name": "Netatmo - Velux"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Window.groovy"
-    },
-    {
-      "id": "definition:07f1b5e450ab812ef8cc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "X-Sense SBS50 Bridge",
-          "namespace": "xsense"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mathew Beall",
-        "communityUrl": "https://github.com/mathewbeall/hubitat-xsense-integration",
-        "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
-        "id": "manifest:7c8d16c3e384a1f88884",
-        "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
-        "name": "X-Sense Smoke/CO Detector Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-hubitat-driver.groovy"
     },
     {
       "id": "definition:07f2cd266c2bcc7f3aca",
@@ -15126,26 +15146,6 @@ window.IDENTITY_INDEX = {
         "name": "Fibaro Double Switch FGS-223"
       },
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/fibaro-fgs-223/fibaro-fgs-223-dth.groovy"
-    },
-    {
-      "id": "definition:1550aa2dca4532798729",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "X-Sense Smoke/CO Detector",
-          "namespace": "xsense"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mathew Beall",
-        "communityUrl": "https://github.com/mathewbeall/hubitat-xsense-integration",
-        "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
-        "id": "manifest:7c8d16c3e384a1f88884",
-        "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
-        "name": "X-Sense Smoke/CO Detector Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-detector-child.groovy"
     },
     {
       "id": "definition:157a3c5f37917c4bfecf",
@@ -38238,6 +38238,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDR.groovy"
     },
     {
+      "id": "definition:b834a0c00a79a9ea5930",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "X-Sense Water Leak Sensor",
+          "namespace": "xsense"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mathew Beall",
+        "communityUrl": "https://github.com/mathewbeall/hubitat-xsense-integration",
+        "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
+        "id": "manifest:ae3c7a0f49581c8e1b1f",
+        "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
+        "name": "X-Sense Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-water-child.groovy"
+    },
+    {
       "id": "definition:b834ec6492acbc5ed31b",
       "identities": [
         {
@@ -48676,5 +48696,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-02T05:55:04Z"
+  "snapshotGenerated": "2026-10-03T05:30:35Z"
 };

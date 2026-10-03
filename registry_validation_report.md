@@ -1,6 +1,6 @@
 # Registry validation report
 
-- Snapshot: `2026-10-02T05:55:04Z`
+- Snapshot: `2026-10-03T05:30:35Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
 - Packages indexed: **916**
@@ -336,7 +336,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Markus (@markus) | Xiaomi/Aqara Temperature & Humidity Sensor | Integrations |  | https://raw.githubusercontent.com/markus-li/Hubitat/release/packages/zigbee-xiaomi-aqara-temperature-humidity.json |
 | Markus (@markus) | Xiaomi/Aqara/Opple Button/Switch/Remote | Integrations |  | https://raw.githubusercontent.com/markus-li/Hubitat/release/packages/zigbee-xiaomi-aqara-opple-button-switch-remote.json |
 | Mathew Beall | Hubitat Resideo T10 Integration | Integrations | Cloud, HVAC, Thermostats, Resideo, Honeywell | https://raw.githubusercontent.com/mathewbeall/hubitat-resideo_T10-integration/main/packageManifest.json |
-| Mathew Beall | X-Sense Smoke/CO Detector Integration | Integrations | Cloud, Safety, Smoke Detector, CO Detector, X-Sense | https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json |
+| Mathew Beall | X-Sense Integration | Integrations | Cloud, Safety, Smoke Detector, CO Detector, Water Sensor, X-Sense | https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json |
 | Matthew (@scottma61) | DarkSky.net-Weather-Driver | Integrations | Weather | https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/DS_packageManifest.json |
 | Matthew (@scottma61) | OpenWeatherMap-Alerts Weather Driver | Integrations | Weather | https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/OWN-Alerts_packageManifest.json |
 | Matthew (@scottma61) | Weather-Display With DarkSky.net Forecast Driver | Integrations | Weather | https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/WD_packageManifest.json |
@@ -601,13 +601,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2262 |
-| Source URLs fetched | 2253 |
+| Distinct source URLs | 2263 |
+| Source URLs fetched | 2254 |
 | Source URLs failed | 9 |
-| Components attempted | 2276 |
-| Components fetched | 2267 |
-| Literal definitions verified | 2256 |
-| Components with observations | 2143 |
+| Components attempted | 2277 |
+| Components fetched | 2268 |
+| Literal definitions verified | 2257 |
+| Components with observations | 2144 |
 
 ### Official Hubitat documentation pass
 

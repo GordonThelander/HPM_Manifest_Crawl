@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-02T05:55:04Z`.
+Latest observation: `2026-10-03T05:30:35Z`.
 
-**43 package change(s):** added 2, declared definitions changed 3, updated 40
+**40 package change(s):** added 3, declared definitions changed 2, removed 1, updated 35
 
+- [X-Sense Smoke/CO Detector Integration: removed.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
+- [X-Sense Integration: added.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
 - [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
@@ -38,14 +44,5 @@ Latest observation: `2026-10-02T05:55:04Z`.
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Sonnen Battery - Hubitat: updated.](https://raw.githubusercontent.com/ke7lvb/sonnen_battery/refs/heads/main/packageManifest.json)
-- [Solcast: updated.](https://raw.githubusercontent.com/ke7lvb/Solcast/refs/heads/main/packageManifest.json)
-- [Pentair Intellicenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Emporia Vue v2 - Hubitat: updated.](https://raw.githubusercontent.com/ke7lvb/Emporia-Vue-Hubitat/refs/heads/main/packageManifest.json)
-- [Device Health Monitor: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
-- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

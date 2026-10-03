@@ -25891,18 +25891,18 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": true,
         "lanTag": false
       },
-      "description": "Complete Hubitat integration for X-Sense smoke and CO detectors (SC07-MR and compatible models) via the SBS50 bridge. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automatic child device creation.",
+      "description": "Complete Hubitat integration for X-Sense smoke/CO detectors (SC07-MR and compatible models) and water leak sensors (SWS51) via the SBS50 base station. Installed as a Hubitat app. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automatic child device creation.",
       "documentationUrl": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
-      "id": "manifest:7c8d16c3e384a1f88884",
+      "id": "manifest:ae3c7a0f49581c8e1b1f",
       "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
-      "name": "X-Sense Smoke/CO Detector Integration",
+      "name": "X-Sense Integration",
       "observed": {
         "externalHosts": [
           "api.x-sense-iot.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 10
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 13
       },
       "reviewed": [],
       "tags": [
@@ -25910,6 +25910,7 @@ window.NETWORK_EVIDENCE = {
         "CO Detector",
         "Safety",
         "Smoke Detector",
+        "Water Sensor",
         "X-Sense"
       ]
     },
@@ -27687,5 +27688,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-02T05:55:04Z"
+  "snapshotGenerated": "2026-10-03T05:30:35Z"
 };

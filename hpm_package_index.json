@@ -68893,16 +68893,16 @@
               "value": true
             }
           ],
-          "sourceBytes": 47693,
+          "sourceBytes": 50028,
           "sourceFetched": true,
-          "sourceSha256": "b47aec09cb211f9572b0b880149f95fcaa92192590d0d636cad9b523540a562a",
+          "sourceSha256": "bc28472c31cb7bf4e8a60ee52090510879e46d3c1f04c013a9677824fb86ab89",
           "sourceUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/HestiaDashboard.groovy"
         }
       ],
       "author": "Haven",
       "category": null,
       "communityLink": "https://community.hubitat.com",
-      "dateReleased": "2026-09-30",
+      "dateReleased": "2026-10-03",
       "description": "Hestia™ smart home dashboard for Hubitat Elevation with Artemis™ security module.",
       "documentationLink": "https://github.com/h4ven88/hestia-dashboard/blob/main/README.md",
       "drivers": [],
@@ -68920,7 +68920,7 @@
         "Security",
         "Alarm"
       ],
-      "version": "2.1.4"
+      "version": "2.2.0"
     },
     {
       "apps": [
@@ -90341,7 +90341,7 @@
     {
       "apps": [
         {
-          "definitionLine": 248,
+          "definitionLine": 268,
           "definitionName": "Reolink Integration",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Integration",
@@ -90349,37 +90349,37 @@
           "observations": [
             {
               "evidence": "* app-level, every 15 minutes via Hubitat's own schedule() rather than this",
-              "line": 101,
+              "line": 121,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* schedule (defined on the in-app Recording Presets page) to the NVR,",
-              "line": 155,
+              "line": 175,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 260,
+              "line": 280,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 260,
+              "line": 280,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 377,
+              "line": 400,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "\"https://community.hubitat.com/t/release-reolink-integration-cameras-doorbells-nvrs-home-hubs/165352\",",
-              "line": 457,
+              "line": 480,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -90389,7 +90389,7 @@
             },
             {
               "evidence": "\"https://www.paypal.com/paypalme/jdthomas24?locale.x=en_US&country.x=US\",",
-              "line": 460,
+              "line": 483,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.paypal.com",
@@ -90399,37 +90399,37 @@
             },
             {
               "evidence": "\"tile's own refresh setting doesn't matter. Poll interval should stay tight for responsive \" +",
-              "line": 937,
+              "line": 964,
               "type": "MATTER_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeSourceDiscovery\", [data: [nonce: scan.nonce, scanId: scan.scanId]])",
-              "line": 1033,
+              "line": 1060,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeSourceDiscovery\", [data: data])",
-              "line": 1051,
+              "line": 1078,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeIpRecovery\", [data: [nonce: recovery.nonce, scanId: recovery.scanId]])",
-              "line": 1587,
+              "line": 1628,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeIpRecovery\", [data: data])",
-              "line": 1610,
+              "line": 1651,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 1695,
+              "line": 1736,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90439,49 +90439,49 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\", timeout: 5,",
-              "line": 1699,
+              "line": 1740,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (bridge) runIn(3, \"reconnectEditedSource\", [overwrite: false,",
-              "line": 1751,
+              "line": 1799,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// A DEVICE's getChildDevices() (unlike an app's) can return null instead",
-              "line": 2338,
+              "line": 2386,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return bridge ? (bridge.getChildDevices() ?: []) : []",
-              "line": 2340,
+              "line": 2388,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "group = addChildDevice(\"jdthomas24\", \"Reolink Standalone Devices\", STANDALONE_GROUP_DNI, [",
-              "line": 2366,
+              "line": 2414,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* anywhere only a dni string is available (e.g. runIn(...) callback data).",
-              "line": 2392,
+              "line": 2440,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge.getChildDevices()?.each {",
-              "line": 2437,
+              "line": 2485,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 2557,
+              "line": 2692,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90491,19 +90491,19 @@
             },
             {
               "evidence": "httpPost(params) { resp -> result = parseReolinkResponse(resp) }",
-              "line": 2562,
+              "line": 2697,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(5, \"retryStuckEventConnection\", [overwrite: false, data: [sourceId: sourceId as Integer]])",
-              "line": 2603,
+              "line": 2738,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}&token=${token}\"",
-              "line": 2655,
+              "line": 2790,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90513,127 +90513,139 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\",",
-              "line": 2659,
+              "line": 2794,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 2922,
+              "line": 3057,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 2993,
+              "line": 3131,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 3203,
+              "line": 3341,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"systemStartHandler\")",
-              "line": 3205,
+              "line": 3343,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */15 * * * ?\", \"auditEventConnections\")",
-              "line": 3210,
+              "line": 3348,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 3213,
+              "line": 3351,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "if (state.powerMigrationKey != POWER_MIGRATION_KEY) runIn(15, \"migrateBatteryModes\")",
-              "line": 3222,
+              "line": 3360,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// v1.6.6: the queued flag never survives a Done (unschedule() above cancels the job).",
+              "line": 3361,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3600, \"revertToNormalLogging\")",
-              "line": 3237,
+              "line": 3377,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge?.getChildDevices() ?: []).each { child ->",
-              "line": 3274,
+              "line": 3414,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "logNormal \"Reolink Integration: cleared ${clearedRec} leftover cached recording schedule(s) from the \" +",
-              "line": 3304,
+              "line": 3444,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 3328,
+              "line": 3468,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "bridge?.getChildDevices()?.each { child ->",
-              "line": 3393,
+              "line": 3533,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 3403,
+              "line": 3543,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* own schedule() cron mechanism (see initialize()) rather than this app's",
-              "line": 3410,
+              "line": 3550,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"migrateBatteryModes\", [overwrite: true])",
-              "line": 3519,
+              "line": 3660,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(3, \"migrateCredentials\", [overwrite: true])",
+              "line": 3665,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 3527,
+              "line": 3673,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(anyPolling ? 1 : IDLE_TICK_SEC, \"schedulerTick\", [overwrite: true])",
-              "line": 3586,
+              "line": 3732,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* Snapshot caching runs on its OWN schedule (nextSnapshotDue, see",
-              "line": 3645,
+              "line": 3791,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 3745,
+              "line": 3891,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=Snap&channel=${channel}&token=${token}\"",
-              "line": 3816,
+              "line": 3962,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -90643,56 +90655,56 @@
             },
             {
               "evidence": "httpGet([uri: uri, ignoreSSLIssues: true, timeout: 10]) { resp ->",
-              "line": 3819,
+              "line": 3965,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "runIn(1, \"processRtspQueue\", [overwrite: true])",
-              "line": 4258,
+              "line": 4420,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_WATCHDOG_SEC, \"rtspValidationWatchdog\", [data: [dni: d], overwrite: true])",
-              "line": 4271,
+              "line": 4433,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"rtspValidationWatchdog\")",
-              "line": 4277,
+              "line": 4439,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_GAP_SEC, \"processRtspQueue\", [overwrite: true])",
-              "line": 4278,
+              "line": 4440,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"rtspValidationWatchdog\")",
-              "line": 4295,
+              "line": 4457,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"requeueRtspValidation\", [data: [dni: d], overwrite: false])",
-              "line": 4305,
+              "line": 4467,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_GAP_SEC, \"processRtspQueue\", [overwrite: true])",
-              "line": 4316,
+              "line": 4478,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 236250,
+          "sourceBytes": 245011,
           "sourceFetched": true,
-          "sourceSha256": "9f98800fe0138fbdb0d851994f65387dda987afa165f02f40e3b21c3b7a417fd",
+          "sourceSha256": "e8f3df8c0f8e187806bb8e1555aaa6014bb7fe96f76ec66280c346f6bddca497",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ParentApp.groovy"
         }
       ],
@@ -90704,7 +90716,7 @@
       "documentationLink": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
       "drivers": [
         {
-          "definitionLine": 30,
+          "definitionLine": 36,
           "definitionName": "Reolink Camera",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Camera",
@@ -90712,13 +90724,13 @@
           "observations": [
             {
               "evidence": "asynchttpPost(\"rtspValidationHandler\", [",
-              "line": 208,
+              "line": 213,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080/hub2/videoStream/${device.id}/validate\",",
-              "line": 209,
+              "line": 214,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -90728,18 +90740,18 @@
             },
             {
               "evidence": "/** Diagnostic only: reads and logs this channel's current NVR recording schedule (Full logging). */",
-              "line": 383,
+              "line": 384,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 23129,
+          "sourceBytes": 23611,
           "sourceFetched": true,
-          "sourceSha256": "3e4cf53b48801f9f5e48c42c547c504e28d51bcb786367aeb26f2e5696dbc281",
+          "sourceSha256": "71fbe8b6579622a34e39650d896f9e436aa036dfb4902d0c2ab86b576b482573",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/CameraDriver.groovy"
         },
         {
-          "definitionLine": 26,
+          "definitionLine": 29,
           "definitionName": "Reolink Doorbell",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Doorbell",
@@ -90747,13 +90759,13 @@
           "observations": [
             {
               "evidence": "asynchttpPost(\"rtspValidationHandler\", [",
-              "line": 184,
+              "line": 190,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080/hub2/videoStream/${device.id}/validate\",",
-              "line": 185,
+              "line": 191,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -90763,18 +90775,18 @@
             },
             {
               "evidence": "/** Diagnostic only: reads and logs this channel's current NVR recording schedule (Full logging). */",
-              "line": 237,
+              "line": 243,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 18753,
+          "sourceBytes": 20073,
           "sourceFetched": true,
-          "sourceSha256": "333df966d21f808f2f8197416eb996c3f68df8a71056733cdfa344c1bf5d546b",
+          "sourceSha256": "9cd73353128e20a807a6d6c65b758a8a71bdefe6d0995cff36eba83245e1cb07",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/DoorbellDriver.groovy"
         },
         {
-          "definitionLine": 135,
+          "definitionLine": 142,
           "definitionName": "Reolink Device Bridge",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Device Bridge",
@@ -90782,156 +90794,156 @@
           "observations": [
             {
               "evidence": "child = addChildDevice(\"jdthomas24\", driverName, dni, [",
-              "line": 227,
+              "line": 234,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule(\"closeSocket\")",
-              "line": 510,
+              "line": 556,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 517,
+              "line": 563,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.connect(state.host, state.port as int, byteInterface: true)",
-              "line": 532,
+              "line": 578,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"sendNonceRequest\")",
-              "line": 542,
+              "line": 588,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(15, \"flowTimeoutCheck\")",
-              "line": 543,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendNonceRequest\")",
-              "line": 549,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"closeSocket\")",
-              "line": 550,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 553,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 554,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 555,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 573,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"flowTimeoutCheck\")",
               "line": 589,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
-              "line": 627,
+              "evidence": "unschedule(\"sendNonceRequest\")",
+              "line": 595,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"closeSocket\")",
+              "line": 596,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendKeepalive\")",
+              "line": 599,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"flowTimeoutCheck\")",
+              "line": 600,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 632,
+              "line": 601,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendKeepalive\")",
+              "line": 619,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"flowTimeoutCheck\")",
+              "line": 635,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
+              "line": 673,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "line": 678,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 655,
+              "line": 701,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 714,
+              "line": 761,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 715,
+              "line": 762,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 738,
+              "line": 785,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 987,
+              "line": 1034,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 1008,
+              "line": 1055,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 1009,
+              "line": 1056,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(bytesToHex(data))",
-              "line": 1031,
+              "line": 1078,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 1161,
+              "line": 1208,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 57482,
+          "sourceBytes": 59734,
           "sourceFetched": true,
-          "sourceSha256": "94a5a4c1fa2154f0d560d6eb9bb4d3a5eb7cd6c93c5ebf063bf5392b08afb55d",
+          "sourceSha256": "55dd82b48258f6c01c4070dade36fcf8c1d102f449c5d85de321e94cfe2e54f0",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ReolinkDeviceBridge.groovy"
         },
         {
-          "definitionLine": 103,
+          "definitionLine": 107,
           "definitionName": "Reolink Standalone Devices",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Standalone Devices",
@@ -90939,26 +90951,26 @@
           "observations": [
             {
               "evidence": "* -- addChildDevice() must run in the owning device's own execution",
-              "line": 113,
+              "line": 117,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* addChildDevice() on a held reference from outside.",
-              "line": 115,
+              "line": 119,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 118,
+              "line": 122,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             }
           ],
-          "sourceBytes": 12468,
+          "sourceBytes": 12862,
           "sourceFetched": true,
-          "sourceSha256": "10e64c8f35e414e1b28d7bedd71ffd0f0ac5ef621ebfa43fc53278ab19fd9999",
+          "sourceSha256": "416501b3e1e21620f846520946fec22f03cfadfdb6c5fd51286b5401dd51a312",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/StandaloneDevices.groovy"
         }
       ],
@@ -90974,7 +90986,7 @@
         "Safety & Security",
         "Doorbell"
       ],
-      "version": "1.6.5"
+      "version": "1.6.6"
     },
     {
       "apps": [],
@@ -95102,12 +95114,12 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/coming-soon-hub-information-driver-v3/109902",
-      "dateReleased": "2026-07-31",
+      "dateReleased": "2026-10-02",
       "description": "Rewrite of the original Hub Information Driver.  Driver includes 40+ attributes related to the operation and general fitness of the hub.",
       "documentationLink": "https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html",
       "drivers": [
         {
-          "definitionLine": 114,
+          "definitionLine": 115,
           "definitionName": "Hub Information Driver v3",
           "definitionNamespace": "thebearmay",
           "manifestName": "Hub Information Driver v3",
@@ -95125,7 +95137,7 @@
             },
             {
               "evidence": "importUrl:\"https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy\"",
-              "line": 118,
+              "line": 119,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -95135,7 +95147,7 @@
             },
             {
               "evidence": "input(\"quickref\",\"hidden\", title:\"$ttStyleStr<a href='https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html' target='_blank'>Quick Reference v${version()}</a>\")",
-              "line": 240,
+              "line": 241,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "htmlpreview.github.io",
@@ -95145,7 +95157,7 @@
             },
             {
               "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
-              "line": 274,
+              "line": 278,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -95155,67 +95167,67 @@
             },
             {
               "evidence": "runIn(30,\"initMemory\")",
-              "line": 282,
+              "line": 286,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30,\"updateCheck\")",
-              "line": 284,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5,\"updated\")",
               "line": 288,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(5,\"updated\")",
+              "line": 292,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(120,\"baseData\")",
-              "line": 290,
+              "line": 294,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 309,
+              "line": 313,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate1*60, \"poll1\")",
-              "line": 346,
+              "line": 351,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate2*60, \"poll2\")",
-              "line": 348,
+              "line": 353,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate3*60, \"poll3\")",
-              "line": 350,
+              "line": 355,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate4*60*60, \"poll4\")",
-              "line": 352,
+              "line": 357,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800,\"logsOff\")",
-              "line": 354,
+              "line": 359,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\")))",
-              "line": 359,
+              "line": 364,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.aws.hubitat.com",
@@ -95225,7 +95237,7 @@
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\")))",
-              "line": 359,
+              "line": 364,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -95235,37 +95247,37 @@
             },
             {
               "evidence": "runIn(pollRate1*60, \"poll1\")",
-              "line": 398,
+              "line": 403,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate2*60, \"poll2\")",
-              "line": 408,
+              "line": 413,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate3*60, \"poll3\")",
-              "line": 418,
+              "line": 423,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate4*60*60, \"poll4\")",
-              "line": 428,
+              "line": 433,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5,\"updated\")",
-              "line": 434,
+              "line": 439,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 573,
+              "line": 578,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95275,13 +95287,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCpuTemperature\", params)",
-              "line": 580,
+              "line": 585,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 607,
+              "line": 612,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95291,13 +95303,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getFreeMemory\", params)",
-              "line": 614,
+              "line": 619,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 652,
+              "line": 657,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95307,13 +95319,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getJvm\", params)",
-              "line": 659,
+              "line": 664,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 695,
+              "line": 700,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95323,13 +95335,13 @@
             },
             {
               "evidence": "asynchttpGet(\"get15Min\", params)",
-              "line": 702,
+              "line": 707,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 758,
+              "line": 763,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95339,13 +95351,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCpuLoad\", params)",
-              "line": 765,
+              "line": 770,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 800,
+              "line": 805,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95355,13 +95367,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getDbSize\", params)",
-              "line": 808,
+              "line": 813,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://api.ipify.org?format=json\",",
-              "line": 827,
+              "line": 832,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.ipify.org",
@@ -95371,13 +95383,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getPublicIp\", params)",
-              "line": 834,
+              "line": 839,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 856,
+              "line": 861,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95387,13 +95399,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getStateDays\", params)",
-              "line": 864,
+              "line": 869,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 868,
+              "line": 873,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95403,13 +95415,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getEvtDays\", params)",
-              "line": 876,
+              "line": 881,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 915,
+              "line": 920,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95419,13 +95431,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwaveVersion\", param)",
-              "line": 922,
+              "line": 927,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 966,
+              "line": 971,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95435,13 +95447,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 972,
+              "line": 977,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 981,
+              "line": 986,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95451,13 +95463,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getNtpServer\", params)",
-              "line": 989,
+              "line": 994,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1008,
+              "line": 1013,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95467,13 +95479,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getSubnets\", params)",
-              "line": 1016,
+              "line": 1021,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1035,
+              "line": 1040,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95483,13 +95495,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getHubMesh\", params)",
-              "line": 1043,
+              "line": 1048,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1083,
+              "line": 1088,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95499,13 +95511,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtNetwork\", params)",
-              "line": 1091,
+              "line": 1096,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1097,
+              "line": 1102,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95515,13 +95527,13 @@
             },
             {
               "evidence": "httpGet(params) {resp ->",
-              "line": 1107,
+              "line": 1112,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1171,
+              "line": 1176,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95531,13 +95543,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getSecurity\", params)",
-              "line": 1178,
+              "line": 1183,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "if(resp.headers.Location == 'http://127.0.0.1:8080/login')",
-              "line": 1184,
+              "line": 1189,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95547,7 +95559,7 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1298,
+              "line": 1303,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95557,13 +95569,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getUpdateCheck\", params)",
-              "line": 1302,
+              "line": 1307,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1335,
+              "line": 1340,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95573,13 +95585,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZbHealth\",params)",
-              "line": 1338,
+              "line": 1343,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1341,
+              "line": 1346,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95589,13 +95601,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwHealth\",params)",
-              "line": 1344,
+              "line": 1349,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\"))) {",
-              "line": 1362,
+              "line": 1367,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.aws.hubitat.com",
@@ -95605,7 +95617,7 @@
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\"))) {",
-              "line": 1362,
+              "line": 1367,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -95615,13 +95627,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCloudReturn\", params, [cType:\"$cType\",dId:\"$dId\"])",
-              "line": 1383,
+              "line": 1392,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1406,
+              "line": 1426,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95631,13 +95643,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtendedZigbee\", params)",
-              "line": 1413,
+              "line": 1433,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1438,
+              "line": 1458,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95647,13 +95659,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtendedZwave\", params)",
-              "line": 1445,
+              "line": 1465,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1469,
+              "line": 1489,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95663,13 +95675,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwaveJsStat\", params)",
-              "line": 1476,
+              "line": 1496,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1495,
+              "line": 1515,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95679,13 +95691,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getMatter\", params)",
-              "line": 1502,
+              "line": 1522,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1525,
+              "line": 1545,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95695,13 +95707,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getAccess\", params)",
-              "line": 1532,
+              "line": 1552,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1549,
+              "line": 1569,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95711,19 +95723,19 @@
             },
             {
               "evidence": "asynchttpGet(\"getCompressStatus\", params)",
-              "line": 1556,
+              "line": 1576,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1593,
+              "line": 1613,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri = \"http://127.0.0.1:8080/local/${fName}\";",
-              "line": 1636,
+              "line": 1656,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95733,13 +95745,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1643,
+              "line": 1663,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
-              "line": 1669,
+              "line": 1689,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -95749,7 +95761,7 @@
             },
             {
               "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
-              "line": 1674,
+              "line": 1694,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -95759,7 +95771,7 @@
             },
             {
               "evidence": "updateAttr(\"html\",\"<a href='http://${location.hub.localIP}:8080/local/$htmlFileOutput'>Link to attribute data</a>\")",
-              "line": 1719,
+              "line": 1739,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -95769,7 +95781,7 @@
             },
             {
               "evidence": "updateAttr(\"URL\",\"http://${location.hub.localIP}:8080/local/$htmlFileOutput\")",
-              "line": 1720,
+              "line": 1740,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -95779,13 +95791,13 @@
             },
             {
               "evidence": "runIn(20,\"initialize\")",
-              "line": 1728,
+              "line": 1748,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri = \"http://127.0.0.1:8080/local/${fName}\"",
-              "line": 1745,
+              "line": 1765,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95795,13 +95807,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1758,
+              "line": 1778,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri: 'http://127.0.0.1:8080',",
-              "line": 1797,
+              "line": 1817,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95811,25 +95823,15 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 1819,
+              "line": 1839,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(",
-              "line": 1838,
+              "line": 1858,
               "type": "HTTP_CALL",
               "value": "httpPost"
-            },
-            {
-              "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1840,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "127.0.0.1",
-                "scheme": "http",
-                "url": "http://127.0.0.1:8080"
-              }
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
@@ -95843,7 +95845,7 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1865,
+              "line": 1880,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95853,7 +95855,17 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1874,
+              "line": 1885,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080"
+              }
+            },
+            {
+              "evidence": "uri: \"http://127.0.0.1:8080\",",
+              "line": 1894,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95863,13 +95875,13 @@
             },
             {
               "evidence": "httpPost(params) {resp -> }",
-              "line": 1882,
+              "line": 1902,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1898,
+              "line": 1918,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95879,7 +95891,7 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1907,
+              "line": 1927,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95889,19 +95901,19 @@
             },
             {
               "evidence": "httpPost(params) {resp -> }",
-              "line": 1916,
+              "line": 1936,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(",
-              "line": 1929,
+              "line": 1949,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1931,
+              "line": 1951,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95911,14 +95923,14 @@
             },
             {
               "evidence": "asynchttpGet(\"ssdResp\",params)",
-              "line": 1947,
+              "line": 1967,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 77684,
+          "sourceBytes": 79332,
           "sourceFetched": true,
-          "sourceSha256": "79e808edff5099dfaf3ec657444da5194a683291170528bcc0983fcf9f652b64",
+          "sourceSha256": "9f7375ff79ef2380a33cd58b60ca6712a3abdf6251355a3c25ec7937988f32e9",
           "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy"
         }
       ],
@@ -95935,7 +95947,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.31"
+      "version": "3.1.32"
     },
     {
       "apps": [
@@ -135276,7 +135288,7 @@
     {
       "apps": [
         {
-          "definitionLine": 307,
+          "definitionLine": 309,
           "definitionName": "OwnTracks",
           "definitionNamespace": "lpakula",
           "manifestName": "OwnTracks",
@@ -135324,7 +135336,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 203,
+              "line": 204,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.geoapify.com",
@@ -135334,7 +135346,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 203,
+              "line": 204,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.opencagedata.com",
@@ -135344,7 +135356,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 203,
+              "line": 204,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -135354,7 +135366,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 212,
+              "line": 213,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "apidocs.geoapify.com",
@@ -135364,7 +135376,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 212,
+              "line": 213,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.google.com",
@@ -135374,7 +135386,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 212,
+              "line": 213,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "opencagedata.com",
@@ -135384,7 +135396,7 @@
             },
             {
               "evidence": "@Field String GOOGLE_MAP_API_KEY_LINK = \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\"",
-              "line": 247,
+              "line": 249,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.google.com",
@@ -135394,7 +135406,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20App.groovy',",
-              "line": 312,
+              "line": 314,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -135404,7 +135416,7 @@
             },
             {
               "evidence": "oauth: [displayName: 'OwnTracks', displayLink: 'https://owntracks.org/'],",
-              "line": 316,
+              "line": 318,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -135414,13 +135426,13 @@
             },
             {
               "evidence": "createAccessToken()",
-              "line": 356,
+              "line": 358,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "paragraph(GEOCODE_API_KEY_LINK[geocodeProvider?.toInteger()] + (geocodeProvider?.toInteger() == 1 ? \" -- <i><b>'Geocoding API'</b> must be enabled under <b><a href='https://console.cloud.google.com/apis/dashboard' target='_blank'>API's & Se",
-              "line": 519,
+              "line": 524,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "console.cloud.google.com",
@@ -135430,7 +135442,7 @@
             },
             {
               "evidence": "paragraph(GOOGLE_MAP_API_KEY_LINK + \" -- <i><b>'Maps JavaScript API'</b> must be enabled under <b><a href='https://console.cloud.google.com/apis/dashboard' target='_blank'>API's & Services</a></b>. Use <b>API restrictions</b> and select <b>",
-              "line": 557,
+              "line": 562,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "console.cloud.google.com",
@@ -135440,7 +135452,7 @@
             },
             {
               "evidence": "input name: 'memberPinColor', type: 'string', title: \"<b>Member pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (MidnightBlue) or a 6-digit <a href='https://www.w3school",
-              "line": 576,
+              "line": 581,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135450,7 +135462,7 @@
             },
             {
               "evidence": "input name: 'memberPinColor', type: 'string', title: \"<b>Member pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (MidnightBlue) or a 6-digit <a href='https://www.w3school",
-              "line": 576,
+              "line": 581,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135460,7 +135472,7 @@
             },
             {
               "evidence": "input name: 'memberGlyphColor', type: 'string', title: \"<b>${selectMemberGlyph} glyph and history color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Purple) or a 6-digit <a hr",
-              "line": 589,
+              "line": 594,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135470,7 +135482,7 @@
             },
             {
               "evidence": "input name: 'memberGlyphColor', type: 'string', title: \"<b>${selectMemberGlyph} glyph and history color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Purple) or a 6-digit <a hr",
-              "line": 589,
+              "line": 594,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135480,7 +135492,7 @@
             },
             {
               "evidence": "input name: 'regionPinColor', type: 'string', title: \"<b>Region pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (DarkRed) or a 6-digit <a href='https://www.w3schools.com",
-              "line": 592,
+              "line": 597,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135490,7 +135502,7 @@
             },
             {
               "evidence": "input name: 'regionPinColor', type: 'string', title: \"<b>Region pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (DarkRed) or a 6-digit <a href='https://www.w3schools.com",
-              "line": 592,
+              "line": 597,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135500,7 +135512,7 @@
             },
             {
               "evidence": "input name: 'regionGlyphColor', type: 'string', title: \"<b>Region glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Maroon) or a 6-digit <a href='https://www.w3schools.",
-              "line": 593,
+              "line": 598,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135510,7 +135522,7 @@
             },
             {
               "evidence": "input name: 'regionGlyphColor', type: 'string', title: \"<b>Region glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Maroon) or a 6-digit <a href='https://www.w3schools.",
-              "line": 593,
+              "line": 598,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135520,7 +135532,7 @@
             },
             {
               "evidence": "input name: 'regionHomeGlyphColor', type: 'string', title: \"<b>Region home glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (WhiteSmoke) or a 6-digit <a href='https://w",
-              "line": 594,
+              "line": 599,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135530,7 +135542,7 @@
             },
             {
               "evidence": "input name: 'regionHomeGlyphColor', type: 'string', title: \"<b>Region home glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (WhiteSmoke) or a 6-digit <a href='https://w",
-              "line": 594,
+              "line": 599,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -135540,7 +135552,7 @@
             },
             {
               "evidence": "paragraph(\"\"\"This integration requires the <a href='https://owntracks.org/' target='_blank'>OwnTracks</a> app to be installed on your mobile device.\\r",
-              "line": 604,
+              "line": 610,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -135550,7 +135562,7 @@
             },
             {
               "evidence": "| a. Navigate to the <a href='http://${location.hubs[0].getDataValue('localIP')}/hub/fileManager' target='_blank'>Hubitat File Manager</a> ('Settings->File Manager').\\r",
-              "line": 642,
+              "line": 648,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -135558,7 +135570,7 @@
             },
             {
               "evidence": "|For the source code and instructions, navigate to <a href='https://github.com/owntracks/docker-recorder/' target='_blank'>OwnTracks Recorder GitHub</a> \\r\\r",
-              "line": 661,
+              "line": 667,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -135568,7 +135580,7 @@
             },
             {
               "evidence": "|For the source code and instructions, navigate to <a href='https://github.com/owntracks/frontend/' target='_blank'>OwnTracks Frontend GitHub</a> \\r\\r",
-              "line": 691,
+              "line": 697,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -135578,7 +135590,7 @@
             },
             {
               "evidence": "|3. In the <a href='http://${location.hubs[0].getDataValue('localIP')}/logs' target='_blank'>Hubitat log</a>, look for the 'trace' output that looks like this:\\r",
-              "line": 709,
+              "line": 715,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -135586,7 +135598,7 @@
             },
             {
               "evidence": "paragraph(\"The <a href='https://owntracks.org/booklet/clients/recorder/' target='_blank'>OwnTracks Recorder</a> (optional) can be installed for local tracking. For the Recorder dashboard tiles and links to work outside the home network, the",
-              "line": 727,
+              "line": 733,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -135596,7 +135608,7 @@
             },
             {
               "evidence": "input name: 'recorderURL', type: 'text', title: \"HTTP URL of the OwnTracks Recorder. It will be in the format <b>'http://enter.your.recorder.ip:8083'</b>, assuming using the default port of 8083. The app will automatically add the <b>'$RECO",
-              "line": 728,
+              "line": 734,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "enter.your.recorder.ip",
@@ -135606,61 +135618,61 @@
             },
             {
               "evidence": "input 'notificationStaleList', 'capability.notification', title: 'Select device(s) to get notifications when members stop reporting locations and go stale.', multiple: true, required: false, offerAll: true, submitOnChange: true",
-              "line": 970,
+              "line": 976,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "input 'notificationList', 'capability.notification', title: 'Global enable/disable of notification devices. Select per member enter/leave notifications below for these devices.', multiple: true, required: false, offerAll: true, submitOnChan",
-              "line": 973,
+              "line": 979,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 1215,
+              "line": 1221,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 1222,
+              "line": 1228,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "removeChildDevices(getChildDevices())",
-              "line": 1536,
+              "line": 1542,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1718,
+              "line": 1724,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(debugResetHours * 3600, resetLogging)",
-              "line": 1774,
+              "line": 1780,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 $timeZoneOffset * * ? *\", dailyScheduler)",
-              "line": 1792,
+              "line": 1798,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule('0 0 0 * * ? *', nightlyMaintenance)",
-              "line": 1794,
+              "line": 1800,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return (imageCards ? \"http://${location.hubs[0].getDataValue('localIP')}/local/${memberName}.jpg\" : '')",
-              "line": 1837,
+              "line": 1843,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -135668,13 +135680,13 @@
             },
             {
               "evidence": "runIn(DEFAULT_staleLocationWatchdogInterval, locationFixWatchdog)",
-              "line": 1924,
+              "line": 1930,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "memberName = \"<a href='http://${location.hubs[0].getDataValue('localIP')}/device/edit/\" + deviceWrapper?.getId() + \"' target='_blank'>\" + member.name + '</a>'",
-              "line": 1994,
+              "line": 2000,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -135682,19 +135694,19 @@
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 2083,
+              "line": 2089,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 2143,
+              "line": 2149,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "// or use: https://avanc.github.io/owntracks-cards/ to create and save the JSON",
-              "line": 2864,
+              "line": 2870,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "avanc.github.io",
@@ -135704,19 +135716,19 @@
             },
             {
               "evidence": "addChildDevice('lpakula', 'OwnTracks Common Driver', commonChildDNI(), ['name': COMMON_CHILDNAME, isComponent: false])",
-              "line": 3082,
+              "line": 3088,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice('lpakula', 'OwnTracks Driver', dNI, ['name': \"${deviceName}\", isComponent: false])",
-              "line": 3101,
+              "line": 3107,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "return(\"https://maps.google.com/?q=${region?.lat},${region?.lon}&z=17&output=embed&\")",
-              "line": 3353,
+              "line": 3359,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.google.com",
@@ -135726,7 +135738,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 3422,
+              "line": 3428,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -135736,7 +135748,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 3931,
+              "line": 3937,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -135746,7 +135758,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 5224,
+              "line": 5230,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -135756,32 +135768,32 @@
             },
             {
               "evidence": "mappings {",
-              "line": 5383,
+              "line": 5389,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "httpGet(uri: url, headers: [timeout: 5]) {",
-              "line": 5461,
+              "line": 5467,
               "type": "HTTP_CALL",
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 335853,
+          "sourceBytes": 336517,
           "sourceFetched": true,
-          "sourceSha256": "03ec4a6ebf370cf683c617f0ab6d8b0a863497fd5d9b706ca8b12a64a2a43ce1",
+          "sourceSha256": "7f005f9c6b6842c60045cfd2028d034085c9107cbe4648e25487b51cce7d2207",
           "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20App.groovy"
         }
       ],
       "author": "Lyle Pakula",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-owntracks/130821",
-      "dateReleased": "2026-08-19",
+      "dateReleased": "2026-10-02",
       "description": "Connects OwnTracks mobile app to Hubitat",
       "documentationLink": "https://github.com/wir3z/hubitat/blob/main/owntracks-hubitat/README.md",
       "drivers": [
         {
-          "definitionLine": 185,
+          "definitionLine": 186,
           "definitionName": "OwnTracks Driver",
           "definitionNamespace": "lpakula",
           "manifestName": "OwnTracks Driver",
@@ -135799,7 +135811,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy'",
-              "line": 189,
+              "line": 190,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -135809,31 +135821,31 @@
             },
             {
               "evidence": "unschedule(processScheduledTransitionEvent)",
-              "line": 554,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn((state.transitionDeadband - data.tst), processScheduledTransitionEvent)",
               "line": 555,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn((state.transitionDeadband - data.tst), processScheduledTransitionEvent)",
+              "line": 556,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule(processScheduledTransitionEvent)",
-              "line": 594,
+              "line": 595,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, generateMemberTile)",
-              "line": 624,
+              "line": 625,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "<iframe src=\"https://maps.google.com/?q=${device.currentValue('lat')},${device.currentValue('lon')}&z=17&output=embed&\" style=\"height:100%;width:100%;border:none;\"></iframe>",
-              "line": 684,
+              "line": 685,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.google.com",
@@ -135842,13 +135854,13 @@
               }
             }
           ],
-          "sourceBytes": 47079,
+          "sourceBytes": 47136,
           "sourceFetched": true,
-          "sourceSha256": "23747fdcfcab9f0524d1f9a181f65240c57ca30d8fbefa1834b61a9c20cda3f6",
+          "sourceSha256": "1b50c8c56a135f30e978fd60f8909440137ae7e785e18cbee7626c04d8609f6a",
           "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy"
         },
         {
-          "definitionLine": 44,
+          "definitionLine": 45,
           "definitionName": "OwnTracks Common Driver",
           "definitionNamespace": "lpakula",
           "manifestName": "OwnTracks Common Driver",
@@ -135866,7 +135878,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Common%20Driver.groovy'",
-              "line": 48,
+              "line": 49,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -135875,9 +135887,9 @@
               }
             }
           ],
-          "sourceBytes": 5077,
+          "sourceBytes": 5142,
           "sourceFetched": true,
-          "sourceSha256": "272ea51f032da1e7f364877ba0c6fd64a69905dafc88171cf9cca1378c9bb292",
+          "sourceSha256": "0f73ac4927a9029a774de29dd4a2080743e55dd507d59727b987807a1323543b",
           "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Common%20Driver.groovy"
         }
       ],
@@ -153673,19 +153685,12 @@
       "version": "1.6.0"
     },
     {
-      "apps": [],
-      "author": "Mathew Beall",
-      "category": "Integrations",
-      "communityLink": "https://github.com/mathewbeall/hubitat-xsense-integration",
-      "dateReleased": "2026-01-20",
-      "description": "Complete Hubitat integration for X-Sense smoke and CO detectors (SC07-MR and compatible models) via the SBS50 bridge. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automatic child device creation.",
-      "documentationLink": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
-      "drivers": [
+      "apps": [
         {
-          "definitionLine": 22,
-          "definitionName": "X-Sense SBS50 Bridge",
+          "definitionLine": 23,
+          "definitionName": "X-Sense Integration",
           "definitionNamespace": "xsense",
-          "manifestName": "X-Sense SBS50 Bridge",
+          "manifestName": "X-Sense Integration",
           "manifestNamespace": "xsense",
           "observations": [
             {
@@ -153699,20 +153704,52 @@
               }
             },
             {
+              "evidence": "documentationLink: \"https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md\",",
+              "line": 32,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-app.groovy\"",
+              "line": 33,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-app.groovy"
+              }
+            },
+            {
+              "evidence": "def children = getChildDevices()",
+              "line": 114,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
               "evidence": "unschedule()",
-              "line": 55,
+              "line": 161,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 179,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"login\")",
-              "line": 77,
+              "line": 198,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"https://api.x-sense-iot.com/app\",",
-              "line": 117,
+              "line": 256,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.x-sense-iot.com",
@@ -153722,13 +153759,13 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 124,
+              "line": 263,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://cognito-idp.${state.cognitoRegion}.amazonaws.com/\",",
-              "line": 187,
+              "line": 326,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cognito-idp.${state.cognitoregion",
@@ -153738,13 +153775,13 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 198,
+              "line": 337,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://cognito-idp.${state.cognitoRegion}.amazonaws.com/\",",
-              "line": 282,
+              "line": 421,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cognito-idp.${state.cognitoregion",
@@ -153754,19 +153791,19 @@
             },
             {
               "evidence": "httpPost(httpParams) { resp ->",
-              "line": 293,
+              "line": 432,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(10, \"initialRefresh\")",
-              "line": 333,
+              "line": 471,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"https://api.x-sense-iot.com/app\",",
-              "line": 357,
+              "line": 495,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.x-sense-iot.com",
@@ -153776,13 +153813,13 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 367,
+              "line": 505,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://api.x-sense-iot.com/app\",",
-              "line": 401,
+              "line": 539,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.x-sense-iot.com",
@@ -153792,13 +153829,13 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 412,
+              "line": 550,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://api.x-sense-iot.com/app\",",
-              "line": 676,
+              "line": 814,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.x-sense-iot.com",
@@ -153808,13 +153845,13 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 684,
+              "line": 822,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://api.x-sense-iot.com/app\",",
-              "line": 727,
+              "line": 865,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.x-sense-iot.com",
@@ -153824,49 +153861,49 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 737,
+              "line": 875,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
-              "evidence": "childDevice = addChildDevice(\"xsense\", \"X-Sense Smoke/CO Detector\", dni, [",
-              "line": 799,
+              "evidence": "childDevice = addChildDevice(\"xsense\", driverName, dni, [",
+              "line": 974,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "childDevice = addChildDevice(\"hubitat\", \"Virtual Smoke Detector\", dni, [",
-              "line": 807,
+              "evidence": "childDevice = addChildDevice(\"hubitat\", genericDriver, dni, [",
+              "line": 983,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"pollDevices\")",
-              "line": 841,
+              "line": 1046,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(\"pollDevices\")",
-              "line": 844,
+              "line": 1049,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"pollDevices\")",
-              "line": 847,
+              "line": 1052,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"pollDevices\")",
-              "line": 850,
+              "line": 1055,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def url = \"https://${host}${uri}\"",
-              "line": 892,
+              "line": 1112,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${host",
@@ -153876,22 +153913,30 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 911,
+              "line": 1131,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 938,
+              "line": 1158,
               "type": "HTTP_CALL",
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 37351,
+          "sourceBytes": 49118,
           "sourceFetched": true,
-          "sourceSha256": "453ab22661bbbea775d7c97d21c27b697aa9fc926eb200a7f845aebb52169aac",
-          "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-hubitat-driver.groovy"
-        },
+          "sourceSha256": "12da3128056e788618463fdf98359fd88142d8ce231d43a3546f825630a33128",
+          "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-app.groovy"
+        }
+      ],
+      "author": "Mathew Beall",
+      "category": "Integrations",
+      "communityLink": "https://github.com/mathewbeall/hubitat-xsense-integration",
+      "dateReleased": "2026-10-02",
+      "description": "Complete Hubitat integration for X-Sense smoke/CO detectors (SC07-MR and compatible models) and water leak sensors (SWS51) via the SBS50 base station. Installed as a Hubitat app. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automatic child device creation.",
+      "documentationLink": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
+      "drivers": [
         {
           "definitionLine": 17,
           "definitionName": "X-Sense Smoke/CO Detector",
@@ -153920,12 +153965,35 @@
           "sourceFetched": true,
           "sourceSha256": "6f385a2ee49e2c72c249b7cbd3454972066db93e85af25faf80895d122afa449",
           "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-detector-child.groovy"
+        },
+        {
+          "definitionLine": 21,
+          "definitionName": "X-Sense Water Leak Sensor",
+          "definitionNamespace": "xsense",
+          "manifestName": "X-Sense Water Leak Sensor",
+          "manifestNamespace": "xsense",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 9,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            }
+          ],
+          "sourceBytes": 4791,
+          "sourceFetched": true,
+          "sourceSha256": "32894fbe8896f6e919f19d3f197e67247efe0c47a83d9d0bff33eea7bd4448d4",
+          "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-water-child.groovy"
         }
       ],
       "manifestFetched": true,
       "manifestUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json",
       "packageId": null,
-      "packageName": "X-Sense Smoke/CO Detector Integration",
+      "packageName": "X-Sense Integration",
       "repoAuthor": "Mathew Beall",
       "repoName": "Mathew Beall",
       "repoUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/repository.json",
@@ -153934,9 +154002,10 @@
         "Safety",
         "Smoke Detector",
         "CO Detector",
+        "Water Sensor",
         "X-Sense"
       ],
-      "version": "1.0.3"
+      "version": "2.0.2"
     },
     {
       "apps": [
@@ -348735,18 +348804,18 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-02T05:55:04Z",
+  "snapshotGenerated": "2026-10-03T05:30:35Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2276,
+    "componentsAttempted": 2277,
     "componentsFailed": 9,
-    "componentsFetched": 2267,
-    "componentsWithObservations": 2143,
-    "definitionsVerified": 2256,
-    "distinctSourceUrls": 2262,
+    "componentsFetched": 2268,
+    "componentsWithObservations": 2144,
+    "definitionsVerified": 2257,
+    "distinctSourceUrls": 2263,
     "sourceUrlsFailed": 9,
-    "sourceUrlsFetched": 2253
+    "sourceUrlsFetched": 2254
   }
 }
