@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-03T05:30:35Z`.
+Latest observation: `2026-10-04T06:05:06Z`.
 
-**40 package change(s):** added 3, declared definitions changed 2, removed 1, updated 35
+**42 package change(s):** added 3, declared definitions changed 3, removed 1, source location changed 1, updated 37
 
+- [X-Sense Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [X-Sense Smoke/CO Detector Integration: removed.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
 - [X-Sense Integration: added.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
@@ -43,6 +46,5 @@ Latest observation: `2026-10-03T05:30:35Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

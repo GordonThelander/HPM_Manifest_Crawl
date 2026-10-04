@@ -25901,8 +25901,8 @@ window.NETWORK_EVIDENCE = {
           "api.x-sense-iot.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 13
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 14
       },
       "reviewed": [],
       "tags": [
@@ -27688,5 +27688,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-03T05:30:35Z"
+  "snapshotGenerated": "2026-10-04T06:05:06Z"
 };

@@ -1,6 +1,6 @@
 # Registry validation report
 
-- Snapshot: `2026-10-03T05:30:35Z`
+- Snapshot: `2026-10-04T06:05:06Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
 - Packages indexed: **916**
@@ -601,13 +601,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2263 |
-| Source URLs fetched | 2254 |
+| Distinct source URLs | 2264 |
+| Source URLs fetched | 2255 |
 | Source URLs failed | 9 |
-| Components attempted | 2277 |
-| Components fetched | 2268 |
-| Literal definitions verified | 2257 |
-| Components with observations | 2144 |
+| Components attempted | 2278 |
+| Components fetched | 2269 |
+| Literal definitions verified | 2258 |
+| Components with observations | 2145 |
 
 ### Official Hubitat documentation pass
 

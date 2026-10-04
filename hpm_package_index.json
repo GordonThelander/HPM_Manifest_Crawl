@@ -28414,7 +28414,7 @@
     {
       "apps": [
         {
-          "definitionLine": 65,
+          "definitionLine": 89,
           "definitionName": "Wyze Vacuum Connect",
           "definitionNamespace": "brianwilson-hubitat",
           "manifestName": "Wyze Vacuum Connect",
@@ -28472,7 +28472,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy\",",
-              "line": 71,
+              "line": 95,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -28482,7 +28482,7 @@
             },
             {
               "evidence": "paragraph \"Create a free key at <a href='https://developer-api-console.wyze.com/#/apikey/view' target='_blank'>developer-api-console.wyze.com</a> \" +",
-              "line": 89,
+              "line": 113,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developer-api-console.wyze.com",
@@ -28492,165 +28492,171 @@
             },
             {
               "evidence": "input \"notifyDevices\", \"capability.notification\", title: \"Send notifications to\", multiple: true, required: false, submitOnChange: true",
-              "line": 138,
+              "line": 162,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "unschedule()",
-              "line": 433,
+              "line": 479,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// Named, not bare unschedule() -- see rescheduleDynamicPoll() for why:",
-              "line": 438,
+              "line": 484,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// a bare unschedule() cancels every pending one-shot job for this app,",
-              "line": 439,
+              "line": 485,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// including an in-flight rotation-sweep continuation (runIn(5,",
-              "line": 440,
+              "line": 486,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pollAllVacuums\")",
-              "line": 443,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if (settings.isDebug) runIn(3600, logsOff)",
-              "line": 444,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5, pollAllVacuums)",
-              "line": 452,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "// Deliberately NOT bare unschedule() -- that cancels *every* pending",
               "line": 489,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "// room via runIn(5, \"continueSweepDispatch\", ...), but this function",
-              "line": 492,
+              "evidence": "if (settings.isDebug) runIn(3600, logsOff)",
+              "line": 490,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "// bare unschedule() wiped out that just-scheduled continuation before it",
-              "line": 495,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"pollAllVacuums\")",
-              "line": 497,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "schedule(pollCron(minutes), pollAllVacuums)",
+              "evidence": "runIn(5, pollAllVacuums)",
               "line": 498,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "// Deliberately NOT bare unschedule() -- that cancels *every* pending",
+              "line": 535,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// room via runIn(5, \"continueSweepDispatch\", ...), but this function",
+              "line": 538,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// bare unschedule() wiped out that just-scheduled continuation before it",
+              "line": 541,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"pollAllVacuums\")",
+              "line": 543,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(pollCron(minutes), pollAllVacuums)",
+              "line": 544,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "addChildDevice(\"brianwilson-hubitat\", \"Wyze Robot Vacuum Driver\", mac, null,",
-              "line": 509,
+              "line": 555,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "httpPost([",
-              "line": 534,
+              "line": 580,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([",
-              "line": 616,
+              "line": 662,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(2, \"cancelAutoResumeDock\", [data: [mac: mac], overwrite: false])",
-              "line": 840,
+              "line": 886,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
-              "line": 859,
+              "line": 905,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
+              "line": 1082,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpGet(callbackHandler, [uri: VENUS_BASE, path: path, query: qp, headers: headers, timeout: 20], asyncData)",
-              "line": 1043,
+              "line": 1174,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPost(\"handleTokenRefreshResponse\", [",
-              "line": 1137,
+              "line": 1268,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "runIn(5, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
-              "line": 1526,
+              "line": 1666,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// NOTE for every runIn() that schedules this: they must pass",
-              "line": 1532,
+              "line": 1672,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpGet([",
-              "line": 2375,
+              "line": 2639,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpPost([",
-              "line": 2384,
+              "line": 2648,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([",
-              "line": 2430,
+              "line": 2694,
               "type": "HTTP_CALL",
               "value": "httpPost"
             }
           ],
-          "sourceBytes": 128736,
+          "sourceBytes": 144105,
           "sourceFetched": true,
-          "sourceSha256": "af01d8ce04e734671123e93040b3ee31074147074852a0940787814bed091318",
+          "sourceSha256": "e84ce72721fbb0ba342467a20cbbb6194fd43f16b185a6c5e9c2dd74c5ac8d9f",
           "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy"
         }
       ],
       "author": "Brian Wilson",
       "category": "Control",
       "communityLink": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
-      "dateReleased": "2026-09-16",
+      "dateReleased": "2026-10-03",
       "description": "Native integration for Wyze Robot Vacuums (200S/JA_RO2) -- room-based rotation cleaning, room timing learning mode, and status monitoring, no external server required",
       "documentationLink": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
       "drivers": [
@@ -28704,7 +28710,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.31.1"
+      "version": "1.33.1"
     },
     {
       "apps": [],
@@ -153867,43 +153873,43 @@
             },
             {
               "evidence": "childDevice = addChildDevice(\"xsense\", driverName, dni, [",
-              "line": 974,
+              "line": 990,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "childDevice = addChildDevice(\"hubitat\", genericDriver, dni, [",
-              "line": 983,
+              "line": 1001,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"pollDevices\")",
-              "line": 1046,
+              "line": 1064,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(\"pollDevices\")",
-              "line": 1049,
+              "line": 1067,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"pollDevices\")",
-              "line": 1052,
+              "line": 1070,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"pollDevices\")",
-              "line": 1055,
+              "line": 1073,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def url = \"https://${host}${uri}\"",
-              "line": 1112,
+              "line": 1130,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${host",
@@ -153913,27 +153919,27 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1131,
+              "line": 1149,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1158,
+              "line": 1176,
               "type": "HTTP_CALL",
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 49118,
+          "sourceBytes": 53455,
           "sourceFetched": true,
-          "sourceSha256": "12da3128056e788618463fdf98359fd88142d8ce231d43a3546f825630a33128",
+          "sourceSha256": "a0ac463d769be6c01afc0bee0b02867e4712ecea0b352857f4d4b25ddae97d9c",
           "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-app.groovy"
         }
       ],
       "author": "Mathew Beall",
       "category": "Integrations",
       "communityLink": "https://github.com/mathewbeall/hubitat-xsense-integration",
-      "dateReleased": "2026-10-02",
+      "dateReleased": "2026-10-03",
       "description": "Complete Hubitat integration for X-Sense smoke/CO detectors (SC07-MR and compatible models) and water leak sensors (SWS51) via the SBS50 base station. Installed as a Hubitat app. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automatic child device creation.",
       "documentationLink": "https://github.com/mathewbeall/hubitat-xsense-integration/blob/main/README.md",
       "drivers": [
@@ -153967,7 +153973,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-detector-child.groovy"
         },
         {
-          "definitionLine": 21,
+          "definitionLine": 22,
           "definitionName": "X-Sense Water Leak Sensor",
           "definitionNamespace": "xsense",
           "manifestName": "X-Sense Water Leak Sensor",
@@ -153984,10 +153990,33 @@
               }
             }
           ],
-          "sourceBytes": 4791,
+          "sourceBytes": 5326,
           "sourceFetched": true,
-          "sourceSha256": "32894fbe8896f6e919f19d3f197e67247efe0c47a83d9d0bff33eea7bd4448d4",
+          "sourceSha256": "267bce0a10a3ddfaeca4f6686c1cede8d56c96b5acff447593ca3d4b886d30dd",
           "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-water-child.groovy"
+        },
+        {
+          "definitionLine": 20,
+          "definitionName": "X-Sense Temperature/Humidity Sensor",
+          "definitionNamespace": "xsense",
+          "manifestName": "X-Sense Temperature/Humidity Sensor",
+          "manifestNamespace": "xsense",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 9,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            }
+          ],
+          "sourceBytes": 6537,
+          "sourceFetched": true,
+          "sourceSha256": "4931b0929a2f3f1e91e419227fb59688f29701e099c7e40b9180c9b1d676cf13",
+          "sourceUrl": "https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/xsense-th-child.groovy"
         }
       ],
       "manifestFetched": true,
@@ -154005,7 +154034,7 @@
         "Water Sensor",
         "X-Sense"
       ],
-      "version": "2.0.2"
+      "version": "2.1.2"
     },
     {
       "apps": [
@@ -288684,7 +288713,7 @@
     {
       "apps": [
         {
-          "definitionLine": 105,
+          "definitionLine": 123,
           "definitionName": "MCP Rule Server",
           "definitionNamespace": "mcp",
           "manifestName": "MCP Rule Server",
@@ -288692,19 +288721,19 @@
           "observations": [
             {
               "evidence": "// handlers move too: string-literal subscribe()/schedule() handler names resolve",
-              "line": 175,
+              "line": 193,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "// handlers move too: string-literal subscribe()/schedule() handler names resolve",
-              "line": 175,
+              "line": 193,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "paragraph \"<b style='color: orange;'>&#9888; Update available: v${state.updateCheck.latestVersion}</b> (you have v${currentVersion()}). Update via <a href='https://github.com/kingpanther13/Hubitat-local-MCP-server' target='_blank'>GitHub</a",
-              "line": 231,
+              "evidence": "paragraph \"<b style='color: orange;'>&#9888; Update available: v${_latestKnownVersion()}</b> (you have v${currentVersion()}). Update via <a href='https://github.com/kingpanther13/Hubitat-local-MCP-server' target='_blank'>GitHub</a> or Hubit",
+              "line": 249,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -288714,67 +288743,67 @@
             },
             {
               "evidence": "// createAccessToken() re-issues a fresh token, which changes both endpoint",
-              "line": 606,
+              "line": 624,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 611,
+              "line": 629,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "try { unschedule() } catch (Exception e) { /* best-effort teardown */ }",
-              "line": 718,
+              "line": 736,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 853,
+              "line": 871,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// unschedule() first so each updated()->initialize() cycle declaratively",
-              "line": 860,
+              "line": 878,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// (mirrors the unsubscribe() symmetry below). Must precede schedule() and",
-              "line": 862,
+              "line": 880,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { unschedule() }",
-              "line": 864,
+              "line": 882,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "catch (Exception e) { setupComplete = false; mcpLog(\"warn\", \"server\", \"unschedule() before re-schedule failed: ${e.message} -- duplicate schedules may persist\") }",
-              "line": 865,
+              "line": 883,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 3 ? * *\", \"checkForUpdate\")",
-              "line": 867,
+              "line": 885,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 927,
+              "line": 945,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "// _authorityHost so a pasted \"https://host:8443/path\" still reduces to its hostname, and drop",
-              "line": 1247,
+              "line": 1269,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "host",
@@ -288784,7 +288813,7 @@
             },
             {
               "evidence": "// \"http://192.168.1.133:8080\" -> \"192.168.1.133\". Hand-parsed rather than handed to",
-              "line": 1280,
+              "line": 1302,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "192.168.1.133",
@@ -288794,25 +288823,25 @@
             },
             {
               "evidence": "runIn(seconds, \"runMrtrCleanup\", [overwrite: true])",
-              "line": 2831,
+              "line": 2853,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(_mrtrAutoContinueDelaySeconds() * (attempt + 1), \"runMrtrAutoContinue\",",
-              "line": 3933,
+              "line": 3955,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "device = getChildDevices()?.find { it.id.toString() == deviceId.toString() }",
-              "line": 6772,
+              "line": 6794,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def hubBaseUri() { \"http://127.0.0.1:8080\" }",
-              "line": 6786,
+              "line": 6808,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -288822,56 +288851,56 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 6960,
+              "line": 7013,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (method == 'GET') httpGet(params, reader)",
-              "line": 7105,
+              "line": 7157,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "else httpPost(params, reader)",
-              "line": 7106,
+              "line": 7158,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpGet([",
-              "line": 7353,
+              "line": 7405,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "// capability.X, name.multiple=true). Omitting `.multiple=true` silently",
-              "line": 8237,
+              "line": 8289,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "* capability.X multiple=true → CSV: \"8,9\". JSON-array shape errors HTTP 500.",
-              "line": 9673,
+              "line": 9725,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "// capability.pushableButton on button.push actions) fall into a",
-              "line": 9743,
+              "line": 9795,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 10901,
+              "line": 10953,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 836986,
+          "sourceBytes": 839946,
           "sourceFetched": true,
-          "sourceSha256": "e2e8fff69d19cf192730552ed8cfe01c0e61aeb70d8744eec2e275cf7d42b852",
+          "sourceSha256": "09008e7ae6f38e623fcd7f408fce108a239e4fa547940ee31a6d5be69ab0a786",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -289358,14 +289387,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "0192d0bc055060445847f0957bf24dd53cdbb8a0d472e9b5489802e0e6bb29fc",
+          "sourceSha256": "d95dc1aea177403dde3d4a8da15846bc1da0ea807248befa8582ba341111bd19",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-09-29",
+      "dateReleased": "2026-10-03",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -289377,7 +289406,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.4.7"
+      "version": "4.4.8"
     },
     {
       "apps": [],
@@ -348804,18 +348833,18 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-03T05:30:35Z",
+  "snapshotGenerated": "2026-10-04T06:05:06Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2277,
+    "componentsAttempted": 2278,
     "componentsFailed": 9,
-    "componentsFetched": 2268,
-    "componentsWithObservations": 2144,
-    "definitionsVerified": 2257,
-    "distinctSourceUrls": 2263,
+    "componentsFetched": 2269,
+    "componentsWithObservations": 2145,
+    "definitionsVerified": 2258,
+    "distinctSourceUrls": 2264,
     "sourceUrlsFailed": 9,
-    "sourceUrlsFetched": 2254
+    "sourceUrlsFetched": 2255
   }
 }
