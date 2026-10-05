@@ -26967,7 +26967,7 @@
       "author": "Brian Wilson",
       "category": "Security",
       "communityLink": "https://community.hubitat.com/t/native-honeywell-vista-envisalink-tpi-alarm-driver/164482",
-      "dateReleased": "2026-10-02",
+      "dateReleased": "2026-10-04",
       "description": "Integration with Honeywell Vista/Envisalink Alarm Systems (Native)",
       "documentationLink": "https://github.com/bdwilson/hubitat/tree/master/Envisalink",
       "drivers": [
@@ -27042,86 +27042,86 @@
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(cmd, hubitat.device.Protocol.TELNET))",
-              "line": 331,
+              "line": 360,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(cmd, hubitat.device.Protocol.TELNET))",
-              "line": 331,
+              "line": 360,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "runIn(2, \"trigger1Off\")",
-              "line": 361,
+              "line": 390,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"trigger2Off\")",
-              "line": 370,
+              "line": 399,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keyTimeout\")",
-              "line": 407,
+              "line": 436,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, \"keyTimeout\")",
-              "line": 414,
+              "line": 443,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keyTimeout\")",
-              "line": 433,
+              "line": 462,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, \"keyTimeout\")",
-              "line": 446,
+              "line": 475,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keyTimeout\")",
-              "line": 457,
+              "line": 486,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"resendKey\")",
-              "line": 458,
+              "line": 487,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"bdwilson\", driverName, dni,",
-              "line": 478,
+              "line": 507,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"bdwilson\", \"Envisalink Partition\", dni,",
-              "line": 499,
+              "line": 528,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { deleteChildDevice(it.deviceNetworkId) }",
-              "line": 508,
+              "line": 537,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             }
           ],
-          "sourceBytes": 21203,
+          "sourceBytes": 22400,
           "sourceFetched": true,
-          "sourceSha256": "7740bbae9bc75665bb7d5f1fb98eee21c2425d3bb25098909636727b4870701f",
+          "sourceSha256": "f0a4eceae88b6df2e080e217760ac98dfaff9f2dbec23431f85a476ccda1d8d8",
           "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/Envisalink_Connection.groovy"
         },
         {
@@ -27152,9 +27152,9 @@
               }
             }
           ],
-          "sourceBytes": 2519,
+          "sourceBytes": 3106,
           "sourceFetched": true,
-          "sourceSha256": "df67a3f1f6b2810313ecc40e898815f3813bf42aa3a2c23a8d31b40fb17aba98",
+          "sourceSha256": "d42a0059336ef8c5d25307d3235510a8bab43be6e54355790e271d2f06058614",
           "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/Envisalink_Partition.groovy"
         },
         {
@@ -27333,7 +27333,7 @@
       "tags": [
         "Safety & Security"
       ],
-      "version": "2.0.5"
+      "version": "2.0.6"
     },
     {
       "apps": [],
@@ -288733,7 +288733,7 @@
             },
             {
               "evidence": "paragraph \"<b style='color: orange;'>&#9888; Update available: v${_latestKnownVersion()}</b> (you have v${currentVersion()}). Update via <a href='https://github.com/kingpanther13/Hubitat-local-MCP-server' target='_blank'>GitHub</a> or Hubit",
-              "line": 249,
+              "line": 254,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -288743,67 +288743,67 @@
             },
             {
               "evidence": "// createAccessToken() re-issues a fresh token, which changes both endpoint",
-              "line": 624,
+              "line": 628,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 629,
+              "line": 633,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "try { unschedule() } catch (Exception e) { /* best-effort teardown */ }",
-              "line": 736,
+              "line": 740,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 871,
+              "line": 875,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// unschedule() first so each updated()->initialize() cycle declaratively",
-              "line": 878,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "// (mirrors the unsubscribe() symmetry below). Must precede schedule() and",
-              "line": 880,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "try { unschedule() }",
               "line": 882,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "// (mirrors the unsubscribe() symmetry below). Must precede schedule() and",
+              "line": 884,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { unschedule() }",
+              "line": 886,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "catch (Exception e) { setupComplete = false; mcpLog(\"warn\", \"server\", \"unschedule() before re-schedule failed: ${e.message} -- duplicate schedules may persist\") }",
-              "line": 883,
+              "line": 887,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 3 ? * *\", \"checkForUpdate\")",
-              "line": 885,
+              "line": 889,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 945,
+              "line": 953,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "// _authorityHost so a pasted \"https://host:8443/path\" still reduces to its hostname, and drop",
-              "line": 1269,
+              "line": 1285,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "host",
@@ -288813,7 +288813,7 @@
             },
             {
               "evidence": "// \"http://192.168.1.133:8080\" -> \"192.168.1.133\". Hand-parsed rather than handed to",
-              "line": 1302,
+              "line": 1318,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "192.168.1.133",
@@ -288823,25 +288823,25 @@
             },
             {
               "evidence": "runIn(seconds, \"runMrtrCleanup\", [overwrite: true])",
-              "line": 2853,
+              "line": 2884,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(_mrtrAutoContinueDelaySeconds() * (attempt + 1), \"runMrtrAutoContinue\",",
-              "line": 3955,
+              "line": 3986,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "device = getChildDevices()?.find { it.id.toString() == deviceId.toString() }",
-              "line": 6794,
+              "line": 6825,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def hubBaseUri() { \"http://127.0.0.1:8080\" }",
-              "line": 6808,
+              "line": 6839,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -288851,56 +288851,56 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 7013,
+              "line": 7044,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (method == 'GET') httpGet(params, reader)",
-              "line": 7157,
+              "line": 7188,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "else httpPost(params, reader)",
-              "line": 7158,
+              "line": 7189,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpGet([",
-              "line": 7405,
+              "line": 7436,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "// capability.X, name.multiple=true). Omitting `.multiple=true` silently",
-              "line": 8289,
+              "line": 8322,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "* capability.X multiple=true → CSV: \"8,9\". JSON-array shape errors HTTP 500.",
-              "line": 9725,
+              "line": 9758,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "// capability.pushableButton on button.push actions) fall into a",
-              "line": 9795,
+              "line": 9828,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 10953,
+              "line": 10988,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 839946,
+          "sourceBytes": 844945,
           "sourceFetched": true,
-          "sourceSha256": "09008e7ae6f38e623fcd7f408fce108a239e4fa547940ee31a6d5be69ab0a786",
+          "sourceSha256": "a7e2a5731f60919e96f929e81055c359cb24bf9068b2dd7fec6a65640ce9bd28",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -289387,14 +289387,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "d95dc1aea177403dde3d4a8da15846bc1da0ea807248befa8582ba341111bd19",
+          "sourceSha256": "c5da816c16689f4a7b98e0ac3a442cb808e27710e9e75e7ed2b861536e5f4c7b",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-03",
+      "dateReleased": "2026-10-04",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -289406,7 +289406,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.4.8"
+      "version": "4.5.1"
     },
     {
       "apps": [],
@@ -348833,7 +348833,7 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-04T06:05:06Z",
+  "snapshotGenerated": "2026-10-05T05:57:14Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,

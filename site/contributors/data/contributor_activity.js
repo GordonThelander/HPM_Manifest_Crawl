@@ -4434,6 +4434,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:48b92b9779cfb136360696d6",
+          "observedAt": "2026-10-05T05:57:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:964cbb68c7d575e6b3da",
+          "packageName": "Honeywell Vista Envisalink TPI Alarm Integration",
+          "summary": "Honeywell Vista Envisalink TPI Alarm Integration: updated."
         }
       ],
       "appCount": 11,
@@ -4460,7 +4474,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 23,
+      "observedActivityCount": 24,
       "packages": [
         {
           "appCount": 2,
@@ -4523,9 +4537,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:964cbb68c7d575e6b3da",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json",
           "name": "Honeywell Vista Envisalink TPI Alarm Integration",
-          "publisherDate": "2026-10-02",
+          "publisherDate": "2026-10-04",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.0.5"
+          "version": "2.0.6"
         },
         {
           "appCount": 0,
@@ -19889,6 +19903,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2eff8d0791b0ddbe1b85dca5",
+          "observedAt": "2026-10-05T05:57:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -19903,7 +19931,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 26,
+      "observedActivityCount": 27,
       "packages": [
         {
           "appCount": 2,
@@ -19914,9 +19942,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-03",
+          "publisherDate": "2026-10-04",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.4.8"
+          "version": "4.5.1"
         }
       ]
     },
@@ -22306,10 +22334,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 916,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 369,
-    "eventCount": 368,
+    "attributedEventCount": 371,
+    "eventCount": 370,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-04T06:05:06Z"
+    "lastObservedAt": "2026-10-05T05:57:14Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -22323,7 +22351,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 914,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-04T06:05:06Z",
+  "snapshotGenerated": "2026-10-05T05:57:14Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
