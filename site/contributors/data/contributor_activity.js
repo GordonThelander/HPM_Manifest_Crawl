@@ -12504,6 +12504,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67c7ab9805eb47e19cda8f91",
+          "observedAt": "2026-10-06T06:34:52Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
         }
       ],
       "appCount": 3,
@@ -12526,7 +12540,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 20,
+      "observedActivityCount": 21,
       "packages": [
         {
           "appCount": 1,
@@ -12539,7 +12553,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Device Health Monitor",
           "publisherDate": "2026-10-01",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.7.1"
+          "version": "1.7.2"
         },
         {
           "appCount": 1,
@@ -19917,6 +19931,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f4ba59da84dbd380e285654c",
+          "observedAt": "2026-10-06T06:34:52Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -19931,7 +19959,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 27,
+      "observedActivityCount": 28,
       "packages": [
         {
           "appCount": 2,
@@ -19942,9 +19970,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-04",
+          "publisherDate": "2026-10-05",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.5.1"
+          "version": "4.5.3"
         }
       ]
     },
@@ -22334,10 +22362,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 916,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 371,
-    "eventCount": 370,
+    "attributedEventCount": 373,
+    "eventCount": 372,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-05T05:57:14Z"
+    "lastObservedAt": "2026-10-06T06:34:52Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -22351,7 +22379,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 256,
   "rankedPackageCount": 914,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-05T05:57:14Z",
+  "snapshotGenerated": "2026-10-06T06:34:52Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

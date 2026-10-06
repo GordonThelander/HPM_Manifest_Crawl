@@ -89469,7 +89469,7 @@
     {
       "apps": [
         {
-          "definitionLine": 49,
+          "definitionLine": 54,
           "definitionName": "Device Health Monitor",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Device Health Monitor",
@@ -89477,7 +89477,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy\",",
-              "line": 55,
+              "line": 60,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -89487,13 +89487,13 @@
             },
             {
               "evidence": "oauth: true",
-              "line": 60,
+              "line": 65,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "@Field static final String COMMUNITY_URL = \"https://community.hubitat.com/t/release-device-health-monitor/163229\"",
-              "line": 64,
+              "line": 69,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -89503,7 +89503,7 @@
             },
             {
               "evidence": "@Field static final String COFFEE_URL = \"https://paypal.me/jdthomas24?locale.x=en_US&country.x=US\"",
-              "line": 65,
+              "line": 70,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "paypal.me",
@@ -89512,44 +89512,54 @@
               }
             },
             {
+              "evidence": "@Field static final String BM_URL = \"https://community.hubitat.com/t/release-battery-monitor-2-0/162329\"",
+              "line": 77,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "community.hubitat.com",
+                "scheme": "https",
+                "url": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329"
+              }
+            },
+            {
               "evidence": "mappings {",
-              "line": 75,
+              "line": 82,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 115,
+              "line": 121,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, disableDebugLogging)",
-              "line": 133,
+              "line": 139,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 193,
+              "line": 200,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "runIn(5, scanAllDevices)",
-              "line": 203,
+              "line": 210,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost([uri: \"http://127.0.0.1:8080\", path: \"/login\",",
-              "line": 499,
+              "line": 506,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([uri: \"http://127.0.0.1:8080\", path: \"/login\",",
-              "line": 499,
+              "line": 506,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -89559,7 +89569,7 @@
             },
             {
               "evidence": "Map params = [uri: \"http://127.0.0.1:8080\", path: \"/hub/zwaveDetails/json\",",
-              "line": 514,
+              "line": 521,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -89569,13 +89579,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 519,
+              "line": 526,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "Map params = [uri: \"http://127.0.0.1:8080\", path: \"/hub/zigbeeDetails/json\",",
-              "line": 538,
+              "line": 545,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -89585,134 +89595,134 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 543,
+              "line": 550,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "runIn(60, \"zwProbeReadback\", [overwrite: true])",
-              "line": 624,
+              "line": 631,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (!ready) { runIn(30, \"zwProbeReadback\", [overwrite: true]); return }",
-              "line": 651,
+              "line": 658,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (waiting) runIn(30, \"zwProbeReadback\", [overwrite: true])",
-              "line": 653,
+              "line": 660,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reportScheduler\")",
-              "line": 1297,
+              "line": 1306,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(summaryTime, reportScheduler)",
-              "line": 1299,
+              "line": 1308,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"runDeepVerificationScan\")",
-              "line": 1303,
+              "line": 1312,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(settings.deepScanTime, runDeepVerificationScan)",
-              "line": 1305,
+              "line": 1314,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"scanAllDevices\")",
-              "line": 1311,
+              "line": 1320,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cronExpr, scanAllDevices)",
-              "line": 1321,
+              "line": 1330,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(actualDelay, \"finalizeDeepScan\", [overwrite: false])",
-              "line": 1382,
+              "line": 1391,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"processDeepScanGroup\", [overwrite: false])",
-              "line": 1398,
+              "line": 1407,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, \"finalizeDeepScan\", [data: [waits: waits + 1], overwrite: true])",
-              "line": 1460,
+              "line": 1469,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"runDeepVerificationScan\")",
-              "line": 1482,
+              "line": 1491,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, \"scanAllDevices\", [overwrite: true])",
-              "line": 1486,
+              "line": 1495,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"processScanChunk\")",
-              "line": 1522,
+              "line": 1531,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"processScanChunk\")",
-              "line": 1722,
+              "line": 1735,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"finalizeScan\")",
-              "line": 1724,
+              "line": 1737,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"scanAllDevices\", [overwrite: true])",
-              "line": 2261,
+              "line": 2321,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "input \"notifyDevices\", \"capability.notification\", title: \"Notification devices\", multiple: true, required: false, width: 6",
-              "line": 3008,
+              "line": 3094,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "input \"pushoverDevices\", \"capability.notification\", title: \"Pushover devices\", multiple: true, required: false, width: 6",
-              "line": 3010,
+              "line": 3096,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             }
           ],
-          "sourceBytes": 246632,
+          "sourceBytes": 252998,
           "sourceFetched": true,
-          "sourceSha256": "3e829daedaf602a339eb21245b50e2a7f122fd9bd202da96ab2c3a4c067b0e82",
+          "sourceSha256": "76c365624ec27a48343502a1a6a6c46e2b614d9005d817f7b6a90adef3e3e812",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
         }
       ],
@@ -89736,7 +89746,7 @@
         "Matter",
         "LAN"
       ],
-      "version": "1.7.1"
+      "version": "1.7.2"
     },
     {
       "apps": [],
@@ -216854,7 +216864,7 @@
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 142,
+          "definitionLine": 147,
           "definitionName": "UnifiProtectAPI",
           "definitionNamespace": "Snell",
           "manifestName": "UnifiProtectAPI",
@@ -216872,7 +216882,7 @@
             },
             {
               "evidence": "definition( name: \"UnifiProtectAPI\", namespace: \"Snell\", author: \"David Snell\", importUrl: \"https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectAPI.groovy\" ) {",
-              "line": 142,
+              "line": 147,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.drdsnell.com",
@@ -216882,37 +216892,37 @@
             },
             {
               "evidence": "getChildDevices().each{",
-              "line": 309,
+              "line": 346,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn( MotionDuration, \"GetSensorStatus\", [ data: [ Device: \"${ Device }\", ChildID: \"${ ChildID }\" ] ] )",
-              "line": 351,
+              "line": 389,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "getChildDevices().each{",
-              "line": 449,
+              "evidence": "//getChildDevices().each{",
+              "line": 488,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn( MotionDuration, \"GetSensorStatus\", [ data: [ Device: \"${ Device }\", ChildID: \"${ ChildID }\" ] ] )",
-              "line": 472,
+              "line": 512,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn( MotionDuration, \"GetSensorStatus\", [ data: [ Device: \"${ Device }\", ChildID: \"${ ChildID }\" ] ] )",
-              "line": 490,
+              "line": 530,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// @tomw: thanks for the idea: https://community.hubitat.com/t/websocket-client/11843/15",
-              "line": 901,
+              "line": 967,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -216922,49 +216932,49 @@
             },
             {
               "evidence": "unschedule( \"initialize\" )",
-              "line": 906,
+              "line": 972,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.connect( \"wss://${ UnifiURL }/proxy/protect/ws/updates?lastUpdateId=${ state.LastUpdatedID }\", ignoreSSLIssues: true, headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"${ sta",
-              "line": 940,
+              "line": 1010,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.connect( \"wss://${ UnifiURL }:${ ControllerPort }/ws/updates?lastUpdateId=${ state.LastUpdatedID }\", ignoreSSLIssues: true, headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"",
-              "line": 942,
+              "line": 1012,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule( initialize )",
-              "line": 960,
+              "line": 1030,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.close()",
-              "line": 965,
+              "line": 1035,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage( Message )",
-              "line": 984,
+              "line": 1055,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn( state.WebSocketDelay, initialize )",
-              "line": 1000,
+              "line": 1071,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// based on this example: https://dzone.com/articles/how-compress-and-uncompress",
-              "line": 1020,
+              "line": 1091,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "dzone.com",
@@ -216974,7 +216984,7 @@
             },
             {
               "evidence": "// The groupings appear to be based on here: https://github.com/hjdhjd/unifi-protect/blob/main/src/protect-api-events.ts",
-              "line": 1095,
+              "line": 1166,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -216984,7 +216994,7 @@
             },
             {
               "evidence": "// all of this is based on the packet formats described here: https://github.com/hjdhjd/unifi-protect/blob/main/src/protect-api-events.ts",
-              "line": 1228,
+              "line": 1299,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -216993,68 +217003,74 @@
               }
             },
             {
+              "evidence": "getChildDevices().each{",
+              "line": 1419,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
               "evidence": "unschedule()",
-              "line": 1350,
+              "line": 1449,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } 0/10 * ? * *\", \"Login\" )",
-              "line": 1356,
+              "line": 1455,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } * * ? * *\", \"refresh\" )",
-              "line": 1361,
+              "line": 1460,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } 0/5 * ? * *\", \"refresh\" )",
-              "line": 1364,
+              "line": 1463,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } 0/10 * ? * *\", \"refresh\" )",
-              "line": 1367,
+              "line": 1466,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } 0/15 * ? * *\", \"refresh\" )",
-              "line": 1370,
+              "line": 1469,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } 0/30 * ? * *\", \"refresh\" )",
-              "line": 1373,
+              "line": 1472,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } ${ Minute } * ? * *\", \"refresh\" )",
-              "line": 1376,
+              "line": 1475,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } ${ Minute } 0/3 ? * *\", \"refresh\" )",
-              "line": 1379,
+              "line": 1478,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule( \"${ Second } ${ Minute } ${ Hour } ? * *\", \"CheckForUpdate\" )",
-              "line": 1389,
+              "line": 1488,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/api/auth/login\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", body: \"{\\\"username\\\":\\\"${ Username }\\\",\\\"password\\\":\\\"${ Password }\\\",\\\"remember\\\":\\\"tru",
-              "line": 1397,
+              "line": 1496,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217064,7 +217080,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/api/login\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", body: \"{\\\"username\\\":\\\"${ Username }\\\",\\\"password\\\":\\\"${ Password }\\\",\\\"r",
-              "line": 1399,
+              "line": 1498,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217074,55 +217090,55 @@
             },
             {
               "evidence": "httpPost( Params ){ resp ->",
-              "line": 1403,
+              "line": 1502,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"api/auth/access-key\" ), [ Method: \"AuthKey\" ] )",
-              "line": 1455,
+              "line": 1554,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule( \"Login\" )",
-              "line": 1483,
+              "line": 1582,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule( \"refresh\" )",
-              "line": 1484,
+              "line": 1583,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"Bootstrap\" ] )",
-              "line": 1531,
+              "line": 1630,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetMotionEvents\", Number: \"${ Number }\" ] )",
-              "line": 1538,
+              "line": 1637,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "getChildDevices().each{",
-              "line": 1543,
+              "line": 1644,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "httpGet( Params ){ resp ->",
-              "line": 1556,
+              "line": 1663,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "PostEventToChild( \"${ DNI }\", \"image\", \"http://${ location.hub.localIP }/local/${ Filename }\", null )",
-              "line": 1569,
+              "line": 1676,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217132,7 +217148,7 @@
             },
             {
               "evidence": "PostEventToChild( \"${ DNI }\", \"imageUrl\", \"http://${ location.hub.localIP }/local/${ Filename }\", null )",
-              "line": 1570,
+              "line": 1677,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217142,7 +217158,7 @@
             },
             {
               "evidence": "PostEventToChild( \"${ DNI }\", \"Thumbnail\", \"<img width=\\\"20%\\\" height=\\\"20%\\\" src=\\\"http://${ location.hub.localIP }/local/${ Filename }\\\">\" )",
-              "line": 1571,
+              "line": 1678,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217152,97 +217168,97 @@
             },
             {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateLight\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 1844,
-              "type": "HTTP_CALL",
-              "value": "asynchttpPost"
-            },
-            {
-              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateCamera\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 1850,
-              "type": "HTTP_CALL",
-              "value": "asynchttpPost"
-            },
-            {
-              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateDoorbell\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 1856,
-              "type": "HTTP_CALL",
-              "value": "asynchttpPost"
-            },
-            {
-              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateBridge\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 1862,
-              "type": "HTTP_CALL",
-              "value": "asynchttpPost"
-            },
-            {
-              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateSensor\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 1868,
-              "type": "HTTP_CALL",
-              "value": "asynchttpPost"
-            },
-            {
-              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\", \"${ StopString }\" ), [ Method: \"StopCamera\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
               "line": 1955,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
+              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateCamera\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
+              "line": 1961,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateDoorbell\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
+              "line": 1967,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateBridge\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
+              "line": 1973,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"LocateSensor\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
+              "line": 1979,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\", \"${ StopString }\" ), [ Method: \"StopCamera\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
+              "line": 2066,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\", \"${ StopString }\" ), [ Method: \"StopCamera\", DNI: \"${ data.DNI }\", ChildID: \"${ data.ChildID }\" ] )",
-              "line": 1963,
+              "line": 2074,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\", \"${ MoveString }\" ), [ Method: \"MoveCameraXY\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\", X: ( TempX as int ), Y: ( TempY as int ) ] )",
-              "line": 1992,
+              "line": 2103,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\", \"${ ZoomString }\" ), [ Method: \"ZoomCamera\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\", Z: ( TempZ as int ) ] )",
-              "line": 2010,
+              "line": 2121,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost( \"ReceiveData\", GenerateProtectPTZCameraParams( \"${ Attempt }\" ), [ Method: \"GoToPreset\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\", Preset: \"${ Preset }\" ] )",
-              "line": 2023,
+              "line": 2134,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetBridgeStatus\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 2082,
+              "line": 2193,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetCameraStatus\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 2088,
+              "line": 2199,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetDoorbellStatus\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 2094,
+              "line": 2205,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetLightStatus\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 2100,
+              "line": 2211,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet( \"ReceiveData\", GenerateProtectParams( \"${ Attempt }\" ), [ Method: \"GetSensorStatus\", DNI: \"${ DNI }\", ChildID: \"${ ChildID }\" ] )",
-              "line": 2115,
+              "line": 2226,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:443/api/system/reboot\", ignoreSSLIssues: true, headers: [ Referer: \"https://${ UnifiURL }/settings/advanced\", Host: \"${ UnifiURL }\", Origin: \"https://${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Co",
-              "line": 2124,
+              "line": 2235,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217252,7 +217268,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/api/system/reboot\", ignoreSSLIssues: true, headers: [ Referer: \"https://${ UnifiURL }/settings/advanced\", Host: \"${ UnifiURL }\", Origin: \"https://${ UnifiURL }\", Accept: \"*/*\", Cook",
-              "line": 2126,
+              "line": 2237,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217262,13 +217278,13 @@
             },
             {
               "evidence": "httpPost( Params ){ resp ->",
-              "line": 2130,
+              "line": 2241,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:443/api/system/poweroff\", ignoreSSLIssues: true, headers: [ Referer: \"https://${ UnifiURL }/settings/advanced\", Host: \"${ UnifiURL }\", Origin: \"https://${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.",
-              "line": 2156,
+              "line": 2267,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217278,7 +217294,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/api/system/poweroff\", ignoreSSLIssues: true, headers: [ Referer: \"https://${ UnifiURL }/settings/advanced\", Host: \"${ UnifiURL }\", Origin: \"https://${ UnifiURL }\", Accept: \"*/*\", Co",
-              "line": 2158,
+              "line": 2269,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217288,13 +217304,13 @@
             },
             {
               "evidence": "httpPost( Params ){ resp ->",
-              "line": 2162,
+              "line": 2273,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", '",
-              "line": 2188,
+              "line": 2299,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217304,7 +217320,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", '",
-              "line": 2190,
+              "line": 2301,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217314,7 +217330,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie",
-              "line": 2194,
+              "line": 2305,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217324,7 +217340,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie",
-              "line": 2196,
+              "line": 2307,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217334,7 +217350,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", O",
-              "line": 2208,
+              "line": 2319,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217344,7 +217360,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", O",
-              "line": 2210,
+              "line": 2321,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217354,7 +217370,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie",
-              "line": 2214,
+              "line": 2325,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217364,7 +217380,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie",
-              "line": 2216,
+              "line": 2327,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217374,7 +217390,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/octet-stream\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"${ state.",
-              "line": 2228,
+              "line": 2339,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217384,7 +217400,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/octet-stream\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"${ state.",
-              "line": 2230,
+              "line": 2341,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217394,7 +217410,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/octet-stream\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"${ ",
-              "line": 2234,
+              "line": 2345,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217404,7 +217420,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }\", ignoreSSLIssues: true, requestContentType: \"application/octet-stream\", headers: [ Host: \"${ UnifiURL }\", Accept: \"*/*\", Cookie: \"${ state.Cookie }\", 'X-CSRF-Token': \"${ ",
-              "line": 2236,
+              "line": 2347,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217414,7 +217430,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Referer: \"https://${ UnifiURL }/protect/devices/${ Chil",
-              "line": 2248,
+              "line": 2359,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217424,7 +217440,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Referer: \"https://${ UnifiURL }/protect/devices/${ Chil",
-              "line": 2250,
+              "line": 2361,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217434,7 +217450,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }:${ ControllerPort }\", Accept",
-              "line": 2254,
+              "line": 2365,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217444,7 +217460,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }:${ ControllerPort }/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Host: \"${ UnifiURL }:${ ControllerPort }\", Accept",
-              "line": 2256,
+              "line": 2367,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217454,7 +217470,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Referer: \"https://${ UnifiURL }/protect/devices/${ Chil",
-              "line": 2268,
+              "line": 2379,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217464,7 +217480,7 @@
             },
             {
               "evidence": "Params = [ uri: \"https://${ UnifiURL }/proxy/protect/${ Path }/${ ChildID }\", ignoreSSLIssues: true, requestContentType: \"application/json\", contentType: \"application/json\", headers: [ Referer: \"https://${ UnifiURL }/protect/devices/${ Chil",
-              "line": 2270,
+              "line": 2381,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${",
@@ -217474,37 +217490,37 @@
             },
             {
               "evidence": "runIn( MotionDuration, \"GetSensorStatus\", [ data: [ Device: \"${ Device }\", ChildID: \"${ ChildID }\" ] ] )",
-              "line": 2352,
+              "line": 2488,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices().each{",
-              "line": 3478,
+              "line": 3667,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 3481,
+              "line": 3670,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice( ChildType, DNI, [ name: \"${ DNI }\" ] )",
-              "line": 3771,
+              "line": 3974,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "httpGet( uri: \"https://www.drdsnell.com/projects/hubitat/drivers/versions.json\", contentType: \"application/json\" ){ resp ->",
-              "line": 3822,
+              "line": 4021,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet( uri: \"https://www.drdsnell.com/projects/hubitat/drivers/versions.json\", contentType: \"application/json\" ){ resp ->",
-              "line": 3822,
+              "line": 4021,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.drdsnell.com",
@@ -217513,9 +217529,9 @@
               }
             }
           ],
-          "sourceBytes": 199252,
+          "sourceBytes": 211246,
           "sourceFetched": true,
-          "sourceSha256": "73584180a861e0a3aee708b944a841758966892ed324dd50af98a4e6cfc85bd4",
+          "sourceSha256": "1c6619af487f7419ce0ef14434a13219565b627f88ee4b8f8a43167988decfb9",
           "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectAPI.groovy"
         },
         {
@@ -217962,7 +217978,7 @@
           "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Light.groovy"
         },
         {
-          "definitionLine": 69,
+          "definitionLine": 65,
           "definitionName": "UnifiProtectChild-Sensor",
           "definitionNamespace": "Snell",
           "manifestName": "UnifiProtectChild-Sensor",
@@ -217970,7 +217986,7 @@
           "observations": [
             {
               "evidence": "* in compliance with the License. You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 27,
+              "line": 28,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -217980,7 +217996,7 @@
             },
             {
               "evidence": "definition( name: \"UnifiProtectChild-Sensor\", namespace: \"Snell\", author: \"David Snell\", importUrl: \"https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Sensor.groovy\" ) {",
-              "line": 69,
+              "line": 65,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.drdsnell.com",
@@ -217990,19 +218006,19 @@
             },
             {
               "evidence": "schedule( \"${ Second } ${ Minute } ${ Hour } ? * *\", \"CheckForUpdate\" )",
-              "line": 202,
+              "line": 243,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpGet( uri: \"https://www.drdsnell.com/projects/hubitat/drivers/versions.json\", contentType: \"application/json\" ){ resp ->",
-              "line": 463,
+              "line": 604,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet( uri: \"https://www.drdsnell.com/projects/hubitat/drivers/versions.json\", contentType: \"application/json\" ){ resp ->",
-              "line": 463,
+              "line": 604,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.drdsnell.com",
@@ -218011,9 +218027,9 @@
               }
             }
           ],
-          "sourceBytes": 26324,
+          "sourceBytes": 31818,
           "sourceFetched": true,
-          "sourceSha256": "c78ec55a87190d6879c21afee1ee6355b5bb05946170096d0da03790a2839706",
+          "sourceSha256": "847e65a483a5fb034057950a42f3767e6c1cb42e98a6f9991237ad2fcb03653c",
           "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Sensor.groovy"
         },
         {
@@ -288743,67 +288759,67 @@
             },
             {
               "evidence": "// createAccessToken() re-issues a fresh token, which changes both endpoint",
-              "line": 628,
+              "line": 634,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 633,
+              "line": 639,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "try { unschedule() } catch (Exception e) { /* best-effort teardown */ }",
-              "line": 740,
+              "line": 746,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 875,
+              "line": 881,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// unschedule() first so each updated()->initialize() cycle declaratively",
-              "line": 882,
+              "line": 888,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// (mirrors the unsubscribe() symmetry below). Must precede schedule() and",
-              "line": 884,
+              "line": 890,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { unschedule() }",
-              "line": 886,
+              "line": 892,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "catch (Exception e) { setupComplete = false; mcpLog(\"warn\", \"server\", \"unschedule() before re-schedule failed: ${e.message} -- duplicate schedules may persist\") }",
-              "line": 887,
+              "line": 893,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 3 ? * *\", \"checkForUpdate\")",
-              "line": 889,
+              "line": 895,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 953,
+              "line": 959,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "// _authorityHost so a pasted \"https://host:8443/path\" still reduces to its hostname, and drop",
-              "line": 1285,
+              "line": 1291,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "host",
@@ -288813,7 +288829,7 @@
             },
             {
               "evidence": "// \"http://192.168.1.133:8080\" -> \"192.168.1.133\". Hand-parsed rather than handed to",
-              "line": 1318,
+              "line": 1324,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "192.168.1.133",
@@ -288823,25 +288839,25 @@
             },
             {
               "evidence": "runIn(seconds, \"runMrtrCleanup\", [overwrite: true])",
-              "line": 2884,
+              "line": 2890,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(_mrtrAutoContinueDelaySeconds() * (attempt + 1), \"runMrtrAutoContinue\",",
-              "line": 3986,
+              "line": 3992,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "device = getChildDevices()?.find { it.id.toString() == deviceId.toString() }",
-              "line": 6825,
+              "line": 6854,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def hubBaseUri() { \"http://127.0.0.1:8080\" }",
-              "line": 6839,
+              "line": 6868,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -288851,56 +288867,56 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 7044,
+              "line": 7073,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (method == 'GET') httpGet(params, reader)",
-              "line": 7188,
+              "line": 7217,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "else httpPost(params, reader)",
-              "line": 7189,
+              "line": 7218,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpGet([",
-              "line": 7436,
+              "line": 7465,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "// capability.X, name.multiple=true). Omitting `.multiple=true` silently",
-              "line": 8322,
+              "line": 8351,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "* capability.X multiple=true → CSV: \"8,9\". JSON-array shape errors HTTP 500.",
-              "line": 9758,
+              "line": 9812,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "// capability.pushableButton on button.push actions) fall into a",
-              "line": 9828,
+              "line": 9882,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 10988,
+              "line": 11043,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 844945,
+          "sourceBytes": 849344,
           "sourceFetched": true,
-          "sourceSha256": "a7e2a5731f60919e96f929e81055c359cb24bf9068b2dd7fec6a65640ce9bd28",
+          "sourceSha256": "4b108ea0855e8509000f206cc72849d92324cb32f10375d23b643e1b34023408",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -289387,14 +289403,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "c5da816c16689f4a7b98e0ac3a442cb808e27710e9e75e7ed2b861536e5f4c7b",
+          "sourceSha256": "877d79e4d54b86fe25d5316fecc39b1d38ebe5dff1828f820a32436fbfdba8f5",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-04",
+      "dateReleased": "2026-10-05",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -289406,7 +289422,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.5.1"
+      "version": "4.5.3"
     },
     {
       "apps": [],
@@ -297080,7 +297096,7 @@
       "documentationLink": "https://github.com/kkossev/Hubitat/blob/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/readme.md",
       "drivers": [
         {
-          "definitionLine": 99,
+          "definitionLine": 100,
           "definitionName": "Tuya Temperature Humidity Illuminance LCD Display with a Clock",
           "definitionNamespace": "kkossev",
           "manifestName": "Tuya Temperature Humidity Illuminance LCD Display with a Clock",
@@ -297098,13 +297114,13 @@
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 91,
+              "line": 92,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "definition(name: 'Tuya Temperature Humidity Illuminance LCD Display with a Clock', namespace: 'kkossev', author: 'Krassimir Kossev', importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Temperature%20Humi",
-              "line": 99,
+              "line": 100,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -297114,7 +297130,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_locansqn', deviceJoinName: 'Haozee Temperature Humidity Illuminance LCD Display with a Clock' //",
-              "line": 134,
+              "line": 135,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "de.aliexpress.com",
@@ -297124,7 +297140,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_nnrfa68v', deviceJoinName: 'NOUS Temperature Humidity Illuminance LCD Display with a Clock' // h",
-              "line": 137,
+              "line": 138,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297134,7 +297150,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0400,0500,0000', outClusters:'0003,0019,000A', model:'TS0222', manufacturer:'_TZ3000_hy6ncvmw', deviceJoinName: 'Tuya Smart Indoor Luminance Sensor' // https://c",
-              "line": 144,
+              "line": 145,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297144,7 +297160,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0400,0500,0000', outClusters:'0003,0019,000A', model:'TS0222', manufacturer:'_TZ3000_hy6ncvmw', deviceJoinName: 'Tuya Smart Indoor Luminance Sensor' // https://c",
-              "line": 144,
+              "line": 145,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.amazon.co.uk",
@@ -297154,7 +297170,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0402,0405,0400,0000', outClusters:'0019,000A', model:'TS0222', manufacturer:'_TZ3000_kky16aay', deviceJoinName: 'Soil Temperature and Humidity Meter QT-075/THE01860' // https:/",
-              "line": 147,
+              "line": 148,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297164,16 +297180,6 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,E002,0000', outClusters:'0003,0019,000A', model:'TS0201', manufacturer:'_TZ3000_ywagc4rj', deviceJoinName: 'Tuya temperature and humidity sensor' // https://comm",
-              "line": 153,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "community.hubitat.com",
-                "scheme": "https",
-                "url": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock/88093/211?u=kkossev"
-              }
-            },
-            {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0402,0405,EF00,0000', outClusters:'0019,000A', model:'TS0201', manufacturer:'_TZ3210_ncw88jfq', deviceJoinName: 'Tuya temperature and humidity sensor' // https://community.hubi",
               "line": 154,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -297183,17 +297189,17 @@
               }
             },
             {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0004,0005,0402,0405,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_bjawzodf', deviceJoinName: 'Tuya like Temperature Humidity LCD Display' // https:",
-              "line": 156,
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0402,0405,EF00,0000', outClusters:'0019,000A', model:'TS0201', manufacturer:'_TZ3210_ncw88jfq', deviceJoinName: 'Tuya temperature and humidity sensor' // https://community.hubi",
+              "line": 155,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "de.aliexpress.com",
+                "host": "community.hubitat.com",
                 "scheme": "https",
-                "url": "https://de.aliexpress.com/item/4000739457722.html?gatewayAdapt=glo2deu"
+                "url": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock/88093/211?u=kkossev"
               }
             },
             {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_bjawzodf', deviceJoinName: 'Tuya like Temperature Humidity LCD Display' // https://de.aliexpress",
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0004,0005,0402,0405,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_bjawzodf', deviceJoinName: 'Tuya like Temperature Humidity LCD Display' // https:",
               "line": 157,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -297203,17 +297209,17 @@
               }
             },
             {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_zl1kmjqx', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://www.aliexp",
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_bjawzodf', deviceJoinName: 'Tuya like Temperature Humidity LCD Display' // https://de.aliexpress",
               "line": 158,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "www.aliexpress.com",
+                "host": "de.aliexpress.com",
                 "scheme": "https",
-                "url": "https://www.aliexpress.com/item/1005002836127648.html"
+                "url": "https://de.aliexpress.com/item/4000739457722.html?gatewayAdapt=glo2deu"
               }
             },
             {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_qyflbnbj', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://www.aliexp",
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_zl1kmjqx', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://www.aliexp",
               "line": 159,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -297223,8 +297229,18 @@
               }
             },
             {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE204_qyflbnbj', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://community.",
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_qyflbnbj', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://www.aliexp",
               "line": 160,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.aliexpress.com",
+                "scheme": "https",
+                "url": "https://www.aliexpress.com/item/1005002836127648.html"
+              }
+            },
+            {
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE204_qyflbnbj', deviceJoinName: 'Tuya Temperature Humidity sensor MIR-TE100-TY' // https://community.",
+              "line": 161,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297234,7 +297250,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE204_myd45weu', deviceJoinName: 'Tuya Temperature Humidity Soil Monitoring Sensor' // https://www.ali",
-              "line": 164,
+              "line": 165,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297244,7 +297260,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_ga1maeof', deviceJoinName: 'Tuya Temperature Humidity Soil Monitoring Sensor' // https://www.ali",
-              "line": 166,
+              "line": 167,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297254,16 +297270,6 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE284_oitavov2', deviceJoinName: 'Tuya Temperature Humidity Soil Monitoring Sensor' // https://communi",
-              "line": 167,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "community.hubitat.com",
-                "scheme": "https",
-                "url": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/598?u=kkossev"
-              }
-            },
-            {
-              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_2se8efxh', deviceJoinName: 'Tuya Temperature Humidity Soil Monitoring Sensor' // https://communi",
               "line": 168,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -297273,8 +297279,18 @@
               }
             },
             {
+              "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0004,0005,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_2se8efxh', deviceJoinName: 'Tuya Temperature Humidity Soil Monitoring Sensor' // https://communi",
+              "line": 169,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "community.hubitat.com",
+                "scheme": "https",
+                "url": "https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/598?u=kkossev"
+              }
+            },
+            {
               "evidence": "fingerprint profileId:\"0104\", endpointId:\"01\", inClusters:\"0004,0005,EF00,0000,ED00\", outClusters:\"0019,000A\", model:\"TS0601\", manufacturer:\"_TZE284_sgabhwa6\", controllerType: \"ZGB\", deviceJoinName: 'Tuya Temperature Humidity Soil Monitorin",
-              "line": 170,
+              "line": 172,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297284,7 +297300,7 @@
             },
             {
               "evidence": "fingerprint profileId:\"0104\", endpointId:\"01\", inClusters:\"0004,0005,EF00,0000,ED00\", outClusters:\"0019,000A\", model:\"TS0601\", manufacturer:\"_TZE284_nhgdf6qr\", controllerType: \"ZGB\", deviceJoinName: 'Tuya Temperature Humidity Soil Monitorin",
-              "line": 171,
+              "line": 173,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297294,7 +297310,7 @@
             },
             {
               "evidence": "fingerprint profileId:\"0104\", endpointId:\"01\", inClusters:\"0004,0005,EF00,0000,ED00\", outClusters:\"0019,000A\", model:\"TS0601\", manufacturer:\"_TZE284_33bwcga2\", controllerType: \"ZGB\", deviceJoinName: 'Tuya Temperature Humidity Soil Monitorin",
-              "line": 172,
+              "line": 174,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297304,7 +297320,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0004,0005,0402,0405,EF00', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_a8sdabtg', deviceJoinName: 'Tuya Temperature Humidity (no screen)' // https://com",
-              "line": 178,
+              "line": 180,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297314,7 +297330,7 @@
             },
             {
               "evidence": "// requre more Tuya Magic - queryOnDeviceAnnounce : implemnted in version 1.8.6 2025-08-12 https://github.com/Koenkk/zigbee-herdsman-converters/blob/c7e670672eb9c584429fe5462eb835c0ae9b0da0/src/lib/tuya.ts#L45",
-              "line": 181,
+              "line": 183,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297324,7 +297340,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_cirvgep4', deviceJoinName: 'Tuya Temperature Humidity LCD Display with a Clock' // https://commu",
-              "line": 188,
+              "line": 190,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297334,7 +297350,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE204_cirvgep4', deviceJoinName: 'Tuya Temperature Humidity LCD Display with a Clock' // https://commu",
-              "line": 189,
+              "line": 191,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297344,7 +297360,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_ysm4dsb1', deviceJoinName: 'Tuya Temperature Humidity' // not tested ! https://github.com/Koenkk",
-              "line": 190,
+              "line": 192,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297354,7 +297370,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_whkgqxse', deviceJoinName: 'Tuya Zigbee Temperature Humidity Sensor With Backlight' // https://w",
-              "line": 193,
+              "line": 195,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297364,7 +297380,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0000', outClusters:'0003,0019,000A', model:'TS0201', manufacturer:'_TZ3000_dowj6gyi', deviceJoinName: 'Tuya Temperature Humidity sensor' // https://community.hub",
-              "line": 200,
+              "line": 202,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297374,7 +297390,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0000', outClusters:'0003,0019,000A', model:'TS0201', manufacturer:'_TZ3000_8ybe88nf', deviceJoinName: 'Tuya Temperature Humidity sensor' // https://community.hub",
-              "line": 201,
+              "line": 203,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297384,7 +297400,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0000', outClusters:'0003,0019,000A', model:'TS0201', manufacturer:'_TZ3000_rdhukkmi', deviceJoinName: 'Tuya Temperature Humidity sensor' // https://community.hub",
-              "line": 202,
+              "line": 204,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297394,7 +297410,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0003,0402,0405,0000', outClusters:'0003,0019,000A', model:'TS0201', manufacturer:'_TZ3000_utwgoauk', deviceJoinName: 'Tuya Temperature Humidity sensor' // https://community.hub",
-              "line": 203,
+              "line": 205,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297404,7 +297420,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0003,0020,0402,0405', outClusters:'0019', model:'SNZB-02', manufacturer:'_TZ3000_utwgoauk', deviceJoinName: 'Tuya Temperature Humidity sensor (SNZB-02 clone)' // real devi",
-              "line": 204,
+              "line": 206,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297414,7 +297430,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0003,0001,0020,0402,0405', outClusters:'0019', model:'SNZB-02', manufacturer:'_TZ3000_utwgoauk', deviceJoinName: 'Tuya Temperature Humidity sensor (SNZB-02 clone)' // inCluster",
-              "line": 205,
+              "line": 207,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297424,7 +297440,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0003,0402,0405', outClusters:'0003,0402,0405', model:'RH3052', manufacturer:'TUYATEC-gqhxixyk', deviceJoinName: 'TUYATEC RH3052 Motion Sensor' // https://community.hubitat",
-              "line": 207,
+              "line": 209,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297434,7 +297450,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0001,0020,0000,0003,0402', outClusters:'0003', model:'THS317-ET', manufacturer:'OWON', deviceJoinName: 'OWON Temperature sensor' // https://community.hubitat.com/t/newbie-help-with-",
-              "line": 213,
+              "line": 215,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297444,7 +297460,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0001,0003,0020,0402,0405,FC57,FC11', outClusters:'0019', model:'SNZB-02P', manufacturer:'eWeLink', deviceJoinName: 'Sonoff Temperature and Humidity Sensor SNZB-02P' // https://",
-              "line": 214,
+              "line": 216,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297454,7 +297470,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0004,0005,EF00,0000', outClusters:'0019,000A', model:'TS0601', manufacturer:'_TZE200_vvmbj46n', deviceJoinName: 'Tuya Zigbee Temperature Humidity Sensor With Backlight' // TODO - co",
-              "line": 218,
+              "line": 220,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297464,7 +297480,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0003,0004,0005,0006,E001,E000,EF00', outClusters:'000A,0019', model:'TS000F', manufacturer:'_TZ3218_7fiyo3kv', deviceJoinName: 'MHCOZY switch with temp sensor' // https://commu",
-              "line": 221,
+              "line": 223,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297474,7 +297490,7 @@
             },
             {
               "evidence": "fingerprint profileId:'0104', endpointId:'01', inClusters:'0000,0003,0004,0005,0006,E001,E000,EF00', outClusters:'000A,0019', model:'TS000F', manufacturer:'_TZ3218_ya5d6wth', deviceJoinName: 'MHCOZY switch with temp sensor' // https://commu",
-              "line": 222,
+              "line": 224,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297484,7 +297500,7 @@
             },
             {
               "evidence": "// Illuminance/Temperature/Humidity sensor (dp2=illuminance, dp6=temperature, dp7=humidity) - cluster list unconfirmed, not visible in the reporter's screenshot - https://community.hubitat.com/t/-/88093/691",
-              "line": 266,
+              "line": 268,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297494,7 +297510,7 @@
             },
             {
               "evidence": "// 5-in-1 Soil Tester (soil moisture/fertility/temp/humidity/illuminance) - Excellux ZS-300TF - cluster list unconfirmed, not visible in the reporter's screenshot - https://community.hubitat.com/t/-/88093/687",
-              "line": 268,
+              "line": 270,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297504,7 +297520,7 @@
             },
             {
               "evidence": "'_TZE200_whkgqxse' : 'TS0601_Tuya', // Tuya Zigbee Temperature Humidity Sensor With Backlight https://www.aliexpress.com/item/1005003980647546.html",
-              "line": 348,
+              "line": 359,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297514,7 +297530,7 @@
             },
             {
               "evidence": "'_TZE200_a8sdabtg' : 'TS0601_Tuya', // Tuya Zigbee Temperature Humidity Sensor - no display! https://www.amazon.de/gp/product/B09NKCDXT9 - TODO !",
-              "line": 349,
+              "line": 360,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.amazon.de",
@@ -297524,7 +297540,7 @@
             },
             {
               "evidence": "'_TZE200_qoy0ekbd' : 'TS0601_Tuya', // https://www.aliexpress.com/item/1005004896603070.html - TODO !",
-              "line": 350,
+              "line": 361,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297534,7 +297550,7 @@
             },
             {
               "evidence": "'_TZE200_znbl8dj5' : 'TS0601_Tuya', // https://www.aliexpress.com/item/1005004116638127.html - TODO !",
-              "line": 351,
+              "line": 362,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297544,7 +297560,7 @@
             },
             {
               "evidence": "'_TZE200_zl1kmjqx' : 'TS0601_Tuya', // https://www.aliexpress.com/item/1005002836127648.html",
-              "line": 352,
+              "line": 363,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297554,7 +297570,7 @@
             },
             {
               "evidence": "'_TZE200_ysm4dsb1' : 'TS0601_Tuya', // RSH-HS06, confirmed via zigbee-herdsman-converters: dp1 temp /10, dp2 humidity raw, dp4 battery, dp9 temp unit https://github.com/Koenkk/zigbee2mqtt/issues/20815",
-              "line": 364,
+              "line": 375,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297564,7 +297580,7 @@
             },
             {
               "evidence": "'_TZE204_qyflbnbj' : 'TS0601_Tuya', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/522?u=kkossev",
-              "line": 368,
+              "line": 380,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297574,7 +297590,7 @@
             },
             {
               "evidence": "'_TZE200_nnrfa68v' : 'TS0601_Tuya', // NOUS E6 https://community.hubitat.com/t/nous-humidity-and-temp-sensor/137764/7?u=kkossev",
-              "line": 369,
+              "line": 381,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297584,7 +297600,7 @@
             },
             {
               "evidence": "'_TZE200_cirvgep4' : 'TS0601_Tuya_2', // https://www.aliexpress.com/item/1005005198387789.html",
-              "line": 376,
+              "line": 388,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.aliexpress.com",
@@ -297594,7 +297610,7 @@
             },
             {
               "evidence": "'_TZE200_yjjdcqsq' : 'TS0601_Tuya_2', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/446?u=kkossev",
-              "line": 378,
+              "line": 390,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297604,7 +297620,7 @@
             },
             {
               "evidence": "'_TZE204_yjjdcqsq' : 'TS0601_Tuya_2', // https://community.hubitat.com/t/newbie-help-with-owon-ths317-et-multi-sensor/122671/18?u=kkossev",
-              "line": 379,
+              "line": 391,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297614,7 +297630,7 @@
             },
             {
               "evidence": "'_TZE204_upagmta9' : 'TS0601_Tuya_2', // not tested // https://github.com/zigpy/zha-device-handlers/issues/2694",
-              "line": 383,
+              "line": 395,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297624,7 +297640,7 @@
             },
             {
               "evidence": "'_TZE200_vvmbj46n' : 'TS0601_Tuya_2', // https://community.hubitat.com/t/looking-for-a-zigbee-temperature-humidity-illumination-sensor-with-display/130896/14?u=kkossev",
-              "line": 384,
+              "line": 396,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297634,7 +297650,7 @@
             },
             {
               "evidence": "'_TZE284_9ern5sfh' : 'TS0601_Tuya_3', // added v2.1.1 https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/675?u=kkossev",
-              "line": 388,
+              "line": 400,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297644,7 +297660,7 @@
             },
             {
               "evidence": "'_TZE204_s139roas' : 'TS0601_AVATTO_Ink', // AVATTO Ink Display https://github.com/Koenkk/zigbee-herdsman-converters/blob/a32df6625f31f9e2d9cc6305971b6f5b022cd166/src/devices/avatto.ts#L10-L31",
-              "line": 397,
+              "line": 409,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297654,7 +297670,7 @@
             },
             {
               "evidence": "'_TZ3000_dowj6gyi' : 'TS0201', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/512?u=kkossev",
-              "line": 412,
+              "line": 424,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297664,7 +297680,7 @@
             },
             {
               "evidence": "'_TZ3000_utwgoauk' : 'Zigbee NON-Tuya', // reports model 'SNZB-02'; has Poll Control cluster 0x0020 like genuine SNZB-02D/02P - needs sleepy-device reporting config, unlike plain TS0201 // https://community.hubitat.com/t/-/88093/694?u=kkoss",
-              "line": 415,
+              "line": 427,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297674,7 +297690,7 @@
             },
             {
               "evidence": "'_TZ3000_qaaysllp' : 'TS0201_LCZ030', // NAS-TH02B / NEO Coolcam ? - T/H/I - testing! // https://github.com/Datakg/tuya/blob/53e33ae7767aedbb5d2138f2a31798badffd80d2/zhaquirks/tuya/ts0201_neo.py",
-              "line": 429,
+              "line": 441,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -297684,7 +297700,7 @@
             },
             {
               "evidence": "'_TYZB01_ftdkanlj' : 'TS0222', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/419?u=kkossev",
-              "line": 431,
+              "line": 443,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297694,7 +297710,7 @@
             },
             {
               "evidence": "'_TYZB01_fi5yftwv' : 'TS0222', // https://community.hubitat.com/t/konke-bond-series-enviroment-sensor/126445?u=kkossev",
-              "line": 432,
+              "line": 444,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297704,7 +297720,7 @@
             },
             {
               "evidence": "'_TZ3000_kky16aay' : 'TS0222_Soil', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/535?u=kkossev",
-              "line": 435,
+              "line": 447,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297714,7 +297730,7 @@
             },
             {
               "evidence": "'_TZ3000_ywagc4rj' : 'TS0201_TH', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock/88093/210?u=kkossev",
-              "line": 440,
+              "line": 452,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297724,7 +297740,7 @@
             },
             {
               "evidence": "'_TZ3210_ncw88jfq' : 'TS0201_TH', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/436?u=kkossev",
-              "line": 441,
+              "line": 453,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297734,7 +297750,7 @@
             },
             {
               "evidence": "'_TZE204_myd45weu' : 'TS0601_Soil', // https://community.hubitat.com/t/release-tuya-temperature-humidity-illuminance-lcd-display-with-a-clock-w-healthstatus/88093/519?u=kkossev",
-              "line": 444,
+              "line": 456,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297744,7 +297760,7 @@
             },
             {
               "evidence": "'_TZE284_33bwcga2' : 'TS0601_Soil_II', // https://community.hubitat.com/t/driver-for-tuya-soil-tester-sensor/156528?u=kkossev",
-              "line": 453,
+              "line": 465,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297754,7 +297770,7 @@
             },
             {
               "evidence": "'_TZE204_rbbx5mfq' : 'TS0601_Illum_TH', // confirmed via zigbee-herdsman-converters dp2=illuminance(raw) dp6=temp(/10) dp7=humidity(/10) - https://community.hubitat.com/t/-/88093/691",
-              "line": 458,
+              "line": 470,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297764,7 +297780,7 @@
             },
             {
               "evidence": "'_TZE284_hdml1aav' : 'TS0601_Soil_5IN1', // Excellux ZS-300TF 5-in-1 soil tester, confirmed via zigbee-herdsman-converters - https://community.hubitat.com/t/-/88093/687",
-              "line": 459,
+              "line": 471,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -297774,313 +297790,331 @@
             },
             {
               "evidence": "if (settings?.logEnable) { log.debug \"${device.displayName} parse() descMap =${zigbee.parseDescriptionAsMap(description)} description = ${description}\" }",
-              "line": 515,
+              "line": 527,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 517,
+              "line": 529,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule('deviceCommandTimeout')",
-              "line": 591,
+              "line": 603,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.command(0xEF00, 0x03)",
-              "line": 604,
+              "line": 616,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (settings?.logEnable) { log.debug \"${device.displayName} <b> UNPROCESSED </b> parse() descMap = ${zigbee.parseDescriptionAsMap(description)}\" }",
-              "line": 628,
+              "line": 640,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def status = zigbee.convertHexToInt(descMap.data[0]) // Status: Success (0x00)",
-              "line": 658,
+              "line": 670,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//def attr = zigbee.convertHexToInt(descMap.data[3]) * 256 + zigbee.convertHexToInt(descMap.data[2]) // Attribute: OnOff (0x0000)",
-              "line": 659,
+              "line": 671,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//def dataType = zigbee.convertHexToInt(descMap.data[4]) // Data Type: Boolean (0x10)",
-              "line": 661,
+              "line": 673,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def min = zigbee.convertHexToInt(descMap.data[6]) * 256 + zigbee.convertHexToInt(descMap.data[5])",
-              "line": 662,
+              "line": 674,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def max = zigbee.convertHexToInt(descMap.data[8] + descMap.data[7])",
-              "line": 663,
+              "line": 675,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "delta = zigbee.convertHexToInt(descMap.data[10] + descMap.data[9])",
-              "line": 666,
+              "line": 678,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "delta = zigbee.convertHexToInt(descMap.data[9])",
-              "line": 669,
+              "line": 681,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String seqNum = zigbee.convertToHexString(tsn & 0xFF, 2)",
-              "line": 745,
+              "line": 757,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String ieeeAddr = data[1..8].collect { it instanceof String ? it.padLeft(2, '0') : zigbee.convertToHexString((it as int) & 0xFF, 2) }.join(' ')",
-              "line": 747,
+              "line": 759,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String seqNum = zigbee.convertToHexString(tsn & 0xFF, 2)",
-              "line": 776,
+              "line": 788,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String nwkAddrRequested = data[1..2].collect { it instanceof String ? it.padLeft(2, '0') : zigbee.convertToHexString((it as int) & 0xFF, 2) }.join(' ')",
-              "line": 779,
+              "line": 791,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def cmds = zigbee.command(CLUSTER_TUYA, SETTIME, '0008' + zigbee.convertToHexString((int)(now() / 1000), 8) + zigbee.convertToHexString((int)((now() + offset) / 1000), 8))",
-              "line": 827,
+              "line": 839,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds.each { sendHubCommand(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE)) }",
-              "line": 830,
+              "line": 842,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "cmds.each { sendHubCommand(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE)) }",
-              "line": 830,
+              "line": 842,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
+              "evidence": "List<String> cmds = zigbee.command(CLUSTER_TUYA, 0x25, '010001')",
+              "line": 847,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "List<String> cmds = zigbee.command(0xEF00, 0x03)",
-              "line": 842,
+              "line": 860,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def dp = zigbee.convertHexToInt(descMap?.data[2 + i]) // \"dp\" field describes the action/message of a command frame",
-              "line": 848,
+              "line": 866,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant",
-              "line": 849,
+              "line": 867,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i])",
-              "line": 850,
+              "line": 868,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "retValue = retValue + power * zigbee.convertHexToInt(_data[index + i + 5])",
-              "line": 1279,
+              "line": 1328,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return getChildDevices()?.find { c -> legacy.any { c.deviceNetworkId?.endsWith(it) } }",
-              "line": 1320,
+              "line": 1369,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitat\", hubDriverType, childId,",
-              "line": 1414,
+              "line": 1463,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def childDevices = getChildDevices()",
-              "line": 1425,
+              "line": 1474,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule('sendDelayedEventTemp') //get rid of stale queued reports",
-              "line": 1462,
+              "line": 1511,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(timeRamaining, 'sendDelayedEventTemp', [overwrite: true, data: map])",
-              "line": 1469,
+              "line": 1518,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sendDelayedEventHumi')",
-              "line": 1505,
+              "line": 1554,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(timeRamaining, 'sendDelayedEventHumi', [overwrite: true, data: map])",
-              "line": 1512,
+              "line": 1561,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1550,
+              "line": 1599,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(86400, 'logsOff', [overwrite: true, misfire: 'ignore']) // turn off debug logging after 24 hours",
-              "line": 1567,
+              "line": 1616,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('logsOff')",
-              "line": 1571,
+              "line": 1620,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += sendTuyaCommand('13', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
-              "line": 1578,
+              "line": 1627,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += sendTuyaCommand('09', DP_TYPE_ENUM, zigbee.convertToHexString(intValue, 2))",
+              "line": 1646,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += sendTuyaCommand('0A', DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
-              "line": 1598,
+              "line": 1651,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += sendTuyaCommand('0B', DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
-              "line": 1602,
+              "line": 1655,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(0x0400, 0xF001, DataType.UINT8, intValue, [:], 200)",
-              "line": 1607,
+              "line": 1660,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += sendTuyaCommand('14', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
-              "line": 1612,
+              "line": 1665,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += sendTuyaCommand('14', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
-              "line": 1617,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += sendTuyaCommand('11', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
-              "line": 1621,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += sendTuyaCommand('12', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
-              "line": 1625,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += sendTuyaCommand(\"0C\", DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
-              "line": 1630,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += sendTuyaCommand(\"0D\", DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
-              "line": 1633,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(0x0402, 0x0000, DataType.INT16, minRptTemp, maxRptTemp, tempChange, [:], 200)",
-              "line": 1653,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(0x0405, 0x0000, DataType.UINT16, minRptHumi, maxRptHumi, humiChange, [:], 200)",
-              "line": 1662,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(0x0001, 0x0021, DataType.UINT8, 10, 14400, 0x01, [:], 200) // if isConfigurableSleepyDevice()",
               "line": 1670,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0402, 0x0000, [:], 250)",
-              "line": 1672,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0405, 0x0000, [:], 250)",
-              "line": 1673,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0001, 0x0021, [:], 250)",
+              "evidence": "cmds += sendTuyaCommand('11', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
               "line": 1674,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += sendTuyaCommand('12', DP_TYPE_VALUE, zigbee.convertToHexString(intValue as int, 8))",
+              "line": 1678,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += sendTuyaCommand(\"0C\", DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
+              "line": 1683,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += sendTuyaCommand(\"0D\", DP_TYPE_VALUE, zigbee.convertToHexString(fncmd as int, 8))",
+              "line": 1686,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += sendTuyaCommand('11', DP_TYPE_VALUE, zigbee.convertToHexString(intValue, 8))",
+              "line": 1692,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(0x0402, 0x0000, DataType.INT16, minRptTemp, maxRptTemp, tempChange, [:], 200)",
+              "line": 1711,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(0x0405, 0x0000, DataType.UINT16, minRptHumi, maxRptHumi, humiChange, [:], 200)",
+              "line": 1720,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(0x0001, 0x0021, DataType.UINT8, 10, 14400, 0x01, [:], 200) // if isConfigurableSleepyDevice()",
+              "line": 1728,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0402, 0x0000, [:], 250)",
+              "line": 1730,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0405, 0x0000, [:], 250)",
+              "line": 1731,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0001, 0x0021, [:], 250)",
+              "line": 1732,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "cmds += zigbee.writeAttribute(0xE002, 0xE00B, 0x30, 0x01, [value: temperatureScale], 266)",
-              "line": 1680,
+              "line": 1738,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "// https://github.com/zigpy/zha-device-handlers/issues/3097#issuecomment-2060104995",
-              "line": 1684,
+              "line": 1742,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -298090,127 +298124,127 @@
             },
             {
               "evidence": "unschedule('configTimer')",
-              "line": 1734,
+              "line": 1792,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'configTimer' , [overwrite: true, misfire: 'ignore'])",
-              "line": 1746,
+              "line": 1804,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('configTimer')",
-              "line": 1751,
+              "line": 1809,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('configTimer')",
-              "line": 1759,
+              "line": 1817,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('configTimer')",
-              "line": 1765,
+              "line": 1823,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('configTimer')",
-              "line": 1774,
+              "line": 1832,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'configTimer' /*, [overwrite: true, misfire: \"ignore\"]*/)",
-              "line": 1797,
+              "line": 1855,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0021, [:], delay = 200) // Battery Percent",
-              "line": 1814,
+              "line": 1872,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0021, [:], delay = 200)",
-              "line": 1831,
+              "line": 1889,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0402, 0x0000, [:], delay = 200)",
-              "line": 1832,
+              "line": 1890,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0405, 0x0000, [:], delay = 200)",
-              "line": 1833,
+              "line": 1891,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.command(0xEF00, 0x03)",
-              "line": 1836,
+              "line": 1894,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands( zigbee.readAttribute(zigbee.BASIC_CLUSTER, 0x01, [:], 0) )",
-              "line": 1847,
+              "line": 1905,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'deviceCommandTimeout')",
-              "line": 1860,
+              "line": 1918,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String epHex = zigbee.convertToHexString(relay, 2)",
-              "line": 1881,
+              "line": 1939,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String epHex = zigbee.convertToHexString(relay, 2)",
-              "line": 1904,
+              "line": 1962,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//schedule(\"1 * * * * ? *\", 'deviceHealthCheck') // for quick test",
-              "line": 1947,
+              "line": 2005,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${rnd.nextInt(59)} ${rnd.nextInt(59)} 1/3 * * ? *\", 'deviceHealthCheck')",
-              "line": 1948,
+              "line": 2006,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule() ; logInfo 'All scheduled jobs DELETED'",
-              "line": 2012,
+              "line": 2070,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { child ->",
-              "line": 2016,
+              "line": 2074,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "if (getModelGroup() == 'OWON') { // https://github.com/Koenkk/zigbee-herdsman-converters/blob/e8750f6f2a34a3a6ae87f61e989a00964fb1107f/devices/owon.js",
-              "line": 2080,
+              "line": 2138,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -298220,7 +298254,7 @@
             },
             {
               "evidence": "// https://github.com/dresden-elektronik/deconz-rest-plugin/issues/5738#issuecomment-1579521543",
-              "line": 2082,
+              "line": 2140,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -298230,92 +298264,98 @@
             },
             {
               "evidence": "cmds += zigbee.configureReporting(0x0001, 0x0021, DataType.UINT8, 60, 3600, 0x01, [:], 200)",
-              "line": 2088,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(0x0402, 0x0000, DataType.INT16, 60, 300, 0x32, [:], 200) // or delta = 0x14",
-              "line": 2089,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0001, 0x0021, [:], 250)",
-              "line": 2090,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0402, 0x0000, [:], 250)",
-              "line": 2091,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(0x0000, [0x0004, 0x000, 0x0001, 0x0005, 0x0007, 0xfffe], [:], delay = 200) // Cluster: Basic, attributes: Man.name, ZLC ver, App ver, Model Id, Power Source, attributeReportingStatus",
-              "line": 2103,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.writeAttribute(0x0000, 0xffde, 0x20, 0x13, [:], delay = 200) // was commented out ver 1.0.10 2022/11/10; returned back ver 1.20 01/15/2023",
-              "line": 2104,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(1, updated) // send the default or previously configured preference parameters during the Zigbee pairing process..",
-              "line": 2115,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule()",
-              "line": 2121,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn( 3, logInitializeRezults)",
-              "line": 2124,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.command(CLUSTER_TUYA, tuyaCmd, [:], delay = 200, PACKET_ID + dp + dp_type + zigbee.convertToHexString((int)(fncmd.length() / 2), 4) + fncmd )",
-              "line": 2129,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE))",
-              "line": 2138,
-              "type": "HUB_ACTION",
-              "value": true
-            },
-            {
-              "evidence": "sendHubCommand(allActions)",
-              "line": 2142,
-              "type": "SEND_HUB_COMMAND",
-              "value": true
-            },
-            {
-              "evidence": "return zigbee.convertToHexString(new Random().nextInt(65536), 4)",
               "line": 2146,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.configureReporting(0x0402, 0x0000, DataType.INT16, 60, 300, 0x32, [:], 200) // or delta = 0x14",
+              "line": 2147,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0001, 0x0021, [:], 250)",
+              "line": 2148,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0402, 0x0000, [:], 250)",
+              "line": 2149,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(0xEF00, 0x03)",
+              "line": 2153,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(0x0000, [0x0004, 0x000, 0x0001, 0x0005, 0x0007, 0xfffe], [:], delay = 200) // Cluster: Basic, attributes: Man.name, ZLC ver, App ver, Model Id, Power Source, attributeReportingStatus",
+              "line": 2165,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(0x0000, 0xffde, 0x20, 0x13, [:], delay = 200) // was commented out ver 1.0.10 2022/11/10; returned back ver 1.20 01/15/2023",
+              "line": 2166,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, updated) // send the default or previously configured preference parameters during the Zigbee pairing process..",
+              "line": 2177,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 2183,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn( 3, logInitializeRezults)",
+              "line": 2186,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(CLUSTER_TUYA, tuyaCmd, [:], delay = 200, PACKET_ID + dp + dp_type + zigbee.convertToHexString((int)(fncmd.length() / 2), 4) + fncmd )",
+              "line": 2191,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE))",
+              "line": 2200,
+              "type": "HUB_ACTION",
+              "value": true
+            },
+            {
+              "evidence": "sendHubCommand(allActions)",
+              "line": 2204,
+              "type": "SEND_HUB_COMMAND",
+              "value": true
+            },
+            {
+              "evidence": "return zigbee.convertToHexString(new Random().nextInt(65536), 4)",
+              "line": 2208,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "def dpValHex = dpTypeString == 'DP_TYPE_VALUE' ? zigbee.convertToHexString(dpValue as int, 8) : dpValue",
-              "line": 2286,
+              "line": 2348,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 159051,
+          "sourceBytes": 163732,
           "sourceFetched": true,
-          "sourceSha256": "a763c2ce9e27e875c1ac142bbe12b91a7470566dda25494da5b40c446ca8cfba",
+          "sourceSha256": "7c811a95bb5a0e9bf17aa29f10fee1d3f72066b4ab29f140a708b76e56a875f2",
           "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Temperature%20Humidity%20Illuminance%20LCD%20Display%20with%20a%20Clock/Tuya_Temperature_Humidity_Illuminance_LCD_Display_with_a_Clock.groovy"
         }
       ],
@@ -348833,7 +348873,7 @@
   "repositoriesFetched": 217,
   "repositoryCount": 218,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-05T05:57:14Z",
+  "snapshotGenerated": "2026-10-06T06:34:52Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,

@@ -1,9 +1,11 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-05T05:57:14Z`.
+Latest observation: `2026-10-06T06:34:52Z`.
 
-**39 package change(s):** added 3, declared definitions changed 3, removed 1, source location changed 1, updated 34
+**34 package change(s):** added 2, declared definitions changed 3, removed 1, source location changed 1, updated 30
 
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
 - [X-Sense Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
@@ -36,12 +38,5 @@ Latest observation: `2026-10-05T05:57:14Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Lutron Aurora Dimmer - Custom: changed declared definitions.](https://raw.githubusercontent.com/esimioni/lutron-aurora-hubitat/main/hpm/manifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [PETLIBRO Granary Feeder: added.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json)
-- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
-- [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
