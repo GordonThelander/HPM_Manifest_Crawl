@@ -14,6 +14,7 @@ window.CONTRIBUTOR_ACTIVITY = {
     "Monitoring",
     "Notifications",
     "Presence & Location",
+    "Presence and Location",
     "Safety",
     "Safety & Security",
     "Security",
@@ -1056,6 +1057,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:ef47ac84-42b9-49f9-b94b-46bfb6746545",
           "packageName": "Matter Advanced Device",
           "summary": "Matter Advanced Device: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cd23ff1a5e26bca70533c39b",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
+          "packageName": "Thermostats Sync",
+          "summary": "Thermostats Sync: updated."
         }
       ],
       "appCount": 2,
@@ -1078,7 +1093,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 36,
       "id": "contributor:2caa5ff89bed93a4a93e",
       "name": "Krassimir Kossev",
-      "observedActivityCount": 24,
+      "observedActivityCount": 25,
       "packages": [
         {
           "appCount": 0,
@@ -1271,9 +1286,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
           "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json",
           "name": "Thermostats Sync",
-          "publisherDate": "2025-12-07",
+          "publisherDate": "2026-09-24",
           "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "1.0.4"
+          "version": "1.0.5"
         },
         {
           "appCount": 0,
@@ -4448,6 +4463,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:964cbb68c7d575e6b3da",
           "packageName": "Honeywell Vista Envisalink TPI Alarm Integration",
           "summary": "Honeywell Vista Envisalink TPI Alarm Integration: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b5c27234175b79e4be023aeb",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f4735270a650e8bd80e71172",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:cda95eedc5f5df012d02",
+          "packageName": "WaterGuru Integration",
+          "summary": "WaterGuru Integration: updated."
         }
       ],
       "appCount": 11,
@@ -4474,7 +4517,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 24,
+      "observedActivityCount": 26,
       "packages": [
         {
           "appCount": 2,
@@ -4628,9 +4671,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:cda95eedc5f5df012d02",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json",
           "name": "WaterGuru Integration",
-          "publisherDate": "2026-08-18",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.4.0"
+          "version": "2.4.2"
         },
         {
           "appCount": 0,
@@ -4654,9 +4697,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-10-03",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.33.1"
+          "version": "1.34.0"
         }
       ]
     },
@@ -5107,6 +5150,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3fbc6b95ca19fb88636b",
           "packageName": "Holiday Decorations",
           "summary": "Holiday Decorations: updated."
+        },
+        {
+          "category": "Thermostats",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ab15c8d1f5f247034974db5f",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:e6319d46a6052ce7b5c0",
+          "packageName": "Local Ecobee Helpers",
+          "summary": "Local Ecobee Helpers: updated."
         }
       ],
       "appCount": 13,
@@ -5153,7 +5210,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 17,
+      "observedActivityCount": 18,
       "packages": [
         {
           "appCount": 0,
@@ -5268,9 +5325,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:e6319d46a6052ce7b5c0",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json",
           "name": "Local Ecobee Helpers",
-          "publisherDate": "2026-09-28",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "1.2.1"
+          "version": "1.3.0"
         },
         {
           "appCount": 0,
@@ -10368,6 +10425,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:236c1937-ef40-4afb-a571-3cb54bce5723",
           "packageName": "Advanced Hue Hub Integration",
           "summary": "Advanced Hue Hub Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0d55b60cae0d29cbd45b2024",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "hpm:236c1937-ef40-4afb-a571-3cb54bce5723",
+          "packageName": "Advanced Hue Hub Integration",
+          "summary": "Advanced Hue Hub Integration: updated."
         }
       ],
       "appCount": 5,
@@ -10386,7 +10457,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 11,
       "id": "contributor:41d47ac0fdd0b2eda300",
       "name": "Armand Welsh",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -10399,7 +10470,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Advanced Hue Hub Integration",
           "publisherDate": "2020-01-20",
           "repositoryUrl": "https://raw.githubusercontent.com/apwelsh/hubitat/master/repository.json",
-          "version": "1.10.27"
+          "version": "1.10.28"
         },
         {
           "appCount": 0,
@@ -10660,7 +10731,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Notifications",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0dcf3c4d5e86158f1fba7a2b",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:eed6e724686e71482fb3",
+          "packageName": "Pushover",
+          "summary": "Pushover: updated."
+        }
+      ],
       "appCount": 2,
       "categories": [
         {
@@ -10681,7 +10767,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:caf1e9bd13ac8e7a6646",
       "name": "Dan Ogorchock",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 2,
@@ -10744,9 +10830,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:eed6e724686e71482fb3",
           "manifestUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/pushover-notifications.src/pushover-notifications.json",
           "name": "Pushover",
-          "publisherDate": "2026-05-22",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/repository.json",
-          "version": "1.0.20260522"
+          "version": "1.0.20261006"
         }
       ]
     },
@@ -10953,6 +11039,412 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
+      "activity": [
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": "https://github.com/GordonThelander/HPM_Manifest_Crawl/commit/50b4981b472f4ea550fe51885e2ef3f6409acd3b",
+          "id": "change:88a0fa1497de584c45650963",
+          "observedAt": "2026-08-15T04:51:09Z",
+          "observedCommit": "50b4981b472f4ea550fe51885e2ef3f6409acd3b",
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:36a8ac2db128283fddfb4ed3",
+          "observedAt": "2026-08-17T22:40:04Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a580fff10219725f1ab93c3e",
+          "observedAt": "2026-08-19T05:01:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2639538775f46183f141a9c2",
+          "observedAt": "2026-08-19T23:36:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0142701300de71e193c9232a",
+          "observedAt": "2026-08-20T13:03:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d482dcadf478b626f0c8896d",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8ab2d71f97c3603c9d10146b",
+          "observedAt": "2026-08-25T00:39:18Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a08d64b9e36b6cf5c5eba1ff",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fbb2e5e1576733f3cbdc5c0d",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9a04575cc6decea56d4758f6",
+          "observedAt": "2026-09-22T02:20:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:842d4b62ed8d08a672264256",
+          "observedAt": "2026-09-24T05:06:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2a18664f8ebd57f3915a944f",
+          "observedAt": "2026-09-25T05:08:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:59bfe4cfe4c1622fba3ef877",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated, changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7b058791ef1d9cc5402bf1e9",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:e7e7cbfa755e1aea230d",
+          "packageName": "Pentair Intellicenter Controller",
+          "summary": "Pentair Intellicenter Controller: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2ce5fc824f5d6480e95a826b",
+          "observedAt": "2026-09-28T05:37:19Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a1371bc52edb8b8cc321e4b1",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d7eeb65eaae759a09e9eb6e2",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d033dc9dd57fc0bb0cb3e178",
+          "observedAt": "2026-10-01T06:12:16Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:05e16c2d2f7e9ec6156360cb",
+          "observedAt": "2026-10-02T05:55:04Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6f32f8ee92e9b0175a74d54a",
+          "observedAt": "2026-10-03T05:30:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67c7ab9805eb47e19cda8f91",
+          "observedAt": "2026-10-06T06:34:52Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:baaf244069648b8fcba88397",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:ec6c3d0850f41d09b25f",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated, changed declared definitions."
+        }
+      ],
+      "appCount": 4,
+      "categories": [
+        {
+          "name": "Drivers",
+          "packageCount": 1
+        },
+        {
+          "name": "Safety & Security",
+          "packageCount": 1
+        },
+        {
+          "name": "Utility",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 5,
+      "currentRank": 48,
+      "driverCount": 8,
+      "id": "contributor:7eb31971c1852a991d3b",
+      "name": "jdthomas24",
+      "observedActivityCount": 22,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
+          "driverCount": 0,
+          "id": "manifest:ec6c3d0850f41d09b25f",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
+          "name": "Battery Monitor 2.0",
+          "publisherDate": "2026-10-06",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "2.7.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
+          "driverCount": 0,
+          "id": "manifest:b02e9c2e9e6f56c819a0",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
+          "name": "Device Health Monitor",
+          "publisherDate": "2026-10-01",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.7.2"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
+          "documentationUrl": null,
+          "driverCount": 3,
+          "id": "manifest:e7e7cbfa755e1aea230d",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
+          "name": "Pentair Intellicenter Controller",
+          "publisherDate": "4-10-26",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.6.4"
+        },
+        {
+          "appCount": 1,
+          "category": "Safety & Security",
+          "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+          "driverCount": 4,
+          "id": "manifest:1fb36d6ab3dd1abe2238",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
+          "name": "Reolink Integration",
+          "publisherDate": "2026-08-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.6.6"
+        },
+        {
+          "appCount": 0,
+          "category": "Drivers",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "manifest:7d07638149cfe13e710d",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
+          "name": "SmartThings Motion Sensor Driver",
+          "publisherDate": "4-10-26",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.8.0"
+        }
+      ]
+    },
+    {
       "activity": [],
       "appCount": 1,
       "categories": [
@@ -10962,7 +11454,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 48,
+      "currentRank": 49,
       "driverCount": 5,
       "id": "contributor:9619c4d65c3732de0732",
       "name": "Justin Walker (augoisms)",
@@ -11049,7 +11541,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 49,
+      "currentRank": 50,
       "driverCount": 5,
       "id": "contributor:b6677fde1eefa57898a1",
       "name": "nh.schottfam",
@@ -11132,7 +11624,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 50,
+      "currentRank": 51,
       "driverCount": 1,
       "id": "contributor:eab1426393d8d85b1a21",
       "name": "Schwark Satyavolu",
@@ -11215,7 +11707,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 51,
+      "currentRank": 52,
       "driverCount": 4,
       "id": "contributor:481420db54aa06c573e6",
       "name": "TRATO",
@@ -11327,7 +11819,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 52,
+      "currentRank": 53,
       "driverCount": 6,
       "id": "contributor:25f18c19b276b4da951e",
       "name": "Vartan Horigian",
@@ -11418,7 +11910,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 53,
+      "currentRank": 54,
       "driverCount": 3,
       "id": "contributor:444e3baa77df0efb4f8a",
       "name": "Amos Yuen",
@@ -11492,7 +11984,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 54,
+      "currentRank": 55,
       "driverCount": 3,
       "id": "contributor:c1a1d3aec78894857022",
       "name": "Andrew Nunes",
@@ -11585,7 +12077,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 55,
+      "currentRank": 56,
       "driverCount": 8,
       "id": "contributor:d76fe297915816119376",
       "name": "Brent Rossow",
@@ -11659,7 +12151,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 56,
+      "currentRank": 57,
       "driverCount": 8,
       "id": "contributor:bc95cd261e6e9cb4d1bc",
       "name": "David Kilgore",
@@ -11744,7 +12236,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 57,
+      "currentRank": 58,
       "driverCount": 4,
       "id": "contributor:9421d6940089773abfd2",
       "name": "David LaPorte",
@@ -11851,7 +12343,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 58,
+      "currentRank": 59,
       "driverCount": 14,
       "id": "contributor:5077082f1f4545730ee3",
       "name": "Gary J. Milne",
@@ -12158,7 +12650,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 59,
+      "currentRank": 60,
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
@@ -12215,384 +12707,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-09-08",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
           "version": "5.1.1"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": "https://github.com/GordonThelander/HPM_Manifest_Crawl/commit/50b4981b472f4ea550fe51885e2ef3f6409acd3b",
-          "id": "change:88a0fa1497de584c45650963",
-          "observedAt": "2026-08-15T04:51:09Z",
-          "observedCommit": "50b4981b472f4ea550fe51885e2ef3f6409acd3b",
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed source location, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:36a8ac2db128283fddfb4ed3",
-          "observedAt": "2026-08-17T22:40:04Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a580fff10219725f1ab93c3e",
-          "observedAt": "2026-08-19T05:01:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2639538775f46183f141a9c2",
-          "observedAt": "2026-08-19T23:36:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0142701300de71e193c9232a",
-          "observedAt": "2026-08-20T13:03:48Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d482dcadf478b626f0c8896d",
-          "observedAt": "2026-08-24T23:45:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8ab2d71f97c3603c9d10146b",
-          "observedAt": "2026-08-25T00:39:18Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a08d64b9e36b6cf5c5eba1ff",
-          "observedAt": "2026-09-02T01:54:11Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:fbb2e5e1576733f3cbdc5c0d",
-          "observedAt": "2026-09-20T02:16:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:9a04575cc6decea56d4758f6",
-          "observedAt": "2026-09-22T02:20:44Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:842d4b62ed8d08a672264256",
-          "observedAt": "2026-09-24T05:06:01Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2a18664f8ebd57f3915a944f",
-          "observedAt": "2026-09-25T05:08:44Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:59bfe4cfe4c1622fba3ef877",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated, changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:7b058791ef1d9cc5402bf1e9",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:e7e7cbfa755e1aea230d",
-          "packageName": "Pentair Intellicenter Controller",
-          "summary": "Pentair Intellicenter Controller: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2ce5fc824f5d6480e95a826b",
-          "observedAt": "2026-09-28T05:37:19Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a1371bc52edb8b8cc321e4b1",
-          "observedAt": "2026-09-29T05:54:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d7eeb65eaae759a09e9eb6e2",
-          "observedAt": "2026-09-29T05:54:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d033dc9dd57fc0bb0cb3e178",
-          "observedAt": "2026-10-01T06:12:16Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:05e16c2d2f7e9ec6156360cb",
-          "observedAt": "2026-10-02T05:55:04Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6f32f8ee92e9b0175a74d54a",
-          "observedAt": "2026-10-03T05:30:35Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:67c7ab9805eb47e19cda8f91",
-          "observedAt": "2026-10-06T06:34:52Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        }
-      ],
-      "appCount": 3,
-      "categories": [
-        {
-          "name": "Drivers",
-          "packageCount": 1
-        },
-        {
-          "name": "Safety & Security",
-          "packageCount": 1
-        },
-        {
-          "name": "Utility",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 4,
-      "currentRank": 60,
-      "driverCount": 8,
-      "id": "contributor:7eb31971c1852a991d3b",
-      "name": "jdthomas24",
-      "observedActivityCount": 21,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
-          "driverCount": 0,
-          "id": "manifest:b02e9c2e9e6f56c819a0",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
-          "name": "Device Health Monitor",
-          "publisherDate": "2026-10-01",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.7.2"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
-          "documentationUrl": null,
-          "driverCount": 3,
-          "id": "manifest:e7e7cbfa755e1aea230d",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
-          "name": "Pentair Intellicenter Controller",
-          "publisherDate": "4-10-26",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.4"
-        },
-        {
-          "appCount": 1,
-          "category": "Safety & Security",
-          "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
-          "driverCount": 4,
-          "id": "manifest:1fb36d6ab3dd1abe2238",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
-          "name": "Reolink Integration",
-          "publisherDate": "2026-08-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.6"
-        },
-        {
-          "appCount": 0,
-          "category": "Drivers",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:7d07638149cfe13e710d",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
-          "name": "SmartThings Motion Sensor Driver",
-          "publisherDate": "4-10-26",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.8.0"
         }
       ]
     },
@@ -13843,6 +13957,148 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
+          "category": "Control",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "MANIFEST_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9b3d492be1c5786c8f36ccb3",
+          "observedAt": "2026-09-23T02:20:36Z",
+          "observedCommit": null,
+          "packageId": "hpm:7903d589-53f7-407e-9654-2a486183b412",
+          "packageName": "AirTouch 5 Drivers",
+          "summary": "AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "MANIFEST_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ca864d469e8f1d1d8af09ee1",
+          "observedAt": "2026-09-23T02:20:36Z",
+          "observedCommit": null,
+          "packageId": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+          "packageName": "BamBuddy/PrintBuddy Printers Driver",
+          "summary": "BamBuddy/PrintBuddy Printers Driver: updated, changed manifest location, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:06747cb87c93cd22fad54dc3",
+          "observedAt": "2026-09-23T08:23:25Z",
+          "observedCommit": null,
+          "packageId": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+          "packageName": "BamBuddy/PrintBuddy Printers Driver",
+          "summary": "BamBuddy/PrintBuddy Printers Driver: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:37ffd8d7e4f797b835967c95",
+          "observedAt": "2026-09-23T08:23:25Z",
+          "observedCommit": null,
+          "packageId": "hpm:7903d589-53f7-407e-9654-2a486183b412",
+          "packageName": "AirTouch 5 Drivers",
+          "summary": "AirTouch 5 Drivers: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:66b160597e3f1cbbb67375b0",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
+          "packageName": "iStore Heat Pump",
+          "summary": "iStore Heat Pump: added."
+        }
+      ],
+      "appCount": 1,
+      "categories": [
+        {
+          "name": "Control",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 3,
+      "currentRank": 76,
+      "driverCount": 6,
+      "id": "contributor:cfc84bc507432c7b472f",
+      "name": "Jamie Curnow",
+      "observedActivityCount": 5,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
+          "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
+          "driverCount": 2,
+          "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
+          "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
+          "name": "AirTouch 5 Drivers",
+          "publisherDate": "2026-04-24",
+          "repositoryUrl": "https://raw.githubusercontent.com/jc21/hubitat-packages/refs/heads/main/repository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
+          "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
+          "driverCount": 3,
+          "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
+          "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
+          "name": "BamBuddy/PrintBuddy Printers Driver",
+          "publisherDate": "2026-07-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/jc21/hubitat-packages/refs/heads/main/repository.json",
+          "version": "0.1.1"
+        },
+        {
+          "appCount": 1,
+          "category": "Control",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jc21/hubitat-istore-heat-pump",
+          "driverCount": 1,
+          "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
+          "manifestUrl": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
+          "name": "iStore Heat Pump",
+          "publisherDate": "2026-10-06",
+          "repositoryUrl": "https://raw.githubusercontent.com/jc21/hubitat-packages/refs/heads/main/repository.json",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
           "category": "Integrations",
           "changeTypes": [
             "ADDED"
@@ -13865,7 +14121,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 76,
+      "currentRank": 77,
       "driverCount": 3,
       "id": "contributor:cab465e8481008331040",
       "name": "Jeff Lupien",
@@ -13965,7 +14221,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 77,
+      "currentRank": 78,
       "driverCount": 4,
       "id": "contributor:9311c76fc09a45386899",
       "name": "ke7lvb",
@@ -14026,7 +14282,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 78,
+      "currentRank": 79,
       "driverCount": 9,
       "id": "contributor:bbb6c748da75b7a64027",
       "name": "lnjustin",
@@ -14091,7 +14347,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 79,
+      "currentRank": 80,
       "driverCount": 4,
       "id": "contributor:a188cfb1e97ae0f2a405",
       "name": "Maxime Boissonneault",
@@ -14152,7 +14408,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 80,
+      "currentRank": 81,
       "driverCount": 5,
       "id": "contributor:afc5281b69164b2c8703",
       "name": "mbarone",
@@ -14213,7 +14469,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 81,
+      "currentRank": 82,
       "driverCount": 2,
       "id": "contributor:604f2d17b722196e6463",
       "name": "napalmcsr",
@@ -14270,7 +14526,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 82,
+      "currentRank": 83,
       "driverCount": 3,
       "id": "contributor:9200a92024c29bccc586",
       "name": "rboer",
@@ -14342,7 +14598,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 83,
+      "currentRank": 84,
       "driverCount": 10,
       "id": "contributor:b2d6fbf7040ea5ad041c",
       "name": "rbyrbt",
@@ -14399,7 +14655,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 84,
+      "currentRank": 85,
       "driverCount": 5,
       "id": "contributor:53a53f00b449aaf2d22d",
       "name": "Rob Alfonso",
@@ -14456,7 +14712,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 85,
+      "currentRank": 86,
       "driverCount": 82,
       "id": "contributor:b1b4211137432b0ceaab",
       "name": "Snell",
@@ -14517,7 +14773,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 86,
+      "currentRank": 87,
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
@@ -14574,7 +14830,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 87,
+      "currentRank": 88,
       "driverCount": 22,
       "id": "contributor:d4595ee7d9bca0d6c072",
       "name": "winnie",
@@ -14631,7 +14887,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 88,
+      "currentRank": 89,
       "driverCount": 2,
       "id": "contributor:77a1b275b7acf1be10cc",
       "name": "Adrian Caramaliu",
@@ -14675,7 +14931,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 89,
+      "currentRank": 90,
       "driverCount": 9,
       "id": "contributor:8fa49887fd5ee7f96752",
       "name": "Albert Mulder",
@@ -14719,7 +14975,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 90,
+      "currentRank": 91,
       "driverCount": 2,
       "id": "contributor:75749fcdad8887b09066",
       "name": "Alex Jones",
@@ -14767,7 +15023,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 91,
+      "currentRank": 92,
       "driverCount": 2,
       "id": "contributor:68ce3e1b8f8813127398",
       "name": "Arn Burkhoff",
@@ -14811,7 +15067,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 92,
+      "currentRank": 93,
       "driverCount": 8,
       "id": "contributor:775bf2ab0bf177bbaffc",
       "name": "Ben Deitch",
@@ -14855,7 +15111,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 93,
+      "currentRank": 94,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -14899,7 +15155,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
@@ -14947,7 +15203,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 95,
+      "currentRank": 96,
       "driverCount": 2,
       "id": "contributor:eeb747b7ce6ce8418f96",
       "name": "DarwinsDen",
@@ -14995,7 +15251,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 97,
       "driverCount": 12,
       "id": "contributor:efdfd6ed92c6c1fdcd2d",
       "name": "Don Caton",
@@ -15096,7 +15352,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 98,
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
@@ -15169,7 +15425,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 99,
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
@@ -15232,7 +15488,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 99,
+      "currentRank": 100,
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
@@ -15291,7 +15547,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 100,
+      "currentRank": 101,
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
@@ -15364,7 +15620,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 101,
+      "currentRank": 102,
       "driverCount": 4,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
@@ -15427,7 +15683,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 102,
+      "currentRank": 103,
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
@@ -15458,121 +15714,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-08-08",
           "repositoryUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/repository.json",
           "version": "1.0.101"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Control",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "MANIFEST_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:9b3d492be1c5786c8f36ccb3",
-          "observedAt": "2026-09-23T02:20:36Z",
-          "observedCommit": null,
-          "packageId": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-          "packageName": "AirTouch 5 Drivers",
-          "summary": "AirTouch 5 Drivers: updated, changed manifest location, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "MANIFEST_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:ca864d469e8f1d1d8af09ee1",
-          "observedAt": "2026-09-23T02:20:36Z",
-          "observedCommit": null,
-          "packageId": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-          "packageName": "BamBuddy/PrintBuddy Printers Driver",
-          "summary": "BamBuddy/PrintBuddy Printers Driver: updated, changed manifest location, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:06747cb87c93cd22fad54dc3",
-          "observedAt": "2026-09-23T08:23:25Z",
-          "observedCommit": null,
-          "packageId": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-          "packageName": "BamBuddy/PrintBuddy Printers Driver",
-          "summary": "BamBuddy/PrintBuddy Printers Driver: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:37ffd8d7e4f797b835967c95",
-          "observedAt": "2026-09-23T08:23:25Z",
-          "observedCommit": null,
-          "packageId": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-          "packageName": "AirTouch 5 Drivers",
-          "summary": "AirTouch 5 Drivers: updated, changed source location, changed declared definitions, was restored."
-        }
-      ],
-      "appCount": 0,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 103,
-      "driverCount": 5,
-      "id": "contributor:cfc84bc507432c7b472f",
-      "name": "Jamie Curnow",
-      "observedActivityCount": 4,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/airtouch-5-drivers-for-controller-and-zones/163437",
-          "documentationUrl": "https://github.com/jc21/hubitat-airtouch5",
-          "driverCount": 2,
-          "id": "hpm:7903d589-53f7-407e-9654-2a486183b412",
-          "manifestUrl": "https://github.com/jc21/hubitat-airtouch5/releases/latest/download/packageManifest.json",
-          "name": "AirTouch 5 Drivers",
-          "publisherDate": "2026-04-24",
-          "repositoryUrl": "https://raw.githubusercontent.com/jc21/hubitat-packages/refs/heads/main/repository.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/bambuddy-driver-for-bambu-3d-printers/163752",
-          "documentationUrl": "https://github.com/jc21/hubitat-bambuddy",
-          "driverCount": 3,
-          "id": "hpm:0903d289-53f7-407a-9654-2a483183b412",
-          "manifestUrl": "https://github.com/jc21/hubitat-bambuddy/releases/latest/download/packageManifest.json",
-          "name": "BamBuddy/PrintBuddy Printers Driver",
-          "publisherDate": "2026-07-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/jc21/hubitat-packages/refs/heads/main/repository.json",
-          "version": "0.1.1"
         }
       ]
     },
@@ -15706,80 +15847,6 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:59bfe4cfe4c1622fba3ef877",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated, changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:59c69a77c5e60f6a66c36328",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:ec6c3d0850f41d09b25f",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        }
-      ],
-      "appCount": 1,
-      "categories": [
-        {
-          "name": "Utility",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 105,
-      "driverCount": 1,
-      "id": "contributor:31b2ee842cfca243e764",
-      "name": "Jdthomas24",
-      "observedActivityCount": 2,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 0,
-          "id": "manifest:ec6c3d0850f41d09b25f",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
-          "name": "Battery Monitor 2.0",
-          "publisherDate": "4/8/26",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "2.6.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:65b677bc95189011628d",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json",
-          "name": "Moonraker Klipper Printer",
-          "publisherDate": "2026-04-29",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.0.48"
-        }
-      ]
-    },
-    {
       "activity": [],
       "appCount": 4,
       "categories": [
@@ -15793,7 +15860,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 106,
+      "currentRank": 105,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -15870,7 +15937,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 107,
+      "currentRank": 106,
       "driverCount": 1,
       "id": "contributor:277a73f66831fc1424af",
       "name": "Jeffrey D. Chapman",
@@ -15914,7 +15981,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 108,
+      "currentRank": 107,
       "driverCount": 6,
       "id": "contributor:fedf3ceedc1273b3d69d",
       "name": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -15958,7 +16025,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 109,
+      "currentRank": 108,
       "driverCount": 1,
       "id": "contributor:8877f3f9cde1f2b8e13b",
       "name": "Kevin LaFramboise (@krlaframboise)",
@@ -16031,7 +16098,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 110,
+      "currentRank": 109,
       "driverCount": 2,
       "id": "contributor:9b3159c24cdaba381613",
       "name": "kkossev",
@@ -16120,7 +16187,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 111,
+      "currentRank": 110,
       "driverCount": 5,
       "id": "contributor:cfe7eb8fa1d840424f18",
       "name": "Mathew Beall",
@@ -16164,7 +16231,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 112,
+      "currentRank": 111,
       "driverCount": 1,
       "id": "contributor:648248be560395b56188",
       "name": "Matt Hammond",
@@ -16212,7 +16279,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 113,
+      "currentRank": 112,
       "driverCount": 0,
       "id": "contributor:15ac50b026e59a5f76a0",
       "name": "Mattias Fornander (@mfornander)",
@@ -16260,7 +16327,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 114,
+      "currentRank": 113,
       "driverCount": 1,
       "id": "contributor:cfdd150d04c77fcf99ed",
       "name": "Miles Budnek",
@@ -16320,7 +16387,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 115,
+      "currentRank": 114,
       "driverCount": 2,
       "id": "contributor:a8001880109c362a9fdb",
       "name": "n3!",
@@ -16364,7 +16431,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 116,
+      "currentRank": 115,
       "driverCount": 1,
       "id": "contributor:9563f49fca68d622c285",
       "name": "Nelson Clark",
@@ -16408,7 +16475,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 117,
+      "currentRank": 116,
       "driverCount": 3,
       "id": "contributor:5264454bcf8a55a617b7",
       "name": "Paul Hutton",
@@ -16452,7 +16519,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 118,
+      "currentRank": 117,
       "driverCount": 2,
       "id": "contributor:e5e37caad93a2e4bba53",
       "name": "Ramdev Shallem",
@@ -16496,7 +16563,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 119,
+      "currentRank": 118,
       "driverCount": 1,
       "id": "contributor:08e115ea52313bdb2dd1",
       "name": "Randall Norviel",
@@ -16540,7 +16607,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 120,
+      "currentRank": 119,
       "driverCount": 2,
       "id": "contributor:d38d404a45ce4a1ae211",
       "name": "Raul Martin Rodriguez",
@@ -16588,7 +16655,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 121,
+      "currentRank": 120,
       "driverCount": 3,
       "id": "contributor:27b96c198c53592f4b6d",
       "name": "Simon Burke",
@@ -16632,7 +16699,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 122,
+      "currentRank": 121,
       "driverCount": 2,
       "id": "contributor:f7092c2563f96d8ebd93",
       "name": "StarkTemplar",
@@ -16680,7 +16747,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 123,
+      "currentRank": 122,
       "driverCount": 5,
       "id": "contributor:ddb8a7b385656aadd452",
       "name": "Taylor Brown(@thecloudtaylor)",
@@ -16724,7 +16791,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 124,
+      "currentRank": 123,
       "driverCount": 2,
       "id": "contributor:272f8a5abd3191f1acd8",
       "name": "Tim Dodd",
@@ -16768,7 +16835,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 125,
+      "currentRank": 124,
       "driverCount": 0,
       "id": "contributor:bc915e335e56e9ef122e",
       "name": "Tony Fleisher",
@@ -16841,7 +16908,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 126,
+      "currentRank": 125,
       "driverCount": 3,
       "id": "contributor:052eda442afd1ae5d69d",
       "name": "vision9074",
@@ -16889,7 +16956,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 127,
+      "currentRank": 126,
       "driverCount": 0,
       "id": "contributor:3ee480dcc6d55fba0b2b",
       "name": "Wesley M. Conner",
@@ -16933,7 +17000,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 128,
+      "currentRank": 127,
       "driverCount": 3,
       "id": "contributor:3353abab317cbb5e1bb8",
       "name": "ZRanger1(JEM)",
@@ -16977,7 +17044,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 129,
+      "currentRank": 128,
       "driverCount": 3,
       "id": "contributor:9ebc2f114646e8498d7b",
       "name": "Alex Lee Yuk Cheung & Dominick Meglio",
@@ -17008,7 +17075,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 130,
+      "currentRank": 129,
       "driverCount": 1,
       "id": "contributor:4766d18cb719a716cbf8",
       "name": "Andrew Webster",
@@ -17039,7 +17106,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 131,
+      "currentRank": 130,
       "driverCount": 3,
       "id": "contributor:4d3ada00f82d743d4d94",
       "name": "Art Ardolino",
@@ -17070,7 +17137,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 132,
+      "currentRank": 131,
       "driverCount": 1,
       "id": "contributor:0ea2ec854ddf7b93c7b0",
       "name": "Awth Wathje",
@@ -17101,7 +17168,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 133,
+      "currentRank": 132,
       "driverCount": 0,
       "id": "contributor:01a00cf264f0269f2f9d",
       "name": "Azfar Khandoker",
@@ -17132,7 +17199,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 134,
+      "currentRank": 133,
       "driverCount": 2,
       "id": "contributor:abfea55b690ec9fc7954",
       "name": "Ben Castellucci",
@@ -17163,7 +17230,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 135,
+      "currentRank": 134,
       "driverCount": 1,
       "id": "contributor:d2fa5476d388fae1a59e",
       "name": "Ben Jansen",
@@ -17194,7 +17261,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 136,
+      "currentRank": 135,
       "driverCount": 0,
       "id": "contributor:ab2cfb4edbe468b4048b",
       "name": "Bill Fleming",
@@ -17258,32 +17325,60 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8150d1b3584ff65b87ce",
           "packageName": "Pixora Locator Driver",
           "summary": "Pixora Locator Driver: added."
+        },
+        {
+          "category": "Presence and Location",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0716d9670ac312a7eaba2921",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:aea98561ec397ab7c434",
+          "packageName": "Pixora Locator App and Drivers",
+          "summary": "Pixora Locator App and Drivers: added."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:91233533549ddae9b22b7790",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:8150d1b3584ff65b87ce",
+          "packageName": "Pixora Locator Driver",
+          "summary": "Pixora Locator Driver: removed."
         }
       ],
-      "appCount": 0,
+      "appCount": 1,
       "categories": [
         {
-          "name": "Security",
+          "name": "Presence and Location",
           "packageCount": 1
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 137,
-      "driverCount": 1,
+      "currentRank": 136,
+      "driverCount": 2,
       "id": "contributor:593f46d943aec70bf3c1",
       "name": "BPTWorld",
-      "observedActivityCount": 3,
+      "observedActivityCount": 5,
       "packages": [
         {
-          "appCount": 0,
-          "category": "Security",
+          "appCount": 1,
+          "category": "Presence and Location",
           "communityUrl": null,
-          "documentationUrl": "https://github.com/bptworld/Hubitat",
-          "driverCount": 1,
-          "id": "manifest:8150d1b3584ff65b87ce",
-          "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
-          "name": "Pixora Locator Driver",
-          "publisherDate": "2026-09-22",
+          "documentationUrl": "https://github.com/bptworld/PixoraLocator",
+          "driverCount": 2,
+          "id": "manifest:aea98561ec397ab7c434",
+          "manifestUrl": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/packageManifest.json",
+          "name": "Pixora Locator App and Drivers",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/repositories.json",
           "version": null
         }
@@ -17299,7 +17394,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 138,
+      "currentRank": 137,
       "driverCount": 2,
       "id": "contributor:12297751d692f8e9771a",
       "name": "Brad sileo",
@@ -17330,7 +17425,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 139,
+      "currentRank": 138,
       "driverCount": 4,
       "id": "contributor:0a685eaad17dc8ff51ea",
       "name": "Brian Blank",
@@ -17404,7 +17499,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 140,
+      "currentRank": 139,
       "driverCount": 2,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
@@ -17450,7 +17545,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 141,
+      "currentRank": 140,
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
@@ -17481,7 +17576,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 142,
+      "currentRank": 141,
       "driverCount": 2,
       "id": "contributor:be521bd53f9af1d49653",
       "name": "Chaue Shen",
@@ -17512,7 +17607,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 143,
+      "currentRank": 142,
       "driverCount": 0,
       "id": "contributor:4646e34aa7acceb37645",
       "name": "Chris Sader",
@@ -17644,7 +17739,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 144,
+      "currentRank": 143,
       "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
@@ -17675,7 +17770,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 145,
+      "currentRank": 144,
       "driverCount": 6,
       "id": "contributor:97379ae0ebbba3b46803",
       "name": "christi999",
@@ -17706,7 +17801,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 146,
+      "currentRank": 145,
       "driverCount": 4,
       "id": "contributor:950fb77d3da2b8017206",
       "name": "classic-dave",
@@ -17737,7 +17832,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 147,
+      "currentRank": 146,
       "driverCount": 25,
       "id": "contributor:21e5b5d816783343eed8",
       "name": "codahq",
@@ -17768,7 +17863,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 148,
+      "currentRank": 147,
       "driverCount": 3,
       "id": "contributor:0287c8a40062f2e26bf1",
       "name": "corinuss",
@@ -17799,7 +17894,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 149,
+      "currentRank": 148,
       "driverCount": 0,
       "id": "contributor:f86b4b4a5d12cdaf148c",
       "name": "Craig Romei",
@@ -17859,7 +17954,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 150,
+      "currentRank": 149,
       "driverCount": 11,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
@@ -17890,7 +17985,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 151,
+      "currentRank": 150,
       "driverCount": 1,
       "id": "contributor:963ced0da3610aa44c93",
       "name": "cSteele",
@@ -17921,7 +18016,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 152,
+      "currentRank": 151,
       "driverCount": 1,
       "id": "contributor:65bee55a0af809e76900",
       "name": "Curtis Ide",
@@ -17952,7 +18047,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 153,
+      "currentRank": 152,
       "driverCount": 23,
       "id": "contributor:cf8d966c34c95a70525e",
       "name": "Dan Cox (level99 fork); Niklas Gustafsson (original upstream)",
@@ -18012,7 +18107,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 154,
+      "currentRank": 153,
       "driverCount": 0,
       "id": "contributor:09c2c1f1bae09e1e8a55",
       "name": "Dan Danache",
@@ -18072,7 +18167,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 155,
+      "currentRank": 154,
       "driverCount": 1,
       "id": "contributor:e2a1a9d6497ce82b1a2a",
       "name": "Dan Danache (@agamemnon.dandanache)",
@@ -18103,7 +18198,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 156,
+      "currentRank": 155,
       "driverCount": 1,
       "id": "contributor:5504c4083f20d7fff23c",
       "name": "dan.t",
@@ -18134,7 +18229,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 157,
+      "currentRank": 156,
       "driverCount": 1,
       "id": "contributor:69c45f22c0dcdce7b384",
       "name": "Daniel Segall",
@@ -18180,7 +18275,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 158,
+      "currentRank": 157,
       "driverCount": 1,
       "id": "contributor:7c75a97dcda364d1907d",
       "name": "Daniel Segall (dds82)",
@@ -18211,7 +18306,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 159,
+      "currentRank": 158,
       "driverCount": 2,
       "id": "contributor:9613ac904c1d28e3c88b",
       "name": "dbadge",
@@ -18242,7 +18337,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 160,
+      "currentRank": 159,
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
@@ -18273,7 +18368,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 161,
+      "currentRank": 160,
       "driverCount": 2,
       "id": "contributor:a73ba7cf0dd8592adedb",
       "name": "Dominick Meglio & Eric Maycock",
@@ -18304,7 +18399,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 162,
+      "currentRank": 161,
       "driverCount": 3,
       "id": "contributor:6dde8f2290059440a172",
       "name": "Doug Beard/Brian Wilson",
@@ -18335,7 +18430,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 163,
+      "currentRank": 162,
       "driverCount": 0,
       "id": "contributor:8b932b1c49d1bf9d8d84",
       "name": "Doug Renze",
@@ -18381,7 +18476,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 164,
+      "currentRank": 163,
       "driverCount": 3,
       "id": "contributor:debcb46e339968cfedb3",
       "name": "Electrified-Home",
@@ -18441,7 +18536,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 165,
+      "currentRank": 164,
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
@@ -18472,7 +18567,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 166,
+      "currentRank": 165,
       "driverCount": 1,
       "id": "contributor:0024ce686cf2b9971ab0",
       "name": "Erik Dasque",
@@ -18532,7 +18627,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 167,
+      "currentRank": 166,
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
@@ -18563,7 +18658,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 168,
+      "currentRank": 167,
       "driverCount": 1,
       "id": "contributor:02e680d2174ca39bf1b2",
       "name": "Garth Braithwaite",
@@ -18594,7 +18689,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 169,
+      "currentRank": 168,
       "driverCount": 1,
       "id": "contributor:6fe9cca284a6cd968a93",
       "name": "Greg Billings",
@@ -18794,7 +18889,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 170,
+      "currentRank": 169,
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
@@ -18825,7 +18920,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 171,
+      "currentRank": 170,
       "driverCount": 0,
       "id": "contributor:7740a32ebcc0ba4a339f",
       "name": "HERMES Automation",
@@ -18856,7 +18951,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 172,
+      "currentRank": 171,
       "driverCount": 9,
       "id": "contributor:5caa224e199583883eb3",
       "name": "Ionut Turturica",
@@ -18887,7 +18982,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 173,
+      "currentRank": 172,
       "driverCount": 0,
       "id": "contributor:cf5e8049fefaa570c4d9",
       "name": "J M Pierce / Schwark Satyavolu",
@@ -18947,7 +19042,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 174,
+      "currentRank": 173,
       "driverCount": 1,
       "id": "contributor:d8c3769404dea0e2a6e7",
       "name": "J.R. Farrar",
@@ -19021,7 +19116,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 175,
+      "currentRank": 174,
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
@@ -19052,7 +19147,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 176,
+      "currentRank": 175,
       "driverCount": 8,
       "id": "contributor:c3f9a7ee66c12128ad5b",
       "name": "Jake Lehner",
@@ -19083,7 +19178,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 177,
+      "currentRank": 176,
       "driverCount": 1,
       "id": "contributor:375253e4778f3449fa8e",
       "name": "James Schlackman",
@@ -19101,6 +19196,82 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2024-05-05",
           "repositoryUrl": "https://raw.githubusercontent.com/jschlackman/Hubitat/main/repository.json",
           "version": "1.0"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:59bfe4cfe4c1622fba3ef877",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated, changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:59c69a77c5e60f6a66c36328",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:ec6c3d0850f41d09b25f",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:baaf244069648b8fcba88397",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:ec6c3d0850f41d09b25f",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated, changed declared definitions."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Utility",
+          "packageCount": 1
+        }
+      ],
+      "currentPackageCount": 1,
+      "currentRank": 177,
+      "driverCount": 1,
+      "id": "contributor:31b2ee842cfca243e764",
+      "name": "Jdthomas24",
+      "observedActivityCount": 3,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "manifest:65b677bc95189011628d",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json",
+          "name": "Moonraker Klipper Printer",
+          "publisherDate": "2026-04-29",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.0.48"
         }
       ]
     },
@@ -19945,6 +20116,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1d8df2f6afb14d65d1ac0199",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -19959,7 +20144,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 28,
+      "observedActivityCount": 29,
       "packages": [
         {
           "appCount": 2,
@@ -19970,9 +20155,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-05",
+          "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.5.3"
+          "version": "4.5.5"
         }
       ]
     },
@@ -22359,13 +22544,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 254,
-  "currentPackageCount": 916,
+  "currentPackageCount": 917,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 373,
-    "eventCount": 372,
+    "attributedEventCount": 385,
+    "eventCount": 383,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-06T06:34:52Z"
+    "lastObservedAt": "2026-10-07T06:13:10Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -22377,9 +22562,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 256,
-  "rankedPackageCount": 914,
+  "rankedPackageCount": 915,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-06T06:34:52Z",
+  "snapshotGenerated": "2026-10-07T06:13:10Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 916,
+    "HPM_PACKAGE": 917,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2621,
+  "recordCount": 2622,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -174,15 +174,7 @@
           "label": "Community Apps Wiki"
         }
       ],
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:8150d1b3584ff65b87ce",
-          "packageName": "Pixora Locator Driver"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:b2c44d36b0083a96ca35",
       "kinds": [
         "APP"
@@ -4016,15 +4008,7 @@
           "label": "Community Drivers Wiki"
         }
       ],
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "manifest:8150d1b3584ff65b87ce",
-          "packageName": "Pixora Locator Driver"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-driver:9b5e9de000d16bf7a556",
       "kinds": [
         "DRIVER",
@@ -18929,7 +18913,7 @@
         "LAN",
         "Lights & Switches"
       ],
-      "version": "1.10.27"
+      "version": "1.10.28"
     },
     {
       "author": "Nelson Clark",
@@ -24900,13 +24884,13 @@
       "version": null
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "4/8/26",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
-          "id": "definition:a762c7b3b7c4f3242319",
+          "id": "definition:feb8c05e7ee4395a4a91",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Battery Monitor 2.0",
@@ -24925,12 +24909,12 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -24938,7 +24922,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -24960,8 +24944,8 @@
         "APP"
       ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
         "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
         "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
       },
@@ -24983,7 +24967,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.6.0"
+      "version": "2.7.0"
     },
     {
       "author": "Larry Kahn",
@@ -56651,6 +56635,102 @@
       "version": "1.3"
     },
     {
+      "author": "Jamie Curnow",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-06",
+      "definitions": [
+        {
+          "id": "definition:d3b1b56f14ebf85ad59a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "iStore Heat Pump Connect",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/apps/istore-heat-pump-app.groovy"
+        },
+        {
+          "id": "definition:8d657465d2719eb9b5c8",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "iStore Heat Pump",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/drivers/istore-heat-pump.groovy"
+        }
+      ],
+      "description": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/jc21/hubitat-istore-heat-pump",
+        "manifest": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
+        "repository": "https://github.com/jc21/hubitat-istore-heat-pump"
+      },
+      "name": "iStore Heat Pump",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "home.istore.net.au"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances",
+        "Climate Control",
+        "Monitoring",
+        "Temperature & Humidity"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Supun Vidana Pathiranage",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -60521,7 +60601,7 @@
       "author": "RamSet",
       "category": "Thermostats",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-28",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
           "id": "definition:206a77990819af5e56d6",
@@ -60619,7 +60699,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.2.1"
+      "version": "1.3.0"
     },
     {
       "author": "TheMaster",
@@ -62265,7 +62345,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-05",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -62347,7 +62427,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.5.3"
+      "version": "4.5.5"
     },
     {
       "author": "Justin Leonard",
@@ -72607,20 +72687,36 @@
     },
     {
       "author": "BPTWorld",
-      "category": "Security",
+      "category": "Presence and Location",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-22",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
-          "id": "definition:5a6093fc5f21cc099b4c",
+          "id": "definition:ea34c1d9c3e01ae8f92c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Pixora Locator Household Map",
+          "namespace": "pixorahq",
+          "sourceUrl": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/PixoraLocatorHouseholdMap.groovy"
+        },
+        {
+          "id": "definition:f8700d0e10917f9161d7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Pixora Locator",
           "namespace": "pixorahq",
-          "sourceUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/pixoralocator-driver.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/PixoraLocator.groovy"
+        },
+        {
+          "id": "definition:b837dcd125571b6626ad",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Pixora Locator Household Map",
+          "namespace": "pixorahq",
+          "sourceUrl": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/PixoraLocatorHouseholdMapDevice.groovy"
         }
       ],
-      "description": "Hubitat driver for the Pixora Locator app",
+      "description": "Hubitat App and Drivers for the Pixora Locator app",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -72661,29 +72757,35 @@
         ],
         "classification": "ATTENTION"
       },
-      "id": "manifest:8150d1b3584ff65b87ce",
+      "id": "manifest:aea98561ec397ab7c434",
       "kinds": [
+        "APP",
         "DRIVER"
       ],
       "links": {
         "community": null,
-        "documentation": "https://github.com/bptworld/Hubitat",
-        "manifest": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
-        "repository": "https://github.com/bptworld/Hubitat"
+        "documentation": "https://github.com/bptworld/PixoraLocator",
+        "manifest": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/packageManifest.json",
+        "repository": "https://github.com/bptworld/PixoraLocator"
       },
-      "name": "Pixora Locator Driver",
+      "name": "Pixora Locator App and Drivers",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [],
+        "externalHosts": [
+          "planner.pixorahq.com",
+          "tile.openstreetmap.org",
+          "unpkg.com",
+          "www.openstreetmap.org"
+        ],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
       "tags": [
-        "Monitoring",
+        "Location",
         "Safety & Security",
         "Tools & Utilities"
       ],
@@ -74181,7 +74283,7 @@
       "author": "Dan Ogorchock",
       "category": "Notifications",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-05-22",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
           "id": "definition:5d9112943fabd35c9d56",
@@ -74259,7 +74361,7 @@
       "tags": [
         "Notifications"
       ],
-      "version": "1.0.20260522"
+      "version": "1.0.20261006"
     },
     {
       "author": "Don Caton",
@@ -90980,7 +91082,7 @@
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-12-07",
+      "dateReleased": "2026-09-24",
       "definitions": [
         {
           "id": "definition:39b6062b2e9c553f38e7",
@@ -91059,7 +91161,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.0.4"
+      "version": "1.0.5"
     },
     {
       "author": "TheMaster",
@@ -98942,7 +99044,7 @@
       "author": "Brian Wilson",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-08-18",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
           "id": "definition:820ac9b09309670fa8aa",
@@ -99028,7 +99130,7 @@
         "Pools & Spas",
         "Temperature & Humidity"
       ],
-      "version": "2.4.0"
+      "version": "2.4.2"
     },
     {
       "author": "Ernie Miller",
@@ -101698,7 +101800,7 @@
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-03",
+      "dateReleased": "2026-10-06",
       "definitions": [
         {
           "id": "definition:2a431cffb2406a42bf11",
@@ -101785,7 +101887,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.33.1"
+      "version": "1.34.0"
     },
     {
       "author": "Jake Lehner",
@@ -132760,5 +132862,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-06T06:34:52Z"
+  "snapshotGenerated": "2026-10-07T06:13:10Z"
 }

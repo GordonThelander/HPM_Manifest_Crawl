@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-06T06:34:52Z`
+- Snapshot: `2026-10-07T06:13:10Z`
 - HPM repositories in master list: **218**
 - Repositories fetched successfully: **217**
-- Packages indexed: **916**
+- Packages indexed: **917**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **12**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **819**
+Total packages not matched by any registry entry: **820**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -590,7 +590,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 819 |
+| G. Unrepresented packages | 820 |
 | G candidate subset | 355 |
 
 ## H. Enrichment summary
@@ -601,13 +601,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2264 |
-| Source URLs fetched | 2255 |
+| Distinct source URLs | 2268 |
+| Source URLs fetched | 2259 |
 | Source URLs failed | 9 |
-| Components attempted | 2278 |
-| Components fetched | 2269 |
-| Literal definitions verified | 2258 |
-| Components with observations | 2145 |
+| Components attempted | 2282 |
+| Components fetched | 2273 |
+| Literal definitions verified | 2262 |
+| Components with observations | 2148 |
 
 ### Official Hubitat documentation pass
 

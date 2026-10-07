@@ -1,8 +1,8 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 180,
-    "CLOUD": 258,
-    "INSUFFICIENT": 301,
+    "CLOUD": 260,
+    "INSUFFICIENT": 300,
     "LAN": 177
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 916,
+  "packageCount": 917,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -373,14 +373,9 @@ window.NETWORK_EVIDENCE = {
           "img.shields.io",
           "www.paypal.com"
         ],
-        "lanPrimitives": [
-          "HUB_ACTION",
-          "LAN_PROTOCOL",
-          "PARSE_LAN_MESSAGE",
-          "SEND_HUB_COMMAND"
-        ],
+        "lanPrimitives": [],
         "sourceFilesAnalysed": 9,
-        "urlLiteralCount": 26
+        "urlLiteralCount": 25
       },
       "reviewed": [
         {
@@ -2289,16 +2284,16 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "category": "Utility",
       "classification": "CLOUD",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports.",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
       "id": "manifest:ec6c3d0850f41d09b25f",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
       "name": "Battery Monitor 2.0",
@@ -2309,7 +2304,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
+        "urlLiteralCount": 9
       },
       "reviewed": [],
       "tags": [
@@ -11997,6 +11992,36 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Jamie Curnow",
+      "category": "Control",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform",
+      "documentationUrl": "https://github.com/jc21/hubitat-istore-heat-pump",
+      "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
+      "manifestUrl": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
+      "name": "iStore Heat Pump",
+      "observed": {
+        "externalHosts": [
+          "home.istore.net.au"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances",
+        "Climate Control",
+        "Monitoring",
+        "Temperature & Humidity"
+      ]
+    },
+    {
       "author": "Supun Vidana Pathiranage",
       "category": "Integrations",
       "classification": "LAN",
@@ -16752,27 +16777,32 @@ window.NETWORK_EVIDENCE = {
     },
     {
       "author": "BPTWorld",
-      "category": "Security",
-      "classification": "INSUFFICIENT",
+      "category": "Presence and Location",
+      "classification": "CLOUD",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Hubitat driver for the Pixora Locator app",
-      "documentationUrl": "https://github.com/bptworld/Hubitat",
-      "id": "manifest:8150d1b3584ff65b87ce",
-      "manifestUrl": "https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json",
-      "name": "Pixora Locator Driver",
+      "description": "Hubitat App and Drivers for the Pixora Locator app",
+      "documentationUrl": "https://github.com/bptworld/PixoraLocator",
+      "id": "manifest:aea98561ec397ab7c434",
+      "manifestUrl": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/packageManifest.json",
+      "name": "Pixora Locator App and Drivers",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "planner.pixorahq.com",
+          "tile.openstreetmap.org",
+          "unpkg.com",
+          "www.openstreetmap.org"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
-        "Monitoring",
+        "Location",
         "Safety & Security",
         "Tools & Utilities"
       ]
@@ -27688,5 +27718,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-06T06:34:52Z"
+  "snapshotGenerated": "2026-10-07T06:13:10Z"
 };

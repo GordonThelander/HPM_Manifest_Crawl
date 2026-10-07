@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 479,
+  "recordCount": 481,
   "records": [
     {
       "author": null,
@@ -7127,6 +7127,40 @@
       "summary": "At most one switch in a group can be on simultaneously"
     },
     {
+      "author": "Jamie Curnow",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "iStore Heat Pump Connect",
+          "namespace": "jc21"
+        }
+      ],
+      "displayName": "iStore Heat Pump",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/jc21/hubitat-istore-heat-pump",
+        "source": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/apps/istore-heat-pump-app.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "iStore Heat Pump",
+      "qualityFlags": [],
+      "summary": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform"
+    },
+    {
       "author": "Jake Lehner",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -13049,6 +13083,47 @@
       "summary": "Lock button monitor2. for second lock, works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock."
     },
     {
+      "author": "BPTWorld",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Pixoara Locator Household Map App",
+          "namespace": "BPTWorld"
+        },
+        {
+          "basis": "sourceIdentity",
+          "name": "Pixora Locator Household Map",
+          "namespace": "pixorahq"
+        }
+      ],
+      "displayName": "Pixora Locator App and Drivers",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MISMATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:aea98561ec397ab7c434",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/bptworld/PixoraLocator",
+        "source": "https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/PixoraLocatorHouseholdMap.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Pixora Locator App and Drivers",
+      "qualityFlags": [
+        "IDENTITY_MISMATCH"
+      ],
+      "summary": "Hubitat App and Drivers for the Pixora Locator app"
+    },
+    {
       "author": "Brad Sileo",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -14525,14 +14600,9 @@
       "summary": "Native Hubitat support for Vista Ademco/20p via Envisalink - unsupported at this time"
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Battery Monitor 2.0",
-          "namespace": null
-        },
         {
           "basis": "sourceIdentity",
           "name": "Battery Monitor 2.0",
@@ -14541,9 +14611,9 @@
       ],
       "displayName": "Battery Monitor 2.0",
       "evidenceChecks": {
-        "communityLink": "MISSING",
+        "communityLink": "PRESENT",
         "definitionIdentity": "MATCH",
-        "documentationLink": "MISSING",
+        "documentationLink": "PRESENT",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
         "sourceFetch": "PASS"
@@ -14552,6 +14622,8 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
+        "community": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
         "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/Raw%20Code/BatteryMonitor2.0.groovy"
       },
       "networkEvidence": {
@@ -16143,5 +16215,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-06T06:34:52Z"
+  "snapshotGenerated": "2026-10-07T06:13:10Z"
 }

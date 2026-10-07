@@ -1,9 +1,20 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-06T06:34:52Z`.
+Latest observation: `2026-10-07T06:13:10Z`.
 
-**34 package change(s):** added 2, declared definitions changed 3, removed 1, source location changed 1, updated 30
+**38 package change(s):** added 4, declared definitions changed 2, removed 2, source location changed 1, updated 32
 
+- [iStore Heat Pump: added.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
+- [Thermostats Sync: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json)
+- [Pushover: updated.](https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/pushover-notifications.src/pushover-notifications.json)
+- [Pixora Locator Driver: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json)
+- [Pixora Locator App and Drivers: added.](https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
+- [Battery Monitor 2.0: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
+- [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
@@ -30,13 +41,6 @@ Latest observation: `2026-10-06T06:34:52Z`.
 - [Window Shade Timed: updated.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
 - [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Zigbee eWeLink-CMARS-Seedan Outlet: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/ewelink_outlet/packageManifest.json)
-- [Window Shade Timed: updated, changed declared definitions.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [PositionGuard: updated.](https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Lutron Aurora Dimmer - Custom: changed declared definitions.](https://raw.githubusercontent.com/esimioni/lutron-aurora-hubitat/main/hpm/manifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
