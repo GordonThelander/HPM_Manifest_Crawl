@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-07T06:13:10Z`.
+Latest observation: `2026-10-08T06:21:27Z`.
 
-**38 package change(s):** added 4, declared definitions changed 2, removed 2, source location changed 1, updated 32
+**37 package change(s):** added 5, declared definitions changed 2, removed 2, source location changed 1, updated 30
 
+- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
+- [Muse Bridge: added.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [iStore Heat Pump: added.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
@@ -38,9 +41,5 @@ Latest observation: `2026-10-07T06:13:10Z`.
 - [Holiday Decorations: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-holiday-decorations.json)
 - [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Window Shade Timed: updated.](https://raw.githubusercontent.com/esimioni/hubitat-window-shade-timed/main/manifest.json)
-- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

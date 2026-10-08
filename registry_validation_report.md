@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-07T06:13:10Z`
-- HPM repositories in master list: **218**
-- Repositories fetched successfully: **217**
-- Packages indexed: **917**
+- Snapshot: `2026-10-08T06:21:27Z`
+- HPM repositories in master list: **219**
+- Repositories fetched successfully: **218**
+- Packages indexed: **918**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **12**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **820**
+Total packages not matched by any registry entry: **821**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -362,6 +362,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Ramdev Shallem | WakeOnLan | Control | Multimedia, Misc. Devices, LAN, Tools & Utilities | https://raw.githubusercontent.com/gilshallem/Hubitat/main/HPM/wol_package.json |
 | Rangner FG (@rfg81) | Sinope Neviweb Hub GT125 | Integrations | Climate Control | https://raw.githubusercontent.com/claudegel/Hubitat-sinope-GT125/main/packageManifest.json |
 | Raul Martin Rodriguez (luarmr) | Virtual ip presence sensor | Utility | Cloud, LAN, Monitoring, Presence & Location | https://raw.githubusercontent.com/luarmr/hubitat/main/drivers/virtual_ip_presence_sensor/packageManifest.json |
+| Rayzurbock | Muse Bridge | Integrations |  | https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json |
 | Rene Boer | Aeotec Home Energy Meter 8 (3 clamp) Driver | Integrations | Energy Monitoring, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Aeotec/packageManifestHEM8.json |
 | Rene Boer | Aeotec Smart Switch 7 EU version Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Aeotec/packageManifest.json |
 | Rene Boer | Heatit ZM Dimmer 250W Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Heatit/packageManifest.json |
@@ -590,8 +591,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 820 |
-| G candidate subset | 355 |
+| G. Unrepresented packages | 821 |
+| G candidate subset | 356 |
 
 ## H. Enrichment summary
 
@@ -601,13 +602,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2268 |
-| Source URLs fetched | 2259 |
+| Distinct source URLs | 2269 |
+| Source URLs fetched | 2260 |
 | Source URLs failed | 9 |
-| Components attempted | 2282 |
-| Components fetched | 2273 |
-| Literal definitions verified | 2262 |
-| Components with observations | 2148 |
+| Components attempted | 2283 |
+| Components fetched | 2274 |
+| Literal definitions verified | 2263 |
+| Components with observations | 2149 |
 
 ### Official Hubitat documentation pass
 

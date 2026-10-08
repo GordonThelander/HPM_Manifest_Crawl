@@ -1,7 +1,7 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 180,
-    "CLOUD": 260,
+    "CLOUD": 261,
     "INSUFFICIENT": 300,
     "LAN": 177
   },
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 917,
+  "packageCount": 918,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -14910,6 +14910,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Rayzurbock",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "REST API plus spoken alert-rule engine for Muse and other integrations.",
+      "documentationUrl": null,
+      "id": "manifest:5552a357f9e2eecf1991",
+      "manifestUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json",
+      "name": "Muse Bridge",
+      "observed": {
+        "externalHosts": [
+          "cash.me",
+          "muse.ai",
+          "paypal.me",
+          "venmo.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
       "author": "Mark Weninger/Joe Page",
       "category": "Convenience",
       "classification": "INSUFFICIENT",
@@ -27718,5 +27746,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-07T06:13:10Z"
+  "snapshotGenerated": "2026-10-08T06:21:27Z"
 };

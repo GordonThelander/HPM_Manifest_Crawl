@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 917,
+    "HPM_PACKAGE": 918,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2622,
+  "recordCount": 2623,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -62345,7 +62345,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-06",
+      "dateReleased": "2026-10-07",
       "definitions": [
         {
           "id": "definition:92a5b52002ec363bfdc7",
@@ -62427,7 +62427,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.5.5"
+      "version": "4.5.6"
     },
     {
       "author": "Justin Leonard",
@@ -66296,6 +66296,91 @@
         "Window Coverings"
       ],
       "version": "3.0.0"
+    },
+    {
+      "author": "Rayzurbock",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-07",
+      "definitions": [
+        {
+          "id": "definition:398eaeffd962d8173a61",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Muse Bridge",
+          "namespace": "musebridge",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/apps/muse-bridge.groovy"
+        }
+      ],
+      "description": "REST API plus spoken alert-rule engine for Muse and other integrations.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:5552a357f9e2eecf1991",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json",
+        "repository": "https://github.com/rayzurbock/hubitat-muse-bridge"
+      },
+      "name": "Muse Bridge",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "cash.me",
+          "muse.ai",
+          "paypal.me",
+          "venmo.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "1.1.0"
     },
     {
       "author": "Mark Weninger/Joe Page",
@@ -99130,7 +99215,7 @@
         "Pools & Spas",
         "Temperature & Humidity"
       ],
-      "version": "2.4.2"
+      "version": "2.4.3"
     },
     {
       "author": "Ernie Miller",
@@ -132862,5 +132947,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-07T06:13:10Z"
+  "snapshotGenerated": "2026-10-08T06:21:27Z"
 }

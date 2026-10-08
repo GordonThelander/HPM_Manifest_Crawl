@@ -61,7 +61,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 917,
+  "packageCount": 918,
   "packages": [
     {
       "apps": [],
@@ -28255,7 +28255,7 @@
     {
       "apps": [
         {
-          "definitionLine": 101,
+          "definitionLine": 119,
           "definitionName": "WaterGuru Integration",
           "definitionNamespace": "brianwilson-hubitat",
           "manifestName": "WaterGuru Integration",
@@ -28269,7 +28269,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 90,
+              "line": 108,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -28279,7 +28279,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/WaterGuru/WaterGuru-Integration.groovy\",",
-              "line": 107,
+              "line": 125,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -28289,67 +28289,67 @@
             },
             {
               "evidence": "input \"notifyDevices\", \"capability.notification\",",
-              "line": 168,
+              "line": 186,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "runIn(2, discoverChildDevices)",
-              "line": 211,
+              "line": 229,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 240,
+              "line": 258,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 245,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5, discoverChildDevices)",
-              "line": 262,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "schedule(pollIntervalCron(pollInterval ?: \"6\"), timedRefresh)",
               "line": 263,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(5, discoverChildDevices)",
+              "line": 282,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(pollIntervalCron(pollInterval ?: \"6\"), timedRefresh)",
+              "line": 283,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "if (settings.isDebug) runIn(3600, logsOff)",
-              "line": 266,
+              "line": 286,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() above also cancelled a pending quiet-hours flush. Re-arm",
-              "line": 268,
+              "line": 288,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else runIn(5, \"flushPendingNotifications\")",
-              "line": 272,
+              "line": 292,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost([",
-              "line": 425,
+              "line": 445,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "cognitoPost(\"https://cognito-idp.${wgRegion()}.amazonaws.com/\", target, bodyMap)",
-              "line": 434,
+              "line": 454,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cognito-idp.${wgregion(",
@@ -28359,7 +28359,7 @@
             },
             {
               "evidence": "cognitoPost(\"https://cognito-identity.${wgRegion()}.amazonaws.com/\", target, bodyMap)",
-              "line": 438,
+              "line": 458,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cognito-identity.${wgregion(",
@@ -28369,13 +28369,13 @@
             },
             {
               "evidence": "httpPost([uri: \"https://${host}\", path: path, headers: headers, body: body, timeout: 30]) { resp ->",
-              "line": 661,
+              "line": 703,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([uri: \"https://${host}\", path: path, headers: headers, body: body, timeout: 30]) { resp ->",
-              "line": 661,
+              "line": 703,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${host",
@@ -28385,26 +28385,26 @@
             },
             {
               "evidence": "def d = getChildDevices()?.find { it.deviceNetworkId == id }",
-              "line": 919,
+              "line": 966,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "d = addChildDevice(\"brianwilson-hubitat\", \"WaterGuru Integration Driver\", id, null,",
-              "line": 923,
+              "line": 970,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runOnce(e, \"flushPendingNotifications\")",
-              "line": 1251,
+              "line": 1320,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 62994,
+          "sourceBytes": 67341,
           "sourceFetched": true,
-          "sourceSha256": "589e7742f0925f2e4c1c03cf49f5cc2292ada667677ff9f8bcf3cadf54214139",
+          "sourceSha256": "53e9ed1c670980967801ce843d9133c8032fa01fa3fc056395ab564fd50cad12",
           "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/WaterGuru/WaterGuru-Integration.groovy"
         }
       ],
@@ -28460,7 +28460,7 @@
         "Pools & Spas",
         "Temperature & Humidity"
       ],
-      "version": "2.4.2"
+      "version": "2.4.3"
     },
     {
       "apps": [],
@@ -181165,6 +181165,195 @@
     {
       "apps": [
         {
+          "definitionLine": 24,
+          "definitionName": "Muse Bridge",
+          "definitionNamespace": "musebridge",
+          "manifestName": "Muse Bridge",
+          "manifestNamespace": "musebridge",
+          "observations": [
+            {
+              "evidence": "mappings {",
+              "line": 47,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "\"<li><b>Cash.me</b> = <a target='_blank' href='https://cash.me/\\$Lowrance'>https://cash.me/\\$Lowrance</a> (use a debit card, it's free for both of us)</li>\" +",
+              "line": 146,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "cash.me",
+                "scheme": "https",
+                "url": "https://cash.me/\\$Lowrance"
+              }
+            },
+            {
+              "evidence": "\"<li><b>Venmo</b> = <a target='_blank' href='https://venmo.com/code?user_id=2603208862072832399'>@BrianLowrance</a></li>\" +",
+              "line": 147,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "venmo.com",
+                "scheme": "https",
+                "url": "https://venmo.com/code?user_id=2603208862072832399"
+              }
+            },
+            {
+              "evidence": "\"<li><b>Paypal.me</b> = <a target='_blank' href='https://paypal.me/brianlowrance'>https://paypal.me/brianlowrance</a> (they take a little since the account is set up as a business account)</li>\" +",
+              "line": 148,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "paypal.me",
+                "scheme": "https",
+                "url": "https://paypal.me/brianlowrance"
+              }
+            },
+            {
+              "evidence": "input \"ntPhones\", \"capability.notification\", title: \"Notification devices\", multiple: true, required: false, showFilter: true",
+              "line": 211,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "unschedule(\"deviceHealthCheck\")",
+              "line": 453,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 ${minute} ${hour} * * ?\", \"deviceHealthCheck\")",
+              "line": 467,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "\"<a target='_blank' href='https://muse.ai'>Muse</a>, \" +",
+              "line": 622,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "muse.ai",
+                "scheme": "https",
+                "url": "https://muse.ai"
+              }
+            },
+            {
+              "evidence": "— via Muse Bridge v${appVersion()} by Rayzurbock (https://github.com/rayzurbock/hubitat-muse-bridge)\"\"\".strip()",
+              "line": 649,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/rayzurbock/hubitat-muse-bridge"
+              }
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 717,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"mode\", \"ruleEventHandler\")",
+              "line": 725,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"periodicRuleEval\")",
+              "line": 726,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() above wiped all pending timers: drop stale \"pending\" flags so",
+              "line": 728,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secs, \"ruleRepeat\", [data: [ruleId: rule.id], overwrite: false])",
+              "line": 747,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 756,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(d, rule.attribute, \"ruleEventHandler\")",
+              "line": 780,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "try { subscribe(t, \"thermostatOperatingState\", \"ruleEventHandler\") }",
+              "line": 788,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secs, \"ruleCheck\", [data: [ruleId: rule.id], overwrite: false])",
+              "line": 853,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secs, \"ruleRepeat\", [data: [ruleId: rule.id], overwrite: false])",
+              "line": 895,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secs, \"ruleRepeat\", [data: [ruleId: rule.id], overwrite: false])",
+              "line": 912,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, \"restoreDeviceVolume\",",
+              "line": 1014,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "project : \"https://github.com/rayzurbock/hubitat-muse-bridge\",",
+              "line": 1341,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/rayzurbock/hubitat-muse-bridge"
+              }
+            }
+          ],
+          "sourceBytes": 82883,
+          "sourceFetched": true,
+          "sourceSha256": "1d358e092b117cd1bb6dfff9c6dbc00b78877b7811cce3c55753a3fb61772d34",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/apps/muse-bridge.groovy"
+        }
+      ],
+      "author": "Rayzurbock",
+      "category": "Integrations",
+      "communityLink": null,
+      "dateReleased": "2026-10-07",
+      "description": "REST API plus spoken alert-rule engine for Muse and other integrations.",
+      "documentationLink": null,
+      "drivers": [],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json",
+      "packageId": null,
+      "packageName": "Muse Bridge",
+      "repoAuthor": "Rayzurbock",
+      "repoName": "Rayzurbock",
+      "repoUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/repository.json",
+      "tags": [],
+      "version": "1.1.0"
+    },
+    {
+      "apps": [
+        {
           "definitionLine": 23,
           "definitionName": "HVAC Zoning",
           "definitionNamespace": "rbaldwi3",
@@ -289189,25 +289378,25 @@
             },
             {
               "evidence": "runIn(seconds, \"runMrtrCleanup\", [overwrite: true])",
-              "line": 2900,
+              "line": 2907,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(_mrtrAutoContinueDelaySeconds() * (attempt + 1), \"runMrtrAutoContinue\",",
-              "line": 4002,
+              "line": 4009,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "device = getChildDevices()?.find { it.id.toString() == deviceId.toString() }",
-              "line": 6896,
+              "line": 6903,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def hubBaseUri() { \"http://127.0.0.1:8080\" }",
-              "line": 6910,
+              "line": 6917,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -289217,56 +289406,56 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 7115,
+              "line": 7122,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (method == 'GET') httpGet(params, reader)",
-              "line": 7259,
+              "line": 7266,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "else httpPost(params, reader)",
-              "line": 7260,
+              "line": 7267,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpGet([",
-              "line": 7507,
+              "line": 7514,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "// capability.X, name.multiple=true). Omitting `.multiple=true` silently",
-              "line": 8393,
+              "line": 8400,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "* capability.X multiple=true → CSV: \"8,9\". JSON-array shape errors HTTP 500.",
-              "line": 9854,
+              "line": 9877,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             },
             {
               "evidence": "// capability.pushableButton on button.push actions) fall into a",
-              "line": 9924,
+              "line": 9947,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "2. Multi-device capability inputs (capability.X with multiple=true) require a 3-field POST payload group (settings[name]=csv, name.type=capability.X, name.multiple=true). Omitting name.multiple=true poisons the AppSetting DB flag and every ",
-              "line": 11237,
+              "line": 11264,
               "type": "CAPABILITY_REFERENCE",
               "value": "X"
             }
           ],
-          "sourceBytes": 867382,
+          "sourceBytes": 874975,
           "sourceFetched": true,
-          "sourceSha256": "f34a4497a24defa326363a824469f2f02144b6af3d3cb9fb0218e9e4970fdd1c",
+          "sourceSha256": "959b97479327bbd9283ea16a742a6dfdffae74f850b0e2bbd84f9b79664027c3",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
         },
         {
@@ -289753,14 +289942,14 @@
           ],
           "sourceBytes": 179199,
           "sourceFetched": true,
-          "sourceSha256": "75dabec65a2dc0d4fff5cb07dc147f3f8a911bbacb88d9e589ed61d70196f373",
+          "sourceSha256": "e27d356707d43209bf38e4732786b2eab07ef0077f0e293a67a6902aa19a2226",
           "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
         }
       ],
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-06",
+      "dateReleased": "2026-10-07",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -289772,7 +289961,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.5.5"
+      "version": "4.5.6"
     },
     {
       "apps": [],
@@ -349208,21 +349397,21 @@
       "version": "1.1.5"
     }
   ],
-  "repositoriesFetched": 217,
-  "repositoryCount": 218,
+  "repositoriesFetched": 218,
+  "repositoryCount": 219,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-07T06:13:10Z",
+  "snapshotGenerated": "2026-10-08T06:21:27Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2282,
+    "componentsAttempted": 2283,
     "componentsFailed": 9,
-    "componentsFetched": 2273,
-    "componentsWithObservations": 2148,
-    "definitionsVerified": 2262,
-    "distinctSourceUrls": 2268,
+    "componentsFetched": 2274,
+    "componentsWithObservations": 2149,
+    "definitionsVerified": 2263,
+    "distinctSourceUrls": 2269,
     "sourceUrlsFailed": 9,
-    "sourceUrlsFetched": 2259
+    "sourceUrlsFetched": 2260
   }
 }
