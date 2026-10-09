@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2283,
+  "definitionCount": 2284,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3098,6 +3098,26 @@ window.IDENTITY_INDEX = {
         "name": "Remote Builder for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-RemoteBuilder/main/Remote_Builder_TV.groovy"
+    },
+    {
+      "id": "definition:250b72514d6cb24d9d62",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee Integration v2",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.GoveeIntegrationv2.groovy"
     },
     {
       "id": "definition:251eee8664060384f401",
@@ -5813,26 +5833,6 @@ window.IDENTITY_INDEX = {
         "name": "go2rtc"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/go2rtc-app.groovy"
-    },
-    {
-      "id": "definition:6509b27df84b0cf6d1d0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee Integration v2",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.GoveeIntegrationv2.groovy"
     },
     {
       "id": "definition:65172a192414281381b0",
@@ -12445,6 +12445,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/Raw%20Code/BatteryMonitor2.0.groovy"
     },
     {
+      "id": "definition:ffdf6e2418345b7f15d7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hub Inspector",
+          "namespace": "hubitrep"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "hubitrep",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+        "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
+        "name": "Hub Inspector"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
+    },
+    {
       "id": "definition:003537b8d82f0eb6120f",
       "identities": [
         {
@@ -13723,26 +13743,6 @@ window.IDENTITY_INDEX = {
         "name": "Salus Drivers from BirdsLikeWires"
       },
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/salus/drivers/salus_smart_plug_sp600.groovy"
-    },
-    {
-      "id": "definition:0a17582315bba9854035",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Humidifier Driver",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2HumidifierDriver.groovy"
     },
     {
       "id": "definition:0a31f9827038adf3f41a",
@@ -16135,26 +16135,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen17-v1.3.2.groovy"
     },
     {
-      "id": "definition:1b92d4f106c4ef4c084d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Ice Maker Pro",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy"
-    },
-    {
       "id": "definition:1bc8bb0836fdb462a866",
       "identities": [
         {
@@ -17193,6 +17173,26 @@ window.IDENTITY_INDEX = {
         "name": "Lennox iComfort"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-switch.groovy"
+    },
+    {
+      "id": "definition:25e7ac65bac95e317b6a",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Device Manager",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DeviceManager.groovy"
     },
     {
       "id": "definition:262481dc4f91eab4bec9",
@@ -18365,26 +18365,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/PrayerfulDrop/Hubitat/master/Roomba/Roomba-device.groovy"
     },
     {
-      "id": "definition:2f0ad138d481afcd8f7e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H7122 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7122AirPurifier.groovy"
-    },
-    {
       "id": "definition:2f3aebb6eacf0e768404",
       "identities": [
         {
@@ -19325,6 +19305,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-GarageDoor.groovy"
     },
     {
+      "id": "definition:353891ab1636c4e05090",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H7123 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
+    },
+    {
       "id": "definition:354c761b2184a2cc068d",
       "identities": [
         {
@@ -19678,26 +19678,6 @@ window.IDENTITY_INDEX = {
         "name": "Smart Oil Gauge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/device/smartoilgauge.groovy"
-    },
-    {
-      "id": "definition:3888c9c2c13a4731693f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H7120 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7120AirPurifier.groovy"
     },
     {
       "id": "definition:38a2e23f508e3b9ddd3f",
@@ -22475,6 +22455,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
     },
     {
+      "id": "definition:4c8499d86fcd2d6529c1",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H7126 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
+    },
+    {
       "id": "definition:4cb0ea3fe945cfd94e72",
       "identities": [
         {
@@ -22683,26 +22683,6 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-fan-light-canopy-module-blue-series-vzm36.src/VZM36_Zigbee_Canopy_Fan.groovy"
-    },
-    {
-      "id": "definition:4dc5f46ebb2c19b50ea7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Somfy ZRTSI",
-          "namespace": "augoisms"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Justin Walker (augoisms)",
-        "communityUrl": "https://community.hubitat.com/t/release-somfy-zrtsi/40998",
-        "documentationUrl": null,
-        "id": "manifest:4fd864511213d397761b",
-        "manifestUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json",
-        "name": "Somfy ZRTSI"
-      },
-      "sourceUrl": "https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy"
     },
     {
       "id": "definition:4dd1d0547cdac90d83ea",
@@ -25113,26 +25093,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec MultiSensor 6"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Aeotec/Aeotec%20MultiSensor%206.groovy"
-    },
-    {
-      "id": "definition:5ce67a1b2a3de54354ff",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H7126 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
     },
     {
       "id": "definition:5d15978511592d736be4",
@@ -27955,6 +27915,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-dimmer-red-series-vzw31-sn.src/inovelli-dimmer-red-series-vzw31-sn.groovy"
     },
     {
+      "id": "definition:710fbad070ebee8213a0",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Life Child Light Device",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LifeChildLightDevice.groovy"
+    },
+    {
       "id": "definition:7111893542f5be742030",
       "identities": [
         {
@@ -28500,6 +28480,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/Composite-Device/main/Composite-Device-Driver.groovy"
     },
     {
+      "id": "definition:74c9b07dc31b296c4d20",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Humidifier Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2HumidifierDriver.groovy"
+    },
+    {
       "id": "definition:74cc5470be31b8b9eb38",
       "identities": [
         {
@@ -28993,6 +28993,26 @@ window.IDENTITY_INDEX = {
         "name": "Tuya Zigbee Light Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy"
+    },
+    {
+      "id": "definition:781d9787712e0861b9c6",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Color Lights 5 Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
     },
     {
       "id": "definition:7841c59a70b21e1f65eb",
@@ -29625,24 +29645,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/devicetypes/alarmdecoder/alarmdecoder-network-appliance.src/alarmdecoder-network-appliance.groovy"
     },
     {
-      "id": "definition:7edee3e504af2f2a55e2",
+      "id": "definition:7ea7dee6300770e769f2",
       "identities": [
         {
-          "basis": "sourceIdentity",
-          "name": "Zigbee - Xiaomi/Aqara Temperature & Humidity Sensor",
-          "namespace": "brossow"
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H7120 Air Purifier",
+          "namespace": "Mavrrick"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Brent Rossow",
+        "author": "Mavrrick",
         "communityUrl": null,
-        "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/xiaomi-aqara/th-sensor",
-        "id": "hpm:fb617f88-8840-4b3d-a383-de4559c2e837",
-        "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json",
-        "name": "Xiaomi/Aqara Temperature & Humidity Sensor"
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
       },
-      "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/zigbee-xiaomi-aqara-temperature-humidity.groovy"
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7120AirPurifier.groovy"
     },
     {
       "id": "definition:7ef8326c8dfae7e87cc0",
@@ -29988,6 +30008,26 @@ window.IDENTITY_INDEX = {
         "name": "Mitsubishi Comfort Cloud"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/drivers/mitsubishi-comfort-filter-sensor.groovy"
+    },
+    {
+      "id": "definition:824c825503e4596a0a56",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H6093 Starlight Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H6093StarlightDriver.groovy"
     },
     {
       "id": "definition:827382c634807557c9bb",
@@ -30385,6 +30425,46 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48.groovy"
     },
     {
+      "id": "definition:85cd4013086898adea21",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H712C Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H712CAirPurifier.groovy"
+    },
+    {
+      "id": "definition:85f3c496585e8c2fd452",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 H7122 Air Purifier",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7122AirPurifier.groovy"
+    },
+    {
       "id": "definition:8618709373a7ac4e5741",
       "identities": [
         {
@@ -30653,6 +30733,26 @@ window.IDENTITY_INDEX = {
         "name": "Tesla Powerwall Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DarwinsDen/Tesla-Powerwall-Manager/master/devicetypes/darwinsden/tesla-powerwall.src/tesla-powerwall.groovy"
+    },
+    {
+      "id": "definition:87b715e7ed274ba5843f",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Leak Sensor",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LeakSensor.groovy"
     },
     {
       "id": "definition:87d6ab16caa1c15b8a18",
@@ -31458,26 +31558,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2PresenceSensor.groovy"
-    },
-    {
-      "id": "definition:8c77d75bd4a6c6186dfe",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H6093 Starlight Driver",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H6093StarlightDriver.groovy"
     },
     {
       "id": "definition:8c7ff3e1f2cb752ad0b3",
@@ -33370,26 +33450,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentSelect.groovy"
     },
     {
-      "id": "definition:988fa55b46a91011dbff",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Galaxy Projector",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GalaxyProjector.groovy"
-    },
-    {
       "id": "definition:98ce996f4b3f2f0500b1",
       "identities": [
         {
@@ -33553,26 +33613,6 @@ window.IDENTITY_INDEX = {
         "name": "Pool Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/devicetypes/bsileo/pool-controller-heater.src/pool-controller-heater.groovy"
-    },
-    {
-      "id": "definition:9970a0b711ad85568f7b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Color Lights 5 Driver",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
     },
     {
       "id": "definition:999e8ebad207333a365f",
@@ -34158,6 +34198,26 @@ window.IDENTITY_INDEX = {
         "name": "Home Assistant Device Bridge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/genericComponentNumber.groovy"
+    },
+    {
+      "id": "definition:9e70ba729cff41730680",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Galaxy Projector",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GalaxyProjector.groovy"
     },
     {
       "id": "definition:9e7f1c7adf6b5c7c6f50",
@@ -35750,26 +35810,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vectra.groovy"
     },
     {
-      "id": "definition:a951541453c9407c9c8a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Leak Sensor",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LeakSensor.groovy"
-    },
-    {
       "id": "definition:a95d2314b4a2f28c008a",
       "identities": [
         {
@@ -36135,26 +36175,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_refrigerator"
     },
     {
-      "id": "definition:ab0340e22dc20a3850aa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "AlarmDecoder action button indicator",
-          "namespace": "alarmdecoder"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Nu Tech Software Solutions, Inc. & Dominick Meglio",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:54e396bd-6eb7-433d-8e54-86a430a119b5",
-        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json",
-        "name": "AlarmDecoder Integration"
-      },
-      "sourceUrl": "https://github.com/dcmeglio/alarmdecoder-smartthings/raw/master/devicetypes/alarmdecoder/alarmdecoder-action-button-indicator.src/alarmdecoder-action-button-indicator.groovy"
-    },
-    {
       "id": "definition:ab1f77328f328a224e5d",
       "identities": [
         {
@@ -36500,6 +36520,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaButton.groovy"
     },
     {
+      "id": "definition:ad55523718bd78dc04e2",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Ice Maker Pro",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy"
+    },
+    {
       "id": "definition:ad59f9e181a5eaf09477",
       "identities": [
         {
@@ -36705,24 +36745,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/climate-advisor/climate-advisor-device.groovy"
     },
     {
-      "id": "definition:ae699664909c684cf67c",
+      "id": "definition:aeb749d9d2c3831930e2",
       "identities": [
         {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Fan Driver",
-          "namespace": "Mavrrick"
+          "basis": "manifestIdentity",
+          "name": "AlarmDecoder action button indicator",
+          "namespace": "alarmdecoder"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Mavrrick",
+        "author": "Nu Tech Software Solutions, Inc. & Dominick Meglio",
         "communityUrl": null,
         "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
+        "id": "hpm:54e396bd-6eb7-433d-8e54-86a430a119b5",
+        "manifestUrl": "https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json",
+        "name": "AlarmDecoder Integration"
       },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2FanDriver.groovy"
+      "sourceUrl": "https://github.com/dcmeglio/alarmdecoder-smartthings/raw/master/devicetypes/alarmdecoder/alarmdecoder-action-button-indicator.src/alarmdecoder-action-button-indicator.groovy"
     },
     {
       "id": "definition:aed207e7dd0f4e7a2f91",
@@ -37088,26 +37128,6 @@ window.IDENTITY_INDEX = {
         "name": "Winix Air Purifiers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/WinixAirPurifiers/drivers/winix-child-switch-driver.groovy"
-    },
-    {
-      "id": "definition:b116abed8631339e63a9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Life Child Light Device",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LifeChildLightDevice.groovy"
     },
     {
       "id": "definition:b120726ecf4fd6c726d0",
@@ -39505,26 +39525,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Generic/Z-Wave%20Repeater.groovy"
     },
     {
-      "id": "definition:c021abea6396633a9f44",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H7123 Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
-    },
-    {
       "id": "definition:c04fe882a11d50b8d76d",
       "identities": [
         {
@@ -40398,6 +40398,26 @@ window.IDENTITY_INDEX = {
         "name": "Kasa Camera"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/kasaCam_Hubitat/main/drivers/kasaCameraFixed.groovy"
+    },
+    {
+      "id": "definition:c5fb9c7cfe804fcdd141",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee - Xiaomi/Aqara Temperature & Humidity Sensor",
+          "namespace": "brossow"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Brent Rossow",
+        "communityUrl": "https://community.hubitat.com/t/release-xiaomi-aqara-temperature-humidity-sensor-maintained-fork-of-the-oh-lalabs-driver-v2-0-0/166693",
+        "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/xiaomi-aqara/th-sensor",
+        "id": "hpm:fb617f88-8840-4b3d-a873-de4559c2e837",
+        "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json",
+        "name": "Xiaomi/Aqara Temperature & Humidity Sensor"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/zigbee-xiaomi-aqara-temperature-humidity.groovy"
     },
     {
       "id": "definition:c6052c084679ef2ecf89",
@@ -42363,6 +42383,26 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyProEM-v2.17.8.groovy"
+    },
+    {
+      "id": "definition:d182b4e19e261fb7a8ae",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Somfy ZRTSI",
+          "namespace": "augoisms"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Justin Walker (augoisms)",
+        "communityUrl": "https://community.hubitat.com/t/release-somfy-zrtsi/40998",
+        "documentationUrl": null,
+        "id": "manifest:4fd864511213d397761b",
+        "manifestUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json",
+        "name": "Somfy ZRTSI"
+      },
+      "sourceUrl": "https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy"
     },
     {
       "id": "definition:d1875a7001a0dff4a83f",
@@ -45600,26 +45640,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/minoston/minoston-mini-outdoor-smart-plug.groovy"
     },
     {
-      "id": "definition:e757f611d16586437041",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 H712C Air Purifier",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H712CAirPurifier.groovy"
-    },
-    {
       "id": "definition:e76436de263bee89ce46",
       "identities": [
         {
@@ -46328,6 +46348,26 @@ window.IDENTITY_INDEX = {
         "name": "IKEA Zigbee drivers"
       },
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_WS-Light.groovy"
+    },
+    {
+      "id": "definition:eb349bb907cfb4357efc",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee v2 Fan Driver",
+          "namespace": "Mavrrick"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Mavrrick",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
+        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
+        "name": "Govee Integration v2"
+      },
+      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2FanDriver.groovy"
     },
     {
       "id": "definition:eb545b3b34c2a89b9fc0",
@@ -47825,26 +47865,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/apwelsh/hubitat/master/iopool/device/eco-sensor"
     },
     {
-      "id": "definition:f76dcb40682bfe3cb77f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee v2 Device Manager",
-          "namespace": "Mavrrick"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Mavrrick",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
-        "manifestUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json",
-        "name": "Govee Integration v2"
-      },
-      "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DeviceManager.groovy"
-    },
-    {
       "id": "definition:f79caccb0f2cdc4db795",
       "identities": [
         {
@@ -48813,5 +48833,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-08T06:21:27Z"
+  "snapshotGenerated": "2026-10-09T06:23:25Z"
 };

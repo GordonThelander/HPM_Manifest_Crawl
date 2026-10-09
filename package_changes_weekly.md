@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-08T06:21:27Z`.
+Latest observation: `2026-10-09T06:23:25Z`.
 
-**37 package change(s):** added 5, declared definitions changed 2, removed 2, source location changed 1, updated 30
+**36 package change(s):** added 6, broken 1, declared definitions changed 5, removed 3, source location changed 1, updated 24
 
+- [Xiaomi/Aqara Temperature & Humidity Sensor: removed.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
+- [Xiaomi/Aqara Temperature & Humidity Sensor: added.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
+- [Somfy ZRTSI: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hub Inspector: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
+- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
+- [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
+- [Aeotec Heavy Duty Smart Switch: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/aeotec/heavy-duty-switch/packageManifest.json)
 - [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
 - [Muse Bridge: added.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
@@ -31,15 +40,5 @@ Latest observation: `2026-10-08T06:21:27Z`.
 - [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
 - [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
-- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [SoundSmart - Player (1 de 2): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_SoundSmart/main/packageManifest.json)
-- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
-- [Matter Advanced Device: added.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Matter%20Advanced%20Device/packageManifest.json)
-- [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
-- [Holiday Decorations: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-holiday-decorations.json)
-- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 482,
+  "recordCount": 483,
   "records": [
     {
       "author": null,
@@ -1884,7 +1884,7 @@
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
         {
-          "basis": "sourceIdentity",
+          "basis": "manifestIdentity",
           "name": "Govee Integration v2",
           "namespace": "Mavrrick"
         }
@@ -1892,11 +1892,11 @@
       "displayName": "Govee Integration v2",
       "evidenceChecks": {
         "communityLink": "MISSING",
-        "definitionIdentity": "MATCH",
+        "definitionIdentity": "PARTIAL",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
+        "sourceFetch": "PARTIAL"
       },
       "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
       "kind": "APP",
@@ -4305,11 +4305,11 @@
       "displayName": "AlarmDecoder Integration",
       "evidenceChecks": {
         "communityLink": "MISSING",
-        "definitionIdentity": "MATCH",
+        "definitionIdentity": "PARTIAL",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
+        "sourceFetch": "PARTIAL"
       },
       "id": "hpm:54e396bd-6eb7-433d-8e54-86a430a119b5",
       "kind": "APP",
@@ -7766,6 +7766,39 @@
       "summary": "Detect room names in device labels, create missing rooms, and sort unassigned devices into them."
     },
     {
+      "author": "hubitrep",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hub Inspector",
+          "namespace": "hubitrep"
+        }
+      ],
+      "displayName": "Hub Inspector",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "MISSING",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Hub Inspector",
+      "qualityFlags": [],
+      "summary": "A diagnostics dashboard that runs on your hub: resources, app and device CPU use, configuration snapshots you can compare, device usage, and Zigbee, Z-Wave and Matter activity."
+    },
+    {
       "author": "Bill Fleming",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -10864,7 +10897,7 @@
         "source": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/apps/muse-bridge.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "reviewed": false
       },
       "packageName": "Muse Bridge",
@@ -16248,5 +16281,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-08T06:21:27Z"
+  "snapshotGenerated": "2026-10-09T06:23:25Z"
 }

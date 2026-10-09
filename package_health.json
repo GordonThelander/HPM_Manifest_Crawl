@@ -1,6 +1,6 @@
 {
   "dataset": "package-health",
-  "packageCount": 918,
+  "packageCount": 919,
   "packages": [
     {
       "checks": {
@@ -178,9 +178,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 42
+            "MATCH": 27,
+            "NOT_AVAILABLE": 15
           },
-          "status": "MATCH"
+          "status": "PARTIAL"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -196,11 +197,87 @@
         },
         "sourceFetch": {
           "components": 42,
-          "fetched": 42,
-          "status": "PASS"
+          "fetched": 27,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.GoveeIntegrationv2.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DeviceManager.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2FanDriver.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GalaxyProjector.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H6093StarlightDriver.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7120AirPurifier.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7122AirPurifier.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H712CAirPurifier.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2HumidifierDriver.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LeakSensor.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LifeChildLightDevice.groovy"
+        }
+      ],
       "packageId": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a"
     },
     {
@@ -5274,9 +5351,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 9
+            "MATCH": 8,
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "PARTIAL"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -5292,11 +5370,17 @@
         },
         "sourceFetch": {
           "components": 9,
-          "fetched": 9,
-          "status": "PASS"
+          "fetched": 8,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/dcmeglio/alarmdecoder-smartthings/raw/master/devicetypes/alarmdecoder/alarmdecoder-action-button-indicator.src/alarmdecoder-action-button-indicator.groovy"
+        }
+      ],
       "packageId": "hpm:54e396bd-6eb7-433d-8e54-86a430a119b5"
     },
     {
@@ -13156,6 +13240,39 @@
         },
         "definitionIdentity": {
           "components": {
+            "MATCH": 1
+          },
+          "status": "MATCH"
+        },
+        "documentationLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "httpsTransport": {
+          "nonHttpsUrls": [],
+          "status": "PASS"
+        },
+        "manifestFetch": {
+          "status": "PASS",
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json"
+        },
+        "sourceFetch": {
+          "components": 1,
+          "fetched": 1,
+          "status": "PASS"
+        }
+      },
+      "crawlErrors": [],
+      "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c"
+    },
+    {
+      "checks": {
+        "communityLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "definitionIdentity": {
+          "components": {
             "MATCH": 2
           },
           "status": "MATCH"
@@ -16499,8 +16616,8 @@
     {
       "checks": {
         "communityLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://community.hubitat.com/t/release-xiaomi-aqara-temperature-humidity-sensor-maintained-fork-of-the-oh-lalabs-driver-v2-0-0/166693"
         },
         "definitionIdentity": {
           "components": {
@@ -16527,7 +16644,7 @@
         }
       },
       "crawlErrors": [],
-      "packageId": "hpm:fb617f88-8840-4b3d-a383-de4559c2e837"
+      "packageId": "hpm:fb617f88-8840-4b3d-a873-de4559c2e837"
     },
     {
       "checks": {
@@ -20175,9 +20292,9 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 1
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -20193,11 +20310,17 @@
         },
         "sourceFetch": {
           "components": 1,
-          "fetched": 1,
-          "status": "PASS"
+          "fetched": 0,
+          "status": "FAIL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 504",
+          "url": "https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy"
+        }
+      ],
       "packageId": "manifest:4fd864511213d397761b"
     },
     {
@@ -30397,7 +30520,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-08T06:21:27Z",
+  "snapshotGenerated": "2026-10-09T06:23:25Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-10-08T06:21:27Z`
+- Snapshot: `2026-10-09T06:23:25Z`
 - HPM repositories in master list: **219**
 - Repositories fetched successfully: **218**
-- Packages indexed: **918**
+- Packages indexed: **919**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **12**
+- Recorded fetch/parse errors: **29**
 
 ## A. Dead rules
 
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **821**
+Total packages not matched by any registry entry: **822**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -570,6 +570,23 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Expecting property name enclosed in double quotes: line 62 column 5 (char 3189) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.GoveeIntegrationv2.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DeviceManager.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2FanDriver.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GalaxyProjector.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H6093StarlightDriver.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7120AirPurifier.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7122AirPurifier.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7123AirPurifier.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H7126AirPurifier.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H712CAirPurifier.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2HumidifierDriver.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2IceMakerPro.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LeakSensor.groovy | HTTP 504 |
+| source | https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2LifeChildLightDevice.groovy | HTTP 504 |
+| source | https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy | HTTP 504 |
+| source | https://github.com/dcmeglio/alarmdecoder-smartthings/raw/master/devicetypes/alarmdecoder/alarmdecoder-action-button-indicator.src/alarmdecoder-action-button-indicator.groovy | HTTP 504 |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/apps/Petnet_Integration.groovy | HTTP 404 |
@@ -591,7 +608,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 821 |
+| G. Unrepresented packages | 822 |
 | G candidate subset | 356 |
 
 ## H. Enrichment summary
@@ -602,13 +619,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2269 |
-| Source URLs fetched | 2260 |
-| Source URLs failed | 9 |
-| Components attempted | 2283 |
-| Components fetched | 2274 |
-| Literal definitions verified | 2263 |
-| Components with observations | 2149 |
+| Distinct source URLs | 2270 |
+| Source URLs fetched | 2244 |
+| Source URLs failed | 26 |
+| Components attempted | 2284 |
+| Components fetched | 2258 |
+| Literal definitions verified | 2247 |
+| Components with observations | 2133 |
 
 ### Official Hubitat documentation pass
 

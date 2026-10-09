@@ -2,7 +2,7 @@ window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 180,
     "CLOUD": 261,
-    "INSUFFICIENT": 300,
+    "INSUFFICIENT": 301,
     "LAN": 177
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 918,
+  "packageCount": 919,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -531,7 +531,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Brent Rossow",
       "category": "Control",
-      "classification": "INSUFFICIENT",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -544,9 +544,11 @@ window.NETWORK_EVIDENCE = {
       "name": "Aeotec Heavy Duty Smart Switch",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -1146,8 +1148,8 @@ window.NETWORK_EVIDENCE = {
           "LAN_PROTOCOL",
           "SEND_HUB_COMMAND"
         ],
-        "sourceFilesAnalysed": 9,
-        "urlLiteralCount": 24
+        "sourceFilesAnalysed": 8,
+        "urlLiteralCount": 23
       },
       "reviewed": [],
       "tags": [
@@ -8927,6 +8929,32 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Dashboards",
         "Misc. Devices",
+        "Monitoring",
+        "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "hubitrep",
+      "category": "Utility",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "A diagnostics dashboard that runs on your hub: resources, app and device CPU use, configuration snapshots you can compare, device usage, and Zigbee, Z-Wave and Matter activity.",
+      "documentationUrl": null,
+      "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+      "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
+      "name": "Hub Inspector",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": [
         "Monitoring",
         "Tools & Utilities"
       ]
@@ -21101,7 +21129,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Justin Walker (augoisms)",
       "category": null,
-      "classification": "LAN",
+      "classification": "INSUFFICIENT",
       "communityUrl": "https://community.hubitat.com/t/release-somfy-zrtsi/40998",
       "declared": {
         "cloudTag": false,
@@ -21114,12 +21142,9 @@ window.NETWORK_EVIDENCE = {
       "name": "Somfy ZRTSI",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [
-          "HUB_ACTION",
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -26216,14 +26241,14 @@ window.NETWORK_EVIDENCE = {
       "author": "Brent Rossow",
       "category": "Temperature & Humidity",
       "classification": "LAN",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-xiaomi-aqara-temperature-humidity-sensor-maintained-fork-of-the-oh-lalabs-driver-v2-0-0/166693",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Community fork with bug fixes for Xiaomi and Aqara Zigbee temperature and humidity sensors.",
       "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/xiaomi-aqara/th-sensor",
-      "id": "hpm:fb617f88-8840-4b3d-a383-de4559c2e837",
+      "id": "hpm:fb617f88-8840-4b3d-a873-de4559c2e837",
       "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json",
       "name": "Xiaomi/Aqara Temperature & Humidity Sensor",
       "observed": {
@@ -27746,5 +27771,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-08T06:21:27Z"
+  "snapshotGenerated": "2026-10-09T06:23:25Z"
 };
