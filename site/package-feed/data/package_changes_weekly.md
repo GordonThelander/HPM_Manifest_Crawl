@@ -1,9 +1,21 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-09T06:23:25Z`.
+Latest observation: `2026-10-10T06:05:14Z`.
 
-**36 package change(s):** added 6, broken 1, declared definitions changed 5, removed 3, source location changed 1, updated 24
+**42 package change(s):** added 6, broken 1, declared definitions changed 8, removed 2, restored 1, source location changed 1, updated 28
 
+- [Xiaomi/Aqara Temperature & Humidity Sensor: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
+- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
+- [Somfy ZRTSI: changed declared definitions, was restored.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)
+- [Sofabaton Integration: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
+- [SmartThings Motion Sensor Driver: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Moonraker Klipper Printer: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
+- [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
 - [Xiaomi/Aqara Temperature & Humidity Sensor: removed.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
 - [Xiaomi/Aqara Temperature & Humidity Sensor: added.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
 - [Somfy ZRTSI: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)
@@ -34,11 +46,5 @@ Latest observation: `2026-10-09T06:23:25Z`.
 - [X-Sense Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [X-Sense Smoke/CO Detector Integration: removed.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
-- [X-Sense Integration: added.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
-- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

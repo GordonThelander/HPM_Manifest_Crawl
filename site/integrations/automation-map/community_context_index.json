@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 483,
+  "recordCount": 484,
   "records": [
     {
       "author": null,
@@ -1884,7 +1884,7 @@
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
         {
-          "basis": "manifestIdentity",
+          "basis": "sourceIdentity",
           "name": "Govee Integration v2",
           "namespace": "Mavrrick"
         }
@@ -1892,11 +1892,11 @@
       "displayName": "Govee Integration v2",
       "evidenceChecks": {
         "communityLink": "MISSING",
-        "definitionIdentity": "PARTIAL",
+        "definitionIdentity": "MATCH",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PARTIAL"
+        "sourceFetch": "PASS"
       },
       "id": "hpm:035a80c2-9cc2-482c-b174-79142ca19768:ffb5957ea8140dbb936a",
       "kind": "APP",
@@ -4305,11 +4305,11 @@
       "displayName": "AlarmDecoder Integration",
       "evidenceChecks": {
         "communityLink": "MISSING",
-        "definitionIdentity": "PARTIAL",
+        "definitionIdentity": "MATCH",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PARTIAL"
+        "sourceFetch": "PASS"
       },
       "id": "hpm:54e396bd-6eb7-433d-8e54-86a430a119b5",
       "kind": "APP",
@@ -13256,7 +13256,7 @@
       },
       "packageName": "Device Health Monitor",
       "qualityFlags": [],
-      "summary": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable - learns each device's normal pattern and alerts you when something goes quiet."
+      "summary": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable and learns each device's normal pattern and alerts you when something goes quiet."
     },
     {
       "author": "nh.schottfam",
@@ -13584,6 +13584,41 @@
         "IDENTITY_MISMATCH"
       ],
       "summary": "Starling Hub Support for Hubitat"
+    },
+    {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sofabaton Integration",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "displayName": "Sofabaton Integration",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:c57015f573a94b304002",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/SofaBaton%20Integration/ParentApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Sofabaton Integration",
+      "qualityFlags": [],
+      "summary": "Connects Sofabaton X2 and X1S universal remote hubs to Hubitat. Activities become switches kept in sync with the remote, and spare remote keys can control Hubitat lights and scenes. X2 runs fully local over Hubitat's built-in MQTT broker."
     },
     {
       "author": "TheMaster",
@@ -16281,5 +16316,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-09T06:23:25Z"
+  "snapshotGenerated": "2026-10-10T06:05:14Z"
 }

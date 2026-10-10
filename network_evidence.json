@@ -1,9 +1,9 @@
 {
   "counts": {
-    "BOTH": 180,
-    "CLOUD": 261,
-    "INSUFFICIENT": 301,
-    "LAN": 177
+    "BOTH": 181,
+    "CLOUD": 262,
+    "INSUFFICIENT": 299,
+    "LAN": 178
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 919,
+  "packageCount": 920,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1148,8 +1148,8 @@
           "LAN_PROTOCOL",
           "SEND_HUB_COMMAND"
         ],
-        "sourceFilesAnalysed": 8,
-        "urlLiteralCount": 23
+        "sourceFilesAnalysed": 9,
+        "urlLiteralCount": 24
       },
       "reviewed": [],
       "tags": [
@@ -3941,7 +3941,7 @@
         "cloudTag": false,
         "lanTag": true
       },
-      "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable — learns each device's normal pattern and alerts you when something goes quiet.",
+      "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable and learns each device's normal pattern and alerts you when something goes quiet.",
       "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
       "id": "manifest:b02e9c2e9e6f56c819a0",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
@@ -14766,24 +14766,26 @@
       "tags": []
     },
     {
-      "author": "Jdthomas24",
+      "author": "jdthomas24",
       "category": "Utility",
-      "classification": "INSUFFICIENT",
-      "communityUrl": null,
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-moonraker-klipper-3d-printer-driver/163584",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Hubitat driver for Moonraker/Klipper 3D printers. Monitor print status, temperatures, and progress via live dashboard tiles. Start, pause, resume, and cancel prints directly from Hubitat or any automation rule. Supports Sonicpad multi-printer setups and standard Raspberry Pi/BTT installs.",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Moonraker%20Klipper%203D%20Printer",
       "id": "manifest:65b677bc95189011628d",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json",
       "name": "Moonraker Klipper Printer",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "www.paypal.com"
+        ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 2
+        "urlLiteralCount": 3
       },
       "reviewed": [],
       "tags": [
@@ -20857,6 +20859,37 @@
       ]
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Connects Sofabaton X2 and X1S universal remote hubs to Hubitat. Activities become switches kept in sync with the remote, and spare remote keys can control Hubitat lights and scenes. X2 runs fully local over Hubitat's built-in MQTT broker.",
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+      "id": "manifest:c57015f573a94b304002",
+      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json",
+      "name": "Sofabaton Integration",
+      "observed": {
+        "externalHosts": [
+          "app1.sofabaton.com"
+        ],
+        "lanPrimitives": [
+          "PARSE_LAN_MESSAGE"
+        ],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 9
+      },
+      "reviewed": [],
+      "tags": [
+        "Audio & Video",
+        "Entertainment",
+        "Remotes & Buttons"
+      ]
+    },
+    {
       "author": "Derek Osborn",
       "category": "Integrations",
       "classification": "LAN",
@@ -21129,7 +21162,7 @@
     {
       "author": "Justin Walker (augoisms)",
       "category": null,
-      "classification": "INSUFFICIENT",
+      "classification": "LAN",
       "communityUrl": "https://community.hubitat.com/t/release-somfy-zrtsi/40998",
       "declared": {
         "cloudTag": false,
@@ -21142,9 +21175,12 @@
       "name": "Somfy ZRTSI",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
       },
       "reviewed": [],
       "tags": [
@@ -27771,5 +27807,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-09T06:23:25Z"
+  "snapshotGenerated": "2026-10-10T06:05:14Z"
 }
