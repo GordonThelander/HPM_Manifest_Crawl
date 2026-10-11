@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-10T06:05:14Z`.
+Latest observation: `2026-10-11T06:02:51Z`.
 
-**42 package change(s):** added 6, broken 1, declared definitions changed 8, removed 2, restored 1, source location changed 1, updated 28
+**50 package change(s):** added 6, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 36
 
+- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Netatmo Weather Station: updated, changed declared definitions.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json)
+- [Muse Bridge: updated.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
+- [BirdWeather PUC: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Xiaomi/Aqara Temperature & Humidity Sensor: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
 - [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
 - [Somfy ZRTSI: changed declared definitions, was restored.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)

@@ -1,6 +1,6 @@
 # Registry validation report
 
-- Snapshot: `2026-10-10T06:05:14Z`
+- Snapshot: `2026-10-11T06:02:51Z`
 - HPM repositories in master list: **219**
 - Repositories fetched successfully: **218**
 - Packages indexed: **920**
@@ -456,7 +456,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | bcopeland | Zooz Zen26 Switch | Integrations |  | https://raw.githubusercontent.com/djdizzyd/hubitat/master/packages/zoozZen26.json |
 | bcopeland | Zooz Zen27 Dimmer | Integrations |  | https://raw.githubusercontent.com/djdizzyd/hubitat/master/packages/zoozZen27.json |
 | brossow | BirdWeather PUC | Integrations | Pets & Animals, Cloud, Monitoring | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json |
-| brossow | Netatmo Weather Station Connect | Integrations | Cloud, Weather, Temperature & Humidity | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json |
+| brossow | Netatmo Weather Station | Integrations | Cloud, Weather, Temperature & Humidity | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json |
 | brossow | Rheem EcoNet | Integrations | Cloud, Climate Control, Temperature & Humidity, Water Heater | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json |
 | bsileo | Pool Controller | Integrations | Pools & Spas | https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/packageManifest.json |
 | bsileo | Rain Machine | Integrations | Irrigation | https://raw.githubusercontent.com/bsileo/Hubitat_RainMachine/master/packageManifest.json |

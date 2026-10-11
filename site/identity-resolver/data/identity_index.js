@@ -8305,26 +8305,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/app/smartoilgauge.groovy"
     },
     {
-      "id": "definition:9eb06d4f7a2c4a179db8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Netatmo Weather Station Connect",
-          "namespace": "brossow"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Brent Rossow",
-        "communityUrl": "https://community.hubitat.com/t/release-new-netatmo-weather-station-integration/163479",
-        "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
-        "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
-        "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherStationConnect.groovy"
-    },
-    {
       "id": "definition:9ee9f2d4a14f3e6e8635",
       "identities": [
         {
@@ -8963,6 +8943,26 @@ window.IDENTITY_INDEX = {
         "name": "MetricLogger"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Apps/VictoriaMetrics/MetricLogger.groovy"
+    },
+    {
+      "id": "definition:ac2ae9d2c54b03ffbde4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Netatmo Weather Station",
+          "namespace": "brossow"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Brent Rossow",
+        "communityUrl": "https://community.hubitat.com/t/release-new-netatmo-weather-station-integration/163479",
+        "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
+        "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
+        "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
+        "name": "Netatmo Weather Station"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherStationConnect.groovy"
     },
     {
       "id": "definition:ace97acf8661daddfcb5",
@@ -12925,7 +12925,7 @@ window.IDENTITY_INDEX = {
         "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
         "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
         "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
+        "name": "Netatmo Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherOutdoorModule.groovy"
     },
@@ -18175,7 +18175,7 @@ window.IDENTITY_INDEX = {
         "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
         "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
         "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
+        "name": "Netatmo Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherBaseStation.groovy"
     },
@@ -29275,7 +29275,7 @@ window.IDENTITY_INDEX = {
         "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
         "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
         "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
+        "name": "Netatmo Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherIndoorModule.groovy"
     },
@@ -46240,7 +46240,7 @@ window.IDENTITY_INDEX = {
         "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
         "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
         "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
+        "name": "Netatmo Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherWindGauge.groovy"
     },
@@ -47725,7 +47725,7 @@ window.IDENTITY_INDEX = {
         "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/netatmo-weather-station",
         "id": "hpm:a1144b49-00b4-44e4-8987-b4bc4e035dfb",
         "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json",
-        "name": "Netatmo Weather Station Connect"
+        "name": "Netatmo Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/NetatmoWeatherRainGauge.groovy"
     },
@@ -48913,5 +48913,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-10T06:05:14Z"
+  "snapshotGenerated": "2026-10-11T06:02:51Z"
 };
