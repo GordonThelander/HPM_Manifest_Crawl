@@ -107,6 +107,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
           "packageName": "Hub Information Driver v3",
           "summary": "Hub Information Driver v3: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b2a3ad8faf7b73b50a82d8d9",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
+          "packageName": "Hub Information Driver v3",
+          "summary": "Hub Information Driver v3: updated."
         }
       ],
       "appCount": 28,
@@ -137,7 +151,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:2cd278c7b7a0a21a741c",
       "name": "Jean P. May, Jr.",
-      "observedActivityCount": 5,
+      "observedActivityCount": 6,
       "packages": [
         {
           "appCount": 0,
@@ -449,7 +463,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Hub Information Driver v3",
           "publisherDate": "2026-10-10",
           "repositoryUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json",
-          "version": "3.1.34"
+          "version": "3.1.35"
         },
         {
           "appCount": 1,
@@ -4519,6 +4533,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:cda95eedc5f5df012d02",
           "packageName": "WaterGuru Integration",
           "summary": "WaterGuru Integration: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:de8eb80e84e79fae3cd4adaa",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f699b5947cd51024b1e3a5d8",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:cda95eedc5f5df012d02",
+          "packageName": "WaterGuru Integration",
+          "summary": "WaterGuru Integration: updated."
         }
       ],
       "appCount": 11,
@@ -4545,7 +4587,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 27,
+      "observedActivityCount": 29,
       "packages": [
         {
           "appCount": 2,
@@ -4701,7 +4743,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "WaterGuru Integration",
           "publisherDate": "2026-10-06",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "2.4.3"
+          "version": "2.4.4"
         },
         {
           "appCount": 0,
@@ -4725,9 +4767,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-10-06",
+          "publisherDate": "2026-10-11",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.34.0"
+          "version": "1.35.0"
         }
       ]
     },
@@ -5206,6 +5248,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:9ff118ecc814f5e277dd",
           "packageName": "Blinds Dusk Automation",
           "summary": "Blinds Dusk Automation: updated."
+        },
+        {
+          "category": "Thermostats",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bcd94ff7b1b7b77a2937edcd",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:e6319d46a6052ce7b5c0",
+          "packageName": "Local Ecobee Helpers",
+          "summary": "Local Ecobee Helpers: updated."
         }
       ],
       "appCount": 13,
@@ -5252,7 +5308,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
-      "observedActivityCount": 19,
+      "observedActivityCount": 20,
       "packages": [
         {
           "appCount": 0,
@@ -5367,9 +5423,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:e6319d46a6052ce7b5c0",
           "manifestUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json",
           "name": "Local Ecobee Helpers",
-          "publisherDate": "2026-10-06",
+          "publisherDate": "2026-10-11",
           "repositoryUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
-          "version": "1.3.0"
+          "version": "1.3.1"
         },
         {
           "appCount": 0,
@@ -6305,6 +6361,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3e874b873da2ba4628cc",
           "packageName": "Centralite Pearl Zigbee Thermostat",
           "summary": "Centralite Pearl Zigbee Thermostat: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8d782d1bf949ae1a0d21accf",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:3e874b873da2ba4628cc",
+          "packageName": "Centralite Pearl Zigbee Thermostat",
+          "summary": "Centralite Pearl Zigbee Thermostat: updated."
         }
       ],
       "appCount": 2,
@@ -6323,7 +6393,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 20,
+      "observedActivityCount": 21,
       "packages": [
         {
           "appCount": 0,
@@ -6347,9 +6417,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:3e874b873da2ba4628cc",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
           "name": "Centralite Pearl Zigbee Thermostat",
-          "publisherDate": "2026-10-08",
+          "publisherDate": "2026-10-10",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.8.2"
+          "version": "0.8.8"
         },
         {
           "appCount": 0,
@@ -20497,6 +20567,22 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:da4dab2f44c62a6c7ecd9c06",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated, changed source location, changed declared definitions."
         }
       ],
       "appCount": 2,
@@ -20511,7 +20597,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 32,
+      "observedActivityCount": 33,
       "packages": [
         {
           "appCount": 2,
@@ -20522,9 +20608,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-10",
+          "publisherDate": "2026-10-11",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "4.6.0"
+          "version": "4.7.0"
         }
       ]
     },
@@ -22164,6 +22250,52 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:47eb1e457805e4913b912f89",
+          "observedAt": "2026-10-12T06:13:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:d418c2f4-151d-49f3-8a59-c0973bd4014e",
+          "packageName": "Aqara Pet Feeder C1 Driver",
+          "summary": "Aqara Pet Feeder C1 Driver: added."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 1
+        }
+      ],
+      "currentPackageCount": 1,
+      "currentRank": 236,
+      "driverCount": 1,
+      "id": "contributor:70e9f5530d45c42c4744",
+      "name": "TheCase",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:d418c2f4-151d-49f3-8a59-c0973bd4014e",
+          "manifestUrl": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json",
+          "name": "Aqara Pet Feeder C1 Driver",
+          "publisherDate": "2026-08-26",
+          "repositoryUrl": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/repository.json",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
       "activity": [],
       "appCount": 1,
       "categories": [
@@ -22173,7 +22305,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 236,
+      "currentRank": 237,
       "driverCount": 0,
       "id": "contributor:7d5afc77b7d9fd6886a3",
       "name": "TheDanHealy",
@@ -22204,7 +22336,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 237,
+      "currentRank": 238,
       "driverCount": 2,
       "id": "contributor:aded9e2c5c57232eae75",
       "name": "Thomas Howard",
@@ -22235,7 +22367,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 238,
+      "currentRank": 239,
       "driverCount": 3,
       "id": "contributor:11674668553ffcc8770c",
       "name": "tinkorswim",
@@ -22266,7 +22398,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 239,
+      "currentRank": 240,
       "driverCount": 6,
       "id": "contributor:f79b56140024d7668fa8",
       "name": "Todd",
@@ -22297,7 +22429,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 240,
+      "currentRank": 241,
       "driverCount": 1,
       "id": "contributor:bd2f6cbc2a8bc5dfec77",
       "name": "TR-Systems",
@@ -22328,7 +22460,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 241,
+      "currentRank": 242,
       "driverCount": 1,
       "id": "contributor:fe417dbbfca8a5140013",
       "name": "Travis Tomka",
@@ -22430,7 +22562,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 242,
+      "currentRank": 243,
       "driverCount": 1,
       "id": "contributor:2e46c4122819bb72fd5c",
       "name": "Trunzoc/Sleuth",
@@ -22461,7 +22593,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 243,
+      "currentRank": 244,
       "driverCount": 1,
       "id": "contributor:c0169b8774e9ef9eb1c9",
       "name": "uDevel",
@@ -22492,7 +22624,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 244,
+      "currentRank": 245,
       "driverCount": 0,
       "id": "contributor:0d7795bd85122e9c9ea5",
       "name": "UltronOfSpace",
@@ -22523,7 +22655,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 245,
+      "currentRank": 246,
       "driverCount": 1,
       "id": "contributor:3cfe986a247c5ae9cd27",
       "name": "Victor Santana",
@@ -22583,7 +22715,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 246,
+      "currentRank": 247,
       "driverCount": 1,
       "id": "contributor:43e3c3b9a75a2dd734a3",
       "name": "viertaxa",
@@ -22614,7 +22746,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 247,
+      "currentRank": 248,
       "driverCount": 1,
       "id": "contributor:0fc0469097552eede65b",
       "name": "Vincent van Didden",
@@ -22645,7 +22777,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 248,
+      "currentRank": 249,
       "driverCount": 5,
       "id": "contributor:ca4823a0a208aa6ab9ea",
       "name": "Vyrolan",
@@ -22676,7 +22808,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 249,
+      "currentRank": 250,
       "driverCount": 1,
       "id": "contributor:10b1e9e1c48029622d09",
       "name": "WalksOnAir",
@@ -22707,7 +22839,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 251,
       "driverCount": 3,
       "id": "contributor:7d9c33a19dcfd53b7eac",
       "name": "WarlockWeary + Claude AI + ChatGPT + Grok",
@@ -22767,7 +22899,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 252,
       "driverCount": 1,
       "id": "contributor:9fea13bdd5881e51b7bc",
       "name": "waterboysh",
@@ -22829,7 +22961,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 253,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -22860,7 +22992,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 253,
+      "currentRank": 254,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -22891,7 +23023,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 254,
+      "currentRank": 255,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -23070,14 +23202,14 @@ window.CONTRIBUTOR_ACTIVITY = {
       "packages": []
     }
   ],
-  "currentContributorCount": 254,
-  "currentPackageCount": 920,
+  "currentContributorCount": 255,
+  "currentPackageCount": 921,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 418,
-    "eventCount": 415,
+    "attributedEventCount": 425,
+    "eventCount": 422,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-11T06:02:51Z"
+    "lastObservedAt": "2026-10-12T06:13:28Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -23088,10 +23220,10 @@ window.CONTRIBUTOR_ACTIVITY = {
     "publisherDates": "publisher-declared package release dates, shown separately from observed activity",
     "ranking": "unique packages in the current successful community package snapshot"
   },
-  "observedContributorCount": 257,
-  "rankedPackageCount": 918,
+  "observedContributorCount": 258,
+  "rankedPackageCount": 919,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-11T06:02:51Z",
+  "snapshotGenerated": "2026-10-12T06:13:28Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

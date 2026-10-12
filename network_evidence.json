@@ -3,7 +3,7 @@
     "BOTH": 181,
     "CLOUD": 262,
     "INSUFFICIENT": 299,
-    "LAN": 178
+    "LAN": 179
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 920,
+  "packageCount": 921,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1714,6 +1714,33 @@
       "reviewed": [],
       "tags": [
         "Zigbee"
+      ]
+    },
+    {
+      "author": "TheCase",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Driver for Aqara C1 Automatic Pet Feeder",
+      "documentationUrl": null,
+      "id": "hpm:d418c2f4-151d-49f3-8a59-c0973bd4014e",
+      "manifestUrl": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json",
+      "name": "Aqara Pet Feeder C1 Driver",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Pets & Animals"
       ]
     },
     {
@@ -13711,8 +13738,8 @@
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 4
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": []
@@ -27807,5 +27834,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-11T06:02:51Z"
+  "snapshotGenerated": "2026-10-12T06:13:28Z"
 }

@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-11T06:02:51Z`.
+Latest observation: `2026-10-12T06:13:28Z`.
 
-**50 package change(s):** added 6, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 36
+**52 package change(s):** added 7, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 37
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
+- [MCP Rule Server: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
+- [Aqara Pet Feeder C1 Driver: added.](https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json)
 - [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Netatmo Weather Station: updated, changed declared definitions.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json)
@@ -49,10 +56,5 @@ Latest observation: `2026-10-11T06:02:51Z`.
 - [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Honeywell Vista Envisalink TPI Alarm Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/packageManifest.json)
-- [X-Sense Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/mathewbeall/hubitat-xsense-integration/main/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

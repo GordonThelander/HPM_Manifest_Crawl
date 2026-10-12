@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-10-11T06:02:51Z`
-- HPM repositories in master list: **219**
-- Repositories fetched successfully: **218**
-- Packages indexed: **920**
+- Snapshot: `2026-10-12T06:13:28Z`
+- HPM repositories in master list: **220**
+- Repositories fetched successfully: **219**
+- Packages indexed: **921**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **12**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **823**
+Total packages not matched by any registry entry: **824**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -415,6 +415,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | StarkTemplar | Solcast_dual | Integrations | Energy Monitoring, Cloud | https://raw.githubusercontent.com/StarkTemplar/Solcast_dual/refs/heads/main/packageManifest.json |
 | Steven Dale | Yale Home | Integrations |  | https://raw.githubusercontent.com/tmleafs/hubitat-packages/main/packages/yalehomeManifest.json |
 | Taylor Brown (@thecloudtaylor) | Honeywell Home - Lyric and T Series | Integrations | Temperature & Humidity, Climate Control | https://raw.githubusercontent.com/thecloudtaylor/hubitat-packages/main/packages/honeywellManifest.json |
+| TheCase | Aqara Pet Feeder C1 Driver | Integrations | Pets & Animals | https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json |
 | TheMaster | HTTP Presence Sensor with schedule | Control | Tools & Utilities, LAN, Misc. Devices, Monitoring, Presence & Location | https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json |
 | Tim Dodd | AcuRite Temperature Sensor Mqtt Driver | Integrations |  | https://raw.githubusercontent.com/timothydodd/hubitat-acurite-mqtt/main/packageManifest.json |
 | Tim Dodd | WLED MQTT LED Driver Plus | Integrations |  | https://raw.githubusercontent.com/timothydodd/hubitat-wled-mqtt/master/packageManifest.json |
@@ -576,6 +577,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/apps/Petnet_Integration.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/drivers/Petnet_Feeder.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/hhorigian/hubitat_Hikvision/refs/heads/master/Hikvision_Controller_Driver.groovy?token=GHSAT0AAAAAACS3UP6TKISRGFWGEY3LPWDKZYDAQJQ | HTTP 404 |
+| source | https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-server.groovy | source exceeds 2097152 byte safety limit |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 13246: invalid start byte |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/Tuya_Zigbee_Rain_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 187896: invalid start byte |
 | source | https://raw.githubusercontent.com/lgkahn/hubitat/master/myct100.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 4081: invalid start byte |
@@ -592,8 +594,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 823 |
-| G candidate subset | 357 |
+| G. Unrepresented packages | 824 |
+| G candidate subset | 358 |
 
 ## H. Enrichment summary
 
@@ -603,10 +605,10 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2274 |
+| Distinct source URLs | 2275 |
 | Source URLs fetched | 2265 |
-| Source URLs failed | 9 |
-| Components attempted | 2288 |
+| Source URLs failed | 10 |
+| Components attempted | 2289 |
 | Components fetched | 2279 |
 | Literal definitions verified | 2268 |
 | Components with observations | 2154 |

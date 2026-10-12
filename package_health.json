@@ -1,6 +1,6 @@
 {
   "dataset": "package-health",
-  "packageCount": 920,
+  "packageCount": 921,
   "packages": [
     {
       "checks": {
@@ -13743,6 +13743,39 @@
         },
         "manifestFetch": {
           "status": "PASS",
+          "url": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json"
+        },
+        "sourceFetch": {
+          "components": 1,
+          "fetched": 1,
+          "status": "PASS"
+        }
+      },
+      "crawlErrors": [],
+      "packageId": "hpm:d418c2f4-151d-49f3-8a59-c0973bd4014e"
+    },
+    {
+      "checks": {
+        "communityLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "definitionIdentity": {
+          "components": {
+            "MATCH": 1
+          },
+          "status": "MATCH"
+        },
+        "documentationLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "httpsTransport": {
+          "nonHttpsUrls": [],
+          "status": "PASS"
+        },
+        "manifestFetch": {
+          "status": "PASS",
           "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json"
         },
         "sourceFetch": {
@@ -22586,9 +22619,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 2
+            "MATCH": 1,
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "PARTIAL"
         },
         "documentationLink": {
           "status": "PRESENT",
@@ -22604,11 +22638,17 @@
         },
         "sourceFetch": {
           "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "fetched": 1,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "source exceeds 2097152 byte safety limit",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-server.groovy"
+        }
+      ],
       "packageId": "manifest:7afca99889f23291349b"
     },
     {
@@ -30463,7 +30503,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-11T06:02:51Z",
+  "snapshotGenerated": "2026-10-12T06:13:28Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

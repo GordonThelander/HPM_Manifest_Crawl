@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 920,
+    "HPM_PACKAGE": 921,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2625,
+  "recordCount": 2626,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22989,6 +22989,88 @@
       "version": "0.1.6"
     },
     {
+      "author": "TheCase",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-08-26",
+      "definitions": [
+        {
+          "id": "definition:ab7a19a3ebecc471c429",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara Pet Feeder C1",
+          "namespace": "repulsor",
+          "sourceUrl": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/aqara-pet-feeder-c1.groovy"
+        }
+      ],
+      "description": "Driver for Aqara C1 Automatic Pet Feeder",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:d418c2f4-151d-49f3-8a59-c0973bd4014e",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json",
+        "repository": "https://github.com/TheCase/hubitat-packages"
+      },
+      "name": "Aqara Pet Feeder C1 Driver",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Pets & Animals"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Markus",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -26658,7 +26740,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-08",
+      "dateReleased": "2026-10-10",
       "definitions": [
         {
           "id": "definition:d9c57d8d50168fde0a14",
@@ -26740,7 +26822,7 @@
         "Thermostat",
         "Zigbee"
       ],
-      "version": "0.8.2"
+      "version": "0.8.8"
     },
     {
       "author": "n3!",
@@ -46439,7 +46521,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.34"
+      "version": "3.1.35"
     },
     {
       "author": "hubitrep",
@@ -60684,7 +60766,7 @@
       "author": "RamSet",
       "category": "Thermostats",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-06",
+      "dateReleased": "2026-10-11",
       "definitions": [
         {
           "id": "definition:206a77990819af5e56d6",
@@ -60782,7 +60864,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.3.0"
+      "version": "1.3.1"
     },
     {
       "author": "TheMaster",
@@ -62428,23 +62510,23 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-10",
+      "dateReleased": "2026-10-11",
       "definitions": [
         {
-          "id": "definition:92a5b52002ec363bfdc7",
+          "id": "definition:d758132dcd74db160242",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": null,
+          "namespace": null,
+          "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-server.groovy"
+        },
+        {
+          "id": "definition:22a957c4597a12f41429",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "MCP Rule",
           "namespace": "mcp",
-          "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-rule.groovy"
-        },
-        {
-          "id": "definition:190b8ca0472995cfc29b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "MCP Rule Server",
-          "namespace": "mcp",
-          "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/hubitat-mcp-server.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-rule.groovy"
         }
       ],
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
@@ -62467,7 +62549,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "PARTIAL"
           },
           {
             "name": "documentationLink",
@@ -62483,7 +62565,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "PARTIAL"
           }
         ],
         "classification": "PASS"
@@ -62510,7 +62592,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.6.0"
+      "version": "4.7.0"
     },
     {
       "author": "Justin Leonard",
@@ -99411,7 +99493,7 @@
         "Pools & Spas",
         "Temperature & Humidity"
       ],
-      "version": "2.4.3"
+      "version": "2.4.4"
     },
     {
       "author": "Ernie Miller",
@@ -102081,7 +102163,7 @@
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-06",
+      "dateReleased": "2026-10-11",
       "definitions": [
         {
           "id": "definition:2a431cffb2406a42bf11",
@@ -102168,7 +102250,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.34.0"
+      "version": "1.35.0"
     },
     {
       "author": "Jake Lehner",
@@ -133143,5 +133225,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-11T06:02:51Z"
+  "snapshotGenerated": "2026-10-12T06:13:28Z"
 }
