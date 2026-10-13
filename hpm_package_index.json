@@ -174308,7 +174308,7 @@
     {
       "apps": [
         {
-          "definitionLine": 115,
+          "definitionLine": 116,
           "definitionName": "CoCoHue - Hue Bridge Integration",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue - Hue Bridge Integration",
@@ -174326,7 +174326,7 @@
             },
             {
               "evidence": "documentationLink: \"https://community.hubitat.com/t/release-cocohue-hue-bridge-integration-including-scenes/27978\",",
-              "line": 123,
+              "line": 124,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -174336,13 +174336,19 @@
             },
             {
               "evidence": "runIn(3, \"upgradeCCHv1DNIsToV2\")",
-              "line": 159,
+              "line": 160,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "getChildDevices().each { DeviceWrapper cd ->",
+              "line": 165,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 188,
+              "line": 189,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -174352,301 +174358,301 @@
             },
             {
               "evidence": "asynchttpGet(\"upgradeCCHv1DNIsToV2ResponseHandler\", params)",
-              "line": 196,
+              "line": 197,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "runIn(6, \"retryUpgradeCCHv1DNIsToV2\")",
-              "line": 203,
+              "line": 204,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "DeviceWrapper dev = getChildDevices().find { DeviceWrapper d ->",
-              "line": 310,
+              "line": 311,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 355,
+              "line": 356,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"ssdpTerm.urn:schemas-upnp-org:device:basic:1\", \"ssdpHandler\")",
-              "line": 361,
+              "line": 362,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"${Math.round(Math.random() * 59)} ${Math.round(Math.random() * 59)} 6 ? * * *\",",
-              "line": 362,
+              "line": 363,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"periodicSendDiscovery\")",
-              "line": 368,
+              "line": 369,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"hubRestartHandler\")",
-              "line": 370,
+              "line": 371,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(7, \"sendBridgeDiscoveryCommandIfSSDPEnabled\")",
-              "line": 373,
+              "line": 374,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"periodicSendDiscovery\")",
-              "line": 378,
+              "line": 379,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"hubRestartHandler\")",
-              "line": 381,
+              "line": 382,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 387,
+              "line": 388,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(15, \"initialize\") // re-check version after has time to fetch in case upgrading from old version without this value",
-              "line": 398,
+              "line": 399,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"refreshBridge\")",
-              "line": 421,
+              "line": 422,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${Math.round(Math.random() * pollInt)}/${pollInt} * * ? * * *\", \"refreshBridge\")",
-              "line": 425,
+              "line": 426,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${Math.round(Math.random() * 59)} */2 * ? * * *\", \"refreshBridge\")",
-              "line": 433,
+              "line": 434,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${Math.round(Math.random() * 59)} */3 * ? * * *\", \"refreshBridge\")",
-              "line": 437,
+              "line": 438,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"refreshBridge\")",
-              "line": 441,
+              "line": 442,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"refreshBridge\")",
-              "line": 445,
+              "line": 446,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(\"lan discovery ssdpTerm.urn:schemas-upnp-org:device:basic:1\",",
-              "line": 459,
+              "line": 460,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(\"lan discovery ssdpTerm.urn:schemas-upnp-org:device:basic:1\",",
-              "line": 459,
+              "line": 460,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "hubitat.device.Protocol.LAN))",
-              "line": 460,
+              "line": 461,
               "type": "LAN_PROTOCOL",
               "value": "Protocol.LAN"
             },
             {
               "evidence": "runIn(Math.round(Math.random() * 10) + 15, \"sendBridgeDiscoveryCommandIfSSDPEnabled\") // do in about 15-25 seconds",
-              "line": 497,
+              "line": 498,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.round(Math.random() * 20) + 35, \"sendUpdateBridgeCacheRequest\") // do in about 35-55 seconds",
-              "line": 499,
+              "line": 500,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"ssdpTerm.urn:schemas-upnp-org:device:basic:1\", \"ssdpHandler\")",
-              "line": 558,
+              "line": 559,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"ssdpTerm.urn:schemas-upnp-org:device:basic:1\", \"ssdpHandler\")",
-              "line": 627,
+              "line": 628,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "List<DeviceWrapper> unclaimedBulbs = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/Light/\") }",
-              "line": 888,
+              "line": 889,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "List<DeviceWrapper> unclaimedGroups = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/Group/\") }",
-              "line": 968,
+              "line": 969,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "List<DeviceWrapper> unclaimedScenes = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/Scene/\") }",
-              "line": 1057,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "List<DeviceWrapper> unclaimedSmartScenes = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/SmartScene/\") }",
               "line": 1058,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
+              "evidence": "List<DeviceWrapper> unclaimedSmartScenes = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/SmartScene/\") }",
+              "line": 1059,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
               "evidence": "List<DeviceWrapper> unclaimedSensors = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/Sensor/\") }",
-              "line": 1216,
+              "line": 1217,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "List<DeviceWrapper> unclaimedButtons = getChildDevices().findAll { it.deviceNetworkId.startsWith(\"${DNI_PREFIX}/${app.id}/Button/\") }",
-              "line": 1293,
+              "line": 1294,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "DeviceWrapper bulbDev = addChildDevice(NAMESPACE, devDriver, devDNI, devProps)",
-              "line": 1385,
+              "line": 1386,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "DeviceWrapper grpDev = addChildDevice(NAMESPACE, DRIVER_NAME_GROUP, devDNI, devProps)",
-              "line": 1415,
+              "line": 1416,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "DeviceWrapper scDev = addChildDevice(NAMESPACE, DRIVER_NAME_SCENE, devDNI, devProps)",
-              "line": 1455,
+              "line": 1456,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(NAMESPACE, DRIVER_NAME_MOTION, devDNI, devProps)",
-              "line": 1494,
+              "line": 1495,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "DeviceWrapper d = addChildDevice(NAMESPACE, DRIVER_NAME_BUTTON, devDNI, devProps)",
-              "line": 1524,
+              "line": 1525,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "asynchttpPost(\"parseUsernameResponse\", params, null)",
-              "line": 1578,
+              "line": 1579,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet(\"parseBridgeInfoResponse\", params, options)",
-              "line": 1633,
+              "line": 1644,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "if (!bridgeDevice) bridgeDevice = addChildDevice(NAMESPACE, DRIVER_NAME_BRIDGE, \"${DNI_PREFIX}/${app.id}\", null,",
-              "line": 1693,
+              "line": 1704,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "Map parsedMap = parseLanMessage(evt?.description)",
-              "line": 1756,
+              "line": 1767,
               "type": "PARSE_LAN_MESSAGE",
               "value": true
             },
             {
               "evidence": "runIn(3, \"refreshBridge\", [reschedule: true])",
-              "line": 1846,
+              "line": 1857,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "List<DeviceWrapper> devList = getChildDevices().findAll { it.getDeviceNetworkId().startsWith(\"${DNI_PREFIX}/${app.id}/Light/\") }",
-              "line": 1881,
+              "line": 1892,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "devList += getChildDevices().findAll { it.getDeviceNetworkId().startsWith(\"${DNI_PREFIX}/${app.id}/Group/\") && !(it.getDeviceNetworkId() == \"${DNI_PREFIX}/${app.id}/Group/0\") }",
-              "line": 1883,
+              "line": 1894,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.findAll({it.getDeviceNetworkId()?.startsWith(\"${DNI_PREFIX}/${app.id}/Group/\")})?.each {",
-              "line": 1900,
+              "line": 1911,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "// sceneDevs = getChildDevices()?.findAll({it.getDeviceNetworkId()?.startsWith(\"${DNI_PREFIX}/${app.id}/Scene/\") &&",
-              "line": 1926,
+              "line": 1937,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "// sceneDevs = getChildDevices()?.findAll({it.getDeviceNetworkId()?.startsWith(\"${DNI_PREFIX}/${app.id}/Scene/\") &&",
-              "line": 1930,
+              "line": 1941,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "memberBulbDevs = getChildDevices().findAll { it.getDeviceNetworkId().startsWith(\"${DNI_PREFIX}/${app.id}/Light/\") }",
-              "line": 1952,
+              "line": 1963,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "/** Performs asynchttpPut() to Bridge, normally done from child devices as way of sending commands from device",
-              "line": 1987,
+              "line": 1998,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "uri: \"https://${getBridgeData().ip}\",",
-              "line": 1996,
+              "line": 2007,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${getbridgedata(",
@@ -174656,32 +174662,32 @@
             },
             {
               "evidence": "asynchttpPut(\"bridgeAsyncPutV2Callback\", params, data)",
-              "line": 2012,
+              "line": 2023,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "getChildDevices().sort { it.deviceNetworkId }.each { DeviceWrapper dev ->",
-              "line": 2103,
+              "line": 2122,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             }
           ],
-          "sourceBytes": 111773,
+          "sourceBytes": 112732,
           "sourceFetched": true,
-          "sourceSha256": "9e69e2f3592a4f1020a4a91aebece1a12cf200162bbd0dbae96b3ec17e17fc73",
+          "sourceSha256": "7c7c14c28e96cf78ea7b72c1392d590701e816936e8a357e028991db665da1df",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/apps/cocohue-app.groovy"
         }
       ],
       "author": "Robert Morris",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-cocohue-hue-bridge-integration-including-scenes/27978",
-      "dateReleased": "2026-08-09",
+      "dateReleased": "2026-10-11",
       "description": "Community-created Hue Bridge inegration for lights, groups, and scenes",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 80,
+          "definitionLine": 83,
           "definitionName": "CoCoHue Bridge",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue Bridge",
@@ -174699,7 +174705,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-bridge-driver.groovy\"",
-              "line": 84,
+              "line": 87,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -174709,29 +174715,35 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 118,
+              "line": 121,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (parent.getEventStreamEnabledSetting() == true) runIn(3, \"connectEventStream\")",
-              "line": 122,
+              "line": 125,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "log.debug \"Connecting to event stream at 'https://${data.ip}/eventstream/clip/v2' with Hue API key '${data.username}'\"",
-              "line": 138,
+              "evidence": "log.debug \"Connecting to event stream at 'https://${data.ip}/eventstream/clip/v2' with Hue API key '${maskApiKey(data.username)}'\"",
+              "line": 143,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${data.ip",
                 "scheme": "https",
                 "url": "https://${data.ip"
               }
+            },
+            {
+              "evidence": "runIn(eventStreamConnectTimeout, \"setEventStreamStatusToDisconnected\")",
+              "line": 147,
+              "type": "SCHEDULING",
+              "value": true
             },
             {
               "evidence": "\"https://${data.ip}/eventstream/clip/v2\", [",
-              "line": 142,
+              "line": 150,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${data.ip",
@@ -174740,86 +174752,80 @@
               }
             },
             {
+              "evidence": "unschedule(\"setEventStreamStatusToDisconnected\")",
+              "line": 160,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"reconnectEventStream\")",
+              "line": 191,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(eventStreamDisconnectGracePeriod, \"setEventStreamStatusToDisconnected\")",
-              "line": 174,
+              "line": 202,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEventStreamStatusToDisconnected\")",
-              "line": 186,
+              "line": 214,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(state.connectionRetryTime, \"reconnectEventStream\")",
-              "line": 207,
+              "line": 239,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "dev = parent.getChildDevices().find { DeviceWrapper d ->",
-              "line": 285,
+              "line": 317,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "asynchttpGet(\"parseStatesV1\", params)",
-              "line": 360,
+              "line": 392,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
-              "evidence": "if (dev == null) dev = parent.getChildDevices().find {",
-              "line": 471,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "if (dev == null) dev = parent.getChildDevices().find {",
-              "line": 516,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "dev = parent.getChildDevices().find { DeviceWrapper d ->",
-              "line": 591,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "DeviceWrapper sensorDev = parent.getChildDevices().findAll { DeviceWrapper it ->",
-              "line": 618,
+              "evidence": "parent.getChildDevices().each { DeviceWrapper d ->",
+              "line": 579,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "asynchttpGet(\"parseGetAllBulbsResponseV1\", params)",
-              "line": 652,
+              "line": 732,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet(\"parseGetAllGroupsResponseV1\", params)",
-              "line": 726,
+              "line": 806,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet(\"parseGetAllScenesResponseV1\", params)",
-              "line": 848,
+              "line": 928,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 1185,
+              "line": 1288,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 1196,
+              "line": 1299,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -174829,14 +174835,14 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 1203,
+              "line": 1306,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 53129,
+          "sourceBytes": 58617,
           "sourceFetched": true,
-          "sourceSha256": "2a19c6a31d0deff453ea4ff3c6d9f13dc26cddebeea3595367617b056bddc32d",
+          "sourceSha256": "9f9100ecb09169e4b5b174519284208a68cd6ed0fd1a406743e4fd02959eed90",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-bridge-driver.groovy"
         },
         {
@@ -174901,7 +174907,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-button-driver.groovy"
         },
         {
-          "definitionLine": 71,
+          "definitionLine": 72,
           "definitionName": "CoCoHue CT Bulb",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue CT Bulb",
@@ -174919,7 +174925,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue CT Bulb\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-ct-bulb-driver.groovy\") {",
-              "line": 71,
+              "line": 72,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -174929,25 +174935,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 134,
+              "line": 135,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 378,
+              "line": 379,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 514,
+              "line": 515,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 525,
+              "line": 526,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -174957,18 +174963,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 532,
+              "line": 533,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 38380,
+          "sourceBytes": 38276,
           "sourceFetched": true,
-          "sourceSha256": "8ae77ec9dd85d1d8c90d68917d39109447e7636188afe9c229222d6bd52bcf33",
+          "sourceSha256": "e6cf580b4eecd472fb9603f1a3368cf206ac34731d2e51af9eac0cc8b4b923ff",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-ct-bulb-driver.groovy"
         },
         {
-          "definitionLine": 63,
+          "definitionLine": 64,
           "definitionName": "CoCoHue Dimmable Bulb",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue Dimmable Bulb",
@@ -174986,7 +174992,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue Dimmable Bulb\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-dimmable-bulb-driver.groovy\") {",
-              "line": 63,
+              "line": 64,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -174996,25 +175002,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 123,
+              "line": 124,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 343,
+              "line": 344,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 479,
+              "line": 480,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 490,
+              "line": 491,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175024,18 +175030,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 497,
+              "line": 498,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 32303,
+          "sourceBytes": 32339,
           "sourceFetched": true,
-          "sourceSha256": "6d74d0f1a59537dcc01ab49934fc0b41179f609f9f9d192930f9f11d25ef0783",
+          "sourceSha256": "7b65652a90156094785250b9b4025807ca9db42ed0e34bb35822a09d3a860fbf",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-dimmable-bulb-driver.groovy"
         },
         {
-          "definitionLine": 90,
+          "definitionLine": 91,
           "definitionName": "CoCoHue Group",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue Group",
@@ -175053,7 +175059,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue Group\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-group-driver.groovy\") {",
-              "line": 90,
+              "line": 91,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175063,25 +175069,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 154,
+              "line": 155,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 458,
+              "line": 459,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 709,
+              "line": 710,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 720,
+              "line": 721,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175091,18 +175097,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 727,
+              "line": 728,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 54541,
+          "sourceBytes": 54586,
           "sourceFetched": true,
-          "sourceSha256": "f6fb7b126358842b35594daae67f32b133c97df3316820356239667f3eecb40b",
+          "sourceSha256": "cc4189ada993fa47ab1dc81550fd87be7adbe99722e381c04a5b7661ec108fd7",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-group-driver.groovy"
         },
         {
-          "definitionLine": 41,
+          "definitionLine": 42,
           "definitionName": "CoCoHue Motion Sensor",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue Motion Sensor",
@@ -175120,7 +175126,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue Motion Sensor\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-motion-sensor-driver.groovy\") {",
-              "line": 41,
+              "line": 42,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175130,19 +175136,19 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 79,
+              "line": 80,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 272,
+              "line": 273,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 283,
+              "line": 284,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175152,18 +175158,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 290,
+              "line": 291,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 14991,
+          "sourceBytes": 14952,
           "sourceFetched": true,
-          "sourceSha256": "a407bf86ffc89e0bc1e018288fdfb245a3f6c29e17696740eae7ae812d8a90ca",
+          "sourceSha256": "cf781fd8e20499f2b984a4e9e251e816a018e325dd3e0d69d980ca9c26a0d7e6",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-motion-sensor-driver.groovy"
         },
         {
-          "definitionLine": 57,
+          "definitionLine": 58,
           "definitionName": "CoCoHue Plug",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue On/Off Plug",
@@ -175181,7 +175187,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue Plug\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-plug-driver.groovy\") {",
-              "line": 57,
+              "line": 58,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175191,25 +175197,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 111,
+              "line": 112,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 265,
+              "line": 266,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 402,
+              "line": 403,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 413,
+              "line": 414,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175219,18 +175225,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 420,
+              "line": 421,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 21533,
+          "sourceBytes": 21569,
           "sourceFetched": true,
-          "sourceSha256": "bf62c84aed4145d4ec5608bb328b1ea31b37cf21edeaebb5ce709e8b25d8cb04",
+          "sourceSha256": "c25417d944ba55a5046d3071787b45110f289153967e4a4e4746d23771baa04e",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-plug-driver.groovy"
         },
         {
-          "definitionLine": 58,
+          "definitionLine": 59,
           "definitionName": "CoCoHue RGB Bulb",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue RGB Bulb",
@@ -175248,7 +175254,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue RGB Bulb\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-rgb-bulb-driver.groovy\") {",
-              "line": 58,
+              "line": 59,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175258,7 +175264,7 @@
             },
             {
               "evidence": "// Not recommended because of problem described here: https://developers.meethue.com/forum/t/using-transitiontime-with-on-false-resets-bri-to-1/4585",
-              "line": 86,
+              "line": 87,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.meethue.com",
@@ -175268,25 +175274,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 136,
+              "line": 137,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 425,
+              "line": 426,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 561,
+              "line": 562,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 572,
+              "line": 573,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175296,18 +175302,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 579,
+              "line": 580,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 41486,
+          "sourceBytes": 41522,
           "sourceFetched": true,
-          "sourceSha256": "b474c414909222e36d76f751b732ac34bddf245bf7f035cbf412c71ee784b1e4",
+          "sourceSha256": "68958cc4f7f2bf5f47fc91fe73316dea3746b4a309b7e5166b8db323c477c1c6",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-rgb-bulb-driver.groovy"
         },
         {
-          "definitionLine": 92,
+          "definitionLine": 93,
           "definitionName": "CoCoHue RGBW Bulb",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue RGBW Bulb",
@@ -175325,7 +175331,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue RGBW Bulb\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-rgbw-bulb-driver.groovy\") {",
-              "line": 92,
+              "line": 93,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175335,7 +175341,7 @@
             },
             {
               "evidence": "// Not recommended because of problem described here: https://developers.meethue.com/forum/t/using-transitiontime-with-on-false-resets-bri-to-1/4585",
-              "line": 121,
+              "line": 122,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.meethue.com",
@@ -175345,25 +175351,25 @@
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 173,
+              "line": 174,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params, createHubEvents ? commandMap : null)",
-              "line": 505,
+              "line": 506,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 644,
+              "line": 645,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 655,
+              "line": 656,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175373,18 +175379,18 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 662,
+              "line": 663,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 50438,
+          "sourceBytes": 50474,
           "sourceFetched": true,
-          "sourceSha256": "f173c5b57cb959bcd3a2a62acb6e3104e029b417171c45ee3b0fd0146709989e",
+          "sourceSha256": "0e1fb4c70cd652d8a0d681301f1d3f9c97b1b595463a057970d73b5c27660271",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-rgbw-bulb-driver.groovy"
         },
         {
-          "definitionLine": 62,
+          "definitionLine": 63,
           "definitionName": "CoCoHue Scene",
           "definitionNamespace": "RMoRobert",
           "manifestName": "CoCoHue Scene",
@@ -175402,7 +175408,7 @@
             },
             {
               "evidence": "definition(name: \"CoCoHue Scene\", namespace: \"RMoRobert\", author: \"Robert Morris\", importUrl: \"https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-scene-driver.groovy\") {",
-              "line": 62,
+              "line": 63,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -175412,55 +175418,55 @@
             },
             {
               "evidence": "runIn(3, \"initialize\")",
-              "line": 91,
+              "line": 92,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(debugAutoDisableMinutes*60, \"debugOff\")",
-              "line": 124,
+              "line": 125,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(sec.toInteger(), \"autoOffHandler\")",
-              "line": 192,
+              "line": 193,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPut(\"parseSendCommandResponseV1\", params /*, [attribute: 'switch', value: 'on']*/)",
-              "line": 306,
+              "line": 307,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "// asynchttpPut(\"parseSendCommandResponseV1\", params, [attribute: 'switch', value: 'off'])",
-              "line": 377,
+              "line": 378,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "// asynchttpPut(\"parseSendCommandResponseV1\", params)",
-              "line": 402,
+              "line": 403,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "asynchttpGet(\"fetchSceneDataResponseV1\", sceneParams)",
-              "line": 498,
+              "line": 499,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "/** Performs asynchttpGet() to Bridge using data retrieved from parent app or as passed in",
-              "line": 666,
+              "line": 667,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://${bridgeData.ip}\",",
-              "line": 677,
+              "line": 678,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${bridgedata.ip",
@@ -175470,14 +175476,14 @@
             },
             {
               "evidence": "asynchttpGet(callbackMethod, params, data)",
-              "line": 684,
+              "line": 685,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 31818,
+          "sourceBytes": 31814,
           "sourceFetched": true,
-          "sourceSha256": "3dd74291e5b8c7a0521c99159b544ae3f523322e54092357f2611f77c954d45e",
+          "sourceSha256": "e1f0541e500e088481384c4d0519a58df916e6493fdadc0fbcb3d27522c52c19",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/drivers/cocohue-scene-driver.groovy"
         }
       ],
@@ -177527,18 +177533,24 @@
               "line": 44,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
+            },
+            {
+              "evidence": "input \"oppositeLights\", \"capability.switch\", title: \"Lights to turn OFF while these decorations are on (optional)\",",
+              "line": 45,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
             }
           ],
-          "sourceBytes": 14027,
+          "sourceBytes": 15274,
           "sourceFetched": true,
-          "sourceSha256": "cbe7a14b5249f3524acd94f39eb631c030d6afabec7ef1fc189b27c4bff232f7",
+          "sourceSha256": "2ab25cbf0792e3fb7702514cf8a21894b096ac30007f004ccd9aa42f267d741e",
           "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/holiday-decorations/holiday-decorations-schedule.groovy"
         }
       ],
       "author": "RamSet",
       "category": "Convenience",
       "communityLink": null,
-      "dateReleased": "2026-10-01",
+      "dateReleased": "2026-10-12",
       "description": "Seasonal decoration schedules with shared wind and rain protection, darkness sensing, and a security-state veto.",
       "documentationLink": null,
       "drivers": [],
@@ -177550,7 +177562,7 @@
       "repoName": "RamSet",
       "repoUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
       "tags": [],
-      "version": "1.3.1"
+      "version": "1.4.0"
     },
     {
       "apps": [],
@@ -290636,7 +290648,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-11",
+      "dateReleased": "2026-10-12",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -290648,7 +290660,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.7.0"
+      "version": "4.7.1"
     },
     {
       "apps": [],
@@ -350087,7 +350099,7 @@
   "repositoriesFetched": 219,
   "repositoryCount": 220,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-12T06:13:28Z",
+  "snapshotGenerated": "2026-10-13T06:56:06Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
