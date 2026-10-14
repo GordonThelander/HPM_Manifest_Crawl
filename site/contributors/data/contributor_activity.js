@@ -9317,6 +9317,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ce6722c95b3cffa0b69206d7",
+          "observedAt": "2026-10-14T05:06:26Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 5,
@@ -9343,7 +9357,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 12,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 28,
+      "observedActivityCount": 29,
       "packages": [
         {
           "appCount": 1,
@@ -9400,7 +9414,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 1,
           "category": "Safety & Security",
-          "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+          "communityUrl": "https://community.hubitat.com/t/165352",
           "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
           "driverCount": 4,
           "id": "manifest:1fb36d6ab3dd1abe2238",
@@ -9408,7 +9422,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-08-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.9"
+          "version": "1.6.10"
         },
         {
           "appCount": 0,
@@ -16155,6 +16169,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f5e037b28e36018236ad",
           "packageName": "webCoRE",
           "summary": "webCoRE: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4353f24da71f99ed9291ebca",
+          "observedAt": "2026-10-14T05:06:26Z",
+          "observedCommit": null,
+          "packageId": "manifest:f5e037b28e36018236ad",
+          "packageName": "webCoRE",
+          "summary": "webCoRE: updated."
         }
       ],
       "appCount": 5,
@@ -16173,7 +16201,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -16197,9 +16225,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f5e037b28e36018236ad",
           "manifestUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json",
           "name": "webCoRE",
-          "publisherDate": "2026-08-08",
+          "publisherDate": "2026-10-13",
           "repositoryUrl": "https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/repository.json",
-          "version": "1.0.101"
+          "version": "1.0.102"
         }
       ]
     },
@@ -19379,6 +19407,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:23c4b47e01e2c829fb7007ca",
+          "observedAt": "2026-10-14T05:06:26Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -19393,7 +19435,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 1,
@@ -19404,9 +19446,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-10-03",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "2.2.0"
+          "version": "2.2.1"
         }
       ]
     },
@@ -23249,10 +23291,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 921,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 428,
-    "eventCount": 425,
+    "attributedEventCount": 431,
+    "eventCount": 428,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-13T06:56:06Z"
+    "lastObservedAt": "2026-10-14T05:06:26Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -23266,7 +23308,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 258,
   "rankedPackageCount": 919,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-13T06:56:06Z",
+  "snapshotGenerated": "2026-10-14T05:06:26Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -18069,7 +18069,7 @@ window.NETWORK_EVIDENCE = {
       "author": "jdthomas24",
       "category": "Safety & Security",
       "classification": "BOTH",
-      "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+      "communityUrl": "https://community.hubitat.com/t/165352",
       "declared": {
         "cloudTag": false,
         "lanTag": false
@@ -27834,5 +27834,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-13T06:56:06Z"
+  "snapshotGenerated": "2026-10-14T05:06:26Z"
 };

@@ -1,9 +1,12 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-13T06:56:06Z`.
+Latest observation: `2026-10-14T05:06:26Z`.
 
-**53 package change(s):** added 7, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 38
+**56 package change(s):** added 7, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 41
 
+- [webCoRE: updated.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Holiday Decorations: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-holiday-decorations.json)
 - [CoCoHue (Hue Bridge Integration): updated.](https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/packageManifest.json)

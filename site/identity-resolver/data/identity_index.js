@@ -11876,7 +11876,7 @@ window.IDENTITY_INDEX = {
       "kind": "APP",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+        "communityUrl": "https://community.hubitat.com/t/165352",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
         "id": "manifest:1fb36d6ab3dd1abe2238",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
@@ -16106,7 +16106,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+        "communityUrl": "https://community.hubitat.com/t/165352",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
         "id": "manifest:1fb36d6ab3dd1abe2238",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
@@ -38956,7 +38956,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+        "communityUrl": "https://community.hubitat.com/t/165352",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
         "id": "manifest:1fb36d6ab3dd1abe2238",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
@@ -40101,7 +40101,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+        "communityUrl": "https://community.hubitat.com/t/165352",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
         "id": "manifest:1fb36d6ab3dd1abe2238",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
@@ -42976,7 +42976,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+        "communityUrl": "https://community.hubitat.com/t/165352",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
         "id": "manifest:1fb36d6ab3dd1abe2238",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
@@ -48933,5 +48933,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-13T06:56:06Z"
+  "snapshotGenerated": "2026-10-14T05:06:26Z"
 };
