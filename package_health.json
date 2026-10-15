@@ -3257,9 +3257,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 2
+            "MATCH": 1,
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "PARTIAL"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -3275,11 +3276,17 @@
         },
         "sourceFetch": {
           "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "fetched": 1,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy"
+        }
+      ],
       "packageId": "hpm:369f7089-5cb4-4502-aaaf-e8a68ce1d632"
     },
     {
@@ -7251,9 +7258,9 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 1
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -7269,11 +7276,17 @@
         },
         "sourceFetch": {
           "components": 1,
-          "fetched": 1,
-          "status": "PASS"
+          "fetched": 0,
+          "status": "FAIL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy"
+        }
+      ],
       "packageId": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e"
     },
     {
@@ -7548,9 +7561,9 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 2
+            "NOT_AVAILABLE": 2
           },
-          "status": "MATCH"
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -7566,11 +7579,22 @@
         },
         "sourceFetch": {
           "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "fetched": 0,
+          "status": "FAIL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy"
+        },
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy"
+        }
+      ],
       "packageId": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e"
     },
     {
@@ -12844,11 +12868,17 @@
         },
         "sourceFetch": {
           "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "fetched": 1,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy"
+        }
+      ],
       "packageId": "hpm:c0e73f14-24eb-4822-a493-2475fdc913c5"
     },
     {
@@ -13696,9 +13726,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 3
+            "MATCH": 2,
+            "NOT_AVAILABLE": 1
           },
-          "status": "MATCH"
+          "status": "PARTIAL"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -13714,11 +13745,17 @@
         },
         "sourceFetch": {
           "components": 3,
-          "fetched": 3,
-          "status": "PASS"
+          "fetched": 2,
+          "status": "PARTIAL"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "source",
+          "reason": "HTTP 404",
+          "url": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
+        }
+      ],
       "packageId": "hpm:d35cca76-eea2-4c3d-9843-0e5e2f806893"
     },
     {
@@ -30503,7 +30540,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-14T05:06:26Z",
+  "snapshotGenerated": "2026-10-15T04:55:28Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

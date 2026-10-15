@@ -6389,6 +6389,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:3e874b873da2ba4628cc",
           "packageName": "Centralite Pearl Zigbee Thermostat",
           "summary": "Centralite Pearl Zigbee Thermostat: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8383148eb237ea5bdc6e1c56",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:3e874b873da2ba4628cc",
+          "packageName": "Centralite Pearl Zigbee Thermostat",
+          "summary": "Centralite Pearl Zigbee Thermostat: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c7cc06f13405c4b4f5f8f4df",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:d6513611d38422ced953",
+          "packageName": "Third Reality Custom Drivers",
+          "summary": "Third Reality Custom Drivers: updated."
         }
       ],
       "appCount": 2,
@@ -6407,7 +6435,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 21,
+      "observedActivityCount": 23,
       "packages": [
         {
           "appCount": 0,
@@ -6431,9 +6459,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:3e874b873da2ba4628cc",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json",
           "name": "Centralite Pearl Zigbee Thermostat",
-          "publisherDate": "2026-10-10",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "0.8.8"
+          "version": "0.8.9"
         },
         {
           "appCount": 0,
@@ -6496,9 +6524,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:d6513611d38422ced953",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json",
           "name": "Third Reality Custom Drivers",
-          "publisherDate": "2026-10-01",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "1.0.14"
+          "version": "1.0.15"
         },
         {
           "appCount": 0,
@@ -7028,6 +7056,78 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
           "packageName": "Life360+",
           "summary": "Life360+: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:26a7735aebcb64dc6fecb1b4",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e",
+          "packageName": "Govee Pool Thermostat",
+          "summary": "Govee Pool Thermostat: changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2916e42f874787ea3b53fadf",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
+          "packageName": "Life360+",
+          "summary": "Life360+: changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b9634d71d7ceecf3d4278e6b",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:d35cca76-eea2-4c3d-9843-0e5e2f806893",
+          "packageName": "Orbit Bhyve+",
+          "summary": "Orbit Bhyve+: changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b9e271123dfa986481fe5fb7",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:369f7089-5cb4-4502-aaaf-e8a68ce1d632",
+          "packageName": "HD+ Tile",
+          "summary": "HD+ Tile: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bbdcbd02a11207ee40325e5b",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:c0e73f14-24eb-4822-a493-2475fdc913c5",
+          "packageName": "Google Photos Cloud",
+          "summary": "Google Photos Cloud: changed declared definitions."
         }
       ],
       "appCount": 8,
@@ -7046,7 +7146,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 14,
       "id": "contributor:c440e7a82b5d4f2be238",
       "name": "Joe Page",
-      "observedActivityCount": 8,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 1,
@@ -9331,6 +9431,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:04dec5f052e783f44b7ad58c",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 5,
@@ -9357,7 +9471,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 12,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 29,
+      "observedActivityCount": 30,
       "packages": [
         {
           "appCount": 1,
@@ -9420,9 +9534,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:1fb36d6ab3dd1abe2238",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
           "name": "Reolink Integration",
-          "publisherDate": "2026-08-14",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.10"
+          "version": "1.6.11"
         },
         {
           "appCount": 0,
@@ -18472,6 +18586,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
           "packageName": "SmartHQ GE Appliances Integration",
           "summary": "SmartHQ GE Appliances Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a8a9a18442d7bc2da2f7c61b",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+          "packageName": "SmartHQ GE Appliances Integration",
+          "summary": "SmartHQ GE Appliances Integration: updated."
         }
       ],
       "appCount": 1,
@@ -18486,7 +18614,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 11,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -18497,9 +18625,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
           "manifestUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json",
           "name": "SmartHQ GE Appliances Integration",
-          "publisherDate": "2026-10-01",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/craigde/hubitat-package-manager/master/repository.json",
-          "version": "1.0.12"
+          "version": "1.0.13"
         }
       ]
     },
@@ -19054,6 +19182,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:c8d158db-ad11-437c-a533-f90fa2cfc696",
           "packageName": "Auto Room Sorter",
           "summary": "Auto Room Sorter: updated."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:025b09ed51477a2d97db736f",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:c8d158db-ad11-437c-a533-f90fa2cfc696",
+          "packageName": "Auto Room Sorter",
+          "summary": "Auto Room Sorter: updated."
         }
       ],
       "appCount": 1,
@@ -19068,7 +19210,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -19079,9 +19221,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:c8d158db-ad11-437c-a533-f90fa2cfc696",
           "manifestUrl": "https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json",
           "name": "Auto Room Sorter",
-          "publisherDate": "2026/08/14",
+          "publisherDate": "2026/10/14",
           "repositoryUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/repository.json",
-          "version": "1.3.8"
+          "version": "1.3.10"
         }
       ]
     },
@@ -19145,6 +19287,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:bae8a9d3-407c-41b0-9749-3ad0a1aca6af",
           "packageName": "Mitsubishi Comfort Cloud",
           "summary": "Mitsubishi Comfort Cloud: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:dd240634b4c42244dbaa1202",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:bae8a9d3-407c-41b0-9749-3ad0a1aca6af",
+          "packageName": "Mitsubishi Comfort Cloud",
+          "summary": "Mitsubishi Comfort Cloud: updated."
         }
       ],
       "appCount": 1,
@@ -19159,7 +19315,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -19170,9 +19326,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:bae8a9d3-407c-41b0-9749-3ad0a1aca6af",
           "manifestUrl": "https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json",
           "name": "Mitsubishi Comfort Cloud",
-          "publisherDate": "2026-08-14",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/repository.json",
-          "version": "1.3.11"
+          "version": "1.3.12"
         }
       ]
     },
@@ -21621,6 +21777,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:5552a357f9e2eecf1991",
           "packageName": "Muse Bridge",
           "summary": "Muse Bridge: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cf72205b838baff3edc91689",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:5552a357f9e2eecf1991",
+          "packageName": "Muse Bridge",
+          "summary": "Muse Bridge: updated."
         }
       ],
       "appCount": 1,
@@ -21635,7 +21805,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:4e016dfbc3de1b805171",
       "name": "Rayzurbock",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -21646,9 +21816,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:5552a357f9e2eecf1991",
           "manifestUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json",
           "name": "Muse Bridge",
-          "publisherDate": "2026-10-10",
+          "publisherDate": "2026-10-14",
           "repositoryUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/repository.json",
-          "version": "1.2.1"
+          "version": "1.3.1"
         }
       ]
     },
@@ -23291,10 +23461,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 921,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 431,
-    "eventCount": 428,
+    "attributedEventCount": 443,
+    "eventCount": 440,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-14T05:06:26Z"
+    "lastObservedAt": "2026-10-15T04:55:28Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -23308,7 +23478,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 258,
   "rankedPackageCount": 919,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-14T05:06:26Z",
+  "snapshotGenerated": "2026-10-15T04:55:28Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -6595,26 +6595,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/blinds-dusk-automation/blinds-dusk-automation.groovy"
     },
     {
-      "id": "definition:75de2aea86c6be964d11",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Life360+",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": "https://community.hubitat.com/t/release-life360/118544",
-        "documentationUrl": null,
-        "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json",
-        "name": "Life360+"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy"
-    },
-    {
       "id": "definition:763cd8b02bc0466694b6",
       "identities": [
         {
@@ -9573,6 +9553,26 @@ window.IDENTITY_INDEX = {
         "name": "Sensor Groups+ (Resurrected)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/SensorGroupsPlus/main/ChildApps/HumiditySensorPlus_ChildApp.groovy"
+    },
+    {
+      "id": "definition:bab11c42a9ae6ce24e12",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Life360+",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-life360/118544",
+        "documentationUrl": null,
+        "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json",
+        "name": "Life360+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy"
     },
     {
       "id": "definition:bacfd9c10a309c467b78",
@@ -12563,26 +12563,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ResearchDriver.groovy"
-    },
-    {
-      "id": "definition:014a2bd85ea40e90701b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Orbit Bhyve Sprinkler Timer",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": "https://community.hubitat.com/t/release-orbit-bhyve/119349",
-        "documentationUrl": null,
-        "id": "hpm:d35cca76-eea2-4c3d-9843-0e5e2f806893",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json",
-        "name": "Orbit Bhyve+"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
     },
     {
       "id": "definition:0153b55424e0fd717931",
@@ -15823,6 +15803,26 @@ window.IDENTITY_INDEX = {
         "name": "Moes ZSS-ZK-THL_TS0222"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Moes_ZSS-ZK-THL_TS0222/Moes_ZSS-ZK-THL_TS0222.groovy"
+    },
+    {
+      "id": "definition:192789b179c69ada8e6d",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Life360+ Driver",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-life360/118544",
+        "documentationUrl": null,
+        "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json",
+        "name": "Life360+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy"
     },
     {
       "id": "definition:1928a650bfb830755ecf",
@@ -22700,6 +22700,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotBlindTilt"
     },
     {
+      "id": "definition:4d946c0f104685845de3",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Orbit Bhyve Sprinkler Timer",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-orbit-bhyve/119349",
+        "documentationUrl": null,
+        "id": "hpm:d35cca76-eea2-4c3d-9843-0e5e2f806893",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json",
+        "name": "Orbit Bhyve+"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
+    },
+    {
       "id": "definition:4d98224c4198020561f7",
       "identities": [
         {
@@ -24548,26 +24568,6 @@ window.IDENTITY_INDEX = {
         "name": "Weatherstation weather driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-weatherstation/master/weatherstack-weather.groovy"
-    },
-    {
-      "id": "definition:59403c781e7cd829f6ca",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Google Photos Cloud Device",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:c0e73f14-24eb-4822-a493-2475fdc913c5",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json",
-        "name": "Google Photos Cloud"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy"
     },
     {
       "id": "definition:59773f1b06d1943f3800",
@@ -31540,26 +31540,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2H6093StarlightDriver.groovy"
     },
     {
-      "id": "definition:8c7ff3e1f2cb752ad0b3",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "HD+ Stock Ticker",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
-        "documentationUrl": null,
-        "id": "hpm:369f7089-5cb4-4502-aaaf-e8a68ce1d632",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json",
-        "name": "HD+ Tile"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy"
-    },
-    {
       "id": "definition:8ca7a761c61905fc5a46",
       "identities": [
         {
@@ -31743,26 +31723,6 @@ window.IDENTITY_INDEX = {
         "name": "BWA Spa Manager - Cloud Control"
       },
       "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Cloud-Control/HBBWASpaManager_Switch_Device.groovy"
-    },
-    {
-      "id": "definition:8de654e17bf47912bec7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Govee Pool Thermostat",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
-        "documentationUrl": null,
-        "id": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json",
-        "name": "Govee Pool Thermostat"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy"
     },
     {
       "id": "definition:8df914f23fd5840b5caf",
@@ -35545,6 +35505,20 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoardCloudAPI.groovy"
     },
     {
+      "id": "definition:a71626d16dcf6d592ad5",
+      "identities": [],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c0e73f14-24eb-4822-a493-2475fdc913c5",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json",
+        "name": "Google Photos Cloud"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy"
+    },
+    {
       "id": "definition:a74d3590e54ef98d8a33",
       "identities": [
         {
@@ -37495,26 +37469,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P100%20Multi-State%20Sensor/Aqara_P100_Multi_State_Sensor.groovy"
     },
     {
-      "id": "definition:b31de79f84d4a6f4e0d1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Life360+ Driver",
-          "namespace": "jpage4500"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Joe Page",
-        "communityUrl": "https://community.hubitat.com/t/release-life360/118544",
-        "documentationUrl": null,
-        "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
-        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json",
-        "name": "Life360+"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy"
-    },
-    {
       "id": "definition:b38b57c7b7ce03c9621a",
       "identities": [
         {
@@ -37778,6 +37732,26 @@ window.IDENTITY_INDEX = {
         "name": "ESPHome Integration Library and Example Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-Light-RGBCT.groovy"
+    },
+    {
+      "id": "definition:b4ead4c5e6eea23432c5",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "HD+ Stock Ticker",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentationUrl": null,
+        "id": "hpm:369f7089-5cb4-4502-aaaf-e8a68ce1d632",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json",
+        "name": "HD+ Tile"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy"
     },
     {
       "id": "definition:b4ee3337d0a41bbf57c8",
@@ -47770,6 +47744,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/genericComponentUnknownSensor.groovy"
     },
     {
+      "id": "definition:f645e9b4f4b1d17a6d4f",
+      "identities": [
+        {
+          "basis": "manifestIdentity",
+          "name": "Govee Pool Thermostat",
+          "namespace": "jpage4500"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Joe Page",
+        "communityUrl": "https://community.hubitat.com/t/release-hd-android-dashboard/41674",
+        "documentationUrl": null,
+        "id": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e",
+        "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json",
+        "name": "Govee Pool Thermostat"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy"
+    },
+    {
       "id": "definition:f6496649a759ae80f684",
       "identities": [
         {
@@ -48933,5 +48927,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-14T05:06:26Z"
+  "snapshotGenerated": "2026-10-15T04:55:28Z"
 };

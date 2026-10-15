@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-10-14T05:06:26Z`
+- Snapshot: `2026-10-15T04:55:28Z`
 - HPM repositories in master list: **220**
 - Repositories fetched successfully: **219**
 - Packages indexed: **921**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **13**
+- Recorded fetch/parse errors: **19**
 
 ## A. Dead rules
 
@@ -577,6 +577,12 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/apps/Petnet_Integration.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/drivers/Petnet_Feeder.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/hhorigian/hubitat_Hikvision/refs/heads/master/Hikvision_Controller_Driver.groovy?token=GHSAT0AAAAAACS3UP6TKISRGFWGEY3LPWDKZYDAQJQ | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy | HTTP 404 |
+| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-server.groovy | source exceeds 2097152 byte safety limit |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 13246: invalid start byte |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/Tuya_Zigbee_Rain_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 187896: invalid start byte |
@@ -606,12 +612,12 @@ The source pass is static and non-executing. Observations are implementation fac
 | Measure | Count |
 | --- | --- |
 | Distinct source URLs | 2275 |
-| Source URLs fetched | 2265 |
-| Source URLs failed | 10 |
+| Source URLs fetched | 2259 |
+| Source URLs failed | 16 |
 | Components attempted | 2289 |
-| Components fetched | 2279 |
-| Literal definitions verified | 2268 |
-| Components with observations | 2154 |
+| Components fetched | 2273 |
+| Literal definitions verified | 2262 |
+| Components with observations | 2148 |
 
 ### Official Hubitat documentation pass
 

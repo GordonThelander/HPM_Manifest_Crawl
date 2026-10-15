@@ -1,9 +1,21 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-14T05:06:26Z`.
+Latest observation: `2026-10-15T04:55:28Z`.
 
-**56 package change(s):** added 7, broken 1, declared definitions changed 9, removed 2, restored 1, source location changed 1, updated 41
+**57 package change(s):** added 5, broken 3, declared definitions changed 13, removed 1, restored 1, source location changed 1, updated 40
 
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Orbit Bhyve+: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json)
+- [Muse Bridge: updated.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
+- [Mitsubishi Comfort Cloud: updated.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
+- [Life360+: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
+- [HD+ Tile: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json)
+- [Govee Pool Thermostat: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
+- [Google Photos Cloud: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json)
+- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
+- [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
 - [webCoRE: updated.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
@@ -49,16 +61,5 @@ Latest observation: `2026-10-14T05:06:26Z`.
 - [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
 - [Muse Bridge: added.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [iStore Heat Pump: added.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
-- [Thermostats Sync: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Apps/Thermostats%20Sync/packageManifest.json)
-- [Pushover: updated.](https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/pushover-notifications.src/pushover-notifications.json)
-- [Pixora Locator Driver: removed.](https://raw.githubusercontent.com/bptworld/Hubitat/master/PixoraLocator/packageManifest.json)
-- [Pixora Locator App and Drivers: added.](https://raw.githubusercontent.com/bptworld/PixoraLocator/master/hubitat/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
-- [Battery Monitor 2.0: updated, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
-- [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
