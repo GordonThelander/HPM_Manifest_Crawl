@@ -1,9 +1,19 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-15T04:55:28Z`.
+Latest observation: `2026-10-16T04:45:37Z`.
 
-**57 package change(s):** added 5, broken 3, declared definitions changed 13, removed 1, restored 1, source location changed 1, updated 40
+**64 package change(s):** added 6, broken 3, declared definitions changed 18, removed 1, restored 3, source location changed 1, updated 41
 
+- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [Samsung TV Remote (hubitrep): added.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
+- [Orbit Bhyve+: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Life360+: changed declared definitions, was restored.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
+- [HD+ Tile: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json)
+- [Govee Pool Thermostat: changed declared definitions, was restored.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
+- [Google Photos Cloud: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json)
+- [Android TV Remote: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
@@ -58,8 +68,5 @@ Latest observation: `2026-10-15T04:55:28Z`.
 - [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 - [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
 - [Aeotec Heavy Duty Smart Switch: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/aeotec/heavy-duty-switch/packageManifest.json)
-- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
-- [Muse Bridge: added.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

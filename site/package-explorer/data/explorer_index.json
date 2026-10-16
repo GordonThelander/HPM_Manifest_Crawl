@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 921,
+    "HPM_PACKAGE": 923,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2626,
+  "recordCount": 2628,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22137,6 +22137,100 @@
       "version": null
     },
     {
+      "author": "hubitrep",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-15",
+      "definitions": [
+        {
+          "id": "definition:e7ceeb043356b42c011f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Android TV Remote Tester",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/tests/AndroidTVRemoteTester.groovy"
+        },
+        {
+          "id": "definition:137efbe18833544161ce",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Android TV Remote",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/AndroidTVRemote.groovy"
+        }
+      ],
+      "description": "Google TV / Android TV control over the LAN with no bridge (beta), with an optional tester app.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "Android TV Remote",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [
+          "www.youtube.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Multimedia"
+      ],
+      "version": "0.1.6"
+    },
+    {
       "author": "Joe Page",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -40115,11 +40209,11 @@
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-app.groovy"
         },
         {
-          "id": "definition:a71626d16dcf6d592ad5",
+          "id": "definition:59403c781e7cd829f6ca",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Google Photos Cloud Device",
+          "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy"
         }
       ],
@@ -40159,7 +40253,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "PARTIAL"
+            "status": "PASS"
           }
         ],
         "classification": "PASS"
@@ -41267,11 +41361,11 @@
       "dateReleased": "2026-08-03",
       "definitions": [
         {
-          "id": "definition:f645e9b4f4b1d17a6d4f",
+          "id": "definition:8de654e17bf47912bec7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Govee Pool Thermostat",
+          "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy"
         }
       ],
@@ -41295,7 +41389,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -41311,10 +41405,10 @@
           },
           {
             "name": "sourceFetch",
-            "status": "FAIL"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:72c56cd5-3783-4d7e-989b-6261a828709e",
       "kinds": [
@@ -41898,11 +41992,11 @@
       "dateReleased": "2023-10-24",
       "definitions": [
         {
-          "id": "definition:b4ead4c5e6eea23432c5",
+          "id": "definition:8c7ff3e1f2cb752ad0b3",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "HD+ Stock Ticker",
+          "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy"
         },
         {
@@ -41934,7 +42028,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "PARTIAL"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -41950,7 +42044,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "PARTIAL"
+            "status": "PASS"
           }
         ],
         "classification": "PASS"
@@ -41973,6 +42067,7 @@
           "lanTag": false
         },
         "externalHosts": [
+          "finnhub.io",
           "joe-page-software.gitbook.io"
         ],
         "reviewed": []
@@ -59447,19 +59542,19 @@
       "dateReleased": "2023-05-08",
       "definitions": [
         {
-          "id": "definition:bab11c42a9ae6ce24e12",
+          "id": "definition:75de2aea86c6be964d11",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
-          "name": null,
-          "namespace": null,
+          "name": "Life360+",
+          "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy"
         },
         {
-          "id": "definition:192789b179c69ada8e6d",
+          "id": "definition:b31de79f84d4a6f4e0d1",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
+          "name": "Life360+ Driver",
+          "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy"
         }
       ],
@@ -59483,7 +59578,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -59499,10 +59594,10 @@
           },
           {
             "name": "sourceFetch",
-            "status": "FAIL"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
       "kinds": [
@@ -59517,12 +59612,19 @@
       },
       "name": "Life360+",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [],
+        "externalHosts": [
+          "joe-page-software.gitbook.io",
+          "maps.googleapis.com",
+          "tile.openstreetmap.org",
+          "unpkg.com",
+          "www.google.com",
+          "www.openstreetmap.org"
+        ],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -62502,7 +62604,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-12",
+      "dateReleased": "2026-10-15",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -62584,7 +62686,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.7.1"
+      "version": "4.7.2"
     },
     {
       "author": "Justin Leonard",
@@ -70569,20 +70671,20 @@
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-controller.groovy"
         },
         {
-          "id": "definition:4d946c0f104685845de3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": null,
-          "namespace": null,
-          "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
-        },
-        {
           "id": "definition:d7d99b10d9a828a367df",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Orbit Bhyve Bridge",
           "namespace": "jpage4500",
           "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-bridge.groovy"
+        },
+        {
+          "id": "definition:014a2bd85ea40e90701b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Orbit Bhyve Sprinkler Timer",
+          "namespace": "jpage4500",
+          "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
         }
       ],
       "description": "Orbit Bhyve Integration",
@@ -70605,7 +70707,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "PARTIAL"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
@@ -70621,7 +70723,7 @@
           },
           {
             "name": "sourceFetch",
-            "status": "PARTIAL"
+            "status": "PASS"
           }
         ],
         "classification": "PASS"
@@ -79984,6 +80086,100 @@
         "Multimedia"
       ],
       "version": "2.3.9"
+    },
+    {
+      "author": "hubitrep (original by Dave Gutheinz)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-15",
+      "definitions": [
+        {
+          "id": "definition:573e0f55225917de0eff",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Samsung TV Remote Tester",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/SamsungTVRemoteTester.groovy"
+        },
+        {
+          "id": "definition:ff90c282f5ad90cc6e51",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Samsung TV Remote",
+          "namespace": "davegut",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/SamsungTVRemote.groovy"
+        }
+      ],
+      "description": "Samsung Tizen TVs (2016 and later) over the LAN (beta): power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/beta-samsung-tv-remote-2016-and-later-tvs/166829",
+        "documentation": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json",
+        "repository": "https://github.com/hubitrep/SamsungTvRemote"
+      },
+      "name": "Samsung TV Remote (hubitrep)",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [
+          "api.smartthings.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Multimedia"
+      ],
+      "version": "2.4.3"
     },
     {
       "author": "Craig Dewar",
@@ -91611,7 +91807,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-14",
+      "dateReleased": "2026-10-15",
       "definitions": [
         {
           "id": "definition:4bb3fdc0eddf14cd7a69",
@@ -91743,7 +91939,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.15"
+      "version": "1.0.17"
     },
     {
       "author": "TheMaster",
@@ -106810,7 +107006,7 @@
       "author": "RamSet",
       "category": "Irrigation",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-18",
+      "dateReleased": "2026-10-15",
       "definitions": [
         {
           "id": "definition:bce0b6147d4207131254",
@@ -106907,7 +107103,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.16.9"
+      "version": "0.18.0"
     },
     {
       "author": "Jeff Page (@jtp10181)",
@@ -133217,5 +133413,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-15T04:55:28Z"
+  "snapshotGenerated": "2026-10-16T04:45:37Z"
 }

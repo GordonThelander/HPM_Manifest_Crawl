@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-10-15T04:55:28Z`
+- Snapshot: `2026-10-16T04:45:37Z`
 - HPM repositories in master list: **220**
 - Repositories fetched successfully: **219**
-- Packages indexed: **921**
+- Packages indexed: **923**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **19**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **824**
+Total packages not matched by any registry entry: **826**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -506,6 +506,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | edasque | ratgo (MQTT firware) | Integrations |  | https://raw.githubusercontent.com/edasque/hubitat/main/devicehandlers/ratgdoMQTT/packageManifest.json |
 | evdev | Mitsubishi Comfort Cloud | Integrations | Climate Control, Temperature & Humidity, Cloud | https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json |
 | evdev | Modern Dashboard | Convenience | Cloud, Dashboards, Lights & Switches, Climate Control, Temperature & Humidity, Multimedia | https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json |
+| hubitrep | Android TV Remote | Integrations | LAN, Multimedia | https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json |
+| hubitrep | Samsung TV Remote (hubitrep) | Integrations | LAN, Multimedia | https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json |
 | jdc72 | Oppo Disc Player | Control | LAN, Misc. Devices, Multimedia | https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/packageManifest.json |
 | jedbro | Initial State Event Streamer | Integrations | Dashboards | https://raw.githubusercontent.com/jedbro/initialstate-smartapp/master/packageManifest.json |
 | jlslate | Navien NaviLink (Cloud) | Integrations | Water Heater, Cloud, MQTT, Energy Monitoring, jlslate | https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json |
@@ -577,12 +579,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/apps/Petnet_Integration.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/drivers/Petnet_Feeder.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/hhorigian/hubitat_Hikvision/refs/heads/master/Hikvision_Controller_Driver.groovy?token=GHSAT0AAAAAACS3UP6TKISRGFWGEY3LPWDKZYDAQJQ | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/google-photos-cloud-device.groovy | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/govee-pool.groovy | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/hd-tile-stocks.groovy | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_driver.groovy | HTTP 404 |
-| source | https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/bundle-artifacts/branches/main/hubitat-mcp-server.groovy | source exceeds 2097152 byte safety limit |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 13246: invalid start byte |
 | source | https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Rain%20Sensor/Tuya_Zigbee_Rain_Sensor_lib_included.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0x95 in position 187896: invalid start byte |
@@ -600,8 +596,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 824 |
-| G candidate subset | 358 |
+| G. Unrepresented packages | 826 |
+| G candidate subset | 360 |
 
 ## H. Enrichment summary
 
@@ -611,13 +607,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2275 |
-| Source URLs fetched | 2259 |
-| Source URLs failed | 16 |
-| Components attempted | 2289 |
-| Components fetched | 2273 |
-| Literal definitions verified | 2262 |
-| Components with observations | 2148 |
+| Distinct source URLs | 2279 |
+| Source URLs fetched | 2269 |
+| Source URLs failed | 10 |
+| Components attempted | 2293 |
+| Components fetched | 2283 |
+| Literal definitions verified | 2272 |
+| Components with observations | 2158 |
 
 ### Official Hubitat documentation pass
 

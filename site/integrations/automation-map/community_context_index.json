@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 484,
+  "recordCount": 486,
   "records": [
     {
       "author": null,
@@ -2235,6 +2235,39 @@
         "IDENTITY_MISMATCH"
       ],
       "summary": "Adjust CT when using homekit"
+    },
+    {
+      "author": "hubitrep",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Android TV Remote Tester",
+          "namespace": "hubitrep"
+        }
+      ],
+      "displayName": "Android TV Remote",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "MISSING",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/tests/AndroidTVRemoteTester.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Android TV Remote",
+      "qualityFlags": [],
+      "summary": "Google TV / Android TV control over the LAN with no bridge (beta), with an optional tester app."
     },
     {
       "author": "johndc7",
@@ -5409,7 +5442,7 @@
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
         {
-          "basis": "manifestIdentity",
+          "basis": "sourceIdentity",
           "name": "Life360+",
           "namespace": "jpage4500"
         }
@@ -5417,11 +5450,11 @@
       "displayName": "Life360+",
       "evidenceChecks": {
         "communityLink": "PRESENT",
-        "definitionIdentity": "NOT_AVAILABLE",
+        "definitionIdentity": "MATCH",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "FAIL"
+        "sourceFetch": "PASS"
       },
       "id": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
       "kind": "APP",
@@ -5431,7 +5464,7 @@
         "source": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/life360_app.groovy"
       },
       "networkEvidence": {
-        "classification": "CLOUD",
+        "classification": "INSUFFICIENT",
         "reviewed": false
       },
       "packageName": "Life360+",
@@ -6757,6 +6790,41 @@
       "summary": "Control and query the status of all your tesla vehicles. This is the app and driver both needed."
     },
     {
+      "author": "hubitrep (original by Dave Gutheinz)",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Samsung TV Remote Tester",
+          "namespace": "hubitrep"
+        }
+      ],
+      "displayName": "Samsung TV Remote (hubitrep)",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/beta-samsung-tv-remote-2016-and-later-tvs/166829",
+        "documentation": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
+        "source": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/SamsungTVRemoteTester.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Samsung TV Remote (hubitrep)",
+      "qualityFlags": [],
+      "summary": "Samsung Tizen TVs (2016 and later) over the LAN (beta): power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver."
+    },
+    {
       "author": "Larry Kahn",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -7596,7 +7664,7 @@
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PARTIAL"
+        "sourceFetch": "PASS"
       },
       "id": "hpm:c0e73f14-24eb-4822-a493-2475fdc913c5",
       "kind": "APP",
@@ -7996,11 +8064,11 @@
       "displayName": "Orbit Bhyve+",
       "evidenceChecks": {
         "communityLink": "PRESENT",
-        "definitionIdentity": "PARTIAL",
+        "definitionIdentity": "MATCH",
         "documentationLink": "MISSING",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
-        "sourceFetch": "PARTIAL"
+        "sourceFetch": "PASS"
       },
       "id": "hpm:d35cca76-eea2-4c3d-9843-0e5e2f806893",
       "kind": "APP",
@@ -16316,5 +16384,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-15T04:55:28Z"
+  "snapshotGenerated": "2026-10-16T04:45:37Z"
 }

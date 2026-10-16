@@ -1,8 +1,8 @@
 {
   "counts": {
-    "BOTH": 181,
-    "CLOUD": 261,
-    "INSUFFICIENT": 300,
+    "BOTH": 183,
+    "CLOUD": 262,
+    "INSUFFICIENT": 299,
     "LAN": 179
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 921,
+  "packageCount": 923,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1435,6 +1435,34 @@
       "tags": [
         "Doors & Windows",
         "ZWave"
+      ]
+    },
+    {
+      "author": "hubitrep",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Google TV / Android TV control over the LAN with no bridge (beta), with an optional tester app.",
+      "documentationUrl": null,
+      "id": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
+      "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json",
+      "name": "Android TV Remote",
+      "observed": {
+        "externalHosts": [
+          "www.youtube.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Multimedia"
       ]
     },
     {
@@ -7120,8 +7148,8 @@
           "www.googleapis.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 13
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 14
       },
       "reviewed": [],
       "tags": [
@@ -7420,8 +7448,8 @@
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
       },
       "reviewed": [
         {
@@ -7639,11 +7667,12 @@
       "name": "HD+ Tile",
       "observed": {
         "externalHosts": [
+          "finnhub.io",
           "joe-page-software.gitbook.io"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": []
@@ -12789,7 +12818,7 @@
     {
       "author": "Joe Page",
       "category": "Integrations",
-      "classification": "INSUFFICIENT",
+      "classification": "CLOUD",
       "communityUrl": "https://community.hubitat.com/t/release-life360/118544",
       "declared": {
         "cloudTag": false,
@@ -12801,10 +12830,17 @@
       "manifestUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json",
       "name": "Life360+",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "joe-page-software.gitbook.io",
+          "maps.googleapis.com",
+          "tile.openstreetmap.org",
+          "unpkg.com",
+          "www.google.com",
+          "www.openstreetmap.org"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 25
       },
       "reviewed": [],
       "tags": [
@@ -16151,8 +16187,8 @@
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -19171,6 +19207,39 @@
         ],
         "sourceFilesAnalysed": 1,
         "urlLiteralCount": 12
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Multimedia"
+      ]
+    },
+    {
+      "author": "hubitrep (original by Dave Gutheinz)",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": "https://community.hubitat.com/t/beta-samsung-tv-remote-2016-and-later-tvs/166829",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Samsung Tizen TVs (2016 and later) over the LAN (beta): power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver.",
+      "documentationUrl": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
+      "id": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
+      "manifestUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json",
+      "name": "Samsung TV Remote (hubitrep)",
+      "observed": {
+        "externalHosts": [
+          "api.smartthings.com"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "SEND_HUB_COMMAND",
+          "UDP_PROTOCOL"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 18
       },
       "reviewed": [],
       "tags": [
@@ -27826,5 +27895,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-15T04:55:28Z"
+  "snapshotGenerated": "2026-10-16T04:45:37Z"
 }
