@@ -3622,6 +3622,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7abc25a79ef01d4588a9",
           "packageName": "InfluxDB-Logger",
           "summary": "InfluxDB-Logger: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:12199923c2ddcb0a608dc64b",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "manifest:d621bce854f31f49aa68",
+          "packageName": "Somfy Z-Wave to RTS Interface II (ZRTSII)",
+          "summary": "Somfy Z-Wave to RTS Interface II (ZRTSII): updated."
         }
       ],
       "appCount": 12,
@@ -3644,7 +3658,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 13,
       "id": "contributor:77d1022a309f439c77fb",
       "name": "Denny Page",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 0,
@@ -3837,9 +3851,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:d621bce854f31f49aa68",
           "manifestUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/zrtsii.json",
           "name": "Somfy Z-Wave to RTS Interface II (ZRTSII)",
-          "publisherDate": "2023-04-08",
+          "publisherDate": "2026-10-16",
           "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-          "version": "3.2.0"
+          "version": "3.3.0"
         },
         {
           "appCount": 0,
@@ -9545,6 +9559,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:1fb36d6ab3dd1abe2238",
           "packageName": "Reolink Integration",
           "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:69ea239cd622188197e2e579",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
         }
       ],
       "appCount": 5,
@@ -9571,7 +9599,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 12,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 30,
+      "observedActivityCount": 31,
       "packages": [
         {
           "appCount": 1,
@@ -9634,9 +9662,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:1fb36d6ab3dd1abe2238",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
           "name": "Reolink Integration",
-          "publisherDate": "2026-10-14",
+          "publisherDate": "2026-10-16",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.11"
+          "version": "1.6.12"
         },
         {
           "appCount": 0,
@@ -13283,6 +13311,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "packageName": "Automation Map",
           "summary": "Automation Map: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:322b94325c4d09b4396ccd98",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
+          "packageName": "Automation Map",
+          "summary": "Automation Map: updated."
         }
       ],
       "appCount": 3,
@@ -13309,7 +13351,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
-      "observedActivityCount": 17,
+      "observedActivityCount": 18,
       "packages": [
         {
           "appCount": 1,
@@ -13320,9 +13362,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:09e55dc6-79f7-4c6e-91e6-48ca516b83bf",
           "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json",
           "name": "Automation Map",
-          "publisherDate": "2026-10-10",
+          "publisherDate": "2026-10-15",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
-          "version": "2.4.24"
+          "version": "2.4.48"
         },
         {
           "appCount": 0,
@@ -13450,6 +13492,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
           "packageName": "Android TV Remote",
           "summary": "Android TV Remote: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4c60e4958037ad1ed0f19e7a",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+          "packageName": "Hub Inspector",
+          "summary": "Hub Inspector: updated."
         }
       ],
       "appCount": 2,
@@ -13472,7 +13528,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
-      "observedActivityCount": 6,
+      "observedActivityCount": 7,
       "packages": [
         {
           "appCount": 1,
@@ -13496,9 +13552,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
           "name": "Hub Inspector",
-          "publisherDate": "2026-10-09",
+          "publisherDate": "2026-10-16",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "6.1.10"
+          "version": "6.1.12"
         },
         {
           "appCount": 0,
@@ -14929,6 +14985,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:72e748fdb165aace597b",
           "packageName": "PETLIBRO Granary Feeder",
           "summary": "PETLIBRO Granary Feeder: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:924c2d53dd9d9640562968d9",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "manifest:72e748fdb165aace597b",
+          "packageName": "PETLIBRO Granary Feeder",
+          "summary": "PETLIBRO Granary Feeder: updated."
         }
       ],
       "appCount": 2,
@@ -14943,7 +15013,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:cab465e8481008331040",
       "name": "Jeff Lupien",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -14967,9 +15037,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:72e748fdb165aace597b",
           "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
           "name": "PETLIBRO Granary Feeder",
-          "publisherDate": "2026-09-28",
+          "publisherDate": "2026-10-16",
           "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.0.0"
+          "version": "1.1.0"
         },
         {
           "appCount": 1,
@@ -15578,7 +15648,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a5777c16b3087afcfd6367b9",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "hpm:bc1eb165-cecc-4813-ab16-efd02d7b2e27",
+          "packageName": "Honeywell Home Integration Lyric and T Series Devices (cloud)",
+          "summary": "Honeywell Home Integration Lyric and T Series Devices (cloud): updated."
+        }
+      ],
       "appCount": 2,
       "categories": [
         {
@@ -15595,7 +15680,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 0,
@@ -15619,9 +15704,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:bc1eb165-cecc-4813-ab16-efd02d7b2e27",
           "manifestUrl": "https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json",
           "name": "Honeywell Home Integration Lyric and T Series Devices (cloud)",
-          "publisherDate": "2026-07-29",
+          "publisherDate": "2026-10-16",
           "repositoryUrl": "https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/repository.json",
-          "version": "1.0.7"
+          "version": "1.0.8"
         },
         {
           "appCount": 1,
@@ -23652,10 +23737,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 923,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 453,
-    "eventCount": 450,
+    "attributedEventCount": 459,
+    "eventCount": 456,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-16T04:45:37Z"
+    "lastObservedAt": "2026-10-17T04:43:20Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -23669,7 +23754,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 259,
   "rankedPackageCount": 921,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-16T04:45:37Z",
+  "snapshotGenerated": "2026-10-17T04:43:20Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

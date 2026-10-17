@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-16T04:45:37Z`.
+Latest observation: `2026-10-17T04:43:20Z`.
 
-**64 package change(s):** added 6, broken 3, declared definitions changed 18, removed 1, restored 3, source location changed 1, updated 41
+**61 package change(s):** added 4, broken 2, declared definitions changed 15, restored 3, source location changed 1, updated 44
 
+- [Somfy Z-Wave to RTS Interface II (ZRTSII): updated.](https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/zrtsii.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [PETLIBRO Granary Feeder: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Honeywell Home Integration Lyric and T Series Devices (cloud): updated.](https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 - [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [Samsung TV Remote (hubitrep): added.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
@@ -59,14 +65,5 @@ Latest observation: `2026-10-16T04:45:37Z`.
 - [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
 - [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
-- [Xiaomi/Aqara Temperature & Humidity Sensor: removed.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
-- [Xiaomi/Aqara Temperature & Humidity Sensor: added.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
-- [Somfy ZRTSI: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hub Inspector: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
-- [Aeotec Heavy Duty Smart Switch: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/aeotec/heavy-duty-switch/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
