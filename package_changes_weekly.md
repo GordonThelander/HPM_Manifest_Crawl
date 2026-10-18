@@ -1,9 +1,19 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-17T04:43:20Z`.
+Latest observation: `2026-10-18T04:49:03Z`.
 
-**61 package change(s):** added 4, broken 2, declared definitions changed 15, restored 3, source location changed 1, updated 44
+**59 package change(s):** added 7, broken 2, declared definitions changed 12, restored 2, source location changed 1, updated 42
 
+- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
+- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
+- [Sinopé Drivers: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
+- [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Log Monitor: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [IKEA Window Blinds: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Aqara Drivers: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
+- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [Somfy Z-Wave to RTS Interface II (ZRTSII): updated.](https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/zrtsii.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [PETLIBRO Granary Feeder: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json)
@@ -53,17 +63,5 @@ Latest observation: `2026-10-17T04:43:20Z`.
 - [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
 - [BirdWeather PUC: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Xiaomi/Aqara Temperature & Humidity Sensor: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/xiaomi-aqara/th-sensor/packageManifest.json)
-- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
-- [Somfy ZRTSI: changed declared definitions, was restored.](https://raw.githubusercontent.com/augoisms/hubitat/master/somfy-zrtsi/packageManifest.json)
-- [Sofabaton Integration: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
-- [SmartThings Motion Sensor Driver: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Moonraker Klipper Printer: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Govee Integration v2: changed declared definitions.](https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/packageManifest2.json)
-- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [AlarmDecoder Integration: changed declared definitions.](https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

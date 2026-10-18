@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 486,
+  "recordCount": 487,
   "records": [
     {
       "author": null,
@@ -2248,9 +2248,9 @@
       ],
       "displayName": "Android TV Remote",
       "evidenceChecks": {
-        "communityLink": "MISSING",
+        "communityLink": "PRESENT",
         "definitionIdentity": "MATCH",
-        "documentationLink": "MISSING",
+        "documentationLink": "PRESENT",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
         "sourceFetch": "PASS"
@@ -2259,6 +2259,8 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
+        "community": "https://community.hubitat.com/t/beta-android-tv-remote-google-tv-and-android-tv-local-control/166822",
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/androidtv",
         "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/tests/AndroidTVRemoteTester.groovy"
       },
       "networkEvidence": {
@@ -7845,9 +7847,9 @@
       ],
       "displayName": "Hub Inspector",
       "evidenceChecks": {
-        "communityLink": "MISSING",
+        "communityLink": "PRESENT",
         "definitionIdentity": "MATCH",
-        "documentationLink": "MISSING",
+        "documentationLink": "PRESENT",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
         "sourceFetch": "PASS"
@@ -7856,6 +7858,8 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
+        "community": "https://community.hubitat.com/t/beta-hub-inspector-a-diagnostics-dashboard-that-runs-on-your-hub/166689",
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/HubInspector",
         "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
       },
       "networkEvidence": {
@@ -8327,6 +8331,40 @@
       "packageName": "Device Attribute Iterative Storage",
       "qualityFlags": [],
       "summary": "Maintains a set number of iterations of attribute and computed min/max/avg values in the Hubitat Local File Manager."
+    },
+    {
+      "author": "hubitrep",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Log Monitor",
+          "namespace": "hubitrep"
+        }
+      ],
+      "displayName": "Log Monitor",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor",
+        "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitor.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Log Monitor",
+      "qualityFlags": [],
+      "summary": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint."
     },
     {
       "author": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -16384,5 +16422,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-17T04:43:20Z"
+  "snapshotGenerated": "2026-10-18T04:49:03Z"
 }

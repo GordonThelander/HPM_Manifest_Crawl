@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 923,
+    "HPM_PACKAGE": 927,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2628,
+  "recordCount": 2632,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22140,7 +22140,7 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-17",
       "definitions": [
         {
           "id": "definition:e7ceeb043356b42c011f",
@@ -22170,12 +22170,12 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -22183,7 +22183,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -22206,8 +22206,8 @@
         "DRIVER"
       ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/beta-android-tv-remote-google-tv-and-android-tv-local-control/166822",
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/androidtv",
         "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json",
         "repository": "https://github.com/hubitrep/hubitat"
       },
@@ -22228,7 +22228,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "0.1.6"
+      "version": "0.1.9"
     },
     {
       "author": "Joe Page",
@@ -22749,6 +22749,107 @@
         "Zigbee"
       ],
       "version": "3.3.0"
+    },
+    {
+      "author": "hubitrep",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-17",
+      "definitions": [
+        {
+          "id": "definition:84cc6306ea9fb6753631",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara Contact Sensor MCCGQ11LM",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_MCCGQ11LM.groovy"
+        },
+        {
+          "id": "definition:375a89c56f0b315e31d8",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara Wall Switch WS-USC01 (No Neutral)",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WS_USC01.groovy"
+        },
+        {
+          "id": "definition:a80c872b90416ad87573",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara Weather Sensor WSDCGQ11LM",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WSDCGQ11LM.groovy"
+        }
+      ],
+      "description": "Zigbee drivers for Aqara devices; pick the ones you need: WSDCGQ11LM temperature, humidity and pressure sensor, MCCGQ11LM door/window sensor, WS-USC01 no-neutral wall switch.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/aqara",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "Aqara Drivers",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Doors & Windows",
+        "Lights & Switches",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.0.0"
     },
     {
       "author": "Dan Ogorchock",
@@ -46643,12 +46744,12 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -46656,7 +46757,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -46678,8 +46779,8 @@
         "APP"
       ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/beta-hub-inspector-a-diagnostics-dashboard-that-runs-on-your-hub/166689",
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/HubInspector",
         "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
         "repository": "https://github.com/hubitrep/hubitat"
       },
@@ -53278,6 +53379,89 @@
         "Zigbee"
       ],
       "version": "1.2.0"
+    },
+    {
+      "author": "hubitrep",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-17",
+      "definitions": [
+        {
+          "id": "definition:83d7ee2bcbaa244ada96",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "IKEA Window Blinds",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/IKEA-Blinds.groovy"
+        }
+      ],
+      "description": "Zigbee driver for IKEA window blinds (FYRTUR / KADRILJ family).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:cf9f2ede-129b-471d-ba1d-ed3844b45be4",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/IKEA-Blinds",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "IKEA Window Blinds",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Window Coverings",
+        "Zigbee"
+      ],
+      "version": "0.1.0"
     },
     {
       "author": "Dan Danache (@dandanache)",
@@ -61393,6 +61577,101 @@
       "version": "0.1.1"
     },
     {
+      "author": "hubitrep",
+      "category": "Utility",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-17",
+      "definitions": [
+        {
+          "id": "definition:068c42d708666e225b0e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Log Monitor",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitor.groovy"
+        },
+        {
+          "id": "definition:8296d17b2a00cd9ae9b6",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Log Monitor Bridge",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitorBridge.groovy"
+        }
+      ],
+      "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "Log Monitor",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "example.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Notifications",
+        "Tools & Utilities"
+      ],
+      "version": "1.1.8"
+    },
+    {
       "author": "Dan Ogorchock",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -62604,7 +62883,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-17",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -62686,7 +62965,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.7.2"
+      "version": "4.8.0"
     },
     {
       "author": "Justin Leonard",
@@ -80091,7 +80370,7 @@
       "author": "hubitrep (original by Dave Gutheinz)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-17",
       "definitions": [
         {
           "id": "definition:573e0f55225917de0eff",
@@ -80179,7 +80458,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "2.4.3"
+      "version": "2.4.8"
     },
     {
       "author": "Craig Dewar",
@@ -84468,6 +84747,117 @@
         "Climate Control"
       ],
       "version": "1.9"
+    },
+    {
+      "author": "hubitrep",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-17",
+      "definitions": [
+        {
+          "id": "definition:9364c9840d55948ebc42",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sinope Dimmer (DM2500ZB)",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_DM2500ZB.groovy"
+        },
+        {
+          "id": "definition:1318e12168396f361586",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sinope Floor Thermostat (TH13X0ZB)",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_TH13X0ZB.groovy"
+        },
+        {
+          "id": "definition:6419525531ce1cb0c826",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sinope Switch (SW2500ZB)",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_SW2500ZB.groovy"
+        },
+        {
+          "id": "definition:fcb1a1c35a83c83be807",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sinope Water Valve (VA422xZB)",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_VA422xZB.groovy"
+        }
+      ],
+      "description": "Zigbee drivers for Sinopé devices; pick the ones you need: SW2500ZB switch, DM2500ZB dimmer, TH1300ZB / TH1320ZB-04 floor thermostat, VA422xZB water valve with optional flow sensor.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:ff853417-274c-437b-90fd-c1169a92f43b",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/sinope",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "Sinopé Drivers",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "data.energizer.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Lights & Switches",
+        "Valves",
+        "Zigbee"
+      ],
+      "version": "1.0.1"
     },
     {
       "author": "Russ Vrolyk",
@@ -92328,7 +92718,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -92341,7 +92731,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -92364,7 +92754,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/thirdreality",
         "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json",
         "repository": "https://github.com/hubitrep/hubitat"
       },
@@ -102814,7 +103204,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -102827,7 +103217,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -102850,7 +103240,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/XfinityContactSensor",
         "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json",
         "repository": "https://github.com/hubitrep/hubitat"
       },
@@ -133413,5 +133803,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-17T04:43:20Z"
+  "snapshotGenerated": "2026-10-18T04:49:03Z"
 }
