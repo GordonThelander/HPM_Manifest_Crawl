@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 184,
-    "CLOUD": 263,
+    "CLOUD": 264,
     "INSUFFICIENT": 299,
-    "LAN": 181
+    "LAN": 182
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 927,
+  "packageCount": 929,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -15164,6 +15164,32 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Matt Palermo",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
+      "documentationUrl": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
+      "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "manifestUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json",
+      "name": "MyFuelPortal Propane Integration",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Monitoring"
+      ]
+    },
+    {
       "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -22754,6 +22780,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "WBEVAN",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-tesmart-hdmi-switch-rest-api-service-with-hubitat-package-manager-app/166591",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "TESmart 8/16-port HDMI/KVM switch via tesmartctl REST. Includes Manager app, controller driver, and child input switches.",
+      "documentationUrl": "https://wbevan.github.io/TESmartController/",
+      "id": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "manifestUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json",
+      "name": "TESmart Controller",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 10
+      },
+      "reviewed": [],
+      "tags": [
+        "HDMI",
+        "KVM",
+        "LAN",
+        "Multimedia"
+      ]
+    },
+    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "BOTH",
@@ -28014,5 +28068,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-18T04:49:03Z"
+  "snapshotGenerated": "2026-10-19T04:57:03Z"
 };

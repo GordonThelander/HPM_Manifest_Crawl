@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 927,
+    "HPM_PACKAGE": 929,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2632,
+  "recordCount": 2634,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22754,7 +22754,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-18",
       "definitions": [
         {
           "id": "definition:84cc6306ea9fb6753631",
@@ -22849,7 +22849,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "author": "Dan Ogorchock",
@@ -62883,7 +62883,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-18",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -62965,7 +62965,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.8.0"
+      "version": "4.8.2"
     },
     {
       "author": "Justin Leonard",
@@ -67106,6 +67106,98 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "0.2.6"
+    },
+    {
+      "author": "Matt Palermo",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-13",
+      "definitions": [
+        {
+          "id": "definition:f262bca60887ae317ff9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "MyFuelPortal Manager",
+          "namespace": "myfuelportal",
+          "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
+        },
+        {
+          "id": "definition:34dde45d8835fc9c2aa5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "MyFuelPortal Tank",
+          "namespace": "myfuelportal",
+          "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
+        }
+      ],
+      "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
+        "manifest": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json",
+        "repository": "https://github.com/mpalermo73/hubitat"
+      },
+      "name": "MyFuelPortal Propane Integration",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Monitoring"
+      ],
+      "version": "1.1.0"
     },
     {
       "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -91834,6 +91926,108 @@
       "version": "1.3"
     },
     {
+      "author": "WBEVAN",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-18",
+      "definitions": [
+        {
+          "id": "definition:fc74835dd5f7efa21d9e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "TESmart Manager",
+          "namespace": "wbevan_tesmart",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
+        },
+        {
+          "id": "definition:ef465d4afba2d520b72e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "TESmart Controller",
+          "namespace": "wbevan_tesmart",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
+        },
+        {
+          "id": "definition:39949fc3c0f84a5cbd94",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "TESmart Input",
+          "namespace": "wbevan_tesmart",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Input.groovy"
+        }
+      ],
+      "description": "TESmart 8/16-port HDMI/KVM switch via tesmartctl REST. Includes Manager app, controller driver, and child input switches.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-tesmart-hdmi-switch-rest-api-service-with-hubitat-package-manager-app/166591",
+        "documentation": "https://wbevan.github.io/TESmartController/",
+        "manifest": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json",
+        "repository": "https://github.com/WBEVAN/TESmartController"
+      },
+      "name": "TESmart Controller",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "HDMI",
+        "KVM",
+        "LAN",
+        "Multimedia"
+      ],
+      "version": "1.6.0"
+    },
+    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -92197,7 +92391,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-18",
       "definitions": [
         {
           "id": "definition:4bb3fdc0eddf14cd7a69",
@@ -92329,7 +92523,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.17"
+      "version": "1.0.18"
     },
     {
       "author": "TheMaster",
@@ -102741,7 +102935,7 @@
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-11",
+      "dateReleased": "2026-10-18",
       "definitions": [
         {
           "id": "definition:2a431cffb2406a42bf11",
@@ -102828,7 +103022,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.35.0"
+      "version": "1.36.0"
     },
     {
       "author": "Jake Lehner",
@@ -133803,5 +133997,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-18T04:49:03Z"
+  "snapshotGenerated": "2026-10-19T04:57:03Z"
 }

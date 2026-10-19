@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-18T04:49:03Z`.
+Latest observation: `2026-10-19T04:57:03Z`.
 
-**59 package change(s):** added 7, broken 2, declared definitions changed 12, restored 2, source location changed 1, updated 42
+**57 package change(s):** added 9, broken 2, declared definitions changed 11, restored 2, source location changed 1, updated 38
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
+- [TESmart Controller: added.](https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json)
+- [MyFuelPortal Propane Integration: added.](https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
 - [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
 - [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
 - [Sinopé Drivers: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
@@ -55,13 +61,5 @@ Latest observation: `2026-10-18T04:49:03Z`.
 - [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
 - [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
 - [Aqara Pet Feeder C1 Driver: added.](https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json)
-- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Netatmo Weather Station: updated, changed declared definitions.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json)
-- [Muse Bridge: updated.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
-- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
-- [Blinds Dusk Automation: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-blinds-dusk.json)
-- [BirdWeather PUC: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

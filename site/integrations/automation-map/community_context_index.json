@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 487,
+  "recordCount": 489,
   "records": [
     {
       "author": null,
@@ -2409,6 +2409,40 @@
       "summary": "Integrates YoLink hub and device control within Hubitat."
     },
     {
+      "author": "Matt Palermo",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MyFuelPortal Manager",
+          "namespace": "myfuelportal"
+        }
+      ],
+      "displayName": "MyFuelPortal Propane Integration",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
+        "source": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "MyFuelPortal Propane Integration",
+      "qualityFlags": [],
+      "summary": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas)."
+    },
+    {
       "author": "C Steele",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -3502,6 +3536,41 @@
         "IDENTITY_MISMATCH"
       ],
       "summary": "Watchtower is the all-in-one app for long-term smart home monitoring and data visualization. Staying true to Hubitat's core value, the application works 100% locally, with no reliance on the cloud. Plus, there's no need for extra hardware like Raspberry Pi or NAS."
+    },
+    {
+      "author": "WBEVAN",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "TESmart Manager",
+          "namespace": "wbevan_tesmart"
+        }
+      ],
+      "displayName": "TESmart Controller",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-tesmart-hdmi-switch-rest-api-service-with-hubitat-package-manager-app/166591",
+        "documentation": "https://wbevan.github.io/TESmartController/",
+        "source": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "TESmart Controller",
+      "qualityFlags": [],
+      "summary": "TESmart 8/16-port HDMI/KVM switch via tesmartctl REST. Includes Manager app, controller driver, and child input switches."
     },
     {
       "author": "Russell Goldin",
@@ -8359,7 +8428,7 @@
         "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitor.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "reviewed": false
       },
       "packageName": "Log Monitor",
@@ -16422,5 +16491,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-18T04:49:03Z"
+  "snapshotGenerated": "2026-10-19T04:57:03Z"
 }

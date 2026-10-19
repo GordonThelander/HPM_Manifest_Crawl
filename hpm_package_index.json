@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 927,
+  "packageCount": 929,
   "packages": [
     {
       "apps": [],
@@ -28763,69 +28763,75 @@
             },
             {
               "evidence": "runIn(5, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
-              "line": 912,
+              "line": 915,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
-              "line": 1158,
+              "line": 1161,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpGet(callbackHandler, [uri: VENUS_BASE, path: path, query: qp, headers: headers, timeout: 20], asyncData)",
-              "line": 1279,
+              "line": 1285,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPost(\"handleTokenRefreshResponse\", [",
-              "line": 1373,
+              "line": 1379,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
+              "evidence": "runIn(2, \"cancelAutoResumeDock\", [data: [mac: mac], overwrite: false])",
+              "line": 1600,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(5, \"continueSweepDispatch\", [data: [mac: mac], overwrite: false])",
-              "line": 1773,
+              "line": 1804,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// NOTE for every runIn() that schedules this: they must pass",
-              "line": 1779,
+              "line": 1810,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpGet([",
-              "line": 2781,
+              "line": 2812,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpPost([",
-              "line": 2790,
+              "line": 2821,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([",
-              "line": 2836,
+              "line": 2867,
               "type": "HTTP_CALL",
               "value": "httpPost"
             }
           ],
-          "sourceBytes": 152351,
+          "sourceBytes": 154309,
           "sourceFetched": true,
-          "sourceSha256": "8387e1f9da2d512e89f3ade776b90a36058d765c851f90f9cc49fa3cf963be52",
+          "sourceSha256": "e761185850008c1a92ab663bdbece7e29ae43812c2236079d57b880e72c4d3b8",
           "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy"
         }
       ],
       "author": "Brian Wilson",
       "category": "Control",
       "communityLink": "https://community.hubitat.com/t/release-wyze-vacuum-integration-cloud/165866",
-      "dateReleased": "2026-10-11",
+      "dateReleased": "2026-10-18",
       "description": "Native integration for Wyze Robot Vacuums (200S/JA_RO2) -- room-based rotation cleaning, room timing learning mode, and status monitoring, no external server required",
       "documentationLink": "https://github.com/bdwilson/hubitat/tree/master/Wyze-Vacuum",
       "drivers": [
@@ -28879,7 +28885,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.35.0"
+      "version": "1.36.0"
     },
     {
       "apps": [],
@@ -86620,7 +86626,7 @@
       "author": "James Shimota",
       "category": "Control",
       "communityLink": "https://community.hubitat.com/",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-18",
       "description": "A collection of production-grade custom drivers for Third Reality Zigbee devices. Select and install only the drivers you need (Contact, Motion, Night Light, Power Plug with Metering, and Temp/Humidity Display/Non-Display sensors, RGBW bulb).",
       "documentationLink": "https://github.com/jshimota01/hubitat",
       "drivers": [
@@ -86949,7 +86955,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_motion_sensor_custom/third_reality_motion_driver-custom.groovy"
         },
         {
-          "definitionLine": 66,
+          "definitionLine": 69,
           "definitionName": "Third Reality Night Light (Custom)",
           "definitionNamespace": "jshimota",
           "manifestName": "Third Reality Multifunction Night Light Custom",
@@ -86957,7 +86963,7 @@
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 25,
+              "line": 26,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -86967,25 +86973,25 @@
             },
             {
               "evidence": "* v1.0.5 09/04/26 jshimota Removed FC00 motion read from refresh() (report-only attribute), refactored setLevel() to native zigbee.setLevel(), and added general ZCL catchall status parsing.",
-              "line": 50,
+              "line": 53,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus",
-              "line": 62,
+              "line": 65,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 63,
+              "line": 66,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_night_light/third_reality_night_light.groovy\"",
-              "line": 70,
+              "line": 73,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -86995,55 +87001,31 @@
             },
             {
               "evidence": "runIn(1, \"configure\")",
-              "line": 157,
+              "line": 159,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(0x0006, 0x0000, DataType.BOOLEAN, 0, 3600, null)",
-              "line": 171,
+              "line": 175,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(0x0008, 0x0000, DataType.UINT8, 1, 3600, 1)",
-              "line": 174,
+              "line": 178,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.configureReporting(0x0400, 0x0000, DataType.UINT16, 30, 3600, hwDelta)",
-              "line": 177,
+              "evidence": "cmds += zigbee.configureReporting(0x0400, 0x0000, DataType.UINT16, 30, 3600, hwZclDelta)",
+              "line": 181,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(2, \"refresh\")",
-              "line": 182,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"disableDebugLogging\")",
-              "line": 188,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"executeHealthCheckScheduled\")",
-              "line": 200,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(1800, \"disableDebugLogging\")",
-              "line": 207,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(1800, \"disableDebugLogging\", [overwrite: false])",
-              "line": 210,
+              "line": 186,
               "type": "SCHEDULING",
               "value": true
             },
@@ -87054,189 +87036,213 @@
               "value": true
             },
             {
+              "evidence": "unschedule(\"executeHealthCheckScheduled\")",
+              "line": 224,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1800, \"disableDebugLogging\")",
+              "line": 231,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1800, \"disableDebugLogging\", [overwrite: false])",
+              "line": 234,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"disableDebugLogging\")",
+              "line": 236,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "return zigbee.on()",
-              "line": 223,
+              "line": 247,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.off()",
-              "line": 229,
+              "line": 253,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.command(0x0006, 0x02)",
-              "line": 235,
+              "line": 259,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.setLevel(levelVal, durationSec)",
-              "line": 243,
+              "line": 267,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.command(0x0300, 0x06, zigbee.convertToHexString(scaledHue, 2), zigbee.convertToHexString(scaledSat, 2), \"0A00\")",
-              "line": 254,
+              "line": 278,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.command(0x0300, 0x06, zigbee.convertToHexString(scaledHue, 2), zigbee.convertToHexString(scaledSat, 2), \"0A00\")",
-              "line": 274,
+              "line": 298,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.command(0x0300, 0x06, zigbee.convertToHexString(scaledHue, 2), zigbee.convertToHexString(scaledSat, 2), \"0A00\")",
-              "line": 286,
+              "line": 310,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0006, 0x0000) // Switch State",
-              "line": 292,
+              "line": 316,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0008, 0x0000) // Level",
-              "line": 293,
+              "line": 317,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0300, 0x0000) // Hue",
-              "line": 294,
+              "line": 318,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0300, 0x0001) // Saturation",
-              "line": 295,
+              "line": 319,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0400, 0x0000) // Lux",
-              "line": 296,
+              "line": 320,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (cmds) sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
-              "line": 336,
+              "line": 360,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "if (cmds) sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
-              "line": 342,
+              "line": 366,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(0x0000, 0x0000) // Read Basic Cluster ZCL Version (0x0000)",
-              "line": 349,
+              "line": 373,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(methodToSchedule)",
-              "line": 358,
+              "line": 382,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case 60: schedule(\"0 ${m} * ? * * *\", methodToSchedule); break",
-              "line": 367,
+              "line": 391,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case 240: schedule(\"0 ${m} ${[0,4,8,12,16,20].collect{(it+h)%24}.sort().join(',')} ? * * *\", methodToSchedule); break",
-              "line": 368,
+              "line": 392,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case 480: schedule(\"0 ${m} ${[0,8,16].collect{(it+h)%24}.sort().join(',')} ? * * *\", methodToSchedule); break",
-              "line": 369,
+              "line": 393,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case 720: schedule(\"0 ${m} ${[0,12].collect{(it+h)%24}.sort().join(',')} ? * * *\", methodToSchedule); break",
-              "line": 370,
+              "line": 394,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case 1440: schedule(\"0 ${m} ${h} ? * * *\", methodToSchedule); break",
-              "line": 371,
+              "line": 395,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "default: schedule(\"0 */${intervalMin} * ? * * *\", methodToSchedule); break",
-              "line": 372,
+              "line": 396,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"deviceCommandTimeout\", [overwrite: true])",
-              "line": 377,
+              "line": 401,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(zigbee.enrollResponse(), hubitat.device.Protocol.ZIGBEE))",
-              "line": 404,
+              "line": 428,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(zigbee.enrollResponse(), hubitat.device.Protocol.ZIGBEE))",
-              "line": 404,
+              "line": 428,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 408,
+              "line": 432,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String clusterHex = descMap.cluster ?: (descMap.clusterInt != null ? zigbee.convertToHexString(descMap.clusterInt as Integer, 4) : \"unknown\")",
-              "line": 412,
+              "line": 436,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(\"deviceCommandTimeout\")",
-              "line": 602,
+              "line": 639,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "ZoneStatus zoneStatus = zigbee.parseZoneStatus(description)",
-              "line": 616,
+              "line": 652,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 658,
+              "line": 694,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 35092,
+          "sourceBytes": 37111,
           "sourceFetched": true,
-          "sourceSha256": "26b59fefe549e538f4c8d17a39c4ee43c3174437eb9b2d15b20897abbc048591",
+          "sourceSha256": "0025689ee18e6037991b79294e1bba827045b143775968282d7ded6e5f45c3c4",
           "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_multifunction_night_light_custom/third_reality_multifunction_night_light_custom.groovy"
         },
         {
@@ -88284,7 +88290,7 @@
         "Open/Closed",
         "Misc. Devices"
       ],
-      "version": "1.0.17"
+      "version": "1.0.18"
     },
     {
       "apps": [],
@@ -241937,6 +241943,339 @@
       "version": "1.0.1"
     },
     {
+      "apps": [
+        {
+          "definitionLine": 28,
+          "definitionName": "TESmart Manager",
+          "definitionNamespace": "wbevan_tesmart",
+          "manifestName": "TESmart Manager",
+          "manifestNamespace": "wbevan_tesmart",
+          "observations": [
+            {
+              "evidence": "@Field static final String IMG_BANNER = \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png\"",
+              "line": 17,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png"
+              }
+            },
+            {
+              "evidence": "@Field static final String DOCS_URL = \"https://wbevan.github.io/TESmartController/\"",
+              "line": 18,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "wbevan.github.io",
+                "scheme": "https",
+                "url": "https://wbevan.github.io/TESmartController/"
+              }
+            },
+            {
+              "evidence": "@Field static final String LISTENER_DOCS = \"https://github.com/WBEVAN/TESmartController/blob/main/Docs/listener.md\"",
+              "line": 19,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/WBEVAN/TESmartController/blob/main/Docs/listener.md"
+              }
+            },
+            {
+              "evidence": "iconUrl: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png\",",
+              "line": 34,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png"
+              }
+            },
+            {
+              "evidence": "iconX2Url: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png\",",
+              "line": 35,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png"
+              }
+            },
+            {
+              "evidence": "iconX3Url: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png\",",
+              "line": 36,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/Docs/images/readme-banner.png"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy\",",
+              "line": 37,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
+              }
+            },
+            {
+              "evidence": "oauth: true",
+              "line": 40,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
+              "evidence": "mappings {",
+              "line": 43,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "paragraph \"<a href=\\\"${DOCS_URL}\\\" target=\\\"_blank\\\">tesmartctl docs</a> · <a href=\\\"https://github.com/WBEVAN/TESmartController\\\" target=\\\"_blank\\\">GitHub repo</a>\"",
+              "line": 120,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/WBEVAN/TESmartController\\"
+              }
+            },
+            {
+              "evidence": "getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) }",
+              "line": 218,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 272,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 323,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 352,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "httpGet([uri: uri, contentType: \"application/json\", timeout: 20]) { resp ->",
+              "line": 396,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 440,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "httpGet([uri: \"${base}/version\", contentType: \"application/json\", timeout: 20]) { resp ->",
+              "line": 499,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "device = addChildDevice(",
+              "line": 566,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 657,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "return getChildDevices()?.find { it.typeName == \"TESmart Controller\" } ?: getChildDevices()?.find { true }",
+              "line": 706,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            }
+          ],
+          "sourceBytes": 30240,
+          "sourceFetched": true,
+          "sourceSha256": "88add12e42075de853b2cb9ccf238abad5c23ac82d034714decdbe2dcb83b021",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
+        }
+      ],
+      "author": "WBEVAN",
+      "category": "Integrations",
+      "communityLink": "https://community.hubitat.com/t/release-tesmart-hdmi-switch-rest-api-service-with-hubitat-package-manager-app/166591",
+      "dateReleased": "2026-10-18",
+      "description": "TESmart 8/16-port HDMI/KVM switch via tesmartctl REST. Includes Manager app, controller driver, and child input switches.",
+      "documentationLink": "https://wbevan.github.io/TESmartController/",
+      "drivers": [
+        {
+          "definitionLine": 28,
+          "definitionName": "TESmart Controller",
+          "definitionNamespace": "wbevan_tesmart",
+          "manifestName": "TESmart Controller",
+          "manifestNamespace": "wbevan_tesmart",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy\"",
+              "line": 34,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1800, \"logsOff\")",
+              "line": 195,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 226,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"refresh\")",
+              "line": 233,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices()?.each { child ->",
+              "line": 389,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(callback, params, data)",
+              "line": 447,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpPost(callback, params, data)",
+              "line": 471,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "runIn(2, \"refresh\")",
+              "line": 510,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "child = addChildDevice(BUILTIN_CHILD_NAMESPACE, BUILTIN_CHILD_TYPE, dni, props)",
+              "line": 834,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "child = addChildDevice(CHILD_NAMESPACE, CHILD_TYPE, dni, props)",
+              "line": 836,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "child = addChildDevice(BUILTIN_CHILD_NAMESPACE, BUILTIN_CHILD_TYPE, dni, props)",
+              "line": 843,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"refresh\")",
+              "line": 1205,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery10Minutes(\"refresh\")",
+              "line": 1207,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery15Minutes(\"refresh\")",
+              "line": 1209,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery30Minutes(\"refresh\")",
+              "line": 1211,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(seconds, \"refreshLoop\")",
+              "line": 1214,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(seconds, \"refreshLoop\")",
+              "line": 1223,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 44936,
+          "sourceFetched": true,
+          "sourceSha256": "bd00465626e927ac26b6bf76a6c62db8384c56b6df9b6f623cc9c10d17f69695",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
+        },
+        {
+          "definitionLine": 16,
+          "definitionName": "TESmart Input",
+          "definitionNamespace": "wbevan_tesmart",
+          "manifestName": "TESmart Input",
+          "manifestNamespace": "wbevan_tesmart",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Input.groovy\"",
+              "line": 22,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Input.groovy"
+              }
+            }
+          ],
+          "sourceBytes": 3068,
+          "sourceFetched": true,
+          "sourceSha256": "0f84c34db1cc958cb8bc2cc4ac14abbaafcd580c6a0906a0e3ff6b9121d284f0",
+          "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Input.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json",
+      "packageId": "391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "packageName": "TESmart Controller",
+      "repoAuthor": "WBEVAN",
+      "repoName": "WBEVAN",
+      "repoUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/repository.json",
+      "tags": [
+        "LAN",
+        "Multimedia",
+        "HDMI",
+        "KVM"
+      ],
+      "version": "1.6.0"
+    },
+    {
       "apps": [],
       "author": "WalksOnAir",
       "category": "Integrations",
@@ -283107,7 +283446,7 @@
       "author": "hubitrep",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-18",
       "description": "Zigbee drivers for Aqara devices; pick the ones you need: WSDCGQ11LM temperature, humidity and pressure sensor, MCCGQ11LM door/window sensor, WS-USC01 no-neutral wall switch.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/aqara",
       "drivers": [
@@ -283248,20 +283587,20 @@
             },
             {
               "evidence": "int rawMv = zigbee.convertHexToInt(batteryVoltageHex)",
-              "line": 810,
+              "line": 848,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
-              "line": 862,
+              "line": 900,
               "type": "SEND_HUB_COMMAND",
               "value": true
             }
           ],
-          "sourceBytes": 40984,
+          "sourceBytes": 42673,
           "sourceFetched": true,
-          "sourceSha256": "92e3c52a8b664fb2d4ff48ad66878ecba6a0046a450447124cc04c3538c55595",
+          "sourceSha256": "787b72a874602b55935e0a4d03be8a241698f0733902481381b2b3cd8592363a",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WSDCGQ11LM.groovy"
         },
         {
@@ -283538,7 +283877,7 @@
         "Doors & Windows",
         "Lights & Switches"
       ],
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "apps": [
@@ -294482,7 +294821,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-18",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -294494,7 +294833,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "4.8.0"
+      "version": "4.8.2"
     },
     {
       "apps": [],
@@ -327305,6 +327644,131 @@
     {
       "apps": [
         {
+          "definitionLine": 9,
+          "definitionName": "MyFuelPortal Manager",
+          "definitionNamespace": "myfuelportal",
+          "manifestName": "MyFuelPortal Manager",
+          "manifestNamespace": "myfuelportal",
+          "observations": [
+            {
+              "evidence": "unschedule()",
+              "line": 50,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
+              "line": 52,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices().each { deleteChildDevice(it.deviceNetworkId) }",
+              "line": 61,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "case \"3 Hours\": runEvery3Hours(\"refresh\"); break",
+              "line": 67,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "case \"6 Hours\": schedule(\"0 ${new Random().nextInt(60)} */6 ? * *\", \"refresh\"); break",
+              "line": 68,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "case \"24 Hours\": schedule(\"0 ${new Random().nextInt(60)} 4 ? * *\", \"refresh\"); break",
+              "line": 69,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "default: schedule(\"0 ${new Random().nextInt(60)} */12 ? * *\", \"refresh\"); break",
+              "line": 70,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"refresh\")",
+              "line": 72,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "domain = domain.contains(\".\") ? \"https://${domain}\" : \"https://${domain}.myfuelportal.com\"",
+              "line": 105,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${domain",
+                "scheme": "https",
+                "url": "https://${domain"
+              }
+            },
+            {
+              "evidence": "method == \"post\" ? httpPost(params, handle) : httpGet(params, handle)",
+              "line": 177,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "method == \"post\" ? httpPost(params, handle) : httpGet(params, handle)",
+              "line": 177,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "child = addChildDevice(\"myfuelportal\", \"MyFuelPortal Tank\", dni, [name: tank.name ?: \"MyFuelPortal Tank\", label: label, isComponent: false])",
+              "line": 261,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            }
+          ],
+          "sourceBytes": 13549,
+          "sourceFetched": true,
+          "sourceSha256": "f9138dbf78084f16e63fdb410636411437c74092db6f83ce6347c73373465759",
+          "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
+        }
+      ],
+      "author": "Matt Palermo",
+      "category": "Integrations",
+      "communityLink": null,
+      "dateReleased": "2026-10-13",
+      "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
+      "documentationLink": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
+      "drivers": [
+        {
+          "definitionLine": 8,
+          "definitionName": "MyFuelPortal Tank",
+          "definitionNamespace": "myfuelportal",
+          "manifestName": "MyFuelPortal Tank",
+          "manifestNamespace": "myfuelportal",
+          "observations": [],
+          "sourceBytes": 3844,
+          "sourceFetched": true,
+          "sourceSha256": "6fd63cc7ad117492400de0a480eef141a8fb36852fd1fcae5362d7739727a322",
+          "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json",
+      "packageId": "1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "packageName": "MyFuelPortal Propane Integration",
+      "repoAuthor": "Matt Palermo",
+      "repoName": "mpalermo73",
+      "repoUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/repository.json",
+      "tags": [
+        "Cloud",
+        "Monitoring"
+      ],
+      "version": "1.1.0"
+    },
+    {
+      "apps": [
+        {
           "definitionLine": 20,
           "definitionName": "Homekit CT Corrector",
           "definitionNamespace": "homekitcorrect",
@@ -353930,21 +354394,21 @@
       "version": "1.1.5"
     }
   ],
-  "repositoriesFetched": 219,
-  "repositoryCount": 220,
+  "repositoriesFetched": 221,
+  "repositoryCount": 222,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-18T04:49:03Z",
+  "snapshotGenerated": "2026-10-19T04:57:03Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2303,
+    "componentsAttempted": 2308,
     "componentsFailed": 10,
-    "componentsFetched": 2293,
-    "componentsWithObservations": 2168,
-    "definitionsVerified": 2282,
-    "distinctSourceUrls": 2289,
+    "componentsFetched": 2298,
+    "componentsWithObservations": 2172,
+    "definitionsVerified": 2287,
+    "distinctSourceUrls": 2294,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2279
+    "sourceUrlsFetched": 2284
   }
 }

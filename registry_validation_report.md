@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-18T04:49:03Z`
-- HPM repositories in master list: **220**
-- Repositories fetched successfully: **219**
-- Packages indexed: **927**
+- Snapshot: `2026-10-19T04:57:03Z`
+- HPM repositories in master list: **222**
+- Repositories fetched successfully: **221**
+- Packages indexed: **929**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **830**
+Total packages not matched by any registry entry: **832**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -422,6 +422,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Tom Schmidt | Hikvision Camera Controller | Integrations | Alarm Systems, Cameras, Monitoring, Motion Control, Safety & Security | https://raw.githubusercontent.com/tr-systems/hubpub/code/pkghcc.json |
 | Vincent van Didden (@Vincentiano) | Silvercrest Doorbell HG06668 | Integrations | Buttons | https://raw.githubusercontent.com/Vincentiano/Hubitat-Silvercrest_Doorbell_HG06668/main/packageManifest.json |
 | Vyrolan | iAqualink Driver | Integrations | Pools & Spas | https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/packageManifest.json |
+| WBEVAN | TESmart Controller | Integrations | LAN, Multimedia, HDMI, KVM | https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json |
 | WalksOnAir | Pi-hole Virtual Switch | Integrations | LAN, Monitoring, Tools & Utilities, Cloud | https://raw.githubusercontent.com/walksonair/Hubitat-Pi-hole-Virtual-Switch/main/packageManifest.json |
 | WindowWasher | Honeywell Home Integration Lyric and T Series Devices (cloud) | Integrations | Temperature & Humidity, Climate Control, Cloud | https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json |
 | WindowWasher | Hyundai Bluelink Integration for Hubitat | Convenience | Vehicles & Transportation, Cloud | https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/BluelinkManifest.json |
@@ -531,6 +532,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | mikec85 | OctoPrint | Integrations | Tools & Utilities, Monitoring, Notifications | https://github.com/mikec85/hubitatdrivers/raw/master/octoprint/packageManifest.json |
 | mikec85 | PublicIPTracker | Utility | LAN, Tools & Utilities, Monitoring | https://github.com/mikec85/hubitatdrivers/raw/master/publiciptracker/packageManifest.json |
 | mikec85 | UniFi-Driver | Integrations | LAN, Tools & Utilities, Monitoring, Notifications | https://raw.githubusercontent.com/mikec85/hubitatdrivers/master/unifi/packageManifest.json |
+| mpalermo73 | MyFuelPortal Propane Integration | Integrations | Cloud, Monitoring | https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json |
 | n3! | Channels DVR | Integrations | LAN | https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/channels_dvr/packageManifest.json |
 | n3! | Weather Canada (OWM3.0-EC) | Integrations | Weather | https://raw.githubusercontent.com/dmike3/Hubitat/master/hpm/weather%20canada%20(owm-ec)/packageManifest.json |
 | nh.schottfam | Enphase Solar | Integrations | Energy Monitoring, LAN, Monitoring | https://raw.githubusercontent.com/imnotbob/EnvoyHE/master/packageManager.json |
@@ -596,8 +598,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 830 |
-| G candidate subset | 360 |
+| G. Unrepresented packages | 832 |
+| G candidate subset | 362 |
 
 ## H. Enrichment summary
 
@@ -607,13 +609,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2289 |
-| Source URLs fetched | 2279 |
+| Distinct source URLs | 2294 |
+| Source URLs fetched | 2284 |
 | Source URLs failed | 10 |
-| Components attempted | 2303 |
-| Components fetched | 2293 |
-| Literal definitions verified | 2282 |
-| Components with observations | 2168 |
+| Components attempted | 2308 |
+| Components fetched | 2298 |
+| Literal definitions verified | 2287 |
+| Components with observations | 2172 |
 
 ### Official Hubitat documentation pass
 

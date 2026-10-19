@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2303,
+  "definitionCount": 2308,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -3423,6 +3423,54 @@
       "sourceIdentity": {
         "name": "WSM4Hubitat",
         "namespace": "Snell"
+      }
+    },
+    {
+      "id": "definition:f262bca60887ae317ff9",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "MyFuelPortal Manager",
+        "namespace": "myfuelportal"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 1,
+        "CHILD_DEVICE_CREATE": 1,
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 7
+      },
+      "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "source": {
+        "bytes": 13549,
+        "definitionLine": 9,
+        "fetched": true,
+        "sha256": "f9138dbf78084f16e63fdb410636411437c74092db6f83ce6347c73373465759",
+        "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
+      },
+      "sourceIdentity": {
+        "name": "MyFuelPortal Manager",
+        "namespace": "myfuelportal"
+      }
+    },
+    {
+      "id": "definition:34dde45d8835fc9c2aa5",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "MyFuelPortal Tank",
+        "namespace": "myfuelportal"
+      },
+      "observationCounts": {},
+      "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "source": {
+        "bytes": 3844,
+        "definitionLine": 8,
+        "fetched": true,
+        "sha256": "6fd63cc7ad117492400de0a480eef141a8fb36852fd1fcae5362d7739727a322",
+        "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "MyFuelPortal Tank",
+        "namespace": "myfuelportal"
       }
     },
     {
@@ -6982,6 +7030,85 @@
       "sourceIdentity": {
         "name": "FireBoardCloudAPI",
         "namespace": "Snell"
+      }
+    },
+    {
+      "id": "definition:fc74835dd5f7efa21d9e",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "TESmart Manager",
+        "namespace": "wbevan_tesmart"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 2,
+        "CHILD_DEVICE_CREATE": 1,
+        "HTTP_CALL": 6,
+        "NETWORK_URL_LITERAL": 8,
+        "OAUTH_ACCESS_TOKEN": 1,
+        "OAUTH_API_MAPPINGS": 1,
+        "OAUTH_ENABLED": 1
+      },
+      "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "source": {
+        "bytes": 30240,
+        "definitionLine": 28,
+        "fetched": true,
+        "sha256": "88add12e42075de853b2cb9ccf238abad5c23ac82d034714decdbe2dcb83b021",
+        "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
+      },
+      "sourceIdentity": {
+        "name": "TESmart Manager",
+        "namespace": "wbevan_tesmart"
+      }
+    },
+    {
+      "id": "definition:39949fc3c0f84a5cbd94",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "TESmart Input",
+        "namespace": "wbevan_tesmart"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "source": {
+        "bytes": 3068,
+        "definitionLine": 16,
+        "fetched": true,
+        "sha256": "0f84c34db1cc958cb8bc2cc4ac14abbaafcd580c6a0906a0e3ff6b9121d284f0",
+        "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Input.groovy"
+      },
+      "sourceIdentity": {
+        "name": "TESmart Input",
+        "namespace": "wbevan_tesmart"
+      }
+    },
+    {
+      "id": "definition:ef465d4afba2d520b72e",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "TESmart Controller",
+        "namespace": "wbevan_tesmart"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 1,
+        "CHILD_DEVICE_CREATE": 3,
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 10
+      },
+      "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+      "source": {
+        "bytes": 44936,
+        "definitionLine": 28,
+        "fetched": true,
+        "sha256": "bd00465626e927ac26b6bf76a6c62db8384c56b6df9b6f623cc9c10d17f69695",
+        "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
+      },
+      "sourceIdentity": {
+        "name": "TESmart Controller",
+        "namespace": "wbevan_tesmart"
       }
     },
     {
@@ -20144,10 +20271,10 @@
       },
       "packageId": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
       "source": {
-        "bytes": 40984,
+        "bytes": 42673,
         "definitionLine": 40,
         "fetched": true,
-        "sha256": "92e3c52a8b664fb2d4ff48ad66878ecba6a0046a450447124cc04c3538c55595",
+        "sha256": "787b72a874602b55935e0a4d03be8a241698f0733902481381b2b3cd8592363a",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WSDCGQ11LM.groovy"
       },
       "sourceIdentity": {
@@ -53682,10 +53809,10 @@
       },
       "packageId": "manifest:d6513611d38422ced953",
       "source": {
-        "bytes": 35092,
-        "definitionLine": 66,
+        "bytes": 37111,
+        "definitionLine": 69,
         "fetched": true,
-        "sha256": "26b59fefe549e538f4c8d17a39c4ee43c3174437eb9b2d15b20897abbc048591",
+        "sha256": "0025689ee18e6037991b79294e1bba827045b143775968282d7ded6e5f45c3c4",
         "url": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_multifunction_night_light_custom/third_reality_multifunction_night_light_custom.groovy"
       },
       "sourceIdentity": {
@@ -55840,14 +55967,14 @@
         "CHILD_DEVICE_CREATE": 1,
         "HTTP_CALL": 7,
         "NETWORK_URL_LITERAL": 7,
-        "SCHEDULING": 17
+        "SCHEDULING": 18
       },
       "packageId": "manifest:f16abae3d651b4d91303",
       "source": {
-        "bytes": 152351,
+        "bytes": 154309,
         "definitionLine": 92,
         "fetched": true,
-        "sha256": "8387e1f9da2d512e89f3ade776b90a36058d765c851f90f9cc49fa3cf963be52",
+        "sha256": "e761185850008c1a92ab663bdbece7e29ae43812c2236079d57b880e72c4d3b8",
         "url": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/Wyze-Vacuum-App.groovy"
       },
       "sourceIdentity": {
@@ -57950,7 +58077,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-18T04:49:03Z",
+  "snapshotGenerated": "2026-10-19T04:57:03Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",
