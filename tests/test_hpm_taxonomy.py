@@ -15,8 +15,15 @@ class HpmTaxonomyTests(unittest.TestCase):
 
     def test_output_uses_current_authoritative_vocabulary(self):
         taxonomy.validate(self.document)
-        self.assertEqual(len(self.document['taxonomy']['categories']), 6)
-        self.assertEqual(len(self.document['taxonomy']['tags']), 50)
+        # The vocabulary is HPM's own and grows when HPM adds a tag (HDMI and KVM on 2026-10-19), so the
+        # output is held to the settings it was built from, not to a fixed count.
+        built = self.document['taxonomy']
+        self.assertEqual(
+            taxonomy.settings_hash({'categories': built['categories'], 'tags': built['tags']}),
+            self.document['source']['sha256'],
+        )
+        self.assertGreaterEqual(len(built['categories']), 6)
+        self.assertGreaterEqual(len(built['tags']), 50)
         self.assertTrue({'Cameras', 'Matter', 'MQTT', 'Relays', 'Tasmota'} <= set(
             self.document['taxonomy']['tags']
         ))
