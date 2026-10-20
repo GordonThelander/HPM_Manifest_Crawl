@@ -1,9 +1,25 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-19T04:57:03Z`.
+Latest observation: `2026-10-20T10:03:43Z`.
 
-**57 package change(s):** added 9, broken 2, declared definitions changed 11, restored 2, source location changed 1, updated 38
+**63 package change(s):** added 16, broken 2, declared definitions changed 12, removed 2, restored 2, source location changed 3, updated 35
 
+- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
+- [SmartThings Motion Sensor Driver: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json)
+- [Restock Manager: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/restock-manager.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [ReBLLED LED Controller: added.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/packageManifest.json)
+- [Pentair Intellicenter Controller: removed.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
+- [Pentair IntelliCenter Controller: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
+- [NuHeat: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/packageManager.json)
+- [MyFuelPortal Propane Integration: updated.](https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json)
+- [Leviton Smart Load Center: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
+- [Device Health Monitor: updated, changed source location.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
+- [Battery Monitor 2.0: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
+- [Battery Monitor 2.0: removed.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
+- [Aqara Smart Curtain Motor (Check-in Fix): added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/packageManifest.json)
+- [Aqara H2 EU Wall Outlet (Local Zigbee): added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/packageManifest.json)
+- [Apple TV Integration: added.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
 - [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
 - [TESmart Controller: added.](https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json)
@@ -51,15 +67,5 @@ Latest observation: `2026-10-19T04:57:03Z`.
 - [webCoRE: updated.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
 - [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Holiday Decorations: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-holiday-decorations.json)
-- [CoCoHue (Hue Bridge Integration): updated.](https://raw.githubusercontent.com/HubitatCommunity/CoCoHue/master/packageManifest.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [WaterGuru Integration: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json)
-- [MCP Rule Server: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
-- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
-- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Aqara Pet Feeder C1 Driver: added.](https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

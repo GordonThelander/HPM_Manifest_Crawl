@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2308,
+  "definitionCount": 2321,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -3441,10 +3441,10 @@
       },
       "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
       "source": {
-        "bytes": 13549,
+        "bytes": 13900,
         "definitionLine": 9,
         "fetched": true,
-        "sha256": "f9138dbf78084f16e63fdb410636411437c74092db6f83ce6347c73373465759",
+        "sha256": "fd9046cdc40aca6e9955027f08c83f233e30c3b9fbf34d2d5c4bad8fc0ee7982",
         "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
       },
       "sourceIdentity": {
@@ -3462,10 +3462,10 @@
       "observationCounts": {},
       "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
       "source": {
-        "bytes": 3844,
+        "bytes": 3899,
         "definitionLine": 8,
         "fetched": true,
-        "sha256": "6fd63cc7ad117492400de0a480eef141a8fb36852fd1fcae5362d7739727a322",
+        "sha256": "7553848aabc066c44c064ed805ed6d658a7b0f377114d6bad308b2f4a843ce4e",
         "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
       },
       "sourceIdentity": {
@@ -30444,6 +30444,32 @@
       }
     },
     {
+      "id": "definition:50559cb273da5ce2d652",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "ReBLLED LED Controller",
+        "namespace": "brossow"
+      },
+      "observationCounts": {
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 4,
+        "WEBSOCKET_INTERFACE": 2
+      },
+      "packageId": "hpm:df5d170c-95c4-4d51-b641-792d95bb3593",
+      "source": {
+        "bytes": 22596,
+        "definitionLine": 50,
+        "fetched": true,
+        "sha256": "b6b499447a3ef154207828aeab30fa5ec8e746e8d9d5447a7809413a1584c9eb",
+        "url": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/reblled-controller.groovy"
+      },
+      "sourceIdentity": {
+        "name": "ReBLLED LED Controller",
+        "namespace": "brossow"
+      }
+    },
+    {
       "id": "definition:9e8853255e83cb93b3f0",
       "kind": "APP",
       "manifestIdentity": {
@@ -34380,6 +34406,130 @@
       }
     },
     {
+      "id": "definition:552342c3eb7914797d32",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Pentair IntelliCenter",
+        "namespace": "intellicenter"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 3,
+        "CHILD_DEVICE_CREATE": 1,
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 2
+      },
+      "packageId": "manifest:0022946aa602eec49b4f",
+      "source": {
+        "bytes": 23968,
+        "definitionLine": 21,
+        "fetched": true,
+        "sha256": "cb1fc203d4d7408e6a275616bcc7961aa4094de6c81ab916113924eccb12e16d",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Pentair IntelliCenter",
+        "namespace": "intellicenter"
+      }
+    },
+    {
+      "id": "definition:35ac895635f8ddc1d338",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Pentair IntelliCenter Body",
+        "namespace": "intellicenter"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 1
+      },
+      "packageId": "manifest:0022946aa602eec49b4f",
+      "source": {
+        "bytes": 9838,
+        "definitionLine": 15,
+        "fetched": true,
+        "sha256": "11173d52e2353d77c4c3c0e80ca10d3fd21cf0b78533a550a26dc1d9afcec643",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BodyDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Pentair IntelliCenter Body",
+        "namespace": "intellicenter"
+      }
+    },
+    {
+      "id": "definition:59c9bac18648eea0e060",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Pentair IntelliCenter Pump",
+        "namespace": "intellicenter"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 1
+      },
+      "packageId": "manifest:0022946aa602eec49b4f",
+      "source": {
+        "bytes": 5440,
+        "definitionLine": 14,
+        "fetched": true,
+        "sha256": "64991ce44ddfdab24b2397d05c172acebc8e90a1ebf54da5e22c0e2897da1b21",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/PumpSpeedDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Pentair IntelliCenter Pump",
+        "namespace": "intellicenter"
+      }
+    },
+    {
+      "id": "definition:b104889b862e26fbee08",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Pentair IntelliCenter Chlorinator",
+        "namespace": "intellicenter"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "manifest:0022946aa602eec49b4f",
+      "source": {
+        "bytes": 2257,
+        "definitionLine": 14,
+        "fetched": true,
+        "sha256": "8c71c840faf01d320d3a77e6b5f8ceaf401a95f651b83d4afd06ca9734cb6ab5",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ChlorinatorDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Pentair IntelliCenter Chlorinator",
+        "namespace": "intellicenter"
+      }
+    },
+    {
+      "id": "definition:c86a69a81967867511c4",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Pentair IntelliCenter Bridge",
+        "namespace": "intellicenter"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 5,
+        "CHILD_DEVICE_CREATE": 1,
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 20,
+        "WEBSOCKET_INTERFACE": 4
+      },
+      "packageId": "manifest:0022946aa602eec49b4f",
+      "source": {
+        "bytes": 28985,
+        "definitionLine": 31,
+        "fetched": true,
+        "sha256": "f5739797a6f23170602fc584f765cc2c5987c01432de5c1a3ad328116b30d3cf",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BridgeDeviceDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Pentair IntelliCenter Bridge",
+        "namespace": "intellicenter"
+      }
+    },
+    {
       "id": "definition:1169a9f6115ca8696cdf",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -35050,6 +35200,85 @@
       }
     },
     {
+      "id": "definition:2118d4ced6381b77c197",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Restock Manager",
+        "namespace": "almulder"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 3
+      },
+      "packageId": "manifest:05771e3c45ba72c08509",
+      "source": {
+        "bytes": 4449,
+        "definitionLine": 29,
+        "fetched": true,
+        "sha256": "831f9e1f84ec789d2d96874f622de2ad27506f5b8abacbb8c0a095a490ef7cf9",
+        "url": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Restock%20Manager/App/Restock%20Manager.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Restock Manager",
+        "namespace": "almulder"
+      }
+    },
+    {
+      "id": "definition:29b6e69f13bd61e47fa1",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Restock Manager Item",
+        "namespace": "almulder"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 3,
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 7
+      },
+      "packageId": "manifest:05771e3c45ba72c08509",
+      "source": {
+        "bytes": 28525,
+        "definitionLine": 30,
+        "fetched": true,
+        "sha256": "8be42894b08402dfd9cfeff43d6fb1a1dfea4569348909367eda26c06cd4ce5b",
+        "url": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Restock%20Manager/App/Restock%20Manager%20Item.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Restock Manager Item",
+        "namespace": "almulder"
+      }
+    },
+    {
+      "id": "definition:0c5c74f15cb88aaa656e",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Battery Monitor 2.0",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 3,
+        "EVENT_SUBSCRIPTION": 1,
+        "NETWORK_URL_LITERAL": 7,
+        "OAUTH_ACCESS_TOKEN": 1,
+        "OAUTH_API_MAPPINGS": 1,
+        "OAUTH_ENABLED": 1,
+        "SCHEDULING": 7
+      },
+      "packageId": "manifest:06f9636483d5a32c3cd6",
+      "source": {
+        "bytes": 166600,
+        "definitionLine": 30,
+        "fetched": true,
+        "sha256": "ad5619c14423a11eb968003715739339499e01ddc93e512c559b62abb7b5d4a9",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/BatteryMonitor2.0.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Battery Monitor 2.0",
+        "namespace": "jdthomas24"
+      }
+    },
+    {
       "id": "definition:424db716830e53f49edc",
       "kind": "APP",
       "manifestIdentity": {
@@ -35233,6 +35462,29 @@
       "sourceIdentity": {
         "name": "Image Server",
         "namespace": "tomw"
+      }
+    },
+    {
+      "id": "definition:e900c3cdbb771c405f89",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Aqara H2 Wall Outlet EU (Local Zigbee)",
+        "namespace": "velkovb"
+      },
+      "observationCounts": {
+        "ZIGBEE_API_REFERENCE": 3
+      },
+      "packageId": "manifest:0bda14ae2df86991c999",
+      "source": {
+        "bytes": 18749,
+        "definitionLine": 21,
+        "fetched": true,
+        "sha256": "3bfa6133f929a7cfb0f8113f3c9be6679e5368ef98091a07dcc59b151ec45668",
+        "url": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/aqara-h2-wall-outlet.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Aqara H2 Wall Outlet EU (Local Zigbee)",
+        "namespace": "velkovb"
       }
     },
     {
@@ -36295,6 +36547,33 @@
       }
     },
     {
+      "id": "definition:f6c0fd7ec640aca55a0a",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Zigbee - Aqara Smart Curtain Motor (local check-in fix)",
+        "namespace": "oh-lalabs.com"
+      },
+      "observationCounts": {
+        "HUB_ACTION": 1,
+        "NETWORK_URL_LITERAL": 7,
+        "SCHEDULING": 26,
+        "SEND_HUB_COMMAND": 1,
+        "ZIGBEE_API_REFERENCE": 21
+      },
+      "packageId": "manifest:1c420aaaf57544a0408d",
+      "source": {
+        "bytes": 74363,
+        "definitionLine": 37,
+        "fetched": true,
+        "sha256": "8229e10c43ae66262bc6b19d48512cfcafe9a557149de6dffe96d7555746d976",
+        "url": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/aqara-smart-curtain-motor.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Zigbee - Aqara Smart Curtain Motor (local check-in fix)",
+        "namespace": "oh-lalabs.com"
+      }
+    },
+    {
       "id": "definition:2f88c8536a0ce0ad6491",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -36518,14 +36797,14 @@
         "OAUTH_ACCESS_TOKEN": 3,
         "OAUTH_API_MAPPINGS": 1,
         "OAUTH_ENABLED": 1,
-        "SCHEDULING": 33
+        "SCHEDULING": 32
       },
       "packageId": "manifest:1fb36d6ab3dd1abe2238",
       "source": {
-        "bytes": 272441,
-        "definitionLine": 318,
+        "bytes": 262207,
+        "definitionLine": 77,
         "fetched": true,
-        "sha256": "4bc1590776cdd8a596780ab043d506a2e239841ae1c59c5e421ea89da048eb5a",
+        "sha256": "85fccc96531aeb00e22de47aad81c7ebe4a6612bffdf882932a58ae72ee336c2",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ParentApp.groovy"
       },
       "sourceIdentity": {
@@ -36547,10 +36826,10 @@
       },
       "packageId": "manifest:1fb36d6ab3dd1abe2238",
       "source": {
-        "bytes": 28052,
-        "definitionLine": 48,
+        "bytes": 26479,
+        "definitionLine": 26,
         "fetched": true,
-        "sha256": "f5b87b5453106c4479b39247a3eebb614277985bd49cce65ff7e00a725f1cd27",
+        "sha256": "c62e4d991b9a84135980b0b5f0bf0f244c74344b517b523055f7dc6b7b2facf3",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/CameraDriver.groovy"
       },
       "sourceIdentity": {
@@ -36570,10 +36849,10 @@
       },
       "packageId": "manifest:1fb36d6ab3dd1abe2238",
       "source": {
-        "bytes": 13869,
-        "definitionLine": 113,
+        "bytes": 8413,
+        "definitionLine": 27,
         "fetched": true,
-        "sha256": "fd20b264e37502916cd3ebd6cc2be6ca2c57eaddce2fdd0e88055be508aede4f",
+        "sha256": "52cdcc228bd18ff6a19464c5be1ba87c326856a0a15019b4eb224b52ff066ba7",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/StandaloneDevices.groovy"
       },
       "sourceIdentity": {
@@ -36595,10 +36874,10 @@
       },
       "packageId": "manifest:1fb36d6ab3dd1abe2238",
       "source": {
-        "bytes": 22535,
-        "definitionLine": 36,
+        "bytes": 21667,
+        "definitionLine": 23,
         "fetched": true,
-        "sha256": "74c3eaf0dc506cb8c9fc69851a812869e0478191666e0c16538214c38ed9aec9",
+        "sha256": "c625ac320c2f47b68182b001b64e9d722c74cb626b58628b833176e6d92acb4b",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/DoorbellDriver.groovy"
       },
       "sourceIdentity": {
@@ -36620,10 +36899,10 @@
       },
       "packageId": "manifest:1fb36d6ab3dd1abe2238",
       "source": {
-        "bytes": 62266,
-        "definitionLine": 137,
+        "bytes": 57133,
+        "definitionLine": 47,
         "fetched": true,
-        "sha256": "4a15e749137966501846d63076d7a657d6e5287afa434d031135fc9b3412bd35",
+        "sha256": "68e4255dda92e71335d4828c7b2ee425663365c21d12c6579bf80b919ddfa88f",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ReolinkDeviceBridge.groovy"
       },
       "sourceIdentity": {
@@ -37124,6 +37403,59 @@
       "sourceIdentity": {
         "name": "Zigbee - Xiaomi/Aqara/Opple Button/Switch/Remote",
         "namespace": "oh-lalabs.com"
+      }
+    },
+    {
+      "id": "definition:84581719b8105341f9b3",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Apple TV Integration",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 3,
+        "CHILD_DEVICE_CREATE": 1,
+        "EVENT_SUBSCRIPTION": 1,
+        "HTTP_CALL": 1,
+        "NETWORK_URL_LITERAL": 4,
+        "SCHEDULING": 1
+      },
+      "packageId": "manifest:2a4da40794b26e8789b7",
+      "source": {
+        "bytes": 62351,
+        "definitionLine": 60,
+        "fetched": true,
+        "sha256": "02ff8e91c096bb18394ac9c677792b26202c7612991ee4270f8f5b2a40742eaf",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/ParentApp.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Apple TV Integration",
+        "namespace": "jdthomas24"
+      }
+    },
+    {
+      "id": "definition:09c58a2892e8da72d810",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Apple TV",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1,
+        "RAW_SOCKET_INTERFACE": 3,
+        "SCHEDULING": 33
+      },
+      "packageId": "manifest:2a4da40794b26e8789b7",
+      "source": {
+        "bytes": 72744,
+        "definitionLine": 62,
+        "fetched": true,
+        "sha256": "24772ec94db3ededbc82c6918599bbb3b9194f70cd24cecdefdf44da8eed1134",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/AppleTVDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Apple TV",
+        "namespace": "jdthomas24"
       }
     },
     {
@@ -44597,10 +44929,10 @@
       }
     },
     {
-      "id": "definition:34903bb9a687699cfd6b",
+      "id": "definition:d5bad337c798c7f0107b",
       "kind": "DRIVER",
       "manifestIdentity": {
-        "name": "SmartThings Motion Sensor Advanced",
+        "name": "SmartThings Motion Sensor Enhanced",
         "namespace": "jdthomas24"
       },
       "observationCounts": {
@@ -44610,11 +44942,11 @@
       },
       "packageId": "manifest:7d07638149cfe13e710d",
       "source": {
-        "bytes": 15051,
-        "definitionLine": 62,
+        "bytes": 15159,
+        "definitionLine": 65,
         "fetched": true,
-        "sha256": "d077d6a675bd1ad6eca60800dfca2168e44f58164c21236550ca23a46904f8df",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/Raw%20Code/SmartThings%20Motion.groovy"
+        "sha256": "6320006a988228202716f66dd865d709ad67a0274ff55ef240459e833b91dd5c",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/SmartThingsMotion.groovy"
       },
       "sourceIdentity": {
         "name": "SmartThings Motion Sensor Enhanced",
@@ -47738,27 +48070,58 @@
       }
     },
     {
-      "id": "definition:9128b55bfb6ad7f833c6",
+      "id": "definition:24d067644f2aeb9bd62d",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "NuHeat Connect",
+        "namespace": "ericvitale"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 1,
+        "CHILD_DEVICE_ACCESS": 4,
+        "CHILD_DEVICE_CREATE": 2,
+        "EVENT_SUBSCRIPTION": 1,
+        "HTTP_CALL": 6,
+        "NETWORK_URL_LITERAL": 10,
+        "OAUTH_ACCESS_TOKEN": 1,
+        "OAUTH_API_MAPPINGS": 1,
+        "OAUTH_ENABLED": 1,
+        "SCHEDULING": 19
+      },
+      "packageId": "manifest:9e9bc75897ac309d63a1",
+      "source": {
+        "bytes": 24795,
+        "definitionLine": 43,
+        "fetched": true,
+        "sha256": "1a2c9e0576b398b3100b459dd85723482c746857f52b173e8d3d1bad63324d33",
+        "url": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-connect.groovy"
+      },
+      "sourceIdentity": {
+        "name": "NuHeat Connect",
+        "namespace": "ericvitale"
+      }
+    },
+    {
+      "id": "definition:bf0f39f42588df62dc0d",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "NuHeat Signature Thermostat",
         "namespace": "ericvitale"
       },
       "observationCounts": {
-        "HTTP_CALL": 3,
-        "NETWORK_URL_LITERAL": 8,
-        "SCHEDULING": 5
+        "NETWORK_URL_LITERAL": 4,
+        "SCHEDULING": 1
       },
       "packageId": "manifest:9e9bc75897ac309d63a1",
       "source": {
-        "bytes": 20601,
-        "definitionLine": 33,
+        "bytes": 12839,
+        "definitionLine": 43,
         "fetched": true,
-        "sha256": "f9061a2e7646389c2dc6b9e228449f56bfedc9c631a30d8699d5b1b537a15aa7",
-        "url": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-signature-thermostatHE.groovy"
+        "sha256": "74fd86e47b3f02eeb69bb93d72bdda3c22c2430471bca911c5c8abb7bbd44bf3",
+        "url": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-thermostat.groovy"
       },
       "sourceIdentity": {
-        "name": "NuHeat Signature Thermostat",
+        "name": "NuHeat Signature Thermostat1",
         "namespace": "ericvitale"
       }
     },
@@ -49908,7 +50271,7 @@
       }
     },
     {
-      "id": "definition:8513a63c1a6a267c5029",
+      "id": "definition:5c866819fd332dbe2692",
       "kind": "APP",
       "manifestIdentity": {
         "name": "Device Health Monitor",
@@ -49925,11 +50288,11 @@
       },
       "packageId": "manifest:b02e9c2e9e6f56c819a0",
       "source": {
-        "bytes": 252998,
-        "definitionLine": 54,
+        "bytes": 261894,
+        "definitionLine": 58,
         "fetched": true,
-        "sha256": "76c365624ec27a48343502a1a6a6c46e2b614d9005d817f7b6a90adef3e3e812",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
+        "sha256": "d1d0172d9f4d3fcd69a6332433eb9e7d5f96088ed9281c02aa651eb718772794",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy"
       },
       "sourceIdentity": {
         "name": "Device Health Monitor",
@@ -51261,10 +51624,10 @@
       },
       "packageId": "manifest:c57015f573a94b304002",
       "source": {
-        "bytes": 81718,
-        "definitionLine": 80,
+        "bytes": 88188,
+        "definitionLine": 83,
         "fetched": true,
-        "sha256": "bed3c2083b303292bd24e089e24687acee2b4f2c6a43fd38ac1fd5f23af29db5",
+        "sha256": "e84686343a9afd4a46995aff2fa2da12905f70c66ae5b29f91103d44263e4103",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/SofaBaton%20Integration/ParentApp.groovy"
       },
       "sourceIdentity": {
@@ -51289,7 +51652,7 @@
         "bytes": 10169,
         "definitionLine": 39,
         "fetched": true,
-        "sha256": "d0e7b2f315250d52788b699897075f441f3f0ee38e81194adcd773810b8e9538",
+        "sha256": "bf2a7120feb8173be3b7a5d3dfe18209f56015476a56067ace2b7c3d36d28df1",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/SofaBaton%20Integration/ActivityDriver.groovy"
       },
       "sourceIdentity": {
@@ -51316,7 +51679,7 @@
         "bytes": 23238,
         "definitionLine": 67,
         "fetched": true,
-        "sha256": "97e0b181ed59b858e3a61e143b6646dfd96a5d9b7c8895c37040d85f808276c9",
+        "sha256": "7785ac7d22b9c4a61258bd4ea0b6040ae4a8f4807aaa536b6b3888276b27229b",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/SofaBaton%20Integration/BridgeDevice.groovy"
       },
       "sourceIdentity": {
@@ -51342,7 +51705,7 @@
         "bytes": 28902,
         "definitionLine": 41,
         "fetched": true,
-        "sha256": "85fbbd52d55bb9164addccac0b0edc9fa0a47d9b9f4ae69a3bc14cf7e77bdcc2",
+        "sha256": "acf81be579f2cb6fe01e9b40fbc3612d73e6957f31dc82012172e1a371012e28",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/SofaBaton%20Integration/RemoteDriver.groovy"
       },
       "sourceIdentity": {
@@ -55083,108 +55446,6 @@
       }
     },
     {
-      "id": "definition:22332c3ee5fa3fa25a3a",
-      "kind": "APP",
-      "manifestIdentity": {
-        "name": "Pentair IntelliCenter",
-        "namespace": "intellicenter"
-      },
-      "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 4,
-        "CHILD_DEVICE_CREATE": 1,
-        "NETWORK_URL_LITERAL": 3,
-        "OAUTH_API_MAPPINGS": 1,
-        "SCHEDULING": 1
-      },
-      "packageId": "manifest:e7e7cbfa755e1aea230d",
-      "source": {
-        "bytes": 21497,
-        "definitionLine": 15,
-        "fetched": true,
-        "sha256": "d03546690f5267828a811bc561e90eaa81849295c5ace79244595be930f5a07a",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Pentair IntelliCenter",
-        "namespace": "intellicenter"
-      }
-    },
-    {
-      "id": "definition:7841c59a70b21e1f65eb",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Pentair IntelliCenter Bridge",
-        "namespace": "intellicenter"
-      },
-      "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 1,
-        "CHILD_DEVICE_CREATE": 1,
-        "NETWORK_URL_LITERAL": 2,
-        "SCHEDULING": 21,
-        "WEBSOCKET_INTERFACE": 3
-      },
-      "packageId": "manifest:e7e7cbfa755e1aea230d",
-      "source": {
-        "bytes": 30272,
-        "definitionLine": 8,
-        "fetched": true,
-        "sha256": "b7207e1695637474bebfcf8bac7eced3645fb67eb3bb491aa2dd212e8cfce064",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BridgeDeviceDriver.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Pentair IntelliCenter Bridge",
-        "namespace": "intellicenter"
-      }
-    },
-    {
-      "id": "definition:ebe635467ec8b4af215b",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Pentair IntelliCenter Body",
-        "namespace": "intellicenter"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 2,
-        "SCHEDULING": 4
-      },
-      "packageId": "manifest:e7e7cbfa755e1aea230d",
-      "source": {
-        "bytes": 10354,
-        "definitionLine": 8,
-        "fetched": true,
-        "sha256": "7217f7a3a77f16dcb6bc6a98d057f2891ca65394ab9275cd6ca91ddd9f17274e",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BodyDriver.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Pentair IntelliCenter Body",
-        "namespace": "intellicenter"
-      }
-    },
-    {
-      "id": "definition:f210ea6ac50fc16e4ed2",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Pentair IntelliCenter Pump",
-        "namespace": "intellicenter"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 2,
-        "SCHEDULING": 4
-      },
-      "packageId": "manifest:e7e7cbfa755e1aea230d",
-      "source": {
-        "bytes": 6619,
-        "definitionLine": 8,
-        "fetched": true,
-        "sha256": "18145b016a4b9ac0f9188766899aa727e893a96a45354241619442cdd216a2c3",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/PumpSpeedDriver.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Pentair IntelliCenter Pump",
-        "namespace": "intellicenter"
-      }
-    },
-    {
       "id": "definition:d5b895a6840937c46d15",
       "kind": "APP",
       "manifestIdentity": {
@@ -55444,35 +55705,6 @@
       }
     },
     {
-      "id": "definition:feb8c05e7ee4395a4a91",
-      "kind": "APP",
-      "manifestIdentity": {
-        "name": "Battery Monitor 2.0",
-        "namespace": "jdthomas24"
-      },
-      "observationCounts": {
-        "CAPABILITY_REFERENCE": 3,
-        "EVENT_SUBSCRIPTION": 1,
-        "NETWORK_URL_LITERAL": 9,
-        "OAUTH_ACCESS_TOKEN": 1,
-        "OAUTH_API_MAPPINGS": 1,
-        "OAUTH_ENABLED": 1,
-        "SCHEDULING": 7
-      },
-      "packageId": "manifest:ec6c3d0850f41d09b25f",
-      "source": {
-        "bytes": 160692,
-        "definitionLine": 52,
-        "fetched": true,
-        "sha256": "88c898d6aa2432f655b2e9f7b1ff9e9289039055420696cb27cd3a01cf89c47f",
-        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/Raw%20Code/BatteryMonitor2.0.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Battery Monitor 2.0",
-        "namespace": "jdthomas24"
-      }
-    },
-    {
       "id": "definition:c6ce23b062d5b4a0a39d",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -55547,6 +55779,107 @@
       "sourceIdentity": {
         "name": "Double Tap to the Max",
         "namespace": "joelwetzel"
+      }
+    },
+    {
+      "id": "definition:7eaed06a7d6de6623014",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Leviton Smart Load Center",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 2,
+        "CHILD_DEVICE_CREATE": 1,
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 4,
+        "SCHEDULING": 5
+      },
+      "packageId": "manifest:ef7f5edf77a6625b6a9b",
+      "source": {
+        "bytes": 35342,
+        "definitionLine": 24,
+        "fetched": true,
+        "sha256": "1904c1db414029533ad56458e43d26cdaa6e1731101c6498361f91df3a48f93c",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/ParentApp.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Leviton Smart Load Center",
+        "namespace": "jdthomas24"
+      }
+    },
+    {
+      "id": "definition:0221e042d83da8fb5d98",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Leviton Smart Load Center CT",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "manifest:ef7f5edf77a6625b6a9b",
+      "source": {
+        "bytes": 2784,
+        "definitionLine": 13,
+        "fetched": true,
+        "sha256": "a7344f5b880f83d653eee7e437839ea5ba7ea5988c989ed78d4604b951f8d61b",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/CTDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Leviton Smart Load Center CT",
+        "namespace": "jdthomas24"
+      }
+    },
+    {
+      "id": "definition:0b79f113da971be15637",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Leviton Smart Load Center Breaker",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "manifest:ef7f5edf77a6625b6a9b",
+      "source": {
+        "bytes": 4076,
+        "definitionLine": 15,
+        "fetched": true,
+        "sha256": "3779666e4938ae24c9a59fab75c6aee92dd9f1aa0de58bf6abdc783ecdcb1329",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/BreakerDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Leviton Smart Load Center Breaker",
+        "namespace": "jdthomas24"
+      }
+    },
+    {
+      "id": "definition:fc5567fac8de0680d636",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Leviton Smart Load Center Panel",
+        "namespace": "jdthomas24"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 3,
+        "CHILD_DEVICE_CREATE": 1,
+        "HTTP_CALL": 2,
+        "NETWORK_URL_LITERAL": 5,
+        "SCHEDULING": 7,
+        "WEBSOCKET_INTERFACE": 5
+      },
+      "packageId": "manifest:ef7f5edf77a6625b6a9b",
+      "source": {
+        "bytes": 34272,
+        "definitionLine": 29,
+        "fetched": true,
+        "sha256": "73dcf6d4dac65cd757168ed6979f142a45f69f4e3396da4aeefe0c2c647f90e8",
+        "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/PanelDriver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Leviton Smart Load Center Panel",
+        "namespace": "jdthomas24"
       }
     },
     {
@@ -58077,7 +58410,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-19T04:57:03Z",
+  "snapshotGenerated": "2026-10-20T10:03:43Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

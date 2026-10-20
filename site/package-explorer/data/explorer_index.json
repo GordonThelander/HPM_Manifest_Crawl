@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 929,
+    "HPM_PACKAGE": 935,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2634,
+  "recordCount": 2640,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22665,6 +22665,99 @@
       "version": "0.1.0"
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:84581719b8105341f9b3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Apple TV Integration",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/ParentApp.groovy"
+        },
+        {
+          "id": "definition:09c58a2892e8da72d810",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Apple TV",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/AppleTVDriver.groovy"
+        }
+      ],
+      "description": "Local control of Apple TVs, no bridge or cloud. Finds them on your network, pairs with the on-screen PIN, and creates one device each: on/off from scenes and rules, play/pause and playback state, Siri Remote buttons, volume, and app launching.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:2a4da40794b26e8789b7",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/166801",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
+        "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
+        "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
+      },
+      "name": "Apple TV Integration",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Audio & Video",
+        "Entertainment",
+        "Remotes & Buttons"
+      ],
+      "version": "1.1.4"
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -22934,6 +23027,86 @@
         "Zigbee"
       ],
       "version": "1.2.2"
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-18",
+      "definitions": [
+        {
+          "id": "definition:e900c3cdbb771c405f89",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara H2 Wall Outlet EU (Local Zigbee)",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/aqara-h2-wall-outlet.groovy"
+        }
+      ],
+      "description": "Direct/local Zigbee WP-P01D outlet: relay, LED, button lock, power-on memory, power and energy (preview).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:0bda14ae2df86991c999",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/blob/main/drivers/aqara/h2-wall-outlet/README.md",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Aqara H2 EU Wall Outlet (Local Zigbee)",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.6.1"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -23347,6 +23520,89 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": null
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:f6c0fd7ec640aca55a0a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Zigbee - Aqara Smart Curtain Motor (local check-in fix)",
+          "namespace": "oh-lalabs.com",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/aqara-smart-curtain-motor.groovy"
+        }
+      ],
+      "description": "Aqara curtain driver fork fixing stale check-in and false offline warnings; GPL-3.0-or-later.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:1c420aaaf57544a0408d",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/smart-curtain-motor",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Aqara Smart Curtain Motor (Check-in Fix)",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "oh-lalabs.com",
+          "www.w3.org"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "1.0.3"
     },
     {
       "author": "Markus",
@@ -25164,15 +25420,15 @@
       "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-06",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
-          "id": "definition:feb8c05e7ee4395a4a91",
+          "id": "definition:0c5c74f15cb88aaa656e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Battery Monitor 2.0",
           "namespace": "jdthomas24",
-          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/Raw%20Code/BatteryMonitor2.0.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/BatteryMonitor2.0.groovy"
         }
       ],
       "description": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports.",
@@ -25216,14 +25472,14 @@
         ],
         "classification": "PASS"
       },
-      "id": "manifest:ec6c3d0850f41d09b25f",
+      "id": "manifest:06f9636483d5a32c3cd6",
       "kinds": [
         "APP"
       ],
       "links": {
         "community": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
         "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
-        "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
+        "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
         "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
       },
       "name": "Battery Monitor 2.0",
@@ -25244,7 +25500,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.7.0"
+      "version": "2.7.1"
     },
     {
       "author": "Larry Kahn",
@@ -30716,15 +30972,15 @@
       "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-01",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
-          "id": "definition:8513a63c1a6a267c5029",
+          "id": "definition:5c866819fd332dbe2692",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Device Health Monitor",
           "namespace": "jdthomas24",
-          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy"
         }
       ],
       "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable and learns each device's normal pattern and alerts you when something goes quiet.",
@@ -30797,7 +31053,7 @@
         "Zigbee",
         "ZWave"
       ],
-      "version": "1.7.2"
+      "version": "1.7.3"
     },
     {
       "author": "Krassimir Kossev",
@@ -58539,6 +58795,118 @@
       "version": "1.0.1"
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:7eaed06a7d6de6623014",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Leviton Smart Load Center",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/ParentApp.groovy"
+        },
+        {
+          "id": "definition:0b79f113da971be15637",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Leviton Smart Load Center Breaker",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/BreakerDriver.groovy"
+        },
+        {
+          "id": "definition:0221e042d83da8fb5d98",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Leviton Smart Load Center CT",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/CTDriver.groovy"
+        },
+        {
+          "id": "definition:fc5567fac8de0680d636",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Leviton Smart Load Center Panel",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/PanelDriver.groovy"
+        }
+      ],
+      "description": "Leviton LWHEM and LDATA smart panels: per-breaker and CT clamp power, current, voltage and energy, with optional remote trip and reset.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:ef7f5edf77a6625b6a9b",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Leviton%20Smart%20Load%20Center",
+        "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json",
+        "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
+      },
+      "name": "Leviton Smart Load Center",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "my.leviton.com",
+          "myapp.leviton.com",
+          "paypal.me"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Monitoring"
+      ],
+      "version": "2.0.0"
+    },
+    {
       "author": "Ernie Miller",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -67111,7 +67479,7 @@
       "author": "Matt Palermo",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-13",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
           "id": "definition:f262bca60887ae317ff9",
@@ -67197,7 +67565,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
     {
       "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -69842,15 +70210,23 @@
       "author": "nh.schottfam",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2020-10-14",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
-          "id": "definition:9128b55bfb6ad7f833c6",
+          "id": "definition:24d067644f2aeb9bd62d",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "NuHeat Connect",
+          "namespace": "ericvitale",
+          "sourceUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-connect.groovy"
+        },
+        {
+          "id": "definition:bf0f39f42588df62dc0d",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
-          "name": "NuHeat Signature Thermostat",
+          "name": "NuHeat Signature Thermostat1",
           "namespace": "ericvitale",
-          "sourceUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-signature-thermostatHE.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-thermostat.groovy"
         }
       ],
       "description": "nuHeat Signature Thermostat for Hubitat",
@@ -69864,7 +70240,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -69873,11 +70249,11 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "MISMATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -69892,15 +70268,16 @@
             "status": "PASS"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "manifest:9e9bc75897ac309d63a1",
       "kinds": [
+        "APP",
         "DRIVER"
       ],
       "links": {
         "community": "https://community.hubitat.com/t/nuheat-signature-integration/41148",
-        "documentation": null,
+        "documentation": "https://github.com/imnotbob/Hubitat-NuHeat",
         "manifest": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/packageManager.json",
         "repository": "https://github.com/imnotbob/Hubitat-NuHeat"
       },
@@ -69912,7 +70289,10 @@
           "lanTag": true
         },
         "externalHosts": [
-          "www.mynuheat.com"
+          "api.mynuheat.com",
+          "cloud.hubitat.com",
+          "go.chemelex.com",
+          "identity.mynuheat.com"
         ],
         "reviewed": []
       },
@@ -69921,7 +70301,7 @@
         "Climate Control",
         "LAN"
       ],
-      "version": "1.0.1"
+      "version": "1.0.3"
     },
     {
       "author": "Marco Felicio (maffpt@gmail.com)",
@@ -72039,12 +72419,12 @@
     },
     {
       "author": "jdthomas24",
-      "category": "Utility",
+      "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "4-10-26",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
-          "id": "definition:22332c3ee5fa3fa25a3a",
+          "id": "definition:552342c3eb7914797d32",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Pentair IntelliCenter",
@@ -72052,7 +72432,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
         },
         {
-          "id": "definition:ebe635467ec8b4af215b",
+          "id": "definition:35ac895635f8ddc1d338",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Pentair IntelliCenter Body",
@@ -72060,7 +72440,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BodyDriver.groovy"
         },
         {
-          "id": "definition:7841c59a70b21e1f65eb",
+          "id": "definition:c86a69a81967867511c4",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Pentair IntelliCenter Bridge",
@@ -72068,7 +72448,15 @@
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BridgeDeviceDriver.groovy"
         },
         {
-          "id": "definition:f210ea6ac50fc16e4ed2",
+          "id": "definition:b104889b862e26fbee08",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Pentair IntelliCenter Chlorinator",
+          "namespace": "intellicenter",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ChlorinatorDriver.groovy"
+        },
+        {
+          "id": "definition:59c9bac18648eea0e060",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Pentair IntelliCenter Pump",
@@ -72076,7 +72464,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/PumpSpeedDriver.groovy"
         }
       ],
-      "description": "Pentair Intellicenter Controller",
+      "description": "Local control of a Pentair IntelliCenter pool controller: pool and spa, heat, pumps, circuits, sensors and salt cell, with an equipment picker. No cloud.",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -72087,7 +72475,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -72100,7 +72488,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -72117,18 +72505,18 @@
         ],
         "classification": "PASS"
       },
-      "id": "manifest:e7e7cbfa755e1aea230d",
+      "id": "manifest:0022946aa602eec49b4f",
       "kinds": [
         "APP",
         "DRIVER"
       ],
       "links": {
         "community": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
-        "documentation": null,
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Pentair%20Intellicenter%20Control",
         "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
         "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
       },
-      "name": "Pentair Intellicenter Controller",
+      "name": "Pentair IntelliCenter Controller",
       "network": {
         "classification": "CLOUD",
         "declared": {
@@ -72142,9 +72530,9 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [
-        "Pools & Spas"
+        "Pool & Spa"
       ],
-      "version": "1.6.4"
+      "version": "1.7.0"
     },
     {
       "author": "Neil Jackson",
@@ -76516,6 +76904,90 @@
       "version": "0.9.8"
     },
     {
+      "author": "brossow",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:50559cb273da5ce2d652",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "ReBLLED LED Controller",
+          "namespace": "brossow",
+          "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/reblled-controller.groovy"
+        }
+      ],
+      "description": "Live status and control for ReBLLED, alternative firmware for the BLLED LED controller in Bambu Lab printers: strip state, printer status, door and chamber light, on/off and brightness.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:df5d170c-95c4-4d51-b641-792d95bb3593",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-reblled-led-controller-status-and-control-for-blled-chamber-lights-on-bambu-lab-printers/166906",
+        "documentation": "https://github.com/brossow/hubitat-drivers/tree/main/reblled",
+        "manifest": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/packageManifest.json",
+        "repository": "https://github.com/brossow/hubitat-drivers"
+      },
+      "name": "ReBLLED LED Controller",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Monitoring"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "lnustin",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -77318,7 +77790,7 @@
       "author": "jdthomas24",
       "category": "Safety & Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-16",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
           "id": "definition:eff50c9724d7ddc97d85",
@@ -77460,7 +77932,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.6.12"
+      "version": "1.6.13"
     },
     {
       "author": "Andrew Nunes",
@@ -77574,6 +78046,97 @@
         "Notifications"
       ],
       "version": "0.3.2"
+    },
+    {
+      "author": "Albert Mulder",
+      "category": "Notifications",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:2118d4ced6381b77c197",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Restock Manager",
+          "namespace": "almulder",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Restock%20Manager/App/Restock%20Manager.groovy"
+        },
+        {
+          "id": "definition:29b6e69f13bd61e47fa1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Restock Manager Item",
+          "namespace": "almulder",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Restock%20Manager/App/Restock%20Manager%20Item.groovy"
+        }
+      ],
+      "description": "Get notified when store products are back in stock or under your price, or when text on any web page appears or disappears. Includes in-stock reminders.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:05771e3c45ba72c08509",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/beta-restock-manager-get-notified-when-products-are-back-in-stock-or-any-web-page-changes/166909",
+        "documentation": "https://github.com/almulder/Hubitat-Drivers/tree/main/Restock%20Manager",
+        "manifest": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/restock-manager.json",
+        "repository": "https://github.com/almulder/Hubitat-Drivers"
+      },
+      "name": "Restock Manager",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Notifications",
+        "Tools & Utilities"
+      ],
+      "version": null
     },
     {
       "author": "Larry Kahn",
@@ -86017,15 +86580,15 @@
       "author": "jdthomas24",
       "category": "Drivers",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "4-10-26",
+      "dateReleased": "2026-10-19",
       "definitions": [
         {
-          "id": "definition:34903bb9a687699cfd6b",
+          "id": "definition:d5bad337c798c7f0107b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "SmartThings Motion Sensor Enhanced",
           "namespace": "jdthomas24",
-          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/Raw%20Code/SmartThings%20Motion.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/SmartThingsMotion.groovy"
         }
       ],
       "description": "Custom Hubitat driver for SmartThings Zigbee motion sensors with local processing and battery reporting.",
@@ -86039,20 +86602,20 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
-            "status": "MISMATCH"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -86067,15 +86630,15 @@
             "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "manifest:7d07638149cfe13e710d",
       "kinds": [
         "DRIVER"
       ],
       "links": {
-        "community": null,
-        "documentation": null,
+        "community": "https://community.hubitat.com/t/release-smartthings-motion-sensor-driver-enhanced/162512",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SmartThings%20Motion%20Sensor",
         "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
         "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
       },
@@ -86091,12 +86654,10 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [
-        "motion",
-        "sensor",
-        "smartthings",
-        "zigbee"
+        "Sensors",
+        "Zigbee"
       ],
-      "version": "1.8.1"
+      "version": "1.8.2"
     },
     {
       "author": "TheMaster",
@@ -86550,7 +87111,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.1"
+      "version": "1.1.2"
     },
     {
       "author": "Derek Osborn",
@@ -133997,5 +134558,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-19T04:57:03Z"
+  "snapshotGenerated": "2026-10-20T10:03:43Z"
 }

@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 489,
+  "recordCount": 493,
   "records": [
     {
       "author": null,
@@ -2435,7 +2435,7 @@
         "source": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/apps/myFuelPortalApp.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "reviewed": false
       },
       "packageName": "MyFuelPortal Propane Integration",
@@ -3565,7 +3565,7 @@
         "source": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "LAN",
         "reviewed": false
       },
       "packageName": "TESmart Controller",
@@ -9550,6 +9550,41 @@
       "summary": "Visual interface for Managing Rule Machine Rules."
     },
     {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Pentair IntelliCenter",
+          "namespace": "intellicenter"
+        }
+      ],
+      "displayName": "Pentair IntelliCenter Controller",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:0022946aa602eec49b4f",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Pentair%20Intellicenter%20Control",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Pentair IntelliCenter Controller",
+      "qualityFlags": [],
+      "summary": "Local control of a Pentair IntelliCenter pool controller: pool and spa, heat, pumps, circuits, sensors and salt cell, with an equipment picker. No cloud."
+    },
+    {
       "author": "classic-dave",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -9653,6 +9688,80 @@
       "packageName": "iRobot Scheduler",
       "qualityFlags": [],
       "summary": "iRobot Scheduler is an application and device that enables local execution and scheduling of Roomba and Brava cleaning tasks in assistance with a Raspberry Pi running Dorita980 and Rest980. This application and device works with ALL WiFi enabled Roomba and Braava devices."
+    },
+    {
+      "author": "Albert Mulder",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Restock Manager",
+          "namespace": "almulder"
+        },
+        {
+          "basis": "sourceIdentity",
+          "name": "Restock Manager Item",
+          "namespace": "almulder"
+        }
+      ],
+      "displayName": "Restock Manager",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:05771e3c45ba72c08509",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/beta-restock-manager-get-notified-when-products-are-back-in-stock-or-any-web-page-changes/166909",
+        "documentation": "https://github.com/almulder/Hubitat-Drivers/tree/main/Restock%20Manager"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Restock Manager",
+      "qualityFlags": [],
+      "summary": "Get notified when store products are back in stock or under your price, or when text on any web page appears or disappears. Includes in-stock reminders."
+    },
+    {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Battery Monitor 2.0",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "displayName": "Battery Monitor 2.0",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:06f9636483d5a32c3cd6",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/BatteryMonitor2.0.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Battery Monitor 2.0",
+      "qualityFlags": [],
+      "summary": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports."
     },
     {
       "author": "Ramdev Shallem",
@@ -10289,6 +10398,41 @@
       "packageName": "Physical Light Control",
       "qualityFlags": [],
       "summary": "A hubitat app for easily setting up physical buttons to control a group of lights"
+    },
+    {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Apple TV Integration",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "displayName": "Apple TV Integration",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:2a4da40794b26e8789b7",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/166801",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/ParentApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Apple TV Integration",
+      "qualityFlags": [],
+      "summary": "Local control of Apple TVs, no bridge or cloud. Finds them on your network, pairs with the on-screen PIN, and creates one device each: on/off from scenes and rules, play/pause and playback state, Siri Remote buttons, volume, and app launching."
     },
     {
       "author": "Eric Maycock",
@@ -12796,6 +12940,43 @@
       "summary": "Manage PetSafe Smart Feed devices"
     },
     {
+      "author": "nh.schottfam",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NuHeat Connect",
+          "namespace": "ericvitale"
+        }
+      ],
+      "displayName": "NuHeat",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MISMATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:9e9bc75897ac309d63a1",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/nuheat-signature-integration/41148",
+        "documentation": "https://github.com/imnotbob/Hubitat-NuHeat",
+        "source": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/nuheat-connect.groovy"
+      },
+      "networkEvidence": {
+        "classification": "BOTH",
+        "reviewed": false
+      },
+      "packageName": "NuHeat",
+      "qualityFlags": [
+        "IDENTITY_MISMATCH"
+      ],
+      "summary": "nuHeat Signature Thermostat for Hubitat"
+    },
+    {
       "author": "Joel Wetzel",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -13423,7 +13604,7 @@
       "links": {
         "community": "https://community.hubitat.com/t/release-device-health-monitor/163229",
         "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
-        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/Raw%20Code/DeviceHealthMonitor.groovy"
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy"
       },
       "networkEvidence": {
         "classification": "BOTH",
@@ -14807,40 +14988,6 @@
       "summary": "Electricity demand management for those with utility companies that levy demand charges. Monitor 30/60 minute demand usage and control devices to reduce peak peak demand costs."
     },
     {
-      "author": "jdthomas24",
-      "authority": "HPM_PACKAGE",
-      "definitionIdentities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Pentair IntelliCenter",
-          "namespace": "intellicenter"
-        }
-      ],
-      "displayName": "Pentair Intellicenter Controller",
-      "evidenceChecks": {
-        "communityLink": "PRESENT",
-        "definitionIdentity": "MATCH",
-        "documentationLink": "MISSING",
-        "httpsTransport": "PASS",
-        "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
-      },
-      "id": "manifest:e7e7cbfa755e1aea230d",
-      "kind": "APP",
-      "lifecycleFlags": [],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
-        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
-      },
-      "networkEvidence": {
-        "classification": "CLOUD",
-        "reviewed": false
-      },
-      "packageName": "Pentair Intellicenter Controller",
-      "qualityFlags": [],
-      "summary": "Pentair Intellicenter Controller"
-    },
-    {
       "author": "Doug Beard/Brian Wilson",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -14876,41 +15023,6 @@
       "summary": "Native Hubitat support for Vista Ademco/20p via Envisalink - unsupported at this time"
     },
     {
-      "author": "jdthomas24",
-      "authority": "HPM_PACKAGE",
-      "definitionIdentities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Battery Monitor 2.0",
-          "namespace": "jdthomas24"
-        }
-      ],
-      "displayName": "Battery Monitor 2.0",
-      "evidenceChecks": {
-        "communityLink": "PRESENT",
-        "definitionIdentity": "MATCH",
-        "documentationLink": "PRESENT",
-        "httpsTransport": "PASS",
-        "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
-      },
-      "id": "manifest:ec6c3d0850f41d09b25f",
-      "kind": "APP",
-      "lifecycleFlags": [],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
-        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
-        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/Raw%20Code/BatteryMonitor2.0.groovy"
-      },
-      "networkEvidence": {
-        "classification": "CLOUD",
-        "reviewed": false
-      },
-      "packageName": "Battery Monitor 2.0",
-      "qualityFlags": [],
-      "summary": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports."
-    },
-    {
       "author": "Joel Wetzel",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -14943,6 +15055,41 @@
       "packageName": "Double Tap to the Max",
       "qualityFlags": [],
       "summary": "Double tap on your dimmers to bring them to max/min brightness."
+    },
+    {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Leviton Smart Load Center",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "displayName": "Leviton Smart Load Center",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:ef7f5edf77a6625b6a9b",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Leviton%20Smart%20Load%20Center",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/ParentApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Leviton Smart Load Center",
+      "qualityFlags": [],
+      "summary": "Leviton LWHEM and LDATA smart panels: per-breaker and CT clamp power, current, voltage and energy, with optional remote trip and reset."
     },
     {
       "author": "Todd",
@@ -16491,5 +16638,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-19T04:57:03Z"
+  "snapshotGenerated": "2026-10-20T10:03:43Z"
 }

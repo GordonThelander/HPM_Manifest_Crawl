@@ -1,9 +1,9 @@
 {
   "counts": {
-    "BOTH": 184,
-    "CLOUD": 264,
-    "INSUFFICIENT": 299,
-    "LAN": 182
+    "BOTH": 185,
+    "CLOUD": 265,
+    "INSUFFICIENT": 302,
+    "LAN": 183
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 929,
+  "packageCount": 935,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1601,6 +1601,33 @@
       ]
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/166801",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Local control of Apple TVs, no bridge or cloud. Finds them on your network, pairs with the on-screen PIN, and creates one device each: on/off from scenes and rules, play/pause and playback state, Siri Remote buttons, volume, and app launching.",
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
+      "id": "manifest:2a4da40794b26e8789b7",
+      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
+      "name": "Apple TV Integration",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Audio & Video",
+        "Entertainment",
+        "Remotes & Buttons"
+      ]
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "BOTH",
@@ -1690,6 +1717,29 @@
         "Multi Sensors",
         "Zigbee"
       ]
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Direct/local Zigbee WP-P01D outlet: relay, LED, button lock, power-on memory, power and energy (preview).",
+      "documentationUrl": "https://github.com/velkovb/hubitat-drivers/blob/main/drivers/aqara/h2-wall-outlet/README.md",
+      "id": "manifest:0bda14ae2df86991c999",
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/packageManifest.json",
+      "name": "Aqara H2 EU Wall Outlet (Local Zigbee)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": []
     },
     {
       "author": "Jonathan Bradshaw",
@@ -1815,6 +1865,35 @@
       "id": "manifest:751e09f9eb5a8ceffdc2",
       "manifestUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/packages/zigbee-aqara-smart-curtain-motor.json",
       "name": "Aqara Smart Curtain Motor",
+      "observed": {
+        "externalHosts": [
+          "oh-lalabs.com",
+          "www.w3.org"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 7
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Aqara curtain driver fork fixing stale check-in and false offline warnings; GPL-3.0-or-later.",
+      "documentationUrl": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/smart-curtain-motor",
+      "id": "manifest:1c420aaaf57544a0408d",
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/packageManifest.json",
+      "name": "Aqara Smart Curtain Motor (Check-in Fix)",
       "observed": {
         "externalHosts": [
           "oh-lalabs.com",
@@ -2381,8 +2460,8 @@
       },
       "description": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports.",
       "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
-      "id": "manifest:ec6c3d0850f41d09b25f",
-      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
+      "id": "manifest:06f9636483d5a32c3cd6",
+      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
       "name": "Battery Monitor 2.0",
       "observed": {
         "externalHosts": [
@@ -2391,7 +2470,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -12584,6 +12663,36 @@
       ]
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Leviton LWHEM and LDATA smart panels: per-breaker and CT clamp power, current, voltage and energy, with optional remote trip and reset.",
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Leviton%20Smart%20Load%20Center",
+      "id": "manifest:ef7f5edf77a6625b6a9b",
+      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json",
+      "name": "Leviton Smart Load Center",
+      "observed": {
+        "externalHosts": [
+          "my.leviton.com",
+          "myapp.leviton.com",
+          "paypal.me"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 13
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Monitoring"
+      ]
+    },
+    {
       "author": "Ernie Miller",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -15915,17 +16024,20 @@
         "lanTag": true
       },
       "description": "nuHeat Signature Thermostat for Hubitat",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/imnotbob/Hubitat-NuHeat",
       "id": "manifest:9e9bc75897ac309d63a1",
       "manifestUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-NuHeat/master/packageManager.json",
       "name": "NuHeat",
       "observed": {
         "externalHosts": [
-          "www.mynuheat.com"
+          "api.mynuheat.com",
+          "cloud.hubitat.com",
+          "go.chemelex.com",
+          "identity.mynuheat.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 14
       },
       "reviewed": [],
       "tags": [
@@ -16586,29 +16698,29 @@
     },
     {
       "author": "jdthomas24",
-      "category": "Utility",
+      "category": "Integrations",
       "classification": "CLOUD",
       "communityUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Pentair Intellicenter Controller",
-      "documentationUrl": null,
-      "id": "manifest:e7e7cbfa755e1aea230d",
+      "description": "Local control of a Pentair IntelliCenter pool controller: pool and spa, heat, pumps, circuits, sensors and salt cell, with an equipment picker. No cloud.",
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Pentair%20Intellicenter%20Control",
+      "id": "manifest:0022946aa602eec49b4f",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
-      "name": "Pentair Intellicenter Controller",
+      "name": "Pentair IntelliCenter Controller",
       "observed": {
         "externalHosts": [
           "paypal.me"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 4,
-        "urlLiteralCount": 9
+        "sourceFilesAnalysed": 5,
+        "urlLiteralCount": 10
       },
       "reviewed": [],
       "tags": [
-        "Pools & Spas"
+        "Pool & Spa"
       ]
     },
     {
@@ -17949,6 +18061,33 @@
       "tags": []
     },
     {
+      "author": "brossow",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-reblled-led-controller-status-and-control-for-blled-chamber-lights-on-bambu-lab-printers/166906",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Live status and control for ReBLLED, alternative firmware for the BLLED LED controller in Bambu Lab printers: strip state, printer status, door and chamber light, on/off and brightness.",
+      "documentationUrl": "https://github.com/brossow/hubitat-drivers/tree/main/reblled",
+      "id": "hpm:df5d170c-95c4-4d51-b641-792d95bb3593",
+      "manifestUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/packageManifest.json",
+      "name": "ReBLLED LED Controller",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Monitoring"
+      ]
+    },
+    {
       "author": "lnustin",
       "category": "Control",
       "classification": "CLOUD",
@@ -18318,6 +18457,32 @@
         "LAN",
         "Monitoring",
         "Notifications"
+      ]
+    },
+    {
+      "author": "Albert Mulder",
+      "category": "Notifications",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/beta-restock-manager-get-notified-when-products-are-back-in-stock-or-any-web-page-changes/166909",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Get notified when store products are back in stock or under your price, or when text on any web page appears or disappears. Includes in-stock reminders.",
+      "documentationUrl": "https://github.com/almulder/Hubitat-Drivers/tree/main/Restock%20Manager",
+      "id": "manifest:05771e3c45ba72c08509",
+      "manifestUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/restock-manager.json",
+      "name": "Restock Manager",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Notifications",
+        "Tools & Utilities"
       ]
     },
     {
@@ -20941,13 +21106,13 @@
       "author": "jdthomas24",
       "category": "Drivers",
       "classification": "LAN",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-smartthings-motion-sensor-driver-enhanced/162512",
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Custom Hubitat driver for SmartThings Zigbee motion sensors with local processing and battery reporting.",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SmartThings%20Motion%20Sensor",
       "id": "manifest:7d07638149cfe13e710d",
       "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
       "name": "SmartThings Motion Sensor Driver",
@@ -20961,10 +21126,8 @@
       },
       "reviewed": [],
       "tags": [
-        "motion",
-        "sensor",
-        "smartthings",
-        "zigbee"
+        "Sensors",
+        "Zigbee"
       ]
     },
     {
@@ -28068,5 +28231,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-19T04:57:03Z"
+  "snapshotGenerated": "2026-10-20T10:03:43Z"
 }

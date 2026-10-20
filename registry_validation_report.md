@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-19T04:57:03Z`
-- HPM repositories in master list: **222**
-- Repositories fetched successfully: **221**
-- Packages indexed: **929**
+- Snapshot: `2026-10-20T10:03:43Z`
+- HPM repositories in master list: **223**
+- Repositories fetched successfully: **222**
+- Packages indexed: **935**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **832**
+Total packages not matched by any registry entry: **838**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -266,7 +266,10 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Hugo Haas | Samsung Tizen TV Control | Integrations | LAN | https://raw.githubusercontent.com/hugoh/samsung-tizen-tv-control/main/hubitat/packageManifest.json |
 | Hugo Haas | T-Mobile Home Internet Gateway Driver | Integrations | Misc. Devices, LAN | https://raw.githubusercontent.com/hugoh/hubitat-tmo-gateway/master/packageManifest.json |
 | Jaime Botero | Flair Vents | Integrations |  | https://raw.githubusercontent.com/ljbotero/hubitat-flair-vents/main/packageManifest.json |
+| Jdthomas24 | Apple TV Integration | Integrations | Audio & Video, Entertainment, Remotes & Buttons | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json |
 | Jdthomas24 | Device Health Monitor | Utility | ZWave, Zigbee, Matter, LAN | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json |
+| Jdthomas24 | Leviton Smart Load Center | Integrations | Energy Monitoring, Monitoring | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json |
+| Jdthomas24 | Pentair IntelliCenter Controller | Integrations | Pool & Spa | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json |
 | Jdthomas24 | Sofabaton Integration | Integrations | Remotes & Buttons, Audio & Video, Entertainment | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json |
 | Jean Bilodeau | Canadian Hyundai Bluelink | Integrations | Vehicles & Transportation | https://raw.githubusercontent.com/jbilodea/Hubitat/main/Canadian_Hyundai_Bluelink/packageManifest.json |
 | Jean P. May, Jr. | Dashboard Variable Device | Integrations | Misc. Devices | https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/dashVariableManifest.json |
@@ -459,6 +462,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | bcopeland | Zooz Zen27 Dimmer | Integrations |  | https://raw.githubusercontent.com/djdizzyd/hubitat/master/packages/zoozZen27.json |
 | brossow | BirdWeather PUC | Integrations | Pets & Animals, Cloud, Monitoring | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/packageManifest.json |
 | brossow | Netatmo Weather Station | Integrations | Cloud, Weather, Temperature & Humidity | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json |
+| brossow | ReBLLED LED Controller | Integrations | LAN, Lights & Switches, Monitoring | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/reblled/packageManifest.json |
 | brossow | Rheem EcoNet | Integrations | Cloud, Climate Control, Temperature & Humidity, Water Heater | https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json |
 | bsileo | Pool Controller | Integrations | Pools & Spas | https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/packageManifest.json |
 | bsileo | Rain Machine | Integrations | Irrigation | https://raw.githubusercontent.com/bsileo/Hubitat_RainMachine/master/packageManifest.json |
@@ -598,8 +602,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 832 |
-| G candidate subset | 362 |
+| G. Unrepresented packages | 838 |
+| G candidate subset | 366 |
 
 ## H. Enrichment summary
 
@@ -609,13 +613,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2294 |
-| Source URLs fetched | 2284 |
+| Distinct source URLs | 2307 |
+| Source URLs fetched | 2297 |
 | Source URLs failed | 10 |
-| Components attempted | 2308 |
-| Components fetched | 2298 |
-| Literal definitions verified | 2287 |
-| Components with observations | 2172 |
+| Components attempted | 2321 |
+| Components fetched | 2311 |
+| Literal definitions verified | 2300 |
+| Components with observations | 2185 |
 
 ### Official Hubitat documentation pass
 
