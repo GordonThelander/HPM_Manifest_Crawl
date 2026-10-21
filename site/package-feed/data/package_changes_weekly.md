@@ -1,9 +1,20 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-20T10:03:43Z`.
+Latest observation: `2026-10-21T05:02:56Z`.
 
-**63 package change(s):** added 16, broken 2, declared definitions changed 12, removed 2, restored 2, source location changed 3, updated 35
+**74 package change(s):** added 18, broken 2, declared definitions changed 12, removed 2, restored 2, source location changed 3, updated 44
 
+- [Tholz SmartHeat: added.](https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json)
+- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
+- [Astro-Meteor Seasons: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/astro_meteor_seasons/packageManifest.json)
+- [Aqara H2 EU Wall Switch (WS-K08E): added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json)
+- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
 - [SmartThings Motion Sensor Driver: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json)
 - [Restock Manager: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/restock-manager.json)

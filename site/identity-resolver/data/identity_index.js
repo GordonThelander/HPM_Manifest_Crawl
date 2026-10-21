@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2321,
+  "definitionCount": 2323,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -19993,6 +19993,26 @@ window.IDENTITY_INDEX = {
         "name": "Aqara Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WS_USC01.groovy"
+    },
+    {
+      "id": "definition:37a6d83197931fcc2798",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tholz SmartHeat",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on VH/TRATO)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat-tholz-smartheat#readme",
+        "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+        "name": "Tholz SmartHeat"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/hubitat_Tholz_SmartHeat.groovy"
     },
     {
       "id": "definition:37c077a85bbad93f3fbe",
@@ -48415,6 +48435,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/smart-curtain-motor/aqara-smart-curtain-motor.groovy"
     },
     {
+      "id": "definition:f6f43352f6ae93351d6b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Aqara H2 EU 4 Button 2 Relay (WS-K08E)",
+          "namespace": "velkovb"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "velkovb",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/h2-eu-wall-switch",
+        "id": "manifest:c68b9433f62ec9343cc1",
+        "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json",
+        "name": "Aqara H2 EU Wall Switch (WS-K08E)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/aqara-h2-eu-ws-k08e.groovy"
+    },
+    {
       "id": "definition:f6f85da7c4bf096b350b",
       "identities": [
         {
@@ -49573,5 +49613,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-20T10:03:43Z"
+  "snapshotGenerated": "2026-10-21T05:02:56Z"
 };

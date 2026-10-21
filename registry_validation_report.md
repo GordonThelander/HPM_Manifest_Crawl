@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-20T10:03:43Z`
-- HPM repositories in master list: **223**
-- Repositories fetched successfully: **222**
-- Packages indexed: **935**
+- Snapshot: `2026-10-21T05:02:56Z`
+- HPM repositories in master list: **224**
+- Repositories fetched successfully: **223**
+- Packages indexed: **937**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **838**
+Total packages not matched by any registry entry: **840**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -373,6 +373,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Rene Boer | Qubino DIN Dimmer Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/dinDimManifest.json |
 | Rene Boer | Qubino Smart Plug 16A Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/smartPlugManifest.json |
 | Rene Boer | Remotec / ZVIDAR Z-Wave Thermostat Radiator Valve Driver | Integrations | Climate Control, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/ZVIDAR/packageManifest.json |
+| Ricardo Nogueira Garcia | Tholz SmartHeat | Integrations | Water Heater, Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json |
 | Rob Heyes | LIFX Master app and drivers | Integrations | Lights & Switches, LAN | https://raw.githubusercontent.com/robheyes/lifxcode/master/packageManifest.json |
 | Rory Jaffe | XBee3 | Integrations | Repeaters & Extenders, Zigbee | https://raw.githubusercontent.com/rsjaffe/Hubitat/master/Xbee3/packageManifest.json |
 | Russ Vrolyk | Sleep Number Controller | Integrations |  | https://raw.githubusercontent.com/rvrolyk/SleepNumberController/master/packageManifest.json |
@@ -602,8 +603,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 838 |
-| G candidate subset | 366 |
+| G. Unrepresented packages | 840 |
+| G candidate subset | 367 |
 
 ## H. Enrichment summary
 
@@ -613,13 +614,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2307 |
-| Source URLs fetched | 2297 |
+| Distinct source URLs | 2309 |
+| Source URLs fetched | 2299 |
 | Source URLs failed | 10 |
-| Components attempted | 2321 |
-| Components fetched | 2311 |
-| Literal definitions verified | 2300 |
-| Components with observations | 2185 |
+| Components attempted | 2323 |
+| Components fetched | 2313 |
+| Literal definitions verified | 2302 |
+| Components with observations | 2187 |
 
 ### Official Hubitat documentation pass
 

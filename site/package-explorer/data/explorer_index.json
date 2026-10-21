@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 935,
+    "HPM_PACKAGE": 937,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2640,
+  "recordCount": 2642,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22668,7 +22668,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:84581719b8105341f9b3",
@@ -22755,7 +22755,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.4"
+      "version": "1.1.7"
     },
     {
       "author": "Krassimir Kossev",
@@ -23107,6 +23107,86 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "0.6.1"
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-20",
+      "definitions": [
+        {
+          "id": "definition:f6f43352f6ae93351d6b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara H2 EU 4 Button 2 Relay (WS-K08E)",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/aqara-h2-eu-ws-k08e.groovy"
+        }
+      ],
+      "description": "WS-K08E Zigbee preview: two relay children, four buttons, Aqara settings and aggregate metering. Core controls tested; loaded metering unverified.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:c68b9433f62ec9343cc1",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/h2-eu-wall-switch",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Aqara H2 EU Wall Switch (WS-K08E)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.1.0"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -23903,7 +23983,7 @@
       "author": "James Shimota",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-05-12",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:a37226626474a0987d41",
@@ -23982,7 +24062,7 @@
         "Timers",
         "Weather"
       ],
-      "version": "0.3.7"
+      "version": "0.4.1"
     },
     {
       "author": "Taylor Brown(@thecloudtaylor)",
@@ -45748,7 +45828,7 @@
       "author": "CSteele",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-03-18",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:68f8db3828345dace189",
@@ -45835,7 +45915,7 @@
         "Cloud",
         "Temperature & Humidity"
       ],
-      "version": null
+      "version": "2.0.19"
     },
     {
       "author": "Larry Kahn",
@@ -46888,7 +46968,7 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-10",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:62c23f636db66d4f0936",
@@ -46972,13 +47052,13 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.35"
+      "version": "3.1.36"
     },
     {
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-16",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:ffdf6e2418345b7f15d7",
@@ -47055,7 +47135,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.1.12"
+      "version": "6.1.13"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -58798,7 +58878,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:7eaed06a7d6de6623014",
@@ -58904,7 +58984,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "author": "Ernie Miller",
@@ -63251,7 +63331,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-18",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -63333,7 +63413,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "4.8.2"
+      "version": "4.8.3"
     },
     {
       "author": "Justin Leonard",
@@ -77790,7 +77870,7 @@
       "author": "jdthomas24",
       "category": "Safety & Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:eff50c9724d7ddc97d85",
@@ -77932,7 +78012,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.6.13"
+      "version": "1.6.14"
     },
     {
       "author": "Andrew Nunes",
@@ -87006,7 +87086,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
+      "dateReleased": "2026-10-20",
       "definitions": [
         {
           "id": "definition:64472c13a4527d781dee",
@@ -87111,7 +87191,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.2"
+      "version": "1.1.3"
     },
     {
       "author": "Derek Osborn",
@@ -93629,6 +93709,90 @@
         "Temperature & Humidity"
       ],
       "version": "1.1.0"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia (based on VH/TRATO)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-19",
+      "definitions": [
+        {
+          "id": "definition:37a6d83197931fcc2798",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tholz SmartHeat",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/hubitat_Tholz_SmartHeat.groovy"
+        }
+      ],
+      "description": "Local TCP driver for the Tholz SmartHeat 2nd gen solar water-heater controller: temperatures, heat modes, setpoint, channel control and per-channel energy estimates.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat-tholz-smartheat#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat-tholz-smartheat"
+      },
+      "name": "Tholz SmartHeat",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Water Heater"
+      ],
+      "version": "1.7"
     },
     {
       "author": null,
@@ -134558,5 +134722,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-20T10:03:43Z"
+  "snapshotGenerated": "2026-10-21T05:02:56Z"
 }

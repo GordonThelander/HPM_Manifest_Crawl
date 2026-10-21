@@ -3,7 +3,7 @@
     "BOTH": 185,
     "CLOUD": 265,
     "INSUFFICIENT": 302,
-    "LAN": 183
+    "LAN": 185
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 935,
+  "packageCount": 937,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1737,6 +1737,31 @@
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
         "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "WS-K08E Zigbee preview: two relay children, four buttons, Aqara settings and aggregate metering. Core controls tested; loaded metering unverified.",
+      "documentationUrl": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/h2-eu-wall-switch",
+      "id": "manifest:c68b9433f62ec9343cc1",
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json",
+      "name": "Aqara H2 EU Wall Switch (WS-K08E)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
       },
       "reviewed": [],
       "tags": []
@@ -9087,7 +9112,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 50
+        "urlLiteralCount": 51
       },
       "reviewed": [],
       "tags": [
@@ -9115,7 +9140,7 @@
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -23317,6 +23342,33 @@
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on VH/TRATO)",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Local TCP driver for the Tholz SmartHeat 2nd gen solar water-heater controller: temperatures, heat modes, setpoint, channel control and per-channel energy estimates.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat-tholz-smartheat#readme",
+      "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+      "name": "Tholz SmartHeat",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Water Heater"
+      ]
+    },
+    {
       "author": null,
       "category": "Dashboards",
       "classification": "INSUFFICIENT",
@@ -27381,7 +27433,7 @@
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 5,
-        "urlLiteralCount": 157
+        "urlLiteralCount": 159
       },
       "reviewed": [],
       "tags": [
@@ -28231,5 +28283,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-20T10:03:43Z"
+  "snapshotGenerated": "2026-10-21T05:02:56Z"
 }
