@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-21T05:02:56Z`.
+Latest observation: `2026-10-22T05:05:54Z`.
 
-**74 package change(s):** added 18, broken 2, declared definitions changed 12, removed 2, restored 2, source location changed 3, updated 44
+**68 package change(s):** added 20, declared definitions changed 7, removed 3, restored 2, source location changed 4, updated 40
 
+- [Tholz SmartHeat: updated, changed source location.](https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json)
+- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
+- [Shelly Plug US Gen4 (Zigbee): added.](https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/packageManifest.json)
+- [PJLink Projector Driver: removed.](https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/packageManifest.json)
+- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
+- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
+- [Aqara Floor Heating Thermostat W500: added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/floor-heating-thermostat-w500/packageManifest.json)
+- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [Tholz SmartHeat: added.](https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json)
 - [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
 - [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
@@ -63,20 +72,5 @@ Latest observation: `2026-10-21T05:02:56Z`.
 - [Govee Pool Thermostat: changed declared definitions, was restored.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
 - [Google Photos Cloud: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json)
 - [Android TV Remote: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Orbit Bhyve+: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json)
-- [Muse Bridge: updated.](https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/packageManifest.json)
-- [Mitsubishi Comfort Cloud: updated.](https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json)
-- [Life360+: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
-- [HD+ Tile: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json)
-- [Govee Pool Thermostat: changed declared definitions, became unavailable.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
-- [Google Photos Cloud: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json)
-- [Centralite Pearl Zigbee Thermostat: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/centralite_pearl_thermostat/packageManifest.json)
-- [Auto Room Sorter: updated.](https://raw.githubusercontent.com/evdev/Hubitat_auto_device-room_sorter/main/packageManifest.json)
-- [webCoRE: updated.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

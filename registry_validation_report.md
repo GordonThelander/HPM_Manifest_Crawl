@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-21T05:02:56Z`
+- Snapshot: `2026-10-22T05:05:54Z`
 - HPM repositories in master list: **224**
 - Repositories fetched successfully: **223**
-- Packages indexed: **937**
+- Packages indexed: **938**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -138,8 +138,8 @@ Live-HPM note: no HPM package currently matches the canary substring.
 
 | Entry ID | Entry | Field | Contains value | Packages matched |
 | --- | --- | --- | --- | --- |
-| shelly-native | Shelly Integration | driverName | Shelly | 8 |
-| shelly-mqtt | Shelly MQTT Variant | driverName | Shelly | 8 |
+| shelly-native | Shelly Integration | driverName | Shelly | 9 |
+| shelly-mqtt | Shelly MQTT Variant | driverName | Shelly | 9 |
 | ring | Ring Integration | driverName | Ring | 19 |
 | matter-bridge | Matter Bridge / Controller | driverName | Matter | 6 |
 
@@ -216,7 +216,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Art Ardolino | BLE Gateway Manager | Integrations | Presence & Location | https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/packageManifest.json |
 | Ben Deitch (@xap) | Miele Integration | Integrations | Appliances, Cloud | https://raw.githubusercontent.com/xap-code/hubitat/master/miele/packageManifest.json |
 | Ben Deitch (@xap) | Squeezebox Connect | Integrations | LAN, Multimedia, Speakers | https://raw.githubusercontent.com/xap-code/hubitat/master/squeezebox/packageManifest.json |
-| Ben Jansen | PJLink Projector Driver | Control | Multimedia, LAN | https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/packageManifest.json |
 | Bloodtick Jones | Bose Soundbar Integration | Integrations | Automations & Groups, Cloud, Tools & Utilities | https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestBoseSoundbarIntegration.json |
 | Bloodtick Jones | Cudy Router R700 | Integrations | Monitoring, LAN, Notifications, Tools & Utilities | https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestCudyRouterR700.json |
 | Bloodtick Jones | Roborock Robot Vacuum | Integrations | Automations & Groups, Cloud | https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestRoborockRobotVacuum.json |
@@ -604,7 +603,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
 | G. Unrepresented packages | 840 |
-| G candidate subset | 367 |
+| G candidate subset | 366 |
 
 ## H. Enrichment summary
 
@@ -614,13 +613,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2309 |
-| Source URLs fetched | 2299 |
+| Distinct source URLs | 2310 |
+| Source URLs fetched | 2300 |
 | Source URLs failed | 10 |
-| Components attempted | 2323 |
-| Components fetched | 2313 |
-| Literal definitions verified | 2302 |
-| Components with observations | 2187 |
+| Components attempted | 2324 |
+| Components fetched | 2314 |
+| Literal definitions verified | 2303 |
+| Components with observations | 2188 |
 
 ### Official Hubitat documentation pass
 

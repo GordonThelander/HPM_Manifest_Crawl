@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 937,
+    "HPM_PACKAGE": 938,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2642,
+  "recordCount": 2643,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22140,7 +22140,7 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
           "id": "definition:e7ceeb043356b42c011f",
@@ -22228,7 +22228,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "0.1.9"
+      "version": "0.1.13"
     },
     {
       "author": "Joe Page",
@@ -22943,6 +22943,86 @@
         "Zigbee"
       ],
       "version": "1.0.1"
+    },
+    {
+      "author": "velkovb",
+      "category": "Climate Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:3396beeace1c205b7e85",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara Floor Heating Thermostat W500",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/floor-heating-thermostat-w500/aqara-w500.groovy"
+        }
+      ],
+      "description": "W500 UT-A01E local Zigbee preview: thermostat, six presets, Aqara settings and metering. Controls/settings tested; relay/icon confirmed; loaded metering and OTA unverified.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:d7ab8807dc8b0326f418",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/floor-heating-thermostat-w500",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/floor-heating-thermostat-w500/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Aqara Floor Heating Thermostat W500",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.1.1"
     },
     {
       "author": "Dan Ogorchock",
@@ -24872,7 +24952,7 @@
       "author": "Gordon Thelander",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-15",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
           "id": "definition:060243e40f8358d5446b",
@@ -24944,6 +25024,7 @@
         "externalHosts": [
           "cdn.jsdelivr.net",
           "cdnjs.cloudflare.com",
+          "cloud.hubitat.com",
           "gordonthelander.github.io",
           "unpkg.com"
         ],
@@ -24954,7 +25035,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "2.4.48"
+      "version": "2.4.51"
     },
     {
       "author": "csteele",
@@ -58878,7 +58959,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
           "id": "definition:7eaed06a7d6de6623014",
@@ -58984,7 +59065,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.0.1"
+      "version": "2.0.2"
     },
     {
       "author": "Ernie Miller",
@@ -62028,7 +62109,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
           "id": "definition:068c42d708666e225b0e",
@@ -62117,7 +62198,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.1.8"
+      "version": "1.1.9"
     },
     {
       "author": "Dan Ogorchock",
@@ -73977,91 +74058,6 @@
       "version": null
     },
     {
-      "author": "Ben Jansen",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-11-17",
-      "definitions": [
-        {
-          "id": "definition:5b27d3c85d00769dc58a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "PJLink Projector",
-          "namespace": "org.w007",
-          "sourceUrl": "https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/PjlinkProjector.groovy"
-        }
-      ],
-      "description": "Driver for PJLink-compatible projectors",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:e4ecab3c-e0be-45ae-8778-078dc808f745",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "https://bitbucket.org/aogail/hubitat-pjlink/src/master/README.md",
-        "manifest": "https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/packageManifest.json",
-        "repository": null
-      },
-      "name": "PJLink Projector Driver",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "bitbucket.org"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "LAN",
-        "Multimedia"
-      ],
-      "version": "1.0"
-    },
-    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -82732,6 +82728,105 @@
       "version": "0.0.7"
     },
     {
+      "author": "Chris Busch",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:acd02657b6ec409db34f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Shelly Plug US Gen4 (Zigbee)",
+          "namespace": "chsbusch-dot",
+          "sourceUrl": "https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/drivers/Shelly-Plug-US-Gen4-Zigbee.groovy"
+        }
+      ],
+      "description": "Driver for the Shelly Plug US Gen4 (S4PL-00116US) in Zigbee mode: switch, power, energy, voltage, current and frequency in the plug's own units, trip detection, and the plug's settings from Hubitat (power-on state, overpower cutoff, auto-off timer, current and voltage limits, LED ring, Bluetooth, Wi-Fi).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:d7a74ad1-e0ab-4378-a512-1ace0d01ba21",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-shelly-plug-us-gen4-zigbee-driver-plug-reported-units-no-relay-toggle-on-configure/166960",
+        "documentation": "https://github.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/blob/main/README.md",
+        "manifest": "https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/packageManifest.json",
+        "repository": "https://github.com/chsbusch-dot/hubitat-shelly-gen4-zigbee"
+      },
+      "name": "Shelly Plug US Gen4 (Zigbee)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": [
+          {
+            "dependencies": [
+              {
+                "class": "LOCAL_DEVICE",
+                "name": "Shelly Device",
+                "runtimeCriticality": "RUNTIME",
+                "transport": "LAN"
+              }
+            ],
+            "documentation": [],
+            "id": "shelly-native",
+            "name": "Shelly Integration",
+            "status": "VERIFIED_CORE"
+          }
+        ]
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Lights & Switches",
+        "Zigbee"
+      ],
+      "version": "1.5.2"
+    },
+    {
       "author": "Boguslaw Wojcik (@bogus.wojcik)",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -85487,7 +85582,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
           "id": "definition:9364c9840d55948ebc42",
@@ -85592,7 +85687,7 @@
         "Valves",
         "Zigbee"
       ],
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "author": "Russ Vrolyk",
@@ -93714,15 +93809,15 @@
       "author": "Ricardo Nogueira Garcia (based on VH/TRATO)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-21",
       "definitions": [
         {
-          "id": "definition:37a6d83197931fcc2798",
+          "id": "definition:61f108cd04f44bdae375",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Tholz SmartHeat",
           "namespace": "rng",
-          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/hubitat_Tholz_SmartHeat.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/tholz-smartheat.groovy"
         }
       ],
       "description": "Local TCP driver for the Tholz SmartHeat 2nd gen solar water-heater controller: temperatures, heat modes, setpoint, channel control and per-channel energy estimates.",
@@ -93772,9 +93867,9 @@
       ],
       "links": {
         "community": null,
-        "documentation": "https://github.com/rngarcia/hubitat-tholz-smartheat#readme",
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
         "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
-        "repository": "https://github.com/rngarcia/hubitat-tholz-smartheat"
+        "repository": "https://github.com/rngarcia/hubitat"
       },
       "name": "Tholz SmartHeat",
       "network": {
@@ -93792,7 +93887,7 @@
         "LAN",
         "Water Heater"
       ],
-      "version": "1.7"
+      "version": "1.7.1"
     },
     {
       "author": null,
@@ -134722,5 +134817,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-21T05:02:56Z"
+  "snapshotGenerated": "2026-10-22T05:05:54Z"
 }

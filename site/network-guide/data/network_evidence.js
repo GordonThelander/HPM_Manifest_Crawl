@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 185,
+    "BOTH": 184,
     "CLOUD": 265,
     "INSUFFICIENT": 302,
-    "LAN": 185
+    "LAN": 187
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 937,
+  "packageCount": 938,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1690,6 +1690,31 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "velkovb",
+      "category": "Climate Control",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "W500 UT-A01E local Zigbee preview: thermostat, six presets, Aqara settings and metering. Controls/settings tested; relay/icon confirmed; loaded metering and OTA unverified.",
+      "documentationUrl": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/floor-heating-thermostat-w500",
+      "id": "manifest:d7ab8807dc8b0326f418",
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/floor-heating-thermostat-w500/packageManifest.json",
+      "name": "Aqara Floor Heating Thermostat W500",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
       "author": "Dan Ogorchock",
       "category": "Control",
       "classification": "LAN",
@@ -2303,12 +2328,13 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [
           "cdn.jsdelivr.net",
           "cdnjs.cloudflare.com",
+          "cloud.hubitat.com",
           "gordonthelander.github.io",
           "unpkg.com"
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 23
+        "urlLiteralCount": 24
       },
       "reviewed": [],
       "tags": [
@@ -13587,7 +13613,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 3
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -17171,34 +17197,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Ben Jansen",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": true
-      },
-      "description": "Driver for PJLink-compatible projectors",
-      "documentationUrl": "https://bitbucket.org/aogail/hubitat-pjlink/src/master/README.md",
-      "id": "hpm:e4ecab3c-e0be-45ae-8778-078dc808f745",
-      "manifestUrl": "https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/packageManifest.json",
-      "name": "PJLink Projector Driver",
-      "observed": {
-        "externalHosts": [
-          "bitbucket.org"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
-      },
-      "reviewed": [],
-      "tags": [
-        "LAN",
-        "Multimedia"
-      ]
-    },
-    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "LAN",
@@ -19990,6 +19988,50 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "Chris Busch",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-shelly-plug-us-gen4-zigbee-driver-plug-reported-units-no-relay-toggle-on-configure/166960",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Driver for the Shelly Plug US Gen4 (S4PL-00116US) in Zigbee mode: switch, power, energy, voltage, current and frequency in the plug's own units, trip detection, and the plug's settings from Hubitat (power-on state, overpower cutoff, auto-off timer, current and voltage limits, LED ring, Bluetooth, Wi-Fi).",
+      "documentationUrl": "https://github.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/blob/main/README.md",
+      "id": "hpm:d7a74ad1-e0ab-4378-a512-1ace0d01ba21",
+      "manifestUrl": "https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/packageManifest.json",
+      "name": "Shelly Plug US Gen4 (Zigbee)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_DEVICE",
+              "name": "Shelly Device",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN"
+            }
+          ],
+          "documentation": [],
+          "id": "shelly-native",
+          "name": "Shelly Integration",
+          "status": "VERIFIED_CORE"
+        }
+      ],
+      "tags": [
+        "Energy Monitoring",
+        "Lights & Switches",
+        "Zigbee"
       ]
     },
     {
@@ -23351,7 +23393,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": true
       },
       "description": "Local TCP driver for the Tholz SmartHeat 2nd gen solar water-heater controller: temperatures, heat modes, setpoint, channel control and per-channel energy estimates.",
-      "documentationUrl": "https://github.com/rngarcia/hubitat-tholz-smartheat#readme",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
       "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
       "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
       "name": "Tholz SmartHeat",
@@ -23359,7 +23401,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
+        "urlLiteralCount": 2
       },
       "reviewed": [],
       "tags": [
@@ -28283,5 +28325,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-21T05:02:56Z"
+  "snapshotGenerated": "2026-10-22T05:05:54Z"
 };
