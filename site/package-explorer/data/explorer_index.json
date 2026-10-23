@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 938,
+    "HPM_PACKAGE": 950,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2643,
+  "recordCount": 2655,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -19182,6 +19182,173 @@
       "version": "1.2"
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on keltymd)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:f9c85de20da3631d3481",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aeon Multisensor Gen5",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/aeon-multisensor-gen5.groovy"
+        }
+      ],
+      "description": "Fixed Z-Wave driver for the Aeon Multisensor Gen5 (motion, temperature, humidity, illuminance, battery).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:625fbf28-8a56-4fb6-9d7f-4ef0cc32a795",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-multisensor-gen5#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Aeon Multisensor Gen5",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Sensors",
+        "Z-Wave"
+      ],
+      "version": "1.1.1"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia (based on SmartThings)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:e5b17865968dab3d8689",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aeon Smart Dimmer 2nd Edition",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/aeon-smart-dimmer-2nd.groovy"
+        }
+      ],
+      "description": "Z-Wave driver for the Aeon Labs Smart Dimmer 2nd Edition (DSC25), ported from SmartThings' metering dimmer.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:b2df0e78-90cd-4595-ac2c-55e3d7408697",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-smart-dimmer-2nd#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Aeon Smart Dimmer 2nd Edition",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
+      ],
+      "version": "1.0.1"
+    },
+    {
       "author": "Larry Kahn",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -22140,7 +22307,7 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-21",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:e7ceeb043356b42c011f",
@@ -22228,7 +22395,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "0.1.13"
+      "version": "0.1.17"
     },
     {
       "author": "Joe Page",
@@ -22668,7 +22835,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:84581719b8105341f9b3",
@@ -22685,6 +22852,14 @@
           "name": "Apple TV",
           "namespace": "jdthomas24",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/AppleTVDriver.groovy"
+        },
+        {
+          "id": "definition:05b83a9f8358c03bb733",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Apple TV Helper",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/AppleTVHelper.groovy"
         }
       ],
       "description": "Local control of Apple TVs, no bridge or cloud. Finds them on your network, pairs with the on-screen PIN, and creates one device each: on/off from scenes and rules, play/pause and playback state, Siri Remote buttons, volume, and app launching.",
@@ -22755,7 +22930,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.7"
+      "version": "1.2.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -23112,7 +23287,7 @@
       "author": "velkovb",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-18",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:e900c3cdbb771c405f89",
@@ -23186,13 +23361,13 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.6.1"
+      "version": "0.7.0"
     },
     {
       "author": "velkovb",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:f6f43352f6ae93351d6b",
@@ -23266,7 +23441,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -37166,6 +37341,90 @@
       "version": "1.2.0"
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:d1b4c93ff1eac1b38d15",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "FoxESS Cloud OpenAPI",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/foxess-cloud.groovy"
+        }
+      ],
+      "description": "FoxESS Cloud OpenAPI driver for FoxESS (and WEG) inverters: real-time power, grid state and daily energy.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "FoxESS Cloud OpenAPI",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Energy Monitoring",
+        "Solar"
+      ],
+      "version": "0.1.1"
+    },
+    {
       "author": "Adrian Caramaliu",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -37520,6 +37779,92 @@
         "Voice Assistants"
       ],
       "version": "0.1.6"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:295f1a68285870d22994",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "FusionSolar OpenAPI (Cloud)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/fusionsolar.groovy"
+        }
+      ],
+      "description": "Huawei FusionSolar Northbound OpenAPI (cloud) driver: plant and inverter power and energy for Hubitat.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "FusionSolar OpenAPI",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "la5.fusionsolar.huawei.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Energy Monitoring",
+        "Solar"
+      ],
+      "version": "0.2.1"
     },
     {
       "author": "Justin Leonard",
@@ -40330,6 +40675,97 @@
       "version": "1.5"
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:a54376d3c7c98c42b013",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Goldshell BYTE Miner (MCB+CGMiner)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/goldshell-byte.groovy"
+        },
+        {
+          "id": "definition:02d092abb7f57ab1b17a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Goldshell BYTE Miner Card",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/goldshell-byte-card.groovy"
+        }
+      ],
+      "description": "Local driver for the Goldshell BYTE miner (MCB + CGMiner API): status, per-card metrics as child devices, LED/idle/power-plan control.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Goldshell BYTE Miner",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "LAN"
+      ],
+      "version": "3.5.1"
+    },
+    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -43111,6 +43547,89 @@
       "version": "1.06"
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:a422ed63f4cbd2db2e58",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Heiman HS2WD-E Siren",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/heiman-hs2wd-e-siren.groovy"
+        }
+      ],
+      "description": "Zigbee driver for the Heiman HS2WD-E siren: alarm, strobe and tone control.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/heiman-hs2wd-e-siren#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Heiman HS2WD-E Siren",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Security",
+        "Zigbee"
+      ],
+      "version": "1.0.3"
+    },
+    {
       "author": "Scruffy-SJB",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -43629,6 +44148,91 @@
         "Locks"
       ],
       "version": "1.3"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:748fc6f133349cf8a8d4",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Hikvision Audible Alarm Trigger (ISAPI)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/hikvision-audible-alarm.groovy"
+        }
+      ],
+      "description": "Triggers the built-in audible alarm (siren/voice) on Hikvision cameras over ISAPI, locally.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/hikvision-audible-alarm#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Hikvision Audible Alarm Trigger (ISAPI)",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [
+          "www.hikvision.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Security"
+      ],
+      "version": "1.5.1"
     },
     {
       "author": "TR-Systems",
@@ -47139,7 +47743,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:ffdf6e2418345b7f15d7",
@@ -47216,7 +47820,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.1.13"
+      "version": "6.2.0"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -72582,7 +73186,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:552342c3eb7914797d32",
@@ -72693,7 +73297,7 @@
       "tags": [
         "Pool & Spa"
       ],
-      "version": "1.7.0"
+      "version": "1.7.1"
     },
     {
       "author": "Neil Jackson",
@@ -77665,6 +78269,89 @@
       "version": "1.0"
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on Bryan Copeland)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:c19195f97b76eb8d7995",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Remotec ZXT-120 (rng)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/remotec-zxt-120.groovy"
+        }
+      ],
+      "description": "Not actively maintained. Modified Z-Wave driver for the Remotec ZXT-120 IR extender, used to control air conditioners.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:10716275-8ee7-4916-b9dd-db9653d5d5a1",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/remotec-zxt-120#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Remotec ZXT-120 IR Extender",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Z-Wave"
+      ],
+      "version": "0.1.1"
+    },
+    {
       "author": "TheDanHealy",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -77866,7 +78553,7 @@
       "author": "jdthomas24",
       "category": "Safety & Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:eff50c9724d7ddc97d85",
@@ -78008,7 +78695,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.6.14"
+      "version": "1.6.15"
     },
     {
       "author": "Andrew Nunes",
@@ -80164,6 +80851,89 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
+      "version": "1.0.1"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:9279c951bf5bb016f0d9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Roomba (Rest980 Standalone)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/roomba-rest980.groovy"
+        }
+      ],
+      "description": "Standalone Roomba driver that talks to a local Rest980 server, with no parent app. Concepts from Aaron Ward's Roomba integration.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/roomba-rest980#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Roomba (Rest980)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances",
+        "LAN"
+      ],
       "version": "1.0.1"
     },
     {
@@ -93868,7 +94638,7 @@
       "links": {
         "community": null,
         "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
-        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json",
         "repository": "https://github.com/rngarcia/hubitat"
       },
       "name": "Tholz SmartHeat",
@@ -94753,6 +95523,116 @@
       "version": null
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-22",
+      "definitions": [
+        {
+          "id": "definition:bef53d74564a36222e21",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Generic Component Air Purifier (Tuya)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-air-purifier.groovy"
+        },
+        {
+          "id": "definition:e38fc40c0493dc8998a5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tuya Component Tank Level Monitor (Wi-Fi)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-tank-level.groovy"
+        },
+        {
+          "id": "definition:2b466670eacd24758756",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tuya Component Towel Warmer with Power Monitor",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-towel-warmer.groovy"
+        },
+        {
+          "id": "definition:beea70a0382bc4b49b25",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tuya IoT Platform (Cloud)",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-iot-cloud.groovy"
+        }
+      ],
+      "description": "Tuya IoT Platform cloud parent driver (based on Jonathan Bradshaw's), with ROPO and towel-warmer-safe patches.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Tuya IoT Platform (Cloud)",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "openapi.tuyaeu.com",
+          "openapi.tuyaus.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Tools & Utilities"
+      ],
+      "version": "1.0.6"
+    },
+    {
       "author": "Jonathan Bradshaw",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -95179,6 +96059,89 @@
         "Zigbee"
       ],
       "version": "1.3.4"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-22",
+      "definitions": [
+        {
+          "id": "definition:d876bc5dc2b22660cb86",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/tuya-tank-level-local.groovy"
+        }
+      ],
+      "description": "Local driver for Tuya Wi-Fi ultrasonic tank level sensors (port 6668, protocols 3.3, 3.4 and 3.5), with no Tuya Cloud. Level, water column and alarm state, plus optional volume calculation.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-tank-level-local#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Water"
+      ],
+      "version": "2.2.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -100902,23 +101865,23 @@
       "author": "Dan Danache (@dandanache)",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-01",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
-          "id": "definition:97799cdb2c23c8bf8904",
+          "id": "definition:461a28598907abc7322a",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "${APP_NAME} ${APP_VERSION}",
           "namespace": "dandanache",
-          "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower.groovy"
+          "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower.groovy"
         },
         {
-          "id": "definition:33265783cf1695406a65",
+          "id": "definition:28adb4f464de2570670d",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Watchtower Events",
           "namespace": "dandanache",
-          "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower-events.groovy"
+          "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower-events.groovy"
         }
       ],
       "description": "Watchtower is the all-in-one app for long-term smart home monitoring and data visualization. Staying true to Hubitat's core value, the application works 100% locally, with no reliance on the cloud. Plus, there's no need for extra hardware like Raspberry Pi or NAS.",
@@ -100993,7 +101956,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "4.2.0"
+      "version": "4.3.0"
     },
     {
       "author": "Brian Wilson",
@@ -106082,6 +107045,89 @@
         "ZWave"
       ],
       "version": null
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-21",
+      "definitions": [
+        {
+          "id": "definition:38e60c934a1791871be1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Zemismart SDM02T 2-Phase Energy Meter",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/zemismart-sdm02t.groovy"
+        }
+      ],
+      "description": "Zigbee driver for the Zemismart SDM02T 2-phase energy meter (Tuya), built from DP sniffing: per-phase voltage, current, power and energy.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/zemismart-sdm02t#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Zemismart SDM02T Energy Meter",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Zigbee"
+      ],
+      "version": "1.4.2"
     },
     {
       "author": "Amos Yuen",
@@ -134817,5 +135863,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-22T05:05:54Z"
+  "snapshotGenerated": "2026-10-23T05:06:22Z"
 }

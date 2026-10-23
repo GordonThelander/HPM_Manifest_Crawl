@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 184,
-    "CLOUD": 265,
-    "INSUFFICIENT": 302,
-    "LAN": 187
+    "BOTH": 185,
+    "CLOUD": 268,
+    "INSUFFICIENT": 305,
+    "LAN": 192
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 938,
+  "packageCount": 950,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -474,6 +474,59 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Energy Monitoring",
         "Monitoring"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia (based on keltymd)",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Fixed Z-Wave driver for the Aeon Multisensor Gen5 (motion, temperature, humidity, illuminance, battery).",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-multisensor-gen5#readme",
+      "id": "hpm:625fbf28-8a56-4fb6-9d7f-4ef0cc32a795",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json",
+      "name": "Aeon Multisensor Gen5",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Sensors",
+        "Z-Wave"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia (based on SmartThings)",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Z-Wave driver for the Aeon Labs Smart Dimmer 2nd Edition (DSC25), ported from SmartThings' metering dimmer.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-smart-dimmer-2nd#readme",
+      "id": "hpm:b2df0e78-90cd-4595-ac2c-55e3d7408697",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json",
+      "name": "Aeon Smart Dimmer 2nd Edition",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
       ]
     },
     {
@@ -1617,8 +1670,8 @@ window.NETWORK_EVIDENCE = {
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -6050,6 +6103,33 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "FoxESS Cloud OpenAPI driver for FoxESS (and WEG) inverters: real-time power, grid state and daily energy.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
+      "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
+      "name": "FoxESS Cloud OpenAPI",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Energy Monitoring",
+        "Solar"
+      ]
+    },
+    {
       "author": "Adrian Caramaliu",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -6163,6 +6243,35 @@ window.NETWORK_EVIDENCE = {
         "Notifications",
         "Tools & Utilities",
         "Voice Assistants"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Huawei FusionSolar Northbound OpenAPI (cloud) driver: plant and inverter power and energy for Hubitat.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
+      "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
+      "name": "FusionSolar OpenAPI",
+      "observed": {
+        "externalHosts": [
+          "la5.fusionsolar.huawei.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Energy Monitoring",
+        "Solar"
       ]
     },
     {
@@ -7115,6 +7224,32 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Local driver for the Goldshell BYTE miner (MCB + CGMiner API): status, per-card metrics as child devices, LED/idle/power-plan control.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
+      "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
+      "name": "Goldshell BYTE Miner",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN"
+      ]
+    },
+    {
       "author": "ritchierich",
       "category": "Integrations",
       "classification": "BOTH",
@@ -8007,6 +8142,32 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Zigbee driver for the Heiman HS2WD-E siren: alarm, strobe and tone control.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/heiman-hs2wd-e-siren#readme",
+      "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
+      "name": "Heiman HS2WD-E Siren",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Security",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "Scruffy-SJB",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
@@ -8186,6 +8347,34 @@ window.NETWORK_EVIDENCE = {
         "Doors & Windows",
         "Garage Doors",
         "Locks"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Triggers the built-in audible alarm (siren/voice) on Hikvision cameras over ISAPI, locally.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/hikvision-audible-alarm#readme",
+      "id": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json",
+      "name": "Hikvision Audible Alarm Trigger (ISAPI)",
+      "observed": {
+        "externalHosts": [
+          "www.hikvision.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Security"
       ]
     },
     {
@@ -18285,6 +18474,35 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on Bryan Copeland)",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Not actively maintained. Modified Z-Wave driver for the Remotec ZXT-120 IR extender, used to control air conditioners.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/remotec-zxt-120#readme",
+      "id": "hpm:10716275-8ee7-4916-b9dd-db9653d5d5a1",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json",
+      "name": "Remotec ZXT-120 IR Extender",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Z-Wave"
+      ]
+    },
+    {
       "author": "TheDanHealy",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -19203,6 +19421,32 @@ window.NETWORK_EVIDENCE = {
       },
       "reviewed": [],
       "tags": []
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Standalone Roomba driver that talks to a local Rest980 server, with no parent app. Concepts from Aaron Ward's Roomba integration.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/roomba-rest980#readme",
+      "id": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json",
+      "name": "Roomba (Rest980)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances",
+        "LAN"
+      ]
     },
     {
       "author": "Josh Lobe",
@@ -23395,7 +23639,7 @@ window.NETWORK_EVIDENCE = {
       "description": "Local TCP driver for the Tholz SmartHeat 2nd gen solar water-heater controller: temperatures, heat modes, setpoint, channel control and per-channel energy estimates.",
       "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
       "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
-      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json",
       "name": "Tholz SmartHeat",
       "observed": {
         "externalHosts": [],
@@ -23705,6 +23949,35 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Tuya IoT Platform cloud parent driver (based on Jonathan Bradshaw's), with ROPO and towel-warmer-safe patches.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+      "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+      "name": "Tuya IoT Platform (Cloud)",
+      "observed": {
+        "externalHosts": [
+          "openapi.tuyaeu.com",
+          "openapi.tuyaus.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 18
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "BOTH",
@@ -23826,6 +24099,32 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Zigbee"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Local driver for Tuya Wi-Fi ultrasonic tank level sensors (port 6668, protocols 3.3, 3.4 and 3.5), with no Tuya Cloud. Level, water column and alarm state, plus optional volume calculation.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-tank-level-local#readme",
+      "id": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json",
+      "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Water"
       ]
     },
     {
@@ -27128,6 +27427,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Zigbee driver for the Zemismart SDM02T 2-phase energy meter (Tuya), built from DP sniffing: per-phase voltage, current, power and energy.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/zemismart-sdm02t#readme",
+      "id": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json",
+      "name": "Zemismart SDM02T Energy Meter",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "Amos Yuen",
       "category": "Control",
       "classification": "BOTH",
@@ -28325,5 +28652,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-22T05:05:54Z"
+  "snapshotGenerated": "2026-10-23T05:06:22Z"
 };

@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2324,
+  "definitionCount": 2341,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -4733,6 +4733,31 @@ window.IDENTITY_INDEX = {
         "name": "HTTP Presence Helper"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/Apps/HttpPresenceHelper.groovy"
+    },
+    {
+      "id": "definition:461a28598907abc7322a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "${APP_NAME} ${APP_VERSION}",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Watchtower",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+        "name": "Watchtower"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower.groovy"
     },
     {
       "id": "definition:46846ec9764d5e90e43e",
@@ -8108,31 +8133,6 @@ window.IDENTITY_INDEX = {
         "name": "Hub Monitor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/hubMonitor.groovy"
-    },
-    {
-      "id": "definition:97799cdb2c23c8bf8904",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "${APP_NAME} ${APP_VERSION}",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Watchtower",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-        "name": "Watchtower"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower.groovy"
     },
     {
       "id": "definition:97e0c131129b11987176",
@@ -13000,6 +13000,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/tuya/drivers/tuya_switch_module.groovy"
     },
     {
+      "id": "definition:02d092abb7f57ab1b17a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Goldshell BYTE Miner Card",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
+        "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
+        "name": "Goldshell BYTE Miner"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/goldshell-byte-card.groovy"
+    },
+    {
       "id": "definition:02dbc127abd5bb13b967",
       "identities": [
         {
@@ -13308,6 +13328,26 @@ window.IDENTITY_INDEX = {
         "name": "HubiGraphs"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tchoward/Hubitat/master/hubigraph_tile.groovy"
+    },
+    {
+      "id": "definition:05b83a9f8358c03bb733",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Apple TV Helper",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "jdthomas24",
+        "communityUrl": "https://community.hubitat.com/t/166801",
+        "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
+        "id": "manifest:2a4da40794b26e8789b7",
+        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
+        "name": "Apple TV Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Apple%20TV%20Integration/AppleTVHelper.groovy"
     },
     {
       "id": "definition:05ce8d27a094ecb027e0",
@@ -17775,6 +17815,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentThermostat.groovy"
     },
     {
+      "id": "definition:28adb4f464de2570670d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Watchtower Events",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+        "name": "Watchtower"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower-events.groovy"
+    },
+    {
       "id": "definition:28cddde35677c00ae751",
       "identities": [
         {
@@ -17893,6 +17953,26 @@ window.IDENTITY_INDEX = {
         "name": "Network Monitor Health Check"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/NetworkMonitorHealthCheck/NetworkMonitorHealthCheck.groovy"
+    },
+    {
+      "id": "definition:295f1a68285870d22994",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "FusionSolar OpenAPI (Cloud)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
+        "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
+        "name": "FusionSolar OpenAPI"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/fusionsolar.groovy"
     },
     {
       "id": "definition:29b84ba31e58629abc3e",
@@ -18158,6 +18238,26 @@ window.IDENTITY_INDEX = {
         "name": "Aeon SmartStrip"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/aeonsmartstrip.groovey"
+    },
+    {
+      "id": "definition:2b466670eacd24758756",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Component Towel Warmer with Power Monitor",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+        "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+        "name": "Tuya IoT Platform (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-towel-warmer.groovy"
     },
     {
       "id": "definition:2b58ac26d224781637e4",
@@ -19355,26 +19455,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyBluWallSwitch-v2.17.8.groovy"
     },
     {
-      "id": "definition:33265783cf1695406a65",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Watchtower Events",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-        "name": "Watchtower"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.2.0/watchtower-app/watchtower-events.groovy"
-    },
-    {
       "id": "definition:332dc333313eeec290e0",
       "identities": [
         {
@@ -20133,6 +20213,26 @@ window.IDENTITY_INDEX = {
         "name": "INTECULAR™ MQTT Connector"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/refs/heads/main/Intecular/Drivers/InvisOutlet%20Aura.groovy"
+    },
+    {
+      "id": "definition:38e60c934a1791871be1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zemismart SDM02T 2-Phase Energy Meter",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/zemismart-sdm02t#readme",
+        "id": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json",
+        "name": "Zemismart SDM02T Energy Meter"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/zemismart-sdm02t.groovy"
     },
     {
       "id": "definition:3901193f5496cf707869",
@@ -26264,7 +26364,7 @@ window.IDENTITY_INDEX = {
         "communityUrl": null,
         "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
         "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
-        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json",
         "name": "Tholz SmartHeat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/tholz-smartheat.groovy"
@@ -29013,6 +29113,26 @@ window.IDENTITY_INDEX = {
         "name": "Composite Device"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/Composite-Device/main/Composite-Device-Driver.groovy"
+    },
+    {
+      "id": "definition:748fc6f133349cf8a8d4",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hikvision Audible Alarm Trigger (ISAPI)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/hikvision-audible-alarm#readme",
+        "id": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json",
+        "name": "Hikvision Audible Alarm Trigger (ISAPI)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/hikvision-audible-alarm.groovy"
     },
     {
       "id": "definition:74cc5470be31b8b9eb38",
@@ -33060,6 +33180,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/drivers/hive_receiver_heating.groovy"
     },
     {
+      "id": "definition:9279c951bf5bb016f0d9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Roomba (Rest980 Standalone)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/roomba-rest980#readme",
+        "id": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json",
+        "name": "Roomba (Rest980)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/roomba-rest980.groovy"
+    },
+    {
       "id": "definition:928c598638385a7644e6",
       "identities": [
         {
@@ -35635,6 +35775,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/PrayerfulDrop/Hubitat/master/drivers/ecolink-custom.groovy"
     },
     {
+      "id": "definition:a422ed63f4cbd2db2e58",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Heiman HS2WD-E Siren",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/heiman-hs2wd-e-siren#readme",
+        "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
+        "name": "Heiman HS2WD-E Siren"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/heiman-hs2wd-e-siren.groovy"
+    },
+    {
       "id": "definition:a44f853a5e2afc156716",
       "identities": [
         {
@@ -35753,6 +35913,26 @@ window.IDENTITY_INDEX = {
         "name": "Sonoff Motion Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-sonoff-motion-sensor-expanded.groovy"
+    },
+    {
+      "id": "definition:a54376d3c7c98c42b013",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Goldshell BYTE Miner (MCB+CGMiner)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
+        "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
+        "name": "Goldshell BYTE Miner"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/goldshell-byte.groovy"
     },
     {
       "id": "definition:a548fc14d2b252e26da5",
@@ -39910,6 +40090,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/robheyes/lifxcode/master/LIFXWhiteMono.groovy"
     },
     {
+      "id": "definition:beea70a0382bc4b49b25",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya IoT Platform (Cloud)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+        "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+        "name": "Tuya IoT Platform (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-iot-cloud.groovy"
+    },
+    {
       "id": "definition:beecabb7e776029ece5d",
       "identities": [
         {
@@ -39928,6 +40128,26 @@ window.IDENTITY_INDEX = {
         "name": "TankUtility"
       },
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/tankUtility/master/device/tankutility.groovy"
+    },
+    {
+      "id": "definition:bef53d74564a36222e21",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Generic Component Air Purifier (Tuya)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+        "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+        "name": "Tuya IoT Platform (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-air-purifier.groovy"
     },
     {
       "id": "definition:bf0f39f42588df62dc0d",
@@ -40323,6 +40543,26 @@ window.IDENTITY_INDEX = {
         "name": "Tholz - SmartPool"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_tholz/refs/heads/main/hubitat_Tholz_SmartPool.groovy"
+    },
+    {
+      "id": "definition:c19195f97b76eb8d7995",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Remotec ZXT-120 (rng)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on Bryan Copeland)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/remotec-zxt-120#readme",
+        "id": "hpm:10716275-8ee7-4916-b9dd-db9653d5d5a1",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json",
+        "name": "Remotec ZXT-120 IR Extender"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/remotec-zxt-120.groovy"
     },
     {
       "id": "definition:c1adef19172aac0d54a5",
@@ -43115,6 +43355,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/drivers/pat02/pat02.groovy"
     },
     {
+      "id": "definition:d1b4c93ff1eac1b38d15",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "FoxESS Cloud OpenAPI",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
+        "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
+        "name": "FoxESS Cloud OpenAPI"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/foxess-cloud.groovy"
+    },
+    {
       "id": "definition:d1cebe830c2b5c24998d",
       "identities": [
         {
@@ -44138,6 +44398,26 @@ window.IDENTITY_INDEX = {
         "name": "Generic Dimmer (with Presence)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-generic-dimmer-expanded.groovy"
+    },
+    {
+      "id": "definition:d876bc5dc2b22660cb86",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-tank-level-local#readme",
+        "id": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json",
+        "name": "Tuya Tank Level Monitor (Wi-Fi) Local"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/tuya-tank-level-local.groovy"
     },
     {
       "id": "definition:d8de01de97623237832a",
@@ -45685,6 +45965,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/device/advanced-hue-bridge.groovy"
     },
     {
+      "id": "definition:e38fc40c0493dc8998a5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Component Tank Level Monitor (Wi-Fi)",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-iot-cloud#readme",
+        "id": "hpm:1db3f6cb-1721-4c66-88aa-0efbc126e5be",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json",
+        "name": "Tuya IoT Platform (Cloud)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/tuya-component-tank-level.groovy"
+    },
+    {
       "id": "definition:e392ac16e5a8ac70301b",
       "identities": [
         {
@@ -46053,6 +46353,26 @@ window.IDENTITY_INDEX = {
         "name": "Elgato Integrations"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ktriponis/hubitat-elgato/main/drivers/Elgato-Key-Light.groovy"
+    },
+    {
+      "id": "definition:e5b17865968dab3d8689",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Aeon Smart Dimmer 2nd Edition",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on SmartThings)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-smart-dimmer-2nd#readme",
+        "id": "hpm:b2df0e78-90cd-4595-ac2c-55e3d7408697",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json",
+        "name": "Aeon Smart Dimmer 2nd Edition"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/aeon-smart-dimmer-2nd.groovy"
     },
     {
       "id": "definition:e5e184dba1a5f9558f97",
@@ -48895,6 +49215,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dkilgore90/lifx-hubitat/main/lifx-mz.groovy"
     },
     {
+      "id": "definition:f9c85de20da3631d3481",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Aeon Multisensor Gen5",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia (based on keltymd)",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-multisensor-gen5#readme",
+        "id": "hpm:625fbf28-8a56-4fb6-9d7f-4ef0cc32a795",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json",
+        "name": "Aeon Multisensor Gen5"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/aeon-multisensor-gen5.groovy"
+    },
+    {
       "id": "definition:f9d1d25e0c3ec4fbdc28",
       "identities": [
         {
@@ -49633,5 +49973,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-22T05:05:54Z"
+  "snapshotGenerated": "2026-10-23T05:06:22Z"
 };

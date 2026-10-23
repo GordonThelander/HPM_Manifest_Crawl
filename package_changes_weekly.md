@@ -1,9 +1,30 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-22T05:05:54Z`.
+Latest observation: `2026-10-23T05:06:22Z`.
 
-**68 package change(s):** added 20, declared definitions changed 7, removed 3, restored 2, source location changed 4, updated 40
+**79 package change(s):** added 30, declared definitions changed 3, manifest changed 1, removed 3, source location changed 7, updated 45
 
+- [Zemismart SDM02T Energy Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json)
+- [Watchtower: updated, changed source location.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
+- [Tuya Tank Level Monitor (Wi-Fi) Local: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json)
+- [Tuya IoT Platform (Cloud): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json)
+- [Tholz SmartHeat: changed manifest location, changed source location.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json)
+- [Roomba (Rest980): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Remotec ZXT-120 IR Extender: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json)
+- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Hikvision Audible Alarm Trigger (ISAPI): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json)
+- [Heiman HS2WD-E Siren: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
+- [Goldshell BYTE Miner: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json)
+- [FusionSolar OpenAPI: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json)
+- [FoxESS Cloud OpenAPI: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json)
+- [Aqara H2 EU Wall Switch (WS-K08E): updated.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json)
+- [Aqara H2 EU Wall Outlet (Local Zigbee): updated.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/packageManifest.json)
+- [Apple TV Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
+- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
+- [Aeon Smart Dimmer 2nd Edition: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json)
+- [Aeon Multisensor Gen5: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json)
 - [Tholz SmartHeat: updated, changed source location.](https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json)
 - [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
 - [Shelly Plug US Gen4 (Zigbee): added.](https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/packageManifest.json)
@@ -62,15 +83,5 @@ Latest observation: `2026-10-22T05:05:54Z`.
 - [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
 - [Honeywell Home Integration Lyric and T Series Devices (cloud): updated.](https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json)
 - [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Zooz Sprinkler Scheduler: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-zooz-sprinkler.json)
-- [Third Reality Custom Drivers: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_custom_drivers_packaging/packageManifest.json)
-- [Samsung TV Remote (hubitrep): added.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
-- [Orbit Bhyve+: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Life360+: changed declared definitions, was restored.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
-- [HD+ Tile: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-tile/packageManifest.json)
-- [Govee Pool Thermostat: changed declared definitions, was restored.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/govee/packageManifest.json)
-- [Google Photos Cloud: changed declared definitions.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-photos-cloud/packageManifest.json)
-- [Android TV Remote: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-22T05:05:54Z`
+- Snapshot: `2026-10-23T05:06:22Z`
 - HPM repositories in master list: **224**
 - Repositories fetched successfully: **223**
-- Packages indexed: **938**
+- Packages indexed: **950**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **840**
+Total packages not matched by any registry entry: **852**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -372,7 +372,19 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Rene Boer | Qubino DIN Dimmer Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/dinDimManifest.json |
 | Rene Boer | Qubino Smart Plug 16A Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/smartPlugManifest.json |
 | Rene Boer | Remotec / ZVIDAR Z-Wave Thermostat Radiator Valve Driver | Integrations | Climate Control, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/ZVIDAR/packageManifest.json |
-| Ricardo Nogueira Garcia | Tholz SmartHeat | Integrations | Water Heater, Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json |
+| Ricardo Nogueira Garcia | Aeon Multisensor Gen5 | Integrations | Z-Wave, Sensors | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json |
+| Ricardo Nogueira Garcia | Aeon Smart Dimmer 2nd Edition | Integrations | Z-Wave, Lighting, Energy Monitoring | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json |
+| Ricardo Nogueira Garcia | FoxESS Cloud OpenAPI | Integrations | Energy Monitoring, Solar, Cloud | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json |
+| Ricardo Nogueira Garcia | FusionSolar OpenAPI | Integrations | Energy Monitoring, Solar, Cloud | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json |
+| Ricardo Nogueira Garcia | Goldshell BYTE Miner | Integrations | Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json |
+| Ricardo Nogueira Garcia | Heiman HS2WD-E Siren | Integrations | Zigbee, Security | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json |
+| Ricardo Nogueira Garcia | Hikvision Audible Alarm Trigger (ISAPI) | Integrations | Security, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json |
+| Ricardo Nogueira Garcia | Remotec ZXT-120 IR Extender | Integrations | Z-Wave, Climate Control | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json |
+| Ricardo Nogueira Garcia | Roomba (Rest980) | Integrations | LAN, Appliances | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json |
+| Ricardo Nogueira Garcia | Tholz SmartHeat | Integrations | Water Heater, Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json |
+| Ricardo Nogueira Garcia | Tuya IoT Platform (Cloud) | Integrations | Cloud, Tools & Utilities | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json |
+| Ricardo Nogueira Garcia | Tuya Tank Level Monitor (Wi-Fi) Local | Integrations | Water, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json |
+| Ricardo Nogueira Garcia | Zemismart SDM02T Energy Meter | Integrations | Energy Monitoring, Zigbee | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json |
 | Rob Heyes | LIFX Master app and drivers | Integrations | Lights & Switches, LAN | https://raw.githubusercontent.com/robheyes/lifxcode/master/packageManifest.json |
 | Rory Jaffe | XBee3 | Integrations | Repeaters & Extenders, Zigbee | https://raw.githubusercontent.com/rsjaffe/Hubitat/master/Xbee3/packageManifest.json |
 | Russ Vrolyk | Sleep Number Controller | Integrations |  | https://raw.githubusercontent.com/rvrolyk/SleepNumberController/master/packageManifest.json |
@@ -602,8 +614,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 840 |
-| G candidate subset | 366 |
+| G. Unrepresented packages | 852 |
+| G candidate subset | 378 |
 
 ## H. Enrichment summary
 
@@ -613,13 +625,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2310 |
-| Source URLs fetched | 2300 |
+| Distinct source URLs | 2327 |
+| Source URLs fetched | 2317 |
 | Source URLs failed | 10 |
-| Components attempted | 2324 |
-| Components fetched | 2314 |
-| Literal definitions verified | 2303 |
-| Components with observations | 2188 |
+| Components attempted | 2341 |
+| Components fetched | 2331 |
+| Literal definitions verified | 2320 |
+| Components with observations | 2205 |
 
 ### Official Hubitat documentation pass
 
