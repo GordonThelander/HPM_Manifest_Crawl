@@ -8439,6 +8439,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:0022946aa602eec49b4f",
           "packageName": "Pentair IntelliCenter Controller",
           "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:785780c5ea462e3a996dd5cf",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a826e314a552dd7b5a6dad51",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
         }
       ],
       "appCount": 7,
@@ -8465,7 +8493,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 18,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 49,
+      "observedActivityCount": 51,
       "packages": [
         {
           "appCount": 1,
@@ -8476,9 +8504,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:2a4da40794b26e8789b7",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
           "name": "Apple TV Integration",
-          "publisherDate": "2026-10-22",
+          "publisherDate": "2026-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.2.0"
+          "version": "1.2.1"
         },
         {
           "appCount": 1,
@@ -8580,9 +8608,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:c57015f573a94b304002",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json",
           "name": "Sofabaton Integration",
-          "publisherDate": "2026-10-20",
+          "publisherDate": "2026-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.1.3"
+          "version": "1.1.4"
         }
       ]
     },
@@ -9980,6 +10008,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
           "packageName": "Hub Inspector",
           "summary": "Hub Inspector: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4a179041d5b3711788b96bc9",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
+          "packageName": "Android TV Remote",
+          "summary": "Android TV Remote: updated."
         }
       ],
       "appCount": 3,
@@ -10002,7 +10044,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 14,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
-      "observedActivityCount": 22,
+      "observedActivityCount": 23,
       "packages": [
         {
           "appCount": 1,
@@ -10013,9 +10055,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json",
           "name": "Android TV Remote",
-          "publisherDate": "2026-10-22",
+          "publisherDate": "2026-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "0.1.17"
+          "version": "0.1.18"
         },
         {
           "appCount": 0,
@@ -10349,6 +10391,48 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
           "packageName": "Roomba (Rest980)",
           "summary": "Roomba (Rest980): added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:34fbffc64fb7415b80753bdb",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+          "packageName": "FoxESS Cloud OpenAPI",
+          "summary": "FoxESS Cloud OpenAPI: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3a16965518d46867c7894206",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+          "packageName": "Goldshell BYTE Miner",
+          "summary": "Goldshell BYTE Miner: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cd881a9c5a8c47e1d8ad6d8e",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+          "packageName": "FusionSolar OpenAPI",
+          "summary": "FusionSolar OpenAPI: updated."
         }
       ],
       "appCount": 0,
@@ -10363,12 +10447,12 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 9,
       "id": "contributor:94fb509243bfb3186ae7",
       "name": "Ricardo Nogueira Garcia",
-      "observedActivityCount": 8,
+      "observedActivityCount": 11,
       "packages": [
         {
           "appCount": 0,
           "category": "Integrations",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/release-foxess-cloud-openapi-foxess-and-weg-inverters/166997",
           "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
           "driverCount": 1,
           "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
@@ -10381,7 +10465,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 0,
           "category": "Integrations",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/release-huawei-inverter-for-he-fusion-solar-openapi/158304",
           "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
           "driverCount": 1,
           "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
@@ -10394,7 +10478,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 0,
           "category": "Integrations",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/release-goldshell-byte-miner-local/166998",
           "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
           "driverCount": 2,
           "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
@@ -15336,6 +15420,82 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fa545ea8279815485861530b",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: added."
+        }
+      ],
+      "appCount": 1,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 1
+        },
+        {
+          "name": "Uncategorised",
+          "packageCount": 2
+        }
+      ],
+      "currentPackageCount": 3,
+      "currentRank": 73,
+      "driverCount": 2,
+      "id": "contributor:34f08322d454ddb6c2eb",
+      "name": "Chris Ogden",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Uncategorised",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "manifest:85fe16067661b343a851",
+          "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json",
+          "name": "DMS Monitor (Dead Man's Snitch)",
+          "publisherDate": null,
+          "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Uncategorised",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "manifest:12830ce1364c3298546e",
+          "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json",
+          "name": "DNS Made Easy Updater",
+          "publisherDate": null,
+          "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
+          "driverCount": 0,
+          "id": "manifest:38e3d4685eb4cf17e6c0",
+          "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
+          "name": "SignalBricks Telemetry",
+          "publisherDate": "2026-10-23",
+          "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
           "category": "Convenience",
           "changeTypes": [
             "DECLARED_DEFINITIONS_CHANGED",
@@ -15423,6 +15583,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:75e88544-33e9-467b-9064-9954b2646ef3",
           "packageName": "Honeywell Thermo Parent",
           "summary": "Honeywell Thermo Parent: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:311b0525b2bc72cc3a1e8748",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:75e88544-33e9-467b-9064-9954b2646ef3",
+          "packageName": "Honeywell Thermo Parent",
+          "summary": "Honeywell Thermo Parent: updated."
         }
       ],
       "appCount": 1,
@@ -15437,11 +15611,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 73,
+      "currentRank": 74,
       "driverCount": 4,
       "id": "contributor:3172af7815418f7a47a9",
       "name": "CSteele",
-      "observedActivityCount": 6,
+      "observedActivityCount": 7,
       "packages": [
         {
           "appCount": 0,
@@ -15478,9 +15652,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:75e88544-33e9-467b-9064-9954b2646ef3",
           "manifestUrl": "https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json",
           "name": "Honeywell Thermo Parent",
-          "publisherDate": "2026-10-20",
+          "publisherDate": "2026-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/repo.json",
-          "version": "2.0.19"
+          "version": "2.0.21"
         }
       ]
     },
@@ -15498,7 +15672,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 74,
+      "currentRank": 75,
       "driverCount": 2,
       "id": "contributor:7eaa23ee69b0bbfe4bfd",
       "name": "Dale Coghlan",
@@ -15588,7 +15762,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 75,
+      "currentRank": 76,
       "driverCount": 25,
       "id": "contributor:611aae72a99d4d1b12ed",
       "name": "David Gutheinz",
@@ -15674,7 +15848,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 76,
+      "currentRank": 77,
       "driverCount": 5,
       "id": "contributor:5915c6fdaa7f64cc648f",
       "name": "David Manuel",
@@ -15779,7 +15953,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 77,
+      "currentRank": 78,
       "driverCount": 3,
       "id": "contributor:76f08fecfe8559caf77b",
       "name": "Eduardo Simioni",
@@ -15836,7 +16010,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 78,
+      "currentRank": 79,
       "driverCount": 29,
       "id": "contributor:95ddb4398df47ba60e65",
       "name": "Eric Maycock",
@@ -15912,7 +16086,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 79,
+      "currentRank": 80,
       "driverCount": 2,
       "id": "contributor:88882392d6898bc22a6d",
       "name": "Hugo Haas",
@@ -16054,7 +16228,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 80,
+      "currentRank": 81,
       "driverCount": 6,
       "id": "contributor:cfc84bc507432c7b472f",
       "name": "Jamie Curnow",
@@ -16140,7 +16314,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 81,
+      "currentRank": 82,
       "driverCount": 3,
       "id": "contributor:cab465e8481008331040",
       "name": "Jeff Lupien",
@@ -16240,7 +16414,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 82,
+      "currentRank": 83,
       "driverCount": 4,
       "id": "contributor:9311c76fc09a45386899",
       "name": "ke7lvb",
@@ -16301,7 +16475,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 83,
+      "currentRank": 84,
       "driverCount": 9,
       "id": "contributor:bbb6c748da75b7a64027",
       "name": "lnjustin",
@@ -16366,7 +16540,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 84,
+      "currentRank": 85,
       "driverCount": 4,
       "id": "contributor:a188cfb1e97ae0f2a405",
       "name": "Maxime Boissonneault",
@@ -16427,7 +16601,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 85,
+      "currentRank": 86,
       "driverCount": 5,
       "id": "contributor:afc5281b69164b2c8703",
       "name": "mbarone",
@@ -16488,7 +16662,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 86,
+      "currentRank": 87,
       "driverCount": 2,
       "id": "contributor:604f2d17b722196e6463",
       "name": "napalmcsr",
@@ -16545,7 +16719,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 87,
+      "currentRank": 88,
       "driverCount": 3,
       "id": "contributor:9200a92024c29bccc586",
       "name": "rboer",
@@ -16617,7 +16791,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 88,
+      "currentRank": 89,
       "driverCount": 10,
       "id": "contributor:b2d6fbf7040ea5ad041c",
       "name": "rbyrbt",
@@ -16674,7 +16848,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 89,
+      "currentRank": 90,
       "driverCount": 5,
       "id": "contributor:53a53f00b449aaf2d22d",
       "name": "Rob Alfonso",
@@ -16731,7 +16905,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 90,
+      "currentRank": 91,
       "driverCount": 82,
       "id": "contributor:b1b4211137432b0ceaab",
       "name": "Snell",
@@ -16807,7 +16981,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 91,
+      "currentRank": 92,
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
@@ -16864,7 +17038,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 92,
+      "currentRank": 93,
       "driverCount": 22,
       "id": "contributor:d4595ee7d9bca0d6c072",
       "name": "winnie",
@@ -16921,7 +17095,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 93,
+      "currentRank": 94,
       "driverCount": 2,
       "id": "contributor:77a1b275b7acf1be10cc",
       "name": "Adrian Caramaliu",
@@ -16965,7 +17139,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:75749fcdad8887b09066",
       "name": "Alex Jones",
@@ -17013,7 +17187,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 95,
+      "currentRank": 96,
       "driverCount": 2,
       "id": "contributor:68ce3e1b8f8813127398",
       "name": "Arn Burkhoff",
@@ -17057,7 +17231,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 97,
       "driverCount": 8,
       "id": "contributor:775bf2ab0bf177bbaffc",
       "name": "Ben Deitch",
@@ -17101,7 +17275,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 98,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -17216,7 +17390,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 99,
       "driverCount": 3,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
@@ -17247,50 +17421,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-10-10",
           "repositoryUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/repository.json",
           "version": "0.4.0"
-        }
-      ]
-    },
-    {
-      "activity": [],
-      "appCount": 0,
-      "categories": [
-        {
-          "name": "Uncategorised",
-          "packageCount": 2
-        }
-      ],
-      "currentPackageCount": 2,
-      "currentRank": 99,
-      "driverCount": 2,
-      "id": "contributor:34f08322d454ddb6c2eb",
-      "name": "Chris Ogden",
-      "observedActivityCount": 0,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Uncategorised",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:85fe16067661b343a851",
-          "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json",
-          "name": "DMS Monitor (Dead Man's Snitch)",
-          "publisherDate": null,
-          "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Uncategorised",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:12830ce1364c3298546e",
-          "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json",
-          "name": "DNS Made Easy Updater",
-          "publisherDate": null,
-          "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.0.0"
         }
       ]
     },
@@ -20922,6 +21052,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:8ba1b8bf77dda34dc96e",
           "packageName": "Hestia Dashboard",
           "summary": "Hestia Dashboard: updated."
+        },
+        {
+          "category": "Uncategorised",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:129998bd4254dc5cfecee1f7",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:8ba1b8bf77dda34dc96e",
+          "packageName": "Hestia Dashboard",
+          "summary": "Hestia Dashboard: updated."
         }
       ],
       "appCount": 1,
@@ -20936,7 +21080,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
-      "observedActivityCount": 13,
+      "observedActivityCount": 14,
       "packages": [
         {
           "appCount": 1,
@@ -20947,9 +21091,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:8ba1b8bf77dda34dc96e",
           "manifestUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json",
           "name": "Hestia Dashboard",
-          "publisherDate": "2026-10-14",
+          "publisherDate": "2026-10-23",
           "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-          "version": "2.2.1"
+          "version": "2.2.2"
         }
       ]
     },
@@ -23603,6 +23747,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
           "packageName": "Tholz SmartHeat",
           "summary": "Tholz SmartHeat: changed manifest location, changed source location."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8cce4ae080cca6440e55f439",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
+          "packageName": "Tholz SmartHeat",
+          "summary": "Tholz SmartHeat: updated."
         }
       ],
       "appCount": 0,
@@ -23617,12 +23775,12 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:d27989952c94368a22e2",
       "name": "Ricardo Nogueira Garcia (based on VH/TRATO)",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 0,
           "category": "Integrations",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/release-tholz-smartheat-solar-boiler-driver-for-he/158085",
           "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
           "driverCount": 1,
           "id": "hpm:609d9770-0a90-4d97-a013-10aa07e7eb68",
@@ -25312,13 +25470,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 265,
-  "currentPackageCount": 950,
+  "currentPackageCount": 951,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 532,
-    "eventCount": 529,
+    "attributedEventCount": 542,
+    "eventCount": 539,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-23T05:06:22Z"
+    "lastObservedAt": "2026-10-24T04:49:57Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -25330,9 +25488,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 269,
-  "rankedPackageCount": 948,
+  "rankedPackageCount": 949,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-23T05:06:22Z",
+  "snapshotGenerated": "2026-10-24T04:49:57Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

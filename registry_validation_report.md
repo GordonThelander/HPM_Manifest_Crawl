@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-23T05:06:22Z`
+- Snapshot: `2026-10-24T04:49:57Z`
 - HPM repositories in master list: **224**
 - Repositories fetched successfully: **223**
-- Packages indexed: **950**
+- Packages indexed: **951**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **852**
+Total packages not matched by any registry entry: **853**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -565,6 +565,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | ritchierich | Plivo SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Plivo%20SMS/packageManifest.json |
 | ritchierich | Textbelt SMS Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/refs/heads/master/Drivers/Textbelt%20SMS/packageManifest.json |
 | ritchierich | Twilio SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Twilio%20SMS/packageManifest.json |
+| spinrag | SignalBricks Telemetry | Integrations | Cloud, Locks, Doors & Windows, Temperature & Humidity, Monitoring | https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json |
 | storageaanarchy (SANdood) | MeteoBridge Weather Station | Integrations |  | https://raw.githubusercontent.com/SANdood/MeteoWeather/master/packageManifest.json |
 | storageaanarchy (SANdood) | PurpleAir Air Quality Station | Integrations |  | https://raw.githubusercontent.com/SANdood/PurpleAirStation/master/packageManifest.json |
 | tinkorswim | Neptune Apex Bridge (A3 Series) | Integrations | Pets & Animals | https://raw.githubusercontent.com/tinkorswim/hubitat-neptuneapex/main/hpmManifest.json |
@@ -614,8 +615,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 852 |
-| G candidate subset | 378 |
+| G. Unrepresented packages | 853 |
+| G candidate subset | 379 |
 
 ## H. Enrichment summary
 
@@ -625,13 +626,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2327 |
-| Source URLs fetched | 2317 |
+| Distinct source URLs | 2328 |
+| Source URLs fetched | 2318 |
 | Source URLs failed | 10 |
-| Components attempted | 2341 |
-| Components fetched | 2331 |
-| Literal definitions verified | 2320 |
-| Components with observations | 2205 |
+| Components attempted | 2342 |
+| Components fetched | 2332 |
+| Literal definitions verified | 2321 |
+| Components with observations | 2206 |
 
 ### Official Hubitat documentation pass
 

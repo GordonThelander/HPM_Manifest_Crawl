@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 950,
+    "HPM_PACKAGE": 951,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2655,
+  "recordCount": 2656,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22307,7 +22307,7 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-22",
+      "dateReleased": "2026-10-23",
       "definitions": [
         {
           "id": "definition:e7ceeb043356b42c011f",
@@ -22395,7 +22395,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "0.1.17"
+      "version": "0.1.18"
     },
     {
       "author": "Joe Page",
@@ -22835,7 +22835,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-22",
+      "dateReleased": "2026-10-23",
       "definitions": [
         {
           "id": "definition:84581719b8105341f9b3",
@@ -22930,7 +22930,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "Krassimir Kossev",
@@ -37371,7 +37371,7 @@
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -37401,7 +37401,7 @@
         "DRIVER"
       ],
       "links": {
-        "community": null,
+        "community": "https://community.hubitat.com/t/release-foxess-cloud-openapi-foxess-and-weg-inverters/166997",
         "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
         "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
         "repository": "https://github.com/rngarcia/hubitat"
@@ -37811,7 +37811,7 @@
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -37841,7 +37841,7 @@
         "DRIVER"
       ],
       "links": {
-        "community": null,
+        "community": "https://community.hubitat.com/t/release-huawei-inverter-for-he-fusion-solar-openapi/158304",
         "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
         "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
         "repository": "https://github.com/rngarcia/hubitat"
@@ -40713,7 +40713,7 @@
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -40743,7 +40743,7 @@
         "DRIVER"
       ],
       "links": {
-        "community": null,
+        "community": "https://community.hubitat.com/t/release-goldshell-byte-miner-local/166998",
         "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
         "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
         "repository": "https://github.com/rngarcia/hubitat"
@@ -43979,7 +43979,7 @@
       "author": "Haven",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-14",
+      "dateReleased": "2026-10-23",
       "definitions": [
         {
           "id": "definition:f21e9df84b41fbbe0af0",
@@ -44062,7 +44062,7 @@
         "Security",
         "Utility"
       ],
-      "version": "2.2.1"
+      "version": "2.2.2"
     },
     {
       "author": "null",
@@ -46513,7 +46513,7 @@
       "author": "CSteele",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-23",
       "definitions": [
         {
           "id": "definition:68f8db3828345dace189",
@@ -46600,7 +46600,7 @@
         "Cloud",
         "Temperature & Humidity"
       ],
-      "version": "2.0.19"
+      "version": "2.0.21"
     },
     {
       "author": "Larry Kahn",
@@ -85040,6 +85040,92 @@
       "version": null
     },
     {
+      "author": "Chris Ogden",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-23",
+      "definitions": [
+        {
+          "id": "definition:ec844bf06d43a411ed84",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "SignalBricks Telemetry",
+          "namespace": "spinrag",
+          "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
+        }
+      ],
+      "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks. Never sends device commands or lock PINs.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:38e3d4685eb4cf17e6c0",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
+        "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
+        "repository": "https://github.com/spinrag/hubitat"
+      },
+      "name": "SignalBricks Telemetry",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Doors & Windows",
+        "Locks",
+        "Monitoring",
+        "Temperature & Humidity"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -87951,7 +88037,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-23",
       "definitions": [
         {
           "id": "definition:64472c13a4527d781dee",
@@ -88056,7 +88142,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.3"
+      "version": "1.1.4"
     },
     {
       "author": "Derek Osborn",
@@ -94606,7 +94692,7 @@
         "checks": [
           {
             "name": "communityLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "definitionIdentity",
@@ -94636,7 +94722,7 @@
         "DRIVER"
       ],
       "links": {
-        "community": null,
+        "community": "https://community.hubitat.com/t/release-tholz-smartheat-solar-boiler-driver-for-he/158085",
         "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tholz-smartheat#readme",
         "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json",
         "repository": "https://github.com/rngarcia/hubitat"
@@ -135863,5 +135949,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-23T05:06:22Z"
+  "snapshotGenerated": "2026-10-24T04:49:57Z"
 }
