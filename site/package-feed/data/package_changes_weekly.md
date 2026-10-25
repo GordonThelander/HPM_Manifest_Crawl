@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-24T04:49:57Z`.
+Latest observation: `2026-10-25T04:58:59Z`.
 
-**83 package change(s):** added 31, declared definitions changed 3, manifest changed 1, removed 3, source location changed 7, updated 48
+**81 package change(s):** added 27, declared definitions changed 3, manifest changed 1, removed 3, source location changed 7, updated 50
 
+- [webCoRE: updated.](https://raw.githubusercontent.com/imnotbob/webCoRE/hubitat-patches/HE/packageManager.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [Hestia Dashboard: updated.](https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/packageManifest.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
+- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
+- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Tholz SmartHeat: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json)
 - [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
 - [SignalBricks Telemetry: added.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
@@ -77,15 +85,5 @@ Latest observation: `2026-10-24T04:49:57Z`.
 - [MyFuelPortal Propane Integration: added.](https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
-- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
-- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
-- [Sinopé Drivers: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
-- [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Log Monitor: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
-- [IKEA Window Blinds: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/packageManifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Aqara Drivers: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
-- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
