@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-26T05:02:21Z`
+- Snapshot: `2026-10-27T05:19:10Z`
 - HPM repositories in master list: **224**
 - Repositories fetched successfully: **223**
-- Packages indexed: **951**
+- Packages indexed: **953**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **853**
+Total packages not matched by any registry entry: **855**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -565,6 +565,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | ritchierich | Plivo SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Plivo%20SMS/packageManifest.json |
 | ritchierich | Textbelt SMS Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/refs/heads/master/Drivers/Textbelt%20SMS/packageManifest.json |
 | ritchierich | Twilio SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Twilio%20SMS/packageManifest.json |
+| spinrag | SignalBricks Integration | Integrations | Locks, Cloud | https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json |
 | spinrag | SignalBricks Telemetry | Integrations | Cloud, Locks, Doors & Windows, Temperature & Humidity, Monitoring | https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json |
 | storageaanarchy (SANdood) | MeteoBridge Weather Station | Integrations |  | https://raw.githubusercontent.com/SANdood/MeteoWeather/master/packageManifest.json |
 | storageaanarchy (SANdood) | PurpleAir Air Quality Station | Integrations |  | https://raw.githubusercontent.com/SANdood/PurpleAirStation/master/packageManifest.json |
@@ -615,8 +616,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 853 |
-| G candidate subset | 379 |
+| G. Unrepresented packages | 855 |
+| G candidate subset | 380 |
 
 ## H. Enrichment summary
 
@@ -626,13 +627,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2329 |
-| Source URLs fetched | 2319 |
+| Distinct source URLs | 2331 |
+| Source URLs fetched | 2321 |
 | Source URLs failed | 10 |
-| Components attempted | 2343 |
-| Components fetched | 2333 |
-| Literal definitions verified | 2322 |
-| Components with observations | 2207 |
+| Components attempted | 2345 |
+| Components fetched | 2335 |
+| Literal definitions verified | 2324 |
+| Components with observations | 2209 |
 
 ### Official Hubitat documentation pass
 

@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 951,
+  "packageCount": 953,
   "packages": [
     {
       "apps": [],
@@ -97463,12 +97463,12 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/coming-soon-hub-information-driver-v3/109902",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-26",
       "description": "Rewrite of the original Hub Information Driver.  Driver includes 40+ attributes related to the operation and general fitness of the hub.",
       "documentationLink": "https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html",
       "drivers": [
         {
-          "definitionLine": 119,
+          "definitionLine": 120,
           "definitionName": "Hub Information Driver v3",
           "definitionNamespace": "thebearmay",
           "manifestName": "Hub Information Driver v3",
@@ -97486,7 +97486,7 @@
             },
             {
               "evidence": "importUrl:\"https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy\"",
-              "line": 123,
+              "line": 124,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -97496,7 +97496,7 @@
             },
             {
               "evidence": "input(\"quickref\",\"hidden\", title:\"$ttStyleStr<a href='https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html' target='_blank'>Quick Reference v${version()}</a>\")",
-              "line": 257,
+              "line": 258,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "htmlpreview.github.io",
@@ -97506,7 +97506,7 @@
             },
             {
               "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
-              "line": 291,
+              "line": 292,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -97516,67 +97516,67 @@
             },
             {
               "evidence": "runIn(30,\"initMemory\")",
-              "line": 299,
+              "line": 300,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30,\"updateCheck\")",
-              "line": 301,
+              "line": 302,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5,\"updated\")",
-              "line": 305,
+              "line": 306,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(120,\"baseData\")",
-              "line": 307,
+              "line": 308,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 326,
+              "line": 327,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate1*60, \"poll1\")",
-              "line": 363,
+              "line": 364,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate2*60, \"poll2\")",
-              "line": 365,
+              "line": 366,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate3*60, \"poll3\")",
-              "line": 367,
+              "line": 368,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate4*60*60, \"poll4\")",
-              "line": 369,
+              "line": 370,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800,\"logsOff\")",
-              "line": 371,
+              "line": 372,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\")))",
-              "line": 376,
+              "line": 377,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.aws.hubitat.com",
@@ -97586,7 +97586,7 @@
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\")))",
-              "line": 376,
+              "line": 377,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -97596,37 +97596,37 @@
             },
             {
               "evidence": "runIn(pollRate1*60, \"poll1\")",
-              "line": 415,
+              "line": 416,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate2*60, \"poll2\")",
-              "line": 425,
+              "line": 426,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate3*60, \"poll3\")",
-              "line": 435,
+              "line": 436,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(pollRate4*60*60, \"poll4\")",
-              "line": 445,
+              "line": 446,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5,\"updated\")",
-              "line": 451,
+              "line": 452,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 596,
+              "line": 597,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97636,13 +97636,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCpuTemperature\", params)",
-              "line": 603,
+              "line": 604,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 630,
+              "line": 631,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97652,13 +97652,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getFreeMemory\", params)",
-              "line": 637,
+              "line": 638,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 675,
+              "line": 676,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97668,13 +97668,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getJvm\", params)",
-              "line": 682,
+              "line": 683,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 718,
+              "line": 719,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97684,13 +97684,13 @@
             },
             {
               "evidence": "asynchttpGet(\"get15Min\", params)",
-              "line": 725,
+              "line": 726,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 781,
+              "line": 782,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97700,13 +97700,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCpuLoad\", params)",
-              "line": 788,
+              "line": 789,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 823,
+              "line": 824,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97716,13 +97716,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getDbSize\", params)",
-              "line": 831,
+              "line": 832,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://api.ipify.org?format=json\",",
-              "line": 850,
+              "line": 851,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.ipify.org",
@@ -97732,13 +97732,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getPublicIp\", params)",
-              "line": 857,
+              "line": 858,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 879,
+              "line": 880,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97748,13 +97748,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getStateDays\", params)",
-              "line": 887,
+              "line": 888,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 891,
+              "line": 892,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97764,13 +97764,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getEvtDays\", params)",
-              "line": 899,
+              "line": 900,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 938,
+              "line": 939,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97780,13 +97780,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwaveVersion\", param)",
-              "line": 945,
+              "line": 946,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 989,
+              "line": 994,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97796,13 +97796,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 995,
+              "line": 1000,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1004,
+              "line": 1009,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97812,13 +97812,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getNtpServer\", params)",
-              "line": 1012,
+              "line": 1017,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1031,
+              "line": 1036,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97828,13 +97828,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getSubnets\", params)",
-              "line": 1039,
+              "line": 1044,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1058,
+              "line": 1063,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97844,13 +97844,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getHubMesh\", params)",
-              "line": 1066,
+              "line": 1071,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1106,
+              "line": 1111,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97860,13 +97860,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtNetwork\", params)",
-              "line": 1114,
+              "line": 1119,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1120,
+              "line": 1125,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97876,13 +97876,13 @@
             },
             {
               "evidence": "httpGet(params) {resp ->",
-              "line": 1130,
+              "line": 1135,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1194,
+              "line": 1199,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97892,13 +97892,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getSecurity\", params)",
-              "line": 1201,
+              "line": 1206,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "if(resp.headers.Location == 'http://127.0.0.1:8080/login')",
-              "line": 1207,
+              "line": 1212,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97908,7 +97908,7 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1321,
+              "line": 1326,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97918,13 +97918,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getUpdateCheck\", params)",
-              "line": 1325,
+              "line": 1330,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1358,
+              "line": 1363,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97934,13 +97934,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZbHealth\",params)",
-              "line": 1361,
+              "line": 1366,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1364,
+              "line": 1369,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97950,13 +97950,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwHealth\",params)",
-              "line": 1367,
+              "line": 1372,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\"))) {",
-              "line": 1385,
+              "line": 1390,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.aws.hubitat.com",
@@ -97966,7 +97966,7 @@
             },
             {
               "evidence": "if(makerInfo == null || !(makerInfo.contains(\"https://cloud.hubitat.com/\")||makerInfo.contains(\"https://cloud.aws.hubitat.com/\"))) {",
-              "line": 1385,
+              "line": 1390,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -97976,13 +97976,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCloudReturn\", params, [cType:\"$cType\",dId:\"$dId\"])",
-              "line": 1406,
+              "line": 1411,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1429,
+              "line": 1434,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -97992,13 +97992,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtendedZigbee\", params)",
-              "line": 1436,
+              "line": 1441,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1461,
+              "line": 1466,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98008,13 +98008,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getExtendedZwave\", params)",
-              "line": 1468,
+              "line": 1473,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1492,
+              "line": 1497,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98024,13 +98024,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getZwaveJsStat\", params)",
-              "line": 1499,
+              "line": 1504,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1513,
+              "line": 1518,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98040,13 +98040,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCloudCounts\", params)",
-              "line": 1521,
+              "line": 1526,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1553,
+              "line": 1558,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98056,13 +98056,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getMatter\", params)",
-              "line": 1560,
+              "line": 1565,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1583,
+              "line": 1588,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98072,13 +98072,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getAccess\", params)",
-              "line": 1590,
+              "line": 1595,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1607,
+              "line": 1612,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98088,13 +98088,13 @@
             },
             {
               "evidence": "asynchttpGet(\"getCompressStatus\", params)",
-              "line": 1614,
+              "line": 1619,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri : \"http://127.0.0.1:8080\",",
-              "line": 1626,
+              "line": 1631,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98104,19 +98104,19 @@
             },
             {
               "evidence": "asynchttpGet(\"getThreadInfo\", params)",
-              "line": 1634,
+              "line": 1639,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1691,
+              "line": 1696,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri = \"http://127.0.0.1:8080/local/${fName}\";",
-              "line": 1734,
+              "line": 1739,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98126,19 +98126,9 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1741,
+              "line": 1746,
               "type": "HTTP_CALL",
               "value": "httpGet"
-            },
-            {
-              "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
-              "line": 1767,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res"
-              }
             },
             {
               "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
@@ -98151,8 +98141,18 @@
               }
             },
             {
+              "evidence": "xferFile(\"https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res\",\"hubInfoTemplate.res\")",
+              "line": 1777,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/hubInfoTemplate.res"
+              }
+            },
+            {
               "evidence": "updateAttr(\"html\",\"<a href='http://${location.hub.localIP}:8080/local/$htmlFileOutput'>Link to attribute data</a>\")",
-              "line": 1817,
+              "line": 1822,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -98162,7 +98162,7 @@
             },
             {
               "evidence": "updateAttr(\"URL\",\"http://${location.hub.localIP}:8080/local/$htmlFileOutput\")",
-              "line": 1818,
+              "line": 1823,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -98172,13 +98172,13 @@
             },
             {
               "evidence": "runIn(20,\"initialize\")",
-              "line": 1826,
+              "line": 1831,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri = \"http://127.0.0.1:8080/local/${fName}\"",
-              "line": 1843,
+              "line": 1848,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98188,13 +98188,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1856,
+              "line": 1861,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "uri: 'http://127.0.0.1:8080',",
-              "line": 1895,
+              "line": 1900,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98204,29 +98204,19 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 1917,
+              "line": 1922,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(",
-              "line": 1936,
+              "line": 1941,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1938,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "127.0.0.1",
-                "scheme": "http",
-                "url": "http://127.0.0.1:8080"
-              }
-            },
-            {
-              "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1958,
+              "line": 1943,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98246,7 +98236,17 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1972,
+              "line": 1968,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080"
+              }
+            },
+            {
+              "evidence": "uri: \"http://127.0.0.1:8080\",",
+              "line": 1977,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98256,13 +98256,13 @@
             },
             {
               "evidence": "httpPost(params) {resp -> }",
-              "line": 1980,
+              "line": 1985,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 1996,
+              "line": 2001,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98272,7 +98272,7 @@
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 2005,
+              "line": 2010,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98282,19 +98282,19 @@
             },
             {
               "evidence": "httpPost(params) {resp -> }",
-              "line": 2014,
+              "line": 2019,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(",
-              "line": 2027,
+              "line": 2032,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 2029,
+              "line": 2034,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98304,14 +98304,14 @@
             },
             {
               "evidence": "asynchttpGet(\"ssdResp\",params)",
-              "line": 2045,
+              "line": 2050,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 81346,
+          "sourceBytes": 81541,
           "sourceFetched": true,
-          "sourceSha256": "11d7a9b5cf649567d88e547017c94ac14ba4caa8fc438e09a2cfa83435a14514",
+          "sourceSha256": "21c6580a0f316d089c86e19262365c6f379d2dd72f464b07634ff8cc0748f166",
           "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy"
         }
       ],
@@ -98328,7 +98328,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.36"
+      "version": "3.1.37"
     },
     {
       "apps": [
@@ -289101,12 +289101,12 @@
       "author": "hubitrep",
       "category": "Utility",
       "communityLink": null,
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor",
       "drivers": [
         {
-          "definitionLine": 27,
+          "definitionLine": 38,
           "definitionName": "Log Monitor Bridge",
           "definitionNamespace": "hubitrep",
           "manifestName": "Log Monitor Bridge",
@@ -289114,7 +289114,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/main/LogMonitor/LogMonitorBridge.groovy\"",
-              "line": 31,
+              "line": 42,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -289124,68 +289124,114 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 74,
+              "line": 94,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (enableDebug || enableTrace) runIn(1800, \"logsOff\")",
-              "line": 76,
+              "line": 96,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "try { interfaces.webSocket.close() } catch (Exception ignored) { }",
+              "line": 125,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
               "evidence": "runIn(location.hub.uptime < STARTUP_DELAY_SECS ? STARTUP_DELAY_SECS : 2, \"connect\")",
-              "line": 107,
+              "line": 134,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"checkSilence\")",
+              "line": 135,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (reinit) runIn(1, \"updated\")",
-              "line": 116,
+              "line": 145,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"connect\")",
-              "line": 125,
+              "line": 154,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.webSocket.connect(",
-              "line": 133,
+              "evidence": "interfaces.webSocket.connect(opts, uri)",
+              "line": 176,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"connect\")",
-              "line": 152,
+              "line": 192,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.close()",
-              "line": 155,
+              "line": 195,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(2, \"connect\")",
-              "line": 167,
+              "line": 207,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"connect\")",
-              "line": 177,
+              "line": 216,
               "type": "SCHEDULING",
               "value": true
+            },
+            {
+              "evidence": "unschedule(\"connectionStable\")",
+              "line": 229,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(STABLE_SECS, \"connectionStable\")",
+              "line": 240,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"connectionStable\")",
+              "line": 245,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 352,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "uri: \"http://${host}\",",
+              "line": 353,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${host",
+                "scheme": "http",
+                "url": "http://${host"
+              }
             }
           ],
-          "sourceBytes": 10038,
+          "sourceBytes": 16912,
           "sourceFetched": true,
-          "sourceSha256": "1d88f21a7b89e2e9ce0d31577f1e151e1713d801c6abf0a63c9b49a2c4c5e7f8",
+          "sourceSha256": "c99dcdceb51a434ef1b7ee88986e19f1a2c141489a5d1f3349560bdea9198ebc",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitorBridge.groovy"
         }
       ],
@@ -289201,7 +289247,7 @@
         "Monitoring",
         "Notifications"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "apps": [
@@ -299392,7 +299438,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -299404,7 +299450,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "5.0.1"
+      "version": "5.0.2"
     },
     {
       "apps": [],
@@ -332387,7 +332433,7 @@
       "author": "Matt Palermo",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-22",
       "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
       "documentationLink": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
       "drivers": [
@@ -332398,9 +332444,9 @@
           "manifestName": "MyFuelPortal Tank",
           "manifestNamespace": "myfuelportal",
           "observations": [],
-          "sourceBytes": 3899,
+          "sourceBytes": 4319,
           "sourceFetched": true,
-          "sourceSha256": "7553848aabc066c44c064ed805ed6d658a7b0f377114d6bad308b2f4a843ce4e",
+          "sourceSha256": "8e0b53c76708ca301d62a583be99291b429bd82989b8860810df64a68dee4562",
           "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
         }
       ],
@@ -332415,7 +332461,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "apps": [
@@ -341965,6 +342011,116 @@
     {
       "apps": [],
       "author": "Chris Ogden",
+      "category": "Networking",
+      "communityLink": null,
+      "dateReleased": null,
+      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only — never creates new records.",
+      "documentationLink": null,
+      "drivers": [
+        {
+          "definitionLine": 5,
+          "definitionName": "Cloudflare DNS Updater",
+          "definitionNamespace": "spinrag",
+          "manifestName": "Cloudflare DNS Updater",
+          "manifestNamespace": "spinrag",
+          "observations": [
+            {
+              "evidence": "unschedule()",
+              "line": 47,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 0/${freq} * * * ?\", updateDNS)",
+              "line": 67,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "uri: \"https://api.cloudflare.com/client/v4/zones/${zoneId}/dns_records\",",
+              "line": 96,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.cloudflare.com",
+                "scheme": "https",
+                "url": "https://api.cloudflare.com/client/v4/zones/${zoneId"
+              }
+            },
+            {
+              "evidence": "httpGet(params) { resp ->",
+              "line": 108,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "? \"https://api6.ipify.org/\"",
+              "line": 163,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api6.ipify.org",
+                "scheme": "https",
+                "url": "https://api6.ipify.org/"
+              }
+            },
+            {
+              "evidence": ": \"https://api.ipify.org/\"",
+              "line": 164,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.ipify.org",
+                "scheme": "https",
+                "url": "https://api.ipify.org/"
+              }
+            },
+            {
+              "evidence": "httpGet(ipSource) { ipResp ->",
+              "line": 169,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "uri: \"https://api.cloudflare.com/client/v4/zones/${zoneId}/dns_records/${state.recordId}\",",
+              "line": 233,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.cloudflare.com",
+                "scheme": "https",
+                "url": "https://api.cloudflare.com/client/v4/zones/${zoneId"
+              }
+            },
+            {
+              "evidence": "httpPut(params) { resp ->",
+              "line": 245,
+              "type": "HTTP_CALL",
+              "value": "httpPut"
+            }
+          ],
+          "sourceBytes": 9427,
+          "sourceFetched": true,
+          "sourceSha256": "3c7bcb6f9259463d0b85ef5d4d75ed67649dd4563df3b8f72ac0e66851e76af0",
+          "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/driver.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
+      "packageId": null,
+      "packageName": "Cloudflare DNS Updater",
+      "repoAuthor": "Chris Ogden / spinrag",
+      "repoName": "spinrag",
+      "repoUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
+      "tags": [
+        "ddns",
+        "dns",
+        "cloudflare",
+        "ip updater",
+        "networking",
+        "spinrag"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "apps": [],
+      "author": "Chris Ogden",
       "category": null,
       "communityLink": null,
       "dateReleased": null,
@@ -342099,7 +342255,271 @@
     {
       "apps": [
         {
-          "definitionLine": 63,
+          "definitionLine": 15,
+          "definitionName": "SignalBricks Integration",
+          "definitionNamespace": "com.signalbricks.hubitat",
+          "manifestName": "SignalBricks Integration",
+          "manifestNamespace": "com.signalbricks.hubitat",
+          "observations": [
+            {
+              "evidence": "String getSbBaseSecureUrl() { 'https://app.signalbricks.com' } // TODO: update to SignalBricks backend URL",
+              "line": 4,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "app.signalbricks.com",
+                "scheme": "https",
+                "url": "https://app.signalbricks.com"
+              }
+            },
+            {
+              "evidence": "String getSbBaseFastUrl() { 'https://api.signalbricks.com' } // TODO: update to SignalBricks backend URL",
+              "line": 5,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.signalbricks.com",
+                "scheme": "https",
+                "url": "https://api.signalbricks.com"
+              }
+            },
+            {
+              "evidence": "oauth: true, // Unused",
+              "line": 21,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
+              "evidence": "\"(e.g. OwnerRez 30, this app 50; a minimum is a lower bound, not a separate range). <a href='https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md' target='_blank'>Documentation</a>\"",
+              "line": 41,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md"
+              }
+            },
+            {
+              "evidence": "input(name: 'locks', type: 'capability.lockCodes', title: 'Locks', submitOnChange: true, multiple: true)",
+              "line": 46,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "lockCodes"
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 136,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.accessToken = createAccessToken()",
+              "line": 141,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 149,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "mappings {",
+              "line": 179,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "state.accessToken = createAccessToken()",
+              "line": 256,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 263,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.accessToken = createAccessToken()",
+              "line": 277,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'lock', lockHandler)",
+              "line": 313,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'unlock', lockHandler)",
+              "line": 314,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'lastCodeName', lastCodeNameHandler)",
+              "line": 315,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'lockCodes', lockCodesHandler)",
+              "line": 316,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'codeChanged', codeChangedHandler)",
+              "line": 317,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'maxCodes', maxCodesHandler)",
+              "line": 318,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(locks, 'codeLength', codeLengthHandler)",
+              "line": 319,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 327,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule('0 0 0 * * ?', 'refreshDoorCodes') // Daily at midnight",
+              "line": 334,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(checkIn, 'reconcileDoorCodes', [overwrite: false])",
+              "line": 357,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(checkOut, 'reconcileDoorCodes', [overwrite: false])",
+              "line": 362,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(60 + (i++ * 90), 'tryRefreshDoorCodes', [overwrite: false, data: [ lockId: lock.id ]])",
+              "line": 379,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(++i * 60, 'tryDeleteCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition ]])",
+              "line": 457,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
+              "line": 487,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
+              "line": 503,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(++i * 180, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 526,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, 'verifySetCode', [ overwrite: false, data: retryData ])",
+              "line": 577,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unsubscribe()/unschedule() here: those operate app-wide and would also tear",
+              "line": 631,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(30, 'trySetCode', [ overwrite: false, data: retryData ])",
+              "line": 706,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 819,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1002,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1030,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1094,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1151,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 48284,
+          "sourceFetched": true,
+          "sourceSha256": "ebc4fd91e5d818df1811ed5336c3a4fd7d09464511e0d73160ed9b9bfbfe058d",
+          "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
+        }
+      ],
+      "author": "Chris Ogden",
+      "category": "Integrations",
+      "communityLink": null,
+      "dateReleased": "2026-10-27",
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
+      "drivers": [],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
+      "packageId": null,
+      "packageName": "SignalBricks Integration",
+      "repoAuthor": "Chris Ogden / spinrag",
+      "repoName": "spinrag",
+      "repoUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
+      "tags": [
+        "Locks",
+        "Cloud"
+      ],
+      "version": "1.3.4"
+    },
+    {
+      "apps": [
+        {
+          "definitionLine": 114,
           "definitionName": "SignalBricks Telemetry",
           "definitionNamespace": "spinrag",
           "manifestName": "SignalBricks Telemetry",
@@ -342107,7 +342527,7 @@
           "observations": [
             {
               "evidence": "@Field static final String SB_PORTAL_URL = 'https://app.signalbricks.co'",
-              "line": 37,
+              "line": 57,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "app.signalbricks.co",
@@ -342117,7 +342537,7 @@
             },
             {
               "evidence": "@Field static final String HUBITAT_STATE_REDIRECT = 'https://cloud.hubitat.com/oauth/stateredirect'",
-              "line": 41,
+              "line": 61,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -342127,7 +342547,7 @@
             },
             {
               "evidence": "@Field static final String DOCS_URL = 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md'",
-              "line": 42,
+              "line": 62,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -342137,13 +342557,13 @@
             },
             {
               "evidence": "oauth: true,",
-              "line": 72,
+              "line": 123,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "documentationLink: 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md',",
-              "line": 75,
+              "line": 126,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -342153,165 +342573,213 @@
             },
             {
               "evidence": "mappings {",
-              "line": 82,
+              "line": 133,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "input(name: 'locks', type: 'capability.lock', title: 'Locks (lock state, battery, last code name)', multiple: true, required: false, submitOnChange: true)",
-              "line": 120,
+              "line": 180,
               "type": "CAPABILITY_REFERENCE",
               "value": "lock"
             },
             {
               "evidence": "input(name: 'contactSensors', type: 'capability.contactSensor', title: 'Contact sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 121,
+              "line": 181,
               "type": "CAPABILITY_REFERENCE",
               "value": "contactSensor"
             },
             {
               "evidence": "input(name: 'temperatureSensors', type: 'capability.temperatureMeasurement', title: 'Temperature sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 122,
+              "line": 182,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input(name: 'humiditySensors', type: 'capability.relativeHumidityMeasurement', title: 'Humidity sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 123,
+              "line": 183,
               "type": "CAPABILITY_REFERENCE",
               "value": "relativeHumidityMeasurement"
             },
             {
               "evidence": "input(name: 'codeLocks', type: 'capability.lockCodes', title: 'Locks SignalBricks may manage codes on', multiple: true, required: false, submitOnChange: true)",
-              "line": 160,
+              "line": 226,
               "type": "CAPABILITY_REFERENCE",
               "value": "lockCodes"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 214,
+              "line": 298,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 219,
+              "line": 303,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 229,
+              "line": 319,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 234,
+              "line": 324,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, 'logsOff')",
-              "line": 237,
+              "line": 328,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lock', 'eventHandler')",
-              "line": 249,
+              "line": 342,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lastCodeName', 'eventHandler')",
-              "line": 250,
+              "line": 343,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (contactSensors) subscribe(contactSensors, 'contact', 'eventHandler')",
-              "line": 252,
+              "line": 345,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (temperatureSensors) subscribe(temperatureSensors, 'temperature', 'eventHandler')",
-              "line": 253,
+              "line": 346,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (humiditySensors) subscribe(humiditySensors, 'humidity', 'eventHandler')",
-              "line": 254,
+              "line": 347,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "batteryDevices.each { subscribe(it, 'battery', 'eventHandler') }",
-              "line": 259,
+              "line": 352,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 268,
+              "line": 361,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
+              "evidence": "unschedule('dailyCheckIn')",
+              "line": 376,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "createAccessToken()",
-              "line": 279,
+              "line": 380,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "asynchttpPost('postCallback', params, [name: evt.name, deviceId: evt.deviceId])",
-              "line": 312,
+              "line": 416,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 370,
+              "line": 475,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// (success or failure): createAccessToken() invalidates the previous token,",
-              "line": 420,
+              "line": 525,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 426,
+              "line": 531,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(tokenParams) { resp ->",
-              "line": 462,
+              "line": 567,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "asynchttpPost('registerCallback', params, [enabled: enabled])",
-              "line": 530,
+              "line": 649,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "unschedule('dailyCheckIn')",
+              "line": 685,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'dailyCheckIn')",
+              "line": 693,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secondsUntil(next), 'expirePendingCodeChanges')",
+              "line": 1326,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('expirePendingCodeChanges')",
+              "line": 1329,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (due) runIn(secondsUntil(due.min()), 'verifyCodeChanges')",
+              "line": 1332,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "else unschedule('verifyCodeChanges')",
+              "line": 1333,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpPost('postCallback', params, [name: 'lock_code_result', deviceId: p.lockId])",
+              "line": 1565,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 40779,
+          "sourceBytes": 74930,
           "sourceFetched": true,
-          "sourceSha256": "eab9952695d588f895303094e6838323bd57d9dd1cea8b9d56fa634aa78d6a42",
+          "sourceSha256": "52496a74c24b8af133f11c6d26057915a3966e050261f4e5a7e263459bc49890",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
         }
       ],
       "author": "Chris Ogden",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-10-27",
       "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes.",
       "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
       "drivers": [],
@@ -342329,7 +342797,7 @@
         "Temperature & Humidity",
         "Monitoring"
       ],
-      "version": "1.1.0"
+      "version": "1.3.4"
     },
     {
       "apps": [
@@ -360191,18 +360659,18 @@
   "repositoriesFetched": 223,
   "repositoryCount": 224,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-26T05:02:21Z",
+  "snapshotGenerated": "2026-10-27T05:19:10Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2343,
+    "componentsAttempted": 2345,
     "componentsFailed": 10,
-    "componentsFetched": 2333,
-    "componentsWithObservations": 2207,
-    "definitionsVerified": 2322,
-    "distinctSourceUrls": 2329,
+    "componentsFetched": 2335,
+    "componentsWithObservations": 2209,
+    "definitionsVerified": 2324,
+    "distinctSourceUrls": 2331,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2319
+    "sourceUrlsFetched": 2321
   }
 }

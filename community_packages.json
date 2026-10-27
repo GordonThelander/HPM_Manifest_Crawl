@@ -1,6 +1,6 @@
 {
   "dataset": "community-packages",
-  "packageCount": 951,
+  "packageCount": 953,
   "packages": [
     {
       "author": "Konnected Inc.",
@@ -1735,7 +1735,7 @@
           "definition:34dde45d8835fc9c2aa5"
         ]
       },
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-22",
       "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
       "hpmPackageId": "1b01b412-00fc-4cf5-b7da-d9770706a467",
       "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
@@ -1757,7 +1757,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "Jeff Page (@jtp10181)",
@@ -13063,7 +13063,7 @@
           "definition:62c23f636db66d4f0936"
         ]
       },
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-26",
       "description": "Rewrite of the original Hub Information Driver.  Driver includes 40+ attributes related to the operation and general fitness of the hub.",
       "hpmPackageId": "b2af0b32-74c4-473a-ac91-69b95a9d3307",
       "id": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
@@ -13087,7 +13087,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.36"
+      "version": "3.1.37"
     },
     {
       "author": "Chris Truitt",
@@ -16042,7 +16042,7 @@
           "definition:8296d17b2a00cd9ae9b6"
         ]
       },
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
       "hpmPackageId": "def8f260-cdb5-40c2-9226-000c38272e6a",
       "id": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
@@ -16065,7 +16065,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "brossow",
@@ -21361,7 +21361,7 @@
         ],
         "drivers": []
       },
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-10-27",
       "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes.",
       "hpmPackageId": null,
       "id": "manifest:38e3d4685eb4cf17e6c0",
@@ -21386,7 +21386,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.1.0"
+      "version": "1.3.4"
     },
     {
       "author": "Justin Walker (augoisms)",
@@ -24834,7 +24834,7 @@
         ],
         "drivers": []
       },
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "hpmPackageId": null,
       "id": "manifest:7afca99889f23291349b",
@@ -24853,7 +24853,7 @@
         "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json"
       },
       "tags": [],
-      "version": "5.0.1"
+      "version": "5.0.2"
     },
     {
       "author": "Bryan Copeland",
@@ -25470,6 +25470,39 @@
         "Tools & Utilities"
       ],
       "version": "2.4.1"
+    },
+    {
+      "author": "Chris Ogden",
+      "category": "Integrations",
+      "components": {
+        "apps": [
+          "definition:2a261aa987abe9493331"
+        ],
+        "drivers": []
+      },
+      "dateReleased": "2026-10-27",
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "hpmPackageId": null,
+      "id": "manifest:86b01a1f90e58a839a6f",
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json"
+      },
+      "name": "SignalBricks Integration",
+      "repository": {
+        "author": "Chris Ogden / spinrag",
+        "name": "spinrag",
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+      },
+      "tags": [
+        "Cloud",
+        "Locks"
+      ],
+      "version": "1.3.4"
     },
     {
       "author": "Aaron Ward",
@@ -31538,6 +31571,43 @@
       "version": "1.34.17"
     },
     {
+      "author": "Chris Ogden",
+      "category": "Networking",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:333549f4ba8c3503af0b"
+        ]
+      },
+      "dateReleased": null,
+      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only — never creates new records.",
+      "hpmPackageId": null,
+      "id": "manifest:e979027ca81f14c18432",
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json"
+      },
+      "name": "Cloudflare DNS Updater",
+      "repository": {
+        "author": "Chris Ogden / spinrag",
+        "name": "spinrag",
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+      },
+      "tags": [
+        "cloudflare",
+        "ddns",
+        "dns",
+        "ip updater",
+        "networking",
+        "spinrag"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Denny Page",
       "category": "Integrations",
       "components": {
@@ -33045,7 +33115,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z",
+  "snapshotGenerated": "2026-10-27T05:19:10Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

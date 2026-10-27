@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 951,
+    "HPM_PACKAGE": 953,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2656,
+  "recordCount": 2658,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -27778,6 +27778,97 @@
       "version": "1.0.0"
     },
     {
+      "author": "Chris Ogden",
+      "category": "Networking",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": null,
+      "definitions": [
+        {
+          "id": "definition:333549f4ba8c3503af0b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Cloudflare DNS Updater",
+          "namespace": "spinrag",
+          "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/driver.groovy"
+        }
+      ],
+      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:e979027ca81f14c18432",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
+        "repository": "https://github.com/spinrag/hubitat"
+      },
+      "name": "Cloudflare DNS Updater",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "api.cloudflare.com",
+          "api.ipify.org",
+          "api6.ipify.org"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "cloudflare",
+        "ddns",
+        "dns",
+        "ip updater",
+        "networking",
+        "spinrag"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Robert Morris",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -47653,7 +47744,7 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-20",
+      "dateReleased": "2026-10-26",
       "definitions": [
         {
           "id": "definition:62c23f636db66d4f0936",
@@ -47737,7 +47828,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.36"
+      "version": "3.1.37"
     },
     {
       "author": "hubitrep",
@@ -62713,7 +62804,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "definitions": [
         {
           "id": "definition:068c42d708666e225b0e",
@@ -62802,7 +62893,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "Dan Ogorchock",
@@ -64024,7 +64115,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-26",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -64106,7 +64197,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.0.1"
+      "version": "5.0.2"
     },
     {
       "author": "Justin Leonard",
@@ -68252,7 +68343,7 @@
       "author": "Matt Palermo",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-19",
+      "dateReleased": "2026-10-22",
       "definitions": [
         {
           "id": "definition:f262bca60887ae317ff9",
@@ -68338,7 +68429,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -85051,7 +85142,90 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-10-27",
+      "definitions": [
+        {
+          "id": "definition:2a261aa987abe9493331",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "SignalBricks Integration",
+          "namespace": "com.signalbricks.hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
+        }
+      ],
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:86b01a1f90e58a839a6f",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
+        "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
+        "repository": "https://github.com/spinrag/hubitat"
+      },
+      "name": "SignalBricks Integration",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Locks"
+      ],
+      "version": "1.3.4"
+    },
+    {
+      "author": "Chris Ogden",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-27",
       "definitions": [
         {
           "id": "definition:ec844bf06d43a411ed84",
@@ -85131,7 +85305,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.1.0"
+      "version": "1.3.4"
     },
     {
       "author": "Krassimir Kossev",
@@ -135957,5 +136131,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z"
+  "snapshotGenerated": "2026-10-27T05:19:10Z"
 }

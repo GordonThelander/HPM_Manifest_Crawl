@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2343,
+  "definitionCount": 2345,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -3418,6 +3418,26 @@ window.IDENTITY_INDEX = {
         "name": "Running Average"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DoktorJ/jess-hubitat-apps/refs/heads/main/RunningAverage/runningAverage.groovy"
+    },
+    {
+      "id": "definition:2a261aa987abe9493331",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "SignalBricks Integration",
+          "namespace": "com.signalbricks.hubitat"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Chris Ogden",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
+        "id": "manifest:86b01a1f90e58a839a6f",
+        "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
+        "name": "SignalBricks Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
     },
     {
       "id": "definition:2a431cffb2406a42bf11",
@@ -19493,6 +19513,26 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitVital100S.groovy"
+    },
+    {
+      "id": "definition:333549f4ba8c3503af0b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Cloudflare DNS Updater",
+          "namespace": "spinrag"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Chris Ogden",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "manifest:e979027ca81f14c18432",
+        "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
+        "name": "Cloudflare DNS Updater"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/driver.groovy"
     },
     {
       "id": "definition:335ae3cb74c23077a454",
@@ -50013,5 +50053,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z"
+  "snapshotGenerated": "2026-10-27T05:19:10Z"
 };

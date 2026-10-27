@@ -1,8 +1,601 @@
 {
   "baselineEstablished": true,
   "dataset": "package-changes",
-  "eventCount": 556,
+  "eventCount": 563,
   "events": [
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "Chris Ogden",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:ec844bf06d43a411ed84"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-10-27",
+        "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes.",
+        "hpmPackageId": null,
+        "id": "manifest:38e3d4685eb4cf17e6c0",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json"
+        },
+        "name": "SignalBricks Telemetry",
+        "repository": {
+          "author": "Chris Ogden / spinrag",
+          "name": "spinrag",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Doors & Windows",
+          "Locks",
+          "Monitoring",
+          "Temperature & Humidity"
+        ],
+        "version": "1.3.4"
+      },
+      "detail": "Version 1.1.0 to 1.3.4.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/spinrag/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:e232cb936f21b02df32aa5b7",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "manifest:38e3d4685eb4cf17e6c0",
+      "packageName": "SignalBricks Telemetry",
+      "previousPackage": {
+        "author": "Chris Ogden",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:ec844bf06d43a411ed84"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-10-26",
+        "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes.",
+        "hpmPackageId": null,
+        "id": "manifest:38e3d4685eb4cf17e6c0",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json"
+        },
+        "name": "SignalBricks Telemetry",
+        "repository": {
+          "author": "Chris Ogden / spinrag",
+          "name": "spinrag",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Doors & Windows",
+          "Locks",
+          "Monitoring",
+          "Temperature & Humidity"
+        ],
+        "version": "1.1.0"
+      },
+      "summary": "SignalBricks Telemetry: updated."
+    },
+    {
+      "changeTypes": [
+        "ADDED"
+      ],
+      "currentPackage": {
+        "author": "Chris Ogden",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:2a261aa987abe9493331"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-10-27",
+        "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+        "hpmPackageId": null,
+        "id": "manifest:86b01a1f90e58a839a6f",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json"
+        },
+        "name": "SignalBricks Integration",
+        "repository": {
+          "author": "Chris Ogden / spinrag",
+          "name": "spinrag",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Locks"
+        ],
+        "version": "1.3.4"
+      },
+      "detail": "Entered the catalogue at version 1.3.4.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/spinrag/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:123e6599d3c029ba1ffac661",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "manifest:86b01a1f90e58a839a6f",
+      "packageName": "SignalBricks Integration",
+      "previousPackage": null,
+      "summary": "SignalBricks Integration: added."
+    },
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "Matt Palermo",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:f262bca60887ae317ff9"
+          ],
+          "drivers": [
+            "definition:34dde45d8835fc9c2aa5"
+          ]
+        },
+        "dateReleased": "2026-10-22",
+        "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
+        "hpmPackageId": "1b01b412-00fc-4cf5-b7da-d9770706a467",
+        "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json"
+        },
+        "name": "MyFuelPortal Propane Integration",
+        "repository": {
+          "author": "Matt Palermo",
+          "name": "mpalermo73",
+          "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Monitoring"
+        ],
+        "version": "1.2.1"
+      },
+      "detail": "Version 1.2.0 to 1.2.1.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/mpalermo73/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:3eddefc45c3fd7c24d602411",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+      "packageName": "MyFuelPortal Propane Integration",
+      "previousPackage": {
+        "author": "Matt Palermo",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:f262bca60887ae317ff9"
+          ],
+          "drivers": [
+            "definition:34dde45d8835fc9c2aa5"
+          ]
+        },
+        "dateReleased": "2026-10-19",
+        "description": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
+        "hpmPackageId": "1b01b412-00fc-4cf5-b7da-d9770706a467",
+        "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json"
+        },
+        "name": "MyFuelPortal Propane Integration",
+        "repository": {
+          "author": "Matt Palermo",
+          "name": "mpalermo73",
+          "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/repository.json"
+        },
+        "tags": [
+          "Cloud",
+          "Monitoring"
+        ],
+        "version": "1.2.0"
+      },
+      "summary": "MyFuelPortal Propane Integration: updated."
+    },
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "kingpanther13",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:22a957c4597a12f41429",
+            "definition:d758132dcd74db160242"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-10-26",
+        "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
+        "hpmPackageId": null,
+        "id": "manifest:7afca99889f23291349b",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        "name": "MCP Rule Server",
+        "repository": {
+          "author": "kingpanther13",
+          "name": "kingpanther13",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json"
+        },
+        "tags": [],
+        "version": "5.0.2"
+      },
+      "detail": "Version 5.0.1 to 5.0.2.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/kingpanther13/Hubitat-local-MCP-server"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:bbaeddc3c686fc04795d2eb5",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "manifest:7afca99889f23291349b",
+      "packageName": "MCP Rule Server",
+      "previousPackage": {
+        "author": "kingpanther13",
+        "category": "Integrations",
+        "components": {
+          "apps": [
+            "definition:22a957c4597a12f41429",
+            "definition:d758132dcd74db160242"
+          ],
+          "drivers": []
+        },
+        "dateReleased": "2026-10-25",
+        "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
+        "hpmPackageId": null,
+        "id": "manifest:7afca99889f23291349b",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json"
+        },
+        "name": "MCP Rule Server",
+        "repository": {
+          "author": "kingpanther13",
+          "name": "kingpanther13",
+          "url": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json"
+        },
+        "tags": [],
+        "version": "5.0.1"
+      },
+      "summary": "MCP Rule Server: updated."
+    },
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "hubitrep",
+        "category": "Utility",
+        "components": {
+          "apps": [
+            "definition:068c42d708666e225b0e"
+          ],
+          "drivers": [
+            "definition:8296d17b2a00cd9ae9b6"
+          ]
+        },
+        "dateReleased": "2026-10-26",
+        "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
+        "hpmPackageId": "def8f260-cdb5-40c2-9226-000c38272e6a",
+        "id": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json"
+        },
+        "name": "Log Monitor",
+        "repository": {
+          "author": "hubitrep",
+          "name": "hubitrep",
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json"
+        },
+        "tags": [
+          "Monitoring",
+          "Notifications",
+          "Tools & Utilities"
+        ],
+        "version": "1.2.1"
+      },
+      "detail": "Version 1.2.0 to 1.2.1.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/hubitrep/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:8f1e25f6465e10a6c81ea518",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
+      "packageName": "Log Monitor",
+      "previousPackage": {
+        "author": "hubitrep",
+        "category": "Utility",
+        "components": {
+          "apps": [
+            "definition:068c42d708666e225b0e"
+          ],
+          "drivers": [
+            "definition:8296d17b2a00cd9ae9b6"
+          ]
+        },
+        "dateReleased": "2026-10-25",
+        "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
+        "hpmPackageId": "def8f260-cdb5-40c2-9226-000c38272e6a",
+        "id": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
+        "links": {
+          "community": null,
+          "documentation": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json"
+        },
+        "name": "Log Monitor",
+        "repository": {
+          "author": "hubitrep",
+          "name": "hubitrep",
+          "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json"
+        },
+        "tags": [
+          "Monitoring",
+          "Notifications",
+          "Tools & Utilities"
+        ],
+        "version": "1.2.0"
+      },
+      "summary": "Log Monitor: updated."
+    },
+    {
+      "changeTypes": [
+        "UPDATED"
+      ],
+      "currentPackage": {
+        "author": "Jean P. May, Jr.",
+        "category": "Utility",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:62c23f636db66d4f0936"
+          ]
+        },
+        "dateReleased": "2026-10-26",
+        "description": "Rewrite of the original Hub Information Driver.  Driver includes 40+ attributes related to the operation and general fitness of the hub.",
+        "hpmPackageId": "b2af0b32-74c4-473a-ac91-69b95a9d3307",
+        "id": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
+        "links": {
+          "community": "https://community.hubitat.com/t/coming-soon-hub-information-driver-v3/109902",
+          "documentation": "https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json"
+        },
+        "name": "Hub Information Driver v3",
+        "repository": {
+          "author": "Jean P. May, Jr.",
+          "name": "Jean P. May, Jr.",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json"
+        },
+        "tags": [
+          "Dashboards",
+          "Misc. Devices",
+          "Monitoring",
+          "Tools & Utilities"
+        ],
+        "version": "3.1.37"
+      },
+      "detail": "Version 3.1.36 to 3.1.37.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/thebearmay/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:d2205ef0975feb94fa503c58",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
+      "packageName": "Hub Information Driver v3",
+      "previousPackage": {
+        "author": "Jean P. May, Jr.",
+        "category": "Utility",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:62c23f636db66d4f0936"
+          ]
+        },
+        "dateReleased": "2026-10-20",
+        "description": "Rewrite of the original Hub Information Driver.  Driver includes 40+ attributes related to the operation and general fitness of the hub.",
+        "hpmPackageId": "b2af0b32-74c4-473a-ac91-69b95a9d3307",
+        "id": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
+        "links": {
+          "community": "https://community.hubitat.com/t/coming-soon-hub-information-driver-v3/109902",
+          "documentation": "https://htmlpreview.github.io/?https://github.com/thebearmay/hubitat/blob/main/hubInfoQuickRef3.html"
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json"
+        },
+        "name": "Hub Information Driver v3",
+        "repository": {
+          "author": "Jean P. May, Jr.",
+          "name": "Jean P. May, Jr.",
+          "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json"
+        },
+        "tags": [
+          "Dashboards",
+          "Misc. Devices",
+          "Monitoring",
+          "Tools & Utilities"
+        ],
+        "version": "3.1.36"
+      },
+      "summary": "Hub Information Driver v3: updated."
+    },
+    {
+      "changeTypes": [
+        "ADDED"
+      ],
+      "currentPackage": {
+        "author": "Chris Ogden",
+        "category": "Networking",
+        "components": {
+          "apps": [],
+          "drivers": [
+            "definition:333549f4ba8c3503af0b"
+          ]
+        },
+        "dateReleased": null,
+        "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
+        "hpmPackageId": null,
+        "id": "manifest:e979027ca81f14c18432",
+        "links": {
+          "community": null,
+          "documentation": null
+        },
+        "manifest": {
+          "fetched": true,
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json"
+        },
+        "name": "Cloudflare DNS Updater",
+        "repository": {
+          "author": "Chris Ogden / spinrag",
+          "name": "spinrag",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json"
+        },
+        "tags": [
+          "cloudflare",
+          "ddns",
+          "dns",
+          "ip updater",
+          "networking",
+          "spinrag"
+        ],
+        "version": "1.0.0"
+      },
+      "detail": "Entered the catalogue at version 1.0.0.",
+      "evidence": [
+        {
+          "label": "Manifest",
+          "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json"
+        },
+        {
+          "label": "Repository",
+          "url": "https://github.com/spinrag/hubitat"
+        }
+      ],
+      "health": {
+        "broken": false,
+        "reasons": []
+      },
+      "id": "change:2b272c0ba85adde319829748",
+      "observedAt": "2026-10-27T05:19:10Z",
+      "packageId": "manifest:e979027ca81f14c18432",
+      "packageName": "Cloudflare DNS Updater",
+      "previousPackage": null,
+      "summary": "Cloudflare DNS Updater: added."
+    },
     {
       "changeTypes": [
         "UPDATED"
@@ -50773,6 +51366,6 @@
   "historicalSnapshotsCompared": 10,
   "historySource": "completed Git crawl snapshots",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z",
-  "updatedAt": "2026-10-26T05:02:21Z"
+  "snapshotGenerated": "2026-10-27T05:19:10Z",
+  "updatedAt": "2026-10-27T05:19:10Z"
 }

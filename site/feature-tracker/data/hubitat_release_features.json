@@ -128,18 +128,6 @@
       "updatedAt": "2025-01-28T16:03:24.605Z"
     },
     {
-      "author": "Bryan Copeland",
-      "createdAt": "2025-01-29T17:26:17.087Z",
-      "id": "detail:149368",
-      "qualifications": [],
-      "sourceUrl": "https://community.hubitat.com/t/new-z-wave/149368/1",
-      "staffAuthored": true,
-      "summary": "The new Z-Wave JS code is currently not enabled by default. To enable follow these steps: Back-up your hub and the Z-Wave network via cloud backup. If you are not a Hub Protect subscriber, now is the perfect time to try our new Cloud Backup service-free for 30 days! Use the following to enable the new Z-Wave library: reboot when requested. To disable the new Z-Wave library and go back to the old code use the following: All nodes will be re-interviewed on first boot, after enabling, and may not function until this is complete. Listening devices will be quick and most should work when the UI is loaded. Sleepy S2 devices may require a wakeup (which can usually be done by single pressing the...",
-      "title": "Migrate to Z-Wave JS",
-      "topicId": 149368,
-      "updatedAt": "2025-04-08T17:57:37.156Z"
-    },
-    {
       "author": "Mike Maxwell",
       "createdAt": "2025-04-02T13:41:52.888Z",
       "id": "detail:152147",
@@ -634,6 +622,18 @@
       "title": "[2.2.5] - Use USB WiFi dongle with your C5/C7 hub",
       "topicId": 61062,
       "updatedAt": "2021-05-11T20:40:20.554Z"
+    },
+    {
+      "author": "Mike Maxwell",
+      "createdAt": "2021-03-09T17:59:24.241Z",
+      "id": "detail:67564",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/2-2-6-capability-update-cheat-sheet/67564/1",
+      "staffAuthored": true,
+      "summary": "2.2.6 updates //WindowShade capability.windowShade add command startPositionChange(String \"open\" || \"close\") add command stopPositionChange() //Telnet capability.telnet add command sendMsg(String message) add attribute networkStatus [\"online\", \"offline\"] //HoldableButton capability.holdableButton add command hold(Integer buttonId) //PushableButton capability.pushableButton add command push(Integer buttonId) //DoubleTapableButton capability.doubleTapableButton add command doubleTap(Integer buttonId) //ReleasableButton capability.releasableButton add command release(Integer buttonId) //FanControl capability.fanControl add attribute supportedFanSpeeds JSON_OBJECT add command cycleSpeed() //C...",
+      "title": "2.2.6 capability update cheat sheet",
+      "topicId": 67564,
+      "updatedAt": "2021-03-24T15:09:21.187Z"
     },
     {
       "author": "Hubitat Staff",
@@ -21552,9 +21552,7 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [
-        "detail:149368"
-      ],
+      "detailIds": [],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "a94114a5fe8fb82cf304c3fa5a6acb94bdecbe7ea1e3446886bfbda32a07c308",
@@ -75323,7 +75321,9 @@
       "author": "Bryan Copeland",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:67564"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "401cdb0ac837e6f9669dda25e5a48c1bc5a0cdd9513497ca4ca9ad46cc5ee67f",
@@ -98511,7 +98511,7 @@
       "sourceUrl": "https://community.hubitat.com/t/release-2-5-2-available/166477/7"
     }
   ],
-  "lastSuccessfulHarvest": "2026-10-26T05:08:01Z",
+  "lastSuccessfulHarvest": "2026-10-27T05:25:24Z",
   "method": {
     "automationMapIndependent": true,
     "failedHarvestReplacesOutput": false,
@@ -100214,8 +100214,7 @@
       "detailIds": [
         "detail:152153",
         "detail:152152",
-        "detail:152147",
-        "detail:149368"
+        "detail:152147"
       ],
       "featureCount": 80,
       "id": "release:152087:1",
@@ -104416,6 +104415,7 @@
       "author": "Bryan Copeland",
       "bugFixCount": 24,
       "detailIds": [
+        "detail:67564",
         "detail:68210",
         "detail:68211",
         "detail:68942"
@@ -109254,8 +109254,8 @@
     }
   ],
   "unavailableDetails": [
-    "https://community.hubitat.com/t/2-2-6-capability-update-cheat-sheet/67564",
     "https://community.hubitat.com/t/2-5-0-145-c8pro-js-runtime-exceptions-on-145/164136",
-    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886"
+    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886",
+    "https://community.hubitat.com/t/new-z-wave/149368"
   ]
 }

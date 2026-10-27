@@ -1,7 +1,7 @@
 {
   "counts": {
     "BOTH": 185,
-    "CLOUD": 269,
+    "CLOUD": 271,
     "INSUFFICIENT": 305,
     "LAN": 192
   },
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 951,
+  "packageCount": 953,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -3156,6 +3156,40 @@
       "reviewed": [],
       "tags": [
         "Notifications"
+      ]
+    },
+    {
+      "author": "Chris Ogden",
+      "category": "Networking",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only — never creates new records.",
+      "documentationUrl": null,
+      "id": "manifest:e979027ca81f14c18432",
+      "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
+      "name": "Cloudflare DNS Updater",
+      "observed": {
+        "externalHosts": [
+          "api.cloudflare.com",
+          "api.ipify.org",
+          "api6.ipify.org"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "cloudflare",
+        "ddns",
+        "dns",
+        "ip updater",
+        "networking",
+        "spinrag"
       ]
     },
     {
@@ -13802,7 +13836,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -20667,6 +20701,32 @@
         "Monitoring",
         "Motion Control",
         "Safety & Security"
+      ]
+    },
+    {
+      "author": "Chris Ogden",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
+      "id": "manifest:86b01a1f90e58a839a6f",
+      "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
+      "name": "SignalBricks Integration",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Locks"
       ]
     },
     {
@@ -28681,5 +28741,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z"
+  "snapshotGenerated": "2026-10-27T05:19:10Z"
 }

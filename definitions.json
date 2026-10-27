@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2343,
+  "definitionCount": 2345,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -3539,10 +3539,10 @@
       "observationCounts": {},
       "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
       "source": {
-        "bytes": 3899,
+        "bytes": 4319,
         "definitionLine": 8,
         "fetched": true,
-        "sha256": "7553848aabc066c44c064ed805ed6d658a7b0f377114d6bad308b2f4a843ce4e",
+        "sha256": "8e0b53c76708ca301d62a583be99291b429bd82989b8860810df64a68dee4562",
         "url": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
       },
       "sourceIdentity": {
@@ -26202,10 +26202,10 @@
       },
       "packageId": "hpm:b2af0b32-74c4-473a-ac91-69b95a9d3307",
       "source": {
-        "bytes": 81346,
-        "definitionLine": 119,
+        "bytes": 81541,
+        "definitionLine": 120,
         "fetched": true,
-        "sha256": "11d7a9b5cf649567d88e547017c94ac14ba4caa8fc438e09a2cfa83435a14514",
+        "sha256": "21c6580a0f316d089c86e19262365c6f379d2dd72f464b07634ff8cc0748f166",
         "url": "https://raw.githubusercontent.com/thebearmay/hubitat/main/hubInfoV3.groovy"
       },
       "sourceIdentity": {
@@ -30853,16 +30853,17 @@
         "namespace": "hubitrep"
       },
       "observationCounts": {
-        "NETWORK_URL_LITERAL": 1,
-        "SCHEDULING": 8,
-        "WEBSOCKET_INTERFACE": 2
+        "HTTP_CALL": 1,
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 12,
+        "WEBSOCKET_INTERFACE": 3
       },
       "packageId": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
       "source": {
-        "bytes": 10038,
-        "definitionLine": 27,
+        "bytes": 16912,
+        "definitionLine": 38,
         "fetched": true,
-        "sha256": "1d88f21a7b89e2e9ce0d31577f1e151e1713d801c6abf0a63c9b49a2c4c5e7f8",
+        "sha256": "c99dcdceb51a434ef1b7ee88986e19f1a2c141489a5d1f3349560bdea9198ebc",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitorBridge.groovy"
       },
       "sourceIdentity": {
@@ -39862,19 +39863,19 @@
       "observationCounts": {
         "CAPABILITY_REFERENCE": 5,
         "EVENT_SUBSCRIPTION": 6,
-        "HTTP_CALL": 3,
+        "HTTP_CALL": 4,
         "NETWORK_URL_LITERAL": 4,
         "OAUTH_ACCESS_TOKEN": 7,
         "OAUTH_API_MAPPINGS": 1,
         "OAUTH_ENABLED": 1,
-        "SCHEDULING": 3
+        "SCHEDULING": 10
       },
       "packageId": "manifest:38e3d4685eb4cf17e6c0",
       "source": {
-        "bytes": 40779,
-        "definitionLine": 63,
+        "bytes": 74930,
+        "definitionLine": 114,
         "fetched": true,
-        "sha256": "eab9952695d588f895303094e6838323bd57d9dd1cea8b9d56fa634aa78d6a42",
+        "sha256": "52496a74c24b8af133f11c6d26057915a3966e050261f4e5a7e263459bc49890",
         "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
       },
       "sourceIdentity": {
@@ -45950,6 +45951,35 @@
       "sourceIdentity": {
         "name": "HTTP Presence Sensor with schedule",
         "namespace": "tmastersmart"
+      }
+    },
+    {
+      "id": "definition:2a261aa987abe9493331",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "SignalBricks Integration",
+        "namespace": "com.signalbricks.hubitat"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 1,
+        "EVENT_SUBSCRIPTION": 7,
+        "NETWORK_URL_LITERAL": 3,
+        "OAUTH_ACCESS_TOKEN": 3,
+        "OAUTH_API_MAPPINGS": 1,
+        "OAUTH_ENABLED": 1,
+        "SCHEDULING": 20
+      },
+      "packageId": "manifest:86b01a1f90e58a839a6f",
+      "source": {
+        "bytes": 48284,
+        "definitionLine": 15,
+        "fetched": true,
+        "sha256": "ebc4fd91e5d818df1811ed5336c3a4fd7d09464511e0d73160ed9b9bfbfe058d",
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
+      },
+      "sourceIdentity": {
+        "name": "SignalBricks Integration",
+        "namespace": "com.signalbricks.hubitat"
       }
     },
     {
@@ -56242,6 +56272,31 @@
       }
     },
     {
+      "id": "definition:333549f4ba8c3503af0b",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Cloudflare DNS Updater",
+        "namespace": "spinrag"
+      },
+      "observationCounts": {
+        "HTTP_CALL": 3,
+        "NETWORK_URL_LITERAL": 4,
+        "SCHEDULING": 2
+      },
+      "packageId": "manifest:e979027ca81f14c18432",
+      "source": {
+        "bytes": 9427,
+        "definitionLine": 5,
+        "fetched": true,
+        "sha256": "3c7bcb6f9259463d0b85ef5d4d75ed67649dd4563df3b8f72ac0e66851e76af0",
+        "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/driver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Cloudflare DNS Updater",
+        "namespace": "spinrag"
+      }
+    },
+    {
       "id": "definition:d1a1fa7519b398945314",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -58974,7 +59029,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-26T05:02:21Z",
+  "snapshotGenerated": "2026-10-27T05:19:10Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",
