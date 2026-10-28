@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 495,
+  "recordCount": 496,
   "records": [
     {
       "author": null,
@@ -10960,7 +10960,7 @@
       },
       "packageName": "SignalBricks Telemetry",
       "qualityFlags": [],
-      "summary": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes."
+      "summary": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed code"
     },
     {
       "author": "RamSet",
@@ -11187,6 +11187,40 @@
       "summary": "An enhanced Hibitat app to simulate light and switch behaviors of an occupied home while you are away or on Vacation. Allows many customizations, summary notifications, and easy testing."
     },
     {
+      "author": "Albert Mulder",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "SAS - Samsung Appliance Service",
+          "namespace": "almulder"
+        }
+      ],
+      "displayName": "SAS - Samsung Appliance Service",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:4e59b4bd5155320d2549",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/almulder/Hubitat-Drivers/tree/main/Samsung%20Appliance%20Service",
+        "source": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/App/SAS%20-%20Samsung%20Appliance%20Service.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "SAS - Samsung Appliance Service",
+      "qualityFlags": [],
+      "summary": "Samsung appliances in Hubitat via Home Assistant + LocalThings, one device per appliance. App, Listener and shared library required; appliance drivers optional/selectable."
+    },
+    {
       "author": "Robert Morris",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -11265,17 +11299,12 @@
           "basis": "sourceIdentity",
           "name": "YoLink Device Local Service",
           "namespace": "almulder"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "YoLink™ Device Local Service",
-          "namespace": "Almulder"
         }
       ],
       "displayName": "YoLink™ Local Hub Connector",
       "evidenceChecks": {
         "communityLink": "PRESENT",
-        "definitionIdentity": "MISMATCH",
+        "definitionIdentity": "MATCH",
         "documentationLink": "PRESENT",
         "httpsTransport": "PASS",
         "manifestFetch": "PASS",
@@ -11294,9 +11323,7 @@
         "reviewed": true
       },
       "packageName": "YoLink™ Local Hub Connector",
-      "qualityFlags": [
-        "IDENTITY_MISMATCH"
-      ],
+      "qualityFlags": [],
       "summary": "YoLink Local Hub integration. App + MQTT required; device drivers optional/selectable."
     },
     {
@@ -12359,7 +12386,7 @@
         "source": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "reviewed": false
       },
       "packageName": "SignalBricks Integration",
@@ -16706,5 +16733,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-27T05:19:10Z"
+  "snapshotGenerated": "2026-10-28T05:57:35Z"
 }

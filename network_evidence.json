@@ -2,7 +2,7 @@
   "counts": {
     "BOTH": 185,
     "CLOUD": 271,
-    "INSUFFICIENT": 305,
+    "INSUFFICIENT": 306,
     "LAN": 192
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 953,
+  "packageCount": 954,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -19827,6 +19827,31 @@
       ]
     },
     {
+      "author": "Albert Mulder",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Samsung appliances in Hubitat via Home Assistant + LocalThings, one device per appliance. App, Listener and shared library required; appliance drivers optional/selectable.",
+      "documentationUrl": "https://github.com/almulder/Hubitat-Drivers/tree/main/Samsung%20Appliance%20Service",
+      "id": "manifest:4e59b4bd5155320d2549",
+      "manifestUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/samsung-appliance-service.json",
+      "name": "SAS - Samsung Appliance Service",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 20,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Misc. Devices"
+      ]
+    },
+    {
       "author": "Craig Dewar",
       "category": "Climate Control",
       "classification": "INSUFFICIENT",
@@ -20721,7 +20746,7 @@
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": [
@@ -20738,7 +20763,7 @@
         "cloudTag": true,
         "lanTag": false
       },
-      "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry never sends lock PINs. Optional, off-by-default lock code management for admin and managed codes.",
+      "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed codes.",
       "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
       "id": "manifest:38e3d4685eb4cf17e6c0",
       "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
@@ -27386,7 +27411,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 7,
-        "urlLiteralCount": 16
+        "urlLiteralCount": 10
       },
       "reviewed": [
         {
@@ -28741,5 +28766,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-27T05:19:10Z"
+  "snapshotGenerated": "2026-10-28T05:57:35Z"
 }
