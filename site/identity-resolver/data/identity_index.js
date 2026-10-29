@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2365,
+  "definitionCount": 2370,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -8405,6 +8405,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy"
     },
     {
+      "id": "definition:9c542234c57a338489ba",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WiZ Dual Zone Group",
+          "namespace": "youzer-name"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "youzer-name",
+        "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+        "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+        "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+        "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+        "name": "WiZ Dual Zone"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupApp.groovy"
+    },
+    {
       "id": "definition:9da44544b5010dbb3841",
       "identities": [
         {
@@ -10588,6 +10608,26 @@ window.IDENTITY_INDEX = {
         "name": "Contact2Motion"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcoghlan/hubitat/main/Contact2Motion/contact2motion-app-parent.groovy"
+    },
+    {
+      "id": "definition:d0c3de57e1e5d73313ef",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WiZ Dual Zone Discovery",
+          "namespace": "youzer-name"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "youzer-name",
+        "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+        "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+        "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+        "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+        "name": "WiZ Dual Zone"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneDiscovery.groovy"
     },
     {
       "id": "definition:d1a9a40b6511968c17b1",
@@ -15220,6 +15260,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlus1PM-v2.17.8.groovy"
     },
     {
+      "id": "definition:1263809e1e44a44ba1ab",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WiZ Dual Zone Bulb",
+          "namespace": "youzer-name"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "youzer-name",
+        "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+        "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+        "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+        "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+        "name": "WiZ Dual Zone"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneBulb.groovy"
+    },
+    {
       "id": "definition:12ce991946696fc41f7f",
       "identities": [
         {
@@ -16458,6 +16518,26 @@ window.IDENTITY_INDEX = {
         "name": "Nice IBT4ZWAVE"
       },
       "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/nice/nice_ibt4zwave_gate_actuator.groovy"
+    },
+    {
+      "id": "definition:1abedd88d3f6f46936ea",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WiZ Dual Zone Light",
+          "namespace": "youzer-name"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "youzer-name",
+        "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+        "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+        "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+        "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+        "name": "WiZ Dual Zone"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneLight.groovy"
     },
     {
       "id": "definition:1ac97629f5224e98e564",
@@ -17918,6 +17998,26 @@ window.IDENTITY_INDEX = {
         "name": "Watchtower"
       },
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower-events.groovy"
+    },
+    {
+      "id": "definition:28c83650da4adc8da612",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WiZ Dual Zone Group",
+          "namespace": "youzer-name"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "youzer-name",
+        "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+        "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+        "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+        "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+        "name": "WiZ Dual Zone"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupDevice.groovy"
     },
     {
       "id": "definition:28cddde35677c00ae751",
@@ -50418,5 +50518,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-28T05:57:35Z"
+  "snapshotGenerated": "2026-10-29T06:04:01Z"
 };

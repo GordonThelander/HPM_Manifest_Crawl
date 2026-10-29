@@ -2,8 +2,8 @@ window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 185,
     "CLOUD": 271,
-    "INSUFFICIENT": 306,
-    "LAN": 192
+    "INSUFFICIENT": 305,
+    "LAN": 194
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 954,
+  "packageCount": 955,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -8178,7 +8178,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Ricardo Nogueira Garcia",
       "category": "Integrations",
-      "classification": "INSUFFICIENT",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -8191,9 +8191,11 @@ window.NETWORK_EVIDENCE = {
       "name": "Heiman HS2WD-E Siren",
       "observed": {
         "externalHosts": [],
-        "lanPrimitives": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": [
@@ -16536,7 +16538,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 16
+        "urlLiteralCount": 10
       },
       "reviewed": [],
       "tags": [
@@ -16886,7 +16888,7 @@ window.NETWORK_EVIDENCE = {
       "author": "Mike Bishop",
       "category": "Control",
       "classification": "INSUFFICIENT",
-      "communityUrl": "https: //community.hubitat.com/t/beta-palette-scenes/106335",
+      "communityUrl": "https://community.hubitat.com/t/beta-palette-scenes/106335",
       "declared": {
         "cloudTag": false,
         "lanTag": false
@@ -26677,6 +26679,39 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "youzer-name",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Local control of WiZ dual-zone bulbs: separate Main and Ring devices, discovery, and fast multi-bulb groups.",
+      "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+      "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+      "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+      "name": "WiZ Dual Zone",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "PARSE_LAN_MESSAGE",
+          "SEND_HUB_COMMAND",
+          "UDP_PROTOCOL"
+        ],
+        "sourceFilesAnalysed": 5,
+        "urlLiteralCount": 10
+      },
+      "reviewed": [],
+      "tags": [
+        "Automations & Groups",
+        "LAN",
+        "Lights & Switches"
+      ]
+    },
+    {
       "author": "joyfulhouse",
       "category": "Integrations",
       "classification": "LAN",
@@ -28766,5 +28801,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-28T05:57:35Z"
+  "snapshotGenerated": "2026-10-29T06:04:01Z"
 };

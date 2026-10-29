@@ -6544,6 +6544,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:e10d3c6a081517fa751e",
           "packageName": "Astro-Meteor Seasons",
           "summary": "Astro-Meteor Seasons: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bb970197c57576de641a39c1",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:369cb29ec5aec5f3001d",
+          "packageName": "OpenWeatherMap Multi-API Weather Driver",
+          "summary": "OpenWeatherMap Multi-API Weather Driver: updated."
         }
       ],
       "appCount": 2,
@@ -6562,7 +6576,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 26,
+      "observedActivityCount": 27,
       "packages": [
         {
           "appCount": 0,
@@ -6638,9 +6652,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:369cb29ec5aec5f3001d",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json",
           "name": "OpenWeatherMap Multi-API Weather Driver",
-          "publisherDate": "2026-09-20",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "2.5.16"
+          "version": "2.9.2"
         },
         {
           "appCount": 0,
@@ -8566,6 +8580,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:06f9636483d5a32c3cd6",
           "packageName": "Battery Monitor 2.0",
           "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8354dc46c7d58fc6e3698047",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c5c9eea74927cb807e0d33ab",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
         }
       ],
       "appCount": 7,
@@ -8592,7 +8634,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 18,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 56,
+      "observedActivityCount": 58,
       "packages": [
         {
           "appCount": 1,
@@ -8681,9 +8723,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:1fb36d6ab3dd1abe2238",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
           "name": "Reolink Integration",
-          "publisherDate": "2026-10-22",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.15"
+          "version": "1.6.16"
         },
         {
           "appCount": 0,
@@ -8707,9 +8749,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:c57015f573a94b304002",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json",
           "name": "Sofabaton Integration",
-          "publisherDate": "2026-10-23",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.1.4"
+          "version": "1.1.5"
         }
       ]
     },
@@ -8952,7 +8994,36 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6a7dd2c4e310bae6bfeb6ed7",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:55aa9e8a-8c19-4b86-a0c5-ee71a8dc60da",
+          "packageName": "Holiday Lighting",
+          "summary": "Holiday Lighting: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bf86fb6a688e7f7645df0511",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:ed1f09a6-2463-4b6e-9c60-690fe78c6a63",
+          "packageName": "Palette Scenes",
+          "summary": "Palette Scenes: updated."
+        }
+      ],
       "appCount": 10,
       "categories": [
         {
@@ -8973,7 +9044,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 9,
       "id": "contributor:064f73070c9a0317f2aa",
       "name": "Mike Bishop",
-      "observedActivityCount": 0,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 2,
@@ -9025,7 +9096,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Holiday Lighting",
           "publisherDate": "2022-07-18",
           "repositoryUrl": "https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/hpm-intermediate.json",
-          "version": "1.5.0"
+          "version": "1.5.8"
         },
         {
           "appCount": 0,
@@ -9043,7 +9114,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 0,
           "category": "Control",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/beta-palette-scenes/106335",
           "documentationUrl": null,
           "driverCount": 0,
           "id": "hpm:ed1f09a6-2463-4b6e-9c60-690fe78c6a63",
@@ -9051,7 +9122,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Palette Scenes",
           "publisherDate": "2022-11-30",
           "repositoryUrl": "https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/hpm-intermediate.json",
-          "version": "1.4.0"
+          "version": "1.5.8"
         },
         {
           "appCount": 3,
@@ -10644,6 +10715,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
           "packageName": "Tuya Tank Level Monitor (Wi-Fi) Local",
           "summary": "Tuya Tank Level Monitor (Wi-Fi) Local: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:080e9b09e06baacfaf778be1",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "packageName": "Heiman HS2WD-E Siren",
+          "summary": "Heiman HS2WD-E Siren: updated."
         }
       ],
       "appCount": 0,
@@ -10658,7 +10743,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 9,
       "id": "contributor:94fb509243bfb3186ae7",
       "name": "Ricardo Nogueira Garcia",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 0,
@@ -10708,9 +10793,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
           "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
           "name": "Heiman HS2WD-E Siren",
-          "publisherDate": "2026-10-21",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.0.3"
+          "version": "1.0.7"
         },
         {
           "appCount": 0,
@@ -11672,7 +11757,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Climate Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:08f5863807a939a2921009b7",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:3f4e8a2b-1c5d-4e6f-9a8b-7c2d1e0f3a4b",
+          "packageName": "Mysa Thermostat Integration",
+          "summary": "Mysa Thermostat Integration: updated."
+        }
+      ],
       "appCount": 3,
       "categories": [
         {
@@ -11697,7 +11797,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 18,
       "id": "contributor:56df602a3780b5728c97",
       "name": "Craig Dewar",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 1,
@@ -11721,9 +11821,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:3f4e8a2b-1c5d-4e6f-9a8b-7c2d1e0f3a4b",
           "manifestUrl": "https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json",
           "name": "Mysa Thermostat Integration",
-          "publisherDate": "2024-12-26",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/craigde/hubitat-package-manager/master/repository.json",
-          "version": "2.4.1"
+          "version": "2.5.0"
         },
         {
           "appCount": 0,
@@ -13005,6 +13105,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:86b01a1f90e58a839a6f",
           "packageName": "SignalBricks Integration",
           "summary": "SignalBricks Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2335f409a1dc2419319cb9ec",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:86b01a1f90e58a839a6f",
+          "packageName": "SignalBricks Integration",
+          "summary": "SignalBricks Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9aac5d5f39697922ffa7fa23",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: updated."
         }
       ],
       "appCount": 2,
@@ -13027,7 +13155,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
-      "observedActivityCount": 7,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 0,
@@ -13077,9 +13205,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:86b01a1f90e58a839a6f",
           "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
           "name": "SignalBricks Integration",
-          "publisherDate": "2026-10-28",
+          "publisherDate": "2026-10-29",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.4.0"
+          "version": "1.4.2"
         },
         {
           "appCount": 1,
@@ -13090,9 +13218,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:38e3d4685eb4cf17e6c0",
           "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
           "name": "SignalBricks Telemetry",
-          "publisherDate": "2026-10-27",
+          "publisherDate": "2026-10-29",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.4.0"
+          "version": "1.4.1"
         }
       ]
     },
@@ -15599,6 +15727,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:ce32ea21-b113-4257-a46e-ef5f30cfef57",
           "packageName": "Nuki Web API",
           "summary": "Nuki Web API: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c3d988276320ab1fb6d20286",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:924c7849-b28d-470f-80eb-5c9146ee65ac",
+          "packageName": "Envoy Local Data",
+          "summary": "Envoy Local Data: updated."
         }
       ],
       "appCount": 0,
@@ -15613,7 +15755,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:f3da15a034710d97b293",
       "name": "Supun Vidana Pathiranage",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -15624,9 +15766,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:924c7849-b28d-470f-80eb-5c9146ee65ac",
           "manifestUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json",
           "name": "Envoy Local Data",
-          "publisherDate": "2026-10-27",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/repository.json",
-          "version": "0.0.8"
+          "version": "0.0.10"
         },
         {
           "appCount": 0,
@@ -20926,7 +21068,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8898392d61ceeb0e63b93841",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:6ecbb63a9f54071bd02c",
+          "packageName": "Smart Oil Gauge",
+          "summary": "Smart Oil Gauge: updated."
+        }
+      ],
       "appCount": 1,
       "categories": [
         {
@@ -20939,7 +21096,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 1,
@@ -20950,9 +21107,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:6ecbb63a9f54071bd02c",
           "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json",
           "name": "Smart Oil Gauge",
-          "publisherDate": "2026-06-12",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
-          "version": "0.0.15"
+          "version": "0.0.16"
         }
       ]
     },
@@ -22952,6 +23109,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:94a914c1e028466e50d18e07",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -22966,7 +23137,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 41,
+      "observedActivityCount": 42,
       "packages": [
         {
           "appCount": 2,
@@ -22977,9 +23148,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-26",
+          "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "5.0.2"
+          "version": "5.0.3"
         }
       ]
     },
@@ -25772,6 +25943,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:65dc5b60d9fd11e8b97b",
           "packageName": "Home Assistant Device Bridge",
           "summary": "Home Assistant Device Bridge: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f39a42fb1e1172479effc54d",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:65dc5b60d9fd11e8b97b",
+          "packageName": "Home Assistant Device Bridge",
+          "summary": "Home Assistant Device Bridge: updated."
         }
       ],
       "appCount": 1,
@@ -25786,7 +25971,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -25799,7 +25984,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Home Assistant Device Bridge",
           "publisherDate": "2021-03-19",
           "repositoryUrl": "https://raw.githubusercontent.com/ymerj/hpm/main/repository.json",
-          "version": "2.30"
+          "version": "2.31"
         }
       ]
     },
@@ -25835,6 +26020,52 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ec444fa122897e8619f69eec",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+          "packageName": "WiZ Dual Zone",
+          "summary": "WiZ Dual Zone: added."
+        }
+      ],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 1
+        }
+      ],
+      "currentPackageCount": 1,
+      "currentRank": 265,
+      "driverCount": 3,
+      "id": "contributor:ba3ff7cff9a8f45b1481",
+      "name": "youzer-name",
+      "observedActivityCount": 1,
+      "packages": [
+        {
+          "appCount": 2,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
+          "documentationUrl": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
+          "driverCount": 3,
+          "id": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
+          "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json",
+          "name": "WiZ Dual Zone",
+          "publisherDate": "2026-10-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/repository.json",
+          "version": "1.0.1"
+        }
+      ]
+    },
+    {
       "activity": [],
       "appCount": 0,
       "categories": [
@@ -25844,7 +26075,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 265,
+      "currentRank": 266,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -26050,14 +26281,14 @@ window.CONTRIBUTOR_ACTIVITY = {
       "packages": []
     }
   ],
-  "currentContributorCount": 265,
-  "currentPackageCount": 954,
+  "currentContributorCount": 266,
+  "currentPackageCount": 955,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 580,
-    "eventCount": 577,
+    "attributedEventCount": 594,
+    "eventCount": 591,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-28T05:57:35Z"
+    "lastObservedAt": "2026-10-29T06:04:01Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -26068,10 +26299,10 @@ window.CONTRIBUTOR_ACTIVITY = {
     "publisherDates": "publisher-declared package release dates, shown separately from observed activity",
     "ranking": "unique packages in the current successful community package snapshot"
   },
-  "observedContributorCount": 269,
-  "rankedPackageCount": 952,
+  "observedContributorCount": 270,
+  "rankedPackageCount": 953,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-28T05:57:35Z",
+  "snapshotGenerated": "2026-10-29T06:04:01Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-28T05:57:35Z`
-- HPM repositories in master list: **224**
-- Repositories fetched successfully: **223**
-- Packages indexed: **954**
+- Snapshot: `2026-10-29T06:04:01Z`
+- HPM repositories in master list: **225**
+- Repositories fetched successfully: **224**
+- Packages indexed: **955**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **856**
+Total packages not matched by any registry entry: **857**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -587,6 +587,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | vpsupun | Nuki Web API | Integrations | Locks, Safety & Security, Doors & Windows, LAN | https://raw.githubusercontent.com/vpsupun/hubitat/master/NukiWebAPI/packageManifest.json |
 | vpsupun | Rituals Perfume Genie | Integrations | Appliances, Misc. Devices | https://raw.githubusercontent.com/vpsupun/hubitat/master/RitualsPerfumeGenie/packageManifest.json |
 | waterboysh | Nexia Thermostat Manager / Trane Home | Integrations | Climate Control, Cloud, Temperature & Humidity | https://raw.githubusercontent.com/waterboysh/hubitat/main/trane-home-thermostat/packageManifest.json |
+| youzer-name | WiZ Dual Zone | Integrations | LAN, Lights & Switches, Automations & Groups | https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json |
 
 ## Fetch and parse errors
 
@@ -617,8 +618,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 856 |
-| G candidate subset | 381 |
+| G. Unrepresented packages | 857 |
+| G candidate subset | 382 |
 
 ## H. Enrichment summary
 
@@ -628,13 +629,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2351 |
-| Source URLs fetched | 2341 |
+| Distinct source URLs | 2356 |
+| Source URLs fetched | 2346 |
 | Source URLs failed | 10 |
-| Components attempted | 2365 |
-| Components fetched | 2355 |
-| Literal definitions verified | 2344 |
-| Components with observations | 2211 |
+| Components attempted | 2370 |
+| Components fetched | 2360 |
+| Literal definitions verified | 2349 |
+| Components with observations | 2216 |
 
 ### Official Hubitat documentation pass
 

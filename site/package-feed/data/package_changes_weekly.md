@@ -1,9 +1,23 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-28T05:57:35Z`.
+Latest observation: `2026-10-29T06:04:01Z`.
 
-**78 package change(s):** added 18, declared definitions changed 4, manifest changed 1, removed 1, source location changed 5, updated 58
+**83 package change(s):** added 17, declared definitions changed 4, manifest changed 1, source location changed 4, updated 65
 
+- [WiZ Dual Zone: added.](https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json)
+- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
+- [Smart Oil Gauge: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
+- [Palette Scenes: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/palette.json)
+- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
+- [Mysa Thermostat Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
+- [Holiday Lighting: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/holiday.json)
+- [Heiman HS2WD-E Siren: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
+- [Envoy Local Data: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json)
 - [YoLink™ Local Hub Connector: updated, changed declared definitions.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/yolink-local-hub.json)
 - [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
 - [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
@@ -73,14 +87,5 @@ Latest observation: `2026-10-28T05:57:35Z`.
 - [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [Aeon Smart Dimmer 2nd Edition: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json)
 - [Aeon Multisensor Gen5: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json)
-- [Tholz SmartHeat: updated, changed source location.](https://raw.githubusercontent.com/rngarcia/hubitat-tholz-smartheat/main/packageManifest.json)
-- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
-- [Shelly Plug US Gen4 (Zigbee): added.](https://raw.githubusercontent.com/chsbusch-dot/hubitat-shelly-gen4-zigbee/main/packageManifest.json)
-- [PJLink Projector Driver: removed.](https://bitbucket.org/aogail/hubitat-pjlink/raw/v1.0.0/packageManifest.json)
-- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
-- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [Aqara Floor Heating Thermostat W500: added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/floor-heating-thermostat-w500/packageManifest.json)
-- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
