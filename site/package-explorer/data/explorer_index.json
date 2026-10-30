@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 955,
+    "HPM_PACKAGE": 956,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2660,
+  "recordCount": 2661,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -64115,7 +64115,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-10-29",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -64197,7 +64197,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.0.3"
+      "version": "5.1.0"
     },
     {
       "author": "Justin Leonard",
@@ -79413,7 +79413,7 @@
       "author": "brossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-10",
+      "dateReleased": "2026-10-29",
       "definitions": [
         {
           "id": "definition:8eb68d19ce3c653e3a76",
@@ -79502,7 +79502,7 @@
         "Temperature & Humidity",
         "Water Heater"
       ],
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "author": "Dominick Meglio",
@@ -85377,7 +85377,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-29",
+      "dateReleased": "2026-10-30",
       "definitions": [
         {
           "id": "definition:2a261aa987abe9493331",
@@ -85454,13 +85454,13 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.2"
+      "version": "1.4.7"
     },
     {
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-29",
+      "dateReleased": "2026-10-30",
       "definitions": [
         {
           "id": "definition:ec844bf06d43a411ed84",
@@ -85540,7 +85540,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.4.1"
+      "version": "1.6.1"
     },
     {
       "author": "Krassimir Kossev",
@@ -93938,7 +93938,7 @@
       "author": "WBEVAN",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-29",
       "definitions": [
         {
           "id": "definition:fc74835dd5f7efa21d9e",
@@ -94034,7 +94034,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "1.7.0"
+      "version": "1.7.1"
     },
     {
       "author": "ritchierich",
@@ -102720,6 +102720,112 @@
         "Weather"
       ],
       "version": "1.0.6"
+    },
+    {
+      "author": "Rob Cummings",
+      "category": "Convenience",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-29",
+      "definitions": [
+        {
+          "id": "definition:91f517d07786a256984e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Weather Watcher",
+          "namespace": "cummingsrob",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.20"
+        },
+        {
+          "id": "definition:80f305c779c3b6e445f1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Weather Watcher Manager",
+          "namespace": "cummingsrob",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.20"
+        },
+        {
+          "id": "definition:5ec4ea559ab2b3474350",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Weather Watcher Device",
+          "namespace": "cummingsrob",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.20"
+        }
+      ],
+      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, or keyed provider).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/cummingsrob/hubitat-weather-watcher#readme",
+        "manifest": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json",
+        "repository": "https://github.com/cummingsrob/hubitat-weather-watcher"
+      },
+      "name": "Weather Watcher",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "api.bigdatacloud.net",
+          "api.open-meteo.com",
+          "api.openweathermap.org",
+          "api.weather.gov",
+          "www.w3.org"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Dashboards",
+        "Weather"
+      ],
+      "version": "0.2.20"
     },
     {
       "author": "Matthew Scott",
@@ -136483,5 +136589,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-29T06:04:01Z"
+  "snapshotGenerated": "2026-10-30T06:04:45Z"
 }

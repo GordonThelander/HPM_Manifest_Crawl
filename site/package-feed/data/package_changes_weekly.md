@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-10-29T06:04:01Z`.
+Latest observation: `2026-10-30T06:04:45Z`.
 
-**83 package change(s):** added 17, declared definitions changed 4, manifest changed 1, source location changed 4, updated 65
+**68 package change(s):** added 6, declared definitions changed 3, source location changed 1, updated 62
 
+- [Weather Watcher: added.](https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json)
+- [TESmart Controller: updated.](https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [WiZ Dual Zone: added.](https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json)
 - [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
 - [Smart Oil Gauge: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json)
@@ -66,26 +72,5 @@ Latest observation: `2026-10-29T06:04:01Z`.
 - [FoxESS Cloud OpenAPI: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json)
 - [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
-- [Zemismart SDM02T Energy Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json)
-- [Watchtower: updated, changed source location.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
-- [Tuya Tank Level Monitor (Wi-Fi) Local: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json)
-- [Tuya IoT Platform (Cloud): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json)
-- [Tholz SmartHeat: changed manifest location, changed source location.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json)
-- [Roomba (Rest980): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Remotec ZXT-120 IR Extender: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json)
-- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Hikvision Audible Alarm Trigger (ISAPI): added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json)
-- [Heiman HS2WD-E Siren: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
-- [Goldshell BYTE Miner: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json)
-- [FusionSolar OpenAPI: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json)
-- [FoxESS Cloud OpenAPI: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json)
-- [Aqara H2 EU Wall Switch (WS-K08E): updated.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-eu-wall-switch/packageManifest.json)
-- [Aqara H2 EU Wall Outlet (Local Zigbee): updated.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/h2-wall-outlet/packageManifest.json)
-- [Apple TV Integration: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
-- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
-- [Aeon Smart Dimmer 2nd Edition: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json)
-- [Aeon Multisensor Gen5: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

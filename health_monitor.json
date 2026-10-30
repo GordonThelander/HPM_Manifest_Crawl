@@ -8658,7 +8658,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/my-god-anyone-attempted-an-lg-thinq-integration/51925",
+            "finalUrl": "https://community.hubitat.com/t/no-longer-maintained-lg-thinq-integration-attempt/51925",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -33966,7 +33966,7 @@
       "packageId": "hpm:c71046ce-7ca6-4299-a24e-1d9690bcf1d7",
       "repositoryUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Mike Bishop",
@@ -39578,6 +39578,90 @@
       "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
       "state": "WARNING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "Rob Cummings",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 3
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "PRESENT",
+          "url": "https://github.com/cummingsrob/hubitat-weather-watcher#readme"
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 3,
+            "fetched": 3
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "documentationReachability",
+          "details": {
+            "finalUrl": "https://github.com/cummingsrob/hubitat-weather-watcher#readme",
+            "httpStatus": 206,
+            "reason": null
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "REACHABLE",
+          "url": "https://github.com/cummingsrob/hubitat-weather-watcher#readme"
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/cummingsrob/hubitat-weather-watcher#readme"
+      },
+      "manifestUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json",
+      "name": "Weather Watcher",
+      "packageId": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
+      "repositoryUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/repository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "Andrew Webster",
@@ -47114,12 +47198,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-schlage-wifi-lock-support/123604",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-schlage-wifi-lock-support/123604"
         },
         {
@@ -47654,12 +47738,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-camect-connect/43837",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-camect-connect/43837"
         },
         {
@@ -47683,7 +47767,7 @@
       "name": "Camect Connect",
       "packageId": "manifest:1e926794f27111afefd6",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -48011,13 +48095,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-google-calendar-task-and-gmail-search-and-gmail-notification-device/71397",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/release-google-calendar-search/71397",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-google-calendar-search/71397"
         },
         {
@@ -48041,7 +48125,7 @@
       "name": "Google Calendar, Task, and Gmail Search and Gmail Notification Device",
       "packageId": "manifest:23b1f128a5cb39e43fde",
       "repositoryUrl": "https://raw.githubusercontent.com/mlritchie/Hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -48276,12 +48360,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-zooz-zse42-water-leak-xs-sensor-driver/141549",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-zooz-zse42-water-leak-xs-sensor-driver/141549"
         },
         {
@@ -48305,7 +48389,7 @@
       "name": "Zooz Water Leak XS Sensor ZSE42",
       "packageId": "manifest:25eb62689df7b1b6983a",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -48635,7 +48719,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/drivers-for-zigbee-sinope-devices/91960",
+            "finalUrl": "https://community.hubitat.com/t/release-sinope-device-drivers-with-advanced-functionality/91960",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -48912,12 +48996,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-improved-lzw-60-inovelli-4-in-1-sensor-driver/37744?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-improved-lzw-60-inovelli-4-in-1-sensor-driver/37744?u=bcopeland"
         }
       ],
@@ -49308,12 +49392,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-inverse-link-two-switches/125687",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-inverse-link-two-switches/125687"
         },
         {
@@ -49656,12 +49740,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/ubiquiti-unifi-protect-cameras/17624/37",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/ubiquiti-unifi-protect-cameras/17624/37"
         },
         {
@@ -49685,7 +49769,7 @@
       "name": "hubitat_unifiProtect",
       "packageId": "manifest:303ade72aa6e7d0a49dc",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -50352,12 +50436,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/re-release-fronius-solar-inverter-driver-for-hubitat/138555?u=djos",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/re-release-fronius-solar-inverter-driver-for-hubitat/138555?u=djos"
         }
       ],
@@ -50369,7 +50453,7 @@
       "name": "Fronius Solar Inverter Driver for Hubitat",
       "packageId": "manifest:357d50e7a74097a0f327",
       "repositoryUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -50714,12 +50798,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-openweathermap-multi-api-weather-driver/165312",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-openweathermap-multi-api-weather-driver/165312"
         },
         {
@@ -50743,7 +50827,7 @@
       "name": "OpenWeatherMap Multi-API Weather Driver",
       "packageId": "manifest:369cb29ec5aec5f3001d",
       "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -51050,12 +51134,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-suncalc-driver/18374",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-suncalc-driver/18374"
         }
       ],
@@ -51067,7 +51151,7 @@
       "name": "SunCalc",
       "packageId": "manifest:3950ace48c71a0627a69",
       "repositoryUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -52573,12 +52657,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland"
         }
       ],
@@ -52729,12 +52813,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-virtual-inverse-able-switch/81028",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-virtual-inverse-able-switch/81028"
         },
         {
@@ -52758,7 +52842,7 @@
       "name": "Virtual Inverse-able Switch w-autoOff and Toggle",
       "packageId": "manifest:46ea46475747881a58e5",
       "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -53005,12 +53089,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041"
         },
         {
@@ -53341,12 +53425,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-lights-on-motion-plus-dim-before-off-remember-individual-bulb-states-etc/7178",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-lights-on-motion-plus-dim-before-off-remember-individual-bulb-states-etc/7178"
         }
       ],
@@ -53358,7 +53442,7 @@
       "name": "Lights on Motion Plus",
       "packageId": "manifest:4f05908f120a191c7245",
       "repositoryUrl": "https://raw.githubusercontent.com/RMoRobert/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -54181,12 +54265,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-range-extender-7-driver/37775?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-aeotec-range-extender-7-driver/37775?u=bcopeland"
         }
       ],
@@ -54198,7 +54282,7 @@
       "name": "Aeotec Range Extender 7",
       "packageId": "manifest:564feb74493ceffcad37",
       "repositoryUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/packages/repositories.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -54361,12 +54445,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-switch-dashboard-turn-your-led-status-switches-into-mini-dashboards",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 404,
+            "reason": "Not Found"
           },
-          "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "remediation": "Open the declared link and update or replace it.",
+          "state": "FAILING",
+          "status": "BROKEN",
           "url": "https://community.hubitat.com/t/release-switch-dashboard-turn-your-led-status-switches-into-mini-dashboards"
         }
       ],
@@ -54378,8 +54462,8 @@
       "name": "Switch Dashboard",
       "packageId": "manifest:5736f266210d02a9a68d",
       "repositoryUrl": "https://raw.githubusercontent.com/MFornander/Hubitat/master/respository.json",
-      "state": "WARNING",
-      "transition": "UNCHANGED"
+      "state": "FAILING",
+      "transition": "NEW_FAILURE"
     },
     {
       "author": "Robert Morris",
@@ -54673,12 +54757,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-weather-display-with-darksky-net-forecast-driver/22613",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-weather-display-with-darksky-net-forecast-driver/22613"
         },
         {
@@ -54702,7 +54786,7 @@
       "name": "Weather-Display With DarkSky.net Forecast Driver",
       "packageId": "manifest:59161adb125683812dcc",
       "repositoryUrl": "https://raw.githubusercontent.com/Scottma61/Hubitat/master/docs/Matthew_repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -55273,12 +55357,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-nyckelharpa-an-hsm-extension/15062",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-nyckelharpa-an-hsm-extension/15062"
         },
         {
@@ -55302,7 +55386,7 @@
       "name": "Nyckelharpa HSM Extension",
       "packageId": "manifest:5d719e8c17b7b5b40de2",
       "repositoryUrl": "https://raw.githubusercontent.com/arnbme/nyckelharpa/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -55635,12 +55719,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247"
         },
         {
@@ -56091,12 +56175,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-sensorpush-gateway-driver/66051",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-sensorpush-gateway-driver/66051"
         }
       ],
@@ -56331,12 +56415,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-moonraker-klipper-3d-printer-driver/163584",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-moonraker-klipper-3d-printer-driver/163584"
         },
         {
@@ -56360,7 +56444,7 @@
       "name": "Moonraker Klipper Printer",
       "packageId": "manifest:65b677bc95189011628d",
       "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -56919,12 +57003,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/tradfri-led-rgb-bulb/5524/82",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/tradfri-led-rgb-bulb/5524/82"
         },
         {
@@ -56948,7 +57032,7 @@
       "name": "Ikea Trådfri RGBW Bulb driver",
       "packageId": "manifest:6994ef9a298c812559c5",
       "repositoryUrl": "https://raw.githubusercontent.com/eliotstocker/hubitat-packages/main/repositories.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -57045,7 +57129,7 @@
       "packageId": "manifest:69c0b476e303bbf129b8",
       "repositoryUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/repository.json",
       "state": "FAILING",
-      "transition": "NEW_FAILURE"
+      "transition": "PERSISTENT_FAILURE"
     },
     {
       "author": "Albert Mulder",
@@ -57110,7 +57194,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/intecular-invisoutlet-hubitat-mqtt-app-drivers-beta/165173",
+            "finalUrl": "https://community.hubitat.com/t/intecular-invisoutlet-hubitat-mqtt-app-drivers/165173",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -57361,12 +57445,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-gocontrol-garage-door-opener/128029",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-gocontrol-garage-door-opener/128029"
         },
         {
@@ -57390,7 +57474,7 @@
       "name": "GoControl Garage Door Opener",
       "packageId": "manifest:6aee568c1872568f7afe",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -57699,12 +57783,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-noaa-weather-alerts/50588",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-noaa-weather-alerts/50588"
         },
         {
@@ -58191,12 +58275,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-weewx-local-capabilities/17709",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-weewx-local-capabilities/17709"
         }
       ],
@@ -58208,7 +58292,7 @@
       "name": "Weewx Local Capabilities",
       "packageId": "manifest:70ec22cbbfacf59cab6b",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -58275,12 +58359,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-heatit-z-temp-2-thermostat/49430/1",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-heatit-z-temp-2-thermostat/49430/1"
         }
       ],
@@ -58292,7 +58376,7 @@
       "name": "Heatit Z-Temp2",
       "packageId": "manifest:717769cd5519b741742d",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -58599,12 +58683,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland"
         }
       ],
@@ -59115,12 +59199,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland"
         }
       ],
@@ -59534,7 +59618,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/influxdb-logger/110548",
+            "finalUrl": "https://community.hubitat.com/t/influxdb-logger-support/110548",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -59714,12 +59798,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-water-sensor-6-w-dock/39292?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-aeotec-water-sensor-6-w-dock/39292?u=bcopeland"
         }
       ],
@@ -60253,7 +60337,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/project-album-art-tasker-and-musicbrainz-and-cover-art-archive/80416",
+            "finalUrl": "https://community.hubitat.com/t/alpha-album-art-tile-tasker-musicbrainz-and-cover-art-archive/80416",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -60746,12 +60830,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-logitech-harmony-hub-driver/7618?u=ogiewon",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-logitech-harmony-hub-driver/7618?u=ogiewon"
         },
         {
@@ -60775,7 +60859,7 @@
       "name": "Logitech Harmony Hub Parent",
       "packageId": "manifest:847455ab9d1bda9db3c8",
       "repositoryUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -61430,12 +61514,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/deprecated-you-got-mail/17946",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-you-got-mail/17946"
         }
       ],
@@ -61447,7 +61531,7 @@
       "name": "You Got Mail",
       "packageId": "manifest:86f794f6af8d1088e219",
       "repositoryUrl": "https://raw.githubusercontent.com/PrayerfulDrop/Hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -62105,12 +62189,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814"
         }
       ],
@@ -62122,7 +62206,7 @@
       "name": "Iris v1 Senior Care Pendant",
       "packageId": "manifest:89ffacc3e3d6084e290b",
       "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -62730,12 +62814,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com"
         },
         {
@@ -62759,7 +62843,7 @@
       "name": "Hestia Dashboard",
       "packageId": "manifest:8ba1b8bf77dda34dc96e",
       "repositoryUrl": "https://raw.githubusercontent.com/h4ven88/hestia-dashboard/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -63078,12 +63162,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/beta-nuki-smart-lock-2-0-3-0-4-0/40654",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/beta-nuki-smart-lock-2-0-3-0-4-0/40654"
         },
         {
@@ -63678,12 +63762,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-smart-switch-driver-7-eu-version/130862",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-aeotec-smart-switch-driver-7-eu-version/130862"
         },
         {
@@ -63774,12 +63858,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/genmon-generator-monitor/164362",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/genmon-generator-monitor/164362"
         },
         {
@@ -63803,7 +63887,7 @@
       "name": "Genmon Generator Monitor",
       "packageId": "manifest:924cfa250ee409a87aae",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -63943,12 +64027,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-owntracks-presence/53419",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-owntracks-presence/53419"
         },
         {
@@ -64267,12 +64351,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-tvheadend-epg-importer/86388",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-tvheadend-epg-importer/86388"
         }
       ],
@@ -64423,12 +64507,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland"
         }
       ],
@@ -64927,12 +65011,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/best-fibaro-dimmer-2-driver/19706/66",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/best-fibaro-dimmer-2-driver/19706/66"
         },
         {
@@ -65301,12 +65385,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-fibaro-smoke-sensor/32953/1",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-fibaro-smoke-sensor/32953/1"
         }
       ],
@@ -65318,7 +65402,7 @@
       "name": "Fibaro Smoke Sensor",
       "packageId": "manifest:9955260ac25548076b28",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -65637,12 +65721,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen24-zen23-central-scene-dimmer-and-switch-drivers/39766?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen24-zen23-central-scene-dimmer-and-switch-drivers/39766?u=bcopeland"
         }
       ],
@@ -65987,12 +66071,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com"
         }
       ],
@@ -66004,7 +66088,7 @@
       "name": "Hubitat Alarm",
       "packageId": "manifest:9f609748e34297d087cd",
       "repositoryUrl": "https://raw.githubusercontent.com/Welasco/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -67284,7 +67368,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/fibaro-fgs-224/59108",
+            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgd-212-fgs-224-fgs-223-and-fgs-222/59108",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -67695,12 +67779,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-homeseer-hsm200-multi-sensor/39899?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-homeseer-hsm200-multi-sensor/39899?u=bcopeland"
         }
       ],
@@ -68726,7 +68810,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/intesishome-integration-ac-cloud/41142",
+            "finalUrl": "https://community.hubitat.com/t/intesishome-integration/41142",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -69315,12 +69399,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen24-zen23-central-scene-dimmer-and-switch-drivers/39766?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen24-zen23-central-scene-dimmer-and-switch-drivers/39766?u=bcopeland"
         }
       ],
@@ -69495,12 +69579,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12"
         },
         {
@@ -69524,7 +69608,7 @@
       "name": "Smarter Bulbs",
       "packageId": "manifest:b95d7d0c0431b49eb33a",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -69591,12 +69675,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11"
         },
         {
@@ -69620,7 +69704,7 @@
       "name": "hubitat_midea",
       "packageId": "manifest:b99a1cd64e4011535f58",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -71129,12 +71213,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-textbelt-sms-notification-driver/152907",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-textbelt-sms-notification-driver/152907"
         }
       ],
@@ -71656,7 +71740,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-driver-release-v2-8-4/101697",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -71668,7 +71752,7 @@
         {
           "check": "documentationReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+            "finalUrl": "https://community.hubitat.com/t/release-sage-doorbell-driver-release-v2-8-4/101697",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -72016,13 +72100,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-cooper-eaton-aspire-rfwc5-keypad-driver-for-hubitat/9844",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/release-cooper-eaton-aspire-rfwc5-keypad-driver-for-hubitat",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-cooper-eaton-aspire-rfwc5-keypad-driver-for-hubitat"
         },
         {
@@ -72046,7 +72130,7 @@
       "name": "Cooper Aspire RFWC5 Scene Controller Driver",
       "packageId": "manifest:ca561de958c6571a48f9",
       "repositoryUrl": "https://raw.githubusercontent.com/joelwetzel/HubitatPackages/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -72195,12 +72279,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/vacation-lighting-anyone-have-it-running/1454/25",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/vacation-lighting-anyone-have-it-running/1454/25"
         }
       ],
@@ -72212,7 +72296,7 @@
       "name": "Vacation Lighting Director",
       "packageId": "manifest:cbcfc71e2234994bf2e0",
       "repositoryUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-Intesis/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -72954,12 +73038,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-switch-bindings",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 404,
+            "reason": "Not Found"
           },
-          "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "remediation": "Open the declared link and update or replace it.",
+          "state": "FAILING",
+          "status": "BROKEN",
           "url": "https://community.hubitat.com/t/release-switch-bindings"
         },
         {
@@ -72983,8 +73067,8 @@
       "name": "Switch Bindings",
       "packageId": "manifest:cef806703984713dd287",
       "repositoryUrl": "https://raw.githubusercontent.com/joelwetzel/HubitatPackages/master/repository.json",
-      "state": "WARNING",
-      "transition": "UNCHANGED"
+      "state": "FAILING",
+      "transition": "NEW_FAILURE"
     },
     {
       "author": "Aaron Ward",
@@ -73205,7 +73289,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/advanced-button-controller-abc/448",
+            "finalUrl": "https://community.hubitat.com/t/advanced-button-controller-abc/",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -74189,7 +74273,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-memory-monitor-auto-reboot-application/160272",
+            "finalUrl": "https://community.hubitat.com/t/release-hub-health-monitor-auto-reboot-application/160272",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -74273,13 +74357,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/deprecated-hs-fls100-floodlight-sensor/39283",
-            "httpStatus": 200,
-            "reason": null
+            "finalUrl": "https://community.hubitat.com/t/release-hs-fls100-floodlight-sensor/39283?u=bcopeland",
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-hs-fls100-floodlight-sensor/39283?u=bcopeland"
         }
       ],
@@ -74291,7 +74375,7 @@
       "name": "HomeSeer HS-FLS100+ Floodlight Sensor",
       "packageId": "manifest:dc1ba8c803f9de4d0502",
       "repositoryUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/packages/repositories.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -75080,12 +75164,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/re-release-netatmo-connect-weather-station/97788",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/re-release-netatmo-connect-weather-station/97788"
         }
       ],
@@ -75097,7 +75181,7 @@
       "name": "Netatmo (Connect) - Weather Station",
       "packageId": "manifest:e15a1fbd81c133c591bd",
       "repositoryUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -76280,12 +76364,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-aeotec-water-sensor-6/34269/1",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-aeotec-water-sensor-6/34269/1"
         }
       ],
@@ -76297,7 +76381,7 @@
       "name": "Aeotec Water Sensor 6",
       "packageId": "manifest:e82a6e8e704507f07e1f",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -76435,7 +76519,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/re-release-ecowitt-gateway-drivers/78492",
+            "finalUrl": "https://community.hubitat.com/t/re-release-ecowitt-and-wittboy-weather-stations-and-sensors-local/78492",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -76699,7 +76783,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver-switch/81319",
+            "finalUrl": "https://community.hubitat.com/t/release-zigbee-ewelink-cmars-seedan-outlet-driver/81319",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -76964,12 +77048,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950"
         },
         {
@@ -76993,7 +77077,7 @@
       "name": "Leviton Smart Load Center",
       "packageId": "manifest:ef7f5edf77a6625b6a9b",
       "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -77408,12 +77492,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-geofency-presence/22788",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-geofency-presence/22788"
         },
         {
@@ -77437,7 +77521,7 @@
       "name": "Geofency Presence",
       "packageId": "manifest:f11fdc6c0df7bac0ad7f",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -77864,12 +77948,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-rgbgenie-z-wave-device-drivers-all/34999?u=bcopeland"
         }
       ],
@@ -78371,12 +78455,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967"
         },
         {
@@ -78732,12 +78816,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-schwaiger-temperature-sensor/32956/1",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-schwaiger-temperature-sensor/32956/1"
         }
       ],
@@ -78749,7 +78833,7 @@
       "name": "Schwaiger Temperature Sensor",
       "packageId": "manifest:f7064269a5959233bc08",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -79068,12 +79152,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-synology-srm-router-integration/164624",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-synology-srm-router-integration/164624"
         }
       ],
@@ -79085,7 +79169,7 @@
       "name": "Synology SRM Router Integration",
       "packageId": "manifest:f92a356f20dd42bf3244",
       "repositoryUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -79248,12 +79332,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-laundry-manager/30614",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-laundry-manager/30614"
         }
       ],
@@ -79265,7 +79349,7 @@
       "name": "Laundry Manager",
       "packageId": "manifest:fa7e7a50324e3f1d7dbf",
       "repositoryUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -79656,12 +79740,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454"
         },
         {
@@ -79685,7 +79769,7 @@
       "name": "Nexia Thermostat Manager / Trane Home",
       "packageId": "manifest:fcc2d0233249bc797684",
       "repositoryUrl": "https://raw.githubusercontent.com/waterboysh/hubitat/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -80267,7 +80351,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/fibaro-fgs-224/59108",
+            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgd-212-fgs-224-fgs-223-and-fgs-222/59108",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -80301,21 +80385,21 @@
       "transition": "PERSISTENT_FAILURE"
     }
   ],
-  "previousSnapshot": "2026-10-28T05:57:35Z",
+  "previousSnapshot": "2026-10-29T06:04:01Z",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-29T06:04:01Z",
+  "snapshotGenerated": "2026-10-30T06:04:45Z",
   "summary": {
-    "packageCount": 955,
+    "packageCount": 956,
     "states": {
-      "FAILING": 207,
-      "PASSING": 453,
-      "WARNING": 295
+      "FAILING": 209,
+      "PASSING": 449,
+      "WARNING": 298
     },
     "transitions": {
       "BASELINE": 1,
-      "NEW_FAILURE": 1,
-      "PERSISTENT_FAILURE": 206,
-      "UNCHANGED": 747
+      "NEW_FAILURE": 2,
+      "PERSISTENT_FAILURE": 207,
+      "UNCHANGED": 746
     }
   }
 }

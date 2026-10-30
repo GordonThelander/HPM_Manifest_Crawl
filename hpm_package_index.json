@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 955,
+  "packageCount": 956,
   "packages": [
     {
       "apps": [],
@@ -191457,6 +191457,341 @@
     {
       "apps": [
         {
+          "definitionLine": 14,
+          "definitionName": "Weather Watcher Manager",
+          "definitionNamespace": "cummingsrob",
+          "manifestName": "Weather Watcher Manager",
+          "manifestNamespace": "cummingsrob",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 7,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy\"",
+              "line": 23,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy"
+              }
+            }
+          ],
+          "sourceBytes": 2014,
+          "sourceFetched": true,
+          "sourceSha256": "c365d9c62bc3b7315cf958ff30df41877e46223b29fa88e6577b00fe0daa8b82",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.20"
+        },
+        {
+          "definitionLine": 30,
+          "definitionName": "Weather Watcher",
+          "definitionNamespace": "cummingsrob",
+          "manifestName": "Weather Watcher",
+          "manifestNamespace": "cummingsrob",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 7,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "* Portions adapted from Rachio-Community (https://github.com/lnjustin/Rachio-Community),",
+              "line": 11,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/lnjustin/Rachio-Community"
+              }
+            },
+            {
+              "evidence": "* cummingsrob.WeatherWatcherIconsOutline (libraries/) and are derived from erikflowers/weather-icons (https://github.com/erikflowers/weather-icons),",
+              "line": 17,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/erikflowers/weather-icons"
+              }
+            },
+            {
+              "evidence": "oauth: true,",
+              "line": 37,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy\"",
+              "line": 39,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy"
+              }
+            },
+            {
+              "evidence": "mappings {",
+              "line": 46,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "defaultValue: \"https://api.openweathermap.org/data/3.0/onecall\",",
+              "line": 114,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.openweathermap.org",
+                "scheme": "https",
+                "url": "https://api.openweathermap.org/data/3.0/onecall"
+              }
+            },
+            {
+              "evidence": "def updated() { unschedule(); initialize() }",
+              "line": 226,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) }",
+              "line": 229,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "if (m == 15) runEvery15Minutes(\"scheduledRefresh\")",
+              "line": 242,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "else if (m == 30) runEvery30Minutes(\"scheduledRefresh\")",
+              "line": 243,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "else runEvery3Hours(\"scheduledRefresh\")",
+              "line": 245,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 1 0 * * ?\", \"renderAndPublish\") // roll days at midnight; refetches ~00:02 if data is from yesterday",
+              "line": 247,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"refreshForecast\")",
+              "line": 249,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { createAccessToken() }",
+              "line": 254,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "d = addChildDevice(NS, DRIVER_NAME, tileDni(), [name: DRIVER_NAME, label: tileDeviceName(), isComponent: false])",
+              "line": 265,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"handleOpenMeteo\", [uri: \"https://api.open-meteo.com\", path: \"/v1/forecast\", query: q, contentType: \"application/json\", headers: [\"Accept\": \"application/json\"], timeout: 20])",
+              "line": 323,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handleOpenMeteo\", [uri: \"https://api.open-meteo.com\", path: \"/v1/forecast\", query: q, contentType: \"application/json\", headers: [\"Accept\": \"application/json\"], timeout: 20])",
+              "line": 323,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.open-meteo.com",
+                "scheme": "https",
+                "url": "https://api.open-meteo.com"
+              }
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsPoints\", [uri: \"https://api.weather.gov\", path: p, contentType: \"application/json\", headers: nwsHeaders(), timeout: 20])",
+              "line": 406,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsPoints\", [uri: \"https://api.weather.gov\", path: p, contentType: \"application/json\", headers: nwsHeaders(), timeout: 20])",
+              "line": 406,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.weather.gov",
+                "scheme": "https",
+                "url": "https://api.weather.gov"
+              }
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsForecast\", [uri: state.nwsForecastUrl, query: q, contentType: \"application/json\", headers: nwsHeaders(), timeout: 25])",
+              "line": 431,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsObservation\", [uri: \"https://api.weather.gov\", path: \"/stations/${state.nwsStation}/observations/latest\",",
+              "line": 438,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsObservation\", [uri: \"https://api.weather.gov\", path: \"/stations/${state.nwsStation}/observations/latest\",",
+              "line": 438,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.weather.gov",
+                "scheme": "https",
+                "url": "https://api.weather.gov"
+              }
+            },
+            {
+              "evidence": "asynchttpGet(\"handleNwsStations\", [uri: state.nwsStationsUrl, contentType: \"application/json\", headers: nwsHeaders(), timeout: 20])",
+              "line": 441,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handleCustom\", [uri: settings.customUrl, query: q, contentType: \"application/json\", headers: [\"Accept\": \"application/json\"], timeout: 20])",
+              "line": 530,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "runIn(60, \"scheduledRefresh\")",
+              "line": 675,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "/** Same place as the current lat/lon? Compares at ~100 m so number formatting differences don't matter. */",
+              "line": 723,
+              "type": "MATTER_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"handlePlaceNws\", [uri: \"https://api.weather.gov\", path: p, contentType: \"application/json\", headers: nwsHeaders(), timeout: 20])",
+              "line": 753,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handlePlaceNws\", [uri: \"https://api.weather.gov\", path: p, contentType: \"application/json\", headers: nwsHeaders(), timeout: 20])",
+              "line": 753,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.weather.gov",
+                "scheme": "https",
+                "url": "https://api.weather.gov"
+              }
+            },
+            {
+              "evidence": "asynchttpGet(\"handlePlace\", [uri: \"https://api.bigdatacloud.net\", path: \"/data/reverse-geocode-client\",",
+              "line": 769,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"handlePlace\", [uri: \"https://api.bigdatacloud.net\", path: \"/data/reverse-geocode-client\",",
+              "line": 769,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.bigdatacloud.net",
+                "scheme": "https",
+                "url": "https://api.bigdatacloud.net"
+              }
+            },
+            {
+              "evidence": "sb << '<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 ' << w << ' ' << h << '\" preserveAspectRatio=\"xMidYMid meet\">'",
+              "line": 819,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.w3.org",
+                "scheme": "http",
+                "url": "http://www.w3.org/2000/svg"
+              }
+            },
+            {
+              "evidence": "runOnce(new Date(next.time + 30000L), \"sunRedraw\", [overwrite: true])",
+              "line": 1040,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 55808,
+          "sourceFetched": true,
+          "sourceSha256": "cca2c42d3bbc3710fbaff65eaa2f38b321bcf8b6337c27af392d3016d6c147bf",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.20"
+        }
+      ],
+      "author": "Rob Cummings",
+      "category": "Convenience",
+      "communityLink": null,
+      "dateReleased": "2026-10-29",
+      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, or keyed provider).",
+      "documentationLink": "https://github.com/cummingsrob/hubitat-weather-watcher#readme",
+      "drivers": [
+        {
+          "definitionLine": 9,
+          "definitionName": "Weather Watcher Device",
+          "definitionNamespace": "cummingsrob",
+          "manifestName": "Weather Watcher Device",
+          "manifestNamespace": "cummingsrob",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy\") {",
+              "line": 10,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy"
+              }
+            }
+          ],
+          "sourceBytes": 2558,
+          "sourceFetched": true,
+          "sourceSha256": "89e1bc2c9d3facbe52af1f7c55cd64be375676bf5135bd7e8f434a333b3ece66",
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.20"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json",
+      "packageId": "e51ad2cd-97e1-4367-99d4-659ecc5da476",
+      "packageName": "Weather Watcher",
+      "repoAuthor": "Rob Cummings",
+      "repoName": "Rob Cummings",
+      "repoUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/repository.json",
+      "tags": [
+        "Weather",
+        "Dashboards"
+      ],
+      "version": "0.2.20"
+    },
+    {
+      "apps": [
+        {
           "definitionLine": 21,
           "definitionName": "LIFX Master",
           "definitionNamespace": "robheyes",
@@ -247063,14 +247398,14 @@
           ],
           "sourceBytes": 38124,
           "sourceFetched": true,
-          "sourceSha256": "cf8a5886121cc55fc8da90e85f94c016bb3e3c9ae061cba31c5206e8e75eaf80",
+          "sourceSha256": "529e21789a3a4a41e68915f1129d69eeefe0d3644d274f1131890bc437b6151d",
           "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
         }
       ],
       "author": "WBEVAN",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-tesmart-hdmi-switch-rest-api-service-with-hubitat-package-manager-app/166591",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-29",
       "description": "TESmart 8/16-port HDMI/KVM switch via tesmartctl REST. Includes Manager app, controller driver, and child input switches.",
       "documentationLink": "https://wbevan.github.io/TESmartController/",
       "drivers": [
@@ -247093,104 +247428,104 @@
             },
             {
               "evidence": "runIn(1800, \"logsOff\")",
-              "line": 213,
+              "line": 216,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 254,
+              "line": 257,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"refresh\")",
-              "line": 261,
+              "line": 264,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices()?.each { child ->",
-              "line": 445,
+              "line": 454,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "asynchttpGet(callback, params, data)",
-              "line": 534,
+              "line": 543,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPost(callback, params, data)",
-              "line": 558,
+              "line": 567,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "runIn(2, \"refresh\")",
-              "line": 597,
+              "line": 606,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(BUILTIN_CHILD_NAMESPACE, BUILTIN_CHILD_TYPE, dni, props)",
-              "line": 1019,
+              "line": 1034,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(CHILD_NAMESPACE, CHILD_TYPE, dni, props)",
-              "line": 1021,
+              "line": 1036,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(BUILTIN_CHILD_NAMESPACE, BUILTIN_CHILD_TYPE, dni, props)",
-              "line": 1028,
+              "line": 1043,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"refresh\")",
-              "line": 1405,
+              "line": 1420,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(\"refresh\")",
-              "line": 1407,
+              "line": 1422,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(\"refresh\")",
-              "line": 1409,
+              "line": 1424,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"refresh\")",
-              "line": 1411,
+              "line": 1426,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"refreshLoop\")",
-              "line": 1414,
+              "line": 1429,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"refreshLoop\")",
-              "line": 1423,
+              "line": 1438,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 52348,
+          "sourceBytes": 53160,
           "sourceFetched": true,
-          "sourceSha256": "26493518393d41eb7dd9476cb9efc66c5f18f94befe76160433cccf4cc34d752",
+          "sourceSha256": "771198c2f637a96f443a3c435aa68196ff92081ce5308cdae56482cac0b9fcfe",
           "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
         },
         {
@@ -247230,7 +247565,7 @@
         "HDMI",
         "KVM"
       ],
-      "version": "1.7.0"
+      "version": "1.7.1"
     },
     {
       "apps": [],
@@ -264910,7 +265245,7 @@
       "author": "brossow",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/drivers-rheem-econet-thermostat-water-heater/163127",
-      "dateReleased": "2026-10-10",
+      "dateReleased": "2026-10-29",
       "description": "Drivers for Rheem EcoNet thermostats and water heaters via the ClearBlade cloud API.",
       "documentationLink": "https://github.com/brossow/hubitat-drivers/tree/main/rheem-econet",
       "drivers": [
@@ -264943,86 +265278,86 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 515,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
               "line": 516,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 517,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "httpPost(params) { resp ->",
-              "line": 567,
+              "line": 568,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(delay, \"login\")",
-              "line": 612,
+              "line": 613,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 675,
+              "line": 682,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 972,
+              "line": 1017,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(5, \"fetchEquipment\")",
-              "line": 992,
+              "line": 1037,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"fetchEquipment\")",
-              "line": 1001,
+              "line": 1046,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"5 minutes\": runEvery5Minutes(\"fetchEquipment\"); break",
-              "line": 1004,
+              "line": 1049,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"10 minutes\": schedule(\"0 */10 * ? * *\", \"fetchEquipment\"); break",
-              "line": 1005,
+              "line": 1050,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"15 minutes\": runEvery15Minutes(\"fetchEquipment\"); break",
-              "line": 1006,
+              "line": 1051,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"30 minutes\": runEvery30Minutes(\"fetchEquipment\"); break",
-              "line": 1007,
+              "line": 1052,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "default: runEvery5Minutes(\"fetchEquipment\")",
-              "line": 1009,
+              "line": 1054,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 47339,
+          "sourceBytes": 49437,
           "sourceFetched": true,
-          "sourceSha256": "c03e0ff98b7711dde7a6c6015e6edc1c0680540c1ff49bd497a0e21444996a02",
+          "sourceSha256": "a445139679df47b49ee830ade87261cb81598bfd778109a1fc2000f9d2411a40",
           "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/EcoNetThermostat.groovy"
         },
         {
@@ -265043,8 +265378,38 @@
               }
             },
             {
+              "evidence": "unschedule(\"fetchUsage\")",
+              "line": 338,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 5 * * * ?\", \"fetchUsage\")",
+              "line": 339,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"fetchUsage\")",
+              "line": 340,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (USAGE_KINDS.keySet().every { state[it + \"Unsupported\"] }) unschedule(\"fetchUsage\")",
+              "line": 350,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpPost(params) { resp ->",
+              "line": 433,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
               "evidence": "@Field String REST_BASE = \"https://rheem.rheemconnect.com/api/v/1\"",
-              "line": 468,
+              "line": 743,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "rheem.rheemconnect.com",
@@ -265054,86 +265419,86 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 488,
+              "line": 764,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
-              "line": 489,
+              "line": 765,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 540,
+              "line": 816,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(delay, \"login\")",
-              "line": 585,
+              "line": 861,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 648,
+              "line": 930,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 945,
+              "line": 1265,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(5, \"fetchEquipment\")",
-              "line": 965,
+              "line": 1285,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"fetchEquipment\")",
-              "line": 974,
+              "line": 1294,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"5 minutes\": runEvery5Minutes(\"fetchEquipment\"); break",
-              "line": 977,
+              "line": 1297,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"10 minutes\": schedule(\"0 */10 * ? * *\", \"fetchEquipment\"); break",
-              "line": 978,
+              "line": 1298,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"15 minutes\": runEvery15Minutes(\"fetchEquipment\"); break",
-              "line": 979,
+              "line": 1299,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"30 minutes\": runEvery30Minutes(\"fetchEquipment\"); break",
-              "line": 980,
+              "line": 1300,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "default: runEvery5Minutes(\"fetchEquipment\")",
-              "line": 982,
+              "line": 1302,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 44510,
+          "sourceBytes": 59838,
           "sourceFetched": true,
-          "sourceSha256": "5aa10aa9939f49ada6b0bad974b5dabd24873bd5e01ff5866f05a7791837c93b",
+          "sourceSha256": "f992e7831eaeea0bbba782494cc5d3bd7070ff8d27a185f6ae353851ff516045",
           "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/EcoNetWaterHeater.groovy"
         }
       ],
@@ -265150,7 +265515,7 @@
         "Temperature & Humidity",
         "Water Heater"
       ],
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "apps": [],
@@ -300023,7 +300388,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-10-29",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -300035,7 +300400,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "5.0.3"
+      "version": "5.1.0"
     },
     {
       "apps": [],
@@ -342910,327 +343275,375 @@
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 320,
+              "line": 327,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 335,
+              "line": 342,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 370,
+              "line": 379,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 455,
+              "line": 472,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 462,
+              "line": 479,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 479,
+              "line": 500,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lock', lockHandler)",
-              "line": 521,
+              "line": 546,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'unlock', lockHandler)",
-              "line": 522,
+              "line": 547,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lastCodeName', lastCodeNameHandler)",
-              "line": 523,
+              "line": 548,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lockCodes', lockCodesHandler)",
-              "line": 524,
+              "line": 549,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'codeChanged', codeChangedHandler)",
-              "line": 525,
+              "line": 550,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'maxCodes', maxCodesHandler)",
-              "line": 526,
+              "line": 551,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'codeLength', codeLengthHandler)",
-              "line": 527,
+              "line": 552,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 535,
+              "line": 560,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() also removed the refresh cadence and any running refresh's",
-              "line": 537,
+              "line": 562,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(checkIn, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 570,
+              "line": 596,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(checkOut, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 575,
+              "line": 601,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// every app-wide unschedule(). After an update through HPM (no Done) the first",
+              "line": 660,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'sbAppInfoDaily')",
+              "line": 669,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshStartDelaySec, 'codeRefreshNext', [overwrite: true, data: [runId: runId, index: 0]])",
-              "line": 624,
+              "line": 717,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(r.budgetSec, 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 670,
+              "line": 763,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshSettleSec, 'codeRefreshSettled', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 684,
+              "line": 777,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshGapSec, 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: (r.index as int) + 1]])",
-              "line": 702,
+              "line": 795,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed the running refresh's timer; put it back",
-              "line": 705,
+              "line": 798,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: 0]])",
-              "line": 713,
+              "line": 806,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 715,
+              "line": 808,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('refreshDoorCodes')",
-              "line": 736,
+              "line": 829,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, 'codeRefreshScheduled')",
-              "line": 741,
+              "line": 834,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('codeRefreshScheduled')",
-              "line": 744,
+              "line": 837,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'tryDeleteCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition ]])",
-              "line": 865,
+              "line": 958,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
-              "line": 895,
+              "line": 988,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
-              "line": 911,
+              "line": 1004,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 180, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 934,
+              "line": 1027,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'verifySetCode', [ overwrite: false, data: retryData ])",
-              "line": 985,
+              "line": 1078,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unsubscribe()/unschedule() here: those operate app-wide and would also tear",
-              "line": 1039,
+              "line": 1132,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, 'trySetCode', [ overwrite: false, data: retryData ])",
-              "line": 1115,
+              "line": 1208,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1243,
+              "line": 1336,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// and the daily app info announcement its schedule (#692)",
+              "line": 1340,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1413,
+              "line": 1511,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1441,
+              "line": 1539,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1502,
+              "line": 1600,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1555,
+              "line": 1653,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 1871,
+              "line": 1971,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 1914,
+              "line": 2019,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 1966,
+              "line": 2071,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost('sbRegisterCallback', sbRegisterParams())",
-              "line": 1969,
+              "line": 2074,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 1981,
+              "line": 2094,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// Kept in atomicState with its due time, so an app-wide unschedule() (scheduleEvents on",
-              "line": 1985,
+              "line": 2097,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 1988,
+              "line": 2100,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed a pending registration retry's timer; put it back for the time left",
-              "line": 1991,
+              "line": 2103,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 1997,
+              "line": 2109,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2045,
+              "line": 2160,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost([",
-              "line": 2085,
+              "line": 2200,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2105,
+              "line": 2222,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2110,
+              "line": 2227,
               "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// The link state is in atomicState with its expiry time, so an app-wide unschedule()",
+              "line": 2243,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(sbConnectLinkSeconds, 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: at]])",
+              "line": 2251,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 1L), 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: l.issuedAt]])",
+              "line": 2297,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('sbConnectLinkExpire')",
+              "line": 2302,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.accessToken = createAccessToken()",
+              "line": 2312,
+              "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             }
           ],
-          "sourceBytes": 86168,
+          "sourceBytes": 98418,
           "sourceFetched": true,
-          "sourceSha256": "cac59d7a210ed81e96483c8ec4f3ff79c9e0fc3f09867ae16b009577f3b76ea7",
+          "sourceSha256": "26d644b38ba7f009be53dd5d893014e16728d3ea9cb340833e84075b49d146ad",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
         }
       ],
       "author": "Chris Ogden",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-10-29",
+      "dateReleased": "2026-10-30",
       "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
       "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
       "drivers": [],
@@ -343245,12 +343658,12 @@
         "Locks",
         "Cloud"
       ],
-      "version": "1.4.2"
+      "version": "1.4.7"
     },
     {
       "apps": [
         {
-          "definitionLine": 133,
+          "definitionLine": 184,
           "definitionName": "SignalBricks Telemetry",
           "definitionNamespace": "spinrag",
           "manifestName": "SignalBricks Telemetry",
@@ -343258,7 +343671,7 @@
           "observations": [
             {
               "evidence": "@Field static final String SB_PORTAL_URL = 'https://app.signalbricks.co'",
-              "line": 71,
+              "line": 99,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "app.signalbricks.co",
@@ -343268,7 +343681,7 @@
             },
             {
               "evidence": "@Field static final String HUBITAT_STATE_REDIRECT = 'https://cloud.hubitat.com/oauth/stateredirect'",
-              "line": 75,
+              "line": 103,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -343278,7 +343691,7 @@
             },
             {
               "evidence": "@Field static final String DOCS_URL = 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md'",
-              "line": 76,
+              "line": 104,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -343288,13 +343701,13 @@
             },
             {
               "evidence": "oauth: true,",
-              "line": 142,
+              "line": 193,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "documentationLink: 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md',",
-              "line": 145,
+              "line": 196,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -343304,213 +343717,327 @@
             },
             {
               "evidence": "mappings {",
-              "line": 152,
+              "line": 203,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "input(name: 'locks', type: 'capability.lock', title: 'Locks (lock state, battery, last code name)', multiple: true, required: false, submitOnChange: true)",
-              "line": 202,
+              "line": 258,
               "type": "CAPABILITY_REFERENCE",
               "value": "lock"
             },
             {
               "evidence": "input(name: 'contactSensors', type: 'capability.contactSensor', title: 'Contact sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 203,
+              "line": 259,
               "type": "CAPABILITY_REFERENCE",
               "value": "contactSensor"
             },
             {
               "evidence": "input(name: 'temperatureSensors', type: 'capability.temperatureMeasurement', title: 'Temperature sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 204,
+              "line": 260,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input(name: 'humiditySensors', type: 'capability.relativeHumidityMeasurement', title: 'Humidity sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 205,
+              "line": 261,
               "type": "CAPABILITY_REFERENCE",
               "value": "relativeHumidityMeasurement"
             },
             {
               "evidence": "input(name: 'codeLocks', type: 'capability.lockCodes', title: 'Locks SignalBricks may manage codes on', multiple: true, required: false, submitOnChange: true)",
-              "line": 253,
+              "line": 315,
               "type": "CAPABILITY_REFERENCE",
               "value": "lockCodes"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 325,
+              "line": 395,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 330,
+              "line": 401,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 346,
+              "line": 418,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 351,
+              "line": 423,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() also removed these timers; put them back for the time left",
+              "line": 427,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, 'logsOff')",
-              "line": 355,
+              "line": 432,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lock', 'eventHandler')",
-              "line": 369,
+              "line": 446,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lastCodeName', 'eventHandler')",
-              "line": 370,
+              "line": 447,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (contactSensors) subscribe(contactSensors, 'contact', 'eventHandler')",
-              "line": 372,
+              "line": 449,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (temperatureSensors) subscribe(temperatureSensors, 'temperature', 'eventHandler')",
-              "line": 373,
+              "line": 450,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (humiditySensors) subscribe(humiditySensors, 'humidity', 'eventHandler')",
-              "line": 374,
+              "line": 451,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "batteryDevices.each { subscribe(it, 'battery', 'eventHandler') }",
-              "line": 379,
+              "line": 456,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 388,
+              "line": 465,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
+              "evidence": "unschedule('sendAppInfoReport')",
+              "line": 469,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule('dailyCheckIn')",
-              "line": 403,
+              "line": 489,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 407,
+              "line": 495,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "asynchttpPost('postCallback', params, [name: evt.name, deviceId: evt.deviceId])",
-              "line": 445,
+              "line": 533,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 516,
+              "line": 605,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// (success or failure): createAccessToken() invalidates the previous token,",
-              "line": 566,
+              "line": 657,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 572,
+              "line": 663,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "// Kept in atomicState with its expiry time, so initialize()'s unschedule() can",
+              "line": 676,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(CONNECT_LINK_SECONDS, 'expireConnectLink', [overwrite: true, data: [issuedAt: at]])",
+              "line": 683,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 1L), 'expireConnectLink', [overwrite: true, data: [issuedAt: l.issuedAt]])",
+              "line": 729,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('expireConnectLink')",
+              "line": 734,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 744,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(tokenParams) { resp ->",
-              "line": 608,
+              "line": 784,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "asynchttpPost('registerCallback', params, [enabled: enabled])",
-              "line": 691,
+              "line": 900,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
+              "evidence": "unschedule('registerRetryRun')",
+              "line": 923,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, 'registerRetryRun', [overwrite: true])",
+              "line": 927,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() removed a pending retry's timer; put it back for the time left",
+              "line": 930,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 5L), 'registerRetryRun', [overwrite: true])",
+              "line": 936,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('registerRetryRun')",
+              "line": 949,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule('dailyCheckIn')",
-              "line": 727,
+              "line": 999,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'dailyCheckIn')",
-              "line": 735,
+              "line": 1007,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, APP_INFO_EVENT, 'appInfoHandler')",
+              "line": 1036,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(APP_INFO_REPORT_DELAY_SECONDS, 'sendAppInfoReport', [overwrite: true])",
+              "line": 1069,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpPost('reportCallback', params, [reason: reason])",
+              "line": 1275,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "runIn(delay, 'reportRetryRun', [overwrite: true])",
+              "line": 1329,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() removed a pending retry's timer; put it back for the time left",
+              "line": 1332,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 5L), 'reportRetryRun', [overwrite: true])",
+              "line": 1337,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('reportRetryRun')",
+              "line": 1349,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(secondsUntil(next), 'expirePendingCodeChanges')",
-              "line": 1584,
+              "line": 2391,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('expirePendingCodeChanges')",
-              "line": 1587,
+              "line": 2394,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (due) runIn(secondsUntil(due.min()), 'verifyCodeChanges')",
-              "line": 1590,
+              "line": 2397,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else unschedule('verifyCodeChanges')",
-              "line": 1591,
+              "line": 2398,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost('postCallback', params, [name: eventName, deviceId: p.lockId])",
-              "line": 1862,
+              "line": 2699,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 91379,
+          "sourceBytes": 133481,
           "sourceFetched": true,
-          "sourceSha256": "764df748208f15d028ee286fcfca2ca704f9c709e0ce3ed6a966c8ad4519c1d5",
+          "sourceSha256": "0f73fb0ceddcef4853c2b33ed4f8a1e46d013331bc986751da42b29f6293b18f",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
         }
       ],
       "author": "Chris Ogden",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-10-29",
+      "dateReleased": "2026-10-30",
       "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed codes.",
       "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
       "drivers": [],
@@ -343528,7 +344055,7 @@
         "Temperature & Humidity",
         "Monitoring"
       ],
-      "version": "1.4.1"
+      "version": "1.6.1"
     },
     {
       "apps": [
@@ -361769,21 +362296,21 @@
       "version": "1.1.5"
     }
   ],
-  "repositoriesFetched": 224,
-  "repositoryCount": 225,
+  "repositoriesFetched": 225,
+  "repositoryCount": 226,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-10-29T06:04:01Z",
+  "snapshotGenerated": "2026-10-30T06:04:45Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2370,
+    "componentsAttempted": 2373,
     "componentsFailed": 10,
-    "componentsFetched": 2360,
-    "componentsWithObservations": 2216,
-    "definitionsVerified": 2349,
-    "distinctSourceUrls": 2356,
+    "componentsFetched": 2363,
+    "componentsWithObservations": 2219,
+    "definitionsVerified": 2352,
+    "distinctSourceUrls": 2359,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2346
+    "sourceUrlsFetched": 2349
   }
 }
