@@ -8608,6 +8608,104 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:c57015f573a94b304002",
           "packageName": "Sofabaton Integration",
           "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:09a6c3978a51a08f9faedf5c",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:26cbf739420af4f374f43b6d",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:721cf940fe938812c2b76de3",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:870b5a312594d77375184497",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a65b3a4589b6c9fc1613cafd",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b91e18ddb503774310d1d04b",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bec623db3dadfa3bba983d33",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
         }
       ],
       "appCount": 7,
@@ -8634,7 +8732,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 18,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 58,
+      "observedActivityCount": 65,
       "packages": [
         {
           "appCount": 1,
@@ -8647,7 +8745,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Apple TV Integration",
           "publisherDate": "2026-10-25",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.2.2"
+          "version": "1.2.3"
         },
         {
           "appCount": 1,
@@ -8660,7 +8758,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Battery Monitor 2.0",
           "publisherDate": "2026-10-27",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "2.7.3"
+          "version": "2.7.4"
         },
         {
           "appCount": 1,
@@ -8673,7 +8771,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Device Health Monitor",
           "publisherDate": "2026-10-27",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.8.0"
+          "version": "1.8.1"
         },
         {
           "appCount": 1,
@@ -8686,7 +8784,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Leviton Smart Load Center",
           "publisherDate": "2026-10-21",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "2.0.2"
+          "version": "2.0.3"
         },
         {
           "appCount": 0,
@@ -8712,7 +8810,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Pentair IntelliCenter Controller",
           "publisherDate": "2026-10-22",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.7.1"
+          "version": "1.7.2"
         },
         {
           "appCount": 1,
@@ -8725,7 +8823,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Reolink Integration",
           "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.16"
+          "version": "1.6.17"
         },
         {
           "appCount": 0,
@@ -8751,7 +8849,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Sofabaton Integration",
           "publisherDate": "2026-10-28",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.1.5"
+          "version": "1.1.6"
         }
       ]
     },
@@ -10729,6 +10827,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
           "packageName": "Heiman HS2WD-E Siren",
           "summary": "Heiman HS2WD-E Siren: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c71cf66942f04c55043fe0f0",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "packageName": "Heiman HS2WD-E Siren",
+          "summary": "Heiman HS2WD-E Siren: updated."
         }
       ],
       "appCount": 0,
@@ -10743,7 +10855,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 9,
       "id": "contributor:94fb509243bfb3186ae7",
       "name": "Ricardo Nogueira Garcia",
-      "observedActivityCount": 13,
+      "observedActivityCount": 14,
       "packages": [
         {
           "appCount": 0,
@@ -10793,9 +10905,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
           "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
           "name": "Heiman HS2WD-E Siren",
-          "publisherDate": "2026-10-28",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.0.7"
+          "version": "1.1.1"
         },
         {
           "appCount": 0,
@@ -13161,6 +13273,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:38e3d4685eb4cf17e6c0",
           "packageName": "SignalBricks Telemetry",
           "summary": "SignalBricks Telemetry: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:53f546570a1081d3ec534e6c",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:86b01a1f90e58a839a6f",
+          "packageName": "SignalBricks Integration",
+          "summary": "SignalBricks Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6f31410e465344478316cbdc",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: updated."
         }
       ],
       "appCount": 2,
@@ -13183,7 +13323,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
-      "observedActivityCount": 11,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 0,
@@ -13235,7 +13375,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "SignalBricks Integration",
           "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.4.7"
+          "version": "1.4.8"
         },
         {
           "appCount": 1,
@@ -13248,7 +13388,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "SignalBricks Telemetry",
           "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.6.1"
+          "version": "1.6.2"
         }
       ]
     },
@@ -15769,6 +15909,62 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:924c7849-b28d-470f-80eb-5c9146ee65ac",
           "packageName": "Envoy Local Data",
           "summary": "Envoy Local Data: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:232daa6bed26f72a17f474cc",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:d601884d-009d-43fa-a49b-112548656736",
+          "packageName": "Rituals Perfume Genie",
+          "summary": "Rituals Perfume Genie: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:667f06422bd57eec6dc608b0",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:9846bb55-a6de-4bfa-8857-6ac323f0e54b",
+          "packageName": "Itho NRG",
+          "summary": "Itho NRG: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7a63bb45257da292fbbe8752",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:924c7849-b28d-470f-80eb-5c9146ee65ac",
+          "packageName": "Envoy Local Data",
+          "summary": "Envoy Local Data: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ad1c1034001a03bcd91cbd34",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:ce32ea21-b113-4257-a46e-ef5f30cfef57",
+          "packageName": "Nuki Web API",
+          "summary": "Nuki Web API: updated."
         }
       ],
       "appCount": 0,
@@ -15783,7 +15979,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 4,
       "id": "contributor:f3da15a034710d97b293",
       "name": "Supun Vidana Pathiranage",
-      "observedActivityCount": 5,
+      "observedActivityCount": 9,
       "packages": [
         {
           "appCount": 0,
@@ -15794,9 +15990,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:924c7849-b28d-470f-80eb-5c9146ee65ac",
           "manifestUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json",
           "name": "Envoy Local Data",
-          "publisherDate": "2026-10-28",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/repository.json",
-          "version": "0.0.10"
+          "version": "0.0.12"
         },
         {
           "appCount": 0,
@@ -15807,9 +16003,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:9846bb55-a6de-4bfa-8857-6ac323f0e54b",
           "manifestUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/IthoNRG/packageManifest.json",
           "name": "Itho NRG",
-          "publisherDate": "2026-10-27",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/repository.json",
-          "version": "0.0.3"
+          "version": "0.0.4"
         },
         {
           "appCount": 0,
@@ -15820,9 +16016,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:ce32ea21-b113-4257-a46e-ef5f30cfef57",
           "manifestUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/NukiWebAPI/packageManifest.json",
           "name": "Nuki Web API",
-          "publisherDate": "2026-10-27",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/repository.json",
-          "version": "0.0.7"
+          "version": "0.0.8"
         },
         {
           "appCount": 0,
@@ -15833,9 +16029,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:d601884d-009d-43fa-a49b-112548656736",
           "manifestUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/RitualsPerfumeGenie/packageManifest.json",
           "name": "Rituals Perfume Genie",
-          "publisherDate": "2026-10-27",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/repository.json",
-          "version": "0.0.4"
+          "version": "0.0.5"
         }
       ]
     },
@@ -23179,6 +23375,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0281a064dfc97f0b6d4a52df",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -23193,7 +23403,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 43,
+      "observedActivityCount": 44,
       "packages": [
         {
           "appCount": 2,
@@ -23204,9 +23414,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-10-29",
+          "publisherDate": "2026-10-30",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "5.1.0"
+          "version": "5.1.1"
         }
       ]
     },
@@ -26401,10 +26611,10 @@ window.CONTRIBUTOR_ACTIVITY = {
   "currentPackageCount": 956,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 600,
-    "eventCount": 597,
+    "attributedEventCount": 615,
+    "eventCount": 612,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-30T06:04:45Z"
+    "lastObservedAt": "2026-10-31T05:59:57Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -26418,7 +26628,7 @@ window.CONTRIBUTOR_ACTIVITY = {
   "observedContributorCount": 271,
   "rankedPackageCount": 954,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-30T06:04:45Z",
+  "snapshotGenerated": "2026-10-31T05:59:57Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

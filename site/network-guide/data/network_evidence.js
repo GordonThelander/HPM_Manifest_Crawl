@@ -19302,7 +19302,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 11
+        "urlLiteralCount": 8
       },
       "reviewed": [],
       "tags": [
@@ -28833,5 +28833,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-30T06:04:45Z"
+  "snapshotGenerated": "2026-10-31T05:59:57Z"
 };
