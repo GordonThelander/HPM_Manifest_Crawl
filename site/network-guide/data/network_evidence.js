@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 185,
+    "BOTH": 186,
     "CLOUD": 272,
-    "INSUFFICIENT": 305,
-    "LAN": 194
+    "INSUFFICIENT": 306,
+    "LAN": 193
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 956,
+  "packageCount": 957,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -6241,7 +6241,7 @@ window.NETWORK_EVIDENCE = {
           "PARSE_LAN_MESSAGE"
         ],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 11
+        "urlLiteralCount": 10
       },
       "reviewed": [],
       "tags": [
@@ -6348,7 +6348,30 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "MQTT Device Handler for Garadget",
+      "description": "Watches Garadget health (driver 1.4.6+) and power-cycles a frozen, offline or failing Garadget through its own smart outlet, then tells you whether the door is really open",
+      "documentationUrl": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian",
+      "id": "manifest:ae2defa1f5b605268a1c",
+      "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json",
+      "name": "Garadget Guardian",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
+      "author": "J.R. Farrar",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "MQTT Device Handler for Garadget - local control, plus health reporting (frozen sensor, unconfirmed open/close, offline)",
       "documentationUrl": null,
       "id": "manifest:08a6c5602410bb5f6921",
       "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json",
@@ -22188,7 +22211,7 @@ window.NETWORK_EVIDENCE = {
     {
       "author": "Daniel Winks",
       "category": "Integrations",
-      "classification": "LAN",
+      "classification": "BOTH",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -22200,7 +22223,9 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
       "name": "Sonos Advanced Controller",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "code.iconify.design"
+        ],
         "lanPrimitives": [
           "HUB_ACTION",
           "LAN_PROTOCOL",
@@ -22208,7 +22233,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 8,
-        "urlLiteralCount": 55
+        "urlLiteralCount": 57
       },
       "reviewed": [
         {
@@ -23387,7 +23412,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 10
+        "urlLiteralCount": 16
       },
       "reviewed": [],
       "tags": [
@@ -28833,5 +28858,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z"
+  "snapshotGenerated": "2026-11-01T06:27:51Z"
 };

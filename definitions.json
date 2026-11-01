@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2373,
+  "definitionCount": 2375,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -7268,18 +7268,19 @@
       "observationCounts": {
         "CHILD_DEVICE_ACCESS": 2,
         "CHILD_DEVICE_CREATE": 1,
-        "HTTP_CALL": 8,
-        "NETWORK_URL_LITERAL": 8,
+        "EVENT_SUBSCRIPTION": 1,
+        "HTTP_CALL": 10,
+        "NETWORK_URL_LITERAL": 14,
         "OAUTH_ACCESS_TOKEN": 1,
         "OAUTH_API_MAPPINGS": 1,
         "OAUTH_ENABLED": 1
       },
       "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
       "source": {
-        "bytes": 38124,
-        "definitionLine": 29,
+        "bytes": 69693,
+        "definitionLine": 37,
         "fetched": true,
-        "sha256": "529e21789a3a4a41e68915f1129d69eeefe0d3644d274f1131890bc437b6151d",
+        "sha256": "0d1d441543aad7f4d0def7531eebf77078a6e60a2eed77805172be7422f720f4",
         "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Manager.groovy"
       },
       "sourceIdentity": {
@@ -7329,7 +7330,7 @@
         "bytes": 53160,
         "definitionLine": 28,
         "fetched": true,
-        "sha256": "771198c2f637a96f443a3c435aa68196ff92081ce5308cdae56482cac0b9fcfe",
+        "sha256": "168b4256f067a27ca660be5e3a88dd08c57b193b92135f40dc412b5cbda59cbf",
         "url": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
       },
       "sourceIdentity": {
@@ -12868,7 +12869,7 @@
       }
     },
     {
-      "id": "definition:b377ae5ac14fe823cc27",
+      "id": "definition:d8f047e7671e847cea0c",
       "kind": "APP",
       "manifestIdentity": {
         "name": "Sonos Advanced Controller",
@@ -12877,22 +12878,22 @@
       "observationCounts": {
         "CHILD_DEVICE_ACCESS": 12,
         "CHILD_DEVICE_CREATE": 2,
-        "EVENT_SUBSCRIPTION": 2,
+        "EVENT_SUBSCRIPTION": 5,
         "HTTP_CALL": 37,
         "HUB_ACTION": 4,
         "LAN_PROTOCOL": 4,
-        "NETWORK_URL_LITERAL": 34,
+        "NETWORK_URL_LITERAL": 36,
         "PARSE_LAN_MESSAGE": 1,
-        "SCHEDULING": 39,
+        "SCHEDULING": 72,
         "SEND_HUB_COMMAND": 4
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 138187,
-        "definitionLine": 27,
+        "bytes": 297648,
+        "definitionLine": 162,
         "fetched": true,
-        "sha256": "9fd762b74a1adb653fee6b1d147470a9aaf80160e499e5fc7932e4e2166650b0",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
+        "sha256": "3b32967e5e8c3086fc01db22d1782aded4ceb7d9e32476700db6409ead3c6c0c",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvancedApp.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Controller",
@@ -12900,31 +12901,7 @@
       }
     },
     {
-      "id": "definition:165a55dab2781b7537fa",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Battery Status",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1,
-        "SCHEDULING": 1
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 1812,
-        "definitionLine": 27,
-        "fetched": true,
-        "sha256": "fe6cf00b48f94c3c9f4fb288d43544167a234a62f4a08babc394ad9dca4a1a9c",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Battery Status",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:25539d20a713d6d6856f",
+      "id": "definition:4b8e1e10b4ad0353822e",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Playlist",
@@ -12935,11 +12912,11 @@
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 5576,
-        "definitionLine": 27,
+        "bytes": 5616,
+        "definitionLine": 25,
         "fetched": true,
-        "sha256": "5ebe79a820e1004266780fb13bbbc32f41bc6e93cfbccf00a5a6571b8fe37549",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
+        "sha256": "2c4034ff8cf8a7e300c0b02431f5aaf0cc33fb1bb20d67b901692bba393e0cf5",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlaylist.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Playlist",
@@ -12947,83 +12924,7 @@
       }
     },
     {
-      "id": "definition:3ba21285a6d6db0c3218",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Group",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1,
-        "SCHEDULING": 11
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 50262,
-        "definitionLine": 34,
-        "fetched": true,
-        "sha256": "143da934bfbe85ab192261976e3f23cccd07355b032ff320bde2ff3401b9c0ff",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Group",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:7da9671c059beb1929d9",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Player",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 2,
-        "CHILD_DEVICE_CREATE": 11,
-        "HTTP_CALL": 24,
-        "NETWORK_URL_LITERAL": 13,
-        "PARSE_LAN_MESSAGE": 1,
-        "SCHEDULING": 46,
-        "WEBSOCKET_INTERFACE": 3
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 242428,
-        "definitionLine": 28,
-        "fetched": true,
-        "sha256": "50535885185f4382eb68010428a6220fa3944d1fa46aaa81dfd173cf12130582",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Player",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:9f49f60ee72130252b42",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Favorites",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 5577,
-        "definitionLine": 27,
-        "fetched": true,
-        "sha256": "c853174ba11942133cd1d5518b669490cf8c27c854be156030cb1ccd035aec04",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvFavorites.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Favorites",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:e8e0c2ba8f2ee601891b",
+      "id": "definition:53a4ba6d83165f7e2699",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Secondaries",
@@ -13036,11 +12937,11 @@
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 6623,
-        "definitionLine": 27,
+        "bytes": 7064,
+        "definitionLine": 41,
         "fetched": true,
-        "sha256": "f5303ac2669d15f9f76770c029cb33b99dc9e14a0124ad01fb0e7dd685ad1620",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
+        "sha256": "a503d1ed95db35720318f7ad2e5e93dac4e7a7d0ca41de90e1119d6017abad3b",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSecondaries.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Secondaries",
@@ -13048,7 +12949,107 @@
       }
     },
     {
-      "id": "definition:f1e2028aedc9680725d0",
+      "id": "definition:57a786093288f439d610",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Battery Status",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 1
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 2634,
+        "definitionLine": 53,
+        "fetched": true,
+        "sha256": "08df6356a6c73acfa5cc66f125fd84f4f41d767515890f6bfd4d9de68fd5676e",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvBatteryStats.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Battery Status",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:5897e6a08f89d1c8fad2",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Player",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 2,
+        "CHILD_DEVICE_CREATE": 11,
+        "HTTP_CALL": 24,
+        "NETWORK_URL_LITERAL": 13,
+        "PARSE_LAN_MESSAGE": 1,
+        "SCHEDULING": 64,
+        "WEBSOCKET_INTERFACE": 4
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 278274,
+        "definitionLine": 92,
+        "fetched": true,
+        "sha256": "e2c0e17c4c9ea7583085f739099e36c4156b6bf409ce1e86c74be8b05b46ca9a",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlayer.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Player",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:856b3d788fff95e4aa2e",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Favorites",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 5535,
+        "definitionLine": 25,
+        "fetched": true,
+        "sha256": "a0758563f59d7dee3f58ea297e62da29193d8965c4e18f6b26cf77514f9f9e67",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvFavorites.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Favorites",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:beb7536e0517fb5441ef",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Group",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 6
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 39248,
+        "definitionLine": 79,
+        "fetched": true,
+        "sha256": "636ac27c8fbd831570d2f13262ed5adc53374861ea9c611f2fe04f34e6f2fe37",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvGroup.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Group",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:dec765f9de6fd7f631bf",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Snapshot",
@@ -13059,11 +13060,11 @@
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 1809,
-        "definitionLine": 27,
+        "bytes": 1765,
+        "definitionLine": 25,
         "fetched": true,
-        "sha256": "80fa36038ff40dcae7f71163072bcdf40bd70abe5dcf9400caae9dd4e8bbfdf1",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
+        "sha256": "5dc8cd41b9696c70e7a5c67b796affdc72ea3078ba00d5daaafe904e09ac6245",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSnapshot.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Snapshot",
@@ -19924,16 +19925,16 @@
       },
       "observationCounts": {
         "HTTP_CALL": 4,
-        "NETWORK_URL_LITERAL": 11,
+        "NETWORK_URL_LITERAL": 10,
         "PARSE_LAN_MESSAGE": 1,
-        "SCHEDULING": 9
+        "SCHEDULING": 12
       },
       "packageId": "hpm:9bd2dd4b-ba93-44b3-b673-e6892c71247c",
       "source": {
-        "bytes": 39095,
-        "definitionLine": 95,
+        "bytes": 50482,
+        "definitionLine": 124,
         "fetched": true,
-        "sha256": "894636d13eaa42431e860a86788f05d72e782cd56fbc0c403be536aa367b2637",
+        "sha256": "316cc63bc95b0dfb2ed1392885a44de98773593986b70970fa78e297390c0b66",
         "url": "https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/Drivers/FullyKioskBrowserController.groovy"
       },
       "sourceIdentity": {
@@ -28841,10 +28842,10 @@
       },
       "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
       "source": {
-        "bytes": 250809,
-        "definitionLine": 344,
+        "bytes": 251209,
+        "definitionLine": 346,
         "fetched": true,
-        "sha256": "c52fdc87691ffc8440f6fa847ff54188b2e631798efc85982f14d91b8b1a7043",
+        "sha256": "fc77a4dce8b5a9a46dc5c67af6ddb2fb214092fa47bc051cf8a1e3760682033a",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
       },
       "sourceIdentity": {
@@ -34937,10 +34938,10 @@
       },
       "packageId": "hpm:ff853417-274c-437b-90fd-c1169a92f43b",
       "source": {
-        "bytes": 46057,
+        "bytes": 46458,
         "definitionLine": 35,
         "fetched": true,
-        "sha256": "f2f4bc2f25958c9cc8764115d928a3c0f2e8169c38fcc9372a00d4c1199f0b27",
+        "sha256": "fdf4aae9e9aca015f666945a95e2aeed633f6f3acab7c0dba3f654c9fa88188e",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_TH13X0ZB.groovy"
       },
       "sourceIdentity": {
@@ -35068,10 +35069,10 @@
       },
       "packageId": "manifest:0022946aa602eec49b4f",
       "source": {
-        "bytes": 24858,
+        "bytes": 25119,
         "definitionLine": 21,
         "fetched": true,
-        "sha256": "d90a9107e0acff0c36573fa880f6832eec52c2fafe85a5fe77b1b0d6173cf4de",
+        "sha256": "c05c1014d98955befb3bffa37df57357626129a7d18266d7b80757a25c917972",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ParentApp.groovy"
       },
       "sourceIdentity": {
@@ -35092,10 +35093,10 @@
       },
       "packageId": "manifest:0022946aa602eec49b4f",
       "source": {
-        "bytes": 9838,
-        "definitionLine": 15,
+        "bytes": 10519,
+        "definitionLine": 18,
         "fetched": true,
-        "sha256": "2dd23aa6ee398731c73de34222b60e457bd0fec6769d109b05f0666d002d0f10",
+        "sha256": "bb3636929731d929cd1a018faf967313c80f2e5f8ef0dea0b9e7b2194a93a50f",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BodyDriver.groovy"
       },
       "sourceIdentity": {
@@ -35119,7 +35120,7 @@
         "bytes": 5440,
         "definitionLine": 14,
         "fetched": true,
-        "sha256": "8960e3c8416afe4585a37fc954a1393ce6e8bedb43636ab9dc16b2334b876e71",
+        "sha256": "b2e87d09415efc39d989e3f55058df6183914300230c9707ded2f2616271fb27",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/PumpSpeedDriver.groovy"
       },
       "sourceIdentity": {
@@ -35142,7 +35143,7 @@
         "bytes": 2257,
         "definitionLine": 14,
         "fetched": true,
-        "sha256": "f1179f325472a5d2a0fe7a84e1fe9967a58b653c90a3b63c68739b2a4d368fbe",
+        "sha256": "6a49f906c976764a325055901a055344677d12c9734f0eb74853b6763bd99883",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/ChlorinatorDriver.groovy"
       },
       "sourceIdentity": {
@@ -35158,18 +35159,18 @@
         "namespace": "intellicenter"
       },
       "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 5,
+        "CHILD_DEVICE_ACCESS": 6,
         "CHILD_DEVICE_CREATE": 1,
         "NETWORK_URL_LITERAL": 2,
-        "SCHEDULING": 21,
+        "SCHEDULING": 22,
         "WEBSOCKET_INTERFACE": 4
       },
       "packageId": "manifest:0022946aa602eec49b4f",
       "source": {
-        "bytes": 29874,
-        "definitionLine": 33,
+        "bytes": 36443,
+        "definitionLine": 40,
         "fetched": true,
-        "sha256": "57a6ac13aae872911924bd7c852339bb3fcaec399eefc2dba50eb233b7f041e8",
+        "sha256": "89a7bf93c4ebeffb5ca70c4dec42427939acebc0668e87789f6d543ea874e60a",
         "url": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/BridgeDeviceDriver.groovy"
       },
       "sourceIdentity": {
@@ -35987,14 +35988,14 @@
       "observationCounts": {
         "EVENT_SUBSCRIPTION": 2,
         "NETWORK_URL_LITERAL": 1,
-        "SCHEDULING": 13
+        "SCHEDULING": 22
       },
       "packageId": "manifest:08a6c5602410bb5f6921",
       "source": {
-        "bytes": 27612,
-        "definitionLine": 29,
+        "bytes": 42110,
+        "definitionLine": 43,
         "fetched": true,
-        "sha256": "d8bf388c811f4669a2a4f1324cddbc0776e98c03d8ef5f5ff4ebd9346a7122e9",
+        "sha256": "3cf18faeafcd06dd3adfb41f4ad177902218ebbd295f5126f560b8515042de74",
         "url": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.groovy"
       },
       "sourceIdentity": {
@@ -51035,6 +51036,55 @@
       }
     },
     {
+      "id": "definition:18097e1f064abd1ad926",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Garadget Guardian Parent",
+        "namespace": "jrfarrar"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "manifest:ae2defa1f5b605268a1c",
+      "source": {
+        "bytes": 2380,
+        "definitionLine": 10,
+        "fetched": true,
+        "sha256": "3e2d713a5d8f2fa21a6ab3413f2fc4f27a3551700b512057eb8719345cdf5bb4",
+        "url": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianParent.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Garadget Guardian Parent",
+        "namespace": "jrfarrar"
+      }
+    },
+    {
+      "id": "definition:2bdb64a365ec47d48726",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Garadget Guardian Child",
+        "namespace": "jrfarrar"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 4,
+        "EVENT_SUBSCRIPTION": 4,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 15
+      },
+      "packageId": "manifest:ae2defa1f5b605268a1c",
+      "source": {
+        "bytes": 16132,
+        "definitionLine": 31,
+        "fetched": true,
+        "sha256": "9752521b15bd58cc306084060eb2d0bdf0a166d430de113c7e6d65a5551926cd",
+        "url": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianChild.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Garadget Guardian Child",
+        "namespace": "jrfarrar"
+      }
+    },
+    {
       "id": "definition:251eee8664060384f401",
       "kind": "APP",
       "manifestIdentity": {
@@ -59618,10 +59668,10 @@
       },
       "packageId": "manifest:ff829401277e59a5ae23",
       "source": {
-        "bytes": 43860,
-        "definitionLine": 96,
+        "bytes": 44138,
+        "definitionLine": 104,
         "fetched": true,
-        "sha256": "3e9adbf64ee447c1eeb1d67f96772484e0ed89784ab5215607fa9a39027bedf8",
+        "sha256": "a85e87c3c6a0ac090bffcb8fbe5c0efcb628204ff5a125b4cfaea79de6d109d3",
         "url": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/Apps/GeminiTextRewriter.groovy"
       },
       "sourceIdentity": {
@@ -59682,7 +59732,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z",
+  "snapshotGenerated": "2026-11-01T06:27:51Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

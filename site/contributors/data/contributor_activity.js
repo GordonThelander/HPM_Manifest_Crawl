@@ -8706,6 +8706,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:c57015f573a94b304002",
           "packageName": "Sofabaton Integration",
           "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5e72c82e701ce8be79488e7b",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
         }
       ],
       "appCount": 7,
@@ -8732,7 +8746,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 18,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
-      "observedActivityCount": 65,
+      "observedActivityCount": 66,
       "packages": [
         {
           "appCount": 1,
@@ -8808,9 +8822,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:0022946aa602eec49b4f",
           "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
           "name": "Pentair IntelliCenter Controller",
-          "publisherDate": "2026-10-22",
+          "publisherDate": "2026-10-31",
           "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.7.2"
+          "version": "1.8.0"
         },
         {
           "appCount": 1,
@@ -10388,6 +10402,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
           "packageName": "Log Monitor",
           "summary": "Log Monitor: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:13a3b80c5b2d288eb2a3ce99",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+          "packageName": "Hub Inspector",
+          "summary": "Hub Inspector: updated."
         }
       ],
       "appCount": 3,
@@ -10410,7 +10438,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 14,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
-      "observedActivityCount": 30,
+      "observedActivityCount": 31,
       "packages": [
         {
           "appCount": 1,
@@ -10447,9 +10475,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
           "name": "Hub Inspector",
-          "publisherDate": "2026-10-25",
+          "publisherDate": "2026-10-31",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "6.2.3"
+          "version": "6.2.4"
         },
         {
           "appCount": 0,
@@ -13620,6 +13648,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "packageName": "Sonos Advanced Controller",
           "summary": "Sonos Advanced Controller: changed declared definitions, was restored."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:43a845a8211b49768bcdb93e",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+          "packageName": "Sonos Advanced Controller",
+          "summary": "Sonos Advanced Controller: updated, changed source location."
         }
       ],
       "appCount": 4,
@@ -13650,7 +13693,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 12,
       "id": "contributor:2a573f71ae22762e7fa8",
       "name": "Daniel Winks",
-      "observedActivityCount": 1,
+      "observedActivityCount": 2,
       "packages": [
         {
           "appCount": 1,
@@ -13700,9 +13743,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
           "name": "Sonos Advanced Controller",
-          "publisherDate": "2026-04-24",
+          "publisherDate": "2026-10-31",
           "repositoryUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/repository.json",
-          "version": "0.11.7"
+          "version": "0.11.11"
         },
         {
           "appCount": 0,
@@ -16758,6 +16801,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:f9e1f5b0-c5e5-4f3c-b8f9-2e1b8a0b1b9e",
           "packageName": "Window Shade Timed",
           "summary": "Window Shade Timed: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7e1a1d98a72ee48813feb1ab",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "hpm:9bd2dd4b-ba93-44b3-b673-e6892c71247c",
+          "packageName": "Fully Kiosk Browser Controller",
+          "summary": "Fully Kiosk Browser Controller: updated."
         }
       ],
       "appCount": 0,
@@ -16776,7 +16833,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:76f08fecfe8559caf77b",
       "name": "Eduardo Simioni",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 0,
@@ -16787,9 +16844,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:9bd2dd4b-ba93-44b3-b673-e6892c71247c",
           "manifestUrl": "https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/manifest.json",
           "name": "Fully Kiosk Browser Controller",
-          "publisherDate": "2026-03-10",
+          "publisherDate": "2026-10-31",
           "repositoryUrl": "https://raw.githubusercontent.com/esimioni/hubitat-hpm/main/repository.json",
-          "version": "1.7.1"
+          "version": "1.8.0"
         },
         {
           "appCount": 0,
@@ -18745,6 +18802,107 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9569a98361ffe9b29313a9f6",
+          "observedAt": "2026-08-18T22:56:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:08a6c5602410bb5f6921",
+          "packageName": "Garadget MQTT Driver",
+          "summary": "Garadget MQTT Driver: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5993367222bac7fb06606648",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:08a6c5602410bb5f6921",
+          "packageName": "Garadget MQTT Driver",
+          "summary": "Garadget MQTT Driver: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9c1df0e2399b41c891ee823d",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "manifest:08a6c5602410bb5f6921",
+          "packageName": "Garadget MQTT Driver",
+          "summary": "Garadget MQTT Driver: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b14083cb741b9b0946e2c09e",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "manifest:ae2defa1f5b605268a1c",
+          "packageName": "Garadget Guardian",
+          "summary": "Garadget Guardian: added."
+        }
+      ],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 2
+        }
+      ],
+      "currentPackageCount": 2,
+      "currentRank": 107,
+      "driverCount": 1,
+      "id": "contributor:d8c3769404dea0e2a6e7",
+      "name": "J.R. Farrar",
+      "observedActivityCount": 4,
+      "packages": [
+        {
+          "appCount": 2,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+          "documentationUrl": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian",
+          "driverCount": 0,
+          "id": "manifest:ae2defa1f5b605268a1c",
+          "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json",
+          "name": "Garadget Guardian",
+          "publisherDate": "2026-10-31",
+          "repositoryUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/jrfarrar.json",
+          "version": "1.0.3"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "manifest:08a6c5602410bb5f6921",
+          "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json",
+          "name": "Garadget MQTT Driver",
+          "publisherDate": "2026-10-31",
+          "repositoryUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/jrfarrar.json",
+          "version": "1.4.7"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
             "REMOVED"
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
@@ -18835,7 +18993,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 107,
+      "currentRank": 108,
       "driverCount": 4,
       "id": "contributor:966d9f08e15e82945d11",
       "name": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -18883,7 +19041,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 108,
+      "currentRank": 109,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -18960,7 +19118,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 109,
+      "currentRank": 110,
       "driverCount": 1,
       "id": "contributor:277a73f66831fc1424af",
       "name": "Jeffrey D. Chapman",
@@ -19004,7 +19162,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 110,
+      "currentRank": 111,
       "driverCount": 6,
       "id": "contributor:fedf3ceedc1273b3d69d",
       "name": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -19048,7 +19206,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 111,
+      "currentRank": 112,
       "driverCount": 1,
       "id": "contributor:8877f3f9cde1f2b8e13b",
       "name": "Kevin LaFramboise (@krlaframboise)",
@@ -19121,7 +19279,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 112,
+      "currentRank": 113,
       "driverCount": 2,
       "id": "contributor:9b3159c24cdaba381613",
       "name": "kkossev",
@@ -19210,7 +19368,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 113,
+      "currentRank": 114,
       "driverCount": 5,
       "id": "contributor:cfe7eb8fa1d840424f18",
       "name": "Mathew Beall",
@@ -19254,7 +19412,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 114,
+      "currentRank": 115,
       "driverCount": 1,
       "id": "contributor:648248be560395b56188",
       "name": "Matt Hammond",
@@ -19302,7 +19460,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 115,
+      "currentRank": 116,
       "driverCount": 0,
       "id": "contributor:15ac50b026e59a5f76a0",
       "name": "Mattias Fornander (@mfornander)",
@@ -19350,7 +19508,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 116,
+      "currentRank": 117,
       "driverCount": 1,
       "id": "contributor:cfdd150d04c77fcf99ed",
       "name": "Miles Budnek",
@@ -19410,7 +19568,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 117,
+      "currentRank": 118,
       "driverCount": 2,
       "id": "contributor:a8001880109c362a9fdb",
       "name": "n3!",
@@ -19454,7 +19612,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 118,
+      "currentRank": 119,
       "driverCount": 1,
       "id": "contributor:9563f49fca68d622c285",
       "name": "Nelson Clark",
@@ -19498,7 +19656,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 119,
+      "currentRank": 120,
       "driverCount": 3,
       "id": "contributor:5264454bcf8a55a617b7",
       "name": "Paul Hutton",
@@ -19542,7 +19700,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 120,
+      "currentRank": 121,
       "driverCount": 2,
       "id": "contributor:e5e37caad93a2e4bba53",
       "name": "Ramdev Shallem",
@@ -19586,7 +19744,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 121,
+      "currentRank": 122,
       "driverCount": 1,
       "id": "contributor:08e115ea52313bdb2dd1",
       "name": "Randall Norviel",
@@ -19630,7 +19788,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 122,
+      "currentRank": 123,
       "driverCount": 2,
       "id": "contributor:d38d404a45ce4a1ae211",
       "name": "Raul Martin Rodriguez",
@@ -19678,7 +19836,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 123,
+      "currentRank": 124,
       "driverCount": 3,
       "id": "contributor:27b96c198c53592f4b6d",
       "name": "Simon Burke",
@@ -19722,7 +19880,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 124,
+      "currentRank": 125,
       "driverCount": 2,
       "id": "contributor:f7092c2563f96d8ebd93",
       "name": "StarkTemplar",
@@ -19770,7 +19928,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 125,
+      "currentRank": 126,
       "driverCount": 5,
       "id": "contributor:ddb8a7b385656aadd452",
       "name": "Taylor Brown(@thecloudtaylor)",
@@ -19814,7 +19972,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 126,
+      "currentRank": 127,
       "driverCount": 2,
       "id": "contributor:272f8a5abd3191f1acd8",
       "name": "Tim Dodd",
@@ -19858,7 +20016,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 127,
+      "currentRank": 128,
       "driverCount": 0,
       "id": "contributor:bc915e335e56e9ef122e",
       "name": "Tony Fleisher",
@@ -19931,7 +20089,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 128,
+      "currentRank": 129,
       "driverCount": 3,
       "id": "contributor:052eda442afd1ae5d69d",
       "name": "vision9074",
@@ -19979,7 +20137,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 129,
+      "currentRank": 130,
       "driverCount": 0,
       "id": "contributor:3ee480dcc6d55fba0b2b",
       "name": "Wesley M. Conner",
@@ -20023,7 +20181,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 130,
+      "currentRank": 131,
       "driverCount": 3,
       "id": "contributor:3353abab317cbb5e1bb8",
       "name": "ZRanger1(JEM)",
@@ -20067,7 +20225,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 131,
+      "currentRank": 132,
       "driverCount": 3,
       "id": "contributor:9ebc2f114646e8498d7b",
       "name": "Alex Lee Yuk Cheung & Dominick Meglio",
@@ -20098,7 +20256,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 132,
+      "currentRank": 133,
       "driverCount": 1,
       "id": "contributor:4766d18cb719a716cbf8",
       "name": "Andrew Webster",
@@ -20129,7 +20287,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 133,
+      "currentRank": 134,
       "driverCount": 3,
       "id": "contributor:4d3ada00f82d743d4d94",
       "name": "Art Ardolino",
@@ -20160,7 +20318,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 134,
+      "currentRank": 135,
       "driverCount": 1,
       "id": "contributor:0ea2ec854ddf7b93c7b0",
       "name": "Awth Wathje",
@@ -20191,7 +20349,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 135,
+      "currentRank": 136,
       "driverCount": 0,
       "id": "contributor:01a00cf264f0269f2f9d",
       "name": "Azfar Khandoker",
@@ -20222,7 +20380,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 136,
+      "currentRank": 137,
       "driverCount": 2,
       "id": "contributor:abfea55b690ec9fc7954",
       "name": "Ben Castellucci",
@@ -20253,7 +20411,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 137,
+      "currentRank": 138,
       "driverCount": 0,
       "id": "contributor:ab2cfb4edbe468b4048b",
       "name": "Bill Fleming",
@@ -20355,7 +20513,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 138,
+      "currentRank": 139,
       "driverCount": 2,
       "id": "contributor:593f46d943aec70bf3c1",
       "name": "BPTWorld",
@@ -20386,7 +20544,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 139,
+      "currentRank": 140,
       "driverCount": 2,
       "id": "contributor:12297751d692f8e9771a",
       "name": "Brad sileo",
@@ -20417,7 +20575,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 140,
+      "currentRank": 141,
       "driverCount": 4,
       "id": "contributor:0a685eaad17dc8ff51ea",
       "name": "Brian Blank",
@@ -20463,7 +20621,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 141,
+      "currentRank": 142,
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
@@ -20494,7 +20652,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 142,
+      "currentRank": 143,
       "driverCount": 2,
       "id": "contributor:be521bd53f9af1d49653",
       "name": "Chaue Shen",
@@ -20540,7 +20698,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 143,
+      "currentRank": 144,
       "driverCount": 1,
       "id": "contributor:3fc5dead1997ca8a5a71",
       "name": "Chris Busch",
@@ -20571,7 +20729,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 144,
+      "currentRank": 145,
       "driverCount": 0,
       "id": "contributor:4646e34aa7acceb37645",
       "name": "Chris Sader",
@@ -20703,7 +20861,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 145,
+      "currentRank": 146,
       "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
@@ -20734,7 +20892,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 146,
+      "currentRank": 147,
       "driverCount": 6,
       "id": "contributor:97379ae0ebbba3b46803",
       "name": "christi999",
@@ -20765,7 +20923,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 147,
+      "currentRank": 148,
       "driverCount": 4,
       "id": "contributor:950fb77d3da2b8017206",
       "name": "classic-dave",
@@ -20796,7 +20954,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 148,
+      "currentRank": 149,
       "driverCount": 25,
       "id": "contributor:21e5b5d816783343eed8",
       "name": "codahq",
@@ -20827,7 +20985,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 149,
+      "currentRank": 150,
       "driverCount": 3,
       "id": "contributor:0287c8a40062f2e26bf1",
       "name": "corinuss",
@@ -20858,7 +21016,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 150,
+      "currentRank": 151,
       "driverCount": 0,
       "id": "contributor:f86b4b4a5d12cdaf148c",
       "name": "Craig Romei",
@@ -20932,7 +21090,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 151,
+      "currentRank": 152,
       "driverCount": 11,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
@@ -20963,7 +21121,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 152,
+      "currentRank": 153,
       "driverCount": 1,
       "id": "contributor:963ced0da3610aa44c93",
       "name": "cSteele",
@@ -20994,7 +21152,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 153,
+      "currentRank": 154,
       "driverCount": 1,
       "id": "contributor:65bee55a0af809e76900",
       "name": "Curtis Ide",
@@ -21025,7 +21183,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 154,
+      "currentRank": 155,
       "driverCount": 23,
       "id": "contributor:cf8d966c34c95a70525e",
       "name": "Dan Cox (level99 fork); Niklas Gustafsson (original upstream)",
@@ -21085,7 +21243,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 155,
+      "currentRank": 156,
       "driverCount": 0,
       "id": "contributor:09c2c1f1bae09e1e8a55",
       "name": "Dan Danache",
@@ -21145,7 +21303,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 156,
+      "currentRank": 157,
       "driverCount": 1,
       "id": "contributor:e2a1a9d6497ce82b1a2a",
       "name": "Dan Danache (@agamemnon.dandanache)",
@@ -21176,7 +21334,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 157,
+      "currentRank": 158,
       "driverCount": 1,
       "id": "contributor:5504c4083f20d7fff23c",
       "name": "dan.t",
@@ -21207,7 +21365,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 158,
+      "currentRank": 159,
       "driverCount": 1,
       "id": "contributor:69c45f22c0dcdce7b384",
       "name": "Daniel Segall",
@@ -21253,7 +21411,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 159,
+      "currentRank": 160,
       "driverCount": 1,
       "id": "contributor:7c75a97dcda364d1907d",
       "name": "Daniel Segall (dds82)",
@@ -21284,7 +21442,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 160,
+      "currentRank": 161,
       "driverCount": 2,
       "id": "contributor:9613ac904c1d28e3c88b",
       "name": "dbadge",
@@ -21330,7 +21488,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 161,
+      "currentRank": 162,
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
@@ -21361,7 +21519,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 162,
+      "currentRank": 163,
       "driverCount": 2,
       "id": "contributor:a73ba7cf0dd8592adedb",
       "name": "Dominick Meglio & Eric Maycock",
@@ -21392,7 +21550,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 163,
+      "currentRank": 164,
       "driverCount": 3,
       "id": "contributor:6dde8f2290059440a172",
       "name": "Doug Beard/Brian Wilson",
@@ -21423,7 +21581,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 164,
+      "currentRank": 165,
       "driverCount": 0,
       "id": "contributor:8b932b1c49d1bf9d8d84",
       "name": "Doug Renze",
@@ -21469,7 +21627,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 165,
+      "currentRank": 166,
       "driverCount": 3,
       "id": "contributor:debcb46e339968cfedb3",
       "name": "Electrified-Home",
@@ -21543,7 +21701,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 166,
+      "currentRank": 167,
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
@@ -21574,7 +21732,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 167,
+      "currentRank": 168,
       "driverCount": 1,
       "id": "contributor:0024ce686cf2b9971ab0",
       "name": "Erik Dasque",
@@ -21648,7 +21806,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 168,
+      "currentRank": 169,
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
@@ -21679,7 +21837,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 169,
+      "currentRank": 170,
       "driverCount": 1,
       "id": "contributor:02e680d2174ca39bf1b2",
       "name": "Garth Braithwaite",
@@ -21710,7 +21868,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 170,
+      "currentRank": 171,
       "driverCount": 1,
       "id": "contributor:6fe9cca284a6cd968a93",
       "name": "Greg Billings",
@@ -21952,7 +22110,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 171,
+      "currentRank": 172,
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
@@ -21983,7 +22141,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 172,
+      "currentRank": 173,
       "driverCount": 0,
       "id": "contributor:7740a32ebcc0ba4a339f",
       "name": "HERMES Automation",
@@ -22043,7 +22201,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 173,
+      "currentRank": 174,
       "driverCount": 1,
       "id": "contributor:7b12dd21d2d7392d3573",
       "name": "hubitrep (original by Dave Gutheinz)",
@@ -22074,7 +22232,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 174,
+      "currentRank": 175,
       "driverCount": 9,
       "id": "contributor:5caa224e199583883eb3",
       "name": "Ionut Turturica",
@@ -22105,7 +22263,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 175,
+      "currentRank": 176,
       "driverCount": 0,
       "id": "contributor:cf5e8049fefaa570c4d9",
       "name": "J M Pierce / Schwark Satyavolu",
@@ -22123,66 +22281,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2022-03-26",
           "repositoryUrl": "https://raw.githubusercontent.com/schwark/hubitat-packages/main/repository.json",
           "version": "1.1.3"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:9569a98361ffe9b29313a9f6",
-          "observedAt": "2026-08-18T22:56:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:08a6c5602410bb5f6921",
-          "packageName": "Garadget MQTT Driver",
-          "summary": "Garadget MQTT Driver: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:5993367222bac7fb06606648",
-          "observedAt": "2026-09-04T01:55:09Z",
-          "observedCommit": null,
-          "packageId": "manifest:08a6c5602410bb5f6921",
-          "packageName": "Garadget MQTT Driver",
-          "summary": "Garadget MQTT Driver: updated."
-        }
-      ],
-      "appCount": 0,
-      "categories": [
-        {
-          "name": "Integrations",
-          "packageCount": 1
-        }
-      ],
-      "currentPackageCount": 1,
-      "currentRank": 176,
-      "driverCount": 1,
-      "id": "contributor:d8c3769404dea0e2a6e7",
-      "name": "J.R. Farrar",
-      "observedActivityCount": 2,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:08a6c5602410bb5f6921",
-          "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json",
-          "name": "Garadget MQTT Driver",
-          "publisherDate": "2026-09-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/jrfarrar.json",
-          "version": "1.4.5"
         }
       ]
     },
@@ -26207,6 +26305,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
           "packageName": "TESmart Controller",
           "summary": "TESmart Controller: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:210f2322de9e4738db01da3a",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
+          "packageName": "TESmart Controller",
+          "summary": "TESmart Controller: updated."
         }
       ],
       "appCount": 1,
@@ -26221,7 +26333,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:6db542f5b830daa06a83",
       "name": "WBEVAN",
-      "observedActivityCount": 3,
+      "observedActivityCount": 4,
       "packages": [
         {
           "appCount": 1,
@@ -26232,9 +26344,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:391e1f4d-e726-43ae-a0a6-d507c85e9984",
           "manifestUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json",
           "name": "TESmart Controller",
-          "publisherDate": "2026-10-29",
+          "publisherDate": "2026-10-31",
           "repositoryUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/repository.json",
-          "version": "1.7.1"
+          "version": "1.8.0"
         }
       ]
     },
@@ -26608,13 +26720,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 267,
-  "currentPackageCount": 956,
+  "currentPackageCount": 957,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 615,
-    "eventCount": 612,
+    "attributedEventCount": 622,
+    "eventCount": 619,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-10-31T05:59:57Z"
+    "lastObservedAt": "2026-11-01T06:27:51Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -26626,9 +26738,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 271,
-  "rankedPackageCount": 954,
+  "rankedPackageCount": 955,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z",
+  "snapshotGenerated": "2026-11-01T06:27:51Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

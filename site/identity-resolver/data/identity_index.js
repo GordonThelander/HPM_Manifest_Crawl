@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2373,
+  "definitionCount": 2375,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -2605,6 +2605,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/SANdood/Ecobee-Suite/master/smartapps/sandood/ecobee-suite-smart-mode.src/ecobee-suite-smart-mode.groovy"
     },
     {
+      "id": "definition:18097e1f064abd1ad926",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Garadget Guardian Parent",
+          "namespace": "jrfarrar"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "J.R. Farrar",
+        "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+        "documentationUrl": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian",
+        "id": "manifest:ae2defa1f5b605268a1c",
+        "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json",
+        "name": "Garadget Guardian"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianParent.groovy"
+    },
+    {
       "id": "definition:1846fff56e262ada6d38",
       "identities": [
         {
@@ -3603,6 +3623,26 @@ window.IDENTITY_INDEX = {
         "name": "Virtual Thermostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/eliotstocker/hubitat-virtual-thermostat/main/virtual-thermostat.groovy"
+    },
+    {
+      "id": "definition:2bdb64a365ec47d48726",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Garadget Guardian Child",
+          "namespace": "jrfarrar"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "J.R. Farrar",
+        "communityUrl": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+        "documentationUrl": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian",
+        "id": "manifest:ae2defa1f5b605268a1c",
+        "manifestUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json",
+        "name": "Garadget Guardian"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianChild.groovy"
     },
     {
       "id": "definition:2bfa8f90bd34e0bb7477",
@@ -9465,26 +9505,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/memory-monitor-reboot.groovy"
     },
     {
-      "id": "definition:b377ae5ac14fe823cc27",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Controller",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
-    },
-    {
       "id": "definition:b405fb4a132007241716",
       "identities": [
         {
@@ -11113,6 +11133,26 @@ window.IDENTITY_INDEX = {
         "name": "Commercial Lock"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/CommercialLockInstance.groovy"
+    },
+    {
+      "id": "definition:d8f047e7671e847cea0c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Controller",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvancedApp.groovy"
     },
     {
       "id": "definition:d9dbd5c7d0e132b60532",
@@ -16070,26 +16110,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-SKY.groovy"
     },
     {
-      "id": "definition:165a55dab2781b7537fa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Battery Status",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
-    },
-    {
       "id": "definition:1677df820ad7e9eb474e",
       "identities": [
         {
@@ -17693,26 +17713,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Ring Integration (Unofficial)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-smoke-alarm.groovy"
-    },
-    {
-      "id": "definition:25539d20a713d6d6856f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Playlist",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
     },
     {
       "id": "definition:2556f11c2fbaf099c32f",
@@ -20880,26 +20880,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
     },
     {
-      "id": "definition:3ba21285a6d6db0c3218",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Group",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
-    },
-    {
       "id": "definition:3bb204f6307505d821c8",
       "identities": [
         {
@@ -23020,6 +23000,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/gilshallem/Hubitat/main/WakeOnLan/WakeOnLanDriver.groovy"
     },
     {
+      "id": "definition:4b8e1e10b4ad0353822e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Playlist",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlaylist.groovy"
+    },
+    {
       "id": "definition:4bb1af9ad61f6dd7a11c",
       "identities": [
         {
@@ -24365,6 +24365,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-switch.groovy"
     },
     {
+      "id": "definition:53a4ba6d83165f7e2699",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Secondaries",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSecondaries.groovy"
+    },
+    {
       "id": "definition:53ba0700de6720794fed",
       "identities": [
         {
@@ -24930,6 +24950,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitClassic300S.groovy"
     },
     {
+      "id": "definition:57a786093288f439d610",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Battery Status",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvBatteryStats.groovy"
+    },
+    {
       "id": "definition:57c9e38c20e5ff02df37",
       "identities": [
         {
@@ -25138,6 +25178,26 @@ window.IDENTITY_INDEX = {
         "name": "Advanced Broadlink Remote"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mboisson/Hubitat-Advanced-Broadlink-Remote/main/Advanced_Broadlink_Remote-Device.groovy"
+    },
+    {
+      "id": "definition:5897e6a08f89d1c8fad2",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Player",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlayer.groovy"
     },
     {
       "id": "definition:589e55d83b557554d42c",
@@ -30450,26 +30510,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/ikea/drivers/ikea_symfonisk_sound_controller.groovy"
     },
     {
-      "id": "definition:7da9671c059beb1929d9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Player",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
-    },
-    {
       "id": "definition:7dbdff09b130745d6094",
       "identities": [
         {
@@ -31308,6 +31348,26 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/honeywell-t6-pro/honeywell-t6-pro.groovy"
+    },
+    {
+      "id": "definition:856b3d788fff95e4aa2e",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Favorites",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvFavorites.groovy"
     },
     {
       "id": "definition:858b719fd8d739def61c",
@@ -35343,26 +35403,6 @@ window.IDENTITY_INDEX = {
         "name": "Rain Bird LNK/LNK2 WiFi Module Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Module.groovy"
-    },
-    {
-      "id": "definition:9f49f60ee72130252b42",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Favorites",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvFavorites.groovy"
     },
     {
       "id": "definition:9f4aab1e975f7884c681",
@@ -40553,6 +40593,26 @@ window.IDENTITY_INDEX = {
         "name": "LIFX Master app and drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/robheyes/lifxcode/master/LIFXWhiteMono.groovy"
+    },
+    {
+      "id": "definition:beb7536e0517fb5441ef",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Group",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvGroup.groovy"
     },
     {
       "id": "definition:beea70a0382bc4b49b25",
@@ -45880,6 +45940,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-withings/master/drivers/Withings_Scale.groovy"
     },
     {
+      "id": "definition:dec765f9de6fd7f631bf",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Snapshot",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSnapshot.groovy"
+    },
+    {
       "id": "definition:dedc8c1a72605a5befe8",
       "identities": [
         {
@@ -47550,26 +47630,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/Drivers/SAS%20-%20Samsung%20Range%20Hood.groovy"
     },
     {
-      "id": "definition:e8e0c2ba8f2ee601891b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Secondaries",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
-    },
-    {
       "id": "definition:e900c3cdbb771c405f89",
       "identities": [
         {
@@ -48563,26 +48623,6 @@ window.IDENTITY_INDEX = {
         "name": "go2rtc"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/go2rtc/go2rtc-parent-driver.groovy"
-    },
-    {
-      "id": "definition:f1e2028aedc9680725d0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Snapshot",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
     },
     {
       "id": "definition:f1f18d7bea9e1604fe5c",
@@ -50578,5 +50618,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z"
+  "snapshotGenerated": "2026-11-01T06:27:51Z"
 };

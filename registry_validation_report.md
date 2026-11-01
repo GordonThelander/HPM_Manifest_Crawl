@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-10-31T05:59:57Z`
+- Snapshot: `2026-11-01T06:27:51Z`
 - HPM repositories in master list: **226**
 - Repositories fetched successfully: **225**
-- Packages indexed: **956**
+- Packages indexed: **957**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **858**
+Total packages not matched by any registry entry: **859**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -533,6 +533,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | jlupien | PETLIBRO Granary Feeder | Integrations | PETLIBRO, Pet, Feeder, Cat, Dog, Granary | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json |
 | jlupien | Rivian Connect | Integrations | Vehicle, Car, EV, Presence, Rivian, R1S, R1T | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json |
 | jonozzz | LG ThinQ Connect Integration | Integrations | Cloud, Appliances | https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/packageManifest.json |
+| jrfarrar | Garadget Guardian | Integrations |  | https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json |
 | jrfarrar | Garadget MQTT Driver | Integrations |  | https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json |
 | jschlackman | Pollen Virtual Sensor | Integrations | Weather | https://raw.githubusercontent.com/jschlackman/Hubitat/main/Pollen/packageManifest.json |
 | kaimyn | Tailwind Garage Door Controller | Integrations | Garage Doors | https://raw.githubusercontent.com/kaimyn/Hubitat/main/Tailwind/packageManifest.json |
@@ -618,8 +619,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 858 |
-| G candidate subset | 382 |
+| G. Unrepresented packages | 859 |
+| G candidate subset | 383 |
 
 ## H. Enrichment summary
 
@@ -629,13 +630,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2359 |
-| Source URLs fetched | 2349 |
+| Distinct source URLs | 2361 |
+| Source URLs fetched | 2351 |
 | Source URLs failed | 10 |
-| Components attempted | 2373 |
-| Components fetched | 2363 |
-| Literal definitions verified | 2352 |
-| Components with observations | 2219 |
+| Components attempted | 2375 |
+| Components fetched | 2365 |
+| Literal definitions verified | 2354 |
+| Components with observations | 2221 |
 
 ### Official Hubitat documentation pass
 

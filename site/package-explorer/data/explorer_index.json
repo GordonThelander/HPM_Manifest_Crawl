@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 956,
+    "HPM_PACKAGE": 957,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2661,
+  "recordCount": 2662,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -6956,6 +6956,13 @@
           ],
           "packageId": "manifest:08a6c5602410bb5f6921",
           "packageName": "Garadget MQTT Driver"
+        },
+        {
+          "basis": [
+            "EXACT_LINK"
+          ],
+          "packageId": "manifest:ae2defa1f5b605268a1c",
+          "packageName": "Garadget Guardian"
         }
       ],
       "id": "community-driver:9a8c6e1e4a5837aeaba6",
@@ -37694,7 +37701,7 @@
       "author": "Eduardo Simioni",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-03-10",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
           "id": "definition:8df914f23fd5840b5caf",
@@ -37775,7 +37782,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.7.1"
+      "version": "1.8.0"
     },
     {
       "author": "Kurt Sanders",
@@ -38082,7 +38089,95 @@
       "author": "J.R. Farrar",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-03",
+      "dateReleased": "2026-10-31",
+      "definitions": [
+        {
+          "id": "definition:2bdb64a365ec47d48726",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Garadget Guardian Child",
+          "namespace": "jrfarrar",
+          "sourceUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianChild.groovy"
+        },
+        {
+          "id": "definition:18097e1f064abd1ad926",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Garadget Guardian Parent",
+          "namespace": "jrfarrar",
+          "sourceUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/GaradgetGuardianParent.groovy"
+        }
+      ],
+      "description": "Watches Garadget health (driver 1.4.6+) and power-cycles a frozen, offline or failing Garadget through its own smart outlet, then tells you whether the door is really open",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:ae2defa1f5b605268a1c",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+        "documentation": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian",
+        "manifest": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json",
+        "repository": "https://github.com/jrfarrar/hubitat"
+      },
+      "name": "Garadget Guardian",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "1.0.3"
+    },
+    {
+      "author": "J.R. Farrar",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
           "id": "definition:eac525d9ceebe1c34b48",
@@ -38093,7 +38188,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.groovy"
         }
       ],
-      "description": "MQTT Device Handler for Garadget",
+      "description": "MQTT Device Handler for Garadget - local control, plus health reporting (frozen sensor, unconfirmed open/close, offline)",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -38156,7 +38251,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "1.4.5"
+      "version": "1.4.7"
     },
     {
       "author": "Matthew Petro (@matthewpetro)",
@@ -47834,7 +47929,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
           "id": "definition:ffdf6e2418345b7f15d7",
@@ -47911,7 +48006,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.2.3"
+      "version": "6.2.4"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -73285,7 +73380,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-22",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
           "id": "definition:552342c3eb7914797d32",
@@ -73396,7 +73491,7 @@
       "tags": [
         "Pool & Spa"
       ],
-      "version": "1.7.2"
+      "version": "1.8.0"
     },
     {
       "author": "Neil Jackson",
@@ -89979,71 +90074,71 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-24",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
-          "id": "definition:b377ae5ac14fe823cc27",
+          "id": "definition:d8f047e7671e847cea0c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:165a55dab2781b7537fa",
+          "id": "definition:57a786093288f439d610",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:9f49f60ee72130252b42",
+          "id": "definition:856b3d788fff95e4aa2e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:3ba21285a6d6db0c3218",
+          "id": "definition:beb7536e0517fb5441ef",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:7da9671c059beb1929d9",
+          "id": "definition:5897e6a08f89d1c8fad2",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:25539d20a713d6d6856f",
+          "id": "definition:4b8e1e10b4ad0353822e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:e8e0c2ba8f2ee601891b",
+          "id": "definition:53a4ba6d83165f7e2699",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:f1e2028aedc9680725d0",
+          "id": "definition:dec765f9de6fd7f631bf",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -90100,12 +90195,14 @@
       },
       "name": "Sonos Advanced Controller",
       "network": {
-        "classification": "LAN",
+        "classification": "BOTH",
         "declared": {
           "cloudTag": false,
           "lanTag": true
         },
-        "externalHosts": [],
+        "externalHosts": [
+          "code.iconify.design"
+        ],
         "reviewed": [
           {
             "dependencies": [
@@ -90135,7 +90232,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.11.7"
+      "version": "0.11.11"
     },
     {
       "author": "Schwark Satyavolu",
@@ -93938,7 +94035,7 @@
       "author": "WBEVAN",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-29",
+      "dateReleased": "2026-10-31",
       "definitions": [
         {
           "id": "definition:fc74835dd5f7efa21d9e",
@@ -94034,7 +94131,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "1.7.1"
+      "version": "1.8.0"
     },
     {
       "author": "ritchierich",
@@ -136589,5 +136686,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z"
+  "snapshotGenerated": "2026-11-01T06:27:51Z"
 }

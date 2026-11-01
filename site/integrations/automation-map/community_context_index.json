@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 498,
+  "recordCount": 499,
   "records": [
     {
       "author": null,
@@ -5166,7 +5166,7 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
-        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.7/SonosAdvancedApp.groovy"
+        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.11.11/SonosAdvancedApp.groovy"
       },
       "networkEvidence": {
         "classification": "LAN",
@@ -13601,6 +13601,45 @@
       "summary": "Application to refresh nodes that have not been used for an extended period of time"
     },
     {
+      "author": "J.R. Farrar",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Garadget Guardian Child",
+          "namespace": "jrfarrar"
+        },
+        {
+          "basis": "sourceIdentity",
+          "name": "Garadget Guardian Parent",
+          "namespace": "jrfarrar"
+        }
+      ],
+      "displayName": "Garadget Guardian",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:ae2defa1f5b605268a1c",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-garadget-mqtt-device-handler/43377",
+        "documentation": "https://github.com/jrfarrar/hubitat/tree/master/Apps/GaradgetGuardian"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Garadget Guardian",
+      "qualityFlags": [],
+      "summary": "Watches Garadget health (driver 1.4.6+) and power-cycles a frozen, offline or failing Garadget through its own smart outlet, then tells you whether the door is really open"
+    },
+    {
       "author": "Mathew Beall",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -16810,5 +16849,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-10-31T05:59:57Z"
+  "snapshotGenerated": "2026-11-01T06:27:51Z"
 }
