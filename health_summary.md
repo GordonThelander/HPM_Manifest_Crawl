@@ -1,19 +1,25 @@
 # HPM package health summary
 
-Snapshot: `2026-11-01T06:27:51Z`
+Snapshot: `2026-11-02T06:30:15Z`
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
 ## Current observations
 
-- Failing: **207**
-- Passing: **417**
-- Warning: **333**
+- Failing: **208**
+- Passing: **454**
+- Warning: **295**
 
 ## Changes since the previous successful snapshot
 
-- Baseline: **1**
+- New Failure: **1**
 - Persistent Failure: **207**
 - Unchanged: **749**
+
+## Introduced and resolved failures
+
+| Change | Package | Author | Evidence |
+| --- | --- | --- | --- |
+| NEW_FAILURE | Unified Thermostat | Simon Burke (sburke781) | communityReachability |
 
 A request failure can be transient. Persistent status means the same package was observed failing in consecutive successful snapshots; it does not prove that the project is unmaintained.
