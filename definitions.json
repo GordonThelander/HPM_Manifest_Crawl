@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2375,
+  "definitionCount": 2380,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -12869,31 +12869,31 @@
       }
     },
     {
-      "id": "definition:c68b031bd126d47ffa29",
+      "id": "definition:2ab695e34c2c8bb7b2e5",
       "kind": "APP",
       "manifestIdentity": {
         "name": "Sonos Advanced Controller",
         "namespace": "dwinks"
       },
       "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 12,
+        "CHILD_DEVICE_ACCESS": 14,
         "CHILD_DEVICE_CREATE": 2,
         "EVENT_SUBSCRIPTION": 6,
-        "HTTP_CALL": 41,
+        "HTTP_CALL": 46,
         "HUB_ACTION": 4,
         "LAN_PROTOCOL": 4,
-        "NETWORK_URL_LITERAL": 40,
+        "NETWORK_URL_LITERAL": 62,
         "PARSE_LAN_MESSAGE": 1,
-        "SCHEDULING": 78,
+        "SCHEDULING": 79,
         "SEND_HUB_COMMAND": 4
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 349416,
+        "bytes": 374407,
         "definitionLine": 200,
         "fetched": true,
-        "sha256": "45595bb8764e2ead10b02a725f0567ac33597c8beedb06d820a7d43f3880bb65",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvancedApp.groovy"
+        "sha256": "6181e2400e9d76b50631f653eabaecfba055a2cb8e01bee9853c983deacc43e6",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvancedApp.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Controller",
@@ -12901,7 +12901,36 @@
       }
     },
     {
-      "id": "definition:1acf445e176857d53ea4",
+      "id": "definition:24fe5a2d106b8f94cf0e",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Player",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_CREATE": 11,
+        "HTTP_CALL": 3,
+        "NETWORK_URL_LITERAL": 14,
+        "PARSE_LAN_MESSAGE": 1,
+        "RAW_SOCKET_INTERFACE": 3,
+        "SCHEDULING": 102,
+        "WEBSOCKET_INTERFACE": 5
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 368891,
+        "definitionLine": 94,
+        "fetched": true,
+        "sha256": "2527b6b0136a0ce80a2fbe48814d0790b5d13ad34fa9723bc7bd1f5b0b549f0c",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlayer.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Player",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:6851429b40f9d524858c",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Group",
@@ -12913,11 +12942,11 @@
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 42303,
-        "definitionLine": 81,
+        "bytes": 44351,
+        "definitionLine": 82,
         "fetched": true,
-        "sha256": "203b3db5c14aecb110b137fa5b0c8517c4ac0884d55ead403dd35ece8051e325",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvGroup.groovy"
+        "sha256": "0c9ecc9007fd1609882903ae618f2d3b624a470f738bf8df0e3c1c8f4a1542ff",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvGroup.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Group",
@@ -12925,82 +12954,7 @@
       }
     },
     {
-      "id": "definition:3385932858f9fa528fa6",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Playlist",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 5615,
-        "definitionLine": 25,
-        "fetched": true,
-        "sha256": "dc704bc1ac5adb1304e001e4de14a0f0a7e887306b66df42bc9d21f1c4da37e4",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvPlaylist.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Playlist",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:3401551ed9421e487222",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Favorites",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 5534,
-        "definitionLine": 25,
-        "fetched": true,
-        "sha256": "0bbb373bc1bbacd8d25f5f59a4a4f79dca0d0cb69744184bc8be643a3b59c92d",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvFavorites.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Favorites",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:4fddf6663ec41b380d26",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Player",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "CHILD_DEVICE_ACCESS": 2,
-        "CHILD_DEVICE_CREATE": 11,
-        "HTTP_CALL": 24,
-        "NETWORK_URL_LITERAL": 13,
-        "PARSE_LAN_MESSAGE": 1,
-        "SCHEDULING": 69,
-        "WEBSOCKET_INTERFACE": 5
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 322457,
-        "definitionLine": 93,
-        "fetched": true,
-        "sha256": "a23d6d335d35c2f2aab8425b5cad57748d3e94294300a212452d9857c8f4d9fc",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvPlayer.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Player",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:ba715666f2bd419b3aa8",
+      "id": "definition:8a69e520c86f0fc81007",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Secondaries",
@@ -13013,11 +12967,11 @@
       },
       "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "source": {
-        "bytes": 7063,
+        "bytes": 7082,
         "definitionLine": 41,
         "fetched": true,
-        "sha256": "4cabd0779131f1d7ac56c3d69a4179e565ed46aef79c846d3d4de76faa81941c",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvSecondaries.groovy"
+        "sha256": "845b04302419fb5843e8240ed4b2a015ae7d7f35608de9573065982b4cbc6e90",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSecondaries.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Secondaries",
@@ -13025,30 +12979,7 @@
       }
     },
     {
-      "id": "definition:f13238193c8b709d7b88",
-      "kind": "DRIVER",
-      "manifestIdentity": {
-        "name": "Sonos Advanced Snapshot",
-        "namespace": "dwinks"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 1
-      },
-      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-      "source": {
-        "bytes": 1764,
-        "definitionLine": 25,
-        "fetched": true,
-        "sha256": "1fb028fb83cc57188bb1269af4c490b62eac34b2e6becd95fa9b6377e8d70155",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvSnapshot.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Sonos Advanced Snapshot",
-        "namespace": "dwinks"
-      }
-    },
-    {
-      "id": "definition:f191bea896ed0320c3be",
+      "id": "definition:9af22d97c0a36df5b1a9",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Sonos Advanced Battery Status",
@@ -13063,11 +12994,80 @@
         "bytes": 2633,
         "definitionLine": 53,
         "fetched": true,
-        "sha256": "863f432d4625b42160baad97f7f0bb3e65910a0c3b14fc196e3663c8b880bcf1",
-        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvBatteryStats.groovy"
+        "sha256": "55a73d8b453658c2beeaedba79994edf65838301978fd7ea212562905c1d22e4",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvBatteryStats.groovy"
       },
       "sourceIdentity": {
         "name": "Sonos Advanced Battery Status",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:9e6c4fd42846d50eedce",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Snapshot",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 1764,
+        "definitionLine": 25,
+        "fetched": true,
+        "sha256": "246beee47aa94d47417d90e96376829a7c9fdce4bf84e67f53833aebce95e447",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSnapshot.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Snapshot",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:d85196e01778d2e583fa",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Playlist",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 5615,
+        "definitionLine": 25,
+        "fetched": true,
+        "sha256": "251139405ecea47d19d372cf63927f95fa361b3f1dd576d00f444148021c1172",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlaylist.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Playlist",
+        "namespace": "dwinks"
+      }
+    },
+    {
+      "id": "definition:db7b6ff7fb8759a08622",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sonos Advanced Favorites",
+        "namespace": "dwinks"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 1
+      },
+      "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+      "source": {
+        "bytes": 5534,
+        "definitionLine": 25,
+        "fetched": true,
+        "sha256": "7a86aaefaff19da5c45fb61080eb03f6de2c2866476e29e951c833f04166f500",
+        "url": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvFavorites.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sonos Advanced Favorites",
         "namespace": "dwinks"
       }
     },
@@ -20534,6 +20534,31 @@
       }
     },
     {
+      "id": "definition:28eaa67a221d8ddc207a",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sifely WiFi Lock v2",
+        "namespace": "dave"
+      },
+      "observationCounts": {
+        "HTTP_CALL": 4,
+        "NETWORK_URL_LITERAL": 3,
+        "SCHEDULING": 3
+      },
+      "packageId": "hpm:a1d4e7b0-5c2f-4e8a-9d3b-6f1e2c4a8b07",
+      "source": {
+        "bytes": 14295,
+        "definitionLine": 22,
+        "fetched": true,
+        "sha256": "b6c1a92bf1a9a1f809f9fad642b8a7d4067d92312e719441ed6d1aedde42093a",
+        "url": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v2.0.1/Sifely-WiFi-Lock-Driver-v2.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sifely WiFi Lock v2",
+        "namespace": "dave"
+      }
+    },
+    {
       "id": "definition:375a89c56f0b315e31d8",
       "kind": "DRIVER",
       "manifestIdentity": {
@@ -20692,6 +20717,57 @@
       "sourceIdentity": {
         "name": "Zooz ZEN54 0-10V Advanced",
         "namespace": "jtp10181"
+      }
+    },
+    {
+      "id": "definition:ea580f7c85ff0495a1ca",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Aeotec Dual Nano Switch Channel",
+        "namespace": "rng"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 3
+      },
+      "packageId": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+      "source": {
+        "bytes": 2164,
+        "definitionLine": 28,
+        "fetched": true,
+        "sha256": "af5a26fe98bcdc0dbbbe5562f3d709fabd8aa992538de217a8c1265aea7ff382",
+        "url": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/aeotec-dual-nano-switch-channel.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Aeotec Dual Nano Switch Channel",
+        "namespace": "rng"
+      }
+    },
+    {
+      "id": "definition:f68a04c476fbc7d6723a",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Aeotec Dual Nano Switch with Power Meter",
+        "namespace": "rng"
+      },
+      "observationCounts": {
+        "CHILD_DEVICE_ACCESS": 1,
+        "CHILD_DEVICE_CREATE": 2,
+        "NETWORK_URL_LITERAL": 3,
+        "SCHEDULING": 6,
+        "SEND_HUB_COMMAND": 1,
+        "ZWAVE_API_REFERENCE": 28
+      },
+      "packageId": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+      "source": {
+        "bytes": 17621,
+        "definitionLine": 52,
+        "fetched": true,
+        "sha256": "dbe98024c5df30aa0c70ce78c21f301726146902880a9c4a58c939dfca11341b",
+        "url": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/aeotec-dual-nano-switch-power-meter.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Aeotec Dual Nano Switch with Power Meter",
+        "namespace": "rng"
       }
     },
     {
@@ -26267,6 +26343,31 @@
       }
     },
     {
+      "id": "definition:e4a579b8885924c59d30",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Sifely WiFi Lock",
+        "namespace": "dave"
+      },
+      "observationCounts": {
+        "HTTP_CALL": 5,
+        "NETWORK_URL_LITERAL": 1,
+        "SCHEDULING": 3
+      },
+      "packageId": "hpm:b2e5f8c1-6d3a-4f9b-8e4c-7a2f3d5b9c18",
+      "source": {
+        "bytes": 23939,
+        "definitionLine": 18,
+        "fetched": true,
+        "sha256": "c4cff912b0ad8ed537960d6f25e329e0b9995ee87dac48d400efbcb940156f89",
+        "url": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v1.0.0/Sifely-WiFi-Lock-Driver.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Sifely WiFi Lock",
+        "namespace": "dave"
+      }
+    },
+    {
       "id": "definition:aafe8f399a2375a0b79e",
       "kind": "APP",
       "manifestIdentity": {
@@ -27752,10 +27853,10 @@
       },
       "packageId": "hpm:bc1eb165-cecc-4813-ab16-efd02d7b2e27",
       "source": {
-        "bytes": 42883,
-        "definitionLine": 41,
+        "bytes": 43464,
+        "definitionLine": 42,
         "fetched": true,
-        "sha256": "473eaa756a75a3ff474924276c345283417615b84790c06658fbfdb3a21d58b5",
+        "sha256": "58e7ce21b093d8803a80e2eee4d4d7051c64e89f4ac11b7570af19023679bcb1",
         "url": "https://raw.githubusercontent.com/tyuhl/hubitat-honeywell-Maintenance/refs/heads/main/honeywellhomeapp.groovy"
       },
       "sourceIdentity": {
@@ -27778,7 +27879,7 @@
         "bytes": 9224,
         "definitionLine": 35,
         "fetched": true,
-        "sha256": "99d1017bda70476899c62b7542cbef1c6f7de8fc39292f518f1be708f62f0e09",
+        "sha256": "948a0e12dba9751ee4b7667cb5a80ec842144f02c6379485578c680c54f252dc",
         "url": "https://raw.githubusercontent.com/tyuhl/hubitat-honeywell-Maintenance/refs/heads/main/honeywellhomedriver.groovy"
       },
       "sourceIdentity": {
@@ -27801,7 +27902,7 @@
         "bytes": 3810,
         "definitionLine": 34,
         "fetched": true,
-        "sha256": "dc915bb97d823156ca3ea4198e53aedfcd8c4ea85dfddeea84b39eeb013b8dde",
+        "sha256": "d4fdd5ca83f7bef42ab88fd14020ee53d577e314231163387a0875e387733633",
         "url": "https://raw.githubusercontent.com/tyuhl/hubitat-honeywell-Maintenance/refs/heads/main/honeywellremotesensordriver.groovy"
       },
       "sourceIdentity": {
@@ -29468,6 +29569,33 @@
       "sourceIdentity": {
         "name": null,
         "namespace": null
+      }
+    },
+    {
+      "id": "definition:248f98b69c7e40a1549b",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Aeon Micro Dimmer with Power Meter",
+        "namespace": "rng"
+      },
+      "observationCounts": {
+        "HUB_ACTION": 1,
+        "NETWORK_URL_LITERAL": 3,
+        "SCHEDULING": 3,
+        "SEND_HUB_COMMAND": 2,
+        "ZWAVE_API_REFERENCE": 31
+      },
+      "packageId": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
+      "source": {
+        "bytes": 13439,
+        "definitionLine": 49,
+        "fetched": true,
+        "sha256": "067605f7bc23c95f6bf4eee7d1d4ec8aaf524d1afb8856a9a45973dceda70f6b",
+        "url": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/aeon-micro-dimmer-power-meter.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Aeon Micro Dimmer with Power Meter",
+        "namespace": "rng"
       }
     },
     {
@@ -32624,30 +32752,7 @@
       }
     },
     {
-      "id": "definition:80f305c779c3b6e445f1",
-      "kind": "APP",
-      "manifestIdentity": {
-        "name": "Weather Watcher Manager",
-        "namespace": "cummingsrob"
-      },
-      "observationCounts": {
-        "NETWORK_URL_LITERAL": 2
-      },
-      "packageId": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
-      "source": {
-        "bytes": 2014,
-        "definitionLine": 14,
-        "fetched": true,
-        "sha256": "c365d9c62bc3b7315cf958ff30df41877e46223b29fa88e6577b00fe0daa8b82",
-        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.20"
-      },
-      "sourceIdentity": {
-        "name": "Weather Watcher Manager",
-        "namespace": "cummingsrob"
-      }
-    },
-    {
-      "id": "definition:91f517d07786a256984e",
+      "id": "definition:2919cd98b3e808433ea9",
       "kind": "APP",
       "manifestIdentity": {
         "name": "Weather Watcher",
@@ -32658,7 +32763,7 @@
         "CHILD_DEVICE_CREATE": 1,
         "HTTP_CALL": 8,
         "MATTER_API_REFERENCE": 1,
-        "NETWORK_URL_LITERAL": 11,
+        "NETWORK_URL_LITERAL": 12,
         "OAUTH_ACCESS_TOKEN": 1,
         "OAUTH_API_MAPPINGS": 1,
         "OAUTH_ENABLED": 1,
@@ -32666,11 +32771,11 @@
       },
       "packageId": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
       "source": {
-        "bytes": 55808,
+        "bytes": 56903,
         "definitionLine": 30,
         "fetched": true,
-        "sha256": "cca2c42d3bbc3710fbaff65eaa2f38b321bcf8b6337c27af392d3016d6c147bf",
-        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.20"
+        "sha256": "df5b951c0c82ce4403f14ec0128dffc8fb052be7a6347b929d5c11ed9fd1d7f4",
+        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.21"
       },
       "sourceIdentity": {
         "name": "Weather Watcher",
@@ -32678,7 +32783,30 @@
       }
     },
     {
-      "id": "definition:5ec4ea559ab2b3474350",
+      "id": "definition:92c40f9b25e631ea6681",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Weather Watcher Manager",
+        "namespace": "cummingsrob"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
+      "source": {
+        "bytes": 2030,
+        "definitionLine": 14,
+        "fetched": true,
+        "sha256": "4f37007127c69e00c928a6255c5c0dade963b74e09abfdf5a8019c4ed760c1fd",
+        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.21"
+      },
+      "sourceIdentity": {
+        "name": "Weather Watcher Manager",
+        "namespace": "cummingsrob"
+      }
+    },
+    {
+      "id": "definition:83368829aaf86f35acec",
       "kind": "DRIVER",
       "manifestIdentity": {
         "name": "Weather Watcher Device",
@@ -32693,7 +32821,7 @@
         "definitionLine": 9,
         "fetched": true,
         "sha256": "89e1bc2c9d3facbe52af1f7c55cd64be375676bf5135bd7e8f434a333b3ece66",
-        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.20"
+        "url": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.21"
       },
       "sourceIdentity": {
         "name": "Weather Watcher Device",
@@ -59732,7 +59860,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-02T06:30:15Z",
+  "snapshotGenerated": "2026-11-03T07:01:39Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

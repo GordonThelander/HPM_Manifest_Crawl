@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 957,
+    "HPM_PACKAGE": 961,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2662,
+  "recordCount": 2666,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -19189,6 +19189,90 @@
       "version": "1.2"
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-02",
+      "definitions": [
+        {
+          "id": "definition:248f98b69c7e40a1549b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aeon Micro Dimmer with Power Meter",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/aeon-micro-dimmer-power-meter.groovy"
+        }
+      ],
+      "description": "Z-Wave driver for the Aeon Micro Dimmer: dimming plus power (W) and energy (kWh) readings that the built-in driver does not expose.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-micro-dimmer-power-meter#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Aeon Micro Dimmer with Power Meter",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
+      ],
+      "version": "1.0.1"
+    },
+    {
       "author": "Ricardo Nogueira Garcia (based on keltymd)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -19436,6 +19520,98 @@
         "Lights & Switches"
       ],
       "version": "1.0"
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-02",
+      "definitions": [
+        {
+          "id": "definition:ea580f7c85ff0495a1ca",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aeotec Dual Nano Switch Channel",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/aeotec-dual-nano-switch-channel.groovy"
+        },
+        {
+          "id": "definition:f68a04c476fbc7d6723a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aeotec Dual Nano Switch with Power Meter",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/aeotec-dual-nano-switch-power-meter.groovy"
+        }
+      ],
+      "description": "Z-Wave driver for the Aeotec Dual Nano Switch (ZW132): a child per channel with switch, power (W) and energy (kWh).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeotec-dual-nano-switch-power-meter#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Aeotec Dual Nano Switch with Power Meter",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
+      ],
+      "version": "1.0.0"
     },
     {
       "author": "Scruffy-SJB",
@@ -46384,7 +46560,7 @@
       "author": "Tim Yuhl (@WindowWasher)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-16",
+      "dateReleased": "2026-11-02",
       "definitions": [
         {
           "id": "definition:00e3747a40065d2c0645",
@@ -46483,7 +46659,7 @@
         "Cloud",
         "Temperature & Humidity"
       ],
-      "version": "1.0.8"
+      "version": "1.0.9"
     },
     {
       "author": "Brian Wilson",
@@ -64293,7 +64469,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.2"
+      "version": "5.1.4"
     },
     {
       "author": "Justin Leonard",
@@ -85470,6 +85646,176 @@
       "version": null
     },
     {
+      "author": "howarddavidp",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-02",
+      "definitions": [
+        {
+          "id": "definition:e4a579b8885924c59d30",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sifely WiFi Lock",
+          "namespace": "dave",
+          "sourceUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v1.0.0/Sifely-WiFi-Lock-Driver.groovy"
+        }
+      ],
+      "description": "Legacy Sifely driver using Sifely app username/password. Use v2 for new installs.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:b2e5f8c1-6d3a-4f9b-8e4c-7a2f3d5b9c18",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock#readme",
+        "manifest": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest-v1.json",
+        "repository": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock"
+      },
+      "name": "Sifely WiFi Lock v1 (username/password, legacy)",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "app-smart-server.sifely.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Locks"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "author": "howarddavidp",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-02",
+      "definitions": [
+        {
+          "id": "definition:28eaa67a221d8ddc207a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sifely WiFi Lock v2",
+          "namespace": "dave",
+          "sourceUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v2.0.1/Sifely-WiFi-Lock-Driver-v2.groovy"
+        }
+      ],
+      "description": "Recommended. Cloud driver for Sifely/TTLock WiFi & gateway locks using a Sifely Open API key.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:a1d4e7b0-5c2f-4e8a-9d3b-6f1e2c4a8b07",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock#readme",
+        "manifest": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json",
+        "repository": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock"
+      },
+      "name": "Sifely WiFi Lock v2 (API key)",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "cus-openapi.sifely.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Cloud",
+        "Locks"
+      ],
+      "version": "2.0.1"
+    },
+    {
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -90075,71 +90421,71 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-02",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
-          "id": "definition:c68b031bd126d47ffa29",
+          "id": "definition:2ab695e34c2c8bb7b2e5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:f191bea896ed0320c3be",
+          "id": "definition:9af22d97c0a36df5b1a9",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:3401551ed9421e487222",
+          "id": "definition:db7b6ff7fb8759a08622",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:1acf445e176857d53ea4",
+          "id": "definition:6851429b40f9d524858c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:4fddf6663ec41b380d26",
+          "id": "definition:24fe5a2d106b8f94cf0e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:3385932858f9fa528fa6",
+          "id": "definition:d85196e01778d2e583fa",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:ba715666f2bd419b3aa8",
+          "id": "definition:8a69e520c86f0fc81007",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:f13238193c8b709d7b88",
+          "id": "definition:9e6c4fd42846d50eedce",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.12.1/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -90233,7 +90579,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.12.1"
+      "version": "0.13.3"
     },
     {
       "author": "Schwark Satyavolu",
@@ -102826,31 +103172,31 @@
       "dateReleased": "2026-10-29",
       "definitions": [
         {
-          "id": "definition:91f517d07786a256984e",
+          "id": "definition:2919cd98b3e808433ea9",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Weather Watcher",
           "namespace": "cummingsrob",
-          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.20"
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherInstance.groovy?v=0.2.21"
         },
         {
-          "id": "definition:80f305c779c3b6e445f1",
+          "id": "definition:92c40f9b25e631ea6681",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Weather Watcher Manager",
           "namespace": "cummingsrob",
-          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.20"
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/apps/WeatherWatcherManager.groovy?v=0.2.21"
         },
         {
-          "id": "definition:5ec4ea559ab2b3474350",
+          "id": "definition:83368829aaf86f35acec",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Weather Watcher Device",
           "namespace": "cummingsrob",
-          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.20"
+          "sourceUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/drivers/WeatherWatcherDevice.groovy?v=0.2.21"
         }
       ],
-      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, or keyed provider).",
+      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, OpenWeatherMap, or keyed provider).",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -102923,7 +103269,7 @@
         "Dashboards",
         "Weather"
       ],
-      "version": "0.2.20"
+      "version": "0.2.21"
     },
     {
       "author": "Matthew Scott",
@@ -136687,5 +137033,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-02T06:30:15Z"
+  "snapshotGenerated": "2026-11-03T07:01:39Z"
 }

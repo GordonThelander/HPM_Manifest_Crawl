@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-02T06:30:15Z`
-- HPM repositories in master list: **226**
-- Repositories fetched successfully: **225**
-- Packages indexed: **957**
+- Snapshot: `2026-11-03T07:01:39Z`
+- HPM repositories in master list: **227**
+- Repositories fetched successfully: **226**
+- Packages indexed: **961**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **859**
+Total packages not matched by any registry entry: **863**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -373,8 +373,10 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Rene Boer | Qubino DIN Dimmer Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/dinDimManifest.json |
 | Rene Boer | Qubino Smart Plug 16A Driver | Integrations | Lights & Switches, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/Qubino/smartPlugManifest.json |
 | Rene Boer | Remotec / ZVIDAR Z-Wave Thermostat Radiator Valve Driver | Integrations | Climate Control, ZWave | https://raw.githubusercontent.com/reneboer/Hubitat/main/ZVIDAR/packageManifest.json |
+| Ricardo Nogueira Garcia | Aeon Micro Dimmer with Power Meter | Integrations | Z-Wave, Lighting, Energy Monitoring | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json |
 | Ricardo Nogueira Garcia | Aeon Multisensor Gen5 | Integrations | Z-Wave, Sensors | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json |
 | Ricardo Nogueira Garcia | Aeon Smart Dimmer 2nd Edition | Integrations | Z-Wave, Lighting, Energy Monitoring | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-smart-dimmer-2nd/packageManifest.json |
+| Ricardo Nogueira Garcia | Aeotec Dual Nano Switch with Power Meter | Integrations | Z-Wave, Lighting, Energy Monitoring | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json |
 | Ricardo Nogueira Garcia | FoxESS Cloud OpenAPI | Integrations | Energy Monitoring, Solar, Cloud | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json |
 | Ricardo Nogueira Garcia | FusionSolar OpenAPI | Integrations | Energy Monitoring, Solar, Cloud | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json |
 | Ricardo Nogueira Garcia | Goldshell BYTE Miner | Integrations | Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json |
@@ -524,6 +526,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | edasque | ratgo (MQTT firware) | Integrations |  | https://raw.githubusercontent.com/edasque/hubitat/main/devicehandlers/ratgdoMQTT/packageManifest.json |
 | evdev | Mitsubishi Comfort Cloud | Integrations | Climate Control, Temperature & Humidity, Cloud | https://raw.githubusercontent.com/evdev/mitsubishi-comfort-hubitat/main/packageManifest.json |
 | evdev | Modern Dashboard | Convenience | Cloud, Dashboards, Lights & Switches, Climate Control, Temperature & Humidity, Multimedia | https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json |
+| howarddavidp | Sifely WiFi Lock v1 (username/password, legacy) | Integrations | Locks, Cloud | https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest-v1.json |
+| howarddavidp | Sifely WiFi Lock v2 (API key) | Integrations | Locks, Cloud | https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json |
 | hubitrep | Android TV Remote | Integrations | LAN, Multimedia | https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json |
 | hubitrep | Samsung TV Remote (hubitrep) | Integrations | LAN, Multimedia | https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json |
 | jdc72 | Oppo Disc Player | Control | LAN, Misc. Devices, Multimedia | https://raw.githubusercontent.com/jdc72/Hubitat/main/oppo_disc_player/packageManifest.json |
@@ -594,7 +598,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Level | URL | Reason |
 | --- | --- | --- |
-| manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Expecting property name enclosed in double quotes: line 62 column 5 (char 3189) |
+| manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
@@ -619,8 +623,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 859 |
-| G candidate subset | 383 |
+| G. Unrepresented packages | 863 |
+| G candidate subset | 387 |
 
 ## H. Enrichment summary
 
@@ -630,13 +634,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2361 |
-| Source URLs fetched | 2351 |
+| Distinct source URLs | 2366 |
+| Source URLs fetched | 2356 |
 | Source URLs failed | 10 |
-| Components attempted | 2375 |
-| Components fetched | 2365 |
-| Literal definitions verified | 2354 |
-| Components with observations | 2221 |
+| Components attempted | 2380 |
+| Components fetched | 2370 |
+| Literal definitions verified | 2359 |
+| Components with observations | 2226 |
 
 ### Official Hubitat documentation pass
 

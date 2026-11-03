@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 186,
-    "CLOUD": 272,
+    "CLOUD": 274,
     "INSUFFICIENT": 306,
-    "LAN": 193
+    "LAN": 195
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 957,
+  "packageCount": 961,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -477,6 +477,36 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Z-Wave driver for the Aeon Micro Dimmer: dimming plus power (W) and energy (kWh) readings that the built-in driver does not expose.",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-micro-dimmer-power-meter#readme",
+      "id": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json",
+      "name": "Aeon Micro Dimmer with Power Meter",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
+      ]
+    },
+    {
       "author": "Ricardo Nogueira Garcia (based on keltymd)",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
@@ -552,6 +582,35 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Lights & Switches"
+      ]
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Z-Wave driver for the Aeotec Dual Nano Switch (ZW132): a child per channel with switch, power (W) and energy (kWh).",
+      "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeotec-dual-nano-switch-power-meter#readme",
+      "id": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+      "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json",
+      "name": "Aeotec Dual Nano Switch with Power Meter",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Lighting",
+        "Z-Wave"
       ]
     },
     {
@@ -20755,6 +20814,62 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "howarddavidp",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Legacy Sifely driver using Sifely app username/password. Use v2 for new installs.",
+      "documentationUrl": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock#readme",
+      "id": "hpm:b2e5f8c1-6d3a-4f9b-8e4c-7a2f3d5b9c18",
+      "manifestUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest-v1.json",
+      "name": "Sifely WiFi Lock v1 (username/password, legacy)",
+      "observed": {
+        "externalHosts": [
+          "app-smart-server.sifely.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Locks"
+      ]
+    },
+    {
+      "author": "howarddavidp",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Recommended. Cloud driver for Sifely/TTLock WiFi & gateway locks using a Sifely Open API key.",
+      "documentationUrl": "https://github.com/howarddavidp/hubitat-sifely-wifi-lock#readme",
+      "id": "hpm:a1d4e7b0-5c2f-4e8a-9d3b-6f1e2c4a8b07",
+      "manifestUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json",
+      "name": "Sifely WiFi Lock v2 (API key)",
+      "observed": {
+        "externalHosts": [
+          "cus-openapi.sifely.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Locks"
+      ]
+    },
+    {
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -22234,7 +22349,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 8,
-        "urlLiteralCount": 61
+        "urlLiteralCount": 84
       },
       "reviewed": [
         {
@@ -26092,7 +26207,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, or keyed provider).",
+      "description": "Multi-day forecast for Hubitat: a dashboard tile plus device attributes for rules (Open-Meteo, NWS, OpenWeatherMap, or keyed provider).",
       "documentationUrl": "https://github.com/cummingsrob/hubitat-weather-watcher#readme",
       "id": "hpm:e51ad2cd-97e1-4367-99d4-659ecc5da476",
       "manifestUrl": "https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json",
@@ -26107,7 +26222,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 14
+        "urlLiteralCount": 15
       },
       "reviewed": [],
       "tags": [
@@ -28859,5 +28974,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-02T06:30:15Z"
+  "snapshotGenerated": "2026-11-03T07:01:39Z"
 };
