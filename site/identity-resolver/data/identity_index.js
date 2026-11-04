@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2380,
+  "definitionCount": 2383,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -8565,6 +8565,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Multi-Place/master/Multi-Place.groovy"
     },
     {
+      "id": "definition:9e7f994186dd654c9b1b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "GW8 Remote Importer - Cortina RF",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart GW8 Remote Importer - Cortina RF",
+          "namespace": null
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:d43f59e9-a591-9433-a329-c2cd286c0879",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json",
+        "name": "MolSmart - GW8 - AC (learning)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+    },
+    {
       "id": "definition:9e8853255e83cb93b3f0",
       "identities": [
         {
@@ -8643,6 +8668,31 @@ window.IDENTITY_INDEX = {
         "name": "Motion2Contact"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcoghlan/hubitat/main/Motion2Contact/motion2contact-app-parent.groovy"
+    },
+    {
+      "id": "definition:9f21b671c2a10abc42b5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "GW8 Remote Importer - Cortina RF",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart GW8 Remote Importer - Cortina RF",
+          "namespace": null
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
+        "name": "MolSmart - GW8 - RF"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
     },
     {
       "id": "definition:9f2ebbbc69b1ee5ea447",
@@ -11155,31 +11205,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/CommercialLockInstance.groovy"
     },
     {
-      "id": "definition:d9dbd5c7d0e132b60532",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "GW8 Remote Importer - Cortina RF",
-          "namespace": "TRATO"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "MolSmart GW8 Remote Importer - Cortina RF",
-          "namespace": null
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "VH",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
-        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
-        "name": "MolSmart - GW8 - RF"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
-    },
-    {
       "id": "definition:da0c283f731f57d326fb",
       "identities": [
         {
@@ -13518,6 +13543,31 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_unifiProtect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectLight"
+    },
+    {
+      "id": "definition:05cedbd68cac546c7cfc",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MolSmart - 12+4 Input Board",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart - 12+4 Input Board",
+          "namespace": null
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/hhorigian/hubitat_MolSmart_InputBoard/tree/main",
+        "id": "hpm:cd919dff-7f79-498b-98ec-ea6914e02d89",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/packageManifest.json",
+        "name": "MolSmart - 12+4 Input Board"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
     },
     {
       "id": "definition:05ebe6de5025118fee87",
@@ -23345,6 +23395,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Radion.groovy"
     },
     {
+      "id": "definition:4d20f91990b0d32be188",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MolSmart - GW8 - AC (learning)",
+          "namespace": "TRATO"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:d43f59e9-a591-9433-a329-c2cd286c0879",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json",
+        "name": "MolSmart - GW8 - AC (learning)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
+    },
+    {
       "id": "definition:4d422fec918a6a4c35eb",
       "identities": [
         {
@@ -27173,6 +27243,31 @@ window.IDENTITY_INDEX = {
         "name": "iAqualink Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/iAqualink-ToggleDevice.groovy"
+    },
+    {
+      "id": "definition:65415f638ee9fb8f6cc3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MolSmart - GW8 - RF",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart GW8-RF",
+          "namespace": null
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:d43f59e9-a591-9433-a329-c2cd286c0879",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json",
+        "name": "MolSmart - GW8 - AC (learning)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
     },
     {
       "id": "definition:6545c2a68e3b8124ecf3",
@@ -31640,26 +31735,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ernie/hubitat/main/drivers/wattbox.groovy"
     },
     {
-      "id": "definition:873a61ec493110790f29",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MolSmart - GW8 - AC (learning)",
-          "namespace": "TRATO"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "VH",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:d43f59e9-a591-9433-a329-c2cd286c0879",
-        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json",
-        "name": "MolSmart - GW8 - AC (learning)"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
-    },
-    {
       "id": "definition:8779b5535532d88b3645",
       "identities": [
         {
@@ -32118,31 +32193,6 @@ window.IDENTITY_INDEX = {
         "name": "HomeKit Import (Local)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-temperature-sensor/homekit-temperature-sensor.groovy"
-    },
-    {
-      "id": "definition:89eec47c1aab0c80ba78",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MolSmart - GW8 - RF",
-          "namespace": "TRATO"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "MolSmart GW8-RF",
-          "namespace": null
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "VH",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
-        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
-        "name": "MolSmart - GW8 - RF"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
     },
     {
       "id": "definition:8a1fcd14692ef00f14db",
@@ -34348,6 +34398,31 @@ window.IDENTITY_INDEX = {
         "name": "Neptune Systems Apex"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AFS.groovy"
+    },
+    {
+      "id": "definition:964cb7369778219ebb19",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "MolSmart - GW8 - RF",
+          "namespace": "TRATO"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "MolSmart GW8-RF",
+          "namespace": null
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c4faf41a-1722-479c-945e-5909edaaeacf",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json",
+        "name": "MolSmart - GW8 - RF"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
     },
     {
       "id": "definition:96a808821225042a6f2e",
@@ -39893,6 +39968,26 @@ window.IDENTITY_INDEX = {
         "name": "Networx Alarm System Bridge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/michaelvandam/Hubitat/master/Networx-Alarm-System-Bridge/drivers/Alarm%20Virtual%20Smoke%20Detector.groovy"
+    },
+    {
+      "id": "definition:b8dc8665c81b9ba89517",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "WLED Controller",
+          "namespace": "almulder"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Albert Mulder",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/almulder/Hubitat-Drivers/tree/main/WLED",
+        "id": "manifest:cb8ec20f4116f7b52bc5",
+        "manifestUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json",
+        "name": "WLED Controller"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/WLED/Drivers/WLED%20Controller.groovy"
     },
     {
       "id": "definition:b8e470646b2c445247af",
@@ -46975,31 +47070,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/birdweather/birdweather-puc.groovy"
     },
     {
-      "id": "definition:e577661f316b0b066d0f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "MolSmart - 12+4 Input Board",
-          "namespace": "TRATO"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "MolSmart - 12+4 Input Board",
-          "namespace": null
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "VH",
-        "communityUrl": null,
-        "documentationUrl": "https://github.com/hhorigian/hubitat_MolSmart_InputBoard/tree/main",
-        "id": "hpm:cd919dff-7f79-498b-98ec-ea6914e02d89",
-        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/packageManifest.json",
-        "name": "MolSmart - 12+4 Input Board"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
-    },
-    {
       "id": "definition:e57fcffff05115078308",
       "identities": [
         {
@@ -50718,5 +50788,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-03T07:01:39Z"
+  "snapshotGenerated": "2026-11-04T06:44:10Z"
 };

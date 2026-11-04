@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 961,
+  "packageCount": 962,
   "packages": [
     {
       "apps": [],
@@ -2266,6 +2266,164 @@
       "repoUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/refs/heads/main/hpm/repository.json",
       "tags": [
         "Misc. Devices"
+      ],
+      "version": null
+    },
+    {
+      "apps": [],
+      "author": "Albert Mulder",
+      "category": "Control",
+      "communityLink": null,
+      "dateReleased": "2026-11-03",
+      "description": "WLED controller driver: whole-controller on/off, level and presets that work with any number of segments. Fixes the repeating parseResp null error in the original WLED driver.",
+      "documentationLink": "https://github.com/almulder/Hubitat-Drivers/tree/main/WLED",
+      "drivers": [
+        {
+          "definitionLine": 42,
+          "definitionName": "WLED Controller",
+          "definitionNamespace": "almulder",
+          "manifestName": "WLED Controller",
+          "manifestNamespace": "almulder",
+          "observations": [
+            {
+              "evidence": "* https://github.com/joyfulhouse/hubitat-wled",
+              "line": 10,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/joyfulhouse/hubitat-wled"
+              }
+            },
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 15,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/WLED/Drivers/WLED%20Controller.groovy\") {",
+              "line": 43,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/WLED/Drivers/WLED%20Controller.groovy"
+              }
+            },
+            {
+              "evidence": "input \"uri\", \"text\", title: \"URI\", description: \"(eg. http://[wled_ip_address])\", required: true, displayDuringSetup: true",
+              "line": 74,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "url": "http://[wled_ip_address"
+              }
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 105,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (logEnable) runIn(1800, logsOff)",
+              "line": 107,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(refresh)",
+              "line": 115,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0/30 * * ? * * *\", refresh)",
+              "line": 120,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 * * ? * * *\", refresh)",
+              "line": 123,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 0/5 * ? * * *\", refresh)",
+              "line": 126,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 0/10 * ? * * *\", refresh)",
+              "line": 129,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 0/30 * ? * * *\", refresh)",
+              "line": 132,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 0 * ? * * *\", refresh)",
+              "line": 135,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet('parseResp',params)",
+              "line": 432,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpPut(null, params)",
+              "line": 452,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPut"
+            },
+            {
+              "evidence": "httpGet(params) {",
+              "line": 545,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet(params) {",
+              "line": 568,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "runIn(2, refresh)",
+              "line": 642,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 19435,
+          "sourceFetched": true,
+          "sourceSha256": "2430aa7fe1a9a1e54a2b1861c8d499d11055bd80d3a4084476068abf0464aa42",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/WLED/Drivers/WLED%20Controller.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json",
+      "packageId": null,
+      "packageName": "WLED Controller",
+      "repoAuthor": "Albert Mulder",
+      "repoName": "Albert Mulder",
+      "repoUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/refs/heads/main/hpm/repository.json",
+      "tags": [
+        "Lights & Switches",
+        "LAN"
       ],
       "version": null
     },
@@ -11408,9 +11566,9 @@
               }
             }
           ],
-          "sourceBytes": 2832,
+          "sourceBytes": 2834,
           "sourceFetched": true,
-          "sourceSha256": "8dab6e152833ef787ce36dc497581a16410ece02fd8b87c3ba24b12782531ab5",
+          "sourceSha256": "ba77f4395bce0d13bdcaa1da409422a75b2ee801374283c6a0e61ff0dde37440",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_alarm.groovy"
         },
         {
@@ -11431,9 +11589,9 @@
               }
             }
           ],
-          "sourceBytes": 3072,
+          "sourceBytes": 3074,
           "sourceFetched": true,
-          "sourceSha256": "0d4a091e5b7d96cf22068eadf7096258db2dec5d538bc39c3412f2911aabceb9",
+          "sourceSha256": "26a879e2a3d9d01bdac0a27772f018d140ae8ea257abca461ef04fee7c07d0c1",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_button.groovy"
         },
         {
@@ -11454,9 +11612,9 @@
               }
             }
           ],
-          "sourceBytes": 2618,
+          "sourceBytes": 2620,
           "sourceFetched": true,
-          "sourceSha256": "009e4aac18de88191d45ff2db85f3648302aa97f2d8a97467311c2e477027b74",
+          "sourceSha256": "61badcc46966e38d996fef9206baacf7d88ee20c92dc3e0577a36441cb5d02f8",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_contact.groovy"
         },
         {
@@ -11477,9 +11635,9 @@
               }
             }
           ],
-          "sourceBytes": 6151,
+          "sourceBytes": 6153,
           "sourceFetched": true,
-          "sourceSha256": "dfdc7091fdfbe94263be5e0a0a17211309e5f21db7095e16a69d56ef0d0de759",
+          "sourceSha256": "13cef8ff600bfb0c7558d7d41e3d2e202d467de14af468077ef5b7d1fe399fb2",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_fob.groovy"
         },
         {
@@ -11500,9 +11658,9 @@
               }
             }
           ],
-          "sourceBytes": 10234,
+          "sourceBytes": 10236,
           "sourceFetched": true,
-          "sourceSha256": "7cb13d2d9c0040c57e4c07a02a5e259dfd825dbb6782005f976e53ff327b5ad2",
+          "sourceSha256": "43efd678ce262fada587ebec6169744b2a5ff36d04c4528e5c981d5c2820164e",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_lamp.groovy"
         },
         {
@@ -11523,9 +11681,9 @@
               }
             }
           ],
-          "sourceBytes": 2710,
+          "sourceBytes": 2712,
           "sourceFetched": true,
-          "sourceSha256": "2a40f53e4cb1eab8e7dc075dd1fc196d828ff17c9c85d5aafe99b903a329e410",
+          "sourceSha256": "64a158c5bd8985b5313975e9ac6955cad344b6d700fd5f60ed05dac7fb502ed3",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_motion.groovy"
         },
         {
@@ -11552,9 +11710,9 @@
               "value": true
             }
           ],
-          "sourceBytes": 3341,
+          "sourceBytes": 3343,
           "sourceFetched": true,
-          "sourceSha256": "9c9c0a44e197ede733392e3826588d12710d66d263128f2c831700e785c5692e",
+          "sourceSha256": "a59b19b30f143dccfb2f56e5719fc6f940d6c9bad95d5963803ca806476e7315",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_pendant.groovy"
         },
         {
@@ -11581,13 +11739,13 @@
               "value": true
             }
           ],
-          "sourceBytes": 5134,
+          "sourceBytes": 5146,
           "sourceFetched": true,
-          "sourceSha256": "ca26da5b68061a0fd27ab2ca8c32f65f089d7961d9a0407f48f4f8d763b5fe86",
+          "sourceSha256": "ec374210e204a28ac5ae7d3dace126ad3c88277d79418f8103198ba091d53c3e",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_powerclamp.groovy"
         },
         {
-          "definitionLine": 24,
+          "definitionLine": 25,
           "definitionName": "$deviceName",
           "definitionNamespace": "BirdsLikeWires",
           "manifestName": "AlertMe Smart Plug",
@@ -11595,7 +11753,7 @@
           "observations": [
             {
               "evidence": "definition (name: \"$deviceName\", namespace: \"BirdsLikeWires\", author: \"Andrew Davison\", importUrl: \"https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_smartplug.groovy\") {",
-              "line": 24,
+              "line": 25,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -11604,51 +11762,27 @@
               }
             },
             {
-              "evidence": "unschedule(enablePowerControl)",
-              "line": 102,
+              "evidence": "unschedule(powerControlKeepalive)",
+              "line": 103,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "schedule(\"${randomSixty} ${randomMinute} */6 * * ? *\", enablePowerControl)",
-              "line": 106,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(enablePowerControl)",
-              "line": 183,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(6, enablePowerControl) // plugs require a few seconds before this will stick",
-              "line": 184,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(enablePowerControl)",
-              "line": 198,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(18,enablePowerControl) // plugs require a few seconds before this will stick",
-              "line": 199,
+              "evidence": "schedule(\"${randomSixty} ${minutes} * * * ? *\", powerControlKeepalive)",
+              "line": 110,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "powerValue = zigbee.convertHexToInt(powerValueHex)",
-              "line": 249,
+              "line": 267,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 9477,
+          "sourceBytes": 9866,
           "sourceFetched": true,
-          "sourceSha256": "3b6821213416c793cfa59444a7fb0c78a4af978b84c93910b0e78529e8c49c7d",
+          "sourceSha256": "dad7e9c23c8baa465d0120df1a3719b56aaa3b2bdcce3bbbf34af622231fc9a2",
           "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_smartplug.groovy"
         }
       ],
@@ -244462,136 +244596,320 @@
       "author": "VH",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2025-08-15",
+      "dateReleased": "2026-11-03",
       "description": "MolSmart - Input Board 12+4 ",
       "documentationLink": "https://github.com/hhorigian/hubitat_MolSmart_InputBoard/tree/main",
       "drivers": [
         {
-          "definitionLine": 21,
+          "definitionLine": 28,
           "definitionName": "MolSmart - 12+4 Input Board",
           "definitionNamespace": "TRATO",
           "manifestName": "MolSmart - 12+4 Input Board",
           "manifestNamespace": null,
           "observations": [
             {
-              "evidence": "try { unschedule() } catch (ignored) {}",
-              "line": 105,
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 12,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy\",",
+              "line": 32,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"initialize\", [overwrite: true])",
+              "line": 178,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "try { interfaces.rawSocket.close() } catch (ignored) {}",
-              "line": 106,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.connect(host, port)",
-              "line": 135,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(chk, \"connectionCheck\")",
-              "line": 148,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(Math.max(15, ka), \"sendKeepAlive\")",
-              "line": 152,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if (r > 0) runIn(r, \"refresh\")",
-              "line": 155,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(2, \"createChildDevices\")",
-              "line": 157,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(1, \"discoverBoard\")",
-              "line": 158,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delay, \"initialize\")",
-              "line": 175,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(chk, \"connectionCheck\")",
+              "evidence": "unschedule(); disconnectSocket()",
               "line": 194,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "child = addChildDevice(\"hubitat\", \"Generic Component Contact Sensor\", childDni,",
-              "line": 232,
+              "evidence": "def uninstalled(){ unschedule(); state.remove(\"verify\"); cancelScan(); disconnectSocket() }",
+              "line": 197,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 200,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings?.logEnable) runIn(1800, \"logsOff\", [overwrite: true])",
+              "line": 222,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "addChildDevice(\"hubitat\", drv, atual, [name: \"${device.displayName} ${tipo}-${n}\".toString(), isComponent: true])",
+              "line": 256,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "child = addChildDevice(\"hubitat\", \"Generic Component Voltage Sensor\", childDni,",
-              "line": 252,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "if (!state.logDisableScheduled) { runIn(180, \"disableDebugLogging\"); state.logDisableScheduled = true }",
-              "line": 302,
+              "evidence": "runIn(delay, \"retrySyncChildren\", [overwrite: true])",
+              "line": 267,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "if (r > 0) runIn(r, \"refresh\")",
-              "line": 482,
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 341,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(Math.max(15, ka), \"sendKeepAlive\")",
-              "line": 488,
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 348,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "try { interfaces.rawSocket.close() } catch (ignored) {}",
-              "line": 499,
+              "evidence": "runIn(_rng.nextInt(20) + 1, \"scanTick\")",
+              "line": 388,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 400,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 400,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${cand",
+                "scheme": "http",
+                "url": "http://${cand"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"scanTick\")",
+              "line": 402,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 416,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 416,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${alvo",
+                "scheme": "http",
+                "url": "http://${alvo"
+              }
+            },
+            {
+              "evidence": "if (n <= 254 || (infl > 0 && (now() - (c.last as Long)) < 10000L)) runIn(1, \"scanTick\")",
+              "line": 426,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 448,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"doReconnect\")",
+              "line": 455,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"doReconnect\")",
+              "line": 457,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1 + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 458,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5]) { resp ->",
+              "line": 477,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5]) { resp ->",
+              "line": 477,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "try { asynchttpGet(\"snAdoptCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [ip: ip, conAt: state.connectedAt]) }",
+              "line": 490,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "try { asynchttpGet(\"snAdoptCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [ip: ip, conAt: state.connectedAt]) }",
+              "line": 490,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "unschedule(\"heartbeat\"); unschedule(\"connectionCheck\")",
+              "line": 564,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"holdTimer\"); state.remove(\"inBase\")",
+              "line": 567,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { interfaces.rawSocket.close() } catch(ignored){}",
+              "line": 568,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "getChildDevices().each { child ->",
-              "line": 510,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "try { interfaces.rawSocket.close() } catch (ignored) {}",
-              "line": 525,
+              "evidence": "interfaces.rawSocket.connect(ip, port as int)",
+              "line": 570,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.sendMessage(\"${command}\\n\")",
-              "line": 532,
+              "evidence": "unschedule(\"doReconnect\"); unschedule(\"reconnectGuard\"); state.reconnecting = false",
+              "line": 584,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "scheduleHeartbeat(); scheduleWatchdog(); runIn(1, \"heartbeat\", [overwrite:true])",
+              "line": 585,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void markSocketOffline(){ state.socketOnline = false; unschedule(\"heartbeat\"); unschedule(\"holdTimer\"); state.remove(\"inBase\"); publishOnline(false) }",
+              "line": 592,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void disconnectSocket(){ markSocketOffline(); try { interfaces.rawSocket.close() } catch(ignored){} }",
+              "line": 593,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "private void scheduleHeartbeat(){ int s = prefInt(\"hbInterval\", 15, 5, 120); runIn(s, \"heartbeat\", [overwrite:true]) }",
+              "line": 594,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void scheduleWatchdog(){ runIn(5, \"connectionCheck\", [overwrite:true]) }",
+              "line": 599,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, \"doReconnect\", [overwrite:true])",
+              "line": 623,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 624,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true]); return",
+              "line": 635,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"verifyTimeout\", [overwrite: true, data: [gen: gen]])",
+              "line": 655,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 657,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 657,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 659,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 669,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.rawSocket.sendMessage(tx)",
+              "line": 690,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 22390,
+          "sourceBytes": 40146,
           "sourceFetched": true,
-          "sourceSha256": "75cbf310a84fecd48c3b0246bcde21c92fbfe032d44dc84d15815abec279a59d",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
+          "sourceSha256": "627490cdebe2db8f02e15b05546f3cc2d294d06b7d5d5f2a26fe16651bf4d356",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
         }
       ],
       "manifestFetched": true,
@@ -244607,19 +244925,19 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.2"
+      "version": "3.0.0"
     },
     {
       "apps": [],
       "author": "Vartan Horigian",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2026-07-18",
+      "dateReleased": "2026-11-03",
       "description": "MolSmart - Drivers for the 6CH Dimmer Module",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 34,
+          "definitionLine": 29,
           "definitionName": "MolSmart DIMMER Driver TCP v3 - by TRATO",
           "definitionNamespace": "TRATO",
           "manifestName": "MolSmart - Dimmer 6CH (TCP)",
@@ -244627,7 +244945,7 @@
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 9,
+              "line": 12,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -244636,169 +244954,269 @@
               }
             },
             {
-              "evidence": "@Field static final String USER_GUIDE = \"https://github.com/hhorigian/hubitat_MolSmart_Dimmer\"",
-              "line": 56,
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer/main/user_driver_TRATO_MolSmart_DIMMER_Driver.groovy\",",
+              "line": 33,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "github.com",
+                "host": "raw.githubusercontent.com",
                 "scheme": "https",
-                "url": "https://github.com/hhorigian/hubitat_MolSmart_Dimmer"
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer/main/user_driver_TRATO_MolSmart_DIMMER_Driver.groovy"
               }
             },
             {
-              "evidence": "runIn(1800, logsOff)",
-              "line": 95,
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 231,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 238,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(_rng.nextInt(20) + 1, \"scanTick\")",
+              "line": 275,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 284,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 284,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${cand",
+                "scheme": "http",
+                "url": "http://${cand"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"scanTick\")",
+              "line": 286,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 299,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 299,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${alvo",
+                "scheme": "http",
+                "url": "http://${alvo"
+              }
+            },
+            {
+              "evidence": "if (n <= 254 || (infl > 0 && (now() - (c.last as Long)) < 10000L)) runIn(1, \"scanTick\")",
+              "line": 308,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 328,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"doReconnect\")",
+              "line": 334,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"doReconnect\")",
+              "line": 336,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1 + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 337,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 345,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 345,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "def uninstalled(){ unschedule(); state.remove(\"verify\"); cancelScan(); disconnectSocket() }",
+              "line": 412,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 100,
+              "line": 415,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.close()",
-              "line": 101,
+              "evidence": "if (settings?.logEnable) runIn(1800, \"logsOff\")",
+              "line": 418,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { interfaces.rawSocket.close() } catch(ignored){}",
+              "line": 466,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 112,
+              "evidence": "interfaces.rawSocket.connect(ip, port as int)",
+              "line": 468,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 113,
+              "evidence": "unschedule(\"doReconnect\"); unschedule(\"reconnectGuard\"); state.reconnecting = false",
+              "line": 476,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "scheduleHeartbeat(); scheduleWatchdog(); runIn(1, \"heartbeat\", [overwrite:true])",
+              "line": 477,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"heartbeat\"); unschedule(\"rampStep\"); unschedule(\"connectionCheck\")",
+              "line": 487,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void disconnectSocket(){ markSocketOffline(); try { interfaces.rawSocket.close() } catch(ignored){} }",
+              "line": 490,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "unschedule()",
-              "line": 114,
+              "evidence": "private void scheduleHeartbeat(){ runIn(prefInt(\"hbInterval\", 15, 5, 120), \"heartbeat\", [overwrite:true]) }",
+              "line": 491,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.connect(device_IP_address, (int) device_port);",
-              "line": 122,
+              "evidence": "private void scheduleWatchdog(){ runIn(5, \"connectionCheck\", [overwrite:true]) }",
+              "line": 493,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, \"doReconnect\", [overwrite:true])",
+              "line": 517,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 518,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true]); return",
+              "line": 527,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"verifyTimeout\", [overwrite: true, data: [gen: gen]])",
+              "line": 545,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 547,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 547,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 549,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 557,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.rawSocket.sendMessage(msg)",
+              "line": 577,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "runIn(checkInterval, \"connectionCheck\");",
-              "line": 124,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(60, \"initialize\");",
-              "line": 138,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule()",
-              "line": 144,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 146,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 147,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.connect(device_IP_address, (int) device_port);",
-              "line": 163,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(checkInterval, \"connectionCheck\");",
-              "line": 170,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(60, \"initialize\");",
-              "line": 176,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(10, \"refresh\");",
-              "line": 188,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "cd = addChildDevice(\"hubitat\", \"Generic Component Dimmer\", \"${thisId}-Switch-\" + Integer.toString(i), [name: \"${device.displayName} Switch-\" + Integer.toString(i) , isComponent: true])",
-              "line": 205,
+              "evidence": "addChildDevice(\"hubitat\", \"Generic Component Dimmer\", childDni(i),",
+              "line": 674,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "cd = addChildDevice(\"hubitat\", \"Generic Component ${type}\", \"${thisId}-${type}_${name}\", [name: \"${name}\", isComponent: true])",
-              "line": 251,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.sendMessage(s)",
-              "line": 515,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(30, \"connectionCheck\");",
-              "line": 535,
+              "evidence": "if (r) runInMillis(rampInterval(r.size()), \"rampStep\", [overwrite: true]) else unschedule(\"rampStep\")",
+              "line": 755,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(checkInterval, \"connectionCheck\");",
-              "line": 544,
+              "evidence": "if (!txRaw(\"1${k}%${nv}\", \"rampa canal ${k}\")){ state.ramp = [:]; unschedule(\"rampStep\"); return }",
+              "line": 768,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 553,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.sendMessage(comando)",
-              "line": 639,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.sendMessage(comando)",
-              "line": 681,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.sendMessage(comando)",
-              "line": 720,
-              "type": "RAW_SOCKET_INTERFACE",
+              "evidence": "if (!r) unschedule(\"rampStep\")",
+              "line": 778,
+              "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 26937,
+          "sourceBytes": 37269,
           "sourceFetched": true,
-          "sourceSha256": "9ed8a7476b3205d26af8fbc3aa147fe450c2b40ca0148ab420bb9c030fb6eb0e",
+          "sourceSha256": "40799de1499646eb51c8115a7e6292326704c4697d067e30860c6c335668c421",
           "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer/main/user_driver_TRATO_MolSmart_DIMMER_Driver.groovy"
         }
       ],
@@ -244812,7 +245230,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "1.8"
+      "version": "3.0.0"
     },
     {
       "apps": [],
@@ -245710,24 +246128,17 @@
       "version": "1.5"
     },
     {
-      "apps": [],
-      "author": "VH",
-      "category": "Control",
-      "communityLink": null,
-      "dateReleased": "2026-09-19",
-      "description": "MolSmart - Drivers for using the AC Codes learned in GW8 Website",
-      "documentationLink": null,
-      "drivers": [
+      "apps": [
         {
-          "definitionLine": 24,
-          "definitionName": "MolSmart - GW8 - AC (learning)",
+          "definitionLine": 36,
+          "definitionName": "GW8 Remote Importer - Cortina RF",
           "definitionNamespace": "TRATO",
-          "manifestName": "MolSmart - GW8 - AC (learning)",
-          "manifestNamespace": "TRATO",
+          "manifestName": "MolSmart GW8 Remote Importer - Cortina RF",
+          "manifestNamespace": null,
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 10,
+              "line": 12,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -245736,8 +246147,99 @@
               }
             },
             {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy\"",
+              "line": 45,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+              }
+            },
+            {
+              "evidence": "def kids = getChildDevices()",
+              "line": 144,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "return \"http://${gw8ip}:${port}\"",
+              "line": 203,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${gw8ip",
+                "scheme": "http",
+                "url": "http://${gw8ip"
+              }
+            },
+            {
+              "evidence": "asynchttpPost(\"discoverRemotesCB\", params)",
+              "line": 217,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "return (getChildDevices() ?: []).collect { cd ->",
+              "line": 261,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "String atual = getChildDevices()?.find { it.id.toString() == r.id }?.deviceNetworkId?.toString()",
+              "line": 333,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "def child = addChildDevice(CHILD_NAMESPACE, CHILD_TYPE_NAME, dni, [label: label, name: label, isComponent: false])",
+              "line": 423,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            }
+          ],
+          "sourceBytes": 15590,
+          "sourceFetched": true,
+          "sourceSha256": "39882d612c829dad145624fb6690054109def6c74940ab0bec5c64224ab0a34f",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+        }
+      ],
+      "author": "VH",
+      "category": "Control",
+      "communityLink": null,
+      "dateReleased": "2026-11-03",
+      "description": "MolSmart - Drivers for using the AC Codes learned in GW8 Website",
+      "documentationLink": null,
+      "drivers": [
+        {
+          "definitionLine": 30,
+          "definitionName": "MolSmart - GW8 - AC (learning)",
+          "definitionNamespace": "TRATO",
+          "manifestName": "MolSmart - GW8 - AC (learning)",
+          "manifestNamespace": "TRATO",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 12,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy\") {",
+              "line": 32,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/IR/AC(Learning"
+              }
+            },
+            {
               "evidence": "@Field static final String USER_GUIDE = \"https://github.com/hhorigian/hubitat_MolSmart_GW8/tree/main/AC/Idoor\"",
-              "line": 62,
+              "line": 70,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -245746,8 +246248,38 @@
               }
             },
             {
+              "evidence": "unschedule(\"logsOff\")",
+              "line": 104,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
+              "line": 105,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 108,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthPoll\")",
+              "line": 154,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 155,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "String url = \"http://${ip}/control\" +",
-              "line": 165,
+              "line": 192,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -245756,38 +246288,44 @@
               }
             },
             {
-              "evidence": "asynchttpPost('gw8PostCallback', params, [url: fullUrl])",
-              "line": 357,
+              "evidence": "asynchttpPost('gw8PostCallback', params, [pending: pending, running: running])",
+              "line": 394,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule(\"healthPoll\")",
-              "line": 389,
+              "line": 465,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 466,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(healthCron(mins), \"healthPoll\")",
+              "line": 468,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"healthPoll\")",
-              "line": 390,
+              "line": 469,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(mins * 60, \"healthReschedule\")",
-              "line": 392,
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 480,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(mins * 60, \"healthReschedule\")",
-              "line": 397,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "Map params = [ uri: \"http://${ip}/info?user=${settings.user}&pwd=${settings.password}\", timeout: 5 ]",
-              "line": 406,
+              "evidence": "Map params = [ uri: \"http://${ip}/info?type=1\", timeout: 5 ]",
+              "line": 493,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -245797,15 +246335,156 @@
             },
             {
               "evidence": "asynchttpGet('healthPollCB', params, [t0: started])",
-              "line": 408,
+              "line": 495,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 22964,
+          "sourceBytes": 20234,
           "sourceFetched": true,
-          "sourceSha256": "197df21dba9b28d702a99b0e97fe51e3af158bf990f825054bfdc499d8a27135",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
+          "sourceSha256": "b99f30d845eded2f495cca50f00cc65f04988e5b0196a6dda2061a0110a4e4c5",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
+        },
+        {
+          "definitionLine": 34,
+          "definitionName": "MolSmart - GW8 - RF",
+          "definitionNamespace": "TRATO",
+          "manifestName": "MolSmart GW8-RF",
+          "manifestNamespace": null,
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 12,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy\") {",
+              "line": 36,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
+              }
+            },
+            {
+              "evidence": "if (logEnable) runIn(1800, logsOff)",
+              "line": 93,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 96,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "return \"http://${ip}/control\" + \"?cId=${enc(settings.cId)}&pwd=${enc(settings.password)}&rcId=${RC_ID}&state=${button}&user=${enc(settings.user)}\"",
+              "line": 155,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "asynchttpPost('gw8PostCallback', params, [cmd: cmd, status: STATUS_BY_CMD[cmd]])",
+              "line": 178,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "unschedule(\"healthPoll\")",
+              "line": 270,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 271,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(healthCron(mins), \"healthPoll\")",
+              "line": 272,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"healthPoll\")",
+              "line": 275,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthPoll\")",
+              "line": 284,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 295,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "String uri = \"http://${ip}/info?type=1\"",
+              "line": 305,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "asynchttpGet('healthPollCB', params, [t0: started, uri: uri])",
+              "line": 309,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "child = addChildDevice(\"hubitat\", \"Generic Component Switch\", dni,",
+              "line": 388,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"childOffSafe\", [data: [dni: cd.deviceNetworkId], overwrite: false])",
+              "line": 421,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "uri: \"http://${molIPAddress}/remoteData\",",
+              "line": 446,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${molipaddress",
+                "scheme": "http",
+                "url": "http://${molIPAddress"
+              }
+            },
+            {
+              "evidence": "asynchttpPost(\"remoteListCB\", params)",
+              "line": 452,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            }
+          ],
+          "sourceBytes": 15054,
+          "sourceFetched": true,
+          "sourceSha256": "5f5ec1d5aca08e34500540a71ed0d01b83499ad9d407ef396a00b90d3be4a3b7",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
         }
       ],
       "manifestFetched": true,
@@ -245818,7 +246497,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "1.3"
+      "version": "3.0.0"
     },
     {
       "apps": [],
@@ -246135,21 +246814,41 @@
     {
       "apps": [
         {
-          "definitionLine": 13,
+          "definitionLine": 36,
           "definitionName": "GW8 Remote Importer - Cortina RF",
           "definitionNamespace": "TRATO",
           "manifestName": "MolSmart GW8 Remote Importer - Cortina RF",
           "manifestNamespace": null,
           "observations": [
             {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 12,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy\"",
+              "line": 45,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+              }
+            },
+            {
               "evidence": "def kids = getChildDevices()",
-              "line": 134,
+              "line": 144,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return \"http://${gw8ip}:${port}\"",
-              "line": 197,
+              "line": 203,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${gw8ip",
@@ -246159,38 +246858,44 @@
             },
             {
               "evidence": "asynchttpPost(\"discoverRemotesCB\", params)",
-              "line": 212,
+              "line": 217,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
-              "evidence": "def child = addChildDevice(",
-              "line": 280,
-              "type": "CHILD_DEVICE_CREATE",
+              "evidence": "return (getChildDevices() ?: []).collect { cd ->",
+              "line": 261,
+              "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "getChildDevices()?.each { cd ->",
-              "line": 326,
+              "evidence": "String atual = getChildDevices()?.find { it.id.toString() == r.id }?.deviceNetworkId?.toString()",
+              "line": 333,
               "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "def child = addChildDevice(CHILD_NAMESPACE, CHILD_TYPE_NAME, dni, [label: label, name: label, isComponent: false])",
+              "line": 423,
+              "type": "CHILD_DEVICE_CREATE",
               "value": true
             }
           ],
-          "sourceBytes": 11580,
+          "sourceBytes": 15590,
           "sourceFetched": true,
-          "sourceSha256": "69e46b11269fa1737a6c08c2e79544ae8d6e22376684af2912af0e72c35d2fe1",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+          "sourceSha256": "39882d612c829dad145624fb6690054109def6c74940ab0bec5c64224ab0a34f",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
         }
       ],
       "author": "VH",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2026-6-18",
+      "dateReleased": "2026-11-03",
       "description": "MolSmart - GW8 - Driver para controle de RF",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 32,
+          "definitionLine": 34,
           "definitionName": "MolSmart - GW8 - RF",
           "definitionNamespace": "TRATO",
           "manifestName": "MolSmart GW8-RF",
@@ -246198,7 +246903,7 @@
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 10,
+              "line": 12,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -246207,20 +246912,30 @@
               }
             },
             {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy\") {",
+              "line": 36,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
+              }
+            },
+            {
               "evidence": "if (logEnable) runIn(1800, logsOff)",
-              "line": 103,
+              "line": 93,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 107,
+              "line": 96,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "return \"http://${ip}/control\" + \"?cId=${cid}&pwd=${vc}&rcId=${rcid}&state=${button}&user=${sn}\"",
-              "line": 153,
+              "evidence": "return \"http://${ip}/control\" + \"?cId=${enc(settings.cId)}&pwd=${enc(settings.password)}&rcId=${RC_ID}&state=${button}&user=${enc(settings.user)}\"",
+              "line": 155,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -246229,38 +246944,50 @@
               }
             },
             {
-              "evidence": "asynchttpPost('gw8PostCallback', params, [cmd: button])",
-              "line": 162,
+              "evidence": "asynchttpPost('gw8PostCallback', params, [cmd: cmd, status: STATUS_BY_CMD[cmd]])",
+              "line": 178,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule(\"healthPoll\")",
-              "line": 199,
+              "line": 270,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 271,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(healthCron(mins), \"healthPoll\")",
+              "line": 272,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"healthPoll\")",
-              "line": 200,
+              "line": 275,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(mins * 60, \"healthReschedule\")",
-              "line": 206,
+              "evidence": "unschedule(\"healthPoll\")",
+              "line": 284,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(mins * 60, \"healthReschedule\")",
-              "line": 211,
+              "evidence": "unschedule(\"healthReschedule\")",
+              "line": 295,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String uri = \"http://${ip}/info?type=1\"",
-              "line": 219,
+              "line": 305,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -246270,25 +246997,25 @@
             },
             {
               "evidence": "asynchttpGet('healthPollCB', params, [t0: started, uri: uri])",
-              "line": 223,
+              "line": 309,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "child = addChildDevice(\"hubitat\", \"Generic Component Switch\", dni,",
-              "line": 311,
+              "line": 388,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "runIn(1, \"childOffSafe\", [data: [dni: cd.deviceNetworkId]])",
-              "line": 341,
+              "evidence": "runIn(1, \"childOffSafe\", [data: [dni: cd.deviceNetworkId], overwrite: false])",
+              "line": 421,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"http://${molIPAddress}/remoteData\",",
-              "line": 360,
+              "line": 446,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${molipaddress",
@@ -246298,15 +247025,15 @@
             },
             {
               "evidence": "asynchttpPost(\"remoteListCB\", params)",
-              "line": 366,
+              "line": 452,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 13789,
+          "sourceBytes": 15054,
           "sourceFetched": true,
-          "sourceSha256": "4b625db73f506327ea0359e8be969a6638e1ce8538fbe1ef2a7357fa84aa1fe1",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
+          "sourceSha256": "5f5ec1d5aca08e34500540a71ed0d01b83499ad9d407ef396a00b90d3be4a3b7",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
         }
       ],
       "manifestFetched": true,
@@ -246322,7 +247049,7 @@
         "Garage Doors",
         "Locks"
       ],
-      "version": "1.8"
+      "version": "3.0.0"
     },
     {
       "apps": [],
@@ -246532,12 +247259,12 @@
       "author": "Vartan Horigian",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2025-06-27",
+      "dateReleased": "2026-11-03",
       "description": "MolSmart - Drivers for the 2/4/8/16/32 Relay Modules",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 45,
+          "definitionLine": 38,
           "definitionName": "MolSmart - Relay 2/4/8/16/32CH (TCP)",
           "definitionNamespace": "TRATO",
           "manifestName": "MolSmart - Relay 2/4/8/16/32CH (TCP)",
@@ -246545,7 +247272,7 @@
           "observations": [
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 9,
+              "line": 12,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -246554,203 +247281,529 @@
               }
             },
             {
-              "evidence": "@Field static final String USER_GUIDE = \"https://github.com/hhorigian/hubitat_MolSmart_Relays/tree/main/TCP\"",
-              "line": 67,
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/Hubitat_TRATO_MolSmart_Relays_TCP_Driver.groovy\",",
+              "line": 42,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "github.com",
+                "host": "raw.githubusercontent.com",
                 "scheme": "https",
-                "url": "https://github.com/hhorigian/hubitat_MolSmart_Relays/tree/main/TCP"
+                "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/Hubitat_TRATO_MolSmart_Relays_TCP_Driver.groovy"
               }
             },
             {
-              "evidence": "runIn(1800, logsOff)",
-              "line": 115,
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 305,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule()",
-              "line": 120,
+              "evidence": "releaseLease(); SCAN_CNT.remove(device.id.toString()); state.remove(\"scan\"); unschedule(\"scanTick\")",
+              "line": 312,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.close()",
-              "line": 121,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.close();",
-              "line": 150,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "unschedule()",
-              "line": 151,
+              "evidence": "runIn(_rng.nextInt(20) + 1, \"scanTick\")",
+              "line": 352,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.connect(device_IP_address, (int) device_port)",
-              "line": 158,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(checkInterval, \"connectionCheck\")",
-              "line": 161,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn((settings.heartbeatInterval ?: 30) as int, \"heartbeat\")",
-              "line": 162,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(retryDelay, \"initialize\") // Retry after calculated delay",
-              "line": 171,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule()",
-              "line": 178,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.close() // Ensure the socket is closed before reconnecting",
-              "line": 180,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.rawSocket.connect(device_IP_address, (int) device_port)",
-              "line": 205,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(checkInterval, \"connectionCheck\")",
-              "line": 208,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn((settings.heartbeatInterval ?: 30) as int, \"heartbeat\")",
-              "line": 209,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(retryDelay, \"initialize\") // Retry after calculated delay",
-              "line": 216,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(10, \"refresh\")",
-              "line": 228,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "cd = addChildDevice(\"hubitat\", \"Generic Component Switch\", \"${thisId}-Switch-\" + numerorelay, [name: \"${device.displayName} Switch-\" + numerorelay , isComponent: true])",
-              "line": 250,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "httpGet(\"http://\" + settings.device_IP_address + \"/relay_cgi_load.cgi\") { resp ->",
-              "line": 267,
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 364,
               "type": "HTTP_CALL",
-              "value": "httpGet"
+              "value": "asynchttpGet"
             },
             {
-              "evidence": "runIn(60, \"buscainputcount\") // Retry after 60 seconds",
-              "line": 295,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(60, \"buscainputcount\") // Retry after 60 seconds",
-              "line": 302,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "httpGet(\"http://${settings.device_IP_address}/relay_cgi_load.cgi\") { resp ->",
-              "line": 313,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet(\"http://${settings.device_IP_address}/relay_cgi_load.cgi\") { resp ->",
-              "line": 313,
+              "evidence": "try { asynchttpGet(\"scanCallback\", [uri: \"http://${cand}/get/sn.cgi\".toString(), timeout: 2], [id: id, ip: cand]) }",
+              "line": 364,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "${settings.device_ip_address",
+                "host": "${cand",
                 "scheme": "http",
-                "url": "http://${settings.device_IP_address"
+                "url": "http://${cand"
               }
             },
             {
-              "evidence": "interfaces.rawSocket.sendMessage(\"00\")",
-              "line": 360,
-              "type": "RAW_SOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn((settings.heartbeatInterval ?: 30) as int, \"heartbeat\")",
-              "line": 368,
+              "evidence": "runIn(1, \"scanTick\")",
+              "line": 366,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "cd = addChildDevice(\"hubitat\", \"Generic Component ${type}\", \"${thisId}-${type}_${name}\", [name: \"${name}\", isComponent: true])",
-              "line": 380,
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 379,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"scanCallback\", [uri: \"http://${alvo}/get/sn.cgi\".toString(), timeout: 2], [id: sc.id, ip: alvo])",
+              "line": 379,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${alvo",
+                "scheme": "http",
+                "url": "http://${alvo"
+              }
+            },
+            {
+              "evidence": "if (n <= 254 || (infl > 0 && (now() - (c.last as Long)) < 10000L)) runIn(1, \"scanTick\")",
+              "line": 389,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 410,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"doReconnect\")",
+              "line": 418,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"doReconnect\")",
+              "line": 420,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1 + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 421,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 429,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 429,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "for (def dev : (getChildDevices()?.collect{ it } ?: [])){",
+              "line": 487,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "for (def cd : (getChildDevices() ?: [])){",
+              "line": 565,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "runIn(3, \"verifyRestore\", [data: [chs: sent, gen: data.gen, at: data.at], overwrite: true])",
+              "line": 605,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(); disconnectSocket();",
+              "line": 741,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings?.logEnable) runIn(1800, \"logsOff\")",
+              "line": 742,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "def uninstalled(){ unschedule(); state.remove(\"verify\"); cancelScan(); disconnectSocket() }",
+              "line": 760,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"retrySyncChildren\")",
+              "line": 764,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"continuePrune\")",
+              "line": 768,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 769,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"queryBoardStatus\", [overwrite:true])",
+              "line": 804,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"queryBoardStatus\", [overwrite:true])",
+              "line": 823,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings?.logEnable) runIn(1800, \"logsOff\", [overwrite:true])",
+              "line": 825,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try{ unschedule('pwrPollTick') } catch(e){}",
+              "line": 829,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(sec, 'pwrPollTick', [overwrite:true])",
+              "line": 837,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(sec, 'pwrPollTick', [overwrite:true])",
+              "line": 844,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "Map params = [ uri: \"http://${ip}/api/v2/pwr.cgi\", headers: httpHeaders(), timeout: 5 ]",
+              "line": 850,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "asynchttpGet('pwrHttpCallback', params)",
+              "line": 852,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "unschedule(\"heartbeat\"); unschedule(\"connectionCheck\")",
+              "line": 890,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { interfaces.rawSocket.close() } catch(ignored){}",
+              "line": 894,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.rawSocket.connect(ip, port as int)",
+              "line": 896,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"doReconnect\"); unschedule(\"reconnectGuard\"); state.reconnecting = false",
+              "line": 937,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "scheduleHeartbeat(); scheduleWatchdog(); scheduleReconcile(); runIn(1, \"heartbeat\", [overwrite:true])",
+              "line": 938,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void markSocketOffline(){ state.socketOnline=false; forgetFrameCount(); unschedule(\"heartbeat\"); unschedule(\"doRestore\"); unschedule(\"verifyRestore\"); sendEvent(name:\"online\", value:\"false\") }",
+              "line": 948,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void disconnectSocket(){ markSocketOffline(); try { interfaces.rawSocket.close() } catch(ignored){} }",
+              "line": 949,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "private void scheduleHeartbeat(){ int s = prefInt(\"hbInterval\", 15, 5, 120); runIn(s, \"heartbeat\", [overwrite:true]) }",
+              "line": 950,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void scheduleWatchdog(){ runIn(5, \"connectionCheck\", [overwrite:true]) }",
+              "line": 952,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "private void scheduleReconcile(){ runIn(60, \"reconcileRelayStates\", [overwrite:true]) }",
+              "line": 953,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, \"doReconnect\", [overwrite:true])",
+              "line": 1009,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true])",
+              "line": 1010,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(GUARD_EXTRA_S, \"reconnectGuard\", [overwrite:true]); return",
+              "line": 1022,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"verifyTimeout\", [overwrite: true, data: [gen: gen]])",
+              "line": 1039,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 1041,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"verifyCallback\", [uri: \"http://${ip}/get/sn.cgi\".toString(), timeout: 5], [gen: gen, ip: ip])",
+              "line": 1041,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 1043,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.remove(\"verify\"); unschedule(\"verifyTimeout\")",
+              "line": 1052,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "int kids = (getChildDevices()?.count{ it.typeName?.contains('Switch') } ?: 0) as int",
+              "line": 1374,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"verifyMasterOn\", [overwrite:true])",
+              "line": 1381,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (ch <= 0){ runIn(1, \"refresh\", [overwrite:true]); return }",
+              "line": 1385,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"checkMasterOnResults\", [overwrite:true])",
+              "line": 1389,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"verifyMasterOff\", [overwrite:true])",
+              "line": 1396,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (ch <= 0){ runIn(1, \"refresh\", [overwrite:true]); return }",
+              "line": 1400,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"checkMasterOffResults\", [overwrite:true])",
+              "line": 1402,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (ch <= 0){ runIn(1, \"refresh\", [overwrite:true]); return }",
+              "line": 1407,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"refresh\", [overwrite:true])",
+              "line": 1416,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"refresh\", [overwrite:true])",
+              "line": 1419,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"refresh\", [overwrite:true])",
+              "line": 1427,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.rawSocket.sendMessage(tx)",
+              "line": 1432,
+              "type": "RAW_SOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "addChildDevice(\"hubitat\", \"Generic Component Switch\", dni,",
+              "line": 1483,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.sendMessage(s)",
-              "line": 1084,
-              "type": "RAW_SOCKET_INTERFACE",
+              "evidence": "def c = addChildDevice(\"hubitat\", \"Generic Component Contact Sensor\", dni,",
+              "line": 1516,
+              "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "runIn(retryDelay, \"connectionCheck\")",
-              "line": 1121,
+              "evidence": "httpGet([ uri: \"http://${ip}/relay_cgi_load.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 1533,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/relay_cgi_load.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 1533,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp2 ->",
+              "line": 1545,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/get/sn.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp2 ->",
+              "line": 1545,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/relay_cgi_load.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 1576,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([ uri: \"http://${ip}/relay_cgi_load.cgi\", headers: httpHeaders(), timeout: 5 ]) { resp ->",
+              "line": 1576,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "runIn(delay, \"retrySyncChildren\", [overwrite:true])",
+              "line": 1649,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(checkInterval, \"connectionCheck\")",
-              "line": 1133,
+              "evidence": "runIn(((CONFIRM_MAX_MS / 1000L) as int) + 1, \"expirePrunePlan\", [overwrite:true])",
+              "line": 1713,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.sendMessage(comando)",
-              "line": 1235,
-              "type": "RAW_SOCKET_INTERFACE",
+              "evidence": "Set vivos = ((getChildDevices()?.collect{ it.deviceNetworkId as String }) ?: []) as Set",
+              "line": 1784,
+              "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.sendMessage(comando)",
-              "line": 1274,
-              "type": "RAW_SOCKET_INTERFACE",
+              "evidence": "runIn(15, \"continuePrune\", [overwrite:true])",
+              "line": 1799,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "Map params = [ uri: \"http://${ip}/reboot.cgi\", headers: httpHeaders(), timeout: 5 ]",
+              "line": 1837,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "httpGet(params) { resp ->",
+              "line": 1839,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "unschedule(\"doReconnect\")",
+              "line": 1883,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(30, \"initialize\", [overwrite: true])",
+              "line": 1886,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(30 + GUARD_EXTRA_S, \"reconnectGuard\", [overwrite: true])",
+              "line": 1887,
+              "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 53697,
+          "sourceBytes": 80423,
           "sourceFetched": true,
-          "sourceSha256": "80e5add0028afe5b30e09646988f174a3ce30fe447fd34b6baaecd762bb18ad0",
+          "sourceSha256": "100df127ef917900d2640fe2bae64e295430b50fd52ace6c8a29da22c62c6302",
           "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/Hubitat_TRATO_MolSmart_Relays_TCP_Driver.groovy"
         }
       ],
@@ -246764,7 +247817,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "2.7"
+      "version": "3.0.0"
     },
     {
       "apps": [],
@@ -288561,159 +289614,267 @@
             },
             {
               "evidence": "unschedule(\"checkAndRetry\")",
-              "line": 107,
+              "line": 119,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"confirmDesired\")",
+              "line": 120,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"finishConfirm\")",
+              "line": 121,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 110,
+              "line": 126,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 114,
+              "line": 130,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(physicalSwitch, \"switch\", switchHandler)",
-              "line": 121,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(doorContact, \"contact\", contactHandler)",
-              "line": 123,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(rexButton, \"pushed\", rexButtonHandler)",
-              "line": 126,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(rexMotion, \"motion\", rexMotionHandler)",
-              "line": 129,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(location, \"hsmStatus\", hsmStatusHandler)",
-              "line": 132,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(location, \"mode\", modeHandler)",
-              "line": 135,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(location, \"systemStart\", hubRestartHandler)",
               "line": 137,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
+              "evidence": "subscribe(doorContact, \"contact\", contactHandler)",
+              "line": 139,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(rexButton, \"pushed\", rexButtonHandler)",
+              "line": 142,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(rexMotion, \"motion\", rexMotionHandler)",
+              "line": 145,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"hsmStatus\", hsmStatusHandler)",
+              "line": 148,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"mode\", modeHandler)",
+              "line": 151,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"systemStart\", hubRestartHandler)",
+              "line": 153,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
               "evidence": "unschedule(\"afterHubRestart\")",
-              "line": 152,
+              "line": 180,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, \"afterHubRestart\")",
-              "line": 153,
+              "line": 181,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"finishConfirm\")",
+              "line": 261,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"checkAndRetry\")",
-              "line": 212,
+              "line": 277,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 231,
+              "line": 305,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"checkAndRetry\")",
-              "line": 288,
+              "line": 378,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"autoRelock\")",
+              "line": 416,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"checkAndRetry\")",
-              "line": 329,
+              "line": 432,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"confirmDesired\")",
+              "line": 433,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"finishConfirm\")",
+              "line": 434,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"autoRelock\")",
+              "line": 443,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"confirmDesired\")",
+              "line": 459,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"checkAndRetry\")",
-              "line": 339,
+              "line": 465,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"finishConfirm\")",
+              "line": 483,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"finishConfirm\")",
+              "line": 492,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 350,
+              "line": 519,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 365,
+              "line": 537,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 390,
+              "line": 576,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 401,
+              "line": 588,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"autoRelock\")",
-              "line": 417,
+              "line": 612,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"autoRelock\")",
-              "line": 421,
+              "line": 616,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"finishConfirm\")",
+              "line": 676,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"confirmDesired\")",
+              "line": 677,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"checkAndRetry\")",
+              "line": 678,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"autoRelock\")",
+              "line": 680,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"autoRelock\")",
+              "line": 684,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"checkAndRetry\")",
+              "line": 686,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(",
-              "line": 576,
+              "line": 867,
               "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"disableDebugLogging\")",
+              "line": 888,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1800, \"disableDebugLogging\")",
+              "line": 891,
+              "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 19582,
+          "sourceBytes": 40198,
           "sourceFetched": true,
-          "sourceSha256": "fea0b006ee5da0d6c6a1c2732cbbbea7eee260013a0e61532ba0ee008a71963d",
+          "sourceSha256": "666c9847d8b0ab4e7ce070930bc1a7fe9bd3b36d7f22e4fc782e0d76c4f96c93",
           "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/CommercialLockInstance.groovy"
         }
       ],
       "author": "Ephrayim (evdev)",
       "category": "Convenience",
       "communityLink": null,
-      "dateReleased": "2026-08-13",
+      "dateReleased": "2026-11-03",
       "description": "Expose a switch-controlled maglock or electric strike as a Hubitat lock.",
       "documentationLink": "https://github.com/evdev/hubitat-commercial-lock",
       "drivers": [
@@ -288735,9 +289896,9 @@
               }
             }
           ],
-          "sourceBytes": 2161,
+          "sourceBytes": 2526,
           "sourceFetched": true,
-          "sourceSha256": "f44f9b006d2d16cf3043c94efc7608b81c6d0390f03d529e93744af132e64a60",
+          "sourceSha256": "bf92d1dc1e540d22a175a8080d9f67eeb854e669726bcab428ec8096c4dcdf54",
           "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/CommercialLockVirtualDevice.groovy"
         }
       ],
@@ -288752,7 +289913,7 @@
         "Locks",
         "Doors & Windows"
       ],
-      "version": "1.1.4"
+      "version": "1.1.6"
     },
     {
       "apps": [
@@ -300265,80 +301426,86 @@
             },
             {
               "evidence": "def existing = getChildDevices().collect { it.getDataValue(\"vehicleId\") }",
-              "line": 275,
+              "line": 279,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def device = getChildDevices().find { it.getDataValue(\"vehicleId\") == id }",
-              "line": 289,
+              "line": 293,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def existingDeviceIds = getChildDevices().collect { it.getDataValue(\"vehicleId\") }",
-              "line": 307,
+              "line": 311,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def device = getChildDevices().find { it.getDataValue(\"vehicleId\") == vehicleId }",
-              "line": 324,
+              "line": 328,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 380,
+              "line": 384,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 0,12 * * ?\", \"refreshTokens\")",
-              "line": 390,
+              "line": 394,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { deleteChildDevice(it.deviceNetworkId) }",
-              "line": 395,
+              "line": 399,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { device ->",
-              "line": 404,
+              "line": 408,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices().each { device ->",
+              "line": 571,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def existingDevices = getChildDevices()",
-              "line": 608,
+              "line": 640,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def device = addChildDevice(",
-              "line": 648,
+              "line": 680,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 728,
+              "line": 760,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "def device = getChildDevices().find { it.getDataValue(\"vehicleId\") == vehicleId }",
-              "line": 789,
+              "line": 830,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             }
           ],
-          "sourceBytes": 27620,
+          "sourceBytes": 29150,
           "sourceFetched": true,
-          "sourceSha256": "7653e8b002a040479b0dd271bfae96fd6171387b215f509b0c0fa7689d21025f",
+          "sourceSha256": "98798b7f7a639899d882f89be6d7146e54064cc412a569786bf3750dc0af4316",
           "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/apps/rivian-connect.groovy"
         }
       ],
@@ -300350,7 +301517,7 @@
       "documentationLink": "https://github.com/jlupien/hubitat-drivers/tree/master/rivian-connect#readme",
       "drivers": [
         {
-          "definitionLine": 43,
+          "definitionLine": 44,
           "definitionName": "Rivian Vehicle",
           "definitionNamespace": "jlupien",
           "manifestName": "Rivian Vehicle",
@@ -300378,7 +301545,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/drivers/rivian-vehicle.groovy\"",
-              "line": 47,
+              "line": 48,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -300388,128 +301555,140 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 241,
+              "line": 243,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"connectWebSocket\")",
-              "line": 267,
+              "line": 269,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "case \"5\": runEvery5Minutes(\"watchdog\"); break",
-              "line": 275,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "case \"15\": runEvery15Minutes(\"watchdog\"); break",
-              "line": 276,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "case \"30\": runEvery30Minutes(\"watchdog\"); break",
               "line": 277,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "case \"15\": runEvery15Minutes(\"watchdog\"); break",
+              "line": 278,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "case \"30\": runEvery30Minutes(\"watchdog\"); break",
+              "line": 279,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(1800, \"logsOff\")",
-              "line": 282,
+              "line": 284,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 292,
+              "line": 294,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"connectWebSocket\")",
-              "line": 312,
+              "line": 314,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.connect([",
-              "line": 345,
+              "line": 349,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage(completeMsg)",
-              "line": 368,
+              "line": 372,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.close()",
-              "line": 371,
-              "type": "WEBSOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendVehicleSubscription\")",
-              "line": 395,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.webSocket.sendMessage(initMsg)",
-              "line": 450,
-              "type": "WEBSOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendVehicleSubscription\")",
-              "line": 462,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.webSocket.sendMessage(completeMsg)",
-              "line": 479,
-              "type": "WEBSOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.webSocket.sendMessage(subscribeMsg)",
-              "line": 504,
-              "type": "WEBSOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"connectWebSocket\")",
-              "line": 632,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(state.reconnectDelay, \"connectWebSocket\")",
-              "line": 639,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "interfaces.webSocket.sendMessage(JsonOutput.toJson([type: \"pong\"]))",
-              "line": 717,
+              "line": 375,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(2, \"connectWebSocket\")",
-              "line": 1247,
+              "line": 387,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendVehicleSubscription\")",
+              "line": 408,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.webSocket.sendMessage(initMsg)",
+              "line": 466,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"sendVehicleSubscription\")",
+              "line": 478,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.webSocket.sendMessage(completeMsg)",
+              "line": 495,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.webSocket.sendMessage(subscribeMsg)",
+              "line": 520,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"connectWebSocket\")",
+              "line": 648,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(state.reconnectDelay, \"connectWebSocket\")",
+              "line": 655,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.webSocket.close()",
+              "line": 687,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.webSocket.sendMessage(JsonOutput.toJson([type: \"pong\"]))",
+              "line": 754,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"connectWebSocket\")",
+              "line": 1284,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 50804,
+          "sourceBytes": 52712,
           "sourceFetched": true,
-          "sourceSha256": "689eb32afbf9559f30fb9ab0d759b2b77c7e43d223448f6200c902b0f8d1add2",
+          "sourceSha256": "a6dc02956c5a7230b7c7664a395da3add5a8109cd0b3601fd3333e1afe7b7978",
           "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/drivers/rivian-vehicle.groovy"
         }
       ],
@@ -300529,12 +301708,12 @@
         "R1S",
         "R1T"
       ],
-      "version": "1.1.3"
+      "version": "1.1.4"
     },
     {
       "apps": [
         {
-          "definitionLine": 20,
+          "definitionLine": 23,
           "definitionName": "ThinQ Connect Integration",
           "definitionNamespace": "jonozzz",
           "manifestName": "ThinQ Connect Integration",
@@ -300542,7 +301721,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/apps/thinq_connect_core.groovy\",",
-              "line": 26,
+              "line": 29,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -300552,7 +301731,7 @@
             },
             {
               "evidence": "iconUrl: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png\",",
-              "line": 27,
+              "line": 30,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "s3.amazonaws.com",
@@ -300562,7 +301741,7 @@
             },
             {
               "evidence": "iconX2Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
-              "line": 28,
+              "line": 31,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "s3.amazonaws.com",
@@ -300572,7 +301751,7 @@
             },
             {
               "evidence": "iconX3Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
-              "line": 29,
+              "line": 32,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "s3.amazonaws.com",
@@ -300582,7 +301761,7 @@
             },
             {
               "evidence": "documentationLink: \"https://smartsolution.developer.lge.com/en/apiManage/thinq_connect\")",
-              "line": 30,
+              "line": 33,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "smartsolution.developer.lge.com",
@@ -300592,7 +301771,7 @@
             },
             {
               "evidence": "@Field static def caCertUrl = \"https://www.amazontrust.com/repository/AmazonRootCA1.pem\"",
-              "line": 97,
+              "line": 103,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.amazontrust.com",
@@ -300602,13 +301781,13 @@
             },
             {
               "evidence": "httpGet([",
-              "line": 104,
+              "line": 110,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "state.apiBase = \"https://api-${state.region}.lgthinq.com\"",
-              "line": 134,
+              "line": 140,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api-${state.region",
@@ -300618,62 +301797,68 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 273,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule()",
               "line": 279,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule()",
+              "line": 285,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "for (d in getChildDevices()) {",
-              "line": 280,
+              "line": 286,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "childDevice = addChildDevice(\"jonozzz\", driverName, \"thinqconnect:${deviceDetails.id}\", 1234,",
-              "line": 299,
+              "line": 306,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 3 ? * MON\", refreshDevices)",
-              "line": 318,
+              "line": 325,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (reinit) runIn(1, \"updated\")",
+              "line": 333,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpGet([",
-              "line": 493,
+              "line": 525,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpPost([",
-              "line": 521,
+              "line": 557,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "return getChildDevices().find {",
-              "line": 561,
+              "line": 605,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "for (d in getChildDevices()) {",
-              "line": 569,
+              "line": 613,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             }
           ],
-          "sourceBytes": 23106,
+          "sourceBytes": 24979,
           "sourceFetched": true,
-          "sourceSha256": "435fcf8c9dc1a0a6de4861d416c5fb426beabcc7a44f995c9e1d3a2924defa53",
+          "sourceSha256": "26a19ee68a631cb2cfe97494a16e8f50e856af1e39350582377fca803dd90d97",
           "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/apps/thinq_connect_core.groovy"
         }
       ],
@@ -300685,7 +301870,7 @@
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 16,
+          "definitionLine": 19,
           "definitionName": "ThinQ Connect Washer",
           "definitionNamespace": "jonozzz",
           "manifestName": "ThinQ Connect Washer",
@@ -300693,13 +301878,271 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washer.groovy\") {",
-              "line": 17,
+              "line": 20,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
                 "scheme": "https",
                 "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washer.groovy"
               }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 95,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 123,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 129,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 11480,
+          "sourceFetched": true,
+          "sourceSha256": "618ec4743ef273aacb61a5fc8e900661a3eebe79ecc5de54317d4109df09412b",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washer.groovy"
+        },
+        {
+          "definitionLine": 19,
+          "definitionName": "ThinQ Connect Dryer",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Dryer",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy\") {",
+              "line": 20,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 95,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 122,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 128,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 11150,
+          "sourceFetched": true,
+          "sourceSha256": "f47be570a5fc4357915518c05dedc2c6484d72cbac985f0d7fb7083e1ce63d15",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy"
+        },
+        {
+          "definitionLine": 19,
+          "definitionName": "ThinQ Connect Dishwasher",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Dishwasher",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy\") {",
+              "line": 20,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 103,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 131,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 137,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"refresh\")",
+              "line": 193,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 13657,
+          "sourceFetched": true,
+          "sourceSha256": "5e9288fb482e82f7d300bd532459114f4cbda9e368379e4c51bf5bf4dd458f33",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy"
+        },
+        {
+          "definitionLine": 39,
+          "definitionName": "ThinQ Connect Cooktop",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Cooktop",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy\") {",
+              "line": 40,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 119,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 146,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 152,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 14029,
+          "sourceFetched": true,
+          "sourceSha256": "154022d2bc86c23159b674474f1812b78b64f9f94d554b0227b00225a948ac7d",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy"
+        },
+        {
+          "definitionLine": 20,
+          "definitionName": "ThinQ Connect Oven",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Oven",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy\") {",
+              "line": 21,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 105,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 132,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 138,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 14657,
+          "sourceFetched": true,
+          "sourceSha256": "aaea1fb84ab64fe530420cbcb71a568b92b748c1bde09b832b916eb7fb2ee7d0",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
+        },
+        {
+          "definitionLine": 19,
+          "definitionName": "ThinQ Connect Refrigerator",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Refrigerator",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy\") {",
+              "line": 20,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 90,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "interfaces.mqtt.subscribe(sub)",
+              "line": 117,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
+              "line": 123,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 11897,
+          "sourceFetched": true,
+          "sourceSha256": "f58ad9975a7885670bed1f1ff831ad2f48e05b3106ef9ee806a6876818a9adb0",
+          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy"
+        },
+        {
+          "definitionLine": 19,
+          "definitionName": "ThinQ Connect Microwave Oven",
+          "definitionNamespace": "jonozzz",
+          "manifestName": "ThinQ Connect Microwave Oven",
+          "manifestNamespace": "jonozzz",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_microwave_oven.groovy\") {",
+              "line": 20,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_microwave_oven.groovy"
+              }
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 84,
+              "type": "SCHEDULING",
+              "value": true
             },
             {
               "evidence": "interfaces.mqtt.subscribe(sub)",
@@ -300714,229 +302157,13 @@
               "value": true
             }
           ],
-          "sourceBytes": 10692,
+          "sourceBytes": 10229,
           "sourceFetched": true,
-          "sourceSha256": "4698db6bcff56e5bc181aaf27c403833b0ceb90e5ab67801a4bdadc95a39d227",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washer.groovy"
-        },
-        {
-          "definitionLine": 16,
-          "definitionName": "ThinQ Connect Dryer",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Dryer",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy\") {",
-              "line": 17,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 110,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 116,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 10549,
-          "sourceFetched": true,
-          "sourceSha256": "cdb17d83c40dc7d456b0b1ecff9d8f0fd6692c32577fc046326e64d5e40dd68a",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dryer.groovy"
-        },
-        {
-          "definitionLine": 16,
-          "definitionName": "ThinQ Connect Dishwasher",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Dishwasher",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy\") {",
-              "line": 17,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 119,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 125,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5, \"refresh\")",
-              "line": 179,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 13056,
-          "sourceFetched": true,
-          "sourceSha256": "7f47322da94ef4ee7adfe35ccec2434167032032b812af90291df422f5342930",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_dishwasher.groovy"
-        },
-        {
-          "definitionLine": 36,
-          "definitionName": "ThinQ Connect Cooktop",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Cooktop",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy\") {",
-              "line": 37,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 134,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 140,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 13428,
-          "sourceFetched": true,
-          "sourceSha256": "efec6ac078bcf669f3dd566ebee04f7c1eff1215e1dc8ce1eae0f70b37af96ef",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_cooktop.groovy"
-        },
-        {
-          "definitionLine": 17,
-          "definitionName": "ThinQ Connect Oven",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Oven",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy\") {",
-              "line": 18,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 120,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 126,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 14056,
-          "sourceFetched": true,
-          "sourceSha256": "cff813520bac928cab34892f710349edffa2e514399ee329988d369b7a6c0b76",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_oven.groovy"
-        },
-        {
-          "definitionLine": 16,
-          "definitionName": "ThinQ Connect Refrigerator",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Refrigerator",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy\") {",
-              "line": 17,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 105,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 111,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 11296,
-          "sourceFetched": true,
-          "sourceSha256": "72d69fe4ad2f6bf77cdcd08bba542098a4194aab93096f86f85d33acbc958308",
-          "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy"
-        },
-        {
-          "definitionLine": 16,
-          "definitionName": "ThinQ Connect Microwave Oven",
-          "definitionNamespace": "jonozzz",
-          "manifestName": "ThinQ Connect Microwave Oven",
-          "manifestNamespace": "jonozzz",
-          "observations": [
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_microwave_oven.groovy\") {",
-              "line": 17,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_microwave_oven.groovy"
-              }
-            },
-            {
-              "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 99,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 105,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 9628,
-          "sourceFetched": true,
-          "sourceSha256": "2b312ed3bee2d7838a19b2166bfc3461a7fe68aea97a721aa54558416d289c6d",
+          "sourceSha256": "ed2ec7e5117bc84532c29aea2ae87e1cf0ff5cc9a38f912fd20ae7058ee85250",
           "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_microwave_oven.groovy"
         },
         {
-          "definitionLine": 16,
+          "definitionLine": 20,
           "definitionName": "ThinQ Connect Air Conditioner",
           "definitionNamespace": "jonozzz",
           "manifestName": "ThinQ Connect Air Conditioner",
@@ -300944,7 +302171,7 @@
           "observations": [
             {
               "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 170,
+              "line": 171,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
@@ -300953,15 +302180,51 @@
               "line": 176,
               "type": "SCHEDULING",
               "value": true
+            },
+            {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 205,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"refreshEnergy\")",
+              "line": 709,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 */${minutes} * ? * *\", \"refreshEnergy\")",
+              "line": 713,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 ${now().intdiv(1000L) % 60L} */${minutes.intdiv(60)} ? * *\", \"refreshEnergy\")",
+              "line": 715,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, \"refreshEnergy\")",
+              "line": 717,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"refreshEnergy\")",
+              "line": 732,
+              "type": "SCHEDULING",
+              "value": true
             }
           ],
-          "sourceBytes": 29974,
+          "sourceBytes": 35028,
           "sourceFetched": true,
-          "sourceSha256": "e9dc92dd7a1f75dc21adfa785541bcc1b0812f73628d8ee59e84074ec6e6343c",
+          "sourceSha256": "2b9d4a0cc4118c76829e52137be84e92b96d52ef423bab9dc766b9d899e922ba",
           "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_air_conditioner.groovy"
         },
         {
-          "definitionLine": 16,
+          "definitionLine": 19,
           "definitionName": "ThinQ Connect WashTower",
           "definitionNamespace": "jonozzz",
           "manifestName": "ThinQ Connect WashTower",
@@ -300969,7 +302232,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washtower.groovy\") {",
-              "line": 17,
+              "line": 20,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -300978,21 +302241,27 @@
               }
             },
             {
+              "evidence": "runIn(1, \"updated\")",
+              "line": 123,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "interfaces.mqtt.subscribe(sub)",
-              "line": 138,
+              "line": 150,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(15, \"mqttConnectUntilSuccessful\")",
-              "line": 144,
+              "line": 156,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 16744,
+          "sourceBytes": 17345,
           "sourceFetched": true,
-          "sourceSha256": "75cd67c38504cca14f8f524e4c89b60b6ef64edd2ce0edcc1bfaa91943d9575e",
+          "sourceSha256": "d321834b031e8beb6168817820766487ee3c45a5ee569f794625e5014d0e8e8d",
           "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_washtower.groovy"
         }
       ],
@@ -302489,7 +303758,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-11-02",
+      "dateReleased": "2026-11-03",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -302501,7 +303770,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "5.1.4"
+      "version": "5.1.5"
     },
     {
       "apps": [],
@@ -364352,18 +365621,18 @@
   "repositoriesFetched": 226,
   "repositoryCount": 227,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-03T07:01:39Z",
+  "snapshotGenerated": "2026-11-04T06:44:10Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2380,
+    "componentsAttempted": 2383,
     "componentsFailed": 10,
-    "componentsFetched": 2370,
-    "componentsWithObservations": 2226,
-    "definitionsVerified": 2359,
-    "distinctSourceUrls": 2366,
+    "componentsFetched": 2373,
+    "componentsWithObservations": 2229,
+    "definitionsVerified": 2362,
+    "distinctSourceUrls": 2367,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2356
+    "sourceUrlsFetched": 2357
   }
 }

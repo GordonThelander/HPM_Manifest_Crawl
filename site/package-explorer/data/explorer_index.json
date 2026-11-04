@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 961,
+    "HPM_PACKAGE": 962,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2666,
+  "recordCount": 2667,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -28514,7 +28514,7 @@
       "author": "Ephrayim (evdev)",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-08-13",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
           "id": "definition:db2f49f631cd5d670764",
@@ -28608,7 +28608,7 @@
         "Doors & Windows",
         "Locks"
       ],
-      "version": "1.1.4"
+      "version": "1.1.6"
     },
     {
       "author": "Ernie Miller",
@@ -64387,7 +64387,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-02",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -64469,7 +64469,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.4"
+      "version": "5.1.5"
     },
     {
       "author": "Justin Leonard",
@@ -66355,15 +66355,15 @@
       "author": "VH",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-08-15",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
-          "id": "definition:e577661f316b0b066d0f",
+          "id": "definition:05cedbd68cac546c7cfc",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "MolSmart - 12+4 Input Board",
           "namespace": "TRATO",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/main/Hubitat_TRATO_MolSmart_InputBoard_TCP_Driver.groovy"
         }
       ],
       "description": "MolSmart - Input Board 12+4",
@@ -66434,13 +66434,13 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.2"
+      "version": "3.0.0"
     },
     {
       "author": "Vartan Horigian",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-07-18",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
           "id": "definition:1d730618a8191d902210",
@@ -66516,7 +66516,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "1.8"
+      "version": "3.0.0"
     },
     {
       "author": "VH",
@@ -67108,15 +67108,31 @@
       "author": "VH",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-19",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
-          "id": "definition:873a61ec493110790f29",
+          "id": "definition:9e7f994186dd654c9b1b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "GW8 Remote Importer - Cortina RF",
+          "namespace": "TRATO",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+        },
+        {
+          "id": "definition:4d20f91990b0d32be188",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "MolSmart - GW8 - AC (learning)",
           "namespace": "TRATO",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/IR/AC(Learning)/Hubitat_TRATO_MolSmart_GW8_IR_AC(learning).groovy"
+        },
+        {
+          "id": "definition:65415f638ee9fb8f6cc3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "MolSmart - GW8 - RF",
+          "namespace": "TRATO",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
         }
       ],
       "description": "MolSmart - Drivers for using the AC Codes learned in GW8 Website",
@@ -67139,7 +67155,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "MISMATCH"
           },
           {
             "name": "documentationLink",
@@ -67158,10 +67174,11 @@
             "status": "PASS"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "hpm:d43f59e9-a591-9433-a329-c2cd286c0879",
       "kinds": [
+        "APP",
         "DRIVER"
       ],
       "links": {
@@ -67184,7 +67201,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "1.3"
+      "version": "3.0.0"
     },
     {
       "author": "VH",
@@ -67361,23 +67378,23 @@
       "author": "VH",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-6-18",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
-          "id": "definition:d9dbd5c7d0e132b60532",
+          "id": "definition:9f21b671c2a10abc42b5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "GW8 Remote Importer - Cortina RF",
           "namespace": "TRATO",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF_APP.groovy"
         },
         {
-          "id": "definition:89eec47c1aab0c80ba78",
+          "id": "definition:964cb7369778219ebb19",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "MolSmart - GW8 - RF",
           "namespace": "TRATO",
-          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
         }
       ],
       "description": "MolSmart - GW8 - Driver para controle de RF",
@@ -67449,7 +67466,7 @@
         "Garage Doors",
         "Locks"
       ],
-      "version": "1.8"
+      "version": "3.0.0"
     },
     {
       "author": "VH",
@@ -67542,7 +67559,7 @@
       "author": "Vartan Horigian",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-06-27",
+      "dateReleased": "2026-11-03",
       "definitions": [
         {
           "id": "definition:8229a834b813f7f94dc2",
@@ -67618,7 +67635,7 @@
       "tags": [
         "Lights & Switches"
       ],
-      "version": "2.7"
+      "version": "3.0.0"
     },
     {
       "author": "Vartan Horigian",
@@ -80873,7 +80890,7 @@
         "Rivian",
         "Vehicle"
       ],
-      "version": "1.1.3"
+      "version": "1.1.4"
     },
     {
       "author": "Bloodtick Jones",
@@ -105265,6 +105282,89 @@
         "Lights & Switches"
       ],
       "version": "1.0.1"
+    },
+    {
+      "author": "Albert Mulder",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-03",
+      "definitions": [
+        {
+          "id": "definition:b8dc8665c81b9ba89517",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "WLED Controller",
+          "namespace": "almulder",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/WLED/Drivers/WLED%20Controller.groovy"
+        }
+      ],
+      "description": "WLED controller driver: whole-controller on/off, level and presets that work with any number of segments. Fixes the repeating parseResp null error in the original WLED driver.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:cb8ec20f4116f7b52bc5",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/almulder/Hubitat-Drivers/tree/main/WLED",
+        "manifest": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json",
+        "repository": "https://github.com/almulder/Hubitat-Drivers"
+      },
+      "name": "WLED Controller",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Lights & Switches"
+      ],
+      "version": null
     },
     {
       "author": "joyfulhouse",
@@ -137033,5 +137133,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-03T07:01:39Z"
+  "snapshotGenerated": "2026-11-04T06:44:10Z"
 }

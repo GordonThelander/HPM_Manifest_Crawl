@@ -7,11 +7,11 @@
   },
   "counts": {
     "features": 4095,
-    "linkedDetails": 59,
+    "linkedDetails": 67,
     "newlyPossible": 1096,
     "releaseBuilds": 354,
     "releaseTopics": 33,
-    "unavailableDetails": 10
+    "unavailableDetails": 2
   },
   "dataset": "hubitat-release-features",
   "details": [
@@ -239,6 +239,18 @@
     },
     {
       "author": "Bryan Copeland",
+      "createdAt": "2026-04-06T12:21:34.346Z",
+      "id": "detail:163034",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-node-state-ui/163034/1",
+      "staffAuthored": true,
+      "summary": "Full ZWave-JS Node State browser. Useful for troubleshooting and driver development. Everything known about a device is here.. Including all current command class values and fingerprint generation. Screenshot 2026-04-06 at 6.45.50 AM 949×86 15.1 KB Screenshot 2026-04-06 at 6.47.02 AM 1000×1237 69.5 KB Screenshot 2026-04-06 at 6.47.14 AM 1000×1237 110 KB Screenshot 2026-04-06 at 6.47.33 AM 1000×915 25.6 KB Screenshot 2026-04-06 at 6.47.48 AM 1000×535 14.2 KB Screenshot 2026-04-06 at 6.48.04 AM 1000×1132 80.8 KB",
+      "title": "ZWave-JS Node State UI",
+      "topicId": 163034,
+      "updatedAt": "2026-04-23T17:36:43.618Z"
+    },
+    {
+      "author": "Bryan Copeland",
       "createdAt": "2026-04-07T18:47:48.680Z",
       "id": "detail:163072",
       "qualifications": [
@@ -277,6 +289,32 @@
     },
     {
       "author": "Bryan Copeland",
+      "createdAt": "2026-07-15T17:51:48.577Z",
+      "id": "detail:165135",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-update-15-25-3/165135/1",
+      "staffAuthored": true,
+      "summary": "Z-Wave JS / Z-Wave JS Server Update This release updates the embedded Z-Wave stack from: Z-Wave JS: 15.15.3 → 15.25.3 Z-Wave JS Server: 3.4.0 → 3.10.0 While this isn't a feature-heavy update, it includes a significant number of stability improvements, bug fixes, performance enhancements, and device compatibility updates. Highlights Improved Controller Stability Several releases focused on improving controller resiliency, including: Better serial port recovery Improved controller restart handling Better recovery after NVM operations Improved handling of unexpected controller state changes Reduced situations requiring a complete driver restart These improvements help make controller operati...",
+      "title": "ZWave-JS Update 15.25.3",
+      "topicId": 165135,
+      "updatedAt": "2026-07-29T14:45:37.830Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-07-16T23:22:53.958Z",
+      "id": "detail:165148",
+      "qualifications": [
+        "SAFETY_WARNING"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-link-reliability-test/165148/1",
+      "staffAuthored": true,
+      "summary": "New: Z-Wave Link Reliability Test We’ve added a new Link Reliability Test to the Z-Wave Details page for hubs using the latest Z-Wave JS integration. This tool actively tests communication between the hub and an individual Z-Wave device by repeatedly sending commands and measuring the results. What it measures The test reports: Successful command delivery Command errors Missing responses Round-trip time (RTT) Radio latency ACK signal strength (RSSI) Live progress while the test is running You can select the number of test rounds and the interval between commands. Tests can also be stopped while in progress. Important safety warning This is an active test . It repeatedly sends alternating...",
+      "title": "ZWave-JS Link Reliability Test",
+      "topicId": 165148,
+      "updatedAt": "2026-07-29T14:46:01.807Z"
+    },
+    {
+      "author": "Bryan Copeland",
       "createdAt": "2026-07-16T23:22:32.270Z",
       "id": "detail:165150",
       "qualifications": [],
@@ -289,6 +327,18 @@
     },
     {
       "author": "Bryan Copeland",
+      "createdAt": "2026-08-03T22:09:32.556Z",
+      "id": "detail:165480",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-15-26-0/165480/1",
+      "staffAuthored": true,
+      "summary": "ZWave-JS is updated to 15.26.0 Changes from 15.25.3: Features Ongoing interviews are now paused during inclusion, security bootstrapping and exclusion. This should greatly improve the reliability when adding multiple devices at once. ( #8951 ) Bugfixes Added a work around for some locks incorrectly reporting 0 steps remaining immediately after starting credential learning ( #8976 ) Increased timeouts for bulk-deleting users/credentials, which can take significantly longer than 1 second on some locks ( #8978 ) Fixed several issues that could lead to stale credentials being cached ( #8977 , #8966 ) Config file changes Add UltraPro 800 Series On/Off Switch ( #8973 ) Add UltraPro 800 Series d...",
+      "title": "ZWave-JS 15.26.0",
+      "topicId": 165480,
+      "updatedAt": "2026-08-04T14:25:17.212Z"
+    },
+    {
+      "author": "Bryan Copeland",
       "createdAt": "2026-08-21T14:00:09.022Z",
       "id": "detail:165815",
       "qualifications": [],
@@ -298,6 +348,32 @@
       "title": "[2.5.2] Batch Mode for the Z-Wave Firmware Updater",
       "topicId": 165815,
       "updatedAt": "2026-09-29T15:50:42.125Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-09-04T21:52:36.846Z",
+      "id": "detail:165974",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/z-wave-local-backup-restore-and-import/165974/1",
+      "staffAuthored": true,
+      "summary": "New: Local Z-Wave Backup, Restore, and Import We’re introducing a new Local Z-Wave Backup and Restore tool for Backup Plus and Hub Protect subscribers. This provides direct control over your Z-Wave radio backup without requiring a cloud backup. A local backup includes the radio NVM, security keys, and available Z-Wave JS node-cache information. What it can do Create and download a local Z-Wave backup. Restore a backup previously created by Hubitat. Import backups created by Z-Wave JS UI on another platform. Inspect and import a compatible raw Z-Wave NVM backup. Preview the detected Home ID, protocol version, node count, node IDs, security-key status, and cache information before restoring...",
+      "title": "Z-Wave Local Backup, Restore and Import",
+      "topicId": 165974,
+      "updatedAt": "2026-09-29T15:50:45.527Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-09-04T21:51:58.561Z",
+      "id": "detail:165976",
+      "qualifications": [
+        "MODEL_SPECIFIC"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-is-coming-to-c-5-c-7-and-c-8-hubs/165976/1",
+      "staffAuthored": true,
+      "summary": "ZWave-JS for C-5, C-7, and C-8 Hubs ZWave-JS support is expanding beyond the C-8 Pro. Users with C-5, C-7, and C-8 hubs will now have the option to switch their Z-Wave stack to ZWave-JS. Existing Z-Wave devices and security information are migrated during the switch, so devices should not need to be excluded and re-included. A significant upgrade for C-5 users This is especially exciting for the C-5. Although it has an older 500-series Z-Wave radio, the hardware supports features that were not available through Hubitat’s original legacy Z-Wave implementation. After switching to ZWave-JS, C-5 users gain: Z-Wave SmartStart S2 security Improved device inclusion and interview handling Better...",
+      "title": "ZWave-JS for C-5, C-7, and C-8 Hubs",
+      "topicId": 165976,
+      "updatedAt": "2026-09-29T15:50:38.573Z"
     },
     {
       "author": "Mike Maxwell",
@@ -324,6 +400,20 @@
       "title": "Guided Z-Wave SmartStart",
       "topicId": 166011,
       "updatedAt": "2026-09-29T15:50:49.204Z"
+    },
+    {
+      "author": "Bryan Copeland",
+      "createdAt": "2026-09-11T21:23:05.814Z",
+      "id": "detail:166210",
+      "qualifications": [
+        "EXPERIMENTAL"
+      ],
+      "sourceUrl": "https://community.hubitat.com/t/zwave-js-update-to-15-29-0/166210/1",
+      "staffAuthored": true,
+      "summary": "ZWave-JS Updated to 15.29.0 Changes from 15.26.0 Features Redundant and superseded commands are now automatically deduplicated. The corresponding API calls can now be aborted or will share a single transaction, depending on the specific situation ( #9136 , #9137 ) The new lastAwake property now indicates when a node was last awake. This information is persisted across restarts ( #9173 ) Some \"invalid payload\" warning logs now include the node ID ( #9196 ) Significantly improved capabilities of the experimental RCP firmware driver ( #9076 , #9077 , #9078 , #9080 , #9081 , #9083 , #9087 , #9088 , #9090 ) Read bootloader version from Nabu Casa controllers during the interview ( #9095 ) When...",
+      "title": "ZWave-JS Update to 15.29.0",
+      "topicId": 166210,
+      "updatedAt": "2026-09-29T15:50:35.656Z"
     },
     {
       "author": "Bruce",
@@ -736,6 +826,18 @@
       "title": "[NEW APP] Room Lighting",
       "topicId": 93098,
       "updatedAt": "2022-06-09T03:55:59.949Z"
+    },
+    {
+      "author": "Bruce",
+      "createdAt": "2022-08-28T20:44:02.595Z",
+      "id": "detail:99766",
+      "qualifications": [],
+      "sourceUrl": "https://community.hubitat.com/t/zigbee-group-messaging-in-room-lights/99766/1",
+      "staffAuthored": true,
+      "summary": "Room Lights supports Zigbee Group Messaging (ZGM). This allows multiple Zigbee lights to activated by a single command on the Zigbee network. Doing so both cuts down on network traffic, but also causes the lights to respond all at the same instant. However, there are limitations to this feature, and understanding exactly how it works sheds light on these. ZGM is tied to an Activator Device. When the Activator device is commanded, all of the lights in the ZGM group are commanded in exactly the same manner. For instance, if the Activator Device is turned on, the ZGM lights are also turned on. If the Activator Device has its color temperature set, then the ZGM lights have their color tempera...",
+      "title": "Zigbee Group Messaging in Room Lights",
+      "topicId": 99766,
+      "updatedAt": "2022-09-22T18:53:17.563Z"
     }
   ],
   "features": [
@@ -3607,7 +3709,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165976"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "61945343d5506dd48feb962321d7b0bc5a760ead4d93220508d80cabbba550da",
@@ -4092,7 +4196,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165974"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "0210ed2dfb86e4b3b59ee84377dedef365421e14ce6a0fae062c201c63d481ee",
@@ -4145,7 +4251,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "REVIEW",
-      "detailIds": [],
+      "detailIds": [
+        "detail:166210"
+      ],
       "evidenceType": "OTHER_CHANGE",
       "explorerLinks": [],
       "fingerprint": "84b6762c713c7b48a49346c096447fb90be86fe53627f65a71660b07d27cd4c4",
@@ -5523,7 +5631,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165480"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "fbb5325429938fe055271bff5ee788482c02b5b41f100041aa58da758f1874f3",
@@ -6530,7 +6640,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165135"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "c7f62bcc2573bee0f3329fcc670336c4fc5a1371c5e733754e69d7861fcfda79",
@@ -6574,7 +6686,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:165148"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "62f97187b5d3e0227fcf86127548b63970e353fc759a9f425babb68d0acf0eb0",
@@ -10214,7 +10328,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:163034"
+      ],
       "evidenceType": "PLATFORM_CHANGE",
       "explorerLinks": [],
       "fingerprint": "e48236a67f0c3625d923ac173bb0d89d624b73e4330eebc9334c847e3914b6a0",
@@ -46367,7 +46483,9 @@
       "author": "Victor Urvantsev",
       "availability": "DOCUMENTED_IN_RELEASE",
       "classificationConfidence": "RULE_BASED",
-      "detailIds": [],
+      "detailIds": [
+        "detail:99766"
+      ],
       "evidenceType": "BUG_FIX",
       "explorerLinks": [],
       "fingerprint": "857946be6e47bebcd9313efae15af9f12947608203d101eff6c987cb18820946",
@@ -98414,7 +98532,7 @@
       "sourceUrl": "https://community.hubitat.com/t/release-2-5-2-available/166477/7"
     }
   ],
-  "lastSuccessfulHarvest": "2026-11-03T07:05:42Z",
+  "lastSuccessfulHarvest": "2026-11-04T06:49:52Z",
   "method": {
     "automationMapIndependent": true,
     "failedHarvestReplacesOutput": false,
@@ -98550,7 +98668,10 @@
       "detailIds": [
         "detail:165815",
         "detail:166011",
-        "detail:165995"
+        "detail:165995",
+        "detail:165974",
+        "detail:165976",
+        "detail:166210"
       ],
       "featureCount": 63,
       "id": "release:166477:1",
@@ -98731,7 +98852,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 4,
-      "detailIds": [],
+      "detailIds": [
+        "detail:165480"
+      ],
       "featureCount": 7,
       "id": "release:165384:5",
       "newlyPossibleCount": 1,
@@ -98812,7 +98935,9 @@
       "author": "Victor Urvantsev",
       "bugFixCount": 9,
       "detailIds": [
-        "detail:165150"
+        "detail:165150",
+        "detail:165148",
+        "detail:165135"
       ],
       "featureCount": 44,
       "id": "release:165384:1",
@@ -98978,7 +99103,8 @@
       "detailIds": [
         "detail:163072",
         "detail:163360",
-        "detail:162924"
+        "detail:162924",
+        "detail:163034"
       ],
       "featureCount": 69,
       "id": "release:163415:1",
@@ -102507,7 +102633,9 @@
     {
       "author": "Victor Urvantsev",
       "bugFixCount": 53,
-      "detailIds": [],
+      "detailIds": [
+        "detail:99766"
+      ],
       "featureCount": 98,
       "id": "release:101457:1",
       "newlyPossibleCount": 40,
@@ -109149,14 +109277,6 @@
   ],
   "unavailableDetails": [
     "https://community.hubitat.com/t/2-5-0-145-c8pro-js-runtime-exceptions-on-145/164136",
-    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886",
-    "https://community.hubitat.com/t/z-wave-local-backup-restore-and-import/165974",
-    "https://community.hubitat.com/t/zigbee-group-messaging-in-room-lights/99766",
-    "https://community.hubitat.com/t/zwave-js-15-26-0/165480",
-    "https://community.hubitat.com/t/zwave-js-is-coming-to-c-5-c-7-and-c-8-hubs/165976",
-    "https://community.hubitat.com/t/zwave-js-link-reliability-test/165148",
-    "https://community.hubitat.com/t/zwave-js-node-state-ui/163034",
-    "https://community.hubitat.com/t/zwave-js-update-15-25-3/165135",
-    "https://community.hubitat.com/t/zwave-js-update-to-15-29-0/166210"
+    "https://community.hubitat.com/t/beta-release-2-4-2-available/153886"
   ]
 }

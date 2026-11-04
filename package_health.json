@@ -1,6 +1,6 @@
 {
   "dataset": "package-health",
-  "packageCount": 961,
+  "packageCount": 962,
   "packages": [
     {
       "checks": {
@@ -14488,9 +14488,10 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 1
+            "MATCH": 1,
+            "MISMATCH": 2
           },
-          "status": "MATCH"
+          "status": "MISMATCH"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -14505,8 +14506,8 @@
           "url": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json"
         },
         "sourceFetch": {
-          "components": 1,
-          "fetched": 1,
+          "components": 3,
+          "fetched": 3,
           "status": "PASS"
         }
       },
@@ -28712,6 +28713,39 @@
     {
       "checks": {
         "communityLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "definitionIdentity": {
+          "components": {
+            "MATCH": 1
+          },
+          "status": "MATCH"
+        },
+        "documentationLink": {
+          "status": "PRESENT",
+          "url": "https://github.com/almulder/Hubitat-Drivers/tree/main/WLED"
+        },
+        "httpsTransport": {
+          "nonHttpsUrls": [],
+          "status": "PASS"
+        },
+        "manifestFetch": {
+          "status": "PASS",
+          "url": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json"
+        },
+        "sourceFetch": {
+          "components": 1,
+          "fetched": 1,
+          "status": "PASS"
+        }
+      },
+      "crawlErrors": [],
+      "packageId": "manifest:cb8ec20f4116f7b52bc5"
+    },
+    {
+      "checks": {
+        "communityLink": {
           "status": "PRESENT",
           "url": "https://community.hubitat.com/t/vacation-lighting-anyone-have-it-running/1454/25"
         },
@@ -31822,7 +31856,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-03T07:01:39Z",
+  "snapshotGenerated": "2026-11-04T06:44:10Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

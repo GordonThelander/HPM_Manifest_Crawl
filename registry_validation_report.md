@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-03T07:01:39Z`
+- Snapshot: `2026-11-04T06:44:10Z`
 - HPM repositories in master list: **227**
 - Repositories fetched successfully: **226**
-- Packages indexed: **961**
+- Packages indexed: **962**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -200,7 +200,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **863**
+Total packages not matched by any registry entry: **864**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -211,6 +211,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Adrian Caramaliu | Freestyle Libre Integration | Integrations | Health & Fitness | https://raw.githubusercontent.com/ady624/hubitat-freestyle-libre/master/packageManifest.json |
 | Albert Mulder | INTECULAR™ MQTT Connector | Integrations | MQTT, Misc. Devices | https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/InvisOutlet.json |
 | Albert Mulder | SAS - Samsung Appliance Service | Integrations | Misc. Devices | https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/samsung-appliance-service.json |
+| Albert Mulder | WLED Controller | Control | Lights & Switches, LAN | https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json |
 | Amos Yuen | Eight Sleep (Connect) | Integrations | Climate Control, Misc. Devices, Presence & Location, Sleep | https://raw.githubusercontent.com/amosyuen/hubitat/main/eightsleep/packageManifest.json |
 | Amos Yuen | Epson Projector | Integrations | LAN, Misc. Devices, Multimedia | https://raw.githubusercontent.com/amosyuen/hubitat/main/epson/packageManifest.json |
 | Andrew Webster | Philips Hue Tap Dial Drivers | Integrations | Buttons | https://raw.githubusercontent.com/Andywebs/hubitat/main/packageManifest.json |
@@ -623,8 +624,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 863 |
-| G candidate subset | 387 |
+| G. Unrepresented packages | 864 |
+| G candidate subset | 388 |
 
 ## H. Enrichment summary
 
@@ -634,13 +635,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2366 |
-| Source URLs fetched | 2356 |
+| Distinct source URLs | 2367 |
+| Source URLs fetched | 2357 |
 | Source URLs failed | 10 |
-| Components attempted | 2380 |
-| Components fetched | 2370 |
-| Literal definitions verified | 2359 |
-| Components with observations | 2226 |
+| Components attempted | 2383 |
+| Components fetched | 2373 |
+| Literal definitions verified | 2362 |
+| Components with observations | 2229 |
 
 ### Official Hubitat documentation pass
 

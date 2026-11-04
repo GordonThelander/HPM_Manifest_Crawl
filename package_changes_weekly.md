@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-03T07:01:39Z`.
+Latest observation: `2026-11-04T06:44:10Z`.
 
-**69 package change(s):** added 8, declared definitions changed 2, source location changed 4, updated 61
+**64 package change(s):** added 8, declared definitions changed 1, source location changed 7, updated 56
 
+- [WLED Controller: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json)
+- [Rivian Connect: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json)
+- [MolSmart - Relay 4/8/16/32CH (TCP): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/packageManifest.json)
+- [MolSmart - GW8 - RF: updated, changed source location.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json)
+- [MolSmart - GW8 - AC (learning): updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json)
+- [MolSmart - Dimmer 6CH (TCP): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer/main/packageManifest.json)
+- [MolSmart - 12+4 Input Board: updated, changed source location.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Commercial Lock: updated.](https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/packageManifest.json)
 - [Weather Watcher: updated, changed source location.](https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json)
 - [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
 - [Sifely WiFi Lock v2 (API key): added.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json)
@@ -59,19 +68,5 @@ Latest observation: `2026-11-03T07:01:39Z`.
 - [Holiday Lighting: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/holiday.json)
 - [Heiman HS2WD-E Siren: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
 - [Envoy Local Data: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json)
-- [YoLink™ Local Hub Connector: updated, changed declared definitions.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/yolink-local-hub.json)
-- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [SAS - Samsung Appliance Service: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/samsung-appliance-service.json)
-- [Rituals Perfume Genie: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/RitualsPerfumeGenie/packageManifest.json)
-- [Restock Manager: updated.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/restock-manager.json)
-- [Nuki Web API: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/NukiWebAPI/packageManifest.json)
-- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
-- [Itho NRG: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/IthoNRG/packageManifest.json)
-- [INTECULAR™ MQTT Connector: updated, changed declared definitions.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/InvisOutlet.json)
-- [Envoy Local Data: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json)
-- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
