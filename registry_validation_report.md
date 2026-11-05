@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-04T06:44:10Z`
+- Snapshot: `2026-11-05T07:03:25Z`
 - HPM repositories in master list: **227**
 - Repositories fetched successfully: **226**
-- Packages indexed: **962**
+- Packages indexed: **963**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -30,7 +30,6 @@ Live-HPM note: no HPM package currently matches the canary substring.
 | tuya-cloud | Tuya Cloud Integration | 2 | appName | contains | Tuya Integration |
 | tuya-cloud | Tuya Cloud Integration | 3 | driverName | contains | Tuya Cloud |
 | tuya-local | Tuya Local Integration | 1 | appName | contains | Tuya Local |
-| tuya-local | Tuya Local Integration | 2 | driverName | contains | Tuya Local |
 | meross-msg100 | Meross MSG100 Garage Door | 1 | appName | contains | Meross |
 | meross-msg100 | Meross MSG100 Garage Door | 3 | driverName | contains | MSG100 |
 | ecobee-local-hap | Ecobee No Cloud HAP Thermostat | 1 | appName | contains | Ecobee No Cloud |
@@ -617,7 +616,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Section | Count |
 | --- | --- |
-| A. Dead rules | 112 |
+| A. Dead rules | 111 |
 | B. Near misses | 0 |
 | C. Over-broad rules | 4 |
 | D. Entries with no dependencies | 19 |
@@ -635,13 +634,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2367 |
-| Source URLs fetched | 2357 |
+| Distinct source URLs | 2368 |
+| Source URLs fetched | 2358 |
 | Source URLs failed | 10 |
-| Components attempted | 2383 |
-| Components fetched | 2373 |
-| Literal definitions verified | 2362 |
-| Components with observations | 2229 |
+| Components attempted | 2384 |
+| Components fetched | 2374 |
+| Literal definitions verified | 2363 |
+| Components with observations | 2230 |
 
 ### Official Hubitat documentation pass
 

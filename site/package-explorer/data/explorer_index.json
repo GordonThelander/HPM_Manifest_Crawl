@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 962,
+    "HPM_PACKAGE": 963,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2667,
+  "recordCount": 2668,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -25939,7 +25939,7 @@
       "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-27",
+      "dateReleased": "2026-11-04",
       "definitions": [
         {
           "id": "definition:0c5c74f15cb88aaa656e",
@@ -26019,7 +26019,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.7.4"
+      "version": "2.7.5"
     },
     {
       "author": "Larry Kahn",
@@ -27615,6 +27615,104 @@
         "Vehicles & Transportation"
       ],
       "version": "1.2.8"
+    },
+    {
+      "author": "Albert Mulder",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-04",
+      "definitions": [
+        {
+          "id": "definition:6e57c2c204e59e91804d",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Cat Litter Box (Tuya Local)",
+          "namespace": "almulder",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Cat%20Litter%20Box/Drivers/Cat%20Litter%20Box%20(Tuya%20Local).groovy"
+        }
+      ],
+      "description": "Local, no-cloud control of the Tuya Smart Cat Litter Box 04 ZY (Smart Life app) over Tuya protocol 3.5: clean, empty, auto mode, deodorize, child lock and settings, with live status.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:b9027a7002cba26250aa",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/almulder/Hubitat-Drivers/tree/main/Cat%20Litter%20Box",
+        "manifest": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json",
+        "repository": "https://github.com/almulder/Hubitat-Drivers"
+      },
+      "name": "Cat Litter Box (Tuya Local)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": [
+          {
+            "dependencies": [
+              {
+                "class": "LOCAL_DEVICE",
+                "name": "Tuya LAN Device",
+                "runtimeCriticality": "RUNTIME",
+                "transport": "LAN"
+              }
+            ],
+            "documentation": [],
+            "id": "tuya-local",
+            "name": "Tuya Local Integration",
+            "status": "COMMUNITY_SEED"
+          }
+        ]
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Misc. Devices"
+      ],
+      "version": null
     },
     {
       "author": "TheMaster",
@@ -64387,7 +64485,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-03",
+      "dateReleased": "2026-11-04",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -64469,7 +64567,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.5"
+      "version": "5.1.6"
     },
     {
       "author": "Justin Leonard",
@@ -70253,7 +70351,7 @@
       "author": "Brent Rossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-10",
+      "dateReleased": "2026-11-04",
       "definitions": [
         {
           "id": "definition:ac2ae9d2c54b03ffbde4",
@@ -70376,7 +70474,7 @@
         "Temperature & Humidity",
         "Weather"
       ],
-      "version": "0.5.0"
+      "version": "0.6.1"
     },
     {
       "author": "RamSet",
@@ -85751,15 +85849,15 @@
       "author": "howarddavidp",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-02",
+      "dateReleased": "2026-11-04",
       "definitions": [
         {
-          "id": "definition:28eaa67a221d8ddc207a",
+          "id": "definition:493f9baf199982ec1982",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sifely WiFi Lock v2",
           "namespace": "dave",
-          "sourceUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v2.0.1/Sifely-WiFi-Lock-Driver-v2.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/v2.0.2/Sifely-WiFi-Lock-Driver-v2.groovy"
         }
       ],
       "description": "Recommended. Cloud driver for Sifely/TTLock WiFi & gateway locks using a Sifely Open API key.",
@@ -85830,13 +85928,13 @@
         "Cloud",
         "Locks"
       ],
-      "version": "2.0.1"
+      "version": "2.0.2"
     },
     {
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-30",
+      "dateReleased": "2026-11-05",
       "definitions": [
         {
           "id": "definition:2a261aa987abe9493331",
@@ -85913,7 +86011,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.8"
+      "version": "1.4.10"
     },
     {
       "author": "Chris Ogden",
@@ -90438,71 +90536,71 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-03",
+      "dateReleased": "2026-11-05",
       "definitions": [
         {
-          "id": "definition:2ab695e34c2c8bb7b2e5",
+          "id": "definition:3ef84c30e2d6b622aef7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:9af22d97c0a36df5b1a9",
+          "id": "definition:a2ffcd3173a7a55353be",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:db7b6ff7fb8759a08622",
+          "id": "definition:e7519a504ef2cd51f401",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:6851429b40f9d524858c",
+          "id": "definition:4cbf21331fc2709dab5f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:24fe5a2d106b8f94cf0e",
+          "id": "definition:7c24f5414619ddcfb76c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:d85196e01778d2e583fa",
+          "id": "definition:995cebc83bdabfb8ded2",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:8a69e520c86f0fc81007",
+          "id": "definition:72fedfb551400e173432",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:9e6c4fd42846d50eedce",
+          "id": "definition:a39f1a80a003c5b8932e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.13.3/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -90596,7 +90694,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.13.3"
+      "version": "0.14.1"
     },
     {
       "author": "Schwark Satyavolu",
@@ -137133,5 +137231,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-04T06:44:10Z"
+  "snapshotGenerated": "2026-11-05T07:03:25Z"
 }

@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-04T06:44:10Z`.
+Latest observation: `2026-11-05T07:03:25Z`.
 
-**64 package change(s):** added 8, declared definitions changed 1, source location changed 7, updated 56
+**57 package change(s):** added 8, declared definitions changed 1, source location changed 9, updated 49
 
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Sifely WiFi Lock v2 (API key): updated, changed source location.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json)
+- [Netatmo Weather Station: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Cat Litter Box (Tuya Local): added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json)
+- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 - [WLED Controller: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json)
 - [Rivian Connect: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json)
 - [MolSmart - Relay 4/8/16/32CH (TCP): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/packageManifest.json)
@@ -54,19 +61,5 @@ Latest observation: `2026-11-04T06:44:10Z`.
 - [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
 - [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [WiZ Dual Zone: added.](https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json)
-- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
-- [Smart Oil Gauge: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Palette Scenes: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/palette.json)
-- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
-- [Mysa Thermostat Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Home Assistant Device Bridge: updated.](https://raw.githubusercontent.com/ymerj/HE-HA-control/main/packageManifest.json)
-- [Holiday Lighting: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/holiday.json)
-- [Heiman HS2WD-E Siren: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
-- [Envoy Local Data: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

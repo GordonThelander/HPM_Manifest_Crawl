@@ -3,7 +3,7 @@
     "BOTH": 186,
     "CLOUD": 274,
     "INSUFFICIENT": 306,
-    "LAN": 196
+    "LAN": 197
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 962,
+  "packageCount": 963,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -3094,6 +3094,47 @@
       "reviewed": [],
       "tags": [
         "Vehicles & Transportation"
+      ]
+    },
+    {
+      "author": "Albert Mulder",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Local, no-cloud control of the Tuya Smart Cat Litter Box 04 ZY (Smart Life app) over Tuya protocol 3.5: clean, empty, auto mode, deodorize, child lock and settings, with live status.",
+      "documentationUrl": "https://github.com/almulder/Hubitat-Drivers/tree/main/Cat%20Litter%20Box",
+      "id": "manifest:b9027a7002cba26250aa",
+      "manifestUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json",
+      "name": "Cat Litter Box (Tuya Local)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_DEVICE",
+              "name": "Tuya LAN Device",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN"
+            }
+          ],
+          "documentation": [],
+          "id": "tuya-local",
+          "name": "Tuya Local Integration",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
+      "tags": [
+        "LAN",
+        "Misc. Devices"
       ]
     },
     {
@@ -29000,5 +29041,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-04T06:44:10Z"
+  "snapshotGenerated": "2026-11-05T07:03:25Z"
 }
