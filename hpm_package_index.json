@@ -31860,12 +31860,12 @@
       "author": "CSteele",
       "category": null,
       "communityLink": null,
-      "dateReleased": "2026-10-23",
+      "dateReleased": "2026-11-05",
       "description": "A Parent/child version of the original",
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 115,
+          "definitionLine": 136,
           "definitionName": "Honeywell Thermo Parent",
           "definitionNamespace": "csteele",
           "manifestName": "Honeywell Thermo Parent",
@@ -31893,7 +31893,7 @@
             },
             {
               "evidence": "input name: \"quickref\", type: \"hidden\", title:\"<a href='https://www.hubitatcommunity.com/QuikRef/honeywellThermoDriverInfo/index.html' target='_blank'>Quick Reference ${version()}</a>\"",
-              "line": 133,
+              "line": 154,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.hubitatcommunity.com",
@@ -31902,142 +31902,74 @@
               }
             },
             {
+              "evidence": "unschedule(\"logsOff\")",
+              "line": 175,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (debugOutput && debugDisableSeconds > 0) runIn(debugDisableSeconds, \"logsOff\", [overwrite:true])",
+              "line": 177,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "return addChildDevice(\"csteele\", \"Honeywell WiFi ${type()} Component\", dni, [name: childName, label: childName, isComponent: true])",
-              "line": 186,
+              "line": 219,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "return addChildDevice(\"hubitat\", \"Generic Component $oType Sensor\", dni, [name: \"Outdoor $oType\", isComponent: true])",
-              "line": 193,
+              "line": 226,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def cdd = getChildDevices()?.findAll { it.deviceNetworkId == \"${cd.id}-Temperature\"}",
-              "line": 431,
+              "line": 551,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def cdd = getChildDevices()?.findAll { it.deviceNetworkId == \"${cd.id}-Humidity\"}",
-              "line": 439,
+              "line": 559,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "//if (debugOutput) log.debug \"https://${tccSite()}/portal/Device/CheckDataSession/${settings.honeywelldevice}?_=$today.time\"",
-              "line": 465,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "uri: \"https://${tccSite()}/portal/Device/CheckDataSession/${state.childParamMap.\"${dniParts[2]}\".honeywelldevice}\",",
-              "line": 468,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "'Referer': \"https://${tccSite()}/portal\",",
-              "line": 478,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
               "evidence": "asynchttpGet(\"getStatusHandler\", params, pData)",
-              "line": 488,
+              "line": 613,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
-            },
-            {
-              "evidence": "uri: \"https://${tccSite()}/portal/Device/CheckDataSession/${state.childParamMap.\"${dniParts[2]}\".honeywelldevice}\",",
-              "line": 656,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "'Referer': \"https://${tccSite()}/portal/\",",
-              "line": 667,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
             },
             {
               "evidence": "asynchttpGet(\"getHumidStatusHandler\", params, pData)",
-              "line": 677,
+              "line": 817,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
-              "evidence": "runIn(delay, \"settingsAccumWait\", [overwrite:false, data:[dni:cd.deviceNetworkId, authRetry:authRetry]])",
-              "line": 768,
+              "evidence": "runIn(commandFollowupSeconds, \"settingsAccumWait\", [overwrite:false, data:[dni:cd.deviceNetworkId, token:token]])",
+              "line": 916,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "uri: \"https://${tccSite()}/portal/Device/SubmitControlScreenChanges\",",
-              "line": 783,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "'Referer': \"https://${tccSite()}/portal/Device/Control/${state.childParamMap.\"${dniParts[2]}\".honeywelldevice}\",",
-              "line": 792,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "httpPost(params) {",
-              "line": 804,
+              "evidence": "httpPost(params) { resp ->",
+              "line": 1012,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
-              "evidence": "runIn(loginBackoffSeconds, \"settingsAccumWait\", [overwrite:false, data:[dni:cd.deviceNetworkId, authRetry:authRetry + 1]])",
-              "line": 820,
+              "evidence": "runIn(delaySeconds, \"retryTccCommand\", [overwrite:false, data:[dni:cd.deviceNetworkId, commandId:commandId]])",
+              "line": 1038,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "uri: \"https://${tccSite()}/portal/\",",
-              "line": 919,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${tccsite(",
-                "scheme": "https",
-                "url": "https://${tccSite("
-              }
-            },
-            {
-              "evidence": "'Origin': \"https://${tccSite()}/portal/\",",
-              "line": 926,
+              "evidence": "String baseUrl = \"https://${tccSite()}\"",
+              "line": 1055,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${tccsite(",
@@ -32047,26 +31979,26 @@
             },
             {
               "evidence": "httpPost(params) { response ->",
-              "line": 936,
+              "line": 1159,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "return getChildDevices()?.findAll { it.deviceNetworkId?.startsWith(prefix) } ?: []",
-              "line": 1041,
+              "line": 1409,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "runIn(delay, \"refreshFromRunin\", [overwrite:false, data:[dni:cd.deviceNetworkId, fromUnauth:fromUnauth]])",
-              "line": 1143,
+              "evidence": "runIn(delay, \"refreshFromRunin\", [overwrite:false, data:[dni:cd.deviceNetworkId, fromUnauth:fromUnauth, transientRetry:transientRetry, refreshGeneration:generation, retryToken:retryToken]])",
+              "line": 1628,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 53005,
+          "sourceBytes": 78064,
           "sourceFetched": true,
-          "sourceSha256": "4bbf875a0c909516bace7a79a638aa7b6419d85b53d4bdf30beb26697f83c551",
+          "sourceSha256": "116e93851e3cd0aa6423e15f01322cce95644a09f97fc1d91e3e488036b5bca3",
           "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/HoneywellThermoParent.groovy"
         },
         {
@@ -32142,7 +32074,7 @@
         "Temperature & Humidity",
         "Cloud"
       ],
-      "version": "2.0.21"
+      "version": "2.0.22"
     },
     {
       "apps": [],
@@ -181683,7 +181615,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/ecobee-hap-helpers/ecobee-hap-helpers-parent.groovy"
         },
         {
-          "definitionLine": 26,
+          "definitionLine": 38,
           "definitionName": "Local Ecobee Room Vent",
           "definitionNamespace": "RamSet",
           "manifestName": "Local Ecobee Room Vent",
@@ -181691,7 +181623,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/ecobee-hap-helpers/ecobee-hap-room-vent-child.groovy\"",
-              "line": 35,
+              "line": 47,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -181701,68 +181633,68 @@
             },
             {
               "evidence": "input \"tempSensors\", \"capability.temperatureMeasurement\", title: \"Room temperature sensor(s)\", multiple: true, required: true, submitOnChange: true",
-              "line": 49,
+              "line": 61,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input \"ventLevels\", \"capability.switchLevel\", title: \"Modulating vent(s) — Keen / dimmer\", multiple: true, required: false, submitOnChange: true",
-              "line": 54,
+              "line": 66,
               "type": "CAPABILITY_REFERENCE",
               "value": "switchLevel"
             },
             {
               "evidence": "input \"ventSwitches\", \"capability.switch\", title: \"On/off vent switch(es)\", multiple: true, required: false, submitOnChange: true",
-              "line": 55,
+              "line": 67,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
             },
             {
               "evidence": "def updated() { unsubscribe(); unschedule(); initialize() }",
-              "line": 82,
+              "line": 94,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(t, \"thermostatOperatingState\", evtHandler)",
-              "line": 87,
+              "line": 99,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(t, \"heatingSetpoint\", evtHandler)",
-              "line": 88,
+              "line": 100,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(t, \"coolingSetpoint\", evtHandler)",
-              "line": 89,
+              "line": 101,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(t, \"thermostatMode\", evtHandler)",
-              "line": 90,
+              "line": 102,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(tempSensors, \"temperature\", evtHandler)",
-              "line": 92,
+              "line": 104,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(mins * 60, periodicEval)",
-              "line": 100,
+              "line": 112,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 13295,
+          "sourceBytes": 15377,
           "sourceFetched": true,
-          "sourceSha256": "6e216d70adfc8997ab83abfbe694a3dc78c82ef6c534021ea325f0b2ef1032f8",
+          "sourceSha256": "2146aca3c8cbb62968f2808e04b87cc9698e65c9b37bd0013f6f8d55097e154c",
           "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/apps/ecobee-hap-helpers/ecobee-hap-room-vent-child.groovy"
         },
         {
@@ -181923,7 +181855,7 @@
       "author": "RamSet",
       "category": "Thermostats",
       "communityLink": null,
-      "dateReleased": "2026-10-11",
+      "dateReleased": "2026-11-05",
       "description": "Offline helper apps for the Ecobee HAP Thermostat (Local): per-room vent control, open-contact HVAC pause with notifications, and humidifier control. Add as many helpers as needed under one parent.",
       "documentationLink": null,
       "drivers": [],
@@ -181935,7 +181867,7 @@
       "repoName": "RamSet",
       "repoUrl": "https://raw.githubusercontent.com/RamSet/hubitat/main/repository.json",
       "tags": [],
-      "version": "1.3.1"
+      "version": "1.4.2"
     },
     {
       "apps": [],
@@ -346909,394 +346841,412 @@
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 335,
+              "line": 355,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 350,
+              "line": 370,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 390,
+              "line": 413,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 483,
+              "line": 506,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 490,
+              "line": 513,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 511,
+              "line": 534,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lock', lockHandler)",
-              "line": 557,
+              "line": 580,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'unlock', lockHandler)",
-              "line": 558,
+              "line": 581,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lastCodeName', lastCodeNameHandler)",
-              "line": 559,
+              "line": 582,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lockCodes', lockCodesHandler)",
-              "line": 560,
+              "line": 583,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'codeChanged', codeChangedHandler)",
-              "line": 561,
+              "line": 584,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'maxCodes', maxCodesHandler)",
-              "line": 562,
+              "line": 585,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'codeLength', codeLengthHandler)",
-              "line": 563,
+              "line": 586,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 571,
+              "line": 594,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() also removed the refresh cadence and any running refresh's",
-              "line": 573,
+              "line": 596,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(checkIn, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 607,
+              "line": 630,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(checkOut, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 612,
+              "line": 635,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// every app-wide unschedule(). After an update through HPM (no Done) the first",
-              "line": 672,
+              "line": 695,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'sbAppInfoDaily')",
-              "line": 681,
+              "line": 704,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshStartDelaySec, 'codeRefreshNext', [overwrite: true, data: [runId: runId, index: 0]])",
-              "line": 730,
+              "line": 753,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(r.budgetSec, 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 777,
+              "line": 800,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshSettleSec, 'codeRefreshSettled', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 792,
+              "line": 815,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshGapSec, 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: (r.index as int) + 1]])",
-              "line": 811,
+              "line": 834,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 850,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(Math.max((int) (nextMs / 1000), 900), 'codeAutoReadRetry', [overwrite: true])",
               "line": 874,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 880,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max((int) (nextMs / 1000), 900), 'codeAutoReadRetry', [overwrite: true])",
+              "line": 904,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "// unschedule() removed the running refresh's timer; put it back",
-              "line": 881,
+              "line": 911,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: 0]])",
-              "line": 889,
+              "line": 919,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 891,
+              "line": 921,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('refreshDoorCodes')",
-              "line": 912,
+              "line": 942,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, 'codeRefreshScheduled')",
-              "line": 917,
+              "line": 947,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('codeRefreshScheduled')",
-              "line": 920,
+              "line": 950,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'tryDeleteCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition ]])",
-              "line": 1062,
+              "line": 1109,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
-              "line": 1113,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
-              "line": 1133,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(++i * 180, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1164,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "// After scheduleEvents, whose unschedule() would remove the auto read timer",
+              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName, free: true ]])",
               "line": 1167,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
+              "line": 1194,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(++i * 180, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1232,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// After scheduleEvents, whose unschedule() would remove the auto read timer",
+              "line": 1235,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(delay, 'verifySetCode', [ overwrite: false, data: retryData ])",
-              "line": 1217,
+              "line": 1320,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unsubscribe()/unschedule() here: those operate app-wide and would also tear",
-              "line": 1279,
+              "line": 1382,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 1459,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, 'trySetCode', [ overwrite: false, data: retryData ])",
-              "line": 1358,
+              "line": 1497,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1492,
+              "line": 1631,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// and the daily app info announcement its schedule (#692)",
-              "line": 1496,
+              "line": 1635,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1667,
+              "line": 1812,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1695,
+              "line": 1840,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1756,
+              "line": 1901,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1809,
+              "line": 1954,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2218,
+              "line": 2532,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 2266,
+              "line": 2580,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2318,
+              "line": 2632,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "asynchttpPost('sbRegisterCallback', sbRegisterParams())",
-              "line": 2321,
+              "evidence": "asynchttpPost('sbRegisterCallback', sbRegisterParams(), [cred: sbCredentialTag()])",
+              "line": 2635,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2341,
+              "line": 2661,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// Kept in atomicState with its due time, so an app-wide unschedule() (scheduleEvents on",
-              "line": 2344,
+              "line": 2664,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 2347,
+              "line": 2667,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed a pending registration retry's timer; put it back for the time left",
-              "line": 2350,
+              "line": 2670,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 2356,
+              "line": 2676,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2407,
+              "line": 2733,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "state.accessToken = createAccessToken()",
+              "line": 2748,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
               "evidence": "httpPost([",
-              "line": 2447,
+              "line": 2776,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2469,
+              "line": 2798,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2474,
+              "line": 2803,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// The link state is in atomicState with its expiry time, so an app-wide unschedule()",
-              "line": 2490,
+              "line": 2819,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(sbConnectLinkSeconds, 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: at]])",
-              "line": 2502,
+              "line": 2831,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 1L), 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: l.issuedAt]])",
-              "line": 2548,
+              "line": 2877,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sbConnectLinkExpire')",
-              "line": 2553,
+              "line": 2882,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2563,
+              "line": 2892,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             }
           ],
-          "sourceBytes": 113223,
+          "sourceBytes": 134538,
           "sourceFetched": true,
-          "sourceSha256": "e9f9f170053fda93ea07317d27c76d5e65e12bd59afb9573f1e409a1a317f8a2",
+          "sourceSha256": "8ea4ba38b817214e0facd3ea8e947c723d53b313a1aa7abc7c14a916a893c7ce",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
         }
       ],
       "author": "Chris Ogden",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-05",
-      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "dateReleased": "2026-11-06",
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Codes are on the lock from before check-in to after checkout. Manages only codes named with its own code name prefix, so it can share locks with other lock-code apps that use their own prefix.",
       "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
       "drivers": [],
       "manifestFetched": true,
@@ -347310,12 +347260,12 @@
         "Locks",
         "Cloud"
       ],
-      "version": "1.4.10"
+      "version": "1.4.15"
     },
     {
       "apps": [
         {
-          "definitionLine": 193,
+          "definitionLine": 195,
           "definitionName": "SignalBricks Telemetry",
           "definitionNamespace": "spinrag",
           "manifestName": "SignalBricks Telemetry",
@@ -347323,7 +347273,7 @@
           "observations": [
             {
               "evidence": "@Field static final String SB_PORTAL_URL = 'https://app.signalbricks.co'",
-              "line": 108,
+              "line": 110,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "app.signalbricks.co",
@@ -347333,7 +347283,7 @@
             },
             {
               "evidence": "@Field static final String HUBITAT_STATE_REDIRECT = 'https://cloud.hubitat.com/oauth/stateredirect'",
-              "line": 112,
+              "line": 114,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -347343,7 +347293,7 @@
             },
             {
               "evidence": "@Field static final String DOCS_URL = 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md'",
-              "line": 113,
+              "line": 115,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -347353,13 +347303,13 @@
             },
             {
               "evidence": "oauth: true,",
-              "line": 202,
+              "line": 204,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "documentationLink: 'https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md',",
-              "line": 205,
+              "line": 207,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -347369,327 +347319,333 @@
             },
             {
               "evidence": "mappings {",
-              "line": 212,
+              "line": 214,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "input(name: 'locks', type: 'capability.lock', title: 'Locks (lock state, battery, last code name)', multiple: true, required: false, submitOnChange: true)",
-              "line": 267,
+              "line": 269,
               "type": "CAPABILITY_REFERENCE",
               "value": "lock"
             },
             {
               "evidence": "input(name: 'contactSensors', type: 'capability.contactSensor', title: 'Contact sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 268,
+              "line": 270,
               "type": "CAPABILITY_REFERENCE",
               "value": "contactSensor"
             },
             {
               "evidence": "input(name: 'temperatureSensors', type: 'capability.temperatureMeasurement', title: 'Temperature sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 269,
+              "line": 271,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input(name: 'humiditySensors', type: 'capability.relativeHumidityMeasurement', title: 'Humidity sensors', multiple: true, required: false, submitOnChange: true)",
-              "line": 270,
+              "line": 272,
               "type": "CAPABILITY_REFERENCE",
               "value": "relativeHumidityMeasurement"
             },
             {
               "evidence": "input(name: 'codeLocks', type: 'capability.lockCodes', title: 'Locks SignalBricks may manage codes on', multiple: true, required: false, submitOnChange: true)",
-              "line": 324,
+              "line": 326,
               "type": "CAPABILITY_REFERENCE",
               "value": "lockCodes"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 404,
+              "line": 420,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 434,
+              "line": 450,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 446,
+              "line": 462,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 451,
+              "line": 467,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() also removed these timers; put them back for the time left",
-              "line": 455,
+              "line": 471,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, 'logsOff')",
-              "line": 460,
+              "line": 476,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lock', 'eventHandler')",
-              "line": 474,
+              "line": 490,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lastCodeName', 'eventHandler')",
-              "line": 475,
+              "line": 491,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (contactSensors) subscribe(contactSensors, 'contact', 'eventHandler')",
-              "line": 477,
+              "line": 493,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (temperatureSensors) subscribe(temperatureSensors, 'temperature', 'eventHandler')",
-              "line": 478,
+              "line": 494,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (humiditySensors) subscribe(humiditySensors, 'humidity', 'eventHandler')",
-              "line": 479,
+              "line": 495,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "batteryDevices.each { subscribe(it, 'battery', 'eventHandler') }",
-              "line": 484,
+              "line": 500,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 499,
+              "line": 515,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule('sendAppInfoReport')",
-              "line": 503,
+              "line": 519,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('dailyCheckIn')",
-              "line": 525,
+              "line": 541,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "if (ids) app.updateSetting('codeLocks', [type: 'capability.lockCodes', value: ids])",
+              "line": 558,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "lockCodes"
+            },
+            {
               "evidence": "createAccessToken()",
-              "line": 531,
+              "line": 573,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "asynchttpPost('postCallback', params, [name: evt.name, deviceId: evt.deviceId])",
-              "line": 569,
+              "line": 611,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "createAccessToken()",
-              "line": 641,
+              "line": 683,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// (success or failure): createAccessToken() invalidates the previous token,",
-              "line": 710,
+              "line": 754,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 716,
+              "line": 760,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "// Kept in atomicState with its expiry time, so initialize()'s unschedule() can",
-              "line": 729,
+              "line": 773,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(CONNECT_LINK_SECONDS, 'expireConnectLink', [overwrite: true, data: [issuedAt: at]])",
-              "line": 740,
+              "line": 784,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 1L), 'expireConnectLink', [overwrite: true, data: [issuedAt: l.issuedAt]])",
-              "line": 786,
+              "line": 830,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('expireConnectLink')",
-              "line": 791,
+              "line": 835,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 801,
+              "line": 845,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(tokenParams) { resp ->",
-              "line": 841,
+              "line": 885,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "asynchttpPost('registerCallback', params, [enabled: enabled])",
-              "line": 957,
+              "line": 1001,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule('registerRetryRun')",
-              "line": 980,
+              "line": 1024,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'registerRetryRun', [overwrite: true])",
-              "line": 984,
+              "line": 1028,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed a pending retry's timer; put it back for the time left",
-              "line": 987,
+              "line": 1031,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'registerRetryRun', [overwrite: true])",
-              "line": 993,
+              "line": 1037,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('registerRetryRun')",
-              "line": 1006,
+              "line": 1050,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('dailyCheckIn')",
-              "line": 1056,
+              "line": 1100,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'dailyCheckIn')",
-              "line": 1064,
+              "line": 1108,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, APP_INFO_EVENT, 'appInfoHandler')",
-              "line": 1093,
+              "line": 1137,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(APP_INFO_REPORT_DELAY_SECONDS, 'sendAppInfoReport', [overwrite: true])",
-              "line": 1129,
+              "line": 1173,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost('reportCallback', params, [reason: reason])",
-              "line": 1337,
+              "line": 1381,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "runIn(delay, 'reportRetryRun', [overwrite: true])",
-              "line": 1391,
+              "line": 1435,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed a pending retry's timer; put it back for the time left",
-              "line": 1394,
+              "line": 1438,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'reportRetryRun', [overwrite: true])",
-              "line": 1399,
+              "line": 1443,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('reportRetryRun')",
-              "line": 1411,
+              "line": 1455,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(secondsUntil(next), 'expirePendingCodeChanges')",
-              "line": 2453,
+              "line": 2534,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('expirePendingCodeChanges')",
-              "line": 2456,
+              "line": 2537,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (due) runIn(secondsUntil(due.min()), 'verifyCodeChanges')",
-              "line": 2459,
+              "line": 2540,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else unschedule('verifyCodeChanges')",
-              "line": 2460,
+              "line": 2541,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost('postCallback', params, [name: eventName, deviceId: p.lockId])",
-              "line": 2761,
+              "line": 2842,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 136673,
+          "sourceBytes": 142207,
           "sourceFetched": true,
-          "sourceSha256": "46b05f18474fb7795e5fdcdbe2f6583f9edc04ef85cedbb4f0cab58eb50928b0",
+          "sourceSha256": "862ef440b67019911c62737a8bb65a45c6cbbe3119ac804449cad030a8b33f6a",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
         }
       ],
       "author": "Chris Ogden",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-10-30",
+      "dateReleased": "2026-11-06",
       "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed codes.",
       "documentationLink": "https://github.com/spinrag/hubitat/blob/main/signalbricksTelemetry/README.md",
       "drivers": [],
@@ -347707,7 +347663,7 @@
         "Temperature & Humidity",
         "Monitoring"
       ],
-      "version": "1.6.2"
+      "version": "1.6.5"
     },
     {
       "apps": [
@@ -365903,7 +365859,7 @@
   "repositoriesFetched": 226,
   "repositoryCount": 227,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-05T07:03:25Z",
+  "snapshotGenerated": "2026-11-06T07:03:05Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,

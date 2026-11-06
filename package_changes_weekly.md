@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-05T07:03:25Z`.
+Latest observation: `2026-11-06T07:03:05Z`.
 
-**57 package change(s):** added 8, declared definitions changed 1, source location changed 9, updated 49
+**55 package change(s):** added 7, declared definitions changed 1, source location changed 9, updated 48
 
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
+- [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
 - [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
 - [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
 - [Sifely WiFi Lock v2 (API key): updated, changed source location.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json)
@@ -55,11 +59,5 @@ Latest observation: `2026-11-05T07:03:25Z`.
 - [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
 - [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 - [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
-- [Weather Watcher: added.](https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json)
-- [TESmart Controller: updated.](https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Rheem EcoNet: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/rheem-econet/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

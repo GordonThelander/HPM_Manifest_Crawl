@@ -9143,7 +9143,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 15
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -20919,7 +20919,7 @@ window.NETWORK_EVIDENCE = {
         "cloudTag": true,
         "lanTag": false
       },
-      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in to after checkout. Manages codes named with its prefix + ORB<booking id> (and slots it assigned earlier), writing new codes only into empty slots from its minimum code position up; doesn't claim SignalBricks Telemetry's SBA:/SBM: codes.",
+      "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Codes are on the lock from before check-in to after checkout. Manages only codes named with its own code name prefix, so it can share locks with other lock-code apps that use their own prefix.",
       "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/signalbricksIntegration/README.md",
       "id": "manifest:86b01a1f90e58a839a6f",
       "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
@@ -29041,5 +29041,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-05T07:03:25Z"
+  "snapshotGenerated": "2026-11-06T07:03:05Z"
 };

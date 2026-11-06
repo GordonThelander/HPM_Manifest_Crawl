@@ -12508,7 +12508,7 @@
       },
       "packageName": "SignalBricks Integration",
       "qualityFlags": [],
-      "summary": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Runs alongside the OwnerRez app; each app needs its own different, non-empty code name prefix (e.g. OwnerRez \"G:\", SignalBricks \"GT:\"). Codes are named <prefix>ORB<booking id>-<guest> and exist from before check-in "
+      "summary": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Codes are on the lock from before check-in to after checkout. Manages only codes named with its own code name prefix, so it can share locks with other lock-code apps that use their own prefix."
     },
     {
       "author": "Aaron Ward",
@@ -16889,5 +16889,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-05T07:03:25Z"
+  "snapshotGenerated": "2026-11-06T07:03:05Z"
 }
