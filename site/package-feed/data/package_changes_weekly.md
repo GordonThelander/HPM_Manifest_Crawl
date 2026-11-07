@@ -1,9 +1,29 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-06T07:03:05Z`.
+Latest observation: `2026-11-07T06:16:30Z`.
 
-**55 package change(s):** added 7, declared definitions changed 1, source location changed 9, updated 48
+**60 package change(s):** added 7, broken 3, declared definitions changed 6, source location changed 14, updated 53
 
+- [YoLink™ Local Hub Connector: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/yolink-local-hub.json)
+- [Unifi Drivers: updated, changed source location, changed declared definitions, became unavailable.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
+- [Tesla Drivers: updated, changed source location, changed declared definitions, became unavailable.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
+- [Sonos Advanced Controller: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Roomba (Rest980): updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json)
+- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
+- [Neptune Systems Apex: updated, changed source location, changed declared definitions, became unavailable.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
+- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
+- [Hub Information Driver v3: updated.](https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/hubInfoV3Manifest.json)
+- [DNS Made Easy Updater: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json)
+- [DMS Monitor (Dead Man's Snitch): updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json)
+- [Cloudflare DNS Updater: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json)
+- [Cat Litter Box (Tuya Local): updated.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json)
+- [Aeon Multisensor Gen5: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-multisensor-gen5/packageManifest.json)
+- [Abode Alarm 2024: updated.](https://raw.githubusercontent.com/x86cpu/hubitat-abode/master/packageManifest.json)
 - [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
 - [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
 - [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
@@ -44,20 +64,5 @@ Latest observation: `2026-11-06T07:03:05Z`.
 - [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
 - [Garadget Guardian: added.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json)
 - [Fully Kiosk Browser Controller: updated.](https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/manifest.json)
-- [Sofabaton Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Rituals Perfume Genie: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/RitualsPerfumeGenie/packageManifest.json)
-- [Reolink Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json)
-- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
-- [Nuki Web API: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/NukiWebAPI/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
-- [Itho NRG: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/IthoNRG/packageManifest.json)
-- [Heiman HS2WD-E Siren: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json)
-- [Envoy Local Data: updated.](https://raw.githubusercontent.com/vpsupun/hubitat/master/EnvoyLocalData/packageManifest.json)
-- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
-- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
-- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

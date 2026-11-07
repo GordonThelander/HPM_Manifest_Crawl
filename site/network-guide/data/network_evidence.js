@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 186,
-    "CLOUD": 274,
-    "INSUFFICIENT": 306,
-    "LAN": 197
+    "BOTH": 183,
+    "CLOUD": 275,
+    "INSUFFICIENT": 305,
+    "LAN": 200
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -3260,15 +3260,15 @@ window.NETWORK_EVIDENCE = {
     },
     {
       "author": "Chris Ogden",
-      "category": "Networking",
+      "category": "Utility",
       "classification": "CLOUD",
       "communityUrl": null,
       "declared": {
-        "cloudTag": false,
+        "cloudTag": true,
         "lanTag": false
       },
-      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
-      "documentationUrl": null,
+      "description": "Dynamic DNS (DDNS): updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
+      "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/cloudflareDnsUpdater/README.md",
       "id": "manifest:e979027ca81f14c18432",
       "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
       "name": "Cloudflare DNS Updater",
@@ -3284,12 +3284,8 @@ window.NETWORK_EVIDENCE = {
       },
       "reviewed": [],
       "tags": [
-        "cloudflare",
-        "ddns",
-        "dns",
-        "ip updater",
-        "networking",
-        "spinrag"
+        "Cloud",
+        "Tools & Utilities"
       ]
     },
     {
@@ -4624,15 +4620,15 @@ window.NETWORK_EVIDENCE = {
     },
     {
       "author": "Chris Ogden",
-      "category": null,
-      "classification": "INSUFFICIENT",
+      "category": "Utility",
+      "classification": "CLOUD",
       "communityUrl": null,
       "declared": {
-        "cloudTag": false,
+        "cloudTag": true,
         "lanTag": false
       },
       "description": "Sends scheduled heartbeat pings to Dead Man's Snitch to confirm that the Hubitat hub and internet connection are alive.",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/dmsMonitor/README.md",
       "id": "manifest:85fe16067661b343a851",
       "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json",
       "name": "DMS Monitor (Dead Man's Snitch)",
@@ -4643,19 +4639,23 @@ window.NETWORK_EVIDENCE = {
         "urlLiteralCount": 0
       },
       "reviewed": [],
-      "tags": []
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Tools & Utilities"
+      ]
     },
     {
       "author": "Chris Ogden",
-      "category": null,
+      "category": "Utility",
       "classification": "CLOUD",
       "communityUrl": null,
       "declared": {
-        "cloudTag": false,
+        "cloudTag": true,
         "lanTag": false
       },
-      "description": "Updates a DNS Made Easy A record with your public IP using Hubitat.",
-      "documentationUrl": null,
+      "description": "Dynamic DNS (DDNS): updates a DNS Made Easy A record with your public IP using Hubitat.",
+      "documentationUrl": "https://github.com/spinrag/hubitat/blob/main/dnsMadeEasyUpdater/README.md",
       "id": "manifest:12830ce1364c3298546e",
       "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json",
       "name": "DNS Made Easy Updater",
@@ -4669,7 +4669,10 @@ window.NETWORK_EVIDENCE = {
         "urlLiteralCount": 2
       },
       "reviewed": [],
-      "tags": []
+      "tags": [
+        "Cloud",
+        "Tools & Utilities"
+      ]
     },
     {
       "author": "Andrew Nunes",
@@ -15908,9 +15911,9 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
-      "classification": "BOTH",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -15922,12 +15925,10 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
       "name": "Neptune Systems Apex",
       "observed": {
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 31,
-        "urlLiteralCount": 95
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -19600,7 +19601,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -22381,16 +22382,16 @@ window.NETWORK_EVIDENCE = {
       "name": "Sonos Advanced Controller",
       "observed": {
         "externalHosts": [
-          "code.iconify.design"
+          "code.iconify.design",
+          "purl.org",
+          "schemas.xmlsoap.org"
         ],
         "lanPrimitives": [
           "HUB_ACTION",
-          "LAN_PROTOCOL",
-          "PARSE_LAN_MESSAGE",
-          "SEND_HUB_COMMAND"
+          "PARSE_LAN_MESSAGE"
         ],
-        "sourceFilesAnalysed": 8,
-        "urlLiteralCount": 84
+        "sourceFilesAnalysed": 12,
+        "urlLiteralCount": 91
       },
       "reviewed": [
         {
@@ -23408,9 +23409,9 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
-      "classification": "BOTH",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -23422,12 +23423,10 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
       "name": "Tesla Drivers",
       "observed": {
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 46
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -25184,9 +25183,9 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
-      "classification": "BOTH",
+      "classification": "LAN",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -25198,12 +25197,10 @@ window.NETWORK_EVIDENCE = {
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
       "name": "Unifi Drivers",
       "observed": {
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 49,
-        "urlLiteralCount": 179
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -27685,7 +27682,7 @@ window.NETWORK_EVIDENCE = {
           "cdn.device-icons.smartthings.com"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 7,
+        "sourceFilesAnalysed": 8,
         "urlLiteralCount": 10
       },
       "reviewed": [
@@ -29041,5 +29038,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-06T07:03:05Z"
+  "snapshotGenerated": "2026-11-07T06:16:30Z"
 };

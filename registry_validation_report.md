@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-06T07:03:05Z`
+- Snapshot: `2026-11-07T06:16:30Z`
 - HPM repositories in master list: **227**
 - Repositories fetched successfully: **226**
 - Packages indexed: **963**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **13**
+- Recorded fetch/parse errors: **16**
 
 ## A. Dead rules
 
@@ -571,6 +571,9 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | ritchierich | Plivo SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Plivo%20SMS/packageManifest.json |
 | ritchierich | Textbelt SMS Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/refs/heads/master/Drivers/Textbelt%20SMS/packageManifest.json |
 | ritchierich | Twilio SMS and Voice Notifications | Integrations | LAN, Notifications | https://raw.githubusercontent.com/mlritchie/Hubitat/master/Drivers/Twilio%20SMS/packageManifest.json |
+| spinrag | Cloudflare DNS Updater | Utility | Cloud, Tools & Utilities | https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json |
+| spinrag | DMS Monitor (Dead Man's Snitch) | Utility | Monitoring, Cloud, Tools & Utilities | https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json |
+| spinrag | DNS Made Easy Updater | Utility | Cloud, Tools & Utilities | https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json |
 | spinrag | SignalBricks Integration | Integrations | Locks, Cloud | https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json |
 | spinrag | SignalBricks Telemetry | Integrations | Cloud, Locks, Doors & Windows, Temperature & Humidity, Monitoring | https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json |
 | storageaanarchy (SANdood) | MeteoBridge Weather Station | Integrations |  | https://raw.githubusercontent.com/SANdood/MeteoWeather/master/packageManifest.json |
@@ -600,6 +603,9 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | --- | --- | --- |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
+| manifest | https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json | <urlopen error [Errno 111] Connection refused> |
+| manifest | https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json | <urlopen error [Errno 111] Connection refused> |
+| manifest | https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json | <urlopen error [Errno 111] Connection refused> |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
@@ -624,7 +630,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
 | G. Unrepresented packages | 864 |
-| G candidate subset | 388 |
+| G candidate subset | 391 |
 
 ## H. Enrichment summary
 
@@ -634,13 +640,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2368 |
-| Source URLs fetched | 2358 |
+| Distinct source URLs | 2291 |
+| Source URLs fetched | 2281 |
 | Source URLs failed | 10 |
-| Components attempted | 2384 |
-| Components fetched | 2374 |
-| Literal definitions verified | 2363 |
-| Components with observations | 2230 |
+| Components attempted | 2307 |
+| Components fetched | 2297 |
+| Literal definitions verified | 2286 |
+| Components with observations | 2153 |
 
 ### Official Hubitat documentation pass
 

@@ -17662,7 +17662,7 @@
       "author": "Eric Meddaugh",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-08-21",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:a658395b1780fa959e99",
@@ -17799,7 +17799,7 @@
         "Monitoring",
         "Safety & Security"
       ],
-      "version": "2.0.13"
+      "version": "2.1.0"
     },
     {
       "author": "Dale Coghlan",
@@ -19276,7 +19276,7 @@
       "author": "Ricardo Nogueira Garcia (based on keltymd)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-21",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:f9c85de20da3631d3481",
@@ -19353,7 +19353,7 @@
         "Sensors",
         "Z-Wave"
       ],
-      "version": "1.1.1"
+      "version": "1.2.0"
     },
     {
       "author": "Ricardo Nogueira Garcia (based on SmartThings)",
@@ -27620,7 +27620,7 @@
       "author": "Albert Mulder",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-04",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:6e57c2c204e59e91804d",
@@ -28060,9 +28060,9 @@
     },
     {
       "author": "Chris Ogden",
-      "category": "Networking",
+      "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
+      "dateReleased": "2026-05-06",
       "definitions": [
         {
           "id": "definition:333549f4ba8c3503af0b",
@@ -28073,7 +28073,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/driver.groovy"
         }
       ],
-      "description": "Updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
+      "description": "Dynamic DNS (DDNS): updates an existing Cloudflare A or AAAA record with the hub's current public IP using a scoped API token. Update-only - never creates new records.",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -28084,7 +28084,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -28097,7 +28097,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -28120,7 +28120,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/cloudflareDnsUpdater/README.md",
         "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/cloudflareDnsUpdater/packageManifest.json",
         "repository": "https://github.com/spinrag/hubitat"
       },
@@ -28128,7 +28128,7 @@
       "network": {
         "classification": "CLOUD",
         "declared": {
-          "cloudTag": false,
+          "cloudTag": true,
           "lanTag": false
         },
         "externalHosts": [
@@ -28140,12 +28140,8 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [
-        "cloudflare",
-        "ddns",
-        "dns",
-        "ip updater",
-        "networking",
-        "spinrag"
+        "Cloud",
+        "Tools & Utilities"
       ],
       "version": "1.0.0"
     },
@@ -32575,9 +32571,9 @@
     },
     {
       "author": "Chris Ogden",
-      "category": null,
+      "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
+      "dateReleased": "2025-06-09",
       "definitions": [
         {
           "id": "definition:04d67718b40e8dffac09",
@@ -32599,7 +32595,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -32612,7 +32608,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -32635,29 +32631,33 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/dmsMonitor/README.md",
         "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/dmsMonitor/packageManifest.json",
         "repository": "https://github.com/spinrag/hubitat"
       },
       "name": "DMS Monitor (Dead Man's Snitch)",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "declared": {
-          "cloudTag": false,
+          "cloudTag": true,
           "lanTag": false
         },
         "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
-      "tags": [],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Tools & Utilities"
+      ],
       "version": "1.0.0"
     },
     {
       "author": "Chris Ogden",
-      "category": null,
+      "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
+      "dateReleased": "2025-06-09",
       "definitions": [
         {
           "id": "definition:a8b9e775bdf1542ad536",
@@ -32668,7 +32668,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/driver.groovy"
         }
       ],
-      "description": "Updates a DNS Made Easy A record with your public IP using Hubitat.",
+      "description": "Dynamic DNS (DDNS): updates a DNS Made Easy A record with your public IP using Hubitat.",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -32679,7 +32679,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -32692,7 +32692,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -32715,7 +32715,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/spinrag/hubitat/blob/main/dnsMadeEasyUpdater/README.md",
         "manifest": "https://raw.githubusercontent.com/spinrag/hubitat/main/dnsMadeEasyUpdater/packageManifest.json",
         "repository": "https://github.com/spinrag/hubitat"
       },
@@ -32723,7 +32723,7 @@
       "network": {
         "classification": "CLOUD",
         "declared": {
-          "cloudTag": false,
+          "cloudTag": true,
           "lanTag": false
         },
         "externalHosts": [
@@ -32733,7 +32733,10 @@
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
-      "tags": [],
+      "tags": [
+        "Cloud",
+        "Tools & Utilities"
+      ],
       "version": "1.0.0"
     },
     {
@@ -48114,7 +48117,7 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:62c23f636db66d4f0936",
@@ -48198,7 +48201,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "3.1.37"
+      "version": "3.1.38"
     },
     {
       "author": "hubitrep",
@@ -60024,7 +60027,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-21",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:7eaed06a7d6de6623014",
@@ -60130,7 +60133,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.0.3"
+      "version": "2.0.4"
     },
     {
       "author": "Ernie Miller",
@@ -61409,7 +61412,7 @@
       "tags": [
         "Presence & Location"
       ],
-      "version": "5.2.4"
+      "version": "5.2.5"
     },
     {
       "author": "Justin Leonard",
@@ -64485,7 +64488,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-04",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -64567,7 +64570,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.6"
+      "version": "5.1.7"
     },
     {
       "author": "Justin Leonard",
@@ -69512,260 +69515,11 @@
       "version": "1.0.1"
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-06",
-      "definitions": [
-        {
-          "id": "definition:963ece918b931f51ff90",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-AFS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AFS.groovy"
-        },
-        {
-          "id": "definition:0f852756f9dd04ce531f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-AI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AI.groovy"
-        },
-        {
-          "id": "definition:06a4cc1df0b0b7602516",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ASM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ASM.groovy"
-        },
-        {
-          "id": "definition:417d984a7f21d4e1a0c3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Apex2016",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Apex2016.groovy"
-        },
-        {
-          "id": "definition:0e66d78d9c6b1d4a9321",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3.groovy"
-        },
-        {
-          "id": "definition:6acf04ff78b80c2436b7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3Jr",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Jr.groovy"
-        },
-        {
-          "id": "definition:eb545b3b34c2a89b9fc0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3Pro",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Pro.groovy"
-        },
-        {
-          "id": "definition:6238332173afe6f0bdf7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexClassic",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexClassic.groovy"
-        },
-        {
-          "id": "definition:c5642a7f775f44e1fde6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexEL",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexEL.groovy"
-        },
-        {
-          "id": "definition:e8b58ae01633b305fe75",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexJr",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexJr.groovy"
-        },
-        {
-          "id": "definition:54bf5572f2ece0b9f70c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-COR",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-COR.groovy"
-        },
-        {
-          "id": "definition:5f9cb582dca6260444ff",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-DOS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-DOS.groovy"
-        },
-        {
-          "id": "definition:16ff596739ee3a671bdf",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB4",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB4.groovy"
-        },
-        {
-          "id": "definition:04caf22b3e280708582b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB8.groovy"
-        },
-        {
-          "id": "definition:628e2415e1c5d77ff56f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB832",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB832.groovy"
-        },
-        {
-          "id": "definition:a962b40b748368205934",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-FMM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-FMM.groovy"
-        },
-        {
-          "id": "definition:8e5290ea3540ea6ff61a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM1",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM1.groovy"
-        },
-        {
-          "id": "definition:5814f4f54a45d627702f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM2",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM2.groovy"
-        },
-        {
-          "id": "definition:4c71d2cc525456259a08",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
-        },
-        {
-          "id": "definition:4cfec3697c398f61b314",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Radion",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Radion.groovy"
-        },
-        {
-          "id": "definition:1657ab1b8f09d620ddab",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-SKY",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-SKY.groovy"
-        },
-        {
-          "id": "definition:a4d8ece6184750524815",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Sicce",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Sicce.groovy"
-        },
-        {
-          "id": "definition:bb98eb4fd7cf8d12c84d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Trident",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Trident.groovy"
-        },
-        {
-          "id": "definition:1b2e7d13b920397dedf4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-TridentNP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-TridentNP.groovy"
-        },
-        {
-          "id": "definition:574981863ddd6219c541",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-VDM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-VDM.groovy"
-        },
-        {
-          "id": "definition:a94fd2a927416b682ad4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Vectra",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vectra.groovy"
-        },
-        {
-          "id": "definition:06ed17125859126dcabc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Virtual",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Virtual.groovy"
-        },
-        {
-          "id": "definition:003537b8d82f0eb6120f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Vortech",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vortech.groovy"
-        },
-        {
-          "id": "definition:aa19a3868b3e9543a9b8",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-WAV",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-WAV.groovy"
-        },
-        {
-          "id": "definition:62d5c7cb6b4ae9ee6ead",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NeptuneSystemsApex",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApex.groovy"
-        },
-        {
-          "id": "definition:e028a690597bc73e47c0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NeptuneSystemsApexChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexChild.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "Drivers for monitoring a Neptune Systems Apex aquarium controller",
       "evidence": [
         {
@@ -69773,8 +69527,8 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
       "hasDocumentation": false,
@@ -69786,7 +69540,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MISMATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
@@ -69798,19 +69552,17 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
         "classification": "ATTENTION"
       },
       "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-      "kinds": [
-        "DRIVER"
-      ],
+      "kinds": [],
       "links": {
         "community": null,
         "documentation": null,
@@ -69819,14 +69571,12 @@
       },
       "name": "Neptune Systems Apex",
       "network": {
-        "classification": "BOTH",
+        "classification": "LAN",
         "declared": {
           "cloudTag": false,
           "lanTag": true
         },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -73672,7 +73422,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-31",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:552342c3eb7914797d32",
@@ -73783,7 +73533,7 @@
       "tags": [
         "Pool & Spa"
       ],
-      "version": "1.8.0"
+      "version": "1.8.1"
     },
     {
       "author": "Neil Jackson",
@@ -81343,7 +81093,7 @@
       "author": "Ricardo Nogueira Garcia",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-21",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:9279c951bf5bb016f0d9",
@@ -81420,7 +81170,7 @@
         "Appliances",
         "LAN"
       ],
-      "version": "1.0.1"
+      "version": "1.1.0"
     },
     {
       "author": "Josh Lobe",
@@ -86011,7 +85761,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.15"
+      "version": "1.4.16"
     },
     {
       "author": "Chris Ogden",
@@ -86097,7 +85847,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.6.5"
+      "version": "1.6.6"
     },
     {
       "author": "Krassimir Kossev",
@@ -89011,7 +88761,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:64472c13a4527d781dee",
@@ -89116,7 +88866,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.1.6"
+      "version": "1.1.7"
     },
     {
       "author": "Derek Osborn",
@@ -90536,71 +90286,103 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-05",
+      "dateReleased": "2026-11-07",
       "definitions": [
         {
-          "id": "definition:3ef84c30e2d6b622aef7",
+          "id": "definition:cadf50df7d55b5265ae5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:a2ffcd3173a7a55353be",
+          "id": "definition:be5f3bce4a0f1f752647",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Alarm Manager",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvAlarmManager.groovy"
+        },
+        {
+          "id": "definition:15b76f8cce38e01d982a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Alarm Switch",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvAlarmSwitch.groovy"
+        },
+        {
+          "id": "definition:bedded471299eb7e8f45",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:e7519a504ef2cd51f401",
+          "id": "definition:c4017fda1d20be666b50",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:4cbf21331fc2709dab5f",
+          "id": "definition:d8b0424234961fd7b43c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:7c24f5414619ddcfb76c",
+          "id": "definition:20a679d069146dcbe8c9",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:995cebc83bdabfb8ded2",
+          "id": "definition:f8f92ddd11d0a91042e8",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:72fedfb551400e173432",
+          "id": "definition:37397f1fcdbe9e3de3bb",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Queue",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvQueue.groovy"
+        },
+        {
+          "id": "definition:e32c9b17882e3ed75cc4",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:a39f1a80a003c5b8932e",
+          "id": "definition:4b29b663a28fd3e9e7c0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sonos Advanced Sleep Timer",
+          "namespace": "dwinks",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvSleepTimer.groovy"
+        },
+        {
+          "id": "definition:507f6efe649121e62941",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.14.1/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.3/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -90663,7 +90445,9 @@
           "lanTag": true
         },
         "externalHosts": [
-          "code.iconify.design"
+          "code.iconify.design",
+          "purl.org",
+          "schemas.xmlsoap.org"
         ],
         "reviewed": [
           {
@@ -90694,7 +90478,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.14.1"
+      "version": "0.15.3"
     },
     {
       "author": "Schwark Satyavolu",
@@ -94024,28 +93808,11 @@
       "version": "1.8"
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-06",
-      "definitions": [
-        {
-          "id": "definition:d0965970401430575a83",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "TeslaChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaChild.groovy"
-        },
-        {
-          "id": "definition:554b37c9ec64b8998ad6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "TeslaDriver",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaDriver.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "Drivers for monitoring a Tesla Powerwall",
       "evidence": [
         {
@@ -94053,8 +93820,8 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
       "hasDocumentation": false,
@@ -94066,7 +93833,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
@@ -94078,19 +93845,17 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-      "kinds": [
-        "DRIVER"
-      ],
+      "kinds": [],
       "links": {
         "community": null,
         "documentation": null,
@@ -94099,14 +93864,12 @@
       },
       "name": "Tesla Drivers",
       "network": {
-        "classification": "BOTH",
+        "classification": "LAN",
         "declared": {
           "cloudTag": false,
           "lanTag": true
         },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -99359,404 +99122,11 @@
       "version": "1.0.2"
     },
     {
-      "author": "Snell",
+      "author": null,
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-07",
-      "definitions": [
-        {
-          "id": "definition:3297d67c2c47255c7817",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkAPI.groovy"
-        },
-        {
-          "id": "definition:e24ad6ed3ff3e58a93a0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild.groovy"
-        },
-        {
-          "id": "definition:6d14d4dbcafd839b1a2d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-ACIW",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ACIW.groovy"
-        },
-        {
-          "id": "definition:53ba0700de6720794fed",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-AP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-AP.groovy"
-        },
-        {
-          "id": "definition:82cf4848b01c85b4e129",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-BasicAP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-BasicAP.groovy"
-        },
-        {
-          "id": "definition:8be17ae7284d7d59dfcd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-CGF",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-CGF.groovy"
-        },
-        {
-          "id": "definition:22d989e0bdcc62ad5c05",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-ClientCheck",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ClientCheck.groovy"
-        },
-        {
-          "id": "definition:6c78f6315b30afcb7b5a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-EAP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-EAP.groovy"
-        },
-        {
-          "id": "definition:027e4e1bd7c82e01dffc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-Plug",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Plug.groovy"
-        },
-        {
-          "id": "definition:9f4aab1e975f7884c681",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-Presence",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Presence.groovy"
-        },
-        {
-          "id": "definition:b58e75dc23c4a5bb3333",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-RPS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-RPS.groovy"
-        },
-        {
-          "id": "definition:4e3e23724cc6f8b0610a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UCGMax",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UCGMax.groovy"
-        },
-        {
-          "id": "definition:61bb1cab82441f4560c1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDM.groovy"
-        },
-        {
-          "id": "definition:2d9810458949844f8e48",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDMP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMP.groovy"
-        },
-        {
-          "id": "definition:146733cea0efba54944e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDMPSE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMPSE.groovy"
-        },
-        {
-          "id": "definition:b8206622b37eeafb0c8f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDR",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDR.groovy"
-        },
-        {
-          "id": "definition:f23ccc453b092bd9738c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UGW3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW3.groovy"
-        },
-        {
-          "id": "definition:fd9a908fa62994294573",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UGW4",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW4.groovy"
-        },
-        {
-          "id": "definition:f426d0b2ca80f3e0d835",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UHDIW",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UHDIW.groovy"
-        },
-        {
-          "id": "definition:63a89283fd5368d478d2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UP6",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UP6.groovy"
-        },
-        {
-          "id": "definition:4420e1dec4685c5dc6c4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UPSTower",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UPSTower.groovy"
-        },
-        {
-          "id": "definition:f249bfe6da71f25e5021",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-US8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-US8.groovy"
-        },
-        {
-          "id": "definition:29f13847865246914a0e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USAGG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGG.groovy"
-        },
-        {
-          "id": "definition:86fe08f8b91d737d19e2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USAGGPRO",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGGPRO.groovy"
-        },
-        {
-          "id": "definition:b7988691327e37ba3dad",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USF5P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USF5P.groovy"
-        },
-        {
-          "id": "definition:4574849499a5ed68dd45",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USG.groovy"
-        },
-        {
-          "id": "definition:d5fd5736234ea03da69b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USMINI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USMINI.groovy"
-        },
-        {
-          "id": "definition:2ca451b485d367b28db8",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPHD24P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPHD24P.groovy"
-        },
-        {
-          "id": "definition:d3632af4cc1048938310",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM16",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16.groovy"
-        },
-        {
-          "id": "definition:d7a3a3819a534f162f28",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM16P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16P.groovy"
-        },
-        {
-          "id": "definition:c9821dbfe58a6fa0e7ed",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM24",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24.groovy"
-        },
-        {
-          "id": "definition:a0be32e24345d93dc794",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM24P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24P.groovy"
-        },
-        {
-          "id": "definition:85b5ee823884b3e25463",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM48",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48.groovy"
-        },
-        {
-          "id": "definition:b5b0930abc799ebf2ca9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM48P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48P.groovy"
-        },
-        {
-          "id": "definition:687f41b302ca5070b6c0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPPDUP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPPDUP.groovy"
-        },
-        {
-          "id": "definition:fd2e9db43d163f2673dc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPXG8P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPXG8P.groovy"
-        },
-        {
-          "id": "definition:664c99bbe33210452c72",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16.groovy"
-        },
-        {
-          "id": "definition:19ec8984a40c00f6d3a2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16LPoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16LPoE.groovy"
-        },
-        {
-          "id": "definition:b15239208a5f0aeeef9c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16PoE.groovy"
-        },
-        {
-          "id": "definition:cdb2726802bb608c4d1d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW24",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24.groovy"
-        },
-        {
-          "id": "definition:37c077a85bbad93f3fbe",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW24PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24PoE.groovy"
-        },
-        {
-          "id": "definition:3402f71a176ceeb268f1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW48",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48.groovy"
-        },
-        {
-          "id": "definition:3ff19e5f9ace80b4b7dc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW48PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48PoE.groovy"
-        },
-        {
-          "id": "definition:9dd3c6d6ca528687bf07",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8.groovy"
-        },
-        {
-          "id": "definition:09451817691f6db237ec",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8LPoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8LPoE.groovy"
-        },
-        {
-          "id": "definition:68794b612f6a10f3dbd1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE.groovy"
-        },
-        {
-          "id": "definition:d5d0682b6bb493500578",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8PoE60",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE60.groovy"
-        },
-        {
-          "id": "definition:5415332137c3daed3588",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UX",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UX.groovy"
-        },
-        {
-          "id": "definition:70a752cad6fb7c4bd6d7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UXG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UXG.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "Drivers for integrating Ubiquiti's Unifi Network API",
       "evidence": [
         {
@@ -99764,8 +99134,8 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
       "hasDocumentation": false,
@@ -99777,7 +99147,7 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
@@ -99789,19 +99159,17 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-      "kinds": [
-        "DRIVER"
-      ],
+      "kinds": [],
       "links": {
         "community": null,
         "documentation": null,
@@ -99810,14 +99178,12 @@
       },
       "name": "Unifi Drivers",
       "network": {
-        "classification": "BOTH",
+        "classification": "LAN",
         "declared": {
           "cloudTag": false,
           "lanTag": true
         },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -107933,7 +107299,7 @@
       "author": "Albert Mulder",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-11-06",
       "definitions": [
         {
           "id": "definition:9ff933129b9aaad58110",
@@ -107950,6 +107316,14 @@
           "name": "YoLink DoorSensor Device Local",
           "namespace": "almulder",
           "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Yolink%20Local%20Hub/Drivers/YoLink%20DoorSensor%20Device%20Local.groovy"
+        },
+        {
+          "id": "definition:77830e057f8b6631019b",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "YoLink Finger Device Local",
+          "namespace": "almulder",
+          "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Yolink%20Local%20Hub/Drivers/YoLink%20Finger%20Device%20Local.groovy"
         },
         {
           "id": "definition:6a80a62dcf0e53f6092a",
@@ -137231,5 +136605,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-06T07:03:05Z"
+  "snapshotGenerated": "2026-11-07T06:16:30Z"
 }

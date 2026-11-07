@@ -3453,10 +3453,8 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {
-            "MATCH": 2
-          },
-          "status": "MATCH"
+          "components": {},
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -3467,16 +3465,22 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "PASS",
+          "status": "FAIL",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
         },
         "sourceFetch": {
-          "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "<urlopen error [Errno 111] Connection refused>",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
+        }
+      ],
       "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555"
     },
     {
@@ -7253,7 +7257,7 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 8
+            "MATCH": 12
           },
           "status": "MATCH"
         },
@@ -7270,8 +7274,8 @@
           "url": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json"
         },
         "sourceFetch": {
-          "components": 8,
-          "fetched": 8,
+          "components": 12,
+          "fetched": 12,
           "status": "PASS"
         }
       },
@@ -10098,11 +10102,8 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {
-            "MATCH": 30,
-            "MISMATCH": 1
-          },
-          "status": "MISMATCH"
+          "components": {},
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -10113,16 +10114,22 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "PASS",
+          "status": "FAIL",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
         },
         "sourceFetch": {
-          "components": 31,
-          "fetched": 31,
-          "status": "PASS"
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "<urlopen error [Errno 111] Connection refused>",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
+        }
+      ],
       "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71"
     },
     {
@@ -11693,10 +11700,8 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {
-            "MATCH": 49
-          },
-          "status": "MATCH"
+          "components": {},
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -11707,16 +11712,22 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "PASS",
+          "status": "FAIL",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
         },
         "sourceFetch": {
-          "components": 49,
-          "fetched": 49,
-          "status": "PASS"
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "<urlopen error [Errno 111] Connection refused>",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
+        }
+      ],
       "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379"
     },
     {
@@ -18753,8 +18764,8 @@
           "status": "MATCH"
         },
         "documentationLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://github.com/spinrag/hubitat/blob/main/dnsMadeEasyUpdater/README.md"
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
@@ -21659,7 +21670,7 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 7
+            "MATCH": 8
           },
           "status": "MATCH"
         },
@@ -21676,8 +21687,8 @@
           "url": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/yolink-local-hub.json"
         },
         "sourceFetch": {
-          "components": 7,
-          "fetched": 7,
+          "components": 8,
+          "fetched": 8,
           "status": "PASS"
         }
       },
@@ -24313,8 +24324,8 @@
           "status": "MATCH"
         },
         "documentationLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://github.com/spinrag/hubitat/blob/main/dmsMonitor/README.md"
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
@@ -30444,8 +30455,8 @@
           "status": "MATCH"
         },
         "documentationLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://github.com/spinrag/hubitat/blob/main/cloudflareDnsUpdater/README.md"
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
@@ -31889,7 +31900,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-06T07:03:05Z",
+  "snapshotGenerated": "2026-11-07T06:16:30Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",
