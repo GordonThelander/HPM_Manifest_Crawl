@@ -1,6 +1,6 @@
 {
   "dataset": "package-health",
-  "packageCount": 963,
+  "packageCount": 964,
   "packages": [
     {
       "checks": {
@@ -1165,7 +1165,7 @@
       "checks": {
         "communityLink": {
           "status": "PRESENT",
-          "url": "https://community.hubitat.com/t/beta-android-tv-remote-google-tv-and-android-tv-local-control/166822"
+          "url": "https://community.hubitat.com/t/release-android-tv-remote-google-tv-and-android-tv-local-control/166822"
         },
         "definitionIdentity": {
           "components": {
@@ -3453,8 +3453,10 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {},
-          "status": "NOT_AVAILABLE"
+          "components": {
+            "MATCH": 2
+          },
+          "status": "MATCH"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -3465,22 +3467,16 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "FAIL",
+          "status": "PASS",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
         },
         "sourceFetch": {
-          "components": 0,
-          "fetched": 0,
-          "status": "NOT_APPLICABLE"
+          "components": 2,
+          "fetched": 2,
+          "status": "PASS"
         }
       },
-      "crawlErrors": [
-        {
-          "level": "manifest",
-          "reason": "<urlopen error [Errno 111] Connection refused>",
-          "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
-        }
-      ],
+      "crawlErrors": [],
       "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555"
     },
     {
@@ -10102,8 +10098,11 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {},
-          "status": "NOT_AVAILABLE"
+          "components": {
+            "MATCH": 30,
+            "MISMATCH": 1
+          },
+          "status": "MISMATCH"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -10114,22 +10113,16 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "FAIL",
+          "status": "PASS",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
         },
         "sourceFetch": {
-          "components": 0,
-          "fetched": 0,
-          "status": "NOT_APPLICABLE"
+          "components": 31,
+          "fetched": 31,
+          "status": "PASS"
         }
       },
-      "crawlErrors": [
-        {
-          "level": "manifest",
-          "reason": "<urlopen error [Errno 111] Connection refused>",
-          "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
-        }
-      ],
+      "crawlErrors": [],
       "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71"
     },
     {
@@ -11499,7 +11492,7 @@
       "checks": {
         "communityLink": {
           "status": "PRESENT",
-          "url": "https://community.hubitat.com/t/beta-samsung-tv-remote-2016-and-later-tvs/166829"
+          "url": "https://community.hubitat.com/t/release-samsung-tv-remote-2016-and-later-tvs/166829"
         },
         "definitionIdentity": {
           "components": {
@@ -11700,8 +11693,10 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {},
-          "status": "NOT_AVAILABLE"
+          "components": {
+            "MATCH": 49
+          },
+          "status": "MATCH"
         },
         "documentationLink": {
           "status": "MISSING",
@@ -11712,23 +11707,50 @@
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "FAIL",
+          "status": "PASS",
           "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
         },
         "sourceFetch": {
-          "components": 0,
-          "fetched": 0,
-          "status": "NOT_APPLICABLE"
+          "components": 49,
+          "fetched": 49,
+          "status": "PASS"
         }
       },
-      "crawlErrors": [
-        {
-          "level": "manifest",
-          "reason": "<urlopen error [Errno 111] Connection refused>",
-          "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
-        }
-      ],
+      "crawlErrors": [],
       "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379"
+    },
+    {
+      "checks": {
+        "communityLink": {
+          "status": "PRESENT",
+          "url": "https://community.hubitat.com/t/release-mqtt-manager-improved-app-drivers-for-mqtt-messaging/167340"
+        },
+        "definitionIdentity": {
+          "components": {
+            "MATCH": 3
+          },
+          "status": "MATCH"
+        },
+        "documentationLink": {
+          "status": "PRESENT",
+          "url": "https://github.com/youzer-name/Hubitat-MQTT-Manager#readme"
+        },
+        "httpsTransport": {
+          "nonHttpsUrls": [],
+          "status": "PASS"
+        },
+        "manifestFetch": {
+          "status": "PASS",
+          "url": "https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/packageManifest.json"
+        },
+        "sourceFetch": {
+          "components": 3,
+          "fetched": 3,
+          "status": "PASS"
+        }
+      },
+      "crawlErrors": [],
+      "packageId": "hpm:aae97e10-9b16-436a-ba33-70facffb160b"
     },
     {
       "checks": {
@@ -31900,7 +31922,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-07T06:16:30Z",
+  "snapshotGenerated": "2026-11-08T06:21:17Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

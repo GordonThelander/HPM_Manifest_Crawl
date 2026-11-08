@@ -1,9 +1,18 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-07T06:16:30Z`.
+Latest observation: `2026-11-08T06:21:17Z`.
 
-**60 package change(s):** added 7, broken 3, declared definitions changed 6, source location changed 14, updated 53
+**69 package change(s):** added 8, broken 3, declared definitions changed 9, restored 3, source location changed 18, updated 61
 
+- [Unifi Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
+- [Tesla Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
+- [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
+- [Neptune Systems Apex: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
+- [MQTT Manager: added.](https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/packageManifest.json)
+- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
+- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [YoLink™ Local Hub Connector: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/yolink-local-hub.json)
 - [Unifi Drivers: updated, changed source location, changed declared definitions, became unavailable.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
 - [Tesla Drivers: updated, changed source location, changed declared definitions, became unavailable.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)

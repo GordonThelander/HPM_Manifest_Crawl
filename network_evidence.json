@@ -1,9 +1,9 @@
 {
   "counts": {
-    "BOTH": 183,
+    "BOTH": 186,
     "CLOUD": 275,
     "INSUFFICIENT": 305,
-    "LAN": 200
+    "LAN": 198
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 963,
+  "packageCount": 964,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1553,12 +1553,12 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/beta-android-tv-remote-google-tv-and-android-tv-local-control/166822",
+      "communityUrl": "https://community.hubitat.com/t/release-android-tv-remote-google-tv-and-android-tv-local-control/166822",
       "declared": {
         "cloudTag": false,
         "lanTag": true
       },
-      "description": "Google TV / Android TV control over the LAN with no bridge (beta), with an optional tester app.",
+      "description": "Google TV / Android TV control over the LAN with no bridge, with an optional tester app.",
       "documentationUrl": "https://github.com/hubitrep/hubitat/tree/main/androidtv",
       "id": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
       "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json",
@@ -15533,6 +15533,48 @@
       ]
     },
     {
+      "author": "youzer-name",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-mqtt-manager-improved-app-drivers-for-mqtt-messaging/167340",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "MQTT topics as Hubitat devices: payload, switch, button and notification per topic, wildcards, and publish from rules.",
+      "documentationUrl": "https://github.com/youzer-name/Hubitat-MQTT-Manager#readme",
+      "id": "hpm:aae97e10-9b16-436a-ba33-70facffb160b",
+      "manifestUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/packageManifest.json",
+      "name": "MQTT Manager",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "INFRASTRUCTURE",
+              "name": "MQTT Broker",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "MQTT"
+            }
+          ],
+          "documentation": [],
+          "id": "mqtt-native",
+          "name": "Hubitat MQTT Integration",
+          "status": "VERIFIED_CORE"
+        }
+      ],
+      "tags": [
+        "Automations & Groups",
+        "LAN",
+        "MQTT"
+      ]
+    },
+    {
       "author": "Justin Leonard",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -15911,9 +15953,9 @@
       ]
     },
     {
-      "author": null,
+      "author": "Snell",
       "category": "Integrations",
-      "classification": "LAN",
+      "classification": "BOTH",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -15925,10 +15967,12 @@
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
       "name": "Neptune Systems Apex",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 31,
+        "urlLiteralCount": 95
       },
       "reviewed": [],
       "tags": [
@@ -19924,12 +19968,12 @@
       "author": "hubitrep (original by Dave Gutheinz)",
       "category": "Integrations",
       "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/beta-samsung-tv-remote-2016-and-later-tvs/166829",
+      "communityUrl": "https://community.hubitat.com/t/release-samsung-tv-remote-2016-and-later-tvs/166829",
       "declared": {
         "cloudTag": false,
         "lanTag": true
       },
-      "description": "Samsung Tizen TVs (2016 and later) over the LAN (beta): power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver.",
+      "description": "Samsung Tizen TVs (2016 and later) over the LAN: power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver.",
       "documentationUrl": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
       "id": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
       "manifestUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json",
@@ -23409,9 +23453,9 @@
       ]
     },
     {
-      "author": null,
+      "author": "Snell",
       "category": "Integrations",
-      "classification": "LAN",
+      "classification": "BOTH",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -23423,10 +23467,12 @@
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
       "name": "Tesla Drivers",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 46
       },
       "reviewed": [],
       "tags": [
@@ -25183,9 +25229,9 @@
       ]
     },
     {
-      "author": null,
+      "author": "Snell",
       "category": "Integrations",
-      "classification": "LAN",
+      "classification": "BOTH",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
@@ -25197,10 +25243,12 @@
       "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
       "name": "Unifi Drivers",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 49,
+        "urlLiteralCount": 179
       },
       "reviewed": [],
       "tags": [
@@ -29038,5 +29086,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-07T06:16:30Z"
+  "snapshotGenerated": "2026-11-08T06:21:17Z"
 }

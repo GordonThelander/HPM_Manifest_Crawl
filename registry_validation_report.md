@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-07T06:16:30Z`
+- Snapshot: `2026-11-08T06:21:17Z`
 - HPM repositories in master list: **227**
 - Repositories fetched successfully: **226**
-- Packages indexed: **963**
+- Packages indexed: **964**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **16**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -603,9 +603,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | --- | --- | --- |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
-| manifest | https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json | <urlopen error [Errno 111] Connection refused> |
-| manifest | https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json | <urlopen error [Errno 111] Connection refused> |
-| manifest | https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json | <urlopen error [Errno 111] Connection refused> |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
@@ -640,13 +637,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2291 |
-| Source URLs fetched | 2281 |
+| Distinct source URLs | 2376 |
+| Source URLs fetched | 2366 |
 | Source URLs failed | 10 |
-| Components attempted | 2307 |
-| Components fetched | 2297 |
-| Literal definitions verified | 2286 |
-| Components with observations | 2153 |
+| Components attempted | 2392 |
+| Components fetched | 2382 |
+| Literal definitions verified | 2371 |
+| Components with observations | 2238 |
 
 ### Official Hubitat documentation pass
 
