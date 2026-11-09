@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 964,
+  "packageCount": 966,
   "packages": [
     {
       "apps": [],
@@ -16531,7 +16531,7 @@
       "manifestFetched": true,
       "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
       "packageId": "4611a36f-d271-4e2b-ab89-55a41a5ab133",
-      "packageName": "HubiThings Replica",
+      "packageName": "HubiThings Replica [DEPRECATED]",
       "repoAuthor": "Bloodtick Jones",
       "repoName": "Bloodtick Jones",
       "repoUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/repository.json",
@@ -51550,8 +51550,8 @@
           ],
           "sourceBytes": 564869,
           "sourceFetched": true,
-          "sourceSha256": "b9cc4963b3a756d0d4072705df55779add7ef401496c563cfeaa1460efd3d9b5",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvancedApp.groovy"
+          "sourceSha256": "13be1c5d4a1d10fabbc1bcd47dac3019011d9e3037d986ba3201f2f2eb2a65e3",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvancedApp.groovy"
         }
       ],
       "author": "Daniel Winks",
@@ -51635,8 +51635,8 @@
           ],
           "sourceBytes": 44494,
           "sourceFetched": true,
-          "sourceSha256": "75b0ae493213f99e0152e3ef5f62b3afecff13779a9f95d2e22fe74c3ad7f370",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvGroup.groovy"
+          "sourceSha256": "6ccbf8178bf8b10e325147c6c6d30e36bc1d23cf40c77a47a44866124b071eb4",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvGroup.groovy"
         },
         {
           "definitionLine": 94,
@@ -52047,7 +52047,7 @@
             },
             {
               "evidence": "callbackUrl = \"http://${callback}${request.eventPath}\"",
-              "line": 4337,
+              "line": 4338,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${callback",
@@ -52057,121 +52057,121 @@
             },
             {
               "evidence": "entry.socket = interfaces.rawSocket",
-              "line": 4356,
+              "line": 4357,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(UPNP_REQUEST_TIMEOUT_SECONDS, 'upnpSubscriptionWatchdog', [data: [guid: guid], overwrite: true])",
-              "line": 4363,
+              "line": 4364,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.connect([timeout: UPNP_REQUEST_TIMEOUT_SECONDS * 1000, inputReader: { InputStream input, Closure parseCallback ->",
-              "line": 4365,
+              "line": 4366,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(http.toString())",
-              "line": 4401,
+              "line": 4402,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "case 'sid1': runIn(delay, 'retryUpnpSid1', options); break",
-              "line": 4548,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "case 'sid2': runIn(delay, 'retryUpnpSid2', options); break",
-              "line": 4549,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "case 'sid3': runIn(delay, 'retryUpnpSid3', options); break",
-              "line": 4550,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "case 'sid4': runIn(delay, 'retryUpnpSid4', options); break",
               "line": 4551,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "case 'sid2': runIn(delay, 'retryUpnpSid2', options); break",
+              "line": 4552,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "case 'sid3': runIn(delay, 'retryUpnpSid3', options); break",
+              "line": 4553,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "case 'sid4': runIn(delay, 'retryUpnpSid4', options); break",
+              "line": 4554,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule('retryUpnpSid1')",
-              "line": 4631,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('retryUpnpSid2')",
-              "line": 4632,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('retryUpnpSid3')",
-              "line": 4633,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('retryUpnpSid4')",
               "line": 4634,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule('upnpSubscriptionWatchdog')",
-              "line": 4639,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('upnpSubscriptionWatchdog')",
-              "line": 4660,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('retryUpnpSid1')",
-              "line": 4661,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
               "evidence": "unschedule('retryUpnpSid2')",
-              "line": 4662,
+              "line": 4635,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryUpnpSid3')",
-              "line": 4663,
+              "line": 4636,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryUpnpSid4')",
+              "line": 4637,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('upnpSubscriptionWatchdog')",
+              "line": 4642,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('upnpSubscriptionWatchdog')",
+              "line": 4663,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('retryUpnpSid1')",
               "line": 4664,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule('retryUpnpSid2')",
+              "line": 4665,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('retryUpnpSid3')",
+              "line": 4666,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('retryUpnpSid4')",
+              "line": 4667,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(2, 'subscribeToZgtEvents', [overwrite: true])",
-              "line": 4825,
+              "line": 4828,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return \"https://${deviceIp}:1443/api/v1/\"",
-              "line": 4950,
+              "line": 4953,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${deviceip",
@@ -52181,7 +52181,7 @@
             },
             {
               "evidence": "return \"http://${deviceIp}:1400\"",
-              "line": 4960,
+              "line": 4963,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${deviceip",
@@ -52191,7 +52191,7 @@
             },
             {
               "evidence": "return secondaryDeviceIps.collect{\"https://${it}:1443/api/v1/\"}",
-              "line": 4970,
+              "line": 4973,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${it",
@@ -52201,7 +52201,7 @@
             },
             {
               "evidence": "return secondaryDeviceIps.collect{\"http://${it}:1400\"}",
-              "line": 4978,
+              "line": 4981,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${it",
@@ -52211,43 +52211,43 @@
             },
             {
               "evidence": "runIn(1, 'flushPendingLocalDeviceEvents', [overwrite: true])",
-              "line": 5162,
+              "line": 5165,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'subscribeToPlaybackDebounce', [data:[groupId:groupId], overwrite:true])",
-              "line": 5310,
+              "line": 5313,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, 'subscribeToAVTransport', [overwrite: true])",
-              "line": 5399,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(2, 'subscribeToWsEvents', [overwrite: true])",
-              "line": 5400,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(2, 'getPlaybackMetadataStatus', [overwrite: true])",
-              "line": 5401,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(2, 'playerGetGroupsFull', [overwrite: true])",
               "line": 5402,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(2, 'subscribeToWsEvents', [overwrite: true])",
+              "line": 5403,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, 'getPlaybackMetadataStatus', [overwrite: true])",
+              "line": 5404,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, 'playerGetGroupsFull', [overwrite: true])",
+              "line": 5405,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "// Format: http://IP:PORT/AArl/file.jpghttp://IP:PORT/AArm/file.jpghttp://IP:PORT/AArs/file.jpg",
-              "line": 5501,
+              "line": 5504,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "ip",
@@ -52257,7 +52257,7 @@
             },
             {
               "evidence": "// Format: http://IP:PORT/AArl/file.jpghttp://IP:PORT/AArm/file.jpghttp://IP:PORT/AArs/file.jpg",
-              "line": 5559,
+              "line": 5562,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "ip",
@@ -52267,223 +52267,223 @@
             },
             {
               "evidence": "// runIn(clipDuration + 10, 'dequeueAudioClip')",
-              "line": 5943,
+              "line": 5946,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'flushPendingGroupDeviceUpdates', [overwrite: true])",
-              "line": 6108,
+              "line": 6111,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'flushPendingGroupDeviceUpdates', [overwrite: true])",
-              "line": 6188,
+              "line": 6191,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('websocketConnectWatchdog')",
-              "line": 6304,
+              "line": 6307,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delaySeconds, 'retryWebSocketConnection', [overwrite: true])",
-              "line": 6335,
+              "line": 6338,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryWebSocketConnection')",
-              "line": 6340,
+              "line": 6343,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.connect(getDeviceDataValue('websocketUrl'), headers: headers, ignoreSSLIssues: true)",
-              "line": 6369,
+              "line": 6372,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(WS_CONNECT_TIMEOUT_SECONDS, 'websocketConnectWatchdog', [overwrite: true])",
-              "line": 6370,
+              "line": 6373,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('renewWebsocketConnection')",
-              "line": 6371,
+              "line": 6374,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryWebSocketConnection')",
-              "line": 6372,
+              "line": 6375,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.close()",
-              "line": 6392,
+              "line": 6395,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage(message)",
-              "line": 6434,
+              "line": 6437,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage(message)",
-              "line": 6493,
+              "line": 6496,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule('watchExpectedSubscriptionEvents')",
-              "line": 6605,
+              "line": 6608,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'watchExpectedSubscriptionEvents', [overwrite: true])",
-              "line": 6610,
+              "line": 6613,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage(json)",
-              "line": 6758,
+              "line": 6761,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(1, 'drainTransportCommandQueue', [overwrite: true])",
-              "line": 6932,
+              "line": 6935,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(TRANSPORT_WATCHDOG_SECONDS, 'watchTransportCommand', [overwrite: true, data: [commandId: commandId]])",
-              "line": 6976,
+              "line": 6979,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('watchTransportCommand')",
-              "line": 6987,
+              "line": 6990,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryUnconfirmedTransportCommand')",
-              "line": 6988,
+              "line": 6991,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, 'watchTransportCommand', [overwrite: true, data: [commandId: commandId]])",
-              "line": 6999,
+              "line": 7002,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, 'retryUnconfirmedTransportCommand', [overwrite: true, data: [commandId: commandId]])",
-              "line": 7013,
+              "line": 7016,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('watchTransportCommand')",
-              "line": 7030,
+              "line": 7033,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryUnconfirmedTransportCommand')",
-              "line": 7031,
+              "line": 7034,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(TRANSPORT_WATCHDOG_SECONDS, 'watchTransportCommand',",
-              "line": 7050,
+              "line": 7053,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('watchTransportCommand')",
-              "line": 7098,
+              "line": 7101,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('retryUnconfirmedTransportCommand')",
-              "line": 7099,
+              "line": 7102,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'drainTransportCommandQueue', [overwrite: true])",
-              "line": 7103,
+              "line": 7106,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, 'playerPlay', [overwrite: true])",
-              "line": 7335,
+              "line": 7338,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('playerPlay')",
-              "line": 7339,
+              "line": 7342,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.sendMessage(message)",
-              "line": 7562,
+              "line": 7565,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "asynchttpPost(callback, params)",
-              "line": 7904,
+              "line": 7907,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost(callback, params, data)",
-              "line": 7915,
+              "line": 7918,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule('watchExpectedUpnpSubscriptionEvents')",
-              "line": 7959,
+              "line": 7962,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'watchExpectedUpnpSubscriptionEvents', [overwrite: true])",
-              "line": 7964,
+              "line": 7967,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(duration + 2, 5), 'restoreDirectStreamTts', [overwrite: true,",
-              "line": 8079,
+              "line": 8082,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String handler = \"(function(){fetch('http://${device.hub.localIP}/device/runmethod',{method:'POST',headers:{'Content-Type':'application/json'},body:${JsonOutput.toJson(payload)}})})()\"",
-              "line": 8485,
+              "line": 8488,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${device.hub.localip",
@@ -52493,45 +52493,45 @@
             },
             {
               "evidence": "runIn(5, 'retryAudioClipSubscription', [overwrite: true])",
-              "line": 8714,
+              "line": 8717,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(time, 'getPlaybackMetadataStatus', [overwrite: true])",
-              "line": 9430,
+              "line": 9433,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(12, 'isFavoritePlaying', [overwrite: true, data: data])",
-              "line": 9462,
+              "line": 9465,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(12, 'isPlaylistPlaying', [overwrite: true, data: data])",
-              "line": 9463,
+              "line": 9466,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('audioClipWatchdog')",
-              "line": 9537,
+              "line": 9540,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delaySeconds, 'audioClipWatchdog', [overwrite: true,",
-              "line": 9594,
+              "line": 9597,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 431934,
+          "sourceBytes": 432096,
           "sourceFetched": true,
-          "sourceSha256": "b37489872fef2ef9911328ab050727748965bb7f203af0e153e1e2e0be865549",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvPlayer.groovy"
+          "sourceSha256": "2352649cc4b515c409e2ad8092dc6af7c70cde14cbdeff63fff753d867273109",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvPlayer.groovy"
         },
         {
           "definitionLine": 25,
@@ -52553,8 +52553,8 @@
           ],
           "sourceBytes": 1764,
           "sourceFetched": true,
-          "sourceSha256": "0731ee598cbff354d865e20bfccca9965b443ba1929710520d9793fb9eab2f45",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSnapshot.groovy"
+          "sourceSha256": "f59b5d6e15eb64d805a2c1af96669f858a976a06b3191701df0f789c24fe28da",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSnapshot.groovy"
         },
         {
           "definitionLine": 53,
@@ -52582,8 +52582,8 @@
           ],
           "sourceBytes": 2633,
           "sourceFetched": true,
-          "sourceSha256": "354d72037d2f771d4d7a2074515e30a29b59469b78689870c16726bd3aed2743",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvBatteryStats.groovy"
+          "sourceSha256": "7d39a03fcd02983dd30db9927689b1b817fab051c4623bdf9b3de2821259a883",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvBatteryStats.groovy"
         },
         {
           "definitionLine": 25,
@@ -52605,8 +52605,8 @@
           ],
           "sourceBytes": 5572,
           "sourceFetched": true,
-          "sourceSha256": "b9ccd854d9fd4cc59ec860a270ba99c21464a7f67de9adac3bf9814491b97645",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvFavorites.groovy"
+          "sourceSha256": "d3e7db40a04b3cfc2ccb2b1dedf430c4c4d732d988f73d1d14a32356e6ed998d",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvFavorites.groovy"
         },
         {
           "definitionLine": 47,
@@ -52684,8 +52684,8 @@
           ],
           "sourceBytes": 9726,
           "sourceFetched": true,
-          "sourceSha256": "5f12e488b2e324d80deb0502c7fcef66b78af00612bc82f642b93a5a03075375",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSecondaries.groovy"
+          "sourceSha256": "922ff52decd57ed366ddb27a21b15f5bc12728e3cf410c6923f6ada795179267",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSecondaries.groovy"
         },
         {
           "definitionLine": 25,
@@ -52707,8 +52707,8 @@
           ],
           "sourceBytes": 5864,
           "sourceFetched": true,
-          "sourceSha256": "63cb434db03db093f0837f4bfa6eae34640abaec40fa44f57c991d55c6eea77c",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvPlaylist.groovy"
+          "sourceSha256": "cdee79cf6d8bfcc3f9d68814cbb8e78a7fe49ec014341db0e2c35a54c5d8d52d",
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvPlaylist.groovy"
         },
         {
           "definitionLine": 21,
@@ -52731,7 +52731,7 @@
           "sourceBytes": 2004,
           "sourceFetched": true,
           "sourceSha256": "14f330c30af4ff2257de727a2fb5afe81564b2052513581437ae0518ddee3333",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvQueue.groovy"
         },
         {
           "definitionLine": 21,
@@ -52754,7 +52754,7 @@
           "sourceBytes": 1711,
           "sourceFetched": true,
           "sourceSha256": "eeb66eec3d23a36c34bbce547cfbde05f898681a5b4c09f6355d809bd1cf8ae9",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSleepTimer.groovy"
         },
         {
           "definitionLine": 25,
@@ -52777,7 +52777,7 @@
           "sourceBytes": 3943,
           "sourceFetched": true,
           "sourceSha256": "19e2a2eb97759bc2bf109523baf2afed19dadf7584a6fbaf9f1a3c49443179ae",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvAlarmSwitch.groovy"
         },
         {
           "definitionLine": 25,
@@ -52800,7 +52800,7 @@
           "sourceBytes": 6637,
           "sourceFetched": true,
           "sourceSha256": "523a31519f10822482dde4e6a5c0bc32300fb6b96b9663dae44bae99797cc40d",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvAlarmManager.groovy"
         }
       ],
       "manifestFetched": true,
@@ -52815,7 +52815,7 @@
         "Multimedia",
         "LAN"
       ],
-      "version": "0.15.5"
+      "version": "0.15.6"
     },
     {
       "apps": [],
@@ -92728,7 +92728,7 @@
     {
       "apps": [
         {
-          "definitionLine": 39,
+          "definitionLine": 41,
           "definitionName": "Battery Monitor 2.0",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Battery Monitor 2.0",
@@ -92736,7 +92736,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/BatteryMonitor2.0.groovy\",",
-              "line": 45,
+              "line": 47,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -92746,13 +92746,13 @@
             },
             {
               "evidence": "oauth: true",
-              "line": 50,
+              "line": 52,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "@Field static final String COMMUNITY_URL = \"https://community.hubitat.com/t/release-battery-monitor-2-0/162329\"",
-              "line": 54,
+              "line": 56,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -92762,7 +92762,7 @@
             },
             {
               "evidence": "@Field static final String COFFEE_URL = \"https://paypal.me/jdthomas24?locale.x=en_US&country.x=US\"",
-              "line": 55,
+              "line": 57,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "paypal.me",
@@ -92772,7 +92772,7 @@
             },
             {
               "evidence": "@Field static final String DHM_URL = \"https://community.hubitat.com/t/release-device-health-monitor/163229\"",
-              "line": 57,
+              "line": 59,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -92782,79 +92782,79 @@
             },
             {
               "evidence": "mappings {",
-              "line": 72,
+              "line": 74,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 89,
+              "line": 91,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, disableDebugLogging)",
-              "line": 94,
+              "line": 96,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 203,
+              "line": 205,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "subscribe(devList, \"battery\", batteryHandler)",
-              "line": 214,
+              "line": 216,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "input \"autoDevices\", \"capability.battery\",",
-              "line": 468,
+              "line": 470,
               "type": "CAPABILITY_REFERENCE",
               "value": "battery"
             },
             {
               "evidence": "input \"notifyDevices\", \"capability.notification\", title: \"Notification devices\", multiple: true, required: false, width: 6",
-              "line": 504,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "notification"
-            },
-            {
-              "evidence": "input \"pushoverDevices\", \"capability.notification\",",
               "line": 506,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
+              "evidence": "input \"pushoverDevices\", \"capability.notification\",",
+              "line": 508,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
               "evidence": "unschedule(\"reportScheduler\")",
-              "line": 599,
+              "line": 611,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(summaryTime, reportScheduler)",
-              "line": 602,
+              "line": 614,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"scanAllDevices\")",
-              "line": 606,
+              "line": 618,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cronExpr, scanAllDevices)",
-              "line": 615,
+              "line": 627,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def htmlLink = \"\\n🔗 <a href='http://${hubIp}/installedapp/configure/${app.id}/mainPage'>Battery Monitor</a>\"",
-              "line": 822,
+              "line": 834,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${hubip",
@@ -92864,7 +92864,7 @@
             },
             {
               "evidence": "def plainLink = \"\\n🔗 Battery Monitor: http://${hubIp}/installedapp/configure/${app.id}/mainPage\"",
-              "line": 823,
+              "line": 835,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${hubip",
@@ -92874,13 +92874,13 @@
             },
             {
               "evidence": "runIn(1, \"scanAllDevices\", [overwrite: true])",
-              "line": 1472,
+              "line": 1484,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>",
-              "line": 1492,
+              "line": 1504,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cdnjs.cloudflare.com",
@@ -92889,16 +92889,16 @@
               }
             }
           ],
-          "sourceBytes": 176531,
+          "sourceBytes": 178336,
           "sourceFetched": true,
-          "sourceSha256": "71d334d6b038a7cd661e2673370edd5a8a1d60c0dddb9acc3679cc06a1ea79fe",
+          "sourceSha256": "1262fba35733110c9a24b1bc0a07471c9cb1734b2b077ded703cd219b8bdac86",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/BatteryMonitor2.0.groovy"
         }
       ],
       "author": "jdthomas24",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
-      "dateReleased": "2026-11-04",
+      "dateReleased": "2026-11-08",
       "description": "Advanced Hubitat battery monitoring with analytics, trends, and replacement tracking. Auto-discover devices, monitor battery health, track replacements, and receive daily reports.",
       "documentationLink": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
       "drivers": [],
@@ -92913,7 +92913,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.7.5"
+      "version": "2.7.6"
     },
     {
       "apps": [
@@ -139601,7 +139601,7 @@
     {
       "apps": [
         {
-          "definitionLine": 310,
+          "definitionLine": 323,
           "definitionName": "OwnTracks",
           "definitionNamespace": "lpakula",
           "manifestName": "OwnTracks",
@@ -139649,7 +139649,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 205,
+              "line": 206,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.geoapify.com",
@@ -139659,7 +139659,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 205,
+              "line": 206,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.opencagedata.com",
@@ -139669,7 +139669,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_ADDRESS = [ 1: 'https://maps.googleapis.com/maps/api/geocode/json', 2: 'https://api.geoapify.com/v1/geocode/', 3: 'https://api.opencagedata.com/geocode/v1/json' ]",
-              "line": 205,
+              "line": 206,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -139679,7 +139679,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 214,
+              "line": 215,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "apidocs.geoapify.com",
@@ -139689,7 +139689,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 214,
+              "line": 215,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.google.com",
@@ -139699,7 +139699,7 @@
             },
             {
               "evidence": "@Field static final Map GEOCODE_API_KEY_LINK = [ 1: \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\", 2: \"<a href='https://apidocs.geoapify.com/docs/geocod",
-              "line": 214,
+              "line": 215,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "opencagedata.com",
@@ -139709,7 +139709,7 @@
             },
             {
               "evidence": "@Field String GOOGLE_MAP_API_KEY_LINK = \"<a href='https://developers.google.com/maps/documentation/directions/get-api-key/' target='_blank'>Sign up for a Google API Key</a>\"",
-              "line": 250,
+              "line": 260,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "developers.google.com",
@@ -139719,7 +139719,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20App.groovy',",
-              "line": 315,
+              "line": 328,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -139729,7 +139729,7 @@
             },
             {
               "evidence": "oauth: [displayName: 'OwnTracks', displayLink: 'https://owntracks.org/'],",
-              "line": 319,
+              "line": 332,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -139739,13 +139739,23 @@
             },
             {
               "evidence": "createAccessToken()",
-              "line": 359,
+              "line": 373,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
+              "evidence": "input name: 'externalLinkBaseUrl', type: 'string', title: \"External base URL that your reverse proxy forwards to <b>${getFullLocalApiServerUrl()}</b>, e.g. https://example.com:8443/owntracks\", required: true, submitOnChange: true",
+              "line": 529,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "example.com",
+                "scheme": "https",
+                "url": "https://example.com:8443/owntracks"
+              }
+            },
+            {
               "evidence": "paragraph(GEOCODE_API_KEY_LINK[geocodeProvider?.toInteger()] + (geocodeProvider?.toInteger() == 1 ? \" -- <i><b>'Geocoding API'</b> must be enabled under <b><a href='https://console.cloud.google.com/apis/dashboard' target='_blank'>API's & Se",
-              "line": 525,
+              "line": 565,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "console.cloud.google.com",
@@ -139755,7 +139765,7 @@
             },
             {
               "evidence": "paragraph(GOOGLE_MAP_API_KEY_LINK + \" -- <i><b>'Maps JavaScript API'</b> must be enabled under <b><a href='https://console.cloud.google.com/apis/dashboard' target='_blank'>API's & Services</a></b>. Use <b>API restrictions</b> and select <b>",
-              "line": 563,
+              "line": 603,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "console.cloud.google.com",
@@ -139765,7 +139775,7 @@
             },
             {
               "evidence": "input name: 'memberPinColor', type: 'string', title: \"<b>Member pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (MidnightBlue) or a 6-digit <a href='https://www.w3school",
-              "line": 582,
+              "line": 622,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139775,7 +139785,7 @@
             },
             {
               "evidence": "input name: 'memberPinColor', type: 'string', title: \"<b>Member pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (MidnightBlue) or a 6-digit <a href='https://www.w3school",
-              "line": 582,
+              "line": 622,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139785,7 +139795,7 @@
             },
             {
               "evidence": "input name: 'memberGlyphColor', type: 'string', title: \"<b>${selectMemberGlyph} glyph and history color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Purple) or a 6-digit <a hr",
-              "line": 595,
+              "line": 635,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139795,7 +139805,7 @@
             },
             {
               "evidence": "input name: 'memberGlyphColor', type: 'string', title: \"<b>${selectMemberGlyph} glyph and history color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Purple) or a 6-digit <a hr",
-              "line": 595,
+              "line": 635,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139805,7 +139815,7 @@
             },
             {
               "evidence": "input name: 'regionPinColor', type: 'string', title: \"<b>Region pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (DarkRed) or a 6-digit <a href='https://www.w3schools.com",
-              "line": 598,
+              "line": 638,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139815,7 +139825,7 @@
             },
             {
               "evidence": "input name: 'regionPinColor', type: 'string', title: \"<b>Region pin color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (DarkRed) or a 6-digit <a href='https://www.w3schools.com",
-              "line": 598,
+              "line": 638,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139825,7 +139835,7 @@
             },
             {
               "evidence": "input name: 'regionGlyphColor', type: 'string', title: \"<b>Region glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Maroon) or a 6-digit <a href='https://www.w3schools.",
-              "line": 599,
+              "line": 639,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139835,7 +139845,7 @@
             },
             {
               "evidence": "input name: 'regionGlyphColor', type: 'string', title: \"<b>Region glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (Maroon) or a 6-digit <a href='https://www.w3schools.",
-              "line": 599,
+              "line": 639,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139845,7 +139855,7 @@
             },
             {
               "evidence": "input name: 'regionHomeGlyphColor', type: 'string', title: \"<b>Region home glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (WhiteSmoke) or a 6-digit <a href='https://w",
-              "line": 600,
+              "line": 640,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
@@ -139855,17 +139865,27 @@
             },
             {
               "evidence": "input name: 'regionHomeGlyphColor', type: 'string', title: \"<b>Region home glyph color</b>: Enter a <a href='https://www.w3schools.com/tags/ref_colornames.asp' target='_blank'>HTML color name</a> (WhiteSmoke) or a 6-digit <a href='https://w",
-              "line": 600,
+              "line": 640,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3schools.com",
                 "scheme": "https",
                 "url": "https://www.w3schools.com/tags/ref_colornames.asp"
+              }
+            },
+            {
+              "evidence": "input name: 'mobileExternalUrl', type: 'string', title: \"Full URL the mobile devices post to, which your reverse proxy forwards to <b>${getFullLocalApiServerUrl()}/webhook</b>, e.g. https://example.com/owntracks\", required: true, submitOnCh",
+              "line": 660,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "example.com",
+                "scheme": "https",
+                "url": "https://example.com/owntracks"
               }
             },
             {
               "evidence": "paragraph(\"\"\"This integration requires the <a href='https://owntracks.org/' target='_blank'>OwnTracks</a> app to be installed on your mobile device.\\r",
-              "line": 611,
+              "line": 669,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -139875,7 +139895,7 @@
             },
             {
               "evidence": "| a. Navigate to the <a href='http://${location.hubs[0].getDataValue('localIP')}/hub/fileManager' target='_blank'>Hubitat File Manager</a> ('Settings->File Manager').\\r",
-              "line": 649,
+              "line": 707,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -139883,7 +139903,7 @@
             },
             {
               "evidence": "|For the source code and instructions, navigate to <a href='https://github.com/owntracks/docker-recorder/' target='_blank'>OwnTracks Recorder GitHub</a> \\r\\r",
-              "line": 668,
+              "line": 726,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -139893,7 +139913,7 @@
             },
             {
               "evidence": "|For the source code and instructions, navigate to <a href='https://github.com/owntracks/frontend/' target='_blank'>OwnTracks Frontend GitHub</a> \\r\\r",
-              "line": 698,
+              "line": 756,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -139903,7 +139923,7 @@
             },
             {
               "evidence": "|3. In the <a href='http://${location.hubs[0].getDataValue('localIP')}/logs' target='_blank'>Hubitat log</a>, look for the 'trace' output that looks like this:\\r",
-              "line": 716,
+              "line": 774,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -139911,7 +139931,7 @@
             },
             {
               "evidence": "paragraph(\"The <a href='https://owntracks.org/booklet/clients/recorder/' target='_blank'>OwnTracks Recorder</a> (optional) can be installed for local tracking. For the Recorder dashboard tiles and links to work outside the home network, the",
-              "line": 734,
+              "line": 792,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "owntracks.org",
@@ -139921,7 +139941,7 @@
             },
             {
               "evidence": "input name: 'recorderURL', type: 'text', title: \"HTTP URL of the OwnTracks Recorder. It will be in the format <b>'http://enter.your.recorder.ip:8083'</b>, assuming using the default port of 8083. The app will automatically add the <b>'$RECO",
-              "line": 735,
+              "line": 793,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "enter.your.recorder.ip",
@@ -139931,61 +139951,61 @@
             },
             {
               "evidence": "input 'notificationStaleList', 'capability.notification', title: 'Select device(s) to get notifications when members stop reporting locations and go stale.', multiple: true, required: false, offerAll: true, submitOnChange: true",
-              "line": 977,
+              "line": 1035,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "input 'notificationList', 'capability.notification', title: 'Global enable/disable of notification devices. Select per member enter/leave notifications below for these devices.', multiple: true, required: false, offerAll: true, submitOnChan",
-              "line": 980,
+              "line": 1038,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 1222,
+              "line": 1476,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 1229,
+              "line": 1483,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "removeChildDevices(getChildDevices())",
-              "line": 1543,
+              "line": 1801,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 1725,
+              "line": 2003,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(debugResetHours * 3600, resetLogging)",
-              "line": 1781,
+              "line": 2059,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 0 $timeZoneOffset * * ? *\", dailyScheduler)",
-              "line": 1799,
+              "line": 2077,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule('0 0 0 * * ? *', nightlyMaintenance)",
-              "line": 1801,
+              "line": 2079,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return (imageCards ? \"http://${location.hubs[0].getDataValue('localIP')}/local/${memberName}.jpg\" : '')",
-              "line": 1844,
+              "line": 2122,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -139993,13 +140013,13 @@
             },
             {
               "evidence": "runIn(DEFAULT_staleLocationWatchdogInterval, locationFixWatchdog)",
-              "line": 1931,
+              "line": 2209,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "memberName = \"<a href='http://${location.hubs[0].getDataValue('localIP')}/device/edit/\" + deviceWrapper?.getId() + \"' target='_blank'>\" + member.name + '</a>'",
-              "line": 2001,
+              "line": 2279,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "url": "http://${location.hubs[0].getDataValue("
@@ -140007,19 +140027,19 @@
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 2090,
+              "line": 2373,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpPost('httpCallbackMethod', postParams)",
-              "line": 2150,
+              "line": 2433,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "// or use: https://avanc.github.io/owntracks-cards/ to create and save the JSON",
-              "line": 2876,
+              "line": 3159,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "avanc.github.io",
@@ -140029,19 +140049,19 @@
             },
             {
               "evidence": "addChildDevice('lpakula', 'OwnTracks Common Driver', commonChildDNI(), ['name': COMMON_CHILDNAME, isComponent: false])",
-              "line": 3094,
+              "line": 3377,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice('lpakula', 'OwnTracks Driver', dNI, ['name': \"${deviceName}\", isComponent: false])",
-              "line": 3113,
+              "line": 3396,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "return(\"https://maps.google.com/?q=${region?.lat},${region?.lon}&z=17&output=embed&\")",
-              "line": 3365,
+              "line": 3648,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.google.com",
@@ -140051,7 +140071,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 3434,
+              "line": 3721,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -140061,7 +140081,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 3943,
+              "line": 4234,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -140071,7 +140091,7 @@
             },
             {
               "evidence": "<script src=\"https://maps.googleapis.com/maps/api/js?key=${APIKey}&loading=async&libraries=marker,maps&callback=initMap\"></script>",
-              "line": 5236,
+              "line": 5559,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.googleapis.com",
@@ -140081,32 +140101,32 @@
             },
             {
               "evidence": "mappings {",
-              "line": 5395,
+              "line": 5727,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "httpGet(uri: url, headers: [timeout: 5]) {",
-              "line": 5473,
+              "line": 5812,
               "type": "HTTP_CALL",
               "value": "httpGet"
             }
           ],
-          "sourceBytes": 337032,
+          "sourceBytes": 356903,
           "sourceFetched": true,
-          "sourceSha256": "94229842b61c63e2bfed2bea4d17a6229d55e3951e65fa7100decd021f641ef3",
+          "sourceSha256": "ce3ca6e7d046ebf4e21ebc835dc77695f499d61671d4a537c09e51055384aa83",
           "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20App.groovy"
         }
       ],
       "author": "Lyle Pakula",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-owntracks/130821",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-11-07",
       "description": "Connects OwnTracks mobile app to Hubitat",
       "documentationLink": "https://github.com/wir3z/hubitat/blob/main/owntracks-hubitat/README.md",
       "drivers": [
         {
-          "definitionLine": 186,
+          "definitionLine": 187,
           "definitionName": "OwnTracks Driver",
           "definitionNamespace": "lpakula",
           "manifestName": "OwnTracks Driver",
@@ -140124,7 +140144,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy'",
-              "line": 190,
+              "line": 191,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -140134,31 +140154,31 @@
             },
             {
               "evidence": "unschedule(processScheduledTransitionEvent)",
-              "line": 555,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn((state.transitionDeadband - data.tst), processScheduledTransitionEvent)",
               "line": 556,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn((state.transitionDeadband - data.tst), processScheduledTransitionEvent)",
+              "line": 557,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule(processScheduledTransitionEvent)",
-              "line": 595,
+              "line": 596,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, generateMemberTile)",
-              "line": 625,
+              "line": 626,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "<iframe src=\"https://maps.google.com/?q=${device.currentValue('lat')},${device.currentValue('lon')}&z=17&output=embed&\" style=\"height:100%;width:100%;border:none;\"></iframe>",
-              "line": 685,
+              "line": 686,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "maps.google.com",
@@ -140167,9 +140187,9 @@
               }
             }
           ],
-          "sourceBytes": 47136,
+          "sourceBytes": 47220,
           "sourceFetched": true,
-          "sourceSha256": "1b50c8c56a135f30e978fd60f8909440137ae7e785e18cbee7626c04d8609f6a",
+          "sourceSha256": "64a8809ac1a6805b4a6e017a6ef2acb1b92c344412fc184173ac6b16584a80ba",
           "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy"
         },
         {
@@ -168852,39 +168872,33 @@
               "value": true
             },
             {
-              "evidence": "runIn(1, \"handleLocationEvent\", [",
-              "line": 320,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
               "evidence": "runIn(24 * 60 * 60, \"reconnect\")",
-              "line": 407,
+              "line": 429,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.mqtt.subscribe(fullTopic)",
-              "line": 447,
+              "line": 529,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "areaPresence = addChildDevice(",
-              "line": 490,
+              "line": 565,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn((long) (60 * 60 * timeToNextCheck), \"startProximityCheck\", [",
-              "line": 516,
+              "line": 591,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 19936,
+          "sourceBytes": 23302,
           "sourceFetched": true,
-          "sourceSha256": "1729b6563326afacb95522cf4f852bcbc76002243c188c7bef83a5395c40782b",
+          "sourceSha256": "89019a1e8409059a2fc94d2a5b3754c4f57eb54b9a6a5d2d2e5005889126b965",
           "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-teslamate/main/hubitat-teslamate.groovy"
         },
         {
@@ -168905,9 +168919,9 @@
               }
             }
           ],
-          "sourceBytes": 6497,
+          "sourceBytes": 6966,
           "sourceFetched": true,
-          "sourceSha256": "56c32750db310f1e83e220ebfbebb08ac05f53b436775ff7f1c20fd6c315bf63",
+          "sourceSha256": "0e1c07e25fc64489cf16db89d21eb740bd7e54f96acec26d96331632836bdb8b",
           "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-teslamate/main/hubitat-teslamate-vehicle.groovy"
         }
       ],
@@ -168921,7 +168935,7 @@
       "tags": [
         "Vehicles & Transportation"
       ],
-      "version": "1.3"
+      "version": "1.4"
     },
     {
       "apps": [
@@ -243519,6 +243533,319 @@
       "repoUrl": "https://raw.githubusercontent.com/timothydodd/hubitat-acurite-mqtt/main/repository.json",
       "tags": [],
       "version": "2.0.2"
+    },
+    {
+      "apps": [
+        {
+          "definitionLine": 11,
+          "definitionName": "Evohome Connect",
+          "definitionNamespace": "tljungberg",
+          "manifestName": "Evohome Connect",
+          "manifestNamespace": "tljungberg",
+          "observations": [
+            {
+              "evidence": "* redistribute this work under those terms. See https://www.apache.org/licenses/LICENSE-2.0",
+              "line": 8,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "https",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "description: \"Enter only the server origin, for example https://mytotalconnectcomfort.com. Do not add /WebApi, /api or another path.\",",
+              "line": 23,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "mytotalconnectcomfort.com",
+                "scheme": "https",
+                "url": "https://mytotalconnectcomfort.com"
+              }
+            },
+            {
+              "evidence": "defaultValue: \"https://mytotalconnectcomfort.com\", required: true",
+              "line": 24,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "mytotalconnectcomfort.com",
+                "scheme": "https",
+                "url": "https://mytotalconnectcomfort.com"
+              }
+            },
+            {
+              "evidence": "input \"faultNotifyDevices\", \"capability.notification\",",
+              "line": 72,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input(name: settingName, type: \"capability.contactSensor\",",
+              "line": 103,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "contactSensor"
+            },
+            {
+              "evidence": "subscribe(location, \"mode\", \"locationModeChanged\")",
+              "line": 162,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "sensorDevices.each { sensorId, sensor -> subscribe(sensor, \"contact\", \"windowSensorEvent\") }",
+              "line": 181,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "List children = getChildDevices() ?: []",
+              "line": 238,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "def uninstalled() { unschedule(); unsubscribe(); getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) } }",
+              "line": 254,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "def uninstalled() { unschedule(); unsubscribe(); getChildDevices()?.each { deleteChildDevice(it.deviceNetworkId) } }",
+              "line": 254,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 257,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "state.root = (settings.apiHost ?: \"https://mytotalconnectcomfort.com\").trim().replaceAll('/+$', '')",
+              "line": 259,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "mytotalconnectcomfort.com",
+                "scheme": "https",
+                "url": "https://mytotalconnectcomfort.com"
+              }
+            },
+            {
+              "evidence": "(getChildDevices() ?: []).findAll { it.deviceNetworkId?.startsWith(\"Evohome-Z-\") }.each {",
+              "line": 276,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(1, (settings.pollMinutes ?: 5) as Integer) * 60, \"poll\", [overwrite: true])",
+              "line": 280,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"start\")",
+              "line": 281,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(1, (settings.pollMinutes ?: 5) as Integer) * 60, \"poll\", [overwrite: true])",
+              "line": 313,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySeconds as Integer, \"renewToken\", [overwrite: true])",
+              "line": 362,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"renewToken\")",
+              "line": 372,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"start\", [overwrite: true])",
+              "line": 379,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpPost(\"apiResponse\", [",
+              "line": 408,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpGet(\"apiResponse\", params,",
+              "line": 465,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpPut(\"apiResponse\", [uri: apiBase(), path: path, headers: headers(), contentType: \"application/json\", body: body, timeout: 30],",
+              "line": 473,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPut"
+            },
+            {
+              "evidence": "runIn(2, \"start\", [overwrite: true])",
+              "line": 510,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"poll\", [overwrite: true])",
+              "line": 517,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(2, (settings.settleSeconds ?: 8) as Integer), \"refreshAfterWrite\",",
+              "line": 588,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "def controller = getChildDevice(sdni(sid)) ?: addChildDevice(\"tljungberg\", \"Evohome System Controller\", sdni(sid), [label: (loc.locationInfo?.name ?: \"Evohome\") + \" System\"])",
+              "line": 618,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "def zone = getChildDevice(zdni(zid)) ?: addChildDevice(\"tljungberg\", \"Evohome Heating Zone\", zdni(zid), [label: (z.name ?: \"Zone\") + \" (evohome)\"])",
+              "line": 623,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "def hot = getChildDevice(hdni(hid)) ?: addChildDevice(\"tljungberg\", \"Evohome Hot Water\", hdni(hid), [label: \"Evohome Hot Water\"])",
+              "line": 633,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
+              "line": 909,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(1, (settings.debounceSeconds ?: 3) as Integer), \"flushZone\", [data: [zoneId: zid], overwrite: true])",
+              "line": 973,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
+              "line": 989,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
+              "line": 1105,
+              "type": "SCHEDULING",
+              "value": true
+            }
+          ],
+          "sourceBytes": 74892,
+          "sourceFetched": true,
+          "sourceSha256": "bec60cf209fa03be9fb3e7852f93f89ab96f1155e5082866c2a3ea57c812f29e",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeConnect.groovy"
+        }
+      ],
+      "author": "Tobey Ljungberg",
+      "category": "Convenience",
+      "communityLink": null,
+      "dateReleased": null,
+      "description": "Connects Hubitat Elevation to Honeywell/Resideo Evohome. Creates heating-zone thermostats, a system-mode controller and a hot-water device when available. Supports HomeKit zone control, debounced setpoint changes, status polling and reconciliation, Hubitat Away synchronisation, per-zone override preservation, window-contact protection, fault reporting and push notifications. Includes heating-only support and automatic API token renewal.",
+      "documentationLink": null,
+      "drivers": [
+        {
+          "definitionLine": 10,
+          "definitionName": "Evohome Heating Zone",
+          "definitionNamespace": "tljungberg",
+          "manifestName": "Evohome Heating Zone",
+          "manifestNamespace": "tljungberg",
+          "observations": [
+            {
+              "evidence": "* this work under those terms. https://www.apache.org/licenses/LICENSE-2.0",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "https",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+              }
+            }
+          ],
+          "sourceBytes": 19947,
+          "sourceFetched": true,
+          "sourceSha256": "59e1e05e6dfeedd3aa59a8b953af73304694f6b8726815e8009eceafb5918a34",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHeatingZone.groovy"
+        },
+        {
+          "definitionLine": 10,
+          "definitionName": "Evohome Hot Water",
+          "definitionNamespace": "tljungberg",
+          "manifestName": "Evohome Hot Water",
+          "manifestNamespace": "tljungberg",
+          "observations": [
+            {
+              "evidence": "* this work under those terms. https://www.apache.org/licenses/LICENSE-2.0",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "https",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+              }
+            }
+          ],
+          "sourceBytes": 8265,
+          "sourceFetched": true,
+          "sourceSha256": "c4dae3c044c4cdc0b23e7e5d6d2083eb4ed0b28f53768b0e21e1db81a96bb288",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHotWater.groovy"
+        },
+        {
+          "definitionLine": 10,
+          "definitionName": "Evohome System Controller",
+          "definitionNamespace": "tljungberg",
+          "manifestName": "Evohome System Controller",
+          "manifestNamespace": "tljungberg",
+          "observations": [
+            {
+              "evidence": "* this work under those terms. https://www.apache.org/licenses/LICENSE-2.0",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "https",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+              }
+            }
+          ],
+          "sourceBytes": 6346,
+          "sourceFetched": true,
+          "sourceSha256": "67c28a813b7c31793150e56671ec153add0ea959ad1f63e09f5428da57038dce",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeSystemController.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json",
+      "packageId": "6df85956-e5e2-4e67-a86f-9d0d8f03d37c",
+      "packageName": "Evohome",
+      "repoAuthor": "Tobey Ljungberg",
+      "repoName": "Tobey Ljungberg",
+      "repoUrl": "https://raw.githubusercontent.com/tobeyljungberg/HPM/main/repository.json",
+      "tags": [
+        "Convenience"
+      ],
+      "version": "2.0.0"
     },
     {
       "apps": [],
@@ -328324,7 +328651,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20TRV/Namron_Zigbee_Thermostat_lib_included.groovy"
         },
         {
-          "definitionLine": 53,
+          "definitionLine": 54,
           "definitionName": "Aqara E1 Thermostat",
           "definitionNamespace": "kkossev",
           "manifestName": "Aqara E1 Thermostat'",
@@ -328352,13 +328679,13 @@
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 36,
+              "line": 37,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20E1%20Thermostat/Aqara_E1_Thermostat_lib_included.groovy',",
-              "line": 55,
+              "line": 56,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328368,7 +328695,7 @@
             },
             {
               "evidence": "// https://github.com/Koenkk/zigbee-herdsman-converters/blob/6339b6034de34f8a633e4f753dc6e506ac9b001c/src/devices/xiaomi.ts#L3197",
-              "line": 110,
+              "line": 111,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -328378,7 +328705,7 @@
             },
             {
               "evidence": "// https://github.com/Smanar/deconz-rest-plugin/blob/6efd103c1a43eb300a19bf3bf3745742239e9fee/devices/xiaomi/xiaomi_lumi.airrtc.agl001.json",
-              "line": 111,
+              "line": 112,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -328388,7 +328715,7 @@
             },
             {
               "evidence": "// https://github.com/dresden-elektronik/deconz-rest-plugin/issues/6351",
-              "line": 112,
+              "line": 113,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -328398,67 +328725,67 @@
             },
             {
               "evidence": "return zigbee.readAttribute(0x0201, [0x0000, 0x0012, 0x001B, 0x001C], [:], delay = 3500) // 0x0000 = local temperature, 0x0012 = heating setpoint, 0x001B = controlledSequenceOfOperation, 0x001C = system mode (enum8 )",
-              "line": 268,
+              "line": 269,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0201, [0x0000, 0x0011, 0x0012, 0x001B, 0x001C], [:], delay = 3500) // 0x0000 = local temperature, 0x0011 = cooling setpoint, 0x0012 = heating setpoint, 0x001B = controlledSequenceOfOperation, 0x001C = system m",
-              "line": 308,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(0xFCC0, [0x0271, 0x0272, 0x0273, 0x0274, 0x0275, 0x0277, 0x0279, 0x027A, 0x027B, 0x027E], [mfgCode: 0x115F], delay = 3500)",
-              "line": 309,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(0xFCC0, 0x040a, [mfgCode: 0x115F], delay = 500)",
               "line": 310,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.readAttribute(0xFCC0, [0x0271, 0x0272, 0x0273, 0x0274, 0x0275, 0x0277, 0x0279, 0x027A, 0x027B, 0x027E], [mfgCode: 0x115F], delay = 3500)",
+              "line": 311,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(0xFCC0, 0x040a, [mfgCode: 0x115F], delay = 500)",
+              "line": 312,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "//cmds += zigbee.configureReporting(0x0201, 0x0012, 0x29, intMinTime as int, intMaxTime as int, 0x01, [:], delay=541)",
-              "line": 330,
+              "line": 332,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//cmds += zigbee.configureReporting(0x0201, 0x0000, 0x29, 20, 120, 0x01, [:], delay=542)",
-              "line": 331,
+              "line": 333,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.reportingConfiguration(0x0201, 0x0012, [:], 551) // read it back - doesn't work",
-              "line": 337,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0201, 0x0000, [:], 552) // read it back - doesn't work",
-              "line": 338,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(0x0201, 0x001C, [:], 552) // read it back - doesn't work",
               "line": 339,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0201, 0x0000, [:], 552) // read it back - doesn't work",
+              "line": 340,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(0x0201, 0x001C, [:], 552) // read it back - doesn't work",
+              "line": 341,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0020, [:], delay = 200) // TODO: check - battery voltage",
-              "line": 375,
+              "line": 377,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/commonLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-commonLib', // library marker kkossev.commonLib, line 4",
-              "line": 493,
+              "line": 495,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -328468,7 +328795,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/commonLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-commonLib', // library marker kkossev.commonLib, line 4",
-              "line": 493,
+              "line": 495,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328478,7 +328805,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0 // library marker kkossev.commonLib, line 13",
-              "line": 502,
+              "line": 504,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -328488,271 +328815,271 @@
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType // library marker kkossev.commonLib, line 51",
-              "line": 540,
+              "line": 542,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.enrollResponse() + zigbee.readAttribute(0x0500, 0x0000) // library marker kkossev.commonLib, line 160",
-              "line": 649,
+              "line": 651,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int status = zigbee.convertHexToInt(descMap.data[0]) // Status: Success (0x00) // library marker kkossev.commonLib, line 392",
-              "line": 881,
+              "line": 883,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//def attr = zigbee.convertHexToInt(descMap.data[3])*256 + zigbee.convertHexToInt(descMap.data[2]) // Attribute: OnOff (0x0000) // library marker kkossev.commonLib, line 393",
-              "line": 882,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "//def dataType = zigbee.convertHexToInt(descMap.data[4]) // Data Type: Boolean (0x10) // library marker kkossev.commonLib, line 395",
               "line": 884,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "int min = zigbee.convertHexToInt(descMap.data[6]) * 256 + zigbee.convertHexToInt(descMap.data[5]) // library marker kkossev.commonLib, line 396",
-              "line": 885,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "int max = zigbee.convertHexToInt(descMap.data[8] + descMap.data[7]) // library marker kkossev.commonLib, line 397",
+              "evidence": "//def dataType = zigbee.convertHexToInt(descMap.data[4]) // Data Type: Boolean (0x10) // library marker kkossev.commonLib, line 395",
               "line": 886,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "int min = zigbee.convertHexToInt(descMap.data[6]) * 256 + zigbee.convertHexToInt(descMap.data[5]) // library marker kkossev.commonLib, line 396",
+              "line": 887,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "int max = zigbee.convertHexToInt(descMap.data[8] + descMap.data[7]) // library marker kkossev.commonLib, line 397",
+              "line": 888,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "delta = zigbee.convertHexToInt(descMap.data[10] + descMap.data[9]) // library marker kkossev.commonLib, line 400",
-              "line": 889,
+              "line": 891,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "descMap = zigbee.parseDescriptionAsMap(description) // library marker kkossev.commonLib, line 592",
-              "line": 1081,
+              "line": 1083,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "descMap = zigbee.parseDescriptionAsMap(description) // library marker kkossev.commonLib, line 623",
-              "line": 1112,
+              "line": 1114,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "descMap = zigbee.parseDescriptionAsMap(description) // library marker kkossev.commonLib, line 659",
-              "line": 1148,
+              "line": 1150,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String hexStr = zigbee.convertToHexString(value.toInteger(), 4) // library marker kkossev.commonLib, line 719",
-              "line": 1208,
+              "line": 1210,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.convertToHexString(value.toInteger(), 2) // library marker kkossev.commonLib, line 724",
-              "line": 1213,
+              "line": 1215,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.command(CLUSTER_TUYA, SETTIME, '0008' + zigbee.convertToHexString((int)(now() / 1000), 8) + zigbee.convertToHexString((int)((now() + offset) / 1000), 8)) // library marker kkossev.commonLib, line 766",
-              "line": 1255,
+              "line": 1257,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "//def transid = zigbee.convertHexToInt(descMap?.data[1]) // \"transid\" is just a \"counter\", a response will have the same transid as the command // library marker kkossev.commonLib, line 787",
-              "line": 1276,
+              "line": 1278,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap?.data[2 + i]) // \"dp\" field describes the action/message of a command frame // library marker kkossev.commonLib, line 794",
-              "line": 1283,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "int dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant // library marker kkossev.commonLib, line 795",
-              "line": 1284,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "int fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i]) // library marker kkossev.commonLib, line 796",
               "line": 1285,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "int dp_id = zigbee.convertHexToInt(descMap?.data[3 + i]) // \"dp_identifier\" is device dependant // library marker kkossev.commonLib, line 795",
+              "line": 1286,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "int fncmd_len = zigbee.convertHexToInt(descMap?.data[5 + i]) // library marker kkossev.commonLib, line 796",
+              "line": 1287,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "int dataLength = zigbee.convertHexToInt(_data[5 + index]) // library marker kkossev.commonLib, line 835",
-              "line": 1324,
+              "line": 1326,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "retValue = retValue + power * zigbee.convertHexToInt(_data[index + i + 5]) // library marker kkossev.commonLib, line 839",
-              "line": 1328,
+              "line": 1330,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.command(CLUSTER_TUYA, tuyaCmd, [destEndpoint :ep], delay = 201, PACKET_ID + dp + dp_type + zigbee.convertToHexString((int)(fncmd.length() / 2), 4) + fncmd ) // library marker kkossev.commonLib, line 860",
-              "line": 1349,
+              "line": 1351,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "private String getPACKET_ID() { return zigbee.convertToHexString(new Random().nextInt(65536), 4) } // library marker kkossev.commonLib, line 865",
-              "line": 1354,
+              "line": 1356,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = dpTypeString == 'DP_TYPE_VALUE' ? zigbee.convertToHexString(dpValue as int, 8) : dpValue // library marker kkossev.commonLib, line 869",
-              "line": 1358,
+              "line": 1360,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(0x0000, [0x0004, 0x000, 0x0001, 0x0005, 0x0007, 0xfffe], [destEndpoint :ep], delay = 200) // library marker kkossev.commonLib, line 879",
-              "line": 1368,
+              "line": 1370,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.command(0xEF00, 0x03) // library marker kkossev.commonLib, line 884",
-              "line": 1373,
+              "line": 1375,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(INFO_AUTO_CLEAR_PERIOD, 'clearInfoEvent') // automatically clear the Info attribute after 1 minute // library marker kkossev.commonLib, line 981",
-              "line": 1470,
+              "line": 1472,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.readAttribute(zigbee.BASIC_CLUSTER, pingAttr, [destEndpoint: 0x01], 0) ) // library marker kkossev.commonLib, line 993",
-              "line": 1482,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "else { sendZigbeeCommands(zigbee.readAttribute(zigbee.BASIC_CLUSTER, pingAttr, [:], 0) ) } // library marker kkossev.commonLib, line 995",
               "line": 1484,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "else { sendZigbeeCommands(zigbee.readAttribute(zigbee.BASIC_CLUSTER, pingAttr, [:], 0) ) } // library marker kkossev.commonLib, line 995",
+              "line": 1486,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "return zigbee.clusterLookup(cluster.toInteger()) ?: \"private cluster 0x${intToHexStr(cluster.toInteger())}\" // library marker kkossev.commonLib, line 1035",
-              "line": 1524,
+              "line": 1526,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'deviceCommandTimeout') // library marker kkossev.commonLib, line 1044",
-              "line": 1533,
+              "line": 1535,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() is a very time consuming operation : ~ 5 milliseconds per call ! // library marker kkossev.commonLib, line 1047",
-              "line": 1536,
+              "line": 1538,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('deviceCommandTimeout') // library marker kkossev.commonLib, line 1052",
-              "line": 1541,
+              "line": 1543,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, 'deviceHealthCheck') // library marker kkossev.commonLib, line 1075",
-              "line": 1564,
+              "line": 1566,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('deviceHealthCheck') // library marker kkossev.commonLib, line 1080",
-              "line": 1569,
+              "line": 1571,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('deviceHealthCheck') // library marker kkossev.commonLib, line 1085",
-              "line": 1574,
+              "line": 1576,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule() // library marker kkossev.commonLib, line 1137",
-              "line": 1626,
+              "line": 1628,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(86400, 'logsOff') // library marker kkossev.commonLib, line 1141",
-              "line": 1630,
+              "line": 1632,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, 'traceOff') // library marker kkossev.commonLib, line 1145",
-              "line": 1634,
+              "line": 1636,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, 'updated') // library marker kkossev.commonLib, line 1256",
-              "line": 1745,
+              "line": 1747,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, 'queryPowerSource') // library marker kkossev.commonLib, line 1257",
-              "line": 1746,
+              "line": 1748,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.readAttribute(zigbee.BASIC_CLUSTER, 0x0007, [:], 0)) // library marker kkossev.commonLib, line 1261",
-              "line": 1750,
+              "line": 1752,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE)) // library marker kkossev.commonLib, line 1306",
-              "line": 1795,
+              "line": 1797,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(allActions) // library marker kkossev.commonLib, line 1310",
-              "line": 1799,
+              "line": 1801,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "httpGet(\"http://${location.hub.localIP}:8080/api/hubitat.xml\") { res -> // library marker kkossev.commonLib, line 1345",
-              "line": 1834,
+              "line": 1836,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet(\"http://${location.hub.localIP}:8080/api/hubitat.xml\") { res -> // library marker kkossev.commonLib, line 1345",
-              "line": 1834,
+              "line": 1836,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -328762,25 +329089,25 @@
             },
             {
               "evidence": "unschedule() // library marker kkossev.commonLib, line 1365",
-              "line": 1854,
+              "line": 1856,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, 'resetStats') // library marker kkossev.commonLib, line 1373",
-              "line": 1862,
+              "line": 1864,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule() // library marker kkossev.commonLib, line 1393",
-              "line": 1882,
+              "line": 1884,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "log.trace 'Settings:' ; settings.each { it -> log.debug \"${it.key} = ${it.value}\" } // https://community.hubitat.com/t/how-do-i-get-the-datatype-for-an-app-setting/104228/6?u=kkossev // library marker kkossev.commonLib, line 1466",
-              "line": 1955,
+              "line": 1957,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -328790,37 +329117,37 @@
             },
             {
               "evidence": "unschedule() ; logInfo 'All scheduled jobs DELETED' // library marker kkossev.commonLib, line 1493",
-              "line": 1982,
+              "line": 1984,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "getChildDevices().each { child -> log.info \"${device.displayName} Deleting ${child.deviceNetworkId}\" ; deleteChildDevice(child.deviceNetworkId) } // library marker kkossev.commonLib, line 1497",
-              "line": 1986,
+              "line": 1988,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "//schedule(\"${rnd.nextInt(59)} ${rnd.nextInt(9)}/${intervalMins} * ? * * *\", 'ping') // library marker kkossev.commonLib, line 1519",
-              "line": 2008,
+              "line": 2010,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { ver = zigbee.convertHexToInt(application) } // library marker kkossev.commonLib, line 1561",
-              "line": 2050,
+              "line": 2052,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String str = '0.0.0_' + String.format('%04d', zigbee.convertHexToInt(application.take(2))) // library marker kkossev.commonLib, line 1577",
-              "line": 2066,
+              "line": 2068,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/hubitat/development/libraries/onOffLib.groovy', documentationLink: '', // library marker kkossev.onOffLib, line 4",
-              "line": 2110,
+              "line": 2112,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328830,7 +329157,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0 // library marker kkossev.onOffLib, line 13",
-              "line": 2119,
+              "line": 2121,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -328840,43 +329167,43 @@
             },
             {
               "evidence": "cmds = (settings?.inverceSwitch == null || settings?.inverceSwitch == false) ? zigbee.off() : zigbee.on() // library marker kkossev.onOffLib, line 116",
-              "line": 2222,
+              "line": 2224,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(1, 'refresh', [overwrite: true]) // library marker kkossev.onOffLib, line 123",
-              "line": 2229,
+              "line": 2231,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds = (settings?.inverceSwitch == null || settings?.inverceSwitch == false) ? zigbee.on() : zigbee.off() // library marker kkossev.onOffLib, line 149",
-              "line": 2255,
+              "line": 2257,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(1, 'refresh', [overwrite: true]) // library marker kkossev.onOffLib, line 155",
-              "line": 2261,
+              "line": 2263,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "int value = zigbee.convertHexToInt(it.value) // library marker kkossev.onOffLib, line 220",
-              "line": 2326,
+              "line": 2328,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.readAttribute(0x0006, 0x0000, [:], delay = 100) // library marker kkossev.onOffLib, line 268",
-              "line": 2374,
+              "line": 2376,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/batteryLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-batteryLib', // library marker kkossev.batteryLib, line",
-              "line": 2391,
+              "line": 2393,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -328886,7 +329213,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/batteryLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-batteryLib', // library marker kkossev.batteryLib, line",
-              "line": 2391,
+              "line": 2393,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328896,25 +329223,25 @@
             },
             {
               "evidence": "runIn(delayedTime, 'sendDelayedBatteryPercentageEvent', [overwrite: true, data: map]) // library marker kkossev.batteryLib, line 137",
-              "line": 2524,
+              "line": 2526,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0020, [:], delay = 100) // battery voltage // library marker kkossev.batteryLib, line 184",
-              "line": 2571,
+              "line": 2573,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0021, [:], delay = 100) // battery percentage // library marker kkossev.batteryLib, line 185",
-              "line": 2572,
+              "line": 2574,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/hubitat/development/libraries/temperatureLib.groovy', documentationLink: '', // library marker kkossev.temperatureLib, line 4",
-              "line": 2582,
+              "line": 2584,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328924,37 +329251,37 @@
             },
             {
               "evidence": "* TODO: unschedule('sendDelayedTempEvent') only if needed (add boolean flag to sendDelayedTempEvent()) // library marker kkossev.temperatureLib, line 20",
-              "line": 2598,
+              "line": 2600,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sendDelayedTempEvent') //get rid of stale queued reports // library marker kkossev.temperatureLib, line 85",
-              "line": 2663,
+              "line": 2665,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(timeRamaining, 'sendDelayedTempEvent', [overwrite: true, data: eventMap]) // library marker kkossev.temperatureLib, line 92",
-              "line": 2670,
+              "line": 2672,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(zigbee.TEMPERATURE_MEASUREMENT_CLUSTER, 0 /*TEMPERATURE_MEASUREMENT_MEASURED_VALUE_ATTRIBUTE*/, DataType.INT16, 15, 300, 100 /* 100=0.1도*/) // 402 - temperature // library marker kkossev.temperatureLib, lin",
-              "line": 2682,
+              "line": 2684,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0402, 0x0000, [:], delay = 200) // library marker kkossev.temperatureLib, line 111",
-              "line": 2689,
+              "line": 2691,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "base: 'driver', author: 'Krassimir Kossev', category: 'zigbee', description: 'Xiaomi Library', name: 'xiaomiLib', namespace: 'kkossev', importUrl: 'https://raw.githubusercontent.com/kkossev/hubitat/development/libraries/xiaomiLib.groovy', d",
-              "line": 2698,
+              "line": 2700,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -328964,7 +329291,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0 // library marker kkossev.xiaomiLib, line 12",
-              "line": 2707,
+              "line": 2709,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -328974,25 +329301,25 @@
             },
             {
               "evidence": "runIn(1, 'updateLocation', [ data: [ degrees: degrees, distanceCm: distanceCm ] ]) // library marker kkossev.xiaomiLib, line 151",
-              "line": 2846,
+              "line": 2848,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0001, 0x0020, [:], delay = 200) // TODO: check - battery voltage // library marker kkossev.xiaomiLib, line 340",
-              "line": 3035,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(0xFCC0, [0x0102, 0x010C], [mfgCode: 0x115F], delay = 200) // TVOC only // library marker kkossev.xiaomiLib, line 342",
               "line": 3037,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds += zigbee.readAttribute(0xFCC0, [0x0102, 0x010C], [mfgCode: 0x115F], delay = 200) // TVOC only // library marker kkossev.xiaomiLib, line 342",
+              "line": 3039,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/deviceProfileLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-deviceProfileLib', // library marker kkossev.devi",
-              "line": 3050,
+              "line": 3052,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -329002,7 +329329,7 @@
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/Hubitat/refs/heads/development/Libraries/deviceProfileLib.groovy', documentationLink: 'https://github.com/kkossev/Hubitat/wiki/libraries-deviceProfileLib', // library marker kkossev.devi",
-              "line": 3050,
+              "line": 3052,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -329012,7 +329339,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0 // library marker kkossev.deviceProfileLib, line 13",
-              "line": 3059,
+              "line": 3061,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -329022,73 +329349,73 @@
             },
             {
               "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus // library marker kkossev.deviceProfileLib, line 56",
-              "line": 3102,
+              "line": 3104,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType // library marker kkossev.deviceProfileLib, line 57",
-              "line": 3103,
+              "line": 3105,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "logDebug \"cluster:attribute ${attributesMap.at} is read-write, but no data type (dt) is defined! Assuming 0x${zigbee.convertToHexString(map.dt, 2)}\" // library marker kkossev.deviceProfileLib, line 338",
-              "line": 3384,
+              "line": 3386,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.writeAttribute(map.cluster as int, map.attribute as int, map.dt as int, scaledValue, mapOptions, delay = 50) // library marker kkossev.deviceProfileLib, line 347",
-              "line": 3393,
+              "line": 3395,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds = zigbee.writeAttribute(map.cluster as int, map.attribute as int, map.dt as int, scaledValue, [:], delay = 50) // library marker kkossev.deviceProfileLib, line 350",
-              "line": 3396,
+              "line": 3398,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dp = zigbee.convertToHexString(dpMap.dp, 2) // library marker kkossev.deviceProfileLib, line 562",
-              "line": 3608,
+              "line": 3610,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String dpValHex = dpType == DP_TYPE_VALUE ? zigbee.convertToHexString(tuyaValue as int, 8) : zigbee.convertToHexString(tuyaValue as int, 2) // library marker kkossev.deviceProfileLib, line 579",
-              "line": 3625,
+              "line": 3627,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(hubitat.helper.HexUtils.hexStringToInt((map.at).split(':')[0]), hubitat.helper.HexUtils.hexStringToInt((map.at).split(':')[1]), mfgCode, delay = 100) // library marker kkossev.deviceProfileLib, line 899",
-              "line": 3945,
+              "line": 3947,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(hubitat.helper.HexUtils.hexStringToInt((map.at).split(':')[0]), hubitat.helper.HexUtils.hexStringToInt((map.at).split(':')[1]), mfgCode, delay = 100) // library marker kkossev.deviceProfileLib, line 924",
-              "line": 3970,
+              "line": 3972,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap.data[2]) // library marker kkossev.deviceProfileLib, line 987",
-              "line": 4033,
+              "line": 4035,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "int dp = zigbee.convertHexToInt(descMap.data[2]) // library marker kkossev.deviceProfileLib, line 1002",
-              "line": 4048,
+              "line": 4050,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: 'https://raw.githubusercontent.com/kkossev/hubitat/development/libraries/thermostatLib.groovy', documentationLink: '', // library marker kkossev.thermostatLib, line 4",
-              "line": 4552,
+              "line": 4554,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -329098,7 +329425,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0 // library marker kkossev.thermostatLib, line 12",
-              "line": 4560,
+              "line": 4562,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -329108,62 +329435,62 @@
             },
             {
               "evidence": "runIn(3, setpointReceiveCheck) // library marker kkossev.thermostatLib, line 139",
-              "line": 4687,
+              "line": 4689,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(4, modeReceiveCheck) // library marker kkossev.thermostatLib, line 232",
-              "line": 4780,
+              "line": 4782,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, 'autoPollThermostat') // library marker kkossev.thermostatLib, line 400",
-              "line": 4948,
+              "line": 4950,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('autoPollThermostat') // library marker kkossev.thermostatLib, line 404",
-              "line": 4952,
+              "line": 4954,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "List<String> cmds = zigbee.command(0x0000, 0x00) // library marker kkossev.thermostatLib, line 491",
-              "line": 5039,
+              "line": 5041,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(3, 'refreshAll') // library marker kkossev.thermostatLib, line 495",
-              "line": 5043,
+              "line": 5045,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(0x0201, [0x0000, 0x0001, /*0x0002,*/ 0x0012, 0x001B, 0x001C, 0x0029], [:], delay = 1500) // 0x0000 = local temperature, 0x0001 = outdoor temperature, 0x0002 = occupancy, 0x0012 = heating setpoint, 0x001B = contro",
-              "line": 5071,
+              "line": 5073,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(0x0001, 0x0021, [:], delay = 200) // battery percentage // library marker kkossev.thermostatLib, line 528",
-              "line": 5076,
+              "line": 5078,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.readAttribute(0x0406, 0x0000, [:], delay = 100) // Bit 0 specifies the sensed occupancy as follows: 1 = occupied, 0 = unoccupied. This flag bit will affect the Occupancy attribute of HVAC cluster, and the operation mode. // li",
-              "line": 5080,
+              "line": 5082,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 485761,
+          "sourceBytes": 485861,
           "sourceFetched": true,
-          "sourceSha256": "87fdd4be7615c1cc094157b406704e0af14e15cd8de96d31558acdc5ecd620db",
+          "sourceSha256": "4d6f92124f8bd3013d7358b1494b415094b8f6b8f835867374fc8e660b72d4f4",
           "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20E1%20Thermostat/Aqara_E1_Thermostat_lib_included.groovy"
         }
       ],
@@ -362636,6 +362963,107 @@
       "version": "1.0.3"
     },
     {
+      "apps": [],
+      "author": "velkovb",
+      "category": "Control",
+      "communityLink": null,
+      "dateReleased": "2026-11-08",
+      "description": "ZMS-206EU-2 local Zigbee preview: two relay children and configurable screen names, colors, backlight and wake timeout.",
+      "documentationLink": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/zemismart/zms-206eu-2",
+      "drivers": [
+        {
+          "definitionLine": 33,
+          "definitionName": "Zemismart ZMS-206EU-2 Screen Switch",
+          "definitionNamespace": "velkovb",
+          "manifestName": "Zemismart ZMS-206EU-2 Screen Switch",
+          "manifestNamespace": "velkovb",
+          "observations": [
+            {
+              "evidence": "* https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/zemismart.ts",
+              "line": 4,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/zemismart.ts"
+              }
+            },
+            {
+              "evidence": "importUrl:'https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/zemismart-zms-206eu-2.groovy') {",
+              "line": 35,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/zemismart-zms-206eu-2.groovy"
+              }
+            },
+            {
+              "evidence": "addChildDevice('hubitat', 'Generic Component Switch', dni,",
+              "line": 74,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('logsOff')",
+              "line": 78,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.debugLogging) runIn(1800, 'logsOff')",
+              "line": 79,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "List<String> commands = zigbee.readAttribute(0x0000, [0x0004, 0x0000, 0x0001, 0x0005, 0x0007, 0xFFFE], [destEndpoint:1], 300)",
+              "line": 87,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "transmit(commands + zigbee.command(TUYA, 0x03, [destEndpoint:1], 200))",
+              "line": 88,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "transmit(payload ? zigbee.command(TUYA, command, endpoint, 100, payload) : zigbee.command(TUYA, command, endpoint, 100))",
+              "line": 162,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(commands, hubitat.device.Protocol.ZIGBEE))",
+              "line": 166,
+              "type": "SEND_HUB_COMMAND",
+              "value": true
+            },
+            {
+              "evidence": "if (description.startsWith('catchall:')) parseMap(zigbee.parseDescriptionAsMap(description))",
+              "line": 173,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            }
+          ],
+          "sourceBytes": 11259,
+          "sourceFetched": true,
+          "sourceSha256": "e278f0e363bab01325c9e2e626a1e37f6fafb87505d5fae304435501a4acbcb7",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/zemismart-zms-206eu-2.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/packageManifest.json",
+      "packageId": null,
+      "packageName": "Zemismart ZMS-206EU-2 Screen Switch",
+      "repoAuthor": "velkovb",
+      "repoName": "velkovb Hubitat Drivers",
+      "repoUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/repository.json",
+      "tags": [],
+      "version": "0.2.0"
+    },
+    {
       "apps": [
         {
           "definitionLine": 30,
@@ -366410,21 +366838,21 @@
       "version": "1.1.5"
     }
   ],
-  "repositoriesFetched": 226,
-  "repositoryCount": 227,
+  "repositoriesFetched": 227,
+  "repositoryCount": 228,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-08T06:21:17Z",
+  "snapshotGenerated": "2026-11-09T06:55:28Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2392,
+    "componentsAttempted": 2397,
     "componentsFailed": 10,
-    "componentsFetched": 2382,
-    "componentsWithObservations": 2238,
-    "definitionsVerified": 2371,
-    "distinctSourceUrls": 2376,
+    "componentsFetched": 2387,
+    "componentsWithObservations": 2243,
+    "definitionsVerified": 2376,
+    "distinctSourceUrls": 2381,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2366
+    "sourceUrlsFetched": 2371
   }
 }

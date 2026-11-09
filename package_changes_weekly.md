@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-08T06:21:17Z`.
+Latest observation: `2026-11-09T06:55:28Z`.
 
-**69 package change(s):** added 8, broken 3, declared definitions changed 9, restored 3, source location changed 18, updated 61
+**64 package change(s):** added 9, broken 3, declared definitions changed 9, restored 3, source location changed 17, updated 55
 
+- [Zemismart ZMS-206EU-2 Screen Switch: added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/packageManifest.json)
+- [TeslaMate: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/teslamate.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
+- [HubiThings Replica [DEPRECATED]: updated.](https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json)
+- [Evohome: added.](https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json)
+- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 - [Unifi Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
 - [Tesla Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
 - [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
@@ -61,17 +68,5 @@ Latest observation: `2026-11-08T06:21:17Z`.
 - [Honeywell Home Integration Lyric and T Series Devices (cloud): updated.](https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json)
 - [Aeotec Dual Nano Switch with Power Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json)
 - [Aeon Micro Dimmer with Power Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Roborock Robot Vacuum: updated.](https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestRoborockRobotVacuum.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Fully Kiosk Browser Controller: updated.](https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/manifest.json)
-- [Automation Map: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-automation-map/main/packageManifest.json)
-- [TESmart Controller: updated.](https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/packageManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Garadget MQTT Driver: updated.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/devicehandlers/garadgetMQTT/garadgetmqtt.json)
-- [Garadget Guardian: added.](https://raw.githubusercontent.com/jrfarrar/hubitat/master/Apps/GaradgetGuardian/garadgetguardian.json)
-- [Fully Kiosk Browser Controller: updated.](https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/manifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

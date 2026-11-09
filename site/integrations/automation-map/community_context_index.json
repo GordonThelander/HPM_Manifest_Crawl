@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 501,
+  "recordCount": 502,
   "records": [
     {
       "author": null,
@@ -3906,7 +3906,7 @@
           "namespace": "replica"
         }
       ],
-      "displayName": "HubiThings Replica",
+      "displayName": "HubiThings Replica [DEPRECATED]",
       "evidenceChecks": {
         "communityLink": "PRESENT",
         "definitionIdentity": "MISMATCH",
@@ -3925,7 +3925,7 @@
         "classification": "BOTH",
         "reviewed": true
       },
-      "packageName": "HubiThings Replica",
+      "packageName": "HubiThings Replica [DEPRECATED]",
       "qualityFlags": [
         "IDENTITY_MISMATCH"
       ],
@@ -5166,7 +5166,7 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
-        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvancedApp.groovy"
+        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvancedApp.groovy"
       },
       "networkEvidence": {
         "classification": "BOTH",
@@ -5175,6 +5175,39 @@
       "packageName": "Sonos Advanced Controller",
       "qualityFlags": [],
       "summary": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more."
+    },
+    {
+      "author": "Tobey Ljungberg",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Evohome Connect",
+          "namespace": "tljungberg"
+        }
+      ],
+      "displayName": "Evohome",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "MISSING",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:6df85956-e5e2-4e67-a86f-9d0d8f03d37c",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "source": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeConnect.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Evohome",
+      "qualityFlags": [],
+      "summary": "Connects Hubitat Elevation to Honeywell/Resideo Evohome. Creates heating-zone thermostats, a system-mode controller and a hot-water device when available. Supports HomeKit zone control, debounced setpoint changes, status polling and reconciliation, Hubitat Away synchronisation, per-zone override pre"
     },
     {
       "author": "Paul Harrison",
@@ -6995,8 +7028,8 @@
         "source": "https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/MqttManagerApp.groovy"
       },
       "networkEvidence": {
-        "classification": "INSUFFICIENT",
-        "reviewed": false
+        "classification": "LAN",
+        "reviewed": true
       },
       "packageName": "MQTT Manager",
       "qualityFlags": [],
@@ -16924,5 +16957,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-08T06:21:17Z"
+  "snapshotGenerated": "2026-11-09T06:55:28Z"
 }

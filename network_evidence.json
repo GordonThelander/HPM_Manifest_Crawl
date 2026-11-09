@@ -1,9 +1,9 @@
 {
   "counts": {
     "BOTH": 186,
-    "CLOUD": 275,
+    "CLOUD": 276,
     "INSUFFICIENT": 305,
-    "LAN": 198
+    "LAN": 199
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 964,
+  "packageCount": 966,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -5679,6 +5679,48 @@
       ]
     },
     {
+      "author": "Tobey Ljungberg",
+      "category": "Convenience",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Connects Hubitat Elevation to Honeywell/Resideo Evohome. Creates heating-zone thermostats, a system-mode controller and a hot-water device when available. Supports HomeKit zone control, debounced setpoint changes, status polling and reconciliation, Hubitat Away synchronisation, per-zone override preservation, window-contact protection, fault reporting and push notifications. Includes heating-only support and automatic API token renewal.",
+      "documentationUrl": null,
+      "id": "hpm:6df85956-e5e2-4e67-a86f-9d0d8f03d37c",
+      "manifestUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json",
+      "name": "Evohome",
+      "observed": {
+        "externalHosts": [
+          "mytotalconnectcomfort.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 7
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "Home Connect Cloud",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "OAUTH_HTTPS"
+            }
+          ],
+          "documentation": [],
+          "id": "home-connect",
+          "name": "Home Connect Integration",
+          "status": "VERIFIED_REPO"
+        }
+      ],
+      "tags": [
+        "Convenience"
+      ]
+    },
+    {
       "author": "Larry Kahn",
       "category": "Integrations",
       "classification": "LAN",
@@ -10953,7 +10995,7 @@
       "documentationUrl": null,
       "id": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
       "manifestUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
-      "name": "HubiThings Replica",
+      "name": "HubiThings Replica [DEPRECATED]",
       "observed": {
         "externalHosts": [
           "account.smartthings.com",
@@ -16886,6 +16928,7 @@
           "avanc.github.io",
           "console.cloud.google.com",
           "enter.your.recorder.ip",
+          "example.com",
           "maps.google.com",
           "maps.googleapis.com",
           "owntracks.org",
@@ -16893,7 +16936,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 44
+        "urlLiteralCount": 46
       },
       "reviewed": [
         {
@@ -27959,6 +28002,31 @@
       ]
     },
     {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "ZMS-206EU-2 local Zigbee preview: two relay children and configurable screen names, colors, backlight and wake timeout.",
+      "documentationUrl": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/zemismart/zms-206eu-2",
+      "id": "manifest:faf7d90a85d43ede70f0",
+      "manifestUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/packageManifest.json",
+      "name": "Zemismart ZMS-206EU-2 Screen Switch",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": []
+    },
+    {
       "author": "UltronOfSpace",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -29086,5 +29154,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-08T06:21:17Z"
+  "snapshotGenerated": "2026-11-09T06:55:28Z"
 }

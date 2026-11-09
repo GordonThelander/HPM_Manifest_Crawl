@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 964,
+    "HPM_PACKAGE": 966,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2669,
+  "recordCount": 2671,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -938,7 +938,7 @@
             "EXACT_LINK"
           ],
           "packageId": "hpm:4611a36f-d271-4e2b-ab89-55a41a5ab133",
-          "packageName": "HubiThings Replica"
+          "packageName": "HubiThings Replica [DEPRECATED]"
         }
       ],
       "id": "community-app:16ef9b9570320d8f72bb",
@@ -25939,7 +25939,7 @@
       "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-04",
+      "dateReleased": "2026-11-08",
       "definitions": [
         {
           "id": "definition:0c5c74f15cb88aaa656e",
@@ -26019,7 +26019,7 @@
         "Energy Monitoring",
         "Monitoring"
       ],
-      "version": "2.7.5"
+      "version": "2.7.6"
     },
     {
       "author": "Larry Kahn",
@@ -35847,6 +35847,130 @@
         "Temperature & Humidity"
       ],
       "version": "4.0.0"
+    },
+    {
+      "author": "Tobey Ljungberg",
+      "category": "Convenience",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": null,
+      "definitions": [
+        {
+          "id": "definition:956b53c5547b48a84313",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Evohome Connect",
+          "namespace": "tljungberg",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeConnect.groovy"
+        },
+        {
+          "id": "definition:03c6d3b6005875a93199",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Evohome Heating Zone",
+          "namespace": "tljungberg",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHeatingZone.groovy"
+        },
+        {
+          "id": "definition:0a054bf5ee875b51e9c1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Evohome Hot Water",
+          "namespace": "tljungberg",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHotWater.groovy"
+        },
+        {
+          "id": "definition:f726e66a89cf84065d5f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Evohome System Controller",
+          "namespace": "tljungberg",
+          "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeSystemController.groovy"
+        }
+      ],
+      "description": "Connects Hubitat Elevation to Honeywell/Resideo Evohome. Creates heating-zone thermostats, a system-mode controller and a hot-water device when available. Supports HomeKit zone control, debounced setpoint changes, status polling and reconciliation, Hubitat Away synchronisation, per-zone override preservation, window-contact protection, fault reporting and push notifications. Includes heating-only support and automatic API token renewal.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:6df85956-e5e2-4e67-a86f-9d0d8f03d37c",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json",
+        "repository": "https://github.com/tobeyljungberg/Hubitat-Evohome"
+      },
+      "name": "Evohome",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "mytotalconnectcomfort.com"
+        ],
+        "reviewed": [
+          {
+            "dependencies": [
+              {
+                "class": "EXTERNAL_SERVICE",
+                "name": "Home Connect Cloud",
+                "runtimeCriticality": "RUNTIME",
+                "transport": "OAUTH_HTTPS"
+              }
+            ],
+            "documentation": [],
+            "id": "home-connect",
+            "name": "Home Connect Integration",
+            "status": "VERIFIED_REPO"
+          }
+        ]
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Convenience"
+      ],
+      "version": "2.0.0"
     },
     {
       "author": "Larry Kahn",
@@ -53356,7 +53480,7 @@
         "manifest": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json",
         "repository": "https://github.com/bloodtick/Hubitat"
       },
-      "name": "HubiThings Replica",
+      "name": "HubiThings Replica [DEPRECATED]",
       "network": {
         "classification": "BOTH",
         "declared": {
@@ -72882,7 +73006,7 @@
       "author": "Lyle Pakula",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-25",
+      "dateReleased": "2026-11-07",
       "definitions": [
         {
           "id": "definition:a15e50f3eeece83b0086",
@@ -72972,6 +73096,7 @@
           "avanc.github.io",
           "console.cloud.google.com",
           "enter.your.recorder.ip",
+          "example.com",
           "maps.google.com",
           "maps.googleapis.com",
           "owntracks.org",
@@ -90658,100 +90783,100 @@
       "dateReleased": "2026-11-08",
       "definitions": [
         {
-          "id": "definition:ab1496f91e779a2bf2c2",
+          "id": "definition:7d4c5de204d3b3cd1900",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:35565b7841f726269192",
+          "id": "definition:13faea7a296958edfbc2",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Manager",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvAlarmManager.groovy"
         },
         {
-          "id": "definition:7d0b8d68bad81fef6fef",
+          "id": "definition:b3a2b7f8b735987e1a72",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Switch",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvAlarmSwitch.groovy"
         },
         {
-          "id": "definition:4131fcef60703ea634d2",
+          "id": "definition:3c7818156afd195c02b4",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:418b482ca6b103d8fdcb",
+          "id": "definition:09964bd04712b6027b81",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:747363f80db3ef063f6c",
+          "id": "definition:a48827fd33d6443dd96c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:c3dfac9777a16f598efc",
+          "id": "definition:06dd80159330698c2e69",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:978822146ac1f163c621",
+          "id": "definition:fc0574ea912d1deb7930",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:eed074d8936f82590a95",
+          "id": "definition:211c295fab6c24619da4",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Queue",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvQueue.groovy"
         },
         {
-          "id": "definition:5a8be441b5c66ad09b9a",
+          "id": "definition:6eeb2540dae47301ecc6",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:8f74299f94ea56f3c95d",
+          "id": "definition:9c67b2f1e34f976a2728",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Sleep Timer",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSleepTimer.groovy"
         },
         {
-          "id": "definition:cd63c4e1bb91f75d3aeb",
+          "id": "definition:497688960198ad178bdc",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.5/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.6/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -90847,7 +90972,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.15.5"
+      "version": "0.15.6"
     },
     {
       "author": "Schwark Satyavolu",
@@ -94644,7 +94769,7 @@
       "tags": [
         "Vehicles & Transportation"
       ],
-      "version": "1.3"
+      "version": "1.4"
     },
     {
       "author": "WBEVAN",
@@ -108835,6 +108960,86 @@
         "Zigbee"
       ],
       "version": "1.1.5"
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-08",
+      "definitions": [
+        {
+          "id": "definition:5e02e3ff7ca591d8cce9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Zemismart ZMS-206EU-2 Screen Switch",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/zemismart-zms-206eu-2.groovy"
+        }
+      ],
+      "description": "ZMS-206EU-2 local Zigbee preview: two relay children and configurable screen names, colors, backlight and wake timeout.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:faf7d90a85d43ede70f0",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/zemismart/zms-206eu-2",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Zemismart ZMS-206EU-2 Screen Switch",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.2.0"
     },
     {
       "author": "UltronOfSpace",
@@ -137392,5 +137597,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-08T06:21:17Z"
+  "snapshotGenerated": "2026-11-09T06:55:28Z"
 }
