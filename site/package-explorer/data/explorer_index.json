@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 966,
+    "HPM_PACKAGE": 967,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2671,
+  "recordCount": 2672,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -26107,6 +26107,102 @@
       "version": "1.2"
     },
     {
+      "author": "Rayzurbock",
+      "category": "Notifications",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-06",
+      "definitions": [
+        {
+          "id": "definition:6a5da0103756d433a4c3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "BigTalker3-Child",
+          "namespace": "rayzurbock",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/smartapps/rayzurbock/bigtalker3-child.src/bigtalker3-child.groovy"
+        },
+        {
+          "id": "definition:b2a8e171c28f3040d700",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "BigTalker3-Parent",
+          "namespace": "rayzurbock",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/smartapps/rayzurbock/bigtalker3.src/bigtalker3.groovy"
+        }
+      ],
+      "description": "Spoken and/or text announcements for mode changes, switches, motions, and more.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:26e1d06cad308b386bfe",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/packageManifest.json",
+        "repository": "https://github.com/rayzurbock/BigTalker3"
+      },
+      "name": "BigTalker3",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "api.open-meteo.com",
+          "cash.app",
+          "lowrance.cc",
+          "paypal.me",
+          "statusbits.github.io",
+          "venmo.com",
+          "www.domain.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "3.0.1"
+    },
+    {
       "author": "Brent Rossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -35970,7 +36066,7 @@
       "tags": [
         "Convenience"
       ],
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "author": "Larry Kahn",
@@ -63301,7 +63397,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-27",
+      "dateReleased": "2026-11-09",
       "definitions": [
         {
           "id": "definition:068c42d708666e225b0e",
@@ -63390,7 +63486,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "author": "Dan Ogorchock",
@@ -64792,7 +64888,7 @@
       "author": "Derek Osborn",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-12-31",
+      "dateReleased": "2026-11-10",
       "definitions": [
         {
           "id": "definition:b30a6bf6e6e7337cce05",
@@ -64868,7 +64964,7 @@
       "tags": [
         "Utility"
       ],
-      "version": "1.3.0"
+      "version": "1.3.1"
     },
     {
       "author": "Chris Truitt",
@@ -68289,7 +68385,7 @@
       "author": "Justin Leonard",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-03-22",
+      "dateReleased": "2026-11-09",
       "definitions": [
         {
           "id": "definition:e7790f2297330c325ac7",
@@ -68388,7 +68484,7 @@
         "Tools & Utilities",
         "weather"
       ],
-      "version": "0.0.16"
+      "version": "0.0.20"
     },
     {
       "author": "youzer-name",
@@ -82601,7 +82697,7 @@
       "author": "hubitrep (original by Dave Gutheinz)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-07",
+      "dateReleased": "2026-11-09",
       "definitions": [
         {
           "id": "definition:573e0f55225917de0eff",
@@ -82689,7 +82785,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "2.4.9"
+      "version": "2.4.10"
     },
     {
       "author": "Albert Mulder",
@@ -105263,7 +105359,7 @@
       "author": "lnjustin",
       "category": "Dashboards",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-01-02",
+      "dateReleased": "2026-11-09",
       "definitions": [
         {
           "id": "definition:ca1341f22b9783e0897f",
@@ -105399,7 +105495,7 @@
         "Sleep",
         "Temperature & Humidity"
       ],
-      "version": "1.7.4"
+      "version": "1.7.5"
     },
     {
       "author": "Dominick Meglio",
@@ -105546,7 +105642,7 @@
       "author": "youzer-name",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-09",
       "definitions": [
         {
           "id": "definition:d0c3de57e1e5d73313ef",
@@ -105657,7 +105753,7 @@
         "LAN",
         "Lights & Switches"
       ],
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "author": "Albert Mulder",
@@ -137597,5 +137693,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-09T06:55:28Z"
+  "snapshotGenerated": "2026-11-10T07:32:50Z"
 }

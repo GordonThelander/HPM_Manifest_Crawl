@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 966,
+  "packageCount": 967,
   "packages": [
     {
       "apps": [],
@@ -185473,6 +185473,1248 @@
     {
       "apps": [
         {
+          "definitionLine": 1,
+          "definitionName": "BigTalker3-Parent",
+          "definitionNamespace": "rayzurbock",
+          "manifestName": "BigTalker3-Parent",
+          "manifestNamespace": "rayzurbock",
+          "observations": [
+            {
+              "evidence": "iconUrl: \"https://lowrance.cc/ST/icons/BigTalker.png\",",
+              "line": 8,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker.png"
+              }
+            },
+            {
+              "evidence": "iconX2Url: \"https://lowrance.cc/ST/icons/BigTalker@2x.png\",",
+              "line": 9,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker@2x.png"
+              }
+            },
+            {
+              "evidence": "iconX3Url: \"https://lowrance.cc/ST/icons/BigTalker@2x.png\")",
+              "line": 10,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker@2x.png"
+              }
+            },
+            {
+              "evidence": "DonateOptions += \"${formatLiStart}${formatStrongStart}Cash App${formatStrongEnd} = <a target='_blank' href='https://cash.app/\\$Lowrance'>https://cash.app/\\$Lowrance</a> (use a debit card, it\\'s free for both of us)${formatLiEnd}\"",
+              "line": 92,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "cash.app",
+                "scheme": "https",
+                "url": "https://cash.app/\\$Lowrance"
+              }
+            },
+            {
+              "evidence": "DonateOptions += \"${formatLiStart}${formatStrongStart}Venmo${formatStrongEnd} = <a target='_blank' href='https://venmo.com/code?user_id=2603208862072832399'>@BrianLowrance</a>${formatLiEnd}\"",
+              "line": 93,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "venmo.com",
+                "scheme": "https",
+                "url": "https://venmo.com/code?user_id=2603208862072832399"
+              }
+            },
+            {
+              "evidence": "DonateOptions += \"${formatLiStart}${formatStrongStart}Paypal.me${formatStrongEnd} = <a target='_blank' href='https://paypal.me/brianlowrance'>https://paypal.me/brianlowrance</a> (They take a little since I setup my account as a business acc",
+              "line": 94,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "paypal.me",
+                "scheme": "https",
+                "url": "https://paypal.me/brianlowrance"
+              }
+            },
+            {
+              "evidence": "input name: \"talkNowSpeechDeviceMusicPlayer\", type: \"capability.musicPlayer\", title: \"Music players (e.g. Sonos, VLCThing)\", multiple: true, required: false, submitOnChange: true",
+              "line": 112,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"talkNowSpeechDeviceSpeechSynthesis\", type: \"capability.speechSynthesis\", title: \"Speech speakers (e.g. Echo, Google Home, LANnouncer)\", multiple: true, required: false, submitOnChange: true",
+              "line": 113,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"talkNowSpeechDeviceAudioNotification\", type: \"capability.audioNotification\", title: \"Audio notification devices\", multiple: true, required: false, submitOnChange: true",
+              "line": 114,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"talkNowTextDevice\", type: \"capability.notification\", title: \"Text Only devices (e.g. Hubitat mobile app, Telegram, Pushover)\", multiple: true, required: false, submitOnChange: true",
+              "line": 115,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "AvailTokens += \"${formatLiStart}${formatStrongStart}%mp3(url)%${formatStrongEnd} = Play hosted MP3 file; URL should be http://www.domain.com/path/file.mp3\"",
+              "line": 189,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.domain.com",
+                "scheme": "http",
+                "url": "http://www.domain.com/path/file.mp3"
+              }
+            },
+            {
+              "evidence": "input \"speechDeviceDefaultMusicPlayer\", \"capability.musicPlayer\", title: \"Music players (default, e.g. Sonos, VLCThing)\", multiple: true, required: false, submitOnChange: false",
+              "line": 232,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input \"speechDeviceDefaultSpeechSynthesis\", \"capability.speechSynthesis\", title: \"Speech speakers (default, e.g. Echo, Google Home, LANnouncer)\", multiple: true, required: false, submitOnChange: false",
+              "line": 233,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input \"speechDeviceDefaultAudioNotification\", \"capability.audioNotification\", title: \"Audio notification devices (default)\", multiple: true, required: false, submitOnChange: false",
+              "line": 234,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input \"textDeviceDefault\", \"capability.notification\", title: \"Text Only devices (default)\", multiple: true, required: false, submitOnChange: false",
+              "line": 238,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "unschedule(\"disableDebug\")",
+              "line": 267,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 299,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"mode\", onModeChangeEvent) //Keep track of mode changes",
+              "line": 356,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (mode == \"capability.speechSynthesis\" || mode == \"capability.audioNotification\"){",
+              "line": 424,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "if (mode == \"capability.speechSynthesis\" || mode == \"capability.audioNotification\"){",
+              "line": 424,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "if (sSDevs) { Talk(appname, phrase, sSDevs, volume, resume, personality, voice, evt, \"capability.speechSynthesis\") }",
+              "line": 637,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "if (aNDevs) { Talk(appname, phrase, aNDevs, volume, resume, personality, voice, evt, \"capability.audioNotification\") }",
+              "line": 638,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "if (mPDevs) { Talk(appname, phrase, mPDevs, volume, resume, personality, voice, evt, \"capability.musicPlayer\") }",
+              "line": 639,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "if (mode == \"capability.musicPlayer\") {",
+              "line": 651,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "if ((mode == \"capability.musicPlayer\") && (!( phrase==null ) && !(phrase==\"\"))){",
+              "line": 669,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "unschedule(\"poll\")",
+              "line": 703,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "}// if (state.speechDeviceType==\"capability.musicPlayer\")",
+              "line": 911,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "if ((mode == \"capability.speechSynthesis\") && (!( phrase==null ) && !(phrase==\"\"))){",
+              "line": 912,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "//capability.speechSynthesis is in use",
+              "line": 913,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "} //if (mode == \"capability.speechSynthesis\")",
+              "line": 955,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "if ((mode == \"capability.audioNotification\") && (!( phrase==null ) && !(phrase==\"\"))){",
+              "line": 957,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "//capability.audioNotification is in use",
+              "line": 958,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "} //if (mode == \"capability.audioNotification\")",
+              "line": 1013,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "//myRunIn from ST:Geko / Statusbits SmartAlarm app http://statusbits.github.io/smartalarm/",
+              "line": 1062,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "statusbits.github.io",
+                "scheme": "http",
+                "url": "http://statusbits.github.io/smartalarm/"
+              }
+            },
+            {
+              "evidence": "runOnce(date, func)",
+              "line": 1069,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "def wxUri = \"https://api.open-meteo.com/v1/forecast?latitude=${state.latitude}&longitude=${state.longitude}&current_weather=true&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=2&temperature_unit=${tempUn",
+              "line": 1153,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.open-meteo.com",
+                "scheme": "https",
+                "url": "https://api.open-meteo.com/v1/forecast?latitude=${state.latitude"
+              }
+            },
+            {
+              "evidence": "httpGet(requestParams) { response ->",
+              "line": 1161,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "unschedule(\"poll\")",
+              "line": 1286,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"disableDebug\")",
+              "line": 1439,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "//schedule(\"0 0 9 ? * FRI *\", updateCheck) // Check for updates at 9am every Friday",
+              "line": 1686,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, resetBtnName)",
+              "line": 1708,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "//httpGet(\"https://github.com/CobraVmax/Hubitat/tree/master/Apps' target='_blank\")",
+              "line": 1712,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "//httpGet(\"https://github.com/CobraVmax/Hubitat/tree/master/Apps' target='_blank\")",
+              "line": 1712,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/CobraVmax/Hubitat/tree/master/Apps"
+              }
+            },
+            {
+              "evidence": "versionInfo += \"<img src='https://lowrance.cc/ST/icons/BigTalker-CurrentVersion.png'</img><BR>${state.ExternalName} - Version: ${state.version} <BR><font face='Lucida Handwriting'>${state.Copyright ?: \"\"} </font>\"",
+              "line": 1749,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker-CurrentVersion.png"
+              }
+            },
+            {
+              "evidence": "// if(updateNotification == true){ input \"speaker\", \"capability.speechSynthesis\", title: \"PushOver Device\", required: true, multiple: true}",
+              "line": 1765,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "def paramsUD = [uri: \"https://lowrance.cc/ST/manifests/RayzurCodeHE.json\"]",
+              "line": 1777,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/manifests/RayzurCodeHE.json"
+              }
+            },
+            {
+              "evidence": "httpGet(paramsUD) { respUD ->",
+              "line": 1788,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            }
+          ],
+          "sourceBytes": 100874,
+          "sourceFetched": true,
+          "sourceSha256": "a720bd12226cfeeaa223527fd9aac4a9b880ed6cf9dfa3457620cb8e6a56a6df",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/smartapps/rayzurbock/bigtalker3.src/bigtalker3.groovy"
+        },
+        {
+          "definitionLine": 1,
+          "definitionName": "BigTalker3-Child",
+          "definitionNamespace": "rayzurbock",
+          "manifestName": "BigTalker3-Child",
+          "manifestNamespace": "rayzurbock",
+          "observations": [
+            {
+              "evidence": "iconUrl: \"https://lowrance.cc/ST/icons/BigTalker.png\",",
+              "line": 8,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker.png"
+              }
+            },
+            {
+              "evidence": "iconX2Url: \"https://lowrance.cc/ST/icons/BigTalker@2x.png\",",
+              "line": 9,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker@2x.png"
+              }
+            },
+            {
+              "evidence": "iconX3Url: \"https://lowrance.cc/ST/icons/BigTalker@2x.png\")",
+              "line": 10,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker@2x.png"
+              }
+            },
+            {
+              "evidence": "input name: \"groupTextDevice\", type: \"capability.notification\", title: \"Text Only devices for this group (overrides app default; e.g. Hubitat mobile app, Telegram, Pushover)\", multiple: true, required: false, submitOnChange: true",
+              "line": 44,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"motionDeviceGroup1\", type: \"capability.motionSensor\", title: \"${state.formatSettingRootStart}Motion Sensor(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 172,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "motionSensor"
+            },
+            {
+              "evidence": "input name: \"motionMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCT",
+              "line": 178,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"motionSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. E",
+              "line": 179,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"motionAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play n",
+              "line": 180,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"motionTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatS",
+              "line": 181,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"motionDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 196,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"switchDeviceGroup1\", type: \"capability.switch\", title: \"${state.formatSettingRootStart}Switch(es)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 255,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"switchMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCT",
+              "line": 261,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"switchSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. E",
+              "line": 262,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"switchAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play n",
+              "line": 263,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"switchTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatS",
+              "line": 264,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"switchDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 278,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"presenceDeviceGroup1\", type: \"capability.presenceSensor\", title: \"${state.formatSettingRootStart}Presence Sensor(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 339,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "presenceSensor"
+            },
+            {
+              "evidence": "input name: \"presenceMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalEnd}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCT",
+              "line": 345,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"presenceSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalEnd}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. E",
+              "line": 346,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"presenceAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalEnd}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play n",
+              "line": 347,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"presenceTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.forma",
+              "line": 348,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"presenceDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 361,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"lockDeviceGroup1\", type: \"capability.lock\", title: \"${state.formatSettingRootStart}Lock(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 417,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "lock"
+            },
+            {
+              "evidence": "input name: \"lockMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCThi",
+              "line": 427,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"lockSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. Ech",
+              "line": 428,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"lockAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play not",
+              "line": 429,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"lockTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatSet",
+              "line": 430,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"lockDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 443,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"contactDeviceGroup1\", type: \"capability.contactSensor\", title: \"${state.formatSettingRootStart}Contact sensor(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 499,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "contactSensor"
+            },
+            {
+              "evidence": "input name: \"contactMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLC",
+              "line": 505,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"contactSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. ",
+              "line": 506,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"contactAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play ",
+              "line": 511,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"contactTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.format",
+              "line": 512,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"contactDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 526,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"modePhraseMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, ",
+              "line": 591,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"modePhraseSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.",
+              "line": 592,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"modePhraseAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that pl",
+              "line": 593,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"modePhraseTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.for",
+              "line": 594,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"modeDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 610,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"thermostatDeviceGroup1\", type: \"capability.thermostat\", title: \"${state.formatSettingRootStart}Thermostat(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 649,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "thermostat"
+            },
+            {
+              "evidence": "input name: \"thermostatMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, ",
+              "line": 659,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"thermostatSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.",
+              "line": 660,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"thermostatAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that pl",
+              "line": 661,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"thermostatTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.for",
+              "line": 662,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"thermostatDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 674,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"accelerationDeviceGroup1\", type: \"capability.accelerationSensor\", title: \"${state.formatSettingRootStart}Acceleration sensor(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 766,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "accelerationSensor"
+            },
+            {
+              "evidence": "input name: \"accelerationMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos",
+              "line": 772,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"accelerationSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (",
+              "line": 773,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"accelerationAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that ",
+              "line": 774,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"accelerationTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.f",
+              "line": 775,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"accelerationDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 787,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"waterDeviceGroup1\", type: \"capability.waterSensor\", title: \"${state.formatSettingRootStart}Water sensor(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 849,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "waterSensor"
+            },
+            {
+              "evidence": "input name: \"waterMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCTh",
+              "line": 855,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"waterSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. Ec",
+              "line": 856,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"waterAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play no",
+              "line": 857,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"waterTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatSe",
+              "line": 858,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"waterDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 870,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"smokeDeviceGroup1\", type: \"capability.smokeDetector\", title: \"${state.formatSettingRootStart}Smoke detector(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 934,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "smokeDetector"
+            },
+            {
+              "evidence": "input name: \"smokeMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCTh",
+              "line": 942,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"smokeSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. Ec",
+              "line": 943,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"smokeAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play no",
+              "line": 944,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"smokeTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatSe",
+              "line": 945,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"smokeDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 957,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"buttonDeviceGroup1\", type: \"capability.button\", title: \"${state.formatSettingRootStart}Button(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 1034,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "button"
+            },
+            {
+              "evidence": "input name: \"buttonMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCT",
+              "line": 1040,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"buttonSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. E",
+              "line": 1041,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"buttonAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play n",
+              "line": 1042,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"buttonTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatS",
+              "line": 1043,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"buttonDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1055,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"alarmDeviceGroup1\", type: \"capability.alarm\", title: \"${state.formatSettingRootStart}Alarm(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 1122,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "alarm"
+            },
+            {
+              "evidence": "input name: \"alarmMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCTh",
+              "line": 1132,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"alarmSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. Ec",
+              "line": 1133,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"alarmAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play no",
+              "line": 1134,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"alarmTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatSe",
+              "line": 1135,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"alarmDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1147,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"filterStatusGroup1\", type: \"capability.filterstatus\", title: \"${state.formatSettingRootStart}Filter(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 1239,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "filterstatus"
+            },
+            {
+              "evidence": "input name: \"filterStatusMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos",
+              "line": 1245,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"filterStatusSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (",
+              "line": 1246,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"filterStatusAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that ",
+              "line": 1247,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"filterStatusTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.f",
+              "line": 1248,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"filterStatusDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1260,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"timeSlotMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VL",
+              "line": 1322,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"timeSlotSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g.",
+              "line": 1323,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"timeSlotAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play",
+              "line": 1324,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"timeSlotTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.forma",
+              "line": 1325,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"timeSlotDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1334,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"timeSlotMusicPlayerDevice2\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VL",
+              "line": 1342,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"timeSlotSpeechSynthesisDevice2\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g.",
+              "line": 1343,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"timeSlotAudioNotificationDevice2\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play",
+              "line": 1344,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"timeSlotDisableSwitch2\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1353,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"timeSlotMusicPlayerDevice3\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VL",
+              "line": 1361,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"timeSlotSpeechSynthesisDevice3\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g.",
+              "line": 1362,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"timeSlotAudioNotificationDevice3\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play",
+              "line": 1363,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"timeSlotDisableSwitch3\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1372,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"powerMeterDeviceGroup1\", type: \"capability.powerMeter\", title: \"${state.formatSettingRootStart}Power Meter(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 1432,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "powerMeter"
+            },
+            {
+              "evidence": "input name: \"powerMeterMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, ",
+              "line": 1442,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"powerMeterSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.",
+              "line": 1443,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"powerMeterAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that pl",
+              "line": 1444,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"powerMeterTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.for",
+              "line": 1445,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"powerMeterDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1457,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "input name: \"valveDeviceGroup1\", type: \"capability.valve\", title: \"${state.formatSettingRootStart}Valve(s)${state.formatSettingRootEnd}\", required: false, multiple: true",
+              "line": 1514,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "valve"
+            },
+            {
+              "evidence": "input name: \"valveMusicPlayerDevice1\", type: \"capability.musicPlayer\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Music players (e.g. Sonos, VLCTh",
+              "line": 1520,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "musicPlayer"
+            },
+            {
+              "evidence": "input name: \"valveSpeechSynthesisDevice1\", type: \"capability.speechSynthesis\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Speech speakers (e.g. Ec",
+              "line": 1521,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "input name: \"valveAudioNotificationDevice1\", type: \"capability.audioNotification\", title: \"${state.formatSettingOptionalStart}Talk with these text-to-speech devices (overrides default)${state.formatSettingOptionalEnd} - Devices that play no",
+              "line": 1522,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "audioNotification"
+            },
+            {
+              "evidence": "input name: \"valveTextDevice1\", type: \"capability.notification\", title: \"${state.formatSettingOptionalStart}Text Only devices (overrides group/app default) - notification devices (e.g. Hubitat mobile app, Telegram, Pushover)${state.formatSe",
+              "line": 1523,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "input name: \"valveDisableSwitch1\", type: \"capability.switch\", title: \"${state.formatSettingOptionalStart}Disable when this switch is off${state.formatSettingOptionalEnd}\", required: false, multiple: false",
+              "line": 1540,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "switch"
+            },
+            {
+              "evidence": "AvailTokens += \"${state.formatLiStart}${state.formatStrongStart}%mp3(url)%${state.formatStrongEnd} = Play hosted MP3 file; URL should be http://www.domain.com/path/file.mp3\"",
+              "line": 1604,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.domain.com",
+                "scheme": "http",
+                "url": "http://www.domain.com/path/file.mp3"
+              }
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 1638,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (motionDeviceGroup1) { subscribe(motionDeviceGroup1, \"motion\", onMotion1Event) }",
+              "line": 1663,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (switchDeviceGroup1) { subscribe(switchDeviceGroup1, \"switch\", onSwitch1Event) }",
+              "line": 1665,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (presenceDeviceGroup1) { subscribe(presenceDeviceGroup1, \"presence\", onPresence1Event); LOGDEBUG(\"Subscribed to presence: ${presenceDeviceGroup1}\",false) }",
+              "line": 1667,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (lockDeviceGroup1) { subscribe(lockDeviceGroup1, \"lock\", onLock1Event) }",
+              "line": 1669,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (contactDeviceGroup1) { subscribe(contactDeviceGroup1, \"contact\", onContact1Event) }",
+              "line": 1671,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (thermostatDeviceGroup1) { subscribe(thermostatDeviceGroup1, \"thermostatOperatingState\", onThermostat1Event) }",
+              "line": 1673,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (accelerationDeviceGroup1) { subscribe(accelerationDeviceGroup1, \"acceleration\", onAcceleration1Event) }",
+              "line": 1675,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (waterDeviceGroup1) { subscribe(waterDeviceGroup1, \"water\", onWater1Event) }",
+              "line": 1677,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (smokeDeviceGroup1) { subscribe(smokeDeviceGroup1, \"smoke\", onSmoke1Event) }",
+              "line": 1679,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (buttonDeviceGroup1) { subscribe(buttonDeviceGroup1, \"button\", onButton1Event) }",
+              "line": 1681,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (alarmDeviceGroup1) { subscribe(alarmDeviceGroup1, \"alarm\", onAlarm1Event) }",
+              "line": 1683,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (filterStatusGroup1) { subscribe(filterStatusGroup1, \"filterstatus\", onFilterStatus1Event) }",
+              "line": 1685,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (ovenModeDeviceGroup1) { subscribe(ovenModeDeviceGroup1, \"ovenmode\", onOvenMode1Event) }",
+              "line": 1687,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (powerMeterDeviceGroup1) { subscribe(powerMeterDeviceGroup1, \"power\", onPowerMeter1Event) }",
+              "line": 1689,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (modePhraseGroup1) { subscribe(location, \"mode\", onModeChangeEvent) }",
+              "line": 1691,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (valveDeviceGroup1) { subscribe(valveDeviceGroup1, \"valve\", onValve1Event) }",
+              "line": 1693,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (timeSlotTime1) { schedule(timeSlotTime1, onSchedule1Event) }",
+              "line": 1701,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (timeSlotTime2) { schedule(timeSlotTime2, onSchedule2Event) }",
+              "line": 1702,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (timeSlotTime3) { schedule(timeSlotTime3, onSchedule3Event) }",
+              "line": 1703,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "//myRunIn from ST:Geko / Statusbits SmartAlarm app http://statusbits.github.io/smartalarm/",
+              "line": 1857,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "statusbits.github.io",
+                "scheme": "http",
+                "url": "http://statusbits.github.io/smartalarm/"
+              }
+            },
+            {
+              "evidence": "runOnce(date, func)",
+              "line": 1864,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySec < 1 ? 1 : (int)delaySec, \"processDelayQueue\", [overwrite: false])",
+              "line": 2105,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(secs, \"processDelayQueue\", [overwrite: false])",
+              "line": 2124,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "//schedule(\"0 0 9 ? * FRI *\", updateCheck) // Check for updates at 9am every Friday",
+              "line": 2517,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, resetBtnName)",
+              "line": 2537,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "//httpGet(\"https://github.com/CobraVmax/Hubitat/tree/master/Apps' target='_blank\")",
+              "line": 2541,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "//httpGet(\"https://github.com/CobraVmax/Hubitat/tree/master/Apps' target='_blank\")",
+              "line": 2541,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/CobraVmax/Hubitat/tree/master/Apps"
+              }
+            },
+            {
+              "evidence": "versionInfo += \"<img src='https://lowrance.cc/ST/icons/BigTalker-CurrentVersion.png'</img>${state.formatBr}${state.ExternalName} - Version: ${state.version} ${state.formatBr}<font face='Lucida Handwriting'>${state.Copyright ?: \"\"} </font>\"",
+              "line": 2561,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/icons/BigTalker-CurrentVersion.png"
+              }
+            },
+            {
+              "evidence": "// if(updateNotification == true){ input \"speaker\", \"capability.speechSynthesis\", title: \"PushOver Device\", required: true, multiple: true}",
+              "line": 2577,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "speechSynthesis"
+            },
+            {
+              "evidence": "def paramsUD = [uri: \"https://lowrance.cc/ST/manifests/RayzurCodeHE.json\"]",
+              "line": 2589,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "lowrance.cc",
+                "scheme": "https",
+                "url": "https://lowrance.cc/ST/manifests/RayzurCodeHE.json"
+              }
+            },
+            {
+              "evidence": "httpGet(paramsUD) { respUD ->",
+              "line": 2600,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            }
+          ],
+          "sourceBytes": 275460,
+          "sourceFetched": true,
+          "sourceSha256": "cda5462d827eb16ee1e40d4a99017225355aee8955b53df7a29cd9dda15ac78f",
+          "sourceUrl": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/smartapps/rayzurbock/bigtalker3-child.src/bigtalker3-child.groovy"
+        }
+      ],
+      "author": "Rayzurbock",
+      "category": "Notifications",
+      "communityLink": null,
+      "dateReleased": "2026-11-06",
+      "description": "Spoken and/or text announcements for mode changes, switches, motions, and more.",
+      "documentationLink": null,
+      "drivers": [],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/packageManifest.json",
+      "packageId": null,
+      "packageName": "BigTalker3",
+      "repoAuthor": "Rayzurbock",
+      "repoName": "Rayzurbock",
+      "repoUrl": "https://raw.githubusercontent.com/rayzurbock/hubitat-muse-bridge/main/repository.json",
+      "tags": [],
+      "version": "3.0.1"
+    },
+    {
+      "apps": [
+        {
           "definitionLine": 24,
           "definitionName": "Muse Bridge",
           "definitionNamespace": "musebridge",
@@ -243657,104 +244899,104 @@
             },
             {
               "evidence": "runIn(delaySeconds as Integer, \"renewToken\", [overwrite: true])",
-              "line": 362,
+              "line": 364,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"renewToken\")",
-              "line": 372,
+              "line": 374,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"start\", [overwrite: true])",
-              "line": 379,
+              "line": 381,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost(\"apiResponse\", [",
-              "line": 408,
+              "line": 410,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet(\"apiResponse\", params,",
-              "line": 465,
+              "line": 467,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPut(\"apiResponse\", [uri: apiBase(), path: path, headers: headers(), contentType: \"application/json\", body: body, timeout: 30],",
-              "line": 473,
+              "line": 475,
               "type": "HTTP_CALL",
               "value": "asynchttpPut"
             },
             {
               "evidence": "runIn(2, \"start\", [overwrite: true])",
-              "line": 510,
+              "line": 512,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"poll\", [overwrite: true])",
-              "line": 517,
+              "line": 519,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(2, (settings.settleSeconds ?: 8) as Integer), \"refreshAfterWrite\",",
-              "line": 588,
+              "line": 590,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def controller = getChildDevice(sdni(sid)) ?: addChildDevice(\"tljungberg\", \"Evohome System Controller\", sdni(sid), [label: (loc.locationInfo?.name ?: \"Evohome\") + \" System\"])",
-              "line": 618,
+              "line": 620,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def zone = getChildDevice(zdni(zid)) ?: addChildDevice(\"tljungberg\", \"Evohome Heating Zone\", zdni(zid), [label: (z.name ?: \"Zone\") + \" (evohome)\"])",
-              "line": 623,
+              "line": 625,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def hot = getChildDevice(hdni(hid)) ?: addChildDevice(\"tljungberg\", \"Evohome Hot Water\", hdni(hid), [label: \"Evohome Hot Water\"])",
-              "line": 633,
+              "line": 635,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
-              "line": 909,
+              "line": 933,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(1, (settings.debounceSeconds ?: 3) as Integer), \"flushZone\", [data: [zoneId: zid], overwrite: true])",
-              "line": 973,
+              "line": 997,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
-              "line": 989,
+              "line": 1013,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"flushZone\", [data: [zoneId: zid], overwrite: true])",
-              "line": 1105,
+              "line": 1129,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 74892,
+          "sourceBytes": 77431,
           "sourceFetched": true,
-          "sourceSha256": "bec60cf209fa03be9fb3e7852f93f89ab96f1155e5082866c2a3ea57c812f29e",
+          "sourceSha256": "d55c55de45a07ee7f236cd5c0812dc3651e4a99240a2dd02ff6b0470c0de4134",
           "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeConnect.groovy"
         }
       ],
@@ -243785,7 +245027,7 @@
           ],
           "sourceBytes": 19947,
           "sourceFetched": true,
-          "sourceSha256": "59e1e05e6dfeedd3aa59a8b953af73304694f6b8726815e8009eceafb5918a34",
+          "sourceSha256": "5877ed21247bf45fdf858bcfc9c4ffb0244a0ad893fe0af9ebb58eb97c74d7f2",
           "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHeatingZone.groovy"
         },
         {
@@ -243808,7 +245050,7 @@
           ],
           "sourceBytes": 8265,
           "sourceFetched": true,
-          "sourceSha256": "c4dae3c044c4cdc0b23e7e5d6d2083eb4ed0b28f53768b0e21e1db81a96bb288",
+          "sourceSha256": "cfa8b6f61d6d04c8715cf35464b30dec199ee2e0c13eff9a0032b6ca0ad60762",
           "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHotWater.groovy"
         },
         {
@@ -243831,7 +245073,7 @@
           ],
           "sourceBytes": 6346,
           "sourceFetched": true,
-          "sourceSha256": "67c28a813b7c31793150e56671ec153add0ea959ad1f63e09f5428da57038dce",
+          "sourceSha256": "0233857a6904ad242d7511ff28d4371a4312de3e4a96a9d6d6ee2183aac43132",
           "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeSystemController.groovy"
         }
       ],
@@ -243845,7 +245087,7 @@
       "tags": [
         "Convenience"
       ],
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "apps": [],
@@ -276809,7 +278051,7 @@
     {
       "apps": [
         {
-          "definitionLine": 56,
+          "definitionLine": 63,
           "definitionName": "Hub Health Monitor & Auto Reboot",
           "definitionNamespace": "dJOS",
           "manifestName": "Hub Health Monitor & Auto Reboot",
@@ -276817,7 +278059,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/memory-monitor-reboot.groovy\"",
-              "line": 65,
+              "line": 72,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -276827,73 +278069,73 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 316,
+              "line": 327,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 323,
+              "line": 334,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"zigbeeOff\", hubEventHandler)",
-              "line": 334,
+              "line": 345,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"zwaveCrashed\", hubEventHandler)",
-              "line": 338,
+              "line": 349,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"severeLoad\", hubEventHandler)",
-              "line": 342,
+              "line": 353,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(checkMemory)",
-              "line": 355,
+              "line": 366,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(checkMemory)",
-              "line": 358,
+              "line": 369,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(checkMemory)",
-              "line": 361,
+              "line": 372,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(checkMemory)",
-              "line": 364,
+              "line": 375,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(checkMemory)",
-              "line": 370,
+              "line": 381,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, checkMemory)",
-              "line": 388,
+              "line": 397,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 430,
+              "line": 454,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -276903,25 +278145,13 @@
             },
             {
               "evidence": "httpPost(params) { resp -> }",
-              "line": 437,
+              "line": 461,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
-              "evidence": "unschedule(performPeriodicReboot)",
-              "line": 583,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runOnce(newNextReboot, performPeriodicReboot)",
-              "line": 584,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 621,
+              "line": 602,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -276931,45 +278161,45 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 629,
+              "line": 610,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
-              "evidence": "runOnce(nextReboot, performPeriodicReboot)",
-              "line": 774,
+              "evidence": "* can't be lost or go stale the way a chain of runOnce() calls can.",
+              "line": 740,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runOnce(nextReboot, performPeriodicReboot)",
-              "line": 806,
+              "evidence": "unschedule(\"periodicRebootCheck\")",
+              "line": 744,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runOnce(nextReboot, performPeriodicReboot)",
-              "line": 834,
+              "evidence": "unschedule(\"performPeriodicReboot\")",
+              "line": 745,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runOnce(nextReboot, performPeriodicReboot)",
-              "line": 860,
+              "evidence": "schedule(cron, \"periodicRebootCheck\")",
+              "line": 758,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 34458,
+          "sourceBytes": 35306,
           "sourceFetched": true,
-          "sourceSha256": "5420822f278853623e2f57bd7d05912281ff6baa2c4e8dde9880a336d9a0272f",
+          "sourceSha256": "ad32fcf65b7278db6bde117ef53c0b0c7384d66971ca60f3e151b937b0d2e48b",
           "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/memory-monitor-reboot.groovy"
         }
       ],
       "author": "Derek Osborn",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/release-memory-monitor-auto-reboot-application/160272",
-      "dateReleased": "2025-12-31",
+      "dateReleased": "2026-11-10",
       "description": "Monitors hub memory usage and automatically reboots when free memory falls below a configured threshold during a specified time window",
       "documentationLink": null,
       "drivers": [],
@@ -276983,7 +278213,7 @@
       "tags": [
         "Utility"
       ],
-      "version": "1.3.0"
+      "version": "1.3.1"
     },
     {
       "apps": [
@@ -293805,13 +295035,13 @@
             },
             {
               "evidence": "input name: \"notifyDevices_${settingsIdx}\", type: \"capability.notification\",",
-              "line": 292,
+              "line": 294,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "description: \"e.g., https://example.com/webhook\"",
-              "line": 315,
+              "line": 317,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "example.com",
@@ -293821,67 +295051,67 @@
             },
             {
               "evidence": "if (enableDebug || traceEnable) runIn(1800, \"logsOff\")",
-              "line": 391,
+              "line": 394,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitrep\", \"Log Monitor Bridge\", dni,",
-              "line": 409,
+              "line": 412,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule(\"resetRateLimitCounters\")",
-              "line": 414,
+              "line": 417,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"seedNames\")",
-              "line": 419,
+              "line": 423,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"seedNames\")",
-              "line": 421,
+              "line": 425,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 ${new Random().nextInt(60)} 4 * * ?\", \"seedNames\")",
-              "line": 422,
+              "line": 426,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (reinit) runIn(1, \"updated\")",
-              "line": 435,
+              "line": 439,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitrep\", \"Log Monitor Bridge\", dni,",
-              "line": 567,
+              "line": 571,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "asynchttpPost(\"httpPostCallback\", postParams, [url: filter.httpUrlEnc, shown: filter.httpUrlShown ?: maskUrl(httpUrl)])",
-              "line": 994,
+              "line": 1031,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "asynchttpGet(\"seedDevicesCallback\", [uri: \"http://127.0.0.1:8080\", path: \"/hub2/devicesList\", timeout: 30])",
-              "line": 1390,
+              "line": 1427,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet(\"seedDevicesCallback\", [uri: \"http://127.0.0.1:8080\", path: \"/hub2/devicesList\", timeout: 30])",
-              "line": 1390,
+              "line": 1427,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -293891,13 +295121,13 @@
             },
             {
               "evidence": "asynchttpGet(\"seedAppsCallback\", [uri: \"http://127.0.0.1:8080\", path: \"/hub2/appsList\", timeout: 30])",
-              "line": 1391,
+              "line": 1428,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpGet(\"seedAppsCallback\", [uri: \"http://127.0.0.1:8080\", path: \"/hub2/appsList\", timeout: 30])",
-              "line": 1391,
+              "line": 1428,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -293906,21 +295136,21 @@
               }
             }
           ],
-          "sourceBytes": 69917,
+          "sourceBytes": 71490,
           "sourceFetched": true,
-          "sourceSha256": "e7a75bd5f58305ad0df61aece2a49d2a53548660750bc548650e3c78a3c879b1",
+          "sourceSha256": "80554643021ddb4bb35589ecc0e2aa52e7d0e3d70170a915539dec51780d9f9c",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitor.groovy"
         }
       ],
       "author": "hubitrep",
       "category": "Utility",
       "communityLink": null,
-      "dateReleased": "2026-10-27",
+      "dateReleased": "2026-11-09",
       "description": "Watches hub logs, on this hub and others, and sends matching lines to notification devices, a File Manager log file or an HTTP endpoint.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/LogMonitor",
       "drivers": [
         {
-          "definitionLine": 43,
+          "definitionLine": 73,
           "definitionName": "Log Monitor Bridge",
           "definitionNamespace": "hubitrep",
           "manifestName": "Log Monitor Bridge",
@@ -293928,7 +295158,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/main/LogMonitor/LogMonitorBridge.groovy\"",
-              "line": 47,
+              "line": 77,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -293937,110 +295167,116 @@
               }
             },
             {
-              "evidence": "unschedule()",
-              "line": 99,
+              "evidence": "unschedule() // before disconnect(), which schedules its own close check",
+              "line": 128,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (enableDebug || enableTrace) runIn(1800, \"logsOff\")",
-              "line": 101,
+              "line": 131,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.webSocket.close() } catch (Exception ignored) { }",
-              "line": 132,
+              "line": 163,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(location.hub.uptime < STARTUP_DELAY_SECS ? STARTUP_DELAY_SECS : 2, \"connect\")",
-              "line": 142,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runEvery5Minutes(\"checkSilence\")",
-              "line": 143,
+              "line": 176,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (reinit) runIn(1, \"updated\")",
-              "line": 153,
+              "line": 188,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"connect\")",
-              "line": 162,
+              "line": 197,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.webSocket.connect(opts, uri)",
-              "line": 190,
+              "line": 225,
               "type": "WEBSOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"connect\")",
-              "line": 207,
+              "line": 242,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.webSocket.close()",
-              "line": 210,
-              "type": "WEBSOCKET_INTERFACE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(2, \"connect\")",
-              "line": 222,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delay, \"connect\")",
-              "line": 231,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"connectionStable\")",
+              "evidence": "unschedule(\"drain\")",
               "line": 244,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"connect\")",
-              "line": 255,
+              "evidence": "interfaces.webSocket.close()",
+              "line": 250,
+              "type": "WEBSOCKET_INTERFACE",
+              "value": true
+            },
+            {
+              "evidence": "if (wasConnected) runIn(CLOSE_CONFIRM_SECS, \"closeCheck\")",
+              "line": 256,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(STABLE_SECS, \"connectionStable\")",
-              "line": 259,
+              "evidence": "runIn(2, \"connect\")",
+              "line": 271,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delay, \"connect\")",
+              "line": 280,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"connectionStable\")",
-              "line": 269,
+              "line": 296,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"connect\")",
+              "line": 307,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(STABLE_SECS, \"connectionStable\")",
+              "line": 313,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"connectionStable\")",
+              "line": 325,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost([",
-              "line": 376,
+              "line": 581,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://${host}\",",
-              "line": 377,
+              "line": 582,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${host",
@@ -294049,9 +295285,9 @@
               }
             }
           ],
-          "sourceBytes": 18318,
+          "sourceBytes": 29392,
           "sourceFetched": true,
-          "sourceSha256": "921d07e14f605197a26249cd42b2dce691c7643700b0c6895cae43902708e702",
+          "sourceSha256": "750ce45e45e3c5873719e548ce2569a29693375aec129698d78aba207c23ff8b",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitorBridge.groovy"
         }
       ],
@@ -294067,7 +295303,7 @@
         "Monitoring",
         "Notifications"
       ],
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "apps": [
@@ -294079,8 +295315,14 @@
           "manifestNamespace": "hubitrep",
           "observations": [
             {
+              "evidence": "oauth: true,",
+              "line": 15,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/SamsungTVRemoteTester.groovy\",",
-              "line": 17,
+              "line": 18,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -294089,80 +295331,114 @@
               }
             },
             {
+              "evidence": "@Field static final String UI_URL = \"https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/samsung-tv-tester-ui.html\"",
+              "line": 41,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/samsung-tv-tester-ui.html"
+              }
+            },
+            {
               "evidence": "mappings {",
-              "line": 81,
+              "line": 92,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
+              "evidence": "padTraceRestore() // unschedule() below drops its timer",
+              "line": 153,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule()",
-              "line": 143,
+              "line": 155,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"onSystemStart\")",
-              "line": 150,
+              "line": 162,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (debugEnable) runIn(1800, \"logsOff\")",
-              "line": 151,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if (reinit) runIn(1, \"updated\")",
               "line": 163,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "if (reinit) runIn(1, \"updated\")",
+              "line": 175,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"padTraceRestore\")",
+              "line": 241,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "TV_ATTRIBUTES.each { subscribe(tv, it as String, \"onTvEvent\", [filterEvents: false]) }",
-              "line": 266,
+              "line": 252,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(seconds, handler)",
-              "line": 276,
+              "line": 262,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"runStep\")",
-              "line": 289,
+              "line": 275,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pollWait\")",
-              "line": 290,
+              "line": 276,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"sleepDone\")",
-              "line": 291,
+              "line": 277,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"pollPrompt\")",
+              "line": 278,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"pollWatch\")",
+              "line": 279,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"onSystemStart\")",
-              "line": 306,
+              "line": 295,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/device/fullJson/${tv.id}\", timeout: 20]) { resp -> st = resp.data?.deviceState as Map }",
-              "line": 420,
+              "line": 460,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/device/fullJson/${tv.id}\", timeout: 20]) { resp -> st = resp.data?.deviceState as Map }",
-              "line": 420,
+              "line": 460,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -294171,14 +295447,14 @@
               }
             },
             {
-              "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/logs/past/json\", timeout: 30]) { resp -> raw = resp.data as List }",
-              "line": 492,
+              "evidence": "asynchttpPost(\"deviceCommandDone\", [uri: \"http://127.0.0.1:8080\", path: \"/device/runmethod\",",
+              "line": 493,
               "type": "HTTP_CALL",
-              "value": "httpGet"
+              "value": "asynchttpPost"
             },
             {
-              "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/logs/past/json\", timeout: 30]) { resp -> raw = resp.data as List }",
-              "line": 492,
+              "evidence": "asynchttpPost(\"deviceCommandDone\", [uri: \"http://127.0.0.1:8080\", path: \"/device/runmethod\",",
+              "line": 493,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -294187,14 +295463,14 @@
               }
             },
             {
-              "evidence": "httpGet([uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: 6]) { resp ->",
-              "line": 540,
+              "evidence": "asynchttpGet(\"watchReading\", [uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: 4],",
+              "line": 634,
               "type": "HTTP_CALL",
-              "value": "httpGet"
+              "value": "asynchttpGet"
             },
             {
-              "evidence": "httpGet([uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: 6]) { resp ->",
-              "line": 540,
+              "evidence": "asynchttpGet(\"watchReading\", [uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: 4],",
+              "line": 634,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${tv.getsetting(",
@@ -294203,14 +295479,64 @@
               }
             },
             {
+              "evidence": "asynchttpGet(handler, [uri: \"http://127.0.0.1:8080\", path: \"/logs/past/json\", timeout: 30],",
+              "line": 682,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(handler, [uri: \"http://127.0.0.1:8080\", path: \"/logs/past/json\", timeout: 30],",
+              "line": 682,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: timeoutS]) { resp ->",
+              "line": 761,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${tv.getSetting('deviceIp')}:8001\", path: \"/api/v2/\", timeout: timeoutS]) { resp ->",
+              "line": 761,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${tv.getsetting(",
+                "scheme": "http",
+                "url": "http://${tv.getSetting("
+              }
+            },
+            {
+              "evidence": "runIn(PAD_TRACE_S, \"padTraceRestore\") // re-armed by each press",
+              "line": 976,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(4, \"padCollect\", [data: [atMs: t], overwrite: false])",
+              "line": 979,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"syncUICallback\", [uri: UI_URL, textParser: true, timeout: 30], [:])",
+              "line": 1067,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
               "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/app/ajax/code\", query: [id: typeId], timeout: 15]) { resp ->",
-              "line": 652,
+              "line": 1093,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "httpGet([uri: \"http://127.0.0.1:8080\", path: \"/app/ajax/code\", query: [id: typeId], timeout: 15]) { resp ->",
-              "line": 652,
+              "line": 1093,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -294220,13 +295546,13 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 663,
+              "line": 1104,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080\",",
-              "line": 664,
+              "line": 1105,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -294236,27 +295562,27 @@
             },
             {
               "evidence": "createAccessToken()",
-              "line": 686,
+              "line": 1127,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 692,
+              "line": 1133,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             }
           ],
-          "sourceBytes": 54744,
+          "sourceBytes": 88525,
           "sourceFetched": true,
-          "sourceSha256": "bb6d8fde1479f50bf1e2c25bc07685b700a30a5334f4dc660c9fac2f3032d244",
+          "sourceSha256": "7b66ec838743ecec460857dbcfc0a55050126c113e5636b8b26663412eaae336",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/tests/SamsungTVRemoteTester.groovy"
         }
       ],
       "author": "hubitrep (original by Dave Gutheinz)",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-samsung-tv-remote-2016-and-later-tvs/166829",
-      "dateReleased": "2026-11-07",
+      "dateReleased": "2026-11-09",
       "description": "Samsung Tizen TVs (2016 and later) over the LAN: power, keys, apps, presets, Frame art mode and optional SmartThings, with an optional tester app. Based on Dave Gutheinz's driver.",
       "documentationLink": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
       "drivers": [
@@ -294895,7 +296221,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "2.4.9"
+      "version": "2.4.10"
     },
     {
       "apps": [],
@@ -331482,7 +332808,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/lnjustin/MowBot-Tamer/main/MowBotTamer.groovy"
         },
         {
-          "definitionLine": 40,
+          "definitionLine": 41,
           "definitionName": "MowBot Tamer Instance",
           "definitionNamespace": "lnjustin",
           "manifestName": "MowBot Tamer Instance",
@@ -331500,7 +332826,7 @@
             },
             {
               "evidence": "iconUrl: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png\",",
-              "line": 47,
+              "line": 48,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "s3.amazonaws.com",
@@ -331510,16 +332836,6 @@
             },
             {
               "evidence": "iconX2Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
-              "line": 48,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "s3.amazonaws.com",
-                "scheme": "https",
-                "url": "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png"
-              }
-            },
-            {
-              "evidence": "iconX3Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\"",
               "line": 49,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -331529,700 +332845,710 @@
               }
             },
             {
+              "evidence": "iconX3Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\"",
+              "line": 50,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "s3.amazonaws.com",
+                "scheme": "https",
+                "url": "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png"
+              }
+            },
+            {
               "evidence": "input name: \"tempSensor\", type: \"capability.temperatureMeasurement\", title: \"Temperature Sensor\", submitOnChange:false, width: 4",
-              "line": 95,
+              "line": 96,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input name: \"humidityMeasurement\", type: \"capability.relativeHumidityMeasurement\", title: \"Humidity or Soil Moisture Sensor(s)\", width: humidityMeasurement ? 4 : 12, submitOnChange: true",
-              "line": 136,
+              "line": 137,
               "type": "CAPABILITY_REFERENCE",
               "value": "relativeHumidityMeasurement"
             },
             {
               "evidence": "input name: \"waterSensor\", type: \"capability.waterSensor\", title: \"Water/Rain Sensor\", width: waterSensor ? 4 : 12, submitOnChange: true, multiple: true",
-              "line": 141,
+              "line": 142,
               "type": "CAPABILITY_REFERENCE",
               "value": "waterSensor"
             },
             {
               "evidence": "input name: \"irrigationValves\", type: \"capability.valve\", title: \"Irrigation Valve(s)\", multiple: true, submitOnChange:true, width: irrigationValves ? 4 : 12",
-              "line": 146,
+              "line": 147,
               "type": "CAPABILITY_REFERENCE",
               "value": "valve"
             },
             {
               "evidence": "input name: \"parkTempSensor\", type: \"capability.temperatureMeasurement\", title: \"Temperature Sensor\", submitOnChange:false, width: 4, required: true",
-              "line": 164,
+              "line": 165,
               "type": "CAPABILITY_REFERENCE",
               "value": "temperatureMeasurement"
             },
             {
               "evidence": "input name: \"presenceSensors\", type: \"capability.presenceSensor\", title: \"Presence Sensor(s)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 171,
+              "line": 172,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "input name: \"parkSwitches\", type: \"capability.switch\", title: \"Switch(es)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 177,
+              "line": 178,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
             },
             {
               "evidence": "input name: \"pause_motionSensors\", type: \"capability.motionSensor\", title: \"Motion Sensor(s)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 185,
+              "line": 186,
               "type": "CAPABILITY_REFERENCE",
               "value": "motionSensor"
             },
             {
               "evidence": "input name: \"pauseContactSensors\", type: \"capability.contactSensor\", title: \"Contact Sensor(s)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 189,
+              "line": 190,
               "type": "CAPABILITY_REFERENCE",
               "value": "contactSensor"
             },
             {
               "evidence": "input name: \"pause_presenceSensors\", type: \"capability.presenceSensor\", title: \"Presence Sensor(s)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 196,
+              "line": 197,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "input name: \"pauseSwitches\", type: \"capability.switch\", title: \"Switch(es)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 201,
+              "line": 202,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
             },
             {
               "evidence": "input name: \"pauseButtons\", type: \"capability.pushableButton\", title: \"Pushable Button(s)\", submitOnChange:false, width: 4, multiple: true, required: true",
-              "line": 206,
+              "line": 207,
               "type": "CAPABILITY_REFERENCE",
               "value": "pushableButton"
             },
             {
               "evidence": "// unschedule()",
-              "line": 299,
+              "line": 300,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(tempTriggerCheck)",
-              "line": 308,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(switchHandler)",
               "line": 309,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(dateTriggerCheck)",
+              "evidence": "unschedule(switchHandler)",
               "line": 310,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(scheduleMowers)",
-              "line": 312,
+              "evidence": "unschedule(dateTriggerCheck)",
+              "line": 311,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(scheduleMowingWindowStart)",
+              "evidence": "unschedule(scheduleMowers)",
               "line": 313,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(scheduleMowingWindowEnd)",
+              "evidence": "unschedule(scheduleMowingWindowStart)",
               "line": 314,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(mowingPreCheck)",
+              "evidence": "unschedule(scheduleMowingWindowEnd)",
               "line": 315,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(handleExpiredMowingWindow)",
+              "evidence": "unschedule(mowingPreCheck)",
               "line": 316,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(endMowingWindow)",
+              "evidence": "unschedule(handleExpiredMowingWindow)",
               "line": 317,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(startMowingWindow)",
+              "evidence": "unschedule(endMowingWindow)",
               "line": 318,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(backupWindowPreCheck)",
+              "evidence": "unschedule(startMowingWindow)",
               "line": 319,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(handleExpiredBackupMowingWindow)",
+              "evidence": "unschedule(backupWindowPreCheck)",
               "line": 320,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(park)",
+              "evidence": "unschedule(handleExpiredBackupMowingWindow)",
               "line": 321,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(parkPrematurely)",
+              "evidence": "unschedule(park)",
               "line": 322,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(trackTodaysMowing)",
+              "evidence": "unschedule(parkPrematurely)",
               "line": 323,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule(trackTodaysMowing)",
+              "line": 324,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "child = addChildDevice(\"lnjustin\", \"MowBot Tamer Device\", childNetworkID, [label:\"MowBot Tamer Device ${app.label}\", isComponent:true, name:\"MowBot Tamer Device\"])",
-              "line": 366,
+              "line": 367,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "subscribe(tempSensor, \"temperature\", tempSensorHandler)",
-              "line": 372,
+              "line": 373,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"01 00 00 ? * *\", tempTriggerCheck)",
-              "line": 373,
+              "line": 374,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"01 00 00 ? * *\", dateTriggerCheck)",
-              "line": 382,
+              "line": 383,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 59 23 1/1 * ? *\", resetTodaysMowing)",
-              "line": 715,
+              "line": 681,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule('0 */' + settings[\"mowDurationTrackingInterval\"] + ' * ? * *', trackTodaysMowing)",
-              "line": 716,
+              "line": 682,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// runIn(settings[\"mowDurationTrackingInterval\"]*60, trackTodaysMowing)",
-              "line": 717,
+              "line": 683,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"mowerActivity\", mowerActivityHandler)",
-              "line": 718,
+              "line": 684,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"plannerNextStart\", nextStartHandler)",
-              "line": 719,
+              "line": 685,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"holdIndefinite\", holdIndefiniteHandler)",
-              "line": 720,
+              "line": 686,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"mowerState\", mowerStateHandler)",
-              "line": 724,
+              "line": 690,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"stuck\", stuckHandler)",
-              "line": 725,
+              "line": 691,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"apiConnected\", apiConnectedHandler)",
-              "line": 726,
+              "line": 692,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(settings[\"husqvarnaMowers\"], \"mowerConnected\", mowerConnectedHandler)",
-              "line": 727,
+              "line": 693,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"irrigationValves\"] != null) subscribe(settings[\"irrigationValves\"], \"valve\", irrigationValveHandler)",
-              "line": 731,
+              "line": 697,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"openWeatherDevice\"] != null) subscribe(settings[\"openWeatherDevice\"], \"condition_code\", openWeatherHandler)",
-              "line": 732,
+              "line": 698,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"waterSensor\"] != null) subscribe(settings[\"waterSensor\"], \"water\", waterSensorHandler)",
-              "line": 733,
+              "line": 699,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"10 00 00 ? * \" + getDayOfWeekCron(settings[\"daysOfWeek\"]), scheduleMowers) // schedule 10 seconds after midnight to give the activation code a chance to run 1 second after midnight",
-              "line": 745,
+              "line": 711,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"15 00 00 ? * \" + getDayOfWeekCron(settings[\"daysOfWeek\"]), scheduleMowingWindowStart) // schedule 10 seconds after midnight to give the activation code a chance to run 1 second after midnight",
-              "line": 750,
+              "line": 716,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (doesMowingEndSameDay()) schedule(\"20 00 00 ? * \" + getDayOfWeekCron(settings[\"daysOfWeek\"]), scheduleMowingWindowEnd) // schedule 10 seconds after midnight to give the activation code a chance to run 1 second after midnight",
-              "line": 755,
+              "line": 721,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else schedule(\"20 00 00 ? * \" + getDayOfWeekCron(getShiftedDaysOfWeek()), scheduleMowingWindowEnd)",
-              "line": 756,
+              "line": 722,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(stopByDurationDate, parkPrematurely, [data: [serial: serial, stopAt: stopByDurationDate.getTime()], overwrite: false])",
+              "line": 745,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(stopByDurationDate, parkPrematurely, [data: [serial: serial, stopAt: stopByDurationDate.getTime()], overwrite: false])",
+              "line": 770,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(postWindowTime, handleExpiredBackupMowingWindow)",
               "line": 779,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runOnce(stopByDurationDate, parkPrematurely, [data: [serial: serial, stopAt: stopByDurationDate.getTime()], overwrite: false])",
-              "line": 804,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runOnce(postWindowTime, handleExpiredBackupMowingWindow)",
-              "line": 813,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
               "evidence": "runOnce(backupEnd, endBackupWindow)",
-              "line": 814,
+              "line": 780,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings[\"leafWetnessSensor\"] != null) subscribe(settings[\"leafWetnessSensor\"], \"leafWetness\", leafWetnessHandler)",
-              "line": 1115,
+              "line": 1081,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"humidityMeasurement\"] != null) subscribe(settings[\"humidityMeasurement\"], \"humidity\", humidityHandler)",
-              "line": 1116,
+              "line": 1082,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"parkWhenTempHot\"] == true && settings[\"parkTempSensor\"] != null) subscribe(settings[\"parkTempSensor\"], \"temperature\", temperatureHandler)",
-              "line": 1118,
+              "line": 1084,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"parkWhenPresenceArrivesLeaves\"] == true && settings[\"presenceSensors\"] != null) subscribe(settings[\"presenceSensors\"], \"presence\", parkOnPresenceHandler)",
-              "line": 1119,
+              "line": 1085,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"parkWhenSwitchOnOff\"] == true && settings[\"parkSwitches\"] != null) subscribe(settings[\"parkSwitches\"], \"switch\", parkOnSwitchHandler)",
-              "line": 1120,
+              "line": 1086,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"forcedMowingParkConditionsEnforced\"] != null && settings[\"forcedMowingParkConditionsEnforced\"].contains(\"Leaf Wetness Sensor\") && (state.forcedMowingParkConditionSnapshot == null || !state.forcedMowingParkConditionSnapshot.lea",
-              "line": 1123,
+              "line": 1089,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"forcedMowingParkConditionsEnforced\"] != null && settings[\"forcedMowingParkConditionsEnforced\"].contains(\"Humidity or Soil Moisture Sensor\") && (state.forcedMowingParkConditionSnapshot == null || !state.forcedMowingParkConditio",
-              "line": 1124,
+              "line": 1090,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"forcedMowingParkConditionsEnforced\"] != null && settings[\"forcedMowingParkConditionsEnforced\"].contains(\"Temperature Sensor\") && (state.forcedMowingParkConditionSnapshot == null || !state.forcedMowingParkConditionSnapshot.temp",
-              "line": 1125,
+              "line": 1091,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"forcedMowingParkConditionsEnforced\"] != null && settings[\"forcedMowingParkConditionsEnforced\"].contains(\"Presence Sensor\") && (state.forcedMowingParkConditionSnapshot == null || !state.forcedMowingParkConditionSnapshot.presenc",
-              "line": 1126,
+              "line": 1092,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"forcedMowingParkConditionsEnforced\"] != null && settings[\"forcedMowingParkConditionsEnforced\"].contains(\"Switch(es)\") && (state.forcedMowingParkConditionSnapshot == null || !state.forcedMowingParkConditionSnapshot.switchSensor",
-              "line": 1127,
+              "line": 1093,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"pauseWhenMotion\"] == true && settings[\"pause_motionSensors\"] != null) subscribe(settings[\"pause_motionSensors\"], \"motion\", pauseOnMotionHandler)",
-              "line": 1130,
+              "line": 1096,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"pauseWhenOpenCloseSensor\"] == true && settings[\"pauseContactSensors\"] != null) subscribe(settings[\"pauseContactSensors\"], \"contact\", pauseOnOpenCloseHandler)",
-              "line": 1131,
+              "line": 1097,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"pauseWhenPresenceArrivesLeaves\"] == true && settings[\"pause_presenceSensors\"] != null) subscribe(settings[\"pause_presenceSensors\"], \"presence\", pauseOnPresenceHandler)",
-              "line": 1132,
+              "line": 1098,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"pauseWhenSwitchOnOff\"] == true && settings[\"pauseSwitches\"] != null) subscribe(settings[\"pauseSwitches\"], \"switch\", pauseOnSwitchHandler)",
-              "line": 1133,
+              "line": 1099,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "if (settings[\"pauseWhenButtonPressed\"] == true && settings[\"pauseButtons\"] != null) subscribe(settings[\"pauseButtons\"], \"pushed\", pauseOnButtonHandler)",
-              "line": 1134,
+              "line": 1100,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"pollingInterval\"], endGracePeriod)",
-              "line": 1402,
+              "line": 1368,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(preCheckTime, mowingPreCheck)",
-              "line": 1414,
+              "line": 1380,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(window.start, startMowingWindow)",
-              "line": 1415,
+              "line": 1381,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, mowingPreCheck)",
-              "line": 1421,
+              "line": 1387,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, startMowingWindow)",
-              "line": 1423,
+              "line": 1389,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(window.end, endMowingWindow, [overwrite: false])",
-              "line": 1455,
+              "line": 1421,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(postWindowTime, handleExpiredMowingWindow, [overwrite: false])",
-              "line": 1456,
+              "line": 1422,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, handleExpiredMowingWindow)",
-              "line": 1464,
+              "line": 1430,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, endMowingWindow)",
-              "line": 1468,
+              "line": 1434,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, handleExpiredMowingWindow)",
-              "line": 1475,
+              "line": 1441,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cron, endMowingWindow)",
-              "line": 1479,
+              "line": 1445,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"pollingInterval\"], endBackupGracePeriod)",
-              "line": 1579,
+              "line": 1545,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(preCheckTime, backupWindowPreCheck)",
-              "line": 1606,
+              "line": 1572,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(backupStart, startBackupWindow)",
-              "line": 1607,
+              "line": 1573,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(postWindowTime, handleExpiredBackupMowingWindow)",
-              "line": 1612,
+              "line": 1578,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(backupEnd, endBackupWindow)",
-              "line": 1613,
+              "line": 1579,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(park)",
-              "line": 1811,
+              "line": 1777,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(stopByDurationDate, parkPrematurely, [data: [serial: serial, stopAt: stopByDurationDate.getTime()], overwrite: false])",
-              "line": 1823,
+              "line": 1789,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(park)",
-              "line": 1852,
+              "line": 1818,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(stopByDurationDate, parkPrematurely, [data: [serial: serial, stopAt: stopByDurationDate.getTime()], overwrite: false])",
-              "line": 1863,
+              "line": 1829,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else mowOne(serialNum) // call mowOne if no park conditions met anymore, will resume schedule (if mowing window already over, resuming schedule will park mower anyway)",
-              "line": 2384,
+              "line": 2346,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedWeather)",
-              "line": 2585,
+              "line": 2541,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"weatherWetDuration\"]*60, delayedWeather)",
-              "line": 2599,
+              "line": 2555,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(delayedTime, delayedWeather)",
-              "line": 2611,
+              "line": 2567,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedWeather)",
-              "line": 2623,
+              "line": 2579,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedWeather)",
-              "line": 2633,
+              "line": 2589,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunrise.sunrise, delayedWeather)",
-              "line": 2641,
+              "line": 2597,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedWaterSensorEvent)",
-              "line": 2707,
+              "line": 2663,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"waterSensorWetDuration\"]*60, delayedWaterSensorEvent)",
-              "line": 2723,
+              "line": 2679,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(delayedTime, delayedWaterSensorEvent)",
-              "line": 2735,
+              "line": 2691,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedWaterSensorEvent)",
-              "line": 2747,
+              "line": 2703,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedWaterSensorEvent)",
-              "line": 2757,
+              "line": 2713,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunrise.sunrise, delayedWaterSensorEvent)",
-              "line": 2765,
+              "line": 2721,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedIrrigationValveClosed)",
-              "line": 2795,
+              "line": 2751,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"irrigationWetDuration\"]*60, delayedIrrigationValveClosed)",
-              "line": 2811,
+              "line": 2767,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(delayedTime, delayedIrrigationValveClosed)",
-              "line": 2823,
+              "line": 2779,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedIrrigationValveClosed)",
-              "line": 2835,
+              "line": 2791,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunriseTomorrow, delayedIrrigationValveClosed)",
-              "line": 2845,
+              "line": 2801,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(offsetSunrise.sunrise, delayedIrrigationValveClosed)",
-              "line": 2853,
+              "line": 2809,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else mowOne(serialNum) // call mowOne if no pause conditions met anymore, will resume schedule (if mowing window already over, resuming schedule will park mower anyway)",
-              "line": 2897,
+              "line": 2853,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedUnpauseFromContact)",
-              "line": 2942,
+              "line": 2898,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"openClosePauseDuration\"], delayedUnpauseFromContact)",
-              "line": 2943,
+              "line": 2899,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedUnpauseFromArrival)",
-              "line": 2957,
+              "line": 2913,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"presencePauseDuration\"], delayedUnpauseFromArrival)",
-              "line": 2958,
+              "line": 2914,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(delayedUnpauseFromButton)",
-              "line": 2981,
+              "line": 2937,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(settings[\"buttonPauseDuration\"], delayedUnpauseFromButton)",
-              "line": 2982,
+              "line": 2938,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 176741,
+          "sourceBytes": 174329,
           "sourceFetched": true,
-          "sourceSha256": "546c5c5a016d0ab5a0c39440500dd8cf7ae308acdb6884656de11d53c29fe4aa",
+          "sourceSha256": "b56f2f129109dba6bca3f49850add057dcabff94c252845f417907a76e0d725b",
           "sourceUrl": "https://raw.githubusercontent.com/lnjustin/MowBot-Tamer/main/MowBotTamerInstance.groovy"
         }
       ],
       "author": "Justin Leonard",
       "category": "Convenience",
       "communityLink": null,
-      "dateReleased": "2023-03-22",
+      "dateReleased": "2026-11-09",
       "description": "Tame your robot mower.",
       "documentationLink": null,
       "drivers": [
@@ -332264,7 +333590,7 @@
         "Tools & Utilities",
         "weather"
       ],
-      "version": "0.0.16"
+      "version": "0.0.20"
     },
     {
       "apps": [
@@ -335242,7 +336568,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/lnjustin/hubitat-withings/master/apps/Withings_Integration.groovy"
         },
         {
-          "definitionLine": 23,
+          "definitionLine": 24,
           "definitionName": "Withings User",
           "definitionNamespace": "lnjustin",
           "manifestName": "Withings User",
@@ -335250,7 +336576,7 @@
           "observations": [
             {
               "evidence": "iconUrl: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png\",",
-              "line": 30,
+              "line": 31,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "s3.amazonaws.com",
@@ -335260,16 +336586,6 @@
             },
             {
               "evidence": "iconX2Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
-              "line": 31,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "s3.amazonaws.com",
-                "scheme": "https",
-                "url": "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png"
-              }
-            },
-            {
-              "evidence": "iconX3Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
               "line": 32,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -335279,8 +336595,18 @@
               }
             },
             {
-              "evidence": "documentationLink: \"https://github.com/lnjustin/hubitat-withings/blob/master/README.md\")",
+              "evidence": "iconX3Url: \"https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png\",",
               "line": 33,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "s3.amazonaws.com",
+                "scheme": "https",
+                "url": "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png"
+              }
+            },
+            {
+              "evidence": "documentationLink: \"https://github.com/lnjustin/hubitat-withings/blob/master/README.md\")",
+              "line": 34,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -335290,25 +336616,25 @@
             },
             {
               "evidence": "input \"sleepSwitches\", \"capability.switch\", title: \"Switches to turn on when someone gets into bed and off when they get out\", multiple: true",
-              "line": 212,
+              "line": 213,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
             },
             {
               "evidence": "mappings {",
-              "line": 218,
+              "line": 219,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 247,
+              "line": 248,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "return \"https://account.withings.com/oauth2_user/authorize2?response_type=code&client_id=${oauthInfo.clientID}&scope=${URLEncoder.encode(\"user.info,user.activity,user.sleepevents,user.metrics\")}&redirect_uri=${URLEncoder.encode(\"https://clo",
-              "line": 251,
+              "line": 252,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "account.withings.com",
@@ -335318,7 +336644,7 @@
             },
             {
               "evidence": "return \"https://account.withings.com/oauth2_user/authorize2?response_type=code&client_id=${oauthInfo.clientID}&scope=${URLEncoder.encode(\"user.info,user.activity,user.sleepevents,user.metrics\")}&redirect_uri=${URLEncoder.encode(\"https://clo",
-              "line": 251,
+              "line": 252,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -335328,13 +336654,13 @@
             },
             {
               "evidence": "httpPost([",
-              "line": 258,
+              "line": 259,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "uri: \"https://wbsapi.withings.net\",",
-              "line": 259,
+              "line": 260,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "wbsapi.withings.net",
@@ -335344,7 +336670,7 @@
             },
             {
               "evidence": "redirect_uri: \"https://cloud.hubitat.com/oauth/stateredirect\"",
-              "line": 267,
+              "line": 268,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "cloud.hubitat.com",
@@ -335354,7 +336680,7 @@
             },
             {
               "evidence": "uri: \"https://wbsapi.withings.net\",",
-              "line": 311,
+              "line": 312,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "wbsapi.withings.net",
@@ -335364,19 +336690,19 @@
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 321,
+              "line": 322,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "def childDevices = getChildDevices()",
-              "line": 705,
+              "line": 706,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "uri: \"https://wbsapi.withings.net\",",
-              "line": 723,
+              "line": 724,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "wbsapi.withings.net",
@@ -335386,81 +336712,81 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 735,
+              "line": 736,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "removeChildDevices(getChildDevices())",
-              "line": 758,
+              "line": 759,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 763,
+              "line": 764,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */30 * * * ? *\", refreshDevices)",
-              "line": 772,
+              "line": 773,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Scale\", buildDNI(scale), [\"name\": \"${userName} ${state.devices.scales[scale]}\", \"label\": \"${userName} ${state.devices.scales[scale]}\", isComponent: false])",
-              "line": 783,
+              "line": 784,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Sleep Sensor\", buildDNI(sleepMonitor), [\"name\": \"${userName} ${state.devices.sleepMonitors[sleepMonitor]}\", \"label\": \"${userName} ${state.devices.sleepMonitors[sleepMonitor]}\", isComponent: false])",
-              "line": 788,
+              "line": 789,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Activity Tracker\", buildDNI(activityTracker), [\"name\": \"${userName} ${state.devices.activityTrackers[activityTracker]}\", \"label\": \"${userName} ${state.devices.activityTrackers[activityTracker]}\", isCompo",
-              "line": 793,
+              "line": 794,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Activity Tracker\", buildDNI(state.virtualActivityTracker), [\"name\": \"${userName} Virtual Activity Tracker\", \"label\": \"${userName} Virtual Activity Tracker\", isComponent: false])",
-              "line": 797,
+              "line": 798,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Blood Pressure Monitor\", buildDNI(bp), [\"name\": \"${userName} ${state.devices.bloodPressure[bp]}\", \"label\": \"${userName} ${state.devices.bloodPressure[bp]}\", isComponent: false])",
-              "line": 802,
+              "line": 803,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"lnjustin\", \"Withings Thermometer\", buildDNI(thermometer), [\"name\": \"${userName} ${state.devices.thermometers[thermometer]}\", \"label\": \"${userName} ${state.devices.thermometers[thermometer]}\", isComponent: false])",
-              "line": 807,
+              "line": 808,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "for (device in getChildDevices())",
-              "line": 813,
+              "line": 814,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             }
           ],
-          "sourceBytes": 32459,
+          "sourceBytes": 32558,
           "sourceFetched": true,
-          "sourceSha256": "6a0c6831de56eb1adfe1025f6d2ff90220e3d09eef3f5fc78d2e9b97887f97f9",
+          "sourceSha256": "c81f403e5e633c22765c27c7832dfa8ec1b348d48db0f2a65e7c7a71031c4e93",
           "sourceUrl": "https://raw.githubusercontent.com/lnjustin/hubitat-withings/master/apps/Withings_User.groovy"
         }
       ],
       "author": "lnjustin",
       "category": "Dashboards",
       "communityLink": null,
-      "dateReleased": "2025-01-02",
+      "dateReleased": "2026-11-09",
       "description": "Withings Integration",
       "documentationLink": null,
       "drivers": [
@@ -335539,7 +336865,7 @@
         "Sleep",
         "Temperature & Humidity"
       ],
-      "version": "1.7.4"
+      "version": "1.7.5"
     },
     {
       "apps": [],
@@ -366239,7 +367565,7 @@
           ],
           "sourceBytes": 15273,
           "sourceFetched": true,
-          "sourceSha256": "921e873760cbcb73c0a1fcf7ee240caf3a48d56aa684c41e72332b67fa014fae",
+          "sourceSha256": "97defde70affdc2b0be9618171091525fdd13cebef0f7a5531ee3b2314541c24",
           "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneDiscovery.groovy"
         },
         {
@@ -366336,16 +367662,16 @@
               "value": true
             }
           ],
-          "sourceBytes": 17284,
+          "sourceBytes": 17598,
           "sourceFetched": true,
-          "sourceSha256": "dd11dcc27bda02128d915b2c134a3d87f2951293456c98c9a5227fd6effcf19f",
+          "sourceSha256": "6fed9cd95a7a3d81437aab2a2d58289a4c197e95b735a49b79c328e4ef2d69bd",
           "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupApp.groovy"
         }
       ],
       "author": "youzer-name",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-wiz-dual-zone-improved-app-driver-for-wiz-dual-zone-bulbs/167101",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-09",
       "description": "Local control of WiZ dual-zone bulbs: separate Main and Ring devices, discovery, and fast multi-bulb groups.",
       "documentationLink": "https://github.com/youzer-name/Hubitat-Wiz_Dual_Zone#readme",
       "drivers": [
@@ -366385,7 +367711,7 @@
           ],
           "sourceBytes": 7548,
           "sourceFetched": true,
-          "sourceSha256": "9effef815fe7fbbc0f4ae8bef4ea8a873d7ebf5e4ad69ec134fc7d308281b4ce",
+          "sourceSha256": "658bddeb1f868389b6cd605f8b3a9aa012e07b5e76ff952454ae9d826e4d97b0",
           "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneLight.groovy"
         },
         {
@@ -366484,7 +367810,7 @@
           ],
           "sourceBytes": 23969,
           "sourceFetched": true,
-          "sourceSha256": "fd6d2bfbb29c4276966591d3ec767639554ce487cea7ee746079b2ae9b1709f2",
+          "sourceSha256": "6f1f892b3cb48f89604981acd3ba9b9e65780f658490ccfe3d5e4992d9e59b20",
           "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneBulb.groovy"
         },
         {
@@ -366523,7 +367849,7 @@
           ],
           "sourceBytes": 4440,
           "sourceFetched": true,
-          "sourceSha256": "935599dad1a0d7cfac4e7d1985cb726ae2e4ab8c2503ae016476eb61cc10f6ec",
+          "sourceSha256": "3c3fa5291505f3d22abd7156ff57ec076bbe77bd40c0ef09aef470a8a3bf82cb",
           "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupDevice.groovy"
         }
       ],
@@ -366539,7 +367865,7 @@
         "Lights & Switches",
         "Automations & Groups"
       ],
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "apps": [],
@@ -366841,18 +368167,18 @@
   "repositoriesFetched": 227,
   "repositoryCount": 228,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-09T06:55:28Z",
+  "snapshotGenerated": "2026-11-10T07:32:50Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2397,
+    "componentsAttempted": 2399,
     "componentsFailed": 10,
-    "componentsFetched": 2387,
-    "componentsWithObservations": 2243,
-    "definitionsVerified": 2376,
-    "distinctSourceUrls": 2381,
+    "componentsFetched": 2389,
+    "componentsWithObservations": 2245,
+    "definitionsVerified": 2378,
+    "distinctSourceUrls": 2383,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2371
+    "sourceUrlsFetched": 2373
   }
 }

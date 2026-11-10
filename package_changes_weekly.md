@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-09T06:55:28Z`.
+Latest observation: `2026-11-10T07:32:50Z`.
 
-**64 package change(s):** added 9, broken 3, declared definitions changed 9, restored 3, source location changed 17, updated 55
+**64 package change(s):** added 6, broken 3, declared definitions changed 9, restored 3, source location changed 15, updated 58
 
+- [Withings: updated.](https://raw.githubusercontent.com/lnjustin/hubitat-withings/master/packageManifest.json)
+- [WiZ Dual Zone: updated.](https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json)
+- [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
+- [MowBot Tamer: updated.](https://raw.githubusercontent.com/lnjustin/MowBot-Tamer/main/packageManifest.json)
+- [Memory Monitor & Auto Reboot: updated.](https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/packageManifest.json)
+- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [Evohome: updated.](https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json)
+- [BigTalker3: added.](https://raw.githubusercontent.com/rayzurbock/BigTalker3/main/packageManifest.json)
 - [Zemismart ZMS-206EU-2 Screen Switch: added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/zemismart/zms-206eu-2/packageManifest.json)
 - [TeslaMate: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/teslamate.json)
 - [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
@@ -60,13 +68,5 @@ Latest observation: `2026-11-09T06:55:28Z`.
 - [MolSmart - 12+4 Input Board: updated, changed source location.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/packageManifest.json)
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Commercial Lock: updated.](https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/packageManifest.json)
-- [Weather Watcher: updated, changed source location.](https://raw.githubusercontent.com/cummingsrob/hubitat-weather-watcher/main/packageManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Sifely WiFi Lock v2 (API key): added.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json)
-- [Sifely WiFi Lock v1 (username/password, legacy): added.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest-v1.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Honeywell Home Integration Lyric and T Series Devices (cloud): updated.](https://raw.githubusercontent.com/tyuhl/Hubitat-Packages/refs/heads/main/packages/HoneywellManifest.json)
-- [Aeotec Dual Nano Switch with Power Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json)
-- [Aeon Micro Dimmer with Power Meter: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
