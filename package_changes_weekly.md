@@ -1,9 +1,14 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-10T07:32:50Z`.
+Latest observation: `2026-11-11T06:50:09Z`.
 
-**64 package change(s):** added 6, broken 3, declared definitions changed 9, restored 3, source location changed 15, updated 58
+**60 package change(s):** added 5, broken 3, declared definitions changed 8, restored 3, source location changed 13, updated 55
 
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
+- [Memory Monitor & Auto Reboot: updated.](https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/packageManifest.json)
+- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
+- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Withings: updated.](https://raw.githubusercontent.com/lnjustin/hubitat-withings/master/packageManifest.json)
 - [WiZ Dual Zone: updated.](https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/packageManifest.json)
 - [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
@@ -59,14 +64,5 @@ Latest observation: `2026-11-10T07:32:50Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [Cat Litter Box (Tuya Local): added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json)
 - [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
-- [WLED Controller: added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/wled-controller.json)
-- [Rivian Connect: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json)
-- [MolSmart - Relay 4/8/16/32CH (TCP): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Relays/main/TCP/packageManifest.json)
-- [MolSmart - GW8 - RF: updated, changed source location.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/RF/packageManifest.json)
-- [MolSmart - GW8 - AC (learning): updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(Learning)/packageManifest.json)
-- [MolSmart - Dimmer 6CH (TCP): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_Dimmer/main/packageManifest.json)
-- [MolSmart - 12+4 Input Board: updated, changed source location.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_InputBoard/refs/heads/main/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Commercial Lock: updated.](https://raw.githubusercontent.com/evdev/hubitat-commercial-lock/main/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

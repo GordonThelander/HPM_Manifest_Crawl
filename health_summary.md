@@ -1,26 +1,25 @@
 # HPM package health summary
 
-Snapshot: `2026-11-10T07:32:50Z`
+Snapshot: `2026-11-11T06:50:09Z`
 
 These are factual crawl observations, not package quality, safety, or abandonment scores.
 
 ## Current observations
 
-- Failing: **209**
-- Passing: **464**
-- Warning: **294**
+- Failing: **208**
+- Passing: **459**
+- Warning: **300**
 
 ## Changes since the previous successful snapshot
 
-- Baseline: **1**
-- New Failure: **1**
 - Persistent Failure: **208**
-- Unchanged: **757**
+- Restored: **1**
+- Unchanged: **758**
 
 ## Introduced and resolved failures
 
 | Change | Package | Author | Evidence |
 | --- | --- | --- | --- |
-| NEW_FAILURE | Switch Bindings | Joel Wetzel | communityReachability |
+| RESTORED | Switch Bindings | Joel Wetzel | No current failure |
 
 A request failure can be transient. Persistent status means the same package was observed failing in consecutive successful snapshots; it does not prove that the project is unmaintained.

@@ -1730,7 +1730,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -29185,5 +29185,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-10T07:32:50Z"
+  "snapshotGenerated": "2026-11-11T06:50:09Z"
 };
