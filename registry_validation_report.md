@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-11T06:50:09Z`
+- Snapshot: `2026-11-12T07:28:16Z`
 - HPM repositories in master list: **228**
 - Repositories fetched successfully: **227**
-- Packages indexed: **967**
+- Packages indexed: **969**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **866**
+Total packages not matched by any registry entry: **868**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -251,6 +251,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | DarwinsDen | Tesla Powerwall Manager | Integrations | Energy Monitoring | https://raw.githubusercontent.com/DarwinsDen/Tesla-Powerwall-Manager/main/packageManifest.json |
 | Dave Gutheinz(DavGut) | Samsung TV Remote | Utility | LAN, Multimedia | https://raw.githubusercontent.com/DaveGut/HubitatActive/master/SamsungTvRemote/packageManifest.json |
 | David LaPorte | AcuRite Weather Station | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json |
+| David LaPorte | LG TV (Glasshouse) | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json |
 | David LaPorte | Radon Fan Sensor | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/packageManifest.json |
 | David LaPorte | Smart Oil Gauge | Integrations |  | https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json |
 | Eduardo Simioni | Fully Kiosk Browser Controller | Control | Dashboards, Tools & Utilities, Notifications, LAN | https://raw.githubusercontent.com/esimioni/fullykioskbrowser-hubitat-driver/master/manifest.json |
@@ -626,8 +627,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 866 |
-| G candidate subset | 391 |
+| G. Unrepresented packages | 868 |
+| G candidate subset | 392 |
 
 ## H. Enrichment summary
 
@@ -637,13 +638,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2383 |
-| Source URLs fetched | 2373 |
+| Distinct source URLs | 2387 |
+| Source URLs fetched | 2377 |
 | Source URLs failed | 10 |
-| Components attempted | 2399 |
-| Components fetched | 2389 |
-| Literal definitions verified | 2378 |
-| Components with observations | 2245 |
+| Components attempted | 2403 |
+| Components fetched | 2393 |
+| Literal definitions verified | 2382 |
+| Components with observations | 2249 |
 
 ### Official Hubitat documentation pass
 

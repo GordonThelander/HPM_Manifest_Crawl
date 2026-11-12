@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-11T06:50:09Z`.
+Latest observation: `2026-11-12T07:28:16Z`.
 
-**60 package change(s):** added 5, broken 3, declared definitions changed 8, restored 3, source location changed 13, updated 55
+**61 package change(s):** added 6, broken 3, declared definitions changed 9, restored 3, source location changed 12, updated 54
 
+- [Mysa Thermostat Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json)
+- [MolSmart - GW8 - TV e Audio(irweb): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/TV-Audio(irweb)/packageManifest.json)
+- [MolSmart - GW8 - AC(irweb): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(irweb)/packageManifest.json)
+- [Memory Monitor & Auto Reboot: updated.](https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/packageManifest.json)
+- [LG TV (Glasshouse): added.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
+- [Energy From Power: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
+- [Dreo Integration: changed source location, changed declared definitions.](https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/packageManifest.json)
+- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 - [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
 - [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
 - [Memory Monitor & Auto Reboot: updated.](https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/packageManifest.json)
@@ -57,12 +65,5 @@ Latest observation: `2026-11-11T06:50:09Z`.
 - [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
 - [Local Ecobee Helpers: updated.](https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/manifest-ecobee-helpers.json)
 - [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Sifely WiFi Lock v2 (API key): updated, changed source location.](https://raw.githubusercontent.com/howarddavidp/hubitat-sifely-wifi-lock/main/packageManifest.json)
-- [Netatmo Weather Station: updated.](https://raw.githubusercontent.com/brossow/hubitat-drivers/main/netatmo-weather-station/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Cat Litter Box (Tuya Local): added.](https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/hpm/cat-litter-box.json)
-- [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -2,8 +2,8 @@
   "counts": {
     "BOTH": 186,
     "CLOUD": 277,
-    "INSUFFICIENT": 305,
-    "LAN": 199
+    "INSUFFICIENT": 306,
+    "LAN": 200
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 967,
+  "packageCount": 969,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -4774,8 +4774,8 @@
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 5,
-        "urlLiteralCount": 4
+        "sourceFilesAnalysed": 7,
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": [
@@ -5277,6 +5277,32 @@
         "Monitoring",
         "Tools & Utilities",
         "Utility"
+      ]
+    },
+    {
+      "author": "hubitrep",
+      "category": "Utility",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Builds an energy total (kWh) from a meter that reports only power and publishes it on an energy meter device, so the Power and Energy Tracker can chart it.",
+      "documentationUrl": "https://github.com/hubitrep/hubitat/tree/main/EnergyFromPower",
+      "id": "hpm:23874948-4c53-47e6-937c-505e817522db",
+      "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json",
+      "name": "Energy From Power",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "Tools & Utilities"
       ]
     },
     {
@@ -13286,6 +13312,33 @@
         "Appliances",
         "Cloud"
       ]
+    },
+    {
+      "author": "David LaPorte",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys)",
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
+      "id": "manifest:ad7df25c8a84ab03e8bf",
+      "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json",
+      "name": "LG TV (Glasshouse)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 3
+      },
+      "reviewed": [],
+      "tags": []
     },
     {
       "author": "Sebastian YEPES FERNANDEZ",
@@ -29185,5 +29238,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-11T06:50:09Z"
+  "snapshotGenerated": "2026-11-12T07:28:16Z"
 }

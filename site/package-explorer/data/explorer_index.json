@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 967,
+    "HPM_PACKAGE": 969,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2672,
+  "recordCount": 2674,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -23018,7 +23018,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-10",
+      "dateReleased": "2026-11-11",
       "definitions": [
         {
           "id": "definition:84581719b8105341f9b3",
@@ -23113,7 +23113,7 @@
         "Entertainment",
         "Remotes & Buttons"
       ],
-      "version": "1.2.4"
+      "version": "1.2.5"
     },
     {
       "author": "Krassimir Kossev",
@@ -33008,12 +33008,28 @@
       "dateReleased": "2026-08-04",
       "definitions": [
         {
+          "id": "definition:3dd52ca658c4f8b2fbcd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Dreo Endpoint Probe",
+          "namespace": "classic-dave",
+          "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/apps/dreo_endpoint_probe.groovy"
+        },
+        {
           "id": "definition:63b0742e1a696656cb95",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Dreo Integration",
           "namespace": "community",
           "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/apps/dreo_integration.groovy"
+        },
+        {
+          "id": "definition:75450f5454bb4910c8f3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Dreo Air Purifier",
+          "namespace": "community",
+          "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/drivers/dreo_air_purifier.groovy"
         },
         {
           "id": "definition:0aba313fa310775cc30e",
@@ -34621,6 +34637,89 @@
         "Utility"
       ],
       "version": "0.7.6"
+    },
+    {
+      "author": "hubitrep",
+      "category": "Utility",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-11",
+      "definitions": [
+        {
+          "id": "definition:fb97c22eab44c870cfc3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Energy From Power",
+          "namespace": "hubitrep",
+          "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/EnergyFromPower.groovy"
+        }
+      ],
+      "description": "Builds an energy total (kWh) from a meter that reports only power and publishes it on an energy meter device, so the Power and Energy Tracker can chart it.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:23874948-4c53-47e6-937c-505e817522db",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/EnergyFromPower",
+        "manifest": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json",
+        "repository": "https://github.com/hubitrep/hubitat"
+      },
+      "name": "Energy From Power",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Tools & Utilities"
+      ],
+      "version": "0.1.0"
     },
     {
       "author": "Larry Kahn",
@@ -60993,6 +61092,86 @@
       "version": "1.2.0"
     },
     {
+      "author": "David LaPorte",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-11",
+      "definitions": [
+        {
+          "id": "definition:19189e3cbf6a116276b0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "LG TV (Glasshouse)",
+          "namespace": "dlaporte",
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy"
+        }
+      ],
+      "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys)",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:ad7df25c8a84ab03e8bf",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
+        "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json",
+        "repository": "https://github.com/dlaporte/Hubitat"
+      },
+      "name": "LG TV (Glasshouse)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.8"
+    },
+    {
       "author": "Sebastian YEPES FERNANDEZ",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -64964,7 +65143,7 @@
       "tags": [
         "Utility"
       ],
-      "version": "1.4.0"
+      "version": "1.4.2"
     },
     {
       "author": "Chris Truitt",
@@ -67528,7 +67707,7 @@
       "author": "VH",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-02",
+      "dateReleased": "2026-11-11",
       "definitions": [
         {
           "id": "definition:5429172371967816e75a",
@@ -67609,7 +67788,7 @@
         "IR & RF",
         "Temperature & Humidity"
       ],
-      "version": "1.4"
+      "version": "1.5"
     },
     {
       "author": "VH",
@@ -67793,7 +67972,7 @@
       "author": "VH",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-02",
+      "dateReleased": "2026-11-11",
       "definitions": [
         {
           "id": "definition:d6071406fe58f851c50c",
@@ -67874,7 +68053,7 @@
         "IR & RF",
         "Temperature & Humidity"
       ],
-      "version": "1.5"
+      "version": "1.6"
     },
     {
       "author": "Vartan Horigian",
@@ -69369,7 +69548,7 @@
       "author": "Craig Dewar",
       "category": "Climate Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-11",
       "definitions": [
         {
           "id": "definition:aa875edb7453bed3c0d6",
@@ -69470,7 +69649,7 @@
         "Climate Control",
         "Thermostat"
       ],
-      "version": "2.5.0"
+      "version": "2.5.1"
     },
     {
       "author": "jlslate",
@@ -137693,5 +137872,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-11T06:50:09Z"
+  "snapshotGenerated": "2026-11-12T07:28:16Z"
 }

@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 503,
+  "recordCount": 504,
   "records": [
     {
       "author": null,
@@ -2976,6 +2976,40 @@
         "IDENTITY_MISMATCH"
       ],
       "summary": "Add support to Hubitat for Hue Groups, Bulbs, and Scenes.  This integration differs from the built-in Hue integration, because this one allows you to import Hue scenes which can be added to any Hubitat scene/group to be turned on.  This was created specifically to satisfy a need the Hubitat could no"
+    },
+    {
+      "author": "hubitrep",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Energy From Power",
+          "namespace": "hubitrep"
+        }
+      ],
+      "displayName": "Energy From Power",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "hpm:23874948-4c53-47e6-937c-505e817522db",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/hubitrep/hubitat/tree/main/EnergyFromPower",
+        "source": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/EnergyFromPower.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Energy From Power",
+      "qualityFlags": [],
+      "summary": "Builds an energy total (kWh) from a meter that reports only power and publishes it on an energy meter device, so the Power and Energy Tracker can chart it."
     },
     {
       "author": "Dan Danache",
@@ -9775,6 +9809,11 @@
       "definitionIdentities": [
         {
           "basis": "sourceIdentity",
+          "name": "Dreo Endpoint Probe",
+          "namespace": "classic-dave"
+        },
+        {
+          "basis": "sourceIdentity",
           "name": "Dreo Integration",
           "namespace": "community"
         }
@@ -9793,8 +9832,7 @@
       "lifecycleFlags": [],
       "links": {
         "community": "https://community.hubitat.com/t/beta-dreo-fan-integration-cloud/165215",
-        "documentation": "https://github.com/classic-dave/hubitat-dreo/blob/main/README.md",
-        "source": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/apps/dreo_integration.groovy"
+        "documentation": "https://github.com/classic-dave/hubitat-dreo/blob/main/README.md"
       },
       "networkEvidence": {
         "classification": "CLOUD",
@@ -16993,5 +17031,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-11T06:50:09Z"
+  "snapshotGenerated": "2026-11-12T07:28:16Z"
 }
