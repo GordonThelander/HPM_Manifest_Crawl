@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-12T07:28:16Z`
+- Snapshot: `2026-11-13T06:58:52Z`
 - HPM repositories in master list: **228**
 - Repositories fetched successfully: **227**
-- Packages indexed: **969**
+- Packages indexed: **970**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **13**
+- Recorded fetch/parse errors: **14**
 
 ## A. Dead rules
 
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **868**
+Total packages not matched by any registry entry: **869**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -604,6 +604,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | --- | --- | --- |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
+| manifest | https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json | JSON parse error: JSONDecodeError: Expecting ',' delimiter: line 21 column 7 (char 574) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
@@ -627,7 +628,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 868 |
+| G. Unrepresented packages | 869 |
 | G candidate subset | 392 |
 
 ## H. Enrichment summary

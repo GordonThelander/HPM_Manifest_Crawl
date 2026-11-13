@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-12T07:28:16Z`.
+Latest observation: `2026-11-13T06:58:52Z`.
 
-**61 package change(s):** added 6, broken 3, declared definitions changed 9, restored 3, source location changed 12, updated 54
+**69 package change(s):** added 7, broken 4, declared definitions changed 9, restored 3, source location changed 13, updated 61
 
+- [iCOMM for Hubitat: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/icomm.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Moonraker Klipper Printer: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json)
+- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
+- [Frigidaire 2.0 AC Thermostat: added, became unavailable.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json)
+- [Energy From Power: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
 - [Mysa Thermostat Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json)
 - [MolSmart - GW8 - TV e Audio(irweb): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/TV-Audio(irweb)/packageManifest.json)
 - [MolSmart - GW8 - AC(irweb): updated.](https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/refs/heads/main/IR/AC(irweb)/packageManifest.json)

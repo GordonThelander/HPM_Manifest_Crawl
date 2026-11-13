@@ -2,7 +2,7 @@
   "counts": {
     "BOTH": 186,
     "CLOUD": 277,
-    "INSUFFICIENT": 306,
+    "INSUFFICIENT": 307,
     "LAN": 200
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 969,
+  "packageCount": 970,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -6391,6 +6391,32 @@
       "reviewed": [],
       "tags": [
         "Health & Fitness"
+      ]
+    },
+    {
+      "author": null,
+      "category": "Control",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "The frigidaire 2.0 Thermostat Driver lets you control the Window AC unit. Installed as a thermostat.",
+      "documentationUrl": null,
+      "id": "manifest:f8035a57788f978cd224",
+      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json",
+      "name": "Frigidaire 2.0 AC Thermostat",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Temperature & Humidity"
       ]
     },
     {
@@ -14958,11 +14984,12 @@
       "name": "Modern Dashboard",
       "observed": {
         "externalHosts": [
-          "cloud.hubitat.com"
+          "cloud.hubitat.com",
+          "json-schema.org"
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 9
+        "urlLiteralCount": 14
       },
       "reviewed": [],
       "tags": [
@@ -29238,5 +29265,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-12T07:28:16Z"
+  "snapshotGenerated": "2026-11-13T06:58:52Z"
 }

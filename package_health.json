@@ -1,6 +1,6 @@
 {
   "dataset": "package-health",
-  "packageCount": 969,
+  "packageCount": 970,
   "packages": [
     {
       "checks": {
@@ -31560,6 +31560,43 @@
     {
       "checks": {
         "communityLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "definitionIdentity": {
+          "components": {},
+          "status": "NOT_AVAILABLE"
+        },
+        "documentationLink": {
+          "status": "MISSING",
+          "url": null
+        },
+        "httpsTransport": {
+          "nonHttpsUrls": [],
+          "status": "PASS"
+        },
+        "manifestFetch": {
+          "status": "FAIL",
+          "url": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json"
+        },
+        "sourceFetch": {
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
+        }
+      },
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "JSON parse error: JSONDecodeError: Expecting ',' delimiter: line 21 column 7 (char 574)",
+          "url": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json"
+        }
+      ],
+      "packageId": "manifest:f8035a57788f978cd224"
+    },
+    {
+      "checks": {
+        "communityLink": {
           "status": "PRESENT",
           "url": "https://community.hubitat.com/t/release-synology-srm-router-integration/164624"
         },
@@ -32087,7 +32124,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-12T07:28:16Z",
+  "snapshotGenerated": "2026-11-13T06:58:52Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",
