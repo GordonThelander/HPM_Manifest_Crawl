@@ -1,9 +1,9 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 186,
-    "CLOUD": 277,
-    "INSUFFICIENT": 307,
-    "LAN": 200
+    "BOTH": 159,
+    "CLOUD": 274,
+    "INSUFFICIENT": 306,
+    "LAN": 198
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 970,
+  "packageCount": 937,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1358,6 +1358,31 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Notifications",
         "Voice Assistants"
+      ]
+    },
+    {
+      "author": "VH",
+      "category": "Convenience",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Hubitat driver to control Amazon Fire TV devices directly over ADB.",
+      "documentationUrl": null,
+      "id": "hpm:c32c9228-fa6f-4392-b5c4-fb2e8ce8adcb",
+      "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/refs/heads/main/packageManifest.json",
+      "name": "Amazon Fire TV (ADB)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances"
       ]
     },
     {
@@ -3169,41 +3194,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "CentraLite Motion Sensor with presence. CentraLite Model:3326-L,3325,3305,3325-S,3305-S (not for motionv4 motionv5)",
-      "documentationUrl": null,
-      "id": "manifest:0e158770d6872bbafab3",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json",
-      "name": "CentraLite Motion Detector",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "LAN",
@@ -4531,38 +4521,6 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Lights & Switches"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Works with most dimable led and CT Bulbs",
-      "documentationUrl": null,
-      "id": "manifest:d7e63a62e9959c70884c",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json",
-      "name": "Dimable CT Bulb driver - Zigbee",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 10
-      },
-      "reviewed": [],
-      "tags": [
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
       ]
     },
     {
@@ -6391,32 +6349,6 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Health & Fitness"
-      ]
-    },
-    {
-      "author": null,
-      "category": "Control",
-      "classification": "INSUFFICIENT",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "The frigidaire 2.0 Thermostat Driver lets you control the Window AC unit. Installed as a thermostat.",
-      "documentationUrl": null,
-      "id": "manifest:f8035a57788f978cd224",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json",
-      "name": "Frigidaire 2.0 AC Thermostat",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
-      },
-      "reviewed": [],
-      "tags": [
-        "Climate Control",
-        "Temperature & Humidity"
       ]
     },
     {
@@ -9489,35 +9421,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "LAN",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": true
-      },
-      "description": "Improved HTTP Presence sensor with  adjustable chron schedule. detects 404 file not found and 401 password, for IP cameras asking for a password",
-      "documentationUrl": null,
-      "id": "manifest:868f025a91532259bf37",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json",
-      "name": "HTTP Presence Sensor with schedule",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
-      },
-      "reviewed": [],
-      "tags": [
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Presence & Location",
-        "Tools & Utilities"
-      ]
-    },
-    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "CLOUD",
@@ -12158,510 +12061,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved Iris CentraLite Samjin Smartthings water Sensor with Presence,Tamper for Centralite and better drop out detection,battery support",
-      "documentationUrl": null,
-      "id": "manifest:3cf17f2562593e85cdfa",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/centralite-water-sensor.json",
-      "name": "Iris CentraLite Samjin Smartthings water Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Monitoring",
-        "Safety & Security",
-        "Water",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "CLOUD",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Verifies state after turn and off. No more refusing to turn off,Presence,Auto dead bat detection, Auto time off timmer that works.",
-      "documentationUrl": null,
-      "id": "manifest:c84626f58936b4b2029c",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-utilitech-siren.json",
-      "name": "Iris Utilitech Siren driver",
-      "observed": {
-        "externalHosts": [
-          "products.z-wavealliance.org",
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Misc. Devices",
-        "Safety & Security",
-        "ZWave"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "IRIS v1 button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts. pressed,held,held longer, button 1 pressed button 2 held button 3 held longer",
-      "documentationUrl": null,
-      "id": "manifest:01c04d48ceec732a8f0d",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json",
-      "name": "iris v1 button",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 Contact Sensor custom. With presence and proper battery support. No more negative battery readings. Includes option to use as a mains detection swith with a relay.Note relay must have time delay so it renergised after hub has powered up.",
-      "documentationUrl": null,
-      "id": "manifest:8a8e0bc9aaf988d740d9",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-contact.json",
-      "name": "Iris v1 Contact Sensor-custom",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Rewritten Iris v1 kefob. Supports holdable buttons , presence recovery no more false no presence toggles. and adjustable timeout. New battery support no negative voltage readings. Also supports custom mode AWAY/HOME",
-      "documentationUrl": null,
-      "id": "manifest:b02b11578799450c019e",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-keyfob.json",
-      "name": "Iris v1 keyfob custom",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
-      },
-      "reviewed": [],
-      "tags": [
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "IRIS v1 keypad driver.Provides arm disarm and button remapping. 15 digit pins supported. Keypad supports 13 diffrent chimes under play command. Option for Silent arming. Many setup options, Info,debug,trace logs. Use as chimes or alarms, Bad pin can set tamper, Unlike newer keypads it can cancel a safety alarm if the alarm is disarmed. Supports arming with or without a valid PIN. Supports Remapping ON PART # * buttons as armaway armhome armnight as you see fit.",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-v1-keyboard-driver-for-hubitat/",
-      "id": "manifest:6042178cc7d0f666b5e9",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1keypad.json",
-      "name": "Iris v1 Keypad",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 9
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Locks",
-        "Misc. Devices",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 Motion Sensor. With presence and proper battery support. No more negative battery readings",
-      "documentationUrl": null,
-      "id": "manifest:6fb2ece627bb27f3fc2b",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_motion_sensor.json",
-      "name": "Iris v1 Motion Detector Custom",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 extender driver. Supports battery and presence. Zigbee side",
-      "documentationUrl": null,
-      "id": "manifest:64e0a477fc2b8e0c6fcf",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_repeator_zigbee.json",
-      "name": "Iris v1 Repeator Zigbe",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 10
-      },
-      "reviewed": [],
-      "tags": [
-        "Repeaters & Extenders",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Simulates IRIS v1 pay care level system. Pressing button triggers alarm on dashboard and beeps red until dashboard alarm is turned off this notifies pendant holder by beeping green. Requires yuo add it to dashboard as a switch and as presence. Option to use as a straight Keyfob",
-      "documentationUrl": null,
-      "id": "manifest:89ffacc3e3d6084e290b",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Iris_v1_Senior_Care_Pendant.json",
-      "name": "Iris v1 Senior Care Pendant",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence. Old version for compatability same as no alarm",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-      "id": "manifest:a5eb6db7aeaff36b91ef",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug.json",
-      "name": "Iris v1 Smart Plug custom",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-      "id": "manifest:3bd0f4737937fc714714",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug2.json",
-      "name": "Iris v1 Smart Plug custom No alarm",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence and support for using as a alarm or strobe using low cost strobes and sirens",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-      "id": "manifest:c2b35d5a3c5200f1fc97",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug3.json",
-      "name": "Iris v1 Smart Plug custom With Alarm",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v2 contact sensor with presence. Automatic bad battery detection presence, iMagic by GreatStar 1116-S & CentraLite 3320-L",
-      "documentationUrl": null,
-      "id": "manifest:72f88b33c6ce20d2e239",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-contact.json",
-      "name": "Iris v2 Contact Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 12
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Iris v2 Motion Sensor with presence. CentraLite Model:3326-L",
-      "documentationUrl": null,
-      "id": "manifest:8deb2f80f69af417372f",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-motion-sensor.json",
-      "name": "Iris v2 Motion Detector",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "LAN",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Driver supports model# 1112-S and model# 3405-L iris keypads v2 and v3",
-      "documentationUrl": null,
-      "id": "manifest:fdad5c3b97cf10f30b64",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
-      "name": "Iris v2 v3 Keypad",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Locks",
-        "Misc. Devices",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "Aaron Ward",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -13042,41 +12441,6 @@ window.NETWORK_EVIDENCE = {
         "Appliances",
         "Energy Monitoring",
         "Notifications"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved LeakSmart driver (Zigbee) better battery support, mains detection ,better logging ,Stuck valve detection, fix for valves with broken mains detection firmware, Works with IRIS version also,Supports contact,switch & wet dry with info debug and trace logs",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-      "id": "manifest:a9b18182109f9815fc46",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/LeakSmart_Water_Valve.json",
-      "name": "LeakSmart Water Valve",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 16
-      },
-      "reviewed": [],
-      "tags": [
-        "Energy Monitoring",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security",
-        "Valves",
-        "Water",
-        "Zigbee"
       ]
     },
     {
@@ -13959,64 +13323,6 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Lock button monitor. works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
-      "documentationUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-      "id": "manifest:f6f02791da1a6ee62a2a",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor.json",
-      "name": "Lock Button Monitor",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Locks",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Lock button monitor2. for second lock, works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
-      "documentationUrl": null,
-      "id": "manifest:aea83b9efc9b358fd41d",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor2.json",
-      "name": "Lock Button Monitor2",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 1
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Locks",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ]
-    },
-    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "INSUFFICIENT",
@@ -14860,6 +14166,36 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Misc. Devices",
         "ZWave"
+      ]
+    },
+    {
+      "author": "Jeff Lupien",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Control Mitsubishi mini-splits through the Comfort app's Kumo Cloud v3 API",
+      "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/mitsubishi-comfort#readme",
+      "id": "manifest:75342398988060a11f59",
+      "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
+      "name": "Mitsubishi Comfort",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 7
+      },
+      "reviewed": [],
+      "tags": [
+        "Comfort",
+        "HVAC",
+        "Kumo Cloud",
+        "Mini Split",
+        "Mitsubishi",
+        "Thermostat"
       ]
     },
     {
@@ -18079,38 +17415,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Utility",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/pump-scheduler/165333",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Smart scheduler for pool pumps, spa pumps, septic aerators, drainage pumps, and other motorized equipment. Supports daily runtime targets, maximum cycle length, cooldown periods, sunrise/sunset scheduling, monitoring, and automatic recovery after hub reboots or app updates.",
-      "documentationUrl": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
-      "id": "manifest:c6cb3e6d30261b6c9482",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
-      "name": "Pump Scheduler",
-      "observed": {
-        "externalHosts": [
-          "s3.amazonaws.com",
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
-      },
-      "reviewed": [],
-      "tags": [
-        "Monitoring",
-        "Pools & Spas",
-        "Timers",
-        "Tools & Utilities",
-        "Water"
-      ]
-    },
-    {
       "author": "Barry A. Burke",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -18442,38 +17746,6 @@ window.NETWORK_EVIDENCE = {
       ],
       "tags": [
         "Irrigation"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "The Radio Thermostat Driver for most any Radio Thermostat. (ZWAVE) CT100,CT101,CT30,CT32 and more. Polling schedule and many extra options, Improved logging to detect errors info,debug,trace. Many manual options to set up device other drivers dont have. Option to use only heat or cool. Prevents dashboard getting out of sync with thermostat. If you have a RT you know all the problems other drivers have. This driver will fix your problems. Writen for my thermostats because the other drivers just did not work for me.",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2022/08/radio-thermostat-zwave-hubitat-driver-ct101-ct30/",
-      "id": "manifest:dc5e339ffbe7d9a9e24c",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/radio_thermostat_driver.json",
-      "name": "Radio Thermostat Zwave",
-      "observed": {
-        "externalHosts": [
-          "products.z-wavealliance.org",
-          "www.manualslib.com",
-          "www.opensmarthouse.org",
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 41
-      },
-      "reviewed": [],
-      "tags": [
-        "Climate Control",
-        "Temperature & Humidity",
-        "ZWave"
       ]
     },
     {
@@ -19189,38 +18461,6 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Works with eWeLight,Seedan and other RGBW bulbs,ZB-CL01. May work with others provides presence and checkin monitoring",
-      "documentationUrl": null,
-      "id": "manifest:37e10e051840017da9d6",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/eWeLight-RGBW-Bulbs.json",
-      "name": "RGBW CT Bulbs - Zigbee",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "brossow",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -19665,6 +18905,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Local control of Roborock robot vacuums after a one-time sign-in: live status, start, pause, dock and room cleaning, fan and mop settings, consumables, Roborock scenes, automatic IP recovery and an optional dashboard tile.",
+      "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+      "id": "manifest:2198e51ff4278066f040",
+      "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+      "name": "Roborock Integration",
+      "observed": {
+        "externalHosts": [
+          "usiot.roborock.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 10
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances",
+        "Cleaning"
+      ]
+    },
+    {
       "author": "Bloodtick Jones",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -19911,72 +19179,6 @@ window.NETWORK_EVIDENCE = {
         "LAN",
         "Multimedia",
         "Tools & Utilities"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Doorbell driver. Detect dead bat with presence detection,  And support debug,trace logs.",
-      "documentationUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-      "id": "manifest:c7a0c0a147e60e1ca24a",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json",
-      "name": "sage doorbell echostar",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Sage Light Switch driver. With presence and virtual switch,Button support and simulated battery value",
-      "documentationUrl": null,
-      "id": "manifest:a4f9d3575778e4a5b74f",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage-light-switch.json",
-      "name": "Sage light switch echostar",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
       ]
     },
     {
@@ -21842,73 +21044,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "SmartThings arrival sensor v2 with adjustable chimes. Can play chimes of diffrent legenths.",
-      "documentationUrl": null,
-      "id": "manifest:3ef5d41ed8bb11fe38e3",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/SmartThings-Arrival-Sensor-hubitat.json",
-      "name": "SmartThings Arrival Sensor Chime V2",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
-      },
-      "reviewed": [],
-      "tags": [
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "SmartThings Motion Sensor with presence. Model:motionv4,motionv5 (Not for Centralite)",
-      "documentationUrl": null,
-      "id": "manifest:f33248a64c90dad205d0",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings_motion_driver.json",
-      "name": "SmartThings Motion Detector",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "jdthomas24",
       "category": "Drivers",
       "classification": "LAN",
@@ -21933,72 +21068,6 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Sensors",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Smartthings multiswitch v3 by Samjin. Fixes bad battery reports autodetect dead battery,presence",
-      "documentationUrl": null,
-      "id": "manifest:66b765ceeb97979ef87f",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-multiswitch-v3.json",
-      "name": "Smartthings multi Sensor V3 (custom)",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Smartthings Samjin button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts",
-      "documentationUrl": null,
-      "id": "manifest:2c7375a08a62e6940309",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-samjin-button.json",
-      "name": "Smartthings Samjin button",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
         "Zigbee"
       ]
     },
@@ -22585,11 +21654,10 @@ window.NETWORK_EVIDENCE = {
           "schemas.xmlsoap.org"
         ],
         "lanPrimitives": [
-          "HUB_ACTION",
           "PARSE_LAN_MESSAGE"
         ],
         "sourceFilesAnalysed": 12,
-        "urlLiteralCount": 91
+        "urlLiteralCount": 89
       },
       "reviewed": [
         {
@@ -23862,40 +22930,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
-      "documentationUrl": null,
-      "id": "manifest:d35f611042d56d15cd59",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-contact-sensor.json",
-      "name": "Third Reality Contact Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Doors & Windows",
-        "Lights & Switches",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "LAN",
@@ -23931,40 +22965,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
-      "documentationUrl": null,
-      "id": "manifest:0ee2a3c99bcc63465bf4",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-motion-sensor.json",
-      "name": "Third Reality Motion Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "Daniel Winks",
       "category": "Window Coverings",
       "classification": "LAN",
@@ -23989,40 +22989,6 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Window Coverings",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved Third Reality Water Sensor with Presence better drop out detection,battery support",
-      "documentationUrl": null,
-      "id": "manifest:9f0e530e1ee5b8ff9336",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json",
-      "name": "Third Reality Water Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Water",
         "Zigbee"
       ]
     },
@@ -25692,36 +24658,6 @@ window.NETWORK_EVIDENCE = {
       "reviewed": [],
       "tags": [
         "Tools & Utilities"
-      ]
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "CLOUD",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Improved Everspring/Utilitech Water Sensor with presence and better drop out detection,battery support,and settings, Support to stop the device from drooping off with dead batteries by providing presence and dead bat detection.with info debug and trace logs",
-      "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-      "id": "manifest:896ef3fe29f7067b9396",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Everspring_Utilitech_Water_Sensor.json",
-      "name": "Utilitech Water Sensor",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 8
-      },
-      "reviewed": [],
-      "tags": [
-        "Monitoring",
-        "Safety & Security",
-        "Water",
-        "ZWave"
       ]
     },
     {
@@ -28355,41 +27291,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "BOTH",
-      "communityUrl": null,
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Works with Sonoff MINI ZB,eWeLink,3A Smart Home and other generic zigbee relays. And generic outlets. Presence,Lamp_01,SA-003-Zigbee,01MINIZB,BASICZBR3,LXN59-1S7LX1.0, Sylvania SMART + LEDVANCE",
-      "documentationUrl": null,
-      "id": "manifest:5fe57262fa14b0bd694a",
-      "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json",
-      "name": "Zigbee Sonoff - generic relays",
-      "observed": {
-        "externalHosts": [
-          "www.paypal.com",
-          "zigbee.blakadder.com"
-        ],
-        "lanPrimitives": [
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 15
-      },
-      "reviewed": [],
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "BOTH",
@@ -29265,5 +28166,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-13T06:58:52Z"
+  "snapshotGenerated": "2026-11-14T06:47:15Z"
 };

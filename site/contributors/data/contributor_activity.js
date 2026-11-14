@@ -1623,558 +1623,6 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [
-        {
-          "category": "Control",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:43ee58d0ce3ad0ea67fc4d46",
-          "observedAt": "2026-08-26T06:39:55Z",
-          "observedCommit": null,
-          "packageId": "manifest:9f0e530e1ee5b8ff9336",
-          "packageName": "Third Reality Water Sensor",
-          "summary": "Third Reality Water Sensor: updated."
-        },
-        {
-          "category": "Security",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d79116171e4d743134e9bc9d",
-          "observedAt": "2026-09-14T02:16:47Z",
-          "observedCommit": null,
-          "packageId": "manifest:fdad5c3b97cf10f30b64",
-          "packageName": "Iris v2 v3 Keypad",
-          "summary": "Iris v2 v3 Keypad: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0667ec85ebcb1343ea3197ec",
-          "observedAt": "2026-09-15T02:22:29Z",
-          "observedCommit": null,
-          "packageId": "manifest:2f1cae8564a80b2e8c9c",
-          "packageName": "Pump Scheduler",
-          "summary": "Pump Scheduler: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:45a766aa24aa998b4c6f329e",
-          "observedAt": "2026-09-15T02:22:29Z",
-          "observedCommit": null,
-          "packageId": "manifest:c6cb3e6d30261b6c9482",
-          "packageName": "Pump Scheduler",
-          "summary": "Pump Scheduler: added."
-        },
-        {
-          "category": "Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:58a5d998f26aa430d91ae46e",
-          "observedAt": "2026-09-16T02:16:49Z",
-          "observedCommit": null,
-          "packageId": "manifest:fdad5c3b97cf10f30b64",
-          "packageName": "Iris v2 v3 Keypad",
-          "summary": "Iris v2 v3 Keypad: updated."
-        }
-      ],
-      "appCount": 3,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 23
-        },
-        {
-          "name": "Security",
-          "packageCount": 11
-        },
-        {
-          "name": "Utility",
-          "packageCount": 1
-        }
-      ],
-      "currentPackageCount": 35,
-      "currentRank": 3,
-      "driverCount": 32,
-      "id": "contributor:3d07aab59cd6c5d37cb7",
-      "name": "TheMaster",
-      "observedActivityCount": 5,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:0e158770d6872bbafab3",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json",
-          "name": "CentraLite Motion Detector",
-          "publisherDate": "2023-13-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:d7e63a62e9959c70884c",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json",
-          "name": "Dimable CT Bulb driver - Zigbee",
-          "publisherDate": "2023-3-27",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:868f025a91532259bf37",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json",
-          "name": "HTTP Presence Sensor with schedule",
-          "publisherDate": "2022-09-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.4.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:3cf17f2562593e85cdfa",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/centralite-water-sensor.json",
-          "name": "Iris CentraLite Samjin Smartthings water Sensor",
-          "publisherDate": "2023-1-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:c84626f58936b4b2029c",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-utilitech-siren.json",
-          "name": "Iris Utilitech Siren driver",
-          "publisherDate": "2022-3-12",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:01c04d48ceec732a8f0d",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json",
-          "name": "iris v1 button",
-          "publisherDate": "2022-14-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:8a8e0bc9aaf988d740d9",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-contact.json",
-          "name": "Iris v1 Contact Sensor-custom",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "3.3.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:b02b11578799450c019e",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-keyfob.json",
-          "name": "Iris v1 keyfob custom",
-          "publisherDate": "2022-11-23",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.3.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-v1-keyboard-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:6042178cc7d0f666b5e9",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1keypad.json",
-          "name": "Iris v1 Keypad",
-          "publisherDate": "2024-15-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "7.0.3"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:6fb2ece627bb27f3fc2b",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_motion_sensor.json",
-          "name": "Iris v1 Motion Detector Custom",
-          "publisherDate": "2024-22-05",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.5.2"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:64e0a477fc2b8e0c6fcf",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_repeator_zigbee.json",
-          "name": "Iris v1 Repeator Zigbe",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:89ffacc3e3d6084e290b",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Iris_v1_Senior_Care_Pendant.json",
-          "name": "Iris v1 Senior Care Pendant",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:a5eb6db7aeaff36b91ef",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug.json",
-          "name": "Iris v1 Smart Plug custom",
-          "publisherDate": "2022-09-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "4.2.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:3bd0f4737937fc714714",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug2.json",
-          "name": "Iris v1 Smart Plug custom No alarm",
-          "publisherDate": "2025-25-10",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "4.2.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:c2b35d5a3c5200f1fc97",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug3.json",
-          "name": "Iris v1 Smart Plug custom With Alarm",
-          "publisherDate": "2022-09-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "4.2.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:72f88b33c6ce20d2e239",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-contact.json",
-          "name": "Iris v2 Contact Sensor",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.8.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:8deb2f80f69af417372f",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-motion-sensor.json",
-          "name": "Iris v2 Motion Detector",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:fdad5c3b97cf10f30b64",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
-          "name": "Iris v2 v3 Keypad",
-          "publisherDate": "2026-09-13",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.7.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:a9b18182109f9815fc46",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/LeakSmart_Water_Valve.json",
-          "name": "LeakSmart Water Valve",
-          "publisherDate": "2024-09-29",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "3.4.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-          "documentationUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-          "driverCount": 0,
-          "id": "manifest:f6f02791da1a6ee62a2a",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor.json",
-          "name": "Lock Button Monitor",
-          "publisherDate": "2022-24-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.3.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-          "documentationUrl": null,
-          "driverCount": 0,
-          "id": "manifest:aea83b9efc9b358fd41d",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor2.json",
-          "name": "Lock Button Monitor2",
-          "publisherDate": "2022-24-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.3.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/pump-scheduler/165333",
-          "documentationUrl": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
-          "driverCount": 0,
-          "id": "manifest:c6cb3e6d30261b6c9482",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
-          "name": "Pump Scheduler",
-          "publisherDate": "2026-07-23",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.0.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
-          "documentationUrl": "http://www.winnfreenet.com/wp/2022/08/radio-thermostat-zwave-hubitat-driver-ct101-ct30/",
-          "driverCount": 1,
-          "id": "manifest:dc5e339ffbe7d9a9e24c",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/radio_thermostat_driver.json",
-          "name": "Radio Thermostat Zwave",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "5.9.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:37e10e051840017da9d6",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/eWeLight-RGBW-Bulbs.json",
-          "name": "RGBW CT Bulbs - Zigbee",
-          "publisherDate": "2023-1-3",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-          "documentationUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-          "driverCount": 1,
-          "id": "manifest:c7a0c0a147e60e1ca24a",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json",
-          "name": "sage doorbell echostar",
-          "publisherDate": "2022-25-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.8.7"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:a4f9d3575778e4a5b74f",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage-light-switch.json",
-          "name": "Sage light switch echostar",
-          "publisherDate": "2022-10-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.8.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:3ef5d41ed8bb11fe38e3",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/SmartThings-Arrival-Sensor-hubitat.json",
-          "name": "SmartThings Arrival Sensor Chime V2",
-          "publisherDate": "2022-09-08",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.7.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:f33248a64c90dad205d0",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings_motion_driver.json",
-          "name": "SmartThings Motion Detector",
-          "publisherDate": "2023-13-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.0.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:66b765ceeb97979ef87f",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-multiswitch-v3.json",
-          "name": "Smartthings multi Sensor V3 (custom)",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.4.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:2c7375a08a62e6940309",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-samjin-button.json",
-          "name": "Smartthings Samjin button",
-          "publisherDate": "2022-14-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.1.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Security",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:d35f611042d56d15cd59",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-contact-sensor.json",
-          "name": "Third Reality Contact Sensor",
-          "publisherDate": "2024-27-12",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:0ee2a3c99bcc63465bf4",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-motion-sensor.json",
-          "name": "Third Reality Motion Sensor",
-          "publisherDate": "2022-22-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.3"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:9f0e530e1ee5b8ff9336",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json",
-          "name": "Third Reality Water Sensor",
-          "publisherDate": "2022-12-07",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.2.4"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-          "driverCount": 1,
-          "id": "manifest:896ef3fe29f7067b9396",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Everspring_Utilitech_Water_Sensor.json",
-          "name": "Utilitech Water Sensor",
-          "publisherDate": "2022-09-03",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "2.8.3"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": null,
-          "documentationUrl": null,
-          "driverCount": 1,
-          "id": "manifest:5fe57262fa14b0bd694a",
-          "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json",
-          "name": "Zigbee Sonoff - generic relays",
-          "publisherDate": "2022-10-23",
-          "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-          "version": "1.7.7"
-        }
-      ]
-    },
-    {
       "activity": [],
       "appCount": 15,
       "categories": [
@@ -2196,7 +1644,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 33,
-      "currentRank": 4,
+      "currentRank": 3,
       "driverCount": 25,
       "id": "contributor:7e962e2a9b678c20d253",
       "name": "Larry Kahn",
@@ -2647,7 +2095,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 26,
-      "currentRank": 5,
+      "currentRank": 4,
       "driverCount": 43,
       "id": "contributor:2b1212c37b5a093f5105",
       "name": "Sebastian YEPES FERNANDEZ",
@@ -3007,7 +2455,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 24,
-      "currentRank": 6,
+      "currentRank": 5,
       "driverCount": 24,
       "id": "contributor:37d54df51e4219f964b7",
       "name": "Bryan Copeland",
@@ -3341,7 +2789,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 22,
-      "currentRank": 7,
+      "currentRank": 6,
       "driverCount": 37,
       "id": "contributor:f00b1896cf1c0569b9bd",
       "name": "Markus",
@@ -3696,7 +3144,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 18,
-      "currentRank": 8,
+      "currentRank": 7,
       "driverCount": 13,
       "id": "contributor:77d1022a309f439c77fb",
       "name": "Denny Page",
@@ -4041,6 +3489,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:fc157f48-5e69-4d83-b450-b00ec3551c7c",
           "packageName": "MolSmart - GW8 - AC(irweb)",
           "summary": "MolSmart - GW8 - AC(irweb): updated."
+        },
+        {
+          "category": "Convenience",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8b28a33a3404732ae2e122fe",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "hpm:c32c9228-fa6f-4392-b5c4-fb2e8ce8adcb",
+          "packageName": "Amazon Fire TV (ADB)",
+          "summary": "Amazon Fire TV (ADB): added."
         }
       ],
       "appCount": 3,
@@ -4051,15 +3513,15 @@ window.CONTRIBUTOR_ACTIVITY = {
         },
         {
           "name": "Convenience",
-          "packageCount": 2
+          "packageCount": 3
         }
       ],
-      "currentPackageCount": 17,
-      "currentRank": 9,
-      "driverCount": 21,
+      "currentPackageCount": 18,
+      "currentRank": 8,
+      "driverCount": 22,
       "id": "contributor:b1dde56d932db37bddb9",
       "name": "VH",
-      "observedActivityCount": 7,
+      "observedActivityCount": 8,
       "packages": [
         {
           "appCount": 0,
@@ -4073,6 +3535,19 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2025-04-11",
           "repositoryUrl": "https://raw.githubusercontent.com/hhorigian/mainfiles/main/repository.json",
           "version": "1.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Convenience",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:c32c9228-fa6f-4392-b5c4-fb2e8ce8adcb",
+          "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/refs/heads/main/packageManifest.json",
+          "name": "Amazon Fire TV (ADB)",
+          "publisherDate": "2026-11-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/hhorigian/mainfiles/main/repository.json",
+          "version": "1.7"
         },
         {
           "appCount": 1,
@@ -4741,7 +4216,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 14,
-      "currentRank": 10,
+      "currentRank": 9,
       "driverCount": 23,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
@@ -4949,7 +4424,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 14,
-      "currentRank": 11,
+      "currentRank": 10,
       "driverCount": 32,
       "id": "contributor:a8ca46dc4bb8c9bff255",
       "name": "Dominick Meglio",
@@ -5504,7 +4979,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 14,
-      "currentRank": 12,
+      "currentRank": 11,
       "driverCount": 24,
       "id": "contributor:1b76baa7c956cdde4345",
       "name": "RamSet",
@@ -5733,7 +5208,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 13,
-      "currentRank": 13,
+      "currentRank": 12,
       "driverCount": 38,
       "id": "contributor:a1e64965b75ed45dfe29",
       "name": "Andrew Davison",
@@ -5924,7 +5399,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 13,
-      "currentRank": 14,
+      "currentRank": 13,
       "driverCount": 41,
       "id": "contributor:2b8070a263cc1d84eda2",
       "name": "tomw",
@@ -6111,7 +5586,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 12,
-      "currentRank": 15,
+      "currentRank": 14,
       "driverCount": 12,
       "id": "contributor:9dba74fb60a758d6bc1a",
       "name": "Botched1 (Jason Bottjen)",
@@ -6673,7 +6148,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 11,
-      "currentRank": 16,
+      "currentRank": 15,
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
@@ -6869,7 +6344,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 11,
-      "currentRank": 17,
+      "currentRank": 16,
       "driverCount": 28,
       "id": "contributor:f660df350c7b06eed270",
       "name": "Jeff Page (@jtp10181)",
@@ -7034,7 +6509,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 11,
-      "currentRank": 18,
+      "currentRank": 17,
       "driverCount": 7,
       "id": "contributor:bb8dd3e723046510f0bc",
       "name": "Joel Wetzel",
@@ -7182,6 +6657,1256 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-01-18",
           "repositoryUrl": "https://raw.githubusercontent.com/joelwetzel/HubitatPackages/master/repository.json",
           "version": "2.0.6"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": "https://github.com/GordonThelander/HPM_Manifest_Crawl/commit/50b4981b472f4ea550fe51885e2ef3f6409acd3b",
+          "id": "change:88a0fa1497de584c45650963",
+          "observedAt": "2026-08-15T04:51:09Z",
+          "observedCommit": "50b4981b472f4ea550fe51885e2ef3f6409acd3b",
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:36a8ac2db128283fddfb4ed3",
+          "observedAt": "2026-08-17T22:40:04Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a580fff10219725f1ab93c3e",
+          "observedAt": "2026-08-19T05:01:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2639538775f46183f141a9c2",
+          "observedAt": "2026-08-19T23:36:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0142701300de71e193c9232a",
+          "observedAt": "2026-08-20T13:03:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d482dcadf478b626f0c8896d",
+          "observedAt": "2026-08-24T23:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8ab2d71f97c3603c9d10146b",
+          "observedAt": "2026-08-25T00:39:18Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a08d64b9e36b6cf5c5eba1ff",
+          "observedAt": "2026-09-02T01:54:11Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fbb2e5e1576733f3cbdc5c0d",
+          "observedAt": "2026-09-20T02:16:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9a04575cc6decea56d4758f6",
+          "observedAt": "2026-09-22T02:20:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated, changed declared definitions."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:842d4b62ed8d08a672264256",
+          "observedAt": "2026-09-24T05:06:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2a18664f8ebd57f3915a944f",
+          "observedAt": "2026-09-25T05:08:44Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:59bfe4cfe4c1622fba3ef877",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated, changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7b058791ef1d9cc5402bf1e9",
+          "observedAt": "2026-09-26T05:11:36Z",
+          "observedCommit": null,
+          "packageId": "manifest:e7e7cbfa755e1aea230d",
+          "packageName": "Pentair Intellicenter Controller",
+          "summary": "Pentair Intellicenter Controller: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2ce5fc824f5d6480e95a826b",
+          "observedAt": "2026-09-28T05:37:19Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a1371bc52edb8b8cc321e4b1",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d7eeb65eaae759a09e9eb6e2",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d033dc9dd57fc0bb0cb3e178",
+          "observedAt": "2026-10-01T06:12:16Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:05e16c2d2f7e9ec6156360cb",
+          "observedAt": "2026-10-02T05:55:04Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6f32f8ee92e9b0175a74d54a",
+          "observedAt": "2026-10-03T05:30:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67c7ab9805eb47e19cda8f91",
+          "observedAt": "2026-10-06T06:34:52Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:baaf244069648b8fcba88397",
+          "observedAt": "2026-10-07T06:13:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:ec6c3d0850f41d09b25f",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:035d7e81622560ad1198b1a3",
+          "observedAt": "2026-10-10T06:05:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: added."
+        },
+        {
+          "category": "Drivers",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2f5e2fdb25e1864efe743687",
+          "observedAt": "2026-10-10T06:05:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:7d07638149cfe13e710d",
+          "packageName": "SmartThings Motion Sensor Driver",
+          "summary": "SmartThings Motion Sensor Driver: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5ddf59d4b9257a66ebdf2441",
+          "observedAt": "2026-10-10T06:05:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6df529dddd7006b6ac285b60",
+          "observedAt": "2026-10-10T06:05:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:65b677bc95189011628d",
+          "packageName": "Moonraker Klipper Printer",
+          "summary": "Moonraker Klipper Printer: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:eabbb1bcbbe7062270df9899",
+          "observedAt": "2026-10-10T06:05:14Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:82a9c0745d26a6bf53344feb",
+          "observedAt": "2026-10-11T06:02:51Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ce6722c95b3cffa0b69206d7",
+          "observedAt": "2026-10-14T05:06:26Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:04dec5f052e783f44b7ad58c",
+          "observedAt": "2026-10-15T04:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:69ea239cd622188197e2e579",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1f45f813af321dc133c40223",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: added."
+        },
+        {
+          "category": "Drivers",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:347c56e13e87396452d3a502",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:7d07638149cfe13e710d",
+          "packageName": "SmartThings Motion Sensor Driver",
+          "summary": "SmartThings Motion Sensor Driver: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3ff010698ea7724c3f286b20",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:e7e7cbfa755e1aea230d",
+          "packageName": "Pentair Intellicenter Controller",
+          "summary": "Pentair Intellicenter Controller: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:523f51cf72cbde34cc06eca0",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:ec6c3d0850f41d09b25f",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:534a65b5357e9bb8fd32b913",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: added."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:78dd7d68112d9dd506a4e03a",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:85762d29f0e8e9f7b9fb2a38",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a4e421ea3a9bd699bb526859",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b88e8d8a2cefd1dc4661df4a",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated, changed source location."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e620a5c7fbfe35df0fa27830",
+          "observedAt": "2026-10-20T10:03:43Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: added."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:43a617d5f9df11f22225b6a5",
+          "observedAt": "2026-10-21T05:02:56Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:53c4a15c8d8eb456accb7326",
+          "observedAt": "2026-10-21T05:02:56Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:852f2b5cfdd9e155fcec8b93",
+          "observedAt": "2026-10-21T05:02:56Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d531362ac6f85daecb21e917",
+          "observedAt": "2026-10-21T05:02:56Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:794835b0f1d0e82acb38e61c",
+          "observedAt": "2026-10-22T05:05:54Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:29d58a3c68cdb06415ab2308",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3c28b5f6efa660542d882c6d",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:55488f18a46d017284e9c25c",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:785780c5ea462e3a996dd5cf",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a826e314a552dd7b5a6dad51",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2998b8335433fc76fd827ca2",
+          "observedAt": "2026-10-25T04:58:59Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:901ea145be01a9332d44f880",
+          "observedAt": "2026-10-25T04:58:59Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e08853321ef47f2bb8e9a291",
+          "observedAt": "2026-10-25T04:58:59Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d8143e98105db31bf9967fb2",
+          "observedAt": "2026-10-28T05:57:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:ea81782e3e1e271e88625742",
+          "observedAt": "2026-10-28T05:57:35Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8354dc46c7d58fc6e3698047",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c5c9eea74927cb807e0d33ab",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Safety & Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:09a6c3978a51a08f9faedf5c",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:1fb36d6ab3dd1abe2238",
+          "packageName": "Reolink Integration",
+          "summary": "Reolink Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:26cbf739420af4f374f43b6d",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02e9c2e9e6f56c819a0",
+          "packageName": "Device Health Monitor",
+          "summary": "Device Health Monitor: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:721cf940fe938812c2b76de3",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:870b5a312594d77375184497",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a65b3a4589b6c9fc1613cafd",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b91e18ddb503774310d1d04b",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bec623db3dadfa3bba983d33",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5e72c82e701ce8be79488e7b",
+          "observedAt": "2026-11-01T06:27:51Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8f42ccd3dd6508692f9ba41c",
+          "observedAt": "2026-11-05T07:03:25Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:73dcf00517dd8496f2a32c65",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "manifest:c57015f573a94b304002",
+          "packageName": "Sofabaton Integration",
+          "summary": "Sofabaton Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:86d2d4b02cf217e1d9c2170d",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9c492572c08ba34dba2aa08c",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b34930a2b2d750a7dc11d840",
+          "observedAt": "2026-11-09T06:55:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:06f9636483d5a32c3cd6",
+          "packageName": "Battery Monitor 2.0",
+          "summary": "Battery Monitor 2.0: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b582c738ef8635c3a8c613ee",
+          "observedAt": "2026-11-11T06:50:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:0022946aa602eec49b4f",
+          "packageName": "Pentair IntelliCenter Controller",
+          "summary": "Pentair IntelliCenter Controller: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b6fafdd2dc6d0c8cf7c3fec4",
+          "observedAt": "2026-11-11T06:50:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:de42612ba3224c01e1966208",
+          "observedAt": "2026-11-11T06:50:09Z",
+          "observedCommit": null,
+          "packageId": "manifest:ef7f5edf77a6625b6a9b",
+          "packageName": "Leviton Smart Load Center",
+          "summary": "Leviton Smart Load Center: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:da9b69d400c9bf1e2b90e479",
+          "observedAt": "2026-11-12T07:28:16Z",
+          "observedCommit": null,
+          "packageId": "manifest:2a4da40794b26e8789b7",
+          "packageName": "Apple TV Integration",
+          "summary": "Apple TV Integration: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b243bd773467ae6c3516f9fa",
+          "observedAt": "2026-11-13T06:58:52Z",
+          "observedCommit": null,
+          "packageId": "manifest:65b677bc95189011628d",
+          "packageName": "Moonraker Klipper Printer",
+          "summary": "Moonraker Klipper Printer: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:10c84794c301227739c7e712",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:2198e51ff4278066f040",
+          "packageName": "Roborock Integration",
+          "summary": "Roborock Integration: added."
+        }
+      ],
+      "appCount": 8,
+      "categories": [
+        {
+          "name": "Drivers",
+          "packageCount": 1
+        },
+        {
+          "name": "Integrations",
+          "packageCount": 5
+        },
+        {
+          "name": "Safety & Security",
+          "packageCount": 1
+        },
+        {
+          "name": "Utility",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 10,
+      "currentRank": 18,
+      "driverCount": 20,
+      "id": "contributor:7eb31971c1852a991d3b",
+      "name": "jdthomas24",
+      "observedActivityCount": 77,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/166801",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
+          "driverCount": 2,
+          "id": "manifest:2a4da40794b26e8789b7",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
+          "name": "Apple TV Integration",
+          "publisherDate": "2026-11-11",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.2.5"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
+          "driverCount": 0,
+          "id": "manifest:06f9636483d5a32c3cd6",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
+          "name": "Battery Monitor 2.0",
+          "publisherDate": "2026-11-08",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "2.7.6"
+        },
+        {
+          "appCount": 1,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
+          "driverCount": 0,
+          "id": "manifest:b02e9c2e9e6f56c819a0",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
+          "name": "Device Health Monitor",
+          "publisherDate": "2026-10-27",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.8.1"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Leviton%20Smart%20Load%20Center",
+          "driverCount": 3,
+          "id": "manifest:ef7f5edf77a6625b6a9b",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json",
+          "name": "Leviton Smart Load Center",
+          "publisherDate": "2026-11-10",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "2.0.5"
+        },
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-moonraker-klipper-3d-printer-driver/163584",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Moonraker%20Klipper%203D%20Printer",
+          "driverCount": 1,
+          "id": "manifest:65b677bc95189011628d",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json",
+          "name": "Moonraker Klipper Printer",
+          "publisherDate": "2026-10-09",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.0.50"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Pentair%20Intellicenter%20Control",
+          "driverCount": 4,
+          "id": "manifest:0022946aa602eec49b4f",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
+          "name": "Pentair IntelliCenter Controller",
+          "publisherDate": "2026-11-10",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.8.2"
+        },
+        {
+          "appCount": 1,
+          "category": "Safety & Security",
+          "communityUrl": "https://community.hubitat.com/t/165352",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
+          "driverCount": 4,
+          "id": "manifest:1fb36d6ab3dd1abe2238",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
+          "name": "Reolink Integration",
+          "publisherDate": "2026-10-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.6.17"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+          "driverCount": 2,
+          "id": "manifest:2198e51ff4278066f040",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+          "name": "Roborock Integration",
+          "publisherDate": "2026-11-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.0.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Drivers",
+          "communityUrl": "https://community.hubitat.com/t/release-smartthings-motion-sensor-driver-enhanced/162512",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SmartThings%20Motion%20Sensor",
+          "driverCount": 1,
+          "id": "manifest:7d07638149cfe13e710d",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
+          "name": "SmartThings Motion Sensor Driver",
+          "publisherDate": "2026-10-19",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.8.2"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
+          "driverCount": 3,
+          "id": "manifest:c57015f573a94b304002",
+          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json",
+          "name": "Sofabaton Integration",
+          "publisherDate": "2026-11-06",
+          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
+          "version": "1.1.7"
         }
       ]
     },
@@ -8937,1229 +9662,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": "https://github.com/GordonThelander/HPM_Manifest_Crawl/commit/50b4981b472f4ea550fe51885e2ef3f6409acd3b",
-          "id": "change:88a0fa1497de584c45650963",
-          "observedAt": "2026-08-15T04:51:09Z",
-          "observedCommit": "50b4981b472f4ea550fe51885e2ef3f6409acd3b",
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed source location, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:36a8ac2db128283fddfb4ed3",
-          "observedAt": "2026-08-17T22:40:04Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a580fff10219725f1ab93c3e",
-          "observedAt": "2026-08-19T05:01:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2639538775f46183f141a9c2",
-          "observedAt": "2026-08-19T23:36:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0142701300de71e193c9232a",
-          "observedAt": "2026-08-20T13:03:48Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d482dcadf478b626f0c8896d",
-          "observedAt": "2026-08-24T23:45:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8ab2d71f97c3603c9d10146b",
-          "observedAt": "2026-08-25T00:39:18Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a08d64b9e36b6cf5c5eba1ff",
-          "observedAt": "2026-09-02T01:54:11Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:fbb2e5e1576733f3cbdc5c0d",
-          "observedAt": "2026-09-20T02:16:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:9a04575cc6decea56d4758f6",
-          "observedAt": "2026-09-22T02:20:44Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated, changed declared definitions."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:842d4b62ed8d08a672264256",
-          "observedAt": "2026-09-24T05:06:01Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2a18664f8ebd57f3915a944f",
-          "observedAt": "2026-09-25T05:08:44Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:59bfe4cfe4c1622fba3ef877",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated, changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:7b058791ef1d9cc5402bf1e9",
-          "observedAt": "2026-09-26T05:11:36Z",
-          "observedCommit": null,
-          "packageId": "manifest:e7e7cbfa755e1aea230d",
-          "packageName": "Pentair Intellicenter Controller",
-          "summary": "Pentair Intellicenter Controller: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2ce5fc824f5d6480e95a826b",
-          "observedAt": "2026-09-28T05:37:19Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a1371bc52edb8b8cc321e4b1",
-          "observedAt": "2026-09-29T05:54:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d7eeb65eaae759a09e9eb6e2",
-          "observedAt": "2026-09-29T05:54:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d033dc9dd57fc0bb0cb3e178",
-          "observedAt": "2026-10-01T06:12:16Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:05e16c2d2f7e9ec6156360cb",
-          "observedAt": "2026-10-02T05:55:04Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6f32f8ee92e9b0175a74d54a",
-          "observedAt": "2026-10-03T05:30:35Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:67c7ab9805eb47e19cda8f91",
-          "observedAt": "2026-10-06T06:34:52Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:baaf244069648b8fcba88397",
-          "observedAt": "2026-10-07T06:13:10Z",
-          "observedCommit": null,
-          "packageId": "manifest:ec6c3d0850f41d09b25f",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated, changed declared definitions."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:035d7e81622560ad1198b1a3",
-          "observedAt": "2026-10-10T06:05:14Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: added."
-        },
-        {
-          "category": "Drivers",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2f5e2fdb25e1864efe743687",
-          "observedAt": "2026-10-10T06:05:14Z",
-          "observedCommit": null,
-          "packageId": "manifest:7d07638149cfe13e710d",
-          "packageName": "SmartThings Motion Sensor Driver",
-          "summary": "SmartThings Motion Sensor Driver: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:5ddf59d4b9257a66ebdf2441",
-          "observedAt": "2026-10-10T06:05:14Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6df529dddd7006b6ac285b60",
-          "observedAt": "2026-10-10T06:05:14Z",
-          "observedCommit": null,
-          "packageId": "manifest:65b677bc95189011628d",
-          "packageName": "Moonraker Klipper Printer",
-          "summary": "Moonraker Klipper Printer: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:eabbb1bcbbe7062270df9899",
-          "observedAt": "2026-10-10T06:05:14Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:82a9c0745d26a6bf53344feb",
-          "observedAt": "2026-10-11T06:02:51Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:ce6722c95b3cffa0b69206d7",
-          "observedAt": "2026-10-14T05:06:26Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:04dec5f052e783f44b7ad58c",
-          "observedAt": "2026-10-15T04:55:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:69ea239cd622188197e2e579",
-          "observedAt": "2026-10-17T04:43:20Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:1f45f813af321dc133c40223",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: added."
-        },
-        {
-          "category": "Drivers",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:347c56e13e87396452d3a502",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:7d07638149cfe13e710d",
-          "packageName": "SmartThings Motion Sensor Driver",
-          "summary": "SmartThings Motion Sensor Driver: updated, changed source location, changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3ff010698ea7724c3f286b20",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:e7e7cbfa755e1aea230d",
-          "packageName": "Pentair Intellicenter Controller",
-          "summary": "Pentair Intellicenter Controller: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:523f51cf72cbde34cc06eca0",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:ec6c3d0850f41d09b25f",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:534a65b5357e9bb8fd32b913",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: added."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:78dd7d68112d9dd506a4e03a",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:85762d29f0e8e9f7b9fb2a38",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a4e421ea3a9bd699bb526859",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b88e8d8a2cefd1dc4661df4a",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated, changed source location."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:e620a5c7fbfe35df0fa27830",
-          "observedAt": "2026-10-20T10:03:43Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: added."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:43a617d5f9df11f22225b6a5",
-          "observedAt": "2026-10-21T05:02:56Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:53c4a15c8d8eb456accb7326",
-          "observedAt": "2026-10-21T05:02:56Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:852f2b5cfdd9e155fcec8b93",
-          "observedAt": "2026-10-21T05:02:56Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d531362ac6f85daecb21e917",
-          "observedAt": "2026-10-21T05:02:56Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:794835b0f1d0e82acb38e61c",
-          "observedAt": "2026-10-22T05:05:54Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:29d58a3c68cdb06415ab2308",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3c28b5f6efa660542d882c6d",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated, changed source location, changed declared definitions."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:55488f18a46d017284e9c25c",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:785780c5ea462e3a996dd5cf",
-          "observedAt": "2026-10-24T04:49:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a826e314a552dd7b5a6dad51",
-          "observedAt": "2026-10-24T04:49:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:2998b8335433fc76fd827ca2",
-          "observedAt": "2026-10-25T04:58:59Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:901ea145be01a9332d44f880",
-          "observedAt": "2026-10-25T04:58:59Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:e08853321ef47f2bb8e9a291",
-          "observedAt": "2026-10-25T04:58:59Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d8143e98105db31bf9967fb2",
-          "observedAt": "2026-10-28T05:57:35Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:ea81782e3e1e271e88625742",
-          "observedAt": "2026-10-28T05:57:35Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8354dc46c7d58fc6e3698047",
-          "observedAt": "2026-10-29T06:04:01Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:c5c9eea74927cb807e0d33ab",
-          "observedAt": "2026-10-29T06:04:01Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Safety & Security",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:09a6c3978a51a08f9faedf5c",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:1fb36d6ab3dd1abe2238",
-          "packageName": "Reolink Integration",
-          "summary": "Reolink Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:26cbf739420af4f374f43b6d",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:b02e9c2e9e6f56c819a0",
-          "packageName": "Device Health Monitor",
-          "summary": "Device Health Monitor: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:721cf940fe938812c2b76de3",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:870b5a312594d77375184497",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a65b3a4589b6c9fc1613cafd",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b91e18ddb503774310d1d04b",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:bec623db3dadfa3bba983d33",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:5e72c82e701ce8be79488e7b",
-          "observedAt": "2026-11-01T06:27:51Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8f42ccd3dd6508692f9ba41c",
-          "observedAt": "2026-11-05T07:03:25Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:73dcf00517dd8496f2a32c65",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "manifest:c57015f573a94b304002",
-          "packageName": "Sofabaton Integration",
-          "summary": "Sofabaton Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:86d2d4b02cf217e1d9c2170d",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:9c492572c08ba34dba2aa08c",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b34930a2b2d750a7dc11d840",
-          "observedAt": "2026-11-09T06:55:28Z",
-          "observedCommit": null,
-          "packageId": "manifest:06f9636483d5a32c3cd6",
-          "packageName": "Battery Monitor 2.0",
-          "summary": "Battery Monitor 2.0: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b582c738ef8635c3a8c613ee",
-          "observedAt": "2026-11-11T06:50:09Z",
-          "observedCommit": null,
-          "packageId": "manifest:0022946aa602eec49b4f",
-          "packageName": "Pentair IntelliCenter Controller",
-          "summary": "Pentair IntelliCenter Controller: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b6fafdd2dc6d0c8cf7c3fec4",
-          "observedAt": "2026-11-11T06:50:09Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:de42612ba3224c01e1966208",
-          "observedAt": "2026-11-11T06:50:09Z",
-          "observedCommit": null,
-          "packageId": "manifest:ef7f5edf77a6625b6a9b",
-          "packageName": "Leviton Smart Load Center",
-          "summary": "Leviton Smart Load Center: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:da9b69d400c9bf1e2b90e479",
-          "observedAt": "2026-11-12T07:28:16Z",
-          "observedCommit": null,
-          "packageId": "manifest:2a4da40794b26e8789b7",
-          "packageName": "Apple TV Integration",
-          "summary": "Apple TV Integration: updated."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b243bd773467ae6c3516f9fa",
-          "observedAt": "2026-11-13T06:58:52Z",
-          "observedCommit": null,
-          "packageId": "manifest:65b677bc95189011628d",
-          "packageName": "Moonraker Klipper Printer",
-          "summary": "Moonraker Klipper Printer: updated."
-        }
-      ],
-      "appCount": 7,
-      "categories": [
-        {
-          "name": "Drivers",
-          "packageCount": 1
-        },
-        {
-          "name": "Integrations",
-          "packageCount": 4
-        },
-        {
-          "name": "Safety & Security",
-          "packageCount": 1
-        },
-        {
-          "name": "Utility",
-          "packageCount": 3
-        }
-      ],
-      "currentPackageCount": 9,
-      "currentRank": 24,
-      "driverCount": 18,
-      "id": "contributor:7eb31971c1852a991d3b",
-      "name": "jdthomas24",
-      "observedActivityCount": 76,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/166801",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Apple%20TV%20Integration",
-          "driverCount": 2,
-          "id": "manifest:2a4da40794b26e8789b7",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json",
-          "name": "Apple TV Integration",
-          "publisherDate": "2026-11-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.2.5"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-battery-monitor-2-0/162329",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Battery%20Monitor%202.0",
-          "driverCount": 0,
-          "id": "manifest:06f9636483d5a32c3cd6",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json",
-          "name": "Battery Monitor 2.0",
-          "publisherDate": "2026-11-08",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "2.7.6"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
-          "driverCount": 0,
-          "id": "manifest:b02e9c2e9e6f56c819a0",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json",
-          "name": "Device Health Monitor",
-          "publisherDate": "2026-10-27",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.8.1"
-        },
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-leviton-smart-load-center/163950",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Leviton%20Smart%20Load%20Center",
-          "driverCount": 3,
-          "id": "manifest:ef7f5edf77a6625b6a9b",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json",
-          "name": "Leviton Smart Load Center",
-          "publisherDate": "2026-11-10",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "2.0.5"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-moonraker-klipper-3d-printer-driver/163584",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Moonraker%20Klipper%203D%20Printer",
-          "driverCount": 1,
-          "id": "manifest:65b677bc95189011628d",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json",
-          "name": "Moonraker Klipper Printer",
-          "publisherDate": "2026-10-09",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.0.50"
-        },
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-pentair-intellicenter-controller-beta/162876/31",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Pentair%20Intellicenter%20Control",
-          "driverCount": 4,
-          "id": "manifest:0022946aa602eec49b4f",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json",
-          "name": "Pentair IntelliCenter Controller",
-          "publisherDate": "2026-11-10",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.8.2"
-        },
-        {
-          "appCount": 1,
-          "category": "Safety & Security",
-          "communityUrl": "https://community.hubitat.com/t/165352",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
-          "driverCount": 4,
-          "id": "manifest:1fb36d6ab3dd1abe2238",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Reolink%20Integration/packagemanifest.json",
-          "name": "Reolink Integration",
-          "publisherDate": "2026-10-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.6.17"
-        },
-        {
-          "appCount": 0,
-          "category": "Drivers",
-          "communityUrl": "https://community.hubitat.com/t/release-smartthings-motion-sensor-driver-enhanced/162512",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SmartThings%20Motion%20Sensor",
-          "driverCount": 1,
-          "id": "manifest:7d07638149cfe13e710d",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/packagemanifest.json",
-          "name": "SmartThings Motion Sensor Driver",
-          "publisherDate": "2026-10-19",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.8.2"
-        },
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
-          "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/SofaBaton%20Integration",
-          "driverCount": 3,
-          "id": "manifest:c57015f573a94b304002",
-          "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json",
-          "name": "Sofabaton Integration",
-          "publisherDate": "2026-11-06",
-          "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-          "version": "1.1.7"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
           "category": "Integrations",
           "changeTypes": [
             "DECLARED_DEFINITIONS_CHANGED"
@@ -10270,7 +9772,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 9,
-      "currentRank": 25,
+      "currentRank": 24,
       "driverCount": 13,
       "id": "contributor:076e5477ab8ec37a09b7",
       "name": "Kurt Sanders",
@@ -10470,7 +9972,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 9,
-      "currentRank": 26,
+      "currentRank": 25,
       "driverCount": 9,
       "id": "contributor:064f73070c9a0317f2aa",
       "name": "Mike Bishop",
@@ -11057,7 +10559,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 8,
-      "currentRank": 27,
+      "currentRank": 26,
       "driverCount": 37,
       "id": "contributor:55e837becfd98e51d47d",
       "name": "Dan Danache (@dandanache)",
@@ -11187,7 +10689,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 8,
-      "currentRank": 28,
+      "currentRank": 27,
       "driverCount": 7,
       "id": "contributor:e84338d48f0466eadd9a",
       "name": "Ernie Miller",
@@ -11328,7 +10830,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 8,
-      "currentRank": 29,
+      "currentRank": 28,
       "driverCount": 13,
       "id": "contributor:b2afb39a78bdad4d7d29",
       "name": "Justin Leonard",
@@ -11479,7 +10981,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 30,
+      "currentRank": 29,
       "driverCount": 4,
       "id": "contributor:0f0655b75747be44393e",
       "name": "csteele",
@@ -11635,7 +11137,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 31,
+      "currentRank": 30,
       "driverCount": 12,
       "id": "contributor:db009efbf00416082894",
       "name": "Derek Osborn",
@@ -11771,7 +11273,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 7,
-      "currentRank": 32,
+      "currentRank": 31,
       "driverCount": 11,
       "id": "contributor:d322f323ee1e799e2f34",
       "name": "Robert Morris",
@@ -11888,7 +11390,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 33,
+      "currentRank": 32,
       "driverCount": 5,
       "id": "contributor:01b31c19dd0b37a99e0a",
       "name": "Aaron Ward",
@@ -12123,7 +11625,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 34,
+      "currentRank": 33,
       "driverCount": 31,
       "id": "contributor:8fa49887fd5ee7f96752",
       "name": "Albert Mulder",
@@ -12223,7 +11725,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 35,
+      "currentRank": 34,
       "driverCount": 7,
       "id": "contributor:f1895a717b4477ee631c",
       "name": "Aniva",
@@ -12412,7 +11914,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 36,
+      "currentRank": 35,
       "driverCount": 6,
       "id": "contributor:a7aeeff26266da38f362",
       "name": "Boguslaw Wojcik (@bogus.wojcik)",
@@ -12537,7 +12039,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 37,
+      "currentRank": 36,
       "driverCount": 8,
       "id": "contributor:31607033023aad2d38db",
       "name": "cjcharles0",
@@ -12652,6 +12154,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:3f4e8a2b-1c5d-4e6f-9a8b-7c2d1e0f3a4b",
           "packageName": "Mysa Thermostat Integration",
           "summary": "Mysa Thermostat Integration: updated."
+        },
+        {
+          "category": "Climate Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fa1ab4f6adf205a3b51271ff",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "hpm:3f4e8a2b-1c5d-4e6f-9a8b-7c2d1e0f3a4b",
+          "packageName": "Mysa Thermostat Integration",
+          "summary": "Mysa Thermostat Integration: updated."
         }
       ],
       "appCount": 3,
@@ -12674,11 +12190,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 38,
+      "currentRank": 37,
       "driverCount": 18,
       "id": "contributor:56df602a3780b5728c97",
       "name": "Craig Dewar",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 1,
@@ -12702,9 +12218,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:3f4e8a2b-1c5d-4e6f-9a8b-7c2d1e0f3a4b",
           "manifestUrl": "https://raw.githubusercontent.com/craigde/hubitat-mysa/main/packageManifest.json",
           "name": "Mysa Thermostat Integration",
-          "publisherDate": "2026-11-11",
+          "publisherDate": "2026-11-13",
           "repositoryUrl": "https://raw.githubusercontent.com/craigde/hubitat-package-manager/master/repository.json",
-          "version": "2.5.1"
+          "version": "2.6.1"
         },
         {
           "appCount": 0,
@@ -12811,7 +12327,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 39,
+      "currentRank": 38,
       "driverCount": 7,
       "id": "contributor:86028124404a96d1cf5b",
       "name": "jlslate",
@@ -12915,7 +12431,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 40,
+      "currentRank": 39,
       "driverCount": 22,
       "id": "contributor:bcd042fa7e6ace6666ba",
       "name": "Jonathan Bradshaw",
@@ -13066,7 +12582,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 41,
+      "currentRank": 40,
       "driverCount": 11,
       "id": "contributor:533265d5e0daeb04adb8",
       "name": "Marc Hedish",
@@ -13266,7 +12782,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 42,
+      "currentRank": 41,
       "driverCount": 54,
       "id": "contributor:9cc5054c6895052a301d",
       "name": "Mavrrick",
@@ -13391,7 +12907,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 43,
+      "currentRank": 42,
       "driverCount": 7,
       "id": "contributor:49a9d4455deb7cea7702",
       "name": "Rene Boer",
@@ -13491,7 +13007,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 44,
+      "currentRank": 43,
       "driverCount": 6,
       "id": "contributor:90d9f3074e373c8662a7",
       "name": "Ryan Elliott",
@@ -13587,7 +13103,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 45,
+      "currentRank": 44,
       "driverCount": 5,
       "id": "contributor:9e2ad0c801b3494d4c53",
       "name": "Scruffy-SJB",
@@ -13716,7 +13232,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 46,
+      "currentRank": 45,
       "driverCount": 11,
       "id": "contributor:41d47ac0fdd0b2eda300",
       "name": "Armand Welsh",
@@ -13842,7 +13358,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 47,
+      "currentRank": 46,
       "driverCount": 29,
       "id": "contributor:332085944bf3fd241b9f",
       "name": "Bloodtick Jones",
@@ -14224,7 +13740,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 48,
+      "currentRank": 47,
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
@@ -14330,7 +13846,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 49,
+      "currentRank": 48,
       "driverCount": 7,
       "id": "contributor:b4f146a64408751a800d",
       "name": "Chris Truitt",
@@ -14436,7 +13952,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 50,
+      "currentRank": 49,
       "driverCount": 4,
       "id": "contributor:caf1e9bd13ac8e7a6646",
       "name": "Dan Ogorchock",
@@ -14661,6 +14177,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "packageName": "Sonos Advanced Controller",
           "summary": "Sonos Advanced Controller: updated, changed source location."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2dd55db7c6623fc8089a9d9a",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+          "packageName": "Sonos Advanced Controller",
+          "summary": "Sonos Advanced Controller: updated, changed source location."
         }
       ],
       "appCount": 4,
@@ -14687,11 +14218,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 51,
+      "currentRank": 50,
       "driverCount": 16,
       "id": "contributor:2a573f71ae22762e7fa8",
       "name": "Daniel Winks",
-      "observedActivityCount": 10,
+      "observedActivityCount": 11,
       "packages": [
         {
           "appCount": 1,
@@ -14741,9 +14272,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
           "name": "Sonos Advanced Controller",
-          "publisherDate": "2026-11-12",
+          "publisherDate": "2026-11-13",
           "repositoryUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/repository.json",
-          "version": "0.15.9"
+          "version": "0.15.10"
         },
         {
           "appCount": 0,
@@ -14813,7 +14344,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 52,
+      "currentRank": 51,
       "driverCount": 5,
       "id": "contributor:9421d6940089773abfd2",
       "name": "David LaPorte",
@@ -14900,7 +14431,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 53,
+      "currentRank": 52,
       "driverCount": 2,
       "id": "contributor:7ae37032d9fd22917e11",
       "name": "Eliot Stocker",
@@ -15014,7 +14545,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 54,
+      "currentRank": 53,
       "driverCount": 5,
       "id": "contributor:9619c4d65c3732de0732",
       "name": "Justin Walker (augoisms)",
@@ -15118,7 +14649,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 55,
+      "currentRank": 54,
       "driverCount": 5,
       "id": "contributor:b6677fde1eefa57898a1",
       "name": "nh.schottfam",
@@ -15201,7 +14732,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 56,
+      "currentRank": 55,
       "driverCount": 1,
       "id": "contributor:eab1426393d8d85b1a21",
       "name": "Schwark Satyavolu",
@@ -15284,7 +14815,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 57,
+      "currentRank": 56,
       "driverCount": 4,
       "id": "contributor:481420db54aa06c573e6",
       "name": "TRATO",
@@ -15424,7 +14955,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 58,
+      "currentRank": 57,
       "driverCount": 6,
       "id": "contributor:25f18c19b276b4da951e",
       "name": "Vartan Horigian",
@@ -15610,7 +15141,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 59,
+      "currentRank": 58,
       "driverCount": 5,
       "id": "contributor:d8a27bb7f77d82f1c24b",
       "name": "velkovb",
@@ -15701,7 +15232,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 60,
+      "currentRank": 59,
       "driverCount": 3,
       "id": "contributor:444e3baa77df0efb4f8a",
       "name": "Amos Yuen",
@@ -15775,7 +15306,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 61,
+      "currentRank": 60,
       "driverCount": 3,
       "id": "contributor:c1a1d3aec78894857022",
       "name": "Andrew Nunes",
@@ -15967,7 +15498,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 62,
+      "currentRank": 61,
       "driverCount": 8,
       "id": "contributor:d76fe297915816119376",
       "name": "Brent Rossow",
@@ -16041,7 +15572,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 63,
+      "currentRank": 62,
       "driverCount": 8,
       "id": "contributor:bc95cd261e6e9cb4d1bc",
       "name": "David Kilgore",
@@ -16148,7 +15679,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 64,
+      "currentRank": 63,
       "driverCount": 14,
       "id": "contributor:5077082f1f4545730ee3",
       "name": "Gary J. Milne",
@@ -16511,7 +16042,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 4,
-      "currentRank": 65,
+      "currentRank": 64,
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
@@ -16568,6 +16099,133 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2026-09-08",
           "repositoryUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
           "version": "5.1.1"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bbd53476f4c08a725b1f7a60",
+          "observedAt": "2026-09-29T05:54:41Z",
+          "observedCommit": null,
+          "packageId": "manifest:72e748fdb165aace597b",
+          "packageName": "PETLIBRO Granary Feeder",
+          "summary": "PETLIBRO Granary Feeder: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:924c2d53dd9d9640562968d9",
+          "observedAt": "2026-10-17T04:43:20Z",
+          "observedCommit": null,
+          "packageId": "manifest:72e748fdb165aace597b",
+          "packageName": "PETLIBRO Granary Feeder",
+          "summary": "PETLIBRO Granary Feeder: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b418380126172e7dc2557bfb",
+          "observedAt": "2026-11-04T06:44:10Z",
+          "observedCommit": null,
+          "packageId": "manifest:fb778c8e9ec5e6457aa8",
+          "packageName": "Rivian Connect",
+          "summary": "Rivian Connect: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9d4c9ad304d3176cce6f199a",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:75342398988060a11f59",
+          "packageName": "Mitsubishi Comfort",
+          "summary": "Mitsubishi Comfort: added."
+        }
+      ],
+      "appCount": 2,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 4
+        }
+      ],
+      "currentPackageCount": 4,
+      "currentRank": 65,
+      "driverCount": 5,
+      "id": "contributor:cab465e8481008331040",
+      "name": "Jeff Lupien",
+      "observedActivityCount": 4,
+      "packages": [
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/hatch#readme",
+          "driverCount": 1,
+          "id": "manifest:63ab0e07867ceca918a0",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json",
+          "name": "Hatch Connect",
+          "publisherDate": "2026-03-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.3.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/mitsubishi-comfort#readme",
+          "driverCount": 2,
+          "id": "manifest:75342398988060a11f59",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
+          "name": "Mitsubishi Comfort",
+          "publisherDate": "2026-11-13",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.0.4"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
+          "driverCount": 1,
+          "id": "manifest:72e748fdb165aace597b",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
+          "name": "PETLIBRO Granary Feeder",
+          "publisherDate": "2026-10-16",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.1.0"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/rivian-connect#readme",
+          "driverCount": 1,
+          "id": "manifest:fb778c8e9ec5e6457aa8",
+          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json",
+          "name": "Rivian Connect",
+          "publisherDate": "2025-02-11",
+          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
+          "version": "1.1.4"
         }
       ]
     },
@@ -18173,106 +17831,6 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:bbd53476f4c08a725b1f7a60",
-          "observedAt": "2026-09-29T05:54:41Z",
-          "observedCommit": null,
-          "packageId": "manifest:72e748fdb165aace597b",
-          "packageName": "PETLIBRO Granary Feeder",
-          "summary": "PETLIBRO Granary Feeder: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:924c2d53dd9d9640562968d9",
-          "observedAt": "2026-10-17T04:43:20Z",
-          "observedCommit": null,
-          "packageId": "manifest:72e748fdb165aace597b",
-          "packageName": "PETLIBRO Granary Feeder",
-          "summary": "PETLIBRO Granary Feeder: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b418380126172e7dc2557bfb",
-          "observedAt": "2026-11-04T06:44:10Z",
-          "observedCommit": null,
-          "packageId": "manifest:fb778c8e9ec5e6457aa8",
-          "packageName": "Rivian Connect",
-          "summary": "Rivian Connect: updated."
-        }
-      ],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Integrations",
-          "packageCount": 3
-        }
-      ],
-      "currentPackageCount": 3,
-      "currentRank": 82,
-      "driverCount": 3,
-      "id": "contributor:cab465e8481008331040",
-      "name": "Jeff Lupien",
-      "observedActivityCount": 3,
-      "packages": [
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/hatch#readme",
-          "driverCount": 1,
-          "id": "manifest:63ab0e07867ceca918a0",
-          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json",
-          "name": "Hatch Connect",
-          "publisherDate": "2026-03-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.3.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/granary-feeder#readme",
-          "driverCount": 1,
-          "id": "manifest:72e748fdb165aace597b",
-          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json",
-          "name": "PETLIBRO Granary Feeder",
-          "publisherDate": "2026-10-16",
-          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.1.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/rivian-connect#readme",
-          "driverCount": 1,
-          "id": "manifest:fb778c8e9ec5e6457aa8",
-          "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json",
-          "name": "Rivian Connect",
-          "publisherDate": "2025-02-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.1.4"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Integrations",
-          "changeTypes": [
             "UPDATED"
           ],
           "declarationRole": "CURRENT_DECLARATION",
@@ -18321,7 +17879,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 83,
+      "currentRank": 82,
       "driverCount": 4,
       "id": "contributor:9311c76fc09a45386899",
       "name": "ke7lvb",
@@ -18397,7 +17955,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 84,
+      "currentRank": 83,
       "driverCount": 9,
       "id": "contributor:bbb6c748da75b7a64027",
       "name": "lnjustin",
@@ -18462,7 +18020,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 85,
+      "currentRank": 84,
       "driverCount": 4,
       "id": "contributor:a188cfb1e97ae0f2a405",
       "name": "Maxime Boissonneault",
@@ -18523,7 +18081,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 86,
+      "currentRank": 85,
       "driverCount": 5,
       "id": "contributor:afc5281b69164b2c8703",
       "name": "mbarone",
@@ -18584,7 +18142,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 87,
+      "currentRank": 86,
       "driverCount": 2,
       "id": "contributor:604f2d17b722196e6463",
       "name": "napalmcsr",
@@ -18641,7 +18199,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 88,
+      "currentRank": 87,
       "driverCount": 3,
       "id": "contributor:9200a92024c29bccc586",
       "name": "rboer",
@@ -18713,7 +18271,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 89,
+      "currentRank": 88,
       "driverCount": 10,
       "id": "contributor:b2d6fbf7040ea5ad041c",
       "name": "rbyrbt",
@@ -18770,7 +18328,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 90,
+      "currentRank": 89,
       "driverCount": 5,
       "id": "contributor:53a53f00b449aaf2d22d",
       "name": "Rob Alfonso",
@@ -18930,7 +18488,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 91,
+      "currentRank": 90,
       "driverCount": 82,
       "id": "contributor:b1b4211137432b0ceaab",
       "name": "Snell",
@@ -19020,7 +18578,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 92,
+      "currentRank": 91,
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
@@ -19077,7 +18635,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 93,
+      "currentRank": 92,
       "driverCount": 22,
       "id": "contributor:d4595ee7d9bca0d6c072",
       "name": "winnie",
@@ -19134,7 +18692,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 93,
       "driverCount": 2,
       "id": "contributor:77a1b275b7acf1be10cc",
       "name": "Adrian Caramaliu",
@@ -19178,7 +18736,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 95,
+      "currentRank": 94,
       "driverCount": 2,
       "id": "contributor:75749fcdad8887b09066",
       "name": "Alex Jones",
@@ -19226,7 +18784,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:68ce3e1b8f8813127398",
       "name": "Arn Burkhoff",
@@ -19270,7 +18828,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 96,
       "driverCount": 8,
       "id": "contributor:775bf2ab0bf177bbaffc",
       "name": "Ben Deitch",
@@ -19314,7 +18872,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 97,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -19443,7 +19001,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 99,
+      "currentRank": 98,
       "driverCount": 3,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
@@ -19491,7 +19049,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 100,
+      "currentRank": 99,
       "driverCount": 2,
       "id": "contributor:eeb747b7ce6ce8418f96",
       "name": "DarwinsDen",
@@ -19539,7 +19097,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 101,
+      "currentRank": 100,
       "driverCount": 12,
       "id": "contributor:efdfd6ed92c6c1fdcd2d",
       "name": "Don Caton",
@@ -19668,7 +19226,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 102,
+      "currentRank": 101,
       "driverCount": 2,
       "id": "contributor:46597a8da5c59b361028",
       "name": "Ephrayim (evdev)",
@@ -19755,7 +19313,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 103,
+      "currentRank": 102,
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
@@ -19818,7 +19376,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 104,
+      "currentRank": 103,
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
@@ -19877,7 +19435,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 105,
+      "currentRank": 104,
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
@@ -19965,7 +19523,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 106,
+      "currentRank": 105,
       "driverCount": 2,
       "id": "contributor:dcf98a910bf5ad9db8ce",
       "name": "howarddavidp",
@@ -20056,7 +19614,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 107,
+      "currentRank": 106,
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
@@ -20157,7 +19715,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 108,
+      "currentRank": 107,
       "driverCount": 1,
       "id": "contributor:d8c3769404dea0e2a6e7",
       "name": "J.R. Farrar",
@@ -20286,7 +19844,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 109,
+      "currentRank": 108,
       "driverCount": 4,
       "id": "contributor:966d9f08e15e82945d11",
       "name": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -20334,7 +19892,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 110,
+      "currentRank": 109,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -20411,7 +19969,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 111,
+      "currentRank": 110,
       "driverCount": 1,
       "id": "contributor:277a73f66831fc1424af",
       "name": "Jeffrey D. Chapman",
@@ -20455,7 +20013,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 112,
+      "currentRank": 111,
       "driverCount": 6,
       "id": "contributor:fedf3ceedc1273b3d69d",
       "name": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -20499,7 +20057,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 113,
+      "currentRank": 112,
       "driverCount": 1,
       "id": "contributor:8877f3f9cde1f2b8e13b",
       "name": "Kevin LaFramboise (@krlaframboise)",
@@ -20572,7 +20130,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 114,
+      "currentRank": 113,
       "driverCount": 2,
       "id": "contributor:9b3159c24cdaba381613",
       "name": "kkossev",
@@ -20661,7 +20219,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 115,
+      "currentRank": 114,
       "driverCount": 5,
       "id": "contributor:cfe7eb8fa1d840424f18",
       "name": "Mathew Beall",
@@ -20705,7 +20263,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 116,
+      "currentRank": 115,
       "driverCount": 1,
       "id": "contributor:648248be560395b56188",
       "name": "Matt Hammond",
@@ -20753,7 +20311,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 117,
+      "currentRank": 116,
       "driverCount": 0,
       "id": "contributor:15ac50b026e59a5f76a0",
       "name": "Mattias Fornander (@mfornander)",
@@ -20801,7 +20359,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 118,
+      "currentRank": 117,
       "driverCount": 1,
       "id": "contributor:cfdd150d04c77fcf99ed",
       "name": "Miles Budnek",
@@ -20861,7 +20419,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 119,
+      "currentRank": 118,
       "driverCount": 2,
       "id": "contributor:a8001880109c362a9fdb",
       "name": "n3!",
@@ -20905,7 +20463,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 120,
+      "currentRank": 119,
       "driverCount": 1,
       "id": "contributor:9563f49fca68d622c285",
       "name": "Nelson Clark",
@@ -20949,7 +20507,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 121,
+      "currentRank": 120,
       "driverCount": 3,
       "id": "contributor:5264454bcf8a55a617b7",
       "name": "Paul Hutton",
@@ -20993,7 +20551,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 122,
+      "currentRank": 121,
       "driverCount": 2,
       "id": "contributor:e5e37caad93a2e4bba53",
       "name": "Ramdev Shallem",
@@ -21037,7 +20595,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 123,
+      "currentRank": 122,
       "driverCount": 1,
       "id": "contributor:08e115ea52313bdb2dd1",
       "name": "Randall Norviel",
@@ -21081,7 +20639,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 124,
+      "currentRank": 123,
       "driverCount": 2,
       "id": "contributor:d38d404a45ce4a1ae211",
       "name": "Raul Martin Rodriguez",
@@ -21186,7 +20744,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 125,
+      "currentRank": 124,
       "driverCount": 0,
       "id": "contributor:4e016dfbc3de1b805171",
       "name": "Rayzurbock",
@@ -21234,7 +20792,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 126,
+      "currentRank": 125,
       "driverCount": 3,
       "id": "contributor:27b96c198c53592f4b6d",
       "name": "Simon Burke",
@@ -21278,7 +20836,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 127,
+      "currentRank": 126,
       "driverCount": 2,
       "id": "contributor:f7092c2563f96d8ebd93",
       "name": "StarkTemplar",
@@ -21326,7 +20884,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 128,
+      "currentRank": 127,
       "driverCount": 5,
       "id": "contributor:ddb8a7b385656aadd452",
       "name": "Taylor Brown(@thecloudtaylor)",
@@ -21370,7 +20928,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 129,
+      "currentRank": 128,
       "driverCount": 2,
       "id": "contributor:272f8a5abd3191f1acd8",
       "name": "Tim Dodd",
@@ -21414,7 +20972,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 130,
+      "currentRank": 129,
       "driverCount": 0,
       "id": "contributor:bc915e335e56e9ef122e",
       "name": "Tony Fleisher",
@@ -21487,7 +21045,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 131,
+      "currentRank": 130,
       "driverCount": 3,
       "id": "contributor:052eda442afd1ae5d69d",
       "name": "vision9074",
@@ -21535,7 +21093,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 132,
+      "currentRank": 131,
       "driverCount": 0,
       "id": "contributor:3ee480dcc6d55fba0b2b",
       "name": "Wesley M. Conner",
@@ -21622,7 +21180,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 133,
+      "currentRank": 132,
       "driverCount": 5,
       "id": "contributor:ba3ff7cff9a8f45b1481",
       "name": "youzer-name",
@@ -21666,7 +21224,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 134,
+      "currentRank": 133,
       "driverCount": 3,
       "id": "contributor:3353abab317cbb5e1bb8",
       "name": "ZRanger1(JEM)",
@@ -21710,7 +21268,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 135,
+      "currentRank": 134,
       "driverCount": 3,
       "id": "contributor:9ebc2f114646e8498d7b",
       "name": "Alex Lee Yuk Cheung & Dominick Meglio",
@@ -21741,7 +21299,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 136,
+      "currentRank": 135,
       "driverCount": 1,
       "id": "contributor:4766d18cb719a716cbf8",
       "name": "Andrew Webster",
@@ -21772,7 +21330,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 137,
+      "currentRank": 136,
       "driverCount": 3,
       "id": "contributor:4d3ada00f82d743d4d94",
       "name": "Art Ardolino",
@@ -21803,7 +21361,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 138,
+      "currentRank": 137,
       "driverCount": 1,
       "id": "contributor:0ea2ec854ddf7b93c7b0",
       "name": "Awth Wathje",
@@ -21834,7 +21392,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 139,
+      "currentRank": 138,
       "driverCount": 0,
       "id": "contributor:01a00cf264f0269f2f9d",
       "name": "Azfar Khandoker",
@@ -21865,7 +21423,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 140,
+      "currentRank": 139,
       "driverCount": 2,
       "id": "contributor:abfea55b690ec9fc7954",
       "name": "Ben Castellucci",
@@ -21896,7 +21454,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 141,
+      "currentRank": 140,
       "driverCount": 0,
       "id": "contributor:ab2cfb4edbe468b4048b",
       "name": "Bill Fleming",
@@ -21998,7 +21556,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 142,
+      "currentRank": 141,
       "driverCount": 2,
       "id": "contributor:593f46d943aec70bf3c1",
       "name": "BPTWorld",
@@ -22029,7 +21587,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 143,
+      "currentRank": 142,
       "driverCount": 2,
       "id": "contributor:12297751d692f8e9771a",
       "name": "Brad sileo",
@@ -22060,7 +21618,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 144,
+      "currentRank": 143,
       "driverCount": 4,
       "id": "contributor:0a685eaad17dc8ff51ea",
       "name": "Brian Blank",
@@ -22106,7 +21664,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 145,
+      "currentRank": 144,
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
@@ -22137,7 +21695,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 146,
+      "currentRank": 145,
       "driverCount": 2,
       "id": "contributor:be521bd53f9af1d49653",
       "name": "Chaue Shen",
@@ -22183,7 +21741,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 147,
+      "currentRank": 146,
       "driverCount": 1,
       "id": "contributor:3fc5dead1997ca8a5a71",
       "name": "Chris Busch",
@@ -22214,7 +21772,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 148,
+      "currentRank": 147,
       "driverCount": 0,
       "id": "contributor:4646e34aa7acceb37645",
       "name": "Chris Sader",
@@ -22346,7 +21904,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 149,
+      "currentRank": 148,
       "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
@@ -22377,7 +21935,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 150,
+      "currentRank": 149,
       "driverCount": 6,
       "id": "contributor:97379ae0ebbba3b46803",
       "name": "christi999",
@@ -22424,7 +21982,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 151,
+      "currentRank": 150,
       "driverCount": 5,
       "id": "contributor:950fb77d3da2b8017206",
       "name": "classic-dave",
@@ -22455,7 +22013,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 152,
+      "currentRank": 151,
       "driverCount": 25,
       "id": "contributor:21e5b5d816783343eed8",
       "name": "codahq",
@@ -22486,7 +22044,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 153,
+      "currentRank": 152,
       "driverCount": 3,
       "id": "contributor:0287c8a40062f2e26bf1",
       "name": "corinuss",
@@ -22517,7 +22075,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 154,
+      "currentRank": 153,
       "driverCount": 0,
       "id": "contributor:f86b4b4a5d12cdaf148c",
       "name": "Craig Romei",
@@ -22591,7 +22149,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 155,
+      "currentRank": 154,
       "driverCount": 11,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
@@ -22622,7 +22180,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 156,
+      "currentRank": 155,
       "driverCount": 1,
       "id": "contributor:963ced0da3610aa44c93",
       "name": "cSteele",
@@ -22653,7 +22211,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 157,
+      "currentRank": 156,
       "driverCount": 1,
       "id": "contributor:65bee55a0af809e76900",
       "name": "Curtis Ide",
@@ -22684,7 +22242,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 158,
+      "currentRank": 157,
       "driverCount": 23,
       "id": "contributor:cf8d966c34c95a70525e",
       "name": "Dan Cox (level99 fork); Niklas Gustafsson (original upstream)",
@@ -22744,7 +22302,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 159,
+      "currentRank": 158,
       "driverCount": 0,
       "id": "contributor:09c2c1f1bae09e1e8a55",
       "name": "Dan Danache",
@@ -22804,7 +22362,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 160,
+      "currentRank": 159,
       "driverCount": 1,
       "id": "contributor:e2a1a9d6497ce82b1a2a",
       "name": "Dan Danache (@agamemnon.dandanache)",
@@ -22835,7 +22393,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 161,
+      "currentRank": 160,
       "driverCount": 1,
       "id": "contributor:5504c4083f20d7fff23c",
       "name": "dan.t",
@@ -22866,7 +22424,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 162,
+      "currentRank": 161,
       "driverCount": 1,
       "id": "contributor:69c45f22c0dcdce7b384",
       "name": "Daniel Segall",
@@ -22912,7 +22470,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 163,
+      "currentRank": 162,
       "driverCount": 1,
       "id": "contributor:7c75a97dcda364d1907d",
       "name": "Daniel Segall (dds82)",
@@ -22943,7 +22501,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 164,
+      "currentRank": 163,
       "driverCount": 2,
       "id": "contributor:9613ac904c1d28e3c88b",
       "name": "dbadge",
@@ -22989,7 +22547,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 165,
+      "currentRank": 164,
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
@@ -23020,7 +22578,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 166,
+      "currentRank": 165,
       "driverCount": 2,
       "id": "contributor:a73ba7cf0dd8592adedb",
       "name": "Dominick Meglio & Eric Maycock",
@@ -23051,7 +22609,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 167,
+      "currentRank": 166,
       "driverCount": 3,
       "id": "contributor:6dde8f2290059440a172",
       "name": "Doug Beard/Brian Wilson",
@@ -23082,7 +22640,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 168,
+      "currentRank": 167,
       "driverCount": 0,
       "id": "contributor:8b932b1c49d1bf9d8d84",
       "name": "Doug Renze",
@@ -23128,7 +22686,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 169,
+      "currentRank": 168,
       "driverCount": 3,
       "id": "contributor:debcb46e339968cfedb3",
       "name": "Electrified-Home",
@@ -23202,7 +22760,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 170,
+      "currentRank": 169,
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
@@ -23233,7 +22791,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 171,
+      "currentRank": 170,
       "driverCount": 1,
       "id": "contributor:0024ce686cf2b9971ab0",
       "name": "Erik Dasque",
@@ -23307,7 +22865,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 172,
+      "currentRank": 171,
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
@@ -23338,7 +22896,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 173,
+      "currentRank": 172,
       "driverCount": 1,
       "id": "contributor:02e680d2174ca39bf1b2",
       "name": "Garth Braithwaite",
@@ -23369,7 +22927,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 174,
+      "currentRank": 173,
       "driverCount": 1,
       "id": "contributor:6fe9cca284a6cd968a93",
       "name": "Greg Billings",
@@ -23611,7 +23169,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 175,
+      "currentRank": 174,
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
@@ -23633,7 +23191,22 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [],
+      "activity": [
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8b12aab6f6e444ca5fe41ca6",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:5656df40e4704e53829f",
+          "packageName": "HERMES Home Dispatch Solution",
+          "summary": "HERMES Home Dispatch Solution: updated."
+        }
+      ],
       "appCount": 1,
       "categories": [
         {
@@ -23642,11 +23215,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 176,
+      "currentRank": 175,
       "driverCount": 0,
       "id": "contributor:7740a32ebcc0ba4a339f",
       "name": "HERMES Automation",
-      "observedActivityCount": 0,
+      "observedActivityCount": 1,
       "packages": [
         {
           "appCount": 1,
@@ -23657,9 +23230,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:5656df40e4704e53829f",
           "manifestUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json",
           "name": "HERMES Home Dispatch Solution",
-          "publisherDate": "2026-07-21",
+          "publisherDate": "2026-11-11",
           "repositoryUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/repository.json",
-          "version": "1.0.2"
+          "version": "1.1.0"
         }
       ]
     },
@@ -23730,7 +23303,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 177,
+      "currentRank": 176,
       "driverCount": 1,
       "id": "contributor:7b12dd21d2d7392d3573",
       "name": "hubitrep (original by Dave Gutheinz)",
@@ -23761,7 +23334,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 178,
+      "currentRank": 177,
       "driverCount": 9,
       "id": "contributor:5caa224e199583883eb3",
       "name": "Ionut Turturica",
@@ -23792,7 +23365,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 179,
+      "currentRank": 178,
       "driverCount": 0,
       "id": "contributor:cf5e8049fefaa570c4d9",
       "name": "J M Pierce / Schwark Satyavolu",
@@ -23866,7 +23439,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 180,
+      "currentRank": 179,
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
@@ -23897,7 +23470,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 181,
+      "currentRank": 180,
       "driverCount": 8,
       "id": "contributor:c3f9a7ee66c12128ad5b",
       "name": "Jake Lehner",
@@ -23928,7 +23501,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 182,
+      "currentRank": 181,
       "driverCount": 1,
       "id": "contributor:375253e4778f3449fa8e",
       "name": "James Schlackman",
@@ -23959,7 +23532,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 183,
+      "currentRank": 182,
       "driverCount": 1,
       "id": "contributor:eea2f53f4e1237c2af11",
       "name": "Jean Bilodeau",
@@ -23990,7 +23563,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 184,
+      "currentRank": 183,
       "driverCount": 0,
       "id": "contributor:69e9feb5f1aecf17f309",
       "name": "Jeffrey Zimmerman",
@@ -24021,7 +23594,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 185,
+      "currentRank": 184,
       "driverCount": 1,
       "id": "contributor:2852527b01a3fbe70078",
       "name": "Jeremy Kister (@jkister)",
@@ -24052,7 +23625,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 186,
+      "currentRank": 185,
       "driverCount": 0,
       "id": "contributor:38c5b7de7aac86d2aafa",
       "name": "Jessica Jones",
@@ -24083,7 +23656,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 187,
+      "currentRank": 186,
       "driverCount": 1,
       "id": "contributor:a6e77f2d2954c6204042",
       "name": "Jo Rhett",
@@ -24114,7 +23687,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 188,
+      "currentRank": 187,
       "driverCount": 1,
       "id": "contributor:9f6d718a9b1d17aafa2f",
       "name": "johndc7",
@@ -24145,7 +23718,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 189,
+      "currentRank": 188,
       "driverCount": 1,
       "id": "contributor:3eb770d22e7227d73006",
       "name": "Joseph Kregloh",
@@ -24176,7 +23749,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 190,
+      "currentRank": 189,
       "driverCount": 0,
       "id": "contributor:0587eeef5b080fa89a15",
       "name": "Josh Lobe",
@@ -24207,7 +23780,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 191,
+      "currentRank": 190,
       "driverCount": 1,
       "id": "contributor:26e490d18a65f88f4250",
       "name": "Josh Rosenberg",
@@ -24267,7 +23840,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 192,
+      "currentRank": 191,
       "driverCount": 0,
       "id": "contributor:441cf02dbecb34d45a37",
       "name": "joyfulhouse",
@@ -24298,7 +23871,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 193,
+      "currentRank": 192,
       "driverCount": 0,
       "id": "contributor:f912b2e7a868e750e809",
       "name": "Ken Washington",
@@ -24329,7 +23902,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 194,
+      "currentRank": 193,
       "driverCount": 1,
       "id": "contributor:00ab3c63e8e20d3e210e",
       "name": "Kestutis Triponis",
@@ -24376,7 +23949,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 195,
+      "currentRank": 194,
       "driverCount": 2,
       "id": "contributor:3ebf80c7fec559a9ad8c",
       "name": "Kevin Kahl",
@@ -25100,6 +24673,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e0ce99fdaf2cd5f18c5b5f05",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -25110,11 +24697,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 196,
+      "currentRank": 195,
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 50,
+      "observedActivityCount": 51,
       "packages": [
         {
           "appCount": 2,
@@ -25127,7 +24714,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "MCP Rule Server",
           "publisherDate": "2026-11-13",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "5.1.8"
+          "version": "5.1.9"
         }
       ]
     },
@@ -25157,7 +24744,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 197,
+      "currentRank": 196,
       "driverCount": 1,
       "id": "contributor:049ac82534a5d71e7d35",
       "name": "Krassimir kkossev",
@@ -25188,7 +24775,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 198,
+      "currentRank": 197,
       "driverCount": 1,
       "id": "contributor:17107ae9c8fb20832ab8",
       "name": "Kris Linquist",
@@ -25219,7 +24806,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 199,
+      "currentRank": 198,
       "driverCount": 2,
       "id": "contributor:6c9e08e5ef89cdd60a12",
       "name": "Kurt Sanders & Dominick Meglio",
@@ -25250,7 +24837,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 200,
+      "currentRank": 199,
       "driverCount": 1,
       "id": "contributor:fd56c2959df2a69c544f",
       "name": "lgkahn",
@@ -25281,7 +24868,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 201,
+      "currentRank": 200,
       "driverCount": 0,
       "id": "contributor:dce2816d52d102318698",
       "name": "lnustin",
@@ -25369,7 +24956,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 202,
+      "currentRank": 201,
       "driverCount": 2,
       "id": "contributor:87306824ba4899e14679",
       "name": "Lyle Pakula",
@@ -25431,7 +25018,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 203,
+      "currentRank": 202,
       "driverCount": 14,
       "id": "contributor:cd320960655cae36770e",
       "name": "Mads Kristensen",
@@ -25462,7 +25049,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 204,
+      "currentRank": 203,
       "driverCount": 3,
       "id": "contributor:7b3e3701ffc874471808",
       "name": "Marco Felicio (maffpt@gmail.com)",
@@ -25493,7 +25080,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 205,
+      "currentRank": 204,
       "driverCount": 1,
       "id": "contributor:12248add050220fe79f8",
       "name": "Mark Weninger/Joe Page",
@@ -25524,7 +25111,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 206,
+      "currentRank": 205,
       "driverCount": 1,
       "id": "contributor:28ed5c51a64fe36062e5",
       "name": "Martin Kura, kkossev",
@@ -25598,7 +25185,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 207,
+      "currentRank": 206,
       "driverCount": 1,
       "id": "contributor:11858a934cc929a87591",
       "name": "Matt Palermo",
@@ -25629,7 +25216,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 208,
+      "currentRank": 207,
       "driverCount": 1,
       "id": "contributor:fa92690f22b34aad9937",
       "name": "Matthew Petro (@matthewpetro)",
@@ -25660,7 +25247,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 209,
+      "currentRank": 208,
       "driverCount": 5,
       "id": "contributor:95ea6b3a390693791087",
       "name": "mclass",
@@ -25691,7 +25278,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 210,
+      "currentRank": 209,
       "driverCount": 4,
       "id": "contributor:77c71ee34b7bc0399d08",
       "name": "Michael van Dam",
@@ -25751,7 +25338,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 211,
+      "currentRank": 210,
       "driverCount": 1,
       "id": "contributor:28cacb11e32812b5fe4f",
       "name": "Mike Maxwell",
@@ -25782,7 +25369,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 212,
+      "currentRank": 211,
       "driverCount": 0,
       "id": "contributor:20e25452fadd27337ba0",
       "name": "mrmikeface",
@@ -25813,7 +25400,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 213,
+      "currentRank": 212,
       "driverCount": 1,
       "id": "contributor:5bb854beb33ab506edff",
       "name": "Muxa, kkossev",
@@ -25844,7 +25431,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 214,
+      "currentRank": 213,
       "driverCount": 1,
       "id": "contributor:377c43626ed83efa4068",
       "name": "Nathan Spencer & Dominick Meglio",
@@ -25904,7 +25491,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 215,
+      "currentRank": 214,
       "driverCount": 8,
       "id": "contributor:4df8ce971e4d183757d7",
       "name": "Nu Tech Software Solutions, Inc. & Dominick Meglio",
@@ -25935,7 +25522,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 216,
+      "currentRank": 215,
       "driverCount": 1,
       "id": "contributor:74234e98afe7498fb5da",
       "name": "null",
@@ -25966,7 +25553,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 217,
+      "currentRank": 216,
       "driverCount": 1,
       "id": "contributor:e76933a157abbe15e5be",
       "name": "obeisser",
@@ -25997,7 +25584,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 218,
+      "currentRank": 217,
       "driverCount": 4,
       "id": "contributor:2f17695622d65646cef1",
       "name": "Patrick Wogan",
@@ -26028,7 +25615,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 219,
+      "currentRank": 218,
       "driverCount": 3,
       "id": "contributor:4bf2a2d9be0309577ffd",
       "name": "Paul Harrison",
@@ -26059,7 +25646,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 220,
+      "currentRank": 219,
       "driverCount": 2,
       "id": "contributor:e63f3bf26ba8da9464b8",
       "name": "Pedro Andrade",
@@ -26090,7 +25677,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 221,
+      "currentRank": 220,
       "driverCount": 0,
       "id": "contributor:807b36e9795cc15d6844",
       "name": "pentalingual",
@@ -26121,7 +25708,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 222,
+      "currentRank": 221,
       "driverCount": 2,
       "id": "contributor:d2494d7c187d7a41092f",
       "name": "Rangner FG",
@@ -26152,7 +25739,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 223,
+      "currentRank": 222,
       "driverCount": 1,
       "id": "contributor:5b89a0e4515b72e61e65",
       "name": "Reid Baldwin",
@@ -26198,7 +25785,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 224,
+      "currentRank": 223,
       "driverCount": 1,
       "id": "contributor:ebccf1c767568e25bf35",
       "name": "Ricardo Nogueira Garcia (based on Bryan Copeland)",
@@ -26244,7 +25831,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 225,
+      "currentRank": 224,
       "driverCount": 4,
       "id": "contributor:36756ab6908c1d7a4af5",
       "name": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
@@ -26304,7 +25891,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 226,
+      "currentRank": 225,
       "driverCount": 1,
       "id": "contributor:c5864bbeb58102920ce0",
       "name": "Ricardo Nogueira Garcia (based on keltymd)",
@@ -26350,7 +25937,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 227,
+      "currentRank": 226,
       "driverCount": 1,
       "id": "contributor:d1d2fcffb065447207e1",
       "name": "Ricardo Nogueira Garcia (based on SmartThings)",
@@ -26440,7 +26027,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 228,
+      "currentRank": 227,
       "driverCount": 1,
       "id": "contributor:d27989952c94368a22e2",
       "name": "Ricardo Nogueira Garcia (based on VH/TRATO)",
@@ -26471,7 +26058,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 229,
+      "currentRank": 228,
       "driverCount": 1,
       "id": "contributor:9e17b87b33cf8da4a30b",
       "name": "rnoia",
@@ -26532,7 +26119,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 230,
+      "currentRank": 229,
       "driverCount": 1,
       "id": "contributor:db31653beddb2aaf9669",
       "name": "Rob Cummings",
@@ -26563,7 +26150,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 231,
+      "currentRank": 230,
       "driverCount": 9,
       "id": "contributor:207f87a235ac732860cd",
       "name": "Robert Alan Heyes",
@@ -26594,7 +26181,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 232,
+      "currentRank": 231,
       "driverCount": 1,
       "id": "contributor:2713e60259607ad1d8d5",
       "name": "Rory Jaffe",
@@ -26625,7 +26212,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 233,
+      "currentRank": 232,
       "driverCount": 1,
       "id": "contributor:d63affda83dc7c1a55d8",
       "name": "Russ Vrolyk",
@@ -26656,7 +26243,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 234,
+      "currentRank": 233,
       "driverCount": 4,
       "id": "contributor:076da9d03b43ba975391",
       "name": "Russell Goldin",
@@ -26687,7 +26274,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 235,
+      "currentRank": 234,
       "driverCount": 1,
       "id": "contributor:4a7d6073f179ab7191e1",
       "name": "Ryan DeShone",
@@ -26733,7 +26320,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 236,
+      "currentRank": 235,
       "driverCount": 2,
       "id": "contributor:65e9a0efe7c0653af109",
       "name": "sab0276",
@@ -26764,7 +26351,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 237,
+      "currentRank": 236,
       "driverCount": 6,
       "id": "contributor:43c34218d903c1a35bab",
       "name": "Samuel C. Auclair",
@@ -26795,7 +26382,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 238,
+      "currentRank": 237,
       "driverCount": 0,
       "id": "contributor:ab6643ba51d3bf8019f0",
       "name": "Scott Wade",
@@ -26826,7 +26413,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 239,
+      "currentRank": 238,
       "driverCount": 1,
       "id": "contributor:57401b590fa288e5a075",
       "name": "Scottma61 (Original) / Aniva (Patch)",
@@ -26919,7 +26506,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 240,
+      "currentRank": 239,
       "driverCount": 68,
       "id": "contributor:45735072cb5a4e1fb32b",
       "name": "ShellyUSA, Daniel Winks",
@@ -26950,7 +26537,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 241,
+      "currentRank": 240,
       "driverCount": 1,
       "id": "contributor:84a41b081d41fa54529d",
       "name": "signal15",
@@ -26981,7 +26568,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 242,
+      "currentRank": 241,
       "driverCount": 1,
       "id": "contributor:9a379d8493ec287521d5",
       "name": "SORS",
@@ -27028,7 +26615,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 243,
+      "currentRank": 242,
       "driverCount": 30,
       "id": "contributor:1737c8cdf203372ca660",
       "name": "Steven Barcus",
@@ -27059,7 +26646,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 244,
+      "currentRank": 243,
       "driverCount": 3,
       "id": "contributor:680be587ba5a94d69204",
       "name": "Steven Dale",
@@ -27090,7 +26677,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 245,
+      "currentRank": 244,
       "driverCount": 0,
       "id": "contributor:f0065c1f45bf6b1d5d58",
       "name": "Taylor Vierrether",
@@ -27121,7 +26708,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 246,
+      "currentRank": 245,
       "driverCount": 1,
       "id": "contributor:4b3cb752336fd2bd01a2",
       "name": "Terrel Allen",
@@ -27152,7 +26739,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 247,
+      "currentRank": 246,
       "driverCount": 0,
       "id": "contributor:8ee4ab3e718eeb57eeae",
       "name": "TheBearMay",
@@ -27198,7 +26785,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 248,
+      "currentRank": 247,
       "driverCount": 1,
       "id": "contributor:70e9f5530d45c42c4744",
       "name": "TheCase",
@@ -27229,7 +26816,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 249,
+      "currentRank": 248,
       "driverCount": 0,
       "id": "contributor:7d5afc77b7d9fd6886a3",
       "name": "TheDanHealy",
@@ -27260,7 +26847,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 249,
       "driverCount": 2,
       "id": "contributor:aded9e2c5c57232eae75",
       "name": "Thomas Howard",
@@ -27291,7 +26878,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 250,
       "driverCount": 3,
       "id": "contributor:11674668553ffcc8770c",
       "name": "tinkorswim",
@@ -27351,7 +26938,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 251,
       "driverCount": 3,
       "id": "contributor:35dc5aff06542b2c6a54",
       "name": "Tobey Ljungberg",
@@ -27382,7 +26969,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 253,
+      "currentRank": 252,
       "driverCount": 6,
       "id": "contributor:f79b56140024d7668fa8",
       "name": "Todd",
@@ -27413,7 +27000,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 254,
+      "currentRank": 253,
       "driverCount": 1,
       "id": "contributor:bd2f6cbc2a8bc5dfec77",
       "name": "TR-Systems",
@@ -27444,7 +27031,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 255,
+      "currentRank": 254,
       "driverCount": 1,
       "id": "contributor:fe417dbbfca8a5140013",
       "name": "Travis Tomka",
@@ -27546,7 +27133,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 256,
+      "currentRank": 255,
       "driverCount": 1,
       "id": "contributor:2e46c4122819bb72fd5c",
       "name": "Trunzoc/Sleuth",
@@ -27577,7 +27164,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 257,
+      "currentRank": 256,
       "driverCount": 1,
       "id": "contributor:c0169b8774e9ef9eb1c9",
       "name": "uDevel",
@@ -27608,7 +27195,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 258,
+      "currentRank": 257,
       "driverCount": 0,
       "id": "contributor:0d7795bd85122e9c9ea5",
       "name": "UltronOfSpace",
@@ -27639,7 +27226,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 259,
+      "currentRank": 258,
       "driverCount": 1,
       "id": "contributor:3cfe986a247c5ae9cd27",
       "name": "Victor Santana",
@@ -27699,7 +27286,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 260,
+      "currentRank": 259,
       "driverCount": 1,
       "id": "contributor:43e3c3b9a75a2dd734a3",
       "name": "viertaxa",
@@ -27730,7 +27317,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 261,
+      "currentRank": 260,
       "driverCount": 1,
       "id": "contributor:0fc0469097552eede65b",
       "name": "Vincent van Didden",
@@ -27761,7 +27348,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 262,
+      "currentRank": 261,
       "driverCount": 5,
       "id": "contributor:ca4823a0a208aa6ab9ea",
       "name": "Vyrolan",
@@ -27792,7 +27379,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 263,
+      "currentRank": 262,
       "driverCount": 1,
       "id": "contributor:10b1e9e1c48029622d09",
       "name": "WalksOnAir",
@@ -27823,7 +27410,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 264,
+      "currentRank": 263,
       "driverCount": 3,
       "id": "contributor:7d9c33a19dcfd53b7eac",
       "name": "WarlockWeary + Claude AI + ChatGPT + Grok",
@@ -27883,7 +27470,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 265,
+      "currentRank": 264,
       "driverCount": 1,
       "id": "contributor:9fea13bdd5881e51b7bc",
       "name": "waterboysh",
@@ -27971,7 +27558,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 266,
+      "currentRank": 265,
       "driverCount": 2,
       "id": "contributor:6db542f5b830daa06a83",
       "name": "WBEVAN",
@@ -28047,7 +27634,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 267,
+      "currentRank": 266,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -28078,7 +27665,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 268,
+      "currentRank": 267,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -28109,7 +27696,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 269,
+      "currentRank": 268,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -28313,16 +27900,589 @@ window.CONTRIBUTOR_ACTIVITY = {
       "name": "John C. Steele",
       "observedActivityCount": 2,
       "packages": []
+    },
+    {
+      "activity": [
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:43ee58d0ce3ad0ea67fc4d46",
+          "observedAt": "2026-08-26T06:39:55Z",
+          "observedCommit": null,
+          "packageId": "manifest:9f0e530e1ee5b8ff9336",
+          "packageName": "Third Reality Water Sensor",
+          "summary": "Third Reality Water Sensor: updated."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d79116171e4d743134e9bc9d",
+          "observedAt": "2026-09-14T02:16:47Z",
+          "observedCommit": null,
+          "packageId": "manifest:fdad5c3b97cf10f30b64",
+          "packageName": "Iris v2 v3 Keypad",
+          "summary": "Iris v2 v3 Keypad: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0667ec85ebcb1343ea3197ec",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:2f1cae8564a80b2e8c9c",
+          "packageName": "Pump Scheduler",
+          "summary": "Pump Scheduler: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:45a766aa24aa998b4c6f329e",
+          "observedAt": "2026-09-15T02:22:29Z",
+          "observedCommit": null,
+          "packageId": "manifest:c6cb3e6d30261b6c9482",
+          "packageName": "Pump Scheduler",
+          "summary": "Pump Scheduler: added."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:58a5d998f26aa430d91ae46e",
+          "observedAt": "2026-09-16T02:16:49Z",
+          "observedCommit": null,
+          "packageId": "manifest:fdad5c3b97cf10f30b64",
+          "packageName": "Iris v2 v3 Keypad",
+          "summary": "Iris v2 v3 Keypad: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:00a165f471a1c84ca3d20b98",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:8deb2f80f69af417372f",
+          "packageName": "Iris v2 Motion Detector",
+          "summary": "Iris v2 Motion Detector: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1cbc9e91476c8ff8105f07fa",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:8a8e0bc9aaf988d740d9",
+          "packageName": "Iris v1 Contact Sensor-custom",
+          "summary": "Iris v1 Contact Sensor-custom: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2d84d58c46c435575ba97664",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:896ef3fe29f7067b9396",
+          "packageName": "Utilitech Water Sensor",
+          "summary": "Utilitech Water Sensor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2dfb71b1ce3873a85e2e4ad2",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:aea83b9efc9b358fd41d",
+          "packageName": "Lock Button Monitor2",
+          "summary": "Lock Button Monitor2: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2f3daaf311177c3303397929",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:c6cb3e6d30261b6c9482",
+          "packageName": "Pump Scheduler",
+          "summary": "Pump Scheduler: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:32969633e0c71f953747580b",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:2c7375a08a62e6940309",
+          "packageName": "Smartthings Samjin button",
+          "summary": "Smartthings Samjin button: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4043621ebcee0378c1ef472e",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:72f88b33c6ce20d2e239",
+          "packageName": "Iris v2 Contact Sensor",
+          "summary": "Iris v2 Contact Sensor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:40dc5995c53bd84f3e165879",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:a5eb6db7aeaff36b91ef",
+          "packageName": "Iris v1 Smart Plug custom",
+          "summary": "Iris v1 Smart Plug custom: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:469ba824486e4220c8b6195e",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:a9b18182109f9815fc46",
+          "packageName": "LeakSmart Water Valve",
+          "summary": "LeakSmart Water Valve: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:518a0994e14d37bea23f631c",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:64e0a477fc2b8e0c6fcf",
+          "packageName": "Iris v1 Repeator Zigbe",
+          "summary": "Iris v1 Repeator Zigbe: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5447b50b90053111fd13ac93",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:b02b11578799450c019e",
+          "packageName": "Iris v1 keyfob custom",
+          "summary": "Iris v1 keyfob custom: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:641bd873c50d78331471922d",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:3cf17f2562593e85cdfa",
+          "packageName": "Iris CentraLite Samjin Smartthings water Sensor",
+          "summary": "Iris CentraLite Samjin Smartthings water Sensor: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67e2af43d8bc70462da61a0f",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:c7a0c0a147e60e1ca24a",
+          "packageName": "sage doorbell echostar",
+          "summary": "sage doorbell echostar: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:71070a5e96669e80c8dc39fa",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:a4f9d3575778e4a5b74f",
+          "packageName": "Sage light switch echostar",
+          "summary": "Sage light switch echostar: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8ac08459977a513911dedb10",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:01c04d48ceec732a8f0d",
+          "packageName": "iris v1 button",
+          "summary": "iris v1 button: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8b8d3e80348bc85c0167a89e",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:3ef5d41ed8bb11fe38e3",
+          "packageName": "SmartThings Arrival Sensor Chime V2",
+          "summary": "SmartThings Arrival Sensor Chime V2: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:94cd010c66b5320a9ff42fb7",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:89ffacc3e3d6084e290b",
+          "packageName": "Iris v1 Senior Care Pendant",
+          "summary": "Iris v1 Senior Care Pendant: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9c00560a8fec59f62c145e3c",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:d7e63a62e9959c70884c",
+          "packageName": "Dimable CT Bulb driver - Zigbee",
+          "summary": "Dimable CT Bulb driver - Zigbee: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a57112aecb8e28aff576709b",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:868f025a91532259bf37",
+          "packageName": "HTTP Presence Sensor with schedule",
+          "summary": "HTTP Presence Sensor with schedule: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:acc84647f4fc89d6b82df3dc",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:9f0e530e1ee5b8ff9336",
+          "packageName": "Third Reality Water Sensor",
+          "summary": "Third Reality Water Sensor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:afe6fc24f123168309a4fdb8",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:0e158770d6872bbafab3",
+          "packageName": "CentraLite Motion Detector",
+          "summary": "CentraLite Motion Detector: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b0144b8616e22842aa52fd95",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:fdad5c3b97cf10f30b64",
+          "packageName": "Iris v2 v3 Keypad",
+          "summary": "Iris v2 v3 Keypad: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b6c84f360ff2310091d3ca2f",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:c84626f58936b4b2029c",
+          "packageName": "Iris Utilitech Siren driver",
+          "summary": "Iris Utilitech Siren driver: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cb4be82b9244728a16b50ba5",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:3bd0f4737937fc714714",
+          "packageName": "Iris v1 Smart Plug custom No alarm",
+          "summary": "Iris v1 Smart Plug custom No alarm: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cbfa0ab406b2a970caf0227e",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:d35f611042d56d15cd59",
+          "packageName": "Third Reality Contact Sensor",
+          "summary": "Third Reality Contact Sensor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d0d616e2a273d4112e2f5e62",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:f6f02791da1a6ee62a2a",
+          "packageName": "Lock Button Monitor",
+          "summary": "Lock Button Monitor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d65b301f6374bf0b819f687f",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:f33248a64c90dad205d0",
+          "packageName": "SmartThings Motion Detector",
+          "summary": "SmartThings Motion Detector: removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d772f400d77c60440cf68138",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:66b765ceeb97979ef87f",
+          "packageName": "Smartthings multi Sensor V3 (custom)",
+          "summary": "Smartthings multi Sensor V3 (custom): removed."
+        },
+        {
+          "category": "Security",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d79226188870435bb693d1bc",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:6042178cc7d0f666b5e9",
+          "packageName": "Iris v1 Keypad",
+          "summary": "Iris v1 Keypad: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d8dc326e3aba63a5baf75b77",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:0ee2a3c99bcc63465bf4",
+          "packageName": "Third Reality Motion Sensor",
+          "summary": "Third Reality Motion Sensor: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d8fc4cfddec8d05beca30277",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:5fe57262fa14b0bd694a",
+          "packageName": "Zigbee Sonoff - generic relays",
+          "summary": "Zigbee Sonoff - generic relays: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f646b9bfa657b9e994f2202a",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:dc5e339ffbe7d9a9e24c",
+          "packageName": "Radio Thermostat Zwave",
+          "summary": "Radio Thermostat Zwave: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f7350470c986e49f0ef9a027",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:6fb2ece627bb27f3fc2b",
+          "packageName": "Iris v1 Motion Detector Custom",
+          "summary": "Iris v1 Motion Detector Custom: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fa060c6411277845c90b8cad",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:37e10e051840017da9d6",
+          "packageName": "RGBW CT Bulbs - Zigbee",
+          "summary": "RGBW CT Bulbs - Zigbee: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fadf4295f3e20a0f0d898b76",
+          "observedAt": "2026-11-14T06:47:15Z",
+          "observedCommit": null,
+          "packageId": "manifest:c2b35d5a3c5200f1fc97",
+          "packageName": "Iris v1 Smart Plug custom With Alarm",
+          "summary": "Iris v1 Smart Plug custom With Alarm: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [],
+      "currentPackageCount": 0,
+      "currentRank": null,
+      "driverCount": 0,
+      "id": "contributor:3d07aab59cd6c5d37cb7",
+      "name": "TheMaster",
+      "observedActivityCount": 40,
+      "packages": []
     }
   ],
-  "currentContributorCount": 269,
-  "currentPackageCount": 970,
+  "currentContributorCount": 268,
+  "currentPackageCount": 937,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 719,
-    "eventCount": 717,
+    "attributedEventCount": 761,
+    "eventCount": 760,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-11-13T06:58:52Z"
+    "lastObservedAt": "2026-11-14T06:47:15Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -28334,14 +28494,14 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 273,
-  "rankedPackageCount": 967,
+  "rankedPackageCount": 935,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-13T06:58:52Z",
+  "snapshotGenerated": "2026-11-14T06:47:15Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",
     "packages": "community_packages.json"
   },
-  "undeclaredAuthorPackageCount": 3
+  "undeclaredAuthorPackageCount": 2
 }
 ;

@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-13T06:58:52Z`
-- HPM repositories in master list: **228**
-- Repositories fetched successfully: **227**
-- Packages indexed: **970**
+- Snapshot: `2026-11-14T06:47:15Z`
+- HPM repositories in master list: **227**
+- Repositories fetched successfully: **226**
+- Packages indexed: **937**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **14**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **869**
+Total packages not matched by any registry entry: **836**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -271,6 +271,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Jdthomas24 | Device Health Monitor | Utility | ZWave, Zigbee, Matter, LAN | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json |
 | Jdthomas24 | Leviton Smart Load Center | Integrations | Energy Monitoring, Monitoring | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json |
 | Jdthomas24 | Pentair IntelliCenter Controller | Integrations | Pool & Spa | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json |
+| Jdthomas24 | Roborock Integration | Integrations | Cleaning, Appliances | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json |
 | Jdthomas24 | Sofabaton Integration | Integrations | Remotes & Buttons, Audio & Video, Entertainment | https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SofaBaton%20Integration/packagemanifest.json |
 | Jean Bilodeau | Canadian Hyundai Bluelink | Integrations | Vehicles & Transportation | https://raw.githubusercontent.com/jbilodea/Hubitat/main/Canadian_Hyundai_Bluelink/packageManifest.json |
 | Jean P. May, Jr. | Dashboard Variable Device | Integrations | Misc. Devices | https://raw.githubusercontent.com/thebearmay/hubitat/main/manifests/dashVariableManifest.json |
@@ -435,7 +436,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Steven Dale | Yale Home | Integrations |  | https://raw.githubusercontent.com/tmleafs/hubitat-packages/main/packages/yalehomeManifest.json |
 | Taylor Brown (@thecloudtaylor) | Honeywell Home - Lyric and T Series | Integrations | Temperature & Humidity, Climate Control | https://raw.githubusercontent.com/thecloudtaylor/hubitat-packages/main/packages/honeywellManifest.json |
 | TheCase | Aqara Pet Feeder C1 Driver | Integrations | Pets & Animals | https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/packageManifest.json |
-| TheMaster | HTTP Presence Sensor with schedule | Control | Tools & Utilities, LAN, Misc. Devices, Monitoring, Presence & Location | https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json |
 | Tim Dodd | AcuRite Temperature Sensor Mqtt Driver | Integrations |  | https://raw.githubusercontent.com/timothydodd/hubitat-acurite-mqtt/main/packageManifest.json |
 | Tim Dodd | WLED MQTT LED Driver Plus | Integrations |  | https://raw.githubusercontent.com/timothydodd/hubitat-wled-mqtt/master/packageManifest.json |
 | Tom Schmidt | Hikvision Camera Controller | Integrations | Alarm Systems, Cameras, Monitoring, Motion Control, Safety & Security | https://raw.githubusercontent.com/tr-systems/hubpub/code/pkghcc.json |
@@ -535,6 +535,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | jedbro | Initial State Event Streamer | Integrations | Dashboards | https://raw.githubusercontent.com/jedbro/initialstate-smartapp/master/packageManifest.json |
 | jlslate | Navien NaviLink (Cloud) | Integrations | Water Heater, Cloud, MQTT, Energy Monitoring, jlslate | https://raw.githubusercontent.com/jlslate/hubitat-navien/main/packageManifest.json |
 | jlupien | Hatch Connect | Integrations | Hatch, Rest, Rest+, Baby, Nursery, Sound Machine, Night Light, Sleep | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/hatch/packageManifest.json |
+| jlupien | Mitsubishi Comfort | Integrations | Mitsubishi, Comfort, Kumo Cloud, Mini Split, Thermostat, HVAC | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json |
 | jlupien | PETLIBRO Granary Feeder | Integrations | PETLIBRO, Pet, Feeder, Cat, Dog, Granary | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/packageManifest.json |
 | jlupien | Rivian Connect | Integrations | Vehicle, Car, EV, Presence, Rivian, R1S, R1T | https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/rivian-connect/packageManifest.json |
 | jonozzz | LG ThinQ Connect Integration | Integrations | Cloud, Appliances | https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/packageManifest.json |
@@ -604,7 +605,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | --- | --- | --- |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
-| manifest | https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json | JSON parse error: JSONDecodeError: Expecting ',' delimiter: line 21 column 7 (char 574) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
@@ -628,8 +628,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 869 |
-| G candidate subset | 392 |
+| G. Unrepresented packages | 836 |
+| G candidate subset | 393 |
 
 ## H. Enrichment summary
 
@@ -639,13 +639,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2387 |
-| Source URLs fetched | 2377 |
+| Distinct source URLs | 2359 |
+| Source URLs fetched | 2349 |
 | Source URLs failed | 10 |
-| Components attempted | 2403 |
-| Components fetched | 2393 |
-| Literal definitions verified | 2382 |
-| Components with observations | 2249 |
+| Components attempted | 2374 |
+| Components fetched | 2364 |
+| Literal definitions verified | 2353 |
+| Components with observations | 2220 |
 
 ### Official Hubitat documentation pass
 

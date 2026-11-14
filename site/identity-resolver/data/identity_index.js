@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2403,
+  "definitionCount": 2374,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -1663,26 +1663,6 @@ window.IDENTITY_INDEX = {
         "name": "File Manager for Extended Character Sets"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/fmExtChar.groovy"
-    },
-    {
-      "id": "definition:02f0b4fe4b8d1fad088e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Controller",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvancedApp.groovy"
     },
     {
       "id": "definition:03ec2fe4b6451ba58b5a",
@@ -4580,31 +4560,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MFornander/Hubitat/master/apps/SwitchDashboard/SwitchDashboard-child.groovy"
     },
     {
-      "id": "definition:3fdcaad9fc4d9a58c376",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lock Button Monitor 2",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "documentationUrl": null,
-        "id": "manifest:aea83b9efc9b358fd41d",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor2.json",
-        "name": "Lock Button Monitor2"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
-    },
-    {
       "id": "definition:3fdf07d84a5bb8a0c958",
       "identities": [
         {
@@ -5118,6 +5073,26 @@ window.IDENTITY_INDEX = {
         "name": "Rule Machine Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/joshlobe/hubitat/main/rule_machine_manager/rule_machine_manager.groovy"
+    },
+    {
+      "id": "definition:4d11cbd8fa19379a2193",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Roborock Integration",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "jdthomas24",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+        "id": "manifest:2198e51ff4278066f040",
+        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+        "name": "Roborock Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/ParentApp.groovy"
     },
     {
       "id": "definition:4d4d95a4cc72a50c2d80",
@@ -5763,31 +5738,6 @@ window.IDENTITY_INDEX = {
         "name": "Device Health Monitor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy"
-    },
-    {
-      "id": "definition:5cb687525d05d3a56186",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Lock Button Monitor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "documentationUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "id": "manifest:f6f02791da1a6ee62a2a",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor.json",
-        "name": "Lock Button Monitor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
     },
     {
       "id": "definition:5d0cd74ffa2fea9c0d9e",
@@ -6835,31 +6785,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-public/main/LedMiniDashboard/LedDashboardChild.groovy"
     },
     {
-      "id": "definition:7418569c875d8daa456c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Pump Scheduler",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Pump Monitor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/pump-scheduler/165333",
-        "documentationUrl": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
-        "id": "manifest:c6cb3e6d30261b6c9482",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
-        "name": "Pump Scheduler"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/pump_scheduler.groovy"
-    },
-    {
       "id": "definition:741bc42b3523dea4c228",
       "identities": [
         {
@@ -7723,6 +7648,26 @@ window.IDENTITY_INDEX = {
         "name": "Lumos"
       },
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lumos-app_1.1.0/lumos-app/lumos-automation.groovy"
+    },
+    {
+      "id": "definition:8c0963817f39aef28d45",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Controller",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvancedApp.groovy"
     },
     {
       "id": "definition:8c0eade066477364f109",
@@ -13105,26 +13050,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-sprinkler-timer.groovy"
     },
     {
-      "id": "definition:0153b55424e0fd717931",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sage light switch echostar",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:a4f9d3575778e4a5b74f",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage-light-switch.json",
-        "name": "Sage light switch echostar"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_light_switch.groovy"
-    },
-    {
       "id": "definition:015ed7bd6b8d1bc3d932",
       "identities": [
         {
@@ -14765,31 +14690,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/notifyTile.groovy"
     },
     {
-      "id": "definition:0d416132fb60ab70af73",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "CentraLite Motion Sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "CentraLite Motion Detector",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:0e158770d6872bbafab3",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json",
-        "name": "CentraLite Motion Detector"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/CentraLite_motion_censor.grovy"
-    },
-    {
       "id": "definition:0d6a63c91aaee9ae7107",
       "identities": [
         {
@@ -15250,26 +15150,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-IKEA-Tradfri/master/tradfri-puck.groovy"
     },
     {
-      "id": "definition:10b7ee288db4fe2a3b2f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Queue",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvQueue.groovy"
-    },
-    {
       "id": "definition:10c8e42a25f0157bddf9",
       "identities": [
         {
@@ -15588,26 +15468,6 @@ window.IDENTITY_INDEX = {
         "name": "WiZ Dual Zone"
       },
       "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneBulb.groovy"
-    },
-    {
-      "id": "definition:12ce991946696fc41f7f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Utilitech Water Sensor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-        "id": "manifest:896ef3fe29f7067b9396",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Everspring_Utilitech_Water_Sensor.json",
-        "name": "Utilitech Water Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Everspring_Utilitech_Water_Sensor.groovy"
     },
     {
       "id": "definition:12f24d0fbb985db134d0",
@@ -16085,26 +15945,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/WinixAirPurifiers/drivers/winix-purifier-driver.groovy"
     },
     {
-      "id": "definition:15a983e20066f823606c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Keypad",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-v1-keyboard-driver-for-hubitat/",
-        "id": "manifest:6042178cc7d0f666b5e9",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1keypad.json",
-        "name": "Iris v1 Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v1_keypad.groovy"
-    },
-    {
       "id": "definition:15c021419eebd238aa4d",
       "identities": [
         {
@@ -16480,26 +16320,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/hubitat-withings/master/drivers/Withings_Activity_Tracker.groovy"
     },
     {
-      "id": "definition:184b661ca2dd5d8fbae8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Alarm Switch",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvAlarmSwitch.groovy"
-    },
-    {
       "id": "definition:18935e2ebdbe65f3bfb2",
       "identities": [
         {
@@ -16598,6 +16418,26 @@ window.IDENTITY_INDEX = {
         "name": "LG TV (Glasshouse)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy"
+    },
+    {
+      "id": "definition:1918c683b2d0b09d9645",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Mitsubishi Comfort",
+          "namespace": "jlupien"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jeff Lupien",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/mitsubishi-comfort#readme",
+        "id": "manifest:75342398988060a11f59",
+        "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
+        "name": "Mitsubishi Comfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/drivers/mitsubishi-comfort.groovy"
     },
     {
       "id": "definition:1928a650bfb830755ecf",
@@ -17585,6 +17425,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Home.groovy"
     },
     {
+      "id": "definition:21730e8632f3237c9b1c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Snapshot",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSnapshot.groovy"
+    },
+    {
       "id": "definition:21f3e3cd77fba1b1cdd3",
       "identities": [
         {
@@ -17818,31 +17678,6 @@ window.IDENTITY_INDEX = {
         "name": "SAS - Samsung Appliance Service"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/Drivers/SAS%20-%20Samsung%20Oven.groovy"
-    },
-    {
-      "id": "definition:23db6e81d8ec00fd9991",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris Utilitech Siren",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris Utilitech Siren driver",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:c84626f58936b4b2029c",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-utilitech-siren.json",
-        "name": "Iris Utilitech Siren driver"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_utilitech_siren_zwave.groovy"
     },
     {
       "id": "definition:247168370a3f8a927fb2",
@@ -18210,26 +18045,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Multi-Place/master/Multi-Place-Tracker.groovy"
     },
     {
-      "id": "definition:2709026386b13a1c796e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Secondaries",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSecondaries.groovy"
-    },
-    {
       "id": "definition:273725d74699a507795c",
       "identities": [
         {
@@ -18428,26 +18243,6 @@ window.IDENTITY_INDEX = {
         "name": "PETLIBRO Granary Feeder"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/granary-feeder/drivers/petlibro-granary-feeder.groovy"
-    },
-    {
-      "id": "definition:291839085f4656cd507e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Repeator Zigbe",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:64e0a477fc2b8e0c6fcf",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_repeator_zigbee.json",
-        "name": "Iris v1 Repeator Zigbe"
-      },
-      "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/iris_alertme_repeator_zigbe.groovy"
     },
     {
       "id": "definition:294292b34e6fea997c6a",
@@ -18833,31 +18628,6 @@ window.IDENTITY_INDEX = {
         "name": "Package NewOne"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/newone/newone-power-meter-plug.groovy"
-    },
-    {
-      "id": "definition:2b647bca80cca2541161",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v2 - v3 Keypad",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris v2 v3 Keypad",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:fdad5c3b97cf10f30b64",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
-        "name": "Iris v2 v3 Keypad"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v2-v3_keypad.groovy"
     },
     {
       "id": "definition:2b96eea1d6afbdab104a",
@@ -19835,26 +19605,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkAPI.groovy"
     },
     {
-      "id": "definition:32a7c0bfc708fc2b19dd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Smart Plug custom no alarm",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "id": "manifest:3bd0f4737937fc714714",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug2.json",
-        "name": "Iris v1 Smart Plug custom No alarm"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug2.groovy"
-    },
-    {
       "id": "definition:32c893c822a842b8a9fb",
       "identities": [
         {
@@ -19898,26 +19648,6 @@ window.IDENTITY_INDEX = {
         "name": "SAS - Samsung Appliance Service"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/Drivers/SAS%20-%20Samsung%20Dehumidifier.groovy"
-    },
-    {
-      "id": "definition:32ec2bec4afde7405ec0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Button",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:01c04d48ceec732a8f0d",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json",
-        "name": "iris v1 button"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-button.grovvy"
     },
     {
       "id": "definition:32f9d588c1e7ab7eaa6e",
@@ -20683,26 +20413,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_SmartHQ"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_SmartHQ/main/devices/smartHQ_oven"
-    },
-    {
-      "id": "definition:3836bca4be96ae1829d0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Group",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvGroup.groovy"
     },
     {
       "id": "definition:3851887801673a03585f",
@@ -21795,26 +21505,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/drivers/pat02-b/pat02-b.groovy"
     },
     {
-      "id": "definition:41385075e64638b5a902",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Third Reality water Sensor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:9f0e530e1ee5b8ff9336",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json",
-        "name": "Third Reality Water Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-water-sensor.groovy"
-    },
-    {
       "id": "definition:416080f0f74844fd3986",
       "identities": [
         {
@@ -21963,26 +21653,6 @@ window.IDENTITY_INDEX = {
         "name": "Honeywell Security"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Honeywell/Honeywell_Zone_CarbonMonoxide.groovy"
-    },
-    {
-      "id": "definition:42a15fdb1bd3bca12835",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Senior Care Pendant",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-        "documentationUrl": null,
-        "id": "manifest:89ffacc3e3d6084e290b",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Iris_v1_Senior_Care_Pendant.json",
-        "name": "Iris v1 Senior Care Pendant"
-      },
-      "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/Iris_v1_Senior_Care_Pendant.groovy"
     },
     {
       "id": "definition:42ffe30d322630ac51cc",
@@ -22850,26 +22520,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2GroupLightDriver.groovy"
     },
     {
-      "id": "definition:47ef6b51875b7ce9e656",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "RGBW CT Bulbs - Zigbee",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:37e10e051840017da9d6",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/eWeLight-RGBW-Bulbs.json",
-        "name": "RGBW CT Bulbs - Zigbee"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/eWeLight-RGBW-Bulbs.groovy"
-    },
-    {
       "id": "definition:48110d2ab1be6a2ec637",
       "identities": [
         {
@@ -22910,24 +22560,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-RS-20.groovy"
     },
     {
-      "id": "definition:487296543eb1ef74ee66",
+      "id": "definition:488803014c7ff416f499",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "SmartThings Arrival Sensor Chime V2",
-          "namespace": "tmastersmart"
+          "name": "Roborock Vacuum",
+          "namespace": "jdthomas24"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "TheMaster",
+        "author": "jdthomas24",
         "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:3ef5d41ed8bb11fe38e3",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/SmartThings-Arrival-Sensor-hubitat.json",
-        "name": "SmartThings Arrival Sensor Chime V2"
+        "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+        "id": "manifest:2198e51ff4278066f040",
+        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+        "name": "Roborock Integration"
       },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings-Arrival-Sensor-hubitat.groovy"
+      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/VacuumDriver.groovy"
     },
     {
       "id": "definition:48bc725fcf8ab57b39b5",
@@ -23278,31 +22928,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec Heavy Duty Smart Switch"
       },
       "sourceUrl": "https://raw.githubusercontent.com/brossow/hubitat-drivers/main/aeotec/heavy-duty-switch/aeotec-heavy-duty-switch.groovy"
-    },
-    {
-      "id": "definition:4b73d60743df2605dd52",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Zigbee - Sonoff - generic Relays/Outlets",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Zigbee Sonoff - generic relays",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:5fe57262fa14b0bd694a",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json",
-        "name": "Zigbee Sonoff - generic relays"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy"
     },
     {
       "id": "definition:4b871d7b09637eb78985",
@@ -25238,26 +24863,6 @@ window.IDENTITY_INDEX = {
         "name": "Home Assistant Device Bridge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentVacuum.groovy"
-    },
-    {
-      "id": "definition:5723e9edea6c654146ae",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Snapshot",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSnapshot.groovy"
     },
     {
       "id": "definition:574981863ddd6219c541",
@@ -27545,6 +27150,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/iAqualink-ToggleDevice.groovy"
     },
     {
+      "id": "definition:651f1f356bf5b0c64871",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Sleep Timer",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSleepTimer.groovy"
+    },
+    {
       "id": "definition:65415f638ee9fb8f6cc3",
       "identities": [
         {
@@ -27568,26 +27193,6 @@ window.IDENTITY_INDEX = {
         "name": "MolSmart - GW8 - AC (learning)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW8/main/RF/Hubitat_TRATO_MolSmart_GW8_RF.groovy"
-    },
-    {
-      "id": "definition:6545c2a68e3b8124ecf3",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Contact Sensor-custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:8a8e0bc9aaf988d740d9",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-contact.json",
-        "name": "Iris v1 Contact Sensor-custom"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris%20v1%20sensor-custom.groovy"
     },
     {
       "id": "definition:654b91c723d8db628a8b",
@@ -28230,26 +27835,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/twilight_parser/twilightParser.groovy"
     },
     {
-      "id": "definition:6a395ecff1567dfbd50d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Sleep Timer",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSleepTimer.groovy"
-    },
-    {
       "id": "definition:6a51c82431f70c35b9fd",
       "identities": [
         {
@@ -28670,26 +28255,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaGarageDoor.groovy"
     },
     {
-      "id": "definition:6cfad7f65b992c2bdc5c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Third Reality Contact Sensor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:d35f611042d56d15cd59",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-contact-sensor.json",
-        "name": "Third Reality Contact Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-contact-sensor.groovy"
-    },
-    {
       "id": "definition:6d03549a66ea6860feb7",
       "identities": [
         {
@@ -28708,6 +28273,26 @@ window.IDENTITY_INDEX = {
         "name": "Tuya ZigBee Vibration Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20ZigBee%20Vibration%20Sensor/Tuya%20ZigBee%20Vibration%20Sensor.groovy"
+    },
+    {
+      "id": "definition:6d0addfaabe18a8c5648",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Alarm Manager",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvAlarmManager.groovy"
     },
     {
       "id": "definition:6d146622ba80a5303e86",
@@ -29023,26 +28608,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz ZAC36 Titan Valve Actuator"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zac36-v1.0.6.groovy"
-    },
-    {
-      "id": "definition:6ebc2fbfe1b04fb037a5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Smartthings Samjin button",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:2c7375a08a62e6940309",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-samjin-button.json",
-        "name": "Smartthings Samjin button"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-samjin-button.groovy"
     },
     {
       "id": "definition:6f421139ccfb8cc75c15",
@@ -30415,6 +29980,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy"
     },
     {
+      "id": "definition:78470f6c4ffa390c5fc7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Player",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvPlayer.groovy"
+    },
+    {
       "id": "definition:78578505b96595d4978c",
       "identities": [
         {
@@ -30493,6 +30078,26 @@ window.IDENTITY_INDEX = {
         "name": "Levoit Air Purifiers, Humidifiers, and Fans"
       },
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/LevoitDual200S.groovy"
+    },
+    {
+      "id": "definition:78b044218e4a1a150a32",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Playlist",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvPlaylist.groovy"
     },
     {
       "id": "definition:78b3ed59593c674084bb",
@@ -30705,26 +30310,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcaton/Hubitat/refs/heads/main/QolSysIQPanel/QolSysIQ-Smoke.groovy"
     },
     {
-      "id": "definition:7b15142f620d9899a085",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Player",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvPlayer.groovy"
-    },
-    {
       "id": "definition:7b8d7f4b9a78249540cc",
       "identities": [
         {
@@ -30803,31 +30388,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v1"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/v1/Govee%20Lights_Plugs_Switches%20Driver"
-    },
-    {
-      "id": "definition:7c29b502b7e90987a723",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "SmartThings Motion Sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "SmartThings Motion Detector",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:f33248a64c90dad205d0",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings_motion_driver.json",
-        "name": "SmartThings Motion Detector"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings_motion_sensor.groovy"
     },
     {
       "id": "definition:7c30b66fed867948e395",
@@ -32265,26 +31825,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jonesalexr/hubitat/master/Drivers/SonyAudio/SonyAudioControl.groovy"
     },
     {
-      "id": "definition:87fcbfa65b13b1e89b0f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Battery Status",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvBatteryStats.groovy"
-    },
-    {
       "id": "definition:8834fe12f4c85da00a32",
       "identities": [
         {
@@ -32408,6 +31948,26 @@ window.IDENTITY_INDEX = {
         "name": "UnifiConnectAPI"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-13.groovy"
+    },
+    {
+      "id": "definition:8886094d3b7cced7b4ba",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Amazon Fire TV (ADB)",
+          "namespace": "TRATO"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "VH",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:c32c9228-fa6f-4392-b5c4-fb2e8ce8adcb",
+        "manifestUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/refs/heads/main/packageManifest.json",
+        "name": "Amazon Fire TV (ADB)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/main/Hubitat_FireTV_ADB.groovy"
     },
     {
       "id": "definition:888e9c2bff52f36332a8",
@@ -32535,26 +32095,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dacmanj/hubitat/main/MoenFloStandalone/drivers/moenflo.groovy"
     },
     {
-      "id": "definition:8966d3395047dac93d64",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Dimable CT Bulb driver - Zigbee",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:d7e63a62e9959c70884c",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json",
-        "name": "Dimable CT Bulb driver - Zigbee"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/dimable_ct_bulb_driver.groovy"
-    },
-    {
       "id": "definition:8967838847ad562e6208",
       "identities": [
         {
@@ -32593,6 +32133,26 @@ window.IDENTITY_INDEX = {
         "name": "HomeKit Import (Local)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-temperature-sensor/homekit-temperature-sensor.groovy"
+    },
+    {
+      "id": "definition:8a087d7e9b93b395a664",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Favorites",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvFavorites.groovy"
     },
     {
       "id": "definition:8a1fcd14692ef00f14db",
@@ -32653,31 +32213,6 @@ window.IDENTITY_INDEX = {
         "name": "Sonoff RF Bridge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Sonoff/Sonoff%20RF%20Bridge%20-%20Shade.groovy"
-    },
-    {
-      "id": "definition:8a7e81cd606d7a1c2ff1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sage Doorbell echostar sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "sage doorbell echostar",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-        "documentationUrl": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-        "id": "manifest:c7a0c0a147e60e1ca24a",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json",
-        "name": "sage doorbell echostar"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_doorbell_echostar.groovy"
     },
     {
       "id": "definition:8a818e9491583bfb65d1",
@@ -33853,26 +33388,6 @@ window.IDENTITY_INDEX = {
         "name": "UniFi Presence Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/UniFi_Presence_Controller.groovy"
-    },
-    {
-      "id": "definition:9191961f549e437b5c64",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Motion Detector Custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:6fb2ece627bb27f3fc2b",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_motion_sensor.json",
-        "name": "Iris v1 Motion Detector Custom"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Iris_v1_Motion_Sensor.groovy"
     },
     {
       "id": "definition:91f5eb69ed98752e7b10",
@@ -35898,31 +35413,6 @@ window.IDENTITY_INDEX = {
         "name": "Pi-hole Virtual Switch"
       },
       "sourceUrl": "https://raw.githubusercontent.com/walksonair/Hubitat-Pi-hole-Virtual-Switch/main/pi-hole-virtual-switch.groovy"
-    },
-    {
-      "id": "definition:9f523fe0a34c304890bd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v2 Motion Sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris v2 Motion Detector",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:8deb2f80f69af417372f",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-motion-sensor.json",
-        "name": "Iris v2 Motion Detector"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-motion-sensor.groovy"
     },
     {
       "id": "definition:9f7a0685a4bfc581ea5e",
@@ -37955,31 +37445,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/TheCase/hubitat-packages/main/aqara-pet-feeder-c1-Hubitat/aqara-pet-feeder-c1.groovy"
     },
     {
-      "id": "definition:ac1768908b74d96729cd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Smart Plug custom with alarm",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris v1 Smart Plug custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "id": "manifest:c2b35d5a3c5200f1fc97",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug3.json",
-        "name": "Iris v1 Smart Plug custom With Alarm"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug3.groovy"
-    },
-    {
       "id": "definition:ac2e40ee6a46fce231aa",
       "identities": [
         {
@@ -39070,6 +38535,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/sihas_dualmotionsensor_dms300zb.groovy"
     },
     {
+      "id": "definition:b28e9c5fe033d47ac2ad",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Roborock Cloud Helper",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "jdthomas24",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+        "id": "manifest:2198e51ff4278066f040",
+        "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+        "name": "Roborock Integration"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/CloudHelper.groovy"
+    },
+    {
       "id": "definition:b2a7863db349db9397e4",
       "identities": [
         {
@@ -39208,26 +38693,6 @@ window.IDENTITY_INDEX = {
         "name": "Pool Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/devicetypes/bsileo/pool-controller.src/pool-controller.groovy"
-    },
-    {
-      "id": "definition:b39f40eba1ceebfa0750",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Playlist",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvPlaylist.groovy"
     },
     {
       "id": "definition:b3ae9b747ff20814276b",
@@ -39783,6 +39248,26 @@ window.IDENTITY_INDEX = {
         "name": "Tasmota Sync Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Universal_Multi_Sensor_Double_Relay.groovy"
+    },
+    {
+      "id": "definition:b6446539eea4a19e2a5f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Group",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvGroup.groovy"
     },
     {
       "id": "definition:b64b3652ff9d9c4fb664",
@@ -43065,6 +42550,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-bond/master/drivers/BOND_Fireplace_Light.groovy"
     },
     {
+      "id": "definition:c9a49342102caa7344f1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Secondaries",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSecondaries.groovy"
+    },
+    {
       "id": "definition:c9cc3bafa1e86abb1906",
       "identities": [
         {
@@ -43295,26 +42800,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyInputCountComponent-v2.17.8.groovy"
     },
     {
-      "id": "definition:cb5ea1f266fff2930ad4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Favorites",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvFavorites.groovy"
-    },
-    {
       "id": "definition:cb6aa0b844db0aef332e",
       "identities": [
         {
@@ -43438,6 +42923,26 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotStripLight"
+    },
+    {
+      "id": "definition:cc54b262ecf408740c81",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Mitsubishi Comfort Unit",
+          "namespace": "jlupien"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Jeff Lupien",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/jlupien/hubitat-drivers/tree/master/mitsubishi-comfort#readme",
+        "id": "manifest:75342398988060a11f59",
+        "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
+        "name": "Mitsubishi Comfort"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/drivers/mitsubishi-comfort-unit.groovy"
     },
     {
       "id": "definition:ccd94c4378fc032d1e81",
@@ -43578,26 +43083,6 @@ window.IDENTITY_INDEX = {
         "name": "SiHAS Zigbee Power Meter PMM-300-Z"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat-SiHAS/main/sihas_powermeter_pmm300z.groovy"
-    },
-    {
-      "id": "definition:cd47a5fd4baa7ab525a4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "LeakSmart Water Valve",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-        "id": "manifest:a9b18182109f9815fc46",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/LeakSmart_Water_Valve.json",
-        "name": "LeakSmart Water Valve"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/leaksmart-water-valve.groovy"
     },
     {
       "id": "definition:cd75459a0974d5c42688",
@@ -44540,26 +44025,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-light-sensor/homekit-light-sensor.groovy"
     },
     {
-      "id": "definition:d24a92e11b7fe976bbaa",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Alarm Manager",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvAlarmManager.groovy"
-    },
-    {
       "id": "definition:d24e7bf354ece395821d",
       "identities": [
         {
@@ -44578,31 +44043,6 @@ window.IDENTITY_INDEX = {
         "name": "Yale Home"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tmleafs/hubitat-yalehomelock/main/drivers/yalehome_keypad.groovy"
-    },
-    {
-      "id": "definition:d279bc17f5d0209e72cd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v2 Contact Sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris v2 Contact Sensor-custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:72f88b33c6ce20d2e239",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-contact.json",
-        "name": "Iris v2 Contact Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-contact.groovy"
     },
     {
       "id": "definition:d28ef008461b65b67368",
@@ -45195,26 +44635,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaSamsungOcfWasher.groovy"
     },
     {
-      "id": "definition:d6ff733230befb5c2699",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "HTTP Presence Sensor with schedule",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:868f025a91532259bf37",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json",
-        "name": "HTTP Presence Sensor with schedule"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/http_presence_sensor.groovy"
-    },
-    {
       "id": "definition:d7156cd99a1cb1f0ef89",
       "identities": [
         {
@@ -45318,26 +44738,6 @@ window.IDENTITY_INDEX = {
         "name": "Hive Drivers from BirdsLikeWires"
       },
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/hive/drivers/hive_thermostat.groovy"
-    },
-    {
-      "id": "definition:d77d27d79b393a13df43",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Radio Thermostat Zwave",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
-        "documentationUrl": "http://www.winnfreenet.com/wp/2022/08/radio-thermostat-zwave-hubitat-driver-ct101-ct30/",
-        "id": "manifest:dc5e339ffbe7d9a9e24c",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/radio_thermostat_driver.json",
-        "name": "Radio Thermostat Zwave"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/radio_thermostat_zwave.groovy"
     },
     {
       "id": "definition:d7a3a3819a534f162f28",
@@ -45518,6 +44918,26 @@ window.IDENTITY_INDEX = {
         "name": "BamBuddy/PrintBuddy Printers Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-printer.groovy"
+    },
+    {
+      "id": "definition:d85dff1a689cc87b9e38",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Queue",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvQueue.groovy"
     },
     {
       "id": "definition:d863d6c32b11bbe00de3",
@@ -46065,31 +45485,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-4/master/NOAA/NOAA-Tile-Driver.groovy"
     },
     {
-      "id": "definition:dbfeda18d91d1ac7d3f9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "CentraLite Samjin Smartthings water Sensor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris CentraLite Samjin Smartthings water Sensor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:3cf17f2562593e85cdfa",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/centralite-water-sensor.json",
-        "name": "Iris CentraLite Samjin Smartthings water Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/centralite-water-sensor.groovy"
-    },
-    {
       "id": "definition:dc038b1139ee10ffd468",
       "identities": [
         {
@@ -46388,26 +45783,6 @@ window.IDENTITY_INDEX = {
         "name": "Epson Projector"
       },
       "sourceUrl": "https://raw.githubusercontent.com/amosyuen/hubitat/main/epson/Epson%20Projector.groovy"
-    },
-    {
-      "id": "definition:dd7c20d286ff1b4b7df0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Third Reality Motion Sensor",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:0ee2a3c99bcc63465bf4",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-motion-sensor.json",
-        "name": "Third Reality Motion Sensor"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-motion-sensor.groovy"
     },
     {
       "id": "definition:dde36345bd54fbe7ff2f",
@@ -48585,6 +47960,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Pro.groovy"
     },
     {
+      "id": "definition:eb83fdb90cb1acfca1c7",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Battery Status",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvBatteryStats.groovy"
+    },
+    {
       "id": "definition:eb91d0543e7dfb618963",
       "identities": [
         {
@@ -49408,31 +48803,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat Tailwind Garage Door Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Gelix/HubitatTailwind/main/tailwinddriver-child.groovy"
-    },
-    {
-      "id": "definition:f3204bab59679c4ab51f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 KeyFob Advanced",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Iris v1 keyfob custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:b02b11578799450c019e",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-keyfob.json",
-        "name": "Iris v1 keyfob custom"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-keyfob-custom.groovy"
     },
     {
       "id": "definition:f377f63ccb0b5e523336",
@@ -50330,6 +49700,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-switch-as-water-sensor-child-expanded.groovy"
     },
     {
+      "id": "definition:f97f57f1febbc938a947",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Alarm Switch",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvAlarmSwitch.groovy"
+    },
+    {
       "id": "definition:f989d5de70a2ed37df94",
       "identities": [
         {
@@ -50750,26 +50140,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/iAqualink.groovy"
     },
     {
-      "id": "definition:fc4405aee0858cafa371",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Smartthings multi Sensor V3 (custom)",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "manifest:66b765ceeb97979ef87f",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-multiswitch-v3.json",
-        "name": "Smartthings multi Sensor V3 (custom)"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-multiswitch-v3-samjin.groovy"
-    },
-    {
       "id": "definition:fc5567fac8de0680d636",
       "identities": [
         {
@@ -50913,26 +50283,6 @@ window.IDENTITY_INDEX = {
         "name": "TAPO Device Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_child_plug.groovy"
-    },
-    {
-      "id": "definition:fd36e3e5e2ec652c2520",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Iris v1 Smart Plug custom",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "TheMaster",
-        "communityUrl": null,
-        "documentationUrl": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "id": "manifest:a5eb6db7aeaff36b91ef",
-        "manifestUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug.json",
-        "name": "Iris v1 Smart Plug custom"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug.groovy"
     },
     {
       "id": "definition:fd69c6a48d3e0d46f2ef",
@@ -51188,5 +50538,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-13T06:58:52Z"
+  "snapshotGenerated": "2026-11-14T06:47:15Z"
 };

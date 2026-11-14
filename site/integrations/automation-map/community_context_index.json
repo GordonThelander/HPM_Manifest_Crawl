@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 504,
+  "recordCount": 502,
   "records": [
     {
       "author": null,
@@ -5200,7 +5200,7 @@
       "kind": "APP",
       "lifecycleFlags": [],
       "links": {
-        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvancedApp.groovy"
+        "source": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvancedApp.groovy"
       },
       "networkEvidence": {
         "classification": "BOTH",
@@ -10512,6 +10512,40 @@
       "summary": "Discovers and manages Reolink cameras, doorbells, NVRs, and Home Hubs over the local HTTP API. Motion/AI detection, doorbell button press, snapshots, PTZ with preset recall, spotlight, night vision, siren, and battery %. No cloud account required."
     },
     {
+      "author": "jdthomas24",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Roborock Integration",
+          "namespace": "jdthomas24"
+        }
+      ],
+      "displayName": "Roborock Integration",
+      "evidenceChecks": {
+        "communityLink": "MISSING",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:2198e51ff4278066f040",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+        "source": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/ParentApp.groovy"
+      },
+      "networkEvidence": {
+        "classification": "INSUFFICIENT",
+        "reviewed": false
+      },
+      "packageName": "Roborock Integration",
+      "qualityFlags": [],
+      "summary": "Local control of Roborock robot vacuums after a one-time sign-in: live status, start, pause, dock and room cleaning, fan and mop settings, consumables, Roborock scenes, automatic IP recovery and an optional dashboard tile."
+    },
+    {
       "author": "ritchierich",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -13857,47 +13891,6 @@
       "summary": "Complete Hubitat integration for X-Sense smoke/CO detectors (SC07-MR and compatible models) and water leak sensors (SWS51) via the SBS50 base station. Installed as a Hubitat app. Features AWS Cognito SRP authentication, AWS IoT Shadow API for device status, configurable polling intervals, and automa"
     },
     {
-      "author": "TheMaster",
-      "authority": "HPM_PACKAGE",
-      "definitionIdentities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Lock Button Monitor 2",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "sourceIdentity",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster"
-        }
-      ],
-      "displayName": "Lock Button Monitor2",
-      "evidenceChecks": {
-        "communityLink": "PRESENT",
-        "definitionIdentity": "MISMATCH",
-        "documentationLink": "MISSING",
-        "httpsTransport": "PASS",
-        "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
-      },
-      "id": "manifest:aea83b9efc9b358fd41d",
-      "kind": "APP",
-      "lifecycleFlags": [],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "source": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
-      },
-      "networkEvidence": {
-        "classification": "INSUFFICIENT",
-        "reviewed": false
-      },
-      "packageName": "Lock Button Monitor2",
-      "qualityFlags": [
-        "IDENTITY_MISMATCH"
-      ],
-      "summary": "Lock button monitor2. for second lock, works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock."
-    },
-    {
       "author": "BPTWorld",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -14368,48 +14361,6 @@
       "packageName": "Sofabaton Integration",
       "qualityFlags": [],
       "summary": "Connects Sofabaton X2 and X1S universal remote hubs to Hubitat. Activities become switches kept in sync with the remote, and spare remote keys can control Hubitat lights and scenes. X2 runs fully local over Hubitat's built-in MQTT broker."
-    },
-    {
-      "author": "TheMaster",
-      "authority": "HPM_PACKAGE",
-      "definitionIdentities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Pump Monitor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "sourceIdentity",
-          "name": "Pump Scheduler",
-          "namespace": "tmastersmart"
-        }
-      ],
-      "displayName": "Pump Scheduler",
-      "evidenceChecks": {
-        "communityLink": "PRESENT",
-        "definitionIdentity": "MISMATCH",
-        "documentationLink": "PRESENT",
-        "httpsTransport": "PASS",
-        "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
-      },
-      "id": "manifest:c6cb3e6d30261b6c9482",
-      "kind": "APP",
-      "lifecycleFlags": [],
-      "links": {
-        "community": "https://community.hubitat.com/t/pump-scheduler/165333",
-        "documentation": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
-        "source": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/pump_scheduler.groovy"
-      },
-      "networkEvidence": {
-        "classification": "CLOUD",
-        "reviewed": false
-      },
-      "packageName": "Pump Scheduler",
-      "qualityFlags": [
-        "IDENTITY_MISMATCH"
-      ],
-      "summary": "Smart scheduler for pool pumps, spa pumps, septic aerators, drainage pumps, and other motorized equipment. Supports daily runtime targets, maximum cycle length, cooldown periods, sunrise/sunset scheduling, monitoring, and automatic recovery after hub reboots or app updates."
     },
     {
       "author": "Miles Budnek",
@@ -15863,48 +15814,6 @@
       "summary": "Create a motion sensor that is triggered active after X motion events in Y seconds"
     },
     {
-      "author": "TheMaster",
-      "authority": "HPM_PACKAGE",
-      "definitionIdentities": [
-        {
-          "basis": "manifestIdentity",
-          "name": "Lock Button Monitor",
-          "namespace": "tmastersmart"
-        },
-        {
-          "basis": "sourceIdentity",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster"
-        }
-      ],
-      "displayName": "Lock Button Monitor",
-      "evidenceChecks": {
-        "communityLink": "PRESENT",
-        "definitionIdentity": "MISMATCH",
-        "documentationLink": "PRESENT",
-        "httpsTransport": "PASS",
-        "manifestFetch": "PASS",
-        "sourceFetch": "PASS"
-      },
-      "id": "manifest:f6f02791da1a6ee62a2a",
-      "kind": "APP",
-      "lifecycleFlags": [],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "documentation": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "source": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
-      },
-      "networkEvidence": {
-        "classification": "INSUFFICIENT",
-        "reviewed": false
-      },
-      "packageName": "Lock Button Monitor",
-      "qualityFlags": [
-        "IDENTITY_MISMATCH"
-      ],
-      "summary": "Lock button monitor. works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock."
-    },
-    {
       "author": "Brad Sileo",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -17031,5 +16940,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-13T06:58:52Z"
+  "snapshotGenerated": "2026-11-14T06:47:15Z"
 }

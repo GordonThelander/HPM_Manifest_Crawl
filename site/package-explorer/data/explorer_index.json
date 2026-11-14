@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 970,
+    "HPM_PACKAGE": 937,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2675,
+  "recordCount": 2642,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -21974,6 +21974,88 @@
       "version": "1.02"
     },
     {
+      "author": "VH",
+      "category": "Convenience",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-13",
+      "definitions": [
+        {
+          "id": "definition:8886094d3b7cced7b4ba",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Amazon Fire TV (ADB)",
+          "namespace": "TRATO",
+          "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/main/Hubitat_FireTV_ADB.groovy"
+        }
+      ],
+      "description": "Hubitat driver to control Amazon Fire TV devices directly over ADB.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:c32c9228-fa6f-4392-b5c4-fb2e8ce8adcb",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/hhorigian/hubitat_firetv/refs/heads/main/packageManifest.json",
+        "repository": "https://github.com/hhorigian/hubitat_firetv"
+      },
+      "name": "Amazon Fire TV (ADB)",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances"
+      ],
+      "version": "1.7"
+    },
+    {
       "author": "Derek Osborn",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -27811,96 +27893,6 @@
       "version": null
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-13-02",
-      "definitions": [
-        {
-          "id": "definition:0d416132fb60ab70af73",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "CentraLite Motion Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/CentraLite_motion_censor.grovy"
-        }
-      ],
-      "description": "CentraLite Motion Sensor with presence. CentraLite Model:3326-L,3325,3305,3325-S,3305-S (not for motionv4 motionv5)",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:0e158770d6872bbafab3",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "CentraLite Motion Detector",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "1.1.4"
-    },
-    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -32314,93 +32306,6 @@
         "Lights & Switches"
       ],
       "version": "1.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-3-27",
-      "definitions": [
-        {
-          "id": "definition:8966d3395047dac93d64",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Dimable CT Bulb driver - Zigbee",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/dimable_ct_bulb_driver.groovy"
-        }
-      ],
-      "description": "Works with most dimable led and CT Bulbs",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:d7e63a62e9959c70884c",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Dimable CT Bulb driver - Zigbee",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "1.1.0"
     },
     {
       "author": "Robert Morris",
@@ -38209,78 +38114,6 @@
       "recordType": "HPM_PACKAGE",
       "tags": [
         "Health & Fitness"
-      ],
-      "version": null
-    },
-    {
-      "author": null,
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
-      "definitions": [],
-      "description": "The frigidaire 2.0 Thermostat Driver lets you control the Window AC unit. Installed as a thermostat.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "MANIFEST_IDENTITY",
-          "label": "Manifest identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "FAIL"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "NOT_APPLICABLE"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:f8035a57788f978cd224",
-      "kinds": [],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Frigidaire 2.0 AC Thermostat",
-      "network": {
-        "classification": "INSUFFICIENT",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Climate Control",
-        "Temperature & Humidity"
       ],
       "version": null
     },
@@ -44743,7 +44576,7 @@
       "author": "HERMES Automation",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-07-21",
+      "dateReleased": "2026-11-11",
       "definitions": [
         {
           "id": "definition:b57ff303adc05c2315aa",
@@ -44828,7 +44661,7 @@
         "Notifications",
         "Safety & Security"
       ],
-      "version": "1.0.2"
+      "version": "1.1.0"
     },
     {
       "author": "Haven",
@@ -48171,92 +48004,6 @@
         "Presence & Location"
       ],
       "version": "1.01"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-09-25",
-      "definitions": [
-        {
-          "id": "definition:d6ff733230befb5c2699",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "HTTP Presence Sensor with schedule",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/http_presence_sensor.groovy"
-        }
-      ],
-      "description": "Improved HTTP Presence sensor with  adjustable chron schedule. detects 404 file not found and 401 password, for IP cameras asking for a password",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:868f025a91532259bf37",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "HTTP Presence Sensor with schedule",
-      "network": {
-        "classification": "LAN",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Presence & Location",
-        "Tools & Utilities"
-      ],
-      "version": "2.4.1"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -57356,1337 +57103,6 @@
       "version": "1.03"
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-1-11",
-      "definitions": [
-        {
-          "id": "definition:dbfeda18d91d1ac7d3f9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "CentraLite Samjin Smartthings water Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/centralite-water-sensor.groovy"
-        }
-      ],
-      "description": "Improved Iris CentraLite Samjin Smartthings water Sensor with Presence,Tamper for Centralite and better drop out detection,battery support",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:3cf17f2562593e85cdfa",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/centralite-water-sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris CentraLite Samjin Smartthings water Sensor",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Monitoring",
-        "Safety & Security",
-        "Water",
-        "Zigbee"
-      ],
-      "version": "1.2.7"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-3-12",
-      "definitions": [
-        {
-          "id": "definition:23db6e81d8ec00fd9991",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris Utilitech Siren",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_utilitech_siren_zwave.groovy"
-        }
-      ],
-      "description": "Verifies state after turn and off. No more refusing to turn off,Presence,Auto dead bat detection, Auto time off timmer that works.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:c84626f58936b4b2029c",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-utilitech-siren.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris Utilitech Siren driver",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "products.z-wavealliance.org",
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Misc. Devices",
-        "Safety & Security",
-        "ZWave"
-      ],
-      "version": "1.1.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-14-11",
-      "definitions": [
-        {
-          "id": "definition:32ec2bec4afde7405ec0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Button",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-button.grovvy"
-        }
-      ],
-      "description": "IRIS v1 button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts. pressed,held,held longer, button 1 pressed button 2 held button 3 held longer",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:01c04d48ceec732a8f0d",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "iris v1 button",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.2.2"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:6545c2a68e3b8124ecf3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Contact Sensor-custom",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris%20v1%20sensor-custom.groovy"
-        }
-      ],
-      "description": "Iris v1 Contact Sensor custom. With presence and proper battery support. No more negative battery readings. Includes option to use as a mains detection swith with a relay.Note relay must have time delay so it renergised after hub has powered up.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:8a8e0bc9aaf988d740d9",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-contact.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Contact Sensor-custom",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "3.3.7"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-11-23",
-      "definitions": [
-        {
-          "id": "definition:f3204bab59679c4ab51f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 KeyFob Advanced",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-keyfob-custom.groovy"
-        }
-      ],
-      "description": "Rewritten Iris v1 kefob. Supports holdable buttons , presence recovery no more false no presence toggles. and adjustable timeout. New battery support no negative voltage readings. Also supports custom mode AWAY/HOME",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:b02b11578799450c019e",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-keyfob.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 keyfob custom",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.3.2"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-15-02",
-      "definitions": [
-        {
-          "id": "definition:15a983e20066f823606c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Keypad",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v1_keypad.groovy"
-        }
-      ],
-      "description": "IRIS v1 keypad driver.Provides arm disarm and button remapping. 15 digit pins supported. Keypad supports 13 diffrent chimes under play command. Option for Silent arming. Many setup options, Info,debug,trace logs. Use as chimes or alarms, Bad pin can set tamper, Unlike newer keypads it can cancel a safety alarm if the alarm is disarmed. Supports arming with or without a valid PIN. Supports Remapping ON PART # * buttons as armaway armhome armnight as you see fit.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:6042178cc7d0f666b5e9",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-v1-keyboard-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1keypad.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Keypad",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Locks",
-        "Misc. Devices",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "7.0.3"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-22-05",
-      "definitions": [
-        {
-          "id": "definition:9191961f549e437b5c64",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Motion Detector Custom",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Iris_v1_Motion_Sensor.groovy"
-        }
-      ],
-      "description": "Iris v1 Motion Sensor. With presence and proper battery support. No more negative battery readings",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:6fb2ece627bb27f3fc2b",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_motion_sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Motion Detector Custom",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "2.5.2"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:291839085f4656cd507e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Repeator Zigbe",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/iris_alertme_repeator_zigbe.groovy"
-        }
-      ],
-      "description": "Iris v1 extender driver. Supports battery and presence. Zigbee side",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:64e0a477fc2b8e0c6fcf",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_repeator_zigbee.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Repeator Zigbe",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Repeaters & Extenders",
-        "Zigbee"
-      ],
-      "version": "2.0.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:42a15fdb1bd3bca12835",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Senior Care Pendant",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/Iris_v1_Senior_Care_Pendant.groovy"
-        }
-      ],
-      "description": "Simulates IRIS v1 pay care level system. Pressing button triggers alarm on dashboard and beeps red until dashboard alarm is turned off this notifies pendant holder by beeping green. Requires yuo add it to dashboard as a switch and as presence. Option to use as a straight Keyfob",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:89ffacc3e3d6084e290b",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Iris_v1_Senior_Care_Pendant.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Senior Care Pendant",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "2.2.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-09-03",
-      "definitions": [
-        {
-          "id": "definition:fd36e3e5e2ec652c2520",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Smart Plug custom",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug.groovy"
-        }
-      ],
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence. Old version for compatability same as no alarm",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:a5eb6db7aeaff36b91ef",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Smart Plug custom",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "4.2.5"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-25-10",
-      "definitions": [
-        {
-          "id": "definition:32a7c0bfc708fc2b19dd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Smart Plug custom no alarm",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug2.groovy"
-        }
-      ],
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:3bd0f4737937fc714714",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug2.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Smart Plug custom No alarm",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "4.2.5"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-09-03",
-      "definitions": [
-        {
-          "id": "definition:ac1768908b74d96729cd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v1 Smart Plug custom with alarm",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug3.groovy"
-        }
-      ],
-      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence and support for using as a alarm or strobe using low cost strobes and sirens",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:c2b35d5a3c5200f1fc97",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug3.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v1 Smart Plug custom With Alarm",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Energy Monitoring",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "4.2.5"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:d279bc17f5d0209e72cd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v2 Contact Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-contact.groovy"
-        }
-      ],
-      "description": "Iris v2 contact sensor with presence. Automatic bad battery detection presence, iMagic by GreatStar 1116-S & CentraLite 3320-L",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:72f88b33c6ce20d2e239",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-contact.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v2 Contact Sensor",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "1.8.1"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:9f523fe0a34c304890bd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v2 Motion Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-motion-sensor.groovy"
-        }
-      ],
-      "description": "Iris v2 Motion Sensor with presence. CentraLite Model:3326-L",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:8deb2f80f69af417372f",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-motion-sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v2 Motion Detector",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "1.1.5"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-13",
-      "definitions": [
-        {
-          "id": "definition:2b647bca80cca2541161",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Iris v2 - v3 Keypad",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v2-v3_keypad.groovy"
-        }
-      ],
-      "description": "Driver supports model# 1112-S and model# 3405-L iris keypads v2 and v3",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:fdad5c3b97cf10f30b64",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Iris v2 v3 Keypad",
-      "network": {
-        "classification": "LAN",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Locks",
-        "Misc. Devices",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.7.0"
-    },
-    {
       "author": "David Kilgore",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -59935,96 +58351,6 @@
         "Notifications"
       ],
       "version": "1.0.10"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-09-29",
-      "definitions": [
-        {
-          "id": "definition:cd47a5fd4baa7ab525a4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "LeakSmart Water Valve",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/leaksmart-water-valve.groovy"
-        }
-      ],
-      "description": "Improved LeakSmart driver (Zigbee) better battery support, mains detection ,better logging ,Stuck valve detection, fix for valves with broken mains detection firmware, Works with IRIS version also,Supports contact,switch & wet dry with info debug and trace logs",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:a9b18182109f9815fc46",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/LeakSmart_Water_Valve.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "LeakSmart Water Valve",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Energy Monitoring",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security",
-        "Valves",
-        "Water",
-        "Zigbee"
-      ],
-      "version": "3.4.0"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -63213,178 +61539,6 @@
       "version": "1.4.2"
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-24-09",
-      "definitions": [
-        {
-          "id": "definition:5cb687525d05d3a56186",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
-        }
-      ],
-      "description": "Lock button monitor. works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:f6f02791da1a6ee62a2a",
-      "kinds": [
-        "APP"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "documentation": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Lock Button Monitor",
-      "network": {
-        "classification": "INSUFFICIENT",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Locks",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ],
-      "version": "1.3.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-24-09",
-      "definitions": [
-        {
-          "id": "definition:3fdcaad9fc4d9a58c376",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Lock Button Monitor V1",
-          "namespace": "tmaster",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
-        }
-      ],
-      "description": "Lock button monitor2. for second lock, works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:aea83b9efc9b358fd41d",
-      "kinds": [
-        "APP"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor2.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Lock Button Monitor2",
-      "network": {
-        "classification": "INSUFFICIENT",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Locks",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ],
-      "version": "1.3.0"
-    },
-    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -65041,7 +63195,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.8"
+      "version": "5.1.9"
     },
     {
       "author": "Justin Leonard",
@@ -66063,6 +64217,101 @@
         "ZWave"
       ],
       "version": "0.1"
+    },
+    {
+      "author": "Jeff Lupien",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-13",
+      "definitions": [
+        {
+          "id": "definition:1918c683b2d0b09d9645",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Mitsubishi Comfort",
+          "namespace": "jlupien",
+          "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/drivers/mitsubishi-comfort.groovy"
+        },
+        {
+          "id": "definition:cc54b262ecf408740c81",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Mitsubishi Comfort Unit",
+          "namespace": "jlupien",
+          "sourceUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/drivers/mitsubishi-comfort-unit.groovy"
+        }
+      ],
+      "description": "Control Mitsubishi mini-splits through the Comfort app's Kumo Cloud v3 API",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:75342398988060a11f59",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/jlupien/hubitat-drivers/tree/master/mitsubishi-comfort#readme",
+        "manifest": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
+        "repository": "https://github.com/jlupien/hubitat-drivers"
+      },
+      "name": "Mitsubishi Comfort",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Comfort",
+        "HVAC",
+        "Kumo Cloud",
+        "Mini Split",
+        "Mitsubishi",
+        "Thermostat"
+      ],
+      "version": "1.0.4"
     },
     {
       "author": "evdev",
@@ -69621,7 +67870,7 @@
       "author": "Craig Dewar",
       "category": "Climate Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-11",
+      "dateReleased": "2026-11-13",
       "definitions": [
         {
           "id": "definition:aa875edb7453bed3c0d6",
@@ -69722,7 +67971,7 @@
         "Climate Control",
         "Thermostat"
       ],
-      "version": "2.5.1"
+      "version": "2.6.1"
     },
     {
       "author": "jlslate",
@@ -76870,95 +75119,6 @@
       "version": "1.2"
     },
     {
-      "author": "TheMaster",
-      "category": "Utility",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-07-23",
-      "definitions": [
-        {
-          "id": "definition:7418569c875d8daa456c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Pump Scheduler",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/pump_scheduler.groovy"
-        }
-      ],
-      "description": "Smart scheduler for pool pumps, spa pumps, septic aerators, drainage pumps, and other motorized equipment. Supports daily runtime targets, maximum cycle length, cooldown periods, sunrise/sunset scheduling, monitoring, and automatic recovery after hub reboots or app updates.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:c6cb3e6d30261b6c9482",
-      "kinds": [
-        "APP"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/pump-scheduler/165333",
-        "documentation": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Pump Scheduler",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "s3.amazonaws.com",
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Monitoring",
-        "Pools & Spas",
-        "Timers",
-        "Tools & Utilities",
-        "Water"
-      ],
-      "version": "2.0.7"
-    },
-    {
       "author": "Barry A. Burke",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -78053,95 +76213,6 @@
         "Irrigation"
       ],
       "version": "3.2.1"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:d77d27d79b393a13df43",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Radio Thermostat Zwave",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/radio_thermostat_zwave.groovy"
-        }
-      ],
-      "description": "The Radio Thermostat Driver for most any Radio Thermostat. (ZWAVE) CT100,CT101,CT30,CT32 and more. Polling schedule and many extra options, Improved logging to detect errors info,debug,trace. Many manual options to set up device other drivers dont have. Option to use only heat or cool. Prevents dashboard getting out of sync with thermostat. If you have a RT you know all the problems other drivers have. This driver will fix your problems. Writen for my thermostats because the other drivers just did not work for me.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:dc5e339ffbe7d9a9e24c",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
-        "documentation": "http://www.winnfreenet.com/wp/2022/08/radio-thermostat-zwave-hubitat-driver-ct101-ct30/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/radio_thermostat_driver.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Radio Thermostat Zwave",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "products.z-wavealliance.org",
-          "www.manualslib.com",
-          "www.opensmarthouse.org",
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Climate Control",
-        "Temperature & Humidity",
-        "ZWave"
-      ],
-      "version": "5.9.0"
     },
     {
       "author": "David LaPorte",
@@ -80302,93 +78373,6 @@
       "version": "2.3"
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-1-3",
-      "definitions": [
-        {
-          "id": "definition:47ef6b51875b7ce9e656",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "RGBW CT Bulbs - Zigbee",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/eWeLight-RGBW-Bulbs.groovy"
-        }
-      ],
-      "description": "Works with eWeLight,Seedan and other RGBW bulbs,ZB-CL01. May work with others provides presence and checkin monitoring",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:37e10e051840017da9d6",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/eWeLight-RGBW-Bulbs.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "RGBW CT Bulbs - Zigbee",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "1.1.0"
-    },
-    {
       "author": "brossow",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -81583,6 +79567,108 @@
       "version": "1.1.4"
     },
     {
+      "author": "jdthomas24",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-13",
+      "definitions": [
+        {
+          "id": "definition:4d11cbd8fa19379a2193",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Roborock Integration",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/ParentApp.groovy"
+        },
+        {
+          "id": "definition:b28e9c5fe033d47ac2ad",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Roborock Cloud Helper",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/CloudHelper.groovy"
+        },
+        {
+          "id": "definition:488803014c7ff416f499",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Roborock Vacuum",
+          "namespace": "jdthomas24",
+          "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Roborock%20Integration/VacuumDriver.groovy"
+        }
+      ],
+      "description": "Local control of Roborock robot vacuums after a one-time sign-in: live status, start, pause, dock and room cleaning, fan and mop settings, consumables, Roborock scenes, automatic IP recovery and an optional dashboard tile.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:2198e51ff4278066f040",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
+        "manifest": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
+        "repository": "https://github.com/jdthomas24/Hubitat-Apps-Drivers"
+      },
+      "name": "Roborock Integration",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "usiot.roborock.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances",
+        "Cleaning"
+      ],
+      "version": "1.0.1"
+    },
+    {
       "author": "Bloodtick Jones",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -82345,182 +80431,6 @@
         "Tools & Utilities"
       ],
       "version": "1.0.2"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-25-09",
-      "definitions": [
-        {
-          "id": "definition:8a7e81cd606d7a1c2ff1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Sage Doorbell echostar sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_doorbell_echostar.groovy"
-        }
-      ],
-      "description": "Doorbell driver. Detect dead bat with presence detection,  And support debug,trace logs.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:c7a0c0a147e60e1ca24a",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-        "documentation": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "sage doorbell echostar",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "2.8.7"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-10-28",
-      "definitions": [
-        {
-          "id": "definition:0153b55424e0fd717931",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Sage light switch echostar",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_light_switch.groovy"
-        }
-      ],
-      "description": "Sage Light Switch driver. With presence and virtual switch,Button support and simulated battery value",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:a4f9d3575778e4a5b74f",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage-light-switch.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Sage light switch echostar",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "2.8.4"
     },
     {
       "author": "Aaron Ward",
@@ -88997,183 +86907,6 @@
       "version": "0.5.0"
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-09-08",
-      "definitions": [
-        {
-          "id": "definition:487296543eb1ef74ee66",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "SmartThings Arrival Sensor Chime V2",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings-Arrival-Sensor-hubitat.groovy"
-        }
-      ],
-      "description": "SmartThings arrival sensor v2 with adjustable chimes. Can play chimes of diffrent legenths.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:3ef5d41ed8bb11fe38e3",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/SmartThings-Arrival-Sensor-hubitat.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "SmartThings Arrival Sensor Chime V2",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.7.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-13-02",
-      "definitions": [
-        {
-          "id": "definition:7c29b502b7e90987a723",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "SmartThings Motion Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings_motion_sensor.groovy"
-        }
-      ],
-      "description": "SmartThings Motion Sensor with presence. Model:motionv4,motionv5 (Not for Centralite)",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:f33248a64c90dad205d0",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings_motion_driver.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "SmartThings Motion Detector",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "1.0.4"
-    },
-    {
       "author": "jdthomas24",
       "category": "Drivers",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -89255,182 +86988,6 @@
         "Zigbee"
       ],
       "version": "1.8.2"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:fc4405aee0858cafa371",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Smartthings multi Sensor V3 (custom)",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-multiswitch-v3-samjin.groovy"
-        }
-      ],
-      "description": "Smartthings multiswitch v3 by Samjin. Fixes bad battery reports autodetect dead battery,presence",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:66b765ceeb97979ef87f",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-multiswitch-v3.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Smartthings multi Sensor V3 (custom)",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Doors & Windows",
-        "Presence & Location",
-        "Safety & Security",
-        "Temperature & Humidity",
-        "Zigbee"
-      ],
-      "version": "1.4.1"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-14-11",
-      "definitions": [
-        {
-          "id": "definition:6ebc2fbfe1b04fb037a5",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Smartthings Samjin button",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-samjin-button.groovy"
-        }
-      ],
-      "description": "Smartthings Samjin button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:2c7375a08a62e6940309",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-samjin-button.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Smartthings Samjin button",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Buttons",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.1.4"
     },
     {
       "author": "Arn Burkhoff",
@@ -91128,103 +88685,103 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-12",
+      "dateReleased": "2026-11-13",
       "definitions": [
         {
-          "id": "definition:02f0b4fe4b8d1fad088e",
+          "id": "definition:8c0963817f39aef28d45",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:d24a92e11b7fe976bbaa",
+          "id": "definition:6d0addfaabe18a8c5648",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Manager",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvAlarmManager.groovy"
         },
         {
-          "id": "definition:184b661ca2dd5d8fbae8",
+          "id": "definition:f97f57f1febbc938a947",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Switch",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvAlarmSwitch.groovy"
         },
         {
-          "id": "definition:87fcbfa65b13b1e89b0f",
+          "id": "definition:eb83fdb90cb1acfca1c7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:cb5ea1f266fff2930ad4",
+          "id": "definition:8a087d7e9b93b395a664",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:3836bca4be96ae1829d0",
+          "id": "definition:b6446539eea4a19e2a5f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:7b15142f620d9899a085",
+          "id": "definition:78470f6c4ffa390c5fc7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:b39f40eba1ceebfa0750",
+          "id": "definition:78b044218e4a1a150a32",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:10b7ee288db4fe2a3b2f",
+          "id": "definition:d85dff1a689cc87b9e38",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Queue",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvQueue.groovy"
         },
         {
-          "id": "definition:2709026386b13a1c796e",
+          "id": "definition:c9a49342102caa7344f1",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:6a395ecff1567dfbd50d",
+          "id": "definition:651f1f356bf5b0c64871",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Sleep Timer",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSleepTimer.groovy"
         },
         {
-          "id": "definition:5723e9edea6c654146ae",
+          "id": "definition:21730e8632f3237c9b1c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.9/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.15.10/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -91320,7 +88877,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.15.9"
+      "version": "0.15.10"
     },
     {
       "author": "Schwark Satyavolu",
@@ -95493,95 +93050,6 @@
       "version": "1.0.5"
     },
     {
-      "author": "TheMaster",
-      "category": "Security",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2024-27-12",
-      "definitions": [
-        {
-          "id": "definition:6cfad7f65b992c2bdc5c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Third Reality Contact Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-contact-sensor.groovy"
-        }
-      ],
-      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:d35f611042d56d15cd59",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-contact-sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Third Reality Contact Sensor",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Doors & Windows",
-        "Lights & Switches",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.2.4"
-    },
-    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -95720,95 +93188,6 @@
       "version": "1.0.18"
     },
     {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-22-09",
-      "definitions": [
-        {
-          "id": "definition:dd7c20d286ff1b4b7df0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Third Reality Motion Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-motion-sensor.groovy"
-        }
-      ],
-      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:0ee2a3c99bcc63465bf4",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-motion-sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Third Reality Motion Sensor",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Lights & Switches",
-        "Motion Control",
-        "Presence & Location",
-        "Safety & Security",
-        "Zigbee"
-      ],
-      "version": "1.2.3"
-    },
-    {
       "author": "Daniel Winks",
       "category": "Window Coverings",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -95890,95 +93269,6 @@
         "Zigbee"
       ],
       "version": "1.0.0"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-12-07",
-      "definitions": [
-        {
-          "id": "definition:41385075e64638b5a902",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Third Reality water Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-water-sensor.groovy"
-        }
-      ],
-      "description": "Improved Third Reality Water Sensor with Presence better drop out detection,battery support",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:9f0e530e1ee5b8ff9336",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Third Reality Water Sensor",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Monitoring",
-        "Presence & Location",
-        "Safety & Security",
-        "Water",
-        "Zigbee"
-      ],
-      "version": "1.2.4"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -101510,93 +98800,6 @@
         "Tools & Utilities"
       ],
       "version": "0.0.1"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-09-03",
-      "definitions": [
-        {
-          "id": "definition:12ce991946696fc41f7f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Utilitech Water Sensor",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Everspring_Utilitech_Water_Sensor.groovy"
-        }
-      ],
-      "description": "Improved Everspring/Utilitech Water Sensor with presence and better drop out detection,battery support,and settings, Support to stop the device from drooping off with dead batteries by providing presence and dead bat detection.with info debug and trace logs",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "WARN"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "manifest:896ef3fe29f7067b9396",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Everspring_Utilitech_Water_Sensor.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Utilitech Water Sensor",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Monitoring",
-        "Safety & Security",
-        "Water",
-        "ZWave"
-      ],
-      "version": "2.8.3"
     },
     {
       "author": "Larry Kahn",
@@ -110047,96 +107250,6 @@
         "Zigbee"
       ],
       "version": "1.0.8"
-    },
-    {
-      "author": "TheMaster",
-      "category": "Control",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-10-23",
-      "definitions": [
-        {
-          "id": "definition:4b73d60743df2605dd52",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Zigbee - Sonoff - generic Relays/Outlets",
-          "namespace": "tmastersmart",
-          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy"
-        }
-      ],
-      "description": "Works with Sonoff MINI ZB,eWeLink,3A Smart Home and other generic zigbee relays. And generic outlets. Presence,Lamp_01,SA-003-Zigbee,01MINIZB,BASICZBR3,LXN59-1S7LX1.0, Sylvania SMART + LEDVANCE",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "manifest:5fe57262fa14b0bd694a",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json",
-        "repository": "https://github.com/tmastersmart/hubitat-code"
-      },
-      "name": "Zigbee Sonoff - generic relays",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "www.paypal.com",
-          "zigbee.blakadder.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Alarm Systems",
-        "Buttons",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Presence & Location",
-        "Zigbee"
-      ],
-      "version": "1.7.7"
     },
     {
       "author": "Krassimir Kossev",
@@ -137945,5 +135058,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-13T06:58:52Z"
+  "snapshotGenerated": "2026-11-14T06:47:15Z"
 }
