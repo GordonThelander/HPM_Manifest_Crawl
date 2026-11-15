@@ -1,9 +1,9 @@
 {
   "counts": {
-    "BOTH": 159,
-    "CLOUD": 274,
-    "INSUFFICIENT": 306,
-    "LAN": 198
+    "BOTH": 160,
+    "CLOUD": 275,
+    "INSUFFICIENT": 307,
+    "LAN": 200
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 937,
+  "packageCount": 942,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -2692,6 +2692,35 @@
       "tags": [
         "Monitoring",
         "Notifications"
+      ]
+    },
+    {
+      "author": "Armand Peter Welsh",
+      "category": "Convenience",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Create bathroom fan automations for temperature control, humidity control, and predictive mirror anti-fogging.",
+      "documentationUrl": "https://github.com/apwelsh/hubitat/blob/master/bbfcon/README.md",
+      "id": "hpm:89849c66-63fb-4ceb-b22c-5ff5285b97b6",
+      "manifestUrl": "https://raw.githubusercontent.com/apwelsh/hubitat/master/bbfcon/packageManifest.json",
+      "name": "Better Bathroom Fan Controller",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 0
+      },
+      "reviewed": [],
+      "tags": [
+        "Automations & Groups",
+        "Bathroom",
+        "Fans",
+        "Humidity",
+        "Temperature"
       ]
     },
     {
@@ -6987,6 +7016,35 @@
       ]
     },
     {
+      "author": "Heatvent",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Profile-driven GE/Jasco/UltraPro Enbrighten Z-Wave Plus Switch and Dimmer drivers covering 500S, 700S, and 800S models with auto-detect.",
+      "documentationUrl": "https://github.com/heatvent/hubitat-drivers",
+      "id": "hpm:3640f90f-471b-42ed-a4cf-a9ca846ed3dc",
+      "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json",
+      "name": "GE/Jasco Enbrighten Switch & Dimmer (Multi)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Lights & Switches",
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Daniel Winks",
       "category": "Utilities",
       "classification": "CLOUD",
@@ -9546,7 +9604,7 @@
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 7
+        "urlLiteralCount": 8
       },
       "reviewed": [],
       "tags": [
@@ -11090,6 +11148,35 @@
         "LAN",
         "Misc. Devices",
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "hubitrep",
+      "category": "Control",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Heating and cooling apps, each optional, all in beta. Switched Heater Thermostat turns plain switches feeding resistive heaters into a thermostat, with frost protection, power-draw checks and alerts when a heater or sensor fails. HVAC Season Manager publishes the heating and cooling season on a device, from dates fitted to the local climate.",
+      "documentationUrl": "https://github.com/hubitrep/hubitat/tree/main/hvac",
+      "id": "hpm:d96cd4ba-c6ef-4482-af94-1aa6186bf083",
+      "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/packageManifest.json",
+      "name": "HVAC Apps",
+      "observed": {
+        "externalHosts": [
+          "api.open-meteo.com",
+          "archive-api.open-meteo.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 8
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Relays"
       ]
     },
     {
@@ -12712,7 +12799,7 @@
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys)",
+      "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys) and show Hubitat notifications on screen",
       "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
       "id": "manifest:ad7df25c8a84ab03e8bf",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json",
@@ -12724,8 +12811,8 @@
           "LAN_PROTOCOL",
           "SEND_HUB_COMMAND"
         ],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": []
@@ -16629,6 +16716,40 @@
         "Misc. Devices",
         "Multimedia",
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "Aniva",
+      "category": "Utilities",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Multi-target PC deep sleep and Wake-on-LAN controller with safety interlock reporting for bedroom/office acoustic automation.",
+      "documentationUrl": "https://github.com/aniva/hubitat01/blob/master/PCSleepController/README.md",
+      "id": "manifest:16c1c97ed4080134e9af",
+      "manifestUrl": "https://raw.githubusercontent.com/aniva/hubitat01/master/PCSleepController/packageManifest.json",
+      "name": "PC Sleep and Wake Controller",
+      "observed": {
+        "externalHosts": [
+          "paypal.me"
+        ],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": [
+        "Automation",
+        "PC Control",
+        "Sleep",
+        "Wake-on-LAN",
+        "WoL"
       ]
     },
     {
@@ -21654,10 +21775,12 @@
           "schemas.xmlsoap.org"
         ],
         "lanPrimitives": [
-          "PARSE_LAN_MESSAGE"
+          "HUB_ACTION",
+          "PARSE_LAN_MESSAGE",
+          "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 12,
-        "urlLiteralCount": 89
+        "urlLiteralCount": 91
       },
       "reviewed": [
         {
@@ -28114,6 +28237,35 @@
       ]
     },
     {
+      "author": "Heatvent",
+      "category": "Security",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Full-parameter Zooz ZSE50 Siren & Chime driver (Sound Switch, Alarm/Chime, LED, config params 1-16).",
+      "documentationUrl": "https://github.com/heatvent/hubitat-drivers",
+      "id": "hpm:d477be3e-0f05-4ea8-840b-6891464671ed",
+      "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/zooz-zse50-siren-chime.json",
+      "name": "Zooz ZSE50 Siren & Chime",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "HUB_ACTION",
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Safety & Security",
+        "Tools & Utilities"
+      ]
+    },
+    {
       "author": "Neil Jackson",
       "category": "Convenience",
       "classification": "LAN",
@@ -28166,5 +28318,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-14T06:47:15Z"
+  "snapshotGenerated": "2026-11-15T06:51:49Z"
 }

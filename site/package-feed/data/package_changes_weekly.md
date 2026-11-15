@@ -1,9 +1,29 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-14T06:47:15Z`.
+Latest observation: `2026-11-15T06:51:49Z`.
 
-**88 package change(s):** added 10, broken 1, declared definitions changed 4, removed 36, restored 3, source location changed 9, updated 41
+**99 package change(s):** added 14, broken 1, declared definitions changed 2, removed 36, source location changed 7, updated 48
 
+- [iopool EcO Pool/Spa Monitor: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/iopool/packageManifest.json)
+- [Zooz ZSE50 Siren & Chime: added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/zooz-zse50-siren-chime.json)
+- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
+- [WiMeter Cloud Bridge Driver: updated.](https://raw.githubusercontent.com/aniva/hubitat01/master/WimeterDriver/packageManifest.json)
+- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
+- [Roku TV Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/roku/packageManifest.json)
+- [PC Sleep and Wake Controller: added.](https://raw.githubusercontent.com/aniva/hubitat01/master/PCSleepController/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [LG TV (Glasshouse): updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [HVAC Apps: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/packageManifest.json)
+- [GE/Jasco Enbrighten Switch & Dimmer (Multi): added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json)
+- [Evohome: updated.](https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json)
+- [Energy From Power: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
+- [Better Bathroom Fan Controller: added.](https://raw.githubusercontent.com/apwelsh/hubitat/master/bbfcon/packageManifest.json)
+- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
+- [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 - [sage doorbell echostar: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json)
 - [iris v1 button: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json)
 - [Zigbee Sonoff - generic relays: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json)
@@ -83,14 +103,5 @@ Latest observation: `2026-11-14T06:47:15Z`.
 - [HubiThings Replica [DEPRECATED]: updated.](https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubitat-packages/manifests/manifestHubiThings.json)
 - [Evohome: added.](https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json)
 - [Battery Monitor 2.0: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Battery%20Monitor%202.0/packageManifest.json)
-- [Unifi Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
-- [Tesla Drivers: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Samsung TV Remote (hubitrep): updated.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
-- [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
-- [Neptune Systems Apex: updated, changed source location, changed declared definitions, was restored.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
-- [MQTT Manager: added.](https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/packageManifest.json)
-- [Google Chromecast+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/google-chromecast-plus/packageManifest.json)
-- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
