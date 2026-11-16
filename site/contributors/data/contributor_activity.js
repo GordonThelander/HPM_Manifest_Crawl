@@ -4194,9 +4194,37 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:cda95eedc5f5df012d02",
           "packageName": "WaterGuru Integration",
           "summary": "WaterGuru Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6ef62489bb5f0224d17c041c",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:587d5ed3f73435384da2",
+          "packageName": "Scrypted Connect",
+          "summary": "Scrypted Connect: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:79ca4b1e68fd4a4a83ea7987",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
         }
       ],
-      "appCount": 11,
+      "appCount": 13,
       "categories": [
         {
           "name": "Control",
@@ -4208,19 +4236,19 @@ window.CONTRIBUTOR_ACTIVITY = {
         },
         {
           "name": "Integrations",
-          "packageCount": 1
+          "packageCount": 2
         },
         {
           "name": "Security",
           "packageCount": 4
         }
       ],
-      "currentPackageCount": 14,
+      "currentPackageCount": 15,
       "currentRank": 9,
-      "driverCount": 23,
+      "driverCount": 25,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 31,
+      "observedActivityCount": 33,
       "packages": [
         {
           "appCount": 2,
@@ -4314,6 +4342,19 @@ window.CONTRIBUTOR_ACTIVITY = {
           "version": "2.0.0"
         },
         {
+          "appCount": 2,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Scrypted",
+          "driverCount": 2,
+          "id": "manifest:587d5ed3f73435384da2",
+          "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json",
+          "name": "Scrypted Connect",
+          "publisherDate": "2026-11-09",
+          "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
+          "version": "0.3.0"
+        },
+        {
           "appCount": 0,
           "category": "Convenience",
           "communityUrl": "https://community.hubitat.com/t/release-sendgrid-email-notification-plugin/48691",
@@ -4400,9 +4441,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-10-18",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.36.0"
+          "version": "1.37.0"
         }
       ]
     },
@@ -6134,6 +6175,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:369cb29ec5aec5f3001d",
           "packageName": "OpenWeatherMap Multi-API Weather Driver",
           "summary": "OpenWeatherMap Multi-API Weather Driver: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9a85469015c608077710cd08",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:369cb29ec5aec5f3001d",
+          "packageName": "OpenWeatherMap Multi-API Weather Driver",
+          "summary": "OpenWeatherMap Multi-API Weather Driver: updated."
         }
       ],
       "appCount": 2,
@@ -6152,7 +6207,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:580a29544b06f5abedef",
       "name": "James Shimota",
-      "observedActivityCount": 27,
+      "observedActivityCount": 28,
       "packages": [
         {
           "appCount": 0,
@@ -6228,9 +6283,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:369cb29ec5aec5f3001d",
           "manifestUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json",
           "name": "OpenWeatherMap Multi-API Weather Driver",
-          "publisherDate": "2026-10-28",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/repository.json",
-          "version": "2.9.2"
+          "version": "2.9.5"
         },
         {
           "appCount": 0,
@@ -7263,6 +7318,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:8a4ad471-ce79-46aa-8d66-6ca1602c8b62",
           "packageName": "ThirdReality Zigbee Drivers",
           "summary": "ThirdReality Zigbee Drivers: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:338db74a99ad695d4f3ccc3c",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
+          "packageName": "Aqara Drivers",
+          "summary": "Aqara Drivers: updated."
         }
       ],
       "appCount": 6,
@@ -7285,7 +7354,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 15,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
-      "observedActivityCount": 43,
+      "observedActivityCount": 44,
       "packages": [
         {
           "appCount": 1,
@@ -7309,9 +7378,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json",
           "name": "Aqara Drivers",
-          "publisherDate": "2026-11-14",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "1.0.2"
+          "version": "1.0.3"
         },
         {
           "appCount": 1,
@@ -13935,6 +14004,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:38e3d4685eb4cf17e6c0",
           "packageName": "SignalBricks Telemetry",
           "summary": "SignalBricks Telemetry: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1ec9ff67c5486e1fd336e2e3",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: updated."
         }
       ],
       "appCount": 2,
@@ -13953,7 +14036,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
-      "observedActivityCount": 21,
+      "observedActivityCount": 22,
       "packages": [
         {
           "appCount": 0,
@@ -14016,9 +14099,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:38e3d4685eb4cf17e6c0",
           "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
           "name": "SignalBricks Telemetry",
-          "publisherDate": "2026-11-06",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.6.6"
+          "version": "1.7.0"
         }
       ]
     },
@@ -14416,6 +14499,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "packageName": "Sonos Advanced Controller",
           "summary": "Sonos Advanced Controller: updated, changed source location."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7ad815220dc9a675b78ad53f",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+          "packageName": "Sonos Advanced Controller",
+          "summary": "Sonos Advanced Controller: updated, changed source location."
         }
       ],
       "appCount": 4,
@@ -14446,7 +14544,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:2a573f71ae22762e7fa8",
       "name": "Daniel Winks",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 1,
@@ -14496,9 +14594,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
           "name": "Sonos Advanced Controller",
-          "publisherDate": "2026-11-14",
+          "publisherDate": "2026-11-16",
           "repositoryUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/repository.json",
-          "version": "0.16.0"
+          "version": "0.16.1"
         },
         {
           "appCount": 0,
@@ -14574,6 +14672,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:ad7df25c8a84ab03e8bf",
           "packageName": "LG TV (Glasshouse)",
           "summary": "LG TV (Glasshouse): updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1da8e1ea833e66ad03bee49b",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:ad7df25c8a84ab03e8bf",
+          "packageName": "LG TV (Glasshouse)",
+          "summary": "LG TV (Glasshouse): updated."
         }
       ],
       "appCount": 0,
@@ -14588,7 +14700,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 6,
       "id": "contributor:9421d6940089773abfd2",
       "name": "David LaPorte",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 0,
@@ -14625,9 +14737,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:ad7df25c8a84ab03e8bf",
           "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json",
           "name": "LG TV (Glasshouse)",
-          "publisherDate": "2026-11-14",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
-          "version": "0.9"
+          "version": "0.10"
         },
         {
           "appCount": 0,
@@ -25064,6 +25176,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b68bac4536397d5959031097",
+          "observedAt": "2026-11-16T06:51:34Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -25078,7 +25204,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 52,
+      "observedActivityCount": 53,
       "packages": [
         {
           "appCount": 2,
@@ -25089,9 +25215,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-11-14",
+          "publisherDate": "2026-11-15",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "5.1.10"
+          "version": "5.1.11"
         }
       ]
     },
@@ -28867,13 +28993,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 270,
-  "currentPackageCount": 942,
+  "currentPackageCount": 943,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 781,
-    "eventCount": 780,
+    "attributedEventCount": 789,
+    "eventCount": 788,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-11-15T06:51:49Z"
+    "lastObservedAt": "2026-11-16T06:51:34Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -28885,9 +29011,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 275,
-  "rankedPackageCount": 940,
+  "rankedPackageCount": 941,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-15T06:51:49Z",
+  "snapshotGenerated": "2026-11-16T06:51:34Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

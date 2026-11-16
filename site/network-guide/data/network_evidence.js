@@ -3,7 +3,7 @@ window.NETWORK_EVIDENCE = {
     "BOTH": 160,
     "CLOUD": 275,
     "INSUFFICIENT": 307,
-    "LAN": 200
+    "LAN": 201
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 942,
+  "packageCount": 943,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -19608,6 +19608,34 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Brian Wilson",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Virtual motion sensors for Scrypted NVR verified detections, plus per-camera and Home / Away muting of Scrypted's own notifications (requires a Scrypted bridge script)",
+      "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Scrypted",
+      "id": "manifest:587d5ed3f73435384da2",
+      "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json",
+      "name": "Scrypted Connect",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 4,
+        "urlLiteralCount": 6
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Monitoring",
+        "Motion Control",
+        "Safety & Security"
+      ]
+    },
+    {
       "author": "napalmcsr",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -21776,8 +21804,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [
           "HUB_ACTION",
-          "PARSE_LAN_MESSAGE",
-          "SEND_HUB_COMMAND"
+          "PARSE_LAN_MESSAGE"
         ],
         "sourceFilesAnalysed": 12,
         "urlLiteralCount": 91
@@ -25855,7 +25882,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -28318,5 +28345,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-15T06:51:49Z"
+  "snapshotGenerated": "2026-11-16T06:51:34Z"
 };

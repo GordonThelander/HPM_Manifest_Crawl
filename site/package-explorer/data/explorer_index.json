@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 942,
+    "HPM_PACKAGE": 943,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2647,
+  "recordCount": 2648,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -23287,7 +23287,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:84cc6306ea9fb6753631",
@@ -23382,7 +23382,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.2"
+      "version": "1.0.3"
     },
     {
       "author": "velkovb",
@@ -59797,7 +59797,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:19189e3cbf6a116276b0",
@@ -59879,7 +59879,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.9"
+      "version": "0.10"
     },
     {
       "author": "Sebastian YEPES FERNANDEZ",
@@ -63425,7 +63425,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -63507,7 +63507,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.10"
+      "version": "5.1.11"
     },
     {
       "author": "Justin Leonard",
@@ -71360,7 +71360,7 @@
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:474e77ebb325e9e80fa7",
@@ -71442,7 +71442,7 @@
         "Virtual",
         "Weather"
       ],
-      "version": "2.9.2"
+      "version": "2.9.5"
     },
     {
       "author": "Scottma61 (Original) / Aniva (Patch)",
@@ -81929,6 +81929,116 @@
       "version": null
     },
     {
+      "author": "Brian Wilson",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-09",
+      "definitions": [
+        {
+          "id": "definition:cc0c22edb699b01bc30a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Scrypted Connect",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/Scrypted/scrypted_connect-app.groovy"
+        },
+        {
+          "id": "definition:f2a6f470c39324bbae54",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Scrypted Connect Child - Motion Disabler",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/Scrypted/scrypted_connect-motion-disabler-child-app.groovy"
+        },
+        {
+          "id": "definition:accc1506f97f1128c614",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Scrypted Connect Camera",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/Scrypted/scrypted_connect-camera-driver.groovy"
+        },
+        {
+          "id": "definition:722c06f6ee9b6e6c1d95",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Scrypted Connect Hub",
+          "namespace": "brianwilson-hubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/refs/heads/master/Scrypted/scrypted_connect-hub-driver.groovy"
+        }
+      ],
+      "description": "Virtual motion sensors for Scrypted NVR verified detections, plus per-camera and Home / Away muting of Scrypted's own notifications (requires a Scrypted bridge script)",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:587d5ed3f73435384da2",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/bdwilson/hubitat/tree/master/Scrypted",
+        "manifest": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json",
+        "repository": "https://github.com/bdwilson/hubitat"
+      },
+      "name": "Scrypted Connect",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Monitoring",
+        "Motion Control",
+        "Safety & Security"
+      ],
+      "version": "0.3.0"
+    },
+    {
       "author": "napalmcsr",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -84919,7 +85029,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-06",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:ec844bf06d43a411ed84",
@@ -84999,7 +85109,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.6.6"
+      "version": "1.7.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -89085,103 +89195,103 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
-          "id": "definition:ee849bbb7c3b31194fc7",
+          "id": "definition:caeedcc9e447361c62bd",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:f04777db50b390356aa6",
+          "id": "definition:3ff88798547f2a38ac46",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Manager",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvAlarmManager.groovy"
         },
         {
-          "id": "definition:793e3792e50a7e7fb794",
+          "id": "definition:9d9ee5100579d8465f44",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Switch",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvAlarmSwitch.groovy"
         },
         {
-          "id": "definition:4f16597eaeea3b629a4a",
+          "id": "definition:50208e1d0c713241a503",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:cd6b99812d6deffc3b0c",
+          "id": "definition:d91ad43d953d7265a91c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:31c6f9102d5c169e4450",
+          "id": "definition:ea8126190c5906651cf5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:9ae65689e5c589fd85cb",
+          "id": "definition:59447ccbed5962b063fb",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:9e114e6d8771356f4167",
+          "id": "definition:20121978d47839c72462",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:09b0796356eef979add8",
+          "id": "definition:a9bf25e2fdb0384568bc",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Queue",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvQueue.groovy"
         },
         {
-          "id": "definition:8bc02085d6cdc1a6c524",
+          "id": "definition:e9aa5ee558dcae1aa87e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:261801d6cd11a86baac9",
+          "id": "definition:578697d3e0afab016007",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Sleep Timer",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSleepTimer.groovy"
         },
         {
-          "id": "definition:7365b1024363687c8cf7",
+          "id": "definition:8cd92f12ecc9d47d085f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.0/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -89277,7 +89387,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.16.0"
+      "version": "0.16.1"
     },
     {
       "author": "Schwark Satyavolu",
@@ -104315,7 +104425,7 @@
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-18",
+      "dateReleased": "2026-11-15",
       "definitions": [
         {
           "id": "definition:2a431cffb2406a42bf11",
@@ -104402,7 +104512,7 @@
       "tags": [
         "Appliances"
       ],
-      "version": "1.36.0"
+      "version": "1.37.0"
     },
     {
       "author": "Jake Lehner",
@@ -135541,5 +135651,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-15T06:51:49Z"
+  "snapshotGenerated": "2026-11-16T06:51:34Z"
 }

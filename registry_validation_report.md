@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-15T06:51:49Z`
+- Snapshot: `2026-11-16T06:51:34Z`
 - HPM repositories in master list: **228**
 - Repositories fetched successfully: **227**
-- Packages indexed: **942**
+- Packages indexed: **943**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -199,7 +199,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **841**
+Total packages not matched by any registry entry: **842**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -233,6 +233,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Botched1 | Haozee Zwave 700 Multisensor | Integrations | Multi Sensors | https://raw.githubusercontent.com/Botched1/Hubitat/master/packages/Haozee-Zwave-700-Multisensor.json |
 | Botched1 | Vivint CT200 Thermostat | Integrations | Climate Control | https://raw.githubusercontent.com/Botched1/Hubitat/master/packages/Vivint-CT200-Thermostat.json |
 | Brian Wilson (@brianwilson) | Camect Connect | Convenience | Motion Control, Monitoring, Safety & Security, LAN | https://raw.githubusercontent.com/bdwilson/hubitat/master/Camect/packageManifest.json |
+| Brian Wilson (@brianwilson) | Scrypted Connect | Integrations | Motion Control, Monitoring, Safety & Security, LAN | https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json |
 | Brian Wilson (@brianwilson) | WaterGuru Integration | Integrations | Pools & Spas, Temperature & Humidity | https://raw.githubusercontent.com/bdwilson/hubitat/master/WaterGuru/packageManifest.json |
 | CSteele | Air Quality from AirNow |  | Temperature & Humidity, Cloud | https://raw.githubusercontent.com/HubitatCommunity/AirQuality-AirNow/main/docs/AirQuality-AirNow.json |
 | CSteele | EtherRain |  | Irrigation, LAN, Timers, Valves, Water, Cloud | https://raw.githubusercontent.com/csteele-PD/Hubitat-public/master/EtherRain/packageManifest.json |
@@ -628,8 +629,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 841 |
-| G candidate subset | 393 |
+| G. Unrepresented packages | 842 |
+| G candidate subset | 394 |
 
 ## H. Enrichment summary
 
@@ -639,13 +640,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2371 |
-| Source URLs fetched | 2361 |
+| Distinct source URLs | 2375 |
+| Source URLs fetched | 2365 |
 | Source URLs failed | 10 |
-| Components attempted | 2386 |
-| Components fetched | 2376 |
-| Literal definitions verified | 2365 |
-| Components with observations | 2231 |
+| Components attempted | 2390 |
+| Components fetched | 2380 |
+| Literal definitions verified | 2369 |
+| Components with observations | 2235 |
 
 ### Official Hubitat documentation pass
 

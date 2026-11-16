@@ -1,9 +1,17 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-15T06:51:49Z`.
+Latest observation: `2026-11-16T06:51:34Z`.
 
-**99 package change(s):** added 14, broken 1, declared definitions changed 2, removed 36, source location changed 7, updated 48
+**107 package change(s):** added 15, broken 1, declared definitions changed 2, removed 36, source location changed 8, updated 55
 
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [Scrypted Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json)
+- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [LG TV (Glasshouse): updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
+- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
 - [iopool EcO Pool/Spa Monitor: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/iopool/packageManifest.json)
 - [Zooz ZSE50 Siren & Chime: added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/zooz-zse50-siren-chime.json)
 - [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
