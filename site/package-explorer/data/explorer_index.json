@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 943,
+    "HPM_PACKAGE": 970,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2648,
+  "recordCount": 2675,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22141,118 +22141,6 @@
       "version": "1.3.1"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-01-01",
-      "definitions": [
-        {
-          "id": "definition:6dd493b45b19c6285799",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "AmbientEcowittWeather",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.groovy"
-        },
-        {
-          "id": "definition:ab486e987a10d4e3e497",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
-        }
-      ],
-      "description": "Drivers for using the Ambient API, Ambient Local, and Ecowitt methods of getting weather station data",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
-        "repository": null
-      },
-      "name": "Ambient Ecowitt Weather",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": true,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "api.ambientweather.net",
-          "www.drdsnell.com"
-        ],
-        "reviewed": [
-          {
-            "dependencies": [
-              {
-                "class": "LOCAL_BRIDGE",
-                "name": "Ecowitt Gateway",
-                "runtimeCriticality": "RUNTIME",
-                "transport": "LAN_HTTP"
-              }
-            ],
-            "documentation": [],
-            "id": "ecowitt",
-            "name": "EcoWitt / Wittboy Integration",
-            "status": "VERIFIED_COMMUNITY"
-          }
-        ]
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cloud",
-        "LAN",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
-    },
-    {
       "author": "Kurt Sanders",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -24036,6 +23924,86 @@
       "tags": [
         "Pets & Animals"
       ],
+      "version": "1.0.0"
+    },
+    {
+      "author": "velkovb",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-16",
+      "definitions": [
+        {
+          "id": "definition:51cf0ee2853d49f38a41",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Aqara SJCGQ11LM Water Leak Sensor",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/sjcgq11lm/aqara-sjcgq11lm.groovy"
+        }
+      ],
+      "description": "Local Zigbee leak detection with wet and dry timestamps, battery telemetry, and offline monitoring.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:3557fc9e07b4ee9c743e",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/aqara/sjcgq11lm",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/sjcgq11lm/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "Aqara SJCGQ11LM Water Leak Sensor",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
       "version": "1.0.0"
     },
     {
@@ -26751,160 +26719,6 @@
       "version": "1.2.3"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-03-16",
-      "definitions": [
-        {
-          "id": "definition:4af578ce6f41071dd6a5",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkAPI.groovy"
-        },
-        {
-          "id": "definition:280ab53a6cf00a97c1c4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild.groovy"
-        },
-        {
-          "id": "definition:cb0f19946f3f94f82239",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-Camera",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Camera.groovy"
-        },
-        {
-          "id": "definition:c47736076eea05700d89",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-Doorbell",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Doorbell.groovy"
-        },
-        {
-          "id": "definition:4ff09ace3c627a3b6cc7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-Floodlight",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Floodlight.groovy"
-        },
-        {
-          "id": "definition:f79caccb0f2cdc4db795",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-MiniCamera",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-MiniCamera.groovy"
-        },
-        {
-          "id": "definition:5182d4ec5668003c6cfd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-Network",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Network.groovy"
-        },
-        {
-          "id": "definition:2e3a575ce1b95eaf4671",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-SyncModule",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-SyncModule.groovy"
-        },
-        {
-          "id": "definition:b3eab7ad915fd29d33e0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "BlinkChild-WiredFloodlight",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-WiredFloodlight.groovy"
-        }
-      ],
-      "description": "This is a set of drivers to use with the Blink API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "repository": null
-      },
-      "name": "Blink Drivers",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": true,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "api.oauth.blink.com",
-          "rest-prod.immedia-semi.com",
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cameras",
-        "Cloud",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ],
-      "version": null
-    },
-    {
       "author": "Simon Burke (sburke781)",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -28001,6 +27815,96 @@
         "Misc. Devices"
       ],
       "version": null
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2023-13-02",
+      "definitions": [
+        {
+          "id": "definition:0d416132fb60ab70af73",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "CentraLite Motion Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/CentraLite_motion_censor.grovy"
+        }
+      ],
+      "description": "CentraLite Motion Sensor with presence. CentraLite Model:3326-L,3325,3305,3325-S,3305-S (not for motionv4 motionv5)",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:0e158770d6872bbafab3",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "CentraLite Motion Detector",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Lights & Switches",
+        "Motion Control",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.1.4"
     },
     {
       "author": "James Shimota",
@@ -32416,6 +32320,93 @@
         "Lights & Switches"
       ],
       "version": "1.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2023-3-27",
+      "definitions": [
+        {
+          "id": "definition:8966d3395047dac93d64",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Dimable CT Bulb driver - Zigbee",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/dimable_ct_bulb_driver.groovy"
+        }
+      ],
+      "description": "Works with most dimable led and CT Bulbs",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:d7e63a62e9959c70884c",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Dimable CT Bulb driver - Zigbee",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "1.1.0"
     },
     {
       "author": "Robert Morris",
@@ -37784,101 +37775,6 @@
       "version": "2.0.0"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-01-01",
-      "definitions": [
-        {
-          "id": "definition:28cddde35677c00ae751",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "FireBoardChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoardChild.groovy"
-        },
-        {
-          "id": "definition:a715c1ee0a9fa98b4d0d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "FireBoardCloudAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoardCloudAPI.groovy"
-        }
-      ],
-      "description": "Drivers for integrating FireBoard devices using the FireBoard Cloud API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
-        "repository": null
-      },
-      "name": "FireBoard",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": true,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "fireboard.io",
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cloud",
-        "Monitoring",
-        "Temperature & Humidity"
-      ],
-      "version": null
-    },
-    {
       "author": "Jaime Botero",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -38226,6 +38122,89 @@
         "Health & Fitness"
       ],
       "version": null
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-11",
+      "definitions": [
+        {
+          "id": "definition:6e2e9d81ce367b7b2c9f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Frigidaire Window AC (Cloud)",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/frigidaire_2.0.groovy"
+        }
+      ],
+      "description": "The frigidaire 2.0 Thermostat Driver lets you control the Window AC unit. Installed as a thermostat.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:f8035a57788f978cd224",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Frigidaire 2.0 AC Thermostat",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Temperature & Humidity"
+      ],
+      "version": "1.0.3"
     },
     {
       "author": "Derek Osborn",
@@ -43380,94 +43359,6 @@
       "version": "1.0.2"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2025-10-19",
-      "definitions": [
-        {
-          "id": "definition:7661664ec77389324cf1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Grizzl-ECharger",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-ECharger.groovy"
-        }
-      ],
-      "description": "Monitor Grizzl-E charger.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
-        "repository": null
-      },
-      "name": "Grizzl-ECharger",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Vehicles & Transportation"
-      ],
-      "version": "1.0.0"
-    },
-    {
       "author": "Mike Bishop",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -48207,6 +48098,92 @@
       "version": "1.01"
     },
     {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-09-25",
+      "definitions": [
+        {
+          "id": "definition:d6ff733230befb5c2699",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "HTTP Presence Sensor with schedule",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/http_presence_sensor.groovy"
+        }
+      ],
+      "description": "Improved HTTP Presence sensor with  adjustable chron schedule. detects 404 file not found and 401 password, for IP cameras asking for a password",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:868f025a91532259bf37",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/http_presence_sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "HTTP Presence Sensor with schedule",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "LAN",
+        "Misc. Devices",
+        "Monitoring",
+        "Presence & Location",
+        "Tools & Utilities"
+      ],
+      "version": "2.4.1"
+    },
+    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -48797,8 +48774,16 @@
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-30",
+      "dateReleased": "2026-11-16",
       "definitions": [
+        {
+          "id": "definition:5d00dd5e8c6c25da209e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Callback Device",
+          "namespace": "thebearmay",
+          "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/refs/heads/main/callbackDev.groovy"
+        },
         {
           "id": "definition:2a04b704cac3621f018b",
           "identityEvidence": "SOURCE_IDENTITY",
@@ -48873,7 +48858,7 @@
       "tags": [
         "Misc. Devices"
       ],
-      "version": "2.0.12"
+      "version": "2.0.13"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -57407,6 +57392,1337 @@
       "version": "1.03"
     },
     {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2023-1-11",
+      "definitions": [
+        {
+          "id": "definition:dbfeda18d91d1ac7d3f9",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "CentraLite Samjin Smartthings water Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/centralite-water-sensor.groovy"
+        }
+      ],
+      "description": "Improved Iris CentraLite Samjin Smartthings water Sensor with Presence,Tamper for Centralite and better drop out detection,battery support",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:3cf17f2562593e85cdfa",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/centralite-water-sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris CentraLite Samjin Smartthings water Sensor",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Safety & Security",
+        "Water",
+        "Zigbee"
+      ],
+      "version": "1.2.7"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-3-12",
+      "definitions": [
+        {
+          "id": "definition:23db6e81d8ec00fd9991",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris Utilitech Siren",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_utilitech_siren_zwave.groovy"
+        }
+      ],
+      "description": "Verifies state after turn and off. No more refusing to turn off,Presence,Auto dead bat detection, Auto time off timmer that works.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:c84626f58936b4b2029c",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-utilitech-siren.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris Utilitech Siren driver",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "products.z-wavealliance.org",
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Misc. Devices",
+        "Safety & Security",
+        "ZWave"
+      ],
+      "version": "1.1.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-14-11",
+      "definitions": [
+        {
+          "id": "definition:32ec2bec4afde7405ec0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Button",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-button.grovvy"
+        }
+      ],
+      "description": "IRIS v1 button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts. pressed,held,held longer, button 1 pressed button 2 held button 3 held longer",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:01c04d48ceec732a8f0d",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "iris v1 button",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.2.2"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:6545c2a68e3b8124ecf3",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Contact Sensor-custom",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris%20v1%20sensor-custom.groovy"
+        }
+      ],
+      "description": "Iris v1 Contact Sensor custom. With presence and proper battery support. No more negative battery readings. Includes option to use as a mains detection swith with a relay.Note relay must have time delay so it renergised after hub has powered up.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:8a8e0bc9aaf988d740d9",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-contact.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Contact Sensor-custom",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Doors & Windows",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "3.3.7"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-11-23",
+      "definitions": [
+        {
+          "id": "definition:f3204bab59679c4ab51f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 KeyFob Advanced",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v1-keyfob-custom.groovy"
+        }
+      ],
+      "description": "Rewritten Iris v1 kefob. Supports holdable buttons , presence recovery no more false no presence toggles. and adjustable timeout. New battery support no negative voltage readings. Also supports custom mode AWAY/HOME",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:b02b11578799450c019e",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-keyfob.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 keyfob custom",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.3.2"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2024-15-02",
+      "definitions": [
+        {
+          "id": "definition:15a983e20066f823606c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Keypad",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v1_keypad.groovy"
+        }
+      ],
+      "description": "IRIS v1 keypad driver.Provides arm disarm and button remapping. 15 digit pins supported. Keypad supports 13 diffrent chimes under play command. Option for Silent arming. Many setup options, Info,debug,trace logs. Use as chimes or alarms, Bad pin can set tamper, Unlike newer keypads it can cancel a safety alarm if the alarm is disarmed. Supports arming with or without a valid PIN. Supports Remapping ON PART # * buttons as armaway armhome armnight as you see fit.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:6042178cc7d0f666b5e9",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-iris-v1-keypad-driver/80247",
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-v1-keyboard-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1keypad.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Keypad",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Lights & Switches",
+        "Locks",
+        "Misc. Devices",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "7.0.3"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2024-22-05",
+      "definitions": [
+        {
+          "id": "definition:9191961f549e437b5c64",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Motion Detector Custom",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Iris_v1_Motion_Sensor.groovy"
+        }
+      ],
+      "description": "Iris v1 Motion Sensor. With presence and proper battery support. No more negative battery readings",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:6fb2ece627bb27f3fc2b",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_motion_sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Motion Detector Custom",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Lights & Switches",
+        "Motion Control",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "2.5.2"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:291839085f4656cd507e",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Repeator Zigbe",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/iris_alertme_repeator_zigbe.groovy"
+        }
+      ],
+      "description": "Iris v1 extender driver. Supports battery and presence. Zigbee side",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:64e0a477fc2b8e0c6fcf",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v1_repeator_zigbee.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Repeator Zigbe",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Repeaters & Extenders",
+        "Zigbee"
+      ],
+      "version": "2.0.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:42a15fdb1bd3bca12835",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Senior Care Pendant",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://github.com/tmastersmart/hubitat-code/raw/main/Iris_v1_Senior_Care_Pendant.groovy"
+        }
+      ],
+      "description": "Simulates IRIS v1 pay care level system. Pressing button triggers alarm on dashboard and beeps red until dashboard alarm is turned off this notifies pendant holder by beeping green. Requires yuo add it to dashboard as a switch and as presence. Option to use as a straight Keyfob",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:89ffacc3e3d6084e290b",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Iris_v1_Senior_Care_Pendant.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Senior Care Pendant",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Monitoring",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "2.2.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-09-03",
+      "definitions": [
+        {
+          "id": "definition:fd36e3e5e2ec652c2520",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Smart Plug custom",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug.groovy"
+        }
+      ],
+      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence. Old version for compatability same as no alarm",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:a5eb6db7aeaff36b91ef",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Smart Plug custom",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Energy Monitoring",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "4.2.5"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2025-25-10",
+      "definitions": [
+        {
+          "id": "definition:32a7c0bfc708fc2b19dd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Smart Plug custom no alarm",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug2.groovy"
+        }
+      ],
+      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:3bd0f4737937fc714714",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug2.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Smart Plug custom No alarm",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Energy Monitoring",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "4.2.5"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-09-03",
+      "definitions": [
+        {
+          "id": "definition:ac1768908b74d96729cd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v1 Smart Plug custom with alarm",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_alertme_smartplug3.groovy"
+        }
+      ],
+      "description": "Iris v1 Smart Plug driver With power monitoring watts and kwh, presence and support for using as a alarm or strobe using low cost strobes and sirens",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:c2b35d5a3c5200f1fc97",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/iris-alertme-smart-plug-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/irisv1-smart-plug3.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v1 Smart Plug custom With Alarm",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Energy Monitoring",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "4.2.5"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:d279bc17f5d0209e72cd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v2 Contact Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-contact.groovy"
+        }
+      ],
+      "description": "Iris v2 contact sensor with presence. Automatic bad battery detection presence, iMagic by GreatStar 1116-S & CentraLite 3320-L",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:72f88b33c6ce20d2e239",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-contact.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v2 Contact Sensor",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Doors & Windows",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.8.1"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:9f523fe0a34c304890bd",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v2 Motion Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris-v2-motion-sensor.groovy"
+        }
+      ],
+      "description": "Iris v2 Motion Sensor with presence. CentraLite Model:3326-L",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:8deb2f80f69af417372f",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v2-motion-sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v2 Motion Detector",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Lights & Switches",
+        "Motion Control",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.1.5"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-09-13",
+      "definitions": [
+        {
+          "id": "definition:2b647bca80cca2541161",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Iris v2 - v3 Keypad",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/iris_v2-v3_keypad.groovy"
+        }
+      ],
+      "description": "Driver supports model# 1112-S and model# 3405-L iris keypads v2 and v3",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:fdad5c3b97cf10f30b64",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris_v2_v3_keypad.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Iris v2 v3 Keypad",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Lights & Switches",
+        "Locks",
+        "Misc. Devices",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.7.0"
+    },
+    {
       "author": "David Kilgore",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -58655,6 +59971,96 @@
         "Notifications"
       ],
       "version": "1.0.10"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2024-09-29",
+      "definitions": [
+        {
+          "id": "definition:cd47a5fd4baa7ab525a4",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "LeakSmart Water Valve",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/leaksmart-water-valve.groovy"
+        }
+      ],
+      "description": "Improved LeakSmart driver (Zigbee) better battery support, mains detection ,better logging ,Stuck valve detection, fix for valves with broken mains detection firmware, Works with IRIS version also,Supports contact,switch & wet dry with info debug and trace logs",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:a9b18182109f9815fc46",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/LeakSmart_Water_Valve.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "LeakSmart Water Valve",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Energy Monitoring",
+        "Misc. Devices",
+        "Monitoring",
+        "Safety & Security",
+        "Valves",
+        "Water",
+        "Zigbee"
+      ],
+      "version": "3.4.0"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -61851,6 +63257,178 @@
       "version": "1.4.2"
     },
     {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-24-09",
+      "definitions": [
+        {
+          "id": "definition:5cb687525d05d3a56186",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Lock Button Monitor V1",
+          "namespace": "tmaster",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
+        }
+      ],
+      "description": "Lock button monitor. works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:f6f02791da1a6ee62a2a",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
+        "documentation": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Lock Button Monitor",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Locks",
+        "Misc. Devices",
+        "Monitoring",
+        "Safety & Security"
+      ],
+      "version": "1.3.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-24-09",
+      "definitions": [
+        {
+          "id": "definition:3fdcaad9fc4d9a58c376",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Lock Button Monitor V1",
+          "namespace": "tmaster",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/lock%20button%20monitor.groovy"
+        }
+      ],
+      "description": "Lock button monitor2. for second lock, works with most Schlage and Vale locks. Create a virtual button and then set this app to that button and your lock. The buttons will be assigned the outside lock button inside knob and unlock codes. This is a beta version it only supports one lock.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:aea83b9efc9b358fd41d",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/lock_button_monitor2.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Lock Button Monitor2",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Locks",
+        "Misc. Devices",
+        "Monitoring",
+        "Safety & Security"
+      ],
+      "version": "1.3.0"
+    },
+    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -63425,7 +65003,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-15",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -63507,7 +65085,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.1.11"
+      "version": "5.1.12"
     },
     {
       "author": "Justin Leonard",
@@ -65001,7 +66579,7 @@
       "author": "Ephrayim (evdev)",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-13",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
           "id": "definition:b65f37a8a4f847b4d335",
@@ -65094,7 +66672,7 @@
         "Multimedia",
         "Temperature & Humidity"
       ],
-      "version": "0.4.78"
+      "version": "0.4.79"
     },
     {
       "author": "David Manuel",
@@ -65316,6 +66894,86 @@
         "Water"
       ],
       "version": "1.0.8"
+    },
+    {
+      "author": "velkovb",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-16",
+      "definitions": [
+        {
+          "id": "definition:23632fb73269738e49c2",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "MOES Star Feather Zigbee Switch",
+          "namespace": "velkovb",
+          "sourceUrl": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/moes/star-feather/moes-star-feather.groovy"
+        }
+      ],
+      "description": "Local Zigbee driver for 1–4 gang Star Feather switches with relay, scene, lighting and timer controls.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:776109b98e263878b79e",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/velkovb/hubitat-drivers/tree/main/drivers/moes/star-feather",
+        "manifest": "https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/moes/star-feather/packageManifest.json",
+        "repository": "https://github.com/velkovb/hubitat-drivers"
+      },
+      "name": "MOES Star Feather Zigbee Switch",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [],
+      "version": "0.1.0"
     },
     {
       "author": "Martin Kura, kkossev",
@@ -68182,7 +69840,7 @@
       "author": "Craig Dewar",
       "category": "Climate Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-13",
+      "dateReleased": "2026-11-17",
       "definitions": [
         {
           "id": "definition:aa875edb7453bed3c0d6",
@@ -68283,7 +69941,7 @@
         "Climate Control",
         "Thermostat"
       ],
-      "version": "2.6.1"
+      "version": "2.6.2"
     },
     {
       "author": "jlslate",
@@ -68662,337 +70320,6 @@
         "Pets & Animals"
       ],
       "version": "1.0.1"
-    },
-    {
-      "author": "Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-06",
-      "definitions": [
-        {
-          "id": "definition:963ece918b931f51ff90",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-AFS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AFS.groovy"
-        },
-        {
-          "id": "definition:0f852756f9dd04ce531f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-AI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AI.groovy"
-        },
-        {
-          "id": "definition:06a4cc1df0b0b7602516",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ASM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ASM.groovy"
-        },
-        {
-          "id": "definition:417d984a7f21d4e1a0c3",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Apex2016",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Apex2016.groovy"
-        },
-        {
-          "id": "definition:0e66d78d9c6b1d4a9321",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3.groovy"
-        },
-        {
-          "id": "definition:6acf04ff78b80c2436b7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3Jr",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Jr.groovy"
-        },
-        {
-          "id": "definition:eb545b3b34c2a89b9fc0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexA3Pro",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Pro.groovy"
-        },
-        {
-          "id": "definition:6238332173afe6f0bdf7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexClassic",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexClassic.groovy"
-        },
-        {
-          "id": "definition:c5642a7f775f44e1fde6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexEL",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexEL.groovy"
-        },
-        {
-          "id": "definition:e8b58ae01633b305fe75",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-ApexJr",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexJr.groovy"
-        },
-        {
-          "id": "definition:54bf5572f2ece0b9f70c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-COR",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-COR.groovy"
-        },
-        {
-          "id": "definition:5f9cb582dca6260444ff",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-DOS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-DOS.groovy"
-        },
-        {
-          "id": "definition:16ff596739ee3a671bdf",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB4",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB4.groovy"
-        },
-        {
-          "id": "definition:04caf22b3e280708582b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB8.groovy"
-        },
-        {
-          "id": "definition:628e2415e1c5d77ff56f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-EB832",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB832.groovy"
-        },
-        {
-          "id": "definition:a962b40b748368205934",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-FMM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-FMM.groovy"
-        },
-        {
-          "id": "definition:8e5290ea3540ea6ff61a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM1",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM1.groovy"
-        },
-        {
-          "id": "definition:5814f4f54a45d627702f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM2",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM2.groovy"
-        },
-        {
-          "id": "definition:4c71d2cc525456259a08",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-PM3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
-        },
-        {
-          "id": "definition:4cfec3697c398f61b314",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Radion",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Radion.groovy"
-        },
-        {
-          "id": "definition:1657ab1b8f09d620ddab",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-SKY",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-SKY.groovy"
-        },
-        {
-          "id": "definition:a4d8ece6184750524815",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Sicce",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Sicce.groovy"
-        },
-        {
-          "id": "definition:bb98eb4fd7cf8d12c84d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Trident",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Trident.groovy"
-        },
-        {
-          "id": "definition:1b2e7d13b920397dedf4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-TridentNP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-TridentNP.groovy"
-        },
-        {
-          "id": "definition:574981863ddd6219c541",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-VDM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-VDM.groovy"
-        },
-        {
-          "id": "definition:a94fd2a927416b682ad4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Vectra",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vectra.groovy"
-        },
-        {
-          "id": "definition:06ed17125859126dcabc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Virtual",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Virtual.groovy"
-        },
-        {
-          "id": "definition:003537b8d82f0eb6120f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-Vortech",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vortech.groovy"
-        },
-        {
-          "id": "definition:aa19a3868b3e9543a9b8",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NSChild-WAV",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-WAV.groovy"
-        },
-        {
-          "id": "definition:62d5c7cb6b4ae9ee6ead",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NeptuneSystemsApex",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApex.groovy"
-        },
-        {
-          "id": "definition:e028a690597bc73e47c0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "NeptuneSystemsApexChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexChild.groovy"
-        }
-      ],
-      "description": "Drivers for monitoring a Neptune Systems Apex aquarium controller",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MISMATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "ATTENTION"
-      },
-      "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "repository": null
-      },
-      "name": "Neptune Systems Apex",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "LAN",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Monitoring",
-        "Pets & Animals",
-        "Temperature & Humidity",
-        "Valves",
-        "Water"
-      ],
-      "version": null
     },
     {
       "author": "Schwark Satyavolu",
@@ -69825,93 +71152,6 @@
         "Safety & Security"
       ],
       "version": "1.0.0"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-01-01",
-      "definitions": [
-        {
-          "id": "definition:8b92520644393a8eed3c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "Neurio",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.groovy"
-        }
-      ],
-      "description": "Driver for getting data directly from a Neurio energy monitor",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
-        "repository": null
-      },
-      "name": "Neurio",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring"
-      ],
-      "version": null
     },
     {
       "author": "waterboysh",
@@ -75519,6 +76759,95 @@
       "version": "1.2"
     },
     {
+      "author": "TheMaster",
+      "category": "Utility",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-07-23",
+      "definitions": [
+        {
+          "id": "definition:7418569c875d8daa456c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Pump Scheduler",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/pump_scheduler.groovy"
+        }
+      ],
+      "description": "Smart scheduler for pool pumps, spa pumps, septic aerators, drainage pumps, and other motorized equipment. Supports daily runtime targets, maximum cycle length, cooldown periods, sunrise/sunset scheduling, monitoring, and automatic recovery after hub reboots or app updates.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:c6cb3e6d30261b6c9482",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/pump-scheduler/165333",
+        "documentation": "https://www.winnfreenet.com/wp/2026/07/pump-scheduler-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/pump_scheduler.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Pump Scheduler",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "s3.amazonaws.com",
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Pools & Spas",
+        "Timers",
+        "Tools & Utilities",
+        "Water"
+      ],
+      "version": "2.0.7"
+    },
+    {
       "author": "Barry A. Burke",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -76613,6 +77942,95 @@
         "Irrigation"
       ],
       "version": "3.2.1"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:d77d27d79b393a13df43",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Radio Thermostat Zwave",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/radio_thermostat_zwave.groovy"
+        }
+      ],
+      "description": "The Radio Thermostat Driver for most any Radio Thermostat. (ZWAVE) CT100,CT101,CT30,CT32 and more. Polling schedule and many extra options, Improved logging to detect errors info,debug,trace. Many manual options to set up device other drivers dont have. Option to use only heat or cool. Prevents dashboard getting out of sync with thermostat. If you have a RT you know all the problems other drivers have. This driver will fix your problems. Writen for my thermostats because the other drivers just did not work for me.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:dc5e339ffbe7d9a9e24c",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
+        "documentation": "http://www.winnfreenet.com/wp/2022/08/radio-thermostat-zwave-hubitat-driver-ct101-ct30/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/radio_thermostat_driver.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Radio Thermostat Zwave",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "products.z-wavealliance.org",
+          "www.manualslib.com",
+          "www.opensmarthouse.org",
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Temperature & Humidity",
+        "ZWave"
+      ],
+      "version": "5.9.0"
     },
     {
       "author": "David LaPorte",
@@ -78360,10 +79778,124 @@
       "version": "0.3.2"
     },
     {
+      "author": "Ephrayim (evdev)",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-16",
+      "definitions": [
+        {
+          "id": "definition:4ef8490079fb10a0f483",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Resideo Thermostats Integration",
+          "namespace": "resideoHubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-resideo/v0.1.12/apps/resideo-integration.groovy"
+        },
+        {
+          "id": "definition:6de17bdbeb3d72df2454",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Resideo Connection",
+          "namespace": "resideoHubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-resideo/v0.1.12/drivers/resideo-connection.groovy"
+        },
+        {
+          "id": "definition:88c88be25cf3336baa16",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Resideo Room Sensor",
+          "namespace": "resideoHubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-resideo/v0.1.12/drivers/resideo-room-sensor.groovy"
+        },
+        {
+          "id": "definition:0a287307fe7c6ff3b372",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Resideo Thermostat",
+          "namespace": "resideoHubitat",
+          "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-resideo/v0.1.12/drivers/resideo-thermostat.groovy"
+        }
+      ],
+      "description": "First Alert thermostat and room-sensor integration running directly on Hubitat, with cloud authentication, push updates and polling fallback.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:e8abccd2-7957-5651-8005-843ba39d4cb9",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/evdev/hubitat-resideo/blob/main/INSTALL.md",
+        "manifest": "https://raw.githubusercontent.com/evdev/hubitat-resideo/main/packageManifest.json",
+        "repository": "https://github.com/evdev/hubitat-resideo"
+      },
+      "name": "Resideo Thermostats Integration",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": true,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "api.ha.resideo.com",
+          "login.resideo.com",
+          "myid.resideo.com",
+          "resideo-prod.auth0.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Cloud",
+        "Temperature & Humidity"
+      ],
+      "version": "0.1.12"
+    },
+    {
       "author": "Albert Mulder",
       "category": "Notifications",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-26",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
           "id": "definition:2118d4ced6381b77c197",
@@ -78771,6 +80303,93 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "2.3"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2023-1-3",
+      "definitions": [
+        {
+          "id": "definition:47ef6b51875b7ce9e656",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "RGBW CT Bulbs - Zigbee",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/eWeLight-RGBW-Bulbs.groovy"
+        }
+      ],
+      "description": "Works with eWeLight,Seedan and other RGBW bulbs,ZB-CL01. May work with others provides presence and checkin monitoring",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:37e10e051840017da9d6",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/eWeLight-RGBW-Bulbs.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "RGBW CT Bulbs - Zigbee",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "1.1.0"
     },
     {
       "author": "brossow",
@@ -79970,7 +81589,7 @@
       "author": "jdthomas24",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-13",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
           "id": "definition:4d11cbd8fa19379a2193",
@@ -80066,7 +81685,7 @@
         "Appliances",
         "Cleaning"
       ],
-      "version": "1.0.1"
+      "version": "1.0.3"
     },
     {
       "author": "Bloodtick Jones",
@@ -80831,6 +82450,182 @@
         "Tools & Utilities"
       ],
       "version": "1.0.2"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-25-09",
+      "definitions": [
+        {
+          "id": "definition:8a7e81cd606d7a1c2ff1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sage Doorbell echostar sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_doorbell_echostar.groovy"
+        }
+      ],
+      "description": "Doorbell driver. Detect dead bat with presence detection,  And support debug,trace logs.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:c7a0c0a147e60e1ca24a",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+        "documentation": "https://community.hubitat.com/t/release-sage-doorbell-false-triggers-with-last-update/101697",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "sage doorbell echostar",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "2.8.7"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-10-28",
+      "definitions": [
+        {
+          "id": "definition:0153b55424e0fd717931",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Sage light switch echostar",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/sage_light_switch.groovy"
+        }
+      ],
+      "description": "Sage Light Switch driver. With presence and virtual switch,Button support and simulated battery value",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:a4f9d3575778e4a5b74f",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage-light-switch.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Sage light switch echostar",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "2.8.4"
     },
     {
       "author": "Aaron Ward",
@@ -85029,7 +86824,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-15",
+      "dateReleased": "2026-11-16",
       "definitions": [
         {
           "id": "definition:ec844bf06d43a411ed84",
@@ -85040,7 +86835,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/app.groovy"
         }
       ],
-      "description": "Sends read-only lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed codes.",
+      "description": "Sends lock, contact, temperature, humidity and battery events to SignalBricks; telemetry doesn't send lock PINs unless the off-by-default \"Include door codes\" setting is on (SignalBricks then keeps only a keyed hash). Optional, off-by-default lock code management for admin and managed codes, and lock and device control for the devices you select.",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -85109,7 +86904,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.7.0"
+      "version": "1.9.0"
     },
     {
       "author": "Krassimir Kossev",
@@ -87061,7 +88856,7 @@
       "author": "craigde",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-14",
+      "dateReleased": "2026-11-17",
       "definitions": [
         {
           "id": "definition:8a35e1fb27717cd63d06",
@@ -87158,6 +88953,14 @@
           "name": "SmartHQ Refrigerator",
           "namespace": "craigde",
           "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_refrigerator"
+        },
+        {
+          "id": "definition:0ecb6fa7ecd938e1e4f1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "SmartHQ Toaster Oven",
+          "namespace": "craigde",
+          "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_toasterOven"
         }
       ],
       "description": "Integration for GE SmartHQ appliances including refrigerators, ovens, dishwashers, laundry, microwaves, hoods, ice makers, portable ACs, and home water filters. Real-time WebSocket updates via the Brillion cloud API.",
@@ -87244,7 +89047,7 @@
         "Appliances",
         "Cloud"
       ],
-      "version": "1.0.13"
+      "version": "1.0.15"
     },
     {
       "author": "Markus",
@@ -87417,6 +89220,183 @@
       "version": "0.5.0"
     },
     {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-09-08",
+      "definitions": [
+        {
+          "id": "definition:487296543eb1ef74ee66",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "SmartThings Arrival Sensor Chime V2",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings-Arrival-Sensor-hubitat.groovy"
+        }
+      ],
+      "description": "SmartThings arrival sensor v2 with adjustable chimes. Can play chimes of diffrent legenths.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:3ef5d41ed8bb11fe38e3",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/SmartThings-Arrival-Sensor-hubitat.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "SmartThings Arrival Sensor Chime V2",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.7.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2023-13-02",
+      "definitions": [
+        {
+          "id": "definition:7c29b502b7e90987a723",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "SmartThings Motion Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/SmartThings_motion_sensor.groovy"
+        }
+      ],
+      "description": "SmartThings Motion Sensor with presence. Model:motionv4,motionv5 (Not for Centralite)",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:f33248a64c90dad205d0",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings_motion_driver.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "SmartThings Motion Detector",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Lights & Switches",
+        "Motion Control",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.0.4"
+    },
+    {
       "author": "jdthomas24",
       "category": "Drivers",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -87498,6 +89478,182 @@
         "Zigbee"
       ],
       "version": "1.8.2"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:fc4405aee0858cafa371",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Smartthings multi Sensor V3 (custom)",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-multiswitch-v3-samjin.groovy"
+        }
+      ],
+      "description": "Smartthings multiswitch v3 by Samjin. Fixes bad battery reports autodetect dead battery,presence",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:66b765ceeb97979ef87f",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-multiswitch-v3.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Smartthings multi Sensor V3 (custom)",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Doors & Windows",
+        "Presence & Location",
+        "Safety & Security",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "1.4.1"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-14-11",
+      "definitions": [
+        {
+          "id": "definition:6ebc2fbfe1b04fb037a5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Smartthings Samjin button",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/smartthings-samjin-button.groovy"
+        }
+      ],
+      "description": "Smartthings Samjin button with improved battery reports and Presence. Auto dead bat detection. 3 Button support for easer scripts",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:2c7375a08a62e6940309",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/smartthings-samjin-button.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Smartthings Samjin button",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Buttons",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.1.4"
     },
     {
       "author": "Arn Burkhoff",
@@ -89195,103 +91351,103 @@
       "author": "Daniel Winks",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-16",
+      "dateReleased": "2026-11-17",
       "definitions": [
         {
-          "id": "definition:caeedcc9e447361c62bd",
+          "id": "definition:e52096e8cb8698e6ce73",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:3ff88798547f2a38ac46",
+          "id": "definition:8a5a19e00cf1925ffd69",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Manager",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvAlarmManager.groovy"
         },
         {
-          "id": "definition:9d9ee5100579d8465f44",
+          "id": "definition:c25001b7261fbac9554f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Switch",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvAlarmSwitch.groovy"
         },
         {
-          "id": "definition:50208e1d0c713241a503",
+          "id": "definition:b497e243acc72b123645",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:d91ad43d953d7265a91c",
+          "id": "definition:68f67cb1f0969ccf49b9",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:ea8126190c5906651cf5",
+          "id": "definition:b7eaa725ad0ca1c83c72",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:59447ccbed5962b063fb",
+          "id": "definition:06f8f8ab19b535c8ce8b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:20121978d47839c72462",
+          "id": "definition:8452e8e9d182f7549a35",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:a9bf25e2fdb0384568bc",
+          "id": "definition:04281c221908fd0bf91f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Queue",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvQueue.groovy"
         },
         {
-          "id": "definition:e9aa5ee558dcae1aa87e",
+          "id": "definition:b39ee74cb3eabfa5aa3c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:578697d3e0afab016007",
+          "id": "definition:488707d8737415866620",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Sleep Timer",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvSleepTimer.groovy"
         },
         {
-          "id": "definition:8cd92f12ecc9d47d085f",
+          "id": "definition:b0913b9c8ceab3f4cbd7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.16.1/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.17.1/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -89387,7 +91543,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.16.1"
+      "version": "0.17.1"
     },
     {
       "author": "Schwark Satyavolu",
@@ -92717,100 +94873,6 @@
       "version": "1.8"
     },
     {
-      "author": "Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-06",
-      "definitions": [
-        {
-          "id": "definition:d0965970401430575a83",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "TeslaChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaChild.groovy"
-        },
-        {
-          "id": "definition:554b37c9ec64b8998ad6",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "TeslaDriver",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaDriver.groovy"
-        }
-      ],
-      "description": "Drivers for monitoring a Tesla Powerwall",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
-        "repository": null
-      },
-      "name": "Tesla Drivers",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Monitoring"
-      ],
-      "version": null
-    },
-    {
       "author": "DarwinsDen",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -93560,6 +95622,95 @@
       "version": "1.0.5"
     },
     {
+      "author": "TheMaster",
+      "category": "Security",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2024-27-12",
+      "definitions": [
+        {
+          "id": "definition:6cfad7f65b992c2bdc5c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Third Reality Contact Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-contact-sensor.groovy"
+        }
+      ],
+      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:d35f611042d56d15cd59",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-contact-sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Third Reality Contact Sensor",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Doors & Windows",
+        "Lights & Switches",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.2.4"
+    },
+    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -93698,6 +95849,95 @@
       "version": "1.0.18"
     },
     {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-22-09",
+      "definitions": [
+        {
+          "id": "definition:dd7c20d286ff1b4b7df0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Third Reality Motion Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-motion-sensor.groovy"
+        }
+      ],
+      "description": "Improved Third Reality Motion Sensor with Presence better drop out detection,battery support",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:0ee2a3c99bcc63465bf4",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-motion-sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Third Reality Motion Sensor",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Lights & Switches",
+        "Motion Control",
+        "Presence & Location",
+        "Safety & Security",
+        "Zigbee"
+      ],
+      "version": "1.2.3"
+    },
+    {
       "author": "Daniel Winks",
       "category": "Window Coverings",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -93779,6 +96019,95 @@
         "Zigbee"
       ],
       "version": "1.0.0"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-12-07",
+      "definitions": [
+        {
+          "id": "definition:41385075e64638b5a902",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Third Reality water Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/third-reality-water-sensor.groovy"
+        }
+      ],
+      "description": "Improved Third Reality Water Sensor with Presence better drop out detection,battery support",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:9f0e530e1ee5b8ff9336",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/third-reality-water-sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Third Reality Water Sensor",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Monitoring",
+        "Presence & Location",
+        "Safety & Security",
+        "Water",
+        "Zigbee"
+      ],
+      "version": "1.2.4"
     },
     {
       "author": "Jonathan Bradshaw",
@@ -97785,478 +100114,6 @@
       "version": "1.0.2"
     },
     {
-      "author": "Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2021-03-07",
-      "definitions": [
-        {
-          "id": "definition:3297d67c2c47255c7817",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkAPI.groovy"
-        },
-        {
-          "id": "definition:e24ad6ed3ff3e58a93a0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild.groovy"
-        },
-        {
-          "id": "definition:6d14d4dbcafd839b1a2d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-ACIW",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ACIW.groovy"
-        },
-        {
-          "id": "definition:53ba0700de6720794fed",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-AP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-AP.groovy"
-        },
-        {
-          "id": "definition:82cf4848b01c85b4e129",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-BasicAP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-BasicAP.groovy"
-        },
-        {
-          "id": "definition:8be17ae7284d7d59dfcd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-CGF",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-CGF.groovy"
-        },
-        {
-          "id": "definition:22d989e0bdcc62ad5c05",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-ClientCheck",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ClientCheck.groovy"
-        },
-        {
-          "id": "definition:6c78f6315b30afcb7b5a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-EAP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-EAP.groovy"
-        },
-        {
-          "id": "definition:027e4e1bd7c82e01dffc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-Plug",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Plug.groovy"
-        },
-        {
-          "id": "definition:9f4aab1e975f7884c681",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-Presence",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Presence.groovy"
-        },
-        {
-          "id": "definition:b58e75dc23c4a5bb3333",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-RPS",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-RPS.groovy"
-        },
-        {
-          "id": "definition:4e3e23724cc6f8b0610a",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UCGMax",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UCGMax.groovy"
-        },
-        {
-          "id": "definition:61bb1cab82441f4560c1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDM",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDM.groovy"
-        },
-        {
-          "id": "definition:2d9810458949844f8e48",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDMP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMP.groovy"
-        },
-        {
-          "id": "definition:146733cea0efba54944e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDMPSE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMPSE.groovy"
-        },
-        {
-          "id": "definition:b8206622b37eeafb0c8f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UDR",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDR.groovy"
-        },
-        {
-          "id": "definition:f23ccc453b092bd9738c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UGW3",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW3.groovy"
-        },
-        {
-          "id": "definition:fd9a908fa62994294573",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UGW4",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW4.groovy"
-        },
-        {
-          "id": "definition:f426d0b2ca80f3e0d835",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UHDIW",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UHDIW.groovy"
-        },
-        {
-          "id": "definition:63a89283fd5368d478d2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UP6",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UP6.groovy"
-        },
-        {
-          "id": "definition:4420e1dec4685c5dc6c4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UPSTower",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UPSTower.groovy"
-        },
-        {
-          "id": "definition:f249bfe6da71f25e5021",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-US8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-US8.groovy"
-        },
-        {
-          "id": "definition:29f13847865246914a0e",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USAGG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGG.groovy"
-        },
-        {
-          "id": "definition:86fe08f8b91d737d19e2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USAGGPRO",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGGPRO.groovy"
-        },
-        {
-          "id": "definition:b7988691327e37ba3dad",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USF5P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USF5P.groovy"
-        },
-        {
-          "id": "definition:4574849499a5ed68dd45",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USG.groovy"
-        },
-        {
-          "id": "definition:d5fd5736234ea03da69b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USMINI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USMINI.groovy"
-        },
-        {
-          "id": "definition:2ca451b485d367b28db8",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPHD24P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPHD24P.groovy"
-        },
-        {
-          "id": "definition:d3632af4cc1048938310",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM16",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16.groovy"
-        },
-        {
-          "id": "definition:d7a3a3819a534f162f28",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM16P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16P.groovy"
-        },
-        {
-          "id": "definition:c9821dbfe58a6fa0e7ed",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM24",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24.groovy"
-        },
-        {
-          "id": "definition:a0be32e24345d93dc794",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM24P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24P.groovy"
-        },
-        {
-          "id": "definition:85b5ee823884b3e25463",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM48",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48.groovy"
-        },
-        {
-          "id": "definition:b5b0930abc799ebf2ca9",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPM48P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48P.groovy"
-        },
-        {
-          "id": "definition:687f41b302ca5070b6c0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPPDUP",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPPDUP.groovy"
-        },
-        {
-          "id": "definition:fd2e9db43d163f2673dc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USPXG8P",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPXG8P.groovy"
-        },
-        {
-          "id": "definition:664c99bbe33210452c72",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16.groovy"
-        },
-        {
-          "id": "definition:19ec8984a40c00f6d3a2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16LPoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16LPoE.groovy"
-        },
-        {
-          "id": "definition:b15239208a5f0aeeef9c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW16PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16PoE.groovy"
-        },
-        {
-          "id": "definition:cdb2726802bb608c4d1d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW24",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24.groovy"
-        },
-        {
-          "id": "definition:37c077a85bbad93f3fbe",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW24PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24PoE.groovy"
-        },
-        {
-          "id": "definition:3402f71a176ceeb268f1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW48",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48.groovy"
-        },
-        {
-          "id": "definition:3ff19e5f9ace80b4b7dc",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW48PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48PoE.groovy"
-        },
-        {
-          "id": "definition:9dd3c6d6ca528687bf07",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8.groovy"
-        },
-        {
-          "id": "definition:09451817691f6db237ec",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8LPoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8LPoE.groovy"
-        },
-        {
-          "id": "definition:68794b612f6a10f3dbd1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8PoE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE.groovy"
-        },
-        {
-          "id": "definition:d5d0682b6bb493500578",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-USW8PoE60",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE60.groovy"
-        },
-        {
-          "id": "definition:5415332137c3daed3588",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UX",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UX.groovy"
-        },
-        {
-          "id": "definition:70a752cad6fb7c4bd6d7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiNetworkChild-UXG",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UXG.groovy"
-        }
-      ],
-      "description": "Drivers for integrating Ubiquiti's Unifi Network API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "repository": null
-      },
-      "name": "Unifi Drivers",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "LAN",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Monitoring",
-        "Multi Sensors"
-      ],
-      "version": null
-    },
-    {
       "author": "Mavrrick",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -98447,153 +100304,6 @@
       "version": "1.9.2.0"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2022-03-29",
-      "definitions": [
-        {
-          "id": "definition:935053bb98cbaf24d3fd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectAPI.groovy"
-        },
-        {
-          "id": "definition:2001d38731ef42f67af2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild.groovy"
-        },
-        {
-          "id": "definition:6df57192ecbe311d867f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-Bridge",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Bridge.groovy"
-        },
-        {
-          "id": "definition:3076dbf4e2655af8fc27",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-Camera",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Camera.groovy"
-        },
-        {
-          "id": "definition:07f2cd266c2bcc7f3aca",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-Doorbell",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Doorbell.groovy"
-        },
-        {
-          "id": "definition:e2b8aefbe8a605a063e1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-Light",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Light.groovy"
-        },
-        {
-          "id": "definition:c775c7b6ff3217c57548",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-PTZCamera",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-PTZCamera.groovy"
-        },
-        {
-          "id": "definition:d81b033a4bebad6c3891",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiProtectChild-Sensor",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Sensor.groovy"
-        }
-      ],
-      "description": "Drivers for integrating Ubiquiti's Unifi Protect API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "repository": null
-      },
-      "name": "Unifi Protect Drivers",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "dzone.com",
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cameras",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Multi Sensors",
-        "Safety & Security",
-        "Temperature & Humidity"
-      ],
-      "version": null
-    },
-    {
       "author": "Mike Coffey",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -98717,213 +100427,6 @@
         "Tools & Utilities"
       ],
       "version": "1.1.11"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-04-10",
-      "definitions": [
-        {
-          "id": "definition:98d12858122f4dfb4acb",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectAPI",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectAPI.groovy"
-        },
-        {
-          "id": "definition:347349bc3d8772788c28",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild.groovy"
-        },
-        {
-          "id": "definition:cbe98b305359b0291e7c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Cast",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Cast.groovy"
-        },
-        {
-          "id": "definition:3aaa06aeb0e7dc232b76",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display.groovy"
-        },
-        {
-          "id": "definition:8880f7d1875932e977e0",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-13",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-13.groovy"
-        },
-        {
-          "id": "definition:19f05ead0a1baa1d81df",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-21",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-21.groovy"
-        },
-        {
-          "id": "definition:aa3548d303d076a6e46b",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-27",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-27.groovy"
-        },
-        {
-          "id": "definition:e891e7ed17417693077d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-7",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-7.groovy"
-        },
-        {
-          "id": "definition:2654606aad2e64ea4da7",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-SE-13",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-13.groovy"
-        },
-        {
-          "id": "definition:e89bd219b91203fa62f1",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-SE-21",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-21.groovy"
-        },
-        {
-          "id": "definition:8d73da6f3f86395d0f1f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-SE-27",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-27.groovy"
-        },
-        {
-          "id": "definition:bdbca66c42ee41290298",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-Display-SE-7",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-7.groovy"
-        },
-        {
-          "id": "definition:d2e55e45ca493ef202a2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-UC-EV-Station",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-EV-Station.groovy"
-        },
-        {
-          "id": "definition:bbe4dd96009624188c28",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-ULD3AC",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULD3AC.groovy"
-        },
-        {
-          "id": "definition:764bc60c0e7be3f9023d",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-ULP3AC",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULP3AC.groovy"
-        },
-        {
-          "id": "definition:43764b0970db50993150",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "UnifiConnectChild-ULP3PE",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULP3PE.groovy"
-        }
-      ],
-      "description": "Drivers for getting data and basic control of devices within the Unifi Connect API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "repository": null
-      },
-      "name": "UnifiConnectAPI",
-      "network": {
-        "classification": "BOTH",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": true
-        },
-        "externalHosts": [
-          "dzone.com",
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "LAN",
-        "Misc. Devices",
-        "Monitoring"
-      ],
-      "version": null
     },
     {
       "author": "Simon Burke (sburke781)",
@@ -99310,6 +100813,93 @@
         "Tools & Utilities"
       ],
       "version": "0.0.1"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-09-03",
+      "definitions": [
+        {
+          "id": "definition:12ce991946696fc41f7f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Utilitech Water Sensor",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/Everspring_Utilitech_Water_Sensor.groovy"
+        }
+      ],
+      "description": "Improved Everspring/Utilitech Water Sensor with presence and better drop out detection,battery support,and settings, Support to stop the device from drooping off with dead batteries by providing presence and dead bat detection.with info debug and trace logs",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "WARN"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:896ef3fe29f7067b9396",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "http://www.winnfreenet.com/wp/2021/09/everspring-utilitech-water-sensor-driver-for-hubitat/",
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/Everspring_Utilitech_Water_Sensor.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Utilitech Water Sensor",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Monitoring",
+        "Safety & Security",
+        "Water",
+        "ZWave"
+      ],
+      "version": "2.8.3"
     },
     {
       "author": "Larry Kahn",
@@ -101904,117 +103494,6 @@
       "version": "0.7.1"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-01-01",
-      "definitions": [
-        {
-          "id": "definition:9ab7f6737b62998277a4",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WeatherFlow",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.groovy"
-        },
-        {
-          "id": "definition:02fcec13f560ba35d071",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
-        }
-      ],
-      "description": "Drivers to access the WeatherFlow API",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
-        "repository": null
-      },
-      "name": "WeatherFlow",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": true,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "swd.weatherflow.com",
-          "www.drdsnell.com"
-        ],
-        "reviewed": [
-          {
-            "dependencies": [
-              {
-                "class": "EXTERNAL_SERVICE",
-                "name": "WeatherFlow Station / Service",
-                "runtimeCriticality": "RUNTIME",
-                "transport": "LAN_OR_HTTPS"
-              }
-            ],
-            "documentation": [],
-            "id": "weatherflow",
-            "name": "WeatherFlow Integration",
-            "status": "COMMUNITY_SEED"
-          }
-        ]
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cloud",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
-    },
-    {
       "author": "Justin Walker (augoisms)",
       "category": null,
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -104319,109 +105798,6 @@
       "version": "1.2.17"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2023-01-01",
-      "definitions": [
-        {
-          "id": "definition:e1a0056680cda4765bf2",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WSM4Hubitat",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.groovy"
-        },
-        {
-          "id": "definition:64022755cd0cf32e1e5f",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell",
-          "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
-        }
-      ],
-      "description": "Drivers to access a variety of Weather Services such as the UK Met Office, US Weather.gov, OpenWeather, Weather API, Weather Underground, and World Weather Online",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": false,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "MISSING"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
-      "kinds": [
-        "DRIVER"
-      ],
-      "links": {
-        "community": null,
-        "documentation": null,
-        "manifest": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
-        "repository": null
-      },
-      "name": "WSM4Hubitat",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": true,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "api-metoffice.apiconnect.ibmcloud.com",
-          "api.openweathermap.org",
-          "api.weather.com",
-          "api.weather.gov",
-          "api.weatherapi.com",
-          "api.worldweatheronline.com",
-          "data.hub.api.metoffice.gov.uk",
-          "openweathermap.org",
-          "www.drdsnell.com"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Cloud",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
-    },
-    {
       "author": "Brian Wilson",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -104518,7 +105894,7 @@
       "author": "Jake Lehner",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-02-12",
+      "dateReleased": "2026-11-14",
       "definitions": [
         {
           "id": "definition:98585f6941b47695de3d",
@@ -104663,7 +106039,7 @@
         "Lights & Switches",
         "Multimedia"
       ],
-      "version": "1.8"
+      "version": "1.9"
     },
     {
       "author": "Mathew Beall",
@@ -107760,6 +109136,96 @@
         "Zigbee"
       ],
       "version": "1.0.8"
+    },
+    {
+      "author": "TheMaster",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2022-10-23",
+      "definitions": [
+        {
+          "id": "definition:4b73d60743df2605dd52",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Zigbee - Sonoff - generic Relays/Outlets",
+          "namespace": "tmastersmart",
+          "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy"
+        }
+      ],
+      "description": "Works with Sonoff MINI ZB,eWeLink,3A Smart Home and other generic zigbee relays. And generic outlets. Presence,Lamp_01,SA-003-Zigbee,01MINIZB,BASICZBR3,LXN59-1S7LX1.0, Sylvania SMART + LEDVANCE",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MISMATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "ATTENTION"
+      },
+      "id": "manifest:5fe57262fa14b0bd694a",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json",
+        "repository": "https://github.com/tmastersmart/hubitat-code"
+      },
+      "name": "Zigbee Sonoff - generic relays",
+      "network": {
+        "classification": "BOTH",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "www.paypal.com",
+          "zigbee.blakadder.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Alarm Systems",
+        "Buttons",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Presence & Location",
+        "Zigbee"
+      ],
+      "version": "1.7.7"
     },
     {
       "author": "Krassimir Kossev",
@@ -135651,5 +137117,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-16T06:51:34Z"
+  "snapshotGenerated": "2026-11-17T08:11:21Z"
 }
