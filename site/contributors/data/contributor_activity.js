@@ -5797,9 +5797,51 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:f16abae3d651b4d91303",
           "packageName": "Wyze Vacuum Connect",
           "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1a33ba0c813fa4e0b559d24a",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:d0d4cf7db10778b770f3",
+          "packageName": "Volvo Connect",
+          "summary": "Volvo Connect: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:78cf0800ab6cd0cd0d3f5243",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:f16abae3d651b4d91303",
+          "packageName": "Wyze Vacuum Connect",
+          "summary": "Wyze Vacuum Connect: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:9b0b51f9635932f89450b7ca",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:587d5ed3f73435384da2",
+          "packageName": "Scrypted Connect",
+          "summary": "Scrypted Connect: updated."
         }
       ],
-      "appCount": 13,
+      "appCount": 14,
       "categories": [
         {
           "name": "Control",
@@ -5811,19 +5853,19 @@ window.CONTRIBUTOR_ACTIVITY = {
         },
         {
           "name": "Integrations",
-          "packageCount": 2
+          "packageCount": 3
         },
         {
           "name": "Security",
           "packageCount": 4
         }
       ],
-      "currentPackageCount": 15,
+      "currentPackageCount": 16,
       "currentRank": 10,
-      "driverCount": 25,
+      "driverCount": 26,
       "id": "contributor:da68a98f0ca8fa438d38",
       "name": "Brian Wilson",
-      "observedActivityCount": 33,
+      "observedActivityCount": 36,
       "packages": [
         {
           "appCount": 2,
@@ -5919,7 +5961,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 2,
           "category": "Integrations",
-          "communityUrl": null,
+          "communityUrl": "https://community.hubitat.com/t/release-scrypted-connect-scrypted-nvr-detections-and-notification-muting/167560",
           "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Scrypted",
           "driverCount": 2,
           "id": "manifest:587d5ed3f73435384da2",
@@ -5984,6 +6026,19 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "appCount": 1,
           "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-volvo-connect-native-volvo-integration-oauth2-no-external-server/167561",
+          "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Volvo",
+          "driverCount": 1,
+          "id": "manifest:d0d4cf7db10778b770f3",
+          "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Volvo/packageManifest.json",
+          "name": "Volvo Connect",
+          "publisherDate": "2026-06-15",
+          "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
+          "version": "1.2.4"
+        },
+        {
+          "appCount": 1,
+          "category": "Integrations",
           "communityUrl": "https://community.hubitat.com/t/release-waterguru-pool-integration/77922",
           "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/WaterGuru",
           "driverCount": 1,
@@ -6016,9 +6071,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:f16abae3d651b4d91303",
           "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json",
           "name": "Wyze Vacuum Connect",
-          "publisherDate": "2026-11-15",
+          "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-          "version": "1.37.0"
+          "version": "1.38.0"
         }
       ]
     },
@@ -11312,6 +11367,394 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2c98883ac45dca2d57895e64",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+          "packageName": "Grizzl-ECharger",
+          "summary": "Grizzl-ECharger: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2f90bd8e4fa90e3ed1611be6",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+          "packageName": "FireBoard",
+          "summary": "FireBoard: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4dac0af981e8c0ad68108df7",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+          "packageName": "Unifi Protect Drivers",
+          "summary": "Unifi Protect Drivers: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:52417dbae01a5164285c61ce",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+          "packageName": "Neurio",
+          "summary": "Neurio: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5db1c8c95a419426aa132ba5",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+          "packageName": "Ambient Ecowitt Weather",
+          "summary": "Ambient Ecowitt Weather: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8d4f2142c409b79d93eba86b",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+          "packageName": "WSM4Hubitat",
+          "summary": "WSM4Hubitat: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c447873e6de009cba3a3ad4f",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+          "packageName": "Blink Drivers",
+          "summary": "Blink Drivers: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e53925b4bee2cb4ce6b32fd4",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+          "packageName": "WeatherFlow",
+          "summary": "WeatherFlow: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f5fd3f1468539fc46b0726fc",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+          "packageName": "UnifiConnectAPI",
+          "summary": "UnifiConnectAPI: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:005de635ec14a2eb40967f29",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+          "packageName": "Unifi Protect Drivers",
+          "summary": "Unifi Protect Drivers: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0407162a830a49317f889f0c",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+          "packageName": "Grizzl-ECharger",
+          "summary": "Grizzl-ECharger: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1fd3a58aacc5aacd0a36eca5",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+          "packageName": "FireBoard",
+          "summary": "FireBoard: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:20f4c93dcc937f27d29ea568",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+          "packageName": "WeatherFlow",
+          "summary": "WeatherFlow: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:29fff4eaa42454c3ab01f3ae",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+          "packageName": "Neurio",
+          "summary": "Neurio: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:375bccf39347d727a272f983",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+          "packageName": "Blink Drivers",
+          "summary": "Blink Drivers: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6a5fc569b6f9826c1ed80dbe",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+          "packageName": "UnifiConnectAPI",
+          "summary": "UnifiConnectAPI: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:89423c3ad01a05de619153a7",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+          "packageName": "WSM4Hubitat",
+          "summary": "WSM4Hubitat: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b3ccfc77dddba0787b647f0a",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+          "packageName": "Ambient Ecowitt Weather",
+          "summary": "Ambient Ecowitt Weather: added."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 9
+        }
+      ],
+      "currentPackageCount": 9,
+      "currentRank": 24,
+      "driverCount": 43,
+      "id": "contributor:caa9e002421ea86f5be1",
+      "name": "David Snell",
+      "observedActivityCount": 18,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
+          "name": "Ambient Ecowitt Weather",
+          "publisherDate": "2023-01-01",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 9,
+          "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
+          "name": "Blink Drivers",
+          "publisherDate": "2022-03-16",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
+          "name": "FireBoard",
+          "publisherDate": "2023-01-01",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
+          "name": "Grizzl-ECharger",
+          "publisherDate": "2025-10-19",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 1,
+          "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
+          "name": "Neurio",
+          "publisherDate": "2023-01-01",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 8,
+          "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
+          "name": "Unifi Protect Drivers",
+          "publisherDate": "2022-03-29",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 16,
+          "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
+          "name": "UnifiConnectAPI",
+          "publisherDate": "2023-04-10",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
+          "name": "WeatherFlow",
+          "publisherDate": "2023-01-01",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
+          "name": "WSM4Hubitat",
+          "publisherDate": "2023-01-01",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
             "DECLARED_DEFINITIONS_CHANGED"
           ],
           "declarationRole": "CURRENT_DECLARATION",
@@ -11420,7 +11863,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 9,
-      "currentRank": 24,
+      "currentRank": 25,
       "driverCount": 13,
       "id": "contributor:076e5477ab8ec37a09b7",
       "name": "Kurt Sanders",
@@ -11620,7 +12063,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 9,
-      "currentRank": 25,
+      "currentRank": 26,
       "driverCount": 9,
       "id": "contributor:064f73070c9a0317f2aa",
       "name": "Mike Bishop",
@@ -11742,580 +12185,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2023-01-07",
           "repositoryUrl": "https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/hpm-intermediate.json",
           "version": "1.1.1"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0cb600c96e82b249d6f6d700",
-          "observedAt": "2026-09-04T01:55:09Z",
-          "observedCommit": null,
-          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "packageName": "LGTV with webOS",
-          "summary": "LGTV with webOS: updated, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:275d4e8c83af3c14cbf98ca5",
-          "observedAt": "2026-09-04T01:55:09Z",
-          "observedCommit": null,
-          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "packageName": "Hubitat drivers for NodOn smart devices.",
-          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:e60858589aed5d11490f2687",
-          "observedAt": "2026-09-04T01:55:09Z",
-          "observedCommit": null,
-          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "packageName": "IKEA Zigbee drivers",
-          "summary": "IKEA Zigbee drivers: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f7f5d1732f51a86d4f062af9",
-          "observedAt": "2026-09-04T01:55:09Z",
-          "observedCommit": null,
-          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "packageName": "EMS-ESP Gateway",
-          "summary": "EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:5c28ea22d40770b678677e67",
-          "observedAt": "2026-09-05T01:56:19Z",
-          "observedCommit": null,
-          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "packageName": "Hubitat drivers for NodOn smart devices.",
-          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b0d217cdc36e20dd1d665b7d",
-          "observedAt": "2026-09-05T01:56:19Z",
-          "observedCommit": null,
-          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "packageName": "IKEA Zigbee drivers",
-          "summary": "IKEA Zigbee drivers: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b5c076d2960ef40d64077f93",
-          "observedAt": "2026-09-05T01:56:19Z",
-          "observedCommit": null,
-          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "packageName": "EMS-ESP Gateway",
-          "summary": "EMS-ESP Gateway: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:cd5733332aaa84a9656af3cf",
-          "observedAt": "2026-09-05T01:56:19Z",
-          "observedCommit": null,
-          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "packageName": "LGTV with webOS",
-          "summary": "LGTV with webOS: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:460e157dcd0117a6e69a1437",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "packageName": "IKEA Zigbee drivers",
-          "summary": "IKEA Zigbee drivers: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:89f6a414725e818e47cda692",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-          "packageName": "zigbee-graph",
-          "summary": "zigbee-graph: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:94989872379158d264ffa116",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "packageName": "Watchtower",
-          "summary": "Watchtower: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:c0f405ec7a080001eacd963a",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "packageName": "EMS-ESP Gateway",
-          "summary": "EMS-ESP Gateway: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:c1c4170d107f0ad935165e9d",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-          "packageName": "Hub-a-Dashery",
-          "summary": "Hub-a-Dashery: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d6a6cb2541cd0a32f14eb807",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "packageName": "Hubitat drivers for NodOn smart devices.",
-          "summary": "Hubitat drivers for NodOn smart devices.: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f15644cbfc0f7638fe6fe4d6",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "packageName": "Zigbee Map",
-          "summary": "Zigbee Map: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f56b65a332d13a10db71b036",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "packageName": "LGTV with webOS",
-          "summary": "LGTV with webOS: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0ed2b752940dcc43e42f3bf1",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-          "packageName": "Hub-a-Dashery",
-          "summary": "Hub-a-Dashery: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:30da565c8567af47d45d47b5",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "packageName": "Hubitat drivers for NodOn smart devices.",
-          "summary": "Hubitat drivers for NodOn smart devices.: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6b824112f49e2f3aabfc4da0",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "packageName": "EMS-ESP Gateway",
-          "summary": "EMS-ESP Gateway: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6bb177c44eda893c644d5edc",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "packageName": "Watchtower",
-          "summary": "Watchtower: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:7e423ecf9c110076821db07d",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-          "packageName": "zigbee-graph",
-          "summary": "zigbee-graph: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8b52ccd6df8200f484f1fb80",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "packageName": "LGTV with webOS",
-          "summary": "LGTV with webOS: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:aabd2343655547f8b5956e70",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "packageName": "Zigbee Map",
-          "summary": "Zigbee Map: added."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b52fbbe1a5cfe2c332836455",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "packageName": "IKEA Zigbee drivers",
-          "summary": "IKEA Zigbee drivers: added."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:19a7acb910455d463c8b6dfd",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "packageName": "LGTV with webOS",
-          "summary": "LGTV with webOS: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:482e5848dea450626ca98bf9",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "packageName": "Hubitat drivers for NodOn smart devices.",
-          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:754a6549a6958625aedd3b88",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-          "packageName": "Hub-a-Dashery",
-          "summary": "Hub-a-Dashery: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:91db91c4262660c38a4d2dc8",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "packageName": "Zigbee Map",
-          "summary": "Zigbee Map: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d67c7b50756481e49126dd1c",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "packageName": "EMS-ESP Gateway",
-          "summary": "EMS-ESP Gateway: changed declared definitions."
-        },
-        {
-          "category": "Control",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f7fe4c905ce8c2dc290c59f5",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "packageName": "IKEA Zigbee drivers",
-          "summary": "IKEA Zigbee drivers: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:1d7e7790c3b0658764b602ad",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "packageName": "Watchtower",
-          "summary": "Watchtower: updated, changed source location."
-        }
-      ],
-      "appCount": 4,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 1
-        },
-        {
-          "name": "Utility",
-          "packageCount": 7
-        }
-      ],
-      "currentPackageCount": 8,
-      "currentRank": 26,
-      "driverCount": 37,
-      "id": "contributor:55e837becfd98e51d47d",
-      "name": "Dan Danache (@dandanache)",
-      "observedActivityCount": 31,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-          "driverCount": 4,
-          "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-          "name": "EMS-ESP Gateway",
-          "publisherDate": "2025-02-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
-          "driverCount": 0,
-          "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
-          "name": "Hub-a-Dashery",
-          "publisherDate": "2024-03-04",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.3.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-          "driverCount": 6,
-          "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-          "name": "Hubitat drivers for NodOn smart devices.",
-          "publisherDate": "2025-02-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-          "driverCount": 23,
-          "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-          "name": "IKEA Zigbee drivers",
-          "publisherDate": "2026-06-10",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "5.8.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-          "driverCount": 2,
-          "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-          "name": "LGTV with webOS",
-          "publisherDate": "2025-11-12",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.8.3"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-          "driverCount": 1,
-          "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-          "name": "Watchtower",
-          "publisherDate": "2026-10-22",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "4.3.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-          "driverCount": 1,
-          "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-          "name": "Zigbee Map",
-          "publisherDate": "2020-01-02",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "3.0.4"
-        },
-        {
-          "appCount": 1,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
-          "driverCount": 0,
-          "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
-          "name": "zigbee-graph",
-          "publisherDate": "2023-06-30",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "2.3.0"
         }
       ]
     },
@@ -15758,6 +15627,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:38e3d4685eb4cf17e6c0",
           "packageName": "SignalBricks Telemetry",
           "summary": "SignalBricks Telemetry: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:af15c3348cace0d9e96153d4",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: updated."
         }
       ],
       "appCount": 2,
@@ -15776,7 +15659,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
-      "observedActivityCount": 23,
+      "observedActivityCount": 24,
       "packages": [
         {
           "appCount": 0,
@@ -15839,9 +15722,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:38e3d4685eb4cf17e6c0",
           "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json",
           "name": "SignalBricks Telemetry",
-          "publisherDate": "2026-11-16",
+          "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.9.0"
+          "version": "1.9.1"
         }
       ]
     },
@@ -16269,6 +16152,21 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "packageName": "Sonos Advanced Controller",
           "summary": "Sonos Advanced Controller: updated, changed source location."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2ea832fa0aaef5ab2bf4200f",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+          "packageName": "Sonos Advanced Controller",
+          "summary": "Sonos Advanced Controller: updated, changed source location."
         }
       ],
       "appCount": 4,
@@ -16299,7 +16197,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 16,
       "id": "contributor:2a573f71ae22762e7fa8",
       "name": "Daniel Winks",
-      "observedActivityCount": 14,
+      "observedActivityCount": 15,
       "packages": [
         {
           "appCount": 1,
@@ -16349,9 +16247,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
           "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
           "name": "Sonos Advanced Controller",
-          "publisherDate": "2026-11-17",
+          "publisherDate": "2026-11-18",
           "repositoryUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/repository.json",
-          "version": "0.17.1"
+          "version": "0.18.2"
         },
         {
           "appCount": 0,
@@ -18080,6 +17978,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:75342398988060a11f59",
           "packageName": "Mitsubishi Comfort",
           "summary": "Mitsubishi Comfort: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3963af03c42d3c5196fce2b0",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:75342398988060a11f59",
+          "packageName": "Mitsubishi Comfort",
+          "summary": "Mitsubishi Comfort: updated."
         }
       ],
       "appCount": 2,
@@ -18094,7 +18006,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 5,
       "id": "contributor:cab465e8481008331040",
       "name": "Jeff Lupien",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -18118,9 +18030,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:75342398988060a11f59",
           "manifestUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json",
           "name": "Mitsubishi Comfort",
-          "publisherDate": "2026-11-13",
+          "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/jlupien/hubitat-drivers/refs/heads/master/repository.json",
-          "version": "1.0.4"
+          "version": "1.1.2"
         },
         {
           "appCount": 0,
@@ -20475,6 +20387,250 @@ window.CONTRIBUTOR_ACTIVITY = {
         {
           "category": "Integrations",
           "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:58585cbbf7032294f89515c0",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+          "packageName": "Unifi Drivers",
+          "summary": "Unifi Drivers: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:68443741d18488e125a1e71e",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+          "packageName": "Tesla Drivers",
+          "summary": "Tesla Drivers: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f631cbe0f993a99579e31d5f",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+          "packageName": "Neptune Systems Apex",
+          "summary": "Neptune Systems Apex: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:453062c3bb49dcf4e1b9ea04",
+          "observedAt": "2026-11-08T06:21:17Z",
+          "observedCommit": null,
+          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+          "packageName": "Neptune Systems Apex",
+          "summary": "Neptune Systems Apex: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6f6f0883ff63ff959743852d",
+          "observedAt": "2026-11-08T06:21:17Z",
+          "observedCommit": null,
+          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+          "packageName": "Unifi Drivers",
+          "summary": "Unifi Drivers: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:be2575e4981b103071fe9a03",
+          "observedAt": "2026-11-08T06:21:17Z",
+          "observedCommit": null,
+          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+          "packageName": "Tesla Drivers",
+          "summary": "Tesla Drivers: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3a2e303ffdd10a56df78540f",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+          "packageName": "Unifi Drivers",
+          "summary": "Unifi Drivers: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bc4c23c8e6af0438128eeeeb",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+          "packageName": "Neptune Systems Apex",
+          "summary": "Neptune Systems Apex: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f651a02d1b847c30b94db49a",
+          "observedAt": "2026-11-17T08:11:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+          "packageName": "Tesla Drivers",
+          "summary": "Tesla Drivers: removed."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:45ea87326dda022009727532",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+          "packageName": "Unifi Drivers",
+          "summary": "Unifi Drivers: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5c66c61446746b023794fdc1",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+          "packageName": "Tesla Drivers",
+          "summary": "Tesla Drivers: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:892f75b8550fbb1d98c0827b",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+          "packageName": "Neptune Systems Apex",
+          "summary": "Neptune Systems Apex: added."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 3,
+      "currentRank": 91,
+      "driverCount": 82,
+      "id": "contributor:b1b4211137432b0ceaab",
+      "name": "Snell",
+      "observedActivityCount": 12,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 31,
+          "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
+          "name": "Neptune Systems Apex",
+          "publisherDate": "2021-03-06",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 2,
+          "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
+          "name": "Tesla Drivers",
+          "publisherDate": "2021-03-06",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": null,
+          "driverCount": 49,
+          "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+          "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
+          "name": "Unifi Drivers",
+          "publisherDate": "2021-03-07",
+          "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+          "version": null
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Integrations",
+          "changeTypes": [
             "UPDATED"
           ],
           "declarationRole": "CURRENT_DECLARATION",
@@ -20513,7 +20669,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 91,
+      "currentRank": 92,
       "driverCount": 4,
       "id": "contributor:7cda830d4d904d53f9d0",
       "name": "Tim Yuhl (@WindowWasher)",
@@ -20570,7 +20726,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 3,
-      "currentRank": 92,
+      "currentRank": 93,
       "driverCount": 22,
       "id": "contributor:d4595ee7d9bca0d6c072",
       "name": "winnie",
@@ -20627,7 +20783,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 93,
+      "currentRank": 94,
       "driverCount": 2,
       "id": "contributor:77a1b275b7acf1be10cc",
       "name": "Adrian Caramaliu",
@@ -20671,7 +20827,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 94,
+      "currentRank": 95,
       "driverCount": 2,
       "id": "contributor:75749fcdad8887b09066",
       "name": "Alex Jones",
@@ -20719,7 +20875,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 95,
+      "currentRank": 96,
       "driverCount": 2,
       "id": "contributor:68ce3e1b8f8813127398",
       "name": "Arn Burkhoff",
@@ -20763,7 +20919,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 96,
+      "currentRank": 97,
       "driverCount": 8,
       "id": "contributor:775bf2ab0bf177bbaffc",
       "name": "Ben Deitch",
@@ -20807,7 +20963,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 97,
+      "currentRank": 98,
       "driverCount": 8,
       "id": "contributor:f68da10e1701ffa06598",
       "name": "Brad Sileo",
@@ -20936,7 +21092,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 98,
+      "currentRank": 99,
       "driverCount": 3,
       "id": "contributor:cfda4322e2d7cd482f51",
       "name": "brossow",
@@ -20984,7 +21140,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 99,
+      "currentRank": 100,
       "driverCount": 2,
       "id": "contributor:eeb747b7ce6ce8418f96",
       "name": "DarwinsDen",
@@ -21032,7 +21188,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 100,
+      "currentRank": 101,
       "driverCount": 12,
       "id": "contributor:efdfd6ed92c6c1fdcd2d",
       "name": "Don Caton",
@@ -21119,7 +21275,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 101,
+      "currentRank": 102,
       "driverCount": 10,
       "id": "contributor:8a225868193c504b5768",
       "name": "Eric Meddaugh",
@@ -21182,7 +21338,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 102,
+      "currentRank": 103,
       "driverCount": 0,
       "id": "contributor:00cff02ab0439d29be03",
       "name": "Evan Callia",
@@ -21241,7 +21397,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 103,
+      "currentRank": 104,
       "driverCount": 2,
       "id": "contributor:c4be56c4dce3fefe382b",
       "name": "Graf Technology, LLC",
@@ -21304,6 +21460,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:3640f90f-471b-42ed-a4cf-a9ca846ed3dc",
           "packageName": "GE/Jasco Enbrighten Switch & Dimmer (Multi)",
           "summary": "GE/Jasco Enbrighten Switch & Dimmer (Multi): added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b943c4246eb88d7bb1c6f027",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:3640f90f-471b-42ed-a4cf-a9ca846ed3dc",
+          "packageName": "GE/Jasco Enbrighten Switch & Dimmer (Multi)",
+          "summary": "GE/Jasco Enbrighten Switch & Dimmer (Multi): updated."
         }
       ],
       "appCount": 0,
@@ -21318,11 +21488,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 104,
+      "currentRank": 105,
       "driverCount": 3,
       "id": "contributor:a3f4f2d680c55697cfed",
       "name": "Heatvent",
-      "observedActivityCount": 2,
+      "observedActivityCount": 3,
       "packages": [
         {
           "appCount": 0,
@@ -21333,9 +21503,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:3640f90f-471b-42ed-a4cf-a9ca846ed3dc",
           "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json",
           "name": "GE/Jasco Enbrighten Switch & Dimmer (Multi)",
-          "publisherDate": "2026-11-14",
+          "publisherDate": "2026-11-16",
           "repositoryUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/repository.json",
-          "version": "1.0.3"
+          "version": "1.0.4"
         },
         {
           "appCount": 0,
@@ -21406,7 +21576,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 105,
+      "currentRank": 106,
       "driverCount": 2,
       "id": "contributor:dcf98a910bf5ad9db8ce",
       "name": "howarddavidp",
@@ -21497,7 +21667,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 106,
+      "currentRank": 107,
       "driverCount": 5,
       "id": "contributor:2e27511c37ef40f54621",
       "name": "imnot_bob",
@@ -21598,7 +21768,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 107,
+      "currentRank": 108,
       "driverCount": 1,
       "id": "contributor:d8c3769404dea0e2a6e7",
       "name": "J.R. Farrar",
@@ -21727,7 +21897,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 108,
+      "currentRank": 109,
       "driverCount": 4,
       "id": "contributor:966d9f08e15e82945d11",
       "name": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -21775,7 +21945,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 109,
+      "currentRank": 110,
       "driverCount": 0,
       "id": "contributor:16bf70f5e60c5b3a0f43",
       "name": "Jed Brown",
@@ -21852,7 +22022,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 110,
+      "currentRank": 111,
       "driverCount": 1,
       "id": "contributor:277a73f66831fc1424af",
       "name": "Jeffrey D. Chapman",
@@ -21896,7 +22066,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 111,
+      "currentRank": 112,
       "driverCount": 6,
       "id": "contributor:fedf3ceedc1273b3d69d",
       "name": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -21940,7 +22110,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 112,
+      "currentRank": 113,
       "driverCount": 1,
       "id": "contributor:8877f3f9cde1f2b8e13b",
       "name": "Kevin LaFramboise (@krlaframboise)",
@@ -22013,7 +22183,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 113,
+      "currentRank": 114,
       "driverCount": 2,
       "id": "contributor:9b3159c24cdaba381613",
       "name": "kkossev",
@@ -22102,7 +22272,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 114,
+      "currentRank": 115,
       "driverCount": 5,
       "id": "contributor:cfe7eb8fa1d840424f18",
       "name": "Mathew Beall",
@@ -22146,7 +22316,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 115,
+      "currentRank": 116,
       "driverCount": 1,
       "id": "contributor:648248be560395b56188",
       "name": "Matt Hammond",
@@ -22194,7 +22364,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 116,
+      "currentRank": 117,
       "driverCount": 0,
       "id": "contributor:15ac50b026e59a5f76a0",
       "name": "Mattias Fornander (@mfornander)",
@@ -22242,7 +22412,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 117,
+      "currentRank": 118,
       "driverCount": 1,
       "id": "contributor:cfdd150d04c77fcf99ed",
       "name": "Miles Budnek",
@@ -22302,7 +22472,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 118,
+      "currentRank": 119,
       "driverCount": 2,
       "id": "contributor:a8001880109c362a9fdb",
       "name": "n3!",
@@ -22346,7 +22516,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 119,
+      "currentRank": 120,
       "driverCount": 1,
       "id": "contributor:9563f49fca68d622c285",
       "name": "Nelson Clark",
@@ -22390,7 +22560,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 120,
+      "currentRank": 121,
       "driverCount": 3,
       "id": "contributor:5264454bcf8a55a617b7",
       "name": "Paul Hutton",
@@ -22434,7 +22604,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 121,
+      "currentRank": 122,
       "driverCount": 2,
       "id": "contributor:e5e37caad93a2e4bba53",
       "name": "Ramdev Shallem",
@@ -22478,7 +22648,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 122,
+      "currentRank": 123,
       "driverCount": 1,
       "id": "contributor:08e115ea52313bdb2dd1",
       "name": "Randall Norviel",
@@ -22522,7 +22692,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 123,
+      "currentRank": 124,
       "driverCount": 2,
       "id": "contributor:d38d404a45ce4a1ae211",
       "name": "Raul Martin Rodriguez",
@@ -22627,7 +22797,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 124,
+      "currentRank": 125,
       "driverCount": 0,
       "id": "contributor:4e016dfbc3de1b805171",
       "name": "Rayzurbock",
@@ -22675,7 +22845,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 125,
+      "currentRank": 126,
       "driverCount": 3,
       "id": "contributor:27b96c198c53592f4b6d",
       "name": "Simon Burke",
@@ -22719,7 +22889,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 126,
+      "currentRank": 127,
       "driverCount": 2,
       "id": "contributor:f7092c2563f96d8ebd93",
       "name": "StarkTemplar",
@@ -22767,7 +22937,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 127,
+      "currentRank": 128,
       "driverCount": 5,
       "id": "contributor:ddb8a7b385656aadd452",
       "name": "Taylor Brown(@thecloudtaylor)",
@@ -22811,7 +22981,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 128,
+      "currentRank": 129,
       "driverCount": 2,
       "id": "contributor:272f8a5abd3191f1acd8",
       "name": "Tim Dodd",
@@ -22855,7 +23025,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 129,
+      "currentRank": 130,
       "driverCount": 0,
       "id": "contributor:bc915e335e56e9ef122e",
       "name": "Tony Fleisher",
@@ -22928,7 +23098,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 130,
+      "currentRank": 131,
       "driverCount": 3,
       "id": "contributor:052eda442afd1ae5d69d",
       "name": "vision9074",
@@ -22976,7 +23146,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 131,
+      "currentRank": 132,
       "driverCount": 0,
       "id": "contributor:3ee480dcc6d55fba0b2b",
       "name": "Wesley M. Conner",
@@ -23063,7 +23233,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 132,
+      "currentRank": 133,
       "driverCount": 5,
       "id": "contributor:ba3ff7cff9a8f45b1481",
       "name": "youzer-name",
@@ -23107,7 +23277,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 2,
-      "currentRank": 133,
+      "currentRank": 134,
       "driverCount": 3,
       "id": "contributor:3353abab317cbb5e1bb8",
       "name": "ZRanger1(JEM)",
@@ -23151,7 +23321,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 134,
+      "currentRank": 135,
       "driverCount": 3,
       "id": "contributor:9ebc2f114646e8498d7b",
       "name": "Alex Lee Yuk Cheung & Dominick Meglio",
@@ -23182,7 +23352,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 135,
+      "currentRank": 136,
       "driverCount": 1,
       "id": "contributor:4766d18cb719a716cbf8",
       "name": "Andrew Webster",
@@ -23228,7 +23398,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 136,
+      "currentRank": 137,
       "driverCount": 0,
       "id": "contributor:11c0ba5a3766990c3f78",
       "name": "Armand Peter Welsh",
@@ -23259,7 +23429,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 137,
+      "currentRank": 138,
       "driverCount": 3,
       "id": "contributor:4d3ada00f82d743d4d94",
       "name": "Art Ardolino",
@@ -23290,7 +23460,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 138,
+      "currentRank": 139,
       "driverCount": 1,
       "id": "contributor:0ea2ec854ddf7b93c7b0",
       "name": "Awth Wathje",
@@ -23321,7 +23491,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 139,
+      "currentRank": 140,
       "driverCount": 0,
       "id": "contributor:01a00cf264f0269f2f9d",
       "name": "Azfar Khandoker",
@@ -23352,7 +23522,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 140,
+      "currentRank": 141,
       "driverCount": 2,
       "id": "contributor:abfea55b690ec9fc7954",
       "name": "Ben Castellucci",
@@ -23383,7 +23553,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 141,
+      "currentRank": 142,
       "driverCount": 0,
       "id": "contributor:ab2cfb4edbe468b4048b",
       "name": "Bill Fleming",
@@ -23485,7 +23655,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 142,
+      "currentRank": 143,
       "driverCount": 2,
       "id": "contributor:593f46d943aec70bf3c1",
       "name": "BPTWorld",
@@ -23516,7 +23686,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 143,
+      "currentRank": 144,
       "driverCount": 2,
       "id": "contributor:12297751d692f8e9771a",
       "name": "Brad sileo",
@@ -23547,7 +23717,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 144,
+      "currentRank": 145,
       "driverCount": 4,
       "id": "contributor:0a685eaad17dc8ff51ea",
       "name": "Brian Blank",
@@ -23593,7 +23763,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 145,
+      "currentRank": 146,
       "driverCount": 1,
       "id": "contributor:72cbe6eb80a4e0144048",
       "name": "C Steele",
@@ -23624,7 +23794,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 146,
+      "currentRank": 147,
       "driverCount": 2,
       "id": "contributor:be521bd53f9af1d49653",
       "name": "Chaue Shen",
@@ -23670,7 +23840,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 147,
+      "currentRank": 148,
       "driverCount": 1,
       "id": "contributor:3fc5dead1997ca8a5a71",
       "name": "Chris Busch",
@@ -23701,7 +23871,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 148,
+      "currentRank": 149,
       "driverCount": 0,
       "id": "contributor:4646e34aa7acceb37645",
       "name": "Chris Sader",
@@ -23833,7 +24003,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 149,
+      "currentRank": 150,
       "driverCount": 2,
       "id": "contributor:0f00650a7998f2493444",
       "name": "Christer Lundin",
@@ -23864,7 +24034,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 150,
+      "currentRank": 151,
       "driverCount": 6,
       "id": "contributor:97379ae0ebbba3b46803",
       "name": "christi999",
@@ -23911,7 +24081,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 151,
+      "currentRank": 152,
       "driverCount": 5,
       "id": "contributor:950fb77d3da2b8017206",
       "name": "classic-dave",
@@ -23942,7 +24112,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 152,
+      "currentRank": 153,
       "driverCount": 25,
       "id": "contributor:21e5b5d816783343eed8",
       "name": "codahq",
@@ -23973,7 +24143,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 153,
+      "currentRank": 154,
       "driverCount": 3,
       "id": "contributor:0287c8a40062f2e26bf1",
       "name": "corinuss",
@@ -24004,7 +24174,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 154,
+      "currentRank": 155,
       "driverCount": 0,
       "id": "contributor:f86b4b4a5d12cdaf148c",
       "name": "Craig Romei",
@@ -24084,6 +24254,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
           "packageName": "SmartHQ GE Appliances Integration",
           "summary": "SmartHQ GE Appliances Integration: updated, changed source location, changed declared definitions."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:12a17926d7cbf8e0d99ed4b7",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+          "packageName": "SmartHQ GE Appliances Integration",
+          "summary": "SmartHQ GE Appliances Integration: updated."
         }
       ],
       "appCount": 1,
@@ -24094,11 +24278,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 155,
+      "currentRank": 156,
       "driverCount": 12,
       "id": "contributor:3a08db153771d4ffc1fc",
       "name": "craigde",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -24111,7 +24295,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "SmartHQ GE Appliances Integration",
           "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/craigde/hubitat-package-manager/master/repository.json",
-          "version": "1.0.15"
+          "version": "1.0.16"
         }
       ]
     },
@@ -24125,7 +24309,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 156,
+      "currentRank": 157,
       "driverCount": 1,
       "id": "contributor:963ced0da3610aa44c93",
       "name": "cSteele",
@@ -24156,7 +24340,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 157,
+      "currentRank": 158,
       "driverCount": 1,
       "id": "contributor:65bee55a0af809e76900",
       "name": "Curtis Ide",
@@ -24187,7 +24371,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 158,
+      "currentRank": 159,
       "driverCount": 23,
       "id": "contributor:cf8d966c34c95a70525e",
       "name": "Dan Cox (level99 fork); Niklas Gustafsson (original upstream)",
@@ -24209,126 +24393,6 @@ window.CONTRIBUTOR_ACTIVITY = {
       ]
     },
     {
-      "activity": [
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:b67b7a3d5b299e6f953e3a94",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-          "packageName": "Lumos",
-          "summary": "Lumos: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:1702eef93c64cfbd6cc55265",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-          "packageName": "Lumos",
-          "summary": "Lumos: added."
-        }
-      ],
-      "appCount": 2,
-      "categories": [
-        {
-          "name": "Utility",
-          "packageCount": 1
-        }
-      ],
-      "currentPackageCount": 1,
-      "currentRank": 159,
-      "driverCount": 0,
-      "id": "contributor:09c2c1f1bae09e1e8a55",
-      "name": "Dan Danache",
-      "observedActivityCount": 2,
-      "packages": [
-        {
-          "appCount": 2,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
-          "driverCount": 0,
-          "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
-          "name": "Lumos",
-          "publisherDate": "2025-01-24",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.1.0"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:daf2d27ef2de8a3b9ff6c3a2",
-          "observedAt": "2026-09-12T02:04:38Z",
-          "observedCommit": null,
-          "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
-          "packageName": "Dashboard Widgets",
-          "summary": "Dashboard Widgets: removed."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:0fe10105010943f0068da7d5",
-          "observedAt": "2026-09-13T01:59:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
-          "packageName": "Dashboard Widgets",
-          "summary": "Dashboard Widgets: added."
-        }
-      ],
-      "appCount": 0,
-      "categories": [
-        {
-          "name": "Utility",
-          "packageCount": 1
-        }
-      ],
-      "currentPackageCount": 1,
-      "currentRank": 160,
-      "driverCount": 1,
-      "id": "contributor:e2a1a9d6497ce82b1a2a",
-      "name": "Dan Danache (@agamemnon.dandanache)",
-      "observedActivityCount": 2,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-          "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md",
-          "driverCount": 1,
-          "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
-          "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json",
-          "name": "Dashboard Widgets",
-          "publisherDate": "2023-08-02",
-          "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
-          "version": "1.5.0"
-        }
-      ]
-    },
-    {
       "activity": [],
       "appCount": 0,
       "categories": [
@@ -24338,7 +24402,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 161,
+      "currentRank": 160,
       "driverCount": 1,
       "id": "contributor:5504c4083f20d7fff23c",
       "name": "dan.t",
@@ -24369,7 +24433,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 162,
+      "currentRank": 161,
       "driverCount": 1,
       "id": "contributor:69c45f22c0dcdce7b384",
       "name": "Daniel Segall",
@@ -24415,7 +24479,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 163,
+      "currentRank": 162,
       "driverCount": 1,
       "id": "contributor:7c75a97dcda364d1907d",
       "name": "Daniel Segall (dds82)",
@@ -24446,7 +24510,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 164,
+      "currentRank": 163,
       "driverCount": 2,
       "id": "contributor:9613ac904c1d28e3c88b",
       "name": "dbadge",
@@ -24492,7 +24556,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 165,
+      "currentRank": 164,
       "driverCount": 1,
       "id": "contributor:eaf21c5d23b9ef0df481",
       "name": "dlaporte",
@@ -24523,7 +24587,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 166,
+      "currentRank": 165,
       "driverCount": 2,
       "id": "contributor:a73ba7cf0dd8592adedb",
       "name": "Dominick Meglio & Eric Maycock",
@@ -24554,7 +24618,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 167,
+      "currentRank": 166,
       "driverCount": 3,
       "id": "contributor:6dde8f2290059440a172",
       "name": "Doug Beard/Brian Wilson",
@@ -24585,7 +24649,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 168,
+      "currentRank": 167,
       "driverCount": 0,
       "id": "contributor:8b932b1c49d1bf9d8d84",
       "name": "Doug Renze",
@@ -24631,7 +24695,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 169,
+      "currentRank": 168,
       "driverCount": 3,
       "id": "contributor:debcb46e339968cfedb3",
       "name": "Electrified-Home",
@@ -24705,7 +24769,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 170,
+      "currentRank": 169,
       "driverCount": 0,
       "id": "contributor:b8d898940c7c1f7508b9",
       "name": "Ephrayim",
@@ -24736,7 +24800,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 171,
+      "currentRank": 170,
       "driverCount": 1,
       "id": "contributor:0024ce686cf2b9971ab0",
       "name": "Erik Dasque",
@@ -24810,7 +24874,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 172,
+      "currentRank": 171,
       "driverCount": 5,
       "id": "contributor:9f18513ee222efc16581",
       "name": "evdev",
@@ -24841,7 +24905,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 173,
+      "currentRank": 172,
       "driverCount": 1,
       "id": "contributor:02e680d2174ca39bf1b2",
       "name": "Garth Braithwaite",
@@ -24872,7 +24936,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 174,
+      "currentRank": 173,
       "driverCount": 1,
       "id": "contributor:6fe9cca284a6cd968a93",
       "name": "Greg Billings",
@@ -25114,7 +25178,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 175,
+      "currentRank": 174,
       "driverCount": 0,
       "id": "contributor:a7a60ab44fd79a4a32f3",
       "name": "Haven",
@@ -25160,7 +25224,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 176,
+      "currentRank": 175,
       "driverCount": 0,
       "id": "contributor:7740a32ebcc0ba4a339f",
       "name": "HERMES Automation",
@@ -25238,9 +25302,25 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
           "packageName": "Samsung TV Remote (hubitrep)",
           "summary": "Samsung TV Remote (hubitrep): updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:78892319c374b85cdf530bfa",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
+          "packageName": "Samsung TV Remote (hubitrep)",
+          "summary": "Samsung TV Remote (hubitrep): updated, changed source location, changed declared definitions."
         }
       ],
-      "appCount": 1,
+      "appCount": 2,
       "categories": [
         {
           "name": "Integrations",
@@ -25248,14 +25328,14 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 177,
+      "currentRank": 176,
       "driverCount": 1,
       "id": "contributor:7b12dd21d2d7392d3573",
       "name": "hubitrep (original by Dave Gutheinz)",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
-          "appCount": 1,
+          "appCount": 2,
           "category": "Integrations",
           "communityUrl": "https://community.hubitat.com/t/release-samsung-tv-remote-2016-and-later-tvs/166829",
           "documentationUrl": "https://github.com/hubitrep/SamsungTvRemote/blob/main/README.md",
@@ -25263,9 +25343,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:a5e63ecd-7ba3-418a-8c62-552f225b8510",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json",
           "name": "Samsung TV Remote (hubitrep)",
-          "publisherDate": "2026-11-09",
+          "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "2.4.10"
+          "version": "2.4.11"
         }
       ]
     },
@@ -25279,7 +25359,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 178,
+      "currentRank": 177,
       "driverCount": 9,
       "id": "contributor:5caa224e199583883eb3",
       "name": "Ionut Turturica",
@@ -25310,7 +25390,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 179,
+      "currentRank": 178,
       "driverCount": 0,
       "id": "contributor:cf5e8049fefaa570c4d9",
       "name": "J M Pierce / Schwark Satyavolu",
@@ -25384,7 +25464,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 180,
+      "currentRank": 179,
       "driverCount": 0,
       "id": "contributor:35b6f68997baedd17771",
       "name": "Jaime Botero",
@@ -25430,7 +25510,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 181,
+      "currentRank": 180,
       "driverCount": 8,
       "id": "contributor:c3f9a7ee66c12128ad5b",
       "name": "Jake Lehner",
@@ -25461,7 +25541,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 182,
+      "currentRank": 181,
       "driverCount": 1,
       "id": "contributor:375253e4778f3449fa8e",
       "name": "James Schlackman",
@@ -25492,7 +25572,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 183,
+      "currentRank": 182,
       "driverCount": 1,
       "id": "contributor:eea2f53f4e1237c2af11",
       "name": "Jean Bilodeau",
@@ -25523,7 +25603,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 184,
+      "currentRank": 183,
       "driverCount": 0,
       "id": "contributor:69e9feb5f1aecf17f309",
       "name": "Jeffrey Zimmerman",
@@ -25554,7 +25634,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 185,
+      "currentRank": 184,
       "driverCount": 1,
       "id": "contributor:2852527b01a3fbe70078",
       "name": "Jeremy Kister (@jkister)",
@@ -25585,7 +25665,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 186,
+      "currentRank": 185,
       "driverCount": 0,
       "id": "contributor:38c5b7de7aac86d2aafa",
       "name": "Jessica Jones",
@@ -25616,7 +25696,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 187,
+      "currentRank": 186,
       "driverCount": 1,
       "id": "contributor:a6e77f2d2954c6204042",
       "name": "Jo Rhett",
@@ -25647,7 +25727,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 188,
+      "currentRank": 187,
       "driverCount": 1,
       "id": "contributor:9f6d718a9b1d17aafa2f",
       "name": "johndc7",
@@ -25678,7 +25758,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 189,
+      "currentRank": 188,
       "driverCount": 1,
       "id": "contributor:3eb770d22e7227d73006",
       "name": "Joseph Kregloh",
@@ -25709,7 +25789,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 190,
+      "currentRank": 189,
       "driverCount": 0,
       "id": "contributor:0587eeef5b080fa89a15",
       "name": "Josh Lobe",
@@ -25740,7 +25820,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 191,
+      "currentRank": 190,
       "driverCount": 1,
       "id": "contributor:26e490d18a65f88f4250",
       "name": "Josh Rosenberg",
@@ -25800,7 +25880,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 192,
+      "currentRank": 191,
       "driverCount": 0,
       "id": "contributor:441cf02dbecb34d45a37",
       "name": "joyfulhouse",
@@ -25831,7 +25911,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 193,
+      "currentRank": 192,
       "driverCount": 0,
       "id": "contributor:f912b2e7a868e750e809",
       "name": "Ken Washington",
@@ -25862,7 +25942,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 194,
+      "currentRank": 193,
       "driverCount": 1,
       "id": "contributor:00ab3c63e8e20d3e210e",
       "name": "Kestutis Triponis",
@@ -25909,7 +25989,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 195,
+      "currentRank": 194,
       "driverCount": 2,
       "id": "contributor:3ebf80c7fec559a9ad8c",
       "name": "Kevin Kahl",
@@ -26689,6 +26769,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:7afca99889f23291349b",
           "packageName": "MCP Rule Server",
           "summary": "MCP Rule Server: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f063828d29b2a84b4be12aa6",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "manifest:7afca99889f23291349b",
+          "packageName": "MCP Rule Server",
+          "summary": "MCP Rule Server: updated."
         }
       ],
       "appCount": 2,
@@ -26699,11 +26793,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 196,
+      "currentRank": 195,
       "driverCount": 0,
       "id": "contributor:d39995a25b561fdfb85a",
       "name": "kingpanther13",
-      "observedActivityCount": 54,
+      "observedActivityCount": 55,
       "packages": [
         {
           "appCount": 2,
@@ -26714,9 +26808,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:7afca99889f23291349b",
           "manifestUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json",
           "name": "MCP Rule Server",
-          "publisherDate": "2026-11-16",
+          "publisherDate": "2026-11-17",
           "repositoryUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
-          "version": "5.1.12"
+          "version": "5.2.0"
         }
       ]
     },
@@ -26746,7 +26840,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 197,
+      "currentRank": 196,
       "driverCount": 1,
       "id": "contributor:049ac82534a5d71e7d35",
       "name": "Krassimir kkossev",
@@ -26777,7 +26871,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 198,
+      "currentRank": 197,
       "driverCount": 1,
       "id": "contributor:17107ae9c8fb20832ab8",
       "name": "Kris Linquist",
@@ -26808,7 +26902,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 199,
+      "currentRank": 198,
       "driverCount": 2,
       "id": "contributor:6c9e08e5ef89cdd60a12",
       "name": "Kurt Sanders & Dominick Meglio",
@@ -26839,7 +26933,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 200,
+      "currentRank": 199,
       "driverCount": 1,
       "id": "contributor:fd56c2959df2a69c544f",
       "name": "lgkahn",
@@ -26870,7 +26964,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 201,
+      "currentRank": 200,
       "driverCount": 0,
       "id": "contributor:dce2816d52d102318698",
       "name": "lnustin",
@@ -26958,7 +27052,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 202,
+      "currentRank": 201,
       "driverCount": 2,
       "id": "contributor:87306824ba4899e14679",
       "name": "Lyle Pakula",
@@ -27020,7 +27114,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 203,
+      "currentRank": 202,
       "driverCount": 14,
       "id": "contributor:cd320960655cae36770e",
       "name": "Mads Kristensen",
@@ -27051,7 +27145,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 204,
+      "currentRank": 203,
       "driverCount": 3,
       "id": "contributor:7b3e3701ffc874471808",
       "name": "Marco Felicio (maffpt@gmail.com)",
@@ -27082,7 +27176,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 205,
+      "currentRank": 204,
       "driverCount": 1,
       "id": "contributor:12248add050220fe79f8",
       "name": "Mark Weninger/Joe Page",
@@ -27113,7 +27207,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 206,
+      "currentRank": 205,
       "driverCount": 1,
       "id": "contributor:28ed5c51a64fe36062e5",
       "name": "Martin Kura, kkossev",
@@ -27187,7 +27281,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 207,
+      "currentRank": 206,
       "driverCount": 1,
       "id": "contributor:11858a934cc929a87591",
       "name": "Matt Palermo",
@@ -27218,7 +27312,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 208,
+      "currentRank": 207,
       "driverCount": 1,
       "id": "contributor:fa92690f22b34aad9937",
       "name": "Matthew Petro (@matthewpetro)",
@@ -27249,7 +27343,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 209,
+      "currentRank": 208,
       "driverCount": 5,
       "id": "contributor:95ea6b3a390693791087",
       "name": "mclass",
@@ -27280,7 +27374,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 210,
+      "currentRank": 209,
       "driverCount": 4,
       "id": "contributor:77c71ee34b7bc0399d08",
       "name": "Michael van Dam",
@@ -27340,7 +27434,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 211,
+      "currentRank": 210,
       "driverCount": 1,
       "id": "contributor:28cacb11e32812b5fe4f",
       "name": "Mike Maxwell",
@@ -27371,7 +27465,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 212,
+      "currentRank": 211,
       "driverCount": 0,
       "id": "contributor:20e25452fadd27337ba0",
       "name": "mrmikeface",
@@ -27402,7 +27496,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 213,
+      "currentRank": 212,
       "driverCount": 1,
       "id": "contributor:5bb854beb33ab506edff",
       "name": "Muxa, kkossev",
@@ -27433,7 +27527,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 214,
+      "currentRank": 213,
       "driverCount": 1,
       "id": "contributor:377c43626ed83efa4068",
       "name": "Nathan Spencer & Dominick Meglio",
@@ -27493,7 +27587,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 215,
+      "currentRank": 214,
       "driverCount": 8,
       "id": "contributor:4df8ce971e4d183757d7",
       "name": "Nu Tech Software Solutions, Inc. & Dominick Meglio",
@@ -27524,7 +27618,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 216,
+      "currentRank": 215,
       "driverCount": 1,
       "id": "contributor:74234e98afe7498fb5da",
       "name": "null",
@@ -27555,7 +27649,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 217,
+      "currentRank": 216,
       "driverCount": 1,
       "id": "contributor:e76933a157abbe15e5be",
       "name": "obeisser",
@@ -27586,7 +27680,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 218,
+      "currentRank": 217,
       "driverCount": 4,
       "id": "contributor:2f17695622d65646cef1",
       "name": "Patrick Wogan",
@@ -27617,7 +27711,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 219,
+      "currentRank": 218,
       "driverCount": 3,
       "id": "contributor:4bf2a2d9be0309577ffd",
       "name": "Paul Harrison",
@@ -27648,7 +27742,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 220,
+      "currentRank": 219,
       "driverCount": 2,
       "id": "contributor:e63f3bf26ba8da9464b8",
       "name": "Pedro Andrade",
@@ -27679,7 +27773,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 221,
+      "currentRank": 220,
       "driverCount": 0,
       "id": "contributor:807b36e9795cc15d6844",
       "name": "pentalingual",
@@ -27710,7 +27804,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 222,
+      "currentRank": 221,
       "driverCount": 2,
       "id": "contributor:d2494d7c187d7a41092f",
       "name": "Rangner FG",
@@ -27741,7 +27835,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 223,
+      "currentRank": 222,
       "driverCount": 1,
       "id": "contributor:5b89a0e4515b72e61e65",
       "name": "Reid Baldwin",
@@ -27787,7 +27881,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 224,
+      "currentRank": 223,
       "driverCount": 1,
       "id": "contributor:ebccf1c767568e25bf35",
       "name": "Ricardo Nogueira Garcia (based on Bryan Copeland)",
@@ -27833,7 +27927,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 225,
+      "currentRank": 224,
       "driverCount": 4,
       "id": "contributor:36756ab6908c1d7a4af5",
       "name": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
@@ -27893,7 +27987,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 226,
+      "currentRank": 225,
       "driverCount": 1,
       "id": "contributor:c5864bbeb58102920ce0",
       "name": "Ricardo Nogueira Garcia (based on keltymd)",
@@ -27939,7 +28033,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 227,
+      "currentRank": 226,
       "driverCount": 1,
       "id": "contributor:d1d2fcffb065447207e1",
       "name": "Ricardo Nogueira Garcia (based on SmartThings)",
@@ -28029,7 +28123,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 228,
+      "currentRank": 227,
       "driverCount": 1,
       "id": "contributor:d27989952c94368a22e2",
       "name": "Ricardo Nogueira Garcia (based on VH/TRATO)",
@@ -28060,7 +28154,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 229,
+      "currentRank": 228,
       "driverCount": 1,
       "id": "contributor:9e17b87b33cf8da4a30b",
       "name": "rnoia",
@@ -28121,7 +28215,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 230,
+      "currentRank": 229,
       "driverCount": 1,
       "id": "contributor:db31653beddb2aaf9669",
       "name": "Rob Cummings",
@@ -28152,7 +28246,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 231,
+      "currentRank": 230,
       "driverCount": 9,
       "id": "contributor:207f87a235ac732860cd",
       "name": "Robert Alan Heyes",
@@ -28183,7 +28277,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 232,
+      "currentRank": 231,
       "driverCount": 1,
       "id": "contributor:2713e60259607ad1d8d5",
       "name": "Rory Jaffe",
@@ -28214,7 +28308,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 233,
+      "currentRank": 232,
       "driverCount": 1,
       "id": "contributor:d63affda83dc7c1a55d8",
       "name": "Russ Vrolyk",
@@ -28245,7 +28339,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 234,
+      "currentRank": 233,
       "driverCount": 4,
       "id": "contributor:076da9d03b43ba975391",
       "name": "Russell Goldin",
@@ -28276,7 +28370,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 235,
+      "currentRank": 234,
       "driverCount": 1,
       "id": "contributor:4a7d6073f179ab7191e1",
       "name": "Ryan DeShone",
@@ -28322,7 +28416,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 236,
+      "currentRank": 235,
       "driverCount": 2,
       "id": "contributor:65e9a0efe7c0653af109",
       "name": "sab0276",
@@ -28353,7 +28447,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 237,
+      "currentRank": 236,
       "driverCount": 6,
       "id": "contributor:43c34218d903c1a35bab",
       "name": "Samuel C. Auclair",
@@ -28384,7 +28478,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 238,
+      "currentRank": 237,
       "driverCount": 0,
       "id": "contributor:ab6643ba51d3bf8019f0",
       "name": "Scott Wade",
@@ -28415,7 +28509,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 239,
+      "currentRank": 238,
       "driverCount": 1,
       "id": "contributor:57401b590fa288e5a075",
       "name": "Scottma61 (Original) / Aniva (Patch)",
@@ -28508,7 +28602,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 240,
+      "currentRank": 239,
       "driverCount": 68,
       "id": "contributor:45735072cb5a4e1fb32b",
       "name": "ShellyUSA, Daniel Winks",
@@ -28539,7 +28633,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 241,
+      "currentRank": 240,
       "driverCount": 1,
       "id": "contributor:84a41b081d41fa54529d",
       "name": "signal15",
@@ -28570,7 +28664,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 242,
+      "currentRank": 241,
       "driverCount": 1,
       "id": "contributor:9a379d8493ec287521d5",
       "name": "SORS",
@@ -28617,7 +28711,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 243,
+      "currentRank": 242,
       "driverCount": 30,
       "id": "contributor:1737c8cdf203372ca660",
       "name": "Steven Barcus",
@@ -28648,7 +28742,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 244,
+      "currentRank": 243,
       "driverCount": 3,
       "id": "contributor:680be587ba5a94d69204",
       "name": "Steven Dale",
@@ -28679,7 +28773,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 245,
+      "currentRank": 244,
       "driverCount": 0,
       "id": "contributor:f0065c1f45bf6b1d5d58",
       "name": "Taylor Vierrether",
@@ -28710,7 +28804,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 246,
+      "currentRank": 245,
       "driverCount": 1,
       "id": "contributor:4b3cb752336fd2bd01a2",
       "name": "Terrel Allen",
@@ -28741,7 +28835,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 247,
+      "currentRank": 246,
       "driverCount": 0,
       "id": "contributor:8ee4ab3e718eeb57eeae",
       "name": "TheBearMay",
@@ -28787,7 +28881,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 248,
+      "currentRank": 247,
       "driverCount": 1,
       "id": "contributor:70e9f5530d45c42c4744",
       "name": "TheCase",
@@ -28818,7 +28912,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 249,
+      "currentRank": 248,
       "driverCount": 0,
       "id": "contributor:7d5afc77b7d9fd6886a3",
       "name": "TheDanHealy",
@@ -28849,7 +28943,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 250,
+      "currentRank": 249,
       "driverCount": 2,
       "id": "contributor:aded9e2c5c57232eae75",
       "name": "Thomas Howard",
@@ -28880,7 +28974,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 251,
+      "currentRank": 250,
       "driverCount": 3,
       "id": "contributor:11674668553ffcc8770c",
       "name": "tinkorswim",
@@ -28954,7 +29048,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 252,
+      "currentRank": 251,
       "driverCount": 3,
       "id": "contributor:35dc5aff06542b2c6a54",
       "name": "Tobey Ljungberg",
@@ -28985,7 +29079,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 253,
+      "currentRank": 252,
       "driverCount": 6,
       "id": "contributor:f79b56140024d7668fa8",
       "name": "Todd",
@@ -29016,7 +29110,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 254,
+      "currentRank": 253,
       "driverCount": 1,
       "id": "contributor:bd2f6cbc2a8bc5dfec77",
       "name": "TR-Systems",
@@ -29047,7 +29141,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 255,
+      "currentRank": 254,
       "driverCount": 1,
       "id": "contributor:fe417dbbfca8a5140013",
       "name": "Travis Tomka",
@@ -29149,7 +29243,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 256,
+      "currentRank": 255,
       "driverCount": 1,
       "id": "contributor:2e46c4122819bb72fd5c",
       "name": "Trunzoc/Sleuth",
@@ -29180,7 +29274,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 257,
+      "currentRank": 256,
       "driverCount": 1,
       "id": "contributor:c0169b8774e9ef9eb1c9",
       "name": "uDevel",
@@ -29211,7 +29305,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 258,
+      "currentRank": 257,
       "driverCount": 0,
       "id": "contributor:0d7795bd85122e9c9ea5",
       "name": "UltronOfSpace",
@@ -29242,7 +29336,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 259,
+      "currentRank": 258,
       "driverCount": 1,
       "id": "contributor:3cfe986a247c5ae9cd27",
       "name": "Victor Santana",
@@ -29302,7 +29396,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 260,
+      "currentRank": 259,
       "driverCount": 1,
       "id": "contributor:43e3c3b9a75a2dd734a3",
       "name": "viertaxa",
@@ -29333,7 +29427,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 261,
+      "currentRank": 260,
       "driverCount": 1,
       "id": "contributor:0fc0469097552eede65b",
       "name": "Vincent van Didden",
@@ -29364,7 +29458,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 262,
+      "currentRank": 261,
       "driverCount": 5,
       "id": "contributor:ca4823a0a208aa6ab9ea",
       "name": "Vyrolan",
@@ -29395,7 +29489,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 263,
+      "currentRank": 262,
       "driverCount": 1,
       "id": "contributor:10b1e9e1c48029622d09",
       "name": "WalksOnAir",
@@ -29426,7 +29520,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 264,
+      "currentRank": 263,
       "driverCount": 3,
       "id": "contributor:7d9c33a19dcfd53b7eac",
       "name": "WarlockWeary + Claude AI + ChatGPT + Grok",
@@ -29486,7 +29580,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 265,
+      "currentRank": 264,
       "driverCount": 1,
       "id": "contributor:9fea13bdd5881e51b7bc",
       "name": "waterboysh",
@@ -29574,7 +29668,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 266,
+      "currentRank": 265,
       "driverCount": 2,
       "id": "contributor:6db542f5b830daa06a83",
       "name": "WBEVAN",
@@ -29650,7 +29744,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 267,
+      "currentRank": 266,
       "driverCount": 35,
       "id": "contributor:bd0f62eeeda2c2cbcd20",
       "name": "ymerj",
@@ -29681,7 +29775,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 268,
+      "currentRank": 267,
       "driverCount": 2,
       "id": "contributor:a3f57f1ce6aff5b0d6c6",
       "name": "Yonatan Striem Amit",
@@ -29712,7 +29806,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 1,
-      "currentRank": 269,
+      "currentRank": 268,
       "driverCount": 1,
       "id": "contributor:045e192d454d71c69590",
       "name": "Zac Shenker",
@@ -29804,130 +29898,46 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
-          "category": "Integrations",
+          "category": "Utility",
           "changeTypes": [
             "REMOVED"
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:2c98883ac45dca2d57895e64",
-          "observedAt": "2026-11-17T08:11:21Z",
+          "id": "change:b67b7a3d5b299e6f953e3a94",
+          "observedAt": "2026-09-12T02:04:38Z",
           "observedCommit": null,
-          "packageId": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
-          "packageName": "Grizzl-ECharger",
-          "summary": "Grizzl-ECharger: removed."
+          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+          "packageName": "Lumos",
+          "summary": "Lumos: removed."
         },
         {
-          "category": "Integrations",
+          "category": "Utility",
           "changeTypes": [
-            "REMOVED"
+            "ADDED"
           ],
-          "declarationRole": "PREVIOUS_DECLARATION",
+          "declarationRole": "CURRENT_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:2f90bd8e4fa90e3ed1611be6",
-          "observedAt": "2026-11-17T08:11:21Z",
+          "id": "change:1702eef93c64cfbd6cc55265",
+          "observedAt": "2026-09-13T01:59:30Z",
           "observedCommit": null,
-          "packageId": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
-          "packageName": "FireBoard",
-          "summary": "FireBoard: removed."
+          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+          "packageName": "Lumos",
+          "summary": "Lumos: added."
         },
         {
-          "category": "Integrations",
+          "category": "Utility",
           "changeTypes": [
             "REMOVED"
           ],
           "declarationRole": "PREVIOUS_DECLARATION",
           "evidenceUrl": null,
-          "id": "change:4dac0af981e8c0ad68108df7",
-          "observedAt": "2026-11-17T08:11:21Z",
+          "id": "change:6ceef4bbdacdd991f36f218d",
+          "observedAt": "2026-11-18T07:45:28Z",
           "observedCommit": null,
-          "packageId": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-          "packageName": "Unifi Protect Drivers",
-          "summary": "Unifi Protect Drivers: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:52417dbae01a5164285c61ce",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
-          "packageName": "Neurio",
-          "summary": "Neurio: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:5db1c8c95a419426aa132ba5",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-          "packageName": "Ambient Ecowitt Weather",
-          "summary": "Ambient Ecowitt Weather: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8d4f2142c409b79d93eba86b",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
-          "packageName": "WSM4Hubitat",
-          "summary": "WSM4Hubitat: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:c447873e6de009cba3a3ad4f",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-          "packageName": "Blink Drivers",
-          "summary": "Blink Drivers: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:e53925b4bee2cb4ce6b32fd4",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:626a5598-3385-40b9-a603-44b841fea140",
-          "packageName": "WeatherFlow",
-          "summary": "WeatherFlow: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f5fd3f1468539fc46b0726fc",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-          "packageName": "UnifiConnectAPI",
-          "summary": "UnifiConnectAPI: removed."
+          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+          "packageName": "Lumos",
+          "summary": "Lumos: removed."
         }
       ],
       "appCount": 0,
@@ -29935,9 +29945,636 @@ window.CONTRIBUTOR_ACTIVITY = {
       "currentPackageCount": 0,
       "currentRank": null,
       "driverCount": 0,
-      "id": "contributor:caa9e002421ea86f5be1",
-      "name": "David Snell",
-      "observedActivityCount": 9,
+      "id": "contributor:09c2c1f1bae09e1e8a55",
+      "name": "Dan Danache",
+      "observedActivityCount": 3,
+      "packages": []
+    },
+    {
+      "activity": [
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:daf2d27ef2de8a3b9ff6c3a2",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+          "packageName": "Dashboard Widgets",
+          "summary": "Dashboard Widgets: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0fe10105010943f0068da7d5",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+          "packageName": "Dashboard Widgets",
+          "summary": "Dashboard Widgets: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:16236dcdd69b14bb92d5d6a7",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+          "packageName": "Dashboard Widgets",
+          "summary": "Dashboard Widgets: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [],
+      "currentPackageCount": 0,
+      "currentRank": null,
+      "driverCount": 0,
+      "id": "contributor:e2a1a9d6497ce82b1a2a",
+      "name": "Dan Danache (@agamemnon.dandanache)",
+      "observedActivityCount": 3,
+      "packages": []
+    },
+    {
+      "activity": [
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0cb600c96e82b249d6f6d700",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:275d4e8c83af3c14cbf98ca5",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e60858589aed5d11490f2687",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "BROKEN",
+            "DECLARED_DEFINITIONS_CHANGED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f7f5d1732f51a86d4f062af9",
+          "observedAt": "2026-09-04T01:55:09Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: updated, changed source location, changed declared definitions, became unavailable."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:5c28ea22d40770b678677e67",
+          "observedAt": "2026-09-05T01:56:19Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b0d217cdc36e20dd1d665b7d",
+          "observedAt": "2026-09-05T01:56:19Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b5c076d2960ef40d64077f93",
+          "observedAt": "2026-09-05T01:56:19Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED",
+            "RESTORED",
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cd5733332aaa84a9656af3cf",
+          "observedAt": "2026-09-05T01:56:19Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: updated, changed source location, changed declared definitions, was restored."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:460e157dcd0117a6e69a1437",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:89f6a414725e818e47cda692",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+          "packageName": "zigbee-graph",
+          "summary": "zigbee-graph: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:94989872379158d264ffa116",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "packageName": "Watchtower",
+          "summary": "Watchtower: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c0f405ec7a080001eacd963a",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c1c4170d107f0ad935165e9d",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+          "packageName": "Hub-a-Dashery",
+          "summary": "Hub-a-Dashery: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d6a6cb2541cd0a32f14eb807",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f15644cbfc0f7638fe6fe4d6",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "packageName": "Zigbee Map",
+          "summary": "Zigbee Map: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f56b65a332d13a10db71b036",
+          "observedAt": "2026-09-12T02:04:38Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:0ed2b752940dcc43e42f3bf1",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+          "packageName": "Hub-a-Dashery",
+          "summary": "Hub-a-Dashery: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:30da565c8567af47d45d47b5",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6b824112f49e2f3aabfc4da0",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6bb177c44eda893c644d5edc",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "packageName": "Watchtower",
+          "summary": "Watchtower: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:7e423ecf9c110076821db07d",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+          "packageName": "zigbee-graph",
+          "summary": "zigbee-graph: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8b52ccd6df8200f484f1fb80",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:aabd2343655547f8b5956e70",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "packageName": "Zigbee Map",
+          "summary": "Zigbee Map: added."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b52fbbe1a5cfe2c332836455",
+          "observedAt": "2026-09-13T01:59:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: added."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:19a7acb910455d463c8b6dfd",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:482e5848dea450626ca98bf9",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:754a6549a6958625aedd3b88",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+          "packageName": "Hub-a-Dashery",
+          "summary": "Hub-a-Dashery: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:91db91c4262660c38a4d2dc8",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "packageName": "Zigbee Map",
+          "summary": "Zigbee Map: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d67c7b50756481e49126dd1c",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: changed declared definitions."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f7fe4c905ce8c2dc290c59f5",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "SOURCE_LOCATION_CHANGED",
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1d7e7790c3b0658764b602ad",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "packageName": "Watchtower",
+          "summary": "Watchtower: updated, changed source location."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:1f4674dd14d9192962a4d898",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+          "packageName": "EMS-ESP Gateway",
+          "summary": "EMS-ESP Gateway: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:4effd7642f4ff2e6b1672a78",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+          "packageName": "Zigbee Map",
+          "summary": "Zigbee Map: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67d9b9111444afe676f0cdf3",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+          "packageName": "Hub-a-Dashery",
+          "summary": "Hub-a-Dashery: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:b531107d89cb581b0deae7b7",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+          "packageName": "Watchtower",
+          "summary": "Watchtower: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c7d997887fdb3a5f47e7a28e",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+          "packageName": "LGTV with webOS",
+          "summary": "LGTV with webOS: removed."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cb80cdf6f8df9da95eb09805",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+          "packageName": "IKEA Zigbee drivers",
+          "summary": "IKEA Zigbee drivers: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:f1714e0977bd8479bf97396c",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+          "packageName": "Hubitat drivers for NodOn smart devices.",
+          "summary": "Hubitat drivers for NodOn smart devices.: removed."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:fac927f6c4712528e340f38a",
+          "observedAt": "2026-11-18T07:45:28Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+          "packageName": "zigbee-graph",
+          "summary": "zigbee-graph: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [],
+      "currentPackageCount": 0,
+      "currentRank": null,
+      "driverCount": 0,
+      "id": "contributor:55e837becfd98e51d47d",
+      "name": "Dan Danache (@dandanache)",
+      "observedActivityCount": 39,
       "packages": []
     },
     {
@@ -30055,173 +30692,16 @@ window.CONTRIBUTOR_ACTIVITY = {
       "name": "John C. Steele",
       "observedActivityCount": 2,
       "packages": []
-    },
-    {
-      "activity": [
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:58585cbbf7032294f89515c0",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-          "packageName": "Unifi Drivers",
-          "summary": "Unifi Drivers: updated, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:68443741d18488e125a1e71e",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-          "packageName": "Tesla Drivers",
-          "summary": "Tesla Drivers: updated, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "BROKEN",
-            "DECLARED_DEFINITIONS_CHANGED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f631cbe0f993a99579e31d5f",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-          "packageName": "Neptune Systems Apex",
-          "summary": "Neptune Systems Apex: updated, changed source location, changed declared definitions, became unavailable."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:453062c3bb49dcf4e1b9ea04",
-          "observedAt": "2026-11-08T06:21:17Z",
-          "observedCommit": null,
-          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-          "packageName": "Neptune Systems Apex",
-          "summary": "Neptune Systems Apex: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:6f6f0883ff63ff959743852d",
-          "observedAt": "2026-11-08T06:21:17Z",
-          "observedCommit": null,
-          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-          "packageName": "Unifi Drivers",
-          "summary": "Unifi Drivers: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED",
-            "RESTORED",
-            "SOURCE_LOCATION_CHANGED",
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:be2575e4981b103071fe9a03",
-          "observedAt": "2026-11-08T06:21:17Z",
-          "observedCommit": null,
-          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-          "packageName": "Tesla Drivers",
-          "summary": "Tesla Drivers: updated, changed source location, changed declared definitions, was restored."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3a2e303ffdd10a56df78540f",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-          "packageName": "Unifi Drivers",
-          "summary": "Unifi Drivers: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:bc4c23c8e6af0438128eeeeb",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-          "packageName": "Neptune Systems Apex",
-          "summary": "Neptune Systems Apex: removed."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "REMOVED"
-          ],
-          "declarationRole": "PREVIOUS_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:f651a02d1b847c30b94db49a",
-          "observedAt": "2026-11-17T08:11:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-          "packageName": "Tesla Drivers",
-          "summary": "Tesla Drivers: removed."
-        }
-      ],
-      "appCount": 0,
-      "categories": [],
-      "currentPackageCount": 0,
-      "currentRank": null,
-      "driverCount": 0,
-      "id": "contributor:b1b4211137432b0ceaab",
-      "name": "Snell",
-      "observedActivityCount": 9,
-      "packages": []
     }
   ],
-  "currentContributorCount": 269,
-  "currentPackageCount": 970,
+  "currentContributorCount": 268,
+  "currentPackageCount": 973,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 850,
-    "eventCount": 849,
+    "attributedEventCount": 882,
+    "eventCount": 881,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-11-17T08:11:21Z"
+    "lastObservedAt": "2026-11-18T07:45:28Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -30233,9 +30713,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 275,
-  "rankedPackageCount": 968,
+  "rankedPackageCount": 971,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-17T08:11:21Z",
+  "snapshotGenerated": "2026-11-18T07:45:28Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

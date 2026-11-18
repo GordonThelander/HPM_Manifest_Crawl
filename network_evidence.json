@@ -1,8 +1,8 @@
 {
   "counts": {
-    "BOTH": 179,
+    "BOTH": 185,
     "CLOUD": 276,
-    "INSUFFICIENT": 311,
+    "INSUFFICIENT": 308,
     "LAN": 204
   },
   "dataset": "network-evidence-guide",
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 970,
+  "packageCount": 973,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1411,6 +1411,55 @@
       "tags": [
         "Cloud",
         "Energy Monitoring"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": true
+      },
+      "description": "Drivers for using the Ambient API, Ambient Local, and Ecowitt methods of getting weather station data",
+      "documentationUrl": null,
+      "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
+      "name": "Ambient Ecowitt Weather",
+      "observed": {
+        "externalHosts": [
+          "api.ambientweather.net",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [
+          "PARSE_LAN_MESSAGE"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_BRIDGE",
+              "name": "Ecowitt Gateway",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN_HTTP"
+            }
+          ],
+          "documentation": [],
+          "id": "ecowitt",
+          "name": "EcoWitt / Wittboy Integration",
+          "status": "VERIFIED_COMMUNITY"
+        }
+      ],
+      "tags": [
+        "Cloud",
+        "LAN",
+        "Monitoring",
+        "Temperature & Humidity",
+        "Weather"
       ]
     },
     {
@@ -2834,6 +2883,39 @@
       "tags": []
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "This is a set of drivers to use with the Blink API",
+      "documentationUrl": null,
+      "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
+      "name": "Blink Drivers",
+      "observed": {
+        "externalHosts": [
+          "api.oauth.blink.com",
+          "rest-prod.immedia-semi.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 9,
+        "urlLiteralCount": 133
+      },
+      "reviewed": [],
+      "tags": [
+        "Cameras",
+        "Cloud",
+        "Misc. Devices",
+        "Monitoring",
+        "Safety & Security"
+      ]
+    },
+    {
       "author": "Simon Burke (sburke781)",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -4027,32 +4109,6 @@
       ]
     },
     {
-      "author": "Dan Danache (@agamemnon.dandanache)",
-      "category": "Utility",
-      "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Allows you to add custom widgets to Hubitat dashboards.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md",
-      "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json",
-      "name": "Dashboard Widgets",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
-      },
-      "reviewed": [],
-      "tags": [
-        "Dashboards",
-        "Tools & Utilities"
-      ]
-    },
-    {
       "author": "James Shimota",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -5216,34 +5272,6 @@
       ]
     },
     {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": true
-      },
-      "description": "Control your boiler using an EMS-ESP Gateway.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
-      "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
-      "name": "EMS-ESP Gateway",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 4,
-        "urlLiteralCount": 15
-      },
-      "reviewed": [],
-      "tags": [
-        "Climate Control",
-        "LAN"
-      ]
-    },
-    {
       "author": "Ryan Elliott",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -6242,6 +6270,36 @@
       "reviewed": [],
       "tags": [
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers for integrating FireBoard devices using the FireBoard Cloud API",
+      "documentationUrl": null,
+      "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
+      "name": "FireBoard",
+      "observed": {
+        "externalHosts": [
+          "fireboard.io",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 9
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity"
       ]
     },
     {
@@ -8078,6 +8136,37 @@
       ]
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Monitor Grizzl-E charger.",
+      "documentationUrl": null,
+      "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
+      "name": "Grizzl-ECharger",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring",
+        "Vehicles & Transportation"
+      ]
+    },
+    {
       "author": "Mike Bishop",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -9719,31 +9808,6 @@
       "tags": []
     },
     {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "View dashboards for your Hubitat hub metrics.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
-      "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
-      "name": "Hub-a-Dashery",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 3
-      },
-      "reviewed": [],
-      "tags": [
-        "Tools & Utilities"
-      ]
-    },
-    {
       "author": "Thomas Howard",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -9950,48 +10014,6 @@
       "reviewed": [],
       "tags": [
         "Lights & Switches"
-      ]
-    },
-    {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Drivers for the following NodOn devices: SIN-4-1-20, SIN-4-1-21, SIN-4-2-20, SIN-4-FP-21, SIN-4-RS-20.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
-      "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
-      "name": "Hubitat drivers for NodOn smart devices.",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 6,
-        "urlLiteralCount": 27
-      },
-      "reviewed": [
-        {
-          "dependencies": [
-            {
-              "class": "EXTERNAL_SERVICE",
-              "name": "Ring Cloud",
-              "runtimeCriticality": "RUNTIME",
-              "transport": "CLOUD_API"
-            }
-          ],
-          "documentation": [],
-          "id": "ring",
-          "name": "Ring Integration",
-          "status": "COMMUNITY_SEED"
-        }
-      ],
-      "tags": [
-        "Tools & Utilities"
       ]
     },
     {
@@ -11602,52 +11624,6 @@
       "reviewed": [],
       "tags": [
         "Window Coverings",
-        "Zigbee"
-      ]
-    },
-    {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Control",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Drivers for most of the IKEA Zigbee smart devices including TRADFRI lights.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
-      "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
-      "name": "IKEA Zigbee drivers",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org",
-          "en.wikipedia.org",
-          "www.urbandictionary.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 23,
-        "urlLiteralCount": 139
-      },
-      "reviewed": [
-        {
-          "dependencies": [
-            {
-              "class": "EXTERNAL_SERVICE",
-              "name": "Ring Cloud",
-              "runtimeCriticality": "RUNTIME",
-              "transport": "CLOUD_API"
-            }
-          ],
-          "documentation": [],
-          "id": "ring",
-          "name": "Ring Integration",
-          "status": "COMMUNITY_SEED"
-        }
-      ],
-      "tags": [
-        "Buttons",
-        "Lights & Switches",
         "Zigbee"
       ]
     },
@@ -13469,40 +13445,6 @@
       "tags": []
     },
     {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "BOTH",
-      "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": true
-      },
-      "description": "Control your LG webOS TV.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
-      "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
-      "name": "LGTV with webOS",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org",
-          "gist.github.com"
-        ],
-        "lanPrimitives": [
-          "HUB_ACTION",
-          "LAN_PROTOCOL",
-          "SEND_HUB_COMMAND"
-        ],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 13
-      },
-      "reviewed": [],
-      "tags": [
-        "Appliances",
-        "LAN",
-        "Multimedia"
-      ]
-    },
-    {
       "author": "Andrew Davison",
       "category": null,
       "classification": "INSUFFICIENT",
@@ -14262,33 +14204,6 @@
       ]
     },
     {
-      "author": "Dan Danache",
-      "category": "Utility",
-      "classification": "INSUFFICIENT",
-      "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Control lights using motion and contact sensors.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
-      "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
-      "name": "Lumos",
-      "observed": {
-        "externalHosts": [],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 4
-      },
-      "reviewed": [],
-      "tags": [
-        "Doors & Windows",
-        "Lights & Switches",
-        "Motion Control"
-      ]
-    },
-    {
       "author": "Eduardo Simioni",
       "category": "Control",
       "classification": "INSUFFICIENT",
@@ -14872,7 +14787,7 @@
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 7
+        "urlLiteralCount": 12
       },
       "reviewed": [],
       "tags": [
@@ -16153,6 +16068,40 @@
       ]
     },
     {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for monitoring a Neptune Systems Apex aquarium controller",
+      "documentationUrl": null,
+      "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
+      "name": "Neptune Systems Apex",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 31,
+        "urlLiteralCount": 95
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Monitoring",
+        "Pets & Animals",
+        "Temperature & Humidity",
+        "Valves",
+        "Water"
+      ]
+    },
+    {
       "author": "Schwark Satyavolu",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -16359,6 +16308,36 @@
       "tags": [
         "Alarm Systems",
         "Safety & Security"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Driver for getting data directly from a Neurio energy monitor",
+      "documentationUrl": null,
+      "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
+      "name": "Neurio",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring"
       ]
     },
     {
@@ -20211,7 +20190,8 @@
       "name": "Samsung TV Remote (hubitrep)",
       "observed": {
         "externalHosts": [
-          "api.smartthings.com"
+          "api.smartthings.com",
+          "cloud.hubitat.com"
         ],
         "lanPrimitives": [
           "HUB_ACTION",
@@ -20219,8 +20199,8 @@
           "SEND_HUB_COMMAND",
           "UDP_PROTOCOL"
         ],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 22
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 29
       },
       "reviewed": [],
       "tags": [
@@ -20365,7 +20345,7 @@
       "author": "Brian Wilson",
       "category": "Integrations",
       "classification": "LAN",
-      "communityUrl": null,
+      "communityUrl": "https://community.hubitat.com/t/release-scrypted-connect-scrypted-nvr-detections-and-notification-muting/167560",
       "declared": {
         "cloudTag": false,
         "lanTag": true
@@ -22693,7 +22673,7 @@
           "PARSE_LAN_MESSAGE"
         ],
         "sourceFilesAnalysed": 12,
-        "urlLiteralCount": 80
+        "urlLiteralCount": 75
       },
       "reviewed": [
         {
@@ -23708,6 +23688,35 @@
       "tags": [
         "Monitoring",
         "Presence & Location"
+      ]
+    },
+    {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for monitoring a Tesla Powerwall",
+      "documentationUrl": null,
+      "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
+      "name": "Tesla Drivers",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 46
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Monitoring"
       ]
     },
     {
@@ -25458,6 +25467,37 @@
       ]
     },
     {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for integrating Ubiquiti's Unifi Network API",
+      "documentationUrl": null,
+      "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
+      "name": "Unifi Drivers",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 49,
+        "urlLiteralCount": 179
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Monitoring",
+        "Multi Sensors"
+      ]
+    },
+    {
       "author": "Mavrrick",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -25518,6 +25558,40 @@
       ]
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for integrating Ubiquiti's Unifi Protect API",
+      "documentationUrl": null,
+      "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
+      "name": "Unifi Protect Drivers",
+      "observed": {
+        "externalHosts": [
+          "dzone.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 8,
+        "urlLiteralCount": 64
+      },
+      "reviewed": [],
+      "tags": [
+        "Cameras",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring",
+        "Multi Sensors",
+        "Safety & Security",
+        "Temperature & Humidity"
+      ]
+    },
+    {
       "author": "Mike Coffey",
       "category": "Integrations",
       "classification": "LAN",
@@ -25543,6 +25617,36 @@
         "Monitoring",
         "Notifications",
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for getting data and basic control of devices within the Unifi Connect API",
+      "documentationUrl": null,
+      "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
+      "name": "UnifiConnectAPI",
+      "observed": {
+        "externalHosts": [
+          "dzone.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 16,
+        "urlLiteralCount": 71
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Misc. Devices",
+        "Monitoring"
       ]
     },
     {
@@ -26216,6 +26320,51 @@
       ]
     },
     {
+      "author": "Brian Wilson",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": "https://community.hubitat.com/t/release-volvo-connect-native-volvo-integration-oauth2-no-external-server/167561",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Native Volvo integration via the Volvo Connected Vehicle API (OAuth2/PKCE, no external server) - lock/unlock, battery/fuel/range, charging status and notifications, doors, windows, tyres, odometer, GPS location, plus engine/climate/honk commands",
+      "documentationUrl": "https://github.com/bdwilson/hubitat/tree/master/Volvo",
+      "id": "manifest:d0d4cf7db10778b770f3",
+      "manifestUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Volvo/packageManifest.json",
+      "name": "Volvo Connect",
+      "observed": {
+        "externalHosts": [
+          "api.volvocars.com",
+          "developer.volvocars.com",
+          "volvoid.eu.volvocars.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "Volvo Cars API",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "HTTPS_API"
+            }
+          ],
+          "documentation": [],
+          "id": "volvo-cars",
+          "name": "Volvo Cars Integration",
+          "status": "VERIFIED_REPO"
+        }
+      ],
+      "tags": [
+        "Control",
+        "Monitoring"
+      ]
+    },
+    {
       "author": "Ramdev Shallem",
       "category": "Control",
       "classification": "LAN",
@@ -26302,37 +26451,6 @@
       "tags": [
         "Climate Control",
         "Temperature & Humidity"
-      ]
-    },
-    {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Watchtower is the all-in-one app for long-term smart home monitoring and data visualization. Staying true to Hubitat's core value, the application works 100% locally, with no reliance on the cloud. Plus, there's no need for extra hardware like Raspberry Pi or NAS.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
-      "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
-      "name": "Watchtower",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org",
-          "raw.codeberg.page",
-          "www.urbandictionary.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 9
-      },
-      "reviewed": [],
-      "tags": [
-        "Dashboards",
-        "Monitoring",
-        "Tools & Utilities"
       ]
     },
     {
@@ -26511,6 +26629,52 @@
       },
       "reviewed": [],
       "tags": [
+        "Weather"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers to access the WeatherFlow API",
+      "documentationUrl": null,
+      "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
+      "name": "WeatherFlow",
+      "observed": {
+        "externalHosts": [
+          "swd.weatherflow.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "WeatherFlow Station / Service",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN_OR_HTTPS"
+            }
+          ],
+          "documentation": [],
+          "id": "weatherflow",
+          "name": "WeatherFlow Integration",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity",
         "Weather"
       ]
     },
@@ -27244,6 +27408,44 @@
       "tags": [
         "Cloud",
         "Lights & Switches"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers to access a variety of Weather Services such as the UK Met Office, US Weather.gov, OpenWeather, Weather API, Weather Underground, and World Weather Online",
+      "documentationUrl": null,
+      "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
+      "name": "WSM4Hubitat",
+      "observed": {
+        "externalHosts": [
+          "api-metoffice.apiconnect.ibmcloud.com",
+          "api.openweathermap.org",
+          "api.weather.com",
+          "api.weather.gov",
+          "api.weatherapi.com",
+          "api.worldweatheronline.com",
+          "data.hub.api.metoffice.gov.uk",
+          "openweathermap.org",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 30
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity",
+        "Weather"
       ]
     },
     {
@@ -28190,34 +28392,6 @@
       ]
     },
     {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Visualize the topology and connectivity of your Zigbee network.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-      "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-      "name": "Zigbee Map",
-      "observed": {
-        "externalHosts": [
-          "codeberg.org"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
-      },
-      "reviewed": [],
-      "tags": [
-        "Tools & Utilities",
-        "Zigbee"
-      ]
-    },
-    {
       "author": "Gary J. Milne",
       "category": "Zigbee",
       "classification": "BOTH",
@@ -28346,34 +28520,6 @@
       "reviewed": [],
       "tags": [
         "Lights & Switches"
-      ]
-    },
-    {
-      "author": "Dan Danache (@dandanache)",
-      "category": "Utility",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Allows you to visually render getChildAndRouteInfo of your Hubitat system.",
-      "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
-      "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
-      "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
-      "name": "zigbee-graph",
-      "observed": {
-        "externalHosts": [
-          "ethanschoonover.com"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 4
-      },
-      "reviewed": [],
-      "tags": [
-        "Tools & Utilities",
-        "Zigbee"
       ]
     },
     {
@@ -29190,5 +29336,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-17T08:11:21Z"
+  "snapshotGenerated": "2026-11-18T07:45:28Z"
 }

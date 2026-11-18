@@ -1,9 +1,41 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-17T08:11:21Z`.
+Latest observation: `2026-11-18T07:45:28Z`.
 
-**153 package change(s):** added 51, broken 1, declared definitions changed 4, removed 48, source location changed 10, updated 53
+**180 package change(s):** added 64, broken 1, declared definitions changed 5, removed 58, source location changed 11, updated 57
 
+- [zigbee-graph: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
+- [Zigbee Map: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
+- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
+- [WeatherFlow: added.](https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json)
+- [Watchtower: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
+- [WSM4Hubitat: added.](https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json)
+- [Volvo Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Volvo/packageManifest.json)
+- [UnifiConnectAPI: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json)
+- [Unifi Protect Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json)
+- [Unifi Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
+- [Tesla Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [SmartHQ GE Appliances Integration: updated.](https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [Scrypted Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json)
+- [Samsung TV Remote (hubitrep): updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/hubitrep/SamsungTvRemote/main/packageManifest.json)
+- [Neurio: added.](https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json)
+- [Neptune Systems Apex: added.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
+- [Mitsubishi Comfort: updated.](https://raw.githubusercontent.com/jlupien/hubitat-drivers/master/mitsubishi-comfort/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Lumos: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json)
+- [LGTV with webOS: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
+- [IKEA Zigbee drivers: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
+- [Hubitat drivers for NodOn smart devices.: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
+- [Hub-a-Dashery: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json)
+- [Grizzl-ECharger: added.](https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json)
+- [GE/Jasco Enbrighten Switch & Dimmer (Multi): updated.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json)
+- [FireBoard: added.](https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json)
+- [EMS-ESP Gateway: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
+- [Dashboard Widgets: removed.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json)
+- [Blink Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
+- [Ambient Ecowitt Weather: added.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
 - [sage doorbell echostar: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/sage_doorbell_echostar.json)
 - [iris v1 button: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/iris-v1-button.json)
 - [Zigbee Sonoff - generic relays: added.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json)
@@ -151,11 +183,6 @@ Latest observation: `2026-11-17T08:11:21Z`.
 - [LG TV (Glasshouse): added.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
 - [Energy From Power: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
 - [Dreo Integration: changed source location, changed declared definitions.](https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/packageManifest.json)
-- [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Pentair IntelliCenter Controller: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/packagemanifest.json)
-- [Memory Monitor & Auto Reboot: updated.](https://raw.githubusercontent.com/dJOS1475/Hubitat-Memory-Monitor-Auto-Reboot/refs/heads/main/packageManifest.json)
-- [Leviton Smart Load Center: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/packagemanifest.json)
 - [Apple TV Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Apple%20TV%20Integration/packagemanifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
