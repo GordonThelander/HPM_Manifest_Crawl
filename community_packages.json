@@ -1,6 +1,6 @@
 {
   "dataset": "community-packages",
-  "packageCount": 973,
+  "packageCount": 971,
   "packages": [
     {
       "author": "Konnected Inc.",
@@ -1689,42 +1689,6 @@
       "version": "1.2.20"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:64022755cd0cf32e1e5f",
-          "definition:e1a0056680cda4765bf2"
-        ]
-      },
-      "dateReleased": "2023-01-01",
-      "description": "Drivers to access a variety of Weather Services such as the UK Met Office, US Weather.gov, OpenWeather, Weather API, Weather Underground, and World Weather Online",
-      "hpmPackageId": "1ad94c69-cfa0-48d8-9810-a87f193fd155",
-      "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json"
-      },
-      "name": "WSM4Hubitat",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Cloud",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
-    },
-    {
       "author": "Matt Palermo",
       "category": "Integrations",
       "components": {
@@ -2603,6 +2567,41 @@
         "Tools & Utilities"
       ],
       "version": "0.1.2"
+    },
+    {
+      "author": "Dan Danache",
+      "category": "Utility",
+      "components": {
+        "apps": [
+          "definition:8be7492e9c6826d8e773",
+          "definition:be7c2c28287ebb4ef5db"
+        ],
+        "drivers": []
+      },
+      "dateReleased": "2025-01-24",
+      "description": "Control lights using motion and contact sensors.",
+      "hpmPackageId": "23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+      "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json"
+      },
+      "name": "Lumos",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Doors & Windows",
+        "Lights & Switches",
+        "Motion Control"
+      ],
+      "version": "1.1.0"
     },
     {
       "author": "Larry Kahn",
@@ -3651,41 +3650,6 @@
       "version": "1.0.5"
     },
     {
-      "author": "Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:554b37c9ec64b8998ad6",
-          "definition:d0965970401430575a83"
-        ]
-      },
-      "dateReleased": "2021-03-06",
-      "description": "Drivers for monitoring a Tesla Powerwall",
-      "hpmPackageId": "35ad06a9-bf04-4967-906f-c3920cb1b555",
-      "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
-      },
-      "name": "Tesla Drivers",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Monitoring"
-      ],
-      "version": null
-    },
-    {
       "author": "Dominick Meglio",
       "category": "Integrations",
       "components": {
@@ -3826,39 +3790,40 @@
       "version": null
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
       "components": {
-        "apps": [],
+        "apps": [
+          "definition:461a28598907abc7322a"
+        ],
         "drivers": [
-          "definition:28cddde35677c00ae751",
-          "definition:a715c1ee0a9fa98b4d0d"
+          "definition:28adb4f464de2570670d"
         ]
       },
-      "dateReleased": "2023-01-01",
-      "description": "Drivers for integrating FireBoard devices using the FireBoard Cloud API",
-      "hpmPackageId": "3855cfb7-c514-49c8-afad-0701de76d712",
-      "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+      "dateReleased": "2026-10-22",
+      "description": "Watchtower is the all-in-one app for long-term smart home monitoring and data visualization. Staying true to Hubitat's core value, the application works 100% locally, with no reliance on the cloud. Plus, there's no need for extra hardware like Raspberry Pi or NAS.",
+      "hpmPackageId": "3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+      "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
       "links": {
-        "community": null,
-        "documentation": null
+        "community": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md"
       },
       "manifest": {
         "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json"
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json"
       },
-      "name": "FireBoard",
+      "name": "Watchtower",
       "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
       },
       "tags": [
-        "Cloud",
+        "Dashboards",
         "Monitoring",
-        "Temperature & Humidity"
+        "Tools & Utilities"
       ],
-      "version": null
+      "version": "4.3.0"
     },
     {
       "author": "WBEVAN",
@@ -4755,6 +4720,41 @@
       "version": null
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [
+          "definition:fabe76efc2261bc09097"
+        ],
+        "drivers": [
+          "definition:bab6e0aee12bd37f1a05"
+        ]
+      },
+      "dateReleased": "2020-01-02",
+      "description": "Visualize the topology and connectivity of your Zigbee network.",
+      "hpmPackageId": "46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+      "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json"
+      },
+      "name": "Zigbee Map",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Tools & Utilities",
+        "Zigbee"
+      ],
+      "version": "3.0.4"
+    },
+    {
       "author": "Rob Alfonso",
       "category": "Control",
       "components": {
@@ -5365,6 +5365,72 @@
       },
       "tags": [],
       "version": "0.0.3"
+    },
+    {
+      "author": "Dan Danache (@agamemnon.dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:a340b33fa09aed142a0c"
+        ]
+      },
+      "dateReleased": "2023-08-02",
+      "description": "Allows you to add custom widgets to Hubitat dashboards.",
+      "hpmPackageId": "4e07f242-914a-41c3-914d-3aba4fcc4540",
+      "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+      "links": {
+        "community": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json"
+      },
+      "name": "Dashboard Widgets",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Dashboards",
+        "Tools & Utilities"
+      ],
+      "version": "1.5.0"
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [
+          "definition:7c7b4767d06b78031d1f"
+        ],
+        "drivers": []
+      },
+      "dateReleased": "2023-06-30",
+      "description": "Allows you to visually render getChildAndRouteInfo of your Hubitat system.",
+      "hpmPackageId": "4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+      "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+      "links": {
+        "community": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json"
+      },
+      "name": "zigbee-graph",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Tools & Utilities",
+        "Zigbee"
+      ],
+      "version": "2.3.0"
     },
     {
       "author": "Marc Hedish",
@@ -6226,41 +6292,6 @@
       "version": "0.7"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:8b92520644393a8eed3c"
-        ]
-      },
-      "dateReleased": "2023-01-01",
-      "description": "Driver for getting data directly from a Neurio energy monitor",
-      "hpmPackageId": "5aba2c98-a662-4539-b1a7-d9f82943852b",
-      "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json"
-      },
-      "name": "Neurio",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring"
-      ],
-      "version": null
-    },
-    {
       "author": "David Manuel",
       "category": "Integrations",
       "components": {
@@ -6436,43 +6467,6 @@
         "Lights & Switches"
       ],
       "version": "2.4.3"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:6dd493b45b19c6285799",
-          "definition:ab486e987a10d4e3e497"
-        ]
-      },
-      "dateReleased": "2023-01-01",
-      "description": "Drivers for using the Ambient API, Ambient Local, and Ecowitt methods of getting weather station data",
-      "hpmPackageId": "5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-      "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json"
-      },
-      "name": "Ambient Ecowitt Weather",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Cloud",
-        "LAN",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
     },
     {
       "author": "Joe Page",
@@ -6923,42 +6917,6 @@
         "Z-Wave"
       ],
       "version": "1.2.0"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:02fcec13f560ba35d071",
-          "definition:9ab7f6737b62998277a4"
-        ]
-      },
-      "dateReleased": "2023-01-01",
-      "description": "Drivers to access the WeatherFlow API",
-      "hpmPackageId": "626a5598-3385-40b9-a603-44b841fea140",
-      "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json"
-      },
-      "name": "WeatherFlow",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Cloud",
-        "Monitoring",
-        "Temperature & Humidity",
-        "Weather"
-      ],
-      "version": null
     },
     {
       "author": "TRATO",
@@ -7501,23 +7459,23 @@
       "category": "Integrations",
       "components": {
         "apps": [
-          "definition:358254411478dd8e4a71"
+          "definition:9d80c92b16cd307f2f1a"
         ],
         "drivers": [
-          "definition:2135430805fc2c53f5a4",
-          "definition:22e8273c0540732b5ead",
-          "definition:3408ba80f0d181b0b354",
-          "definition:4caf4475ca206c7fbe11",
-          "definition:61905cd97e6a24439d5a",
-          "definition:651241cdcbdd8af28e92",
-          "definition:a620cadc053e71e614ce",
-          "definition:a87810d154150755bcdf",
-          "definition:c8cd815aae90bc05d817",
-          "definition:e5742196e19bcc58d017",
-          "definition:f8484f00412803156a57"
+          "definition:16c50093761ff10a5005",
+          "definition:1f5648c5f0047bc0cdee",
+          "definition:268d54beadb7fcf33f64",
+          "definition:270d8a3b7114144657c3",
+          "definition:3fc63912988d35b5e893",
+          "definition:60faab52c941dea92a59",
+          "definition:6c359c707302a41fba61",
+          "definition:7806f5aea90ada54d758",
+          "definition:7933c9c621c49d7be6ea",
+          "definition:e4bf34d5da1997f8cb07",
+          "definition:ecd4c3ccb6d1e6afd968"
         ]
       },
-      "dateReleased": "2026-11-18",
+      "dateReleased": "2026-11-19",
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
       "hpmPackageId": "6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
       "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
@@ -7540,7 +7498,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.18.2"
+      "version": "0.18.8"
     },
     {
       "author": "Tobey Ljungberg",
@@ -9338,6 +9296,41 @@
       "version": "2.0.1"
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:3ae1bc6dfe5c02e3e855",
+          "definition:6a09d3d5a7fcfe1291a0"
+        ]
+      },
+      "dateReleased": "2025-11-12",
+      "description": "Control your LG webOS TV.",
+      "hpmPackageId": "832237ca-d029-4c3f-8a4b-9933efd00f21",
+      "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json"
+      },
+      "name": "LGTV with webOS",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Appliances",
+        "LAN",
+        "Multimedia"
+      ],
+      "version": "1.8.3"
+    },
+    {
       "author": "Dominick Meglio",
       "category": "Utility",
       "components": {
@@ -9792,6 +9785,43 @@
         "Tools & Utilities"
       ],
       "version": "1.3.10"
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:4815782b47927df6c453",
+          "definition:5b25e08565a5a61ccfa8",
+          "definition:6e65a172c0a3bfeeda98",
+          "definition:b41e2f5d78b82658eeac",
+          "definition:d05dadff9e995817d7f0",
+          "definition:ef5d15eab93c1e3ca1d8"
+        ]
+      },
+      "dateReleased": "2025-02-12",
+      "description": "Drivers for the following NodOn devices: SIN-4-1-20, SIN-4-1-21, SIN-4-2-20, SIN-4-FP-21, SIN-4-RS-20.",
+      "hpmPackageId": "8a5cfb88-1fda-4082-978f-fcaa1e680741",
+      "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json"
+      },
+      "name": "Hubitat drivers for NodOn smart devices.",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Tools & Utilities"
+      ],
+      "version": "1.2.0"
     },
     {
       "author": "Larry Kahn",
@@ -10491,75 +10521,6 @@
         "ZWave"
       ],
       "version": "1.9"
-    },
-    {
-      "author": "Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:003537b8d82f0eb6120f",
-          "definition:04caf22b3e280708582b",
-          "definition:06a4cc1df0b0b7602516",
-          "definition:06ed17125859126dcabc",
-          "definition:0e66d78d9c6b1d4a9321",
-          "definition:0f852756f9dd04ce531f",
-          "definition:1657ab1b8f09d620ddab",
-          "definition:16ff596739ee3a671bdf",
-          "definition:1b2e7d13b920397dedf4",
-          "definition:417d984a7f21d4e1a0c3",
-          "definition:4c71d2cc525456259a08",
-          "definition:4cfec3697c398f61b314",
-          "definition:54bf5572f2ece0b9f70c",
-          "definition:574981863ddd6219c541",
-          "definition:5814f4f54a45d627702f",
-          "definition:5f9cb582dca6260444ff",
-          "definition:6238332173afe6f0bdf7",
-          "definition:628e2415e1c5d77ff56f",
-          "definition:62d5c7cb6b4ae9ee6ead",
-          "definition:6acf04ff78b80c2436b7",
-          "definition:8e5290ea3540ea6ff61a",
-          "definition:963ece918b931f51ff90",
-          "definition:a4d8ece6184750524815",
-          "definition:a94fd2a927416b682ad4",
-          "definition:a962b40b748368205934",
-          "definition:aa19a3868b3e9543a9b8",
-          "definition:bb98eb4fd7cf8d12c84d",
-          "definition:c5642a7f775f44e1fde6",
-          "definition:e028a690597bc73e47c0",
-          "definition:e8b58ae01633b305fe75",
-          "definition:eb545b3b34c2a89b9fc0"
-        ]
-      },
-      "dateReleased": "2021-03-06",
-      "description": "Drivers for monitoring a Neptune Systems Apex aquarium controller",
-      "hpmPackageId": "948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-      "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
-      },
-      "name": "Neptune Systems Apex",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "LAN",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Monitoring",
-        "Pets & Animals",
-        "Temperature & Humidity",
-        "Valves",
-        "Water"
-      ],
-      "version": null
     },
     {
       "author": "Scott Wade",
@@ -11941,6 +11902,62 @@
       "version": "1.8"
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Control",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:0eefb0ee0887eed12615",
+          "definition:24ab2e1363c2a9ac9e28",
+          "definition:3e042b047a8fd2323a07",
+          "definition:3f257dc2b1cb3697b5e9",
+          "definition:589e55d83b557554d42c",
+          "definition:58efba0226f60814cd41",
+          "definition:5f297eab081f92ea21ec",
+          "definition:7111893542f5be742030",
+          "definition:71d76cabb56cb9749f77",
+          "definition:8a36445b31508cebd1f5",
+          "definition:93b5735a7970a044f435",
+          "definition:999e8ebad207333a365f",
+          "definition:9e2216ad8be0446f28e9",
+          "definition:a0877b326db9029d74ed",
+          "definition:bae3ea21c1f9ceaa089c",
+          "definition:d0e96e1a1fc346774477",
+          "definition:e6f2e540aecf6d0e745d",
+          "definition:ead189fbf93f69ad953b",
+          "definition:eb1a664ef0f5155e9eab",
+          "definition:ed663e462097f015c1f0",
+          "definition:ef4f46a6ae353f42c60c",
+          "definition:f0b76ece4d9d498a86fa",
+          "definition:f2e271bdd3fb15568cb1"
+        ]
+      },
+      "dateReleased": "2026-06-10",
+      "description": "Drivers for most of the IKEA Zigbee smart devices including TRADFRI lights.",
+      "hpmPackageId": "a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+      "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json"
+      },
+      "name": "IKEA Zigbee drivers",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Buttons",
+        "Lights & Switches",
+        "Zigbee"
+      ],
+      "version": "5.8.1"
+    },
+    {
       "author": "Larry Kahn",
       "category": "Integrations",
       "components": {
@@ -11971,50 +11988,6 @@
       },
       "tags": [],
       "version": "2.43"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:280ab53a6cf00a97c1c4",
-          "definition:2e3a575ce1b95eaf4671",
-          "definition:4af578ce6f41071dd6a5",
-          "definition:4ff09ace3c627a3b6cc7",
-          "definition:5182d4ec5668003c6cfd",
-          "definition:b3eab7ad915fd29d33e0",
-          "definition:c47736076eea05700d89",
-          "definition:cb0f19946f3f94f82239",
-          "definition:f79caccb0f2cdc4db795"
-        ]
-      },
-      "dateReleased": "2022-03-16",
-      "description": "This is a set of drivers to use with the Blink API",
-      "hpmPackageId": "a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-      "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json"
-      },
-      "name": "Blink Drivers",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Cameras",
-        "Cloud",
-        "Misc. Devices",
-        "Monitoring",
-        "Safety & Security"
-      ],
-      "version": null
     },
     {
       "author": "hubitrep (original by Dave Gutheinz)",
@@ -12239,90 +12212,6 @@
         "Zigbee"
       ],
       "version": "2.5"
-    },
-    {
-      "author": "Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:027e4e1bd7c82e01dffc",
-          "definition:09451817691f6db237ec",
-          "definition:146733cea0efba54944e",
-          "definition:19ec8984a40c00f6d3a2",
-          "definition:22d989e0bdcc62ad5c05",
-          "definition:29f13847865246914a0e",
-          "definition:2ca451b485d367b28db8",
-          "definition:2d9810458949844f8e48",
-          "definition:3297d67c2c47255c7817",
-          "definition:3402f71a176ceeb268f1",
-          "definition:37c077a85bbad93f3fbe",
-          "definition:3ff19e5f9ace80b4b7dc",
-          "definition:4420e1dec4685c5dc6c4",
-          "definition:4574849499a5ed68dd45",
-          "definition:4e3e23724cc6f8b0610a",
-          "definition:53ba0700de6720794fed",
-          "definition:5415332137c3daed3588",
-          "definition:61bb1cab82441f4560c1",
-          "definition:63a89283fd5368d478d2",
-          "definition:664c99bbe33210452c72",
-          "definition:68794b612f6a10f3dbd1",
-          "definition:687f41b302ca5070b6c0",
-          "definition:6c78f6315b30afcb7b5a",
-          "definition:6d14d4dbcafd839b1a2d",
-          "definition:70a752cad6fb7c4bd6d7",
-          "definition:82cf4848b01c85b4e129",
-          "definition:85b5ee823884b3e25463",
-          "definition:86fe08f8b91d737d19e2",
-          "definition:8be17ae7284d7d59dfcd",
-          "definition:9dd3c6d6ca528687bf07",
-          "definition:9f4aab1e975f7884c681",
-          "definition:a0be32e24345d93dc794",
-          "definition:b15239208a5f0aeeef9c",
-          "definition:b58e75dc23c4a5bb3333",
-          "definition:b5b0930abc799ebf2ca9",
-          "definition:b7988691327e37ba3dad",
-          "definition:b8206622b37eeafb0c8f",
-          "definition:c9821dbfe58a6fa0e7ed",
-          "definition:cdb2726802bb608c4d1d",
-          "definition:d3632af4cc1048938310",
-          "definition:d5d0682b6bb493500578",
-          "definition:d5fd5736234ea03da69b",
-          "definition:d7a3a3819a534f162f28",
-          "definition:e24ad6ed3ff3e58a93a0",
-          "definition:f23ccc453b092bd9738c",
-          "definition:f249bfe6da71f25e5021",
-          "definition:f426d0b2ca80f3e0d835",
-          "definition:fd2e9db43d163f2673dc",
-          "definition:fd9a908fa62994294573"
-        ]
-      },
-      "dateReleased": "2021-03-07",
-      "description": "Drivers for integrating Ubiquiti's Unifi Network API",
-      "hpmPackageId": "a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-      "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
-      },
-      "name": "Unifi Drivers",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "LAN",
-        "Lights & Switches",
-        "Misc. Devices",
-        "Monitoring",
-        "Multi Sensors"
-      ],
-      "version": null
     },
     {
       "author": "youzer-name",
@@ -14615,7 +14504,7 @@
         ],
         "drivers": []
       },
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-18",
       "description": "A diagnostics dashboard that runs on your hub: resources, app and device CPU use, configuration snapshots you can compare, device usage, and Zigbee, Z-Wave and Matter activity.",
       "hpmPackageId": "c9f26998-9303-409e-987c-72b43c6d9d0c",
       "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
@@ -14637,7 +14526,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.3.4"
+      "version": "6.4.0"
     },
     {
       "author": "Bill Fleming",
@@ -15940,51 +15829,6 @@
       "version": "2.1.1"
     },
     {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:07f2cd266c2bcc7f3aca",
-          "definition:2001d38731ef42f67af2",
-          "definition:3076dbf4e2655af8fc27",
-          "definition:6df57192ecbe311d867f",
-          "definition:935053bb98cbaf24d3fd",
-          "definition:c775c7b6ff3217c57548",
-          "definition:d81b033a4bebad6c3891",
-          "definition:e2b8aefbe8a605a063e1"
-        ]
-      },
-      "dateReleased": "2022-03-29",
-      "description": "Drivers for integrating Ubiquiti's Unifi Protect API",
-      "hpmPackageId": "db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-      "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json"
-      },
-      "name": "Unifi Protect Drivers",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Cameras",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Multi Sensors",
-        "Safety & Security",
-        "Temperature & Humidity"
-      ],
-      "version": null
-    },
-    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "components": {
@@ -16112,55 +15956,6 @@
         "Misc. Devices"
       ],
       "version": "2.1.13"
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:19f05ead0a1baa1d81df",
-          "definition:2654606aad2e64ea4da7",
-          "definition:347349bc3d8772788c28",
-          "definition:3aaa06aeb0e7dc232b76",
-          "definition:43764b0970db50993150",
-          "definition:764bc60c0e7be3f9023d",
-          "definition:8880f7d1875932e977e0",
-          "definition:8d73da6f3f86395d0f1f",
-          "definition:98d12858122f4dfb4acb",
-          "definition:aa3548d303d076a6e46b",
-          "definition:bbe4dd96009624188c28",
-          "definition:bdbca66c42ee41290298",
-          "definition:cbe98b305359b0291e7c",
-          "definition:d2e55e45ca493ef202a2",
-          "definition:e891e7ed17417693077d",
-          "definition:e89bd219b91203fa62f1"
-        ]
-      },
-      "dateReleased": "2023-04-10",
-      "description": "Drivers for getting data and basic control of devices within the Unifi Connect API",
-      "hpmPackageId": "dd2714d5-9772-48e3-9560-0bd3504ca512",
-      "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json"
-      },
-      "name": "UnifiConnectAPI",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "LAN",
-        "Misc. Devices",
-        "Monitoring"
-      ],
-      "version": null
     },
     {
       "author": "Krassimir Kossev",
@@ -16770,6 +16565,38 @@
         "Cloud"
       ],
       "version": "1.0.16"
+    },
+    {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [
+          "definition:6bf4ea35914f094586e3"
+        ],
+        "drivers": []
+      },
+      "dateReleased": "2024-03-04",
+      "description": "View dashboards for your Hubitat hub metrics.",
+      "hpmPackageId": "e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+      "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json"
+      },
+      "name": "Hub-a-Dashery",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Tools & Utilities"
+      ],
+      "version": "1.3.0"
     },
     {
       "author": "Armand Welsh",
@@ -17990,6 +17817,42 @@
       "version": "0.235"
     },
     {
+      "author": "Dan Danache (@dandanache)",
+      "category": "Utility",
+      "components": {
+        "apps": [],
+        "drivers": [
+          "definition:322c837d712112ba98de",
+          "definition:4dd1d0547cdac90d83ea",
+          "definition:d0871e7103dcf00686e6",
+          "definition:d725d7c3e6eb2ba9e369"
+        ]
+      },
+      "dateReleased": "2025-02-12",
+      "description": "Control your boiler using an EMS-ESP Gateway.",
+      "hpmPackageId": "f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+      "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+      "links": {
+        "community": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md"
+      },
+      "manifest": {
+        "fetched": true,
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json"
+      },
+      "name": "EMS-ESP Gateway",
+      "repository": {
+        "author": "Dan Danache",
+        "name": "Dan Danache",
+        "url": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json"
+      },
+      "tags": [
+        "Climate Control",
+        "LAN"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Chris Truitt",
       "category": "Convenience",
       "components": {
@@ -18189,42 +18052,6 @@
         "Temperature & Humidity"
       ],
       "version": null
-    },
-    {
-      "author": "David Snell",
-      "category": "Integrations",
-      "components": {
-        "apps": [],
-        "drivers": [
-          "definition:7661664ec77389324cf1"
-        ]
-      },
-      "dateReleased": "2025-10-19",
-      "description": "Monitor Grizzl-E charger.",
-      "hpmPackageId": "f974d0cb-edb6-4792-b61b-07cfcd9137d6",
-      "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
-      "links": {
-        "community": null,
-        "documentation": null
-      },
-      "manifest": {
-        "fetched": true,
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json"
-      },
-      "name": "Grizzl-ECharger",
-      "repository": {
-        "author": "Snell",
-        "name": "Snell",
-        "url": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json"
-      },
-      "tags": [
-        "Energy Monitoring",
-        "LAN",
-        "Misc. Devices",
-        "Monitoring",
-        "Vehicles & Transportation"
-      ],
-      "version": "1.0.0"
     },
     {
       "author": "Craig Dewar",
@@ -20364,12 +20191,12 @@
           "definition:b28e9c5fe033d47ac2ad"
         ]
       },
-      "dateReleased": "2026-11-16",
+      "dateReleased": "2026-11-18",
       "description": "Local control of Roborock robot vacuums after a one-time sign-in: live status, start, pause, dock and room cleaning, fan and mop settings, consumables, Roborock scenes, automatic IP recovery and an optional dashboard tile.",
       "hpmPackageId": null,
       "id": "manifest:2198e51ff4278066f040",
       "links": {
-        "community": null,
+        "community": "https://community.hubitat.com/t/167268",
         "documentation": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration"
       },
       "manifest": {
@@ -20386,7 +20213,7 @@
         "Appliances",
         "Cleaning"
       ],
-      "version": "1.0.3"
+      "version": "1.0.5"
     },
     {
       "author": "ritchierich",
@@ -25952,7 +25779,7 @@
         ],
         "drivers": []
       },
-      "dateReleased": "2026-11-06",
+      "dateReleased": "2026-11-19",
       "description": "Syncs OwnerRez booking door codes from the SignalBricks dispatcher to Hubitat locks. Codes are on the lock from before check-in to after checkout. Manages only codes named with its own code name prefix, so it can share locks with other lock-code apps that use their own prefix.",
       "hpmPackageId": null,
       "id": "manifest:86b01a1f90e58a839a6f",
@@ -25974,7 +25801,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.16"
+      "version": "1.4.17"
     },
     {
       "author": "Aaron Ward",
@@ -33809,7 +33636,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-18T07:45:28Z",
+  "snapshotGenerated": "2026-11-19T07:41:11Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

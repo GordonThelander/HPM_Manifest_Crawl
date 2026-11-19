@@ -433,23 +433,7 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
-          "packageName": "Lumos"
-        },
-        {
-          "basis": [
-            "EXACT_LINK",
-            "EXACT_NAME"
-          ],
-          "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-          "packageName": "Zigbee Map"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:22d9c1d7e2597e342ec5",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1123,15 +1107,7 @@ window.IDENTITY_INDEX = {
     },
     {
       "evidence": "COMMUNITY_APP_LISTED",
-      "hpmMatches": [
-        {
-          "basis": [
-            "EXACT_LINK"
-          ],
-          "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
-          "packageName": "Watchtower"
-        }
-      ],
+      "hpmMatches": [],
       "id": "community-app:b7525ab8164d671dbde7",
       "kind": "APP",
       "lifecycleFlags": [],
@@ -1557,7 +1533,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2393,
+  "definitionCount": 2312,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -4080,26 +4056,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MikeBishop/hubitat-singleactive/main/single-active-switch-parent.groovy"
     },
     {
-      "id": "definition:358254411478dd8e4a71",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Controller",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvancedApp.groovy"
-    },
-    {
       "id": "definition:35eea2ce4946d03eb46b",
       "identities": [
         {
@@ -4895,6 +4851,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/Apps/HttpPresenceHelper.groovy"
     },
     {
+      "id": "definition:461a28598907abc7322a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "${APP_NAME} ${APP_VERSION}",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Watchtower",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+        "name": "Watchtower"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower.groovy"
+    },
+    {
       "id": "definition:46846ec9764d5e90e43e",
       "identities": [
         {
@@ -5126,7 +5107,7 @@ window.IDENTITY_INDEX = {
       "kind": "APP",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": null,
+        "communityUrl": "https://community.hubitat.com/t/167268",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
         "id": "manifest:2198e51ff4278066f040",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
@@ -6555,6 +6536,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tchoward/Hubitat/master/hubigraph_bar_graph.groovy"
     },
     {
+      "id": "definition:6bf4ea35914f094586e3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Hub-a-Dashery",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-hub-a-dashery-app/134375",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/hub-a-dashery-app/README.md",
+        "id": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json",
+        "name": "Hub-a-Dashery"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/hub-a-dashery_1.3.0/hub-a-dashery-app/hub-a-dashery.groovy"
+    },
+    {
       "id": "definition:6c55c134d3b356c3b563",
       "identities": [
         {
@@ -7200,6 +7201,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/pharrison5/Hubitat/refs/heads/main/UnfoldedCircleIntegration/UnfoldedCircleRemote3App.groovy"
     },
     {
+      "id": "definition:7c7b4767d06b78031d1f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee Graph",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-graph-app/README.md",
+        "id": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json",
+        "name": "zigbee-graph"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-graph-app_2.3.0/zigbee-graph-app/zigbee-graph.groovy"
+    },
+    {
       "id": "definition:7c7cd8d1b294e2461754",
       "identities": [
         {
@@ -7753,6 +7774,31 @@ window.IDENTITY_INDEX = {
         "name": "SmartHQ GE Appliances Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/apps/smartHQ_app"
+    },
+    {
+      "id": "definition:8be7492e9c6826d8e773",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lumos Automation 1.1.0",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Lumos Automation",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
+        "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
+        "name": "Lumos"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lumos-app_1.1.0/lumos-app/lumos-automation.groovy"
     },
     {
       "id": "definition:8c0eade066477364f109",
@@ -8633,6 +8679,26 @@ window.IDENTITY_INDEX = {
         "name": "WiZ Dual Zone"
       },
       "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupApp.groovy"
+    },
+    {
+      "id": "definition:9d80c92b16cd307f2f1a",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Controller",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvancedApp.groovy"
     },
     {
       "id": "definition:9da44544b5010dbb3841",
@@ -10233,6 +10299,31 @@ window.IDENTITY_INDEX = {
         "name": "Device Data Item Display"
       },
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/apps/devDataDisp.groovy"
+    },
+    {
+      "id": "definition:be7c2c28287ebb4ef5db",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Lumos 1.1.0",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Lumos",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lumos-app/README.md",
+        "id": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json",
+        "name": "Lumos"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lumos-app_1.1.0/lumos-app/lumos.groovy"
     },
     {
       "id": "definition:be9c154586f7dfeebc36",
@@ -12960,6 +13051,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/FFL/refs/heads/main/FFL%20Instance%20App.groovy"
     },
     {
+      "id": "definition:fabe76efc2261bc09097",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "${APP_NAME} ${APP_VERSION}",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Zigbee Map",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+        "name": "Zigbee Map"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map.groovy"
+    },
+    {
       "id": "definition:fac125799a5ccd613c2f",
       "identities": [
         {
@@ -13103,26 +13219,6 @@ window.IDENTITY_INDEX = {
         "name": "Hub Inspector"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
-    },
-    {
-      "id": "definition:003537b8d82f0eb6120f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Vortech",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vortech.groovy"
     },
     {
       "id": "definition:004c820637ed93f33154",
@@ -13375,26 +13471,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Leviton%20Smart%20Load%20Center/CTDriver.groovy"
     },
     {
-      "id": "definition:027e4e1bd7c82e01dffc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-Plug",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Plug.groovy"
-    },
-    {
       "id": "definition:02886b02fda34b00b09f",
       "identities": [
         {
@@ -13458,26 +13534,6 @@ window.IDENTITY_INDEX = {
         "name": "Package Minoston"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/minoston/minoston-outdoor-dimmer.groovy"
-    },
-    {
-      "id": "definition:02fcec13f560ba35d071",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
-        "name": "WeatherFlow"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
     },
     {
       "id": "definition:0313e5fa07a195200a0a",
@@ -13623,26 +13679,6 @@ window.IDENTITY_INDEX = {
         "name": "Evohome"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/EvoHomeHeatingZone.groovy"
-    },
-    {
-      "id": "definition:04caf22b3e280708582b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-EB8",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB8.groovy"
     },
     {
       "id": "definition:04d1b4f2b8d4bb591bf0",
@@ -13950,26 +13986,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/minoston/minoston-3-in-1-sensor.groovy"
     },
     {
-      "id": "definition:06a4cc1df0b0b7602516",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ASM",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ASM.groovy"
-    },
-    {
       "id": "definition:06c8d30b26cacaf92efc",
       "identities": [
         {
@@ -14028,26 +14044,6 @@ window.IDENTITY_INDEX = {
         "name": "SAS - Samsung Appliance Service"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/Drivers/SAS%20-%20Samsung%20Vacuum%20Station.groovy"
-    },
-    {
-      "id": "definition:06ed17125859126dcabc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Virtual",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Virtual.groovy"
     },
     {
       "id": "definition:06f66cef642e5cb920c5",
@@ -14170,26 +14166,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Window.groovy"
     },
     {
-      "id": "definition:07f2cd266c2bcc7f3aca",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-Doorbell",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Doorbell.groovy"
-    },
-    {
       "id": "definition:0805c5c40b05bacfd830",
       "identities": [
         {
@@ -14273,26 +14249,6 @@ window.IDENTITY_INDEX = {
         "name": "ESPHome Integration Library and Example Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-drivers/main/ESPHome/ESPHome-ContactSensor.groovy"
-    },
-    {
-      "id": "definition:09451817691f6db237ec",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW8LPoE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8LPoE.groovy"
     },
     {
       "id": "definition:095078e1421400479fba",
@@ -15115,26 +15071,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-child-sensor.groovy"
     },
     {
-      "id": "definition:0e66d78d9c6b1d4a9321",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ApexA3",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3.groovy"
-    },
-    {
       "id": "definition:0e7bee563c8c7848df08",
       "identities": [
         {
@@ -15220,24 +15156,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_toasterOven"
     },
     {
-      "id": "definition:0f852756f9dd04ce531f",
+      "id": "definition:0eefb0ee0887eed12615",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "NSChild-AI",
-          "namespace": "Snell"
+          "name": "IKEA Symfonisk Sound Remote Gen2 (E2123)",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AI.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2123.groovy"
     },
     {
       "id": "definition:0fb02bd4ec0ccc479ff6",
@@ -16015,26 +15951,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/alertme/drivers/alertme_lamp.groovy"
     },
     {
-      "id": "definition:146733cea0efba54944e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UDMPSE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMPSE.groovy"
-    },
-    {
       "id": "definition:146d0ce28e1a89481f2d",
       "identities": [
         {
@@ -16460,26 +16376,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/aniva/hubitat01/master/PCSleepController/PCSleepController.groovy"
     },
     {
-      "id": "definition:1657ab1b8f09d620ddab",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-SKY",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-SKY.groovy"
-    },
-    {
       "id": "definition:1677df820ad7e9eb474e",
       "identities": [
         {
@@ -16520,6 +16416,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/genHtmlDev.groovy"
     },
     {
+      "id": "definition:16c50093761ff10a5005",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Alarm Manager",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvAlarmManager.groovy"
+    },
+    {
       "id": "definition:16e11be9e50c74612a2a",
       "identities": [
         {
@@ -16538,26 +16454,6 @@ window.IDENTITY_INDEX = {
         "name": "HomeKit Import (Local)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-window-shade/homekit-window-shade.groovy"
-    },
-    {
-      "id": "definition:16ff596739ee3a671bdf",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-EB4",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB4.groovy"
     },
     {
       "id": "definition:174758527d5eebc91af2",
@@ -16845,46 +16741,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/drivers/dreo_humidifier.groovy"
     },
     {
-      "id": "definition:19ec8984a40c00f6d3a2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW16LPoE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16LPoE.groovy"
-    },
-    {
-      "id": "definition:19f05ead0a1baa1d81df",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-21",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-21.groovy"
-    },
-    {
       "id": "definition:1a2cbd3babffd03b4d7c",
       "identities": [
         {
@@ -17108,26 +16964,6 @@ window.IDENTITY_INDEX = {
         "name": "ESP32 Wall Keypad"
       },
       "sourceUrl": "https://raw.githubusercontent.com/csteele-PD/Hubitat-public/refs/heads/master/ESP32-Wall-Keypad/ESP32WallKeypadDriver.groovy"
-    },
-    {
-      "id": "definition:1b2e7d13b920397dedf4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-TridentNP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-TridentNP.groovy"
     },
     {
       "id": "definition:1b4929765be15b137ce8",
@@ -17565,6 +17401,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sorsme/sinope-switch/main/src/SW2500ZB.groovy"
     },
     {
+      "id": "definition:1f5648c5f0047bc0cdee",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Snapshot",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvSnapshot.groovy"
+    },
+    {
       "id": "definition:1f58acb4b665e3f4a60b",
       "identities": [
         {
@@ -17623,26 +17479,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_unifiEvents"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiEvents/main/unifiController"
-    },
-    {
-      "id": "definition:2001d38731ef42f67af2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild.groovy"
     },
     {
       "id": "definition:2008d7c1f6ec0ab6f766",
@@ -17745,26 +17581,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Home.groovy"
     },
     {
-      "id": "definition:2135430805fc2c53f5a4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Sleep Timer",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvSleepTimer.groovy"
-    },
-    {
       "id": "definition:21f3e3cd77fba1b1cdd3",
       "identities": [
         {
@@ -17855,26 +17671,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/graftechnology/hubitat-ntfy-notification-driver/main/drivers/graftechnology/ntfy-notifier.groovy"
     },
     {
-      "id": "definition:22d989e0bdcc62ad5c05",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-ClientCheck",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ClientCheck.groovy"
-    },
-    {
       "id": "definition:22e535b03b81e7ecaef0",
       "identities": [
         {
@@ -17893,26 +17689,6 @@ window.IDENTITY_INDEX = {
         "name": "HTTP Button Pad Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rob121/hubitat/master/drivers/httpbuttonpad/buttonpad.groovy"
-    },
-    {
-      "id": "definition:22e8273c0540732b5ead",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Queue",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvQueue.groovy"
     },
     {
       "id": "definition:2306b80e19ccd9bf3ee4",
@@ -18123,6 +17899,26 @@ window.IDENTITY_INDEX = {
         "name": "Netatmo - Velux"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Velux%20-%20Shutter.groovy"
+    },
+    {
+      "id": "definition:24ab2e1363c2a9ac9e28",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA RGB-Only Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_RGBO-Light.groovy"
     },
     {
       "id": "definition:24bae57e9d9a430b67b0",
@@ -18350,24 +18146,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thebearmay/SensorGroupsPlus/main/DeviceDrivers/OmniSensorPlus_Driver.groovy"
     },
     {
-      "id": "definition:2654606aad2e64ea4da7",
+      "id": "definition:268d54beadb7fcf33f64",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-SE-13",
-          "namespace": "Snell"
+          "name": "Sonos Advanced Battery Status",
+          "namespace": "dwinks"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "David Snell",
+        "author": "Daniel Winks",
         "communityUrl": null,
         "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-13.groovy"
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvBatteryStats.groovy"
     },
     {
       "id": "definition:2697194682475577cbcf",
@@ -18408,6 +18204,26 @@ window.IDENTITY_INDEX = {
         "name": "Multi-Place"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/Multi-Place/master/Multi-Place-Tracker.groovy"
+    },
+    {
+      "id": "definition:270d8a3b7114144657c3",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Secondaries",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvSecondaries.groovy"
     },
     {
       "id": "definition:273725d74699a507795c",
@@ -18470,26 +18286,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/level99/Hubitat-VeSync/main/Drivers/Levoit/VeSyncIntegrationVirtual.groovy"
     },
     {
-      "id": "definition:280ab53a6cf00a97c1c4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild.groovy"
-    },
-    {
       "id": "definition:284a283efe1b16d9d93d",
       "identities": [
         {
@@ -18510,6 +18306,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentThermostat.groovy"
     },
     {
+      "id": "definition:28adb4f464de2570670d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Watchtower Events",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-watchtower-long-term-metrics-app/141505",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/watchtower-app/README.md",
+        "id": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json",
+        "name": "Watchtower"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/watchtower-app_4.3.0/watchtower-app/watchtower-events.groovy"
+    },
+    {
       "id": "definition:28c83650da4adc8da612",
       "identities": [
         {
@@ -18528,26 +18344,6 @@ window.IDENTITY_INDEX = {
         "name": "WiZ Dual Zone"
       },
       "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-Wiz_Dual_Zone/main/WizDualZoneGroupDevice.groovy"
-    },
-    {
-      "id": "definition:28cddde35677c00ae751",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "FireBoardChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
-        "name": "FireBoard"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoardChild.groovy"
     },
     {
       "id": "definition:28e5f112b56c1620893c",
@@ -18753,26 +18549,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_unifiProtect"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_unifiProtect/main/unifiProtectViewer"
-    },
-    {
-      "id": "definition:29f13847865246914a0e",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USAGG",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGG.groovy"
     },
     {
       "id": "definition:2a04b704cac3621f018b",
@@ -19170,26 +18946,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Popp/Popp%20Electric%20Strike%20Lock%20Control.groovy"
     },
     {
-      "id": "definition:2ca451b485d367b28db8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPHD24P",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPHD24P.groovy"
-    },
-    {
       "id": "definition:2cb6d59b3525cb38e6e2",
       "identities": [
         {
@@ -19300,26 +19056,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_Camera.groovy"
     },
     {
-      "id": "definition:2d9810458949844f8e48",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UDMP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDMP.groovy"
-    },
-    {
       "id": "definition:2dc1b96d3e6785b6e2c1",
       "identities": [
         {
@@ -19418,26 +19154,6 @@ window.IDENTITY_INDEX = {
         "name": "Pool Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bsileo/hubitat_poolcontroller/master/devicetypes/bsileo/pool-controller-lightgroup.src/pool-controller-lightgroup.groovy"
-    },
-    {
-      "id": "definition:2e3a575ce1b95eaf4671",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-SyncModule",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-SyncModule.groovy"
     },
     {
       "id": "definition:2e4667a8401c9528a9ff",
@@ -19663,26 +19379,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Modules Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen55-v1.2.0.groovy"
-    },
-    {
-      "id": "definition:3076dbf4e2655af8fc27",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-Camera",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Camera.groovy"
     },
     {
       "id": "definition:309256cc566a3d3df882",
@@ -19930,6 +19626,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/homekit-light/homekit-light.groovy"
     },
     {
+      "id": "definition:322c837d712112ba98de",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Gateway",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/ems-esp-gateway.groovy"
+    },
+    {
       "id": "definition:324d9b8deddba8336a58",
       "identities": [
         {
@@ -19953,26 +19669,6 @@ window.IDENTITY_INDEX = {
         "name": "TV HeadEnd EPG Importer"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/TVHE_EPG_Importer/TVHE_EPG_Importer_Driver.groovy"
-    },
-    {
-      "id": "definition:3297d67c2c47255c7817",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkAPI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkAPI.groovy"
     },
     {
       "id": "definition:32a7c0bfc708fc2b19dd",
@@ -20310,26 +20006,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dkilgore90/iRobot/master/Roomba/Roomba-device.groovy"
     },
     {
-      "id": "definition:3402f71a176ceeb268f1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW48",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48.groovy"
-    },
-    {
       "id": "definition:34077d32f74dc90a4b6c",
       "identities": [
         {
@@ -20348,26 +20024,6 @@ window.IDENTITY_INDEX = {
         "name": "LGK APC Smart UPS Status"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/LGKUPSStatus.groovy"
-    },
-    {
-      "id": "definition:3408ba80f0d181b0b354",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Secondaries",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvSecondaries.groovy"
     },
     {
       "id": "definition:3415d70a130dbb9eac78",
@@ -20408,26 +20064,6 @@ window.IDENTITY_INDEX = {
         "name": "IntesisHome"
       },
       "sourceUrl": "https://raw.githubusercontent.com/imnotbob/Hubitat-Intesis/master/drivers/intesisTelnet.groovy"
-    },
-    {
-      "id": "definition:347349bc3d8772788c28",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild.groovy"
     },
     {
       "id": "definition:34dc8d1354aff0b33a80",
@@ -20803,26 +20439,6 @@ window.IDENTITY_INDEX = {
         "name": "Aqara Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WS_USC01.groovy"
-    },
-    {
-      "id": "definition:37c077a85bbad93f3fbe",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW24PoE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24PoE.groovy"
     },
     {
       "id": "definition:3802ffedcee11d419f35",
@@ -21230,24 +20846,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/THSensor_Device.groovy"
     },
     {
-      "id": "definition:3aaa06aeb0e7dc232b76",
+      "id": "definition:3ae1bc6dfe5c02e3e855",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display",
-          "namespace": "Snell"
+          "name": "LGTV with webOS",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/lgtv-with-webos.groovy"
     },
     {
       "id": "definition:3b629ffb8650a531099a",
@@ -21595,6 +21211,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Synology-SRM-Integration/refs/heads/main/drivers/SynologySRMRouter.groovy"
     },
     {
+      "id": "definition:3e042b047a8fd2323a07",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Badring Water Leakage Sensor (E2202)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2202.groovy"
+    },
+    {
       "id": "definition:3e0801915b2bdcbba184",
       "identities": [
         {
@@ -21693,6 +21329,26 @@ window.IDENTITY_INDEX = {
         "name": "Aqualink-Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mikec85/hubitatdrivers/master/aqualink/aqualink-driver-child-temps.groovy"
+    },
+    {
+      "id": "definition:3f257dc2b1cb3697b5e9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri On/Off Switch (E1743)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1743.groovy"
     },
     {
       "id": "definition:3f4d9586588d1761454c",
@@ -21795,24 +21451,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW3_IR/main/AC/Learning/Hubitat_TRATO_MolSmart_GW3_IR-AC-Learning_Driver_v2.groovy"
     },
     {
-      "id": "definition:3ff19e5f9ace80b4b7dc",
+      "id": "definition:3fc63912988d35b5e893",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW48PoE",
-          "namespace": "Snell"
+          "name": "Sonos Advanced Player",
+          "namespace": "dwinks"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
+        "author": "Daniel Winks",
         "communityUrl": null,
         "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW48PoE.groovy"
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvPlayer.groovy"
     },
     {
       "id": "definition:4028f714dc5c14417eb7",
@@ -21913,26 +21569,6 @@ window.IDENTITY_INDEX = {
         "name": "UniFi-Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mikec85/hubitatdrivers/master/unifi/unifi-child-presence.groovy"
-    },
-    {
-      "id": "definition:417d984a7f21d4e1a0c3",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Apex2016",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Apex2016.groovy"
     },
     {
       "id": "definition:4193594113518dcb333b",
@@ -22108,26 +21744,6 @@ window.IDENTITY_INDEX = {
         "name": "Luxor Lighting Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tagyoureit/hubitat-luxor/master/devicetypes/tagyoureit/luxor-color-group.src/luxor-color-group.groovy"
-    },
-    {
-      "id": "definition:43764b0970db50993150",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-ULP3PE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULP3PE.groovy"
     },
     {
       "id": "definition:4376bce130cd1cf5bbb5",
@@ -22313,26 +21929,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyUni-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:4420e1dec4685c5dc6c4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UPSTower",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UPSTower.groovy"
     },
     {
       "id": "definition:4428c87396e60a942800",
@@ -22598,26 +22194,6 @@ window.IDENTITY_INDEX = {
         "name": "LIFX Light Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/drivers/LIFX_Local_Plus_Colour_Driver.groovy"
-    },
-    {
-      "id": "definition:4574849499a5ed68dd45",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USG",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USG.groovy"
     },
     {
       "id": "definition:457bf598b360ee1a15f8",
@@ -22970,6 +22546,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaDimmer.groovy"
     },
     {
+      "id": "definition:4815782b47927df6c453",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Roller Shutter Relay Switch (SIN-4-RS-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-RS-20.groovy"
+    },
+    {
       "id": "definition:487296543eb1ef74ee66",
       "identities": [
         {
@@ -23001,7 +22597,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": null,
+        "communityUrl": "https://community.hubitat.com/t/167268",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
         "id": "manifest:2198e51ff4278066f040",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
@@ -23253,26 +22849,6 @@ window.IDENTITY_INDEX = {
         "name": "Alarm Panel (universal)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/konnected-io/konnected-hubitat/master/drivers/konnected-button-trigger.groovy"
-    },
-    {
-      "id": "definition:4af578ce6f41071dd6a5",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkAPI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkAPI.groovy"
     },
     {
       "id": "definition:4b11e865a5e8ae19392e",
@@ -23595,46 +23171,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/april-brother-ble-gateway.groovy"
     },
     {
-      "id": "definition:4c71d2cc525456259a08",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-PM3",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM3.groovy"
-    },
-    {
-      "id": "definition:4caf4475ca206c7fbe11",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Snapshot",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvSnapshot.groovy"
-    },
-    {
       "id": "definition:4cb0ea3fe945cfd94e72",
       "identities": [
         {
@@ -23713,26 +23249,6 @@ window.IDENTITY_INDEX = {
         "name": "YoLink Devices"
       },
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/Siren_Device.groovy"
-    },
-    {
-      "id": "definition:4cfec3697c398f61b314",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Radion",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Radion.groovy"
     },
     {
       "id": "definition:4d20f91990b0d32be188",
@@ -23885,6 +23401,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/augoisms/hubitat/raw/master/somfy-zrtsi/somfy-zrtsi.driver.groovy"
     },
     {
+      "id": "definition:4dd1d0547cdac90d83ea",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Gas Burner Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-gasburner.groovy"
+    },
+    {
       "id": "definition:4dd79499aea011e29966",
       "identities": [
         {
@@ -23923,26 +23459,6 @@ window.IDENTITY_INDEX = {
         "name": "Bose Soundbar Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/boseSoundbar/boseSoundbarDevice.groovy"
-    },
-    {
-      "id": "definition:4e3e23724cc6f8b0610a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UCGMax",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UCGMax.groovy"
     },
     {
       "id": "definition:4e4ac04c3c59e3070109",
@@ -24310,26 +23826,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse44-v1.2.2.groovy"
     },
     {
-      "id": "definition:4ff09ace3c627a3b6cc7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-Floodlight",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Floodlight.groovy"
-    },
-    {
       "id": "definition:4ffa3f40238a13376d9d",
       "identities": [
         {
@@ -24523,26 +24019,6 @@ window.IDENTITY_INDEX = {
         "name": "Rituals Perfume Genie"
       },
       "sourceUrl": "https://raw.githubusercontent.com/vpsupun/hubitat/master/RitualsPerfumeGenie/RitualsPerfumeGenie.groovy"
-    },
-    {
-      "id": "definition:5182d4ec5668003c6cfd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-Network",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Network.groovy"
     },
     {
       "id": "definition:51cf0ee2853d49f38a41",
@@ -24815,26 +24291,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-switch.groovy"
     },
     {
-      "id": "definition:53ba0700de6720794fed",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-AP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-AP.groovy"
-    },
-    {
       "id": "definition:53f06e7758088ad1f7c7",
       "identities": [
         {
@@ -24853,26 +24309,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Sprinkler Scheduler"
       },
       "sourceUrl": "https://raw.githubusercontent.com/RamSet/hubitat/refs/heads/main/drivers/zooz-zen16-multirelay/zooz-zen16-multirelay.groovy"
-    },
-    {
-      "id": "definition:5415332137c3daed3588",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UX",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UX.groovy"
     },
     {
       "id": "definition:5420e07b1ab5001f0b0d",
@@ -25020,26 +24456,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/hubitat_ring_integration/v0.5.9/src/drivers/ring-virtual-camera.groovy"
     },
     {
-      "id": "definition:54bf5572f2ece0b9f70c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-COR",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-COR.groovy"
-    },
-    {
       "id": "definition:54d145e55891f13d0f32",
       "identities": [
         {
@@ -25098,26 +24514,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2AirQualitySensorwithCO2.groovy"
-    },
-    {
-      "id": "definition:554b37c9ec64b8998ad6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "TeslaDriver",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
-        "name": "Tesla Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaDriver.groovy"
     },
     {
       "id": "definition:555d7581f40d92adff65",
@@ -25340,26 +24736,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentVacuum.groovy"
     },
     {
-      "id": "definition:574981863ddd6219c541",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-VDM",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-VDM.groovy"
-    },
-    {
       "id": "definition:578d6a8eae8cb672f63c",
       "identities": [
         {
@@ -25463,26 +24839,6 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/gemstone-lights/gemstone-lights.groovy"
-    },
-    {
-      "id": "definition:5814f4f54a45d627702f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-PM2",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM2.groovy"
     },
     {
       "id": "definition:5847784fb7466fd5937e",
@@ -25590,6 +24946,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/mboisson/Hubitat-Advanced-Broadlink-Remote/main/Advanced_Broadlink_Remote-Device.groovy"
     },
     {
+      "id": "definition:589e55d83b557554d42c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Somrig Shortcut Button (E2213)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2213.groovy"
+    },
+    {
       "id": "definition:58d3570fd8755609fb6f",
       "identities": [
         {
@@ -25608,6 +24984,26 @@ window.IDENTITY_INDEX = {
         "name": "Amber Electric Integration for Hubitat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Amber-Electric---Hubitat-Driver/main/Amber_Driver.groovy"
+    },
+    {
+      "id": "definition:58efba0226f60814cd41",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tretakt Smart Plug (E2204)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2204.groovy"
     },
     {
       "id": "definition:590ecbec929ae2faa461",
@@ -25948,6 +25344,26 @@ window.IDENTITY_INDEX = {
         "name": "HubiThings Replica [DEPRECATED]"
       },
       "sourceUrl": "https://raw.githubusercontent.com/bloodtick/Hubitat/main/hubiThingsReplica/devices/replicaSmartThingsHub.groovy"
+    },
+    {
+      "id": "definition:5b25e08565a5a61ccfa8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Multifunction Relay Switch (SIN-4-1-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-20.groovy"
     },
     {
       "id": "definition:5b2d7a7f9d0551fc981b",
@@ -26680,24 +26096,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_myLeviton/master/myLevitonSwitchDimmer"
     },
     {
-      "id": "definition:5f9cb582dca6260444ff",
+      "id": "definition:5f297eab081f92ea21ec",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "NSChild-DOS",
-          "namespace": "Snell"
+          "name": "IKEA Rodret Dimmer (E2201)",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-DOS.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2201.groovy"
     },
     {
       "id": "definition:5fa4bb470188b8e12bee",
@@ -26885,6 +26301,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/youzer-name/Hubitat-MQTT-Manager/main/MqttManagerTopic.groovy"
     },
     {
+      "id": "definition:60faab52c941dea92a59",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Playlist",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvPlaylist.groovy"
+    },
+    {
       "id": "definition:6112cc43c1370e512231",
       "identities": [
         {
@@ -26948,46 +26384,6 @@ window.IDENTITY_INDEX = {
         "name": "Danalock V3-BTZB Zigbee Lock"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jlslate/Hubitat-Danalock-Zigbee/main/Hubitat-Danalock-Zigbee-Driver.groovy"
-    },
-    {
-      "id": "definition:61905cd97e6a24439d5a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Alarm Manager",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvAlarmManager.groovy"
-    },
-    {
-      "id": "definition:61bb1cab82441f4560c1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UDM",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDM.groovy"
     },
     {
       "id": "definition:61e4e04800417d465ef1",
@@ -27070,26 +26466,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-bambuddy/refs/tags/v0.1.1/bambuddy-ams.groovy"
     },
     {
-      "id": "definition:6238332173afe6f0bdf7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ApexClassic",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexClassic.groovy"
-    },
-    {
       "id": "definition:623840e7fb6ed5e35fbe",
       "identities": [
         {
@@ -27168,26 +26544,6 @@ window.IDENTITY_INDEX = {
         "name": "Aeotec Range Extender 7"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/drivers/aeotec-re7/aeotec-range-extender-7.groovy"
-    },
-    {
-      "id": "definition:628e2415e1c5d77ff56f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-EB832",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-EB832.groovy"
     },
     {
       "id": "definition:629efc90f7c04658b7a5",
@@ -27295,31 +26651,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/srbarcus/YoLink/master/SmokeAlarm_Device.groovy"
     },
     {
-      "id": "definition:62d5c7cb6b4ae9ee6ead",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NeptuneSystemsApex",
-          "namespace": "Snell"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Neptune Systems Apex",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApex.groovy"
-    },
-    {
       "id": "definition:62e4fce14d8975e2b4b5",
       "identities": [
         {
@@ -27380,26 +26711,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Aeotec/Aeotec%20Water%20Sensor%206.groovy"
     },
     {
-      "id": "definition:63a89283fd5368d478d2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UP6",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UP6.groovy"
-    },
-    {
       "id": "definition:63bad14c074e59287d87",
       "identities": [
         {
@@ -27458,26 +26769,6 @@ window.IDENTITY_INDEX = {
         "name": "Home Assistant Device Bridge"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/genericComponentWindowBlind.groovy"
-    },
-    {
-      "id": "definition:64022755cd0cf32e1e5f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
-        "name": "WSM4Hubitat"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
     },
     {
       "id": "definition:6417e751a2ef524242f3",
@@ -27583,26 +26874,6 @@ window.IDENTITY_INDEX = {
         "name": "iAqualink Driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/Drivers/iAqualink/iAqualink-ToggleDevice.groovy"
-    },
-    {
-      "id": "definition:651241cdcbdd8af28e92",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Alarm Switch",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvAlarmSwitch.groovy"
     },
     {
       "id": "definition:65415f638ee9fb8f6cc3",
@@ -27860,26 +27131,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/matthewpetro/hubitat-projects/main/garage-door/garage-door-device.groovy"
     },
     {
-      "id": "definition:664c99bbe33210452c72",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW16",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16.groovy"
-    },
-    {
       "id": "definition:66a110599d2bbe64f107",
       "identities": [
         {
@@ -28045,46 +27296,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/xap-code/hubitat/master/squeezebox/drivers/squeezebox-server.groovy"
     },
     {
-      "id": "definition:68794b612f6a10f3dbd1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW8PoE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE.groovy"
-    },
-    {
-      "id": "definition:687f41b302ca5070b6c0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPPDUP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPPDUP.groovy"
-    },
-    {
       "id": "definition:68b80815490a68b578dd",
       "identities": [
         {
@@ -28245,6 +27456,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/OwnTracks%20Driver.groovy"
     },
     {
+      "id": "definition:6a09d3d5a7fcfe1291a0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "LGTV Remote",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-lgtv-with-webos/148892",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/lgtv-drivers/README.md",
+        "id": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json",
+        "name": "LGTV with webOS"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/lgtv_1.8.3/lgtv-drivers/component/lgtv-remote.groovy"
+    },
+    {
       "id": "definition:6a1ca34c940f40ece79c",
       "identities": [
         {
@@ -28398,26 +27629,6 @@ window.IDENTITY_INDEX = {
         "name": "Mads Kristensen - Hubitat Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/madskristensen/hubitat-drivers/main/drivers/calendar-todo/calendar-todo.groovy"
-    },
-    {
-      "id": "definition:6acf04ff78b80c2436b7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ApexA3Jr",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Jr.groovy"
     },
     {
       "id": "definition:6b0d0bb11e7c4830bb83",
@@ -28590,6 +27801,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/fibaro-fgs-222/fibaro-fgs-222-dth.groovy"
     },
     {
+      "id": "definition:6c359c707302a41fba61",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Queue",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvQueue.groovy"
+    },
+    {
       "id": "definition:6c39a1ac0cd05b6e45ff",
       "identities": [
         {
@@ -28648,26 +27879,6 @@ window.IDENTITY_INDEX = {
         "name": "MeteoBridge Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/SANdood/MeteoWeather/master/devicetypes/sandood/meteobridge-weather-station.src/meteobridge-weather-station.groovy"
-    },
-    {
-      "id": "definition:6c78f6315b30afcb7b5a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-EAP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-EAP.groovy"
     },
     {
       "id": "definition:6cd95615699ab012ac6e",
@@ -28770,26 +27981,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Netatmo/Netatmo%20-%20Presence.groovy"
     },
     {
-      "id": "definition:6d14d4dbcafd839b1a2d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-ACIW",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-ACIW.groovy"
-    },
-    {
       "id": "definition:6d3c9fbc11951f6c13c4",
       "identities": [
         {
@@ -28880,26 +28071,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyButton4Blu-v2.17.8.groovy"
     },
     {
-      "id": "definition:6dd493b45b19c6285799",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "AmbientEcowittWeather",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
-        "name": "Ambient Ecowitt Weather"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.groovy"
-    },
-    {
       "id": "definition:6de17bdbeb3d72df2454",
       "identities": [
         {
@@ -28918,26 +28089,6 @@ window.IDENTITY_INDEX = {
         "name": "Resideo Thermostats Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/evdev/hubitat-resideo/v0.1.12/drivers/resideo-connection.groovy"
-    },
-    {
-      "id": "definition:6df57192ecbe311d867f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-Bridge",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Bridge.groovy"
     },
     {
       "id": "definition:6e0aa4e3a84572a0f30a",
@@ -29048,6 +28199,26 @@ window.IDENTITY_INDEX = {
         "name": "Cat Litter Box (Tuya Local)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Cat%20Litter%20Box/Drivers/Cat%20Litter%20Box%20(Tuya%20Local).groovy"
+    },
+    {
+      "id": "definition:6e65a172c0a3bfeeda98",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Relay Switch with Metering (SIN-4-1-21)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-1-21.groovy"
     },
     {
       "id": "definition:6e740647b40da58c8d87",
@@ -29280,26 +28451,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-Cooper-Aspire-Scene-Controller/master/RFWC5-Keypad.groovy"
     },
     {
-      "id": "definition:70a752cad6fb7c4bd6d7",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UXG",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UXG.groovy"
-    },
-    {
       "id": "definition:70c65947e18199e28953",
       "identities": [
         {
@@ -29358,6 +28509,26 @@ window.IDENTITY_INDEX = {
         "name": "Inovelli Drivers (Gen 2)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Drivers/inovelli-dimmer-red-series-vzw31-sn.src/inovelli-dimmer-red-series-vzw31-sn.groovy"
+    },
+    {
+      "id": "definition:7111893542f5be742030",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Color White Spectrum Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_CWS-Light.groovy"
     },
     {
       "id": "definition:712c781e724406d65e31",
@@ -29463,6 +28634,26 @@ window.IDENTITY_INDEX = {
         "name": "Heatmiser Neostat"
       },
       "sourceUrl": "https://raw.githubusercontent.com/cjcharles0/Hubitat/master/drivers/heatmiser-neostat/heatmiser-neo-plug-dth.groovy"
+    },
+    {
+      "id": "definition:71d76cabb56cb9749f77",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Signal Repeater (E1746)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1746.groovy"
     },
     {
       "id": "definition:71fbd9ec685574959d05",
@@ -30155,26 +29346,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyPlusH.T-v2.17.8.groovy"
     },
     {
-      "id": "definition:764bc60c0e7be3f9023d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-ULP3AC",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULP3AC.groovy"
-    },
-    {
       "id": "definition:76554e30b2594f2a0347",
       "identities": [
         {
@@ -30193,26 +29364,6 @@ window.IDENTITY_INDEX = {
         "name": "Package NewOne"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/newone/newone-mini-smart-plug.groovy"
-    },
-    {
-      "id": "definition:7661664ec77389324cf1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Grizzl-ECharger",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
-        "name": "Grizzl-ECharger"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-ECharger.groovy"
     },
     {
       "id": "definition:766643e5277247c64fcf",
@@ -30460,6 +29611,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Tuya%20Zigbee%20Light%20Sensor/Tuya_Zigbee_Light_Sensor_lib_included.groovy"
     },
     {
+      "id": "definition:7806f5aea90ada54d758",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Sleep Timer",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvSleepTimer.groovy"
+    },
+    {
       "id": "definition:78578505b96595d4978c",
       "identities": [
         {
@@ -30578,6 +29749,26 @@ window.IDENTITY_INDEX = {
         "name": "Quick Chart"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/QuickChart/main/QuickChartDriver.groovy"
+    },
+    {
+      "id": "definition:7933c9c621c49d7be6ea",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Alarm Switch",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvAlarmSwitch.groovy"
     },
     {
       "id": "definition:79616fbb0628434eb5bb",
@@ -31520,26 +30711,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_color_bulb.groovy"
     },
     {
-      "id": "definition:82cf4848b01c85b4e129",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-BasicAP",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-BasicAP.groovy"
-    },
-    {
       "id": "definition:830a635c6b165447b522",
       "identities": [
         {
@@ -31890,26 +31061,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-verilock/master/drivers/verilock-translator.groovy"
     },
     {
-      "id": "definition:85b5ee823884b3e25463",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM48",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48.groovy"
-    },
-    {
       "id": "definition:8618709373a7ac4e5741",
       "identities": [
         {
@@ -32098,26 +31249,6 @@ window.IDENTITY_INDEX = {
         "name": "Package Minoston"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/minoston/minoston-smart-on-off-toggle-switch.groovy"
-    },
-    {
-      "id": "definition:86fe08f8b91d737d19e2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USAGGPRO",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USAGGPRO.groovy"
     },
     {
       "id": "definition:870c80c49fa819752df0",
@@ -32395,26 +31526,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/drivers/shelly/shelly_wave_1pm.groovy"
     },
     {
-      "id": "definition:8880f7d1875932e977e0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-13",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-13.groovy"
-    },
-    {
       "id": "definition:8886094d3b7cced7b4ba",
       "identities": [
         {
@@ -32660,6 +31771,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/randalln/hubitat-mitsubishi-mqtt/main/src/main/groovy/hubitat-mitsubishi-mqtt.groovy"
     },
     {
+      "id": "definition:8a36445b31508cebd1f5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Styrbar Remote Control N2 (E2002)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2002.groovy"
+    },
+    {
       "id": "definition:8a6a195cb1e836a661f3",
       "identities": [
         {
@@ -32815,26 +31946,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-generic-device-toolbox-expanded.groovy"
     },
     {
-      "id": "definition:8b92520644393a8eed3c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Neurio",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
-        "name": "Neurio"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.groovy"
-    },
-    {
       "id": "definition:8b9e428095a790e4be31",
       "identities": [
         {
@@ -32853,26 +31964,6 @@ window.IDENTITY_INDEX = {
         "name": "Zigbee TRVs and Thermostats"
       },
       "sourceUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Zigbee%20TRV/Namron_Zigbee_Thermostat_lib_included.groovy"
-    },
-    {
-      "id": "definition:8be17ae7284d7d59dfcd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-CGF",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-CGF.groovy"
     },
     {
       "id": "definition:8c01d648b0e825ebf9f5",
@@ -33140,26 +32231,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/drivers/istore-heat-pump.groovy"
     },
     {
-      "id": "definition:8d73da6f3f86395d0f1f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-SE-27",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-27.groovy"
-    },
-    {
       "id": "definition:8dbc7e55cec79ae8f876",
       "identities": [
         {
@@ -33323,26 +32394,6 @@ window.IDENTITY_INDEX = {
         "name": "Daikin BRP084 Local Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Mclass294/Hubitat-Daikin-BRP084/main/drivers/DaikinBRP084EnergyChild.groovy"
-    },
-    {
-      "id": "definition:8e5290ea3540ea6ff61a",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-PM1",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-PM1.groovy"
     },
     {
       "id": "definition:8e6596b0773bdcfaf4e7",
@@ -34290,26 +33341,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tyuhl/hubitat-honeywell-Maintenance/refs/heads/main/honeywellremotesensordriver.groovy"
     },
     {
-      "id": "definition:935053bb98cbaf24d3fd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectAPI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectAPI.groovy"
-    },
-    {
       "id": "definition:9364c9840d55948ebc42",
       "identities": [
         {
@@ -34373,6 +33404,26 @@ window.IDENTITY_INDEX = {
         "name": "Third Reality Custom Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/third_reality_plug_w-power-meter_custom/third_reality_plug_w-power-meter_custom.groovy"
+    },
+    {
+      "id": "definition:93b5735a7970a044f435",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Starkvind Air Purifier (E2006)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2006.groovy"
     },
     {
       "id": "definition:93d7bddcdd25d65d2ba0",
@@ -34765,26 +33816,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/TR-Systems/hubpub/code/HikvisionCameraController.groovy"
     },
     {
-      "id": "definition:963ece918b931f51ff90",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-AFS",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-AFS.groovy"
-    },
-    {
       "id": "definition:964cb7369778219ebb19",
       "identities": [
         {
@@ -35015,26 +34046,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/Envisalink/Envisalink_Zone_CO.groovy"
     },
     {
-      "id": "definition:98d12858122f4dfb4acb",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectAPI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectAPI.groovy"
-    },
-    {
       "id": "definition:98ea532e6dc2b1b220a1",
       "identities": [
         {
@@ -35180,6 +34191,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2ColorLights5Driver.groovy"
     },
     {
+      "id": "definition:999e8ebad207333a365f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Shortcut Button (E1812)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1812.groovy"
+    },
+    {
       "id": "definition:99c5493bf871288ad211",
       "identities": [
         {
@@ -35318,26 +34349,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Sensors Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zse43-v1.2.2.groovy"
-    },
-    {
-      "id": "definition:9ab7f6737b62998277a4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WeatherFlow",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
-        "name": "WeatherFlow"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.groovy"
     },
     {
       "id": "definition:9adab8eed77df427481a",
@@ -35625,26 +34636,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Switch-Multi/GE-Jasco-Enbrighten-Switch-Multi.groovy"
     },
     {
-      "id": "definition:9dd3c6d6ca528687bf07",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW8",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8.groovy"
-    },
-    {
       "id": "definition:9e0f00ec3579dee1d79f",
       "identities": [
         {
@@ -35663,6 +34654,26 @@ window.IDENTITY_INDEX = {
         "name": "Schwaiger Temperature Sensor"
       },
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Schwaiger/Schwaiger%20Temperature%20Sensor.groovy"
+    },
+    {
+      "id": "definition:9e2216ad8be0446f28e9",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Askvader On/Off Switch (E1836)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1836.groovy"
     },
     {
       "id": "definition:9e27dac7b73569b91697",
@@ -35845,26 +34856,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/RainBird-LNK-Wi-Fi-Module.groovy"
     },
     {
-      "id": "definition:9f4aab1e975f7884c681",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-Presence",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-Presence.groovy"
-    },
-    {
       "id": "definition:9f4c575533be4fe9d56c",
       "identities": [
         {
@@ -36030,24 +35021,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-metering-dimmer-child-expanded.groovy"
     },
     {
-      "id": "definition:a0be32e24345d93dc794",
+      "id": "definition:a0877b326db9029d74ed",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM24P",
-          "namespace": "Snell"
+          "name": "IKEA Vindstyrka Air Quality Sensor (E2112)",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24P.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2112.groovy"
     },
     {
       "id": "definition:a0da3007f0724d234d6c",
@@ -36510,6 +35501,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/craigde/hubitat-SmartHQ/main/devices/smartHQ_hood"
     },
     {
+      "id": "definition:a340b33fa09aed142a0c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Dashboard Widgets",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@agamemnon.dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/zigbee-visual-render-for-getchildandrouteinfo/119074",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/dashboard-widgets-driver/README.md",
+        "id": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json",
+        "name": "Dashboard Widgets"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/dashboard-widgets-driver_1.5.0/dashboard-widgets-driver/dashboard-widgets.groovy"
+    },
+    {
       "id": "definition:a3568cedddbed5349f29",
       "identities": [
         {
@@ -36740,26 +35751,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2CeilingFanDriver.groovy"
     },
     {
-      "id": "definition:a4d8ece6184750524815",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Sicce",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Sicce.groovy"
-    },
-    {
       "id": "definition:a4eef0065eac8e2fabdb",
       "identities": [
         {
@@ -36945,26 +35936,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_Netatmo/main/Netatmo_Wind_Driver.groovy"
     },
     {
-      "id": "definition:a620cadc053e71e614ce",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Playlist",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvPlaylist.groovy"
-    },
-    {
       "id": "definition:a640879c84b491ede7dc",
       "identities": [
         {
@@ -37085,26 +36056,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/HoneywellWiFiThermostatComponent.groovy"
     },
     {
-      "id": "definition:a715c1ee0a9fa98b4d0d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "FireBoardCloudAPI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
-        "name": "FireBoard"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoardCloudAPI.groovy"
-    },
-    {
       "id": "definition:a74d3590e54ef98d8a33",
       "identities": [
         {
@@ -37223,26 +36174,6 @@ window.IDENTITY_INDEX = {
         "name": "HD+ Companion App"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/hd-device/hd_device.groovy"
-    },
-    {
-      "id": "definition:a87810d154150755bcdf",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Favorites",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvFavorites.groovy"
     },
     {
       "id": "definition:a88df7fd044e3278169f",
@@ -37390,26 +36321,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/Warlock-Weary/Light.Security.Monitor/main/drivers/lsm-ez-driver.groovy"
     },
     {
-      "id": "definition:a94fd2a927416b682ad4",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Vectra",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Vectra.groovy"
-    },
-    {
       "id": "definition:a951541453c9407c9c8a",
       "identities": [
         {
@@ -37448,26 +36359,6 @@ window.IDENTITY_INDEX = {
         "name": "Oelo Lights"
       },
       "sourceUrl": "https://raw.githubusercontent.com/curtiside/oelo-lights-hubitat/main/drivers/oelo-lights-zone.groovy"
-    },
-    {
-      "id": "definition:a962b40b748368205934",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-FMM",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-FMM.groovy"
     },
     {
       "id": "definition:a9b9b0f1b230ddcf2c8e",
@@ -37558,46 +36449,6 @@ window.IDENTITY_INDEX = {
         "name": "Textbelt SMS Notifications"
       },
       "sourceUrl": "https://raw.githubusercontent.com/mlritchie/Hubitat/refs/heads/master/Drivers/Textbelt%20SMS/Textbelt_Device.groovy"
-    },
-    {
-      "id": "definition:aa19a3868b3e9543a9b8",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-WAV",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-WAV.groovy"
-    },
-    {
-      "id": "definition:aa3548d303d076a6e46b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-27",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-27.groovy"
     },
     {
       "id": "definition:aa3b3c51081aa7fd1d76",
@@ -37878,26 +36729,6 @@ window.IDENTITY_INDEX = {
         "name": "Meteorological Seasons"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/meteorological_seasons/meteorSeasons.groovy"
-    },
-    {
-      "id": "definition:ab486e987a10d4e3e497",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WeatherSensorChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
-        "name": "Ambient Ecowitt Weather"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherSensorChild.groovy"
     },
     {
       "id": "definition:ab55c2c78ad4934d7c64",
@@ -38915,26 +37746,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/bradsjm/hubitat-public/main/Tuya/TuyaOpenCloudAPI.groovy"
     },
     {
-      "id": "definition:b15239208a5f0aeeef9c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW16PoE",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW16PoE.groovy"
-    },
-    {
       "id": "definition:b18bda798013eabb5b6b",
       "identities": [
         {
@@ -39086,7 +37897,7 @@ window.IDENTITY_INDEX = {
       "kind": "DRIVER",
       "package": {
         "author": "jdthomas24",
-        "communityUrl": null,
+        "communityUrl": "https://community.hubitat.com/t/167268",
         "documentationUrl": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Roborock%20Integration",
         "id": "manifest:2198e51ff4278066f040",
         "manifestUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json",
@@ -39315,26 +38126,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Fan.groovy"
     },
     {
-      "id": "definition:b3eab7ad915fd29d33e0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-WiredFloodlight",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-WiredFloodlight.groovy"
-    },
-    {
       "id": "definition:b416136e465ffd86aa24",
       "identities": [
         {
@@ -39353,6 +38144,26 @@ window.IDENTITY_INDEX = {
         "name": "Lennox iComfort"
       },
       "sourceUrl": "https://raw.githubusercontent.com/rbyrbt/Hubitat/main/LennoxiComfort/drivers/lennox-icomfort-driver.groovy"
+    },
+    {
+      "id": "definition:b41e2f5d78b82658eeac",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Pilot Wire Heating Module (SIN-4-FP-21)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-FP-21.groovy"
     },
     {
       "id": "definition:b431cb47ebe68fbe5212",
@@ -39670,46 +38481,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/DaveGut/tpLink_Hubitat/refs/heads/main/Drivers/tpLink_plug.groovy"
     },
     {
-      "id": "definition:b58e75dc23c4a5bb3333",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-RPS",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-RPS.groovy"
-    },
-    {
-      "id": "definition:b5b0930abc799ebf2ca9",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM48P",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM48P.groovy"
-    },
-    {
       "id": "definition:b5f427f3a33c1b1c9e05",
       "identities": [
         {
@@ -39980,26 +38751,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/Ring/ring-contact-sensor.groovy"
     },
     {
-      "id": "definition:b7988691327e37ba3dad",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USF5P",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USF5P.groovy"
-    },
-    {
       "id": "definition:b7f9742f76794b0d5ac6",
       "identities": [
         {
@@ -40023,26 +38774,6 @@ window.IDENTITY_INDEX = {
         "name": "PC Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/gilshallem/Hubitat/main/ComputerController/ComputerControllerDriver.groovy"
-    },
-    {
-      "id": "definition:b8206622b37eeafb0c8f",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UDR",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UDR.groovy"
     },
     {
       "id": "definition:b834a0c00a79a9ea5930",
@@ -40545,6 +39276,46 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/rob121/hubitat/master/drivers/airfoil/AirfoilSpeaker.groovy"
     },
     {
+      "id": "definition:bab6e0aee12bd37f1a05",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee Map Helper",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+        "name": "Zigbee Map"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map-helper.groovy"
+    },
+    {
+      "id": "definition:bae3ea21c1f9ceaa089c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Motion Sensor (E1745)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1745.groovy"
+    },
+    {
       "id": "definition:baf03d8a88707cccaed6",
       "identities": [
         {
@@ -40645,26 +39416,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/HomeSeer/HS-FLS100-Floodlight-Sensor.groovy"
     },
     {
-      "id": "definition:bb98eb4fd7cf8d12c84d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-Trident",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-Trident.groovy"
-    },
-    {
       "id": "definition:bba37650f861abc83f17",
       "identities": [
         {
@@ -40703,26 +39454,6 @@ window.IDENTITY_INDEX = {
         "name": "LG ThinQ Connect Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/drivers/thinq_connect_refrigerator.groovy"
-    },
-    {
-      "id": "definition:bbe4dd96009624188c28",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-ULD3AC",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-ULD3AC.groovy"
     },
     {
       "id": "definition:bbe4e52d864a464ce328",
@@ -40953,26 +39684,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyTRV-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:bdbca66c42ee41290298",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-SE-7",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-7.groovy"
     },
     {
       "id": "definition:be142ab3076c2e9f8aa3",
@@ -42025,26 +40736,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/evalogik/evalogik-smart-toggle-dimmer-switch.groovy"
     },
     {
-      "id": "definition:c47736076eea05700d89",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-Doorbell",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Doorbell.groovy"
-    },
-    {
       "id": "definition:c4b682a3e36d6de82532",
       "identities": [
         {
@@ -42183,26 +40874,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v1"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/Govee/v1/govee_heating_app_driver"
-    },
-    {
-      "id": "definition:c5642a7f775f44e1fde6",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ApexEL",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexEL.groovy"
     },
     {
       "id": "definition:c5844319189ab30714d9",
@@ -42570,26 +41241,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/genericComponentCarbonDioxideSensor.groovy"
     },
     {
-      "id": "definition:c775c7b6ff3217c57548",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-PTZCamera",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-PTZCamera.groovy"
-    },
-    {
       "id": "definition:c776d6ce92e45addbf9b",
       "identities": [
         {
@@ -42890,26 +41541,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/fieldsjm/Hubitat-2/master/WyzeHub/drivers/wyzehub-ctbulb-group-driver.groovy"
     },
     {
-      "id": "definition:c8cd815aae90bc05d817",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Battery Status",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvBatteryStats.groovy"
-    },
-    {
       "id": "definition:c9226b4f9916fa76c8c5",
       "identities": [
         {
@@ -42968,26 +41599,6 @@ window.IDENTITY_INDEX = {
         "name": "Package Evalogik"
       },
       "sourceUrl": "https://raw.githubusercontent.com/sky-nie/hubitat/main/evalogik/evalogik-smart-dimmer-switch.groovy"
-    },
-    {
-      "id": "definition:c9821dbfe58a6fa0e7ed",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM24",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM24.groovy"
     },
     {
       "id": "definition:c98719b28b0f8598ba3a",
@@ -43180,26 +41791,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/hhorigian/hubitat_MolSmart_GW3_RF/main/Hubitat_TRATO_MolSmart_GW3_RF_Driver_v2.groovy"
     },
     {
-      "id": "definition:cb0f19946f3f94f82239",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-Camera",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-Camera.groovy"
-    },
-    {
       "id": "definition:cb1c95ea711c4e77c576",
       "identities": [
         {
@@ -43343,26 +41934,6 @@ window.IDENTITY_INDEX = {
         "name": "Govee Integration v2"
       },
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2WhiteLightswithCTDriver.groovy"
-    },
-    {
-      "id": "definition:cbe98b305359b0291e7c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Cast",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Cast.groovy"
     },
     {
       "id": "definition:cc1f1534f3e5e9d06238",
@@ -43603,26 +42174,6 @@ window.IDENTITY_INDEX = {
         "name": "Hubitat IntelliFire"
       },
       "sourceUrl": "https://raw.githubusercontent.com/corinuss/Hubitat_IntelliFire/main/Driver/IntelliFire_Fireplace.groovy"
-    },
-    {
-      "id": "definition:cdb2726802bb608c4d1d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW24",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW24.groovy"
     },
     {
       "id": "definition:cdcf9897898e59bf6a4b",
@@ -44130,24 +42681,44 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ajardolino3/hubitat-ble-gateway/main/ble-beacon.groovy"
     },
     {
-      "id": "definition:d0965970401430575a83",
+      "id": "definition:d05dadff9e995817d7f0",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "TeslaChild",
-          "namespace": "Snell"
+          "name": "NodOn Component Relay Switch",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
-        "name": "Tesla Drivers"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaChild.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/component/NodOn_ComponentRelaySwitch.groovy"
+    },
+    {
+      "id": "definition:d0871e7103dcf00686e6",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Hot Water Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-hotwater.groovy"
     },
     {
       "id": "definition:d0aa313a627ba94086d6",
@@ -44208,6 +42779,26 @@ window.IDENTITY_INDEX = {
         "name": "Air Gradient Universal driver"
       },
       "sourceUrl": "https://raw.githubusercontent.com/Mavrrick/Hubitat-by-Mavrrick/main/AirGradient/AirGradientUniversalDriver.Groovy"
+    },
+    {
+      "id": "definition:d0e96e1a1fc346774477",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Inspelning Smart Plug (E2206)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2206.groovy"
     },
     {
       "id": "definition:d107d790f8cfaf16bd6a",
@@ -44530,26 +43121,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/fieldsjm/Hubitat-2/master/WyzeHub/drivers/wyzehub-plug-group-driver.groovy"
     },
     {
-      "id": "definition:d2e55e45ca493ef202a2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-EV-Station",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-EV-Station.groovy"
-    },
-    {
       "id": "definition:d2e6b1116b185075b86c",
       "identities": [
         {
@@ -44658,26 +43229,6 @@ window.IDENTITY_INDEX = {
         "name": "Fibaro Smart Implant FGBS-222"
       },
       "sourceUrl": "https://raw.githubusercontent.com/muchu999/Hubitat/master/Fibaro%20FBGS-222%20Smart%20Implant/Fibaro%20FBGS-222%20Child%20Analog%20Input.groovy"
-    },
-    {
-      "id": "definition:d3632af4cc1048938310",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM16",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16.groovy"
     },
     {
       "id": "definition:d3950aa03a81241d4202",
@@ -44870,26 +43421,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/SmartThings%20Motion%20Sensor/SmartThingsMotion.groovy"
     },
     {
-      "id": "definition:d5d0682b6bb493500578",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USW8PoE60",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USW8PoE60.groovy"
-    },
-    {
       "id": "definition:d5e37aa6f6c247d7e7fa",
       "identities": [
         {
@@ -44928,26 +43459,6 @@ window.IDENTITY_INDEX = {
         "name": "AlarmDecoder Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/alarmdecoder-smartthings/master/devicetypes/alarmdecoder/alarmdecoder-virtual-carbon-monoxide-detector.src/alarmdecoder-virtual-carbon-monoxide-detector.groovy"
-    },
-    {
-      "id": "definition:d5fd5736234ea03da69b",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USMINI",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USMINI.groovy"
     },
     {
       "id": "definition:d6071406fe58f851c50c",
@@ -45120,6 +43631,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/hubitat/drivers/RingSmartLight.groovy"
     },
     {
+      "id": "definition:d725d7c3e6eb2ba9e369",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "EMS-ESP - Heating Component",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ems-esp-gateway/150098",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ems-esp-driver/README.md",
+        "id": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json",
+        "name": "EMS-ESP Gateway"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ems-esp_1.0.0/ems-esp-driver/component/ems-esp-heating.groovy"
+    },
+    {
       "id": "definition:d72b9b07f4c1081852af",
       "identities": [
         {
@@ -45205,26 +43736,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/radio_thermostat_zwave.groovy"
     },
     {
-      "id": "definition:d7a3a3819a534f162f28",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPM16P",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPM16P.groovy"
-    },
-    {
       "id": "definition:d7d5c3199f917782db80",
       "identities": [
         {
@@ -45263,26 +43774,6 @@ window.IDENTITY_INDEX = {
         "name": "Orbit Bhyve+"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/orbit-bhyve/orbit-bhyve-bridge.groovy"
-    },
-    {
-      "id": "definition:d81b033a4bebad6c3891",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-Sensor",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Sensor.groovy"
     },
     {
       "id": "definition:d821a9ffeb93d6215cad",
@@ -46525,26 +45016,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/main/Samsung%20Appliance%20Service/Drivers/SAS%20-%20Samsung%20Washer.groovy"
     },
     {
-      "id": "definition:e028a690597bc73e47c0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NeptuneSystemsApexChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexChild.groovy"
-    },
-    {
       "id": "definition:e0bc800026adb5c51ee7",
       "identities": [
         {
@@ -46720,26 +45191,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/djdizzyd/hubitat/master/Drivers/Ring/ring-smoke-co-listener.groovy"
     },
     {
-      "id": "definition:e1a0056680cda4765bf2",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WSM4Hubitat",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
-        "name": "WSM4Hubitat"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.groovy"
-    },
-    {
       "id": "definition:e20556e57aeab3ca8e83",
       "identities": [
         {
@@ -46825,26 +45276,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/michaelbarone/hubitat/master/drivers/virtualKeypadInputDisplayChild.groovy"
     },
     {
-      "id": "definition:e24ad6ed3ff3e58a93a0",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild.groovy"
-    },
-    {
       "id": "definition:e26211b8a8dabb8b48fb",
       "identities": [
         {
@@ -46883,26 +45314,6 @@ window.IDENTITY_INDEX = {
         "name": "Ecobee Suite"
       },
       "sourceUrl": "https://raw.githubusercontent.com/SANdood/Ecobee-Suite/master/devicetypes/sandood/ecobee-suite-sensor.src/ecobee-suite-sensor.groovy"
-    },
-    {
-      "id": "definition:e2b8aefbe8a605a063e1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiProtectChild-Light",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
-        "name": "Unifi Protect Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectChild-Light.groovy"
     },
     {
       "id": "definition:e33ae797e41ca1ba1f5f",
@@ -47215,6 +45626,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/dcaton/Hubitat/refs/heads/main/QolSysIQPanel/QolSysIQ-Water.groovy"
     },
     {
+      "id": "definition:e4bf34d5da1997f8cb07",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Group",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvGroup.groovy"
+    },
+    {
       "id": "definition:e4bfb1a96e1e5a9a0484",
       "identities": [
         {
@@ -47313,26 +45744,6 @@ window.IDENTITY_INDEX = {
         "name": "Zooz ZEN31 RGBW Advanced Driver"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen31-rgbw-dimmer.groovy"
-    },
-    {
-      "id": "definition:e5742196e19bcc58d017",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Player",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvPlayer.groovy"
     },
     {
       "id": "definition:e574fef3a716867e1c8d",
@@ -47620,6 +46031,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ardichoke/Hubitat/main/Drivers/Everspring-AN186.groovy"
     },
     {
+      "id": "definition:e6f2e540aecf6d0e745d",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Open/Close Remote (E1766)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1766.groovy"
+    },
+    {
       "id": "definition:e70917a40abfdcd6725a",
       "identities": [
         {
@@ -47885,26 +46316,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/Drivers/Qubino/Qubino%20Flush%20Pilot%20Wire.groovy"
     },
     {
-      "id": "definition:e891e7ed17417693077d",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-7",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-7.groovy"
-    },
-    {
       "id": "definition:e897282d9092155c9f70",
       "identities": [
         {
@@ -47923,26 +46334,6 @@ window.IDENTITY_INDEX = {
         "name": "Presence Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/drivers/Presence_Manager_Guest_Mode_Switch.groovy"
-    },
-    {
-      "id": "definition:e89bd219b91203fa62f1",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiConnectChild-UC-Display-SE-21",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
-        "name": "UnifiConnectAPI"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectChild-UC-Display-SE-21.groovy"
     },
     {
       "id": "definition:e8aa3f7af3e42da1a8e4",
@@ -47983,26 +46374,6 @@ window.IDENTITY_INDEX = {
         "name": "Tasmota for Hubitat Elevation"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/tasmota-universal-switch-as-presence-sensor-child-expanded.groovy"
-    },
-    {
-      "id": "definition:e8b58ae01633b305fe75",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "NSChild-ApexJr",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexJr.groovy"
     },
     {
       "id": "definition:e8ca7d2f462a7eec5ef2",
@@ -48345,6 +46716,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/Weather-Display-With-OWM-Alerts-Forecast-Driver/master/Weather-Display%20With%20OWM-Alerts%20Forecast%20Driver.groovy"
     },
     {
+      "id": "definition:ead189fbf93f69ad953b",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Remote Control (E1810)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1810.groovy"
+    },
+    {
       "id": "definition:eafb04539e5220065936",
       "identities": [
         {
@@ -48410,24 +46801,24 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/UnifiedThermostat/UnifiedThermostatUnitChild_Driver.groovy"
     },
     {
-      "id": "definition:eb545b3b34c2a89b9fc0",
+      "id": "definition:eb1a664ef0f5155e9eab",
       "identities": [
         {
           "basis": "sourceIdentity",
-          "name": "NSChild-ApexA3Pro",
-          "namespace": "Snell"
+          "name": "IKEA White Spectrum Light",
+          "namespace": "dandanache"
         }
       ],
       "kind": "DRIVER",
       "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
-        "name": "Neptune Systems Apex"
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
       },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NSChild-ApexA3Pro.groovy"
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_WS-Light.groovy"
     },
     {
       "id": "definition:eb91d0543e7dfb618963",
@@ -48510,6 +46901,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-sonoff-temperature-humidity-sensor-expanded.groovy"
     },
     {
+      "id": "definition:ecd4c3ccb6d1e6afd968",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Sonos Advanced Favorites",
+          "namespace": "dwinks"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Daniel Winks",
+        "communityUrl": null,
+        "documentationUrl": null,
+        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
+        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
+        "name": "Sonos Advanced Controller"
+      },
+      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.8/SonosAdvFavorites.groovy"
+    },
+    {
       "id": "definition:ecd59dba0884f1c0a5d3",
       "identities": [
         {
@@ -48528,6 +46939,26 @@ window.IDENTITY_INDEX = {
         "name": "Netatmo (Connect) - Weather Station"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_Netatmo/main/Netatmo_BaseStation_Driver.groovy"
+    },
+    {
+      "id": "definition:ed663e462097f015c1f0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Dimmable Light",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_DIM-Light.groovy"
     },
     {
       "id": "definition:ed9044b3a18227dcf5a4",
@@ -48740,6 +47171,46 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/WBEVAN/TESmartController/main/hubitat/TESmart-Controller.groovy"
     },
     {
+      "id": "definition:ef4f46a6ae353f42c60c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Vallhorn Motion Sensor (E2134)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2134.groovy"
+    },
+    {
+      "id": "definition:ef5d15eab93c1e3ca1d8",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "NodOn Lighting Relay Switch (SIN-4-2-20)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-nodon-zigbee-drivers/141365",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/nodon-drivers/README.md",
+        "id": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json",
+        "name": "Hubitat drivers for NodOn smart devices."
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/NodOn_SIN-4-2-20.groovy"
+    },
+    {
       "id": "definition:ef63d0c4f68a40f8f69d",
       "identities": [
         {
@@ -48818,6 +47289,26 @@ window.IDENTITY_INDEX = {
         "name": "Xiaomi Mijia Smart Light Sensor (Zigbee 3.0)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/markus-li/Hubitat/release/drivers/expanded/zigbee-xiaomi-mijia-smart-light-sensor-expanded.groovy"
+    },
+    {
+      "id": "definition:f0b76ece4d9d498a86fa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Tradfri Control Outlet (E1603)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E1603.groovy"
     },
     {
       "id": "definition:f0d3566467d51ce62eec",
@@ -49030,26 +47521,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/genericComponentPresenceSensor.groovy"
     },
     {
-      "id": "definition:f23ccc453b092bd9738c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UGW3",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW3.groovy"
-    },
-    {
       "id": "definition:f23ec64d47b3c42800db",
       "identities": [
         {
@@ -49068,26 +47539,6 @@ window.IDENTITY_INDEX = {
         "name": "Kohler DTV+ Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/dcmeglio/hubitat-kohlerdtv/master/drivers/Kohler_DTV%2B_Amplifier.groovy"
-    },
-    {
-      "id": "definition:f249bfe6da71f25e5021",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-US8",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-US8.groovy"
     },
     {
       "id": "definition:f2648d66e390a7b59444",
@@ -49153,6 +47604,26 @@ window.IDENTITY_INDEX = {
         "name": "Demand Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DarwinsDen/Demand-Manager/master/devicetypes/darwinsden/demand-manager-dashboard.src/demand-manager-dashboard.groovy"
+    },
+    {
+      "id": "definition:f2e271bdd3fb15568cb1",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "IKEA Parasoll Door/Window Sensor (E2013)",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-ikea-zigbee-drivers/123853",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/ikea-zigbee-drivers/README.md",
+        "id": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json",
+        "name": "IKEA Zigbee drivers"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/ikea-zigbee-drivers_5.8.1/ikea-zigbee-drivers/Ikea_E2013.groovy"
     },
     {
       "id": "definition:f305ace1d5495453fcb7",
@@ -49333,26 +47804,6 @@ window.IDENTITY_INDEX = {
         "name": "Nuki Smart Lock Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/MAFFPT/Hubitat/master/Nuki%20Smart%20Lock/Apps%20%26%20drivers/debug/drivers/Nuki%20Opener.groovy"
-    },
-    {
-      "id": "definition:f426d0b2ca80f3e0d835",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UHDIW",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UHDIW.groovy"
     },
     {
       "id": "definition:f47ce70cdb1eb40917e0",
@@ -49885,26 +48336,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://github.com/Mavrrick/Hubitat-by-Mavrrick/raw/main/Govee/v2/Mavrrick.Goveev2DeviceManager.groovy"
     },
     {
-      "id": "definition:f79caccb0f2cdc4db795",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "BlinkChild-MiniCamera",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "David Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
-        "name": "Blink Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkChild-MiniCamera.groovy"
-    },
-    {
       "id": "definition:f7b515833820fbb77ed7",
       "identities": [
         {
@@ -49963,26 +48394,6 @@ window.IDENTITY_INDEX = {
         "name": "Tasmota Sync Drivers"
       },
       "sourceUrl": "https://raw.githubusercontent.com/GaryMilne/Hubitat-Tasmota/main/Universal_Multi_Sensor.groovy"
-    },
-    {
-      "id": "definition:f8484f00412803156a57",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Sonos Advanced Group",
-          "namespace": "dwinks"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Daniel Winks",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:6cad9e9c-4b0b-423b-b0e1-1c5a3c0d1196",
-        "manifestUrl": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json",
-        "name": "Sonos Advanced Controller"
-      },
-      "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.18.2/SonosAdvGroup.groovy"
     },
     {
       "id": "definition:f8700d0e10917f9161d7",
@@ -50655,26 +49066,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/krlaframboise/Hubitat/refs/heads/master/drivers/zooz/zooz-garage-door.src/zooz-garage-door.groovy"
     },
     {
-      "id": "definition:fd2e9db43d163f2673dc",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-USPXG8P",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-USPXG8P.groovy"
-    },
-    {
       "id": "definition:fd31a9485e1dc1045d6f",
       "identities": [
         {
@@ -50758,26 +49149,6 @@ window.IDENTITY_INDEX = {
         "name": "GameTime"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/GameTime/main/GameTime%20Parent%20Device.groovy"
-    },
-    {
-      "id": "definition:fd9a908fa62994294573",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "UnifiNetworkChild-UGW4",
-          "namespace": "Snell"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Snell",
-        "communityUrl": null,
-        "documentationUrl": null,
-        "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
-        "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
-        "name": "Unifi Drivers"
-      },
-      "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-UGW4.groovy"
     },
     {
       "id": "definition:fda0142fd8e7fd9d8d55",
@@ -50973,5 +49344,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-18T07:45:28Z"
+  "snapshotGenerated": "2026-11-19T07:41:11Z"
 };
