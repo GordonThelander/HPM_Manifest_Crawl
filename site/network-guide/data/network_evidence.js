@@ -1,7 +1,7 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
-    "BOTH": 179,
-    "CLOUD": 277,
+    "BOTH": 187,
+    "CLOUD": 281,
     "INSUFFICIENT": 311,
     "LAN": 204
   },
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 971,
+  "packageCount": 983,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1411,6 +1411,55 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Cloud",
         "Energy Monitoring"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": true
+      },
+      "description": "Drivers for using the Ambient API, Ambient Local, and Ecowitt methods of getting weather station data",
+      "documentationUrl": null,
+      "id": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
+      "name": "Ambient Ecowitt Weather",
+      "observed": {
+        "externalHosts": [
+          "api.ambientweather.net",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [
+          "PARSE_LAN_MESSAGE"
+        ],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "LOCAL_BRIDGE",
+              "name": "Ecowitt Gateway",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN_HTTP"
+            }
+          ],
+          "documentation": [],
+          "id": "ecowitt",
+          "name": "EcoWitt / Wittboy Integration",
+          "status": "VERIFIED_COMMUNITY"
+        }
+      ],
+      "tags": [
+        "Cloud",
+        "LAN",
+        "Monitoring",
+        "Temperature & Humidity",
+        "Weather"
       ]
     },
     {
@@ -2832,6 +2881,39 @@ window.NETWORK_EVIDENCE = {
       },
       "reviewed": [],
       "tags": []
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "This is a set of drivers to use with the Blink API",
+      "documentationUrl": null,
+      "id": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
+      "name": "Blink Drivers",
+      "observed": {
+        "externalHosts": [
+          "api.oauth.blink.com",
+          "rest-prod.immedia-semi.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 9,
+        "urlLiteralCount": 133
+      },
+      "reviewed": [],
+      "tags": [
+        "Cameras",
+        "Cloud",
+        "Misc. Devices",
+        "Monitoring",
+        "Safety & Security"
+      ]
     },
     {
       "author": "Simon Burke (sburke781)",
@@ -6245,6 +6327,36 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers for integrating FireBoard devices using the FireBoard Cloud API",
+      "documentationUrl": null,
+      "id": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
+      "name": "FireBoard",
+      "observed": {
+        "externalHosts": [
+          "fireboard.io",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 9
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity"
+      ]
+    },
+    {
       "author": "Jaime Botero",
       "category": "Integrations",
       "classification": "INSUFFICIENT",
@@ -8075,6 +8187,37 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Window Coverings",
         "ZWave"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Monitor Grizzl-E charger.",
+      "documentationUrl": null,
+      "id": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
+      "name": "Grizzl-ECharger",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring",
+        "Vehicles & Transportation"
       ]
     },
     {
@@ -16153,6 +16296,40 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for monitoring a Neptune Systems Apex aquarium controller",
+      "documentationUrl": null,
+      "id": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
+      "name": "Neptune Systems Apex",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 31,
+        "urlLiteralCount": 95
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Monitoring",
+        "Pets & Animals",
+        "Temperature & Humidity",
+        "Valves",
+        "Water"
+      ]
+    },
+    {
       "author": "Schwark Satyavolu",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -16359,6 +16536,36 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Alarm Systems",
         "Safety & Security"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Driver for getting data directly from a Neurio energy monitor",
+      "documentationUrl": null,
+      "id": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
+      "name": "Neurio",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 5
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring"
       ]
     },
     {
@@ -22694,7 +22901,7 @@ window.NETWORK_EVIDENCE = {
           "PARSE_LAN_MESSAGE"
         ],
         "sourceFilesAnalysed": 12,
-        "urlLiteralCount": 72
+        "urlLiteralCount": 64
       },
       "reviewed": [
         {
@@ -23709,6 +23916,35 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Monitoring",
         "Presence & Location"
+      ]
+    },
+    {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for monitoring a Tesla Powerwall",
+      "documentationUrl": null,
+      "id": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
+      "name": "Tesla Drivers",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 46
+      },
+      "reviewed": [],
+      "tags": [
+        "Energy Monitoring",
+        "LAN",
+        "Monitoring"
       ]
     },
     {
@@ -25459,6 +25695,37 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for integrating Ubiquiti's Unifi Network API",
+      "documentationUrl": null,
+      "id": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
+      "name": "Unifi Drivers",
+      "observed": {
+        "externalHosts": [
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 49,
+        "urlLiteralCount": 179
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Lights & Switches",
+        "Misc. Devices",
+        "Monitoring",
+        "Multi Sensors"
+      ]
+    },
+    {
       "author": "Mavrrick",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -25519,6 +25786,40 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for integrating Ubiquiti's Unifi Protect API",
+      "documentationUrl": null,
+      "id": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
+      "name": "Unifi Protect Drivers",
+      "observed": {
+        "externalHosts": [
+          "dzone.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 8,
+        "urlLiteralCount": 64
+      },
+      "reviewed": [],
+      "tags": [
+        "Cameras",
+        "LAN",
+        "Misc. Devices",
+        "Monitoring",
+        "Multi Sensors",
+        "Safety & Security",
+        "Temperature & Humidity"
+      ]
+    },
+    {
       "author": "Mike Coffey",
       "category": "Integrations",
       "classification": "LAN",
@@ -25544,6 +25845,36 @@ window.NETWORK_EVIDENCE = {
         "Monitoring",
         "Notifications",
         "Tools & Utilities"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "BOTH",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Drivers for getting data and basic control of devices within the Unifi Connect API",
+      "documentationUrl": null,
+      "id": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
+      "name": "UnifiConnectAPI",
+      "observed": {
+        "externalHosts": [
+          "dzone.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 16,
+        "urlLiteralCount": 71
+      },
+      "reviewed": [],
+      "tags": [
+        "LAN",
+        "Misc. Devices",
+        "Monitoring"
       ]
     },
     {
@@ -26561,6 +26892,52 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers to access the WeatherFlow API",
+      "documentationUrl": null,
+      "id": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
+      "name": "WeatherFlow",
+      "observed": {
+        "externalHosts": [
+          "swd.weatherflow.com",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 11
+      },
+      "reviewed": [
+        {
+          "dependencies": [
+            {
+              "class": "EXTERNAL_SERVICE",
+              "name": "WeatherFlow Station / Service",
+              "runtimeCriticality": "RUNTIME",
+              "transport": "LAN_OR_HTTPS"
+            }
+          ],
+          "documentation": [],
+          "id": "weatherflow",
+          "name": "WeatherFlow Integration",
+          "status": "COMMUNITY_SEED"
+        }
+      ],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity",
+        "Weather"
+      ]
+    },
+    {
       "author": "Justin Walker (augoisms)",
       "category": null,
       "classification": "CLOUD",
@@ -27290,6 +27667,44 @@ window.NETWORK_EVIDENCE = {
       "tags": [
         "Cloud",
         "Lights & Switches"
+      ]
+    },
+    {
+      "author": "David Snell",
+      "category": "Integrations",
+      "classification": "CLOUD",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": true,
+        "lanTag": false
+      },
+      "description": "Drivers to access a variety of Weather Services such as the UK Met Office, US Weather.gov, OpenWeather, Weather API, Weather Underground, and World Weather Online",
+      "documentationUrl": null,
+      "id": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
+      "name": "WSM4Hubitat",
+      "observed": {
+        "externalHosts": [
+          "api-metoffice.apiconnect.ibmcloud.com",
+          "api.openweathermap.org",
+          "api.weather.com",
+          "api.weather.gov",
+          "api.weatherapi.com",
+          "api.worldweatheronline.com",
+          "data.hub.api.metoffice.gov.uk",
+          "openweathermap.org",
+          "www.drdsnell.com"
+        ],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 30
+      },
+      "reviewed": [],
+      "tags": [
+        "Cloud",
+        "Monitoring",
+        "Temperature & Humidity",
+        "Weather"
       ]
     },
     {
@@ -29236,5 +29651,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-19T07:41:11Z"
+  "snapshotGenerated": "2026-11-20T07:32:50Z"
 };

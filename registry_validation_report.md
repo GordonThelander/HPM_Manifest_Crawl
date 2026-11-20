@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-19T07:41:11Z`
+- Snapshot: `2026-11-20T07:32:50Z`
 - HPM repositories in master list: **229**
-- Repositories fetched successfully: **227**
-- Packages indexed: **971**
+- Repositories fetched successfully: **228**
+- Packages indexed: **983**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **14**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -197,7 +197,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **871**
+Total packages not matched by any registry entry: **881**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -420,6 +420,16 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Simon Burke (Scruffy-Sjb) | Secure SRT321 Thermostat | Integrations | ZWave, Climate Control, Temperature & Humidity | https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/repository.json |
 | Simon Burke (sburke781) | BoM Radar Images Data File | Integrations | Weather | https://raw.githubusercontent.com/sburke781/hubitat/master/BoMWeather/RadarImages/packageManifest.json |
 | Simon Burke (sburke781) | Unified Thermostat | Integrations | Climate Control, Temperature & Humidity, Cloud, LAN | https://raw.githubusercontent.com/sburke781/hubitat/master/UnifiedThermostat/packageManifest.json |
+| Snell | Blink Drivers | Integrations | Cameras, Cloud, Misc. Devices, Monitoring, Safety & Security | https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json |
+| Snell | FireBoard | Integrations | Cloud, Monitoring, Temperature & Humidity | https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json |
+| Snell | Grizzl-ECharger | Integrations | Energy Monitoring, LAN, Misc. Devices, Monitoring, Vehicles & Transportation | https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json |
+| Snell | Neptune Systems Apex | Integrations | LAN, Lights & Switches, Monitoring, Misc. Devices, Pets & Animals, Temperature & Humidity, Valves, Water | https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json |
+| Snell | Neurio | Integrations | Energy Monitoring, LAN, Misc. Devices, Monitoring | https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json |
+| Snell | Tesla Drivers | Integrations | Energy Monitoring, LAN, Monitoring | https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json |
+| Snell | Unifi Drivers | Integrations | LAN, Lights & Switches, Misc. Devices, Monitoring, Multi Sensors | https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json |
+| Snell | Unifi Protect Drivers | Integrations | Cameras, LAN, Misc. Devices, Monitoring, Multi Sensors, Safety & Security, Temperature & Humidity | https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json |
+| Snell | UnifiConnectAPI | Integrations | LAN, Misc. Devices, Monitoring | https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json |
+| Snell | WSM4Hubitat | Integrations | Cloud, Monitoring, Temperature & Humidity, Weather | https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json |
 | StarkTemplar | SolArk Inverter | Integrations | Energy Monitoring, Cloud | https://raw.githubusercontent.com/StarkTemplar/Hubitat/refs/heads/main/Solar/packageManifest.json |
 | StarkTemplar | Solcast_dual | Integrations | Energy Monitoring, Cloud | https://raw.githubusercontent.com/StarkTemplar/Solcast_dual/refs/heads/main/packageManifest.json |
 | Steven Dale | Yale Home | Integrations |  | https://raw.githubusercontent.com/tmleafs/hubitat-packages/main/packages/yalehomeManifest.json |
@@ -597,7 +607,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
-| repository | https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json | <urlopen error [Errno 111] Connection refused> |
 | source | https://raw.githubusercontent.com/JeffreyZimms/Home-Environment-Aggregator/main/Home_Environment_Aggregator_and_Logic.groovy | HTTP 404 |
 | source | https://raw.githubusercontent.com/brianblank/HubitatHaywardAquaConnect/main/src/driver-HaywardTemperatureSensor.groovy | UTF-8 decode error: 'utf-8' codec can't decode byte 0xb0 in position 599: invalid start byte |
 | source | https://raw.githubusercontent.com/dcmeglio/hubitat-petnet/master/apps/Petnet_Integration.groovy | HTTP 404 |
@@ -620,8 +629,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 871 |
-| G candidate subset | 386 |
+| G. Unrepresented packages | 881 |
+| G candidate subset | 396 |
 
 ## H. Enrichment summary
 
@@ -631,13 +640,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2298 |
-| Source URLs fetched | 2288 |
+| Distinct source URLs | 2421 |
+| Source URLs fetched | 2411 |
 | Source URLs failed | 10 |
-| Components attempted | 2312 |
-| Components fetched | 2302 |
-| Literal definitions verified | 2291 |
-| Components with observations | 2157 |
+| Components attempted | 2437 |
+| Components fetched | 2427 |
+| Literal definitions verified | 2416 |
+| Components with observations | 2282 |
 
 ### Official Hubitat documentation pass
 

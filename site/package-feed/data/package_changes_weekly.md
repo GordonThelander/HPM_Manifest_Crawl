@@ -1,9 +1,24 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-19T07:41:11Z`.
+Latest observation: `2026-11-20T07:32:50Z`.
 
-**198 package change(s):** added 72, broken 1, declared definitions changed 4, removed 70, source location changed 11, updated 56
+**205 package change(s):** added 83, declared definitions changed 4, removed 70, source location changed 11, updated 52
 
+- [WeatherFlow: added.](https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json)
+- [WSM4Hubitat: added.](https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json)
+- [UnifiConnectAPI: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json)
+- [Unifi Protect Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json)
+- [Unifi Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
+- [Tesla Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Neurio: added.](https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json)
+- [Neptune Systems Apex: added.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
+- [Grizzl-ECharger: added.](https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json)
+- [FireBoard: added.](https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json)
+- [Blink Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
+- [Ambient Ecowitt Weather: added.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
 - [zigbee-graph: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
 - [Zigbee Map: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
 - [WeatherFlow: removed.](https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json)
@@ -194,13 +209,5 @@ Latest observation: `2026-11-19T07:41:11Z`.
 - [Dimable CT Bulb driver - Zigbee: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/dimable_ct_bulbs.json)
 - [CentraLite Motion Detector: removed.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/CentraLite_motion_detector.json)
 - [Amazon Fire TV (ADB): added.](https://raw.githubusercontent.com/hhorigian/hubitat_firetv/refs/heads/main/packageManifest.json)
-- [iCOMM for Hubitat: updated.](https://raw.githubusercontent.com/MikeBishop/hpm-intermediate/main/icomm.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Moonraker Klipper Printer: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Moonraker%20Klipper%203D%20Printer/packageManifest.json)
-- [Modern Dashboard: updated.](https://raw.githubusercontent.com/evdev/hubitat-modern-dashboard/master/hubitat/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
-- [Frigidaire 2.0 AC Thermostat: added, became unavailable.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/refs/heads/main/packages/frigidaire_2.0.json)
-- [Energy From Power: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

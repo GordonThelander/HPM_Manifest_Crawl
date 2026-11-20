@@ -3950,6 +3950,78 @@
       "transition": "UNCHANGED"
     },
     {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 2
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 2,
+            "fetched": 2
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json",
+      "name": "WSM4Hubitat",
+      "packageId": "hpm:1ad94c69-cfa0-48d8-9810-a87f193fd155",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
+    },
+    {
       "author": "Matt Palermo",
       "evidence": [
         {
@@ -6117,7 +6189,7 @@
       "packageId": "hpm:23b507e6-22ac-4a4e-bcda-f1969c174cd6",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "FAILING",
-      "transition": "BASELINE"
+      "transition": "PERSISTENT_FAILURE"
     },
     {
       "author": "Larry Kahn",
@@ -6953,12 +7025,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/no-longer-maintained-energy-cost-calculator/108660",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-energy-calculator-plus/108660"
         }
       ],
@@ -7193,12 +7265,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/driver-zooz-relays-advanced-zen16-zen17-zen51-zen52/98194",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/zooz-relays-advanced/98194"
         },
         {
@@ -7222,7 +7294,7 @@
       "name": "Zooz Relays Advanced Drivers",
       "packageId": "hpm:2cc22e33-72ed-47bb-b4d5-6efc2c570ca3",
       "repositoryUrl": "https://raw.githubusercontent.com/jtp10181/Hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -7361,12 +7433,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/final-release-tuya-wall-mount-thermostat-water-electric-floor-heating-zigbee-driver/87050",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-tuya-wall-mount-thermostat-water-electric-floor-heating-zigbee-driver/87050"
         }
       ],
@@ -7378,7 +7450,7 @@
       "name": "Tuya Wall Thermostat",
       "packageId": "hpm:2d09ce90-729a-444c-8159-7c90ca1857f6",
       "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -7517,12 +7589,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062"
         },
         {
@@ -7546,7 +7618,7 @@
       "name": "Rain Bird LNK/LNK2 WiFi Module Controller",
       "packageId": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
       "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -7612,13 +7684,13 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/smartstart-manager/137492",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "finalUrl": "https://community.hubitat.com/t/app-smartstart-manager-for-z-wave-long-range-support/137492",
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/smartstart-manager/137492"
         },
         {
@@ -7642,7 +7714,7 @@
       "name": "SmartStart Manager App",
       "packageId": "hpm:2efa6db6-c1a7-413b-bdc0-09bce9feb071",
       "repositoryUrl": "https://raw.githubusercontent.com/jtp10181/Hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -7997,12 +8069,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-powerley-thermostat-and-energy-bridge-driver/54248",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-powerley-thermostat-and-energy-bridge-driver/54248"
         },
         {
@@ -8026,7 +8098,7 @@
       "name": "Hubitat Powerley",
       "packageId": "hpm:3185fd0e-d5a4-4e94-b178-f57eb95752f7",
       "repositoryUrl": "https://raw.githubusercontent.com/bcastellucci/hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -8418,24 +8490,24 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-nice-ibt4zwave-community-driver/146932",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-nice-ibt4zwave-community-driver/146932"
         },
         {
           "check": "documentationReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-nice-ibt4zwave-community-driver/146932",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-nice-ibt4zwave-community-driver/146932"
         }
       ],
@@ -8447,7 +8519,7 @@
       "name": "Nice IBT4ZWAVE",
       "packageId": "hpm:349ceb4b-29d2-41f4-a496-839a76f83823",
       "repositoryUrl": "https://raw.githubusercontent.com/boguslaw-wojcik/hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -8514,12 +8586,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/beta-thermostats-sync-bi-directional/156225"
         }
       ],
@@ -8531,8 +8603,80 @@
       "name": "Thermostats Sync",
       "packageId": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
       "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 2
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 2,
+            "fetched": 2
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json",
+      "name": "Tesla Drivers",
+      "packageId": "hpm:35ad06a9-bf04-4967-906f-c3920cb1b555",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "Dominick Meglio",
@@ -8978,6 +9122,78 @@
       "packageId": "hpm:3762a0c1-b4dd-4e61-a521-04e36d8eadde",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "FAILING",
+      "transition": "PERSISTENT_FAILURE"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 2
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 2,
+            "fetched": 2
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json",
+      "name": "FireBoard",
+      "packageId": "hpm:3855cfb7-c514-49c8-afad-0701de76d712",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
       "transition": "BASELINE"
     },
     {
@@ -11258,7 +11474,7 @@
       "packageId": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "FAILING",
-      "transition": "BASELINE"
+      "transition": "PERSISTENT_FAILURE"
     },
     {
       "author": "Rob Alfonso",
@@ -12820,7 +13036,7 @@
       "packageId": "hpm:4e07f242-914a-41c3-914d-3aba4fcc4540",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Dan Danache (@dandanache)",
@@ -12916,7 +13132,7 @@
       "packageId": "hpm:4e186d70-b8b5-4069-8ae4-f6a5c25ca734",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Marc Hedish",
@@ -14958,6 +15174,78 @@
       "transition": "UNCHANGED"
     },
     {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 1
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 1,
+            "fetched": 1
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json",
+      "name": "Neurio",
+      "packageId": "hpm:5aba2c98-a662-4539-b1a7-d9f82943852b",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
+    },
+    {
       "author": "David Manuel",
       "evidence": [
         {
@@ -15365,6 +15653,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/Botched1/Hubitat/master/packages/repository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 2
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 2,
+            "fetched": 2
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json",
+      "name": "Ambient Ecowitt Weather",
+      "packageId": "hpm:5e3b3afa-399f-4e6e-82a4-a914309d4f42",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "Joe Page",
@@ -16481,6 +16841,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 2
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 2,
+            "fetched": 2
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json",
+      "name": "WeatherFlow",
+      "packageId": "hpm:626a5598-3385-40b9-a603-44b841fea140",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "TRATO",
@@ -22260,7 +22692,7 @@
       "packageId": "hpm:832237ca-d029-4c3f-8a4b-9933efd00f21",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Dominick Meglio",
@@ -23432,7 +23864,7 @@
       "packageId": "hpm:8a5cfb88-1fda-4082-978f-fcaa1e680741",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Larry Kahn",
@@ -25042,6 +25474,79 @@
       "repositoryUrl": "https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/repository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 30,
+              "MISMATCH": 1
+            }
+          },
+          "remediation": "Compare manifest name/namespace values with the literal Groovy definition.",
+          "state": "FAILING",
+          "status": "MISMATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 31,
+            "fetched": 31
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json",
+      "name": "Neptune Systems Apex",
+      "packageId": "hpm:948d8bae-78c6-4440-95bb-3f5bd08f6c71",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "FAILING",
+      "transition": "BASELINE"
     },
     {
       "author": "Scott Wade",
@@ -28271,7 +28776,7 @@
       "packageId": "hpm:a3f40cb1-ae2d-4a93-9e0c-f831634651c3",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Larry Kahn",
@@ -28344,6 +28849,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/lgkahn/hubitat/master/LGKrepository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 9
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 9,
+            "fetched": 9
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json",
+      "name": "Blink Drivers",
+      "packageId": "hpm:a5d111d0-a2be-4c6c-b55a-27cd00fb4666",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "hubitrep (original by Dave Gutheinz)",
@@ -28836,6 +29413,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/scruffy-sjb/Hubitat_HPM/main/repository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 49
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 49,
+            "fetched": 49
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json",
+      "name": "Unifi Drivers",
+      "packageId": "hpm:a9dec256-8c7f-4d2b-90c0-ca462a9a7379",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "youzer-name",
@@ -37589,6 +38238,78 @@
       "transition": "UNCHANGED"
     },
     {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 8
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 8,
+            "fetched": 8
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json",
+      "name": "Unifi Protect Drivers",
+      "packageId": "hpm:db9d9dc8-28fe-40aa-9750-b9d28f69d5ac",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
+    },
+    {
       "author": "Jean P. May, Jr.",
       "evidence": [
         {
@@ -37911,6 +38632,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/thebearmay/hubitat/main/thebearmayRepository.json",
       "state": "PASSING",
       "transition": "UNCHANGED"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 16
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 16,
+            "fetched": 16
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json",
+      "name": "UnifiConnectAPI",
+      "packageId": "hpm:dd2714d5-9772-48e3-9560-0bd3504ca512",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "Krassimir Kossev",
@@ -39433,7 +40226,7 @@
       "packageId": "hpm:e33f5425-15a2-48f5-8abb-887a3a41b3d6",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Armand Welsh",
@@ -42499,7 +43292,7 @@
       "packageId": "hpm:f59b9884-f802-4eff-9aaf-e018e9ee55ed",
       "repositoryUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/repository.json",
       "state": "WARNING",
-      "transition": "BASELINE"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Chris Truitt",
@@ -43016,6 +43809,78 @@
       "repositoryUrl": "https://raw.githubusercontent.com/birdslikewires/hubitat/main/repository.json",
       "state": "FAILING",
       "transition": "PERSISTENT_FAILURE"
+    },
+    {
+      "author": "David Snell",
+      "evidence": [
+        {
+          "check": "communityLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "definitionIdentity",
+          "details": {
+            "components": {
+              "MATCH": 1
+            }
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "MATCH",
+          "url": null
+        },
+        {
+          "check": "documentationLink",
+          "details": {},
+          "remediation": null,
+          "state": "INFORMATIONAL",
+          "status": "MISSING",
+          "url": null
+        },
+        {
+          "check": "httpsTransport",
+          "details": {
+            "nonHttpsUrls": []
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        },
+        {
+          "check": "manifestFetch",
+          "details": {},
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json"
+        },
+        {
+          "check": "sourceFetch",
+          "details": {
+            "components": 1,
+            "fetched": 1
+          },
+          "remediation": null,
+          "state": "PASSING",
+          "status": "PASS",
+          "url": null
+        }
+      ],
+      "links": {
+        "community": null,
+        "documentation": null
+      },
+      "manifestUrl": "https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json",
+      "name": "Grizzl-ECharger",
+      "packageId": "hpm:f974d0cb-edb6-4792-b61b-07cfcd9137d6",
+      "repositoryUrl": "https://www.drdsnell.com/projects/hubitat/drivers/SnellRepository.json",
+      "state": "PASSING",
+      "transition": "BASELINE"
     },
     {
       "author": "Craig Dewar",
@@ -51182,7 +52047,7 @@
           "check": "documentationReachability",
           "details": {
             "finalUrl": "https://wiki.webcore.co",
-            "httpStatus": 200,
+            "httpStatus": 206,
             "reason": null
           },
           "remediation": null,
@@ -53125,12 +53990,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-ring-alarm-range-extender-gen2-driver/52151",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-ring-alarm-range-extender-gen2-driver/52151"
         },
         {
@@ -53154,7 +54019,7 @@
       "name": "Ring Alarm Range Extender gen2",
       "packageId": "manifest:45ade5cfa8ae1522528d",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -53653,12 +54518,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-heatmiser-neostat-neoplug-integration/55041"
         },
         {
@@ -54733,12 +55598,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/yolink-local-hub-hubitat-local-only-app-drivers-beta/156494",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/yolink-local-hub-hubitat-local-only-app-drivers-beta/156494"
         },
         {
@@ -54762,7 +55627,7 @@
       "name": "YoLink™ Local Hub Connector",
       "packageId": "manifest:563018ccd0524c56d8c3",
       "repositoryUrl": "https://raw.githubusercontent.com/almulder/Hubitat-Drivers/refs/heads/main/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -55836,7 +56701,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/beta-unifi-wifi-presence/32511",
+            "finalUrl": "https://community.hubitat.com/t/release-unifi-wifi-presence/32511",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -56643,12 +57508,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/flume-integration/19149/36",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/flume-integration/19149/36"
         },
         {
@@ -56672,7 +57537,7 @@
       "name": "hubitat_flume",
       "packageId": "manifest:626d1ff17d241adf9a30",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -57663,12 +58528,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/tradfri-led-rgb-bulb/5524/82",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/tradfri-led-rgb-bulb/5524/82"
         },
         {
@@ -57692,7 +58557,7 @@
       "name": "Ikea Trådfri RGBW Bulb driver",
       "packageId": "manifest:6994ef9a298c812559c5",
       "repositoryUrl": "https://raw.githubusercontent.com/eliotstocker/hubitat-packages/main/repositories.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -58346,12 +59211,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-simple-hub-monitor/157677",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-simple-hub-monitor/157677"
         },
         {
@@ -58375,7 +59240,7 @@
       "name": "Simple Hub Monitor",
       "packageId": "manifest:6cbb2faaaf77edba8b1a",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -59259,12 +60124,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/made-a-set-of-xbee3-repeaters-in-cases/44049?u=rsjaffe",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/made-a-set-of-xbee3-repeaters-in-cases/44049?u=rsjaffe"
         }
       ],
@@ -59276,7 +60141,7 @@
       "name": "XBee3",
       "packageId": "manifest:737bdecac8830906d58f",
       "repositoryUrl": "https://raw.githubusercontent.com/rsjaffe/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -60027,12 +60892,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland"
         }
       ],
@@ -60974,12 +61839,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-network-ups-tools-nut-monitor-and-shutdown-controller-upsmon/115483",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-network-ups-tools-nut-monitor-and-shutdown-controller-upsmon/115483"
         },
         {
@@ -62102,12 +62967,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-positionguard-family-presence-one-presence-device-per-family-member-area-level-no-coordinates-on-your-hub/165032",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-positionguard-family-presence-one-presence-device-per-family-member-area-level-no-coordinates-on-your-hub/165032"
         },
         {
@@ -62131,7 +62996,7 @@
       "name": "PositionGuard",
       "packageId": "manifest:8674a05a8e58c3a46de1",
       "repositoryUrl": "https://raw.githubusercontent.com/positionguard/positionguard-hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -63029,12 +63894,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-iris-v1-senior-care-pendant-driver/81814"
         }
       ],
@@ -63046,7 +63911,7 @@
       "name": "Iris v1 Senior Care Pendant",
       "packageId": "manifest:89ffacc3e3d6084e290b",
       "repositoryUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -63822,12 +64687,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/dahua-and-amcrest-integration-for-cameras-and-doorbells/109047",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/dahua-and-amcrest-integration-for-cameras-and-doorbells/109047"
         },
         {
@@ -63851,7 +64716,7 @@
       "name": "hubitat_dahua",
       "packageId": "manifest:8cd7bae2fcc361e6d424",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -63918,12 +64783,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-weatherflow-lite/44674",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-weatherflow-lite/44674"
         }
       ],
@@ -63935,7 +64800,7 @@
       "name": "WeatherFlow Lite",
       "packageId": "manifest:8d27625ec48679b4b54b",
       "repositoryUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -64698,12 +65563,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/genmon-generator-monitor/164362",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/genmon-generator-monitor/164362"
         },
         {
@@ -64727,7 +65592,7 @@
       "name": "Genmon Generator Monitor",
       "packageId": "manifest:924cfa250ee409a87aae",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -65191,12 +66056,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-tvheadend-epg-importer/86388",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-tvheadend-epg-importer/86388"
         }
       ],
@@ -65347,12 +66212,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-advanced-zooz-zen22-zen21-central-scene-dimmer-and-switch-drivers/39761?u=bcopeland"
         }
       ],
@@ -66380,7 +67245,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/alpha-release-date-time-parser-driver/87756/9",
+            "finalUrl": "https://community.hubitat.com/t/release-date-time-parser-driver-aka-schedule-ur-garbage-cans/87756/9",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -68125,12 +68990,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-eurotronic-air-quality-sensor-humidity-dewpoint-co2-voc/68482/1",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-eurotronic-air-quality-sensor-humidity-dewpoint-co2-voc/68482/1"
         }
       ],
@@ -68142,7 +69007,7 @@
       "name": "Eurotronic Air Quality Sensor",
       "packageId": "manifest:a91a38c470b7f36bf6c8",
       "repositoryUrl": "https://raw.githubusercontent.com/syepes/Hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -68955,12 +69820,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-idle-node-refresher/56613",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-idle-node-refresher/56613"
         },
         {
@@ -68984,7 +69849,7 @@
       "name": "Idle Node Refresher",
       "packageId": "manifest:ad9cf8e1a9507e118036",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -69339,12 +70204,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010"
         }
       ],
@@ -69663,12 +70528,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-device-health-monitor/163229",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-device-health-monitor/163229"
         },
         {
@@ -69692,7 +70557,7 @@
       "name": "Device Health Monitor",
       "packageId": "manifest:b02e9c2e9e6f56c819a0",
       "repositoryUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps/refs/heads/main/repo.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -70070,7 +70935,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgd-212-fgs-224-fgs-223-and-fgs-222/59108",
+            "finalUrl": "https://community.hubitat.com/t/release-fibaro-fgs-224-fgs-223-and-fgs-222/59108",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -70323,12 +71188,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-iaqualink-pool-spa-driver/94010",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-iaqualink-pool-spa-driver/94010"
         },
         {
@@ -70352,7 +71217,7 @@
       "name": "iAqualink Driver",
       "packageId": "manifest:b62421f197ff4cb9df89",
       "repositoryUrl": "https://raw.githubusercontent.com/Vyrolan/VyrolanHomeAutomation/main/Hubitat/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -70683,12 +71548,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/power-failure-recovery-via-rm/4298/12"
         },
         {
@@ -70712,7 +71577,7 @@
       "name": "Smarter Bulbs",
       "packageId": "manifest:b95d7d0c0431b49eb33a",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -70779,12 +71644,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/midea-mini-split-wifi-support/78838/11"
         },
         {
@@ -70808,7 +71673,7 @@
       "name": "hubitat_midea",
       "packageId": "manifest:b99a1cd64e4011535f58",
       "repositoryUrl": "https://raw.githubusercontent.com/tomwpublic/hpm/main/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -71259,12 +72124,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726"
         },
         {
@@ -71288,7 +72153,7 @@
       "name": "Honeywell Security",
       "packageId": "manifest:bf9c809aeff026e9ef89",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -71451,12 +72316,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-simple-css-editor/89853",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-simple-css-editor/89853"
         }
       ],
@@ -71705,12 +72570,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-shelly-wave-1pm-driver/130863",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-shelly-wave-1pm-driver/130863"
         },
         {
@@ -71734,7 +72599,7 @@
       "name": "Shelly Wave 1PM Driver",
       "packageId": "manifest:c2c82ca3aee3b7b5a694",
       "repositoryUrl": "https://raw.githubusercontent.com/reneboer/Hubitat/main/hpm/respository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -73139,7 +74004,7 @@
       "packageId": "manifest:c903a182ed6214859619",
       "repositoryUrl": "https://raw.githubusercontent.com/sburke781/hubitat/master/repository.json",
       "state": "FAILING",
-      "transition": "NEW_FAILURE"
+      "transition": "PERSISTENT_FAILURE"
     },
     {
       "author": "Joel Wetzel",
@@ -73887,7 +74752,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-waterguru-pool-integration/77922",
+            "finalUrl": "https://community.hubitat.com/t/release-hubitat-waterguru-pool-integration/77922",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -74256,7 +75121,7 @@
       "packageId": "manifest:cef806703984713dd287",
       "repositoryUrl": "https://raw.githubusercontent.com/joelwetzel/HubitatPackages/master/repository.json",
       "state": "WARNING",
-      "transition": "RESTORED"
+      "transition": "UNCHANGED"
     },
     {
       "author": "Brian Wilson",
@@ -74933,7 +75798,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/samsung-hubitat-tv-integration/55120",
+            "finalUrl": "https://community.hubitat.com/t/samsung-hubitat-tv-integration-2016-and-later-depricated/55120",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -75029,7 +75894,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-somfy-z-wave-to-rts-interface-ii-driver/43745",
+            "finalUrl": "https://community.hubitat.com/t/somfy-z-wave-to-rts-interface-ii-driver/43745",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -75728,12 +76593,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/driver-release-radio-thermostat-zwave-driver/99188"
         },
         {
@@ -76867,7 +77732,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/broadlink-ir-rf-remotes-integration-rm3-mini-rm-pro-rm4-mini-rm4-pro-etc/98827",
+            "finalUrl": "https://community.hubitat.com/t/broadlink-ir-rf-remotes-integration-rm3-mini-rm-pro-rm4-mini-pro/98827",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -77480,12 +78345,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-envisalink-app-driver-for-vista-ademco-honeywell-alarm-via-smartthings-nodeproxy/9726"
         },
         {
@@ -77509,7 +78374,7 @@
       "name": "Envisalink for Vista Ademco/20p Alarm System",
       "packageId": "manifest:e8191ecaa47c6df6bfbe",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -77983,7 +78848,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/release-philio-pat02-flood-temperature-humidity-driver/94644",
+            "finalUrl": "https://community.hubitat.com/t/release-philip-pat02-flood-temperature-humidity-driver/94644",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -78176,12 +79041,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/pushover-notifications-driver-slightly-enhanced/1067?u=ogiewon",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/pushover-notifications-driver-slightly-enhanced/1067?u=ogiewon"
         }
       ],
@@ -78193,7 +79058,7 @@
       "name": "Pushover",
       "packageId": "manifest:eed6e724686e71482fb3",
       "repositoryUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -78788,12 +79653,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-geofency-presence/22788",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/release-geofency-presence/22788"
         },
         {
@@ -78817,7 +79682,7 @@
       "name": "Geofency Presence",
       "packageId": "manifest:f11fdc6c0df7bac0ad7f",
       "repositoryUrl": "https://raw.githubusercontent.com/bdwilson/hubitat/master/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -79052,12 +79917,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-weewx-weather-station-to-hubitat-driver/44866",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-weewx-weather-station-to-hubitat-driver/44866"
         },
         {
@@ -79081,7 +79946,7 @@
       "name": "WeeWX (weather station) to Hubitat driver",
       "packageId": "manifest:f1c004573a35cb11854f",
       "repositoryUrl": "https://raw.githubusercontent.com/dennypage/hubitat/master/hpm/repository.json",
-      "state": "PASSING",
+      "state": "WARNING",
       "transition": "UNCHANGED"
     },
     {
@@ -79147,7 +80012,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/meteorological-seasons-driver/80450",
+            "finalUrl": "https://community.hubitat.com/t/release-meteorological-seasons-driver/80450",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -79751,19 +80616,19 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/webcore-for-hubitat-updates/11967"
         },
         {
           "check": "documentationReachability",
           "details": {
             "finalUrl": "https://wiki.webcore.co",
-            "httpStatus": 200,
+            "httpStatus": 206,
             "reason": null
           },
           "remediation": null,
@@ -80016,24 +80881,24 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010"
         },
         {
           "check": "documentationReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010",
-            "httpStatus": 200,
-            "reason": null
+            "httpStatus": 429,
+            "reason": "Too Many Requests"
           },
           "remediation": null,
-          "state": "PASSING",
-          "status": "REACHABLE",
+          "state": "WARNING",
+          "status": "TRANSIENT_FAILURE",
           "url": "https://community.hubitat.com/t/release-lock-button-monitor-arm-hsm-from-outside-door-lock/98010"
         }
       ],
@@ -80195,7 +81060,7 @@
         {
           "check": "communityReachability",
           "details": {
-            "finalUrl": "https://community.hubitat.com/t/updated-http-presence-sensor/9072",
+            "finalUrl": "https://community.hubitat.com/t/updated-http-presence-sensor",
             "httpStatus": 429,
             "reason": "Too Many Requests"
           },
@@ -81192,12 +82057,12 @@
           "check": "communityReachability",
           "details": {
             "finalUrl": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454",
-            "httpStatus": 429,
-            "reason": "Too Many Requests"
+            "httpStatus": 200,
+            "reason": null
           },
           "remediation": null,
-          "state": "WARNING",
-          "status": "TRANSIENT_FAILURE",
+          "state": "PASSING",
+          "status": "REACHABLE",
           "url": "https://community.hubitat.com/t/re-release-nexia-thermostat-manager-trane-home/164454"
         },
         {
@@ -81221,7 +82086,7 @@
       "name": "Nexia Thermostat Manager / Trane Home",
       "packageId": "manifest:fcc2d0233249bc797684",
       "repositoryUrl": "https://raw.githubusercontent.com/waterboysh/hubitat/main/repository.json",
-      "state": "WARNING",
+      "state": "PASSING",
       "transition": "UNCHANGED"
     },
     {
@@ -81837,22 +82702,20 @@
       "transition": "PERSISTENT_FAILURE"
     }
   ],
-  "previousSnapshot": "2026-11-18T07:45:28Z",
+  "previousSnapshot": "2026-11-19T07:41:11Z",
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-19T07:41:11Z",
+  "snapshotGenerated": "2026-11-20T07:32:50Z",
   "summary": {
-    "packageCount": 971,
+    "packageCount": 983,
     "states": {
-      "FAILING": 209,
-      "PASSING": 427,
-      "WARNING": 335
+      "FAILING": 210,
+      "PASSING": 463,
+      "WARNING": 310
     },
     "transitions": {
-      "BASELINE": 10,
-      "NEW_FAILURE": 1,
-      "PERSISTENT_FAILURE": 205,
-      "RESTORED": 1,
-      "UNCHANGED": 754
+      "BASELINE": 12,
+      "PERSISTENT_FAILURE": 209,
+      "UNCHANGED": 762
     }
   }
 }
