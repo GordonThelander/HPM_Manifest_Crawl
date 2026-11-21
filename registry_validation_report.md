@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-20T07:32:50Z`
+- Snapshot: `2026-11-21T07:27:48Z`
 - HPM repositories in master list: **229**
 - Repositories fetched successfully: **228**
-- Packages indexed: **983**
+- Packages indexed: **984**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -197,7 +197,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **881**
+Total packages not matched by any registry entry: **882**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -386,6 +386,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Ricardo Nogueira Garcia | Remotec ZXT-120 IR Extender | Integrations | Z-Wave, Climate Control | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/remotec-zxt-120/packageManifest.json |
 | Ricardo Nogueira Garcia | Roomba (Rest980) | Integrations | LAN, Appliances | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json |
 | Ricardo Nogueira Garcia | Tholz SmartHeat | Integrations | Water Heater, Energy Monitoring, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tholz-smartheat/packageManifest.json |
+| Ricardo Nogueira Garcia | Tuya Garage Door Opener (Wi-Fi) Local | Integrations | LAN, Garage Door, Tuya | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json |
 | Ricardo Nogueira Garcia | Tuya IoT Platform (Cloud) | Integrations | Cloud, Tools & Utilities | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-iot-cloud/packageManifest.json |
 | Ricardo Nogueira Garcia | Tuya Tank Level Monitor (Wi-Fi) Local | Integrations | Water, LAN | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json |
 | Ricardo Nogueira Garcia | Zemismart SDM02T Energy Meter | Integrations | Energy Monitoring, Zigbee | https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json |
@@ -629,8 +630,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 881 |
-| G candidate subset | 396 |
+| G. Unrepresented packages | 882 |
+| G candidate subset | 397 |
 
 ## H. Enrichment summary
 
@@ -640,13 +641,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2421 |
-| Source URLs fetched | 2411 |
+| Distinct source URLs | 2422 |
+| Source URLs fetched | 2412 |
 | Source URLs failed | 10 |
-| Components attempted | 2437 |
-| Components fetched | 2427 |
-| Literal definitions verified | 2416 |
-| Components with observations | 2282 |
+| Components attempted | 2438 |
+| Components fetched | 2428 |
+| Literal definitions verified | 2417 |
+| Components with observations | 2283 |
 
 ### Official Hubitat documentation pass
 

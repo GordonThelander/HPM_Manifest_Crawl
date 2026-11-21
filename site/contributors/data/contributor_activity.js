@@ -2716,6 +2716,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:35869981-30c0-4c06-b77a-7cab33ba1b61",
           "packageName": "Thermostats Sync",
           "summary": "Thermostats Sync: updated."
+        },
+        {
+          "category": "Control",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c3a6ea56ff1301e6dbb7fce6",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "hpm:7f55f65d-dc8e-4742-a2e2-bc74582613b3",
+          "packageName": "Aqara P1 Motion Sensor",
+          "summary": "Aqara P1 Motion Sensor: updated."
         }
       ],
       "appCount": 2,
@@ -2738,7 +2752,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 36,
       "id": "contributor:2caa5ff89bed93a4a93e",
       "name": "Krassimir Kossev",
-      "observedActivityCount": 25,
+      "observedActivityCount": 26,
       "packages": [
         {
           "appCount": 0,
@@ -2762,9 +2776,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:7f55f65d-dc8e-4742-a2e2-bc74582613b3",
           "manifestUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P1%20Motion%20Sensor/packageManifest.json",
           "name": "Aqara P1 Motion Sensor",
-          "publisherDate": "2026-03-30",
+          "publisherDate": "2026-11-20",
           "repositoryUrl": "https://raw.githubusercontent.com/kkossev/Hubitat/main/repository.json",
-          "version": "2.1.2"
+          "version": "2.1.9"
         },
         {
           "appCount": 0,
@@ -8348,6 +8362,420 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3890b269c07b973362b0eb30",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+          "packageName": "FoxESS Cloud OpenAPI",
+          "summary": "FoxESS Cloud OpenAPI: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:548a46f95f6237e01c90d036",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+          "packageName": "Goldshell BYTE Miner",
+          "summary": "Goldshell BYTE Miner: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:67f5d9a340538795ccd85c65",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "packageName": "Heiman HS2WD-E Siren",
+          "summary": "Heiman HS2WD-E Siren: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:68040621558dd3cf0309ab2c",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
+          "packageName": "Hikvision Audible Alarm Trigger (ISAPI)",
+          "summary": "Hikvision Audible Alarm Trigger (ISAPI): added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:851a82de068d5d558fb438f0",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+          "packageName": "Tuya Tank Level Monitor (Wi-Fi) Local",
+          "summary": "Tuya Tank Level Monitor (Wi-Fi) Local: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:94c26ff2c4e5b0c886620a33",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+          "packageName": "FusionSolar OpenAPI",
+          "summary": "FusionSolar OpenAPI: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:af48cdf276616336d85740bf",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
+          "packageName": "Zemismart SDM02T Energy Meter",
+          "summary": "Zemismart SDM02T Energy Meter: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d564e96c959c823e6668f095",
+          "observedAt": "2026-10-23T05:06:22Z",
+          "observedCommit": null,
+          "packageId": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+          "packageName": "Roomba (Rest980)",
+          "summary": "Roomba (Rest980): added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:34fbffc64fb7415b80753bdb",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+          "packageName": "FoxESS Cloud OpenAPI",
+          "summary": "FoxESS Cloud OpenAPI: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3a16965518d46867c7894206",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+          "packageName": "Goldshell BYTE Miner",
+          "summary": "Goldshell BYTE Miner: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:cd881a9c5a8c47e1d8ad6d8e",
+          "observedAt": "2026-10-24T04:49:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+          "packageName": "FusionSolar OpenAPI",
+          "summary": "FusionSolar OpenAPI: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a0278fe6d14d70bc4ee130ea",
+          "observedAt": "2026-10-26T05:02:21Z",
+          "observedCommit": null,
+          "packageId": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+          "packageName": "Tuya Tank Level Monitor (Wi-Fi) Local",
+          "summary": "Tuya Tank Level Monitor (Wi-Fi) Local: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:080e9b09e06baacfaf778be1",
+          "observedAt": "2026-10-29T06:04:01Z",
+          "observedCommit": null,
+          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "packageName": "Heiman HS2WD-E Siren",
+          "summary": "Heiman HS2WD-E Siren: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:c71cf66942f04c55043fe0f0",
+          "observedAt": "2026-10-31T05:59:57Z",
+          "observedCommit": null,
+          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "packageName": "Heiman HS2WD-E Siren",
+          "summary": "Heiman HS2WD-E Siren: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8aed657a88dea4d130e9cffd",
+          "observedAt": "2026-11-03T07:01:39Z",
+          "observedCommit": null,
+          "packageId": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+          "packageName": "Aeotec Dual Nano Switch with Power Meter",
+          "summary": "Aeotec Dual Nano Switch with Power Meter: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d4294d327cdaf12b392d1146",
+          "observedAt": "2026-11-03T07:01:39Z",
+          "observedCommit": null,
+          "packageId": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
+          "packageName": "Aeon Micro Dimmer with Power Meter",
+          "summary": "Aeon Micro Dimmer with Power Meter: added."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:a378d1944fe672e2f43ea755",
+          "observedAt": "2026-11-07T06:16:30Z",
+          "observedCommit": null,
+          "packageId": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+          "packageName": "Roomba (Rest980)",
+          "summary": "Roomba (Rest980): updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "ADDED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:2e16bb9afada9aafdef4f079",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "hpm:fb602a23-7b96-4d84-90b0-118a1213b03a",
+          "packageName": "Tuya Garage Door Opener (Wi-Fi) Local",
+          "summary": "Tuya Garage Door Opener (Wi-Fi) Local: added."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Integrations",
+          "packageCount": 11
+        }
+      ],
+      "currentPackageCount": 11,
+      "currentRank": 19,
+      "driverCount": 13,
+      "id": "contributor:94fb509243bfb3186ae7",
+      "name": "Ricardo Nogueira Garcia",
+      "observedActivityCount": 18,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-micro-dimmer-power-meter#readme",
+          "driverCount": 1,
+          "id": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json",
+          "name": "Aeon Micro Dimmer with Power Meter",
+          "publisherDate": "2026-11-02",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.0.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeotec-dual-nano-switch-power-meter#readme",
+          "driverCount": 2,
+          "id": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json",
+          "name": "Aeotec Dual Nano Switch with Power Meter",
+          "publisherDate": "2026-11-02",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.0.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-foxess-cloud-openapi-foxess-and-weg-inverters/166997",
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
+          "driverCount": 1,
+          "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
+          "name": "FoxESS Cloud OpenAPI",
+          "publisherDate": "2026-10-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "0.1.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-huawei-inverter-for-he-fusion-solar-openapi/158304",
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
+          "driverCount": 1,
+          "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
+          "name": "FusionSolar OpenAPI",
+          "publisherDate": "2026-10-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "0.2.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": "https://community.hubitat.com/t/release-goldshell-byte-miner-local/166998",
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
+          "driverCount": 2,
+          "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
+          "name": "Goldshell BYTE Miner",
+          "publisherDate": "2026-10-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "3.5.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/heiman-hs2wd-e-siren#readme",
+          "driverCount": 1,
+          "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
+          "name": "Heiman HS2WD-E Siren",
+          "publisherDate": "2026-10-30",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.1.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/hikvision-audible-alarm#readme",
+          "driverCount": 1,
+          "id": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json",
+          "name": "Hikvision Audible Alarm Trigger (ISAPI)",
+          "publisherDate": "2026-10-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.5.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/roomba-rest980#readme",
+          "driverCount": 1,
+          "id": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json",
+          "name": "Roomba (Rest980)",
+          "publisherDate": "2026-11-06",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.1.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-garage-door-local#readme",
+          "driverCount": 1,
+          "id": "hpm:fb602a23-7b96-4d84-90b0-118a1213b03a",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json",
+          "name": "Tuya Garage Door Opener (Wi-Fi) Local",
+          "publisherDate": "2026-11-20",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.1.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-tank-level-local#readme",
+          "driverCount": 1,
+          "id": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json",
+          "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
+          "publisherDate": "2026-10-25",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "2.3.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Integrations",
+          "communityUrl": null,
+          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/zemismart-sdm02t#readme",
+          "driverCount": 1,
+          "id": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
+          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json",
+          "name": "Zemismart SDM02T Energy Meter",
+          "publisherDate": "2026-10-21",
+          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
+          "version": "1.4.2"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
           "category": "Control",
           "changeTypes": [
             "UPDATED"
@@ -8994,7 +9422,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 10,
-      "currentRank": 19,
+      "currentRank": 20,
       "driverCount": 15,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
@@ -10272,7 +10700,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 10,
-      "currentRank": 20,
+      "currentRank": 21,
       "driverCount": 20,
       "id": "contributor:7eb31971c1852a991d3b",
       "name": "jdthomas24",
@@ -10695,6 +11123,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:4a095de5-dab8-4462-9c15-0910b0a2dd3c",
           "packageName": "Google Chromecast+",
           "summary": "Google Chromecast+: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:aafcdd50511cebd88a9c0e64",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "hpm:7562796d-dd9f-42d1-a2ce-cd8caaf1533e",
+          "packageName": "Life360+",
+          "summary": "Life360+: updated."
         }
       ],
       "appCount": 8,
@@ -10709,11 +11151,11 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 10,
-      "currentRank": 21,
+      "currentRank": 22,
       "driverCount": 14,
       "id": "contributor:c440e7a82b5d4f2be238",
       "name": "Joe Page",
-      "observedActivityCount": 20,
+      "observedActivityCount": 21,
       "packages": [
         {
           "appCount": 1,
@@ -10830,7 +11272,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "Life360+",
           "publisherDate": "2023-05-08",
           "repositoryUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/repository.json",
-          "version": "5.2.5"
+          "version": "5.2.6"
         },
         {
           "appCount": 1,
@@ -10844,393 +11286,6 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2023-05-24",
           "repositoryUrl": "https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/repository.json",
           "version": "3.0.3"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3890b269c07b973362b0eb30",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
-          "packageName": "FoxESS Cloud OpenAPI",
-          "summary": "FoxESS Cloud OpenAPI: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:548a46f95f6237e01c90d036",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
-          "packageName": "Goldshell BYTE Miner",
-          "summary": "Goldshell BYTE Miner: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:67f5d9a340538795ccd85c65",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
-          "packageName": "Heiman HS2WD-E Siren",
-          "summary": "Heiman HS2WD-E Siren: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:68040621558dd3cf0309ab2c",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
-          "packageName": "Hikvision Audible Alarm Trigger (ISAPI)",
-          "summary": "Hikvision Audible Alarm Trigger (ISAPI): added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:851a82de068d5d558fb438f0",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
-          "packageName": "Tuya Tank Level Monitor (Wi-Fi) Local",
-          "summary": "Tuya Tank Level Monitor (Wi-Fi) Local: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:94c26ff2c4e5b0c886620a33",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
-          "packageName": "FusionSolar OpenAPI",
-          "summary": "FusionSolar OpenAPI: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:af48cdf276616336d85740bf",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
-          "packageName": "Zemismart SDM02T Energy Meter",
-          "summary": "Zemismart SDM02T Energy Meter: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d564e96c959c823e6668f095",
-          "observedAt": "2026-10-23T05:06:22Z",
-          "observedCommit": null,
-          "packageId": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
-          "packageName": "Roomba (Rest980)",
-          "summary": "Roomba (Rest980): added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:34fbffc64fb7415b80753bdb",
-          "observedAt": "2026-10-24T04:49:57Z",
-          "observedCommit": null,
-          "packageId": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
-          "packageName": "FoxESS Cloud OpenAPI",
-          "summary": "FoxESS Cloud OpenAPI: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3a16965518d46867c7894206",
-          "observedAt": "2026-10-24T04:49:57Z",
-          "observedCommit": null,
-          "packageId": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
-          "packageName": "Goldshell BYTE Miner",
-          "summary": "Goldshell BYTE Miner: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:cd881a9c5a8c47e1d8ad6d8e",
-          "observedAt": "2026-10-24T04:49:57Z",
-          "observedCommit": null,
-          "packageId": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
-          "packageName": "FusionSolar OpenAPI",
-          "summary": "FusionSolar OpenAPI: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a0278fe6d14d70bc4ee130ea",
-          "observedAt": "2026-10-26T05:02:21Z",
-          "observedCommit": null,
-          "packageId": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
-          "packageName": "Tuya Tank Level Monitor (Wi-Fi) Local",
-          "summary": "Tuya Tank Level Monitor (Wi-Fi) Local: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:080e9b09e06baacfaf778be1",
-          "observedAt": "2026-10-29T06:04:01Z",
-          "observedCommit": null,
-          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
-          "packageName": "Heiman HS2WD-E Siren",
-          "summary": "Heiman HS2WD-E Siren: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:c71cf66942f04c55043fe0f0",
-          "observedAt": "2026-10-31T05:59:57Z",
-          "observedCommit": null,
-          "packageId": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
-          "packageName": "Heiman HS2WD-E Siren",
-          "summary": "Heiman HS2WD-E Siren: updated."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8aed657a88dea4d130e9cffd",
-          "observedAt": "2026-11-03T07:01:39Z",
-          "observedCommit": null,
-          "packageId": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
-          "packageName": "Aeotec Dual Nano Switch with Power Meter",
-          "summary": "Aeotec Dual Nano Switch with Power Meter: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "ADDED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:d4294d327cdaf12b392d1146",
-          "observedAt": "2026-11-03T07:01:39Z",
-          "observedCommit": null,
-          "packageId": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
-          "packageName": "Aeon Micro Dimmer with Power Meter",
-          "summary": "Aeon Micro Dimmer with Power Meter: added."
-        },
-        {
-          "category": "Integrations",
-          "changeTypes": [
-            "UPDATED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:a378d1944fe672e2f43ea755",
-          "observedAt": "2026-11-07T06:16:30Z",
-          "observedCommit": null,
-          "packageId": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
-          "packageName": "Roomba (Rest980)",
-          "summary": "Roomba (Rest980): updated."
-        }
-      ],
-      "appCount": 0,
-      "categories": [
-        {
-          "name": "Integrations",
-          "packageCount": 10
-        }
-      ],
-      "currentPackageCount": 10,
-      "currentRank": 22,
-      "driverCount": 12,
-      "id": "contributor:94fb509243bfb3186ae7",
-      "name": "Ricardo Nogueira Garcia",
-      "observedActivityCount": 17,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeon-micro-dimmer-power-meter#readme",
-          "driverCount": 1,
-          "id": "hpm:d2e8e3e1-8090-49da-9e03-b2c6550c970c",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeon-micro-dimmer-power-meter/packageManifest.json",
-          "name": "Aeon Micro Dimmer with Power Meter",
-          "publisherDate": "2026-11-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.0.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/aeotec-dual-nano-switch-power-meter#readme",
-          "driverCount": 2,
-          "id": "hpm:a32694c9-cb9e-44f9-85e5-73a60fbada46",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/aeotec-dual-nano-switch-power-meter/packageManifest.json",
-          "name": "Aeotec Dual Nano Switch with Power Meter",
-          "publisherDate": "2026-11-02",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.0.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-foxess-cloud-openapi-foxess-and-weg-inverters/166997",
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/foxess-cloud#readme",
-          "driverCount": 1,
-          "id": "hpm:1b86d6e2-cba2-4cac-8da2-c1494c01ff1f",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/foxess-cloud/packageManifest.json",
-          "name": "FoxESS Cloud OpenAPI",
-          "publisherDate": "2026-10-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "0.1.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-huawei-inverter-for-he-fusion-solar-openapi/158304",
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/fusionsolar#readme",
-          "driverCount": 1,
-          "id": "hpm:4d8ff125-ffd3-43fa-8e1a-fb97794f8a7e",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/fusionsolar/packageManifest.json",
-          "name": "FusionSolar OpenAPI",
-          "publisherDate": "2026-10-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "0.2.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": "https://community.hubitat.com/t/release-goldshell-byte-miner-local/166998",
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/goldshell-byte#readme",
-          "driverCount": 2,
-          "id": "hpm:d8467538-fb7e-4ad6-9b70-a48d4f245c81",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/goldshell-byte/packageManifest.json",
-          "name": "Goldshell BYTE Miner",
-          "publisherDate": "2026-10-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "3.5.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/heiman-hs2wd-e-siren#readme",
-          "driverCount": 1,
-          "id": "hpm:7babc831-66c6-4c43-ba0d-9db97bd6161b",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/heiman-hs2wd-e-siren/packageManifest.json",
-          "name": "Heiman HS2WD-E Siren",
-          "publisherDate": "2026-10-30",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.1.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/hikvision-audible-alarm#readme",
-          "driverCount": 1,
-          "id": "hpm:039d91e3-f3a4-4416-b389-726cbae56f23",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/hikvision-audible-alarm/packageManifest.json",
-          "name": "Hikvision Audible Alarm Trigger (ISAPI)",
-          "publisherDate": "2026-10-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.5.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/roomba-rest980#readme",
-          "driverCount": 1,
-          "id": "hpm:05ef8c40-8789-4bad-b678-4124e553bf22",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/roomba-rest980/packageManifest.json",
-          "name": "Roomba (Rest980)",
-          "publisherDate": "2026-11-06",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-tank-level-local#readme",
-          "driverCount": 1,
-          "id": "hpm:e99e3731-a873-4595-9240-b4bb5d9cb3f3",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-tank-level-local/packageManifest.json",
-          "name": "Tuya Tank Level Monitor (Wi-Fi) Local",
-          "publisherDate": "2026-10-25",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "2.3.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Integrations",
-          "communityUrl": null,
-          "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/zemismart-sdm02t#readme",
-          "driverCount": 1,
-          "id": "hpm:27443e18-8ca5-4045-b182-92ee64037a55",
-          "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/zemismart-sdm02t/packageManifest.json",
-          "name": "Zemismart SDM02T Energy Meter",
-          "publisherDate": "2026-10-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/repository.json",
-          "version": "1.4.2"
         }
       ]
     },
@@ -16761,6 +16816,34 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "manifest:38e3d4685eb4cf17e6c0",
           "packageName": "SignalBricks Telemetry",
           "summary": "SignalBricks Telemetry: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:62598f4fe2b5d162ed61b7ce",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:86b01a1f90e58a839a6f",
+          "packageName": "SignalBricks Integration",
+          "summary": "SignalBricks Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d837e7e4a0aa5303cf8ce01e",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "manifest:38e3d4685eb4cf17e6c0",
+          "packageName": "SignalBricks Telemetry",
+          "summary": "SignalBricks Telemetry: updated."
         }
       ],
       "appCount": 2,
@@ -16779,7 +16862,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
-      "observedActivityCount": 27,
+      "observedActivityCount": 29,
       "packages": [
         {
           "appCount": 0,
@@ -16829,9 +16912,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "manifest:86b01a1f90e58a839a6f",
           "manifestUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json",
           "name": "SignalBricks Integration",
-          "publisherDate": "2026-11-19",
+          "publisherDate": "2026-11-20",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.4.18"
+          "version": "1.4.19"
         },
         {
           "appCount": 1,
@@ -16844,7 +16927,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "name": "SignalBricks Telemetry",
           "publisherDate": "2026-11-20",
           "repositoryUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/repository.json",
-          "version": "1.9.3"
+          "version": "1.9.4"
         }
       ]
     },
@@ -28452,6 +28535,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:01ae3fea-6b6a-4c58-8981-10140b1fefc8",
           "packageName": "OwnTracks",
           "summary": "OwnTracks: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:6f773fc87009f6a23df868e1",
+          "observedAt": "2026-11-21T07:27:48Z",
+          "observedCommit": null,
+          "packageId": "hpm:01ae3fea-6b6a-4c58-8981-10140b1fefc8",
+          "packageName": "OwnTracks",
+          "summary": "OwnTracks: updated."
         }
       ],
       "appCount": 1,
@@ -28466,7 +28563,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 2,
       "id": "contributor:87306824ba4899e14679",
       "name": "Lyle Pakula",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -28477,7 +28574,7 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:01ae3fea-6b6a-4c58-8981-10140b1fefc8",
           "manifestUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json",
           "name": "OwnTracks",
-          "publisherDate": "2026-11-07",
+          "publisherDate": "2026-11-20",
           "repositoryUrl": "https://raw.githubusercontent.com/wir3z/hubitat/main/repository.json",
           "version": null
         }
@@ -31423,13 +31520,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 271,
-  "currentPackageCount": 983,
+  "currentPackageCount": 984,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 923,
-    "eventCount": 922,
+    "attributedEventCount": 929,
+    "eventCount": 928,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-11-20T07:32:50Z"
+    "lastObservedAt": "2026-11-21T07:27:48Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -31441,9 +31538,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 275,
-  "rankedPackageCount": 981,
+  "rankedPackageCount": 982,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-20T07:32:50Z",
+  "snapshotGenerated": "2026-11-21T07:27:48Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2437,
+  "definitionCount": 2438,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -19823,6 +19823,26 @@ window.IDENTITY_INDEX = {
         "name": "Zooz Modules Advanced Drivers"
       },
       "sourceUrl": "https://jtp10181.gateway.scarf.sh/zooz-zen55-v1.2.0.groovy"
+    },
+    {
+      "id": "definition:3069ad0155da8252b8ab",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Tuya Garage Door Opener (Wi-Fi) Local",
+          "namespace": "rng"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Ricardo Nogueira Garcia",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-garage-door-local#readme",
+        "id": "hpm:fb602a23-7b96-4d84-90b0-118a1213b03a",
+        "manifestUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json",
+        "name": "Tuya Garage Door Opener (Wi-Fi) Local"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/tuya-garage-door-local.groovy"
     },
     {
       "id": "definition:3076dbf4e2655af8fc27",
@@ -51873,5 +51893,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-20T07:32:50Z"
+  "snapshotGenerated": "2026-11-21T07:27:48Z"
 };

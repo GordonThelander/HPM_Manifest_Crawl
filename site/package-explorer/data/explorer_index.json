@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 983,
+    "HPM_PACKAGE": 984,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2688,
+  "recordCount": 2689,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -23794,7 +23794,7 @@
       "author": "Krassimir Kossev",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-03-30",
+      "dateReleased": "2026-11-20",
       "definitions": [
         {
           "id": "definition:2bada5036d0bfb71b6f2",
@@ -23872,7 +23872,7 @@
       "tags": [
         "Zigbee"
       ],
-      "version": "2.1.2"
+      "version": "2.1.9"
     },
     {
       "author": "Krassimir Kossev",
@@ -62376,7 +62376,7 @@
       "tags": [
         "Presence & Location"
       ],
-      "version": "5.2.5"
+      "version": "5.2.6"
     },
     {
       "author": "Justin Leonard",
@@ -74022,7 +74022,7 @@
       "author": "Lyle Pakula",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-07",
+      "dateReleased": "2026-11-20",
       "definitions": [
         {
           "id": "definition:a15e50f3eeece83b0086",
@@ -87617,7 +87617,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-19",
+      "dateReleased": "2026-11-20",
       "definitions": [
         {
           "id": "definition:2a261aa987abe9493331",
@@ -87694,7 +87694,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.18"
+      "version": "1.4.19"
     },
     {
       "author": "Chris Ogden",
@@ -87780,7 +87780,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.9.3"
+      "version": "1.9.4"
     },
     {
       "author": "Krassimir Kossev",
@@ -98308,6 +98308,90 @@
         "Zigbee"
       ],
       "version": null
+    },
+    {
+      "author": "Ricardo Nogueira Garcia",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-20",
+      "definitions": [
+        {
+          "id": "definition:3069ad0155da8252b8ab",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Tuya Garage Door Opener (Wi-Fi) Local",
+          "namespace": "rng",
+          "sourceUrl": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/tuya-garage-door-local.groovy"
+        }
+      ],
+      "description": "Local driver (no Tuya Cloud) for Tuya Wi-Fi garage door, gate and skylight openers (category ckmkzq): door state, pulse command and an invert-state option. Tested with the PPA Connect Smart module and the Automatizador TSI (Garen).",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:fb602a23-7b96-4d84-90b0-118a1213b03a",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/rngarcia/hubitat/tree/main/drivers/tuya-garage-door-local#readme",
+        "manifest": "https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json",
+        "repository": "https://github.com/rngarcia/hubitat"
+      },
+      "name": "Tuya Garage Door Opener (Wi-Fi) Local",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Garage Door",
+        "LAN",
+        "Tuya"
+      ],
+      "version": "1.1.0"
     },
     {
       "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
@@ -139238,5 +139322,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-20T07:32:50Z"
+  "snapshotGenerated": "2026-11-21T07:27:48Z"
 }
