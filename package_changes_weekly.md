@@ -1,9 +1,10 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-22T07:08:54Z`.
+Latest observation: `2026-11-22T10:55:07Z`.
 
-**162 package change(s):** added 78, declared definitions changed 3, removed 34, source location changed 10, updated 50
+**163 package change(s):** added 79, declared definitions changed 3, removed 34, source location changed 10, updated 50
 
+- [HAI Engine: added.](https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json)
 - [Zen Thermostat Advanced: added.](https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json)
 - [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
 - [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)

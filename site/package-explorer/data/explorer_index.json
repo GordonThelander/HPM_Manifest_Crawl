@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 986,
+    "HPM_PACKAGE": 987,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2691,
+  "recordCount": 2692,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -43983,6 +43983,115 @@
         "Lights & Switches"
       ],
       "version": "1.0.1"
+    },
+    {
+      "author": "Gordon Thelander",
+      "category": "Automations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-22",
+      "definitions": [
+        {
+          "id": "definition:bf9eee43f621fb8512e0",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "HAI Checker",
+          "namespace": "gordonthelander",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_checker_app.groovy"
+        },
+        {
+          "id": "definition:0fbfe257d850382d7c51",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "HAI Engine",
+          "namespace": "gordonthelander",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_engine_app.groovy"
+        },
+        {
+          "id": "definition:79ff9e17c8d87b2d5985",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "HAI Migration",
+          "namespace": "gordonthelander",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_migration_app.groovy"
+        },
+        {
+          "id": "definition:5e664b68813da50b435c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "HAI Rule Container",
+          "namespace": "gordonthelander",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_rule_app.groovy"
+        }
+      ],
+      "description": "A rule engine for Hubitat with a browser rule editor, an optional AI Rule Assistant and a Rule Machine migration app you turn on when you need it.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+      "kinds": [
+        "APP"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentation": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+        "manifest": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+        "repository": "https://github.com/GordonThelander/HAI-Engine"
+      },
+      "name": "HAI Engine",
+      "network": {
+        "classification": "CLOUD",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [
+          "api.anthropic.com",
+          "platform.claude.com"
+        ],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Tools & Utilities"
+      ],
+      "version": "1.0.0"
     },
     {
       "author": "Botched1 (Jason Bottjen)",
@@ -139501,5 +139610,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T07:08:54Z"
+  "snapshotGenerated": "2026-11-22T10:55:07Z"
 }

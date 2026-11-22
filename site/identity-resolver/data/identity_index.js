@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2441,
+  "definitionCount": 2445,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -2213,6 +2213,26 @@ window.IDENTITY_INDEX = {
         "name": "Advanced Button Controller (ABC)"
       },
       "sourceUrl": "https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Apps/Advanced%20Button%20Controller%20(ABC)/Advanced_Button_Controller.groovy"
+    },
+    {
+      "id": "definition:0fbfe257d850382d7c51",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HAI Engine",
+          "namespace": "gordonthelander"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Gordon Thelander",
+        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentationUrl": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+        "id": "hpm:4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+        "name": "HAI Engine"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_engine_app.groovy"
     },
     {
       "id": "definition:1023fb34705f3ea1f9e1",
@@ -5915,6 +5935,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/gilshallem/Hubitat/main/ComputerController/ComputerControllerApp.groovy"
     },
     {
+      "id": "definition:5e664b68813da50b435c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HAI Rule Container",
+          "namespace": "gordonthelander"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Gordon Thelander",
+        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentationUrl": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+        "id": "hpm:4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+        "name": "HAI Engine"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_rule_app.groovy"
+    },
+    {
       "id": "definition:5eec791f88512fe100fe",
       "identities": [
         {
@@ -7183,6 +7223,26 @@ window.IDENTITY_INDEX = {
         "name": "Echo Speaks"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tonesto7/echo-speaks/master/apps/echo-speaks-actions.groovy"
+    },
+    {
+      "id": "definition:79ff9e17c8d87b2d5985",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HAI Migration",
+          "namespace": "gordonthelander"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Gordon Thelander",
+        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentationUrl": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+        "id": "hpm:4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+        "name": "HAI Engine"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_migration_app.groovy"
     },
     {
       "id": "definition:7a2412e7f4da94177e7e",
@@ -10348,6 +10408,26 @@ window.IDENTITY_INDEX = {
         "name": "Z-Wave Association Tool"
       },
       "sourceUrl": "https://raw.githubusercontent.com/InovelliUSA/Hubitat/master/Apps/z-waveat/zwave-association.src/zwave-association.groovy"
+    },
+    {
+      "id": "definition:bf9eee43f621fb8512e0",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HAI Checker",
+          "namespace": "gordonthelander"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Gordon Thelander",
+        "communityUrl": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+        "documentationUrl": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+        "id": "hpm:4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+        "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+        "name": "HAI Engine"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_checker_app.groovy"
     },
     {
       "id": "definition:bfe7ab3ef70bf4e53d88",
@@ -51953,5 +52033,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T07:08:54Z"
+  "snapshotGenerated": "2026-11-22T10:55:07Z"
 };

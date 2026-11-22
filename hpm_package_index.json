@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 986,
+  "packageCount": 987,
   "packages": [
     {
       "apps": [],
@@ -70697,6 +70697,1210 @@
         "Cloud"
       ],
       "version": "1.2.0"
+    },
+    {
+      "apps": [
+        {
+          "definitionLine": 14,
+          "definitionName": "HAI Engine",
+          "definitionNamespace": "gordonthelander",
+          "manifestName": "HAI Engine",
+          "manifestNamespace": "gordonthelander",
+          "observations": [
+            {
+              "evidence": "oauth: true",
+              "line": 26,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
+              "evidence": "mappings {",
+              "line": 31,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "@Field static final String AM_REPO_URL = 'https://github.com/GordonThelander/hubitat-automation-map'",
+              "line": 61,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/GordonThelander/hubitat-automation-map"
+              }
+            },
+            {
+              "evidence": "@Field static final String HAI_DOCS_URL = 'https://github.com/GordonThelander/HAI-Engine/blob/main/docs'",
+              "line": 62,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs"
+              }
+            },
+            {
+              "evidence": "@Field static final String HAI_ISSUES_URL = 'https://github.com/GordonThelander/HAI-Engine/issues/new/choose'",
+              "line": 63,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/GordonThelander/HAI-Engine/issues/new/choose"
+              }
+            },
+            {
+              "evidence": "@Field static final String CLAUDE_KEYS_URL = 'https://platform.claude.com/settings/keys'",
+              "line": 64,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "platform.claude.com",
+                "scheme": "https",
+                "url": "https://platform.claude.com/settings/keys"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/devicesList', timeout: 30]) { resp -> ids = haiDeviceListIds(resp.data) }",
+              "line": 101,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/devicesList', timeout: 30]) { resp -> ids = haiDeviceListIds(resp.data) }",
+              "line": 101,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub2/devicesList"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/devicesList', timeout: 30]) { resp -> all = haiDeviceListIds(resp.data) }",
+              "line": 116,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/devicesList', timeout: 30]) { resp -> all = haiDeviceListIds(resp.data) }",
+              "line": 116,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub2/devicesList"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/appsList', timeout: 15]) { resp ->",
+              "line": 131,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/appsList', timeout: 15]) { resp ->",
+              "line": 131,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub2/appsList"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${id}\".toString(), contentType: 'application/json', timeout: 8]) { resp ->",
+              "line": 190,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${id}\".toString(), contentType: 'application/json', timeout: 8]) { resp ->",
+              "line": 190,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/fullJson/${id"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${id}\".toString(), contentType: 'application/json', timeout: 8]) { resp ->",
+              "line": 208,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${id}\".toString(), contentType: 'application/json', timeout: 8]) { resp ->",
+              "line": 208,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/fullJson/${id"
+              }
+            },
+            {
+              "evidence": "if (queue) runIn(2, 'haiEverydayStep', [overwrite: true])",
+              "line": 254,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (queue) runIn(3, 'haiEverydayStep', [overwrite: true])",
+              "line": 285,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (!state.accessToken) { try { createAccessToken() } catch (Exception e) { } }",
+              "line": 479,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "input 'everydayWeatherDevice', 'capability.temperatureMeasurement', title: 'Weather device', required: false, multiple: false",
+              "line": 616,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "temperatureMeasurement"
+            },
+            {
+              "evidence": "unschedule('logsOff')",
+              "line": 663,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.debugEnable == true) runIn(1800, 'logsOff')",
+              "line": 664,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(3600, 'haiDiagnosticsExpire')",
+              "line": 668,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { createAccessToken() } catch (Exception e) { haiOAuthSelf('HAI Engine') }",
+              "line": 734,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/json/${app.id}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 742,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/json/${app.id}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 742,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/json/${app.id"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/app/ajax/code?id=${typeId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 749,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/app/ajax/code?id=${typeId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 749,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/app/ajax/code?id=${typeId"
+              }
+            },
+            {
+              "evidence": "httpPost([uri: 'http://127.0.0.1:8080/app/edit/update', requestContentType: 'application/x-www-form-urlencoded', timeout: 20,",
+              "line": 753,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "httpPost([uri: 'http://127.0.0.1:8080/app/edit/update', requestContentType: 'application/x-www-form-urlencoded', timeout: 20,",
+              "line": 753,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/app/edit/update"
+              }
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 756,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('engineResend')",
+              "line": 1001,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpPost('engineReply', params, prep.tag)",
+              "line": 1054,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "runIn(wait, 'engineResend', [data: [generation: session.generation]])",
+              "line": 1114,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpPost([",
+              "line": 1145,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "if (old != null) runIn(2, 'haiFiledMove', [overwrite: true])",
+              "line": 1249,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state[name] != null) runIn(2, 'haiFiledMove', [overwrite: true])",
+              "line": 1252,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state[name] != null) runIn(2, 'haiFiledMove', [overwrite: true])",
+              "line": 1283,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 1550,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "@Field static final String HAI_REPORT_URL = 'https://github.com/GordonThelander/HAI-Engine/issues/new/choose'",
+              "line": 1617,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/GordonThelander/HAI-Engine/issues/new/choose"
+              }
+            },
+            {
+              "evidence": "def haiShadowRelight() { runIn(15, 'haiShadowRelightNow', [overwrite: true]) }",
+              "line": 1649,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (!pairsOnly && state.haiCodeVersion != ENGINE_APP_VERSION) runIn(1, 'haiCodeCheckSoon', [overwrite: true])",
+              "line": 1726,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/appsList', contentType: 'application/json', timeout: 20]) { resp ->",
+              "line": 1796,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub2/appsList', contentType: 'application/json', timeout: 20]) { resp ->",
+              "line": 1796,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub2/appsList"
+              }
+            },
+            {
+              "evidence": "if (out.ok) runIn(1, 'haiReconcileSoon', [overwrite: false, data: [ids: [c.ruleId as String]]])",
+              "line": 1927,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if ((out.ok || unconfirmed) && rid) runIn(1, 'haiReconcileSoon', [overwrite: false, data: [ids: [rid]]])",
+              "line": 1967,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(),",
+              "line": 1977,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(),",
+              "line": 1977,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/statusJson/${rmId"
+              }
+            },
+            {
+              "evidence": "@Field static final String HAI_VERSION_URL = 'https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/VERSION'",
+              "line": 2193,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/VERSION"
+              }
+            },
+            {
+              "evidence": "try { asynchttpGet('haiUpdateAnswer', [uri: HAI_VERSION_URL, contentType: 'text/plain', timeout: 20]) }",
+              "line": 2196,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub/fileManager/json', timeout: 15]) { resp ->",
+              "line": 2323,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub/fileManager/json', timeout: 15]) { resp ->",
+              "line": 2323,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub/fileManager/json"
+              }
+            },
+            {
+              "evidence": "runIn(1, 'editorDeleteManyStep', [overwrite: true])",
+              "line": 2515,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (job?.state == 'running' && now() - ((job.lastStepAt ?: 0L) as long) > 180000L) runIn(1, 'editorDeleteManyStep', [overwrite: true])",
+              "line": 2521,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (from + these.size() < rules.size() || job.drafts) { runIn(1, 'editorDeleteManyStep', [overwrite: true]); return }",
+              "line": 2571,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 2786,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiWatchdog')",
+              "line": 2824,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(RT_WATCHDOG_CRON, 'haiWatchdog')",
+              "line": 2826,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiReconcileSoon')",
+              "line": 2827,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiAutoActivateQueued')",
+              "line": 2828,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiWatchdogMore')",
+              "line": 2829,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (staging) runIn(5, 'haiReconcileSoon', [overwrite: true, data: [ids: staging]])",
+              "line": 2832,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state.runtimeAutoQueue) runIn(5, 'haiAutoActivateQueued', [overwrite: true])",
+              "line": 2834,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(8, 'haiWriteAmStateNow')",
+              "line": 2835,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, 'systemStart', 'haiSystemStart')",
+              "line": 2836,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, 'haiRuleSubmit', 'haiRuleSubmit')",
+              "line": 2838,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, RT_API_EVENT, 'haiRuleApi')",
+              "line": 2839,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, RT_COMMITTED_EVENT, 'haiRuleCommitted')",
+              "line": 2840,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiBackupDaily')",
+              "line": 2841,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(HAI_BACKUP_CRON, 'haiBackupDaily')",
+              "line": 2842,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiUpdateCheck')",
+              "line": 2843,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (HAI_ENVIRONMENT == 'PREVIEW') { schedule(HAI_UPDATE_CRON, 'haiUpdateCheck'); if (state.haiLatest == null) runIn(30, 'haiUpdateCheck') }",
+              "line": 2844,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.haiAutoApproveNew != false) subscribe(location, 'deviceJoin', 'haiDeviceJoined')",
+              "line": 2845,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "try { createAccessToken() } catch (Exception e) { haiOAuthSelf('HAI Engine') }",
+              "line": 2847,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, 'haiReconcileSoon', [overwrite: false, data: [ids: [rid]]])",
+              "line": 2882,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "claimed.each { Object r -> runIn(1, 'haiReconcileSoon', [overwrite: false, data: [ids: [r as String]]]) }",
+              "line": 2961,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (out.ok && out.op != 'list') runIn(2, 'haiReconcileSoon', out.rule ? [overwrite: false, data: [ids: [out.rule as String]]] : [overwrite: false])",
+              "line": 3057,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, 'haiReconcileSoon', soon)",
+              "line": 3084,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (out.code == 'STAGE_UNCONFIRMED') runIn(15, 'haiReconcileSoon', soon)",
+              "line": 3085,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${devId}\".toString(),",
+              "line": 3111,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/fullJson/${devId}\".toString(),",
+              "line": 3111,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/fullJson/${devId"
+              }
+            },
+            {
+              "evidence": "runIn(15, 'haiReconcileSoon', [overwrite: false, data: [ids: [ruleId]]])",
+              "line": 3138,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(((RT_INLINE_AWAIT_MS / 1000L) as int) + 2, 'haiSettleAwait', [overwrite: true])",
+              "line": 3139,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(3, 'haiWatchdogMore', [overwrite: true, data: [round: round + 1]])",
+              "line": 3209,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { asynchttpGet('haiRmAppsList', [uri: 'http://127.0.0.1:8080/hub2/appsList', contentType: 'application/json', timeout: 20], [ids: ids]) }",
+              "line": 3246,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "try { asynchttpGet('haiRmAppsList', [uri: 'http://127.0.0.1:8080/hub2/appsList', contentType: 'application/json', timeout: 20], [ids: ids]) }",
+              "line": 3246,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub2/appsList"
+              }
+            },
+            {
+              "evidence": "runIn(15, 'haiRefreshEditorLinksNow', [overwrite: true])",
+              "line": 3387,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (runtimeAmStateKey(pp) != state.runtimeAmStateKey) runIn(2, 'haiWriteAmStateNow', [overwrite: true])",
+              "line": 3458,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiWatchdog')",
+              "line": 3490,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(RT_WATCHDOG_CRON, 'haiWatchdog')",
+              "line": 3491,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state.everydayQueue) runIn(5, 'haiEverydayStep', [overwrite: true])",
+              "line": 3492,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state.runtimeAutoQueue) runIn(5, 'haiAutoActivateQueued', [overwrite: true])",
+              "line": 3493,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "@Field static final String AUTHOR_API_URL = 'https://api.anthropic.com/v1/messages'",
+              "line": 5198,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.anthropic.com",
+                "scheme": "https",
+                "url": "https://api.anthropic.com/v1/messages"
+              }
+            }
+          ],
+          "sourceBytes": 431702,
+          "sourceFetched": true,
+          "sourceSha256": "b3fe6e4823460c67722ab01d01c30d875502e7e10edd565375797701a6c0fa96",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_engine_app.groovy"
+        },
+        {
+          "definitionLine": 12,
+          "definitionName": "HAI Rule Container",
+          "definitionNamespace": "gordonthelander",
+          "manifestName": "HAI Rule Container",
+          "manifestNamespace": "gordonthelander",
+          "observations": [
+            {
+              "evidence": "unschedule('haiSelfCheck')",
+              "line": 49,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (at != null) runOnce(new Date(Math.max(at, now() + 1000L)), 'haiSelfCheck', [overwrite: true])",
+              "line": 53,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiSelfCheck')",
+              "line": 64,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(new Date(armed), 'haiSelfCheck', [overwrite: true])",
+              "line": 65,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 92,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "selfCheck : { Object at -> unschedule('haiSelfCheck'); if (at instanceof Number) runOnce(new Date(Math.max((at as long), now() + 1000L)), 'haiSelfCheck', [overwrite: true]) },",
+              "line": 201,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "timerAt : { List a -> runOnce(new Date(a[0] as long), a[1] as String, [data: a[2], overwrite: false]) },",
+              "line": 208,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unscheduleHandler: { Object h -> unschedule(h as String) },",
+              "line": 209,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpPost('haiAppDisableReply', [uri: 'http://127.0.0.1:8080/installedapp/disable', contentType: 'application/json',",
+              "line": 253,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost('haiAppDisableReply', [uri: 'http://127.0.0.1:8080/installedapp/disable', contentType: 'application/json',",
+              "line": 253,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/disable"
+              }
+            },
+            {
+              "evidence": "if (post) asynchttpPost('haiHttpReply', params, data) else asynchttpGet('haiHttpReply', params, data)",
+              "line": 293,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "if (post) asynchttpPost('haiHttpReply', params, data) else asynchttpGet('haiHttpReply', params, data)",
+              "line": 293,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "String url = op == 'shutdown' ? 'http://127.0.0.1:8080/hub/shutdown' : op == 'reboot' ? 'http://127.0.0.1:8080/hub/reboot' : null",
+              "line": 296,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub/reboot"
+              }
+            },
+            {
+              "evidence": "String url = op == 'shutdown' ? 'http://127.0.0.1:8080/hub/shutdown' : op == 'reboot' ? 'http://127.0.0.1:8080/hub/reboot' : null",
+              "line": 296,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub/shutdown"
+              }
+            },
+            {
+              "evidence": "asynchttpPost('haiHubPowerReply', [uri: url, requestContentType: 'application/json', body: '{}', timeout: 20], [op: op])",
+              "line": 299,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "if (attr == 'mode') subscribe(location, 'mode', 'haiMode')",
+              "line": 324,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == RT_INVOKE_EVENT) subscribe(location, ruleAddressed(RT_INVOKE_EVENT), 'haiInvoked')",
+              "line": 325,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == RT_CONTROL_EVENT) subscribe(location, ruleAddressed(RT_CONTROL_EVENT), 'haiControlled')",
+              "line": 326,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == RT_PAUSED_EVENT) subscribe(location, RT_PAUSED_EVENT, 'haiRulePausedEvent')",
+              "line": 327,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == RT_SWITCHED_EVENT) subscribe(location, RT_SWITCHED_EVENT, 'haiRmSwitched')",
+              "line": 328,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == RT_RETURN_EVENT) subscribe(location, ruleAddressed(RT_RETURN_EVENT), 'haiReturned')",
+              "line": 329,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (attr in ['hsmStatus', 'hsmAlert'] || attr in LOCATION_EVENTS) subscribe(location, attr, 'haiLocation')",
+              "line": 330,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"variable:${dev.substring(HUB_VARIABLE_PREFIX.length())}\".toString(), 'haiVariable')",
+              "line": 334,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(d, attr, 'haiEvent')",
+              "line": 339,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (sh?.on == true) { unschedule('haiShadowEnd'); unschedule('haiShadowTime'); sh.on = false; ['w', 'next', 'ta', 'mt'].each { sh.remove(it) }; state.shadow = sh }",
+              "line": 536,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (attr == SHADOW_DONE_EVENT) { subscribe(location, \"${SHADOW_DONE_EVENT}.${rid}\".toString(), 'haiShadowDone'); return }",
+              "line": 614,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, attr, 'haiShadowTrig')",
+              "line": 615,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"variable:${dev.substring(HUB_VARIABLE_PREFIX.length())}\".toString(), 'haiShadowTrig')",
+              "line": 620,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(d, attr, 'haiShadowTrig')",
+              "line": 626,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('haiShadowTime')",
+              "line": 751,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runOnce(new Date(Math.min(wake, nx[0] as long)), 'haiShadowTime', [data: [at: nx[0]], overwrite: false])",
+              "line": 754,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(d, c[1] as String, 'haiShadowRead')",
+              "line": 858,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (c[0] == RT_LOCATION) subscribe(location, 'mode', 'haiShadowRead')",
+              "line": 870,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "else subscribe(location, \"variable:${(c[0] as String).substring(HUB_VARIABLE_PREFIX.length())}\".toString(), 'haiShadowRead')",
+              "line": 871,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, 'haiShadowEnd', [overwrite: true])",
+              "line": 967,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (dev == RT_LOCATION) { subscribe(location, c[1] as String, 'haiShadowSeen'); return true }",
+              "line": 987,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "if (dev.startsWith(HUB_VARIABLE_PREFIX)) { subscribe(location, \"variable:${dev.substring(HUB_VARIABLE_PREFIX.length())}\".toString(), 'haiShadowSeen'); return true }",
+              "line": 988,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(d, c[1] as String, 'haiShadowSeen')",
+              "line": 991,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 1023,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 1023,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/statusJson/${rmId"
+              }
+            },
+            {
+              "evidence": "@Field static final String CORE_DEVICE_DISABLE_URL = 'http://127.0.0.1:8080/device/disable'",
+              "line": 1848,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/disable"
+              }
+            },
+            {
+              "evidence": "@Field static final String CORE_DEVICE_JSON_URL = 'http://127.0.0.1:8080/device/fullJson/'",
+              "line": 1849,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/fullJson/"
+              }
+            }
+          ],
+          "sourceBytes": 313246,
+          "sourceFetched": true,
+          "sourceSha256": "2480d1e623f9babd09723d5c984e49912d3bbfcbd201752f12ff4e1e26b8a906",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_rule_app.groovy"
+        },
+        {
+          "definitionLine": 11,
+          "definitionName": "HAI Migration",
+          "definitionNamespace": "gordonthelander",
+          "manifestName": "HAI Migration",
+          "manifestNamespace": "gordonthelander",
+          "observations": [
+            {
+              "evidence": "oauth: true",
+              "line": 22,
+              "type": "OAUTH_ENABLED",
+              "value": true
+            },
+            {
+              "evidence": "mappings {",
+              "line": 27,
+              "type": "OAUTH_API_MAPPINGS",
+              "value": true
+            },
+            {
+              "evidence": "def installed() { migrationInit(); runIn(3, 'migrationAccessSync') }",
+              "line": 40,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "def updated() { migrationInit(); runIn(3, 'migrationAccessSync') }",
+              "line": 41,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "try { createAccessToken() }",
+              "line": 45,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "try { createAccessToken() } catch (Exception e) { migrationOAuthSelf('HAI Migration') }",
+              "line": 70,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/json/${app.id}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 79,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/json/${app.id}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 79,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/json/${app.id"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/app/ajax/code?id=${typeId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 86,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/app/ajax/code?id=${typeId}\".toString(), contentType: 'application/json', timeout: 10]) { resp ->",
+              "line": 86,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/app/ajax/code?id=${typeId"
+              }
+            },
+            {
+              "evidence": "httpPost([uri: 'http://127.0.0.1:8080/app/edit/update', requestContentType: 'application/x-www-form-urlencoded', timeout: 20,",
+              "line": 90,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "httpPost([uri: 'http://127.0.0.1:8080/app/edit/update', requestContentType: 'application/x-www-form-urlencoded', timeout: 20,",
+              "line": 90,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/app/edit/update"
+              }
+            },
+            {
+              "evidence": "createAccessToken()",
+              "line": 93,
+              "type": "OAUTH_ACCESS_TOKEN",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, ASSESS_DONE_EVENT, 'migrationAssessDone')",
+              "line": 111,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, 'haiMigrationRotate', 'migrationRotateEvent')",
+              "line": 112,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, SHADOW_DONE_EVENT, 'migrationShadowDone')",
+              "line": 113,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, 'migJobStep', [overwrite: true])",
+              "line": 421,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (job?.state == 'running' && now() - ((job.lastStepAt ?: 0) as long) > 180000L) runIn(1, 'migJobStep', [overwrite: true])",
+              "line": 426,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (job.state == 'running') runIn(1, 'migJobStep', [overwrite: true])",
+              "line": 525,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub/fileManager/json', timeout: 10]) { resp ->",
+              "line": 571,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: 'http://127.0.0.1:8080/hub/fileManager/json', timeout: 10]) { resp ->",
+              "line": 571,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/hub/fileManager/json"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(),",
+              "line": 870,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmId}\".toString(),",
+              "line": 870,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/statusJson/${rmId"
+              }
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmBareId(dRule.id)}\".toString(),",
+              "line": 899,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/installedapp/statusJson/${rmBareId(dRule.id)}\".toString(),",
+              "line": 899,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/installedapp/statusJson/${rmBareId(dRule.id"
+              }
+            }
+          ],
+          "sourceBytes": 261284,
+          "sourceFetched": true,
+          "sourceSha256": "3e293fae7ab10ccedee2edbbab030473158a447346710b91e1e1a3273ab35564",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_migration_app.groovy"
+        },
+        {
+          "definitionLine": 12,
+          "definitionName": "HAI Checker",
+          "definitionNamespace": "gordonthelander",
+          "manifestName": "HAI Checker",
+          "manifestNamespace": "gordonthelander",
+          "observations": [
+            {
+              "evidence": "@Field static final String CORE_DEVICE_DISABLE_URL = 'http://127.0.0.1:8080/device/disable'",
+              "line": 3089,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/disable"
+              }
+            },
+            {
+              "evidence": "@Field static final String CORE_DEVICE_JSON_URL = 'http://127.0.0.1:8080/device/fullJson/'",
+              "line": 3090,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/fullJson/"
+              }
+            },
+            {
+              "evidence": "subscribe(location, SHADOW_RUN_EVENT, 'checkerShadowRun')",
+              "line": 8629,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/eventsJson/${id}\".toString(), contentType: 'application/json', timeout: 15]) { resp ->",
+              "line": 8958,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://127.0.0.1:8080/device/eventsJson/${id}\".toString(), contentType: 'application/json', timeout: 15]) { resp ->",
+              "line": 8958,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "127.0.0.1",
+                "scheme": "http",
+                "url": "http://127.0.0.1:8080/device/eventsJson/${id"
+              }
+            }
+          ],
+          "sourceBytes": 449461,
+          "sourceFetched": true,
+          "sourceSha256": "ffa84e1202aee82121fb0cad7e032e946f47efdad56e1b9ff1794ea46e502788",
+          "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/apps/hai_checker_app.groovy"
+        }
+      ],
+      "author": "Gordon Thelander",
+      "category": "Automations",
+      "communityLink": "https://community.hubitat.com/t/release-hubitat-automation-map/165524",
+      "dateReleased": "2026-11-22",
+      "description": "A rule engine for Hubitat with a browser rule editor, an optional AI Rule Assistant and a Rule Machine migration app you turn on when you need it.",
+      "documentationLink": "https://github.com/GordonThelander/HAI-Engine/blob/main/docs/user-guide.md",
+      "drivers": [],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json",
+      "packageId": "4d7a2e91-0c35-4b8f-a6e2-9f1c3b5d7e80",
+      "packageName": "HAI Engine",
+      "repoAuthor": "Gordon Thelander",
+      "repoName": "Gordon Thelander",
+      "repoUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/repository.json",
+      "tags": [
+        "Tools & Utilities"
+      ],
+      "version": "1.0.0"
     },
     {
       "apps": [
@@ -374735,18 +375939,18 @@
   "repositoriesFetched": 228,
   "repositoryCount": 229,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-22T07:08:54Z",
+  "snapshotGenerated": "2026-11-22T10:55:07Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2441,
+    "componentsAttempted": 2445,
     "componentsFailed": 10,
-    "componentsFetched": 2431,
-    "componentsWithObservations": 2286,
-    "definitionsVerified": 2420,
-    "distinctSourceUrls": 2425,
+    "componentsFetched": 2435,
+    "componentsWithObservations": 2290,
+    "definitionsVerified": 2424,
+    "distinctSourceUrls": 2429,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2415
+    "sourceUrlsFetched": 2419
   }
 }
