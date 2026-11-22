@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 984,
+  "packageCount": 986,
   "packages": [
     {
       "apps": [],
@@ -60426,20 +60426,30 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "description": "Access to AcuRite sensor data via myacurite.com",
-      "documentationLink": null,
+      "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/AcuRite/README.md",
       "drivers": [
         {
-          "definitionLine": 44,
+          "definitionLine": 56,
           "definitionName": "AcuRite Weather Station",
           "definitionNamespace": "dlaporte",
           "manifestName": "AcuRite Weather Station",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
-              "evidence": "* https://community.smartthings.com/t/my-very-quick-and-dirty-integration-with-myacurite-smart-hub-st-webcore/97749",
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/AcuRite/README.md",
               "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/AcuRite/README.md"
+              }
+            },
+            {
+              "evidence": "* Based on: https://community.smartthings.com/t/my-very-quick-and-dirty-integration-with-myacurite-smart-hub-st-webcore/97749",
+              "line": 7,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.smartthings.com",
@@ -60449,7 +60459,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 11,
+              "line": 38,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60458,14 +60468,30 @@
               }
             },
             {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/device/acurite.groovy\",",
+              "line": 60,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/device/acurite.groovy"
+              }
+            },
+            {
               "evidence": "unschedule()",
-              "line": 131,
+              "line": 140,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 142,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"https://marapi.myacurite.com/accounts/${state.acurite_account_id}/dashboard/hubs/${device_id}\",",
-              "line": 165,
+              "line": 196,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "marapi.myacurite.com",
@@ -60475,13 +60501,13 @@
             },
             {
               "evidence": "asynchttpGet(\"fetchAcuriteDataHandler\", params, [retried: alreadyRetried])",
-              "line": 172,
+              "line": 203,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"https://marapi.myacurite.com/users/login\",",
-              "line": 208,
+              "line": 241,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "marapi.myacurite.com",
@@ -60491,14 +60517,20 @@
             },
             {
               "evidence": "asynchttpPost(\"loginHandler\", params, [fetchAfter: fetchAfter])",
-              "line": 214,
+              "line": 247,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
+            },
+            {
+              "evidence": "runIn(Math.max(1L, (remainingMs + 999L).intdiv(1000L)) as Integer, \"lightningWindowEnded\")",
+              "line": 290,
+              "type": "SCHEDULING",
+              "value": true
             }
           ],
-          "sourceBytes": 14217,
+          "sourceBytes": 23158,
           "sourceFetched": true,
-          "sourceSha256": "3256755851dcd37dafacc2250dee117879056565d601a8e071c254d4db57dd79",
+          "sourceSha256": "2b99278f81faffe2be1af28db5b5a4fc2a0e187aae44cda218637d47c18b6561",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/device/acurite.groovy"
         }
       ],
@@ -60510,27 +60542,37 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.0.18"
+      "version": "0.1.0"
     },
     {
       "apps": [],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "description": "Light controls for Amcrest ASH26 outdoor security camera",
-      "documentationLink": null,
+      "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md",
       "drivers": [
         {
-          "definitionLine": 29,
+          "definitionLine": 37,
           "definitionName": "Amcrest ASH26",
           "definitionNamespace": "dlaporte",
           "manifestName": "Amcrest ASH26",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 19,
+              "line": 25,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60539,26 +60581,42 @@
               }
             },
             {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/device/Amcrest-ASH26.groovy\",",
+              "line": 41,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/device/Amcrest-ASH26.groovy"
+              }
+            },
+            {
               "evidence": "unschedule()",
-              "line": 65,
+              "line": 81,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 83,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// 1. asynchttpGet(unauthRequestHandler, ...) — unauthenticated probe",
-              "line": 114,
+              "line": 138,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "// 2. unauthRequestHandler computes digest, asynchttpGet(authedRequestHandler)",
-              "line": 115,
+              "line": 139,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${uri}\",",
-              "line": 123,
+              "line": 147,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60568,13 +60626,13 @@
             },
             {
               "evidence": "asynchttpGet(\"unauthRequestHandler\", params, [",
-              "line": 127,
+              "line": 151,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${uri}\",",
-              "line": 136,
+              "line": 160,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60584,13 +60642,13 @@
             },
             {
               "evidence": "asynchttpGet(\"unauthRequestHandler\", params, userData)",
-              "line": 147,
+              "line": 171,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${data.uri}\",",
-              "line": 173,
+              "line": 198,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60600,14 +60658,14 @@
             },
             {
               "evidence": "asynchttpGet(\"authedRequestHandler\", params, data)",
-              "line": 178,
+              "line": 203,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             }
           ],
-          "sourceBytes": 10536,
+          "sourceBytes": 17287,
           "sourceFetched": true,
-          "sourceSha256": "083bf2a1bbed7a4f7b60fe46714ceae22685d5b1df78f18424889764d892237b",
+          "sourceSha256": "138be4f81255622c2f735e62dc280300e93124b4233c8d69a295983309172f13",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/device/Amcrest-ASH26.groovy"
         }
       ],
@@ -60619,27 +60677,37 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.7"
+      "version": "0.8.0"
     },
     {
       "apps": [],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-15",
+      "dateReleased": "2026-11-21",
       "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys) and show Hubitat notifications on screen",
       "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
       "drivers": [
         {
-          "definitionLine": 58,
+          "definitionLine": 50,
           "definitionName": "LG TV (Glasshouse)",
           "definitionNamespace": "dlaporte",
           "manifestName": "LG TV (Glasshouse)",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 47,
+              "line": 33,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60648,8 +60716,8 @@
               }
             },
             {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy\"",
-              "line": 62,
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy\",",
+              "line": 54,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -60659,55 +60727,55 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 551,
+              "line": 542,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(1800, \"logsOff\")",
-              "line": 558,
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 544,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"dlaporte\", \"LG TV (Glasshouse) Notifier\", dni,",
-              "line": 588,
+              "line": 578,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"refresh\")",
-              "line": 637,
+              "line": 627,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(\"refresh\")",
-              "line": 640,
+              "line": 630,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(\"refresh\")",
-              "line": 643,
+              "line": 633,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"refresh\")",
-              "line": 646,
+              "line": 636,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */${n} * * * ?\", \"refresh\")",
-              "line": 650,
+              "line": 640,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return \"http://${ip}:${port}${path}\"",
-              "line": 989,
+              "line": 959,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60717,44 +60785,44 @@
             },
             {
               "evidence": "asynchttpGet(callback, params, [path: path])",
-              "line": 1015,
+              "line": 993,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPost(\"controlCallback\", params, data)",
-              "line": 1042,
+              "line": 1017,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "runIn(2, \"refresh\")",
-              "line": 1082,
+              "line": 1053,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(",
-              "line": 1563,
+              "line": 1507,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(",
-              "line": 1563,
+              "line": 1507,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "hubitat.device.Protocol.LAN,",
-              "line": 1565,
+              "line": 1509,
               "type": "LAN_PROTOCOL",
               "value": "Protocol.LAN"
             }
           ],
-          "sourceBytes": 67228,
+          "sourceBytes": 67587,
           "sourceFetched": true,
-          "sourceSha256": "b59294c1a7644e2bce144a250b9151237be258863143615976f9f23c360ab4f1",
+          "sourceSha256": "e4c01030b29e5e0937d0e5c94fed3574db8d621c2d1ef71eaaf026d87c0f9e24",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy"
         },
         {
@@ -60765,8 +60833,18 @@
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 23,
+              "line": 17,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60785,9 +60863,9 @@
               }
             }
           ],
-          "sourceBytes": 1962,
+          "sourceBytes": 2161,
           "sourceFetched": true,
-          "sourceSha256": "85ab57f4c9ac336fb2131d6c1633f694a8f0b04e4f637adf014cf097574abdee",
+          "sourceSha256": "0ae46461a742173ef2030e54185c77746b694b0401014bdba7845ef12223f06a",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse-Notifier.groovy"
         }
       ],
@@ -60799,27 +60877,37 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.10"
+      "version": "0.11.0"
     },
     {
       "apps": [],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "description": "Monitor radon fan with a door sensor (eg. WADWAZ-1/Monoprice 15270)",
-      "documentationLink": null,
+      "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/README.md",
       "drivers": [
         {
-          "definitionLine": 62,
+          "definitionLine": 45,
           "definitionName": "Radon Fan Sensor",
           "definitionNamespace": "dlaporte",
           "manifestName": "Radon Fan Sensor",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 24,
+              "line": 33,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60828,164 +60916,194 @@
               }
             },
             {
-              "evidence": "* 2) Paste in the code from: https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/device/15270-radon-fan.groovy",
-              "line": 33,
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/device/15270-radon-fan.groovy\",",
+              "line": 49,
               "type": "NETWORK_URL_LITERAL",
               "value": {
-                "host": "github.com",
+                "host": "raw.githubusercontent.com",
                 "scheme": "https",
-                "url": "https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/device/15270-radon-fan.groovy"
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/device/15270-radon-fan.groovy"
               }
             },
             {
+              "evidence": "unschedule()",
+              "line": 91,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 93,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySec, \"checkFanAlarm\")",
+              "line": 120,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(delaySec, \"markOffline\")",
+              "line": 131,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "def cmd = zwave.parse(description, [0x20: 1, 0x25: 1, 0x30: 1, 0x31: 5, 0x80: 1, 0x84: 1, 0x71: 3, 0x9C: 1])",
-              "line": 89,
+              "line": 171,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(\"checkFanAlarm\")",
-              "line": 108,
+              "line": 195,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(afterMin * 60, \"checkFanAlarm\")",
-              "line": 115,
+              "evidence": "runIn(alarmAfterSeconds(), \"checkFanAlarm\")",
+              "line": 206,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicReport cmd) {",
-              "line": 129,
+              "line": 211,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicSet cmd) {",
-              "line": 133,
+              "line": 215,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchbinaryv1.SwitchBinaryReport cmd) {",
-              "line": 137,
+              "line": 219,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.sensorbinaryv1.SensorBinaryReport cmd) {",
-              "line": 141,
+              "line": 223,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.sensoralarmv1.SensorAlarmReport cmd) {",
-              "line": 145,
+              "line": 227,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.notificationv3.NotificationReport cmd) {",
-              "line": 149,
+              "line": 235,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.wakeUpV1.wakeUpIntervalSet(seconds:4*3600, nodeid:zwaveHubNodeId))",
-              "line": 162,
+              "line": 248,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.manufacturerSpecificV2.manufacturerSpecificGet())",
-              "line": 164,
+              "line": 250,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.manufacturerSpecificV2.manufacturerSpecificGet())",
-              "line": 169,
+              "line": 255,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.wakeupv1.WakeUpNotification cmd) {",
-              "line": 182,
+              "line": 268,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.batteryV1.batteryGet())",
-              "line": 185,
+              "line": 274,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.wakeUpV1.wakeUpIntervalSet(seconds:4*3600, nodeid:zwaveHubNodeId))",
-              "line": 189,
+              "line": 278,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.manufacturerSpecificV2.manufacturerSpecificGet())",
-              "line": 190,
+              "line": 279,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.wakeUpV1.wakeUpNoMoreInformation())",
-              "line": 193,
+              "line": 283,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.wakeupv1.WakeUpIntervalReport cmd) {",
+              "line": 287,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(offlineAfterSeconds(), \"markOffline\")",
+              "line": 290,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.batteryv1.BatteryReport cmd) {",
-              "line": 197,
+              "line": 294,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.manufacturerspecificv2.ManufacturerSpecificReport cmd) {",
-              "line": 213,
+              "line": 312,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "result << response(zwave.batteryV1.batteryGet())",
-              "line": 228,
+              "line": 325,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.Command cmd) {",
-              "line": 233,
+              "line": 330,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "commands << zwave.sensorBinaryV1.sensorBinaryGet()",
-              "line": 242,
-              "type": "ZWAVE_API_REFERENCE",
+              "evidence": "runIn(offlineAfterSeconds(), \"markOffline\")",
+              "line": 351,
+              "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "commands << zwave.batteryV1.batteryGet()",
-              "line": 246,
-              "type": "ZWAVE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delaySec, \"checkFanAlarm\")",
-              "line": 271,
+              "evidence": "runIn(offlineAfterSeconds(), \"markOffline\")",
+              "line": 368,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 11416,
+          "sourceBytes": 17728,
           "sourceFetched": true,
-          "sourceSha256": "9013f293c060bed041edc13b7681f561cf3f9dd4d973e6f2597bf0cbdf52e7a1",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/RadonFanSensor/device/15270-radon-fan.groovy"
+          "sourceSha256": "282aa4f31c47189ac7af52780a616edc8253e50331652ca70aa4b72c2f113ba4",
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/device/15270-radon-fan.groovy"
         }
       ],
       "manifestFetched": true,
@@ -60996,27 +61114,37 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.9"
+      "version": "0.10.0"
     },
     {
       "apps": [],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-07",
+      "dateReleased": "2026-11-21",
       "description": "Control floodlight, motion/AI detection, microphone, status LED, and view RTSP / snapshot URLs for Reolink WhiteLed cameras (Elite Pro Floodlight PoE, Elite Floodlight WiFi, Duo 3 PoE, etc.)",
-      "documentationLink": null,
+      "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md",
       "drivers": [
         {
-          "definitionLine": 59,
+          "definitionLine": 63,
           "definitionName": "Reolink Floodlight Camera",
           "definitionNamespace": "dlaporte",
           "manifestName": "Reolink Floodlight Camera",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 45,
+              "line": 44,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -61025,14 +61153,30 @@
               }
             },
             {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/device/Reolink-Floodlight.groovy\",",
+              "line": 67,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/device/Reolink-Floodlight.groovy"
+              }
+            },
+            {
               "evidence": "unschedule()",
-              "line": 153,
+              "line": 157,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 159,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String snap = \"http://${ip}/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=hubitat\" +",
-              "line": 179,
+              "line": 182,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -61041,68 +61185,62 @@
               }
             },
             {
-              "evidence": "runIn(1, \"pollStatus\")",
-              "line": 187,
+              "evidence": "runEvery30Minutes(\"scheduledRefresh\")",
+              "line": 189,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule()",
+              "evidence": "runIn(1, \"pollStatus\")",
               "line": 191,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"keepAlive\")",
-              "line": 212,
+              "evidence": "unschedule()",
+              "line": 200,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keepAlive\")",
-              "line": 252,
+              "line": 221,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(120, \"keepAlive\")",
-              "line": 253,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(120, \"keepAlive\")",
-              "line": 265,
+              "line": 271,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keepAlive\")",
-              "line": 312,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"keepAlive\")",
-              "line": 520,
+              "line": 276,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(120, \"keepAlive\")",
-              "line": 521,
+              "line": 277,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"keepAlive\")",
+              "line": 321,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"pollStatus\")",
-              "line": 563,
+              "line": 582,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri: \"http://${ip}/cgi-bin/api.cgi?cmd=${firstCmd}&token=${state.token}\",",
-              "line": 631,
+              "line": 646,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -61112,13 +61250,13 @@
             },
             {
               "evidence": "asynchttpPost(\"sendCmdResponseHandler\", params, [",
-              "line": 639,
+              "line": 654,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "uri: \"http://${ip}/cgi-bin/api.cgi?cmd=Login\",",
-              "line": 650,
+              "line": 686,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -61128,14 +61266,14 @@
             },
             {
               "evidence": "asynchttpPost(\"loginResponseHandler\", params, [",
-              "line": 656,
+              "line": 692,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 33575,
+          "sourceBytes": 39219,
           "sourceFetched": true,
-          "sourceSha256": "c43cc35053e0400b61766c2383f26df230cd69fa2632a726f4d904900c7e1c2f",
+          "sourceSha256": "91602da1797fbc0d76726c42d4c5d7fcc9ef0a01b8194c7f152cb0b2c824aab0",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/device/Reolink-Floodlight.groovy"
         }
       ],
@@ -61147,30 +61285,20 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.9.1"
+      "version": "0.10.0"
     },
     {
       "apps": [
         {
-          "definitionLine": 32,
+          "definitionLine": 46,
           "definitionName": "Smart Oil Gauge (Connect)",
           "definitionNamespace": "dlaporte",
           "manifestName": "Smart Oil Gauge (Connect)",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
-              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 23,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.apache.org",
-                "scheme": "http",
-                "url": "http://www.apache.org/licenses/LICENSE-2.0"
-              }
-            },
-            {
-              "evidence": "* For Smart Oil Gauge (https://www.smartoilgauge.com). Requires a",
-              "line": 25,
+              "evidence": "* Cloud app for Smart Oil Gauge (https://www.smartoilgauge.com) tank monitors, through the",
+              "line": 4,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.smartoilgauge.com",
@@ -61179,8 +61307,38 @@
               }
             },
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
+              "line": 7,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md"
+              }
+            },
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 34,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy\",",
+              "line": 51,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy"
+              }
+            },
+            {
               "evidence": "iconUrl: \"https://github.com/dlaporte/Hubitat/raw/main/SmartOilGauge/images/tank-3.png\",",
-              "line": 38,
+              "line": 53,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61190,7 +61348,7 @@
             },
             {
               "evidence": "iconX2Url: \"https://github.com/dlaporte/Hubitat/raw/main/SmartOilGauge/images/tank-3.png\",",
-              "line": 39,
+              "line": 54,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61200,19 +61358,19 @@
             },
             {
               "evidence": "oauth: true",
-              "line": 41,
+              "line": 56,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 50,
+              "line": 65,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "private static String DROPLET_API() { \"https://api.dropletfuel.com\" }",
-              "line": 55,
+              "line": 70,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.dropletfuel.com",
@@ -61222,7 +61380,7 @@
             },
             {
               "evidence": "return [\"User-Agent\": \"Hubitat SmartOilGauge driver/${appVersion()} (+https://github.com/dlaporte/Hubitat)\"]",
-              "line": 62,
+              "line": 77,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61232,14 +61390,14 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 87,
+              "line": 98,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "child = addChildDevice(\"dlaporte\", CHILD_NAME(), dni, [name: label, label: label])",
-              "line": 109,
-              "type": "CHILD_DEVICE_CREATE",
+              "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
+              "line": 100,
+              "type": "SCHEDULING",
               "value": true
             },
             {
@@ -61249,44 +61407,50 @@
               "value": true
             },
             {
+              "evidence": "child = addChildDevice(\"dlaporte\", CHILD_NAME(), dni, [name: label, label: label])",
+              "line": 135,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
               "evidence": "if (!state.access_token) { try { state.access_token = createAccessToken() } catch (Exception e) { /* OAuth not enabled */ } }",
-              "line": 128,
+              "line": 144,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
-              "evidence": "try { state.access_token = createAccessToken() } catch (Exception e) { logError \"Could not regenerate access token: ${e.message}\" }",
-              "line": 190,
+              "evidence": "try { state.access_token = createAccessToken() } catch (Exception e) { log.error \"Could not regenerate access token: ${e.message}\" }",
+              "line": 206,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 228,
+              "line": 244,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 269,
+              "line": 287,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "// pipeline triggered off subscribe(d, \"energy\", ...); now a direct call",
-              "line": 444,
+              "line": 472,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "def allDevices = theDev ? [theDev] : app.getChildDevices(true).sort { it?.getLabel() }",
-              "line": 478,
+              "line": 504,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return \"\"\"<svg width=\"140\" height=\"170\" viewBox=\"0 0 100 150\" xmlns=\"http://www.w3.org/2000/svg\">",
-              "line": 595,
+              "line": 622,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3.org",
@@ -61295,41 +61459,61 @@
               }
             }
           ],
-          "sourceBytes": 24397,
+          "sourceBytes": 31215,
           "sourceFetched": true,
-          "sourceSha256": "541525d688e5510a200c3f3bb2e033df558095baa192a5e9964d51f6737d034a",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/app/smartoilgauge.groovy"
+          "sourceSha256": "4d686b554d92ec03f536c49353988d6c1ede3c4316a9f9f5b4008a32dc9f50cc",
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy"
         }
       ],
-      "author": "dlaporte",
+      "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/smart-oil-gauge-app-and-device/63078",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-21",
       "description": "Monitor the Smart Oil Gauge (https://www.smartoilgauge.com)",
-      "documentationLink": null,
+      "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
       "drivers": [
         {
-          "definitionLine": 18,
+          "definitionLine": 29,
           "definitionName": "Smart Oil Gauge",
           "definitionNamespace": "dlaporte",
           "manifestName": "Smart Oil Gauge",
           "manifestNamespace": "dlaporte",
           "observations": [
             {
+              "evidence": "* Documentation: https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
+              "line": 6,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "github.com",
+                "scheme": "https",
+                "url": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md"
+              }
+            },
+            {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 9,
+              "line": 17,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
                 "scheme": "http",
                 "url": "http://www.apache.org/licenses/LICENSE-2.0"
               }
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy\"",
+              "line": 33,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy"
+              }
             }
           ],
-          "sourceBytes": 1851,
+          "sourceBytes": 3070,
           "sourceFetched": true,
-          "sourceSha256": "15d074cfd71fc0c0991ec9cde4439a5dd24ba1e4c55cd809155285d0ae535970",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/device/smartoilgauge.groovy"
+          "sourceSha256": "6527368594e0db3900ebb54e2cbcead58754a994c75019efe2b7f453780ef94c",
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy"
         }
       ],
       "manifestFetched": true,
@@ -61340,7 +61524,7 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.0.16"
+      "version": "0.1.0"
     },
     {
       "apps": [],
@@ -70802,9 +70986,9 @@
               "value": "LAN_TYPE_UDPCLIENT"
             }
           ],
-          "sourceBytes": 219687,
+          "sourceBytes": 219815,
           "sourceFetched": true,
-          "sourceSha256": "b57eff4b57fcecce122d11a67a0554c335027a3002bc1ba28e973c153c8c5cd7",
+          "sourceSha256": "4b00f8ee280346f8aa836041a55b66c1ff4f054f2218fdfe0e3f7ac3e8710e90",
           "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/apps/LIFX_Light_Manager.groovy"
         }
       ],
@@ -71035,7 +71219,7 @@
         "Lights & Switches",
         "LAN"
       ],
-      "version": "1.6.10"
+      "version": "1.6.11"
     },
     {
       "apps": [
@@ -72558,12 +72742,12 @@
       "author": "Heatvent",
       "category": "Control",
       "communityLink": "",
-      "dateReleased": "2026-11-16",
+      "dateReleased": "2026-11-21",
       "description": "Profile-driven GE/Jasco/UltraPro Enbrighten Z-Wave Plus Switch and Dimmer drivers covering 500S, 700S, and 800S models with auto-detect.",
       "documentationLink": "https://github.com/heatvent/hubitat-drivers",
       "drivers": [
         {
-          "definitionLine": 132,
+          "definitionLine": 136,
           "definitionName": "GE/Jasco Enbrighten Switch (Multi)",
           "definitionNamespace": "Heatvent",
           "manifestName": "GE/Jasco Enbrighten Switch (Multi)",
@@ -72590,128 +72774,138 @@
               }
             },
             {
+              "evidence": "definition (name: \"GE/Jasco Enbrighten Switch (Multi)\", namespace: \"Heatvent\", author: \"Heatvent\", importUrl: \"https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Switch-Multi/GE-Jasco-Enbrighten-Swit",
+              "line": 136,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Switch-Multi/GE-Jasco-Enbrighten-Switch-Multi.groovy"
+              }
+            },
+            {
               "evidence": "return secure(zwave.configurationV4.configurationSet(scaledConfigurationValue: value, parameterNumber: param, size: 1).format())",
-              "line": 303,
+              "line": 306,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV2.configurationSet(scaledConfigurationValue: value, parameterNumber: param, size: 1).format())",
-              "line": 305,
+              "line": 308,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV4.configurationGet(parameterNumber: param).format())",
-              "line": 310,
+              "line": 313,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV2.configurationGet(parameterNumber: param).format())",
-              "line": 312,
+              "line": 315,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "hubitat.zwave.Command cmd = zwave.parse(description, ccVersions())",
-              "line": 320,
+              "line": 323,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String secure(hubitat.zwave.Command cmd){",
-              "line": 333,
+              "line": 336,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "void zwaveEvent(hubitat.zwave.commands.supervisionv1.SupervisionGet cmd){",
-              "line": 337,
+              "line": 340,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "hubitat.zwave.Command encapCmd = cmd.encapsulatedCommand(ccVersions())",
-              "line": 338,
+              "line": 341,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 343,
+              "line": 346,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 343,
+              "line": 346,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 343,
-              "type": "ZWAVE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicReport cmd) {",
               "line": 346,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicReport cmd) {",
+              "line": 349,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicSet cmd) {",
-              "line": 351,
+              "line": 354,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.associationv2.AssociationReport cmd) {",
-              "line": 356,
+              "line": 359,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: zwaveHubNodeId).format())",
-              "line": 370,
+              "line": 373,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": ",secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 371,
+              "line": 374,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.configurationv2.ConfigurationReport cmd) {",
-              "line": 377,
+              "line": 380,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.configurationv4.ConfigurationReport cmd) {",
-              "line": 382,
+              "line": 385,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchbinaryv1.SwitchBinaryReport cmd) {",
-              "line": 433,
+              "line": 436,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchbinaryv2.SwitchBinaryReport cmd) {",
-              "line": 438,
+              "line": 441,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "// Lifted from https://github.com/RMoRobert/Hubitat/blob/master/drivers/iBlinds-v3.groovy",
-              "line": 443,
+              "line": 446,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -72721,180 +72915,186 @@
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.versionv3.VersionReport cmd) {",
-              "line": 444,
+              "line": 447,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.hailv1.Hail cmd) {",
-              "line": 451,
+              "line": 454,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.manufacturerspecificv2.DeviceSpecificReport cmd) {",
-              "line": 456,
+              "line": 459,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.centralscenev1.CentralSceneNotification cmd) {",
-              "line": 472,
+              "line": 475,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.indicatorv3.IndicatorReport cmd) {",
-              "line": 543,
+              "line": 546,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv2.BasicReport cmd) {",
+              "line": 550,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.Command cmd) {",
-              "line": 547,
+              "line": 556,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.switchBinaryV1.switchBinarySet(switchValue: 0xFF).format())",
-              "line": 559,
-              "type": "ZWAVE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "secure(zwave.switchBinaryV1.switchBinarySet(switchValue: 0x00).format())",
               "line": 568,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds << secure(zwave.switchBinaryV1.switchBinaryGet().format())",
+              "evidence": "secure(zwave.switchBinaryV1.switchBinarySet(switchValue: 0x00).format())",
               "line": 577,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "cmds << secure(zwave.switchBinaryV1.switchBinaryGet().format())",
+              "line": 586,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 583,
+              "line": 592,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 584,
+              "line": 593,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.versionV3.versionGet().format())",
-              "line": 585,
+              "line": 594,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (logEnable) runIn(1800,logsOff)",
-              "line": 599,
+              "line": 608,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier:1, nodeId:zwaveHubNodeId).format())",
-              "line": 608,
+              "line": 617,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 2, nodeId: []).format())",
-              "line": 612,
+              "line": 621,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 2, nodeId: nodes).format())",
-              "line": 613,
+              "line": 622,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 614,
+              "line": 623,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 3, nodeId: []).format())",
-              "line": 618,
+              "line": 627,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: nodes).format())",
-              "line": 619,
+              "line": 628,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 620,
+              "line": 629,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier:1, nodeId:zwaveHubNodeId).format())",
-              "line": 650,
+              "line": 659,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 2, nodeId: []).format())",
-              "line": 654,
+              "line": 663,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 2, nodeId: nodes).format())",
-              "line": 655,
+              "line": 664,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 656,
+              "line": 665,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 3, nodeId: []).format())",
-              "line": 660,
+              "line": 669,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: nodes).format())",
-              "line": 661,
+              "line": 670,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 662,
+              "line": 671,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.indicatorV3.indicatorSet(indicatorCount: 3, value: 0, indicatorValues: indicators).format())",
-              "line": 826,
+              "line": 835,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 47243,
+          "sourceBytes": 48079,
           "sourceFetched": true,
-          "sourceSha256": "1904d3499a94238fe786058ed43a5932b4439448b8ed7c89761557ff2dc1cd44",
+          "sourceSha256": "01dfcc14817d5a27610a5438202b8d50a81138daf64175b60f8b1f319444a322",
           "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Switch-Multi/GE-Jasco-Enbrighten-Switch-Multi.groovy"
         },
         {
-          "definitionLine": 139,
+          "definitionLine": 142,
           "definitionName": "GE/Jasco Enbrighten Dimmer (Multi)",
           "definitionNamespace": "Heatvent",
           "manifestName": "GE/Jasco Enbrighten Dimmer (Multi)",
@@ -72921,333 +73121,355 @@
               }
             },
             {
+              "evidence": "definition (name: \"GE/Jasco Enbrighten Dimmer (Multi)\", namespace: \"Heatvent\", author: \"Heatvent\", importUrl: \"https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Dimmer-Multi/GE-Jasco-Enbrighten-Dimm",
+              "line": 142,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Dimmer-Multi/GE-Jasco-Enbrighten-Dimmer-Multi.groovy"
+              }
+            },
+            {
               "evidence": "return secure(zwave.configurationV4.configurationSet(scaledConfigurationValue: value, parameterNumber: param, size: 1).format())",
-              "line": 309,
+              "line": 312,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV2.configurationSet(scaledConfigurationValue: value, parameterNumber: param, size: 1).format())",
-              "line": 311,
+              "line": 314,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV4.configurationGet(parameterNumber: param).format())",
-              "line": 316,
+              "line": 319,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return secure(zwave.configurationV2.configurationGet(parameterNumber: param).format())",
-              "line": 318,
+              "line": 321,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "hubitat.zwave.Command cmd = zwave.parse(description, ccVersions())",
-              "line": 326,
+              "line": 329,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "String secure(hubitat.zwave.Command cmd){",
-              "line": 339,
+              "line": 342,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "void zwaveEvent(hubitat.zwave.commands.supervisionv1.SupervisionGet cmd){",
-              "line": 343,
+              "line": 346,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "hubitat.zwave.Command encapCmd = cmd.encapsulatedCommand(ccVersions())",
-              "line": 344,
+              "line": 347,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 349,
+              "line": 352,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 349,
+              "line": 352,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(secure(zwave.supervisionV1.supervisionReport(sessionID: cmd.sessionID, reserved: 0, moreStatusUpdates: false, status: 0xFF, duration: 0)), hubitat.device.Protocol.ZWAVE))",
-              "line": 349,
-              "type": "ZWAVE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicSet cmd) {",
               "line": 352,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicSet cmd) {",
+              "line": 355,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv2.BasicSet cmd) {",
-              "line": 357,
+              "line": 360,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.associationv2.AssociationReport cmd) {",
-              "line": 362,
+              "line": 365,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: zwaveHubNodeId).format())",
-              "line": 376,
+              "line": 379,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": ",secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 377,
+              "line": 380,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.configurationv2.ConfigurationReport cmd) {",
-              "line": 383,
+              "line": 386,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.configurationv4.ConfigurationReport cmd) {",
-              "line": 388,
+              "line": 391,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchbinaryv1.SwitchBinaryReport cmd) { //DIMMER",
-              "line": 407,
+              "line": 410,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchbinaryv2.SwitchBinaryReport cmd) { //DIMMER",
-              "line": 412,
+              "line": 415,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.versionv3.VersionReport cmd) {",
-              "line": 417,
+              "line": 420,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.versionv3.VersionZWaveSoftwareReport cmd) {",
-              "line": 424,
+              "line": 427,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.hailv1.Hail cmd) {",
-              "line": 428,
+              "line": 431,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.manufacturerspecificv2.DeviceSpecificReport cmd) {",
-              "line": 433,
+              "line": 436,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchmultilevelv3.SwitchMultilevelReport cmd) { //DIMMER",
-              "line": 487,
+              "line": 490,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchmultilevelv4.SwitchMultilevelReport cmd) { //DIMMER",
-              "line": 492,
+              "line": 495,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchmultilevelv3.SwitchMultilevelSet cmd) { //DIMMER",
-              "line": 497,
+              "line": 500,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.switchmultilevelv4.SwitchMultilevelSet cmd) { //DIMMER",
-              "line": 502,
+              "line": 505,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.centralscenev1.CentralSceneNotification cmd) {",
-              "line": 507,
+              "line": 510,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.commands.indicatorv3.IndicatorReport cmd) {",
-              "line": 578,
+              "line": 581,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv1.BasicReport cmd) {",
+              "line": 585,
+              "type": "ZWAVE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "def zwaveEvent(hubitat.zwave.commands.basicv2.BasicReport cmd) {",
+              "line": 591,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def zwaveEvent(hubitat.zwave.Command cmd) {",
-              "line": 582,
+              "line": 597,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.basicV1.basicSet(value: 0xFF).format())",
-              "line": 592,
+              "line": 607,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.basicV1.basicSet(value: 0x00).format())",
-              "line": 598,
+              "line": 613,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.switchMultilevelV3.switchMultilevelSet(value: value, dimmingDuration: duration))",
-              "line": 632,
+              "line": 647,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.switchMultilevelV3.switchMultilevelGet()) //DIMMER",
-              "line": 659,
+              "line": 674,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 665,
+              "line": 680,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 666,
+              "line": 681,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.versionV3.versionGet().format())",
-              "line": 667,
+              "line": 682,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (logEnable) runIn(1800,logsOff)",
-              "line": 681,
+              "line": 696,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier:1, nodeId:zwaveHubNodeId).format())",
-              "line": 690,
+              "line": 705,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 2, nodeId: []).format()) // FIX 2026-11-12 F10",
-              "line": 694,
+              "line": 709,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 2, nodeId: nodes).format())",
-              "line": 695,
+              "line": 710,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 696,
+              "line": 711,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 3, nodeId: []).format())",
-              "line": 700,
+              "line": 715,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: nodes).format())",
-              "line": 701,
+              "line": 716,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 702,
+              "line": 717,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier:1, nodeId:zwaveHubNodeId).format())",
-              "line": 733,
+              "line": 748,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 2, nodeId: []).format()) // FIX 2026-11-12 F10",
-              "line": 737,
+              "line": 752,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 2, nodeId: nodes).format())",
-              "line": 738,
+              "line": 753,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 2).format())",
-              "line": 739,
+              "line": 754,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationRemove(groupingIdentifier: 3, nodeId: []).format())",
-              "line": 743,
+              "line": 758,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationSet(groupingIdentifier: 3, nodeId: nodes).format())",
-              "line": 744,
+              "line": 759,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds << secure(zwave.associationV2.associationGet(groupingIdentifier: 3).format())",
-              "line": 745,
+              "line": 760,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "secure(zwave.indicatorV3.indicatorSet(indicatorCount: 3, value: 0, indicatorValues: indicators).format())",
-              "line": 881,
+              "line": 896,
               "type": "ZWAVE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 50253,
+          "sourceBytes": 51343,
           "sourceFetched": true,
-          "sourceSha256": "37a13bb5a9f651a89ec4c68a60477d703d612f79ed34ddffdc75afec68269933",
+          "sourceSha256": "21618cd8e31ad7c6e9fb62c1e92879874d7dfad9599a18a492b1031875a93c51",
           "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/GE-Jasco-Enbrighten-Dimmer-Multi/GE-Jasco-Enbrighten-Dimmer-Multi.groovy"
         }
       ],
@@ -73262,7 +73484,7 @@
         "Lights & Switches",
         "Tools & Utilities"
       ],
-      "version": "1.0.4"
+      "version": "1.0.6"
     },
     {
       "apps": [],
@@ -94939,7 +95161,7 @@
     {
       "apps": [
         {
-          "definitionLine": 66,
+          "definitionLine": 69,
           "definitionName": "Device Health Monitor",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Device Health Monitor",
@@ -94947,7 +95169,7 @@
           "observations": [
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy\",",
-              "line": 72,
+              "line": 75,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -94957,13 +95179,13 @@
             },
             {
               "evidence": "oauth: true",
-              "line": 77,
+              "line": 80,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "@Field static final String COMMUNITY_URL = \"https://community.hubitat.com/t/release-device-health-monitor/163229\"",
-              "line": 81,
+              "line": 84,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -94973,7 +95195,7 @@
             },
             {
               "evidence": "@Field static final String COFFEE_URL = \"https://paypal.me/jdthomas24?locale.x=en_US&country.x=US\"",
-              "line": 82,
+              "line": 85,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "paypal.me",
@@ -94983,7 +95205,7 @@
             },
             {
               "evidence": "@Field static final String BM_URL = \"https://community.hubitat.com/t/release-battery-monitor-2-0/162329\"",
-              "line": 89,
+              "line": 92,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -94993,43 +95215,43 @@
             },
             {
               "evidence": "mappings {",
-              "line": 94,
+              "line": 97,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 133,
+              "line": 136,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1800, disableDebugLogging)",
-              "line": 151,
+              "line": 154,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 213,
+              "line": 217,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "runIn(5, scanAllDevices)",
-              "line": 223,
+              "line": 227,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "httpPost([uri: \"http://127.0.0.1:8080\", path: \"/login\",",
-              "line": 522,
+              "line": 526,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "httpPost([uri: \"http://127.0.0.1:8080\", path: \"/login\",",
-              "line": 522,
+              "line": 526,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95039,7 +95261,7 @@
             },
             {
               "evidence": "Map params = [uri: \"http://127.0.0.1:8080\", path: \"/hub/zwaveDetails/json\",",
-              "line": 537,
+              "line": 542,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95049,13 +95271,13 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 542,
+              "line": 547,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "Map params = [uri: \"http://127.0.0.1:8080\", path: \"/hub/zigbeeDetails/json\",",
-              "line": 561,
+              "line": 566,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -95065,141 +95287,141 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 566,
+              "line": 571,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "runIn(60, \"zwProbeReadback\", [overwrite: true])",
-              "line": 647,
+              "line": 688,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (!ready) { runIn(30, \"zwProbeReadback\", [overwrite: true]); return }",
-              "line": 674,
+              "line": 715,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (waiting) runIn(30, \"zwProbeReadback\", [overwrite: true])",
-              "line": 676,
+              "line": 717,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reportScheduler\")",
-              "line": 1322,
+              "line": 1363,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(summaryTime, reportScheduler)",
-              "line": 1324,
+              "line": 1365,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"runDeepVerificationScan\")",
-              "line": 1328,
+              "line": 1369,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(settings.deepScanTime, runDeepVerificationScan)",
-              "line": 1330,
+              "line": 1371,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"scanAllDevices\")",
-              "line": 1336,
+              "line": 1377,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(cronExpr, scanAllDevices)",
-              "line": 1346,
+              "line": 1387,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(actualDelay, \"finalizeDeepScan\", [overwrite: false])",
-              "line": 1407,
+              "line": 1448,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"processDeepScanGroup\", [overwrite: false])",
-              "line": 1423,
+              "line": 1464,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, \"finalizeDeepScan\", [data: [waits: waits + 1], overwrite: true])",
-              "line": 1485,
+              "line": 1526,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"runDeepVerificationScan\")",
-              "line": 1507,
+              "line": 1548,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, \"scanAllDevices\", [overwrite: true])",
-              "line": 1511,
+              "line": 1552,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"processScanChunk\")",
-              "line": 1547,
+              "line": 1588,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"processScanChunk\")",
-              "line": 1758,
+              "line": 1799,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"finalizeScan\")",
-              "line": 1760,
+              "line": 1801,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"scanAllDevices\", [overwrite: true])",
-              "line": 2438,
+              "line": 2479,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "input \"notifyDevices\", \"capability.notification\", title: \"Notification devices\", multiple: true, required: false, width: 6",
-              "line": 3251,
+              "line": 3292,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "input \"pushoverDevices\", \"capability.notification\", title: \"Pushover devices\", multiple: true, required: false, width: 6",
-              "line": 3253,
+              "line": 3294,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             }
           ],
-          "sourceBytes": 272521,
+          "sourceBytes": 274679,
           "sourceFetched": true,
-          "sourceSha256": "7434ba954959c22b6d33f800316614a7adb745f1fc4f694d8b12ca33d3470af2",
+          "sourceSha256": "c276297cbc99d2ceb8261c272273a8d636a7b0fb3e417346a8bb3091d6b198dc",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/DeviceHealthMonitor.groovy"
         }
       ],
       "author": "jdthomas24",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/release-device-health-monitor/163229",
-      "dateReleased": "2026-10-27",
+      "dateReleased": "2026-11-21",
       "description": "Monitor device check-in health across Zigbee, Z-Wave, Matter, Hub Mesh, LAN, Virtual and Hub Variable and learns each device's normal pattern and alerts you when something goes quiet.",
       "documentationLink": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Device%20Health%20Monitor",
       "drivers": [],
@@ -95216,7 +95438,7 @@
         "Matter",
         "LAN"
       ],
-      "version": "1.8.1"
+      "version": "1.8.2"
     },
     {
       "apps": [
@@ -134397,6 +134619,237 @@
         "Monitoring"
       ],
       "version": null
+    },
+    {
+      "apps": [
+        {
+          "definitionLine": 9,
+          "definitionName": "Daiken Split Manager",
+          "definitionNamespace": "kurtsanders",
+          "manifestName": "Daiken Split Manager",
+          "manifestNamespace": "kurtsanders",
+          "observations": [
+            {
+              "evidence": "def children = getChildDevices()?.sort { it.displayName }",
+              "line": 35,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "def child = addChildDevice(\"kurtsanders\", \"Daiken Split System\", dni, [",
+              "line": 134,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(child, \"switch\", \"childSwitchHandler\")",
+              "line": 142,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(existing, \"switch\", \"childSwitchHandler\")",
+              "line": 149,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${ip}:80/common/basic_info\", timeout: 5]) { resp ->",
+              "line": 217,
+              "type": "HTTP_CALL",
+              "value": "httpGet"
+            },
+            {
+              "evidence": "httpGet([uri: \"http://${ip}:80/common/basic_info\", timeout: 5]) { resp ->",
+              "line": 217,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "httpPostJson([uri: \"http://${ip}:80/dsiot/multireq\", body: bodyMap, timeout: 6]) { resp ->",
+              "line": 235,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 254,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1800, \"logsOff\")",
+              "line": 262,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(location, \"mode\", \"modeChangeHandler\")",
+              "line": 265,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices().each { child ->",
+              "line": 266,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "subscribe(child, \"switch\", \"childSwitchHandler\")",
+              "line": 267,
+              "type": "EVENT_SUBSCRIPTION",
+              "value": true
+            },
+            {
+              "evidence": "return getChildDevices().any { it.currentValue(\"switch\") == \"on\" }",
+              "line": 280,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"pollAllChildren\")",
+              "line": 289,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0/15 * * * * ?\", \"pollAllChildren\")",
+              "line": 303,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0/30 * * * * ?\", \"pollAllChildren\")",
+              "line": 306,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(\"0 */2 * * * ?\", \"pollAllChildren\")",
+              "line": 314,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"pollAllChildren\")",
+              "line": 318,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery10Minutes(\"pollAllChildren\")",
+              "line": 322,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery15Minutes(\"pollAllChildren\")",
+              "line": 326,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery30Minutes(\"pollAllChildren\")",
+              "line": 330,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"pollAllChildren\")",
+              "line": 333,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "getChildDevices().each { child ->",
+              "line": 353,
+              "type": "CHILD_DEVICE_ACCESS",
+              "value": true
+            }
+          ],
+          "sourceBytes": 13825,
+          "sourceFetched": true,
+          "sourceSha256": "a781dbe56c39397f6584105282d32e34d57578e29338214841b56f4207638d41",
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/apps/Daikin%20Split%20Manager.groovy"
+        }
+      ],
+      "author": "Kurt Sanders",
+      "category": "Integrations",
+      "communityLink": null,
+      "dateReleased": "2026-11-20",
+      "description": "<b>Daiken Split Manager</b> is a native Parent App and Child Device Driver suite for Hubitat Elevation that provides 100% local monitoring and control of Wi-Fi-enabled Daikin mini-split indoor units using Daikin's local <code>/dsiot/multireq</code> JSON API (DGC protocol)—with <b>no cloud dependency</b> and <b>no Home Assistant or MQTT middleware</b> required.",
+      "documentationLink": "https://github.com/kurtsanders/Hubitat-Daiken-Split-Manager#readme",
+      "drivers": [
+        {
+          "definitionLine": 48,
+          "definitionName": "Daiken Split System",
+          "definitionNamespace": "kurtsanders",
+          "manifestName": "Daiken Split System",
+          "manifestNamespace": "kurtsanders",
+          "observations": [
+            {
+              "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
+              "line": 110,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (logEnable) log.debug \"POST http://${ip}:80/dsiot/multireq (${action}): ${bodyJson}\"",
+              "line": 141,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "uri: \"http://${ip}:80/dsiot/multireq\",",
+              "line": 144,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "asynchttpPost(\"handleDsiotResponse\", params, [action: action])",
+              "line": 150,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            }
+          ],
+          "sourceBytes": 17741,
+          "sourceFetched": true,
+          "sourceSha256": "113ead8c136d8e13b184e0f6e1f9ca7a8c52c792fb611dfa64a8f0793a62f8fd",
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/drivers/Daikin%20Split%20Manager.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json",
+      "packageId": "6296a84e-8169-4314-89ae-a98b077841a5",
+      "packageName": "Daikin HVAC Split Manager",
+      "repoAuthor": "Kurt Sanders",
+      "repoName": "Kurt Sanders (kurtsanders)",
+      "repoUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/master/repository.json",
+      "tags": [
+        "Monitoring",
+        "Temperature & Humidity",
+        "Climate Control",
+        "Energy Monitoring",
+        "Integrations"
+      ],
+      "version": "1.0.0"
     },
     {
       "apps": [
@@ -282754,6 +283207,275 @@
       "version": "1.3.1"
     },
     {
+      "apps": [],
+      "author": "Derek Osborn",
+      "category": "Control",
+      "communityLink": "https://community.hubitat.com/t/release-zen-thermostat-advanced-a-reliable-zigbee-driver-for-battery-and-c-wire-zen-thermostats/167611",
+      "dateReleased": "2026-11-21",
+      "description": "Zen Thermostat Advanced (Zigbee) - driver for Hubitat Elevation",
+      "documentationLink": null,
+      "drivers": [
+        {
+          "definitionLine": 139,
+          "definitionName": "Zen Thermostat Advanced",
+          "definitionNamespace": "dJOS",
+          "manifestName": "Zen Thermostat Advanced",
+          "manifestNamespace": "dJOS",
+          "observations": [
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/main/zen-thermostat-advanced.groovy\") {",
+              "line": 140,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "raw.githubusercontent.com",
+                "scheme": "https",
+                "url": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/main/zen-thermostat-advanced.groovy"
+              }
+            },
+            {
+              "evidence": "unschedule()",
+              "line": 277,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (logEnable) runIn(1800, \"logsOff\")",
+              "line": 278,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"healthCheck\")",
+              "line": 337,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(\"healthCheck\")",
+              "line": 338,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (state.hasAlarms) cmds += zigbee.readAttribute(CL_ALARMS, 0x0000, [:], 200) // AlarmCount",
+              "line": 360,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CL_POLL, 0x0000, DT_UINT32, (int) checkinQs, [:], 200)",
+              "line": 374,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CL_POLL, 0x0003, DT_UINT16, fastQs, [:], 200)",
+              "line": 375,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_THERMOSTAT, AT_LOCAL_TEMP, DT_INT16, tMin, tMax, tChg, [:], 200)",
+              "line": 383,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_THERMOSTAT, AT_HEAT_SP, DT_INT16, 1, 3600, 10, [:], 200)",
+              "line": 384,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_THERMOSTAT, AT_COOL_SP, DT_INT16, 1, 3600, 10, [:], 200)",
+              "line": 385,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_THERMOSTAT, AT_SYSTEM_MODE, DT_ENUM8, 1, 3600, null, [:], 200)",
+              "line": 386,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_THERMOSTAT, AT_RUNNING_STATE, DT_BMAP16, 1, 3600, null, [:], 200)",
+              "line": 387,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_FAN, 0x0000, DT_ENUM8, 1, 3600, null, [:], 200)",
+              "line": 388,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_POWER, 0x0020, DT_UINT8, 3600, 21600, 1, [:], 200)",
+              "line": 389,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(CL_POWER, 0x003E, 0x1B, 60, 21600, null, [:], 200) // BatteryAlarmState (bmap32)",
+              "line": 390,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_THERMOSTAT, [AT_CTRL_SEQ, AT_DEADBAND, AT_MIN_HEAT_LIM, AT_MAX_HEAT_LIM,",
+              "line": 393,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_FAN, 0x0001, [:], 200)",
+              "line": 395,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_THERMOSTAT, AT_CALIBRATION, [:], 200)",
+              "line": 396,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_UI, [0x0000, 0x0001], [:], 200)",
+              "line": 397,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_POWER, [0x0031, 0x0033, 0x0036, 0x0037, 0x0038, 0x0039], [:], 200)",
+              "line": 399,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_POLL, [0x0004, 0x0005, 0x0006], [:], 200)",
+              "line": 400,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_THERMOSTAT, [AT_LOCAL_TEMP, AT_HEAT_SP, AT_COOL_SP, AT_SYSTEM_MODE, AT_RUNNING_STATE], [:], 200)",
+              "line": 407,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_FAN, 0x0000, [:], 200)",
+              "line": 408,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_POWER, [0x0020, 0x0021], [:], 200)",
+              "line": 409,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_POWER, [0x0000, 0x003E], [:], 200) // MainsVoltage (C-wire), BatteryAlarmState",
+              "line": 410,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_BASIC, 0x0007, [:], 200) // PowerSource",
+              "line": 411,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CL_DIAG, [0x011C, 0x011D], [:], 200) // last message LQI / RSSI",
+              "line": 412,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"retryCheck\")",
+              "line": 632,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(retrySecs(), \"retryCheck\", [overwrite: true])",
+              "line": 709,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"retryCheck\")",
+              "line": 732,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(retrySecs(), \"retryCheck\", [overwrite: true])",
+              "line": 765,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(cl, p.attr as int, p.dataType as int, p.value as int, [:], 200)",
+              "line": 793,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(cl, p.attr as int, [:], 200)",
+              "line": 794,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "if (!q().isEmpty()) runIn(retrySecs(), \"retryCheck\", [overwrite: true])",
+              "line": 815,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "zigbee.readAttribute(CL_ALARMS, 0x0000, [:], 200))",
+              "line": 1035,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "Map msg = zigbee.parseDescriptionAsMap(description)",
+              "line": 1151,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
+              "line": 1613,
+              "type": "SEND_HUB_COMMAND",
+              "value": true
+            }
+          ],
+          "sourceBytes": 81351,
+          "sourceFetched": true,
+          "sourceSha256": "2833a61f6aab2d098cbe4e4223e4a482d93c1b984e69b4eae78154889b434057",
+          "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/main/zen-thermostat-advanced.groovy"
+        }
+      ],
+      "manifestFetched": true,
+      "manifestUrl": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json",
+      "packageId": null,
+      "packageName": "Zen Thermostat Advanced",
+      "repoAuthor": "Derek Osborn",
+      "repoName": "dJOS",
+      "repoUrl": "https://raw.githubusercontent.com/dJOS1475/Hubitat_WU_Driver/main/repository.json",
+      "tags": [
+        "Climate Control",
+        "Zigbee",
+        "Temperature & Humidity"
+      ],
+      "version": "2.4.0"
+    },
+    {
       "apps": [
         {
           "definitionLine": 31,
@@ -303056,12 +303778,12 @@
       "author": "hubitrep",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-21",
       "description": "Community Hubitat drivers for ThirdReality Zigbee devices — plugs, sensors, and lighting, with full power/energy metering where applicable.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/thirdreality",
       "drivers": [
         {
-          "definitionLine": 138,
+          "definitionLine": 144,
           "definitionName": "Third Reality Energy-Monitoring Smart Plug Gen2 (US/EU) and Gen3 (US/UK/EU)",
           "definitionNamespace": "hubitrep",
           "manifestName": "Third Reality Energy-Monitoring Smart Plug Gen2 (US/EU) and Gen3 (US/UK/EU)",
@@ -303069,19 +303791,19 @@
           "observations": [
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 26,
+              "line": 28,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "// ZCL attribute IDs (standard clusters use zigbee.{BASIC,ON_OFF,ELECTRICAL_MEASUREMENT,METERING}_CLUSTER)",
-              "line": 42,
+              "line": 44,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/ThirdReality_3RSP02028BZ.groovy\"",
-              "line": 144,
+              "line": 150,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -303091,276 +303813,312 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 257,
+              "line": 283,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() also cancelled a pending clearIsDigital; re-arm it so a plug",
+              "line": 284,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (debugEnable || traceEnable) runIn(1800, \"logsOff\")",
-              "line": 260,
+              "line": 289,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(zigbee.ON_OFF_CLUSTER, ATTR_POWER_RESTORE, DataType.ENUM8, powerRestore)",
-              "line": 269,
+              "line": 298,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_ON_TO_OFF_DELAY, DataType.UINT16, onToOff, [mfgCode: mfg])",
-              "line": 273,
+              "line": 302,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_OFF_TO_ON_DELAY, DataType.UINT16, offToOn, [mfgCode: mfg])",
-              "line": 276,
+              "line": 305,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_POWER_RISE_THRESHOLD, DataType.UINT16,",
+              "line": 309,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_POWER_DROP_THRESHOLD, DataType.UINT16,",
+              "line": 311,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_METERING_ONLY, DataType.UINT8,",
+              "line": 313,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 287,
+              "line": 325,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, DataType.BOOLEAN, 0, 600)",
-              "line": 323,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_ACTIVE_POWER, DataType.INT16, minInterval, maxInterval, powerDeltaRaw)",
-              "line": 324,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT, DataType.UINT16, minInterval, maxInterval, currentDeltaRaw)",
-              "line": 325,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE, DataType.UINT16, minInterval, maxInterval, voltageDeltaRaw)",
-              "line": 326,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR, DataType.INT8, minInterval, maxInterval, 25)",
-              "line": 328,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTR_SUMMATION, DataType.UINT48, minInterval, maxInterval, energyDeltaRaw)",
-              "line": 329,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 331,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_ACTIVE_POWER)",
-              "line": 332,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT)",
-              "line": 333,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE)",
-              "line": 334,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR)",
-              "line": 335,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
-              "line": 336,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [0x0600, 0x0601, 0x0602, 0x0603, 0x0604, 0x0605])",
-              "line": 339,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, [0x0300, 0x0301, 0x0302])",
-              "line": 340,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 343,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_POWER_RESTORE)",
-              "line": 344,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR])",
-              "line": 345,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
-              "line": 346,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_FW_VERSION)",
-              "line": 347,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5, \"configureApply\")",
-              "line": 350,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 360,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR])",
               "line": 361,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_ACTIVE_POWER, DataType.INT16, minInterval, maxInterval, powerDeltaRaw)",
               "line": 362,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.on()",
-              "line": 379,
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT, DataType.UINT16, minInterval, maxInterval, currentDeltaRaw)",
+              "line": 363,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE, DataType.UINT16, minInterval, maxInterval, voltageDeltaRaw)",
+              "line": 364,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR, DataType.INT8, minInterval, maxInterval, 25)",
+              "line": 366,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTR_SUMMATION, DataType.UINT48, minInterval, maxInterval, energyDeltaRaw)",
+              "line": 367,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
+              "line": 369,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_ACTIVE_POWER)",
+              "line": 370,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT)",
+              "line": 371,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE)",
+              "line": 372,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR)",
+              "line": 373,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.reportingConfiguration(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
+              "line": 374,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [0x0600, 0x0601, 0x0602, 0x0603, 0x0604, 0x0605])",
+              "line": 377,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, [0x0300, 0x0301, 0x0302])",
+              "line": 378,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 380,
+              "line": 381,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.off()",
-              "line": 392,
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_POWER_RESTORE)",
+              "line": 382,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 393,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.command(zigbee.ON_OFF_CLUSTER, 0x02)",
-              "line": 405,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
-              "line": 406,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "return zigbee.updateFirmware()",
-              "line": 423,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_RESET_ENERGY, DataType.UINT8, 1, [mfgCode: mfgCode()])",
-              "line": 432,
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR])",
+              "line": 383,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
-              "line": 434,
+              "line": 384,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_FW_VERSION)",
+              "line": 385,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_BASIC_LED_BRIGHTNESS_GEN3, [mfgCode: MFG_CODE_GEN3])",
+              "line": 387,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CLUSTER_MFG, [ATTR_MFG_POWER_RISE_THRESHOLD, ATTR_MFG_POWER_DROP_THRESHOLD, ATTR_MFG_METERING_ONLY],",
+              "line": 388,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"configureApply\")",
+              "line": 393,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
+              "line": 403,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR])",
+              "line": 404,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
+              "line": 405,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.on()",
+              "line": 422,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
+              "line": 423,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.off()",
+              "line": 435,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
+              "line": 436,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(zigbee.ON_OFF_CLUSTER, 0x02)",
+              "line": 448,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF)",
+              "line": 449,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "return zigbee.updateFirmware()",
+              "line": 466,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_RESET_ENERGY, DataType.UINT8, 1, [mfgCode: mfgCode()])",
+              "line": 475,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION)",
+              "line": 477,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_ALLOW_BIND, DataType.UINT8, 1, [mfgCode: mfgCode()]))",
-              "line": 441,
+              "line": 484,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 452,
+              "line": 495,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "schedule(cron, \"checkPresence\")",
-              "line": 789,
+              "line": 851,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(zigbee.BASIC_CLUSTER, ATTR_BASIC_LED_BRIGHTNESS_GEN3,",
-              "line": 812,
+              "line": 874,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_LED_BRIGHTNESS,",
-              "line": 815,
+              "line": 877,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(action)",
-              "line": 823,
+              "line": 885,
               "type": "SEND_HUB_COMMAND",
               "value": true
             }
           ],
-          "sourceBytes": 36712,
+          "sourceBytes": 41036,
           "sourceFetched": true,
-          "sourceSha256": "3973c676675094a138633070683bf0f62143911b812099238bcfd710b6782854",
+          "sourceSha256": "56fc0a2de7c18654bb4672b184cf07f0c027950018edb5ed0854e9b83f6165c4",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/ThirdReality_3RSP02028BZ.groovy"
         },
         {
-          "definitionLine": 114,
+          "definitionLine": 120,
           "definitionName": "Third Reality Dual Smart Plug (3RDP01072Z)",
           "definitionNamespace": "hubitrep",
           "manifestName": "Third Reality Dual Smart Plug (3RDP01072Z)",
@@ -303368,13 +304126,13 @@
           "observations": [
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 30,
+              "line": 33,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/ThirdReality_3RDP01072Z.groovy\"",
-              "line": 120,
+              "line": 126,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -303384,133 +304142,109 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 208,
+              "line": 228,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() also cancelled a pending clearIsDigital; re-arm it so a plug",
+              "line": 229,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (debugEnable || traceEnable) runIn(1800, \"logsOff\")",
-              "line": 212,
+              "line": 235,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(zigbee.ON_OFF_CLUSTER, ATTR_POWER_RESTORE, DataType.ENUM8, powerRestore, [destEndpoint: epInt(ep)])",
-              "line": 221,
+              "line": 244,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.writeAttribute(zigbee.BASIC_CLUSTER, ATTR_BASIC_LED_BRIGHTNESS, DataType.UINT8, ledBrightness, [mfgCode: MFG_CODE, destEndpoint: 1])",
-              "line": 225,
+              "evidence": "cmds += zigbee.writeAttribute(zigbee.BASIC_CLUSTER, ATTR_BASIC_LED_BRIGHTNESS, DataType.UINT8,",
+              "line": 248,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "if (rise != null) cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_POWER_RISE_THRESHOLD, DataType.UINT16, clampThreshold(rise), [mfgCode: MFG_CODE, destEndpoint: e])",
+              "line": 257,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "if (drop != null) cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_POWER_DROP_THRESHOLD, DataType.UINT16, clampThreshold(drop), [mfgCode: MFG_CODE, destEndpoint: e])",
+              "line": 258,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "if (meterOnly != null) cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_METERING_ONLY, DataType.UINT8, meterOnly == true ? 1 : 0, [mfgCode: MFG_CODE, destEndpoint: e])",
+              "line": 259,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 233,
+              "line": 268,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "DeviceWrapper cd = addChildDevice(\"hubitrep\", CHILD_TYPE, childDni(ep),",
-              "line": 289,
+              "line": 324,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, DataType.BOOLEAN, 0, 3600, null, [destEndpoint: e])",
-              "line": 334,
+              "line": 369,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_ACTIVE_POWER, DataType.INT16, minInterval, maxInterval, powerDeltaRaw, [destEndpoint: e])",
-              "line": 335,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT, DataType.UINT16, minInterval, maxInterval, currentDeltaRaw, [destEndpoint: e])",
-              "line": 336,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE, DataType.UINT16, minInterval, maxInterval, voltageDeltaRaw, [destEndpoint: e])",
-              "line": 339,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR, DataType.INT8, minInterval, maxInterval, 25, [destEndpoint: e])",
-              "line": 342,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTR_SUMMATION, DataType.UINT48, minInterval, maxInterval, energyDeltaRaw, [destEndpoint: e])",
-              "line": 344,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [0x0600, 0x0601, 0x0602, 0x0603, 0x0604, 0x0605], [destEndpoint: e])",
-              "line": 347,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, [0x0300, 0x0301, 0x0302], [destEndpoint: e])",
-              "line": 348,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, [destEndpoint: e])",
-              "line": 351,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR], [destEndpoint: e])",
-              "line": 352,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION, [destEndpoint: e])",
-              "line": 353,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_FW_VERSION)",
-              "line": 355,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5, \"configureApply\")",
-              "line": 358,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, [destEndpoint: e])",
               "line": 370,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR], [destEndpoint: e])",
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_CURRENT, DataType.UINT16, minInterval, maxInterval, currentDeltaRaw, [destEndpoint: e])",
               "line": 371,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION, [destEndpoint: e])",
-              "line": 372,
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_RMS_VOLTAGE, DataType.UINT16, minInterval, maxInterval, voltageDeltaRaw, [destEndpoint: e])",
+              "line": 374,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, ATTR_POWER_FACTOR, DataType.INT8, minInterval, maxInterval, 25, [destEndpoint: e])",
+              "line": 377,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.configureReporting(zigbee.METERING_CLUSTER, ATTR_SUMMATION, DataType.UINT48, minInterval, maxInterval, energyDeltaRaw, [destEndpoint: e])",
+              "line": 379,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [0x0600, 0x0601, 0x0602, 0x0603, 0x0604, 0x0605], [destEndpoint: e])",
+              "line": 382,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, [0x0300, 0x0301, 0x0302], [destEndpoint: e])",
+              "line": 383,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
@@ -303521,7 +304255,7 @@
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER], [destEndpoint: e])",
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR], [destEndpoint: e])",
               "line": 387,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
@@ -303533,57 +304267,117 @@
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.command(zigbee.ON_OFF_CLUSTER, cmd, [destEndpoint: e])",
-              "line": 404,
+              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_FW_VERSION)",
+              "line": 390,
               "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.BASIC_CLUSTER, ATTR_BASIC_LED_BRIGHTNESS, [mfgCode: MFG_CODE])",
+              "line": 392,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(CLUSTER_MFG, [ATTR_MFG_POWER_RISE_THRESHOLD, ATTR_MFG_POWER_DROP_THRESHOLD, ATTR_MFG_METERING_ONLY],",
+              "line": 394,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "runIn(5, \"configureApply\")",
+              "line": 399,
+              "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, [destEndpoint: e])",
-              "line": 405,
+              "line": 411,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_RESET_ENERGY, DataType.UINT8, 1, [mfgCode: MFG_CODE, destEndpoint: e])",
-              "line": 432,
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_AC_FREQUENCY, ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER, ATTR_POWER_FACTOR], [destEndpoint: e])",
+              "line": 412,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION, [destEndpoint: e])",
-              "line": 433,
+              "line": 413,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, [destEndpoint: e])",
+              "line": 427,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ELECTRICAL_MEASUREMENT_CLUSTER, [ATTR_RMS_VOLTAGE, ATTR_RMS_CURRENT, ATTR_ACTIVE_POWER], [destEndpoint: e])",
+              "line": 428,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION, [destEndpoint: e])",
+              "line": 429,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(zigbee.ON_OFF_CLUSTER, cmd, [destEndpoint: e])",
+              "line": 445,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.ON_OFF_CLUSTER, ATTR_ON_OFF, [destEndpoint: e])",
+              "line": 446,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.writeAttribute(CLUSTER_MFG, ATTR_MFG_RESET_ENERGY, DataType.UINT8, 1, [mfgCode: MFG_CODE, destEndpoint: e])",
+              "line": 473,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.readAttribute(zigbee.METERING_CLUSTER, ATTR_SUMMATION, [destEndpoint: e])",
+              "line": 474,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.updateFirmware()",
-              "line": 442,
+              "line": 483,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 453,
+              "line": 494,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "schedule(cron, \"checkPresence\")",
-              "line": 736,
+              "line": 778,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendHubCommand(action)",
-              "line": 751,
+              "line": 793,
               "type": "SEND_HUB_COMMAND",
               "value": true
             }
           ],
-          "sourceBytes": 36304,
+          "sourceBytes": 41247,
           "sourceFetched": true,
-          "sourceSha256": "5754fbc1876a3f490af601d20c0beb7d3aab029c767d84bf312f4a11fc4e6bdb",
+          "sourceSha256": "90db44f41a9831c3e715c798e97ce6fae5aae3b8249eb4cbafa80f846dd158e4",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/ThirdReality_3RDP01072Z.groovy"
         },
         {
@@ -303628,14 +304422,14 @@
         "Energy Monitoring",
         "Relays"
       ],
-      "version": "0.2.7"
+      "version": "0.2.9"
     },
     {
       "apps": [],
       "author": "hubitrep",
       "category": "Control",
       "communityLink": null,
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-21",
       "description": "Driver for Universal Electronics / Visonic / Xfinity Zigbee contact sensors — contact, temperature, tamper, and battery with configurable reporting intervals.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/XfinityContactSensor",
       "drivers": [
@@ -303668,18 +304462,18 @@
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 22,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus",
               "line": 23,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/main/XfinityContactSensor/XfinityContactSensor.groovy\"",
+              "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus",
+              "line": 24,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "importUrl: \"https://raw.githubusercontent.com/hubitrep/hubitat/main/XfinityContactSensor/XfinityContactSensor.groovy\",",
               "line": 34,
               "type": "NETWORK_URL_LITERAL",
               "value": {
@@ -303690,7 +304484,7 @@
             },
             {
               "evidence": "// https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/lib/utils.ts",
-              "line": 78,
+              "line": 87,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -303699,93 +304493,111 @@
               }
             },
             {
-              "evidence": "if (debugEnable || traceEnable) runIn(1800, \"logsOff\")",
-              "line": 129,
+              "evidence": "unschedule()",
+              "line": 192,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(0x0402, 0x0000, [:], constDefaultDelay) // temperature",
-              "line": 152,
+              "evidence": "if (debugEnable || traceEnable) runIn(1800, \"logsOff\")",
+              "line": 194,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.enrollResponse()",
+              "line": 304,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(zigbee.POWER_CONFIGURATION_CLUSTER, 0x0020, [:], constDefaultDelay) // battery voltage",
-              "line": 153,
+              "evidence": "cmds += zigbee.writeAttribute(0x0020, 0x0000, DataType.UINT32, constCheckInIntervalQs)",
+              "line": 306,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.readAttribute(0x0500, 0x0002, [:], constDefaultDelay) // IAS ZoneStatus bitmap",
-              "line": 154,
+              "evidence": "cmds += zigbee.command(0x0020, 0x02, uint32LeHex(longPollIntervalQs()))",
+              "line": 308,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.enrollResponse(1200) // Enroll in IAS Zone",
-              "line": 171,
+              "evidence": "cmds += zigbee.configureReporting(zigbee.POWER_CONFIGURATION_CLUSTER, 0x0020, DataType.UINT8, 0, batteryReportIntervalS(), 1)",
+              "line": 309,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.writeAttribute(0x0020, 0x0000, DataType.UINT32, 14400, [:], constDefaultDelay)",
-              "line": 176,
+              "evidence": "cmds += zigbee.temperatureConfig(3600, tempMaxSeconds)",
+              "line": 310,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.configureReporting(zigbee.POWER_CONFIGURATION_CLUSTER, 0x0020, DataType.UINT8, 0, reportInterval, 1, [:], constDefaultDelay) //Battery Voltage Reporting",
-              "line": 179,
+              "evidence": "zigbee.readAttribute(Integer.parseInt(ids[0], 16), Integer.parseInt(ids[1], 16))",
+              "line": 319,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.temperatureConfig(3600, tempMaxSeconds) // Temperature Reporting",
-              "line": 183,
+              "evidence": "sendZigbeeCommands(zigbee.command(0x0020, 0x00, constCheckInDecline))",
+              "line": 362,
               "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(0x0020, 0x00, constCheckInFastPoll)",
+              "line": 369,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "cmds += zigbee.command(0x0020, 0x01) // Fast Poll Stop",
+              "line": 371,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "sendHubCommand(new HubMultiAction(send, Protocol.ZIGBEE))",
+              "line": 399,
+              "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 212,
+              "line": 409,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "cmds += zigbee.enrollResponse(1200)",
-              "line": 231,
+              "evidence": "sendZigbeeCommands(zigbee.enrollResponse())",
+              "line": 445,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "ZoneStatus zs = zigbee.parseZoneStatus(description)",
-              "line": 268,
+              "line": 455,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(send, hubitat.device.Protocol.ZIGBEE))",
-              "line": 427,
-              "type": "SEND_HUB_COMMAND",
-              "value": true
-            },
-            {
               "evidence": "hubitat.zigbee.clusters.iaszone.ZoneStatus properties map:",
-              "line": 461,
+              "line": 598,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "alarm2Set:false, class:class hubitat.zigbee.clusters.iaszone.ZoneStatus, battery:0, restoreReportsSet:true,",
-              "line": 466,
+              "line": 603,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 21091,
+          "sourceBytes": 29396,
           "sourceFetched": true,
-          "sourceSha256": "c0e173470a060ec849ad6fe96dccf45684c166769727ebe8aa10267cf865bd34",
+          "sourceSha256": "583ac3e6681af3b7eb5256b6ff8ff7abf28aea6e7096932fe3d1744f001ef58f",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/XfinityContactSensor.groovy"
         }
       ],
@@ -303801,7 +304613,7 @@
         "Doors & Windows",
         "Temperature & Humidity"
       ],
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
       "apps": [
@@ -311578,7 +312390,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "communityLink": "",
-      "dateReleased": "2026-11-17",
+      "dateReleased": "2026-11-21",
       "description": "Native MCP server for Hubitat with built-in rule engine. Control devices and create automations via Claude AI or other MCP clients.",
       "documentationLink": "https://github.com/kingpanther13/Hubitat-local-MCP-server/blob/main/README.md",
       "drivers": [],
@@ -311590,7 +312402,7 @@
       "repoName": "kingpanther13",
       "repoUrl": "https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/repository.json",
       "tags": [],
-      "version": "5.2.0"
+      "version": "5.2.1"
     },
     {
       "apps": [],
@@ -373923,18 +374735,18 @@
   "repositoriesFetched": 228,
   "repositoryCount": 229,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-21T07:27:48Z",
+  "snapshotGenerated": "2026-11-22T07:08:54Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2438,
+    "componentsAttempted": 2441,
     "componentsFailed": 10,
-    "componentsFetched": 2428,
-    "componentsWithObservations": 2283,
-    "definitionsVerified": 2417,
-    "distinctSourceUrls": 2422,
+    "componentsFetched": 2431,
+    "componentsWithObservations": 2286,
+    "definitionsVerified": 2420,
+    "distinctSourceUrls": 2425,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2412
+    "sourceUrlsFetched": 2415
   }
 }

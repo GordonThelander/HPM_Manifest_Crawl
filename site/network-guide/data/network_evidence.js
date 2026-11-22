@@ -2,8 +2,8 @@ window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 187,
     "CLOUD": 281,
-    "INSUFFICIENT": 311,
-    "LAN": 205
+    "INSUFFICIENT": 312,
+    "LAN": 206
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 984,
+  "packageCount": 986,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -159,7 +159,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "Access to AcuRite sensor data via myacurite.com",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/AcuRite/README.md",
       "id": "manifest:622252f2ca0343ac6ae6",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json",
       "name": "AcuRite Weather Station",
@@ -169,7 +169,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 4
+        "urlLiteralCount": 6
       },
       "reviewed": [],
       "tags": []
@@ -1520,7 +1520,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "Light controls for Amcrest ASH26 outdoor security camera",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md",
       "id": "manifest:4d5414b319c79ad9a652",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/packageManifest.json",
       "name": "Amcrest ASH26",
@@ -1528,7 +1528,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 4
+        "urlLiteralCount": 6
       },
       "reviewed": [
         {
@@ -3974,6 +3974,35 @@ window.NETWORK_EVIDENCE = {
       },
       "reviewed": [],
       "tags": []
+    },
+    {
+      "author": "Kurt Sanders",
+      "category": "Integrations",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "<b>Daiken Split Manager</b> is a native Parent App and Child Device Driver suite for Hubitat Elevation that provides 100% local monitoring and control of Wi-Fi-enabled Daikin mini-split indoor units using Daikin's local <code>/dsiot/multireq</code> JSON API (DGC protocol)-with <b>no cloud dependency</b> and <b>no Home Assistant or MQTT middleware</b> required.",
+      "documentationUrl": "https://github.com/kurtsanders/Hubitat-Daiken-Split-Manager#readme",
+      "id": "hpm:6296a84e-8169-4314-89ae-a98b077841a5",
+      "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json",
+      "name": "Daikin HVAC Split Manager",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 4
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Energy Monitoring",
+        "Integrations",
+        "Monitoring",
+        "Temperature & Humidity"
+      ]
     },
     {
       "author": "Jean P. May, Jr.",
@@ -7152,7 +7181,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": [
@@ -13496,7 +13525,7 @@ window.NETWORK_EVIDENCE = {
           "SEND_HUB_COMMAND"
         ],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
+        "urlLiteralCount": 7
       },
       "reviewed": [],
       "tags": []
@@ -18710,7 +18739,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "Monitor radon fan with a door sensor (eg. WADWAZ-1/Monoprice 15270)",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/README.md",
       "id": "manifest:92ac85e9f893d9111473",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/packageManifest.json",
       "name": "Radon Fan Sensor",
@@ -18718,7 +18747,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 2
+        "urlLiteralCount": 3
       },
       "reviewed": [],
       "tags": []
@@ -19127,7 +19156,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "Control floodlight, motion/AI detection, microphone, status LED, and view RTSP / snapshot URLs for Reolink WhiteLed cameras (Elite Pro Floodlight PoE, Elite Floodlight WiFi, Duo 3 PoE, etc.)",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md",
       "id": "manifest:e81b1393b05b5472c2ba",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json",
       "name": "Reolink Floodlight Camera",
@@ -19135,7 +19164,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 4
+        "urlLiteralCount": 6
       },
       "reviewed": [
         {
@@ -21977,7 +22006,7 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "dlaporte",
+      "author": "David LaPorte",
       "category": "Integrations",
       "classification": "CLOUD",
       "communityUrl": "https://community.hubitat.com/t/smart-oil-gauge-app-and-device/63078",
@@ -21986,7 +22015,7 @@ window.NETWORK_EVIDENCE = {
         "lanTag": false
       },
       "description": "Monitor the Smart Oil Gauge (https://www.smartoilgauge.com)",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
       "id": "manifest:6ecbb63a9f54071bd02c",
       "manifestUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json",
       "name": "Smart Oil Gauge",
@@ -21997,7 +22026,7 @@ window.NETWORK_EVIDENCE = {
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 8
+        "urlLiteralCount": 12
       },
       "reviewed": [],
       "tags": []
@@ -28522,6 +28551,35 @@ window.NETWORK_EVIDENCE = {
       "tags": []
     },
     {
+      "author": "Derek Osborn",
+      "category": "Control",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/t/release-zen-thermostat-advanced-a-reliable-zigbee-driver-for-battery-and-c-wire-zen-thermostats/167611",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "Zen Thermostat Advanced (Zigbee) - driver for Hubitat Elevation",
+      "documentationUrl": null,
+      "id": "manifest:e1f5f95a13c2b7728073",
+      "manifestUrl": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json",
+      "name": "Zen Thermostat Advanced",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [
+          "SEND_HUB_COMMAND"
+        ],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 1
+      },
+      "reviewed": [],
+      "tags": [
+        "Climate Control",
+        "Temperature & Humidity",
+        "Zigbee"
+      ]
+    },
+    {
       "author": "UltronOfSpace",
       "category": "Convenience",
       "classification": "CLOUD",
@@ -29678,5 +29736,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-21T07:27:48Z"
+  "snapshotGenerated": "2026-11-22T07:08:54Z"
 };

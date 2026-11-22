@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 984,
+    "HPM_PACKAGE": 986,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2689,
+  "recordCount": 2691,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -18076,7 +18076,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:236d0738a5ab0e531548",
@@ -18098,7 +18098,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -18111,7 +18111,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -18134,7 +18134,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/AcuRite/README.md",
         "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json",
         "repository": "https://github.com/dlaporte/Hubitat"
       },
@@ -18152,7 +18152,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.0.18"
+      "version": "0.1.0"
     },
     {
       "author": "JoKneeMo <https://github.com/JoKneeMo>",
@@ -22386,7 +22386,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:ff53ebb255c590c70dcc",
@@ -22408,7 +22408,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -22421,7 +22421,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -22444,7 +22444,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md",
         "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/packageManifest.json",
         "repository": "https://github.com/dlaporte/Hubitat"
       },
@@ -22475,7 +22475,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.7"
+      "version": "0.8.0"
     },
     {
       "author": "Dominick Meglio & Eric Maycock",
@@ -30522,6 +30522,101 @@
       "version": "1.0.1"
     },
     {
+      "author": "Kurt Sanders",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-20",
+      "definitions": [
+        {
+          "id": "definition:f360f303cd29a74c42e1",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Daiken Split Manager",
+          "namespace": "kurtsanders",
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/apps/Daikin%20Split%20Manager.groovy"
+        },
+        {
+          "id": "definition:92189674a825228d6ff5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Daiken Split System",
+          "namespace": "kurtsanders",
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/drivers/Daikin%20Split%20Manager.groovy"
+        }
+      ],
+      "description": "<b>Daiken Split Manager</b> is a native Parent App and Child Device Driver suite for Hubitat Elevation that provides 100% local monitoring and control of Wi-Fi-enabled Daikin mini-split indoor units using Daikin's local <code>/dsiot/multireq</code> JSON API (DGC protocol)-with <b>no cloud dependency</b> and <b>no Home Assistant or MQTT middleware</b> required.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:6296a84e-8169-4314-89ae-a98b077841a5",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/kurtsanders/Hubitat-Daiken-Split-Manager#readme",
+        "manifest": "https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json",
+        "repository": "https://github.com/KurtSanders/Hubitat-Daiken-Split-Manager"
+      },
+      "name": "Daikin HVAC Split Manager",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Energy Monitoring",
+        "Integrations",
+        "Monitoring",
+        "Temperature & Humidity"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "author": "Jean P. May, Jr.",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -32044,7 +32139,7 @@
       "author": "jdthomas24",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-27",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:5c866819fd332dbe2692",
@@ -32125,7 +32220,7 @@
         "Zigbee",
         "ZWave"
       ],
-      "version": "1.8.1"
+      "version": "1.8.2"
     },
     {
       "author": "Krassimir Kossev",
@@ -40495,7 +40590,7 @@
       "author": "Heatvent",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-16",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:6b944a13931afedd71a7",
@@ -40580,7 +40675,7 @@
         "Lights & Switches",
         "Tools & Utilities"
       ],
-      "version": "1.0.4"
+      "version": "1.0.6"
     },
     {
       "author": "Daniel Winks",
@@ -61652,7 +61747,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-15",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:19189e3cbf6a116276b0",
@@ -61734,7 +61829,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.10"
+      "version": "0.11.0"
     },
     {
       "author": "Sebastian YEPES FERNANDEZ",
@@ -62695,7 +62790,7 @@
         "LAN",
         "Lights & Switches"
       ],
-      "version": "1.6.10"
+      "version": "1.6.11"
     },
     {
       "author": "Robert Alan Heyes",
@@ -65452,7 +65547,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-17",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -65534,7 +65629,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.2.0"
+      "version": "5.2.1"
     },
     {
       "author": "Justin Leonard",
@@ -78903,15 +78998,15 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-06-12",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
-          "id": "definition:3f9d819065367b8daf73",
+          "id": "definition:147214604c8f3f01a0a6",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Radon Fan Sensor",
           "namespace": "dlaporte",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/RadonFanSensor/device/15270-radon-fan.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/device/15270-radon-fan.groovy"
         }
       ],
       "description": "Monitor radon fan with a door sensor (eg. WADWAZ-1/Monoprice 15270)",
@@ -78925,7 +79020,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -78938,7 +79033,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -78961,7 +79056,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/RadonFanSensor/README.md",
         "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/packageManifest.json",
         "repository": "https://github.com/dlaporte/Hubitat"
       },
@@ -78977,7 +79072,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.9"
+      "version": "0.10.0"
     },
     {
       "author": "Marc Hedish",
@@ -80278,7 +80373,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-07",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:7511a88eb05ae261ab82",
@@ -80300,7 +80395,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -80313,7 +80408,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -80336,7 +80431,7 @@
       ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md",
         "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json",
         "repository": "https://github.com/dlaporte/Hubitat"
       },
@@ -80381,7 +80476,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.9.1"
+      "version": "0.10.0"
     },
     {
       "author": "jdthomas24",
@@ -89470,26 +89565,26 @@
       "version": "1.0.0"
     },
     {
-      "author": "dlaporte",
+      "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
-          "id": "definition:9e922b90428bc0060284",
+          "id": "definition:feb99bf856d5ce494322",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Smart Oil Gauge (Connect)",
           "namespace": "dlaporte",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/app/smartoilgauge.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy"
         },
         {
-          "id": "definition:3886218d91ab31e7b2e1",
+          "id": "definition:fccbb6b16945fe56051b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Smart Oil Gauge",
           "namespace": "dlaporte",
-          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/refs/heads/main/SmartOilGauge/device/smartoilgauge.groovy"
+          "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy"
         }
       ],
       "description": "Monitor the Smart Oil Gauge (https://www.smartoilgauge.com)",
@@ -89503,7 +89598,7 @@
           "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -89516,7 +89611,7 @@
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -89540,7 +89635,7 @@
       ],
       "links": {
         "community": "https://community.hubitat.com/t/smart-oil-gauge-app-and-device/63078",
-        "documentation": null,
+        "documentation": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
         "manifest": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json",
         "repository": "https://github.com/dlaporte/Hubitat"
       },
@@ -89559,7 +89654,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.0.16"
+      "version": "0.1.0"
     },
     {
       "author": "Brian Wilson",
@@ -97167,7 +97262,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:e4a17076d3e605b278d0",
@@ -97276,7 +97371,7 @@
         "Relays",
         "Zigbee"
       ],
-      "version": "0.2.7"
+      "version": "0.2.9"
     },
     {
       "author": "Vartan Horigian",
@@ -108447,7 +108542,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-21",
       "definitions": [
         {
           "id": "definition:bd6ed9983a290cba3ccb",
@@ -108540,7 +108635,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
       "author": "Andrew Davison",
@@ -110682,6 +110777,90 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "0.2.0"
+    },
+    {
+      "author": "Derek Osborn",
+      "category": "Control",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-21",
+      "definitions": [
+        {
+          "id": "definition:d51131122d3baa2cfb66",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Zen Thermostat Advanced",
+          "namespace": "dJOS",
+          "sourceUrl": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/main/zen-thermostat-advanced.groovy"
+        }
+      ],
+      "description": "Zen Thermostat Advanced (Zigbee) - driver for Hubitat Elevation",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": false,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:e1f5f95a13c2b7728073",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/t/release-zen-thermostat-advanced-a-reliable-zigbee-driver-for-battery-and-c-wire-zen-thermostats/167611",
+        "documentation": null,
+        "manifest": "https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json",
+        "repository": "https://github.com/dJOS1475/Zen-Thermostat-Advanced-Driver"
+      },
+      "name": "Zen Thermostat Advanced",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Climate Control",
+        "Temperature & Humidity",
+        "Zigbee"
+      ],
+      "version": "2.4.0"
     },
     {
       "author": "UltronOfSpace",
@@ -139322,5 +139501,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-21T07:27:48Z"
+  "snapshotGenerated": "2026-11-22T07:08:54Z"
 }

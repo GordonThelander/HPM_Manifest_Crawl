@@ -1,9 +1,23 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-21T07:27:48Z`.
+Latest observation: `2026-11-22T07:08:54Z`.
 
-**168 package change(s):** added 81, declared definitions changed 4, removed 34, source location changed 10, updated 53
+**162 package change(s):** added 78, declared definitions changed 3, removed 34, source location changed 10, updated 50
 
+- [Zen Thermostat Advanced: added.](https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json)
+- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
+- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
+- [Smart Oil Gauge: updated, changed source location.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/packageManifest.json)
+- [Reolink Floodlight Camera: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/packageManifest.json)
+- [Radon Fan Sensor: updated, changed source location.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/RadonFanSensor/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [LIFX Light Manager: updated.](https://raw.githubusercontent.com/GordonThelander/hubitat-LIFX-Light-Manager/main/packageManifest.json)
+- [LG TV (Glasshouse): updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
+- [GE/Jasco Enbrighten Switch & Dimmer (Multi): updated.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json)
+- [Device Health Monitor: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Device%20Health%20Monitor/packageManifest.json)
+- [Daikin HVAC Split Manager: added.](https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json)
+- [Amcrest ASH26: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/packageManifest.json)
+- [AcuRite Weather Station: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json)
 - [Tuya Garage Door Opener (Wi-Fi) Local: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json)
 - [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
 - [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
@@ -152,25 +166,5 @@ Latest observation: `2026-11-21T07:27:48Z`.
 - [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
 - [LG TV (Glasshouse): updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
 - [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
-- [iopool EcO Pool/Spa Monitor: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/iopool/packageManifest.json)
-- [Zooz ZSE50 Siren & Chime: added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/zooz-zse50-siren-chime.json)
-- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
-- [WiMeter Cloud Bridge Driver: updated.](https://raw.githubusercontent.com/aniva/hubitat01/master/WimeterDriver/packageManifest.json)
-- [ThirdReality Zigbee Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/thirdreality/packageManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
-- [Roku TV Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/roku/packageManifest.json)
-- [PC Sleep and Wake Controller: added.](https://raw.githubusercontent.com/aniva/hubitat01/master/PCSleepController/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
-- [LG TV (Glasshouse): updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [HVAC Apps: added.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/packageManifest.json)
-- [GE/Jasco Enbrighten Switch & Dimmer (Multi): added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest.json)
-- [Evohome: updated.](https://raw.githubusercontent.com/tobeyljungberg/Hubitat-Evohome/main/PackageManifest.json)
-- [Energy From Power: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/EnergyFromPower/packageManifest.json)
-- [Better Bathroom Fan Controller: added.](https://raw.githubusercontent.com/apwelsh/hubitat/master/bbfcon/packageManifest.json)
-- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
-- [Advanced Hue Hub Integration: updated.](https://raw.githubusercontent.com/apwelsh/hubitat/master/hue/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
