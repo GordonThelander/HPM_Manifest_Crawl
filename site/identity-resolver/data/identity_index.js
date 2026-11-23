@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2445,
+  "definitionCount": 2448,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -4538,26 +4538,6 @@ window.IDENTITY_INDEX = {
         "name": "hubitat_switchbot"
       },
       "sourceUrl": "https://raw.githubusercontent.com/tomwpublic/hubitat_switchbot/main/switchbotEventsApp"
-    },
-    {
-      "id": "definition:3dd52ca658c4f8b2fbcd",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Dreo Endpoint Probe",
-          "namespace": "classic-dave"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "classic-dave",
-        "communityUrl": "https://community.hubitat.com/t/beta-dreo-fan-integration-cloud/165215",
-        "documentationUrl": "https://github.com/classic-dave/hubitat-dreo/blob/main/README.md",
-        "id": "manifest:02c0627b6271b0d05383",
-        "manifestUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/packageManifest.json",
-        "name": "Dreo Integration"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/apps/dreo_endpoint_probe.groovy"
     },
     {
       "id": "definition:3e918465b3b798662f99",
@@ -11623,6 +11603,26 @@ window.IDENTITY_INDEX = {
         "name": "Auto Shades"
       },
       "sourceUrl": "https://raw.githubusercontent.com/joelwetzel/Hubitat-Auto-Shades/master/autoShadesInstance.groovy"
+    },
+    {
+      "id": "definition:de16b83ebe578e41573f",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Relay Garage Door",
+          "namespace": "Heatvent"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Heatvent",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/heatvent/hubitat-drivers#relay-garage-door",
+        "id": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+        "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json",
+        "name": "Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Apps/Relay-Garage-Door/Relay-Garage-Door.groovy"
     },
     {
       "id": "definition:de1df45b2e722ff7bd2b",
@@ -28385,6 +28385,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/thaeropath/Hubitat_Ring_Integration/main/hubitat/drivers/RingAlarmController.groovy"
     },
     {
+      "id": "definition:67cc75059f47a9d528f5",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Relay Garage Door",
+          "namespace": "Heatvent"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Heatvent",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/heatvent/hubitat-drivers#relay-garage-door",
+        "id": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+        "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json",
+        "name": "Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door.groovy"
+    },
+    {
       "id": "definition:67ee1bda092458d1070d",
       "identities": [
         {
@@ -32698,6 +32718,26 @@ window.IDENTITY_INDEX = {
         "name": "Tesla Powerwall Manager"
       },
       "sourceUrl": "https://raw.githubusercontent.com/DarwinsDen/Tesla-Powerwall-Manager/master/devicetypes/darwinsden/tesla-powerwall.src/tesla-powerwall.groovy"
+    },
+    {
+      "id": "definition:87bb7808f88c78be7e8c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Relay Garage Door (No Battery)",
+          "namespace": "Heatvent"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Heatvent",
+        "communityUrl": null,
+        "documentationUrl": "https://github.com/heatvent/hubitat-drivers#relay-garage-door",
+        "id": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+        "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json",
+        "name": "Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door-No-Battery.groovy"
     },
     {
       "id": "definition:87d6ab16caa1c15b8a18",
@@ -40428,6 +40468,26 @@ window.IDENTITY_INDEX = {
         "name": "Unifi Drivers"
       },
       "sourceUrl": "https://www.drdsnell.com/projects/hubitat/drivers/UnifiNetworkChild-RPS.groovy"
+    },
+    {
+      "id": "definition:b5ad4f7304cf43eb5a8c",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Ecovacs GOAT A3000 Mower WS",
+          "namespace": "kurtsanders"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Kurt Sanders",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://github.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/blob/main/README.md",
+        "id": "manifest:2d2cb474b2d79e379d00",
+        "manifestUrl": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/packageManifest.json",
+        "name": "Ecovacs GOAT A3000 Mower (Home Assistant WebSocket)"
+      },
+      "sourceUrl": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/drivers/Ecovacs_GOAT_A3000_Mower_WS.groovy"
     },
     {
       "id": "definition:b5b0930abc799ebf2ca9",
@@ -52033,5 +52093,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T10:55:07Z"
+  "snapshotGenerated": "2026-11-23T07:55:28Z"
 };

@@ -2,8 +2,8 @@
   "counts": {
     "BOTH": 187,
     "CLOUD": 282,
-    "INSUFFICIENT": 312,
-    "LAN": 206
+    "INSUFFICIENT": 313,
+    "LAN": 207
   },
   "dataset": "network-evidence-guide",
   "method": {
@@ -13,7 +13,7 @@
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 987,
+  "packageCount": 989,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -1594,7 +1594,7 @@
         ],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 11
+        "urlLiteralCount": 13
       },
       "reviewed": [],
       "tags": [
@@ -4880,8 +4880,8 @@
       "observed": {
         "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 7,
-        "urlLiteralCount": 6
+        "sourceFilesAnalysed": 6,
+        "urlLiteralCount": 4
       },
       "reviewed": [],
       "tags": [
@@ -5190,6 +5190,34 @@
       },
       "reviewed": [],
       "tags": []
+    },
+    {
+      "author": "Kurt Sanders",
+      "category": "Integrations",
+      "classification": "LAN",
+      "communityUrl": "https://community.hubitat.com/",
+      "declared": {
+        "cloudTag": false,
+        "lanTag": true
+      },
+      "description": "Standalone Hubitat Elevation driver for the Ecovacs GOAT A3000 robotic lawnmower via Home Assistant's local WebSocket API (subscribe_entities), featuring zero-config entity auto-discovery, real-time state push, Imperial/Metric unit conversion, extended diagnostics, and per-zone mowing.",
+      "documentationUrl": "https://github.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/blob/main/README.md",
+      "id": "manifest:2d2cb474b2d79e379d00",
+      "manifestUrl": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/packageManifest.json",
+      "name": "Ecovacs GOAT A3000 Mower (Home Assistant WebSocket)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 1,
+        "urlLiteralCount": 2
+      },
+      "reviewed": [],
+      "tags": [
+        "Appliances",
+        "Integrations",
+        "LAN",
+        "Monitoring"
+      ]
     },
     {
       "author": "Simon Burke",
@@ -18997,6 +19025,33 @@
       ]
     },
     {
+      "author": "Heatvent",
+      "category": "Convenience",
+      "classification": "INSUFFICIENT",
+      "communityUrl": null,
+      "declared": {
+        "cloudTag": false,
+        "lanTag": false
+      },
+      "description": "One garage door opener device from a Zooz ZEN16 relay and a tilt, wireless or wired door sensor: opening/closing states, optional fully-open sensor, warning buzzer or chime, battery, failure alerts, and a clean Home Assistant cover through Maker API.",
+      "documentationUrl": "https://github.com/heatvent/hubitat-drivers#relay-garage-door",
+      "id": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+      "manifestUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json",
+      "name": "Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor)",
+      "observed": {
+        "externalHosts": [],
+        "lanPrimitives": [],
+        "sourceFilesAnalysed": 3,
+        "urlLiteralCount": 7
+      },
+      "reviewed": [],
+      "tags": [
+        "Garage Doors",
+        "Relays",
+        "ZWave"
+      ]
+    },
+    {
       "author": "Joel Wetzel",
       "category": "Security",
       "classification": "INSUFFICIENT",
@@ -29764,5 +29819,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T10:55:07Z"
+  "snapshotGenerated": "2026-11-23T07:55:28Z"
 }

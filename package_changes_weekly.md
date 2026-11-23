@@ -1,9 +1,20 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-22T10:55:07Z`.
+Latest observation: `2026-11-23T07:55:28Z`.
 
-**163 package change(s):** added 79, declared definitions changed 3, removed 34, source location changed 10, updated 50
+**166 package change(s):** added 80, declared definitions changed 4, removed 34, source location changed 10, updated 51
 
+- [Zooz ZSE50 Siren & Chime: updated.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/zooz-zse50-siren-chime.json)
+- [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
+- [Sinopé Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/packageManifest.json)
+- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
+- [Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor): added.](https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json)
+- [Log Monitor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/packageManifest.json)
+- [IKEA Window Blinds: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/packageManifest.json)
+- [Ecovacs GOAT A3000 Mower (Home Assistant WebSocket): added.](https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/packageManifest.json)
+- [Dreo Integration: changed source location, changed declared definitions.](https://raw.githubusercontent.com/classic-dave/hubitat-dreo/main/packageManifest.json)
+- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
+- [Android TV Remote: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/packageManifest.json)
 - [HAI Engine: added.](https://raw.githubusercontent.com/GordonThelander/HAI-Engine/main/packageManifest.json)
 - [Zen Thermostat Advanced: added.](https://raw.githubusercontent.com/dJOS1475/Zen-Thermostat-Advanced-Driver/refs/heads/main/packageManifest.json)
 - [Xfinity / Visonic / UEI Contact Sensor: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/packageManifest.json)
@@ -159,13 +170,5 @@ Latest observation: `2026-11-22T10:55:07Z`.
 - [Blink Drivers: removed.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
 - [Aqara SJCGQ11LM Water Leak Sensor: added.](https://raw.githubusercontent.com/velkovb/hubitat-drivers/main/drivers/aqara/sjcgq11lm/packageManifest.json)
 - [Ambient Ecowitt Weather: removed.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
-- [Wyze Vacuum Connect: updated.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Wyze-Vacuum/packageManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [Scrypted Connect: added.](https://raw.githubusercontent.com/bdwilson/hubitat/master/Scrypted/packageManifest.json)
-- [OpenWeatherMap Multi-API Weather Driver: updated.](https://raw.githubusercontent.com/jshimota01/hubitat/main/Drivers/owm_multi-API_weather/packageManifest.json)
-- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
-- [LG TV (Glasshouse): updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/packageManifest.json)
-- [Aqara Drivers: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 987,
+    "HPM_PACKAGE": 989,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2692,
+  "recordCount": 2694,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -22572,7 +22572,7 @@
       "author": "hubitrep",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-23",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:e7ceeb043356b42c011f",
@@ -22660,7 +22660,7 @@
         "LAN",
         "Multimedia"
       ],
-      "version": "0.1.18"
+      "version": "0.1.19"
     },
     {
       "author": "Joe Page",
@@ -23287,7 +23287,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-15",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:84cc6306ea9fb6753631",
@@ -23382,7 +23382,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "1.0.3"
+      "version": "1.0.4"
     },
     {
       "author": "velkovb",
@@ -33375,14 +33375,6 @@
       "dateReleased": "2026-08-04",
       "definitions": [
         {
-          "id": "definition:3dd52ca658c4f8b2fbcd",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "Dreo Endpoint Probe",
-          "namespace": "classic-dave",
-          "sourceUrl": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/apps/dreo_endpoint_probe.groovy"
-        },
-        {
           "id": "definition:63b0742e1a696656cb95",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
@@ -34421,6 +34413,91 @@
       "recordType": "HPM_PACKAGE",
       "tags": [],
       "version": "1.0.1"
+    },
+    {
+      "author": "Kurt Sanders",
+      "category": "Integrations",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-22",
+      "definitions": [
+        {
+          "id": "definition:b5ad4f7304cf43eb5a8c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Ecovacs GOAT A3000 Mower WS",
+          "namespace": "kurtsanders",
+          "sourceUrl": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/drivers/Ecovacs_GOAT_A3000_Mower_WS.groovy"
+        }
+      ],
+      "description": "Standalone Hubitat Elevation driver for the Ecovacs GOAT A3000 robotic lawnmower via Home Assistant's local WebSocket API (subscribe_entities), featuring zero-config entity auto-discovery, real-time state push, Imperial/Metric unit conversion, extended diagnostics, and per-zone mowing.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "manifest:2d2cb474b2d79e379d00",
+      "kinds": [
+        "DRIVER"
+      ],
+      "links": {
+        "community": "https://community.hubitat.com/",
+        "documentation": "https://github.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/blob/main/README.md",
+        "manifest": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/packageManifest.json",
+        "repository": "https://github.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower"
+      },
+      "name": "Ecovacs GOAT A3000 Mower (Home Assistant WebSocket)",
+      "network": {
+        "classification": "LAN",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": true
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Appliances",
+        "Integrations",
+        "LAN",
+        "Monitoring"
+      ],
+      "version": "1.1.1"
     },
     {
       "author": "Simon Burke",
@@ -55949,7 +56026,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-17",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:83d7ee2bcbaa244ada96",
@@ -56026,7 +56103,7 @@
         "Window Coverings",
         "Zigbee"
       ],
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "author": "Dan Danache (@dandanache)",
@@ -64345,7 +64422,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:068c42d708666e225b0e",
@@ -64434,7 +64511,7 @@
         "Notifications",
         "Tools & Utilities"
       ],
-      "version": "1.2.4"
+      "version": "1.2.5"
     },
     {
       "author": "Dan Ogorchock",
@@ -79886,6 +79963,107 @@
       "version": "1.0.0"
     },
     {
+      "author": "Heatvent",
+      "category": "Convenience",
+      "classification": "HPM_PACKAGE_AVAILABLE",
+      "dateReleased": "2026-11-22",
+      "definitions": [
+        {
+          "id": "definition:de16b83ebe578e41573f",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Relay Garage Door",
+          "namespace": "Heatvent",
+          "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Apps/Relay-Garage-Door/Relay-Garage-Door.groovy"
+        },
+        {
+          "id": "definition:67cc75059f47a9d528f5",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Relay Garage Door",
+          "namespace": "Heatvent",
+          "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door.groovy"
+        },
+        {
+          "id": "definition:87bb7808f88c78be7e8c",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "Relay Garage Door (No Battery)",
+          "namespace": "Heatvent",
+          "sourceUrl": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door-No-Battery.groovy"
+        }
+      ],
+      "description": "One garage door opener device from a Zooz ZEN16 relay and a tilt, wireless or wired door sensor: opening/closing states, optional fully-open sensor, warning buzzer or chime, battery, failure alerts, and a clean Home Assistant cover through Maker API.",
+      "evidence": [
+        {
+          "classification": "HPM_PACKAGE_AVAILABLE",
+          "label": "HPM metadata"
+        },
+        {
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
+        }
+      ],
+      "hasDocumentation": true,
+      "health": {
+        "checks": [
+          {
+            "name": "communityLink",
+            "status": "MISSING"
+          },
+          {
+            "name": "definitionIdentity",
+            "status": "MATCH"
+          },
+          {
+            "name": "documentationLink",
+            "status": "PRESENT"
+          },
+          {
+            "name": "httpsTransport",
+            "status": "PASS"
+          },
+          {
+            "name": "manifestFetch",
+            "status": "PASS"
+          },
+          {
+            "name": "sourceFetch",
+            "status": "PASS"
+          }
+        ],
+        "classification": "PASS"
+      },
+      "id": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
+      "links": {
+        "community": null,
+        "documentation": "https://github.com/heatvent/hubitat-drivers#relay-garage-door",
+        "manifest": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/packageManifest/relay-garage-door.json",
+        "repository": "https://github.com/heatvent/hubitat-drivers"
+      },
+      "name": "Relay Garage Door (Zooz ZEN16 + Tilt/Contact Sensor)",
+      "network": {
+        "classification": "INSUFFICIENT",
+        "declared": {
+          "cloudTag": false,
+          "lanTag": false
+        },
+        "externalHosts": [],
+        "reviewed": []
+      },
+      "recordType": "HPM_PACKAGE",
+      "tags": [
+        "Garage Doors",
+        "Relays",
+        "ZWave"
+      ],
+      "version": "1.2.1"
+    },
+    {
       "author": "Joel Wetzel",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -87821,7 +87999,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-20",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:2a261aa987abe9493331",
@@ -87898,7 +88076,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.19"
+      "version": "1.4.20"
     },
     {
       "author": "Chris Ogden",
@@ -89299,7 +89477,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:9364c9840d55948ebc42",
@@ -89404,7 +89582,7 @@
         "Valves",
         "Zigbee"
       ],
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "author": "Russ Vrolyk",
@@ -108651,7 +108829,7 @@
       "author": "hubitrep",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:bd6ed9983a290cba3ccb",
@@ -108744,7 +108922,7 @@
         "Temperature & Humidity",
         "Zigbee"
       ],
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     {
       "author": "Andrew Davison",
@@ -114319,7 +114497,7 @@
       "author": "Heatvent",
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-14",
+      "dateReleased": "2026-11-22",
       "definitions": [
         {
           "id": "definition:ebf38892aa8c59528e6d",
@@ -114396,7 +114574,7 @@
         "Safety & Security",
         "Tools & Utilities"
       ],
-      "version": "2.0.0"
+      "version": "2.2.1"
     },
     {
       "author": "Neil Jackson",
@@ -139610,5 +139788,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T10:55:07Z"
+  "snapshotGenerated": "2026-11-23T07:55:28Z"
 }

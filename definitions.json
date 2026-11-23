@@ -1,6 +1,6 @@
 {
   "dataset": "definitions",
-  "definitionCount": 2445,
+  "definitionCount": 2448,
   "definitions": [
     {
       "id": "definition:706834b0d3ee09dcb183",
@@ -2285,18 +2285,19 @@
       "observationCounts": {
         "CAPABILITY_REFERENCE": 1,
         "EVENT_SUBSCRIPTION": 3,
-        "HTTP_CALL": 4,
-        "NETWORK_URL_LITERAL": 7,
+        "HTTP_CALL": 6,
+        "NETWORK_URL_LITERAL": 9,
         "OAUTH_ACCESS_TOKEN": 2,
         "OAUTH_API_MAPPINGS": 1,
-        "SCHEDULING": 11
+        "OAUTH_ENABLED": 1,
+        "SCHEDULING": 17
       },
       "packageId": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
       "source": {
-        "bytes": 66223,
+        "bytes": 105624,
         "definitionLine": 9,
         "fetched": true,
-        "sha256": "e16db31645c0158da06560f4d3ff51aaa4ac0228cc4e8e3f7fe131814878aa41",
+        "sha256": "d1e4e27f6af4b49f086366143e37bdb8943d12def0b911765370d1e5dffa1b69",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/tests/AndroidTVRemoteTester.groovy"
       },
       "sourceIdentity": {
@@ -2314,14 +2315,14 @@
       "observationCounts": {
         "NETWORK_URL_LITERAL": 4,
         "RAW_SOCKET_INTERFACE": 8,
-        "SCHEDULING": 29
+        "SCHEDULING": 31
       },
       "packageId": "hpm:118e71c2-286f-418d-8966-45934dbd0584",
       "source": {
-        "bytes": 57481,
+        "bytes": 59700,
         "definitionLine": 13,
         "fetched": true,
-        "sha256": "f89b3560818d204071bd5c4bbcd3eaa7755b9430211ec5092f8f6bf10714a41c",
+        "sha256": "39d973bf35320e88a6574c4050dd98cfd7b6c6d8786575e26fe5d55ac30d4b91",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/androidtv/AndroidTVRemote.groovy"
       },
       "sourceIdentity": {
@@ -2340,14 +2341,14 @@
         "NETWORK_URL_LITERAL": 4,
         "SCHEDULING": 2,
         "SEND_HUB_COMMAND": 1,
-        "ZIGBEE_API_REFERENCE": 16
+        "ZIGBEE_API_REFERENCE": 17
       },
       "packageId": "hpm:11f6b093-755a-4dc0-92aa-557b2a5df37f",
       "source": {
-        "bytes": 29396,
+        "bytes": 30618,
         "definitionLine": 29,
         "fetched": true,
-        "sha256": "583ac3e6681af3b7eb5256b6ff8ff7abf28aea6e7096932fe3d1744f001ef58f",
+        "sha256": "5f4faa123003bb1a9edd94797e2d0bf6b8c41cfa308154e88a87e90285042037",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/XfinityContactSensor/XfinityContactSensor.groovy"
       },
       "sourceIdentity": {
@@ -8309,6 +8310,80 @@
       "sourceIdentity": {
         "name": "LED Mini-Dashboard Topic",
         "namespace": "nrgup"
+      }
+    },
+    {
+      "id": "definition:de16b83ebe578e41573f",
+      "kind": "APP",
+      "manifestIdentity": {
+        "name": "Relay Garage Door",
+        "namespace": "Heatvent"
+      },
+      "observationCounts": {
+        "CAPABILITY_REFERENCE": 6,
+        "CHILD_DEVICE_ACCESS": 1,
+        "CHILD_DEVICE_CREATE": 1,
+        "EVENT_SUBSCRIPTION": 5,
+        "NETWORK_URL_LITERAL": 3,
+        "SCHEDULING": 20
+      },
+      "packageId": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+      "source": {
+        "bytes": 26701,
+        "definitionLine": 47,
+        "fetched": true,
+        "sha256": "642c204c83c69bf9f51f4deb8b2311105e98d3d9917c309363fda2eb7814776e",
+        "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Apps/Relay-Garage-Door/Relay-Garage-Door.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Relay Garage Door",
+        "namespace": "Heatvent"
+      }
+    },
+    {
+      "id": "definition:67cc75059f47a9d528f5",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Relay Garage Door",
+        "namespace": "Heatvent"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+      "source": {
+        "bytes": 3523,
+        "definitionLine": 32,
+        "fetched": true,
+        "sha256": "b9b4959bebb3145c83a782c83ce3268df8e26e242d47f8dbd06760f417857df2",
+        "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Relay Garage Door",
+        "namespace": "Heatvent"
+      }
+    },
+    {
+      "id": "definition:87bb7808f88c78be7e8c",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Relay Garage Door (No Battery)",
+        "namespace": "Heatvent"
+      },
+      "observationCounts": {
+        "NETWORK_URL_LITERAL": 2
+      },
+      "packageId": "hpm:45ac9259-fab1-45fc-92b0-171d57aae533",
+      "source": {
+        "bytes": 3583,
+        "definitionLine": 32,
+        "fetched": true,
+        "sha256": "03350ff0ac6b1acc0c25faaec1c61493438d5e0394acab438f1d5771f34989f8",
+        "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Relay-Garage-Door/Relay-Garage-Door-No-Battery.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Relay Garage Door (No Battery)",
+        "namespace": "Heatvent"
       }
     },
     {
@@ -21183,10 +21258,10 @@
       },
       "packageId": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
       "source": {
-        "bytes": 43615,
+        "bytes": 43721,
         "definitionLine": 40,
         "fetched": true,
-        "sha256": "831c61ff55c1eb5ea5ba63b8e9f3ff026bc809a826c8de1f0750341843b68ccd",
+        "sha256": "74232ebe71c9aa63774f79cc2b67d596a08151ac6f00e5f346fa8f89c2e1947f",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/aqara/Aqara_WSDCGQ11LM.groovy"
       },
       "sourceIdentity": {
@@ -30003,16 +30078,16 @@
       },
       "observationCounts": {
         "NETWORK_URL_LITERAL": 3,
-        "SCHEDULING": 4,
+        "SCHEDULING": 6,
         "SEND_HUB_COMMAND": 1,
         "ZIGBEE_API_REFERENCE": 13
       },
       "packageId": "hpm:cf9f2ede-129b-471d-ba1d-ed3844b45be4",
       "source": {
-        "bytes": 20262,
+        "bytes": 20553,
         "definitionLine": 32,
         "fetched": true,
-        "sha256": "3378eb409bc896872149bdfc2889afb4ad630e8d7c28ab4e62d27d34a37a6ca2",
+        "sha256": "cc6cfb1564ad0863c226da96ecf30ad642082a60c829570084b8aa6f274dfafe",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/IKEA-Blinds/IKEA-Blinds.groovy"
       },
       "sourceIdentity": {
@@ -30555,16 +30630,16 @@
       "observationCounts": {
         "HUB_ACTION": 1,
         "NETWORK_URL_LITERAL": 2,
-        "SCHEDULING": 1,
+        "SCHEDULING": 5,
         "SEND_HUB_COMMAND": 2,
-        "ZWAVE_API_REFERENCE": 44
+        "ZWAVE_API_REFERENCE": 47
       },
       "packageId": "hpm:d477be3e-0f05-4ea8-840b-6891464671ed",
       "source": {
-        "bytes": 22130,
-        "definitionLine": 81,
+        "bytes": 30695,
+        "definitionLine": 107,
         "fetched": true,
-        "sha256": "93b19494a4018a56bce3b4e680c5b870a1512ab4404bfafbfe6264e6ba5e35ce",
+        "sha256": "e7ab63623988f10870ddf74a0485e0d3655d61547ebf5694785a1b3f8aee0a2c",
         "url": "https://raw.githubusercontent.com/heatvent/hubitat-drivers/main/Drivers/Zooz-ZSE50-Siren-Chime/Zooz-ZSE50-Siren-Chime.groovy"
       },
       "sourceIdentity": {
@@ -31980,10 +32055,10 @@
       },
       "packageId": "hpm:def8f260-cdb5-40c2-9226-000c38272e6a",
       "source": {
-        "bytes": 29533,
+        "bytes": 29628,
         "definitionLine": 73,
         "fetched": true,
-        "sha256": "d09d5b5436a34fbc65f41eeb23501bc0106ed7d4f82fc6d5757bbe77a9ececa9",
+        "sha256": "2d4590d12bfb5dcb534606c5e21670a65a7ef0e2b8f328428b412b8ea296f79a",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/LogMonitor/LogMonitorBridge.groovy"
       },
       "sourceIdentity": {
@@ -36054,16 +36129,16 @@
       },
       "observationCounts": {
         "NETWORK_URL_LITERAL": 6,
-        "SCHEDULING": 12,
+        "SCHEDULING": 14,
         "SEND_HUB_COMMAND": 1,
         "ZIGBEE_API_REFERENCE": 66
       },
       "packageId": "hpm:ff853417-274c-437b-90fd-c1169a92f43b",
       "source": {
-        "bytes": 47020,
+        "bytes": 47364,
         "definitionLine": 37,
         "fetched": true,
-        "sha256": "1f30781f240952c0548474caebd947b75548e2cc2578747f7287e7999d8a6e01",
+        "sha256": "b2129489e052e5d3a8cfc52384615c8e900dd276f5b818805333cef7c06ca035",
         "url": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/sinope/Sinope_TH13X0ZB.groovy"
       },
       "sourceIdentity": {
@@ -36637,30 +36712,6 @@
       }
     },
     {
-      "id": "definition:3dd52ca658c4f8b2fbcd",
-      "kind": "APP",
-      "manifestIdentity": {
-        "name": "Dreo Endpoint Probe",
-        "namespace": "classic-dave"
-      },
-      "observationCounts": {
-        "HTTP_CALL": 2,
-        "NETWORK_URL_LITERAL": 2
-      },
-      "packageId": "manifest:02c0627b6271b0d05383",
-      "source": {
-        "bytes": 17625,
-        "definitionLine": 32,
-        "fetched": true,
-        "sha256": "b6b8d3fba64d23d178408ecd6c6cee904bce474285e8f163fec95abd0cc31eea",
-        "url": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/apps/dreo_endpoint_probe.groovy"
-      },
-      "sourceIdentity": {
-        "name": "Dreo Endpoint Probe",
-        "namespace": "classic-dave"
-      }
-    },
-    {
       "id": "definition:63b0742e1a696656cb95",
       "kind": "APP",
       "manifestIdentity": {
@@ -36793,10 +36844,10 @@
       },
       "packageId": "manifest:02c0627b6271b0d05383",
       "source": {
-        "bytes": 19047,
+        "bytes": 19151,
         "definitionLine": 44,
         "fetched": true,
-        "sha256": "74496232fbc137b45d5c4f3a2b27ab8f320e34a8cc04b6fc3fa2ea2467fb0948",
+        "sha256": "02c31f6eb9a726de30dcff3e6944de4022980e9318f322fe43ff6deada9362ea",
         "url": "https://raw.githubusercontent.com/classic-dave/hubitat-dreo/0.4.0-beta/drivers/dreo_air_purifier.groovy"
       },
       "sourceIdentity": {
@@ -39759,6 +39810,32 @@
       "sourceIdentity": {
         "name": "Inverse Link Two Switches Child",
         "namespace": "jshimota"
+      }
+    },
+    {
+      "id": "definition:b5ad4f7304cf43eb5a8c",
+      "kind": "DRIVER",
+      "manifestIdentity": {
+        "name": "Ecovacs GOAT A3000 Mower WS",
+        "namespace": "kurtsanders"
+      },
+      "observationCounts": {
+        "HTTP_CALL": 1,
+        "NETWORK_URL_LITERAL": 2,
+        "SCHEDULING": 6,
+        "WEBSOCKET_INTERFACE": 5
+      },
+      "packageId": "manifest:2d2cb474b2d79e379d00",
+      "source": {
+        "bytes": 33966,
+        "definitionLine": 39,
+        "fetched": true,
+        "sha256": "82d6e6b6053a490ae0b0dc0dfe8cc383dbd2fadb15a8d9cf5b5817e6cbeee66f",
+        "url": "https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/drivers/Ecovacs_GOAT_A3000_Mower_WS.groovy"
+      },
+      "sourceIdentity": {
+        "name": "Ecovacs GOAT A3000 Mower WS",
+        "namespace": "kurtsanders"
       }
     },
     {
@@ -48173,14 +48250,14 @@
         "OAUTH_ACCESS_TOKEN": 7,
         "OAUTH_API_MAPPINGS": 1,
         "OAUTH_ENABLED": 1,
-        "SCHEDULING": 48
+        "SCHEDULING": 49
       },
       "packageId": "manifest:86b01a1f90e58a839a6f",
       "source": {
-        "bytes": 134071,
+        "bytes": 145972,
         "definitionLine": 19,
         "fetched": true,
-        "sha256": "4db4ce22e3405c0b376c468cfb3c550338e3caecb6c98bfac1457d6c3475f4a7",
+        "sha256": "d282b1d6084b67ea1d92796ae61e88fcb98ada6b63da4b15bfcc1cd49269efc6",
         "url": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
       },
       "sourceIdentity": {
@@ -61521,7 +61598,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-22T10:55:07Z",
+  "snapshotGenerated": "2026-11-23T07:55:28Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

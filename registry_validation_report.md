@@ -1,9 +1,9 @@
 # Registry validation report
 
-- Snapshot: `2026-11-22T10:55:07Z`
+- Snapshot: `2026-11-23T07:55:28Z`
 - HPM repositories in master list: **229**
 - Repositories fetched successfully: **228**
-- Packages indexed: **987**
+- Packages indexed: **989**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
 - Recorded fetch/parse errors: **13**
@@ -197,7 +197,7 @@ Maker API three-entry false-collision canary: **PASS** if neither `home-assistan
 
 ## G. Unrepresented packages
 
-Total packages not matched by any registry entry: **885**
+Total packages not matched by any registry entry: **887**
 
 Candidate subset below is limited to category `Integrations` or tags containing `LAN` or `Cloud`, as specified.
 
@@ -295,6 +295,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | Kurt Sanders (kurtsanders) | Daikin HVAC Split Manager | Integrations | Monitoring, Temperature & Humidity, Climate Control, Energy Monitoring, Integrations | https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json |
 | Kurt Sanders (kurtsanders) | Dywarmic Towel Warmer Integration | Integrations | Monitoring, Bathroom, Pools & Spas, Temperature & Humidity | https://raw.githubusercontent.com/KurtSanders/Hubitat-Dywarmic-Integration/refs/heads/main/packageManifest.json |
 | Kurt Sanders (kurtsanders) | EZsalt Tank Monitoring & Integration | Integrations | Monitoring, Misc. Devices | https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/EZSalt/packageManifest.json |
+| Kurt Sanders (kurtsanders) | Ecovacs GOAT A3000 Mower (Home Assistant WebSocket) | Integrations | LAN, Monitoring, Integrations, Appliances | https://raw.githubusercontent.com/kurtsanders/Hubitat-Ecovacs-GOAT-Mower/main/packageManifest.json |
 | Kurt Sanders (kurtsanders) | Hubitat on Apple Menubar | Integrations | Monitoring, Tools & Utilities | https://raw.githubusercontent.com/KurtSanders/Hubitat-Xbar/main/packageManifest.json |
 | Kurt Sanders (kurtsanders) | Weight Guru Bathroom Scale Integration | Integrations | Monitoring, Scales, Health & Fitness, Multi Sensors, Bathroom | https://raw.githubusercontent.com/KurtSanders/HubitatPackages/refs/heads/master/resources/apps/Weight-Guru/packageManifest.json |
 | LGKApps kahn@lgk.com lgkahn-hubitat | Advanced Zwave Dimmer Device Handler | Integrations | Lights & Switches | https://raw.githubusercontent.com/lgkahn/hubitat/master/AdvancedZwaveDimmerV2.json |
@@ -631,8 +632,8 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 | E. Schema defects | 0 |
 | F1. Duplicate identifiers | 0 |
 | F2. Genuine overlap pairs | 6 |
-| G. Unrepresented packages | 885 |
-| G candidate subset | 398 |
+| G. Unrepresented packages | 887 |
+| G candidate subset | 399 |
 
 ## H. Enrichment summary
 
@@ -642,13 +643,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2429 |
-| Source URLs fetched | 2419 |
+| Distinct source URLs | 2432 |
+| Source URLs fetched | 2422 |
 | Source URLs failed | 10 |
-| Components attempted | 2445 |
-| Components fetched | 2435 |
-| Literal definitions verified | 2424 |
-| Components with observations | 2290 |
+| Components attempted | 2448 |
+| Components fetched | 2438 |
+| Literal definitions verified | 2427 |
+| Components with observations | 2293 |
 
 ### Official Hubitat documentation pass
 
