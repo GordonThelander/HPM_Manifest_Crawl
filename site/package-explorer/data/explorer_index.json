@@ -22256,7 +22256,7 @@
       "author": "Kurt Sanders",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-6-19",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:352835a284ce77b3427d",
@@ -22265,6 +22265,14 @@
           "name": "Ambient Weather Station",
           "namespace": null,
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
+        },
+        {
+          "id": "definition:b60bc493032ef0a9923a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "Ambient Weather Station Child",
+          "namespace": null,
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station-child.src/ambient-weather-station-child.groovy"
         },
         {
           "id": "definition:513610936880bc3afd8a",
@@ -22353,7 +22361,6 @@
         "externalHosts": [
           "ambientweather.net",
           "api.ambientweather.net",
-          "api.pushover.net",
           "dashboard.ambientweather.net"
         ],
         "reviewed": [
@@ -22380,13 +22387,13 @@
         "Temperature & Humidity",
         "Weather"
       ],
-      "version": "6.7.7"
+      "version": "7.0.0"
     },
     {
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:ff53ebb255c590c70dcc",
@@ -22475,7 +22482,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.8.0"
+      "version": "0.9.0"
     },
     {
       "author": "Dominick Meglio & Eric Maycock",
@@ -27680,7 +27687,7 @@
       "author": "Kurt Sanders",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-05-26",
+      "dateReleased": "2026-11-24",
       "definitions": [
         {
           "id": "definition:ae03c9b93ba5adf683ea",
@@ -27776,7 +27783,7 @@
         "Temperature & Humidity",
         "Water"
       ],
-      "version": "2.2.0"
+      "version": "2.2.1"
     },
     {
       "author": "Brian Wilson",
@@ -45395,20 +45402,11 @@
       "version": "2.5"
     },
     {
-      "author": "HERMES Automation",
+      "author": null,
       "category": "Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-11",
-      "definitions": [
-        {
-          "id": "definition:b57ff303adc05c2315aa",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "HERMES Home Dispatch Solution",
-          "namespace": "hermes",
-          "sourceUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
-        }
-      ],
+      "dateReleased": null,
+      "definitions": [],
       "description": "Powered by Noonlight, HERMES enables your Hubitat hub to request emergency services and optionally share household details to improve response. Supported alarm types: Police (intrusion), Fire, Medical, Water, and Non-emergency. Optional information may include medical notes, pets, entry instructions, and sensor details.",
       "evidence": [
         {
@@ -45416,24 +45414,24 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
+          "classification": "MANIFEST_IDENTITY",
+          "label": "Manifest identity"
         }
       ],
-      "hasDocumentation": true,
+      "hasDocumentation": false,
       "health": {
         "checks": [
           {
             "name": "communityLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "definitionIdentity",
-            "status": "MATCH"
+            "status": "NOT_AVAILABLE"
           },
           {
             "name": "documentationLink",
-            "status": "PRESENT"
+            "status": "MISSING"
           },
           {
             "name": "httpsTransport",
@@ -45441,22 +45439,20 @@
           },
           {
             "name": "manifestFetch",
-            "status": "PASS"
+            "status": "FAIL"
           },
           {
             "name": "sourceFetch",
-            "status": "PASS"
+            "status": "NOT_APPLICABLE"
           }
         ],
-        "classification": "PASS"
+        "classification": "ATTENTION"
       },
       "id": "manifest:5656df40e4704e53829f",
-      "kinds": [
-        "APP"
-      ],
+      "kinds": [],
       "links": {
-        "community": "https://community.hubitat.com/",
-        "documentation": "https://hermes-automation.com/",
+        "community": null,
+        "documentation": null,
         "manifest": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json",
         "repository": null
       },
@@ -45467,11 +45463,7 @@
           "cloudTag": true,
           "lanTag": false
         },
-        "externalHosts": [
-          "api.hermes-automation.com",
-          "hermes-automation.com",
-          "www.youtube.com"
-        ],
+        "externalHosts": [],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -45483,7 +45475,7 @@
         "Notifications",
         "Safety & Security"
       ],
-      "version": "1.1.0"
+      "version": null
     },
     {
       "author": "Haven",
@@ -61933,7 +61925,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:19189e3cbf6a116276b0",
@@ -62015,7 +62007,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.11.0"
+      "version": "0.12.0"
     },
     {
       "author": "Sebastian YEPES FERNANDEZ",
@@ -77532,7 +77524,7 @@
       "author": "Gordon Thelander",
       "category": "Convenience",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-09-08",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:6a7d4dc0663ec49d4e6d",
@@ -77628,7 +77620,7 @@
         "Monitoring",
         "Presence & Location"
       ],
-      "version": "5.1.1"
+      "version": "5.1.2"
     },
     {
       "author": "Dominick Meglio",
@@ -80660,7 +80652,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:7511a88eb05ae261ab82",
@@ -80763,13 +80755,13 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.10.0"
+      "version": "0.11.0"
     },
     {
       "author": "jdthomas24",
       "category": "Safety & Security",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:eff50c9724d7ddc97d85",
@@ -80911,7 +80903,7 @@
         "Doorbell",
         "Safety & Security"
       ],
-      "version": "1.6.17"
+      "version": "1.6.18"
     },
     {
       "author": "Andrew Nunes",
@@ -88076,7 +88068,7 @@
         "Cloud",
         "Locks"
       ],
-      "version": "1.4.20"
+      "version": "1.4.21"
     },
     {
       "author": "Chris Ogden",
@@ -89855,7 +89847,7 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "definitions": [
         {
           "id": "definition:feb99bf856d5ce494322",
@@ -89941,7 +89933,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "author": "Brian Wilson",
@@ -139788,5 +139780,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-23T07:55:28Z"
+  "snapshotGenerated": "2026-11-24T10:09:50Z"
 }

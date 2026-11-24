@@ -1480,11 +1480,10 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [
           "ambientweather.net",
           "api.ambientweather.net",
-          "api.pushover.net",
           "dashboard.ambientweather.net"
         ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 4,
+        "sourceFilesAnalysed": 5,
         "urlLiteralCount": 14
       },
       "reviewed": [
@@ -1528,7 +1527,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 10
       },
       "reviewed": [
         {
@@ -8735,28 +8734,24 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "HERMES Automation",
+      "author": null,
       "category": "Security",
       "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/",
+      "communityUrl": null,
       "declared": {
         "cloudTag": true,
         "lanTag": false
       },
       "description": "Powered by Noonlight, HERMES enables your Hubitat hub to request emergency services and optionally share household details to improve response. Supported alarm types: Police (intrusion), Fire, Medical, Water, and Non-emergency. Optional information may include medical notes, pets, entry instructions, and sensor details.",
-      "documentationUrl": "https://hermes-automation.com/",
+      "documentationUrl": null,
       "id": "manifest:5656df40e4704e53829f",
       "manifestUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json",
       "name": "HERMES Home Dispatch Solution",
       "observed": {
-        "externalHosts": [
-          "api.hermes-automation.com",
-          "hermes-automation.com",
-          "www.youtube.com"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 11
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -19247,7 +19242,7 @@ window.NETWORK_EVIDENCE = {
         "externalHosts": [],
         "lanPrimitives": [],
         "sourceFilesAnalysed": 1,
-        "urlLiteralCount": 6
+        "urlLiteralCount": 3
       },
       "reviewed": [
         {
@@ -29819,5 +29814,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-23T07:55:28Z"
+  "snapshotGenerated": "2026-11-24T10:09:50Z"
 };

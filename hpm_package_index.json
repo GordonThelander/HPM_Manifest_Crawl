@@ -2,6 +2,11 @@
   "errors": [
     {
       "level": "manifest",
+      "reason": "HTTP 429",
+      "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json"
+    },
+    {
+      "level": "manifest",
       "reason": "JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182)",
       "url": "https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json"
     },
@@ -60549,12 +60554,12 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "description": "Light controls for Amcrest ASH26 outdoor security camera",
       "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/ASH26/README.md",
       "drivers": [
         {
-          "definitionLine": 37,
+          "definitionLine": 58,
           "definitionName": "Amcrest ASH26",
           "definitionNamespace": "dlaporte",
           "manifestName": "Amcrest ASH26",
@@ -60572,7 +60577,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 25,
+              "line": 29,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60582,7 +60587,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/device/Amcrest-ASH26.groovy\",",
-              "line": 41,
+              "line": 62,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -60592,31 +60597,75 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 81,
+              "line": 114,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
-              "line": 83,
+              "line": 116,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(2, \"connectStream\")",
+              "line": 140,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"unauthRequestHandler\", [uri: \"http://${ip}${uri}\", contentType: \"text/plain\", timeout: 10], [",
+              "line": 216,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"unauthRequestHandler\", [uri: \"http://${ip}${uri}\", contentType: \"text/plain\", timeout: 10], [",
+              "line": 216,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "asynchttpGet(\"unauthRequestHandler\", [uri: \"http://${ip}${uri}\", contentType: \"text/plain\", timeout: 10],",
+              "line": 238,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"unauthRequestHandler\", [uri: \"http://${ip}${uri}\", contentType: \"text/plain\", timeout: 10],",
+              "line": 238,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "runIn(60, \"connectStream\")",
+              "line": 255,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// 1. asynchttpGet(unauthRequestHandler, ...) — unauthenticated probe",
-              "line": 138,
+              "line": 269,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "// 2. unauthRequestHandler computes digest, asynchttpGet(authedRequestHandler)",
-              "line": 139,
+              "line": 270,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${uri}\",",
-              "line": 147,
+              "line": 278,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60626,13 +60675,13 @@
             },
             {
               "evidence": "asynchttpGet(\"unauthRequestHandler\", params, [",
-              "line": 151,
+              "line": 282,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${uri}\",",
-              "line": 160,
+              "line": 292,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60642,13 +60691,13 @@
             },
             {
               "evidence": "asynchttpGet(\"unauthRequestHandler\", params, userData)",
-              "line": 171,
+              "line": 303,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "uri: \"http://${ip}${data.uri}\",",
-              "line": 198,
+              "line": 330,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60658,14 +60707,58 @@
             },
             {
               "evidence": "asynchttpGet(\"authedRequestHandler\", params, data)",
-              "line": 203,
+              "line": 335,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
+            },
+            {
+              "evidence": "unschedule(\"motionHoldExpired\")",
+              "line": 458,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "else runIn(hold, \"motionHoldExpired\")",
+              "line": 476,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "asynchttpGet(\"streamProbeHandler\", [uri: \"http://${ip}${ATTACH_URI}\", contentType: \"text/plain\", timeout: 10], [:])",
+              "line": 503,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "asynchttpGet(\"streamProbeHandler\", [uri: \"http://${ip}${ATTACH_URI}\", contentType: \"text/plain\", timeout: 10], [:])",
+              "line": 503,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "interfaces.eventStream.connect(\"http://${ip}${ATTACH_URI}\", [headers: [Authorization: auth], rawData: true, readTimeout: 30])",
+              "line": 521,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "${ip",
+                "scheme": "http",
+                "url": "http://${ip"
+              }
+            },
+            {
+              "evidence": "runIn(delay, \"connectStream\")",
+              "line": 588,
+              "type": "SCHEDULING",
+              "value": true
             }
           ],
-          "sourceBytes": 17287,
+          "sourceBytes": 35417,
           "sourceFetched": true,
-          "sourceSha256": "138be4f81255622c2f735e62dc280300e93124b4233c8d69a295983309172f13",
+          "sourceSha256": "b445e3934a566a0afbdef3e5c552c1231981899a26747534e2c4b9d36bdc4c17",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/device/Amcrest-ASH26.groovy"
         }
       ],
@@ -60677,19 +60770,19 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.8.0"
+      "version": "0.9.0"
     },
     {
       "apps": [],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "description": "Control a rooted LG webOS TV running Glasshouse (power, volume, mute, input, picture mode, screen, apps, and remote keys) and show Hubitat notifications on screen",
       "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/LGglasshouse/README.md",
       "drivers": [
         {
-          "definitionLine": 50,
+          "definitionLine": 104,
           "definitionName": "LG TV (Glasshouse)",
           "definitionNamespace": "dlaporte",
           "manifestName": "LG TV (Glasshouse)",
@@ -60707,7 +60800,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 33,
+              "line": 40,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60717,7 +60810,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy\",",
-              "line": 54,
+              "line": 108,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -60727,55 +60820,73 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 542,
+              "line": 286,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
-              "line": 544,
+              "line": 289,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"dlaporte\", \"LG TV (Glasshouse) Notifier\", dni,",
-              "line": 578,
+              "line": 323,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"refresh\")",
-              "line": 627,
+              "line": 372,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(\"refresh\")",
-              "line": 630,
+              "line": 375,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(\"refresh\")",
-              "line": 633,
+              "line": 378,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(\"refresh\")",
-              "line": 636,
+              "line": 381,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */${n} * * * ?\", \"refresh\")",
-              "line": 640,
+              "line": 385,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"powerPoll\")",
+              "line": 445,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(15, \"powerPoll\")",
+              "line": 455,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(\"powerPoll\")",
+              "line": 463,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "return \"http://${ip}:${port}${path}\"",
-              "line": 959,
+              "line": 703,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${ip",
@@ -60785,48 +60896,54 @@
             },
             {
               "evidence": "asynchttpGet(callback, params, [path: path])",
-              "line": 993,
+              "line": 737,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "asynchttpPost(\"controlCallback\", params, data)",
-              "line": 1017,
+              "line": 762,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
-              "evidence": "runIn(2, \"refresh\")",
-              "line": 1053,
+              "evidence": "runIn(2, \"refreshAfterCommand\")",
+              "line": 827,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(45, \"confirmAfterCommand\")",
+              "line": 828,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(",
-              "line": 1507,
+              "line": 1424,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubAction(",
-              "line": 1507,
+              "line": 1424,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "hubitat.device.Protocol.LAN,",
-              "line": 1509,
+              "line": 1426,
               "type": "LAN_PROTOCOL",
               "value": "Protocol.LAN"
             }
           ],
-          "sourceBytes": 67587,
+          "sourceBytes": 64292,
           "sourceFetched": true,
-          "sourceSha256": "e4c01030b29e5e0937d0e5c94fed3574db8d621c2d1ef71eaaf026d87c0f9e24",
+          "sourceSha256": "ca4b5d8dbf42ad410bb9b61d7a72860272e808bb0cb4e04ac116d56d9b9e7d73",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse.groovy"
         },
         {
-          "definitionLine": 31,
+          "definitionLine": 32,
           "definitionName": "LG TV (Glasshouse) Notifier",
           "definitionNamespace": "dlaporte",
           "manifestName": "LG TV (Glasshouse) Notifier",
@@ -60844,7 +60961,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 17,
+              "line": 18,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -60854,7 +60971,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse-Notifier.groovy\"",
-              "line": 35,
+              "line": 36,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -60863,9 +60980,9 @@
               }
             }
           ],
-          "sourceBytes": 2161,
+          "sourceBytes": 2236,
           "sourceFetched": true,
-          "sourceSha256": "0ae46461a742173ef2030e54185c77746b694b0401014bdba7845ef12223f06a",
+          "sourceSha256": "9663fe715a917e75fb34424b807ac3cc9e15d4789ef5fe76b6d424c42ea1a411",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/LGglasshouse/device/LGTV-Glasshouse-Notifier.groovy"
         }
       ],
@@ -60877,7 +60994,7 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.11.0"
+      "version": "0.12.0"
     },
     {
       "apps": [],
@@ -61121,12 +61238,12 @@
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "description": "Control floodlight, motion/AI detection, microphone, status LED, and view RTSP / snapshot URLs for Reolink WhiteLed cameras (Elite Pro Floodlight PoE, Elite Floodlight WiFi, Duo 3 PoE, etc.)",
       "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/ReolinkFloodlight/README.md",
       "drivers": [
         {
-          "definitionLine": 63,
+          "definitionLine": 69,
           "definitionName": "Reolink Floodlight Camera",
           "definitionNamespace": "dlaporte",
           "manifestName": "Reolink Floodlight Camera",
@@ -61144,7 +61261,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 44,
+              "line": 49,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -61154,7 +61271,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/device/Reolink-Floodlight.groovy\",",
-              "line": 67,
+              "line": 73,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -61164,116 +61281,86 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 157,
+              "line": 169,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
-              "line": 159,
+              "line": 171,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "String snap = \"http://${ip}/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=hubitat\" +",
-              "line": 182,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${ip",
-                "scheme": "http",
-                "url": "http://${ip"
-              }
-            },
-            {
               "evidence": "runEvery30Minutes(\"scheduledRefresh\")",
-              "line": 189,
+              "line": 201,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"pollStatus\")",
-              "line": 191,
+              "line": 203,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 200,
+              "line": 212,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keepAlive\")",
-              "line": 221,
+              "line": 233,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(120, \"keepAlive\")",
-              "line": 271,
+              "line": 283,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keepAlive\")",
-              "line": 276,
+              "line": 288,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(120, \"keepAlive\")",
-              "line": 277,
+              "line": 289,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"keepAlive\")",
-              "line": 321,
+              "line": 333,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"pollStatus\")",
-              "line": 582,
+              "line": 622,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "uri: \"http://${ip}/cgi-bin/api.cgi?cmd=${firstCmd}&token=${state.token}\",",
-              "line": 646,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${ip",
-                "scheme": "http",
-                "url": "http://${ip"
-              }
-            },
-            {
               "evidence": "asynchttpPost(\"sendCmdResponseHandler\", params, [",
-              "line": 654,
+              "line": 705,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
-              "evidence": "uri: \"http://${ip}/cgi-bin/api.cgi?cmd=Login\",",
-              "line": 686,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${ip",
-                "scheme": "http",
-                "url": "http://${ip"
-              }
-            },
-            {
               "evidence": "asynchttpPost(\"loginResponseHandler\", params, [",
-              "line": 692,
+              "line": 743,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             }
           ],
-          "sourceBytes": 39219,
+          "sourceBytes": 42367,
           "sourceFetched": true,
-          "sourceSha256": "91602da1797fbc0d76726c42d4c5d7fcc9ef0a01b8194c7f152cb0b2c824aab0",
+          "sourceSha256": "8a320c80c79008c972e58a25653927cc23d40ef107de7729fa03a43564209265",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/ReolinkFloodlight/device/Reolink-Floodlight.groovy"
         }
       ],
@@ -61285,12 +61372,12 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.10.0"
+      "version": "0.11.0"
     },
     {
       "apps": [
         {
-          "definitionLine": 46,
+          "definitionLine": 49,
           "definitionName": "Smart Oil Gauge (Connect)",
           "definitionNamespace": "dlaporte",
           "manifestName": "Smart Oil Gauge (Connect)",
@@ -61318,7 +61405,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 34,
+              "line": 36,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -61328,7 +61415,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy\",",
-              "line": 51,
+              "line": 54,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -61338,7 +61425,7 @@
             },
             {
               "evidence": "iconUrl: \"https://github.com/dlaporte/Hubitat/raw/main/SmartOilGauge/images/tank-3.png\",",
-              "line": 53,
+              "line": 56,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61348,7 +61435,7 @@
             },
             {
               "evidence": "iconX2Url: \"https://github.com/dlaporte/Hubitat/raw/main/SmartOilGauge/images/tank-3.png\",",
-              "line": 54,
+              "line": 57,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61358,19 +61445,19 @@
             },
             {
               "evidence": "oauth: true",
-              "line": 56,
+              "line": 59,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 65,
+              "line": 68,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "private static String DROPLET_API() { \"https://api.dropletfuel.com\" }",
-              "line": 70,
+              "line": 73,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.dropletfuel.com",
@@ -61380,7 +61467,7 @@
             },
             {
               "evidence": "return [\"User-Agent\": \"Hubitat SmartOilGauge driver/${appVersion()} (+https://github.com/dlaporte/Hubitat)\"]",
-              "line": 77,
+              "line": 80,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -61390,67 +61477,79 @@
             },
             {
               "evidence": "unschedule()",
-              "line": 98,
+              "line": 101,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (settings.logEnable) runIn(1800, \"logsOff\")",
-              "line": 100,
+              "line": 103,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"updated\", [overwrite: true])",
-              "line": 115,
+              "line": 118,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(\"dlaporte\", CHILD_NAME(), dni, [name: label, label: label])",
-              "line": 135,
+              "line": 138,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "if (!state.access_token) { try { state.access_token = createAccessToken() } catch (Exception e) { /* OAuth not enabled */ } }",
-              "line": 144,
+              "line": 147,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "try { state.access_token = createAccessToken() } catch (Exception e) { log.error \"Could not regenerate access token: ${e.message}\" }",
-              "line": 206,
+              "line": 209,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
-              "evidence": "httpPost(params) { resp ->",
-              "line": 244,
-              "type": "HTTP_CALL",
-              "value": "httpPost"
-            },
-            {
-              "evidence": "httpPost(params) { resp ->",
+              "evidence": "httpPost(dropletRequest(\"/brand_token.php\", tokenForm())) { resp ->",
               "line": 287,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
+              "evidence": "httpPost(dropletRequest(\"/auto/get_tank_data.php\", tankDataForm())) { resp ->",
+              "line": 318,
+              "type": "HTTP_CALL",
+              "value": "httpPost"
+            },
+            {
+              "evidence": "else asynchttpPost(\"tokenCallback\", backgroundRequest(\"/brand_token.php\", tokenForm()))",
+              "line": 356,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
+              "evidence": "asynchttpPost(\"tankDataCallback\", backgroundRequest(\"/auto/get_tank_data.php\", tankDataForm()))",
+              "line": 360,
+              "type": "HTTP_CALL",
+              "value": "asynchttpPost"
+            },
+            {
               "evidence": "// pipeline triggered off subscribe(d, \"energy\", ...); now a direct call",
-              "line": 472,
+              "line": 589,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "def allDevices = theDev ? [theDev] : app.getChildDevices(true).sort { it?.getLabel() }",
-              "line": 504,
+              "line": 621,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return \"\"\"<svg width=\"140\" height=\"170\" viewBox=\"0 0 100 150\" xmlns=\"http://www.w3.org/2000/svg\">",
-              "line": 622,
+              "line": 741,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.w3.org",
@@ -61459,21 +61558,21 @@
               }
             }
           ],
-          "sourceBytes": 31215,
+          "sourceBytes": 35231,
           "sourceFetched": true,
-          "sourceSha256": "4d686b554d92ec03f536c49353988d6c1ede3c4316a9f9f5b4008a32dc9f50cc",
+          "sourceSha256": "b0f10199dab4cbc0ea4764825de8fc497c40c17c306b7d8b92daf5ef20efab7b",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/app/smartoilgauge.groovy"
         }
       ],
       "author": "David LaPorte",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/smart-oil-gauge-app-and-device/63078",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-23",
       "description": "Monitor the Smart Oil Gauge (https://www.smartoilgauge.com)",
       "documentationLink": "https://github.com/dlaporte/Hubitat/blob/main/SmartOilGauge/README.md",
       "drivers": [
         {
-          "definitionLine": 29,
+          "definitionLine": 30,
           "definitionName": "Smart Oil Gauge",
           "definitionNamespace": "dlaporte",
           "manifestName": "Smart Oil Gauge",
@@ -61491,7 +61590,7 @@
             },
             {
               "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 17,
+              "line": 18,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -61501,7 +61600,7 @@
             },
             {
               "evidence": "importUrl: \"https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy\"",
-              "line": 33,
+              "line": 34,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -61510,9 +61609,9 @@
               }
             }
           ],
-          "sourceBytes": 3070,
+          "sourceBytes": 3247,
           "sourceFetched": true,
-          "sourceSha256": "6527368594e0db3900ebb54e2cbcead58754a994c75019efe2b7f453780ef94c",
+          "sourceSha256": "94892c8a91ef326599102fe999d93b6d6f8976bdfc31706641450272a155e40a",
           "sourceUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/SmartOilGauge/device/smartoilgauge.groovy"
         }
       ],
@@ -61524,7 +61623,7 @@
       "repoName": "David LaPorte",
       "repoUrl": "https://raw.githubusercontent.com/dlaporte/Hubitat/main/repository.json",
       "tags": [],
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "apps": [],
@@ -72522,373 +72621,373 @@
             },
             {
               "evidence": "input \"houseEvidenceSwitches\", \"capability.switch\",",
-              "line": 458,
+              "line": 461,
               "type": "CAPABILITY_REFERENCE",
               "value": "switch"
             },
             {
               "evidence": "input presenceSetting, \"capability.presenceSensor\",",
-              "line": 642,
+              "line": 645,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "if (debugLogging) runIn(1800, \"disableDebugLogging\", [overwrite: true])",
-              "line": 715,
+              "line": 718,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"runPingChecks\", [overwrite: true])",
-              "line": 726,
+              "line": 729,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"expireGuestMode\", [overwrite: true])",
-              "line": 735,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(4, \"evaluateFromSchedule\", [overwrite: true])",
               "line": 738,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(4, \"evaluateFromSchedule\", [overwrite: true])",
+              "line": 741,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "subscribe(dev, \"presence\", genericEvidenceHandler)",
-              "line": 749,
+              "line": 752,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(dev, \"switch\", genericEvidenceHandler)",
-              "line": 754,
+              "line": 757,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(gm, \"switch\", guestModeSwitchHandler)",
-              "line": 762,
+              "line": 765,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "runIn(1, \"postMasterPresenceStatusSetup\", [overwrite: true])",
-              "line": 782,
+              "line": 785,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 794,
+              "line": 797,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(target, \"switch\", outputDeviceSwitchHandler)",
-              "line": 875,
+              "line": 878,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(target, \"presence\", outputDevicePresenceHandler)",
-              "line": 880,
+              "line": 883,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "unschedule(\"expireGuestMode\")",
-              "line": 934,
+              "line": 937,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"expireGuestMode\", [overwrite: true])",
-              "line": 945,
+              "line": 948,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// runEvery5Minutes() registers a persistent recurring job at the platform level",
-              "line": 968,
+              "line": 971,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(\"evaluateEvidenceWatchdog\")",
-              "line": 984,
+              "line": 987,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// expireGuestMode() via a single unprotected runIn (startGuestMode(),",
-              "line": 1000,
+              "line": 1003,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"pendingTransitionWatchdog\", [overwrite: true])",
-              "line": 1064,
+              "line": 1067,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (pending == \"occupied\") runIn(seconds, \"setOccupiedScheduled\", [overwrite: true])",
-              "line": 1069,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "else runIn(seconds, \"setEmptyScheduled\", [overwrite: true])",
-              "line": 1070,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(seconds + 5, \"pendingTransitionWatchdog\", [overwrite: true])",
               "line": 1072,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "else runIn(seconds, \"setEmptyScheduled\", [overwrite: true])",
+              "line": 1073,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(seconds + 5, \"pendingTransitionWatchdog\", [overwrite: true])",
+              "line": 1075,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(seconds, \"runPingChecks\", [overwrite: true])",
-              "line": 1216,
+              "line": 1219,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1234,
+              "line": 1237,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1235,
+              "line": 1238,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1244,
+              "line": 1247,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1251,
+              "line": 1254,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1252,
+              "line": 1255,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1267,
+              "line": 1270,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1268,
+              "line": 1271,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1279,
+              "line": 1282,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1283,
+              "line": 1286,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1284,
+              "line": 1287,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1457,
+              "line": 1460,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1458,
+              "line": 1461,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"setOccupiedScheduled\", [overwrite: true])",
-              "line": 1483,
+              "line": 1486,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay + 5, \"pendingTransitionWatchdog\", [overwrite: true])",
-              "line": 1484,
+              "line": 1487,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1492,
+              "line": 1495,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1493,
+              "line": 1496,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"setEmptyScheduled\", [overwrite: true])",
-              "line": 1518,
+              "line": 1521,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay + 5, \"pendingTransitionWatchdog\", [overwrite: true])",
-              "line": 1519,
+              "line": 1522,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1564,
+              "line": 1567,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1565,
+              "line": 1568,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1599,
+              "line": 1602,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"pendingTransitionWatchdog\")",
-              "line": 1600,
+              "line": 1603,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1665,
+              "line": 1668,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1666,
+              "line": 1669,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1675,
+              "line": 1678,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1676,
+              "line": 1679,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setOccupiedScheduled\")",
-              "line": 1693,
+              "line": 1696,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"setEmptyScheduled\")",
-              "line": 1694,
+              "line": 1697,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(seconds, \"expireGuestMode\", [overwrite: true])",
-              "line": 1727,
+              "line": 1730,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"expireGuestMode\")",
-              "line": 1738,
+              "line": 1741,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(",
-              "line": 1782,
+              "line": 1785,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "child = addChildDevice(",
-              "line": 1885,
+              "line": 1888,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(2, \"runPendingPersonIpTest\", [overwrite: true])",
-              "line": 1973,
+              "line": 1976,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (idValue) app.updateSetting(\"presenceDevices${toIndex}\", [type: \"capability.presenceSensor\", value: idValue])",
-              "line": 2149,
+              "line": 2152,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "try { app.updateSetting(\"presenceDevices${index}\", [type: \"capability.presenceSensor\", value: null]) } catch (Throwable ignored2) { }",
-              "line": 2188,
+              "line": 2191,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "if (idValue) app.updateSetting(\"editPresenceDevices${index}\", [type: \"capability.presenceSensor\", value: idValue])",
-              "line": 2296,
+              "line": 2299,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "if (idValue) app.updateSetting(\"presenceDevices${index}\", [type: \"capability.presenceSensor\", value: idValue])",
-              "line": 2311,
+              "line": 2314,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "try { app.updateSetting(\"editPresenceDevices${index}\", [type: \"capability.presenceSensor\", value: null]) } catch (Throwable ignored2) { }",
-              "line": 2328,
+              "line": 2331,
               "type": "CAPABILITY_REFERENCE",
               "value": "presenceSensor"
             },
             {
               "evidence": "uri: \"https://nominatim.openstreetmap.org/reverse\",",
-              "line": 2609,
+              "line": 2612,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "nominatim.openstreetmap.org",
@@ -72898,27 +72997,27 @@
             },
             {
               "evidence": "asynchttpGet(\"handleApproximateAddressResponse\", params)",
-              "line": 2617,
+              "line": 2620,
               "type": "HTTP_CALL",
               "value": "asynchttpGet"
             },
             {
               "evidence": "runIn(1, \"evaluateFromSchedule\", [overwrite: true])",
-              "line": 3678,
+              "line": 3681,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 172814,
+          "sourceBytes": 173082,
           "sourceFetched": true,
-          "sourceSha256": "04c8866ea65c301e044c73c806cbefa7ceaeb34c6b7e73d13148cf683107a550",
+          "sourceSha256": "41caa28b1872ce5e3528b1e25a6176f2bf6ca874f23e6af9fc5e09bc9a1c27a4",
           "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/apps/Presence_Manager.groovy"
         }
       ],
       "author": "Gordon Thelander",
       "category": "Convenience",
       "communityLink": "https://community.hubitat.com/",
-      "dateReleased": "2026-09-08",
+      "dateReleased": "2026-11-23",
       "description": "Combines your phones' Hubitat mobile app presence, an optional network check per person, and optional Google Home or SmartThings input into one reliable Home/Away status for the household. Built so that one signal briefly dropping out does not make your automations behave as though everyone had left. Tracks up to 10 people, covers visitors with Guest Mode, and keeps 90 days of hours-at-home history per person with CSV export.",
       "documentationLink": "https://github.com/GordonThelander/hubitat-Presence-Manager",
       "drivers": [
@@ -72931,7 +73030,7 @@
           "observations": [],
           "sourceBytes": 3993,
           "sourceFetched": true,
-          "sourceSha256": "ff54d89ce130345b73b625e435ff6556b2b63dc796725f5e9b753db50a069b3f",
+          "sourceSha256": "e4fe7af6bc005117dc23e2aa19e176bc1e515e33eec21aa80faf4b9f8363c51d",
           "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/drivers/Presence_Manager_Output.groovy"
         },
         {
@@ -72943,7 +73042,7 @@
           "observations": [],
           "sourceBytes": 1369,
           "sourceFetched": true,
-          "sourceSha256": "504b84c85adbffb1b7d2bd43361ff1f787b8f85f83bcff959f44a8f73f8b3d44",
+          "sourceSha256": "603c2034dbbf45acd0c2fc36e83da63c6d954ed109db7bcb624d81a13cd9127e",
           "sourceUrl": "https://raw.githubusercontent.com/GordonThelander/hubitat-Presence-Manager/main/drivers/Presence_Manager_Guest_Mode_Switch.groovy"
         }
       ],
@@ -72958,7 +73057,7 @@
         "Presence & Location",
         "Monitoring"
       ],
-      "version": "5.1.1"
+      "version": "5.1.2"
     },
     {
       "apps": [],
@@ -73217,457 +73316,15 @@
       "version": "1.0.3"
     },
     {
-      "apps": [
-        {
-          "definitionLine": 36,
-          "definitionName": "HERMES Home Dispatch Solution",
-          "definitionNamespace": "hermes",
-          "manifestName": "HERMES Home Dispatch Solution",
-          "manifestNamespace": "hermes",
-          "observations": [
-            {
-              "evidence": "* https://hermes-automation.com/app-code/home-dispatch/LICENSE.txt",
-              "line": 24,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "hermes-automation.com",
-                "scheme": "https",
-                "url": "https://hermes-automation.com/app-code/home-dispatch/LICENSE.txt"
-              }
-            },
-            {
-              "evidence": "documentationLink: \"https://hermes-automation.com/\",",
-              "line": 41,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "hermes-automation.com",
-                "scheme": "https",
-                "url": "https://hermes-automation.com/"
-              }
-            },
-            {
-              "evidence": "importUrl: \"https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy\",",
-              "line": 44,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "hermes-automation.com",
-                "scheme": "https",
-                "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
-              }
-            },
-            {
-              "evidence": "videoLink: \"https://www.youtube.com/@HERMES-Automation\",",
-              "line": 45,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.youtube.com",
-                "scheme": "https",
-                "url": "https://www.youtube.com/@HERMES-Automation"
-              }
-            },
-            {
-              "evidence": "@Field static final String HERMES_API_BASE = \"https://api.hermes-automation.com/v1.x.x\"",
-              "line": 58,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.hermes-automation.com",
-                "scheme": "https",
-                "url": "https://api.hermes-automation.com/v1.x.x"
-              }
-            },
-            {
-              "evidence": "@Field static final String IMPORT_URI = \"https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy\"",
-              "line": 59,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "hermes-automation.com",
-                "scheme": "https",
-                "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
-              }
-            },
-            {
-              "evidence": "input \"policeTriggerSwitch\", \"capability.switch\", title: \"Police Trigger Switch\", multiple: true, required: false, submitOnChange: true",
-              "line": 246,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"silentAlarmSwitch\", \"capability.switch\", title: \"Silent Alarm Switch\", multiple: false, required: false, submitOnChange: true",
-              "line": 261,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"fireTriggerSwitch\", \"capability.switch\", title: \"Fire Trigger\", multiple: true, required: false, submitOnChange: true",
-              "line": 284,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"emsTriggerSwitch\", \"capability.switch\", title: \"EMS Trigger\", multiple: true, required: false, submitOnChange: true",
-              "line": 308,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"otherTriggerSwitch\", \"capability.switch\", title: \"Other Triggers\", multiple: true, submitOnChange: true",
-              "line": 337,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"sharedContactSensors\", \"capability.contactSensor\", title: \"Contact Sensors (Doors, Windows, etc.)\", multiple: true, required: false, submitOnChange: true",
-              "line": 409,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "contactSensor"
-            },
-            {
-              "evidence": "input \"sharedLocks\", \"capability.lock\", title: \"Locks\", multiple: true, required: false, submitOnChange: true",
-              "line": 410,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "lock"
-            },
-            {
-              "evidence": "input \"sharedPresence\", \"capability.presenceSensor\", title: \"Presence Sensor (Phone, etc.)\", multiple: true, required: false, submitOnChange: true",
-              "line": 412,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "presenceSensor"
-            },
-            {
-              "evidence": "input \"sharedMotionSensors\", \"capability.motionSensor\", title: \"Motion Sensors\", multiple: true, required: false, submitOnChange: true",
-              "line": 414,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "motionSensor"
-            },
-            {
-              "evidence": "input \"sharedSoundSensors\", \"capability.soundSensor\", title: \"Sound Sensors\", multiple: true, required: false, submitOnChange: true",
-              "line": 415,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "soundSensor"
-            },
-            {
-              "evidence": "input \"sharedTempSensors\", \"capability.temperatureMeasurement\", title: \"Temperature Sensors\", multiple: true, required: false, submitOnChange: true",
-              "line": 417,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "temperatureMeasurement"
-            },
-            {
-              "evidence": "input \"sharedSmokeDetectors\", \"capability.smokeDetector\", title: \"Smoke Detectors\", multiple: true, required: false, submitOnChange: true",
-              "line": 418,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "smokeDetector"
-            },
-            {
-              "evidence": "input \"sharedCoDetectors\", \"capability.carbonMonoxideDetector\", title: \"Carbon Monoxide Detectors\", multiple: true, required: false, submitOnChange: true",
-              "line": 419,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "carbonMonoxideDetector"
-            },
-            {
-              "evidence": "input \"sharedCo2Sensors\", \"capability.carbonDioxideMeasurement\", title: \"Carbon Dioxide Measurement Sensor\", multiple: true, required: false, submitOnChange: true",
-              "line": 420,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "carbonDioxideMeasurement"
-            },
-            {
-              "evidence": "input \"sharedGasDetectorDetectors\", \"capability.gasDetector\", title: \"Gas Detectors\", multiple: true, required: false, submitOnChange: true",
-              "line": 421,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "gasDetector"
-            },
-            {
-              "evidence": "input \"sharedWaterSensors\", \"capability.waterSensor\", title: \"Water Sensors\", multiple: true, required: false, submitOnChange: true",
-              "line": 423,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "waterSensor"
-            },
-            {
-              "evidence": "input \"autoSiren\", \"capability.alarm\", title: \"Sirens\", multiple: true, submitOnChange: true, defaultValue: false",
-              "line": 458,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "alarm"
-            },
-            {
-              "evidence": "input \"chimes\", \"capability.chime\", title: \"Chimes\", multiple: true, submitOnChange: true, defaultValue: false",
-              "line": 467,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "chime"
-            },
-            {
-              "evidence": "input \"autoChimeSensors\", \"capability.contactSensor\", title: \"Contact Sensors (Doors, Windows, etc.)\", multiple: true, required: false, submitOnChange: true",
-              "line": 474,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "contactSensor"
-            },
-            {
-              "evidence": "input \"autoOffSwitches\", \"capability.switch\", title: \"Switches to auto-reset\", multiple: true, submitOnChange: true, required: false",
-              "line": 481,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input \"autoLocks\", \"capability.lock\", title: \"Doors to auto-lock\", multiple: true, submitOnChange: true, required: false",
-              "line": 490,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "lock"
-            },
-            {
-              "evidence": "input \"autoAwayPresenceSensors\", \"capability.presenceSensor\", title: \"Presence sensors to trigger auto-Away\", multiple: true, submitOnChange: true, required: false",
-              "line": 499,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "presenceSensor"
-            },
-            {
-              "evidence": "input \"autoSleepPresenceSensors\", \"capability.presenceSensor\", title: \"Presence sensors to allow auto-Night\", multiple: true, submitOnChange: true, required: false",
-              "line": 504,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "presenceSensor"
-            },
-            {
-              "evidence": "input \"delaySmokeDetectors\", \"capability.smokeDetector\", title: \"Smoke detectors to delay\", multiple: true, submitOnChange: true, required: false",
-              "line": 513,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "smokeDetector"
-            },
-            {
-              "evidence": "input \"batteryNotifications\", \"capability.battery\", title: \"Sensors with batteries\", multiple: true, submitOnChange: true, required: false",
-              "line": 526,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "battery"
-            },
-            {
-              "evidence": "httpGet([uri: \"http://${hubIp}:8080/hub/cloud/checkForUpdate\", followRedirects: false, headers: [:]]) {securityCheckResp ->",
-              "line": 847,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri: \"http://${hubIp}:8080/hub/cloud/checkForUpdate\", followRedirects: false, headers: [:]]) {securityCheckResp ->",
-              "line": 847,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${hubip",
-                "scheme": "http",
-                "url": "http://${hubIp"
-              }
-            },
-            {
-              "evidence": "httpGet([uri: \"http://${hubIp}:8080/hub/cloud/checkForUpdate\", followRedirects: false, headers:[\"Cookie\": cookie]]) {securityRecheckResp ->",
-              "line": 866,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri: \"http://${hubIp}:8080/hub/cloud/checkForUpdate\", followRedirects: false, headers:[\"Cookie\": cookie]]) {securityRecheckResp ->",
-              "line": 866,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${hubip",
-                "scheme": "http",
-                "url": "http://${hubIp"
-              }
-            },
-            {
-              "evidence": "input \"pushNotificationDevices\", \"capability.notification\", title: \"Devices for Push Notifications\", multiple: true, required: false, submitOnChange: true",
-              "line": 975,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "notification"
-            },
-            {
-              "evidence": "if (logDebugEnable == true) {runIn(7200,\"autoOffDebugLogs\",[overwrite: true])}",
-              "line": 996,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if (logTraceEnable == true) {runIn(7200,\"autoOffTraceLogs\",[overwrite: true])}",
-              "line": 997,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "uri: \"http://${hubIp}:8080\",",
-              "line": 1459,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${hubip",
-                "scheme": "http",
-                "url": "http://${hubIp"
-              }
-            },
-            {
-              "evidence": "httpGet(params) { resp ->",
-              "line": 1472,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet(params) { resp ->",
-              "line": 1497,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "uri: \"http://${hubIp}:8080\",",
-              "line": 1519,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${hubip",
-                "scheme": "http",
-                "url": "http://${hubIp"
-              }
-            },
-            {
-              "evidence": "httpPost(params) { resp -> }",
-              "line": 1534,
-              "type": "HTTP_CALL",
-              "value": "httpPost"
-            },
-            {
-              "evidence": "httpPost(",
-              "line": 1555,
-              "type": "HTTP_CALL",
-              "value": "httpPost"
-            },
-            {
-              "evidence": "uri: \"http://${hubIp}:8080\",",
-              "line": 1557,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "${hubip",
-                "scheme": "http",
-                "url": "http://${hubIp"
-              }
-            },
-            {
-              "evidence": "runIn(delay, \"sendRecentEvents\",[overwrite: true])",
-              "line": 1726,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"checkAlarmStatus\")",
-              "line": 1733,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"attemptDisarm\")",
-              "line": 1848,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"sendRecentEvents\")",
-              "line": 1849,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"createAlarmRunInWrapper\")",
-              "line": 1850,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(checkVersionAndSubscription)",
-              "line": 1871,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "schedule(formattedAutoCheck, checkVersionAndSubscription)",
-              "line": 1940,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (location, \"hsmAlert\", \"hsmAlertHandler\", [filterEvents: true])",
-              "line": 1957,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (policeTriggerSwitch, \"switch.on\", \"createPoliceAlarmRunInWrapper\", [filterEvents: true])",
-              "line": 1959,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (silentAlarmSwitch, \"switch.on\", \"createSilentPoliceAlarmRunInWrapper\", [filterEvents: true])",
-              "line": 1960,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (fireTriggerSwitch, \"switch.on\", \"createFireAlarmRunInWrapper\", [filterEvents: true])",
-              "line": 1961,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (emsTriggerSwitch, \"switch.on\", \"createMedicalAlarmRunInWrapper\", [filterEvents: true])",
-              "line": 1962,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "subscribe (otherTriggerSwitch, \"switch.on\", \"createOtherAlarmRunInWrapper\", [filterEvents: true])",
-              "line": 1963,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            },
-            {
-              "evidence": "runIn(SECONDS_BETWEEN_TX, \"sendRecentEvents\", [overwrite: true])",
-              "line": 2146,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delay, \"createAlarmRunInWrapper\", [\"data\": [\"webhookJSON\": webhookJSON]])",
-              "line": 2307,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(delay, \"attemptDisarm\")",
-              "line": 2311,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"checkInactivityAndStatus\")",
-              "line": 2397,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(seconds, \"checkInactivityAndStatus\", [overwrite: true])",
-              "line": 2401,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "subscribe(sensor, \"battery\", onBatteryEvent)",
-              "line": 2440,
-              "type": "EVENT_SUBSCRIPTION",
-              "value": true
-            }
-          ],
-          "sourceBytes": 153943,
-          "sourceFetched": true,
-          "sourceSha256": "d88e9d5e768d26ff21f57e985b0b4c0a6b7fe626824ebce0d33895084ebcd7b1",
-          "sourceUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
-        }
-      ],
-      "author": "HERMES Automation",
+      "apps": [],
+      "author": null,
       "category": "Security",
-      "communityLink": "https://community.hubitat.com/",
-      "dateReleased": "2026-11-11",
+      "communityLink": null,
+      "dateReleased": null,
       "description": "Powered by Noonlight, HERMES enables your Hubitat hub to request emergency services and optionally share household details to improve response. Supported alarm types: Police (intrusion), Fire, Medical, Water, and Non-emergency. Optional information may include medical notes, pets, entry instructions, and sensor details.",
-      "documentationLink": "https://hermes-automation.com/",
+      "documentationLink": null,
       "drivers": [],
-      "manifestFetched": true,
+      "manifestFetched": false,
       "manifestUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json",
       "packageId": null,
       "packageName": "HERMES Home Dispatch Solution",
@@ -73682,7 +73339,7 @@
         "Automations & Groups",
         "Notifications"
       ],
-      "version": "1.1.0"
+      "version": null
     },
     {
       "apps": [
@@ -98034,7 +97691,7 @@
     {
       "apps": [
         {
-          "definitionLine": 87,
+          "definitionLine": 90,
           "definitionName": "Reolink Integration",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Integration",
@@ -98042,31 +97699,31 @@
           "observations": [
             {
               "evidence": "* reschedules, plus an independent 15-min audit (auditEventConnections, via schedule()).",
-              "line": 59,
+              "line": 62,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 99,
+              "line": 102,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "oauth: true // required for createAccessToken()/local endpoint access used by the snapshot relay",
-              "line": 99,
+              "line": 102,
               "type": "OAUTH_ENABLED",
               "value": true
             },
             {
               "evidence": "mappings {",
-              "line": 231,
+              "line": 234,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "\"https://community.hubitat.com/t/release-reolink-integration-cameras-doorbells-nvrs-home-hubs/165352\",",
-              "line": 334,
+              "line": 337,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "community.hubitat.com",
@@ -98076,7 +97733,7 @@
             },
             {
               "evidence": "\"https://www.paypal.com/paypalme/jdthomas24?locale.x=en_US&country.x=US\",",
-              "line": 337,
+              "line": 340,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.paypal.com",
@@ -98086,37 +97743,37 @@
             },
             {
               "evidence": "\"tile's own refresh setting doesn't matter. Poll interval should stay tight for responsive \" +",
-              "line": 905,
+              "line": 908,
               "type": "MATTER_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeSourceDiscovery\", [data: [nonce: scan.nonce, scanId: scan.scanId]])",
-              "line": 1001,
+              "line": 1004,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeSourceDiscovery\", [data: data])",
-              "line": 1019,
+              "line": 1022,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(4, \"completeIpRecovery\", [data: [nonce: recovery.nonce, scanId: recovery.scanId]])",
-              "line": 1564,
+              "line": 1567,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"completeIpRecovery\", [data: data])",
-              "line": 1587,
+              "line": 1590,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 1672,
+              "line": 1675,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -98126,49 +97783,49 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\", timeout: 5,",
-              "line": 1676,
+              "line": 1679,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "if (bridge) runIn(3, \"reconnectEditedSource\", [overwrite: false,",
-              "line": 1735,
+              "line": 1738,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// A DEVICE's getChildDevices() (unlike an app's) can return null instead",
-              "line": 2276,
+              "line": 2279,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "return bridge ? (bridge.getChildDevices() ?: []) : []",
-              "line": 2278,
+              "line": 2281,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "group = addChildDevice(\"jdthomas24\", \"Reolink Standalone Devices\", STANDALONE_GROUP_DNI, [",
-              "line": 2304,
+              "line": 2307,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* anywhere only a dni string is available (e.g. runIn(...) callback data).",
-              "line": 2330,
+              "line": 2333,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "bridge.getChildDevices()?.each {",
-              "line": 2375,
+              "line": 2378,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}\"",
-              "line": 2616,
+              "line": 2619,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -98178,19 +97835,19 @@
             },
             {
               "evidence": "httpPost(params) { resp -> result = parseReolinkResponse(resp) }",
-              "line": 2621,
+              "line": 2624,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "runIn(5, \"retryStuckEventConnection\", [overwrite: false, data: [sourceId: sourceId as Integer]])",
-              "line": 2662,
+              "line": 2665,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=${cmd}&token=${token}\"",
-              "line": 2719,
+              "line": 2722,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -98200,151 +97857,151 @@
             },
             {
               "evidence": "httpPost([uri: uri, ignoreSSLIssues: true, requestContentType: \"application/json\",",
-              "line": 2723,
+              "line": 2726,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 2995,
+              "line": 3006,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"schedulerTick\", [overwrite: true])",
-              "line": 3068,
+              "line": 3079,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (q) runIn(BRIDGE_START_GAP_SEC, \"startNextBridge\", [overwrite: true])",
-              "line": 3098,
+              "line": 3109,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 3349,
+              "line": 3360,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "subscribe(location, \"systemStart\", \"systemStartHandler\")",
-              "line": 3351,
+              "line": 3362,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "schedule(\"0 */15 * * * ?\", \"auditEventConnections\")",
-              "line": 3356,
+              "line": 3367,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 3359,
+              "line": 3370,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "if (state.powerMigrationKey != POWER_MIGRATION_KEY) runIn(15, \"migrateBatteryModes\")",
-              "line": 3368,
+              "line": 3379,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// v1.6.6: the queued flag never survives a Done (unschedule() above cancels the job).",
-              "line": 3369,
+              "line": 3380,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3600, \"revertToNormalLogging\")",
-              "line": 3385,
+              "line": 3396,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge?.getChildDevices() ?: []).each { child ->",
-              "line": 3422,
+              "line": 3433,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "logNormal \"Reolink Integration: cleared ${clearedRec} leftover cached recording schedule(s) from the \" +",
-              "line": 3452,
+              "line": 3463,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 3476,
+              "line": 3487,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "bridge.getChildDevices()?.each { child ->",
-              "line": 3545,
+              "line": 3556,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "if (startQueue) runIn(1, \"startNextBridge\", [overwrite: true])",
-              "line": 3556,
+              "line": 3567,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(POLL_TICK_SEC, \"schedulerTick\", [overwrite: true])",
-              "line": 3557,
+              "line": 3568,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* own schedule() cron mechanism (see initialize()) rather than this app's",
-              "line": 3564,
+              "line": 3575,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, \"migrateBatteryModes\", [overwrite: true])",
-              "line": 3685,
+              "line": 3696,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, \"migrateCredentials\", [overwrite: true])",
-              "line": 3690,
+              "line": 3701,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "(bridge.getChildDevices() ?: []).each { child ->",
-              "line": 3702,
+              "line": 3713,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "runIn(next, \"schedulerTick\", [overwrite: true])",
-              "line": 3791,
+              "line": 3802,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "* Snapshot caching runs on its OWN schedule (nextSnapshotDue, see",
-              "line": 3857,
+              "line": 3868,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "createAccessToken()",
-              "line": 3965,
+              "line": 3976,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "def uri = \"https://${src.host}:${src.port}/cgi-bin/api.cgi?cmd=Snap&channel=${channel}&token=${token}\"",
-              "line": 4030,
+              "line": 4041,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${src.host",
@@ -98354,92 +98011,92 @@
             },
             {
               "evidence": "httpGet([uri: uri, ignoreSSLIssues: true, timeout: 10]) { resp ->",
-              "line": 4033,
+              "line": 4044,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
               "evidence": "runIn(SPOTLIGHT_RECHECK_SEC, \"recheckSpotlight\", [data: [dni: c.deviceNetworkId], overwrite: false])",
-              "line": 4159,
+              "line": 4170,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(SPOTLIGHT_RESEND_SEC, \"spotlightKeepAwake\", [data: [dni: dni, gen: gen], overwrite: false])",
-              "line": 4167,
+              "line": 4178,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(next, \"spotlightKeepAwake\", [data: [dni: dni, gen: hold.gen], overwrite: false])",
-              "line": 4194,
+              "line": 4205,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (on) runIn(secs, \"manualRecordAutoOff\", [overwrite: false, data: [dni: c.deviceNetworkId]])",
-              "line": 4362,
+              "line": 4373,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"processRtspQueue\", [overwrite: true])",
-              "line": 4777,
+              "line": 4788,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_WATCHDOG_SEC, \"rtspValidationWatchdog\", [data: [dni: d], overwrite: true])",
-              "line": 4790,
+              "line": 4801,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"rtspValidationWatchdog\")",
-              "line": 4796,
+              "line": 4807,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_GAP_SEC, \"processRtspQueue\", [overwrite: true])",
-              "line": 4797,
+              "line": 4808,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"rtspValidationWatchdog\")",
-              "line": 4814,
+              "line": 4825,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, \"requeueRtspValidation\", [data: [dni: d], overwrite: false])",
-              "line": 4824,
+              "line": 4835,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(RTSP_GAP_SEC, \"processRtspQueue\", [overwrite: true])",
-              "line": 4835,
+              "line": 4846,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 272795,
+          "sourceBytes": 273552,
           "sourceFetched": true,
-          "sourceSha256": "d2c60da097717ca07af42736be1a66a2c74283765b433a67b0ab3f9c60796819",
+          "sourceSha256": "40edfcb2c5afa89e39736fdc536741d94251f271d6a5a219de266001a9b8b576",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ParentApp.groovy"
         }
       ],
       "author": "jdthomas24",
       "category": "Safety & Security",
       "communityLink": "https://community.hubitat.com/t/165352",
-      "dateReleased": "2026-10-28",
+      "dateReleased": "2026-11-23",
       "description": "Discovers and manages Reolink cameras, doorbells, NVRs, and Home Hubs over the local HTTP API. Motion/AI detection, doorbell button press, snapshots, PTZ with preset recall, spotlight, night vision, siren, and battery %. No cloud account required.",
       "documentationLink": "https://github.com/jdthomas24/Hubitat-Apps-Drivers/tree/main/Reolink%20Integration",
       "drivers": [
         {
-          "definitionLine": 31,
+          "definitionLine": 32,
           "definitionName": "Reolink Camera",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Camera",
@@ -98447,13 +98104,13 @@
           "observations": [
             {
               "evidence": "asynchttpPost(\"rtspValidationHandler\", [",
-              "line": 198,
+              "line": 199,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080/hub2/videoStream/${device.id}/validate\",",
-              "line": 199,
+              "line": 200,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98463,30 +98120,30 @@
             },
             {
               "evidence": "/** Diagnostic only: logs this channel's NVR recording schedule (Full logging). */",
-              "line": 373,
+              "line": 374,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(60, \"ptzCalibrationFollowUp\", [data: [n: 1]])",
-              "line": 381,
+              "line": 382,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(60, \"ptzCalibrationFollowUp\", [data: [n: n + 1]])",
-              "line": 388,
+              "line": 389,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 26216,
+          "sourceBytes": 26279,
           "sourceFetched": true,
-          "sourceSha256": "748605beae71d8d01e998c243e06b2175efd05d9d2f99fea6d2b954a98057ee2",
+          "sourceSha256": "3c16a8c62fc57b4dcf5a86f71a7c3fdbdd33e1b32c0e081158c2af4b4b49fecb",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/CameraDriver.groovy"
         },
         {
-          "definitionLine": 28,
+          "definitionLine": 29,
           "definitionName": "Reolink Doorbell",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Doorbell",
@@ -98494,13 +98151,13 @@
           "observations": [
             {
               "evidence": "asynchttpPost(\"rtspValidationHandler\", [",
-              "line": 187,
+              "line": 188,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "uri: \"http://127.0.0.1:8080/hub2/videoStream/${device.id}/validate\",",
-              "line": 188,
+              "line": 189,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "127.0.0.1",
@@ -98510,18 +98167,18 @@
             },
             {
               "evidence": "/** Diagnostic only: reads and logs this channel's current NVR recording schedule (Full logging). */",
-              "line": 288,
+              "line": 289,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 21396,
+          "sourceBytes": 21459,
           "sourceFetched": true,
-          "sourceSha256": "ec5ce5953abf5e1ac636ae35baa6ea0a0e08d5e3945716d7a4bcfec47afaeb63",
+          "sourceSha256": "67b4d98c8434d5ef7d6f7cbb69d25c0d9f0594c13176ac014be45f6c0444843c",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/DoorbellDriver.groovy"
         },
         {
-          "definitionLine": 51,
+          "definitionLine": 52,
           "definitionName": "Reolink Device Bridge",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Device Bridge",
@@ -98529,168 +98186,168 @@
           "observations": [
             {
               "evidence": "child = addChildDevice(\"jdthomas24\", driverName, dni, [",
-              "line": 93,
+              "line": 94,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(3, \"startEventSubscription\")",
-              "line": 234,
+              "line": 235,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1, \"reconnectAfterMemoryLoss\")",
-              "line": 393,
+              "line": 394,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"closeSocket\")",
-              "line": 534,
+              "line": 535,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 541,
+              "line": 542,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.connect(state.host, state.port as int, byteInterface: true)",
-              "line": 558,
+              "line": 559,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(1, \"sendNonceRequest\")",
-              "line": 568,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(15, \"flowTimeoutCheck\")",
               "line": 569,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"sendNonceRequest\")",
-              "line": 575,
+              "evidence": "runIn(15, \"flowTimeoutCheck\")",
+              "line": 570,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"closeSocket\")",
+              "evidence": "unschedule(\"sendNonceRequest\")",
               "line": 576,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 579,
+              "evidence": "unschedule(\"closeSocket\")",
+              "line": 577,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"flowTimeoutCheck\")",
+              "evidence": "unschedule(\"sendKeepalive\")",
               "line": 580,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "evidence": "unschedule(\"flowTimeoutCheck\")",
               "line": 581,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "unschedule(\"reconnectEventSubscription\")",
+              "line": 582,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 599,
+              "line": 600,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 615,
+              "line": 616,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delaySec, \"reconnectEventSubscription\")",
-              "line": 653,
+              "line": 654,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"reconnectEventSubscription\")",
-              "line": 658,
+              "line": 659,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 681,
+              "line": 682,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule(\"sendKeepalive\")",
-              "line": 741,
+              "line": 742,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 742,
+              "line": 743,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(25, \"sendKeepalive\")",
-              "line": 766,
+              "line": 767,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 1038,
+              "line": 1039,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(\"flowTimeoutCheck\")",
-              "line": 1059,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(25, \"sendKeepalive\")",
               "line": 1060,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(25, \"sendKeepalive\")",
+              "line": 1061,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "interfaces.rawSocket.sendMessage(bytesToHex(data))",
-              "line": 1082,
+              "line": 1083,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "try { interfaces.rawSocket.close() } catch (e) { }",
-              "line": 1223,
+              "line": 1224,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 57383,
+          "sourceBytes": 57446,
           "sourceFetched": true,
-          "sourceSha256": "722bc094ca9f8d51e87b9b75be247646d5d367b4c3c51b73d2ba579c1734aa0b",
+          "sourceSha256": "84406c74697171cb682e51a7600881de3fe0de5cfae79bdaf10d72f93dbe955c",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/ReolinkDeviceBridge.groovy"
         },
         {
-          "definitionLine": 31,
+          "definitionLine": 32,
           "definitionName": "Reolink Standalone Devices",
           "definitionNamespace": "jdthomas24",
           "manifestName": "Reolink Standalone Devices",
@@ -98698,26 +98355,26 @@
           "observations": [
             {
               "evidence": "* -- addChildDevice() must run in the owning device's own execution",
-              "line": 41,
+              "line": 42,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "* addChildDevice() on a held reference from outside.",
-              "line": 43,
+              "line": 44,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "def bridge = addChildDevice(\"jdthomas24\", \"Reolink Device Bridge\", dni, [",
-              "line": 46,
+              "line": 47,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             }
           ],
-          "sourceBytes": 8663,
+          "sourceBytes": 8726,
           "sourceFetched": true,
-          "sourceSha256": "5608f90deafca72b9d7120d58527df8af4996fb19134315c92128538f5740d83",
+          "sourceSha256": "f4425b49881f62d3709085994b9270a7a7682c7494ae30f0947493e370caf367",
           "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/main/Reolink%20Integration/StandaloneDevices.groovy"
         }
       ],
@@ -98733,7 +98390,7 @@
         "Safety & Security",
         "Doorbell"
       ],
-      "version": "1.6.17"
+      "version": "1.6.18"
     },
     {
       "apps": [
@@ -135240,7 +134897,7 @@
     {
       "apps": [
         {
-          "definitionLine": 52,
+          "definitionLine": 93,
           "definitionName": "Ambient Weather Station",
           "definitionNamespace": null,
           "manifestName": "Ambient Weather Station",
@@ -135258,7 +134915,7 @@
             },
             {
               "evidence": "String wikiURL(pageName) { return \"https://github.com/KurtSanders/STAmbientWeather/wiki/$pageName\"}",
-              "line": 43,
+              "line": 42,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -135268,7 +134925,7 @@
             },
             {
               "evidence": "url: \"https://ambientweather.net/account\",",
-              "line": 100,
+              "line": 141,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "ambientweather.net",
@@ -135278,7 +134935,7 @@
             },
             {
               "evidence": "url: \"https://github.com/KurtSanders/STAmbientWeather#hubitat-installation\",",
-              "line": 142,
+              "line": 185,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -135288,7 +134945,7 @@
             },
             {
               "evidence": "url: \"https://dashboard.ambientweather.net/account\",",
-              "line": 148,
+              "line": 191,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "dashboard.ambientweather.net",
@@ -135297,30 +134954,20 @@
               }
             },
             {
-              "evidence": "def wikiURL = \"https://github.com/ambient-weather/api-docs/wiki/Device-Data-Specs\"",
-              "line": 263,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/ambient-weather/api-docs/wiki/Device-Data-Specs"
-              }
-            },
-            {
               "evidence": "input(name: \"pushoverDevices\", type: \"capability.notification\", title: \"\", required: false, multiple: true,",
-              "line": 463,
+              "line": 485,
               "type": "CAPABILITY_REFERENCE",
               "value": "notification"
             },
             {
               "evidence": "runIn(10, refresh)",
-              "line": 561,
+              "line": 572,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "uri : \"https://api.ambientweather.net\",",
-              "line": 1075,
+              "line": 649,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "api.ambientweather.net",
@@ -135330,121 +134977,174 @@
             },
             {
               "evidence": "httpGet(params) { resp ->",
-              "line": 1084,
+              "line": 655,
               "type": "HTTP_CALL",
               "value": "httpGet"
             },
             {
-              "evidence": "runIn(10, 'retryQuick', [overwrite: true, data: [runID: \"${runID}\"]])",
-              "line": 1117,
+              "evidence": "uri : \"https://api.ambientweather.net\",",
+              "line": 708,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "api.ambientweather.net",
+                "scheme": "https",
+                "url": "https://api.ambientweather.net"
+              }
+            },
+            {
+              "evidence": "asynchttpGet('ambientDataCallback', params, [runID: runID])",
+              "line": 713,
+              "type": "HTTP_CALL",
+              "value": "asynchttpGet"
+            },
+            {
+              "evidence": "runIn(10, 'retryQuick', [overwrite: true, data: [runID: runID]])",
+              "line": 730,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "addChildDevice(DTHnamespace(), DTHName(), DTHDNI(), null, [\"name\": AWSName, \"label\": AWSLabel, completedSetup: true])",
-              "line": 1136,
+              "evidence": "addChildDevice(DTHnamespace(), DTHName(), dni, null, [\"name\": awsName, \"label\": awsLabel, completedSetup: true])",
+              "line": 1101,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "addChildDevice(DTHnamespace(), DTHRemoteSensorName(), \"${key}\", null, [\"name\": remoteSensorNamePref, \"label\": remoteSensorLabelPref, completedSetup: true])",
-              "line": 1162,
+              "evidence": "addChildDevice(DTHnamespace(), DTHRemoteSensorName(), dni, null, [\"name\": \"${stationName}-${labelVal}\", \"label\": \"AWS-${labelVal}\", completedSetup: true])",
+              "line": 1126,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
-              "evidence": "addChildDevice(DTHnamespace(), DTHPMSensorName(), \"${PMkey}\", null, [\"name\": remoteSensorNamePref, \"label\": remoteSensorLabelPref, completedSetup: true])",
-              "line": 1194,
+              "evidence": "addChildDevice(DTHnamespace(), DTHPMSensorName(), dni, null, [\"name\": \"${stationName}-${pmLabel}\", \"label\": \"AWS-${pmLabel}\", completedSetup: true])",
+              "line": 1144,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "unschedule(scheduleHandler)",
-              "line": 1228,
+              "line": 1158,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "schedule(\"0 ${randonInt}/2 * * * ?\",scheduleHandler)",
-              "line": 1239,
+              "evidence": "case '2': schedule(\"0 ${randomInt}/2 * * * ?\", scheduleHandler); break",
+              "line": 1164,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "schedule(\"0 ${randonInt}/3 * * * ?\",scheduleHandler)",
-              "line": 1242,
+              "evidence": "case '3': schedule(\"0 ${randomInt}/3 * * * ?\", scheduleHandler); break",
+              "line": 1165,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "schedule(\"0 ${randonInt}/4 * * * ?\",scheduleHandler)",
-              "line": 1245,
+              "evidence": "case '4': schedule(\"0 ${randomInt}/4 * * * ?\", scheduleHandler); break",
+              "line": 1166,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runEvery5Minutes(scheduleHandler)",
-              "line": 1248,
+              "evidence": "case '5': runEvery5Minutes(scheduleHandler); break",
+              "line": 1167,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runEvery10Minutes(scheduleHandler)",
-              "line": 1251,
+              "evidence": "case '10': runEvery10Minutes(scheduleHandler); break",
+              "line": 1168,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runEvery15Minutes(scheduleHandler)",
-              "line": 1254,
+              "evidence": "case '15': runEvery15Minutes(scheduleHandler); break",
+              "line": 1169,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runEvery30Minutes(scheduleHandler)",
-              "line": 1257,
+              "evidence": "case '30': runEvery30Minutes(scheduleHandler); break",
+              "line": 1170,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "schedule(\"0 ${randonInt} 0/2 * * ?\",scheduleHandler)",
-              "line": 1263,
+              "evidence": "case '120': schedule(\"0 ${randomInt} 0/2 * * ?\", scheduleHandler); break",
+              "line": 1172,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runEvery3Hours(scheduleHandler)",
-              "line": 1266,
+              "evidence": "case '180': runEvery3Hours(scheduleHandler); break",
+              "line": 1173,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "unschedule()",
-              "line": 1269,
+              "evidence": "default: unschedule(); break",
+              "line": 1174,
               "type": "SCHEDULING",
               "value": true
-            },
-            {
-              "evidence": "uri: \"https://api.pushover.net\",",
-              "line": 1841,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.pushover.net",
-                "scheme": "https",
-                "url": "https://api.pushover.net"
-              }
             }
           ],
-          "sourceBytes": 95797,
+          "sourceBytes": 60632,
           "sourceFetched": true,
-          "sourceSha256": "1c85b4a124c0f78d14ead5523942b9365cac6ab4ddcee26e97104429b1f23fe7",
+          "sourceSha256": "093bd206a30ce9263c1ffa24c58734dc1bf60cc4b52e7ae182ec038645fb269e",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
+        },
+        {
+          "definitionLine": 30,
+          "definitionName": "Ambient Weather Station Child",
+          "definitionNamespace": null,
+          "manifestName": "Ambient Weather Station Child",
+          "manifestNamespace": "kurtsanders",
+          "observations": [
+            {
+              "evidence": "* http://www.apache.org/licenses/LICENSE-2.0",
+              "line": 7,
+              "type": "NETWORK_URL_LITERAL",
+              "value": {
+                "host": "www.apache.org",
+                "scheme": "http",
+                "url": "http://www.apache.org/licenses/LICENSE-2.0"
+              }
+            },
+            {
+              "evidence": "input(name: \"pushoverDevices\", type: \"capability.notification\", title: \"\", required: false, multiple: true,",
+              "line": 264,
+              "type": "CAPABILITY_REFERENCE",
+              "value": "notification"
+            },
+            {
+              "evidence": "addChildDevice(DTHnamespace(), DTHName(), stationDNI, null, [\"name\": \"${stationName}-Console\", \"label\": \"AWS-${stationName}\", completedSetup: true])",
+              "line": 341,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "addChildDevice(DTHnamespace(), DTHRemoteSensorName(), dni, null, [\"name\": \"${stationName}-${labelVal}\", \"label\": \"AWS-${labelVal}\", completedSetup: true])",
+              "line": 364,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            },
+            {
+              "evidence": "addChildDevice(DTHnamespace(), DTHPMSensorName(), dni, null, [\"name\": \"${stationName}-${pmLabel}\", \"label\": \"AWS-${pmLabel}\", completedSetup: true])",
+              "line": 379,
+              "type": "CHILD_DEVICE_CREATE",
+              "value": true
+            }
+          ],
+          "sourceBytes": 28899,
+          "sourceFetched": true,
+          "sourceSha256": "3c44f25bba3b300d5558c0e6862a47a6711ac21d3a3aeb7b9d30c46fb2c498e4",
+          "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/smartapps/kurtsanders/ambient-weather-station-child.src/ambient-weather-station-child.groovy"
         }
       ],
       "author": "Kurt Sanders",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-6-19",
+      "dateReleased": "2026-11-23",
       "description": "Integrates your Internet connected Ambient Weather Station system into the Hubitat environment.",
       "documentationLink": "https://github.com/KurtSanders/STAmbientWeather/blob/master/README.md",
       "drivers": [
@@ -135476,9 +135176,9 @@
               }
             }
           ],
-          "sourceBytes": 6727,
+          "sourceBytes": 6734,
           "sourceFetched": true,
-          "sourceSha256": "5e704150ebd40054c315b2aac1db3dad2db003b9070611e49945cc246e637be9",
+          "sourceSha256": "925671d26d98be03d8cf40e623aeacbba0c6e306560491cb7d969f84a3bb9cb8",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station.src/ambient-weather-station.groovy"
         },
         {
@@ -135511,7 +135211,7 @@
           ],
           "sourceBytes": 2633,
           "sourceFetched": true,
-          "sourceSha256": "c8a448a9bd8b9da8a909c08f010655c607e4c9216388b0c1df3b3ae17526c38b",
+          "sourceSha256": "adc71d1810d01060c17c3d3ab1f9a799ee2a4a21194e88603dd697796ea780cc",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-weather-station-remote-sensor.src/ambient-weather-station%20remote-sensor.groovy"
         },
         {
@@ -135542,9 +135242,9 @@
               }
             }
           ],
-          "sourceBytes": 3027,
+          "sourceBytes": 2933,
           "sourceFetched": true,
-          "sourceSha256": "cb538bd912c5da9ec5b1cc62a86b91ae987231c8a629a08c251bad79ea8eba0e",
+          "sourceSha256": "f6abf297c79cc26038e9e179896b5b15a16e349ada4172b2ceb8b0dcbcaa6b20",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/devicetypes/kurtsanders/ambient-particulate-monitor.src/ambient-particulate-monitor.groovy"
         }
       ],
@@ -135561,7 +135261,7 @@
         "Pools & Spas",
         "Temperature & Humidity"
       ],
-      "version": "6.7.7"
+      "version": "7.0.0"
     },
     {
       "apps": [
@@ -135912,14 +135612,14 @@
               }
             },
             {
-              "evidence": "dynamicPage(name: \"mainPage\", uninstall: true, install: getChildDevices()?true:false ) {",
-              "line": 72,
+              "evidence": "dynamicPage(name: \"mainPage\", uninstall: true, install: getChildDevices() ? true : false) {",
+              "line": 101,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
-              "evidence": "paragraph \"The <a target='_blank' rel='noopener noreferrer' href='http://${location.hub.localIP}/device/edit/${getChildDevice(state.deviceNetworkID).id}'>${getChildDevice(state.deviceNetworkID)}</a> parent device has been installed for you.",
-              "line": 81,
+              "evidence": "paragraph \"The <a target='_blank' rel='noopener noreferrer' href='http://${location.hub.localIP}/device/edit/${parentDevice.id}'>${parentDevice}</a> parent device has been installed for you.\\nYou can control all your BWA Spa accessories usi",
+              "line": 117,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -135928,14 +135628,14 @@
               }
             },
             {
-              "evidence": "getChildDevice(state.deviceNetworkID).getChildDevices().each {",
-              "line": 83,
+              "evidence": "parentDevice.getChildDevices()?.each {",
+              "line": 119,
               "type": "CHILD_DEVICE_ACCESS",
               "value": true
             },
             {
               "evidence": "paragraph \"→ <a target='_blank' rel='noopener noreferrer' href='http://${location.hub.localIP}/device/edit/${it.id}'>${it}</a>\"",
-              "line": 84,
+              "line": 120,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -135944,16 +135644,16 @@
               }
             }
           ],
-          "sourceBytes": 5095,
+          "sourceBytes": 7233,
           "sourceFetched": true,
-          "sourceSha256": "9f3a061022472f03e98e62bbb3b47dd0d865ca6a746f1bdfbdf8cfb285973958",
+          "sourceSha256": "a74f466e7ea3b3d11d62ec650496b4fe28b0195113942aa934c69385071a035f",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/BWA%20Spa%20Manager%20App%20-%20Local.groovy"
         }
       ],
       "author": "Kurt Sanders",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
-      "dateReleased": "2026-05-26",
+      "dateReleased": "2026-11-24",
       "description": "Integrates your locally connected (Hubitat Hub and SPA must be on the same home network) connected Hot Tub/Spa system (Balboa WiFi controller) into the Hubitat environment.  Use this Hubitat device driver only version to directly TCP connect to the SPA WiFi controller.",
       "documentationLink": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
       "drivers": [
@@ -135976,25 +135676,25 @@
             },
             {
               "evidence": "runIn(5, 'configure')",
-              "line": 228,
+              "line": 231,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(refresh)",
-              "line": 235,
+              "line": 238,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cd = addChildDevice(NAMESPACE, type, childDeviceName, [name: \"${device.displayName} - ${name}\", label: \"${name}\", isComponent: false])",
-              "line": 276,
+              "line": 277,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitat\", \"Generic Component Switch\", pId, [name: \"${device.displayName} Pump ${i}\", isComponent: false])",
-              "line": 311,
+              "line": 310,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
@@ -136005,26 +135705,38 @@
               "value": true
             },
             {
-              "evidence": "runIn(2, \"resetChildSwitch\", [data: dni])",
-              "line": 353,
+              "evidence": "runIn(3, \"refresh\", [overwrite: true])",
+              "line": 364,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(3, \"refresh\", [overwrite: true])",
+              "line": 371,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"updateThermostatSetpoints\", [overwrite: true, data: setpoint])",
-              "line": 539,
+              "line": 574,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"refresh\", [overwrite: true])",
-              "line": 580,
+              "line": 615,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "def fullWebPathName = \"http://${location.hub.localIP}/local/${FILENAME_CSS}\"",
-              "line": 1296,
+              "evidence": "runIn(2, 'setSpaToLocalTime')",
+              "line": 939,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "String fullWebPathName = \"http://${location.hub.localIP}/local/${FILENAME_CSS}\"",
+              "line": 1265,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -136033,39 +135745,51 @@
               }
             },
             {
-              "evidence": "runIn(readWaitSecs,'socket_close')",
-              "line": 1478,
+              "evidence": "runIn(2, 'getFilterSchedule')",
+              "line": 1358,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "interfaces.rawSocket.connect(settings.ipaddress, port.toInteger(), byteInterface: true, readDelay: socketConnectReadDelay)",
-              "line": 1484,
+              "evidence": "interfaces.rawSocket.connect(settings.ipaddress, portNum, byteInterface: true, readDelay: readDelayMs)",
+              "line": 1441,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
-              "evidence": "runIn(readWaitSecs,'socket_close')",
-              "line": 1520,
+              "evidence": "runIn(waitSecs, 'socket_close')",
+              "line": 1444,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(waitSecs, 'socket_close')",
+              "line": 1484,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(message)",
-              "line": 1523,
+              "line": 1488,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
+              "evidence": "unschedule('socket_close')",
+              "line": 1502,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "interfaces.rawSocket.close()",
-              "line": 1547,
+              "line": 1514,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 62728,
+          "sourceBytes": 63523,
           "sourceFetched": true,
-          "sourceSha256": "6be000062c72401584c298db760af02876f30eb0a2fd3f9c25c4929c990521d6",
+          "sourceSha256": "0ec76ce932356fba4f72228d9c557544bed9768c0c112cbaf7108921a8df3704",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Driver.groovy"
         },
         {
@@ -136087,14 +135811,14 @@
             },
             {
               "evidence": "runIn(1, 'off')",
-              "line": 54,
+              "line": 57,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 2469,
+          "sourceBytes": 2533,
           "sourceFetched": true,
-          "sourceSha256": "13362107db91db3ce71a86cffea023690c6609809e497a81ea1dd4b3fb49bddc",
+          "sourceSha256": "646f97b6c74ec6707a2493e7a0a710a7f85bdf198d416ac41c3b0e90f9447a5c",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Child%20Switch.groovy"
         }
       ],
@@ -136111,7 +135835,7 @@
         "Temperature & Humidity",
         "Water"
       ],
-      "version": "2.2.0"
+      "version": "2.2.1"
     },
     {
       "apps": [
@@ -144050,7 +143774,7 @@
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 44,
+          "definitionLine": 52,
           "definitionName": "Linptech 24Ghz Presence Sensor ES1",
           "definitionNamespace": "Gassgs",
           "manifestName": "Linptech 24Ghz Presence Sensor ES1",
@@ -144078,13 +143802,13 @@
             },
             {
               "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus",
-              "line": 40,
+              "line": 41,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "definition(name: \"Linptech 24Ghz Presence Sensor ES1\", namespace: \"Gassgs\", author: \"Krassimir Kossev\", importUrl: \"https://raw.githubusercontent.com/Gassgs/Hubitat-Apps-and-Drivers/master/Drivers/Linptech%2024Ghz%20Presence%20Sensor%20ES1.",
-              "line": 44,
+              "line": 52,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -144094,206 +143818,230 @@
             },
             {
               "evidence": "descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 98,
+              "line": 122,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "descMap.value = zigbee.swapOctets(descMap.value)",
-              "line": 110,
+              "line": 134,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "unschedule(healthExpired)",
-              "line": 185,
+              "line": 213,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30,healthExpired)",
-              "line": 197,
+              "line": 226,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(1,healthPing)",
-              "line": 198,
+              "line": 227,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "if (reportStatus == null) runEvery5Minutes(checkSilence)",
+              "line": 248,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "ZoneStatus zs = zigbee.parseZoneStatus(description)",
-              "line": 212,
+              "line": 326,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 253,
+              "line": 367,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 266,
+              "line": 380,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 279,
+              "line": 393,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 291,
+              "line": 405,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 299,
+              "line": 413,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap?.data[8]+descMap?.data[9])",
-              "line": 307,
+              "line": 421,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "def value = zigbee.convertHexToInt(descMap.value)",
-              "line": 313,
+              "line": 427,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0000, [0x0004, 0x000, 0x0001, 0x0005, 0x0007, 0xfffe], [:], delay=200)",
-              "line": 336,
+              "line": 450,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.writeAttribute(0x0000, 0xffde, 0x20, 0x13, [:], delay=200)",
-              "line": 337,
+              "line": 451,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(0xE002, 0xE009, 0x20, value as int, [:], delay=200)",
-              "line": 346,
+              "line": 460,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(0xE002, 0xE00B, 0x20, value as int, [:], delay=200)",
-              "line": 353,
+              "line": 467,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(0xE002, 0xE004, 0x20, value as int, [:], delay=200)",
-              "line": 364,
+              "line": 478,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.writeAttribute(0xE002, 0xE005, 0x20, value as int, [:], delay=200)",
-              "line": 375,
+              "line": 489,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return sendTuyaCommand( \"65\",\"02\", zigbee.convertToHexString(value, 8))",
-              "line": 381,
+              "line": 495,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.command(0xEF00, tuyaCmd, PACKET_ID + dp + dp_type + zigbee.convertToHexString((int)(fncmd.length()/2), 4) + fncmd )",
-              "line": 387,
+              "line": 501,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "return zigbee.convertToHexString(state.packetID, 4)",
-              "line": 394,
+              "line": 508,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "allActions.add(new hubitat.device.HubAction(it, hubitat.device.Protocol.ZIGBEE))",
-              "line": 409,
+              "line": 523,
               "type": "HUB_ACTION",
               "value": true
             },
             {
               "evidence": "sendHubCommand(allActions)",
-              "line": 411,
+              "line": 525,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "runIn(1800, logsOff)",
-              "line": 441,
+              "line": 555,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery5Minutes(healthCheck)",
-              "line": 454,
+              "line": 568,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery10Minutes(healthCheck)",
-              "line": 459,
+              "line": 573,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery15Minutes(healthCheck)",
-              "line": 464,
+              "line": 578,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runEvery30Minutes(healthCheck)",
-              "line": 469,
+              "line": 583,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(healthCheck)",
-              "line": 482,
+              "line": 596,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runEvery5Minutes(checkSilence)",
+              "line": 600,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(STARTUP_SILENCE_TIME, checkStartupSilence, [data: [since: since]])",
+              "line": 606,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule(checkSilence)",
+              "line": 610,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3,setLedStatus)",
-              "line": 485,
+              "line": 613,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.readAttribute(0x0500, key, [:], delay=200)",
-              "line": 496,
+              "line": 624,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "cmds += zigbee.command(0xEF00, 0x03)",
-              "line": 497,
+              "line": 625,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             }
           ],
-          "sourceBytes": 20053,
+          "sourceBytes": 25815,
           "sourceFetched": true,
-          "sourceSha256": "738d5717414c8a67bc66c82dc31e113ff716f5e03007701bed3e9a287764bb3e",
+          "sourceSha256": "2899c70f027e14bab44019eade03ac44c9ead9fdb0c70da7d41ee2f845298308",
           "sourceUrl": "https://raw.githubusercontent.com/Gassgs/Hubitat-Apps-and-Drivers/master/Drivers/Linptech%2024Ghz%20Presence%20Sensor%20ES1.groovy"
         }
       ],
@@ -248838,7 +248586,7 @@
       "documentationLink": null,
       "drivers": [
         {
-          "definitionLine": 96,
+          "definitionLine": 98,
           "definitionName": "Zigbee - Sonoff - generic Relays/Outlets",
           "definitionNamespace": "tmastersmart",
           "manifestName": "Zigbee Sonoff - generic relays",
@@ -248846,7 +248594,7 @@
           "observations": [
             {
               "evidence": "http://www.apache.org/licenses/LICENSE-2.0",
-              "line": 70,
+              "line": 72,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.apache.org",
@@ -248856,7 +248604,7 @@
             },
             {
               "evidence": "https://github.com/tmastersmart/hubitat-code/blob/main/opensource_links.txt",
-              "line": 79,
+              "line": 81,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "github.com",
@@ -248866,29 +248614,29 @@
             },
             {
               "evidence": "import hubitat.zigbee.clusters.iaszone.ZoneStatus",
-              "line": 91,
+              "line": 93,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "import hubitat.zigbee.zcl.DataType",
-              "line": 92,
+              "line": 94,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
-              "evidence": "definition (name: \"Zigbee - Sonoff - generic Relays/Outlets\", namespace: \"tmastersmart\", author: \"tmaster\", importUrl: \"https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-zigbee-relays.groovy\") {",
-              "line": 96,
+              "evidence": "definition (name: \"Zigbee - Sonoff - generic Relays/Outlets\", namespace: \"tmastersmart\", author: \"tmaster\", importUrl: \"https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy\") {",
+              "line": 98,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
                 "scheme": "https",
-                "url": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-zigbee-relays.groovy"
+                "url": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy"
               }
             },
             {
               "evidence": "//https://zigbee.blakadder.com/Zemismart_ZW-EU-01.html",
-              "line": 132,
+              "line": 134,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "zigbee.blakadder.com",
@@ -248898,157 +248646,157 @@
             },
             {
               "evidence": "//https://zigbee.blakadder.com/Zemismart_ZW-EU-01.html",
-              "line": 132,
+              "line": 134,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(randomSixty,refresh)",
-              "line": 165,
+              "line": 167,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 173,
+              "line": 175,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 196,
+              "line": 198,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${randomSixty2} ${randomSixty} ${randomTwentyFour}/${state.poll} * * ? *\", checkPresence)",
-              "line": 217,
+              "line": 220,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "logging(\"Removing left over schedule (ranging) from old IRIS device\", \"warn\")",
-              "line": 238,
+              "line": 241,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(rangeAndRefresh)",
-              "line": 239,
+              "line": 242,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(20,ping)",
-              "line": 240,
+              "line": 243,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.readAttribute(0x0000, 0x0004)),// mf",
-              "line": 249,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "sendZigbeeCommands(zigbee.readAttribute(0x0000, 0x0005)),// model",
-              "line": 250,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "sendZigbeeCommands(zigbee.readAttribute(0x0006, 0x0000)),// switch",
-              "line": 251,
-              "type": "ZIGBEE_API_REFERENCE",
-              "value": true
-            },
-            {
-              "evidence": "sendZigbeeCommands(zigbee.onOffRefresh()),// use both formats",
               "line": 252,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
+              "evidence": "sendZigbeeCommands(zigbee.readAttribute(0x0000, 0x0005)),// model",
+              "line": 253,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "sendZigbeeCommands(zigbee.readAttribute(0x0006, 0x0000)),// switch",
+              "line": 254,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
+              "evidence": "sendZigbeeCommands(zigbee.onOffRefresh()),// use both formats",
+              "line": 255,
+              "type": "ZIGBEE_API_REFERENCE",
+              "value": true
+            },
+            {
               "evidence": "sendZigbeeCommands(zigbee.onOffRefresh())",
-              "line": 261,
+              "line": 264,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "// sendZigbeeCommands(zigbee.readAttribute(0x0006, 0x0000))// switch",
-              "line": 262,
+              "line": 265,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "if (state.switch== true){ runIn(4,on)}",
-              "line": 276,
+              "line": 280,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "else {runIn(4,off)}",
-              "line": 277,
+              "line": 281,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(20,ping)",
-              "line": 283,
+              "line": 287,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.command(0x006, 0x00))// send off",
-              "line": 285,
+              "line": 289,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(20,ping)",
-              "line": 290,
+              "line": 294,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "sendZigbeeCommands(zigbee.command(0x006, 0x01))// send on",
-              "line": 292,
+              "line": 296,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "runIn(2,ping)",
-              "line": 347,
+              "line": 362,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(50,checkPresence)",
-              "line": 350,
+              "line": 365,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "zigbee.enrollResponse()",
-              "line": 364,
+              "line": 379,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "Map descMap = zigbee.parseDescriptionAsMap(description)",
-              "line": 369,
+              "line": 384,
               "type": "ZIGBEE_API_REFERENCE",
               "value": true
             },
             {
               "evidence": "sendHubCommand(new hubitat.device.HubMultiAction(cmds, hubitat.device.Protocol.ZIGBEE))",
-              "line": 465,
+              "line": 480,
               "type": "SEND_HUB_COMMAND",
               "value": true
             },
             {
               "evidence": "state.donate=\"<a href='https://www.paypal.com/paypalme/tmastersat?locale.x=en_US'><img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/paypal2.gif'></a>\"",
-              "line": 503,
+              "line": 518,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249058,7 +248806,7 @@
             },
             {
               "evidence": "state.donate=\"<a href='https://www.paypal.com/paypalme/tmastersat?locale.x=en_US'><img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/paypal2.gif'></a>\"",
-              "line": 503,
+              "line": 518,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "www.paypal.com",
@@ -249068,7 +248816,7 @@
             },
             {
               "evidence": "if (state.model == \"BASICZBR3\"){ state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/BASICZBR3.jpg' >\"}",
-              "line": 504,
+              "line": 519,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249078,7 +248826,7 @@
             },
             {
               "evidence": "if (state.model == \"01MINIZB\"){ state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/01MINIZB.jpg' >\" }",
-              "line": 505,
+              "line": 520,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249088,7 +248836,7 @@
             },
             {
               "evidence": "if (state.model == \"SA-003-Zigbee\"){ state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/SA-003-Zigbee.jpg' >\"}",
-              "line": 506,
+              "line": 521,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249098,7 +248846,7 @@
             },
             {
               "evidence": "if (state.model == \"Lamp_01\"){ state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/Lamp_01.jpg' >\"}",
-              "line": 507,
+              "line": 522,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249108,7 +248856,7 @@
             },
             {
               "evidence": "if (state.model == \"Plug_01\"){ state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/Plug_01.jpg' >\"}",
-              "line": 508,
+              "line": 523,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249118,7 +248866,7 @@
             },
             {
               "evidence": "if (state.model == \"LXN59-1S7LX1.0\"){state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/LXN59-1S7LX1.0.jpg' >\"}",
-              "line": 509,
+              "line": 524,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249128,7 +248876,7 @@
             },
             {
               "evidence": "if (state.model == \"PLUG\" && state.MFR ==\"LEDVANCE\"){state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/sylvania-smart-plus.jpg' >\"}",
-              "line": 510,
+              "line": 525,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249138,7 +248886,7 @@
             },
             {
               "evidence": "if (state.model == \"ZBM5-1C-120\") {state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/sonoff-ZBM5-1C-120.jpg' >\"}",
-              "line": 511,
+              "line": 526,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249148,7 +248896,7 @@
             },
             {
               "evidence": "// if (state.model == \"ZBMINIR2\") {state.icon =\"<img src='https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/images/sylvania-smart-plus.jpg' >\"}",
-              "line": 512,
+              "line": 527,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "raw.githubusercontent.com",
@@ -249158,20 +248906,20 @@
             },
             {
               "evidence": "if (debugLogging){runIn(4000,debugLogOff)}",
-              "line": 522,
+              "line": 537,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "if (traceLogging){runIn(1000,traceLogOff)}",
-              "line": 523,
+              "line": 538,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 22603,
+          "sourceBytes": 23072,
           "sourceFetched": true,
-          "sourceSha256": "ae723db4931ffab56261a605e398664c3545023bb79f6583455b6301a5af67e1",
+          "sourceSha256": "e880f72066c4034465edf637b3ce8c5152404ccb5358c6bb6360bcc541770f49",
           "sourceUrl": "https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/generic-sonoff-zigbee-relays.groovy"
         }
       ],
@@ -357051,368 +356799,410 @@
             },
             {
               "evidence": "mappings {",
-              "line": 410,
+              "line": 411,
               "type": "OAUTH_API_MAPPINGS",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 495,
+              "line": 496,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 499,
+              "line": 500,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 520,
+              "line": 521,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'lockCodes', lockCodesHandler)",
-              "line": 562,
+              "line": 564,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "subscribe(locks, 'codeChanged', codeChangedHandler)",
-              "line": 563,
+              "line": 565,
               "type": "EVENT_SUBSCRIPTION",
               "value": true
             },
             {
               "evidence": "unschedule()",
-              "line": 580,
+              "line": 602,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() also removed the refresh cadence and any running refresh's",
-              "line": 582,
+              "line": 604,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(checkOut, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 614,
+              "line": 636,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runOnce(next.at, 'reconcileDoorCodes', [overwrite: false])",
-              "line": 622,
+              "line": 644,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// every app-wide unschedule(). After an update through HPM (no Done) the first",
-              "line": 680,
+              "line": 702,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "schedule(\"${t % 60} ${(t.intdiv(60)) % 60} ${t.intdiv(3600)} * * ?\".toString(), 'sbAppInfoDaily')",
-              "line": 689,
+              "line": 711,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(codeRefreshStartDelaySec, 'codeRefreshNext', [overwrite: true, data: [runId: runId, index: 0]])",
-              "line": 738,
+              "line": 763,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(r.budgetSec, 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 785,
+              "line": 817,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(codeRefreshSettleSec, 'codeRefreshSettled', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 800,
+              "evidence": "runIn(r.floorSec, 'codeRefreshFloor', [overwrite: true, data: [runId: r.runId, index: index]])",
+              "line": 818,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(codeRefreshGapSec, 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: (r.index as int) + 1]])",
-              "line": 819,
+              "evidence": "if (pastFloor) runIn(codeRefreshSettleSec, 'codeRefreshSettled', [overwrite: true, data: [runId: r.runId, index: index]])",
+              "line": 835,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 859,
+              "evidence": "runIn(codeRefreshSettleSec, 'codeRefreshSettled', [overwrite: true, data: [runId: r.runId, index: data.index]])",
+              "line": 844,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 865,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(Math.max((int) (nextMs / 1000), 900), 'codeAutoReadRetry', [overwrite: true])",
+              "evidence": "unschedule('codeRefreshFloor')",
               "line": 889,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "// unschedule() removed the running refresh's timer; put it back",
-              "line": 896,
+              "evidence": "runIn(codeRefreshGapSec, 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: (r.index as int) + 1]])",
+              "line": 899,
               "type": "SCHEDULING",
               "value": true
             },
             {
-              "evidence": "runIn(Math.max(left, 5L), 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: 0]])",
-              "line": 904,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(Math.max(left, 5L), 'codeRefreshTimeout', [overwrite: true, data: [runId: r.runId, index: index]])",
-              "line": 906,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('refreshDoorCodes')",
-              "line": 927,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "schedule(cron, 'codeRefreshScheduled')",
-              "line": 932,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule('codeRefreshScheduled')",
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
               "line": 935,
               "type": "SCHEDULING",
               "value": true
             },
             {
+              "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
+              "line": 941,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max((int) (nextMs / 1000), 900), 'codeAutoReadRetry', [overwrite: true])",
+              "line": 965,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "// unschedule() removed the running refresh's timer; put it back",
+              "line": 972,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 5L), 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: 0]])",
+              "line": 981,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(codeRefreshGapSec, 'codeRefreshNext', [overwrite: true, data: [runId: r.runId, index: index + 1]])",
+              "line": 986,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max(left, 5L), 'codeRefreshTimeout', [overwrite: true, data: data])",
+              "line": 989,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(floorLeft, 'codeRefreshFloor', [overwrite: true, data: data])",
+              "line": 992,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(Math.max((long) (((r.settleAt as long) - now()) / 1000), 1L), 'codeRefreshSettled', [overwrite: true, data: data])",
+              "line": 994,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "runIn(1, 'codeRefreshFloor', [overwrite: true, data: data])",
+              "line": 996,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('refreshDoorCodes')",
+              "line": 1017,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "schedule(cron, 'codeRefreshScheduled')",
+              "line": 1022,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
+              "evidence": "unschedule('codeRefreshScheduled')",
+              "line": 1025,
+              "type": "SCHEDULING",
+              "value": true
+            },
+            {
               "evidence": "runIn(++i * 60, 'tryDeleteCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition ]])",
-              "line": 1103,
+              "line": 1196,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'tryDeleteCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: \"${pos}\".toInteger(), sharedDrop: true, codeName: a.codeName ]])",
-              "line": 1145,
+              "line": 1238,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName, free: true ]])",
-              "line": 1186,
+              "line": 1279,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 60, 'trySetCode', [ overwrite: false, data: [ lockId: lock.id, codePosition: codePosition, code: booking.code, codeName: codeName ]])",
-              "line": 1220,
+              "line": 1313,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(++i * 180, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1258,
+              "line": 1351,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// After scheduleEvents, whose unschedule() would remove the auto read timer",
-              "line": 1261,
+              "line": 1354,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'verifySetCode', [ overwrite: false, data: retryData ])",
-              "line": 1346,
+              "line": 1439,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1425,
+              "line": 1518,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// An app-wide unschedule() removed the verifySetCode timers: put one back for each tracked",
-              "line": 1432,
+              "line": 1525,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.min(60 + (attempt * 30), sbMaxRetryDelaySec), 'verifySetCode', [ overwrite: false, data: [",
-              "line": 1440,
+              "line": 1533,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1520,
+              "line": 1612,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(30, 'trySetCode', [ overwrite: false, data: retryData ])",
-              "line": 1559,
+              "line": 1651,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1769,
+              "line": 1861,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1790,
+              "line": 1882,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1850,
+              "line": 1942,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(10, 'reconcileDoorCodes', [ overwrite: true ])",
-              "line": 1904,
+              "line": 1996,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2581,
+              "line": 2673,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost(params) { resp ->",
-              "line": 2629,
+              "line": 2721,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2681,
+              "line": 2773,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "asynchttpPost('sbRegisterCallback', sbRegisterParams(), [cred: sbCredentialTag()])",
-              "line": 2684,
+              "line": 2776,
               "type": "HTTP_CALL",
               "value": "asynchttpPost"
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2710,
+              "line": 2802,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// Kept in atomicState with its due time, so an app-wide unschedule() (scheduleEvents on",
-              "line": 2713,
+              "line": 2805,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(delay, 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 2716,
+              "line": 2808,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// unschedule() removed a pending registration retry's timer; put it back for the time left",
-              "line": 2719,
+              "line": 2811,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 5L), 'sbRegisterRetryRun', [overwrite: true])",
-              "line": 2725,
+              "line": 2817,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2782,
+              "line": 2874,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2797,
+              "line": 2889,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "httpPost([",
-              "line": 2825,
+              "line": 2917,
               "type": "HTTP_CALL",
               "value": "httpPost"
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2847,
+              "line": 2939,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             },
             {
               "evidence": "unschedule('sbRegisterRetryRun')",
-              "line": 2852,
+              "line": 2944,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "// The link state is in atomicState with its expiry time, so an app-wide unschedule()",
-              "line": 2868,
+              "line": 2960,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(sbConnectLinkSeconds, 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: at]])",
-              "line": 2880,
+              "line": 2972,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(Math.max(left, 1L), 'sbConnectLinkExpire', [overwrite: true, data: [issuedAt: l.issuedAt]])",
-              "line": 2926,
+              "line": 3018,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule('sbConnectLinkExpire')",
-              "line": 2931,
+              "line": 3023,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "state.accessToken = createAccessToken()",
-              "line": 2941,
+              "line": 3033,
               "type": "OAUTH_ACCESS_TOKEN",
               "value": true
             }
           ],
-          "sourceBytes": 145972,
+          "sourceBytes": 151454,
           "sourceFetched": true,
-          "sourceSha256": "d282b1d6084b67ea1d92796ae61e88fcb98ada6b63da4b15bfcc1cd49269efc6",
+          "sourceSha256": "35371fe8018a3e2ba9ac7577ed43b98476e65a2ad7058c6b2eb3dd10fee9f28c",
           "sourceUrl": "https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/app.groovy"
         }
       ],
@@ -357434,7 +357224,7 @@
         "Locks",
         "Cloud"
       ],
-      "version": "1.4.20"
+      "version": "1.4.21"
     },
     {
       "apps": [
@@ -376520,7 +376310,7 @@
   "repositoriesFetched": 228,
   "repositoryCount": 229,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-23T07:55:28Z",
+  "snapshotGenerated": "2026-11-24T10:09:50Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,

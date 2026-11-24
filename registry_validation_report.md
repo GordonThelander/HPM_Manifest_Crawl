@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-23T07:55:28Z`
+- Snapshot: `2026-11-24T10:09:50Z`
 - HPM repositories in master list: **229**
 - Repositories fetched successfully: **228**
 - Packages indexed: **989**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **13**
+- Recorded fetch/parse errors: **14**
 
 ## A. Dead rules
 
@@ -607,6 +607,7 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Level | URL | Reason |
 | --- | --- | --- |
+| manifest | https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json | HTTP 429 |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |

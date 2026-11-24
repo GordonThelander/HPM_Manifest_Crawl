@@ -16146,7 +16146,7 @@
         },
         "definitionIdentity": {
           "components": {
-            "PARTIAL": 4
+            "PARTIAL": 5
           },
           "status": "PARTIAL"
         },
@@ -16163,8 +16163,8 @@
           "url": "https://raw.githubusercontent.com/KurtSanders/STAmbientWeather/master/hubitat/packageManifest.json"
         },
         "sourceFetch": {
-          "components": 4,
-          "fetched": 4,
+          "components": 5,
+          "fetched": 5,
           "status": "PASS"
         }
       },
@@ -22314,34 +22314,38 @@
     {
       "checks": {
         "communityLink": {
-          "status": "PRESENT",
-          "url": "https://community.hubitat.com/"
+          "status": "MISSING",
+          "url": null
         },
         "definitionIdentity": {
-          "components": {
-            "MATCH": 1
-          },
-          "status": "MATCH"
+          "components": {},
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
-          "status": "PRESENT",
-          "url": "https://hermes-automation.com/"
+          "status": "MISSING",
+          "url": null
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "PASS",
+          "status": "FAIL",
           "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json"
         },
         "sourceFetch": {
-          "components": 1,
-          "fetched": 1,
-          "status": "PASS"
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "HTTP 429",
+          "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json"
+        }
+      ],
       "packageId": "manifest:5656df40e4704e53829f"
     },
     {
@@ -32747,7 +32751,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-23T07:55:28Z",
+  "snapshotGenerated": "2026-11-24T10:09:50Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",
