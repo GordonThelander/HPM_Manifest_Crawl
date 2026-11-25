@@ -22314,38 +22314,34 @@
     {
       "checks": {
         "communityLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://community.hubitat.com/"
         },
         "definitionIdentity": {
-          "components": {},
-          "status": "NOT_AVAILABLE"
+          "components": {
+            "MATCH": 1
+          },
+          "status": "MATCH"
         },
         "documentationLink": {
-          "status": "MISSING",
-          "url": null
+          "status": "PRESENT",
+          "url": "https://hermes-automation.com/"
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "FAIL",
+          "status": "PASS",
           "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json"
         },
         "sourceFetch": {
-          "components": 0,
-          "fetched": 0,
-          "status": "NOT_APPLICABLE"
+          "components": 1,
+          "fetched": 1,
+          "status": "PASS"
         }
       },
-      "crawlErrors": [
-        {
-          "level": "manifest",
-          "reason": "HTTP 429",
-          "url": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json"
-        }
-      ],
+      "crawlErrors": [],
       "packageId": "manifest:5656df40e4704e53829f"
     },
     {
@@ -32751,7 +32747,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-24T10:09:50Z",
+  "snapshotGenerated": "2026-11-25T08:54:56Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

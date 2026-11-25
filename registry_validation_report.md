@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-24T10:09:50Z`
+- Snapshot: `2026-11-25T08:54:56Z`
 - HPM repositories in master list: **229**
 - Repositories fetched successfully: **228**
 - Packages indexed: **989**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **14**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -607,7 +607,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Level | URL | Reason |
 | --- | --- | --- |
-| manifest | https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json | HTTP 429 |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
@@ -644,13 +643,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2432 |
-| Source URLs fetched | 2422 |
+| Distinct source URLs | 2433 |
+| Source URLs fetched | 2423 |
 | Source URLs failed | 10 |
-| Components attempted | 2448 |
-| Components fetched | 2438 |
-| Literal definitions verified | 2427 |
-| Components with observations | 2293 |
+| Components attempted | 2449 |
+| Components fetched | 2439 |
+| Literal definitions verified | 2428 |
+| Components with observations | 2294 |
 
 ### Official Hubitat documentation pass
 

@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2448,
+  "definitionCount": 2449,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -9875,6 +9875,26 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/HubitatCommunity/Auto_Off/main/Auto_Off_o.groovy"
     },
     {
+      "id": "definition:b57ff303adc05c2315aa",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HERMES Home Dispatch Solution",
+          "namespace": "hermes"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "HERMES Automation",
+        "communityUrl": "https://community.hubitat.com/",
+        "documentationUrl": "https://hermes-automation.com/",
+        "id": "manifest:5656df40e4704e53829f",
+        "manifestUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/manifests/hermes-home-dispatch-package.json",
+        "name": "HERMES Home Dispatch Solution"
+      },
+      "sourceUrl": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
+    },
+    {
       "id": "definition:b604fa1c7562bef82cef",
       "identities": [
         {
@@ -11875,6 +11895,31 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/vision9074/hubitat-pihole-integration/main/PiholeIntegration.groovy"
     },
     {
+      "id": "definition:e2fcc64f1484245dd302",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "${APP_NAME} ${APP_VERSION}",
+          "namespace": "dandanache"
+        },
+        {
+          "basis": "manifestIdentity",
+          "name": "Zigbee Map",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "APP",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+        "name": "Zigbee Map"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.5/zigbee-map-app/zigbee-map.groovy"
+    },
+    {
       "id": "definition:e394ef4a1f1d45b0828a",
       "identities": [
         {
@@ -13158,31 +13203,6 @@ window.IDENTITY_INDEX = {
         "name": "FFL"
       },
       "sourceUrl": "https://raw.githubusercontent.com/lnjustin/FFL/refs/heads/main/FFL%20Instance%20App.groovy"
-    },
-    {
-      "id": "definition:fabe76efc2261bc09097",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "${APP_NAME} ${APP_VERSION}",
-          "namespace": "dandanache"
-        },
-        {
-          "basis": "manifestIdentity",
-          "name": "Zigbee Map",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-        "name": "Zigbee Map"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map.groovy"
     },
     {
       "id": "definition:fac125799a5ccd613c2f",
@@ -26233,6 +26253,26 @@ window.IDENTITY_INDEX = {
         "name": "Pentair IntelliCenter Controller"
       },
       "sourceUrl": "https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Pentair%20Intellicenter%20Control/PumpSpeedDriver.groovy"
+    },
+    {
+      "id": "definition:5a61efa10a5cd25f0efb",
+      "identities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "Zigbee Map Helper",
+          "namespace": "dandanache"
+        }
+      ],
+      "kind": "DRIVER",
+      "package": {
+        "author": "Dan Danache (@dandanache)",
+        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
+        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
+        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
+        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
+        "name": "Zigbee Map"
+      },
+      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.5/zigbee-map-app/zigbee-map-helper.groovy"
     },
     {
       "id": "definition:5a77f429fd248929982a",
@@ -41350,26 +41390,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/rob121/hubitat/master/drivers/airfoil/AirfoilSpeaker.groovy"
     },
     {
-      "id": "definition:bab6e0aee12bd37f1a05",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "Zigbee Map Helper",
-          "namespace": "dandanache"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Dan Danache (@dandanache)",
-        "communityUrl": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
-        "documentationUrl": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "id": "hpm:46ce50b6-6513-4ae9-b4a3-1d392294b35f",
-        "manifestUrl": "https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json",
-        "name": "Zigbee Map"
-      },
-      "sourceUrl": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map-helper.groovy"
-    },
-    {
       "id": "definition:bae3ea21c1f9ceaa089c",
       "identities": [
         {
@@ -52098,5 +52118,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-24T10:09:50Z"
+  "snapshotGenerated": "2026-11-25T08:54:56Z"
 };

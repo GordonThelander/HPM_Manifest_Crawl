@@ -4,7 +4,7 @@
     "browserOnly": true,
     "uploadsHubInventory": false
   },
-  "recordCount": 512,
+  "recordCount": 513,
   "records": [
     {
       "author": null,
@@ -2440,7 +2440,7 @@
       },
       "packageName": "MyFuelPortal Propane Integration",
       "qualityFlags": [],
-      "summary": "Tank level, gallons, usage estimate and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas)."
+      "summary": "Tank level, gallons, usage estimate, cost to fill, pending deliveries and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas)."
     },
     {
       "author": "C Steele",
@@ -4029,7 +4029,7 @@
       "links": {
         "community": "https://community.hubitat.com/t/release-zigbee-map-app/133888",
         "documentation": "https://codeberg.org/dan-danache/hubitat/src/branch/main/zigbee-map-app/README.md",
-        "source": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.4/zigbee-map-app/zigbee-map.groovy"
+        "source": "https://codeberg.org/dan-danache/hubitat/raw/tag/zigbee-map_3.0.5/zigbee-map-app/zigbee-map.groovy"
       },
       "networkEvidence": {
         "classification": "CLOUD",
@@ -11867,6 +11867,41 @@
       "summary": "YoLink Local Hub integration. App + MQTT required; device drivers optional/selectable."
     },
     {
+      "author": "HERMES Automation",
+      "authority": "HPM_PACKAGE",
+      "definitionIdentities": [
+        {
+          "basis": "sourceIdentity",
+          "name": "HERMES Home Dispatch Solution",
+          "namespace": "hermes"
+        }
+      ],
+      "displayName": "HERMES Home Dispatch Solution",
+      "evidenceChecks": {
+        "communityLink": "PRESENT",
+        "definitionIdentity": "MATCH",
+        "documentationLink": "PRESENT",
+        "httpsTransport": "PASS",
+        "manifestFetch": "PASS",
+        "sourceFetch": "PASS"
+      },
+      "id": "manifest:5656df40e4704e53829f",
+      "kind": "APP",
+      "lifecycleFlags": [],
+      "links": {
+        "community": "https://community.hubitat.com/",
+        "documentation": "https://hermes-automation.com/",
+        "source": "https://hermes-automation.com/app-code/home-dispatch/hubitat/hermes-home-dispatch.groovy"
+      },
+      "networkEvidence": {
+        "classification": "CLOUD",
+        "reviewed": false
+      },
+      "packageName": "HERMES Home Dispatch Solution",
+      "qualityFlags": [],
+      "summary": "Powered by Noonlight, HERMES enables your Hubitat hub to request emergency services and optionally share household details to improve response. Supported alarm types: Police (intrusion), Fire, Medical, Water, and Non-emergency. Optional information may include medical notes, pets, entry instructions"
+    },
+    {
       "author": "Mattias Fornander (@mfornander)",
       "authority": "HPM_PACKAGE",
       "definitionIdentities": [
@@ -17352,5 +17387,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-24T10:09:50Z"
+  "snapshotGenerated": "2026-11-25T08:54:56Z"
 }
