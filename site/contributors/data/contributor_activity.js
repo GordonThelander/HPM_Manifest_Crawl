@@ -8559,6 +8559,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:ea1bd527-214b-4a03-ac9e-8ef3c6e6fb34",
           "packageName": "Dywarmic Towel Warmer Integration",
           "summary": "Dywarmic Towel Warmer Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:d448334451f8fc3a28b5d283",
+          "observedAt": "2026-11-26T08:39:41Z",
+          "observedCommit": null,
+          "packageId": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
+          "packageName": "BWA Spa Manager - Local TCP Direct Connection Device Driver",
+          "summary": "BWA Spa Manager - Local TCP Direct Connection Device Driver: updated."
         }
       ],
       "appCount": 9,
@@ -8577,7 +8591,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 15,
       "id": "contributor:076e5477ab8ec37a09b7",
       "name": "Kurt Sanders",
-      "observedActivityCount": 12,
+      "observedActivityCount": 13,
       "packages": [
         {
           "appCount": 2,
@@ -8627,9 +8641,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:ebb61aa6-f4d7-47f7-98df-b66bd1a319fc",
           "manifestUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json",
           "name": "BWA Spa Manager - Local TCP Direct Connection Device Driver",
-          "publisherDate": "2026-11-24",
+          "publisherDate": "2026-11-25",
           "repositoryUrl": "https://raw.githubusercontent.com/KurtSanders/HubitatPackages/master/repository.json",
-          "version": "2.2.1"
+          "version": "2.3.0"
         },
         {
           "appCount": 1,
@@ -9881,6 +9895,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:a255e79a-86ca-4285-8210-cb143d940dfb",
           "packageName": "Aqara Drivers",
           "summary": "Aqara Drivers: updated."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8604146e4fad5b179e197e73",
+          "observedAt": "2026-11-26T08:39:41Z",
+          "observedCommit": null,
+          "packageId": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
+          "packageName": "Hub Inspector",
+          "summary": "Hub Inspector: updated."
         }
       ],
       "appCount": 6,
@@ -9903,7 +9931,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 15,
       "id": "contributor:7875859b9cf29ece5325",
       "name": "hubitrep",
-      "observedActivityCount": 53,
+      "observedActivityCount": 54,
       "packages": [
         {
           "appCount": 1,
@@ -9953,9 +9981,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:c9f26998-9303-409e-987c-72b43c6d9d0c",
           "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json",
           "name": "Hub Inspector",
-          "publisherDate": "2026-11-18",
+          "publisherDate": "2026-11-26",
           "repositoryUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/repository.json",
-          "version": "6.4.0"
+          "version": "6.4.1"
         },
         {
           "appCount": 2,
@@ -16122,157 +16150,6 @@ window.CONTRIBUTOR_ACTIVITY = {
     {
       "activity": [
         {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:3a958d965d95d49cbed4efbe",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
-          "packageName": "APC SmartUPS Status",
-          "summary": "APC SmartUPS Status: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:8c40669a4fbef4c856e6ed63",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
-          "packageName": "UniFi Presence Drivers",
-          "summary": "UniFi Presence Drivers: changed declared definitions."
-        },
-        {
-          "category": "Utility",
-          "changeTypes": [
-            "DECLARED_DEFINITIONS_CHANGED"
-          ],
-          "declarationRole": "CURRENT_DECLARATION",
-          "evidenceUrl": null,
-          "id": "change:e7c4611b2f751a13e1fd97c5",
-          "observedAt": "2026-09-16T03:36:32Z",
-          "observedCommit": null,
-          "packageId": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
-          "packageName": "Rain Bird LNK/LNK2 WiFi Module Controller",
-          "summary": "Rain Bird LNK/LNK2 WiFi Module Controller: changed declared definitions."
-        }
-      ],
-      "appCount": 1,
-      "categories": [
-        {
-          "name": "Control",
-          "packageCount": 1
-        },
-        {
-          "name": "Notifications",
-          "packageCount": 1
-        },
-        {
-          "name": "Utility",
-          "packageCount": 3
-        },
-        {
-          "name": "Weather",
-          "packageCount": 1
-        }
-      ],
-      "currentPackageCount": 6,
-      "currentRank": 43,
-      "driverCount": 11,
-      "id": "contributor:533265d5e0daeb04adb8",
-      "name": "Marc Hedish",
-      "observedActivityCount": 3,
-      "packages": [
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-apc-smartups-status-driver/158899",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/APC-SmartUPS/README.md",
-          "driverCount": 1,
-          "id": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json",
-          "name": "APC SmartUPS Status",
-          "publisherDate": "2026-07-15",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.1.1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
-          "driverCount": 2,
-          "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
-          "name": "Rain Bird LNK/LNK2 WiFi Module Controller",
-          "publisherDate": "2026-07-14",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.0.2.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Control",
-          "communityUrl": "https://community.hubitat.com/t/release-springs-window-fashions-sheer-shade-driver/62341",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/Springs-Window-Fashions/README.md",
-          "driverCount": 2,
-          "id": "hpm:3e9ba706-857a-4f84-ab3b-2ddce486aaca",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/Springs-Window-Fashions/packageManifest.json",
-          "name": "Springs Window Fashions Shade Drivers",
-          "publisherDate": "2021-06-30",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.1"
-        },
-        {
-          "appCount": 0,
-          "category": "Notifications",
-          "communityUrl": "https://community.hubitat.com/t/release-telnyx-sms-notification-driver/63106",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/Telnyx/README.md",
-          "driverCount": 2,
-          "id": "hpm:6e5251ae-6faf-42f6-94a5-341806660b76",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/Telnyx/packageManifest.json",
-          "name": "Telnyx SMS",
-          "publisherDate": "2021-01-28",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.0"
-        },
-        {
-          "appCount": 0,
-          "category": "Utility",
-          "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
-          "driverCount": 2,
-          "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
-          "name": "UniFi Presence Drivers",
-          "publisherDate": "2026-04-11",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.9.2.0"
-        },
-        {
-          "appCount": 1,
-          "category": "Weather",
-          "communityUrl": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-          "driverCount": 2,
-          "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-          "name": "WET-IT",
-          "publisherDate": "2026-04-21",
-          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-          "version": "1.3.2.0"
-        }
-      ]
-    },
-    {
-      "activity": [
-        {
           "category": "Convenience",
           "changeTypes": [
             "DECLARED_DEFINITIONS_CHANGED"
@@ -16384,7 +16261,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 44,
+      "currentRank": 43,
       "driverCount": 54,
       "id": "contributor:9cc5054c6895052a301d",
       "name": "Mavrrick",
@@ -16509,7 +16386,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 45,
+      "currentRank": 44,
       "driverCount": 7,
       "id": "contributor:49a9d4455deb7cea7702",
       "name": "Rene Boer",
@@ -16609,7 +16486,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 46,
+      "currentRank": 45,
       "driverCount": 6,
       "id": "contributor:90d9f3074e373c8662a7",
       "name": "Ryan Elliott",
@@ -16705,7 +16582,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 6,
-      "currentRank": 47,
+      "currentRank": 46,
       "driverCount": 5,
       "id": "contributor:9e2ad0c801b3494d4c53",
       "name": "Scruffy-SJB",
@@ -16876,7 +16753,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 48,
+      "currentRank": 47,
       "driverCount": 11,
       "id": "contributor:41d47ac0fdd0b2eda300",
       "name": "Armand Welsh",
@@ -17002,7 +16879,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 49,
+      "currentRank": 48,
       "driverCount": 29,
       "id": "contributor:332085944bf3fd241b9f",
       "name": "Bloodtick Jones",
@@ -17524,7 +17401,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 50,
+      "currentRank": 49,
       "driverCount": 3,
       "id": "contributor:34f08322d454ddb6c2eb",
       "name": "Chris Ogden",
@@ -17630,7 +17507,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 51,
+      "currentRank": 50,
       "driverCount": 7,
       "id": "contributor:b4f146a64408751a800d",
       "name": "Chris Truitt",
@@ -17736,7 +17613,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 52,
+      "currentRank": 51,
       "driverCount": 4,
       "id": "contributor:caf1e9bd13ac8e7a6646",
       "name": "Dan Ogorchock",
@@ -18092,7 +17969,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 53,
+      "currentRank": 52,
       "driverCount": 16,
       "id": "contributor:2a573f71ae22762e7fa8",
       "name": "Daniel Winks",
@@ -18179,7 +18056,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 54,
+      "currentRank": 53,
       "driverCount": 2,
       "id": "contributor:7ae37032d9fd22917e11",
       "name": "Eliot Stocker",
@@ -18601,7 +18478,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 55,
+      "currentRank": 54,
       "driverCount": 8,
       "id": "contributor:eeb2e858a103a96d7ff9",
       "name": "Gordon Thelander",
@@ -18715,7 +18592,7 @@ window.CONTRIBUTOR_ACTIVITY = {
         }
       ],
       "currentPackageCount": 5,
-      "currentRank": 56,
+      "currentRank": 55,
       "driverCount": 5,
       "id": "contributor:9619c4d65c3732de0732",
       "name": "Justin Walker (augoisms)",
@@ -18785,6 +18662,154 @@ window.CONTRIBUTOR_ACTIVITY = {
           "publisherDate": "2023-03-03",
           "repositoryUrl": "https://raw.githubusercontent.com/augoisms/hubitat/master/repository.json",
           "version": "1.0.9"
+        }
+      ]
+    },
+    {
+      "activity": [
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:3a958d965d95d49cbed4efbe",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
+          "packageName": "APC SmartUPS Status",
+          "summary": "APC SmartUPS Status: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:8c40669a4fbef4c856e6ed63",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
+          "packageName": "UniFi Presence Drivers",
+          "summary": "UniFi Presence Drivers: changed declared definitions."
+        },
+        {
+          "category": "Utility",
+          "changeTypes": [
+            "DECLARED_DEFINITIONS_CHANGED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:e7c4611b2f751a13e1fd97c5",
+          "observedAt": "2026-09-16T03:36:32Z",
+          "observedCommit": null,
+          "packageId": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
+          "packageName": "Rain Bird LNK/LNK2 WiFi Module Controller",
+          "summary": "Rain Bird LNK/LNK2 WiFi Module Controller: changed declared definitions."
+        },
+        {
+          "category": "Weather",
+          "changeTypes": [
+            "REMOVED"
+          ],
+          "declarationRole": "PREVIOUS_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:508cfd4d444652af946c5ce6",
+          "observedAt": "2026-11-26T08:39:41Z",
+          "observedCommit": null,
+          "packageId": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
+          "packageName": "WET-IT",
+          "summary": "WET-IT: removed."
+        }
+      ],
+      "appCount": 0,
+      "categories": [
+        {
+          "name": "Control",
+          "packageCount": 1
+        },
+        {
+          "name": "Notifications",
+          "packageCount": 1
+        },
+        {
+          "name": "Utility",
+          "packageCount": 3
+        }
+      ],
+      "currentPackageCount": 5,
+      "currentRank": 56,
+      "driverCount": 9,
+      "id": "contributor:533265d5e0daeb04adb8",
+      "name": "Marc Hedish",
+      "observedActivityCount": 4,
+      "packages": [
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-apc-smartups-status-driver/158899",
+          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/APC-SmartUPS/README.md",
+          "driverCount": 1,
+          "id": "hpm:4e5c389d-a3d5-4214-b24f-971b975cf7ae",
+          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/APC-SmartUPS/packageManifest.json",
+          "name": "APC SmartUPS Status",
+          "publisherDate": "2026-07-15",
+          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
+          "version": "1.1.1.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-rain-bird-lnk-lnk2-wifi-module-controller/159062",
+          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/RainBird-LNK/README.md",
+          "driverCount": 2,
+          "id": "hpm:2ee323ee-9133-4a31-b84e-192b7a33d0ab",
+          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Drivers/RainBird-LNK/packageManifest.json",
+          "name": "Rain Bird LNK/LNK2 WiFi Module Controller",
+          "publisherDate": "2026-07-14",
+          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
+          "version": "1.0.2.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Control",
+          "communityUrl": "https://community.hubitat.com/t/release-springs-window-fashions-sheer-shade-driver/62341",
+          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/Springs-Window-Fashions/README.md",
+          "driverCount": 2,
+          "id": "hpm:3e9ba706-857a-4f84-ab3b-2ddce486aaca",
+          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/Springs-Window-Fashions/packageManifest.json",
+          "name": "Springs Window Fashions Shade Drivers",
+          "publisherDate": "2021-06-30",
+          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
+          "version": "1.1"
+        },
+        {
+          "appCount": 0,
+          "category": "Notifications",
+          "communityUrl": "https://community.hubitat.com/t/release-telnyx-sms-notification-driver/63106",
+          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/Telnyx/README.md",
+          "driverCount": 2,
+          "id": "hpm:6e5251ae-6faf-42f6-94a5-341806660b76",
+          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/Telnyx/packageManifest.json",
+          "name": "Telnyx SMS",
+          "publisherDate": "2021-01-28",
+          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
+          "version": "1.0"
+        },
+        {
+          "appCount": 0,
+          "category": "Utility",
+          "communityUrl": "https://community.hubitat.com/t/release-unifi-presence-drivers-for-hubitat/156847",
+          "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Drivers/UniFi-Presence-Sensor/README.md",
+          "driverCount": 2,
+          "id": "hpm:b68d2d46-e199-46c9-a654-68ec7a1884a6",
+          "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Drivers/UniFi-Presence-Sensor/packageManifest.json",
+          "name": "UniFi Presence Drivers",
+          "publisherDate": "2026-04-11",
+          "repositoryUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
+          "version": "1.9.2.0"
         }
       ]
     },
@@ -29479,6 +29504,20 @@ window.CONTRIBUTOR_ACTIVITY = {
           "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
           "packageName": "MyFuelPortal Propane Integration",
           "summary": "MyFuelPortal Propane Integration: updated."
+        },
+        {
+          "category": "Integrations",
+          "changeTypes": [
+            "UPDATED"
+          ],
+          "declarationRole": "CURRENT_DECLARATION",
+          "evidenceUrl": null,
+          "id": "change:bbbaef39ef6ee40d6ca17899",
+          "observedAt": "2026-11-26T08:39:41Z",
+          "observedCommit": null,
+          "packageId": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
+          "packageName": "MyFuelPortal Propane Integration",
+          "summary": "MyFuelPortal Propane Integration: updated."
         }
       ],
       "appCount": 1,
@@ -29493,7 +29532,7 @@ window.CONTRIBUTOR_ACTIVITY = {
       "driverCount": 1,
       "id": "contributor:11858a934cc929a87591",
       "name": "Matt Palermo",
-      "observedActivityCount": 4,
+      "observedActivityCount": 5,
       "packages": [
         {
           "appCount": 1,
@@ -29504,9 +29543,9 @@ window.CONTRIBUTOR_ACTIVITY = {
           "id": "hpm:1b01b412-00fc-4cf5-b7da-d9770706a467",
           "manifestUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json",
           "name": "MyFuelPortal Propane Integration",
-          "publisherDate": "2026-11-19",
+          "publisherDate": "2026-11-25",
           "repositoryUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/repository.json",
-          "version": "1.3.0"
+          "version": "1.3.1"
         }
       ]
     },
@@ -32263,13 +32302,13 @@ window.CONTRIBUTOR_ACTIVITY = {
     }
   ],
   "currentContributorCount": 270,
-  "currentPackageCount": 989,
+  "currentPackageCount": 988,
   "dataset": "contributor-activity",
   "history": {
-    "attributedEventCount": 976,
-    "eventCount": 974,
+    "attributedEventCount": 980,
+    "eventCount": 978,
     "firstObservedAt": "2026-08-13T08:50:24Z",
-    "lastObservedAt": "2026-11-25T08:54:56Z"
+    "lastObservedAt": "2026-11-26T08:39:41Z"
   },
   "method": {
     "aliases": "not merged without explicit reviewed evidence",
@@ -32281,9 +32320,9 @@ window.CONTRIBUTOR_ACTIVITY = {
     "ranking": "unique packages in the current successful community package snapshot"
   },
   "observedContributorCount": 275,
-  "rankedPackageCount": 987,
+  "rankedPackageCount": 986,
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-25T08:54:56Z",
+  "snapshotGenerated": "2026-11-26T08:39:41Z",
   "sources": {
     "changes": "package_changes.json",
     "definitions": "definitions.json",

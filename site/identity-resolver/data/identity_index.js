@@ -1557,7 +1557,7 @@ window.IDENTITY_INDEX = {
     }
   ],
   "dataset": "identity-resolver",
-  "definitionCount": 2449,
+  "definitionCount": 2446,
   "definitions": [
     {
       "id": "definition:00e3747a40065d2c0645",
@@ -8703,26 +8703,6 @@ window.IDENTITY_INDEX = {
         "name": "Miele Integration"
       },
       "sourceUrl": "https://raw.githubusercontent.com/xap-code/hubitat/master/miele/app/Miele_Integration.groovy"
-    },
-    {
-      "id": "definition:9c44fa1c5f3047c8ae6c",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WET-IT",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "APP",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-        "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-        "name": "WET-IT"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy"
     },
     {
       "id": "definition:9c542234c57a338489ba",
@@ -37830,26 +37810,6 @@ window.IDENTITY_INDEX = {
       "sourceUrl": "https://raw.githubusercontent.com/ymerj/HE-HA-control/main/HADBgenericComponentCurrentMeter.groovy"
     },
     {
-      "id": "definition:a674d08436c6d0695a06",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WET-IT Data",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-        "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-        "name": "WET-IT"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Data_Driver.groovy"
-    },
-    {
       "id": "definition:a6a5dad95dd033e89a97",
       "identities": [
         {
@@ -39188,26 +39148,6 @@ window.IDENTITY_INDEX = {
         "name": "Shelly Webhook/Websocket Drivers"
       },
       "sourceUrl": "https://github.com/ShellyUSA/Hubitat-Drivers/releases/download/v2.17.8/ShellyFlood-v2.17.8.groovy"
-    },
-    {
-      "id": "definition:ae4f56fbd266a48b4251",
-      "identities": [
-        {
-          "basis": "sourceIdentity",
-          "name": "WET-IT Echo",
-          "namespace": "MHedish"
-        }
-      ],
-      "kind": "DRIVER",
-      "package": {
-        "author": "Marc Hedish",
-        "communityUrl": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-        "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-        "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-        "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-        "name": "WET-IT"
-      },
-      "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Echo_Driver.groovy"
     },
     {
       "id": "definition:ae5a1e25cde0c86e3f20",
@@ -52118,5 +52058,5 @@ window.IDENTITY_INDEX = {
     "uploadsHubInventory": false
   },
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-25T08:54:56Z"
+  "snapshotGenerated": "2026-11-26T08:39:41Z"
 };

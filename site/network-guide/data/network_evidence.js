@@ -1,7 +1,7 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 187,
-    "CLOUD": 282,
+    "CLOUD": 281,
     "INSUFFICIENT": 313,
     "LAN": 207
   },
@@ -13,7 +13,7 @@ window.NETWORK_EVIDENCE = {
     "observed": "literal external hosts after a source definition and Hubitat LAN primitives found by bounded static analysis",
     "reviewed": "Automation Map dependency conclusions matched using its reviewed rules"
   },
-  "packageCount": 989,
+  "packageCount": 988,
   "packages": [
     {
       "author": "Jo Rhett",
@@ -27330,47 +27330,6 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Marc Hedish",
-      "category": "Weather",
-      "classification": "CLOUD",
-      "communityUrl": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-      "declared": {
-        "cloudTag": false,
-        "lanTag": false
-      },
-      "description": "Local-first evapotranspiration (ET) and soil-moisture modeling app for Hubitat. Provides professional-grade irrigation intelligence similar to Rachio, Orbit, and Hydrawise, running entirely on-hub.",
-      "documentationUrl": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-      "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-      "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-      "name": "WET-IT",
-      "observed": {
-        "externalHosts": [
-          "api.geoapify.com",
-          "api.open-meteo.com",
-          "api.openweathermap.org",
-          "api.sunrise-sunset.org",
-          "api.tomorrow.io",
-          "api.weather.gov",
-          "iso3166-2-api.vercel.app",
-          "sdmdataaccess.nrcs.usda.gov",
-          "sdmdataaccess.sc.egov.usda.gov",
-          "sunrise-sunset.org",
-          "swd.weatherflow.com",
-          "www.geoapify.com",
-          "www.openstreetmap.org"
-        ],
-        "lanPrimitives": [],
-        "sourceFilesAnalysed": 3,
-        "urlLiteralCount": 40
-      },
-      "reviewed": [],
-      "tags": [
-        "Automation",
-        "Irrigation",
-        "Weather"
-      ]
-    },
-    {
       "author": "Aniva",
       "category": "Integrations",
       "classification": "CLOUD",
@@ -29818,5 +29777,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-25T08:54:56Z"
+  "snapshotGenerated": "2026-11-26T08:39:41Z"
 };

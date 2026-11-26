@@ -1,9 +1,13 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-25T08:54:56Z`.
+Latest observation: `2026-11-26T08:39:41Z`.
 
-**93 package change(s):** added 28, broken 1, declared definitions changed 4, removed 12, restored 1, source location changed 9, updated 52
+**71 package change(s):** added 18, broken 1, declared definitions changed 4, removed 1, restored 1, source location changed 8, updated 51
 
+- [WET-IT: removed.](https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json)
+- [MyFuelPortal Propane Integration: updated.](https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [BWA Spa Manager - Local TCP Direct Connection Device Driver: updated.](https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json)
 - [Zigbee Sonoff - generic relays: updated.](https://raw.githubusercontent.com/tmastersmart/hubitat-code/main/packages/zigbee-sonoff-relays-new.json)
 - [Zigbee Map: updated, changed source location.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
 - [TankUtility: updated.](https://raw.githubusercontent.com/imnotbob/tankUtility/master/packageManager.json)
@@ -71,31 +75,5 @@ Latest observation: `2026-11-25T08:54:56Z`.
 - [FireBoard: added.](https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json)
 - [Blink Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
 - [Ambient Ecowitt Weather: added.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
-- [zigbee-graph: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-graph-app/packageManifest.json)
-- [Zigbee Map: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/zigbee-map-app/packageManifest.json)
-- [WeatherFlow: removed.](https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json)
-- [Watchtower: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/watchtower-app/packageManifest.json)
-- [WSM4Hubitat: removed.](https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json)
-- [UnifiConnectAPI: removed.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json)
-- [Unifi Protect Drivers: removed.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json)
-- [Unifi Drivers: removed.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
-- [Tesla Drivers: removed.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Roborock Integration: updated.](https://raw.githubusercontent.com/jdthomas24/Hubitat-Apps-Drivers/refs/heads/main/Roborock%20Integration/packageManifest.json)
-- [Neurio: removed.](https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json)
-- [Neptune Systems Apex: removed.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
-- [Lumos: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lumos-app/packageManifest.json)
-- [LGTV with webOS: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/lgtv-drivers/packageManifest.json)
-- [IKEA Zigbee drivers: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ikea-zigbee-drivers/packageManifest.json)
-- [Hubitat drivers for NodOn smart devices.: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/nodon-drivers/packageManifest.json)
-- [Hub-a-Dashery: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/hub-a-dashery-app/packageManifest.json)
-- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
-- [Grizzl-ECharger: removed.](https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json)
-- [FireBoard: removed.](https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json)
-- [EMS-ESP Gateway: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/ems-esp-driver/packageManifest.json)
-- [Dashboard Widgets: added.](https://codeberg.org/dan-danache/hubitat/raw/branch/main/dashboard-widgets-driver/packageManifest.json)
-- [Blink Drivers: removed.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
-- [Ambient Ecowitt Weather: removed.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

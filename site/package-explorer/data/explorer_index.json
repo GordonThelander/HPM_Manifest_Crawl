@@ -2,7 +2,7 @@
   "counts": {
     "COMMUNITY_APP": 80,
     "COMMUNITY_DRIVER": 536,
-    "HPM_PACKAGE": 989,
+    "HPM_PACKAGE": 988,
     "OFFICIAL_DEVICE": 1089
   },
   "dataset": "package-explorer",
@@ -11,7 +11,7 @@
     "claimBoundaries": "Official, community, HPM, source and network evidence remain separately labelled.",
     "remoteContentRenderedAsText": true
   },
-  "recordCount": 2694,
+  "recordCount": 2693,
   "records": [
     {
       "category": "Button Controller Apps",
@@ -27687,7 +27687,7 @@
       "author": "Kurt Sanders",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-24",
+      "dateReleased": "2026-11-25",
       "definitions": [
         {
           "id": "definition:ae03c9b93ba5adf683ea",
@@ -27783,7 +27783,7 @@
         "Temperature & Humidity",
         "Water"
       ],
-      "version": "2.2.1"
+      "version": "2.3.0"
     },
     {
       "author": "Brian Wilson",
@@ -49260,7 +49260,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-18",
+      "dateReleased": "2026-11-26",
       "definitions": [
         {
           "id": "definition:ffdf6e2418345b7f15d7",
@@ -49337,7 +49337,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.4.0"
+      "version": "6.4.1"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -70277,7 +70277,7 @@
       "author": "Matt Palermo",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-19",
+      "dateReleased": "2026-11-25",
       "definitions": [
         {
           "id": "definition:f262bca60887ae317ff9",
@@ -70363,7 +70363,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.3.0"
+      "version": "1.3.1"
     },
     {
       "author": "Jason Mok/Brian Beaird/Barry Burke/RBoy Apps/Dominick Meglio",
@@ -106683,121 +106683,6 @@
       "version": null
     },
     {
-      "author": "Marc Hedish",
-      "category": "Weather",
-      "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-04-21",
-      "definitions": [
-        {
-          "id": "definition:9c44fa1c5f3047c8ae6c",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "APP",
-          "name": "WET-IT",
-          "namespace": "MHedish",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy"
-        },
-        {
-          "id": "definition:a674d08436c6d0695a06",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WET-IT Data",
-          "namespace": "MHedish",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Data_Driver.groovy"
-        },
-        {
-          "id": "definition:ae4f56fbd266a48b4251",
-          "identityEvidence": "SOURCE_IDENTITY",
-          "kind": "DRIVER",
-          "name": "WET-IT Echo",
-          "namespace": "MHedish",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Echo_Driver.groovy"
-        }
-      ],
-      "description": "Local-first evapotranspiration (ET) and soil-moisture modeling app for Hubitat. Provides professional-grade irrigation intelligence similar to Rachio, Orbit, and Hydrawise, running entirely on-hub.",
-      "evidence": [
-        {
-          "classification": "HPM_PACKAGE_AVAILABLE",
-          "label": "HPM metadata"
-        },
-        {
-          "classification": "SOURCE_IDENTITY_MATCH",
-          "label": "Source identity"
-        }
-      ],
-      "hasDocumentation": true,
-      "health": {
-        "checks": [
-          {
-            "name": "communityLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "definitionIdentity",
-            "status": "MATCH"
-          },
-          {
-            "name": "documentationLink",
-            "status": "PRESENT"
-          },
-          {
-            "name": "httpsTransport",
-            "status": "PASS"
-          },
-          {
-            "name": "manifestFetch",
-            "status": "PASS"
-          },
-          {
-            "name": "sourceFetch",
-            "status": "PASS"
-          }
-        ],
-        "classification": "PASS"
-      },
-      "id": "hpm:d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-      "kinds": [
-        "APP",
-        "DRIVER"
-      ],
-      "links": {
-        "community": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-        "documentation": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-        "manifest": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-        "repository": "https://github.com/MHedish/Hubitat"
-      },
-      "name": "WET-IT",
-      "network": {
-        "classification": "CLOUD",
-        "declared": {
-          "cloudTag": false,
-          "lanTag": false
-        },
-        "externalHosts": [
-          "api.geoapify.com",
-          "api.open-meteo.com",
-          "api.openweathermap.org",
-          "api.sunrise-sunset.org",
-          "api.tomorrow.io",
-          "api.weather.gov",
-          "iso3166-2-api.vercel.app",
-          "sdmdataaccess.nrcs.usda.gov",
-          "sdmdataaccess.sc.egov.usda.gov",
-          "sunrise-sunset.org",
-          "swd.weatherflow.com",
-          "www.geoapify.com",
-          "www.openstreetmap.org"
-        ],
-        "reviewed": []
-      },
-      "recordType": "HPM_PACKAGE",
-      "tags": [
-        "Automation",
-        "Irrigation",
-        "Weather"
-      ],
-      "version": "1.3.2.0"
-    },
-    {
       "author": "Aniva",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
@@ -139795,5 +139680,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-25T08:54:56Z"
+  "snapshotGenerated": "2026-11-26T08:39:41Z"
 }

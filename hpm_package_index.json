@@ -66,7 +66,7 @@
       "url": "https://raw.githubusercontent.com/lgkahn/hubitat/master/stg814v4.groovey"
     }
   ],
-  "packageCount": 989,
+  "packageCount": 988,
   "packages": [
     {
       "apps": [],
@@ -136096,7 +136096,7 @@
       "author": "Kurt Sanders",
       "category": "Integrations",
       "communityLink": "https://community.hubitat.com/t/release-new-bwa-spa-manager-cloud-control-direct-local-tcp/151421",
-      "dateReleased": "2026-11-24",
+      "dateReleased": "2026-11-25",
       "description": "Integrates your locally connected (Hubitat Hub and SPA must be on the same home network) connected Hot Tub/Spa system (Balboa WiFi controller) into the Hubitat environment.  Use this Hubitat device driver only version to directly TCP connect to the SPA WiFi controller.",
       "documentationLink": "https://github.com/KurtSanders/HBBWASpaManager/blob/master/README.md",
       "drivers": [
@@ -136119,67 +136119,67 @@
             },
             {
               "evidence": "runIn(5, 'configure')",
-              "line": 231,
+              "line": 235,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "unschedule(refresh)",
-              "line": 238,
+              "line": 242,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "cd = addChildDevice(NAMESPACE, type, childDeviceName, [name: \"${device.displayName} - ${name}\", label: \"${name}\", isComponent: false])",
-              "line": 277,
+              "line": 282,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitat\", \"Generic Component Switch\", pId, [name: \"${device.displayName} Pump ${i}\", isComponent: false])",
-              "line": 310,
+              "line": 315,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "addChildDevice(\"hubitat\", \"Generic Component Switch\", lId, [name: \"${device.displayName} Light ${i}\", isComponent: false])",
-              "line": 322,
+              "line": 327,
               "type": "CHILD_DEVICE_CREATE",
               "value": true
             },
             {
               "evidence": "runIn(3, \"refresh\", [overwrite: true])",
-              "line": 364,
+              "line": 369,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(3, \"refresh\", [overwrite: true])",
-              "line": 371,
+              "line": 376,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"updateThermostatSetpoints\", [overwrite: true, data: setpoint])",
-              "line": 574,
+              "line": 579,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(5, \"refresh\", [overwrite: true])",
-              "line": 615,
+              "line": 626,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(2, 'setSpaToLocalTime')",
-              "line": 939,
+              "line": 951,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "String fullWebPathName = \"http://${location.hub.localIP}/local/${FILENAME_CSS}\"",
-              "line": 1265,
+              "line": 1293,
               "type": "NETWORK_URL_LITERAL",
               "value": {
                 "host": "${location.hub.localip",
@@ -136189,50 +136189,50 @@
             },
             {
               "evidence": "runIn(2, 'getFilterSchedule')",
-              "line": 1358,
+              "line": 1386,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.connect(settings.ipaddress, portNum, byteInterface: true, readDelay: readDelayMs)",
-              "line": 1441,
+              "line": 1469,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "runIn(waitSecs, 'socket_close')",
-              "line": 1444,
+              "line": 1472,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "runIn(waitSecs, 'socket_close')",
-              "line": 1484,
+              "line": 1512,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.sendMessage(message)",
-              "line": 1488,
+              "line": 1516,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             },
             {
               "evidence": "unschedule('socket_close')",
-              "line": 1502,
+              "line": 1530,
               "type": "SCHEDULING",
               "value": true
             },
             {
               "evidence": "interfaces.rawSocket.close()",
-              "line": 1514,
+              "line": 1542,
               "type": "RAW_SOCKET_INTERFACE",
               "value": true
             }
           ],
-          "sourceBytes": 63523,
+          "sourceBytes": 65609,
           "sourceFetched": true,
-          "sourceSha256": "0ec76ce932356fba4f72228d9c557544bed9768c0c112cbaf7108921a8df3704",
+          "sourceSha256": "a63a60f7c96bd3309655307d136af8661501fe5c9e050359c52ae3faa41a5c14",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Driver.groovy"
         },
         {
@@ -136254,14 +136254,14 @@
             },
             {
               "evidence": "runIn(1, 'off')",
-              "line": 57,
+              "line": 58,
               "type": "SCHEDULING",
               "value": true
             }
           ],
-          "sourceBytes": 2533,
+          "sourceBytes": 2766,
           "sourceFetched": true,
-          "sourceSha256": "646f97b6c74ec6707a2493e7a0a710a7f85bdf198d416ac41c3b0e90f9447a5c",
+          "sourceSha256": "2a8cca138d367603dcba3baa67ca3b44330c86b9f5b2c43e6d13bf646f612977",
           "sourceUrl": "https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/Balboa%20Hot%20Tub%20Local%20Child%20Switch.groovy"
         }
       ],
@@ -136278,7 +136278,7 @@
         "Temperature & Humidity",
         "Water"
       ],
-      "version": "2.2.1"
+      "version": "2.3.0"
     },
     {
       "apps": [
@@ -146963,788 +146963,6 @@
         "Tools & Utilities"
       ],
       "version": "1.9.2.0"
-    },
-    {
-      "apps": [
-        {
-          "definitionLine": 50,
-          "definitionName": "WET-IT",
-          "definitionNamespace": "MHedish",
-          "manifestName": "WET-IT",
-          "manifestNamespace": "MHedish",
-          "observations": [
-            {
-              "evidence": "* https://www.apache.org/licenses/LICENSE-2.0",
-              "line": 5,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.apache.org",
-                "scheme": "https",
-                "url": "https://www.apache.org/licenses/LICENSE-2.0"
-              }
-            },
-            {
-              "evidence": "* https://paypal.me/MHedish",
-              "line": 7,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "paypal.me",
-                "scheme": "https",
-                "url": "https://paypal.me/MHedish"
-              }
-            },
-            {
-              "evidence": "* 1.0.0.0 – 1.2.3.8 See https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/CHANGELOG.md",
-              "line": 10,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/CHANGELOG.md"
-              }
-            },
-            {
-              "evidence": "@Field static final String REPO_ROOT=\"https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT\"",
-              "line": 31,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT"
-              }
-            },
-            {
-              "evidence": "@Field static final String RAW_ROOT=\"https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT\"",
-              "line": 32,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT"
-              }
-            },
-            {
-              "evidence": "importUrl:\"https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy\",",
-              "line": 55,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy"
-              }
-            },
-            {
-              "evidence": "documentationLink: \"https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md\",",
-              "line": 56,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md"
-              }
-            },
-            {
-              "evidence": "private autoDisableDebugLogging(){try{unschedule(\"autoDisableDebugLogging\");atomicState.logEnable=false;app.updateSetting(\"logEnable\",[type:\"bool\",value:false]);logInfo\"Debug logging disabled (auto)\"}catch(e){logDebug\"autoDisableDebugLoggin",
-              "line": 84,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "input\"rainSensorDevices\",\"capability.waterSensor\",title:\"Rain / Moisture Sensor<br><small>Select one or more water sensors that detect outdoor rain or irrigation moisture.</small>\",multiple:true,required:false,submitOnChange:true",
-              "line": 333,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "waterSensor"
-            },
-            {
-              "evidence": "paragraph\"<p style='opacity:0.75;'><small>Astronomical data provided by <a href='https://sunrise-sunset.org/' target='_blank'>Sunrise-Sunset.org</a>.\"+",
-              "line": 408,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "sunrise-sunset.org",
-                "scheme": "https",
-                "url": "https://sunrise-sunset.org/"
-              }
-            },
-            {
-              "evidence": "\"${state.geo?.iso?' Reverse geocoding powered by <a href=\\'https://www.geoapify.com/\\' target=\\'_blank\\'>Geoapify</a>. Map data © <a href=\\'https://www.openstreetmap.org/copyright\\' target=\\'_blank\\'>OpenStreetMap contributors</a>.':''}</sm",
-              "line": 409,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.geoapify.com",
-                "scheme": "https",
-                "url": "https://www.geoapify.com/\\"
-              }
-            },
-            {
-              "evidence": "\"${state.geo?.iso?' Reverse geocoding powered by <a href=\\'https://www.geoapify.com/\\' target=\\'_blank\\'>Geoapify</a>. Map data © <a href=\\'https://www.openstreetmap.org/copyright\\' target=\\'_blank\\'>OpenStreetMap contributors</a>.':''}</sm",
-              "line": 409,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.openstreetmap.org",
-                "scheme": "https",
-                "url": "https://www.openstreetmap.org/copyright\\"
-              }
-            },
-            {
-              "evidence": "paragraph \"<hr><div style='text-align:center; font-size:90%;'><b>${APP_NAME}</b> v${APP_VERSION} (${APP_MODIFIED})<br>© 2026 Marc Hedish – Licensed under Apache 2.0<br><a href='https://github.com/MHedish/Hubitat' target='_blank'>GitHub Repo",
-              "line": 411,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat"
-              }
-            },
-            {
-              "evidence": "input\"valve_${z}\",\"capability.valve,capability.switch\",title:\"Valve / Switch for this zone.<br><small>Select the device that controls watering for this zone.</small>\",multiple:false,required:false,submitOnChange:true",
-              "line": 536,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "switch"
-            },
-            {
-              "evidence": "input\"valve_${z}\",\"capability.valve,capability.switch\",title:\"Valve / Switch for this zone.<br><small>Select the device that controls watering for this zone.</small>\",multiple:false,required:false,submitOnChange:true",
-              "line": 536,
-              "type": "CAPABILITY_REFERENCE",
-              "value": "valve"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.openweathermap.org/data/3.0/onecall\",query:[lat:lat,lon:lon,appid:owmApiKey,exclude:\"minutely,hourly,alerts\",units:\"imperial\"]]){",
-              "line": 744,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.openweathermap.org/data/3.0/onecall\",query:[lat:lat,lon:lon,appid:owmApiKey,exclude:\"minutely,hourly,alerts\",units:\"imperial\"]]){",
-              "line": 744,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.openweathermap.org",
-                "scheme": "https",
-                "url": "https://api.openweathermap.org/data/3.0/onecall"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/stations\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 751,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/stations\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 751,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "swd.weatherflow.com",
-                "scheme": "https",
-                "url": "https://swd.weatherflow.com/swd/rest/stations"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/observations/station/${stationId}\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 757,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/observations/station/${stationId}\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 757,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "swd.weatherflow.com",
-                "scheme": "https",
-                "url": "https://swd.weatherflow.com/swd/rest/observations/station/${stationId"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/better_forecast\",query:[station_id:stationId,token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 760,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://swd.weatherflow.com/swd/rest/better_forecast\",query:[station_id:stationId,token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 760,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "swd.weatherflow.com",
-                "scheme": "https",
-                "url": "https://swd.weatherflow.com/swd/rest/better_forecast"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.tomorrow.io/v4/weather/forecast\",",
-              "line": 769,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.tomorrow.io/v4/weather/forecast\",",
-              "line": 769,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.tomorrow.io",
-                "scheme": "https",
-                "url": "https://api.tomorrow.io/v4/weather/forecast"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.weather.gov/points/${lat},${lon}\",headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 776,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.weather.gov/points/${lat},${lon}\",headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 776,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/points/${lat"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.open-meteo.com/v1/forecast\",query:[latitude:lat,longitude:lon,daily:\"temperature_2m_max,temperature_2m_min,precipitation_sum\",temperature_unit:\"fahrenheit\",windspeed_unit:\"mph\",precipitation_unit:\"inch\",timezone:\"a",
-              "line": 783,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.open-meteo.com/v1/forecast\",query:[latitude:lat,longitude:lon,daily:\"temperature_2m_max,temperature_2m_min,precipitation_sum\",temperature_unit:\"fahrenheit\",windspeed_unit:\"mph\",precipitation_unit:\"inch\",timezone:\"a",
-              "line": 783,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.open-meteo.com",
-                "scheme": "https",
-                "url": "https://api.open-meteo.com/v1/forecast"
-              }
-            },
-            {
-              "evidence": "def params=[uri: \"https://sdmdataaccess.nrcs.usda.gov/tabular/post.rest\",contentType: \"application/x-www-form-urlencoded\",body: [query: query],timeout: 20]",
-              "line": 911,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "sdmdataaccess.nrcs.usda.gov",
-                "scheme": "https",
-                "url": "https://sdmdataaccess.nrcs.usda.gov/tabular/post.rest"
-              }
-            },
-            {
-              "evidence": "httpPost(params){r->;def t=r?.data;def tn=t?.class?.name?:'';respText=(tn.contains('InputStream')||tn.contains('Reader'))?t?.getText('UTF-8'):t?.toString()}",
-              "line": 914,
-              "type": "HTTP_CALL",
-              "value": "httpPost"
-            },
-            {
-              "evidence": "def installed(){logInfo\"Installed: ${appInfoString()}\";atomicState.tempDiagMsg=\"Please wait. Boot sequence in progress.\";atomicState.booted=false;runIn(2,\"bootstrap\")}",
-              "line": 1073,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "def initialize(){logInfo\"Initializing: ${appInfoString()}\";unschedule(\"autoDisableDebugLogging\");if(atomicState.logEnable)runIn(1800,\"autoDisableDebugLogging\")",
-              "line": 1075,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "getChildDevices()?.findAll{it.typeName==\"WET-IT Echo\"}?.each{ec->",
-              "line": 1088,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "runIn(5,\"runWeatherUpdate\");scheduleWeatherUpdates();startIrrigationTicker();atomicState.booted=true",
-              "line": 1103,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "Map wx=fetchWeather(true);if(!wx){runIn(300,\"bootstrap\");return}",
-              "line": 1113,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "unschedule(\"runWeatherUpdate\")",
-              "line": 1128,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "try{schedule(cron7,\"runWeatherUpdate\");used=cron7}",
-              "line": 1131,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "catch(ex7){try{schedule(cron6,\"runWeatherUpdate\");used=cron6}catch(ex6){logError\"scheduleWeatherUpdates(): failed to schedule (${ex6.message})\"}}",
-              "line": 1132,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "child=addChildDevice(\"MHedish\",\"WET-IT Data\",dni,[label:\"WET-IT Data\",isComponent:true])",
-              "line": 1153,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "try{addChildDevice(\"MHedish\",cd.name,dni,[label:\"probe\",isComponent:false])}",
-              "line": 1194,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "else if(key==\"echo\"){devs=getChildDevices()?.findAll{it.deviceNetworkId?.startsWith(\"wetit_echo_${app.id}_\")}?:[]}",
-              "line": 1203,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "private cleanupProbeDevices(){getChildDevices()?.findAll{it.deviceNetworkId?.startsWith(\"__probe__${app.id}_\")}?.each{try{deleteChildDevice(it.deviceNetworkId)}catch(ignore){}}}",
-              "line": 1226,
-              "type": "CHILD_DEVICE_ACCESS",
-              "value": true
-            },
-            {
-              "evidence": "def p=[uri:\"https://api.openweathermap.org/data/3.0/onecall\",query:[lat:lat,lon:lon,exclude:\"minutely,hourly,alerts\",units:\"imperial\",appid:owmApiKey]]",
-              "line": 1335,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.openweathermap.org",
-                "scheme": "https",
-                "url": "https://api.openweathermap.org/data/3.0/onecall"
-              }
-            },
-            {
-              "evidence": "httpGet(p){resp->",
-              "line": 1339,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "String url=\"https://api.weather.gov/points/${lat},${lon}\"",
-              "line": 1357,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/points/${lat"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:url,headers:[\"User-Agent\":\"Hubitat-WET-IT\",\"Accept\":\"application/geo+json\",\"Accept-Encoding\":\"identity\"]]){r->",
-              "line": 1360,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "gridUrl=p?.forecastGridData?:((p?.cwa&&p?.gridX&&p?.gridY)?\"https://api.weather.gov/gridpoints/${p.cwa}/${p.gridX},${p.gridY}\":null)",
-              "line": 1365,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/gridpoints/${p.cwa"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:gridUrl,headers:[\"User-Agent\":\"Hubitat-WET-IT\",\"Accept\":\"application/geo+json\",\"Accept-Encoding\":\"identity\"]]){r2->",
-              "line": 1370,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "String forecastUrl=\"https://api.weather.gov/gridpoints/${gridUrl.split('/gridpoints/')[1]}/forecast\"",
-              "line": 1385,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/gridpoints/${gridUrl.split("
-              }
-            },
-            {
-              "evidence": "httpGet([uri:forecastUrl,headers:[\"User-Agent\":\"Hubitat-WET-IT\",\"Accept\":\"application/geo+json\",\"Accept-Encoding\":\"identity\"]]){fr->",
-              "line": 1386,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "def p=[uri:\"https://api.tomorrow.io/v4/weather/forecast\",query:[location:\"${lat},${lon}\",apikey:tioApiKey,units:\"imperial\",timesteps:\"1d,1h\"],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]",
-              "line": 1407,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.tomorrow.io",
-                "scheme": "https",
-                "url": "https://api.tomorrow.io/v4/weather/forecast"
-              }
-            },
-            {
-              "evidence": "httpGet(p){resp->",
-              "line": 1411,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "def sParams=[uri:\"https://swd.weatherflow.com/swd/rest/stations\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]",
-              "line": 1446,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "swd.weatherflow.com",
-                "scheme": "https",
-                "url": "https://swd.weatherflow.com/swd/rest/stations"
-              }
-            },
-            {
-              "evidence": "httpGet(sParams){resp->",
-              "line": 1448,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "def oParams=[uri:\"https://swd.weatherflow.com/swd/rest/observations/station/${stationId}\",query:[token:tpwsApiKey],headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]",
-              "line": 1459,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "swd.weatherflow.com",
-                "scheme": "https",
-                "url": "https://swd.weatherflow.com/swd/rest/observations/station/${stationId"
-              }
-            },
-            {
-              "evidence": "httpGet(oParams){obs->",
-              "line": 1460,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "def r=[:];def p=[uri:\"https://api.open-meteo.com/v1/forecast\",query:[latitude:lat,longitude:lon,daily:\"temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max,shortwave_radiation_sum,relative_humidity_2m_min,relative_humid",
-              "line": 1487,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.open-meteo.com",
-                "scheme": "https",
-                "url": "https://api.open-meteo.com/v1/forecast"
-              }
-            },
-            {
-              "evidence": "httpGet(p){resp->",
-              "line": 1489,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.geoapify.com/v1/geocode/reverse\",query:[lat:lat,lon:lon,format:\"json\",apiKey:key]]){",
-              "line": 1514,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.geoapify.com/v1/geocode/reverse\",query:[lat:lat,lon:lon,format:\"json\",apiKey:key]]){",
-              "line": 1514,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.geoapify.com",
-                "scheme": "https",
-                "url": "https://api.geoapify.com/v1/geocode/reverse"
-              }
-            },
-            {
-              "evidence": "httpGet(",
-              "line": 1523,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "uri:\"https://iso3166-2-api.vercel.app/api/subdivision/${iso}\",contentType:\"application/json\"){",
-              "line": 1524,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "iso3166-2-api.vercel.app",
-                "scheme": "https",
-                "url": "https://iso3166-2-api.vercel.app/api/subdivision/${iso"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.weather.gov/points/${lat},${lon}\",headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 1533,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet([uri:\"https://api.weather.gov/points/${lat},${lon}\",headers:[\"User-Agent\":\"Hubitat-WET-IT\"]]){",
-              "line": 1533,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/points/${lat"
-              }
-            },
-            {
-              "evidence": "httpPost([uri:\"https://sdmdataaccess.sc.egov.usda.gov/tabular/post.rest\",body:body,contentType:\"application/json\"]){",
-              "line": 1550,
-              "type": "HTTP_CALL",
-              "value": "httpPost"
-            },
-            {
-              "evidence": "httpPost([uri:\"https://sdmdataaccess.sc.egov.usda.gov/tabular/post.rest\",body:body,contentType:\"application/json\"]){",
-              "line": 1550,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "sdmdataaccess.sc.egov.usda.gov",
-                "scheme": "https",
-                "url": "https://sdmdataaccess.sc.egov.usda.gov/tabular/post.rest"
-              }
-            },
-            {
-              "evidence": "httpGet(uri:\"https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}&date=${ds}&formatted=0\"){r->",
-              "line": 1685,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "httpGet(uri:\"https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}&date=${ds}&formatted=0\"){r->",
-              "line": 1685,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.sunrise-sunset.org",
-                "scheme": "https",
-                "url": "https://api.sunrise-sunset.org/json?lat=${lat"
-              }
-            },
-            {
-              "evidence": "def url=\"https://api.weather.gov/points/${state.geo.lat},${state.geo.lon}\"",
-              "line": 1738,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "api.weather.gov",
-                "scheme": "https",
-                "url": "https://api.weather.gov/points/${state.geo.lat"
-              }
-            },
-            {
-              "evidence": "httpGet([uri:url,headers:[\"User-Agent\":\"Hubitat-WET-IT\",\"Accept\":\"application/geo+json\",\"Accept-Encoding\":\"identity\"]]){resp->",
-              "line": 1739,
-              "type": "HTTP_CALL",
-              "value": "httpGet"
-            },
-            {
-              "evidence": "if(ap.soak>0){logInfo\"💤 Program ${ap.program}: Soak period (${ap.soak/60} min) before next cycle\";runIn(ap.soak,\"startNextZone\");return}",
-              "line": 1974,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(time,\"closeZoneHandler\",[data:[zone:z.id,program:ap.program,rt:time]])",
-              "line": 1989,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "runIn(baseTime,\"stopZoneManually\",[data:[zone:z,child:fromChild]])",
-              "line": 2005,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if(remaining>0||first)runIn(5,\"updateClockState\")",
-              "line": 2037,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "if(remaining>0||first)runIn(5,\"updateClockState\")",
-              "line": 2048,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "private void startIrrigationTicker(){logDebug \"Starting per-minute irrigation scheduler\";schedule(\"0 * * ? * * *\",\"irrigationTick\")}",
-              "line": 2075,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "addChildDevice(\"MHedish\",\"WET-IT Echo\",\"wetit_echo_${app.id}_${p}\",[name:\"${APP_NAME} (Program ${p})\",label:label,isComponent:true,completedSetup:true])",
-              "line": 2223,
-              "type": "CHILD_DEVICE_CREATE",
-              "value": true
-            },
-            {
-              "evidence": "if(settings.logEnable){unschedule(\"autoDisableDebugLogging\");runIn(1800,\"autoDisableDebugLogging\");logInfo\"Debug logging enabled (auto-off in 30 minutes)\"}",
-              "line": 2428,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "else{unschedule(\"autoDisableDebugLogging\");logInfo\"Debug logging disabled\"}",
-              "line": 2429,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 190526,
-          "sourceFetched": true,
-          "sourceSha256": "387545f4710ba3bc67af5cc0c78380c1b174755648e633792c138d80a4dad387",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT.groovy"
-        }
-      ],
-      "author": "Marc Hedish",
-      "category": "Weather",
-      "communityLink": "https://community.hubitat.com/t/wet-it-weather-enhanced-time-based-irrigation-tuning-for-hubitat/160224",
-      "dateReleased": "2026-04-21",
-      "description": "Local-first evapotranspiration (ET) and soil-moisture modeling app for Hubitat. Provides professional-grade irrigation intelligence similar to Rachio, Orbit, and Hydrawise, running entirely on-hub.",
-      "documentationLink": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md",
-      "drivers": [
-        {
-          "definitionLine": 48,
-          "definitionName": "WET-IT Data",
-          "definitionNamespace": "MHedish",
-          "manifestName": "WET-IT Data",
-          "manifestNamespace": "MHedish",
-          "observations": [
-            {
-              "evidence": "* https://www.apache.org/licenses/LICENSE-2.0",
-              "line": 5,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.apache.org",
-                "scheme": "https",
-                "url": "https://www.apache.org/licenses/LICENSE-2.0"
-              }
-            },
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Data_Driver.groovy\"",
-              "line": 53,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Data_Driver.groovy"
-              }
-            },
-            {
-              "evidence": "private driverDocBlock(){return\"<div style='text-align:center;line-height:1.6;margin:10px 0;'><b>🌱 ${DRIVER_NAME}</b><br>Version <b>${DRIVER_VERSION}</b> &nbsp;|&nbsp; Updated ${DRIVER_MODIFIED}<br><a href='https://github.com/MHedish/Hubita",
-              "line": 142,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md"
-              }
-            },
-            {
-              "evidence": "private driverDocBlock(){return\"<div style='text-align:center;line-height:1.6;margin:10px 0;'><b>🌱 ${DRIVER_NAME}</b><br>Version <b>${DRIVER_VERSION}</b> &nbsp;|&nbsp; Updated ${DRIVER_MODIFIED}<br><a href='https://github.com/MHedish/Hubita",
-              "line": 142,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md#-driver-attribute-reference"
-              }
-            },
-            {
-              "evidence": "def autoDisableDebugLogging(){try{unschedule(autoDisableDebugLogging);device.updateSetting(\"logEnable\",[value:\"false\",type:\"bool\"]);logInfo\"Debug logging disabled (auto)\"}catch(e){logDebug\"autoDisableDebugLogging(): ${e.message}\"}}",
-              "line": 149,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "def disableDebugLoggingNow(){try{unschedule(autoDisableDebugLogging);device.updateSetting(\"logEnable\",[value:\"false\",type:\"bool\"]);logInfo\"Debug logging disabled (manual)\"}catch(e){logDebug\"disableDebugLoggingNow(): ${e.message}\"}}",
-              "line": 150,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "def initialize(){emitEvent(\"driverInfo\",driverInfoString());emitEvent(\"driverVersion\",DRIVER_VERSION);unschedule(autoDisableDebugLogging);if(logEnable)runIn(1800,autoDisableDebugLogging)}",
-              "line": 156,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 11987,
-          "sourceFetched": true,
-          "sourceSha256": "72e52ccae9be0e67a9c2685d9333e9daef83c7ed60d876d706924cd87c8c3f89",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Data_Driver.groovy"
-        },
-        {
-          "definitionLine": 30,
-          "definitionName": "WET-IT Echo",
-          "definitionNamespace": "MHedish",
-          "manifestName": "WET-IT Echo",
-          "manifestNamespace": "MHedish",
-          "observations": [
-            {
-              "evidence": "* https://www.apache.org/licenses/LICENSE-2.0",
-              "line": 5,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "www.apache.org",
-                "scheme": "https",
-                "url": "https://www.apache.org/licenses/LICENSE-2.0"
-              }
-            },
-            {
-              "evidence": "importUrl: \"https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Echo_Driver.groovy\"",
-              "line": 35,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "raw.githubusercontent.com",
-                "scheme": "https",
-                "url": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Echo_Driver.groovy"
-              }
-            },
-            {
-              "evidence": "private driverDocBlock(){return\"<div style='text-align:center;line-height:1.6;margin:10px 0;'><b>🌱 ${DRIVER_NAME}</b><br>Version <b>${DRIVER_VERSION}</b> &nbsp;|&nbsp; Updated ${DRIVER_MODIFIED}<br><a href='https://github.com/MHedish/Hubita",
-              "line": 60,
-              "type": "NETWORK_URL_LITERAL",
-              "value": {
-                "host": "github.com",
-                "scheme": "https",
-                "url": "https://github.com/MHedish/Hubitat/blob/main/Apps/WET-IT/DOCUMENTATION.md#-voice-control"
-              }
-            },
-            {
-              "evidence": "def autoDisableDebugLogging(){try{unschedule(autoDisableDebugLogging);device.updateSetting(\"logEnable\",[value:\"false\",type:\"bool\"]);logInfo\"Debug logging disabled (auto)\"}catch(e){logDebug\"autoDisableDebugLogging(): ${e.message}\"}}",
-              "line": 67,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "def disableDebugLoggingNow(){try{unschedule(autoDisableDebugLogging);device.updateSetting(\"logEnable\",[value:\"false\",type:\"bool\"]);logInfo\"Debug logging disabled (manual)\"}catch(e){logDebug\"disableDebugLoggingNow(): ${e.message}\"}}",
-              "line": 68,
-              "type": "SCHEDULING",
-              "value": true
-            },
-            {
-              "evidence": "def initialize(){emitEvent(\"driverInfo\",driverInfoString());emitEvent(\"driverVersion\",DRIVER_VERSION);unschedule(autoDisableDebugLogging);if(logEnable)runIn(1800,autoDisableDebugLogging)}",
-              "line": 74,
-              "type": "SCHEDULING",
-              "value": true
-            }
-          ],
-          "sourceBytes": 5222,
-          "sourceFetched": true,
-          "sourceSha256": "5982c59003bfd13529b5c62b4d9cdef6d555ec0d68082554f4ff1b8eb96dfc75",
-          "sourceUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/refs/heads/main/Apps/WET-IT/WET-IT_Echo_Driver.groovy"
-        }
-      ],
-      "manifestFetched": true,
-      "manifestUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json",
-      "packageId": "d95aab44-9ed5-4f8a-8c6d-341c60c7407b",
-      "packageName": "WET-IT",
-      "repoAuthor": "Marc Hedish",
-      "repoName": "MHedish",
-      "repoUrl": "https://raw.githubusercontent.com/MHedish/Hubitat/main/repository.json",
-      "tags": [
-        "Automation",
-        "Irrigation",
-        "Weather"
-      ],
-      "version": "1.3.2.0"
     },
     {
       "apps": [
@@ -302654,14 +301872,14 @@
           ],
           "sourceBytes": 264643,
           "sourceFetched": true,
-          "sourceSha256": "b7d970607bf1379d5ac0becbb7e31f5adb734efb6e126ec7f99df41e3675e845",
+          "sourceSha256": "df0fd26989158d94e6e0f8683078f6712b2d990826d7d2147ee2ec219d965289",
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/HubInspector.groovy"
         }
       ],
       "author": "hubitrep",
       "category": "Utility",
       "communityLink": "https://community.hubitat.com/t/beta-hub-inspector-a-diagnostics-dashboard-that-runs-on-your-hub/166689",
-      "dateReleased": "2026-11-18",
+      "dateReleased": "2026-11-26",
       "description": "A diagnostics dashboard that runs on your hub: resources, app and device CPU use, configuration snapshots you can compare, device usage, and Zigbee, Z-Wave and Matter activity.",
       "documentationLink": "https://github.com/hubitrep/hubitat/tree/main/HubInspector",
       "drivers": [],
@@ -302676,7 +301894,7 @@
         "Tools & Utilities",
         "Monitoring"
       ],
-      "version": "6.4.0"
+      "version": "6.4.1"
     },
     {
       "apps": [],
@@ -347439,7 +346657,7 @@
       "author": "Matt Palermo",
       "category": "Integrations",
       "communityLink": null,
-      "dateReleased": "2026-11-19",
+      "dateReleased": "2026-11-25",
       "description": "Tank level, gallons, usage estimate, cost to fill, pending deliveries and account info for propane/fuel providers on MyFuelPortal (e.g. Heller's Gas).",
       "documentationLink": "https://github.com/mpalermo73/hubitat/tree/main/myfuelportal",
       "drivers": [
@@ -347450,9 +346668,9 @@
           "manifestName": "MyFuelPortal Tank",
           "manifestNamespace": "myfuelportal",
           "observations": [],
-          "sourceBytes": 5238,
+          "sourceBytes": 4712,
           "sourceFetched": true,
-          "sourceSha256": "2e1aa4251bf5eded841529f0ae00d281142bd261a730e82f9b25951d28a76620",
+          "sourceSha256": "1a9bc2bfe050c3168039d8cca7af68155e9b580992bb0e7d32518701f53aa202",
           "sourceUrl": "https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/drivers/myFuelPortalTankDriver.groovy"
         }
       ],
@@ -347467,7 +346685,7 @@
         "Cloud",
         "Monitoring"
       ],
-      "version": "1.3.0"
+      "version": "1.3.1"
     },
     {
       "apps": [
@@ -376837,18 +376055,18 @@
   "repositoriesFetched": 228,
   "repositoryCount": 229,
   "schemaVersion": "1",
-  "snapshotGenerated": "2026-11-25T08:54:56Z",
+  "snapshotGenerated": "2026-11-26T08:39:41Z",
   "source": "https://raw.githubusercontent.com/HubitatCommunity/hubitat-packagerepositories/master/repositories.json",
   "sourceAnalysisVersion": "1",
   "sourcePassCompleted": true,
   "sourceStats": {
-    "componentsAttempted": 2449,
+    "componentsAttempted": 2446,
     "componentsFailed": 10,
-    "componentsFetched": 2439,
-    "componentsWithObservations": 2294,
-    "definitionsVerified": 2428,
-    "distinctSourceUrls": 2433,
+    "componentsFetched": 2436,
+    "componentsWithObservations": 2291,
+    "definitionsVerified": 2425,
+    "distinctSourceUrls": 2430,
     "sourceUrlsFailed": 10,
-    "sourceUrlsFetched": 2423
+    "sourceUrlsFetched": 2420
   }
 }
