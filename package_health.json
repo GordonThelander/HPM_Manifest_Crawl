@@ -7418,7 +7418,7 @@
         },
         "definitionIdentity": {
           "components": {
-            "MATCH": 12
+            "MATCH": 15
           },
           "status": "MATCH"
         },
@@ -7435,8 +7435,8 @@
           "url": "https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json"
         },
         "sourceFetch": {
-          "components": 12,
-          "fetched": 12,
+          "components": 15,
+          "fetched": 15,
           "status": "PASS"
         }
       },
@@ -12827,30 +12827,34 @@
           "url": null
         },
         "definitionIdentity": {
-          "components": {
-            "MATCH": 2
-          },
-          "status": "MATCH"
+          "components": {},
+          "status": "NOT_AVAILABLE"
         },
         "documentationLink": {
-          "status": "PRESENT",
-          "url": "https://github.com/jc21/hubitat-istore-heat-pump"
+          "status": "MISSING",
+          "url": null
         },
         "httpsTransport": {
           "nonHttpsUrls": [],
           "status": "PASS"
         },
         "manifestFetch": {
-          "status": "PASS",
+          "status": "FAIL",
           "url": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json"
         },
         "sourceFetch": {
-          "components": 2,
-          "fetched": 2,
-          "status": "PASS"
+          "components": 0,
+          "fetched": 0,
+          "status": "NOT_APPLICABLE"
         }
       },
-      "crawlErrors": [],
+      "crawlErrors": [
+        {
+          "level": "manifest",
+          "reason": "HTTP 500",
+          "url": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json"
+        }
+      ],
       "packageId": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4"
     },
     {
@@ -32714,7 +32718,7 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-26T08:39:41Z",
+  "snapshotGenerated": "2026-11-27T08:50:37Z",
   "source": {
     "file": "hpm_package_index.json",
     "schemaVersion": "1",

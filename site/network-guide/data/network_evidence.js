@@ -1,8 +1,8 @@
 window.NETWORK_EVIDENCE = {
   "counts": {
     "BOTH": 187,
-    "CLOUD": 281,
-    "INSUFFICIENT": 313,
+    "CLOUD": 280,
+    "INSUFFICIENT": 314,
     "LAN": 207
   },
   "dataset": "network-evidence-guide",
@@ -12959,26 +12959,24 @@ window.NETWORK_EVIDENCE = {
       ]
     },
     {
-      "author": "Jamie Curnow",
+      "author": null,
       "category": "Control",
-      "classification": "CLOUD",
+      "classification": "INSUFFICIENT",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform",
-      "documentationUrl": "https://github.com/jc21/hubitat-istore-heat-pump",
+      "documentationUrl": null,
       "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
       "manifestUrl": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
       "name": "iStore Heat Pump",
       "observed": {
-        "externalHosts": [
-          "home.istore.net.au"
-        ],
+        "externalHosts": [],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 2,
-        "urlLiteralCount": 5
+        "sourceFilesAnalysed": 0,
+        "urlLiteralCount": 0
       },
       "reviewed": [],
       "tags": [
@@ -23009,10 +23007,13 @@ window.NETWORK_EVIDENCE = {
           "schemas.xmlsoap.org"
         ],
         "lanPrimitives": [
-          "PARSE_LAN_MESSAGE"
+          "HUB_ACTION",
+          "LAN_PROTOCOL",
+          "PARSE_LAN_MESSAGE",
+          "SEND_HUB_COMMAND"
         ],
-        "sourceFilesAnalysed": 12,
-        "urlLiteralCount": 64
+        "sourceFilesAnalysed": 15,
+        "urlLiteralCount": 70
       },
       "reviewed": [
         {
@@ -29777,5 +29778,5 @@ window.NETWORK_EVIDENCE = {
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-26T08:39:41Z"
+  "snapshotGenerated": "2026-11-27T08:50:37Z"
 };

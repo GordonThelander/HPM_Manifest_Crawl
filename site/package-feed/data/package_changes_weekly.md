@@ -1,9 +1,15 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-26T08:39:41Z`.
+Latest observation: `2026-11-27T08:50:37Z`.
 
-**71 package change(s):** added 18, broken 1, declared definitions changed 4, removed 1, restored 1, source location changed 8, updated 51
+**62 package change(s):** added 6, broken 2, declared definitions changed 6, removed 1, restored 1, source location changed 9, updated 54
 
+- [iStore Heat Pump: updated, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
+- [Sonos Advanced Controller: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [Pushover: updated.](https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/pushover-notifications.src/pushover-notifications.json)
+- [LG ThinQ Connect Integration: updated.](https://raw.githubusercontent.com/jonozzz/hubitat-thinqconnect/refs/heads/main/packageManifest.json)
+- [Honeywell Thermo Parent: updated.](https://raw.githubusercontent.com/HubitatCommunity/HoneywellThermoParent/main/docs/HoneywellThermoParent.json)
+- [BWA Spa Manager - Local TCP Direct Connection Device Driver: updated.](https://raw.githubusercontent.com/KurtSanders/HBBWASpaManager/refs/heads/master/Local-Control/packageManifest.json)
 - [WET-IT: removed.](https://raw.githubusercontent.com/MHedish/Hubitat/main/Apps/WET-IT/packageManifest.json)
 - [MyFuelPortal Propane Integration: updated.](https://raw.githubusercontent.com/mpalermo73/hubitat/main/myfuelportal/packageManifest.json)
 - [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
@@ -60,20 +66,5 @@ Latest observation: `2026-11-26T08:39:41Z`.
 - [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
 - [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
 - [Aqara P1 Motion Sensor: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P1%20Motion%20Sensor/packageManifest.json)
-- [WeatherFlow: added.](https://www.drdsnell.com/projects/hubitat/drivers/WeatherFlow.json)
-- [WSM4Hubitat: added.](https://www.drdsnell.com/projects/hubitat/drivers/WSM4Hubitat.json)
-- [UnifiConnectAPI: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiConnectManifest.json)
-- [Unifi Protect Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiProtectManifest.json)
-- [Unifi Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/UnifiManifest.json)
-- [Tesla Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/TeslaManifest.json)
-- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [Neurio: added.](https://www.drdsnell.com/projects/hubitat/drivers/Neurio.json)
-- [Neptune Systems Apex: added.](https://www.drdsnell.com/projects/hubitat/drivers/NeptuneSystemsApexManifest.json)
-- [Grizzl-ECharger: added.](https://www.drdsnell.com/projects/hubitat/drivers/Grizzl-EChargerManifest.json)
-- [FireBoard: added.](https://www.drdsnell.com/projects/hubitat/drivers/FireBoard.json)
-- [Blink Drivers: added.](https://www.drdsnell.com/projects/hubitat/drivers/BlinkManifest.json)
-- [Ambient Ecowitt Weather: added.](https://www.drdsnell.com/projects/hubitat/drivers/AmbientEcowittWeather.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)
