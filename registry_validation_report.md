@@ -1,12 +1,12 @@
 # Registry validation report
 
-- Snapshot: `2026-11-27T08:50:37Z`
+- Snapshot: `2026-11-28T08:08:24Z`
 - HPM repositories in master list: **229**
 - Repositories fetched successfully: **228**
 - Packages indexed: **988**
 - Source-definition pass completed: **true**
 - Cache used: No - first/network run; 0 network fetches and zero cache hits.
-- Recorded fetch/parse errors: **14**
+- Recorded fetch/parse errors: **13**
 
 ## A. Dead rules
 
@@ -607,7 +607,6 @@ Candidate subset below is limited to category `Integrations` or tags containing 
 
 | Level | URL | Reason |
 | --- | --- | --- |
-| manifest | https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json | HTTP 500 |
 | manifest | https://raw.githubusercontent.com/GaryMilne/Hubitat-TileBuilder/main/packageManifestTileBuilder.json | JSON parse error: JSONDecodeError: Illegal trailing comma before end of object: line 61 column 139 (char 3182) |
 | manifest | https://raw.githubusercontent.com/HubitatCommunity/Hubitat-BetterLaundryMonitor/master/docs/Hubitat-BetterLaundryMonitor.json | JSON parse error: JSONDecodeError: Invalid control character at: line 3 column 89 (char 139) |
 | repository | http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json | non-HTTPS URL rejected: http://hubconnect.hubitatcommunity.com/HPM/HubConnectManifest.json |
@@ -644,13 +643,13 @@ The source pass is static and non-executing. Observations are implementation fac
 
 | Measure | Count |
 | --- | --- |
-| Distinct source URLs | 2431 |
-| Source URLs fetched | 2421 |
+| Distinct source URLs | 2433 |
+| Source URLs fetched | 2423 |
 | Source URLs failed | 10 |
-| Components attempted | 2447 |
-| Components fetched | 2437 |
-| Literal definitions verified | 2426 |
-| Components with observations | 2292 |
+| Components attempted | 2449 |
+| Components fetched | 2439 |
+| Literal definitions verified | 2428 |
+| Components with observations | 2294 |
 
 ### Official Hubitat documentation pass
 

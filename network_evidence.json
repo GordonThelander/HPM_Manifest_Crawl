@@ -1,8 +1,8 @@
 {
   "counts": {
     "BOTH": 187,
-    "CLOUD": 280,
-    "INSUFFICIENT": 314,
+    "CLOUD": 281,
+    "INSUFFICIENT": 313,
     "LAN": 207
   },
   "dataset": "network-evidence-guide",
@@ -11388,7 +11388,7 @@
         "cloudTag": false,
         "lanTag": false
       },
-      "description": "Heating and cooling apps, each optional, all in beta. Switched Heater Thermostat turns plain switches feeding resistive heaters into a thermostat, with frost protection, power-draw checks and alerts when a heater or sensor fails. HVAC Season Manager publishes the heating and cooling season on a device, from dates fitted to the local climate.",
+      "description": "Heating and cooling apps, each optional; HVAC Season Manager is in beta. Switched Heater Thermostat turns plain switches feeding resistive heaters into a thermostat, with frost protection, power-draw checks and alerts when a heater or sensor fails. HVAC Season Manager publishes the heating and cooling season on a device, from dates fitted to the local climate.",
       "documentationUrl": "https://github.com/hubitrep/hubitat/tree/main/hvac",
       "id": "hpm:d96cd4ba-c6ef-4482-af94-1aa6186bf083",
       "manifestUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/packageManifest.json",
@@ -12959,24 +12959,26 @@
       ]
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
-      "classification": "INSUFFICIENT",
+      "classification": "CLOUD",
       "communityUrl": null,
       "declared": {
         "cloudTag": false,
         "lanTag": false
       },
       "description": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform",
-      "documentationUrl": null,
+      "documentationUrl": "https://github.com/jc21/hubitat-istore-heat-pump",
       "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
       "manifestUrl": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
       "name": "iStore Heat Pump",
       "observed": {
-        "externalHosts": [],
+        "externalHosts": [
+          "home.istore.net.au"
+        ],
         "lanPrimitives": [],
-        "sourceFilesAnalysed": 0,
-        "urlLiteralCount": 0
+        "sourceFilesAnalysed": 2,
+        "urlLiteralCount": 5
       },
       "reviewed": [],
       "tags": [
@@ -29778,5 +29780,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-27T08:50:37Z"
+  "snapshotGenerated": "2026-11-28T08:08:24Z"
 }

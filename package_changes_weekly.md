@@ -1,9 +1,16 @@
 # HPM package changes - weekly digest
 
-Latest observation: `2026-11-27T08:50:37Z`.
+Latest observation: `2026-11-28T08:08:24Z`.
 
-**62 package change(s):** added 6, broken 2, declared definitions changed 6, removed 1, restored 1, source location changed 9, updated 54
+**63 package change(s):** added 5, broken 2, declared definitions changed 7, removed 1, restored 2, source location changed 11, updated 56
 
+- [iStore Heat Pump: updated, changed source location, changed declared definitions, was restored.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
+- [Tuya Garage Door Opener (Wi-Fi) Local: updated.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json)
+- [Sonos Advanced Controller: updated, changed source location.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
+- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
+- [MCP Rule Server: updated.](https://raw.githubusercontent.com/kingpanther13/Hubitat-local-MCP-server/main/packageManifest.json)
+- [Hub Inspector: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/HubInspector/packageManifest.json)
+- [HVAC Apps: updated.](https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/packageManifest.json)
 - [iStore Heat Pump: updated, changed source location, changed declared definitions, became unavailable.](https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json)
 - [Sonos Advanced Controller: updated, changed source location, changed declared definitions.](https://raw.githubusercontent.com/DanielWinks/Hubitat-Public/main/PackageManifests/SonosAdvancedController/packageManifest.json)
 - [Pushover: updated.](https://raw.githubusercontent.com/ogiewon/Hubitat/refs/heads/master/Drivers/pushover-notifications.src/pushover-notifications.json)
@@ -60,11 +67,5 @@ Latest observation: `2026-11-27T08:50:37Z`.
 - [Daikin HVAC Split Manager: added.](https://raw.githubusercontent.com/KurtSanders/Hubitat-Daiken-Split-Manager/refs/heads/main/packageManifest.json)
 - [Amcrest ASH26: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/ASH26/packageManifest.json)
 - [AcuRite Weather Station: updated.](https://raw.githubusercontent.com/dlaporte/Hubitat/main/AcuRite/packageManifest.json)
-- [Tuya Garage Door Opener (Wi-Fi) Local: added.](https://raw.githubusercontent.com/rngarcia/hubitat/main/drivers/tuya-garage-door-local/packageManifest.json)
-- [SignalBricks Telemetry: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksTelemetry/packageManifest.json)
-- [SignalBricks Integration: updated.](https://raw.githubusercontent.com/spinrag/hubitat/main/signalbricksIntegration/packageManifest.json)
-- [OwnTracks: updated.](https://raw.githubusercontent.com/wir3z/hubitat/main/owntracks-hubitat/packageManifest.json)
-- [Life360+: updated.](https://raw.githubusercontent.com/jpage4500/hubitat-drivers/master/life360/packageManifest.json)
-- [Aqara P1 Motion Sensor: updated.](https://raw.githubusercontent.com/kkossev/Hubitat/development/Drivers/Aqara%20P1%20Motion%20Sensor/packageManifest.json)
 
 [Browse the complete changelog](https://github.com/GordonThelander/HPM_Manifest_Crawl/tree/main/site/package-feed)

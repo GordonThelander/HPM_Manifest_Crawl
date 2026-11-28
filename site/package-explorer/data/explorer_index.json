@@ -49260,7 +49260,7 @@
       "author": "hubitrep",
       "category": "Utility",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-26",
+      "dateReleased": "2026-11-27",
       "definitions": [
         {
           "id": "definition:ffdf6e2418345b7f15d7",
@@ -49337,7 +49337,7 @@
         "Monitoring",
         "Tools & Utilities"
       ],
-      "version": "6.4.1"
+      "version": "6.4.3"
     },
     {
       "author": "Jean P. May, Jr.",
@@ -54687,7 +54687,7 @@
           "sourceUrl": "https://raw.githubusercontent.com/hubitrep/hubitat/refs/heads/main/hvac/HvacSeasonManagerSeason.groovy"
         }
       ],
-      "description": "Heating and cooling apps, each optional, all in beta. Switched Heater Thermostat turns plain switches feeding resistive heaters into a thermostat, with frost protection, power-draw checks and alerts when a heater or sensor fails. HVAC Season Manager publishes the heating and cooling season on a device, from dates fitted to the local climate.",
+      "description": "Heating and cooling apps, each optional; HVAC Season Manager is in beta. Switched Heater Thermostat turns plain switches feeding resistive heaters into a thermostat, with frost protection, power-draw checks and alerts when a heater or sensor fails. HVAC Season Manager publishes the heating and cooling season on a device, from dates fitted to the local climate.",
       "evidence": [
         {
           "classification": "HPM_PACKAGE_AVAILABLE",
@@ -59727,11 +59727,28 @@
       "version": "1.3"
     },
     {
-      "author": null,
+      "author": "Jamie Curnow",
       "category": "Control",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": null,
-      "definitions": [],
+      "dateReleased": "2026-10-06",
+      "definitions": [
+        {
+          "id": "definition:d3b1b56f14ebf85ad59a",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "APP",
+          "name": "iStore Heat Pump Connect",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/apps/istore-heat-pump-app.groovy"
+        },
+        {
+          "id": "definition:8d657465d2719eb9b5c8",
+          "identityEvidence": "SOURCE_IDENTITY",
+          "kind": "DRIVER",
+          "name": "iStore Heat Pump",
+          "namespace": "jc21",
+          "sourceUrl": "https://raw.githubusercontent.com/jc21/hubitat-istore-heat-pump/refs/tags/v1.0.0/drivers/istore-heat-pump.groovy"
+        }
+      ],
       "description": "Monitoring and controlling your iStore R290 hot water heat pump via the UNIVERS / iStore cloud directly from your home automation platform",
       "evidence": [
         {
@@ -59739,11 +59756,11 @@
           "label": "HPM metadata"
         },
         {
-          "classification": "MANIFEST_IDENTITY",
-          "label": "Manifest identity"
+          "classification": "SOURCE_IDENTITY_MATCH",
+          "label": "Source identity"
         }
       ],
-      "hasDocumentation": false,
+      "hasDocumentation": true,
       "health": {
         "checks": [
           {
@@ -59752,11 +59769,11 @@
           },
           {
             "name": "definitionIdentity",
-            "status": "NOT_AVAILABLE"
+            "status": "MATCH"
           },
           {
             "name": "documentationLink",
-            "status": "MISSING"
+            "status": "PRESENT"
           },
           {
             "name": "httpsTransport",
@@ -59764,31 +59781,36 @@
           },
           {
             "name": "manifestFetch",
-            "status": "FAIL"
+            "status": "PASS"
           },
           {
             "name": "sourceFetch",
-            "status": "NOT_APPLICABLE"
+            "status": "PASS"
           }
         ],
-        "classification": "ATTENTION"
+        "classification": "PASS"
       },
       "id": "hpm:b537464b-4fdf-4e25-84e7-1eef3e1bc0f4",
-      "kinds": [],
+      "kinds": [
+        "APP",
+        "DRIVER"
+      ],
       "links": {
         "community": null,
-        "documentation": null,
+        "documentation": "https://github.com/jc21/hubitat-istore-heat-pump",
         "manifest": "https://github.com/jc21/hubitat-istore-heat-pump/releases/latest/download/packageManifest.json",
         "repository": "https://github.com/jc21/hubitat-istore-heat-pump"
       },
       "name": "iStore Heat Pump",
       "network": {
-        "classification": "INSUFFICIENT",
+        "classification": "CLOUD",
         "declared": {
           "cloudTag": false,
           "lanTag": false
         },
-        "externalHosts": [],
+        "externalHosts": [
+          "home.istore.net.au"
+        ],
         "reviewed": []
       },
       "recordType": "HPM_PACKAGE",
@@ -59798,7 +59820,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": null
+      "version": "1.0.0"
     },
     {
       "author": "Supun Vidana Pathiranage",
@@ -65718,7 +65740,7 @@
       "author": "kingpanther13",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-21",
+      "dateReleased": "2026-11-27",
       "definitions": [
         {
           "id": "definition:d758132dcd74db160242",
@@ -65800,7 +65822,7 @@
       },
       "recordType": "HPM_PACKAGE",
       "tags": [],
-      "version": "5.2.1"
+      "version": "5.2.2"
     },
     {
       "author": "Justin Leonard",
@@ -88067,7 +88089,7 @@
       "author": "Chris Ogden",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-20",
+      "dateReleased": "2026-11-28",
       "definitions": [
         {
           "id": "definition:ec844bf06d43a411ed84",
@@ -88147,7 +88169,7 @@
         "Monitoring",
         "Temperature & Humidity"
       ],
-      "version": "1.9.4"
+      "version": "1.9.5"
     },
     {
       "author": "Krassimir Kossev",
@@ -92597,124 +92619,124 @@
       "dateReleased": "2026-11-27",
       "definitions": [
         {
-          "id": "definition:2f77496ee66ee011535e",
+          "id": "definition:85b5ae8479c8cf658f1c",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvancedApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvancedApp.groovy"
         },
         {
-          "id": "definition:02c8c3cac241fc16e508",
+          "id": "definition:430e2c2e08fbfd8e02f7",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller - Discovery & Management",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvancedDiscoveryApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvancedDiscoveryApp.groovy"
         },
         {
-          "id": "definition:b243bffab993ca7ce958",
+          "id": "definition:87ad8ca63cf69f6cf3cc",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller - Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvancedFavoritesApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvancedFavoritesApp.groovy"
         },
         {
-          "id": "definition:6787e2fc2ecd21fc1972",
+          "id": "definition:aaed9ccef68ba32eeaa4",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "APP",
           "name": "Sonos Advanced Controller - Playlists",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvancedPlaylistsApp.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvancedPlaylistsApp.groovy"
         },
         {
-          "id": "definition:f511e3b70411b718a62d",
+          "id": "definition:16eb2756150eb5c5df8b",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Manager",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvAlarmManager.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvAlarmManager.groovy"
         },
         {
-          "id": "definition:55c4658dec795d288a00",
+          "id": "definition:9c4f7fce08f0f4532291",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Alarm Switch",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvAlarmSwitch.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvAlarmSwitch.groovy"
         },
         {
-          "id": "definition:41b48ae1233b37bf36a7",
+          "id": "definition:c873aa34349e666a3d7e",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Battery Status",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvBatteryStats.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvBatteryStats.groovy"
         },
         {
-          "id": "definition:df740703b7d355d592af",
+          "id": "definition:0582e8aa8c5f778f2005",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Favorites",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvFavorites.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvFavorites.groovy"
         },
         {
-          "id": "definition:a2737f0d8095f411ab65",
+          "id": "definition:053705ff4d04f85b0ee6",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Group",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvGroup.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvGroup.groovy"
         },
         {
-          "id": "definition:f17ae4cae7d1f8a4d3ef",
+          "id": "definition:c4411e0404bd7237a4f5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Player",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvPlayer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvPlayer.groovy"
         },
         {
-          "id": "definition:40a14c5757b816cc68b9",
+          "id": "definition:53a6529048e9cb975798",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Playlist",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvPlaylist.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvPlaylist.groovy"
         },
         {
-          "id": "definition:d1240f3c52583c884676",
+          "id": "definition:b0329ffc0bcef3df72ae",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Queue",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvQueue.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvQueue.groovy"
         },
         {
-          "id": "definition:46aa9a4557126a59e5c0",
+          "id": "definition:e07d2be49b4657efe0c5",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Secondaries",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvSecondaries.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvSecondaries.groovy"
         },
         {
-          "id": "definition:f2101677f8c8321d0d10",
+          "id": "definition:9d815dae554f592f4154",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Sleep Timer",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvSleepTimer.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvSleepTimer.groovy"
         },
         {
-          "id": "definition:d26ba74745a1cea8b9be",
+          "id": "definition:249639dc85047771ed5f",
           "identityEvidence": "SOURCE_IDENTITY",
           "kind": "DRIVER",
           "name": "Sonos Advanced Snapshot",
           "namespace": "dwinks",
-          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.0/SonosAdvSnapshot.groovy"
+          "sourceUrl": "https://github.com/DanielWinks/Hubitat-Public/releases/download/v0.19.2/SonosAdvSnapshot.groovy"
         }
       ],
       "description": "Advanced app and driver for Sonos speakers. Allows non-interrupting TTS, grouping control, and more.",
@@ -92810,7 +92832,7 @@
         "Multimedia",
         "Speakers"
       ],
-      "version": "0.19.0"
+      "version": "0.19.2"
     },
     {
       "author": "Schwark Satyavolu",
@@ -98704,7 +98726,7 @@
       "author": "Ricardo Nogueira Garcia",
       "category": "Integrations",
       "classification": "HPM_PACKAGE_AVAILABLE",
-      "dateReleased": "2026-11-20",
+      "dateReleased": "2026-11-28",
       "definitions": [
         {
           "id": "definition:3069ad0155da8252b8ab",
@@ -98782,7 +98804,7 @@
         "LAN",
         "Tuya"
       ],
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
     {
       "author": "Ricardo Nogueira Garcia (based on Jonathan Bradshaw)",
@@ -139682,5 +139704,5 @@
     }
   ],
   "schemaVersion": "1.0",
-  "snapshotGenerated": "2026-11-27T08:50:37Z"
+  "snapshotGenerated": "2026-11-28T08:08:24Z"
 }
